@@ -14,11 +14,11 @@
 		${
 			selected
 				? streaming === 'spotify'
-					? 'bg-spotify text-t-inverse hover:bg-spotify/90'
-					: 'bg-deezer text-t-inverse hover:bg-deezer/90'
-				: 'border-s-border border bg-transparent text-t-secondary hover:text-t-primary'
+					? 'bg-spotify text-t-inverse'
+					: 'bg-deezer text-t-inverse'
+				: `border-s-border border bg-transparent ${streaming === 'spotify' ? 'hover:border-spotify hover:text-spotify' : 'hover:border-deezer hover:text-deezer'}`
 		}
-		hover:scale-[1.02]`}
+		hover:scale-[1.01]`}
 >
 	{#if streaming === 'spotify'}
 		<SpotifyIcon iconSvgClass="w-4.5 h-4.5 lg:w-5 lg:h-5" />

@@ -24,16 +24,19 @@
 	};
 
 	$: setClassbyStreaming = (() => {
-		let baseClass = `flex cursor-pointer items-center gap-1 rounded-lg border px-3 py-1.5 transition-all text-xs lg:text-base ${
+		const hoverClass =
 			platformKey === 'spotify'
 				? 'hover:border-spotify hover:text-spotify'
-				: 'hover:border-s-inverse-muted hover:text-s-inverse-muted'
-		}`;
+				: 'hover:border-deezer hover:text-deezer';
+
+		let baseClass = `flex cursor-pointer items-center gap-1 rounded-lg border px-3 py-1.5 transition-all text-xs lg:text-base ${hoverClass}`;
 
 		if (isPlatformConnected()) {
-			baseClass += ` border-spotify text-spotify hover:border-spotify`;
+			baseClass += ` ${
+				platformKey === 'spotify' ? 'border-spotify text-spotify' : 'border-deezer text-deezer'
+			}`;
 		} else {
-			baseClass += ` border-s-inverse-muted text-s-inverse-muted hover:border-s-inverse-muted hover:text-s-inverse-muted`;
+			baseClass += ` border-s-inverse-muted text-s-inverse-muted`;
 		}
 
 		return baseClass;
@@ -46,16 +49,14 @@
 	<div class="flex flex-col gap-4 p-6 lg:gap-6 lg:p-10">
 		<div class="flex items-center justify-between font-medium">
 			<platform.icon
-				iconSvgClass={`w-10 h-10 ${
-					platformKey === 'spotify' ? 'text-spotify' : 'text-s-inverse-muted'
-				}`}
+				iconSvgClass={`w-10 h-10 ${platformKey === 'spotify' ? 'text-spotify' : 'text-deezer'}`}
 			/>
 
 			<button
 				on:click={(e) => {
 					signInSpotify(platformKey, e);
 				}}
-				disabled={platformKey === 'deezer' || isPlatformConnected()}
+				disabled={isPlatformConnected()}
 				title={setTitleByStreaming(platformKey)}
 				class={setClassbyStreaming}
 			>
@@ -93,7 +94,7 @@
 			target="_blank"
 			rel="noopener noreferrer"
 			class={`flex w-fit cursor-pointer items-center gap-2.5 text-sm transition-all ${
-				platformKey === 'spotify' ? 'hover:text-spotify' : 'hover:text-s-inverse-muted'
+				platformKey === 'spotify' ? 'hover:text-spotify' : 'hover:text-deezer'
 			}`}
 		>
 			{$translationsStore.homePage.connectPlatformCardPlatformExternalLink}
