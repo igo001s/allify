@@ -22,7 +22,7 @@
 		/>
 
 		<img
-			src={mostListenedArtistItem.images[0]?.url}
+			src={mostListenedArtistItem.image?.url}
 			alt={mostListenedArtistItem.name}
 			class="h-40 w-40 rounded-xl object-cover shadow-lg sm:h-44 sm:w-44 lg:h-60 lg:w-60"
 			loading="lazy"

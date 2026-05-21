@@ -36,7 +36,7 @@
 			{:else}
 				<div class="grid w-full grid-cols-[auto_1fr] gap-6 sm:grid-cols-[auto_1fr_auto]">
 					<img
-						src={artist.images[0]?.url}
+						src={artist.image?.url}
 						alt={artist.name}
 						class="h-20 w-20 rounded-lg object-cover shadow-md sm:h-36 sm:w-36 lg:h-42 lg:w-42"
 						loading="lazy"

@@ -37,7 +37,7 @@ export async function getMostListenedArtists() {
 			popularity: resMostListenedArtists[0].popularity,
 			followers: resMostListenedArtists[0].followers.total,
 			genres: resMostListenedArtists[0].genres,
-			images: [resMostListenedArtists[0].images[0]],
+			image: resMostListenedArtists[0].images[0],
 			artistLink: resMostListenedArtists[0].external_urls.spotify
 		};
 
@@ -48,7 +48,7 @@ export async function getMostListenedArtists() {
 				popularity: resMostListenedArtists[i].popularity,
 				followers: resMostListenedArtists[i].followers.total,
 				genres: resMostListenedArtists[i].genres,
-				images: [resMostListenedArtists[i].images[0]],
+				image: resMostListenedArtists[i].images[0],
 				artistLink: resMostListenedArtists[i].external_urls.spotify
 			});
 		}

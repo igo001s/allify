@@ -2,7 +2,7 @@ export type UserInfoSpotify = {
 	connected: boolean;
 	name: string;
 	email: string;
-	images: { url: string; height: number | null; width: number | null }[];
+	image: { url: string; height: number | null; width: number | null };
 	country: string;
 	followers: number;
 	profileLink: string;
@@ -49,7 +49,7 @@ export type ArtistSpotify = {
 	popularity: number;
 	followers: number;
 	genres: string[];
-	images: { url: string; height: number | null; width: number | null }[];
+	image: { url: string; height: number | null; width: number | null };
 	artistLink: string;
 };
 
@@ -59,7 +59,7 @@ export type TrackSpotify = {
 	artists: string[];
 	popularity: number;
 	albumName: string;
-	images: { url: string; height: number | null; width: number | null }[];
+	image: { url: string; height: number | null; width: number | null };
 	trackLink: string;
 };
 
@@ -70,7 +70,7 @@ export type LikedTrackSpotify = {
 	popularity: number;
 	album: {
 		name: string;
-		images: { url: string; height: number | null; width: number | null }[];
+		image: { url: string; height: number | null; width: number | null };
 	};
 	explicit: boolean;
 	releaseDate: string;
@@ -80,7 +80,7 @@ export type LikedTrackSpotify = {
 
 export type PlaylistSpotify = {
 	name: string;
-	images: { url: string; height: number | null; width: number | null }[];
+	image: { url: string; height: number | null; width: number | null };
 	owner: string;
 	public: boolean;
 	description?: string;
@@ -95,7 +95,7 @@ export type PlaylistSpotify = {
 					artists: string[];
 					durationMs: number;
 					addedBy: string | undefined;
-					images: { url: string; height: number | null; width: number | null }[];
+					image: { url: string; height: number | null; width: number | null };
 					trackLink: string;
 			  }[]
 			| undefined;
@@ -105,7 +105,7 @@ export type PlaylistSpotify = {
 export type AlbumSpotify = {
 	addedAt: string;
 	name: string;
-	images: { url: string; height: number | null; width: number | null }[];
+	image: { url: string; height: number | null; width: number | null };
 	releaseDate: string;
 	artists: string[];
 	albumLink: string;

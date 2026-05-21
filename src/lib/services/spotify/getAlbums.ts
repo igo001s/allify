@@ -14,7 +14,7 @@ export async function getAlbums() {
 			albumItems.push({
 				addedAt: resUserAlbums[i].added_at,
 				name: resUserAlbums[i].album.name,
-				images: [resUserAlbums[i].album.images[0]],
+				image: resUserAlbums[i].album.images[0],
 				releaseDate: resUserAlbums[i].album.release_date,
 				artists: resUserAlbums[i].album.artists.map((artist: { name: string }) => artist.name),
 				albumLink: resUserAlbums[i].album.external_urls.spotify,

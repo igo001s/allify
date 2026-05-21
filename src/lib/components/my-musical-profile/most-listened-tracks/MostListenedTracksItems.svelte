@@ -36,7 +36,7 @@
 			{:else}
 				<div class="grid w-full grid-cols-[auto_1fr] gap-6 sm:grid-cols-[auto_1fr_auto]">
 					<img
-						src={track.images[0]?.url}
+						src={track.image?.url}
 						alt={track.name}
 						class="h-20 w-20 rounded-xl object-cover shadow-md sm:h-36 sm:w-36 lg:h-42 lg:w-42"
 						loading="lazy"

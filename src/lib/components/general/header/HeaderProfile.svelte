@@ -44,18 +44,18 @@
 	}}
 >
 	{#if loggedIn}
-		{#if $userInfo?.connectedStreamings.spotify?.images[0]}
+		{#if $userInfo?.connectedStreamings.spotify?.image}
 			<img
 				class={`
-					h-${$userInfo?.connectedStreamings.spotify?.images[0]?.height}
-					w-${$userInfo?.connectedStreamings.spotify?.images[0]?.width}
+					h-${$userInfo?.connectedStreamings.spotify?.image?.height}
+					w-${$userInfo?.connectedStreamings.spotify?.image?.width}
 					rounded-full
 					border
 					object-cover
 					p-1
 					text-brand-primary
 				`}
-				src={$userInfo?.connectedStreamings.spotify?.images[0]?.url}
+				src={$userInfo?.connectedStreamings.spotify?.image?.url}
 				alt={$userInfo?.connectedStreamings.spotify?.name}
 			/>
 		{:else}

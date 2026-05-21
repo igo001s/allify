@@ -22,7 +22,7 @@
 		/>
 
 		<img
-			src={mostListenedTrackItem.images[0]?.url}
+			src={mostListenedTrackItem.image?.url}
 			alt={mostListenedTrackItem.name}
 			class="h-40 w-40 rounded-xl object-cover shadow-lg sm:h-44 sm:w-44 lg:h-60 lg:w-60"
 			loading="lazy"

@@ -40,7 +40,7 @@ export async function getPlaylists() {
 
 			playlistItems.push({
 				name: resUserPlaylists[i].name,
-				images: [resUserPlaylists[i].images[0]],
+				image: resUserPlaylists[i].images[0],
 				owner: resUserPlaylists[i].owner.display_name,
 				public: resUserPlaylists[i].public,
 				description: resUserPlaylists[i].description,
@@ -56,7 +56,7 @@ export async function getPlaylists() {
 							artists: trackItem.track.artists.map((artist: any) => artist.name),
 							durationMs: trackItem.track.duration_ms,
 							addedBy: idToName,
-							images: [trackItem.track.album.images[0]],
+							image: trackItem.track.album.images[0],
 							trackLink: trackItem.track.external_urls.spotify
 						}))
 				}

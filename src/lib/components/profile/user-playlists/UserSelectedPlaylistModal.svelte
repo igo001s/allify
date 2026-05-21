@@ -40,9 +40,9 @@
 
 			<div class="border-b border-b-default p-5 lg:p-6">
 				<div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-8">
-					{#if playlist.images?.[0]?.url}
+					{#if playlist.image?.url}
 						<img
-							src={playlist.images[0].url}
+							src={playlist.image?.url}
 							alt={playlist.name}
 							class="h-32 w-32 shrink-0 self-center rounded-xl object-cover shadow-lg sm:self-start lg:h-52 lg:w-52"
 							loading="lazy"

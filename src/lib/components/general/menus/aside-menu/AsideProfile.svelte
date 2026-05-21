@@ -65,7 +65,7 @@
 			aria-label="Toggle profile items"
 		>
 			{#if loggedIn}
-				{#if $userInfo?.connectedStreamings.spotify?.images[0]}
+				{#if $userInfo?.connectedStreamings.spotify?.image}
 					<img
 						class="
 							h-10
@@ -77,7 +77,7 @@
 							sm:h-11
 							sm:w-11
 						"
-						src={$userInfo?.connectedStreamings.spotify?.images[0]?.url}
+						src={$userInfo?.connectedStreamings.spotify?.image?.url}
 						alt={$userInfo?.connectedStreamings.spotify?.name}
 					/>
 				{:else}

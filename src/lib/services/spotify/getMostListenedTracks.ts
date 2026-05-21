@@ -37,7 +37,7 @@ export async function getMostListenedTracks() {
 			artists: resMostListenedTracks[0].artists.map((artist: any) => artist.name),
 			popularity: resMostListenedTracks[0].popularity,
 			albumName: resMostListenedTracks[0].album.name,
-			images: [resMostListenedTracks[0].album.images[0]],
+			image: resMostListenedTracks[0].album.images[0],
 			trackLink: resMostListenedTracks[0].external_urls.spotify
 		};
 
@@ -48,7 +48,7 @@ export async function getMostListenedTracks() {
 				artists: resMostListenedTracks[i].artists.map((artist: any) => artist.name),
 				popularity: resMostListenedTracks[i].popularity,
 				albumName: resMostListenedTracks[i].album.name,
-				images: [resMostListenedTracks[i].album.images[0]],
+				image: resMostListenedTracks[i].album.images[0],
 				trackLink: resMostListenedTracks[i].external_urls.spotify
 			});
 		}

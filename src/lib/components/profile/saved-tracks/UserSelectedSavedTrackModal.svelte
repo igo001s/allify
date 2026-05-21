@@ -44,9 +44,9 @@
 			{/if}
 
 			<div class="flex flex-col gap-4 p-5 sm:flex-row sm:items-start sm:gap-8 sm:p-6">
-				{#if selectedSavedTrack?.album?.images?.[0]?.url}
+				{#if selectedSavedTrack?.album?.image?.url}
 					<img
-						src={selectedSavedTrack.album.images[0].url}
+						src={selectedSavedTrack.album.image?.url}
 						alt={selectedSavedTrack.album.name}
 						class="h-32 w-32 shrink-0 self-center rounded-xl object-cover shadow-lg sm:h-70 sm:w-70 sm:self-start"
 						loading="lazy"

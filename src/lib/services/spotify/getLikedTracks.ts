@@ -19,7 +19,7 @@ export async function getLikedTracks() {
 				popularity: resUserLikedTracks[i].track.popularity,
 				album: {
 					name: resUserLikedTracks[i].track.album.name,
-					images: [resUserLikedTracks[i].track.album.images[0]]
+					image: resUserLikedTracks[i].track.album.images[0]
 				},
 				explicit: resUserLikedTracks[i].track.explicit,
 				releaseDate: resUserLikedTracks[i].track.release_date,

@@ -26,7 +26,7 @@ export async function userInfoFromSpotify() {
 			connected: true,
 			name: data.display_name,
 			email: data.email,
-			images: [data.images[0]],
+			image: data.images[0],
 			country: data.country,
 			followers: data.followers.total,
 			profileLink: data.external_urls.spotify,
