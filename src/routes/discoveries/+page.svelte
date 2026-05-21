@@ -122,7 +122,9 @@
 							</ul>
 						</div>
 					{:else}
-						<div class={`flex w-full justify-center text-center text-sm text-t-muted ${$userInfo.discoveries.artists.length === 0 && $userInfo.discoveries.tracks.length === 0 ? 'my-auto' : ''}`}>
+						<div
+							class={`flex w-full justify-center text-center text-sm text-t-muted ${$userInfo.discoveries.artists.length === 0 && $userInfo.discoveries.tracks.length === 0 ? 'my-auto' : ''}`}
+						>
 							{#if $userInfo.discoveries.artists.length === 0 && $userInfo.discoveries.tracks.length === 0}
 								{$translationsStore.discoveriesPage.discoveriesPageDiscoverNow}
 							{:else}

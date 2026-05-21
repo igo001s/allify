@@ -15,9 +15,9 @@
 		showSelectedPlaylistModal = true;
 	}}
 >
-	{#if item.images?.[0]?.url}
+	{#if item.image?.url}
 		<img
-			src={item.images?.[0]?.url}
+			src={item.image?.url}
 			alt={item.name}
 			class="h-36 w-36 rounded-xl object-cover"
 			loading="lazy"

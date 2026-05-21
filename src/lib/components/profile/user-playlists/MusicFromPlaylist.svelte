@@ -16,11 +16,7 @@
 	rel="noopener noreferrer"
 >
 	{#if music.image?.url}
-		<img
-			src={music.image?.url}
-			alt={music.name}
-			class="h-14 w-14 shrink-0 rounded object-cover"
-		/>
+		<img src={music.image?.url} alt={music.name} class="h-14 w-14 shrink-0 rounded object-cover" />
 	{/if}
 
 	<div class="min-w-0 flex-1">
