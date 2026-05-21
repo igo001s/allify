@@ -24,7 +24,7 @@
 		<img
 			src={mostListenedArtistItem.images[0]?.url}
 			alt={mostListenedArtistItem.name}
-			class="h-40 w-40 rounded-lg object-cover shadow-lg sm:h-44 sm:w-44 lg:h-60 lg:w-60"
+			class="h-40 w-40 rounded-xl object-cover shadow-lg sm:h-44 sm:w-44 lg:h-60 lg:w-60"
 			loading="lazy"
 		/>
 	</div>
@@ -54,7 +54,7 @@
 			<div class="flex flex-wrap gap-2">
 				{#each mostListenedArtistItem.genres as genre}
 					<span
-						class="rounded-md bg-brand-primary px-3 py-1 text-xs font-medium text-t-inverse sm:text-sm"
+						class="rounded-xl bg-brand-primary px-3 py-1 text-xs font-medium text-t-inverse sm:text-sm"
 					>
 						{genre}
 					</span>

@@ -22,7 +22,7 @@
 >
 	<div class="flex items-center gap-4 md:gap-10 2xl:gap-20">
 		<AllifyLogoColorful
-			logoSvgClass="w-26 h-fit transition-all cursor-pointer lg:w-32 hover:scale-105"
+			logoSvgClass="w-26 h-fit transition-all cursor-pointer lg:w-32 hover:scale-102"
 			logoAltText={$translationsStore.generalTexts.logoColorfulAltText}
 		/>
 
@@ -40,7 +40,7 @@
 
 		<button
 			aria-label={$translationsStore.generalTexts.burguerMenuAltText}
-			class="cursor-pointer rounded-md p-0.5 transition-all hover:bg-s-muted lg:hidden"
+			class="cursor-pointer rounded-xl p-0.5 transition-all hover:bg-s-muted lg:hidden"
 			aria-expanded={isAsideMenuOpen}
 			on:click={() => {
 				openLanguageDropdown = false;

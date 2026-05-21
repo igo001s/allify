@@ -63,7 +63,7 @@
 
 <section class="px-8 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-16 2xl:px-32">
 	<div
-		class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
+		class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-xl px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
 	>
 		<div class="max-w-lg">
 			<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
@@ -77,7 +77,7 @@
 
 		<button
 			on:click={() => goto('/')}
-			class="w-54 cursor-pointer rounded-xl bg-spotify px-6 py-3.5 text-center text-sm font-semibold text-t-inverse shadow-md transition-all duration-200 hover:scale-[1.02]"
+			class="mt-6 w-90 cursor-pointer rounded-xl bg-brand-primary py-5 text-center text-xs font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark"
 		>
 			{$translationsStore.errorPage.errorPageButtonGoHome}
 		</button>

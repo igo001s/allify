@@ -36,7 +36,7 @@
 >
 	<div class="flex items-center gap-4">
 		<div
-			class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-lg sm:h-14 sm:w-14 ${platform.name === 'spotify' ? 'bg-spotify/10' : 'bg-deezer/10'}`}
+			class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl sm:h-14 sm:w-14 ${platform.name === 'spotify' ? 'bg-spotify/10' : 'bg-deezer/10'}`}
 		>
 			<svelte:component
 				this={platform.icon}
@@ -61,14 +61,14 @@
 
 	{#if $userInfo?.connectedStreamings.spotify?.connected === true && platform.name === 'spotify'}
 		<button
-			class="shrink-0 cursor-pointer rounded-lg border border-status-error/40 px-2.5 py-1.5 text-xs font-medium text-status-error transition-colors hover:bg-status-error/10 sm:px-3.5"
+			class="shrink-0 cursor-pointer rounded-xl border border-status-error/40 px-2.5 py-1.5 text-xs font-medium text-status-error transition-colors hover:bg-status-error/10 sm:px-3.5"
 			on:click={() => handleLogout()}
 		>
 			{$translationsStore.settingsPage.settingsPageConnectedPlatformsDisconnect}
 		</button>
 	{:else}
 		<button
-			class="shrink-0 cursor-pointer rounded-lg bg-brand-primary px-2.5 py-1.5 text-xs font-medium text-t-inverse transition-colors hover:bg-brand-primary-dark sm:px-3.5"
+			class="shrink-0 cursor-pointer rounded-xl bg-brand-primary px-2.5 py-1.5 text-xs font-medium text-t-inverse transition-colors hover:bg-brand-primary-dark sm:px-3.5"
 			on:click={(e) => handleLogin(e)}
 		>
 			{$translationsStore.settingsPage.settingsPageConnectedPlatformsConnect}

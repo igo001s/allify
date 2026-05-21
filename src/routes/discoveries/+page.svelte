@@ -85,7 +85,7 @@
 				</p>
 
 				<div
-					class={`mt-2 flex min-h-45 flex-col gap-6 rounded-xl border border-b-default bg-s-default px-6 py-4 shadow-sm ${loadingDiscoveries ? 'h-30' : 'h-auto'} sm:flex-row md:px-8 md:py-6`}
+					class={`mt-2 flex min-h-45 flex-col gap-6 rounded-xl border border-b-default bg-s-default px-6 py-4 shadow-sm sm:flex-row md:px-8 md:py-6 ${loadingDiscoveries ? 'h-30' : 'h-auto'}`}
 				>
 					{#if loadingDiscoveries}
 						<div class="mx-auto flex h-full items-center justify-center">
@@ -133,29 +133,31 @@
 				</div>
 
 				<button
-					class="mx-auto mt-4 w-full cursor-pointer rounded-lg bg-brand-primary px-8 py-4 text-sm font-medium text-t-inverse shadow-sm transition-all hover:bg-brand-primary-dark hover:shadow-md active:scale-95 sm:w-fit"
+					class="mx-auto mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-lg shadow-brand-primary/25 transition-all duration-300 hover:scale-102 hover:bg-brand-primary-dark sm:w-fit"
 					onclick={handleLoadDiscoveries}
 				>
 					{#if $userInfo.discoveries.artists.length === 0 && $userInfo.discoveries.tracks.length === 0}
-						{$translationsStore.discoveriesPage.discoveriesPageDiscoverNowButton}
+						<span class="text-sm leading-none font-semibold">
+							{$translationsStore.discoveriesPage.discoveriesPageDiscoverNowButton}
+						</span>
 					{:else}
 						<div
-							class="flex w-full flex-row items-center justify-center gap-2 text-center sm:gap-3 sm:text-left"
+							class="flex w-full flex-row items-center justify-center gap-3 text-center sm:text-left"
 						>
-							<span class="text-sm">
+							<span class="text-sm leading-none font-semibold">
 								{$translationsStore.discoveriesPage.discoveriesPageDiscoverAgainButton}
 							</span>
 
 							<div
-								class="flex w-fit items-center gap-2 rounded-full bg-s-page px-3 py-1.5 text-brand-primary sm:px-3.5"
+								class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
 							>
 								<img
 									src={TicketIcon}
 									alt={$translationsStore.generalTexts.ticketAltText}
-									class="h-5 w-5"
+									class="h-4 w-4"
 								/>
 
-								<span class="text-sm font-semibold"> -1 </span>
+								<span class="text-xs leading-none font-bold"> -1 </span>
 							</div>
 						</div>
 					{/if}

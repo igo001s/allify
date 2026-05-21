@@ -23,7 +23,7 @@
 	class={`absolute top-1/2 z-20 hidden h-full -translate-y-1/2
 		cursor-pointer items-center justify-center bg-s-inverse/80 p-2
 		shadow-lg backdrop-blur-md transition-all
-		duration-200 hover:scale-110 hover:bg-s-inverse lg:flex lg:p-3
+		duration-200 hover:scale-102 hover:bg-s-inverse lg:flex lg:p-3
 		${direction === 'prev' ? 'left-0' : 'right-0'}`}
 	aria-label={direction === 'prev'
 		? $translationsStore.profilePage.profilePageCarouselButtonAriaLabelPrev

@@ -85,7 +85,7 @@
 								inline-flex
 								items-center
 								justify-center
-								rounded-lg
+								rounded-xl
 								transition
 							"
 						>

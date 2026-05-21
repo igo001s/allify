@@ -61,7 +61,6 @@ export const zh = {
 		notLoggedSettingsParagraph1: '要访问设置，请连接您喜爱的流媒体平台之一。',
 		notLoggedLoginLinkSpotify: '通过 Spotify 登录',
 		notLoggedLoginLinkDeezer: '通过 Deezer 登录',
-		disabledDeezerFunctionalityText: 'Deezer 连接暂时不可用',
 		loginWith: '登录方式：',
 		seeOnSpotify: '在 Spotify 上查看',
 		popularity: '热度',

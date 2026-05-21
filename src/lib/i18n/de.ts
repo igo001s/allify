@@ -52,7 +52,7 @@ export const de = {
 		loadingComponentSpotifyParagraph1:
 			'Suche deine Informationen von <span class="font-semibold text-spotify">Spotify</span>',
 		loadingComponentDeezerParagraph1:
-			'Suche deine Informationen von <span class="font-semibold text-[#a238ff]">Deezer</span>',
+			'Suche deine Informationen von <span class="font-semibold text-deezer">Deezer</span>',
 		loadingComponentAriaLabel: 'Ladeanimation',
 		notLoggedHeading1: 'Sie sind nicht angemeldet',
 		notLoggedMyMusicProfileParagraph1:
@@ -67,7 +67,6 @@ export const de = {
 			'Um auf die Einstellungen zuzugreifen, verbinde dich mit einer deiner bevorzugten Streaming-Plattformen.',
 		notLoggedLoginLinkSpotify: 'Mit Spotify anmelden',
 		notLoggedLoginLinkDeezer: 'Mit Deezer anmelden',
-		disabledDeezerFunctionalityText: 'Deezer-Verbindung derzeit nicht verfügbar',
 		loginWith: 'Anmelden mit ',
 		seeOnSpotify: 'Auf Spotify ansehen',
 		popularity: 'Beliebtheit',

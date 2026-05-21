@@ -22,11 +22,11 @@
 		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-4 backdrop-blur-md"
 	>
 		<div
-			class="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-b-default bg-s-default shadow-xl"
+			class="relative w-full max-w-3xl overflow-hidden rounded-xl border border-b-default bg-s-default shadow-xl"
 		>
 			{#if selectedSavedTrack.name}
 				<button
-					class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-105 hover:opacity-100"
+					class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 					on:click={() => (showSelectedSavedTrackModal = false)}
 					aria-label={$translationsStore.profilePage
 						.profilePageUserSelectedSavedTrackCloseButtonAriaLabel +
@@ -87,7 +87,7 @@
 					<div class="flex flex-col gap-2">
 						{#if selectedSavedTrack?.album?.name}
 							<span
-								class="w-fit rounded-md bg-brand-primary px-3 py-1 text-[11px] font-medium text-t-inverse"
+								class="w-fit rounded-xl bg-brand-primary px-3 py-1 text-[11px] font-medium text-t-inverse"
 							>
 								{selectedSavedTrack.album.name}
 							</span>

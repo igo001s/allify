@@ -61,14 +61,13 @@
 </script>
 
 <button
-	class="mx-auto w-fit cursor-pointer rounded-lg bg-brand-primary px-8 py-4 text-sm font-medium text-t-inverse transition hover:opacity-90"
+	class="mx-auto mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-lg shadow-brand-primary/25 transition-all duration-300 hover:scale-102 hover:bg-brand-primary-dark sm:w-fit"
 	onclick={handleLoadMoreMusicalItems}
+	disabled={loadingMoreItems}
 >
-	<div
-		class="flex w-full items-center justify-center gap-2 text-center sm:flex-row sm:gap-3 sm:text-left"
-	>
+	<div class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left">
 		{#if !loadingMoreItems}
-			<span class="text-sm font-medium">
+			<span class="text-sm leading-none font-semibold">
 				{#if additionalItemsType === 'artists'}
 					{$translationsStore.myMusicalProfilePage
 						.myMusicalProfilePageMostListenedShowMoreFiveArtistsButton}
@@ -79,11 +78,11 @@
 			</span>
 
 			<div
-				class="flex w-fit items-center gap-2 rounded-full bg-s-page px-3 py-1.5 text-brand-primary sm:px-3.5"
+				class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
 			>
-				<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-5 w-5" />
+				<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-4 w-4" />
 
-				<span class="text-sm font-semibold">-1</span>
+				<span class="text-xs leading-none font-bold"> -1 </span>
 			</div>
 		{:else}
 			<DotsLoading dotsTheme="base-light" />

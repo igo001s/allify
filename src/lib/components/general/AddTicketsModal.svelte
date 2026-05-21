@@ -34,11 +34,11 @@
 	class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-4 backdrop-blur-md"
 >
 	<div
-		class="relative flex w-full max-w-md flex-col overflow-hidden rounded-2xl border border-b-default bg-s-default shadow-xl"
+		class="relative flex w-full max-w-md flex-col overflow-hidden rounded-xl border border-b-default bg-s-default shadow-xl"
 	>
 		<div class="border-b border-b-default px-6 py-5">
 			<button
-				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-105 hover:opacity-100"
+				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 				on:click={closeAddTicketsModal}
 				aria-label={$translationsStore.addTickets.addTicketsModalAriaLabel}
 			>
@@ -95,7 +95,7 @@
 
 			<div class="flex items-center gap-2">
 				<span
-					class="inline-flex shrink-0 items-center rounded-md bg-brand-primary px-3 py-1 text-[11px] font-medium text-t-inverse"
+					class="inline-flex shrink-0 items-center rounded-xl bg-brand-primary px-3 py-1 text-[11px] font-medium text-t-inverse"
 				>
 					{quantity}
 					{quantity === 1
@@ -111,7 +111,7 @@
 			</div>
 
 			<button
-				class="w-full cursor-pointer rounded-xl bg-brand-primary px-4 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90 active:scale-95"
+				class="w-full cursor-pointer rounded-xl bg-brand-primary px-4 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
 				on:click={() => handleCheckout(quantity)}
 			>
 				{$translationsStore.addTickets.addTicketsModalButton}

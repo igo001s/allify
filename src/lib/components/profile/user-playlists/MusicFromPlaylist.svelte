@@ -10,7 +10,7 @@
 </script>
 
 <a
-	class="group flex w-full cursor-pointer gap-4 rounded-lg px-4 py-3 text-left transition hover:bg-s-muted"
+	class="group flex w-full cursor-pointer gap-4 rounded-xl px-4 py-3 text-left transition hover:bg-s-muted"
 	href={music.trackLink}
 	target="_blank"
 	rel="noopener noreferrer"

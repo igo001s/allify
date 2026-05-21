@@ -8,6 +8,15 @@
 
 	// Props
 	export let lastSync: Date | undefined;
+
+	const btnClass = [
+		'group flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl',
+		'border border-brand-primary/20 bg-white px-4 py-2.5',
+		'text-xs font-medium text-brand-primary',
+		'transition-all duration-200',
+		'hover:border-brand-primary/40 hover:bg-brand-primary/5',
+		'sm:flex-none'
+	].join(' ');
 </script>
 
 <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
@@ -19,12 +28,10 @@
 		</strong>
 	</span>
 
-	<div class="flex gap-4">
-		<button
-			class="flex flex-1 cursor-pointer items-center justify-center gap-1.5 rounded-md bg-brand-primary px-4 py-2 text-xs font-medium text-t-inverse shadow-sm transition-all hover:opacity-90 hover:shadow-md sm:flex-none"
-		>
+	<div class="flex gap-3">
+		<button class={btnClass}>
 			<ReloadIcon
-				iconSvgClass="h-4 w-4 text-t-inverse"
+				iconSvgClass="h-4 w-4 text-brand-primary transition-transform duration-200 group-hover:rotate-90"
 				iconAltText={$translationsStore.myMusicalProfilePage
 					.myMusicalProfilePageMostListenedReloadIconAltText}
 			/>
@@ -32,11 +39,9 @@
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedButtonUpdate}
 		</button>
 
-		<button
-			class="flex flex-1 cursor-pointer items-center justify-center gap-1.5 rounded-md bg-brand-primary px-4 py-2 text-xs font-medium text-t-inverse shadow-sm transition-all hover:opacity-90 hover:shadow-md sm:flex-none"
-		>
+		<button class={btnClass}>
 			<ShareIcon
-				iconSvgClass="h-4 w-4 text-t-inverse"
+				iconSvgClass="h-4 w-4 text-brand-primary"
 				iconAltText={$translationsStore.myMusicalProfilePage
 					.myMusicalProfilePageMostListenedShareIconAltText}
 			/>

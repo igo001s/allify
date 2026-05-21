@@ -17,7 +17,7 @@
 {#if loading}
 	<div class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/40">
 		<div
-			class="relative mx-4 flex max-w-md flex-col items-center gap-6 rounded-2xl bg-s-default p-12 shadow-2xl"
+			class="relative mx-4 flex max-w-md flex-col items-center gap-6 rounded-xl bg-s-default p-12 shadow-2xl"
 		>
 			<div class="relative">
 				{#if streamingPlatform === 'spotify'}

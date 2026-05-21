@@ -67,7 +67,6 @@ export const en = {
 			'To access settings, connect with one of your favorite streaming platforms.',
 		notLoggedLoginLinkSpotify: 'Log in with Spotify',
 		notLoggedLoginLinkDeezer: 'Log in with Deezer',
-		disabledDeezerFunctionalityText: 'Deezer connection currently unavailable',
 		loginWith: 'Log in with ',
 		seeOnSpotify: 'See on Spotify',
 		popularity: 'Popularity',

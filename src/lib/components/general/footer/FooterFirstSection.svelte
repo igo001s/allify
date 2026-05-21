@@ -9,7 +9,7 @@
 <div class="flex flex-col items-center justify-between gap-6 text-t-inverse lg:items-start">
 	<div class="flex max-w-xs flex-col items-center lg:items-start">
 		<AllifyLogoLight
-			logoSvgClass="w-24 h-fit cursor-pointer transition-all hover:scale-105"
+			logoSvgClass="w-24 h-fit cursor-pointer transition-all hover:scale-102"
 			logoAltText={$translationsStore.generalTexts.logoLightAltText}
 		/>
 

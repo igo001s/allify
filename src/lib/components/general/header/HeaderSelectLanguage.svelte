@@ -53,7 +53,7 @@
 	<button
 		class="
 			flex min-w-36 cursor-pointer items-center justify-between
-			gap-3 rounded-lg
+			gap-3 rounded-xl
 			border
 			border-b-default
 			bg-s-default

@@ -15,7 +15,7 @@
 </script>
 
 <div class="flex flex-col gap-10 lg:gap-14">
-	<div class="mb-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+	<div class="mb-3 flex flex-col gap-3 sm:justify-between lg:flex-row lg:items-center">
 		<h2 class="text-xl font-semibold">
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedArtistsHeading2}
 		</h2>

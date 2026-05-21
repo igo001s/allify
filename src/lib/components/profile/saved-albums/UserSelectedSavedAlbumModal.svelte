@@ -22,10 +22,10 @@
 		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-4 backdrop-blur-md"
 	>
 		<div
-			class="relative flex h-[85vh] w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-b-default bg-s-default shadow-xl"
+			class="relative flex h-[85vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl border border-b-default bg-s-default shadow-xl"
 		>
 			<button
-				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-105 hover:opacity-100"
+				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 				on:click={() => (showSelectedAlbumModal = false)}
 				aria-label={$translationsStore.profilePage
 					.profilePageUserSelectedSavedAlbumCloseButtonAriaLabel +
@@ -77,7 +77,7 @@
 							<div class="flex items-center gap-2 text-xs text-t-secondary">
 								{#if album?.artists?.length}
 									<span
-										class="w-fit rounded-md bg-brand-primary px-3 py-1 text-[11px] font-medium text-t-inverse"
+										class="w-fit rounded-xl bg-brand-primary px-3 py-1 text-[11px] font-medium text-t-inverse"
 									>
 										{album?.artists.join(', ')}
 									</span>

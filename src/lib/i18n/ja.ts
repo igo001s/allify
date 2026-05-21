@@ -66,7 +66,6 @@ export const ja = {
 			'設定にアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
 		notLoggedLoginLinkSpotify: 'Spotifyでログイン',
 		notLoggedLoginLinkDeezer: 'Deezerでログイン',
-		disabledDeezerFunctionalityText: 'Deezer接続は現在利用できません',
 		loginWith: 'でログイン',
 		seeOnSpotify: 'Spotifyで見る',
 		popularity: '人気度',

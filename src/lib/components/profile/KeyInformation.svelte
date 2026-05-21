@@ -28,7 +28,7 @@
 >
 	<div
 		class="flex flex-col items-center gap-6 text-center
-			sm:flex-row sm:text-left lg:gap-12"
+			md:flex-row md:text-left lg:gap-12"
 	>
 		<div class="relative w-fit">
 			{#if userInfo.images[0].url}
@@ -88,7 +88,7 @@
 					</span>
 
 					<button
-						class="flex cursor-pointer items-center justify-center rounded-full bg-s-default p-1.5 transition-all hover:scale-105"
+						class="flex cursor-pointer items-center justify-center rounded-full bg-s-default p-1.5 transition-all hover:scale-102"
 						on:click={openAddTickets}
 					>
 						<PlusIcon
@@ -114,7 +114,7 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col gap-5">
+	<div class="flex flex-col gap-6">
 		<StreamingSelector bind:selectedStreaming />
 
 		<ExternalLink

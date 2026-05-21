@@ -39,6 +39,20 @@
 			href: '/settings'
 		}
 	];
+
+	function loggedItemClick(href: string) {
+		goto(href);
+
+		showProfileOptions = false;
+	}
+
+	function signInWrapper(streaming: string, e: MouseEvent) {
+		if (streaming === 'spotify') {
+			signInSpotify('spotify', e);
+
+			showProfileOptions = false;
+		}
+	}
 </script>
 
 <div
@@ -94,11 +108,7 @@
 			{#each loggedItems as item}
 				<li class="rounded-lg transition-all hover:bg-s-muted">
 					<button
-						on:click={() => {
-							goto(item.href);
-
-							showProfileOptions = false;
-						}}
+						on:click={() => loggedItemClick(item.href)}
 						class="flex w-full cursor-pointer items-center px-3 py-2 transition-all hover:translate-x-0.5"
 					>
 						{item.text}
@@ -113,7 +123,7 @@
 			class="
 					w-full
 					cursor-pointer
-					rounded-lg
+					rounded-xl
 					bg-status-error
 					px-3
 					py-2
@@ -133,20 +143,18 @@
 	{:else}
 		<ul class="space-y-1">
 			{#each notLoggedItems as item}
-				<li class="rounded-lg transition-all hover:bg-s-muted">
+				<li class="rounded-xl transition-all hover:bg-s-muted">
 					<button
 						disabled={item.streaming === 'deezer'}
 						title={setTitleByStreaming(item.streaming)}
-						on:click={(e) => {
-							if (item.streaming === 'spotify') signInSpotify(item.streaming, e);
-						}}
+						on:click={(e) => signInWrapper(item.streaming, e)}
 						class="flex w-full cursor-pointer items-center px-3 py-2 transition-all hover:translate-x-0.5"
 					>
 						{item.text}
 						{#if item.streaming === 'spotify'}
 							<span class="ml-1 font-semibold text-spotify">Spotify</span>
 						{:else}
-							<span class="ml-1 font-semibold text-s-inverse-muted">Deezer</span>
+							<span class="ml-1 font-semibold text-deezer">Deezer</span>
 						{/if}
 					</button>
 				</li>

@@ -7,9 +7,5 @@ import { translationsStore } from '$lib/stores/translations.store';
 export function setTitleByStreaming(streaming: string) {
 	let message = get(translationsStore);
 
-	if (streaming === 'spotify') {
-		return message.generalTexts.loginWith + streaming.charAt(0).toUpperCase() + streaming.slice(1);
-	} else {
-		return message.generalTexts.disabledDeezerFunctionalityText;
-	}
+	return message.generalTexts.loginWith + streaming.charAt(0).toUpperCase() + streaming.slice(1);
 }

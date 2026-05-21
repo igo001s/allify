@@ -35,7 +35,6 @@
 		hover:bg-s-muted
 		hover:shadow-md
 		hover:ring-brand-primary
-		active:scale-95
 	"
 	aria-haspopup="menu"
 	aria-expanded={showProfileOptions}

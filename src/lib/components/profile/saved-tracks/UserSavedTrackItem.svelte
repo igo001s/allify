@@ -9,7 +9,7 @@
 </script>
 
 <button
-	class="flex w-40 shrink-0 cursor-pointer flex-col items-center gap-2 rounded-lg bg-s-muted/90 p-3 transition-all hover:scale-105 sm:w-44"
+	class="flex w-40 shrink-0 cursor-pointer flex-col items-center gap-2 rounded-xl bg-s-muted/90 p-3 transition-all hover:scale-102 sm:w-44"
 	onclick={() => {
 		selectedSavedTrack = item;
 		showSelectedSavedTrackModal = true;
@@ -19,7 +19,7 @@
 		<img
 			src={item.album.images?.[0]?.url}
 			alt={item.name}
-			class="h-36 w-36 rounded-md object-cover"
+			class="h-36 w-36 rounded-xl object-cover"
 			loading="lazy"
 		/>
 	{/if}

@@ -60,7 +60,6 @@
 				transition-all
 				duration-200
 				ease-out
-				active:scale-[0.98]
 			"
 			on:click={toggleProfileOptions}
 			aria-label="Toggle profile items"
@@ -187,7 +186,7 @@
 						class="
 							w-full
 							cursor-pointer
-							rounded-lg
+							rounded-xl
 							bg-status-error
 							px-3
 							py-2

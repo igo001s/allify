@@ -67,7 +67,6 @@ export const ru = {
 			'Чтобы получить доступ к настройкам, подключитесь к одной из ваших любимых стриминговых платформ.',
 		notLoggedLoginLinkSpotify: 'Войти через Spotify',
 		notLoggedLoginLinkDeezer: 'Войти через Deezer',
-		disabledDeezerFunctionalityText: 'Подключение к Deezer временно недоступно',
 		loginWith: 'Войти через ',
 		seeOnSpotify: 'Открыть в Spotify',
 		popularity: 'Популярность',
