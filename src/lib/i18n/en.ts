@@ -234,6 +234,21 @@ export const en = {
 		settingsPageConnectedPlatformsDisconnect: 'Disconnect',
 		settingsPageConnectedPlatformsConnect: 'Connect'
 	},
+	templateEmail: {
+		welcomeToAllifySubject: 'Welcome to Allify!',
+		allifyLogoAltText: 'Allify Logo',
+		spotifyLogoAltText: 'Spotify Logo',
+		deezerLogoAltText: 'Deezer Logo',
+		welcomeToAllifyTitle: 'Hello,',
+		welcomeToAllifyConnectedAccountText: 'You connected your',
+		welcomeToAllifyConnectedAccountSuccessText: 'account successfully to Allify.',
+		welcomeToAllifyDescription:
+			'Now you can view statistics, discover music insights, and enjoy all the features available on the platform.',
+		welcomeToAllifyButtonText: 'Go to Allify',
+		welcomeToAllifyNeedHelpText: 'Need help?',
+		welcomeToAllifyContactText: 'Contact us',
+		welcomeToAllifyCopyrightText: '© Allify 2026. All rights reserved.'
+	},
 	errorPage: {
 		title404: 'Page not found | Allify',
 		titleOtherErrors: 'Unexpected error | Allify',

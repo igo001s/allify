@@ -234,6 +234,21 @@ export const ru = {
 		settingsPageConnectedPlatformsDisconnect: 'Отключить',
 		settingsPageConnectedPlatformsConnect: 'Подключить'
 	},
+	templateEmail: {
+		welcomeToAllifySubject: 'Добро пожаловать в Allify!',
+		allifyLogoAltText: 'Логотип Allify',
+		spotifyLogoAltText: 'Логотип Spotify',
+		deezerLogoAltText: 'Логотип Deezer',
+		welcomeToAllifyTitle: 'Здравствуйте,',
+		welcomeToAllifyConnectedAccountText: 'Вы успешно подключили свой аккаунт',
+		welcomeToAllifyConnectedAccountSuccessText: 'к Allify.',
+		welcomeToAllifyDescription:
+			'Теперь вы можете просматривать статистику, получать музыкальные инсайты и пользоваться всеми возможностями платформы.',
+		welcomeToAllifyButtonText: 'Перейти в Allify',
+		welcomeToAllifyNeedHelpText: 'Нужна помощь?',
+		welcomeToAllifyContactText: 'Связаться с нами',
+		welcomeToAllifyCopyrightText: '© Allify 2026. Все права защищены.'
+	},
 	errorPage: {
 		title404: 'Страница не найдена | Allify',
 		titleOtherErrors: 'Непредвиденная ошибка | Allify',

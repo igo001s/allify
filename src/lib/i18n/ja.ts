@@ -230,6 +230,21 @@ export const ja = {
 		settingsPageConnectedPlatformsDisconnect: '切断',
 		settingsPageConnectedPlatformsConnect: '接続'
 	},
+	templateEmail: {
+		welcomeToAllifySubject: 'Allifyへようこそ！',
+		allifyLogoAltText: 'Allify ロゴ',
+		spotifyLogoAltText: 'Spotify ロゴ',
+		deezerLogoAltText: 'Deezer ロゴ',
+		welcomeToAllifyTitle: 'こんにちは、',
+		welcomeToAllifyConnectedAccountText: 'あなたの',
+		welcomeToAllifyConnectedAccountSuccessText: 'アカウントがAllifyに正常に接続されました。',
+		welcomeToAllifyDescription:
+			'統計情報の確認、音楽インサイトの発見、そしてプラットフォーム上のすべての機能をご利用いただけます。',
+		welcomeToAllifyButtonText: 'Allifyへ移動',
+		welcomeToAllifyNeedHelpText: 'お困りですか？',
+		welcomeToAllifyContactText: 'お問い合わせ',
+		welcomeToAllifyCopyrightText: '© Allify 2026. 無断転載を禁じます。'
+	},
 	errorPage: {
 		title404: 'ページが見つかりません | Allify',
 		titleOtherErrors: '予期しないエラー | Allify',

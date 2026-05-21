@@ -237,6 +237,21 @@ export const de = {
 		settingsPageConnectedPlatformsDisconnect: 'Trennen',
 		settingsPageConnectedPlatformsConnect: 'Verbinden'
 	},
+	templateEmail: {
+		welcomeToAllifySubject: 'Willkommen bei Allify!',
+		allifyLogoAltText: 'Allify Logo',
+		spotifyLogoAltText: 'Spotify Logo',
+		deezerLogoAltText: 'Deezer Logo',
+		welcomeToAllifyTitle: 'Hallo,',
+		welcomeToAllifyConnectedAccountText: 'Sie haben Ihr',
+		welcomeToAllifyConnectedAccountSuccessText: 'Konto erfolgreich mit Allify verbunden.',
+		welcomeToAllifyDescription:
+			'Sie können jetzt Statistiken anzeigen, musikalische Einblicke entdecken und alle verfügbaren Funktionen der Plattform nutzen.',
+		welcomeToAllifyButtonText: 'Zu Allify',
+		welcomeToAllifyNeedHelpText: 'Brauchen Sie Hilfe?',
+		welcomeToAllifyContactText: 'Kontaktieren Sie uns',
+		welcomeToAllifyCopyrightText: '© Allify 2026. Alle Rechte vorbehalten.'
+	},
 	errorPage: {
 		title404: 'Seite nicht gefunden | Allify',
 		titleOtherErrors: 'Unerwarteter Fehler | Allify',
@@ -405,7 +420,6 @@ export const de = {
 			dataUsageDiv6Paragraph2:
 				'Durch die Nutzung von Allify stimmen Sie den auf dieser Seite beschriebenen Datennutzungspraktiken zu.'
 		},
-
 		termsOfService: {
 			title: 'Nutzungsbedingungen | Allify',
 			termsOfServiceMetaDescription:

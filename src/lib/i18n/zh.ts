@@ -223,6 +223,20 @@ export const zh = {
 		settingsPageConnectedPlatformsDisconnect: '断开连接',
 		settingsPageConnectedPlatformsConnect: '连接'
 	},
+	templateEmail: {
+		welcomeToAllifySubject: '欢迎使用 Allify！',
+		allifyLogoAltText: 'Allify 标志',
+		spotifyLogoAltText: 'Spotify 标志',
+		deezerLogoAltText: 'Deezer 标志',
+		welcomeToAllifyTitle: '你好，',
+		welcomeToAllifyConnectedAccountText: '你已成功将你的',
+		welcomeToAllifyConnectedAccountSuccessText: '账户连接到 Allify。',
+		welcomeToAllifyDescription: '现在你可以查看统计数据、发现音乐洞察，并享受平台提供的所有功能。',
+		welcomeToAllifyButtonText: '前往 Allify',
+		welcomeToAllifyNeedHelpText: '需要帮助吗？',
+		welcomeToAllifyContactText: '联系我们',
+		welcomeToAllifyCopyrightText: '© Allify 2026。保留所有权利。'
+	},
 	errorPage: {
 		title404: '页面未找到 | Allify',
 		titleOtherErrors: '意外错误 | Allify',

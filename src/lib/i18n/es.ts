@@ -238,6 +238,21 @@ export const es = {
 		settingsPageConnectedPlatformsDisconnect: 'Desconectar',
 		settingsPageConnectedPlatformsConnect: 'Conectar'
 	},
+	templateEmail: {
+		welcomeToAllifySubject: '¡Bienvenido a Allify!',
+		allifyLogoAltText: 'Logo de Allify',
+		spotifyLogoAltText: 'Logo de Spotify',
+		deezerLogoAltText: 'Logo de Deezer',
+		welcomeToAllifyTitle: 'Hola,',
+		welcomeToAllifyConnectedAccountText: 'Has conectado tu cuenta de',
+		welcomeToAllifyConnectedAccountSuccessText: 'correctamente a Allify.',
+		welcomeToAllifyDescription:
+			'Ahora puedes visualizar estadísticas, descubrir insights musicales y aprovechar todas las funciones disponibles en la plataforma.',
+		welcomeToAllifyButtonText: 'Ir a Allify',
+		welcomeToAllifyNeedHelpText: '¿Necesitas ayuda?',
+		welcomeToAllifyContactText: 'Contáctanos',
+		welcomeToAllifyCopyrightText: '© Allify 2026. Todos los derechos reservados.'
+	},
 	errorPage: {
 		title404: 'Página no encontrada | Allify',
 		titleOtherErrors: 'Error inesperado | Allify',
