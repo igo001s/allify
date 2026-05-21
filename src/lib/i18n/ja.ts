@@ -134,7 +134,8 @@ export const ja = {
 		myMusicalProfilePageMostListenedShareButton: '共有',
 		myMusicalProfilePageMostListenedShareIconAltText: '共有アイコン',
 		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: '+5アーティストを表示',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: '+5曲を表示'
+		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: '+5曲を表示',
+		myMusicalProfilePageMostListenedCrownIconAltText: '王冠アイコン'
 	},
 	discoveriesPage: {
 		title: '音乐发现 | Allify',
@@ -229,6 +230,21 @@ export const ja = {
 		settingsPageConnectedPlatformsNotConnected: '未接続',
 		settingsPageConnectedPlatformsDisconnect: '切断',
 		settingsPageConnectedPlatformsConnect: '接続'
+	},
+	templateEmail: {
+		welcomeToAllifySubject: 'Allifyへようこそ！',
+		allifyLogoAltText: 'Allify ロゴ',
+		spotifyLogoAltText: 'Spotify ロゴ',
+		deezerLogoAltText: 'Deezer ロゴ',
+		welcomeToAllifyTitle: 'こんにちは、',
+		welcomeToAllifyConnectedAccountText: 'あなたの',
+		welcomeToAllifyConnectedAccountSuccessText: 'アカウントがAllifyに正常に接続されました。',
+		welcomeToAllifyDescription:
+			'統計情報の確認、音楽インサイトの発見、そしてプラットフォーム上のすべての機能をご利用いただけます。',
+		welcomeToAllifyButtonText: 'Allifyへ移動',
+		welcomeToAllifyNeedHelpText: 'お困りですか？',
+		welcomeToAllifyContactText: 'お問い合わせ',
+		welcomeToAllifyCopyrightText: '© Allify 2026. 無断転載を禁じます。'
 	},
 	errorPage: {
 		title404: 'ページが見つかりません | Allify',

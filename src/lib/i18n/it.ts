@@ -136,7 +136,8 @@ export const it = {
 		myMusicalProfilePageMostListenedShareButton: 'Condividi',
 		myMusicalProfilePageMostListenedShareIconAltText: 'Icona di condivisione',
 		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: 'Mostra +5 artisti',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Mostra +5 canzoni'
+		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Mostra +5 canzoni',
+		myMusicalProfilePageMostListenedCrownIconAltText: 'Icona di corona'
 	},
 	discoveriesPage: {
 		title: 'Scoperte Musicali | Allify',
@@ -236,6 +237,21 @@ export const it = {
 		settingsPageConnectedPlatformsNotConnected: 'Non connesso',
 		settingsPageConnectedPlatformsDisconnect: 'Disconnetti',
 		settingsPageConnectedPlatformsConnect: 'Connetti'
+	},
+	templateEmail: {
+		welcomeToAllifySubject: 'Benvenuto su Allify!',
+		allifyLogoAltText: 'Logo Allify',
+		spotifyLogoAltText: 'Logo Spotify',
+		deezerLogoAltText: 'Logo Deezer',
+		welcomeToAllifyTitle: 'Ciao,',
+		welcomeToAllifyConnectedAccountText: 'Hai collegato il tuo account',
+		welcomeToAllifyConnectedAccountSuccessText: 'ad Allify con successo.',
+		welcomeToAllifyDescription:
+			'Ora puoi visualizzare statistiche, scoprire insight musicali e usufruire di tutte le funzionalità disponibili sulla piattaforma.',
+		welcomeToAllifyButtonText: 'Vai su Allify',
+		welcomeToAllifyNeedHelpText: 'Hai bisogno di aiuto?',
+		welcomeToAllifyContactText: 'Contattaci',
+		welcomeToAllifyCopyrightText: '© Allify 2026. Tutti i diritti riservati.'
 	},
 	errorPage: {
 		title404: 'Pagina non trovata | Allify',

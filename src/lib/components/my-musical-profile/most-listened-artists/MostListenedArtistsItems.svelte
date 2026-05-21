@@ -15,7 +15,7 @@
 </script>
 
 <div class="flex flex-col gap-10 lg:gap-14">
-	<div class="mb-3 flex flex-col gap-3 sm:justify-between lg:flex-row lg:items-center">
+	<div class="mb-3 flex flex-col gap-3 lg:justify-between lg:flex-row lg:items-center">
 		<h2 class="text-xl font-semibold">
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedArtistsHeading2}
 		</h2>
@@ -34,11 +34,11 @@
 					index={i}
 				/>
 			{:else}
-				<div class="grid w-full grid-cols-[auto_1fr] gap-6 sm:grid-cols-[auto_1fr_auto]">
+				<div class="grid w-full grid-cols-[auto_1fr] gap-6 lg:grid-cols-[auto_1fr_auto]">
 					<img
 						src={artist.image?.url}
 						alt={artist.name}
-						class="h-20 w-20 rounded-lg object-cover shadow-md sm:h-36 sm:w-36 lg:h-42 lg:w-42"
+						class="h-20 w-20 rounded-lg object-cover shadow-md lg:h-42 lg:w-42"
 						loading="lazy"
 					/>
 
@@ -77,7 +77,7 @@
 						{/if}
 					</div>
 
-					<div class="col-span-2 flex w-full flex-col gap-2 sm:col-span-1 sm:items-start md:w-70">
+					<div class="col-span-2 flex w-full flex-col gap-2 lg:col-span-1 lg:w-70 lg:items-start">
 						<Popularity item={artist} />
 
 						<ExternalLinkSpotify

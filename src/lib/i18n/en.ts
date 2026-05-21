@@ -137,7 +137,8 @@ export const en = {
 		myMusicalProfilePageMostListenedShareButton: 'Share',
 		myMusicalProfilePageMostListenedShareIconAltText: 'Share icon',
 		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: 'Show +5 artists',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Show +5 tracks'
+		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Show +5 tracks',
+		myMusicalProfilePageMostListenedCrownIconAltText: 'Crown icon'
 	},
 	discoveriesPage: {
 		title: 'Music Discoveries | Allify',
@@ -233,6 +234,21 @@ export const en = {
 		settingsPageConnectedPlatformsNotConnected: 'Not connected',
 		settingsPageConnectedPlatformsDisconnect: 'Disconnect',
 		settingsPageConnectedPlatformsConnect: 'Connect'
+	},
+	templateEmail: {
+		welcomeToAllifySubject: 'Welcome to Allify!',
+		allifyLogoAltText: 'Allify Logo',
+		spotifyLogoAltText: 'Spotify Logo',
+		deezerLogoAltText: 'Deezer Logo',
+		welcomeToAllifyTitle: 'Hello,',
+		welcomeToAllifyConnectedAccountText: 'You connected your',
+		welcomeToAllifyConnectedAccountSuccessText: 'account successfully to Allify.',
+		welcomeToAllifyDescription:
+			'Now you can view statistics, discover music insights, and enjoy all the features available on the platform.',
+		welcomeToAllifyButtonText: 'Go to Allify',
+		welcomeToAllifyNeedHelpText: 'Need help?',
+		welcomeToAllifyContactText: 'Contact us',
+		welcomeToAllifyCopyrightText: '© Allify 2026. All rights reserved.'
 	},
 	errorPage: {
 		title404: 'Page not found | Allify',
