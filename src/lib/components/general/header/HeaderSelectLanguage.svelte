@@ -24,15 +24,19 @@
 	export let showProfileOptions: boolean = false;
 
 	$: languageOptions = [
-		{ code: 'en', label: $translationsStore.generalTexts.headerLanguageEn, flag: englishFlag },
-		{ code: 'pt', label: $translationsStore.generalTexts.headerLanguagePt, flag: portugueseFlag },
-		{ code: 'es', label: $translationsStore.generalTexts.headerLanguageEs, flag: spanishFlag },
-		{ code: 'zh', label: $translationsStore.generalTexts.headerLanguageZh, flag: chineseFlag },
-		{ code: 'ru', label: $translationsStore.generalTexts.headerLanguageRu, flag: russianFlag },
-		{ code: 'ja', label: $translationsStore.generalTexts.headerLanguageJa, flag: japaneseFlag },
-		{ code: 'de', label: $translationsStore.generalTexts.headerLanguageDe, flag: germanyFlag },
-		{ code: 'fr', label: $translationsStore.generalTexts.headerLanguageFr, flag: frenchFlag },
-		{ code: 'it', label: $translationsStore.generalTexts.headerLanguageIt, flag: italianFlag }
+		{ code: 'en-US', label: $translationsStore.generalTexts.headerLanguageEn, flag: englishFlag },
+		{
+			code: 'pt-BR',
+			label: $translationsStore.generalTexts.headerLanguagePt,
+			flag: portugueseFlag
+		},
+		{ code: 'es-ES', label: $translationsStore.generalTexts.headerLanguageEs, flag: spanishFlag },
+		{ code: 'zh-CN', label: $translationsStore.generalTexts.headerLanguageZh, flag: chineseFlag },
+		{ code: 'ru-RU', label: $translationsStore.generalTexts.headerLanguageRu, flag: russianFlag },
+		{ code: 'ja-JP', label: $translationsStore.generalTexts.headerLanguageJa, flag: japaneseFlag },
+		{ code: 'de-DE', label: $translationsStore.generalTexts.headerLanguageDe, flag: germanyFlag },
+		{ code: 'fr-FR', label: $translationsStore.generalTexts.headerLanguageFr, flag: frenchFlag },
+		{ code: 'it-IT', label: $translationsStore.generalTexts.headerLanguageIt, flag: italianFlag }
 	];
 
 	$: selectedLanguage =

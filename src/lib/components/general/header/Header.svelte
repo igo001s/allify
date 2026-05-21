@@ -15,6 +15,11 @@
 	let isAsideMenuOpen = false;
 	let openLanguageDropdown = false;
 	let showProfileOptions = false;
+
+	function OpenAsideMenu() {
+		openLanguageDropdown = false;
+		isAsideMenuOpen = !isAsideMenuOpen;
+	}
 </script>
 
 <header
@@ -42,10 +47,7 @@
 			aria-label={$translationsStore.generalTexts.burguerMenuAltText}
 			class="cursor-pointer rounded-xl p-0.5 transition-all hover:bg-s-muted lg:hidden"
 			aria-expanded={isAsideMenuOpen}
-			on:click={() => {
-				openLanguageDropdown = false;
-				isAsideMenuOpen = !isAsideMenuOpen;
-			}}
+			on:click={OpenAsideMenu}
 		>
 			<BurguerMenuIcon
 				iconSvgClass="w-6 h-6 text-brand-primary"

@@ -1,4 +1,5 @@
 // Svelte
+import { browser } from '$app/environment';
 import { derived, type Readable } from 'svelte/store';
 
 // Stores
@@ -26,27 +27,42 @@ type Translations =
 	| typeof zh
 	| typeof ja;
 
-export const translationsStore: Readable<Translations> = derived(languageStore, ($language) => {
-	switch ($language) {
-		case 'pt':
-			return pt;
-		case 'en':
-			return en;
-		case 'de':
-			return de;
-		case 'es':
-			return es;
-		case 'fr':
-			return fr;
-		case 'it':
-			return it;
-		case 'ru':
-			return ru;
-		case 'zh':
-			return zh;
-		case 'ja':
-			return ja;
-		default:
-			return en;
-	}
-});
+export const translationsStore: Readable<Translations> = derived(
+	languageStore,
+	($language) => {
+		if (browser && $language) {
+			localStorage.setItem('allify-language', $language);
+		}
+
+		switch ($language) {
+			case 'pt-BR':
+				return pt;
+
+			case 'de-DE':
+				return de;
+
+			case 'es-ES':
+				return es;
+
+			case 'fr-FR':
+				return fr;
+
+			case 'it-IT':
+				return it;
+
+			case 'ru-RU':
+				return ru;
+
+			case 'zh-CN':
+				return zh;
+
+			case 'ja-JP':
+				return ja;
+
+			case 'en-US':
+			default:
+				return en;
+		}
+	},
+	en
+);
