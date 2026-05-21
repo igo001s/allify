@@ -51,9 +51,7 @@
 
 		{#if mostListenedTrackItem.albumName}
 			<div class="flex flex-wrap gap-2">
-				<span
-					class="rounded-xl bg-brand-primary px-3 py-1 text-xs font-medium text-t-inverse"
-				>
+				<span class="rounded-xl bg-brand-primary px-3 py-1 text-xs font-medium text-t-inverse">
 					{mostListenedTrackItem.albumName}
 				</span>
 			</div>

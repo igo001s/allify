@@ -15,9 +15,9 @@
 		showSelectedSavedTrackModal = true;
 	}}
 >
-	{#if item.album.images?.[0]?.url}
+	{#if item.album.image?.url}
 		<img
-			src={item.album.images?.[0]?.url}
+			src={item.album.image?.url}
 			alt={item.name}
 			class="h-36 w-36 rounded-xl object-cover"
 			loading="lazy"
