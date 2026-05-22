@@ -42,7 +42,7 @@
 
 {#if $userInfo?.connectedStreamings.spotify?.connected === true}
 	<section class="base-section">
-		<div class="mb-4 flex flex-col items-center justify-between lg:mb-16 lg:flex-row">
+		<div class="mb-4 flex flex-col items-center justify-between lg:mb-12 lg:flex-row">
 			<h1 class="mb-6 lg:mb-0">
 				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageHeading1}
 			</h1>

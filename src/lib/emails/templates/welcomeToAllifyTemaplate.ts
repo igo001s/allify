@@ -147,7 +147,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
                         background-color: #09623a;
                         color: #ffffff;
                         text-decoration: none;
-                        padding: 18px 40px;
+                        padding: 15px 30px;
                         border-radius: 14px;
                         font-size: 14px;
                         font-weight: 600;
