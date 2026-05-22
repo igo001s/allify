@@ -12,7 +12,7 @@ import { getUser } from './getUser';
 import { createUser } from './createUser';
 
 // Email templates
-import { welcomeToAllifyTemplate } from '$lib/emails/templates/WelcomeToAllifyTemaplate';
+import { welcomeToAllifyTemplate } from '$lib/emails/templates/welcomeToAllifyTemaplate';
 
 export async function fetchUserInfo() {
 	try {
