@@ -15,8 +15,8 @@
 	] as const;
 </script>
 
-<div class="mt-3 flex flex-col items-start gap-2">
-	<h2 class="text-xl font-medium text-t-primary">
+<div class="flex flex-col items-start gap-2">
+	<h2 class="text-xl font-medium text-t-primary mb-2">
 		{$translationsStore.settingsPage.settingsPageConnectedPlatformsSectionHeading2}
 	</h2>
 
