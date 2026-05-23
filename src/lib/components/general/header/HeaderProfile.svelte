@@ -16,7 +16,13 @@
 		$userInfo?.connectedStreamings?.deezer !== undefined
 			? true
 			: false;
+
 	$: primaryStreaming = $userInfo?.primaryStreaming ?? 'spotify';
+
+	function closeProfileOptions() {
+		openLanguageDropdown = false;
+		showProfileOptions = !showProfileOptions;
+	}
 </script>
 
 <button
@@ -43,10 +49,7 @@
 	"
 	aria-haspopup="menu"
 	aria-expanded={showProfileOptions}
-	on:click={() => {
-		openLanguageDropdown = false;
-		showProfileOptions = !showProfileOptions;
-	}}
+	on:click={closeProfileOptions}
 >
 	{#if loggedIn}
 		{#if $userInfo?.connectedStreamings[primaryStreaming]?.image}

@@ -51,10 +51,10 @@
 			<button
 				aria-label={$translationsStore.generalTexts.closeMenuAltText}
 				on:click={closeMenu}
-				class="cursor-pointer rounded-md p-0.5 transition-all hover:bg-s-muted lg:hidden"
+				class="cursor-pointer rounded-md p-0.5 opacity-70 transition hover:scale-102 hover:opacity-100 lg:hidden"
 			>
 				<CloseIcon
-					iconSvgClass="w-7 h-7 text-brand-primary"
+					iconSvgClass="w-6.5 h-6.5 text-brand-primary"
 					iconAltText={$translationsStore.generalTexts.closeMenuAltText}
 				/>
 			</button>

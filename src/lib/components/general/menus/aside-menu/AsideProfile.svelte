@@ -17,7 +17,11 @@
 	// Props
 	export let isAsideMenuOpen: boolean;
 
-	$: loggedIn = $userInfo ? true : false;
+	$: loggedIn =
+		$userInfo?.connectedStreamings?.spotify?.connected === true ||
+		$userInfo?.connectedStreamings?.deezer !== undefined
+			? true
+			: false;
 
 	let showProfileOptions: boolean = false;
 

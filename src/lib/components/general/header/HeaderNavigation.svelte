@@ -18,7 +18,7 @@
 			name: $translationsStore.generalTexts.headerNavigationItem3,
 			link: '/music-battles'
 		}
-	];
+	] as { name: string; link: string }[];
 </script>
 
 <nav aria-label={$translationsStore.generalTexts.headerNavigationAriaLabel} class="hidden lg:block">
