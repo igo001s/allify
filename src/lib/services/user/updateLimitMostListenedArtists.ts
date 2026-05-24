@@ -2,7 +2,7 @@
 import { get } from 'svelte/store';
 
 // Services
-import { getMostListenedArtists } from '../spotify/getMostListenedArtists';
+import { getMostListenedArtists } from '../spotify/stats/getMostListenedArtists';
 import { useTicket } from './useTicket';
 
 // Stores

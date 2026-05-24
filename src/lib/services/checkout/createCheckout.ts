@@ -42,7 +42,7 @@ export async function createCheckout(quantity: number): Promise<void> {
 		window.location.assign(checkoutUrl);
 	} catch (error) {
 		console.error(error instanceof Error ? error.message : 'An error occurred during checkout');
-		
+
 		return;
 	}
 }

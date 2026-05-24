@@ -15,7 +15,7 @@ export async function sendEmail(subject: string, email: string, message: string)
 		console.error(
 			error instanceof Error ? error.message : 'An error occurred while sending the email'
 		);
-		
+
 		return;
 	}
 }

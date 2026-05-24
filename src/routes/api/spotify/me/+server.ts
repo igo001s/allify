@@ -5,7 +5,7 @@ export const GET = async ({ cookies, fetch }) => {
 	let token = cookies.get('spotify_access_token');
 
 	if (!token) {
-		return json({ error: 'No access token' });
+		return json({ error: 'No access token' }, { status: 401 });
 	}
 
 	let res = await fetch('https://api.spotify.com/v1/me', {
@@ -23,7 +23,7 @@ export const GET = async ({ cookies, fetch }) => {
 	}
 
 	if (!res.ok) {
-		return json({ error: 'Spotify error' });
+		return json({ error: 'Spotify error' }, { status: res.status });
 	}
 
 	const data = await res.json();

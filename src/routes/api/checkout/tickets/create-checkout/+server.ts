@@ -22,7 +22,11 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	const body = await request.json();
 
-	const req = await fetch('https://api.abacatepay.com/v2/checkouts/create', {
+	if (!body || !body.items || !Array.isArray(body.items) || body.items.length === 0) {
+		return json({ error: 'Invalid request body' }, { status: 400 });
+	}
+
+	const response = await fetch('https://api.abacatepay.com/v2/checkouts/create', {
 		method: 'POST',
 		headers: {
 			Authorization: `Bearer ${ABACATEPAY_TOKEN}`,
@@ -31,10 +35,10 @@ export const POST: RequestHandler = async ({ request }) => {
 		body: JSON.stringify(body)
 	});
 
-	const data = await req.json();
+	const data = await response.json();
 
-	if (!req.ok) {
-		return json({ error: data?.error ?? 'AbacatePay error' }, { status: req.status });
+	if (!response.ok) {
+		return json({ error: data?.error ?? 'AbacatePay error' }, { status: response.status });
 	}
 
 	showAddTickets.set(false);

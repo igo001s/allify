@@ -71,7 +71,9 @@
 {/if}
 
 {#if $loadingAfterConnectionStore.loading}
-	<LoadingAfterConnection streamingPlatform={$loadingAfterConnectionStore.streamingPlatform} />
+	<LoadingAfterConnection
+		streamingPlatform={$loadingAfterConnectionStore.streamingPlatform ?? undefined}
+	/>
 {/if}
 
 {#if $showAddTickets}

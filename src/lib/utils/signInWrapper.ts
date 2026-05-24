@@ -1,5 +1,5 @@
 // Services
-import { signInSpotify } from '$lib/services/spotify/signInSpotify';
+import { signInSpotify } from '$lib/services/spotify/auth/signInSpotify';
 
 // Stores
 import { loadingAfterConnectionStore } from '$lib/stores/loadingAfterConnection.store';

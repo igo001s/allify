@@ -2,7 +2,7 @@
 import { get } from 'svelte/store';
 
 // Services
-import { logoutSpotify } from '$lib/services/spotify/logoutSpotify';
+import { logoutSpotify } from '$lib/services/spotify/auth/logoutSpotify';
 
 // Stores
 import { userInfo } from '$lib/stores/userInfo.store';
