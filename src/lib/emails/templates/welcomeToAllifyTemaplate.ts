@@ -54,7 +54,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
                             src="https://allify-sv.netlify.app/email-images/allify-logo.png"
                             alt="${$translationsStore.templateEmail.allifyLogoAltText}"
                             style="
-                                height: 42px;
+                                height: 38px;
                                 width: auto;
                                 display: block;
                             "
@@ -74,7 +74,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
                                 src="https://allify-sv.netlify.app/email-images/spotify-logo.png"
                                 alt="${$translationsStore.templateEmail.spotifyLogoAltText}"
                                 style="
-                                    height: 30px;
+                                    height: 26px;
                                     width: auto;
                                     display: block;
                                 "
@@ -90,7 +90,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
                                 src="https://allify-sv.netlify.app/email-images/deezer-logo.png"
                                 alt="${$translationsStore.templateEmail.deezerLogoAltText}"
                                 style="
-                                    height: 30px;
+                                    height: 26px;
                                     width: auto;
                                     display: block;
                                 "
