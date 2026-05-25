@@ -16,15 +16,15 @@
 
 <div class="flex gap-2" aria-label={animationAltText} role="img">
 	<span
-		class="h-2 w-2 {platformColors[dotsTheme]} animate-bounce rounded-full"
+		class="h-1.5 w-1.5 {platformColors[dotsTheme]} animate-bounce rounded-full"
 		style="animation-delay: 0ms;"
 	></span>
 	<span
-		class="h-2 w-2 {platformColors[dotsTheme]} animate-bounce rounded-full"
+		class="h-1.5 w-1.5 {platformColors[dotsTheme]} animate-bounce rounded-full"
 		style="animation-delay: 150ms;"
 	></span>
 	<span
-		class="h-2 w-2 {platformColors[dotsTheme]} animate-bounce rounded-full"
+		class="h-1.5 w-1.5 {platformColors[dotsTheme]} animate-bounce rounded-full"
 		style="animation-delay: 300ms;"
 	></span>
 </div>

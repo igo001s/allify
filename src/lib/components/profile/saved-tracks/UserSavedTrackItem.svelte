@@ -6,6 +6,11 @@
 	export let item: LikedTrackSpotify;
 	export let selectedSavedTrack: LikedTrackSpotify | null;
 	export let showSelectedSavedTrackModal: boolean;
+
+	function selectTrack() {
+		selectedSavedTrack = item;
+		showSelectedSavedTrackModal = true;
+	}
 </script>
 
 <button

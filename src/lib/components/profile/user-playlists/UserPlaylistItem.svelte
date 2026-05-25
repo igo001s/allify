@@ -6,6 +6,11 @@
 	export let item: any;
 	export let showSelectedPlaylistModal: boolean;
 	export let selectedPlaylist: any;
+
+	function selectPlaylist() {
+		selectedPlaylist = item;
+		showSelectedPlaylistModal = true;
+	}
 </script>
 
 <button

@@ -12,5 +12,6 @@
 	aria-label={iconAltText}
 >
 	<title>{iconAltText}</title>
+
 	<path d="M16 8L8 16M8 8L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 </svg>

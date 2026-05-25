@@ -12,6 +12,10 @@
 	// Props
 	export let playlist: any;
 	export let showSelectedPlaylistModal: boolean;
+
+	function closeModal() {
+		showSelectedPlaylistModal = false;
+	}
 </script>
 
 {#if showSelectedPlaylistModal}
@@ -23,7 +27,7 @@
 		>
 			<button
 				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
-				on:click={() => (showSelectedPlaylistModal = false)}
+				on:click={closeModal}
 				aria-label={$translationsStore.profilePage
 					.profilePageUserSelectedPlaylistCloseButtonAriaLabel +
 					' ' +

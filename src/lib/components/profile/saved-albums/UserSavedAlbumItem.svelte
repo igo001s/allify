@@ -9,14 +9,16 @@
 	export let item: AlbumSpotify;
 	export let selectedSavedAlbum: AlbumSpotify | undefined = undefined;
 	export let showSelectedSavedAlbumModal: boolean = false;
+
+	function selectAlbum() {
+		selectedSavedAlbum = item;
+		showSelectedSavedAlbumModal = true;
+	}
 </script>
 
 <button
 	class="flex w-40 shrink-0 cursor-pointer flex-col items-center gap-2 rounded-xl bg-s-muted/90 p-3 transition-all hover:scale-102 sm:w-44"
-	onclick={() => {
-		selectedSavedAlbum = item;
-		showSelectedSavedAlbumModal = true;
-	}}
+	on:click={selectAlbum}
 >
 	<img
 		src={item.image?.url}

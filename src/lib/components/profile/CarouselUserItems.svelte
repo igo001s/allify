@@ -62,7 +62,7 @@
 
 <div class="relative">
 	{#if showPrevButton}
-		<CarouselButton direction="prev" on:click={scrollPrev} />
+		<CarouselButton direction="prev" onClick={scrollPrev} />
 	{/if}
 
 	<div
@@ -87,6 +87,6 @@
 	</div>
 
 	{#if showNextButton}
-		<CarouselButton direction="next" on:click={scrollNext} />
+		<CarouselButton direction="next" onClick={scrollNext} />
 	{/if}
 </div>

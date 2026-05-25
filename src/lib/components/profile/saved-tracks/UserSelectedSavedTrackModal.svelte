@@ -15,6 +15,10 @@
 	// Props
 	export let selectedSavedTrack: any = null;
 	export let showSelectedSavedTrackModal: boolean = false;
+
+	function closeModal() {
+		showSelectedSavedTrackModal = false;
+	}
 </script>
 
 {#if showSelectedSavedTrackModal}
@@ -27,7 +31,7 @@
 			{#if selectedSavedTrack.name}
 				<button
 					class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
-					on:click={() => (showSelectedSavedTrackModal = false)}
+					on:click={closeModal}
 					aria-label={$translationsStore.profilePage
 						.profilePageUserSelectedSavedTrackCloseButtonAriaLabel +
 						' ' +

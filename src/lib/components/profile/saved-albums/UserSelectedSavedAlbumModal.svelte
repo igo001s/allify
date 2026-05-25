@@ -15,6 +15,10 @@
 	// Props
 	export let album: AlbumSpotify | undefined = undefined;
 	export let showSelectedAlbumModal: boolean;
+
+	function closeModal() {
+		showSelectedAlbumModal = false;
+	}
 </script>
 
 {#if showSelectedAlbumModal}
@@ -26,7 +30,7 @@
 		>
 			<button
 				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
-				on:click={() => (showSelectedAlbumModal = false)}
+				on:click={closeModal}
 				aria-label={$translationsStore.profilePage
 					.profilePageUserSelectedSavedAlbumCloseButtonAriaLabel +
 					' ' +

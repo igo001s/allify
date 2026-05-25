@@ -1,25 +1,19 @@
 <script lang="ts">
-	// Svelte
-	import { createEventDispatcher } from 'svelte';
-
 	// Assets
 	import ArrowIcon from '$lib/assets/images/icons/ArrowIcon.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
-	// Props
-	export let direction: 'prev' | 'next' = 'next';
-
-	const dispatch = createEventDispatcher();
+	let { direction = 'next', onClick } = $props();
 
 	function handleClick() {
-		dispatch('click');
+		onClick?.();
 	}
 </script>
 
 <button
-	on:click={handleClick}
+	onclick={handleClick}
 	class={`absolute top-1/2 z-20 hidden h-full -translate-y-1/2
 		cursor-pointer items-center justify-center bg-s-inverse/80 p-2
 		shadow-lg backdrop-blur-md transition-all

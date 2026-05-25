@@ -15,6 +15,7 @@
 		aria-label={logoAltText}
 	>
 		<title>{logoAltText}</title>
+
 		<g
 			transform="translate(0.000000,132.000000) scale(0.100000,-0.100000)"
 			fill="#F2F2F2"
