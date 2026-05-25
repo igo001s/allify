@@ -16,7 +16,7 @@ export async function getMostListenedArtists() {
 	let mostListenedArtistsItems = [] as ArtistSpotify[];
 
 	try {
-		const reqMostListenedArtists = await fetch(`/api/spotify/most-listened-artists`, {
+		const reqMostListenedArtists = await fetch(`/api/spotify/stats/most-listened-artists`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({

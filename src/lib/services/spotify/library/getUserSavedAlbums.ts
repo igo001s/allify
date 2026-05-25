@@ -1,10 +1,10 @@
 import type { AlbumSpotify } from '$lib/types/SpotifyData.type';
 
-export async function getAlbums() {
+export async function getUserSavedAlbums() {
 	let albumItems = [] as AlbumSpotify[];
 
 	try {
-		const reqUserAlbums = await fetch('/api/spotify/user-saved-albums');
+		const reqUserAlbums = await fetch('/api/spotify/user/get-saved-albums');
 
 		if (!reqUserAlbums.ok) return undefined;
 

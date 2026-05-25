@@ -16,7 +16,7 @@ export async function getMostListenedTracks() {
 	let mostListenedTracksItems = [] as TrackSpotify[];
 
 	try {
-		const reqMostListenedTracks = await fetch(`/api/spotify/most-listened-tracks`, {
+		const reqMostListenedTracks = await fetch(`/api/spotify/stats/most-listened-tracks`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({

@@ -1,7 +1,7 @@
 import { getUserFromDatabase } from '../../user/getUserFromDatabase';
 
 export async function existingSpotifyUser() {
-	const response = await fetch('/api/spotify/me', {
+	const response = await fetch('/api/spotify/user/get-profile', {
 		credentials: 'include'
 	});
 

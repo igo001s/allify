@@ -1,13 +1,13 @@
 // Types
 import type { PlaylistSpotify } from '$lib/types/SpotifyData.type';
 
-export async function getPlaylists() {
+export async function getUserPlaylists() {
 	const MAX_CONCURRENT = 5;
 
 	const userCache = new Map<string, string>();
 
 	try {
-		const reqUserPlaylists = await fetch('/api/spotify/user-playlists');
+		const reqUserPlaylists = await fetch('/api/spotify/user/get-playlists');
 
 		if (!reqUserPlaylists.ok) return undefined;
 
@@ -17,7 +17,7 @@ export async function getPlaylists() {
 
 		async function processPlaylist(playlist: any) {
 			try {
-				const reqTracksFromPlaylist = await fetch('/api/spotify/musics-from-playlist', {
+				const reqTracksFromPlaylist = await fetch('/api/spotify/user/musics-from-playlist', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ export async function getPlaylists() {
 									if (userCache.has(userId)) {
 										idToName = userCache.get(userId);
 									} else {
-										const reqIdToName = await fetch('/api/spotify/user-id-to-name', {
+										const reqIdToName = await fetch('/api/spotify/user/id-to-name', {
 											method: 'POST',
 											headers: {
 												'Content-Type': 'application/json'

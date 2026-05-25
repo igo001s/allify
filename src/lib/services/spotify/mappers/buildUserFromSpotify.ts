@@ -4,9 +4,9 @@ import type { UserInfoSpotify } from '$lib/types/SpotifyData.type';
 // Services
 import { getMostListenedArtists } from '../stats/getMostListenedArtists';
 import { getMostListenedTracks } from '../stats/getMostListenedTracks';
-import { getLikedTracks } from '../library/getLikedTracks';
-import { getPlaylists } from '../library/getPlaylists';
-import { getAlbums } from '../library/getAlbums';
+import { getUserLikedTracks } from '../library/getUserLikedTracks';
+import { getUserPlaylists } from '../library/getUserPlaylists';
+import { getUserSavedAlbums } from '../library/getUserSavedAlbums';
 
 export async function buildUserFromSpotify(infoFromSpotify: any) {
 	try {
@@ -19,9 +19,9 @@ export async function buildUserFromSpotify(infoFromSpotify: any) {
 		] = await Promise.allSettled([
 			getMostListenedArtists(),
 			getMostListenedTracks(),
-			getLikedTracks(),
-			getPlaylists(),
-			getAlbums()
+			getUserLikedTracks(),
+			getUserPlaylists(),
+			getUserSavedAlbums()
 		]);
 
 		const dataFromSpotify: UserInfoSpotify = {

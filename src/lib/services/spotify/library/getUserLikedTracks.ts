@@ -1,11 +1,11 @@
 // Types
 import type { LikedTrackSpotify } from '$lib/types/SpotifyData.type';
 
-export async function getLikedTracks() {
+export async function getUserLikedTracks() {
 	let likedTracksItems = [] as LikedTrackSpotify[];
 
 	try {
-		const reqUserLikedTracks = await fetch('/api/spotify/user-liked-tracks');
+		const reqUserLikedTracks = await fetch('/api/spotify/user/get-liked-tracks');
 
 		if (!reqUserLikedTracks.ok) return undefined;
 
