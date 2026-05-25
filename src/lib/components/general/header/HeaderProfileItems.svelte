@@ -11,8 +11,8 @@
 
 	// Utils
 	import { setTitleByStreaming } from '$lib/utils/setTitleByStreaming';
-	import { logoutSpotify } from '$lib/utils/logoutSpotify';
-	import { signInSpotify } from '$lib/utils/signInSpotify';
+	import { logoutWrapper } from '$lib/utils/logoutWrapper';
+	import { signInWrapper } from '$lib/utils/signInWrapper';
 
 	// Props
 	export let loggedIn: boolean;
@@ -27,7 +27,7 @@
 			streaming: 'deezer',
 			text: $translationsStore.generalTexts.profileNotLoggedItem2
 		}
-	];
+	] as { streaming: 'spotify' | 'deezer'; text: string }[];
 
 	$: loggedItems = [
 		{
@@ -38,7 +38,15 @@
 			text: $translationsStore.generalTexts.profileLoggedItem2,
 			href: '/settings'
 		}
-	];
+	] as { text: string; href: string }[];
+
+	function signInOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
+		signInWrapper(streaming, $userInfo?.connectedStreamings.spotify?.connected ?? false, false);
+
+		showProfileOptions = false;
+
+		return;
+	}
 
 	function loggedItemClick(href: string) {
 		goto(href);
@@ -46,12 +54,10 @@
 		showProfileOptions = false;
 	}
 
-	function signInWrapper(streaming: string, e: MouseEvent) {
-		if (streaming === 'spotify') {
-			signInSpotify('spotify', e);
+	function logoutOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
+		logoutWrapper(streaming, $userInfo?.connectedStreamings.spotify?.connected ?? false, false);
 
-			showProfileOptions = false;
-		}
+		showProfileOptions = false;
 	}
 </script>
 
@@ -132,11 +138,7 @@
 					transition-all
 					hover:bg-status-error/80
 				"
-			on:click={async () => {
-				await logoutSpotify();
-
-				showProfileOptions = false;
-			}}
+			on:click={async () => logoutOnHeaderProfileItems($userInfo?.primaryStreaming ?? 'spotify')}
 		>
 			{$translationsStore.generalTexts.profileLoggedItem3}
 		</button>
@@ -147,7 +149,7 @@
 					<button
 						disabled={item.streaming === 'deezer'}
 						title={setTitleByStreaming(item.streaming)}
-						on:click={(e) => signInWrapper(item.streaming, e)}
+						on:click={() => signInOnHeaderProfileItems(item.streaming)}
 						class="flex w-full cursor-pointer items-center px-3 py-2 transition-all hover:translate-x-0.5"
 					>
 						{item.text}

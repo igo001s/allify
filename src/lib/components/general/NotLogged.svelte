@@ -1,14 +1,18 @@
 <script lang="ts">
+	// Svelte
+	import type { SvelteComponent } from 'svelte';
+
 	// Assets
 	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
 	import DeezerIcon from '$lib/assets/images/icons/streamings/DeezerIcon.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
-	import { loadingAfterConnectionStore } from '$lib/stores/loadingAfterConnection.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Utils
 	import { setTitleByStreaming } from '$lib/utils/setTitleByStreaming';
+	import { signInWrapper } from '$lib/utils/signInWrapper';
 
 	// Props
 	export let notLoggedParagraph: string;
@@ -26,7 +30,12 @@
 			href: '/',
 			buttonText: $translationsStore.generalTexts.notLoggedLoginLinkDeezer
 		}
-	];
+	] as {
+		icon: typeof SvelteComponent;
+		name: 'spotify' | 'deezer';
+		href: string;
+		buttonText: string;
+	}[];
 
 	function setCLassByStreaming(streaming: string) {
 		let baseClass: string =
@@ -39,15 +48,6 @@
 		}
 
 		return baseClass;
-	}
-
-	function handleStreamingClick(streaming: string) {
-		if (streaming === 'spotify') {
-			loadingAfterConnectionStore.set({ loading: true, streamingPlatform: 'spotify' });
-			window.location.href = '/api/spotify/auth/login';
-		} else if (streaming === 'deezer') {
-			// Handle Deezer login (if implemented in the future)
-		}
 	}
 </script>
 
@@ -68,7 +68,12 @@
 		<div class="mt-8 flex flex-col gap-4 sm:flex-row sm:gap-6">
 			{#each streamings as streaming}
 				<button
-					on:click={() => handleStreamingClick(streaming.name)}
+					on:click={() =>
+						signInWrapper(
+							streaming.name,
+							$userInfo?.connectedStreamings[streaming.name]?.connected ?? false,
+							false
+						)}
 					disabled={streaming.name === 'deezer'}
 					title={setTitleByStreaming(streaming.name)}
 					class={setCLassByStreaming(streaming.name)}

@@ -1,4 +1,4 @@
-export async function getUser(email: string) {
+export async function getUserFromDatabase(email: string) {
 	try {
 		const getUserRequest = await fetch('/api/mongodb/get-user', {
 			method: 'POST',
@@ -8,6 +8,6 @@ export async function getUser(email: string) {
 
 		return await getUserRequest.json();
 	} catch (error) {
-		return undefined;
+		throw new Error('Error fetching user');
 	}
 }

@@ -8,7 +8,7 @@
 	import AsideProfileItems from '$lib/components/general/menus/aside-menu/AsideProfileItems.svelte';
 
 	// Utils
-	import { logoutSpotify } from '$lib/utils/logoutSpotify';
+	import { logoutWrapper } from '$lib/utils/logoutWrapper';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -17,7 +17,11 @@
 	// Props
 	export let isAsideMenuOpen: boolean;
 
-	$: loggedIn = $userInfo ? true : false;
+	$: loggedIn =
+		$userInfo?.connectedStreamings?.spotify?.connected === true ||
+		$userInfo?.connectedStreamings?.deezer !== undefined
+			? true
+			: false;
 
 	let showProfileOptions: boolean = false;
 
@@ -25,8 +29,8 @@
 		showProfileOptions = !showProfileOptions;
 	}
 
-	async function handleLogout() {
-		await logoutSpotify();
+	function logoutOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
+		logoutWrapper(streaming, $userInfo?.connectedStreamings.spotify?.connected ?? false, false);
 
 		showProfileOptions = false;
 		isAsideMenuOpen = false;
@@ -197,7 +201,7 @@
 							duration-200
 							hover:bg-status-error/80
 						"
-						on:click={handleLogout}
+						on:click={() => logoutOnHeaderProfileItems($userInfo?.primaryStreaming ?? 'spotify')}
 					>
 						{$translationsStore.generalTexts.profileLoggedItem3}
 					</button>

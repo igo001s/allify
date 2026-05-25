@@ -12,16 +12,12 @@
 
 	// Utils
 	import { setTitleByStreaming } from '$lib/utils/setTitleByStreaming';
-	import { signInSpotify } from '$lib/utils/signInSpotify';
+	import { signInWrapper } from '$lib/utils/signInWrapper';
 
 	// Props
 	export let platform: CardPlatformType;
 
 	const platformKey = platform.title.toLowerCase() as 'spotify' | 'deezer';
-
-	const isPlatformConnected = () => {
-		return $userInfo?.connectedStreamings?.[platformKey]?.connected === true;
-	};
 
 	$: setClassbyStreaming = (() => {
 		const hoverClass =
@@ -41,6 +37,10 @@
 
 		return baseClass;
 	})();
+
+	function isPlatformConnected() {
+		return $userInfo?.connectedStreamings?.[platformKey]?.connected === true;
+	}
 </script>
 
 <li
@@ -53,8 +53,12 @@
 			/>
 
 			<button
-				on:click={(e) => {
-					signInSpotify(platformKey, e);
+				on:click={() => {
+					signInWrapper(
+						platformKey,
+						$userInfo?.connectedStreamings.spotify?.connected ?? false,
+						false
+					);
 				}}
 				disabled={isPlatformConnected()}
 				title={setTitleByStreaming(platformKey)}

@@ -21,15 +21,15 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	}
 
-	const { emailTo, subject, message } = await request.json();
+	const { email, subject, message } = await request.json();
 
-	if (!emailTo || !subject || !message) {
+	if (!email || !subject || !message) {
 		return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
 	}
 
 	const { error } = await resend.emails.send({
 		from: 'Acme <onboarding@resend.dev>',
-		to: emailTo,
+		to: email,
 		subject: subject,
 		html: `${message}`
 	});

@@ -15,7 +15,7 @@
 </script>
 
 <div class="flex flex-col gap-10 lg:gap-14">
-	<div class="mb-3 flex flex-col gap-3 lg:justify-between lg:flex-row lg:items-center">
+	<div class="mb-3 flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
 		<h2 class="text-xl font-semibold">
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedArtistsHeading2}
 		</h2>
@@ -68,7 +68,7 @@
 							<div class="flex flex-wrap gap-2">
 								{#each artist.genres.slice(0, 2) as genre}
 									<span
-										class="rounded-md bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse"
+										class="rounded-2xl bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse"
 									>
 										{genre}
 									</span>

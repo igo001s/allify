@@ -228,12 +228,12 @@ export const en = {
 		settingsPageMetaOgAndTwitterContent:
 			'Manage your connections with streaming platforms, view which accounts are active, and disconnect whenever you want.',
 		settingsPageHeading1: 'Settings',
-		settingsPageConnectedPlatformsSectionHeading2: 'Connected platforms',
-		settingsPageConnectedPlatformsSectionParagraph1:
+		settingsPageConnectedStreamingSectionHeading2: 'Connected streaming platforms',
+		settingsPageConnectedStreamingSectionParagraph1:
 			'Manage your streaming integrations, view which accounts are active, and disconnect whenever you want.',
-		settingsPageConnectedPlatformsNotConnected: 'Not connected',
-		settingsPageConnectedPlatformsDisconnect: 'Disconnect',
-		settingsPageConnectedPlatformsConnect: 'Connect'
+		settingsPageConnectedStreamingNotConnected: 'Not connected',
+		settingsPageConnectedStreamingDisconnect: 'Disconnect',
+		settingsPageConnectedStreamingConnect: 'Connect'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Welcome to Allify!',

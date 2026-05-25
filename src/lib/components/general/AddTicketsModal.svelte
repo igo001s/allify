@@ -7,7 +7,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Services
-	import { handleCheckout } from '$lib/services/user/handleCheckout';
+	import { createCheckout } from '$lib/services/checkout/createCheckout';
 
 	let quantity = 1;
 	const options = [1, 5, 10, 25];
@@ -112,7 +112,7 @@
 
 			<button
 				class="w-full cursor-pointer rounded-xl bg-brand-primary px-4 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
-				on:click={() => handleCheckout(quantity)}
+				on:click={() => createCheckout(quantity)}
 			>
 				{$translationsStore.addTickets.addTicketsModalButton}
 			</button>

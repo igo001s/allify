@@ -22,7 +22,7 @@
 			name: $translationsStore.generalTexts.headerNavigationItem3,
 			link: '/music-battles'
 		}
-	];
+	] as { name: string; link: string }[];
 
 	function handleNavigation(link: string) {
 		goto(link);
@@ -43,24 +43,9 @@
 						cursor-pointer
 						text-sm
 						font-medium
-						transition-colors
-						duration-200
-						ease-out
-						after:absolute
-						after:-bottom-1
-						after:left-0
-						after:h-0.5
-						after:w-0
-						after:rounded-full
-						after:bg-brand-primary-dark
-						after:transition-all
-						after:duration-300
-						after:ease-out
+						transition-all
 						hover:text-brand-primary-dark
-						hover:after:w-full
-						{$page.url.pathname === item.link
-						? 'font-semibold text-brand-primary-dark after:w-full'
-						: 'text-brand-primary'}
+						{$page.url.pathname === item.link ? 'font-semibold text-brand-primary-dark' : 'text-brand-primary'}
 					"
 				>
 					{item.name}

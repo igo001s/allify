@@ -21,17 +21,29 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { user } = await request.json();
+		const { email, streaming, streamingData } = await request.json();
+
+		if (!email || !streaming || !streamingData) {
+			return json({ error: 'Missing required fields' }, { status: 400 });
+		}
 
 		const client = await connectDB();
 		const db = client.db(MONGO_DB);
 		const users = db.collection('users');
 
-		const existingUser = await users.findOne({ email: user.email });
+		const existingUser = await users.findOne({ email: email });
 
 		if (existingUser) {
 			return json({ error: 'User already exists' }, { status: 409 });
 		}
+
+		const user = {
+			email: email,
+			tickets: 5,
+			primaryStreaming: streaming,
+			discoveries: { updatedAt: undefined, tracks: [], artists: [] },
+			connectedStreamings: { [streaming]: streamingData }
+		};
 
 		const result = await users.insertOne({
 			...user,

@@ -37,7 +37,7 @@
 		{ code: 'de-DE', label: $translationsStore.generalTexts.headerLanguageDe, flag: germanyFlag },
 		{ code: 'fr-FR', label: $translationsStore.generalTexts.headerLanguageFr, flag: frenchFlag },
 		{ code: 'it-IT', label: $translationsStore.generalTexts.headerLanguageIt, flag: italianFlag }
-	];
+	] as { code: string; label: string; flag: string }[];
 
 	$: selectedLanguage =
 		languageOptions.find((lang) => lang.code === $languageStore) ?? languageOptions[0];

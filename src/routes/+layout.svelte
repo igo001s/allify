@@ -16,6 +16,7 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { loadingAfterConnectionStore } from '$lib/stores/loadingAfterConnection.store';
 	import { showAddTickets } from '$lib/stores/showAddTickets.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { fetchUserInfo } from '$lib/services/user/fetchUserInfo';
@@ -65,12 +66,15 @@
 
 <Footer />
 
-<Toast />
+{#if $toastStore.showToast}
+	<Toast />
+{/if}
 
-<LoadingAfterConnection
-	loading={$loadingAfterConnectionStore.loading}
-	streamingPlatform={$loadingAfterConnectionStore.streamingPlatform}
-/>
+{#if $loadingAfterConnectionStore.loading}
+	<LoadingAfterConnection
+		streamingPlatform={$loadingAfterConnectionStore.streamingPlatform ?? undefined}
+	/>
+{/if}
 
 {#if $showAddTickets}
 	<AddTicketsModal />

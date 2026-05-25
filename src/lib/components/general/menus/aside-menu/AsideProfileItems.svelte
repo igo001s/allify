@@ -4,9 +4,10 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Utils
-	import { signInSpotify } from '$lib/utils/signInSpotify';
+	import { signInWrapper } from '$lib/utils/signInWrapper';
 
 	// Props
 	export let loggedIn: boolean;
@@ -21,7 +22,7 @@
 			streaming: 'deezer',
 			text: $translationsStore.generalTexts.profileNotLoggedItem2
 		}
-	];
+	] as { streaming: 'spotify' | 'deezer'; text: string }[];
 
 	$: loggedItems = [
 		{
@@ -32,7 +33,7 @@
 			text: $translationsStore.generalTexts.profileLoggedItem2,
 			href: '/settings'
 		}
-	];
+	] as { text: string; href: string }[];
 </script>
 
 <ul class="space-y-1">
@@ -55,13 +56,12 @@
 		{#each notLoggedItems as item}
 			<li class="rounded-xl transition-all hover:bg-s-muted">
 				<button
-					on:click={(e) => {
-						if (item.streaming === 'spotify') {
-							signInSpotify(item.streaming, e);
-						} else {
-							return;
-						}
-					}}
+					on:click={() =>
+						signInWrapper(
+							item.streaming,
+							$userInfo?.connectedStreamings.spotify?.connected ?? false,
+							false
+						)}
 					class="flex w-full cursor-pointer items-center px-3 py-2 text-left text-xs text-t-primary transition-all hover:translate-x-0.5"
 				>
 					{item.text}

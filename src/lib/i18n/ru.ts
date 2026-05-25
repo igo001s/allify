@@ -228,12 +228,12 @@ export const ru = {
 		settingsPageMetaOgAndTwitterContent:
 			'Управляйте подключениями к стриминговым платформам, просматривайте активные аккаунты и отключайтесь в любой момент.',
 		settingsPageHeading1: 'Настройки',
-		settingsPageConnectedPlatformsSectionHeading2: 'Подключённые платформы',
-		settingsPageConnectedPlatformsSectionParagraph1:
+		settingsPageConnectedStreamingSectionHeading2: 'Подключённые стриминговые платформы',
+		settingsPageConnectedStreamingSectionParagraph1:
 			'Управляйте подключениями к стриминговым платформам, просматривайте активные аккаунты и отключайтесь в любой момент.',
-		settingsPageConnectedPlatformsNotConnected: 'Не подключено',
-		settingsPageConnectedPlatformsDisconnect: 'Отключить',
-		settingsPageConnectedPlatformsConnect: 'Подключить'
+		settingsPageConnectedStreamingNotConnected: 'Не подключено',
+		settingsPageConnectedStreamingDisconnect: 'Отключить',
+		settingsPageConnectedStreamingConnect: 'Подключить'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Добро пожаловать в Allify!',

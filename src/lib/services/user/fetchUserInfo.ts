@@ -6,57 +6,43 @@ import { userInfo } from '$lib/stores/userInfo.store';
 import { translationsStore } from '$lib/stores/translations.store';
 
 // Services
-import { userInfoFromSpotify } from './../spotify/fetchUserInfoFromSpotify';
-import { initialUserInfoFromSpotify } from '../spotify/initialUserInfoFromSpotify';
-import { getUser } from './getUser';
 import { createUser } from './createUser';
+import { sendEmail } from '../email/sendEmail';
+import { existingSpotifyUser } from '../spotify/mappers/existingSpotifyUser';
+import { buildUserFromSpotify } from '../spotify/mappers/buildUserFromSpotify';
 
 // Email templates
 import { welcomeToAllifyTemplate } from '$lib/emails/templates/welcomeToAllifyTemaplate';
 
 export async function fetchUserInfo() {
 	try {
-		const initialInfoFromSpotify = await initialUserInfoFromSpotify();
-		if (!initialInfoFromSpotify) return userInfo.set(undefined);
+		const userFromSpotify = await existingSpotifyUser();
 
-		const getUserInfoFromSpotify = await getUser(initialInfoFromSpotify);
-		if (getUserInfoFromSpotify?.success === true) {
-			return userInfo.set(getUserInfoFromSpotify.userInfoFromMongoDB);
-		}
+		if (userFromSpotify.existingUser === false) {
+			const builtUser = await buildUserFromSpotify(userFromSpotify.infoToCreateUser);
 
-		const userFromSpotify = await userInfoFromSpotify();
-		if (!userFromSpotify) return userInfo.set(undefined);
+			if (builtUser !== undefined) {
+				const createUserResult = await createUser(builtUser.email, 'spotify', builtUser);
 
-		const createUserResult = await createUser({
-			email: userFromSpotify.email,
-			tickets: 5,
-			discoveries: { updatedAt: '', tracks: [], artists: [] },
-			connectedStreamings: { spotify: userFromSpotify, deezer: undefined }
-		});
+				userInfo.set(createUserResult.createdUser);
 
-		if (createUserResult.success === true) {
-			const $translationsStore = get(translationsStore);
+				const $translationsStore = get(translationsStore);
 
-			userInfo.set(createUserResult.createdUser);
-
-			await fetch('/api/sending-email', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({
-					subject: $translationsStore.templateEmail.welcomeToAllifySubject,
-					emailTo: 'igorgabsprofissional@gmail.com',
-					message: welcomeToAllifyTemplate(
+				sendEmail(
+					$translationsStore.templateEmail.welcomeToAllifySubject,
+					'igorgabsprofissional@gmail.com',
+					welcomeToAllifyTemplate(
 						createUserResult.createdUser.connectedStreamings.spotify.name,
 						'Spotify'
 					)
-				})
-			});
+				);
+			} else {
+				return userInfo.set(undefined);
+			}
 		} else {
-			userInfo.set(undefined);
+			return userInfo.set(userFromSpotify);
 		}
 	} catch {
-		userInfo.set(undefined);
+		return userInfo.set(undefined);
 	}
 }

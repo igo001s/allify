@@ -1,3 +1,4 @@
+// Svelte
 import type { SvelteComponent } from 'svelte';
 
 export type CardPlatformType = {

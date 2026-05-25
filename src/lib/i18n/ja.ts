@@ -224,12 +224,12 @@ export const ja = {
 		settingsPageMetaOgAndTwitterContent:
 			'ストリーミングプラットフォームとの接続を管理し、アクティブなアカウントを確認し、いつでも切断できます。',
 		settingsPageHeading1: '設定',
-		settingsPageConnectedPlatformsSectionHeading2: '接続済みプラットフォーム',
-		settingsPageConnectedPlatformsSectionParagraph1:
+		settingsPageConnectedStreamingSectionHeading2: '接続済みストリーミングプラットフォーム',
+		settingsPageConnectedStreamingSectionParagraph1:
 			'ストリーミングプラットフォームとの接続を管理し、アクティブなアカウントを確認し、いつでも切断できます。',
-		settingsPageConnectedPlatformsNotConnected: '未接続',
-		settingsPageConnectedPlatformsDisconnect: '切断',
-		settingsPageConnectedPlatformsConnect: '接続'
+		settingsPageConnectedStreamingNotConnected: '未接続',
+		settingsPageConnectedStreamingDisconnect: '切断',
+		settingsPageConnectedStreamingConnect: '接続'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Allifyへようこそ！',

@@ -217,12 +217,12 @@ export const zh = {
 		settingsPageMetaOgAndTwitterContent:
 			'管理您与流媒体平台的连接，查看哪些账户处于活跃状态，随时断开连接。',
 		settingsPageHeading1: '设置',
-		settingsPageConnectedPlatformsSectionHeading2: '已连接的平台',
-		settingsPageConnectedPlatformsSectionParagraph1:
+		settingsPageConnectedStreamingSectionHeading2: '已连接的流媒体平台',
+		settingsPageConnectedStreamingSectionParagraph1:
 			'管理您与流媒体平台的连接，查看哪些账户处于活跃状态，随时断开连接。',
-		settingsPageConnectedPlatformsNotConnected: '未连接',
-		settingsPageConnectedPlatformsDisconnect: '断开连接',
-		settingsPageConnectedPlatformsConnect: '连接'
+		settingsPageConnectedStreamingNotConnected: '未连接',
+		settingsPageConnectedStreamingDisconnect: '断开连接',
+		settingsPageConnectedStreamingConnect: '连接'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: '欢迎使用 Allify！',

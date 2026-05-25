@@ -231,12 +231,12 @@ export const de = {
 		settingsPageMetaOgAndTwitterContent:
 			'Verwalte deine Verbindungen mit Streaming-Plattformen, sieh welche Konten aktiv sind und trenne die Verbindung wann immer du möchtest.',
 		settingsPageHeading1: 'Einstellungen',
-		settingsPageConnectedPlatformsSectionHeading2: 'Verbundene Plattformen',
-		settingsPageConnectedPlatformsSectionParagraph1:
+		settingsPageConnectedStreamingSectionHeading2: 'Verbundene Streaming-Plattformen',
+		settingsPageConnectedStreamingSectionParagraph1:
 			'Verwalte deine Verbindungen zu Streaming-Plattformen, sieh welche Konten aktiv sind und trenne die Verbindung wann immer du möchtest.',
-		settingsPageConnectedPlatformsNotConnected: 'Nicht verbunden',
-		settingsPageConnectedPlatformsDisconnect: 'Trennen',
-		settingsPageConnectedPlatformsConnect: 'Verbinden'
+		settingsPageConnectedStreamingNotConnected: 'Nicht verbunden',
+		settingsPageConnectedStreamingDisconnect: 'Trennen',
+		settingsPageConnectedStreamingConnect: 'Verbinden'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Willkommen bei Allify!',

@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Stores
-	import { toast } from '$lib/stores/toast.store';
+	import { toastStore } from '$lib/stores/toast.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Assets
@@ -12,14 +12,14 @@
 	let timeout: ReturnType<typeof setTimeout>;
 
 	const closeToast = () => {
-		toast.set({
+		toastStore.set({
 			showToast: false,
 			toastType: undefined,
 			toastMessage: undefined
 		});
 	};
 
-	$: if ($toast.showToast) {
+	$: if ($toastStore.showToast) {
 		clearTimeout(timeout);
 
 		timeout = setTimeout(() => {
@@ -28,66 +28,64 @@
 	}
 </script>
 
-{#if $toast.showToast}
-	<div
-		class={`animate-in fade-in slide-in-from-top-2 fixed top-2 right-2 z-50 flex w-11/12 
+<div
+	class={`animate-in fade-in slide-in-from-top-2 fixed top-2 right-2 z-50 flex w-11/12 
 	max-w-sm items-start gap-4 rounded-xl 
 	border bg-s-default p-4 shadow-lg transition-all 
 	duration-300 sm:top-6 sm:right-6 sm:left-auto sm:max-w-md md:max-w-lg
 	${
-		$toast.toastType === 'success'
+		$toastStore.toastType === 'success'
 			? 'border-status-success/30'
-			: $toast.toastType === 'warning'
+			: $toastStore.toastType === 'warning'
 				? 'border-status-warning/30'
-				: $toast.toastType === 'error'
+				: $toastStore.toastType === 'error'
 					? 'border-status-error/30'
 					: ''
 	}`}
-	>
-		<div class="mt-0.5 shrink-0">
-			{#if $toast.toastType === 'warning'}
-				<WarningIcon
-					iconSvgClass="text-status-warning w-6 h-6"
-					iconAltText={$translationsStore.generalTexts.toastWarningAltText}
-				/>
-			{:else if $toast.toastType === 'success'}
-				<SuccessIcon
-					iconSvgClass="text-status-success w-6 h-6"
-					iconAltText={$translationsStore.generalTexts.toastSuccessAltText}
-				/>
-			{:else if $toast.toastType === 'error'}
-				<ErrorIcon
-					iconSvgClass="text-status-error w-6 h-6"
-					iconAltText={$translationsStore.generalTexts.toastErrorAltText}
-				/>
-			{/if}
-		</div>
-
-		<div class="flex-1">
-			<p class="text-s-default-foreground text-xs font-semibold sm:text-sm">
-				{#if $toast.toastType === 'warning'}
-					{$translationsStore.generalTexts.toastWarningTitle}
-				{:else if $toast.toastType === 'success'}
-					{$translationsStore.generalTexts.toastSuccessTitle}
-				{:else if $toast.toastType === 'error'}
-					{$translationsStore.generalTexts.toastErrorTitle}
-				{/if}
-			</p>
-
-			<p class="text-s-muted-foreground mt-1 text-[11px] leading-relaxed sm:text-xs">
-				{$toast.toastMessage}
-			</p>
-		</div>
-
-		<button
-			class="shrink-0 cursor-pointer"
-			on:click={closeToast}
-			aria-label={$translationsStore.generalTexts.toastCloseButtonAriaLabel}
-		>
-			<CloseIcon
-				iconAltText={$translationsStore.generalTexts.toastCloseButtonAltText}
-				iconSvgClass="w-4.5 h-4.5 text-t-primary"
+>
+	<div class="mt-0.5 shrink-0">
+		{#if $toastStore.toastType === 'warning'}
+			<WarningIcon
+				iconSvgClass="text-status-warning w-6 h-6"
+				iconAltText={$translationsStore.generalTexts.toastWarningAltText}
 			/>
-		</button>
+		{:else if $toastStore.toastType === 'success'}
+			<SuccessIcon
+				iconSvgClass="text-status-success w-6 h-6"
+				iconAltText={$translationsStore.generalTexts.toastSuccessAltText}
+			/>
+		{:else if $toastStore.toastType === 'error'}
+			<ErrorIcon
+				iconSvgClass="text-status-error w-6 h-6"
+				iconAltText={$translationsStore.generalTexts.toastErrorAltText}
+			/>
+		{/if}
 	</div>
-{/if}
+
+	<div class="flex-1">
+		<p class="text-s-default-foreground text-xs font-semibold sm:text-sm">
+			{#if $toastStore.toastType === 'warning'}
+				{$translationsStore.generalTexts.toastWarningTitle}
+			{:else if $toastStore.toastType === 'success'}
+				{$translationsStore.generalTexts.toastSuccessTitle}
+			{:else if $toastStore.toastType === 'error'}
+				{$translationsStore.generalTexts.toastErrorTitle}
+			{/if}
+		</p>
+
+		<p class="text-s-muted-foreground mt-1 text-[11px] leading-relaxed sm:text-xs">
+			{$toastStore.toastMessage}
+		</p>
+	</div>
+
+	<button
+		class="shrink-0 cursor-pointer"
+		on:click={closeToast}
+		aria-label={$translationsStore.generalTexts.toastCloseButtonAriaLabel}
+	>
+		<CloseIcon
+			iconAltText={$translationsStore.generalTexts.toastCloseButtonAltText}
+			iconSvgClass="w-4.5 h-4.5 text-t-primary"
+		/>
+	</button>
+</div>
