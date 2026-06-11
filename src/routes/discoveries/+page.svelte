@@ -11,7 +11,8 @@
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
 
 	// Services
-	import { getDiscoveries } from '$lib/services/user/getDiscoveries';
+	import { getFreeDiscoveries } from '$lib/services/user/discoveries/getFreeDiscoveries';
+	import { getPaidDiscoveries } from '$lib/services/user/discoveries/getPaidDiscoveries';
 	import { showAddTickets } from '$lib/stores/showAddTickets.store';
 
 	// Stores
@@ -31,19 +32,84 @@
 
 		loadingDiscoveries = true;
 
-		const loadedDiscoveries = await getDiscoveries(
-			$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems?.map(
-				(track) => `${track.name} - ${track.artists.map((artist) => artist).join(', ')}`
-			) ?? [],
+		const userEmail = $userInfo?.email || '';
+		const userTickets = $userInfo?.tickets || 0;
+		const artistsForRequest =
 			$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems?.map(
 				(artist) => artist.name
-			) ?? [],
-			$userInfo?.email ?? ''
-		);
+			) ?? [];
+		const tracksForRequest =
+			$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems?.map(
+				(track) => `${track.name} - ${track.artists.map((artist) => artist).join(', ')}`
+			) ?? [];
 
-		if (loadedDiscoveries?.loaded === true) {
-			loadingDiscoveries = false;
+		if ($userInfo?.discoveries.artists.length === 0 && $userInfo?.discoveries.tracks.length === 0) {
+			const freeDiscoveries = await getFreeDiscoveries(
+				userEmail,
+				artistsForRequest,
+				tracksForRequest
+			);
+
+			if (!freeDiscoveries) {
+				loadingDiscoveries = false;
+				return;
+			}
+
+			const { tracks, artists, updatedAt } = freeDiscoveries;
+
+			if (!tracks && !artists && !updatedAt) {
+				loadingDiscoveries = false;
+				return;
+			}
+
+			userInfo.update((user) => {
+				if (!user?.email) return user;
+
+				return {
+					...user,
+					discoveries: {
+						artists: artists ?? user.discoveries.artists,
+						tracks: tracks ?? user.discoveries.tracks,
+						updatedAt: updatedAt ?? user.discoveries.updatedAt
+					}
+				};
+			});
+		} else {
+			const paidDiscoveries = await getPaidDiscoveries(
+				userEmail,
+				userTickets,
+				artistsForRequest,
+				tracksForRequest
+			);
+
+			if (!paidDiscoveries) {
+				loadingDiscoveries = false;
+				return;
+			}
+
+			const { tracks, artists, updatedAt, tickets } = paidDiscoveries;
+
+			if (!tracks && !artists && !updatedAt && !tickets) {
+				loadingDiscoveries = false;
+				return;
+			}
+
+			userInfo.update((user) => {
+				if (!user?.email) return user;
+
+				return {
+					...user,
+					discoveries: {
+						artists: artists ?? user.discoveries.artists,
+						tracks: tracks ?? user.discoveries.tracks,
+						updatedAt: updatedAt ?? user.discoveries.updatedAt
+					},
+					tickets: tickets ?? user.tickets
+				};
+			});
 		}
+
+		loadingDiscoveries = false;
 	}
 </script>
 
@@ -138,6 +204,7 @@
 
 				<button
 					class="mx-auto mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-lg shadow-brand-primary/25 transition-all duration-300 hover:scale-102 hover:bg-brand-primary-dark sm:w-fit"
+					disabled={loadingDiscoveries}
 					onclick={handleLoadDiscoveries}
 				>
 					{#if $userInfo.discoveries.artists.length === 0 && $userInfo.discoveries.tracks.length === 0}

@@ -1,22 +1,34 @@
-import { getUserFromDatabase } from '../../user/getUserFromDatabase';
+// Services
+import { getUserFromDatabase } from '../../user/build/getUserFromDatabase';
 
 export async function existingSpotifyUser() {
-	const response = await fetch('/api/spotify/user/get-profile', {
-		credentials: 'include'
-	});
+	try {
+		const response = await fetch('/api/spotify/user/get-profile', {
+			method: 'POST'
+		});
 
-	const data = await response.json();
+		const data = await response.json();
 
-	if (!data.email) throw new Error('No email from Spotify');
+		if (!data.email) throw new Error('No email from Spotify');
 
-	const getUserInfoFromSpotify = await getUserFromDatabase(data.email);
+		const getUserInfoFromSpotify = await getUserFromDatabase(data.email);
 
-	if (!getUserInfoFromSpotify.success) {
-		return {
-			existingUser: false,
-			infoToCreateUser: data
-		};
+		if (!getUserInfoFromSpotify.userInfoFromMongoDB) {
+			return {
+				existingUser: false,
+				infoToCreateUser: data
+			};
+		}
+
+		return getUserInfoFromSpotify.userInfoFromMongoDB;
+	} catch (error) {
+		if (import.meta.env.DEV) {
+			console.error(
+				'Spotify existingSpotifyUser error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
+
+		return undefined;
 	}
-
-	return getUserInfoFromSpotify.userInfoFromMongoDB;
 }

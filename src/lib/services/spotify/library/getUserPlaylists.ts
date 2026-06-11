@@ -7,7 +7,9 @@ export async function getUserPlaylists() {
 	const userCache = new Map<string, string>();
 
 	try {
-		const reqUserPlaylists = await fetch('/api/spotify/user/get-playlists');
+		const reqUserPlaylists = await fetch('/api/spotify/user/get-playlists', {
+			method: 'POST'
+		});
 
 		if (!reqUserPlaylists.ok) return undefined;
 
@@ -109,7 +111,14 @@ export async function getUserPlaylists() {
 			updatedAt: new Date(),
 			playlistItems
 		};
-	} catch {
+	} catch (error) {
+		if (import.meta.env.DEV) {
+			console.error(
+				'Spotify getUserPlaylists error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
+
 		return undefined;
 	}
 }

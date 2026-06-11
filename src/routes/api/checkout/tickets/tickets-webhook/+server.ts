@@ -2,9 +2,20 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Environment variables
-import { ABACATEPAY_WEBHOOK_SECRET } from '$env/static/private';
+import { ABACATEPAY_WEBHOOK_SECRET, ALLIFY_URL } from '$env/static/private';
+
+const ALLOWED_ORIGINS = [ALLIFY_URL];
 
 export const POST: RequestHandler = async ({ request, url }) => {
+	const origin = request.headers.get('origin');
+
+	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
+		return new Response(JSON.stringify({ error: 'Forbidden' }), {
+			status: 403,
+			headers: { 'Content-Type': 'application/json' }
+		});
+	}
+
 	const webhookSecret = url.searchParams.get('webhookSecret');
 
 	if (webhookSecret !== ABACATEPAY_WEBHOOK_SECRET) {
@@ -33,7 +44,7 @@ export const POST: RequestHandler = async ({ request, url }) => {
 		});
 	}
 
-	await fetch(`${url.origin}/api/mongodb/add-ticket`, {
+	await fetch(`${url.origin}/api/mongodb/tickets/add-ticket`, {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({

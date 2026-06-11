@@ -35,8 +35,8 @@ export const POST: RequestHandler = async ({ request }) => {
 	});
 
 	if (error) {
-		return new Response(JSON.stringify({ error }), { status: 500 });
+		return new Response(JSON.stringify({ error: 'Error sending email' }), { status: 500 });
 	}
 
-	return new Response(JSON.stringify({ success: true }), { status: 200 });
+	return new Response(JSON.stringify({ message: 'Email sent successfully' }), { status: 200 });
 };

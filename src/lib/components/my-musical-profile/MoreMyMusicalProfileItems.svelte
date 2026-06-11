@@ -9,8 +9,8 @@
 	import { showAddTickets } from '$lib/stores/showAddTickets.store';
 
 	// Services
-	import { updateLimitMostListenedTracks } from '$lib/services/user/updateLimitMostListenedTracks';
-	import { updateLimitMostListenedArtists } from '$lib/services/user/updateLimitMostListenedArtists';
+	import { updateMostListenedTracks } from '$lib/services/user/updates/updateMostListenedTracks';
+	import { updateMostListenedArtists } from '$lib/services/user/updates/updateMostListenedArtists';
 
 	// Props
 	export let additionalItemsType: 'artists' | 'tracks';
@@ -26,36 +26,81 @@
 
 		loadingMoreItems = true;
 
+		const userEmail = $userInfo?.email as string;
+		const artistsLimit = $userInfo?.connectedStreamings.spotify?.mostListenedArtists
+			?.artistsLimit as number;
+		const tracksLimit = $userInfo?.connectedStreamings.spotify?.mostListenedTracks
+			?.tracksLimit as number;
+		const userTickets = $userInfo?.tickets as number;
+
 		if (additionalItemsType === 'artists') {
-			if ($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.limit) {
-				const updateLimitMostListenedArtistsResult = await updateLimitMostListenedArtists(
-					$userInfo?.email,
-					$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.limit
-				);
+			const response = await updateMostListenedArtists(userEmail, artistsLimit, userTickets);
 
-				if (updateLimitMostListenedArtistsResult?.loaded === true) {
-					setTimeout(() => {
-						loadingMoreItems = false;
-					}, 1000);
-				}
-			} else {
+			if (!response) {
+				loadingMoreItems = false;
+
 				return;
 			}
+
+			userInfo.update((current) => {
+				if (!current || !current.connectedStreamings.spotify) return current;
+
+				return {
+					...current,
+					tickets: response.tickets,
+					connectedStreamings: {
+						...current.connectedStreamings,
+						spotify: {
+							...current.connectedStreamings.spotify,
+							connected: current.connectedStreamings.spotify.connected,
+							mostListenedArtists: {
+								artistsLimit: response.limit,
+								updatedAt: response.updatedAt,
+								mostListenedArtistItem: response.mostListenedArtist,
+								mostListenedArtistsItems: response.mostListenedArtists
+							}
+						}
+					}
+				};
+			});
+
+			setTimeout(() => {
+				loadingMoreItems = false;
+			}, 1500);
 		} else if (additionalItemsType === 'tracks') {
-			if ($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.limit) {
-				const updateLimitMostListenedTracksResult = await updateLimitMostListenedTracks(
-					$userInfo?.email,
-					$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.limit
-				);
+			const response = await updateMostListenedTracks(userEmail, tracksLimit, userTickets);
 
-				if (updateLimitMostListenedTracksResult?.loaded === true) {
-					setTimeout(() => {
-						loadingMoreItems = false;
-					}, 1000);
-				}
-			} else {
+			if (!response) {
+				loadingMoreItems = false;
+
 				return;
 			}
+
+			userInfo.update((current) => {
+				if (!current || !current.connectedStreamings.spotify) return current;
+
+				return {
+					...current,
+					tickets: response.tickets,
+					connectedStreamings: {
+						...current.connectedStreamings,
+						spotify: {
+							...current.connectedStreamings.spotify,
+							connected: current.connectedStreamings.spotify.connected,
+							mostListenedTracks: {
+								tracksLimit: response.limit,
+								updatedAt: response.updatedAt,
+								mostListenedTrackItem: response.mostListenedTrack,
+								mostListenedTracksItems: response.mostListenedTracks
+							}
+						}
+					}
+				};
+			});
+
+			setTimeout(() => {
+				loadingMoreItems = false;
+			}, 1500);
 		}
 	}
 </script>

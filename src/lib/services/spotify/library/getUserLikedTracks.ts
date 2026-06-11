@@ -5,7 +5,9 @@ export async function getUserLikedTracks() {
 	let likedTracksItems = [] as LikedTrackSpotify[];
 
 	try {
-		const reqUserLikedTracks = await fetch('/api/spotify/user/get-liked-tracks');
+		const reqUserLikedTracks = await fetch('/api/spotify/user/get-liked-tracks', {
+			method: 'POST'
+		});
 
 		if (!reqUserLikedTracks.ok) return undefined;
 
@@ -33,7 +35,14 @@ export async function getUserLikedTracks() {
 			updatedAt: new Date(),
 			likedTracksItems
 		};
-	} catch {
+	} catch (error) {
+		if (import.meta.env.DEV) {
+			console.error(
+				'Spotify getUserLikedTracks error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
+
 		return undefined;
 	}
 }

@@ -1,4 +1,4 @@
-// Svelte
+// Types
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Environment variables
@@ -11,13 +11,12 @@ export const POST: RequestHandler = async ({ request, cookies }) => {
 
 	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
 		return new Response(JSON.stringify({ error: 'Forbidden' }), {
-			status: 403,
-			headers: { 'Content-Type': 'application/json' }
+			status: 403
 		});
 	}
 
 	try {
-		const { locale, tracksLimit } = await request.json();
+		const { limit } = await request.json();
 
 		const token = cookies.get('spotify_access_token');
 
@@ -28,7 +27,7 @@ export const POST: RequestHandler = async ({ request, cookies }) => {
 		}
 
 		const response = await fetch(
-			`https://api.spotify.com/v1/me/top/tracks?offset=0&limit=${tracksLimit}&locale=${locale}`,
+			`https://api.spotify.com/v1/me/top/tracks?offset=0&limit=${limit}`,
 			{
 				method: 'GET',
 				headers: {
@@ -38,18 +37,17 @@ export const POST: RequestHandler = async ({ request, cookies }) => {
 		);
 
 		if (!response.ok) {
-			const err = await response.text();
-			return new Response(JSON.stringify({ error: err }), { status: response.status });
+			return new Response(
+				JSON.stringify({ error: 'Failed to fetch Spotify data - most listened tracks' }),
+				{ status: response.status }
+			);
 		}
 
 		const data = await response.json();
 
-		return new Response(JSON.stringify(data.items), {
-			status: 200,
-			headers: { 'Content-Type': 'application/json' }
-		});
+		return new Response(JSON.stringify(data.items), { status: 200 });
 	} catch (error) {
-		return new Response(JSON.stringify({ error: 'Failed to fetch Spotify access token' }), {
+		return new Response(JSON.stringify({ error: (error as Error).message }), {
 			status: 500
 		});
 	}

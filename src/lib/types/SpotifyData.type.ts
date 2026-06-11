@@ -8,7 +8,7 @@ export type UserInfoSpotify = {
 	profileLink: string;
 	mostListenedArtists:
 		| {
-				limit: number;
+				artistsLimit: number;
 				updatedAt: Date;
 				mostListenedArtistItem: ArtistSpotify;
 				mostListenedArtistsItems: ArtistSpotify[];
@@ -16,7 +16,7 @@ export type UserInfoSpotify = {
 		| undefined;
 	mostListenedTracks:
 		| {
-				limit: number;
+				tracksLimit: number;
 				updatedAt: Date;
 				mostListenedTrackItem: TrackSpotify;
 				mostListenedTracksItems: TrackSpotify[];

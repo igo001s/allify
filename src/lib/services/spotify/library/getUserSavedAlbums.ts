@@ -4,7 +4,9 @@ export async function getUserSavedAlbums() {
 	let albumItems = [] as AlbumSpotify[];
 
 	try {
-		const reqUserAlbums = await fetch('/api/spotify/user/get-saved-albums');
+		const reqUserAlbums = await fetch('/api/spotify/user/get-saved-albums', {
+			method: 'POST'
+		});
 
 		if (!reqUserAlbums.ok) return undefined;
 
@@ -36,7 +38,14 @@ export async function getUserSavedAlbums() {
 			updatedAt: new Date(),
 			albumItems
 		};
-	} catch {
+	} catch (error) {
+		if (import.meta.env.DEV) {
+			console.error(
+				'Spotify getUserSavedAlbums error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
+
 		return undefined;
 	}
 }

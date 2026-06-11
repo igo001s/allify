@@ -14,18 +14,15 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
 		return new Response(JSON.stringify({ error: 'Forbidden' }), {
-			status: 403,
-			headers: { 'Content-Type': 'application/json' }
+			status: 403
 		});
 	}
 
-	const { email, mostListenedArtistAfterNewLimit, mostListenedArtistsAfterNewLimit } =
-		await request.json();
+	const { email, limit, updatedAt, mostListenedArtist, mostListenedArtists } = await request.json();
 
-	if (!email || !mostListenedArtistAfterNewLimit || !mostListenedArtistsAfterNewLimit) {
-		return new Response(JSON.stringify({ success: false, message: 'Missing required fields' }), {
-			status: 400,
-			headers: { 'Content-Type': 'application/json' }
+	if (!email || !limit || !updatedAt || !mostListenedArtist || !mostListenedArtists) {
+		return new Response(JSON.stringify({ error: 'Missing required fields' }), {
+			status: 400
 		});
 	}
 
@@ -38,22 +35,28 @@ export const POST: RequestHandler = async ({ request }) => {
 			{ email },
 			{
 				$set: {
+					'connectedStreamings.spotify.mostListenedArtists.limit': limit,
+					'connectedStreamings.spotify.mostListenedArtists.updatedAt': updatedAt,
 					'connectedStreamings.spotify.mostListenedArtists.mostListenedArtistItem':
-						mostListenedArtistAfterNewLimit,
+						mostListenedArtist,
 					'connectedStreamings.spotify.mostListenedArtists.mostListenedArtistsItems':
-						mostListenedArtistsAfterNewLimit
+						mostListenedArtists
 				}
 			}
 		);
 
-		return new Response(JSON.stringify({ success: true }), {
-			status: 200,
-			headers: { 'Content-Type': 'application/json' }
-		});
+		return new Response(
+			JSON.stringify({
+				limit,
+				updatedAt,
+				mostListenedArtist,
+				mostListenedArtists
+			}),
+			{ status: 200 }
+		);
 	} catch {
 		return new Response(JSON.stringify({ error: true, errorMessage: 'Internal server error' }), {
-			status: 500,
-			headers: { 'Content-Type': 'application/json' }
+			status: 500
 		});
 	}
 };

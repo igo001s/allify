@@ -4,7 +4,12 @@ export function signInSpotify() {
 
 		return;
 	} catch (error) {
-		console.error(error instanceof Error ? error.message : 'An error occurred during Spotify sign-in');
+		if (import.meta.env.DEV) {
+			console.error(
+				'Spotify sign-in error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
 
 		return;
 	}

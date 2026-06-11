@@ -1,32 +1,53 @@
 // Svelte
-import { json } from '@sveltejs/kit';
+import type { RequestHandler } from '@sveltejs/kit';
 
-export const GET = async ({ cookies, fetch }) => {
-	let token = cookies.get('spotify_access_token');
+// Environment variables
+import { ALLIFY_URL } from '$env/static/private';
 
-	if (!token) {
-		return json({ error: 'No access token' }, { status: 401 });
-	}
+const ALLOWED_ORIGINS = [ALLIFY_URL];
 
-	let res = await fetch('https://api.spotify.com/v1/me', {
-		headers: { Authorization: `Bearer ${token}` }
-	});
+export const POST: RequestHandler = async ({ request, cookies, fetch }) => {
+	const origin = request.headers.get('origin');
 
-	if (res.status === 401 && cookies.get('spotify_refresh_token')) {
-		await fetch('/api/spotify/auth/refresh', { method: 'POST' });
-
-		token = cookies.get('spotify_access_token');
-
-		res = await fetch('https://api.spotify.com/v1/me', {
-			headers: { Authorization: `Bearer ${token}` }
+	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
+		return new Response(JSON.stringify({ error: 'Forbidden' }), {
+			status: 403
 		});
 	}
 
-	if (!res.ok) {
-		return json({ error: 'Spotify error' }, { status: res.status });
+	try {
+		let token = cookies.get('spotify_access_token');
+
+		if (!token) {
+			return new Response(JSON.stringify({ error: 'No Spotify access token found' }), {
+				status: 401
+			});
+		}
+
+		let response = await fetch('https://api.spotify.com/v1/me', {
+			headers: { Authorization: `Bearer ${token}` }
+		});
+
+		if (response.status === 401 && cookies.get('spotify_refresh_token')) {
+			await fetch('/api/spotify/auth/refresh', { method: 'POST' });
+
+			token = cookies.get('spotify_access_token');
+
+			response = await fetch('https://api.spotify.com/v1/me', {
+				headers: { Authorization: `Bearer ${token}` }
+			});
+		}
+
+		if (!response.ok) {
+			return new Response(JSON.stringify({ error: 'Spotify error - failed to fetch profile' }), {
+				status: response.status
+			});
+		}
+
+		const data = await response.json();
+
+		return new Response(JSON.stringify(data), { status: 200 });
+	} catch (error) {
+		return new Response(JSON.stringify({ error: (error as Error).message }), { status: 500 });
 	}
-
-	const data = await res.json();
-
-	return json(data);
 };

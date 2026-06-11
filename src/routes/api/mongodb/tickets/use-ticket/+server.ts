@@ -21,25 +21,19 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	const { tickets, email } = await request.json();
 
-	if (!tickets) {
-		return new Response(JSON.stringify({ error: true, message: 'Missing required fields' }), {
-			status: 400,
-			headers: { 'Content-Type': 'application/json' }
-		});
+	if (!tickets || !email) {
+		return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
 	}
 
 	if (tickets === 0) {
-		return new Response(JSON.stringify({ error: true, message: 'No tickets available' }), {
-			status: 400,
-			headers: { 'Content-Type': 'application/json' }
-		});
+		return new Response(JSON.stringify({ error: 'No tickets available' }), { status: 400 });
 	}
 
 	try {
 		const client = await connectDB();
-
 		const db = client.db(MONGO_DB);
 		const users = db.collection('users');
+
 		await users.updateOne(
 			{ email },
 			{
@@ -51,18 +45,13 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				success: true,
 				tickets: tickets - 1
 			}),
-			{
-				status: 200,
-				headers: { 'Content-Type': 'application/json' }
-			}
+			{ status: 200 }
 		);
 	} catch (error) {
-		return new Response(JSON.stringify({ error: true, message: 'Internal server error' }), {
-			status: 500,
-			headers: { 'Content-Type': 'application/json' }
+		return new Response(JSON.stringify({ error: (error as Error).message }), {
+			status: 500
 		});
 	}
 };

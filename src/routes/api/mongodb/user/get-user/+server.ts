@@ -1,5 +1,4 @@
 // Svelte
-import { json } from '@sveltejs/kit';
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
@@ -15,8 +14,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
 		return new Response(JSON.stringify({ error: 'Forbidden' }), {
-			status: 403,
-			headers: { 'Content-Type': 'application/json' }
+			status: 403
 		});
 	}
 
@@ -26,29 +24,28 @@ export const POST: RequestHandler = async ({ request }) => {
 		const { email } = body;
 
 		if (!email) {
-			return json({ error: 'Email is required' }, { status: 400 });
+			return new Response(JSON.stringify({ error: 'Email is required' }), { status: 400 });
 		}
 
 		const client = await connectDB();
-
 		const db = client.db(MONGO_DB);
 		const users = db.collection('users');
+
 		const user = await users.findOne({ email });
 
 		if (!user) {
-			return json({ success: false, error: 'User not found' }, { status: 200 });
+			return new Response(JSON.stringify({ error: 'User not found' }), { status: 404 });
 		}
 
-		return json({
-			success: true,
-			userInfoFromMongoDB: user
-		});
-	} catch (err) {
-		return json(
-			{
-				error: err instanceof Error ? err.message : 'Internal error'
-			},
-			{ status: 500 }
+		return new Response(
+			JSON.stringify({
+				userInfoFromMongoDB: user
+			}),
+			{ status: 200 }
 		);
+	} catch (error) {
+		return new Response(JSON.stringify({ error: (error as Error).message }), {
+			status: 500
+		});
 	}
 };

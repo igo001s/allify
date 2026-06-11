@@ -1,5 +1,4 @@
 // Svelte
-import { json } from '@sveltejs/kit';
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
@@ -15,8 +14,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
 		return new Response(JSON.stringify({ error: 'Forbidden' }), {
-			status: 403,
-			headers: { 'Content-Type': 'application/json' }
+			status: 403
 		});
 	}
 
@@ -24,7 +22,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		const { email, streaming, streamingData } = await request.json();
 
 		if (!email || !streaming || !streamingData) {
-			return json({ error: 'Missing required fields' }, { status: 400 });
+			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
 		}
 
 		const client = await connectDB();
@@ -34,7 +32,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		const existingUser = await users.findOne({ email: email });
 
 		if (existingUser) {
-			return json({ error: 'User already exists' }, { status: 409 });
+			return new Response(JSON.stringify({ error: 'User already exists' }), { status: 409 });
 		}
 
 		const user = {
@@ -50,14 +48,18 @@ export const POST: RequestHandler = async ({ request }) => {
 			createdAt: new Date()
 		});
 
-		return json({
-			success: true,
-			createdUser: {
-				...user,
-				_id: result.insertedId
-			}
+		return new Response(
+			JSON.stringify({
+				createdUser: {
+					...user,
+					_id: result.insertedId
+				}
+			}),
+			{ status: 201 }
+		);
+	} catch (error) {
+		return new Response(JSON.stringify({ error: (error as Error).message }), {
+			status: 500
 		});
-	} catch (err) {
-		return json({ error: err instanceof Error ? err.message : 'Internal error' }, { status: 500 });
 	}
 };

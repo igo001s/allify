@@ -1,6 +1,6 @@
 export async function getUserFromDatabase(email: string) {
 	try {
-		const getUserRequest = await fetch('/api/mongodb/get-user', {
+		const getUserRequest = await fetch('/api/mongodb/user/get-user', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ email })
@@ -8,6 +8,13 @@ export async function getUserFromDatabase(email: string) {
 
 		return await getUserRequest.json();
 	} catch (error) {
-		throw new Error('Error fetching user');
+		if (import.meta.env.DEV) {
+			console.error(
+				'User getUserFromDatabase error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
+
+		return;
 	}
 }

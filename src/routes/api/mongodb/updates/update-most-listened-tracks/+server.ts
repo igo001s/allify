@@ -14,17 +14,15 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
 		return new Response(JSON.stringify({ error: 'Forbidden' }), {
-			status: 403,
-			headers: { 'Content-Type': 'application/json' }
+			status: 403
 		});
 	}
 
-	const { email, artistsLimit } = await request.json();
+	const { email, limit, updatedAt, mostListenedTrack, mostListenedTracks } = await request.json();
 
-	if (!email || !artistsLimit) {
-		return new Response(JSON.stringify({ error: true, errorMessage: 'Missing required fields' }), {
-			status: 400,
-			headers: { 'Content-Type': 'application/json' }
+	if (!email || !limit || !updatedAt || !mostListenedTrack || !mostListenedTracks) {
+		return new Response(JSON.stringify({ error: 'Missing required fields' }), {
+			status: 400
 		});
 	}
 
@@ -37,20 +35,26 @@ export const POST: RequestHandler = async ({ request }) => {
 			{ email },
 			{
 				$set: {
-					'connectedStreamings.spotify.mostListenedArtists.limit': artistsLimit + 5,
-					'connectedStreamings.spotify.mostListenedArtists.updatedAt': new Date()
+					'connectedStreamings.spotify.mostListenedTracks.limit': limit,
+					'connectedStreamings.spotify.mostListenedTracks.updatedAt': updatedAt,
+					'connectedStreamings.spotify.mostListenedTracks.mostListenedTrackItem': mostListenedTrack,
+					'connectedStreamings.spotify.mostListenedTracks.mostListenedTracksItems':
+						mostListenedTracks
 				}
 			}
 		);
 
-		return new Response(JSON.stringify({ success: true, newLimit: artistsLimit + 5 }), {
-			status: 200,
-			headers: { 'Content-Type': 'application/json' }
-		});
+		return new Response(
+			JSON.stringify({
+				limit,
+				updatedAt,
+				mostListenedTrack,
+				mostListenedTracks
+			})
+		);
 	} catch {
 		return new Response(JSON.stringify({ error: true, errorMessage: 'Internal server error' }), {
-			status: 500,
-			headers: { 'Content-Type': 'application/json' }
+			status: 500
 		});
 	}
 };

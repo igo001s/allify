@@ -1,17 +1,7 @@
-// Svelte
-import { get } from 'svelte/store';
-
-// Stores
-import { translationsStore } from '$lib/stores/translations.store';
-import { userInfo } from '$lib/stores/userInfo.store';
-
 // Types
 import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
-export async function getMostListenedTracks() {
-	const getTranslationStore = get(translationsStore);
-	const userInfoStore = get(userInfo);
-
+export async function getMostListenedTracks(limit: number = 5) {
 	let mostListenedTrackItem: TrackSpotify;
 	let mostListenedTracksItems = [] as TrackSpotify[];
 
@@ -20,10 +10,7 @@ export async function getMostListenedTracks() {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
-				locale: getTranslationStore.locale,
-				tracksLimit: userInfoStore?.connectedStreamings?.spotify?.mostListenedTracks?.limit
-					? userInfoStore?.connectedStreamings?.spotify?.mostListenedTracks?.limit
-					: 5
+				limit
 			})
 		});
 
@@ -54,14 +41,19 @@ export async function getMostListenedTracks() {
 		}
 
 		return {
-			limit: userInfoStore?.connectedStreamings?.spotify?.mostListenedTracks?.limit
-				? userInfoStore?.connectedStreamings?.spotify?.mostListenedTracks?.limit
-				: 5,
+			tracksLimit: limit,
 			updatedAt: new Date(),
 			mostListenedTrackItem,
 			mostListenedTracksItems
 		};
-	} catch {
+	} catch (error) {
+		if (import.meta.env.DEV) {
+			console.error(
+				'Spotify getMostListenedTracks error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
+
 		return undefined;
 	}
 }

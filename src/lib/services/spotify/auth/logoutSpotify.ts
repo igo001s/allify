@@ -7,9 +7,12 @@ export async function logoutSpotify() {
 
 		return;
 	} catch (error) {
-		console.error(
-			error instanceof Error ? error.message : 'An error occurred while logging out from Spotify'
-		);
+		if (import.meta.env.DEV) {
+			console.error(
+				'Spotify logout error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
 
 		return;
 	}

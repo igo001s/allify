@@ -1,15 +1,7 @@
 export async function createCheckout(quantity: number): Promise<void> {
-	if (quantity <= 0) {
-		console.error('Invalid quantity');
-		return;
-	}
-
 	try {
 		const response = await fetch('/api/checkout/tickets/create-checkout', {
 			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
 			body: JSON.stringify({
 				items: [
 					{
@@ -29,10 +21,6 @@ export async function createCheckout(quantity: number): Promise<void> {
 
 		const data = await response.json();
 
-		if (!response.ok) {
-			throw new Error(data.error || `HTTP error ${response.status}`);
-		}
-
 		const checkoutUrl = data.data?.url;
 
 		if (!checkoutUrl) {
@@ -43,7 +31,9 @@ export async function createCheckout(quantity: number): Promise<void> {
 
 		return;
 	} catch (error) {
-		console.error(error instanceof Error ? error.message : 'An error occurred during checkout');
+		if (import.meta.env.DEV) {
+			console.error('Checkout error:', error instanceof Error ? error.message : String(error));
+		}
 
 		return;
 	}

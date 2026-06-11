@@ -28,6 +28,12 @@
 			handleQuantityChange(value);
 		}
 	}
+
+	async function handleCreateCheckout(quantity: number) {
+		await createCheckout(quantity);
+
+		showAddTickets.set(false);
+	}
 </script>
 
 <div
@@ -112,7 +118,7 @@
 
 			<button
 				class="w-full cursor-pointer rounded-xl bg-brand-primary px-4 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
-				on:click={() => createCheckout(quantity)}
+				on:click={() => handleCreateCheckout(quantity)}
 			>
 				{$translationsStore.addTickets.addTicketsModalButton}
 			</button>

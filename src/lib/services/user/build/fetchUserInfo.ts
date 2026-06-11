@@ -1,20 +1,14 @@
-// Svelte
-import { get } from 'svelte/store';
-
 // Stores
-import { userInfo } from '$lib/stores/userInfo.store';
-import { translationsStore } from '$lib/stores/translations.store';
-
 // Services
 import { createUser } from './createUser';
-import { sendEmail } from '../email/sendEmail';
-import { existingSpotifyUser } from '../spotify/mappers/existingSpotifyUser';
-import { buildUserFromSpotify } from '../spotify/mappers/buildUserFromSpotify';
+import { sendEmail } from '../../email/sendEmail';
+import { existingSpotifyUser } from '../../spotify/mappers/existingSpotifyUser';
+import { buildUserFromSpotify } from '../../spotify/mappers/buildUserFromSpotify';
 
 // Email templates
 import { welcomeToAllifyTemplate } from '$lib/emails/templates/welcomeToAllifyTemaplate';
 
-export async function fetchUserInfo() {
+export async function fetchUserInfo(emailMessage: string) {
 	try {
 		const userFromSpotify = await existingSpotifyUser();
 
@@ -24,25 +18,30 @@ export async function fetchUserInfo() {
 			if (builtUser !== undefined) {
 				const createUserResult = await createUser(builtUser.email, 'spotify', builtUser);
 
-				userInfo.set(createUserResult.createdUser);
-
-				const $translationsStore = get(translationsStore);
-
 				sendEmail(
-					$translationsStore.templateEmail.welcomeToAllifySubject,
+					emailMessage,
 					'igorgabsprofissional@gmail.com',
 					welcomeToAllifyTemplate(
 						createUserResult.createdUser.connectedStreamings.spotify.name,
 						'Spotify'
 					)
 				);
+
+				return createUserResult.createdUser;
 			} else {
-				return userInfo.set(undefined);
+				return undefined;
 			}
 		} else {
-			return userInfo.set(userFromSpotify);
+			return userFromSpotify;
 		}
-	} catch {
-		return userInfo.set(undefined);
+	} catch (error) {
+		if (import.meta.env.DEV) {
+			console.error(
+				'User fetchUserInfo error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
+
+		return undefined;
 	}
 }

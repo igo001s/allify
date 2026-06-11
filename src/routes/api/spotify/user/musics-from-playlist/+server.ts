@@ -11,8 +11,7 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
 
 	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
 		return new Response(JSON.stringify({ error: 'Forbidden' }), {
-			status: 403,
-			headers: { 'Content-Type': 'application/json' }
+			status: 403
 		});
 	}
 
@@ -35,18 +34,18 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
 		});
 
 		if (!response.ok) {
-			const err = await response.text();
-			return new Response(JSON.stringify({ error: err }), { status: response.status });
+			return new Response(JSON.stringify({ error: 'Failed to fetch playlist tracks' }), {
+				status: response.status
+			});
 		}
 
 		const data = await response.json();
 
 		return new Response(JSON.stringify(data.items), {
-			status: 200,
-			headers: { 'Content-Type': 'application/json' }
+			status: 200
 		});
 	} catch (error) {
-		return new Response(JSON.stringify({ error: 'Failed to fetch musics from playlist' }), {
+		return new Response(JSON.stringify({ error: (error as Error).message }), {
 			status: 500
 		});
 	}

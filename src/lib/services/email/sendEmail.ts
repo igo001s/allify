@@ -14,9 +14,9 @@ export async function sendEmail(subject: string, email: string, message: string)
 
 		return;
 	} catch (error) {
-		console.error(
-			error instanceof Error ? error.message : 'An error occurred while sending the email'
-		);
+		if (import.meta.env.DEV) {
+			console.error('Email error:', error instanceof Error ? error.message : String(error));
+		}
 
 		return;
 	}

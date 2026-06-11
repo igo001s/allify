@@ -1,7 +1,20 @@
 // Svelte
 import type { RequestHandler } from '@sveltejs/kit';
 
-export const GET: RequestHandler = async ({ cookies }) => {
+// Environment variables
+import { ALLIFY_URL } from '$env/static/private';
+
+const ALLOWED_ORIGINS = [ALLIFY_URL];
+
+export const POST: RequestHandler = async ({ request, cookies }) => {
+	const origin = request.headers.get('origin');
+
+	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
+		return new Response(JSON.stringify({ error: 'Forbidden' }), {
+			status: 403
+		});
+	}
+
 	const token = cookies.get('spotify_access_token');
 
 	if (!token) {
@@ -11,7 +24,7 @@ export const GET: RequestHandler = async ({ cookies }) => {
 	}
 
 	try {
-		const reqSavedAlbums = await fetch(`https://api.spotify.com/v1/me/albums`, {
+		const response = await fetch(`https://api.spotify.com/v1/me/albums`, {
 			method: 'GET',
 			headers: {
 				Authorization: `Bearer ${token}`,
@@ -19,19 +32,20 @@ export const GET: RequestHandler = async ({ cookies }) => {
 			}
 		});
 
-		if (!reqSavedAlbums.ok) {
-			const err = await reqSavedAlbums.text();
-			return new Response(JSON.stringify({ error: err }), { status: reqSavedAlbums.status });
+		if (!response.ok) {
+			return new Response(
+				JSON.stringify({ error: 'Failed to fetch Spotify data - saved albums' }),
+				{ status: response.status }
+			);
 		}
 
-		const savedAlbumsData = await reqSavedAlbums.json();
+		const data = await response.json();
 
-		return new Response(JSON.stringify(savedAlbumsData.items), {
-			status: 200,
-			headers: { 'Content-Type': 'application/json' }
+		return new Response(JSON.stringify(data.items), {
+			status: 200
 		});
 	} catch (error) {
-		return new Response(JSON.stringify({ error: 'Failed to fetch saved albums' }), {
+		return new Response(JSON.stringify({ error: (error as Error).message }), {
 			status: 500
 		});
 	}

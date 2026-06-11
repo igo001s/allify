@@ -16,16 +16,19 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { loadingAfterConnectionStore } from '$lib/stores/loadingAfterConnection.store';
 	import { showAddTickets } from '$lib/stores/showAddTickets.store';
+	import { translationsStore } from '$lib/stores/translations.store';
 	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
-	import { fetchUserInfo } from '$lib/services/user/fetchUserInfo';
+	import { fetchUserInfo } from '$lib/services/user/build/fetchUserInfo';
 
 	let { children } = $props();
 
 	const fetchMeInfo = async () => {
 		try {
-			fetchUserInfo();
+			const response = await fetchUserInfo($translationsStore.templateEmail.welcomeToAllifySubject);
+
+			userInfo.set(response);
 		} catch {
 			userInfo.set(undefined);
 		}

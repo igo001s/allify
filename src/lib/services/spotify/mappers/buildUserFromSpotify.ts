@@ -51,7 +51,14 @@ export async function buildUserFromSpotify(infoFromSpotify: any) {
 		};
 
 		return dataFromSpotify;
-	} catch {
+	} catch (error) {
+		if (import.meta.env.DEV) {
+			console.error(
+				'Spotify buildUserFromSpotify error:',
+				error instanceof Error ? error.message : String(error)
+			);
+		}
+
 		return undefined;
 	}
 }

@@ -11,12 +11,15 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
 		return new Response(JSON.stringify({ error: 'Forbidden' }), {
-			status: 403,
-			headers: { 'Content-Type': 'application/json' }
+			status: 403
 		});
 	}
 
 	const { mostListenedTracks, mostListenedArtists } = await request.json();
+
+	if (!mostListenedTracks || !mostListenedArtists) {
+		return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
+	}
 
 	const prompt = `
 		Most listened artists: ${mostListenedArtists.join(', ')}.
@@ -67,8 +70,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		if (!response.ok) {
 			return new Response(JSON.stringify({ error: 'Failed to call Claude API' }), {
-				status: response.status,
-				headers: { 'Content-Type': 'application/json' }
+				status: response.status
 			});
 		}
 
@@ -78,22 +80,14 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		if (!toolUse?.input) {
 			return new Response(JSON.stringify({ error: 'No tool response from Claude' }), {
-				status: 500,
-				headers: { 'Content-Type': 'application/json' }
+				status: 500
 			});
 		}
 
-		return new Response(JSON.stringify(toolUse.input), {
-			status: 200,
-			headers: { 'Content-Type': 'application/json' }
+		return new Response(JSON.stringify(toolUse.input), { status: 200 });
+	} catch (error) {
+		return new Response(JSON.stringify({ error: (error as Error).message }), {
+			status: 500
 		});
-	} catch (e) {
-		return new Response(
-			JSON.stringify({
-				error: 'Unexpected error',
-				details: e instanceof Error ? e.message : String(e)
-			}),
-			{ status: 500, headers: { 'Content-Type': 'application/json' } }
-		);
 	}
 };
