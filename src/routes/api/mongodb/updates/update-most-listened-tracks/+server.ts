@@ -35,7 +35,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			{ email },
 			{
 				$set: {
-					'connectedStreamings.spotify.mostListenedTracks.limit': limit,
+					'connectedStreamings.spotify.mostListenedTracks.tracksLimit': limit,
 					'connectedStreamings.spotify.mostListenedTracks.updatedAt': updatedAt,
 					'connectedStreamings.spotify.mostListenedTracks.mostListenedTrackItem': mostListenedTrack,
 					'connectedStreamings.spotify.mostListenedTracks.mostListenedTracksItems':
