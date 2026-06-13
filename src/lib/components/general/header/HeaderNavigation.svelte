@@ -16,7 +16,7 @@
 		},
 		{
 			name: $translationsStore.generalTexts.headerNavigationItem3,
-			link: '/music-battles'
+			link: '/music-community'
 		}
 	] as { name: string; link: string }[];
 </script>

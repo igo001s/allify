@@ -9,7 +9,7 @@ export const GET: RequestHandler = async () => {
 		'',
 		'/my-musical-profile',
 		'/discoveries',
-		'/music-battles',
+		'/music-community',
 		'/profile',
 		'/settings',
 		'/privacy-policy',

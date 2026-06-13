@@ -9,7 +9,7 @@ export const ru = {
 		logoLightAltText: 'Светлый логотип Allify',
 		headerNavigationItem1: 'Мой музыкальный профиль',
 		headerNavigationItem2: 'Открытия',
-		headerNavigationItem3: 'Музыкальные баттлы',
+		headerNavigationItem3: 'Музыкальное сообщество',
 		headerNavigationAriaLabel: 'Основная навигация',
 		headerLanguagePt: 'Португальский',
 		headerLanguageEn: 'Английский',
@@ -29,7 +29,7 @@ export const ru = {
 		profileLoggedItem3: 'Выйти',
 		profileNotLoggedItem1: 'Войти через',
 		profileNotLoggedItem2: 'Войти через',
-		burguerMenuAltText: 'Открыть меню навигации',
+		burgerMenuAltText: 'Открыть меню навигации',
 		closeMenuAltText: 'Закрыть меню навигации',
 		cardProfileAsideMenuParagraph1: 'Войти или создать аккаунт',
 		footerFirstSectionText1:
@@ -42,7 +42,7 @@ export const ru = {
 		footerColumn2Title: 'НАВИГАЦИЯ',
 		footerColumn2Item1: 'Мой музыкальный профиль',
 		footerColumn2Item2: 'Открытия',
-		footerColumn2Item3: 'Музыкальные баттлы',
+		footerColumn2Item3: 'Музыкальное сообщество',
 		footerColumn3Title: 'ПРАВОВАЯ ИНФОРМАЦИЯ',
 		footerColumn3Item1: 'Политика конфиденциальности',
 		footerColumn3Item2: 'Условия использования',
@@ -59,8 +59,8 @@ export const ru = {
 			'Чтобы получить доступ к своему музыкальному профилю, подключитесь к одной из ваших любимых стриминговых платформ.',
 		notLoggedDiscoveriesParagraph1:
 			'Чтобы получить доступ к музыкальным открытиям, подключитесь к одной из ваших любимых стриминговых платформ.',
-		notLoggedMusicBattlesParagraph1:
-			'Чтобы получить доступ к музыкальным баттлам, подключитесь к одной из ваших любимых стриминговых платформ.',
+		notLoggedMusicCommunityParagraph1:
+			'Чтобы получить доступ к музыкальному сообществу, подключитесь к одной из ваших любимых стриминговых платформ.',
 		notLoggedProfileParagraph1:
 			'Чтобы получить доступ к профилю, подключитесь к одной из ваших любимых стриминговых платформ.',
 		notLoggedSettingsParagraph1:
@@ -155,26 +155,12 @@ export const ru = {
 		discoveriesPageDiscoverAgainButton: 'Открыть снова',
 		alliMascotWavingAltText: 'Маскот Alli машет на странице открытий'
 	},
-	addTickets: {
-		addTicketsModalTitle: 'Билеты Allify',
-		addTicketsModalAriaLabel: 'Закрыть модальное окно билетов',
-		addTicketsModalParagraph1: 'Приобрести билеты',
-		addTicketsModalParagraph2:
-			'Похоже, ваши билеты закончились. Приобретите больше, чтобы продолжать пользоваться функциями.',
-		addTicketsModalParagraph3: 'Количество',
-		addTicketsModalPlaceholder: 'Выберите самостоятельно',
-		addTicketsModalTicket: 'билет',
-		addTicketsModalTickets: 'билетов',
-		addTicketsModalSelected: 'выбран',
-		addTicketsModalSelectedPlural: 'выбрано',
-		addTicketsModalButton: 'Перейти к оплате'
-	},
-	musicBattlesPage: {
-		title: 'Музыкальные баттлы | Allify',
-		musicBattlesPageMetaDescription:
-			'Участвуйте в захватывающих музыкальных баттлах, сравнивайте, кто больше прослушал трек или исполнителя, бросайте вызов друзьям и узнайте, кто настоящий знаток музыки.',
-		musicBattlesPageMetaOgAndTwitterContent:
-			'Участвуйте в захватывающих музыкальных баттлах, сравнивайте, кто больше прослушал трек или исполнителя, бросайте вызов друзьям и узнайте, кто настоящий знаток музыки.'
+	musicCommunityPage: {
+		title: 'Музыкальное сообщество | Allify',
+		musicCommunityPageMetaDescription:
+			'Открывайте новых пользователей, находите друзей, изучайте музыкальные профили и следите за музыкальными предпочтениями сообщества Allify.',
+		musicCommunityPageMetaOgAndTwitterContent:
+			'Открывайте новых пользователей, находите друзей, изучайте музыкальные профили и следите за музыкальными предпочтениями сообщества Allify.'
 	},
 	profilePage: {
 		title: 'Профиль | Allify',
@@ -234,6 +220,20 @@ export const ru = {
 		settingsPageConnectedStreamingNotConnected: 'Не подключено',
 		settingsPageConnectedStreamingDisconnect: 'Отключить',
 		settingsPageConnectedStreamingConnect: 'Подключить'
+	},
+	addTickets: {
+		addTicketsModalTitle: 'Билеты Allify',
+		addTicketsModalAriaLabel: 'Закрыть модальное окно билетов',
+		addTicketsModalParagraph1: 'Приобрести билеты',
+		addTicketsModalParagraph2:
+			'Похоже, ваши билеты закончились. Приобретите больше, чтобы продолжать пользоваться функциями.',
+		addTicketsModalParagraph3: 'Количество',
+		addTicketsModalPlaceholder: 'Выберите самостоятельно',
+		addTicketsModalTicket: 'билет',
+		addTicketsModalTickets: 'билетов',
+		addTicketsModalSelected: 'выбран',
+		addTicketsModalSelectedPlural: 'выбрано',
+		addTicketsModalButton: 'Перейти к оплате'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Добро пожаловать в Allify!',

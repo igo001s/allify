@@ -38,7 +38,7 @@
 				},
 				{
 					text: $translationsStore.generalTexts.footerColumn2Item3,
-					href: '/music-battles'
+					href: '/music-community'
 				}
 			]
 		},

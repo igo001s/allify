@@ -9,7 +9,7 @@ export const ja = {
 		logoLightAltText: 'Allifyのライトロゴ',
 		headerNavigationItem1: '私の音楽プロフィール',
 		headerNavigationItem2: '発見',
-		headerNavigationItem3: '音楽バトル',
+		headerNavigationItem3: '音楽コミュニティ',
 		headerNavigationAriaLabel: 'メインナビゲーション',
 		headerLanguagePt: 'ポルトガル語',
 		headerLanguageEn: '英語',
@@ -29,7 +29,7 @@ export const ja = {
 		profileLoggedItem3: 'ログアウト',
 		profileNotLoggedItem1: 'でログイン',
 		profileNotLoggedItem2: 'でログイン',
-		burguerMenuAltText: 'ナビゲーションメニューを開く',
+		burgerMenuAltText: 'ナビゲーションメニューを開く',
 		closeMenuAltText: 'ナビゲーションメニューを閉じる',
 		cardProfileAsideMenuParagraph1: 'ログインまたはアカウント作成',
 		footerFirstSectionText1: '音楽データを発見、ランキング、そして新しい音楽体験へと変換します。',
@@ -41,7 +41,7 @@ export const ja = {
 		footerColumn2Title: 'ナビゲーション',
 		footerColumn2Item1: '私の音楽プロフィール',
 		footerColumn2Item2: '発見',
-		footerColumn2Item3: '音楽バトル',
+		footerColumn2Item3: '音楽コミュニティ',
 		footerColumn3Title: '法的情報',
 		footerColumn3Item1: 'プライバシーポリシー',
 		footerColumn3Item2: '利用規約',
@@ -58,8 +58,8 @@ export const ja = {
 			'音楽プロフィールにアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
 		notLoggedDiscoveriesParagraph1:
 			'音楽発見にアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
-		notLoggedMusicBattlesParagraph1:
-			'音楽バトルにアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
+		notLoggedMusicCommunityParagraph1:
+			'音楽コミュニティにアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
 		notLoggedProfileParagraph1:
 			'プロフィールにアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
 		notLoggedSettingsParagraph1:
@@ -153,26 +153,12 @@ export const ja = {
 		discoveriesPageDiscoverAgainButton: '再次发现',
 		alliMascotWavingAltText: 'Alli吉祥物在发现页面挥手'
 	},
-	addTickets: {
-		addTicketsModalTitle: 'Allifyチケット',
-		addTicketsModalAriaLabel: 'チケットモーダルを閉じる',
-		addTicketsModalParagraph1: 'チケットを購入する',
-		addTicketsModalParagraph2:
-			'チケットがなくなったようです。機能を引き続き利用するには、さらにチケットを購入してください。',
-		addTicketsModalParagraph3: '数量',
-		addTicketsModalPlaceholder: '自分で選ぶ',
-		addTicketsModalTicket: 'チケット',
-		addTicketsModalTickets: 'チケット',
-		addTicketsModalSelected: '選択',
-		addTicketsModalSelectedPlural: '選択',
-		addTicketsModalButton: '支払いに進む'
-	},
-	musicBattlesPage: {
-		title: '音楽バトル | Allify',
-		musicBattlesPageMetaDescription:
-			'エキサイティングな音楽バトルに参加し、誰が曲やアーティストをより多く聴いたか比較し、友達に挑戦して真の音楽マスターを決めましょう。',
-		musicBattlesPageMetaOgAndTwitterContent:
-			'エキサイティングな音楽バトルに参加し、誰が曲やアーティストをより多く聴いたか比較し、友達に挑戦して真の音楽マスターを決めましょう。'
+	musicCommunityPage: {
+		title: '音楽コミュニティ | Allify',
+		musicCommunityPageMetaDescription:
+			'新しいユーザーを見つけたり、友達を探したり、音楽プロフィールを探索したり、Allifyコミュニティの音楽の好みをチェックしたりできます。',
+		musicCommunityPageMetaOgAndTwitterContent:
+			'新しいユーザーを見つけたり、友達を探したり、音楽プロフィールを探索したり、Allifyコミュニティの音楽の好みをチェックしたりできます。'
 	},
 	profilePage: {
 		title: 'プロフィール | Allify',
@@ -230,6 +216,20 @@ export const ja = {
 		settingsPageConnectedStreamingNotConnected: '未接続',
 		settingsPageConnectedStreamingDisconnect: '切断',
 		settingsPageConnectedStreamingConnect: '接続'
+	},
+	addTickets: {
+		addTicketsModalTitle: 'Allifyチケット',
+		addTicketsModalAriaLabel: 'チケットモーダルを閉じる',
+		addTicketsModalParagraph1: 'チケットを購入する',
+		addTicketsModalParagraph2:
+			'チケットがなくなったようです。機能を引き続き利用するには、さらにチケットを購入してください。',
+		addTicketsModalParagraph3: '数量',
+		addTicketsModalPlaceholder: '自分で選ぶ',
+		addTicketsModalTicket: 'チケット',
+		addTicketsModalTickets: 'チケット',
+		addTicketsModalSelected: '選択',
+		addTicketsModalSelectedPlural: '選択',
+		addTicketsModalButton: '支払いに進む'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Allifyへようこそ！',
