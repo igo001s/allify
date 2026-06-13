@@ -9,7 +9,7 @@ export const fr = {
 		logoLightAltText: 'Logo clair Allify',
 		headerNavigationItem1: 'Mon profil musical',
 		headerNavigationItem2: 'Découvertes',
-		headerNavigationItem3: 'Battles musicaux',
+		headerNavigationItem3: 'Communauté musicale',
 		headerNavigationAriaLabel: 'Navigation principale',
 		headerLanguagePt: 'Portugais',
 		headerLanguageEn: 'Anglais',
@@ -28,7 +28,7 @@ export const fr = {
 		profileLoggedItem3: 'Se déconnecter',
 		profileNotLoggedItem1: 'Se connecter avec ',
 		profileNotLoggedItem2: 'Se connecter avec ',
-		burguerMenuAltText: 'Ouvrir le menu de navigation',
+		burgerMenuAltText: 'Ouvrir le menu de navigation',
 		profileLoggedAltText: 'Photo de profil utilisateur',
 		closeMenuAltText: 'Fermer le menu de navigation',
 		cardProfileAsideMenuParagraph1: 'Se connecter ou créer un compte',
@@ -42,7 +42,7 @@ export const fr = {
 		footerColumn2Title: 'NAVIGATION',
 		footerColumn2Item1: 'Mon profil musical',
 		footerColumn2Item2: 'Découvertes',
-		footerColumn2Item3: 'Battles musicaux',
+		footerColumn2Item3: 'Communauté musicale',
 		footerColumn3Title: 'LÉGAL',
 		footerColumn3Item1: 'Politique de confidentialité',
 		footerColumn3Item2: "Conditions d'utilisation",
@@ -59,8 +59,8 @@ export const fr = {
 			"Pour accéder à votre profil musical, connectez-vous à l'une de vos plateformes de streaming préférées.",
 		notLoggedDiscoveriesParagraph1:
 			"Pour accéder aux découvertes musicales, connectez-vous à l'une de vos plateformes de streaming préférées.",
-		notLoggedMusicBattlesParagraph1:
-			"Pour accéder aux battles musicaux, connectez-vous à l'une de vos plateformes de streaming préférées.",
+		notLoggedMusicCommunityParagraph1:
+			"Pour accéder à la Communauté musicale, connectez-vous à l'une de vos plateformes de streaming préférées.",
 		notLoggedProfileParagraph1:
 			"Pour accéder à votre profil, connectez-vous à l'une de vos plateformes de streaming préférées.",
 		notLoggedSettingsParagraph1:
@@ -159,26 +159,12 @@ export const fr = {
 		discoveriesPageDiscoverAgainButton: 'Découvrir à nouveau',
 		alliMascotWavingAltText: 'Mascotte Alli faisant signe sur la page de découvertes'
 	},
-	addTickets: {
-		addTicketsModalTitle: 'Tickets Allify',
-		addTicketsModalAriaLabel: 'Fermer le modal des tickets',
-		addTicketsModalParagraph1: 'Acheter des tickets',
-		addTicketsModalParagraph2:
-			'On dirait que vos tickets sont épuisés. Achetez-en plus pour continuer à profiter des fonctionnalités.',
-		addTicketsModalParagraph3: 'Quantité',
-		addTicketsModalPlaceholder: 'Choisissez vous-même',
-		addTicketsModalTicket: 'Ticket',
-		addTicketsModalTickets: 'Tickets',
-		addTicketsModalSelected: 'sélectionné',
-		addTicketsModalSelectedPlural: 'sélectionnés',
-		addTicketsModalButton: 'Aller au paiement'
-	},
-	musicBattlesPage: {
-		title: 'Battles musicaux | Allify',
-		musicBattlesPageMetaDescription:
-			'Participez à des battles musicaux palpitants, comparez qui a le plus écouté une chanson ou un artiste, défiez vos amis et découvrez qui est le vrai maître de la musique.',
-		musicBattlesPageMetaOgAndTwitterContent:
-			'Participez à des battles musicaux palpitants, comparez qui a le plus écouté une chanson ou un artiste, défiez vos amis et découvrez qui est le vrai maître de la musique.'
+	musicCommunityPage: {
+		title: 'Communauté musicale | Allify',
+		musicCommunityPageMetaDescription:
+			'Découvrez de nouveaux utilisateurs, trouvez des amis, explorez des profils musicaux et suivez les goûts musicaux de la communauté Allify.',
+		musicCommunityPageMetaOgAndTwitterContent:
+			'Découvrez de nouveaux utilisateurs, trouvez des amis, explorez des profils musicaux et suivez les goûts musicaux de la communauté Allify.'
 	},
 	profilePage: {
 		title: 'Profil | Allify',
@@ -240,6 +226,20 @@ export const fr = {
 		settingsPageConnectedStreamingNotConnected: 'Non connecté',
 		settingsPageConnectedStreamingDisconnect: 'Déconnecter',
 		settingsPageConnectedStreamingConnect: 'Connecter'
+	},
+	addTickets: {
+		addTicketsModalTitle: 'Tickets Allify',
+		addTicketsModalAriaLabel: 'Fermer le modal des tickets',
+		addTicketsModalParagraph1: 'Acheter des tickets',
+		addTicketsModalParagraph2:
+			'On dirait que vos tickets sont épuisés. Achetez-en plus pour continuer à profiter des fonctionnalités.',
+		addTicketsModalParagraph3: 'Quantité',
+		addTicketsModalPlaceholder: 'Choisissez vous-même',
+		addTicketsModalTicket: 'Ticket',
+		addTicketsModalTickets: 'Tickets',
+		addTicketsModalSelected: 'sélectionné',
+		addTicketsModalSelectedPlural: 'sélectionnés',
+		addTicketsModalButton: 'Aller au paiement'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Bienvenue sur Allify !',

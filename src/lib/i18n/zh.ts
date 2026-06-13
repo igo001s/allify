@@ -9,7 +9,7 @@ export const zh = {
 		logoLightAltText: 'Allify 浅色标志',
 		headerNavigationItem1: '我的音乐档案',
 		headerNavigationItem2: '发现',
-		headerNavigationItem3: '音乐对战',
+		headerNavigationItem3: '音乐社区',
 		headerNavigationAriaLabel: '主导航',
 		headerLanguagePt: '葡萄牙语',
 		headerLanguageEn: '英语',
@@ -29,7 +29,7 @@ export const zh = {
 		profileLoggedItem3: '退出登录',
 		profileNotLoggedItem1: '登录',
 		profileNotLoggedItem2: '登录',
-		burguerMenuAltText: '打开导航菜单',
+		burgerMenuAltText: '打开导航菜单',
 		closeMenuAltText: '关闭导航菜单',
 		cardProfileAsideMenuParagraph1: '登录或创建账户',
 		footerFirstSectionText1: '将音乐数据转化为发现、排行榜和全新的音乐聆听方式。',
@@ -41,7 +41,7 @@ export const zh = {
 		footerColumn2Title: '导航',
 		footerColumn2Item1: '我的音乐档案',
 		footerColumn2Item2: '发现',
-		footerColumn2Item3: '音乐对战',
+		footerColumn2Item3: '音乐社区',
 		footerColumn3Title: '法律信息',
 		footerColumn3Item1: '隐私政策',
 		footerColumn3Item2: '服务条款',
@@ -56,7 +56,7 @@ export const zh = {
 		notLoggedHeading1: '您尚未登录',
 		notLoggedMyMusicProfileParagraph1: '要访问您的音乐档案，请连接您喜爱的流媒体平台之一。',
 		notLoggedDiscoveriesParagraph1: '要访问音乐发现功能，请连接您喜爱的流媒体平台之一。',
-		notLoggedMusicBattlesParagraph1: '要访问音乐对战功能，请连接您喜爱的流媒体平台之一。',
+		notLoggedMusicCommunityParagraph1: '要访问音乐社区，请连接您喜爱的流媒体平台之一。',
 		notLoggedProfileParagraph1: '要访问您的资料，请连接您喜爱的流媒体平台之一。',
 		notLoggedSettingsParagraph1: '要访问设置，请连接您喜爱的流媒体平台之一。',
 		notLoggedLoginLinkSpotify: '通过 Spotify 登录',
@@ -148,25 +148,12 @@ export const zh = {
 		discoveriesPageDiscoverAgainButton: 'もう一度発見',
 		alliMascotWavingAltText: '発見ページで手を振るAlliのマスコット'
 	},
-	addTickets: {
-		addTicketsModalTitle: 'Allify 门票',
-		addTicketsModalAriaLabel: '关闭门票弹窗',
-		addTicketsModalParagraph1: '购买门票',
-		addTicketsModalParagraph2: '看起来您的门票已用完。购买更多门票以继续使用功能。',
-		addTicketsModalParagraph3: '数量',
-		addTicketsModalPlaceholder: '自己选择',
-		addTicketsModalTicket: '门票',
-		addTicketsModalTickets: '门票',
-		addTicketsModalSelected: '已选择',
-		addTicketsModalSelectedPlural: '已选择',
-		addTicketsModalButton: '前往付款'
-	},
-	musicBattlesPage: {
-		title: '音乐对战 | Allify',
-		musicBattlesPageMetaDescription:
-			'参与激动人心的音乐对战，比较谁播放一首歌曲或艺术家更多，向朋友发起挑战，看看谁才是真正的音乐达人。',
-		musicBattlesPageMetaOgAndTwitterContent:
-			'参与激动人心的音乐对战，比较谁播放一首歌曲或艺术家更多，向朋友发起挑战，看看谁才是真正的音乐达人。'
+	musicCommunityPage: {
+		title: '音乐社区 | Allify',
+		musicCommunityPageMetaDescription:
+			'发现新用户，寻找朋友，探索音乐个人资料，并关注 Allify 社区的音乐喜好。',
+		musicCommunityPageMetaOgAndTwitterContent:
+			'发现新用户，寻找朋友，探索音乐个人资料，并关注 Allify 社区的音乐喜好。'
 	},
 	profilePage: {
 		title: '资料 | Allify',
@@ -223,6 +210,19 @@ export const zh = {
 		settingsPageConnectedStreamingNotConnected: '未连接',
 		settingsPageConnectedStreamingDisconnect: '断开连接',
 		settingsPageConnectedStreamingConnect: '连接'
+	},
+	addTickets: {
+		addTicketsModalTitle: 'Allify 门票',
+		addTicketsModalAriaLabel: '关闭门票弹窗',
+		addTicketsModalParagraph1: '购买门票',
+		addTicketsModalParagraph2: '看起来您的门票已用完。购买更多门票以继续使用功能。',
+		addTicketsModalParagraph3: '数量',
+		addTicketsModalPlaceholder: '自己选择',
+		addTicketsModalTicket: '门票',
+		addTicketsModalTickets: '门票',
+		addTicketsModalSelected: '已选择',
+		addTicketsModalSelectedPlural: '已选择',
+		addTicketsModalButton: '前往付款'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: '欢迎使用 Allify！',

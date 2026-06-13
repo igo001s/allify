@@ -35,28 +35,28 @@ const schema = {
 		featureList: {
 			'pt-BR': [
 				'Perfil musical personalizado',
-				'Batalhas de música',
+				'Comunidade musical',
 				'Descoberta de novas músicas',
 				'Métricas detalhadas de streaming',
 				'Rankings com amigos'
 			],
 			en: [
 				'Personalized music profile',
-				'Music battles',
+				'Music community',
 				'New music discovery',
 				'Detailed streaming metrics',
 				'Rankings with friends'
 			],
 			es: [
 				'Perfil musical personalizado',
-				'Batallas de música',
+				'Comunidad musical',
 				'Descubrimiento de nueva música',
 				'Métricas detalladas de streaming',
 				'Rankings con amigos'
 			],
 			de: [
 				'Personalisiertes Musikprofil',
-				'Musikschlachten',
+				'Musikgemeinschaft',
 				'Entdeckung neuer Musik',
 				'Detaillierte Streaming-Metriken',
 				'Rankings mit Freunden'
