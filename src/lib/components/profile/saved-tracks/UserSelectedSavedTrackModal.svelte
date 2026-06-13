@@ -1,4 +1,7 @@
 <script lang="ts">
+	// Svelte
+	import { onMount, onDestroy } from 'svelte';
+
 	// Assets
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
 
@@ -18,6 +21,7 @@
 
 	function closeModal() {
 		showSelectedSavedTrackModal = false;
+		document.body.style.overflow = '';
 	}
 </script>
 

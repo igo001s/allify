@@ -18,6 +18,7 @@
 
 	function closeModal() {
 		showSelectedAlbumModal = false;
+		document.body.style.overflow = '';
 	}
 </script>
 

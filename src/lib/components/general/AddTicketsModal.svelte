@@ -1,4 +1,7 @@
 <script lang="ts">
+	// Svelte
+	import { onMount, onDestroy } from 'svelte';
+
 	// Assets
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
 
@@ -34,6 +37,14 @@
 
 		showAddTickets.set(false);
 	}
+
+	onMount(() => {
+		document.body.style.overflow = 'hidden';
+	});
+
+	onDestroy(() => {
+		document.body.style.overflow = '';
+	});
 </script>
 
 <div

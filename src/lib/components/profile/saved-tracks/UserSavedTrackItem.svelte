@@ -10,15 +10,13 @@
 	function selectTrack() {
 		selectedSavedTrack = item;
 		showSelectedSavedTrackModal = true;
+		document.body.style.overflow = 'hidden';
 	}
 </script>
 
 <button
 	class="flex w-40 shrink-0 cursor-pointer flex-col items-center gap-2 rounded-xl bg-s-muted/90 p-3 transition-all hover:scale-102 sm:w-44"
-	onclick={() => {
-		selectedSavedTrack = item;
-		showSelectedSavedTrackModal = true;
-	}}
+	on:click={selectTrack}
 >
 	{#if item.album.image?.url}
 		<img

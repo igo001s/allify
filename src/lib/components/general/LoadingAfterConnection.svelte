@@ -1,4 +1,7 @@
 <script lang="ts">
+	// Svelte
+	import { onMount, onDestroy } from 'svelte';
+
 	// Assets
 	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
 	import DeezerIcon from '$lib/assets/images/icons/streamings/DeezerIcon.svelte';
@@ -11,6 +14,14 @@
 
 	// Props
 	export let streamingPlatform: 'spotify' | 'deezer' = 'spotify';
+
+	onMount(() => {
+		document.body.style.overflow = 'hidden';
+	});
+
+	onDestroy(() => {
+		document.body.style.overflow = '';
+	});
 </script>
 
 <div class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/40">

@@ -10,15 +10,13 @@
 	function selectPlaylist() {
 		selectedPlaylist = item;
 		showSelectedPlaylistModal = true;
+		document.body.style.overflow = 'hidden';
 	}
 </script>
 
 <button
 	class="flex w-40 shrink-0 cursor-pointer flex-col items-center gap-2 rounded-lg bg-s-muted/90 p-3 transition-all hover:scale-102 sm:w-44"
-	onclick={() => {
-		selectedPlaylist = item;
-		showSelectedPlaylistModal = true;
-	}}
+	on:click={selectPlaylist}
 >
 	{#if item.image?.url}
 		<img

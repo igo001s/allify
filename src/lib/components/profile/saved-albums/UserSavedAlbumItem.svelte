@@ -13,6 +13,7 @@
 	function selectAlbum() {
 		selectedSavedAlbum = item;
 		showSelectedSavedAlbumModal = true;
+		document.body.style.overflow = 'hidden';
 	}
 </script>
 

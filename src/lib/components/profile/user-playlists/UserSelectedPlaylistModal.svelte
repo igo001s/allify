@@ -15,6 +15,7 @@
 
 	function closeModal() {
 		showSelectedPlaylistModal = false;
+		document.body.style.overflow = '';
 	}
 </script>
 
