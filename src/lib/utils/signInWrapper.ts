@@ -19,6 +19,11 @@ export function signInWrapper(
 		}
 	}
 
+	sessionStorage.setItem(`allify-loading-${streaming.toLowerCase()}`, JSON.stringify({
+		loading: true,
+		streamingPlatform: streaming
+	}));
+
 	loadingAfterConnectionStore.set({
 		loading: true,
 		streamingPlatform: streaming
