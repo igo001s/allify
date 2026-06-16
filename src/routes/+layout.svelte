@@ -31,6 +31,13 @@
 			userInfo.set(response);
 		} catch {
 			userInfo.set(undefined);
+		} finally {
+			loadingAfterConnectionStore.set({
+				loading: false,
+				streamingPlatform: null
+			});
+			sessionStorage.removeItem('allify-loading-spotify');
+			sessionStorage.removeItem('allify-loading-deezer');
 		}
 	};
 
