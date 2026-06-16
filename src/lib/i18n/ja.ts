@@ -158,7 +158,8 @@ export const ja = {
 		musicCommunityPageMetaDescription:
 			'新しいユーザーを見つけたり、友達を探したり、音楽プロフィールを探索したり、Allifyコミュニティの音楽の好みをチェックしたりできます。',
 		musicCommunityPageMetaOgAndTwitterContent:
-			'新しいユーザーを見つけたり、友達を探したり、音楽プロフィールを探索したり、Allifyコミュニティの音楽の好みをチェックしたりできます。'
+			'新しいユーザーを見つけたり、友達を探したり、音楽プロフィールを探索したり、Allifyコミュニティの音楽の好みをチェックしたりできます。',
+		musicCommunityPageHeading1: '音楽コミュニティを探索する'
 	},
 	profilePage: {
 		title: 'プロフィール | Allify',
