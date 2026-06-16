@@ -164,7 +164,8 @@ export const fr = {
 		musicCommunityPageMetaDescription:
 			'Découvrez de nouveaux utilisateurs, trouvez des amis, explorez des profils musicaux et suivez les goûts musicaux de la communauté Allify.',
 		musicCommunityPageMetaOgAndTwitterContent:
-			'Découvrez de nouveaux utilisateurs, trouvez des amis, explorez des profils musicaux et suivez les goûts musicaux de la communauté Allify.'
+			'Découvrez de nouveaux utilisateurs, trouvez des amis, explorez des profils musicaux et suivez les goûts musicaux de la communauté Allify.',
+		musicCommunityPageHeading1: 'Explorez la Communauté musicale'
 	},
 	profilePage: {
 		title: 'Profil | Allify',

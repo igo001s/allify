@@ -153,7 +153,8 @@ export const zh = {
 		musicCommunityPageMetaDescription:
 			'发现新用户，寻找朋友，探索音乐个人资料，并关注 Allify 社区的音乐喜好。',
 		musicCommunityPageMetaOgAndTwitterContent:
-			'发现新用户，寻找朋友，探索音乐个人资料，并关注 Allify 社区的音乐喜好。'
+			'发现新用户，寻找朋友，探索音乐个人资料，并关注 Allify 社区的音乐喜好。',
+		musicCommunityPageHeading1: '探索音乐社区'
 	},
 	profilePage: {
 		title: '资料 | Allify',

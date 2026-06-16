@@ -36,7 +36,13 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify?.connected === true}
-	<h1>Music community generic heading</h1>
+	<section class="base-section px-4 py-10 md:px-6 md:py-14">
+		<h1
+			class="mb-4 text-center text-2xl font-semibold text-t-primary md:text-left md:text-3xl lg:mb-6"
+		>
+			{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
+		</h1>
+	</section>
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedMusicCommunityParagraph1} />
 {/if}
