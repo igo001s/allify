@@ -165,7 +165,13 @@ export const fr = {
 			'Découvrez de nouveaux utilisateurs, trouvez des amis, explorez des profils musicaux et suivez les goûts musicaux de la communauté Allify.',
 		musicCommunityPageMetaOgAndTwitterContent:
 			'Découvrez de nouveaux utilisateurs, trouvez des amis, explorez des profils musicaux et suivez les goûts musicaux de la communauté Allify.',
-		musicCommunityPageHeading1: 'Explorez la Communauté musicale'
+		musicCommunityPageHeading1: 'Explorez la Communauté musicale',
+		musicCommunityParagraph1:
+			'Recherchez vos amis et découvrez ce qu’ils écoutent, ainsi que leurs artistes et chansons les plus écoutés.',
+		musicCommunitySearchPlaceholder:
+			'Rechercher par nom d’utilisateur',
+		musicCommunitySearchButtonAltText:
+			'Icône de loupe pour rechercher par nom d’utilisateur',
 	},
 	profilePage: {
 		title: 'Profil | Allify',

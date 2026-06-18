@@ -159,7 +159,13 @@ export const ja = {
 			'新しいユーザーを見つけたり、友達を探したり、音楽プロフィールを探索したり、Allifyコミュニティの音楽の好みをチェックしたりできます。',
 		musicCommunityPageMetaOgAndTwitterContent:
 			'新しいユーザーを見つけたり、友達を探したり、音楽プロフィールを探索したり、Allifyコミュニティの音楽の好みをチェックしたりできます。',
-		musicCommunityPageHeading1: '音楽コミュニティを探索する'
+		musicCommunityPageHeading1: '音楽コミュニティを探索する',
+		musicCommunityParagraph1:
+			'友達を検索して、彼らが何を聴いているのかや、最もよく聴いているアーティストや楽曲を確認しましょう。',
+		musicCommunitySearchPlaceholder:
+			'ユーザー名で検索',
+		musicCommunitySearchButtonAltText:
+			'ユーザー名を検索するための虫眼鏡アイコン',
 	},
 	profilePage: {
 		title: 'プロフィール | Allify',

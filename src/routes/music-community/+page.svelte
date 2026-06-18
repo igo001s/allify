@@ -2,8 +2,12 @@
 	// Svelte
 	import { page } from '$app/stores';
 
+	// Assets
+	import SearchIcon from '$lib/assets/images/icons/SearchIcon.svelte';
+
 	// Components
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
+	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -36,12 +40,37 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify?.connected === true}
-	<section class="base-section px-4 py-10 md:px-6 md:py-14">
-		<h1
-			class="mb-4 text-center text-2xl font-semibold text-t-primary md:text-left md:text-3xl lg:mb-6"
+	<section class="base-section">
+		<div class="mb-8">
+			<h1 class="mb-4">
+				{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
+			</h1>
+
+			<p class="max-w-4xl text-t-secondary">
+				{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
+			</p>
+		</div>
+
+		<div
+			class="max-w-4xl rounded-xl border border-input-border bg-s-default p-4"
 		>
-			{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
-		</h1>
+			<div class="flex flex-col gap-3 sm:flex-row">
+				<input
+					type="text"
+					placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
+					class="h-12 flex-1 rounded-xl border border-input-border bg-input-bg px-4 text-sm text-t-primary outline-none transition-colors focus:border-b-focus"
+				/>
+
+				<button
+					class="flex h-12 w-12 shrink-0 items-center cursor-pointer justify-center rounded-xl bg-brand-primary transition-colors hover:bg-brand-primary-dark"
+				>
+					<SearchIcon
+						iconSvgClass="h-4.5 w-4.5 text-t-inverse"
+						iconAltText={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAltText}
+					/>
+				</button>
+			</div>
+		</div>
 	</section>
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedMusicCommunityParagraph1} />

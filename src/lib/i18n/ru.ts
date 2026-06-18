@@ -161,7 +161,13 @@ export const ru = {
 			'Открывайте новых пользователей, находите друзей, изучайте музыкальные профили и следите за музыкальными предпочтениями сообщества Allify.',
 		musicCommunityPageMetaOgAndTwitterContent:
 			'Открывайте новых пользователей, находите друзей, изучайте музыкальные профили и следите за музыкальными предпочтениями сообщества Allify.',
-		musicCommunityPageHeading1: 'Исследуйте музыкальное сообщество'
+		musicCommunityPageHeading1: 'Исследуйте музыкальное сообщество',
+		musicCommunityParagraph1:
+			'Ищите своих друзей, смотрите, что они слушают, а также их самых популярных исполнителей и треки.',
+		musicCommunitySearchPlaceholder:
+			'Поиск по имени пользователя',
+		musicCommunitySearchButtonAltText:
+			'Значок лупы для поиска по имени пользователя'
 	},
 	profilePage: {
 		title: 'Профиль | Allify',
