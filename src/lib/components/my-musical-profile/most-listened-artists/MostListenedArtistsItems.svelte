@@ -25,7 +25,7 @@
 		/>
 	</div>
 
-	<div class="flex flex-col gap-14">
+	<div class="flex flex-col gap-16">
 		{#each mostListenedArtists as artist, i (artist.id)}
 			{#if i === 0}
 				<TopArtistItem
@@ -91,7 +91,7 @@
 			{/if}
 		{/each}
 
-		{#if ($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.limit ?? 0) < 50}
+		{#if ($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit ?? 0) < 50}
 			<MoreMyMusicalProfileItems additionalItemsType="artists" />
 		{/if}
 	</div>

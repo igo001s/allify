@@ -41,33 +41,31 @@
 
 {#if $userInfo?.connectedStreamings.spotify?.connected === true}
 	<section class="base-section">
-		<div class="mb-8">
-			<h1 class="mb-4">
-				{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
-			</h1>
+		<h1
+			class="text-2xl font-semibold text-t-primary mb-2 md:text-3xl lg:mb-4"
+		>
+			{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
+		</h1>
 
-			<p class="max-w-4xl text-t-secondary">
-				{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
-			</p>
-		</div>
+		<p class="text-sm leading-relaxed text-t-secondary md:text-base">
+			{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
+		</p>
 
-		<div class="max-w-4xl rounded-xl border border-input-border bg-s-default p-4">
-			<div class="flex flex-col gap-3 sm:flex-row">
-				<input
-					type="text"
-					placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
-					class="h-12 flex-1 rounded-xl border border-input-border bg-input-bg px-4 text-sm text-t-primary transition-colors outline-none focus:border-b-focus"
+		<div class="flex items-center gap-3 mt-2">
+			<input
+				type="text"
+				placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
+				class="flex-1 rounded-xl border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted focus:border-brand-primary"
+			/>
+
+			<button
+				class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-brand-primary transition-colors hover:bg-brand-primary-dark"
+			>
+				<SearchIcon
+					iconSvgClass="h-4.5 w-4.5 text-t-inverse"
+					iconAltText={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAltText}
 				/>
-
-				<button
-					class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-xl bg-brand-primary transition-colors hover:bg-brand-primary-dark"
-				>
-					<SearchIcon
-						iconSvgClass="h-4.5 w-4.5 text-t-inverse"
-						iconAltText={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAltText}
-					/>
-				</button>
-			</div>
+			</button>
 		</div>
 	</section>
 {:else}

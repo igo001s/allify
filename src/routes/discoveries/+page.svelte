@@ -139,16 +139,16 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify?.connected === true}
-	<section class="base-section px-4 py-10 md:px-6 md:py-14">
+	<section class="base-section">
 		<h1
-			class="mb-4 text-center text-2xl font-semibold text-t-primary md:text-left md:text-3xl lg:mb-6"
+			class="text-2xl font-semibold text-t-primary mb-2 md:text-3xl lg:mb-4"
 		>
 			{$translationsStore.discoveriesPage.discoveriesPageHeading1}
 		</h1>
 
 		<div class="flex flex-col-reverse justify-between gap-10 lg:flex-row">
 			<div class="flex w-full flex-col gap-5 lg:w-3/5">
-				<p class="text-center text-sm leading-relaxed text-t-secondary md:text-left md:text-base">
+				<p class="text-sm leading-relaxed text-t-secondary md:text-base">
 					{$translationsStore.discoveriesPage.discoveriesPageParagraph1}
 				</p>
 

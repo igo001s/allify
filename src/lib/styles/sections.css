@@ -1,5 +1,5 @@
 .base-section {
-	@apply flex flex-col gap-3 px-8 py-8 sm:px-12 lg:py-12 2xl:px-32 2xl:pt-20 2xl:pb-28;
+	@apply flex flex-col gap-5 px-8 pt-10 pb-20 sm:pt-12 2xl:px-32 2xl:pt-20 2xl:pb-28;
 }
 
 .base-section h1 {
