@@ -174,7 +174,10 @@ export const it = {
 		musicCommunityFavoritesSectionUserImageAltText: 'Immagine del profilo di',
 		musicCommunityFavoritesSectionEmptyParagraph1: 'Non hai ancora salvato nessun preferito.',
 		musicCommunityFavoritesSectionEmptyParagraph2:
-			'Aggiungi profili alla tua lista dei preferiti per accedervi rapidamente.'
+			'Aggiungi profili alla tua lista dei preferiti per accedervi rapidamente.',
+		musicCommunityFavoritesAfterSearchByParagraph1: 'Dopo aver cercato',
+		musicCommunityFavoritesAfterSearchByComplement: 'un utente',
+		musicCommunityFavoritesAfterSearchByParagraph2: 'I risultati della ricerca della community verranno visualizzati in quest’area.',
 	},
 	profilePage: {
 		title: 'Profilo | Allify',

@@ -172,7 +172,10 @@ export const ru = {
 		musicCommunityFavoritesSectionUserImageAltText: 'Изображение профиля пользователя',
 		musicCommunityFavoritesSectionEmptyParagraph1: 'Вы ещё не сохранили ни одного избранного профиля.',
 		musicCommunityFavoritesSectionEmptyParagraph2:
-			'Добавьте профили в список избранного, чтобы быстро получать к ним доступ.'
+			'Добавьте профили в список избранного, чтобы быстро получать к ним доступ.',
+		musicCommunityFavoritesAfterSearchByParagraph1: 'После поиска',
+		musicCommunityFavoritesAfterSearchByComplement: 'пользователя',
+		musicCommunityFavoritesAfterSearchByParagraph2: 'Результаты поиска сообщества будут отображены в этой области.',
 	},
 	profilePage: {
 		title: 'Профиль | Allify',

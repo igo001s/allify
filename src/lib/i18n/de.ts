@@ -175,7 +175,10 @@ export const de = {
 		musicCommunityFavoritesSectionUserImageAltText: 'Profilbild von',
 		musicCommunityFavoritesSectionEmptyParagraph1: 'Du hast noch keine Favoriten gespeichert.',
 		musicCommunityFavoritesSectionEmptyParagraph2:
-			'Füge Profile zu deiner Favoritenliste hinzu, um schnell auf sie zuzugreifen.'
+			'Füge Profile zu deiner Favoritenliste hinzu, um schnell auf sie zuzugreifen.',
+		musicCommunityFavoritesAfterSearchByParagraph1: 'Nach der Suche nach',
+		musicCommunityFavoritesAfterSearchByComplement: 'einem Benutzer',
+		musicCommunityFavoritesAfterSearchByParagraph2: 'Die Suchergebnisse der Community werden in diesem Bereich angezeigt.',
 	},
 	profilePage: {
 		title: 'Profil | Allify',

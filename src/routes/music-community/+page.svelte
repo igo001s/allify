@@ -12,6 +12,8 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
+	
+	let searchUserInputValue: string;
 </script>
 
 <svelte:head>
@@ -51,12 +53,15 @@
 			{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
 		</p>
 
-		<div class="flex w-full gap-14 mt-10">
-			<div class="w-3/5">
-				<div class="flex items-center gap-3">
+		<div class="flex gap-10 mt-10">
+			<div class="w-3/5 flex flex-col gap-6">
+				<div class="flex items-center gap-3 h-1/6">
 					<input
 						type="text"
+						minlength="3"
+						maxlength="30"
 						placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
+						bind:value={searchUserInputValue}
 						class="flex-1 rounded-xl border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted focus:border-brand-primary"
 					/>
 
@@ -68,6 +73,21 @@
 							iconAltText={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAltText}
 						/>
 					</button>
+				</div>
+
+				<div class="rounded-xl border border-b-default bg-s-default px-6 py-4 flex items-center justify-center h-5/6 max-h-5/6">
+					<div
+						class="rounded-xl border w-full border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
+					>
+						<p class="font-medium text-t-primary">
+							{$translationsStore.musicCommunityPage.musicCommunityFavoritesAfterSearchByParagraph1}
+							"{searchUserInputValue || $translationsStore.musicCommunityPage.musicCommunityFavoritesAfterSearchByComplement}"
+						</p>
+
+						<p class="mt-2 text-sm text-t-secondary">
+							{$translationsStore.musicCommunityPage.musicCommunityFavoritesAfterSearchByParagraph2}
+						</p>
+					</div>
 				</div>
 			</div>
 

@@ -164,7 +164,10 @@ export const zh = {
 		musicCommunityFavoritesSectionUserImageAltText: '个人资料图片：',
 		musicCommunityFavoritesSectionEmptyParagraph1: '您尚未收藏任何个人资料。',
 		musicCommunityFavoritesSectionEmptyParagraph2:
-			'将个人资料添加到收藏列表中，以便快速访问。'
+			'将个人资料添加到收藏列表中，以便快速访问。',
+		musicCommunityFavoritesAfterSearchByParagraph1: '搜索后',
+		musicCommunityFavoritesAfterSearchByComplement: '一个用户',
+		musicCommunityFavoritesAfterSearchByParagraph2: '社区搜索结果将显示在此区域。',
 	},
 	profilePage: {
 		title: '资料 | Allify',
