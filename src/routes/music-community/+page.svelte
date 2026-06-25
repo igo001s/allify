@@ -78,7 +78,7 @@
 			{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
 		</p>
 
-		<div class="mt-10 flex gap-10">
+		<div class="mt-10 flex gap-20">
 			<div class="flex w-3/5 flex-col gap-6">
 				<div class="flex h-1/6 items-center gap-3">
 					<input
@@ -88,6 +88,11 @@
 						placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
 						bind:value={searchUserInputValue}
 						class="flex-1 rounded-xl border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted focus:border-brand-primary"
+						on:keydown={(e) => {
+							if (e.key === 'Enter') {
+								handleSearchUser();
+							}
+						}}
 					/>
 
 					<button

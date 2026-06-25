@@ -7,7 +7,7 @@
 </script>
 
 <section
-	class="flex flex-col-reverse items-center gap-16 bg-s-default px-4 py-12 lg:flex-row lg:justify-between lg:py-32 2xl:px-32"
+	class="flex flex-col-reverse items-center gap-16 bg-s-default px-4 py-12 lg:flex-row lg:justify-between lg:py-32 2xl:px-24"
 	id="devices-section"
 >
 	<img
