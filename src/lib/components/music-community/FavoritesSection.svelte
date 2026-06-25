@@ -1,15 +1,17 @@
 <script lang="ts">
-    // Stores
-    import { translationsStore } from "$lib/stores/translations.store";
+	// Stores
+	import { translationsStore } from '$lib/stores/translations.store';
 
-    // Props
+	// Props
 	export let favorites;
 </script>
 
 <div class="rounded-xl border border-b-default bg-s-default px-6 py-4">
 	<div class="mb-6 flex items-center justify-between">
 		<div>
-			<h2 class="text-xl font-semibold text-t-primary">{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionHeading2}</h2>
+			<h2 class="text-xl font-semibold text-t-primary">
+				{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionHeading2}
+			</h2>
 
 			<p class="mt-1 text-sm text-t-secondary">
 				{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionParagraph1}
@@ -46,7 +48,9 @@
 			<div
 				class="rounded-xl border border-dashed border-b-default bg-s-muted px-6 py-10 text-center"
 			>
-				<p class="font-medium text-t-primary">{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionEmptyParagraph1}</p>
+				<p class="font-medium text-t-primary">
+					{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionEmptyParagraph1}
+				</p>
 
 				<p class="mt-2 text-sm text-t-secondary">
 					{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionEmptyParagraph2}

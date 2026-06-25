@@ -1,6 +1,7 @@
 import type { UserInfoSpotify } from './SpotifyData.type';
 
 export type UserInfo = {
+	name: string;
 	email: string;
 	tickets: number;
 	primaryStreaming: 'spotify' | 'deezer';
@@ -17,4 +18,11 @@ export type UserInfo = {
 		name: string;
 		userImage: string;
 	}[];
+};
+
+export type SearchUserInfo = {
+	id: string;
+	name: string;
+	image: { url: string; height: number | null; width: number | null };
+	primaryStreaming: 'spotify' | 'deezer';
 };

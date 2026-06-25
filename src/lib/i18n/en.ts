@@ -177,7 +177,8 @@ export const en = {
 			'Add profiles to your favorites list to access them quickly.',
 		musicCommunityFavoritesAfterSearchByParagraph1: 'After searching for',
 		musicCommunityFavoritesAfterSearchByComplement: 'a user',
-		musicCommunityFavoritesAfterSearchByParagraph2: 'Community search results will be displayed in this area.',
+		musicCommunityFavoritesAfterSearchByParagraph2:
+			'Community search results will be displayed in this area.'
 	},
 	profilePage: {
 		title: 'Profile | Allify',

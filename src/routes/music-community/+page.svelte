@@ -8,12 +8,30 @@
 	// Components
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
 	import FavoritesSection from '$lib/components/music-community/FavoritesSection.svelte';
-	
+	import FoundedUsers from '$lib/components/music-community/FoundedUsers.svelte';
+
+	// Services
+	import { searchUsers } from '$lib/services/user/search/searchUsers';
+
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
-	
+
+	// Types
+	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
+
 	let searchUserInputValue: string;
+	let loadingFoundedUsers = false;
+
+	$: foundedUsers = [] as SearchUserInfo[];
+
+	async function handleSearchUser() {
+		loadingFoundedUsers = true;
+		const data = await searchUsers(searchUserInputValue);
+
+		foundedUsers = data;
+		loadingFoundedUsers = false;
+	}
 </script>
 
 <svelte:head>
@@ -43,9 +61,7 @@
 
 {#if $userInfo?.connectedStreamings.spotify?.connected === true}
 	<section class="base-section core-page">
-		<h1
-			class="text-2xl font-semibold text-t-primary mb-3 md:text-3xl lg:mb-5"
-		>
+		<h1 class="mb-3 text-2xl font-semibold text-t-primary md:text-3xl lg:mb-5">
 			{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
 		</h1>
 
@@ -53,12 +69,12 @@
 			{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
 		</p>
 
-		<div class="flex gap-10 mt-10">
-			<div class="w-3/5 flex flex-col gap-6">
-				<div class="flex items-center gap-3 h-1/6">
+		<div class="mt-10 flex gap-10">
+			<div class="flex w-3/5 flex-col gap-6">
+				<div class="flex h-1/6 items-center gap-3">
 					<input
 						type="text"
-						minlength="3"
+						minlength="2"
 						maxlength="30"
 						placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
 						bind:value={searchUserInputValue}
@@ -67,6 +83,8 @@
 
 					<button
 						class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-brand-primary transition-colors hover:bg-brand-primary-dark"
+						disabled={!searchUserInputValue || searchUserInputValue.length < 2}
+						on:click={handleSearchUser}
 					>
 						<SearchIcon
 							iconSvgClass="h-4.5 w-4.5 text-t-inverse"
@@ -75,20 +93,7 @@
 					</button>
 				</div>
 
-				<div class="rounded-xl border border-b-default bg-s-default px-6 py-4 flex items-center justify-center h-5/6 max-h-5/6">
-					<div
-						class="rounded-xl border w-full border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
-					>
-						<p class="font-medium text-t-primary">
-							{$translationsStore.musicCommunityPage.musicCommunityFavoritesAfterSearchByParagraph1}
-							"{searchUserInputValue || $translationsStore.musicCommunityPage.musicCommunityFavoritesAfterSearchByComplement}"
-						</p>
-
-						<p class="mt-2 text-sm text-t-secondary">
-							{$translationsStore.musicCommunityPage.musicCommunityFavoritesAfterSearchByParagraph2}
-						</p>
-					</div>
-				</div>
+				<FoundedUsers {searchUserInputValue} {foundedUsers} {loadingFoundedUsers} />
 			</div>
 
 			<div class="w-2/5">

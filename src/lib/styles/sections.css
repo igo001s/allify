@@ -1,5 +1,5 @@
 .base-section {
-	@apply px-8 pb-20 pt-12 sm:px-12 lg:pt-22 lg:pb-30 2xl:px-32;
+	@apply px-8 pt-12 pb-20 sm:px-12 lg:pt-22 lg:pb-30 2xl:px-32;
 }
 
 .base-section.core-page h1 {
@@ -27,7 +27,7 @@
 }
 
 .base-section.legal-pages ul {
-	@apply list-disc pl-6 flex flex-col gap-3 font-medium;
+	@apply flex list-disc flex-col gap-3 pl-6 font-medium;
 }
 
 .base-section.legal-pages h1 {

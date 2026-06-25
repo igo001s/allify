@@ -172,10 +172,12 @@ export const pt = {
 			'Aqui você pode ver os perfis que você salvou como favoritos.',
 		musicCommunityFavoritesSectionUserImageAltText: 'Imagem do perfil de',
 		musicCommunityFavoritesSectionEmptyParagraph1: 'Você ainda não salvou nenhum favorito.',
-		musicCommunityFavoritesSectionEmptyParagraph2: 'Adicione perfis à sua lista de favoritos para acessá-los rapidamente.',
+		musicCommunityFavoritesSectionEmptyParagraph2:
+			'Adicione perfis à sua lista de favoritos para acessá-los rapidamente.',
 		musicCommunityFavoritesAfterSearchByParagraph1: 'Depois de pesquisar por',
 		musicCommunityFavoritesAfterSearchByComplement: 'um usuário',
-		musicCommunityFavoritesAfterSearchByParagraph2: 'Os resultados da comunidade serão exibidos nesta área.',
+		musicCommunityFavoritesAfterSearchByParagraph2:
+			'Os resultados da comunidade serão exibidos nesta área.'
 	},
 	profilePage: {
 		title: 'Perfil | Allify',

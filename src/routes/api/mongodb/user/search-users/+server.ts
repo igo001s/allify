@@ -19,44 +19,41 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { name, email, streaming, streamingData } = await request.json();
+		const body = await request.json();
 
-		if (!name || !email || !streaming || !streamingData) {
-			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
+		const { user } = body;
+
+		if (!user) {
+			return new Response(JSON.stringify({ error: 'User is required' }), { status: 400 });
 		}
 
 		const client = await connectDB();
 		const db = client.db(MONGO_DB);
 		const users = db.collection('users');
 
-		const existingUser = await users.findOne({ email: email });
+		const foundUsers = await users
+			.find({
+				name: {
+					$regex: user,
+					$options: 'i'
+				}
+			})
+			.toArray();
 
-		if (existingUser) {
-			return new Response(JSON.stringify({ error: 'User already exists' }), { status: 409 });
+		if (!foundUsers || foundUsers.length === 0) {
+			return new Response(JSON.stringify({ error: 'Users not found' }), { status: 404 });
 		}
-
-		const user = {
-			name: name,
-			email: email,
-			tickets: 5,
-			primaryStreaming: streaming,
-			discoveries: { updatedAt: undefined, tracks: [], artists: [] },
-			connectedStreamings: { [streaming]: streamingData }
-		};
-
-		const result = await users.insertOne({
-			...user,
-			createdAt: new Date()
-		});
 
 		return new Response(
 			JSON.stringify({
-				createdUser: {
-					...user,
-					_id: result.insertedId
-				}
+				users: foundUsers.map((user) => ({
+					id: user._id,
+					image: user.primaryStreaming === 'spotify' ? user.connectedStreamings.spotify.image : '',
+					name: user.name,
+					primaryStreaming: user.primaryStreaming
+				}))
 			}),
-			{ status: 201 }
+			{ status: 200 }
 		);
 	} catch (error) {
 		return new Response(JSON.stringify({ error: (error as Error).message }), {

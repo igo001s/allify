@@ -173,7 +173,8 @@ export const ja = {
 			'プロフィールをお気に入りリストに追加すると、すばやくアクセスできます。',
 		musicCommunityFavoritesAfterSearchByParagraph1: '検索後',
 		musicCommunityFavoritesAfterSearchByComplement: 'ユーザー',
-		musicCommunityFavoritesAfterSearchByParagraph2: 'コミュニティの検索結果がこのエリアに表示されます。',
+		musicCommunityFavoritesAfterSearchByParagraph2:
+			'コミュニティの検索結果がこのエリアに表示されます。'
 	},
 	profilePage: {
 		title: 'プロフィール | Allify',

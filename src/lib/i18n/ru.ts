@@ -170,12 +170,14 @@ export const ru = {
 		musicCommunityFavoritesSectionParagraph1:
 			'Здесь вы можете увидеть профили, которые вы сохранили в избранное.',
 		musicCommunityFavoritesSectionUserImageAltText: 'Изображение профиля пользователя',
-		musicCommunityFavoritesSectionEmptyParagraph1: 'Вы ещё не сохранили ни одного избранного профиля.',
+		musicCommunityFavoritesSectionEmptyParagraph1:
+			'Вы ещё не сохранили ни одного избранного профиля.',
 		musicCommunityFavoritesSectionEmptyParagraph2:
 			'Добавьте профили в список избранного, чтобы быстро получать к ним доступ.',
 		musicCommunityFavoritesAfterSearchByParagraph1: 'После поиска',
 		musicCommunityFavoritesAfterSearchByComplement: 'пользователя',
-		musicCommunityFavoritesAfterSearchByParagraph2: 'Результаты поиска сообщества будут отображены в этой области.',
+		musicCommunityFavoritesAfterSearchByParagraph2:
+			'Результаты поиска сообщества будут отображены в этой области.'
 	},
 	profilePage: {
 		title: 'Профиль | Allify',
