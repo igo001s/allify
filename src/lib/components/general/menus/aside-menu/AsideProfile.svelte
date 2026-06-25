@@ -6,6 +6,7 @@
 
 	// Components
 	import AsideProfileItems from '$lib/components/general/menus/aside-menu/AsideProfileItems.svelte';
+	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';
 
 	// Utils
 	import { logoutWrapper } from '$lib/utils/logoutWrapper';
@@ -85,25 +86,10 @@
 						alt={$userInfo?.connectedStreamings.spotify?.name}
 					/>
 				{:else}
-					<div
-						class="
-							flex
-							h-10
-							w-10
-							items-center
-							justify-center
-							rounded-full
-							border
-							object-cover
-							p-1
-							pt-1
-							font-medium
-							text-brand-primary
-						"
-						aria-label={$userInfo?.connectedStreamings.spotify?.name}
-					>
-						{$userInfo?.connectedStreamings.spotify?.name.slice(0, 1)}
-					</div>
+					<ProfileWithoutPhoto
+						userName={$userInfo?.connectedStreamings.spotify?.name}
+						additionalClassesToSize="h-10 w-10 sm:h-11 sm:w-11"
+					/>
 				{/if}
 
 				<div class="min-w-0 flex-1 space-y-1.5 text-left">

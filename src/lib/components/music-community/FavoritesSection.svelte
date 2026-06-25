@@ -7,7 +7,7 @@
 </script>
 
 <div class="rounded-xl border border-b-default bg-s-default p-5">
-	<div class="mb-6 flex items-center justify-between">
+	<div class="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 		<div>
 			<h2 class="text-xl font-semibold text-t-primary">
 				{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionHeading2}
@@ -19,7 +19,7 @@
 		</div>
 
 		<span
-			class="rounded-full bg-brand-primary/10 px-3 py-1 text-sm font-semibold text-brand-primary"
+			class="w-fit rounded-full bg-brand-primary/10 px-3 py-1 text-sm font-semibold text-brand-primary"
 		>
 			{#if favorites}
 				{favorites.length}
@@ -37,10 +37,10 @@
 				<img
 					src={favorite.userImage}
 					alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${favorite.name}`}
-					class="h-16 w-16 rounded-lg object-cover"
+					class="h-14 w-14 shrink-0 rounded-lg object-cover sm:h-16 sm:w-16"
 				/>
 
-				<h3 class="truncate font-semibold text-t-primary">
+				<h3 class="min-w-0 truncate font-semibold text-t-primary">
 					{favorite.name}
 				</h3>
 			</div>

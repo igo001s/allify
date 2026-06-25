@@ -78,9 +78,9 @@
 			{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
 		</p>
 
-		<div class="mt-10 flex gap-20">
-			<div class="flex w-3/5 flex-col gap-6">
-				<div class="flex h-1/6 items-center gap-3">
+		<div class="mt-10 flex flex-col gap-8 xl:flex-row xl:gap-12">
+			<div class="flex w-full flex-col gap-6 xl:w-3/5">
+				<div class="flex items-center gap-3">
 					<input
 						type="text"
 						minlength="2"
@@ -96,7 +96,7 @@
 					/>
 
 					<button
-						class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-brand-primary transition-colors hover:bg-brand-primary-dark"
+						class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-xl bg-brand-primary transition-colors hover:bg-brand-primary-dark"
 						disabled={!searchUserInputValue || searchUserInputValue.length < 2}
 						on:click={handleSearchUser}
 					>
@@ -110,7 +110,7 @@
 				<FoundedUsers {searchUserInputValue} {foundedUsers} {loadingFoundedUsers} {hasSearched} />
 			</div>
 
-			<div class="w-2/5">
+			<div class="w-full xl:w-2/5">
 				<FavoritesSection favorites={$userInfo?.favorites} />
 			</div>
 		</div>

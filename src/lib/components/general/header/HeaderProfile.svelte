@@ -2,6 +2,7 @@
 	// Components
 	import ProfileIcon from '$lib/assets/images/icons/ProfileIcon.svelte';
 	import HeaderProfileItems from '$lib/components/general/header/HeaderProfileItems.svelte';
+	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -67,25 +68,7 @@
 				alt={$userInfo?.connectedStreamings[primaryStreaming]?.name}
 			/>
 		{:else}
-			<div
-				class="
-					flex
-					h-9/12
-					w-9/12
-					items-center
-					justify-center
-					rounded-full
-					border
-					object-cover
-					p-1
-					pt-1
-					font-medium
-					text-brand-primary
-				"
-				aria-label={$userInfo?.connectedStreamings[primaryStreaming]?.name}
-			>
-				{$userInfo?.connectedStreamings[primaryStreaming]?.name.slice(0, 1)}
-			</div>
+			<ProfileWithoutPhoto userName={$userInfo?.name} additionalClassesToSize="h-9/12 w-9/12" />
 		{/if}
 	{:else}
 		<ProfileIcon
