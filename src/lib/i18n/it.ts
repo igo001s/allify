@@ -178,7 +178,12 @@ export const it = {
 		musicCommunityFavoritesAfterSearchByParagraph1: 'Dopo aver cercato',
 		musicCommunityFavoritesAfterSearchByComplement: 'un utente',
 		musicCommunityFavoritesAfterSearchByParagraph2:
-			'I risultati della ricerca della community verranno visualizzati in quest’area.'
+			'I risultati della ricerca della community verranno visualizzati in quest’area.',
+		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: 'Nessun profilo trovato',
+		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
+			'Prova a cercare un altro nome o verifica l’ortografia.',
+		musicCommunityStarIconAltText: 'Icona di stella per aggiungere un profilo ai preferiti',
+		musicCommunityStarIconRemoveAltText: 'Icona di stella per rimuovere un profilo dai preferiti'
 	},
 	profilePage: {
 		title: 'Profilo | Allify',

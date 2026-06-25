@@ -174,7 +174,12 @@ export const ja = {
 		musicCommunityFavoritesAfterSearchByParagraph1: '検索後',
 		musicCommunityFavoritesAfterSearchByComplement: 'ユーザー',
 		musicCommunityFavoritesAfterSearchByParagraph2:
-			'コミュニティの検索結果がこのエリアに表示されます。'
+			'コミュニティの検索結果がこのエリアに表示されます。',
+		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: 'プロフィールが見つかりません',
+		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
+			'別の名前で検索するか、スペルを確認してください。',
+		musicCommunityStarIconAltText: 'プロフィールをお気に入りに追加するための星アイコン',
+		musicCommunityStarIconRemoveAltText: 'プロフィールをお気に入りから削除するための星アイコン'
 	},
 	profilePage: {
 		title: 'プロフィール | Allify',

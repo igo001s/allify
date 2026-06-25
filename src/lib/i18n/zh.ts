@@ -165,7 +165,11 @@ export const zh = {
 		musicCommunityFavoritesSectionEmptyParagraph2: '将个人资料添加到收藏列表中，以便快速访问。',
 		musicCommunityFavoritesAfterSearchByParagraph1: '搜索后',
 		musicCommunityFavoritesAfterSearchByComplement: '一个用户',
-		musicCommunityFavoritesAfterSearchByParagraph2: '社区搜索结果将显示在此区域。'
+		musicCommunityFavoritesAfterSearchByParagraph2: '社区搜索结果将显示在此区域。',
+		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: '未找到个人资料',
+		musicCommunityFavoritesAfterSearchByNoResultsParagraph2: '尝试搜索其他名称或检查拼写。',
+		musicCommunityStarIconAltText: '用于收藏个人资料的星形图标',
+		musicCommunityStarIconRemoveAltText: '用于从收藏夹中删除个人资料的星形图标'
 	},
 	profilePage: {
 		title: '资料 | Allify',

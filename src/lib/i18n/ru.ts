@@ -177,7 +177,12 @@ export const ru = {
 		musicCommunityFavoritesAfterSearchByParagraph1: 'После поиска',
 		musicCommunityFavoritesAfterSearchByComplement: 'пользователя',
 		musicCommunityFavoritesAfterSearchByParagraph2:
-			'Результаты поиска сообщества будут отображены в этой области.'
+			'Результаты поиска сообщества будут отображены в этой области.',
+		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: 'Профиль не найден',
+		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
+			'Попробуйте поискать другое имя или проверьте правильность написания.',
+		musicCommunityStarIconAltText: 'Иконка звезды для добавления профиля в избранное',
+		musicCommunityStarIconRemoveAltText: 'Иконка звезды для удаления профиля из избранного'
 	},
 	profilePage: {
 		title: 'Профиль | Allify',

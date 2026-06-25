@@ -24,5 +24,6 @@ export type SearchUserInfo = {
 	id: string;
 	name: string;
 	image: { url: string; height: number | null; width: number | null };
-	primaryStreaming: 'spotify' | 'deezer';
+	spotifyConnected: boolean;
+	deezerConnected: boolean;
 };

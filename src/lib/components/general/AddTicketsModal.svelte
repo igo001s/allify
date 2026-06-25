@@ -65,7 +65,7 @@
 				/>
 			</button>
 
-			<div class="flex flex-col gap-1.5 pr-8">
+			<div class="flex flex-col gap-3 pr-8">
 				<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
 					{$translationsStore.addTickets.addTicketsModalTitle}
 				</p>
@@ -78,13 +78,13 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-5 px-6 py-5">
+		<div class="flex flex-col gap-6 px-6 py-5">
 			<div class="flex flex-col gap-3">
 				<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
 					{$translationsStore.addTickets.addTicketsModalParagraph3}
 				</p>
 
-				<div class="grid grid-cols-4 gap-2">
+				<div class="mt-1 grid grid-cols-4 gap-3">
 					{#each options as opt}
 						<button
 							class="cursor-pointer rounded-xl border py-3 text-sm font-semibold transition
