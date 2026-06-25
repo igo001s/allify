@@ -51,7 +51,7 @@
 	}
 </script>
 
-<section class="px-8 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-16 2xl:px-32">
+<section class="px-8 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-16 2xl:px-24">
 	<div
 		class="bg-surface-secondary flex flex-col items-center justify-center gap-6 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
 	>

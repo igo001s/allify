@@ -23,7 +23,7 @@
 </script>
 
 <header
-	class="relative flex items-center justify-between bg-s-default px-8 py-8 shadow-sm sm:px-12 lg:py-12 2xl:px-32"
+	class="relative flex items-center justify-between bg-s-default px-8 py-8 shadow-sm sm:px-12 lg:py-12 2xl:px-24"
 >
 	<div class="flex items-center gap-4 md:gap-10 2xl:gap-20">
 		<AllifyLogoColorful
