@@ -54,7 +54,7 @@ Connect your streaming services and discover your real listening patterns with n
 <div align="center">
 <br />
 
-Made with 🎶 by [stwsz](https://github.com/stwsz)
+Made with 🎶 by [igo](https://github.com/igo001s)
 
 `© 2026 Allify`
 
