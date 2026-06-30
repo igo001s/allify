@@ -11,8 +11,6 @@ export async function addToFavorites(
 	try {
 		if (!emailToSave || !email || !name || !image) return;
 
-		console.log('addToFavorites called with:', { emailToSave, email, name, image });
-
 		const response = await fetch('/api/mongodb/updates/add-to-favorites', {
 			method: 'POST',
 			headers: {

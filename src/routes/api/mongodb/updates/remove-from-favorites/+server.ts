@@ -22,16 +22,10 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { emailToSave, email, name, image } = await request.json();
+		const { emailFromRemove, email } = await request.json();
 
-		if (!emailToSave || !email || !name || !image) {
+		if (!emailFromRemove || !email) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), {
-				status: 400
-			});
-		}
-
-		if (emailToSave === email) {
-			return new Response(JSON.stringify({ error: 'Cannot add yourself to favorites' }), {
 				status: 400
 			});
 		}
@@ -40,25 +34,32 @@ export const POST: RequestHandler = async ({ request }) => {
 		const db = client.db(MONGO_DB);
 		const users = db.collection<UserInfo>('users');
 
-		await users.updateOne(
-			{ email: emailToSave },
+		const result = await users.updateOne(
+			{ email: emailFromRemove },
 			{
-				$push: {
+				$pull: {
 					favorites: {
-						email,
-						name,
-						image
+						email
 					}
 				}
 			}
 		);
 
+		if (result.modifiedCount === 0) {
+			return new Response(
+				JSON.stringify({
+					error: 'Favorite not found'
+				}),
+				{
+					status: 404
+				}
+			);
+		}
+
 		return new Response(
 			JSON.stringify({
-				addedFavorite: {
-					email,
-					name,
-					image
+				removedFavorite: {
+					email
 				}
 			}),
 			{

@@ -14,6 +14,7 @@
 
 	// Services
 	import { addToFavorites } from '$lib/services/user/updates/addToFavorites';
+	import { removeFromFavorites } from '$lib/services/user/updates/removeFromFavorites';
 
 	// Types
 	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
@@ -21,7 +22,8 @@
 	// Props
 	export let user: SearchUserInfo;
 
-	$: userOnFavorites = $userInfo?.favorites.some((favorite) => favorite.email === user.email) || false;
+	$: userOnFavorites =
+		$userInfo?.favorites.some((favorite) => favorite.email === user.email) || false;
 
 	async function handleAddToFavorites(
 		emailToSave?: string,
@@ -31,12 +33,23 @@
 	) {
 		if (!emailToSave || !email || !name || !image) return;
 
-		const alreadyExists = $userInfo?.favorites.some(
-			(favorite) => favorite.email === email
-		);
+		const alreadyExists = $userInfo?.favorites.some((favorite) => favorite.email === email);
 
 		if (alreadyExists) {
-			console.log('User is already in favorites');
+			const data = await removeFromFavorites(emailToSave, email);
+
+			if (!data) return;
+
+			userInfo.update((user) => {
+				if (user) {
+					user.favorites = user.favorites.filter(
+						(favorite) => favorite.email !== data.removedFavorite.email
+					);
+				}
+
+				return user;
+			});
+
 			return;
 		}
 
