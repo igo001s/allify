@@ -33,7 +33,7 @@ export const de = {
 		closeMenuAltText: 'Navigationsmenü schließen',
 		cardProfileAsideMenuParagraph1: 'Anmelden oder Konto erstellen',
 		footerFirstSectionText1:
-			'Wir verwandeln Musikdaten in Entdeckungen, Rankings und neue Wege, Musik zu hören.',
+			'Wir verwandeln Musikdaten in Entdeckungen, Verbindungen und neue Möglichkeiten, Musik zu hören.',
 		footerFirstSectionText2: 'Ein Produkt von',
 		footerCopyrightText: 'Alle Rechte vorbehalten.',
 		footerColumn1Title: 'FOLGEN',
@@ -90,7 +90,7 @@ export const de = {
 			'Entdecke personalisierte Musik-Insights, verbinde deine Streaming-Plattformen und erkunde neue Möglichkeiten, Musik zu hören, mit Allify.',
 		homePageHeroSectionHeading1: 'Verstehe deine Musikgewohnheiten mit echten Daten',
 		homePageHeroSectionParagraph1:
-			'Verbinde deine Streaming-Dienste, verfolge detaillierte Metriken, erhalte personalisierte Vorschläge und konkurriere in Rankings mit deinen Freunden.',
+			'Verbinde deine Streaming-Dienste, verfolge detaillierte Musikstatistiken, erhalte personalisierte Empfehlungen und werde Teil einer musikbegeisterten Community.',
 		alliMascotPointingToLeftAltText:
 			'Alli zeigt nach links und weist auf die Schaltfläche für die Handlungsaufforderung hin',
 		alliMascotPointingDownwardsAltText:

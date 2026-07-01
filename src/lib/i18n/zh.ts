@@ -32,7 +32,7 @@ export const zh = {
 		burgerMenuAltText: '打开导航菜单',
 		closeMenuAltText: '关闭导航菜单',
 		cardProfileAsideMenuParagraph1: '登录或创建账户',
-		footerFirstSectionText1: '将音乐数据转化为发现、排行榜和全新的音乐聆听方式。',
+		footerFirstSectionText1: '将音乐数据转化为发现、连接和新的音乐聆听方式。',
 		footerFirstSectionText2: '出品方',
 		footerCopyrightText: '版权所有。',
 		footerColumn1Title: '关注我们',
@@ -84,7 +84,7 @@ export const zh = {
 			'使用 Allify 探索个性化音乐洞察，连接您的流媒体平台，发现全新的音乐聆听方式。',
 		homePageHeroSectionHeading1: '用真实数据了解您的音乐习惯',
 		homePageHeroSectionParagraph1:
-			'连接您的流媒体账户，追踪详细指标，获取个性化推荐，与朋友竞争排行榜。',
+			'连接您的流媒体服务，追踪详细的聆听指标，获取个性化推荐，并成为热爱音乐的社区的一员。',
 		alliMascotPointingToLeftAltText: 'Alli 向左指，指向操作按钮',
 		alliMascotPointingDownwardsAltText: 'Alli 向下指，指向操作按钮',
 		homePageHeroSectionButton1: '连接我的流媒体',

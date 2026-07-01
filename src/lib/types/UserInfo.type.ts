@@ -11,11 +11,7 @@ export type UserInfo = {
 		tracks: string[];
 		artists: string[];
 	};
-	favorites: {
-		email: string;
-		name: string;
-		image: { url: string; height: number | null; width: number | null };
-	}[];
+	favorites: FavoriteUser[];
 	connectedStreamings: {
 		spotify: UserInfoSpotify | undefined;
 		deezer: undefined;
@@ -25,7 +21,13 @@ export type UserInfo = {
 export type SearchUserInfo = {
 	email: string;
 	name: string;
-	image: { url: string; height: number | null; width: number | null };
+	image: {
+		url: string;
+		height: number | null;
+		width: number | null;
+	};
 	spotifyConnected: boolean;
 	deezerConnected: boolean;
 };
+
+export type FavoriteUser = SearchUserInfo;

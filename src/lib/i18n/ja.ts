@@ -32,7 +32,7 @@ export const ja = {
 		burgerMenuAltText: 'ナビゲーションメニューを開く',
 		closeMenuAltText: 'ナビゲーションメニューを閉じる',
 		cardProfileAsideMenuParagraph1: 'ログインまたはアカウント作成',
-		footerFirstSectionText1: '音楽データを発見、ランキング、そして新しい音楽体験へと変換します。',
+		footerFirstSectionText1: '音楽データを発見、接続、そして新しい音楽の聴き方に変える。',
 		footerFirstSectionText2: '製品提供元',
 		footerCopyrightText: '全著作権所有',
 		footerColumn1Title: 'フォロー',
@@ -89,7 +89,7 @@ export const ja = {
 			'パーソナライズされた音楽インサイトを発見し、ストリーミングプラットフォームを接続して、Allifyで新しい音楽体験を探求しましょう。',
 		homePageHeroSectionHeading1: 'リアルデータであなたの音楽習慣を理解する',
 		homePageHeroSectionParagraph1:
-			'ストリーミングを接続し、詳細な指標を追跡し、パーソナライズされた提案を受け取り、友達とランキングで競いましょう。',
+			'ストリーミングサービスを接続し、詳細なリスニング指標を追跡し、パーソナライズされた推奨事項を受け取り、音楽に情熱を注ぐコミュニティの一員になりましょう。',
 		alliMascotPointingToLeftAltText: 'アクションボタンを指すAlliマスコット（左向き）',
 		alliMascotPointingDownwardsAltText: 'アクションボタンを指すAlliマスコット（下向き）',
 		homePageHeroSectionButton1: 'ストリーミングを接続する',

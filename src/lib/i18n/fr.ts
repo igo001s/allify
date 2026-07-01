@@ -33,7 +33,7 @@ export const fr = {
 		closeMenuAltText: 'Fermer le menu de navigation',
 		cardProfileAsideMenuParagraph1: 'Se connecter ou créer un compte',
 		footerFirstSectionText1:
-			"Nous transformons les données musicales en découvertes, classements et nouvelles façons d'écouter de la musique.",
+			'Transformer les données musicales en découvertes, connexions et nouvelles façons d\'écouter de la musique.',
 		footerFirstSectionText2: 'Un produit de',
 		footerCopyrightText: 'Tous droits réservés.',
 		footerColumn1Title: 'SUIVRE',
@@ -85,16 +85,16 @@ export const fr = {
 	homePage: {
 		title: 'Tout sur votre musique, réuni en un seul endroit | Allify',
 		homePageMetaDescription:
-			"Découvrez des insights musicaux personnalisés, connectez vos plateformes de streaming et explorez de nouvelles façons d'écouter de la musique avec Allify.",
+			'Découvrez des insights musicaux personnalisés, connectez vos plateformes de streaming et explorez de nouvelles façons d\'écouter de la musique avec Allify.',
 		homePageMetaOgAndTwitterContent:
-			"Découvrez des insights musicaux personnalisés, connectez vos plateformes de streaming et explorez de nouvelles façons d'écouter de la musique avec Allify.",
+			'Découvrez des insights musicaux personnalisés, connectez vos plateformes de streaming et explorez de nouvelles façons d\'écouter de la musique avec Allify.',
 		homePageHeroSectionHeading1: 'Comprenez vos habitudes musicales avec de vraies données',
 		homePageHeroSectionParagraph1:
-			'Connectez vos services de streaming, suivez des métriques détaillées, obtenez des suggestions personnalisées et concourez dans des classements avec vos amis.',
+			'Connectez vos services de streaming, suivez des métriques d\'écoute détaillées, recevez des recommandations personnalisées et faites partie d\'une communauté passionnée de musique.',
 		alliMascotPointingToLeftAltText:
-			"Alli pointe vers la gauche et indique le bouton d'appel à l'action",
+			'Alli pointe vers la gauche et indique le bouton d\'appel à l\'action',
 		alliMascotPointingDownwardsAltText:
-			"Alli pointe vers le bas et indique le bouton d'appel à l'action",
+			'Alli pointe vers le bas et indique le bouton d\'appel à l\'action',
 		homePageHeroSectionButton1: 'Connecter mes streamings',
 		homePageHeroSectionButton1v2: 'Aller à mon profil musical',
 		homePageHeroSectionButton1AriaLabel: 'Connecter mes streamings',
@@ -104,10 +104,10 @@ export const fr = {
 			'Intégrez vos comptes et suivez métriques, performances et insights en un seul endroit.',
 		connectPlatformSpotifyAltText: 'Icône Spotify',
 		connectPlatformSpotifyDescription:
-			"L'une des plus grandes plateformes de streaming musical au monde, Spotify offre des millions de titres, des playlists personnalisées et des fonctionnalités de découverte avancées qui connectent artistes et auditeurs via données, tendances et recommandations intelligentes.",
+			'L\'une des plus grandes plateformes de streaming musical au monde, Spotify offre des millions de titres, des playlists personnalisées et des fonctionnalités de découverte avancées qui connectent artistes et auditeurs via données, tendances et recommandations intelligentes.',
 		connectPlatformDeezerAltText: 'Icône Deezer',
 		connectPlatformDeezerDescription:
-			"La plateforme mondiale de streaming musical Deezer réunit un vaste catalogue de titres, des playlists éditoriales et des fonctionnalités comme les recommandations personnalisées pour offrir une expérience musicale complète à différents types d'auditeurs.",
+			'La plateforme mondiale de streaming musical Deezer réunit un vaste catalogue de titres, des playlists éditoriales et des fonctionnalités comme les recommandations personnalisées pour offrir une expérience musicale complète à différents types d\'auditeurs.',
 		connectPlatformCardPlatformConnectIconAltText: 'Icône de connexion',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Se connecter avec Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: 'Se connecter avec Deezer',

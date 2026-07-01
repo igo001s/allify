@@ -1,9 +1,15 @@
 <script lang="ts">
+	// Components
+	import FavoriteUserItem from './FavoriteUserItem.svelte';
+
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Types
+	import type { FavoriteUser } from '$lib/types/UserInfo.type';
+
 	// Props
-	export let favorites;
+	export let favorites: FavoriteUser[];
 </script>
 
 <div class="w-full rounded-xl border border-b-default bg-s-default p-5 xl:w-2/5">
@@ -30,23 +36,11 @@
 	</div>
 
 	<div
-		class={`flex h-64 max-h-64 flex-col gap-4 ${favorites && favorites.length > 0 ? 'overflow-auto' : 'overflow-hidden'}`}
+		class={`flex max-h-64 gap-4 ${favorites && favorites.length > 0 ? 'overflow-auto flex-wrap' : 'overflow-hidden flex-col h-64'}`}
 	>
 		{#if favorites && favorites.length > 0}
 			{#each favorites as favorite}
-				<div
-					class="flex items-center gap-4 rounded-xl border border-b-default bg-s-muted p-3 transition hover:border-brand-primary"
-				>
-					<img
-						src={favorite.userImage}
-						alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${favorite.name}`}
-						class="h-14 w-14 shrink-0 rounded-lg object-cover sm:h-16 sm:w-16"
-					/>
-
-					<h3 class="min-w-0 truncate font-semibold text-t-primary">
-						{favorite.name}
-					</h3>
-				</div>
+				<FavoriteUserItem {favorite} />
 			{/each}
 		{:else}
 			<div

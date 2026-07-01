@@ -17,13 +17,13 @@
 	import { removeFromFavorites } from '$lib/services/user/updates/removeFromFavorites';
 
 	// Types
-	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
+	import type { FavoriteUser } from '$lib/types/UserInfo.type';
 
 	// Props
-	export let user: SearchUserInfo;
+	export let favorite: FavoriteUser;
 
 	$: userOnFavorites =
-		$userInfo?.favorites.some((favorite) => favorite.email === user.email) || false;
+		$userInfo?.favorites.some((fav) => fav.email === favorite.email) || false;
 
 	async function handleToggleFavorites(
 		emailToSave?: string,
@@ -33,7 +33,7 @@
 	) {
 		if (!emailToSave || !email || !name || !image) return;
 
-		const alreadyExists = $userInfo?.favorites.some((favorite) => favorite.email === email);
+		const alreadyExists = $userInfo?.favorites.some((fav) => fav.email === email);
 
 		if (alreadyExists) {
 			const data = await removeFromFavorites(emailToSave, email);
@@ -43,7 +43,7 @@
 			userInfo.update((user) => {
 				if (user) {
 					user.favorites = user.favorites.filter(
-						(favorite) => favorite.email !== data.removedFavorite.email
+						(fav) => fav.email !== data.removedFavorite.email
 					);
 				}
 
@@ -68,33 +68,33 @@
 </script>
 
 <article
-	class="flex h-fit w-full cursor-pointer items-center justify-between gap-4 rounded-xl border border-b-default bg-s-muted p-2.5 transition hover:border-brand-primary sm:w-[calc(50%-0.5rem)] xl:w-[calc(33.333%-0.75rem)]"
+	class="flex h-fit w-full cursor-pointer items-center justify-between gap-4 rounded-xl border border-b-default bg-s-muted p-2.5 transition hover:border-brand-primary sm:w-[calc(50%-0.5rem)]"
 >
 	<div class="flex min-w-0 items-center gap-4">
-		{#if user.image}
+		{#if favorite.image}
 			<img
-				src={user.image.url}
-				alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${user.name}`}
+				src={favorite.image.url}
+				alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${favorite.name}`}
 				class="h-13 w-13 shrink-0 rounded-full object-cover"
 			/>
 		{:else}
-			<ProfileWithoutPhoto userName={user.name} additionalClassesToSize="h-13 w-13" />
+			<ProfileWithoutPhoto userName={favorite.name} additionalClassesToSize="h-13 w-13" />
 		{/if}
 
 		<div class="mb-1 flex min-w-0 flex-col gap-1">
 			<p class="truncate text-lg font-semibold text-t-primary">
-				{user.name}
+				{favorite.name}
 			</p>
 
 			<div class="flex items-center gap-2.5">
 				<SpotifyIcon
 					iconSvgClass={`h-3.5 w-3.5 ${
-						user.spotifyConnected ? 'text-spotify' : 'text-t-secondary'
+						favorite.spotifyConnected ? 'text-spotify' : 'text-t-secondary'
 					}`}
 				/>
 
 				<DeezerIcon
-					iconSvgClass={`h-3.5 w-3.5 ${user.deezerConnected ? 'text-deezer' : 'text-t-secondary'}`}
+					iconSvgClass={`h-3.5 w-3.5 ${favorite.deezerConnected ? 'text-deezer' : 'text-t-secondary'}`}
 				/>
 			</div>
 		</div>
@@ -103,7 +103,7 @@
 	<button
 		class="mr-2 shrink-0 cursor-pointer text-brand-primary transition hover:text-brand-primary-dark"
 		aria-label={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
-		on:click={() => handleToggleFavorites($userInfo?.email, user.email, user.name, user.image)}
+		on:click={() => handleToggleFavorites($userInfo?.email, favorite.email, favorite.name, favorite.image)}
 	>
 		{#if userOnFavorites}
 			<FilledStar
