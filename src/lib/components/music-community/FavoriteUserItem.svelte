@@ -29,7 +29,9 @@
 		emailToSave?: string,
 		email?: string,
 		name?: string,
-		image?: { url: string; height: number | null; width: number | null }
+		image?: { url: string; height: number | null; width: number | null },
+		spotifyConnected = false,
+		deezerConnected = false
 	) {
 		if (!emailToSave || !email || !name || !image) return;
 
@@ -53,13 +55,13 @@
 			return;
 		}
 
-		const data = await addToFavorites(emailToSave, email, name, image);
+		const data = await addToFavorites(emailToSave, email, name, image, spotifyConnected, deezerConnected);
 
 		if (!data) return;
 
 		userInfo.update((user) => {
 			if (user) {
-				user.favorites.push({ email, name, image, spotifyConnected: true, deezerConnected: false });
+				user.favorites.push({ email, name, image, spotifyConnected, deezerConnected });
 			}
 
 			return user;
@@ -103,7 +105,7 @@
 	<button
 		class="mr-2 shrink-0 cursor-pointer text-brand-primary transition hover:text-brand-primary-dark"
 		aria-label={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
-		on:click={() => handleToggleFavorites($userInfo?.email, favorite.email, favorite.name, favorite.image)}
+		on:click={() => handleToggleFavorites($userInfo?.email, favorite.email, favorite.name, favorite.image, favorite.spotifyConnected, favorite.deezerConnected)}
 	>
 		{#if userOnFavorites}
 			<FilledStar

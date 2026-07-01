@@ -22,7 +22,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { emailToSave, email, name, image } = await request.json();
+		const { emailToSave, email, name, image, spotifyConnected, deezerConnected } = await request.json();
 
 		if (!emailToSave || !email || !name || !image) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), {
@@ -47,7 +47,9 @@ export const POST: RequestHandler = async ({ request }) => {
 					favorites: {
 						email,
 						name,
-						image
+						image,
+						spotifyConnected: spotifyConnected,
+						deezerConnected: deezerConnected
 					}
 				}
 			}
@@ -58,7 +60,9 @@ export const POST: RequestHandler = async ({ request }) => {
 				addedFavorite: {
 					email,
 					name,
-					image
+					image,
+					spotifyConnected: spotifyConnected,
+					deezerConnected: deezerConnected
 				}
 			}),
 			{

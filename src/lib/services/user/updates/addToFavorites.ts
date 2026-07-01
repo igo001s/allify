@@ -6,7 +6,9 @@ export async function addToFavorites(
 		url: string;
 		height: number | null;
 		width: number | null;
-	}
+	},
+	spotifyConnected?: boolean,
+	deezerConnected?: boolean
 ) {
 	try {
 		if (!emailToSave || !email || !name || !image) return;
@@ -20,7 +22,9 @@ export async function addToFavorites(
 				emailToSave,
 				email,
 				name,
-				image
+				image,
+				spotifyConnected,
+				deezerConnected
 			})
 		});
 
