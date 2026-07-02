@@ -29,7 +29,7 @@
 </script>
 
 <div
-	class={`animate-in fade-in slide-in-from-top-2 fixed top-2 right-2 z-50 flex w-11/12 
+	class={`animate-in fade-in slide-in-from-top-2 fixed top-4 right-2 z-50 flex w-10/12 
 	max-w-sm items-start gap-4 rounded-xl 
 	border bg-s-default p-4 shadow-lg transition-all 
 	duration-300 sm:top-6 sm:right-6 sm:left-auto sm:max-w-md md:max-w-lg
@@ -46,17 +46,17 @@
 	<div class="mt-0.5 shrink-0">
 		{#if $toastStore.toastType === 'warning'}
 			<WarningIcon
-				iconSvgClass="text-status-warning w-6 h-6"
+				iconSvgClass="text-status-warning w-5.5 h-5.5"
 				iconAltText={$translationsStore.generalTexts.toastWarningAltText}
 			/>
 		{:else if $toastStore.toastType === 'success'}
 			<SuccessIcon
-				iconSvgClass="text-status-success w-6 h-6"
+				iconSvgClass="text-status-success w-5.5 h-5.5"
 				iconAltText={$translationsStore.generalTexts.toastSuccessAltText}
 			/>
 		{:else if $toastStore.toastType === 'error'}
 			<ErrorIcon
-				iconSvgClass="text-status-error w-6 h-6"
+				iconSvgClass="text-status-error w-5.5 h-5.5"
 				iconAltText={$translationsStore.generalTexts.toastErrorAltText}
 			/>
 		{/if}
