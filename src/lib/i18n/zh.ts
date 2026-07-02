@@ -169,7 +169,8 @@ export const zh = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: '未找到个人资料',
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2: '尝试搜索其他名称或检查拼写。',
 		musicCommunityStarIconAltText: '用于收藏个人资料的星形图标',
-		musicCommunityStarIconRemoveAltText: '用于从收藏夹中删除个人资料的星形图标'
+		musicCommunityStarIconRemoveAltText: '用于从收藏夹中删除个人资料的星形图标',
+		musicCommunityToastErrorAddToFavoritesMessage: '您不能将自己添加到收藏夹',
 	},
 	profilePage: {
 		title: '资料 | Allify',

@@ -11,6 +11,7 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { addToFavorites } from '$lib/services/user/updates/addToFavorites';
@@ -34,6 +35,16 @@
 		deezerConnected = false
 	) {
 		if (!emailToSave || !email || !name || !image) return;
+
+		if (emailToSave === email) {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage: $translationsStore.musicCommunityPage.musicCommunityToastErrorAddToFavoritesMessage
+			});
+
+			return;
+		}
 
 		const alreadyExists = $userInfo?.favorites.some((favorite) => favorite.email === email);
 
