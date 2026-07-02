@@ -184,7 +184,8 @@ export const de = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Versuche, nach einem anderen Namen zu suchen oder überprüfe die Rechtschreibung.',
 		musicCommunityStarIconAltText: 'Sternsymbol zum Favorisieren eines Profils',
-		musicCommunityStarIconRemoveAltText: 'Sternsymbol zum Entfernen eines Profils aus den Favoriten'
+		musicCommunityStarIconRemoveAltText: 'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
+		musicCommunityToastErrorAddToFavoritesMessage: 'Du kannst dich nicht selbst favorisieren'
 	},
 	profilePage: {
 		title: 'Profil | Allify',

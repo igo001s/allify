@@ -183,7 +183,8 @@ export const it = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Prova a cercare un altro nome o verifica l’ortografia.',
 		musicCommunityStarIconAltText: 'Icona di stella per aggiungere un profilo ai preferiti',
-		musicCommunityStarIconRemoveAltText: 'Icona di stella per rimuovere un profilo dai preferiti'
+		musicCommunityStarIconRemoveAltText: 'Icona di stella per rimuovere un profilo dai preferiti',
+		musicCommunityToastErrorAddToFavoritesMessage: 'Non puoi aggiungerti ai preferiti'
 	},
 	profilePage: {
 		title: 'Profilo | Allify',

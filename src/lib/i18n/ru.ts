@@ -182,7 +182,8 @@ export const ru = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Попробуйте поискать другое имя или проверьте правильность написания.',
 		musicCommunityStarIconAltText: 'Иконка звезды для добавления профиля в избранное',
-		musicCommunityStarIconRemoveAltText: 'Иконка звезды для удаления профиля из избранного'
+		musicCommunityStarIconRemoveAltText: 'Иконка звезды для удаления профиля из избранного',
+		musicCommunityToastErrorAddToFavoritesMessage: 'Вы не можете добавить себя в избранное'
 	},
 	profilePage: {
 		title: 'Профиль | Allify',

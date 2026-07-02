@@ -182,7 +182,8 @@ export const pt = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Tente buscar com outro nome ou verifique se a pontuação está correta.',
 		musicCommunityStarIconAltText: 'Ícone de estrela para favoritar perfil',
-		musicCommunityStarIconRemoveAltText: 'Ícone de estrela para remover perfil dos favoritos'
+		musicCommunityStarIconRemoveAltText: 'Ícone de estrela para remover perfil dos favoritos',
+		musicCommunityToastErrorAddToFavoritesMessage: 'Não é possível favoritar a si mesmo',
 	},
 	profilePage: {
 		title: 'Perfil | Allify',

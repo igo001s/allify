@@ -179,7 +179,8 @@ export const ja = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'別の名前で検索するか、スペルを確認してください。',
 		musicCommunityStarIconAltText: 'プロフィールをお気に入りに追加するための星アイコン',
-		musicCommunityStarIconRemoveAltText: 'プロフィールをお気に入りから削除するための星アイコン'
+		musicCommunityStarIconRemoveAltText: 'プロフィールをお気に入りから削除するための星アイコン',
+		musicCommunityToastErrorAddToFavoritesMessage: '自分自身をお気に入りに追加することはできません'
 	},
 	profilePage: {
 		title: 'プロフィール | Allify',

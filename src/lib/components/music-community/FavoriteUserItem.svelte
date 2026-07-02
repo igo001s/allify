@@ -13,7 +13,6 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Services
-	import { addToFavorites } from '$lib/services/user/updates/addToFavorites';
 	import { removeFromFavorites } from '$lib/services/user/updates/removeFromFavorites';
 
 	// Types
@@ -25,15 +24,11 @@
 	$: userOnFavorites =
 		$userInfo?.favorites.some((fav) => fav.email === favorite.email) || false;
 
-	async function handleToggleFavorites(
+	async function handlerRemoveFromFavorites(
 		emailToSave?: string,
 		email?: string,
-		name?: string,
-		image?: { url: string; height: number | null; width: number | null },
-		spotifyConnected = false,
-		deezerConnected = false
 	) {
-		if (!emailToSave || !email || !name || !image) return;
+		if (!emailToSave || !email) return;
 
 		const alreadyExists = $userInfo?.favorites.some((fav) => fav.email === email);
 
@@ -54,18 +49,6 @@
 
 			return;
 		}
-
-		const data = await addToFavorites(emailToSave, email, name, image, spotifyConnected, deezerConnected);
-
-		if (!data) return;
-
-		userInfo.update((user) => {
-			if (user) {
-				user.favorites.push({ email, name, image, spotifyConnected, deezerConnected });
-			}
-
-			return user;
-		});
 	}
 </script>
 
@@ -105,7 +88,7 @@
 	<button
 		class="mr-2 shrink-0 cursor-pointer text-brand-primary transition hover:text-brand-primary-dark"
 		aria-label={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
-		on:click={() => handleToggleFavorites($userInfo?.email, favorite.email, favorite.name, favorite.image, favorite.spotifyConnected, favorite.deezerConnected)}
+		on:click={() => handlerRemoveFromFavorites($userInfo?.email, favorite.email)}
 	>
 		{#if userOnFavorites}
 			<FilledStar

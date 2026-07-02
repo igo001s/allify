@@ -183,7 +183,8 @@ export const en = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Try searching for a different name or check the spelling.',
 		musicCommunityStarIconAltText: 'Star icon to favorite a profile',
-		musicCommunityStarIconRemoveAltText: 'Star icon to remove a profile from favorites'
+		musicCommunityStarIconRemoveAltText: 'Star icon to remove a profile from favorites',
+		musicCommunityToastErrorAddToFavoritesMessage: 'You cannot favorite yourself',
 	},
 	profilePage: {
 		title: 'Profile | Allify',
