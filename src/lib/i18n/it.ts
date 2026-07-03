@@ -130,14 +130,16 @@ export const it = {
 		myMusicalProfilePageMostListenedTracks: 'Più ascoltata',
 		myMusicalProfilePageMostListenedArtistsFollowers: 'follower',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Le tue canzoni più ascoltate',
-		myMusicalProfilePageMostListenedLastUpdate: 'Ultimo aggiornamento:',
-		myMusicalProfilePageMostListenedButtonUpdate: 'Aggiorna',
-		myMusicalProfilePageMostListenedReloadIconAltText: 'Icona di aggiornamento',
-		myMusicalProfilePageMostListenedShareButton: 'Condividi',
-		myMusicalProfilePageMostListenedShareIconAltText: 'Icona di condivisione',
-		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: 'Mostra +5 artisti',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Mostra +5 canzoni',
-		myMusicalProfilePageMostListenedCrownIconAltText: 'Icona di corona'
+		myMusicalProfilePageLastUpdate: 'Ultimo aggiornamento:',
+		myMusicalProfilePageButtonUpdate: 'Aggiorna',
+		myMusicalProfilePageReloadIconAltText: 'Icona di aggiornamento',
+		myMusicalProfilePageShareButton: 'Condividi',
+		myMusicalProfilePageShareIconAltText: 'Icona di condivisione',
+		myMusicalProfilePageShowMoreFiveArtistsButton: 'Mostra +5 artisti',
+		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostra +5 canzoni',
+		myMusicalProfilePageCrownIconAltText: 'Icona di corona',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Errore durante il caricamento di altri artisti',
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Errore durante il caricamento di altre canzoni'
 	},
 	discoveriesPage: {
 		title: 'Scoperte Musicali | Allify',
@@ -154,7 +156,8 @@ export const it = {
 		discoveriesPageDiscoverAgain: 'Clicca su "Scopri di nuovo" per aggiornare i tuoi consigli',
 		discoveriesPageDiscoverNowButton: 'Scopri ora',
 		discoveriesPageDiscoverAgainButton: 'Scopri di nuovo',
-		alliMascotWavingAltText: 'Mascotte Alli che saluta nella pagina delle scoperte'
+		alliMascotWavingAltText: 'Mascotte Alli che saluta nella pagina delle scoperte',
+		discoveriesPageDiscoveriesErrorToast: 'Qualcosa è andato storto durante il caricamento delle tue scoperte. Riprova più tardi.'
 	},
 	musicCommunityPage: {
 		title: 'Community musicale | Allify',

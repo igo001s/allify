@@ -131,14 +131,16 @@ export const en = {
 		myMusicalProfilePageMostListenedTracks: 'Most listened',
 		myMusicalProfilePageMostListenedArtistsFollowers: 'followers',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Your most listened tracks',
-		myMusicalProfilePageMostListenedLastUpdate: 'Last update:',
-		myMusicalProfilePageMostListenedButtonUpdate: 'Update',
-		myMusicalProfilePageMostListenedReloadIconAltText: 'Reload icon',
-		myMusicalProfilePageMostListenedShareButton: 'Share',
-		myMusicalProfilePageMostListenedShareIconAltText: 'Share icon',
-		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: 'Show +5 artists',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Show +5 tracks',
-		myMusicalProfilePageMostListenedCrownIconAltText: 'Crown icon'
+		myMusicalProfilePageLastUpdate: 'Last update:',
+		myMusicalProfilePageButtonUpdate: 'Update',
+		myMusicalProfilePageReloadIconAltText: 'Reload icon',
+		myMusicalProfilePageShareButton: 'Share',
+		myMusicalProfilePageShareIconAltText: 'Share icon',
+		myMusicalProfilePageShowMoreFiveArtistsButton: 'Show +5 artists',
+		myMusicalProfilePageShowMoreFiveTracksButton: 'Show +5 tracks',
+		myMusicalProfilePageCrownIconAltText: 'Crown icon',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Error loading more artists',
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Error loading more tracks'
 	},
 	discoveriesPage: {
 		title: 'Music Discoveries | Allify',
@@ -155,7 +157,8 @@ export const en = {
 		discoveriesPageDiscoverAgain: 'Click "Discover again" to refresh your recommendations',
 		discoveriesPageDiscoverNowButton: 'Discover now',
 		discoveriesPageDiscoverAgainButton: 'Discover again',
-		alliMascotWavingAltText: 'Alli mascot waving on the discoveries page'
+		alliMascotWavingAltText: 'Alli mascot waving on the discoveries page',
+		discoveriesPageDiscoveriesErrorToast: 'Something went wrong while loading your discoveries. Please try again later.'
 	},
 	musicCommunityPage: {
 		title: 'Music Community | Allify',

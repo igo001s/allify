@@ -122,14 +122,16 @@ export const zh = {
 		myMusicalProfilePageMostListenedTracks: '最常听',
 		myMusicalProfilePageMostListenedArtistsFollowers: '粉丝',
 		myMusicalProfilePageMostListenedTracksHeading2: '您最常听的歌曲',
-		myMusicalProfilePageMostListenedLastUpdate: '最后更新:',
-		myMusicalProfilePageMostListenedButtonUpdate: '更新',
-		myMusicalProfilePageMostListenedReloadIconAltText: '更新图标',
-		myMusicalProfilePageMostListenedShareButton: '分享',
-		myMusicalProfilePageMostListenedShareIconAltText: '分享图标',
-		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: '显示 +5 艺术家',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: '显示 +5 歌曲',
-		myMusicalProfilePageMostListenedCrownIconAltText: '皇冠图标'
+		myMusicalProfilePageLastUpdate: '最后更新:',
+		myMusicalProfilePageButtonUpdate: '更新',
+		myMusicalProfilePageReloadIconAltText: '更新图标',
+		myMusicalProfilePageShareButton: '分享',
+		myMusicalProfilePageShareIconAltText: '分享图标',
+		myMusicalProfilePageShowMoreFiveArtistsButton: '显示 +5 艺术家',
+		myMusicalProfilePageShowMoreFiveTracksButton: '显示 +5 歌曲',
+		myMusicalProfilePageCrownIconAltText: '皇冠图标',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast: '加载更多艺术家时出错',
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: '加载更多歌曲时出错'
 	},
 	discoveriesPage: {
 		title: '音楽の発見 | Allify',
@@ -146,7 +148,8 @@ export const zh = {
 		discoveriesPageDiscoverAgain: '「もう一度発見」をクリックしておすすめを更新しましょう',
 		discoveriesPageDiscoverNowButton: '今すぐ発見',
 		discoveriesPageDiscoverAgainButton: 'もう一度発見',
-		alliMascotWavingAltText: '発見ページで手を振るAlliのマスコット'
+		alliMascotWavingAltText: '発見ページで手を振るAlliのマスコット',
+		discoveriesPageDiscoveriesErrorToast: 'おすすめの読み込み中にエラーが発生しました。後でもう一度お試しください。'
 	},
 	musicCommunityPage: {
 		title: '音乐社区 | Allify',

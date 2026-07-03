@@ -131,14 +131,16 @@ export const fr = {
 		myMusicalProfilePageMostListenedTracks: 'Les plus écoutées',
 		myMusicalProfilePageMostListenedArtistsFollowers: 'Abonnés',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Vos chansons les plus écoutées',
-		myMusicalProfilePageMostListenedLastUpdate: 'Dernière mise à jour :',
-		myMusicalProfilePageMostListenedButtonUpdate: 'Mettre à jour',
-		myMusicalProfilePageMostListenedReloadIconAltText: 'Icône de mise à jour',
-		myMusicalProfilePageMostListenedShareButton: 'Partager',
-		myMusicalProfilePageMostListenedShareIconAltText: 'Icône de partage',
-		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: 'Afficher +5 artistes',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Afficher +5 chansons',
-		myMusicalProfilePageMostListenedCrownIconAltText: 'Icône de couronne'
+		myMusicalProfilePageLastUpdate: 'Dernière mise à jour :',
+		myMusicalProfilePageButtonUpdate: 'Mettre à jour',
+		myMusicalProfilePageReloadIconAltText: 'Icône de mise à jour',
+		myMusicalProfilePageShareButton: 'Partager',
+		myMusicalProfilePageShareIconAltText: 'Icône de partage',
+		myMusicalProfilePageShowMoreFiveArtistsButton: 'Afficher +5 artistes',
+		myMusicalProfilePageShowMoreFiveTracksButton: 'Afficher +5 chansons',
+		myMusicalProfilePageCrownIconAltText: 'Icône de couronne',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Erreur lors du chargement de plus d’artistes',
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Erreur lors du chargement de plus de chansons'
 	},
 	discoveriesPage: {
 		title: 'Découvertes Musicales | Allify',
@@ -157,7 +159,8 @@ export const fr = {
 			'Cliquez sur "Découvrir à nouveau" pour actualiser vos recommandations',
 		discoveriesPageDiscoverNowButton: 'Découvrir maintenant',
 		discoveriesPageDiscoverAgainButton: 'Découvrir à nouveau',
-		alliMascotWavingAltText: 'Mascotte Alli faisant signe sur la page de découvertes'
+		alliMascotWavingAltText: 'Mascotte Alli faisant signe sur la page de découvertes',
+		discoveriesPageDiscoveriesErrorToast: 'Une erreur est survenue lors du chargement de vos découvertes. Veuillez réessayer plus tard.'
 	},
 	musicCommunityPage: {
 		title: 'Communauté musicale | Allify',

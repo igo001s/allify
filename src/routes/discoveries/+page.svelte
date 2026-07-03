@@ -18,6 +18,7 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	let loadingDiscoveries = false;
 
@@ -51,6 +52,12 @@
 			);
 
 			if (!freeDiscoveries) {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage: $translationsStore.discoveriesPage.discoveriesPageDiscoveriesErrorToast
+				});
+
 				loadingDiscoveries = false;
 				return;
 			}
@@ -83,6 +90,12 @@
 			);
 
 			if (!paidDiscoveries) {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage: $translationsStore.discoveriesPage.discoveriesPageDiscoveriesErrorToast
+				});
+
 				loadingDiscoveries = false;
 				return;
 			}

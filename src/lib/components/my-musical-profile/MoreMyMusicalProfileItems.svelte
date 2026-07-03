@@ -7,6 +7,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { showAddTickets } from '$lib/stores/showAddTickets.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateMostListenedTracks } from '$lib/services/user/updates/updateMostListenedTracks';
@@ -37,8 +38,14 @@
 			const response = await updateMostListenedArtists(userEmail, artistsLimit, userTickets);
 
 			if (!response) {
-				loadingMoreItems = false;
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage: $translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveArtistsErrorToast
+				});
 
+				loadingMoreItems = false;
+				
 				return;
 			}
 
@@ -66,11 +73,19 @@
 
 			setTimeout(() => {
 				loadingMoreItems = false;
-			}, 1500);
+			}, 1000);
 		} else if (additionalItemsType === 'tracks') {
 			const response = await updateMostListenedTracks(userEmail, tracksLimit, userTickets);
 
+			console.log('response', response);
+
 			if (!response) {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage: $translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveTracksErrorToast
+				});
+
 				loadingMoreItems = false;
 
 				return;
@@ -100,37 +115,42 @@
 
 			setTimeout(() => {
 				loadingMoreItems = false;
-			}, 1500);
+			}, 1000);
 		}
 	}
 </script>
 
 <button
-	class="mx-auto flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-lg shadow-brand-primary/25 transition-all duration-300 hover:scale-102 hover:bg-brand-primary-dark sm:w-fit"
+	class="relative mx-auto flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-lg shadow-brand-primary/25 transition-all duration-300 hover:scale-102 hover:bg-brand-primary-dark sm:w-fit"
 	onclick={handleLoadMoreMusicalItems}
 	disabled={loadingMoreItems}
 >
-	<div class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left">
-		{#if !loadingMoreItems}
-			<span class="text-sm leading-none font-semibold">
-				{#if additionalItemsType === 'artists'}
-					{$translationsStore.myMusicalProfilePage
-						.myMusicalProfilePageMostListenedShowMoreFiveArtistsButton}
-				{:else if additionalItemsType === 'tracks'}
-					{$translationsStore.myMusicalProfilePage
-						.myMusicalProfilePageMostListenedShowMoreFiveTracksButton}
-				{/if}
-			</span>
+	<div
+		class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left"
+		class:invisible={loadingMoreItems}
+	>
+		<span class="text-sm leading-none font-semibold">
+			{#if additionalItemsType === 'artists'}
+				{$translationsStore.myMusicalProfilePage
+					.myMusicalProfilePageShowMoreFiveArtistsButton}
+			{:else}
+				{$translationsStore.myMusicalProfilePage
+					.myMusicalProfilePageShowMoreFiveTracksButton}
+			{/if}
+		</span>
 
-			<div
-				class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
-			>
-				<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-4 w-4" />
+		<div
+			class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
+		>
+			<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-4 w-4" />
 
-				<span class="text-xs leading-none font-bold"> -1 </span>
-			</div>
-		{:else}
-			<DotsLoading dotsTheme="base-light" />
-		{/if}
+			<span class="text-xs leading-none font-bold">-1</span>
+		</div>
 	</div>
+
+	{#if loadingMoreItems}
+		<div class="absolute inset-0 flex items-center justify-center">
+			<DotsLoading dotsTheme="base-light" />
+		</div>
+	{/if}
 </button>

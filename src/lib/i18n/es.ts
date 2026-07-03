@@ -131,14 +131,16 @@ export const es = {
 		myMusicalProfilePageMostListenedTracks: 'Más escuchada',
 		myMusicalProfilePageMostListenedArtistsFollowers: 'seguidores',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Tus canciones más escuchadas',
-		myMusicalProfilePageMostListenedLastUpdate: 'Última actualización:',
-		myMusicalProfilePageMostListenedButtonUpdate: 'Actualizar',
-		myMusicalProfilePageMostListenedReloadIconAltText: 'Ícono de actualizar',
-		myMusicalProfilePageMostListenedShareButton: 'Compartir',
-		myMusicalProfilePageMostListenedShareIconAltText: 'Ícono de compartir',
-		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: 'Mostrar +5 artistas',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Mostrar +5 canciones',
-		myMusicalProfilePageMostListenedCrownIconAltText: 'Ícono de corona'
+		myMusicalProfilePageLastUpdate: 'Última actualización:',
+		myMusicalProfilePageButtonUpdate: 'Actualizar',
+		myMusicalProfilePageReloadIconAltText: 'Ícono de actualizar',
+		myMusicalProfilePageShareButton: 'Compartir',
+		myMusicalProfilePageShareIconAltText: 'Ícono de compartir',
+		myMusicalProfilePageShowMoreFiveArtistsButton: 'Mostrar +5 artistas',
+		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostrar +5 canciones',
+		myMusicalProfilePageCrownIconAltText: 'Ícono de corona',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Error al cargar más artistas',
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Error al cargar más canciones'
 	},
 	discoveriesPage: {
 		title: 'Descubrimientos Musicales | Allify',
@@ -156,7 +158,8 @@ export const es = {
 			'Haz clic en "Descubrir de nuevo" para actualizar tus recomendaciones',
 		discoveriesPageDiscoverNowButton: 'Descubrir ahora',
 		discoveriesPageDiscoverAgainButton: 'Descubrir de nuevo',
-		alliMascotWavingAltText: 'Mascota Alli saludando en la página de descubrimientos'
+		alliMascotWavingAltText: 'Mascota Alli saludando en la página de descubrimientos',
+		discoveriesPageDiscoveriesErrorToast: 'Algo salió mal al cargar tus descubrimientos. Por favor, inténtalo de nuevo más tarde.'
 	},
 	musicCommunityPage: {
 		title: 'Comunidad Musical | Allify',

@@ -129,14 +129,16 @@ export const ru = {
 		myMusicalProfilePageMostListenedTracks: 'Самая прослушиваемая',
 		myMusicalProfilePageMostListenedArtistsFollowers: 'подписчиков',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Ваши самые прослушиваемые треки',
-		myMusicalProfilePageMostListenedLastUpdate: 'Последнее обновление:',
-		myMusicalProfilePageMostListenedButtonUpdate: 'Обновить',
-		myMusicalProfilePageMostListenedReloadIconAltText: 'Иконка обновления',
-		myMusicalProfilePageMostListenedShareButton: 'Поделиться',
-		myMusicalProfilePageMostListenedShareIconAltText: 'Иконка для поделиться',
-		myMusicalProfilePageMostListenedShowMoreFiveArtistsButton: 'Показать +5 исполнителей',
-		myMusicalProfilePageMostListenedShowMoreFiveTracksButton: 'Показать +5 треков',
-		myMusicalProfilePageMostListenedCrownIconAltText: 'Иконка короны'
+		myMusicalProfilePageLastUpdate: 'Последнее обновление:',
+		myMusicalProfilePageButtonUpdate: 'Обновить',
+		myMusicalProfilePageReloadIconAltText: 'Иконка обновления',
+		myMusicalProfilePageShareButton: 'Поделиться',
+		myMusicalProfilePageShareIconAltText: 'Иконка для поделиться',
+		myMusicalProfilePageShowMoreFiveArtistsButton: 'Показать +5 исполнителей',
+		myMusicalProfilePageShowMoreFiveTracksButton: 'Показать +5 треков',
+		myMusicalProfilePageCrownIconAltText: 'Иконка короны',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Ошибка при загрузке дополнительных исполнителей',
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Ошибка при загрузке дополнительных треков'
 	},
 	discoveriesPage: {
 		title: 'Музыкальные открытия | Allify',
@@ -153,7 +155,8 @@ export const ru = {
 		discoveriesPageDiscoverAgain: 'Нажмите «Открыть снова», чтобы обновить рекомендации',
 		discoveriesPageDiscoverNowButton: 'Открыть сейчас',
 		discoveriesPageDiscoverAgainButton: 'Открыть снова',
-		alliMascotWavingAltText: 'Маскот Alli машет на странице открытий'
+		alliMascotWavingAltText: 'Маскот Alli машет на странице открытий',
+		discoveriesPageDiscoveriesErrorToast: 'Что-то пошло не так при загрузке ваших открытий. Пожалуйста, попробуйте позже.'
 	},
 	musicCommunityPage: {
 		title: 'Музыкальное сообщество | Allify',
