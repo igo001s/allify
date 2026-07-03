@@ -41,11 +41,13 @@
 				toastStore.set({
 					showToast: true,
 					toastType: 'error',
-					toastMessage: $translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveArtistsErrorToast
+					toastMessage:
+						$translationsStore.myMusicalProfilePage
+							.myMusicalProfilePageShowMoreFiveArtistsErrorToast
 				});
 
 				loadingMoreItems = false;
-				
+
 				return;
 			}
 
@@ -83,7 +85,8 @@
 				toastStore.set({
 					showToast: true,
 					toastType: 'error',
-					toastMessage: $translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveTracksErrorToast
+					toastMessage:
+						$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveTracksErrorToast
 				});
 
 				loadingMoreItems = false;
@@ -131,11 +134,9 @@
 	>
 		<span class="text-sm leading-none font-semibold">
 			{#if additionalItemsType === 'artists'}
-				{$translationsStore.myMusicalProfilePage
-					.myMusicalProfilePageShowMoreFiveArtistsButton}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveArtistsButton}
 			{:else}
-				{$translationsStore.myMusicalProfilePage
-					.myMusicalProfilePageShowMoreFiveTracksButton}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveTracksButton}
 			{/if}
 		</span>
 

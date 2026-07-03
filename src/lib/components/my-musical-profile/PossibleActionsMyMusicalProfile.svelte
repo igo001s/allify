@@ -32,8 +32,7 @@
 		<button class={btnClass}>
 			<ReloadIcon
 				iconSvgClass="h-4 w-4 text-brand-primary transition-transform duration-200 group-hover:rotate-90"
-				iconAltText={$translationsStore.myMusicalProfilePage
-					.myMusicalProfilePageReloadIconAltText}
+				iconAltText={$translationsStore.myMusicalProfilePage.myMusicalProfilePageReloadIconAltText}
 			/>
 
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageButtonUpdate}
@@ -42,8 +41,7 @@
 		<button class={btnClass}>
 			<ShareIcon
 				iconSvgClass="h-4 w-4 text-brand-primary"
-				iconAltText={$translationsStore.myMusicalProfilePage
-					.myMusicalProfilePageShareIconAltText}
+				iconAltText={$translationsStore.myMusicalProfilePage.myMusicalProfilePageShareIconAltText}
 			/>
 
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShareButton}

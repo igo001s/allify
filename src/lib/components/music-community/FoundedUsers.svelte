@@ -24,7 +24,9 @@
 			<DotsLoading dotsTheme="base" />
 		</div>
 	{:else if foundedUsers && foundedUsers.length > 0}
-		<div class="grid max-h-70 w-full grid-cols-1 auto-rows-max gap-4 overflow-auto sm:grid-cols-2 lg:grid-cols-3">
+		<div
+			class="grid max-h-70 w-full auto-rows-max grid-cols-1 gap-4 pr-1.5 overflow-auto sm:grid-cols-2 lg:grid-cols-3"
+		>
 			{#each foundedUsers as user}
 				<FoundedUserItem {user} />
 			{/each}

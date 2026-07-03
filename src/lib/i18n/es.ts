@@ -159,7 +159,8 @@ export const es = {
 		discoveriesPageDiscoverNowButton: 'Descubrir ahora',
 		discoveriesPageDiscoverAgainButton: 'Descubrir de nuevo',
 		alliMascotWavingAltText: 'Mascota Alli saludando en la página de descubrimientos',
-		discoveriesPageDiscoveriesErrorToast: 'Algo salió mal al cargar tus descubrimientos. Por favor, inténtalo de nuevo más tarde.'
+		discoveriesPageDiscoveriesErrorToast:
+			'Algo salió mal al cargar tus descubrimientos. Por favor, inténtalo de nuevo más tarde.'
 	},
 	musicCommunityPage: {
 		title: 'Comunidad Musical | Allify',

@@ -158,7 +158,8 @@ export const en = {
 		discoveriesPageDiscoverNowButton: 'Discover now',
 		discoveriesPageDiscoverAgainButton: 'Discover again',
 		alliMascotWavingAltText: 'Alli mascot waving on the discoveries page',
-		discoveriesPageDiscoveriesErrorToast: 'Something went wrong while loading your discoveries. Please try again later.'
+		discoveriesPageDiscoveriesErrorToast:
+			'Something went wrong while loading your discoveries. Please try again later.'
 	},
 	musicCommunityPage: {
 		title: 'Music Community | Allify',
@@ -187,7 +188,7 @@ export const en = {
 			'Try searching for a different name or check the spelling.',
 		musicCommunityStarIconAltText: 'Star icon to favorite a profile',
 		musicCommunityStarIconRemoveAltText: 'Star icon to remove a profile from favorites',
-		musicCommunityToastErrorAddToFavoritesMessage: 'You cannot favorite yourself',
+		musicCommunityToastErrorAddToFavoritesMessage: 'You cannot favorite yourself'
 	},
 	profilePage: {
 		title: 'Profile | Allify',

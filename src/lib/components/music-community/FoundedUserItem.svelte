@@ -40,7 +40,8 @@
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',
-				toastMessage: $translationsStore.musicCommunityPage.musicCommunityToastErrorAddToFavoritesMessage
+				toastMessage:
+					$translationsStore.musicCommunityPage.musicCommunityToastErrorAddToFavoritesMessage
 			});
 
 			return;
@@ -66,7 +67,14 @@
 			return;
 		}
 
-		const data = await addToFavorites(emailToSave, email, name, image, spotifyConnected, deezerConnected);
+		const data = await addToFavorites(
+			emailToSave,
+			email,
+			name,
+			image,
+			spotifyConnected,
+			deezerConnected
+		);
 
 		if (!data) return;
 
@@ -81,7 +89,7 @@
 </script>
 
 <article
-	class="flex w-full h-fit items-center justify-between rounded-xl border border-b-default bg-s-muted transition hover:border-brand-primary"
+	class="flex h-fit w-full items-center justify-between rounded-xl border border-b-default bg-s-muted transition hover:border-brand-primary"
 >
 	<button
 		class="flex w-11/12 min-w-0 cursor-pointer items-center gap-4 py-2.5 pl-2.5"
@@ -112,9 +120,7 @@
 				/>
 
 				<DeezerIcon
-					iconSvgClass={`h-3.5 w-3.5 ${
-						user.deezerConnected ? 'text-deezer' : 'text-t-secondary'
-					}`}
+					iconSvgClass={`h-3.5 w-3.5 ${user.deezerConnected ? 'text-deezer' : 'text-t-secondary'}`}
 				/>
 			</div>
 		</div>

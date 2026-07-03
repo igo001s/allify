@@ -159,7 +159,8 @@ export const de = {
 		discoveriesPageDiscoverNowButton: 'Jetzt entdecken',
 		discoveriesPageDiscoverAgainButton: 'Erneut entdecken',
 		alliMascotWavingAltText: 'Alli-Maskottchen winkt auf der Entdeckungsseite',
-		discoveriesPageDiscoveriesErrorToast: 'Beim Laden deiner Entdeckungen ist ein Fehler aufgetreten. Bitte versuche es später erneut.'
+		discoveriesPageDiscoveriesErrorToast:
+			'Beim Laden deiner Entdeckungen ist ein Fehler aufgetreten. Bitte versuche es später erneut.'
 	},
 	musicCommunityPage: {
 		title: 'Musik-Community | Allify',
@@ -187,7 +188,8 @@ export const de = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Versuche, nach einem anderen Namen zu suchen oder überprüfe die Rechtschreibung.',
 		musicCommunityStarIconAltText: 'Sternsymbol zum Favorisieren eines Profils',
-		musicCommunityStarIconRemoveAltText: 'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
+		musicCommunityStarIconRemoveAltText:
+			'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Du kannst dich nicht selbst favorisieren'
 	},
 	profilePage: {

@@ -35,17 +35,15 @@
 		</span>
 	</div>
 
-	<div
-		class={`${
-			favorites && favorites.length > 0
-				? 'grid max-h-64 grid-cols-1 gap-4 overflow-auto sm:grid-cols-2'
-				: 'flex h-64 flex-col overflow-hidden'
-		}`}
-	>
+	<div class="flex h-64 max-h-64 flex-col overflow-hidden">
 		{#if favorites && favorites.length > 0}
-			{#each favorites as favorite}
-				<FavoriteUserItem {favorite} />
-			{/each}
+			<div
+				class="grid max-h-70 w-full auto-rows-max grid-cols-1 gap-4 pr-1.5 overflow-auto sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2"
+			>
+				{#each favorites as favorite}
+					<FavoriteUserItem {favorite} />
+				{/each}
+			</div>
 		{:else}
 			<div
 				class="flex h-full w-full flex-col items-center justify-center rounded-xl border border-dashed border-b-default bg-s-muted px-6 text-center"

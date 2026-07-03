@@ -136,7 +136,8 @@ export const ja = {
 		myMusicalProfilePageShowMoreFiveArtistsButton: '+5アーティストを表示',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5曲を表示',
 		myMusicalProfilePageCrownIconAltText: '王冠アイコン',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'アーティストの追加読み込み中にエラーが発生しました',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
+			'アーティストの追加読み込み中にエラーが発生しました',
 		myMusicalProfilePageShowMoreFiveTracksErrorToast: '曲の追加読み込み中にエラーが発生しました'
 	},
 	discoveriesPage: {

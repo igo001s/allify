@@ -34,7 +34,7 @@ const schema = {
 					en: 'Tickets for access to advanced insights and features',
 					es: 'Tickets para acceder a insights y funcionalidades avanzadas',
 					de: 'Tickets für den Zugang zu erweiterten Einblicken und Funktionen',
-					fr: "Tickets pour accéder à des analyses et fonctionnalités avancées",
+					fr: 'Tickets pour accéder à des analyses et fonctionnalités avancées',
 					it: 'Ticket per accedere ad analisi e funzionalità avanzate',
 					ja: '高度なインサイトと機能にアクセスするためのチケット',
 					ru: 'Билеты для доступа к расширенной аналитике и функциям',
@@ -99,13 +99,7 @@ const schema = {
 				'Подробная статистика стриминга',
 				'Персональные рекомендации'
 			],
-			zh: [
-				'个性化音乐资料',
-				'音乐社区',
-				'发现新音乐',
-				'详细的流媒体数据',
-				'个性化推荐'
-			]
+			zh: ['个性化音乐资料', '音乐社区', '发现新音乐', '详细的流媒体数据', '个性化推荐']
 		},
 		description: {
 			'pt-BR':
@@ -127,5 +121,4 @@ const schema = {
 	}
 };
 
-export const getSchemaInfo = (schemaName: string) =>
-	schema[schemaName as keyof typeof schema];
+export const getSchemaInfo = (schemaName: string) => schema[schemaName as keyof typeof schema];
