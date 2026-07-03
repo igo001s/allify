@@ -24,7 +24,7 @@
 
 		timeout = setTimeout(() => {
 			closeToast();
-		}, 3500);
+		}, 4500);
 	}
 </script>
 

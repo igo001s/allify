@@ -157,7 +157,8 @@ export const fr = {
 			'Cliquez sur "Découvrir à nouveau" pour actualiser vos recommandations',
 		discoveriesPageDiscoverNowButton: 'Découvrir maintenant',
 		discoveriesPageDiscoverAgainButton: 'Découvrir à nouveau',
-		alliMascotWavingAltText: 'Mascotte Alli faisant signe sur la page de découvertes'
+		alliMascotWavingAltText: 'Mascotte Alli faisant signe sur la page de découvertes',
+		discoveriesPageDiscoveriesErrorToast: 'Une erreur est survenue lors du chargement de vos découvertes. Veuillez réessayer plus tard.'
 	},
 	musicCommunityPage: {
 		title: 'Communauté musicale | Allify',

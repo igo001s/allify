@@ -155,7 +155,8 @@ export const en = {
 		discoveriesPageDiscoverAgain: 'Click "Discover again" to refresh your recommendations',
 		discoveriesPageDiscoverNowButton: 'Discover now',
 		discoveriesPageDiscoverAgainButton: 'Discover again',
-		alliMascotWavingAltText: 'Alli mascot waving on the discoveries page'
+		alliMascotWavingAltText: 'Alli mascot waving on the discoveries page',
+		discoveriesPageDiscoveriesErrorToast: 'Something went wrong while loading your discoveries. Please try again later.'
 	},
 	musicCommunityPage: {
 		title: 'Music Community | Allify',

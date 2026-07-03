@@ -151,7 +151,8 @@ export const ja = {
 		discoveriesPageDiscoverAgain: '点击“再次发现”刷新你的推荐',
 		discoveriesPageDiscoverNowButton: '立即发现',
 		discoveriesPageDiscoverAgainButton: '再次发现',
-		alliMascotWavingAltText: 'Alli吉祥物在发现页面挥手'
+		alliMascotWavingAltText: 'Alli吉祥物在发现页面挥手',
+		discoveriesPageDiscoveriesErrorToast: '加载你的发现时出错。请稍后再试。'
 	},
 	musicCommunityPage: {
 		title: '音楽コミュニティ | Allify',

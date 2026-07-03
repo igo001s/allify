@@ -153,7 +153,8 @@ export const ru = {
 		discoveriesPageDiscoverAgain: 'Нажмите «Открыть снова», чтобы обновить рекомендации',
 		discoveriesPageDiscoverNowButton: 'Открыть сейчас',
 		discoveriesPageDiscoverAgainButton: 'Открыть снова',
-		alliMascotWavingAltText: 'Маскот Alli машет на странице открытий'
+		alliMascotWavingAltText: 'Маскот Alli машет на странице открытий',
+		discoveriesPageDiscoveriesErrorToast: 'Что-то пошло не так при загрузке ваших открытий. Пожалуйста, попробуйте позже.'
 	},
 	musicCommunityPage: {
 		title: 'Музыкальное сообщество | Allify',

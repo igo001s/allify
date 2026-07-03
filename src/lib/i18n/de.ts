@@ -156,7 +156,8 @@ export const de = {
 			'Klicke auf „Erneut entdecken“, um deine Empfehlungen zu aktualisieren',
 		discoveriesPageDiscoverNowButton: 'Jetzt entdecken',
 		discoveriesPageDiscoverAgainButton: 'Erneut entdecken',
-		alliMascotWavingAltText: 'Alli-Maskottchen winkt auf der Entdeckungsseite'
+		alliMascotWavingAltText: 'Alli-Maskottchen winkt auf der Entdeckungsseite',
+		discoveriesPageDiscoveriesErrorToast: 'Beim Laden deiner Entdeckungen ist ein Fehler aufgetreten. Bitte versuche es später erneut.'
 	},
 	musicCommunityPage: {
 		title: 'Musik-Community | Allify',

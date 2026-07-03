@@ -146,7 +146,8 @@ export const zh = {
 		discoveriesPageDiscoverAgain: '「もう一度発見」をクリックしておすすめを更新しましょう',
 		discoveriesPageDiscoverNowButton: '今すぐ発見',
 		discoveriesPageDiscoverAgainButton: 'もう一度発見',
-		alliMascotWavingAltText: '発見ページで手を振るAlliのマスコット'
+		alliMascotWavingAltText: '発見ページで手を振るAlliのマスコット',
+		discoveriesPageDiscoveriesErrorToast: 'おすすめの読み込み中にエラーが発生しました。後でもう一度お試しください。'
 	},
 	musicCommunityPage: {
 		title: '音乐社区 | Allify',

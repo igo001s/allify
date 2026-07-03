@@ -154,7 +154,8 @@ export const pt = {
 			'Clique em "Descobrir novamente" para atualizar suas recomendações',
 		discoveriesPageDiscoverNowButton: 'Descobrir agora',
 		discoveriesPageDiscoverAgainButton: 'Descobrir novamente',
-		alliMascotWavingAltText: 'Mascote Alli acenando na página de descobertas'
+		alliMascotWavingAltText: 'Mascote Alli acenando na página de descobertas',
+		discoveriesPageDiscoveriesErrorToast: 'Algo deu errado ao carregar suas descobertas. Por favor, tente novamente mais tarde.'
 	},
 	musicCommunityPage: {
 		title: 'Comunidade Musical | Allify',
