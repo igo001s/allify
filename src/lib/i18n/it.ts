@@ -138,8 +138,10 @@ export const it = {
 		myMusicalProfilePageShowMoreFiveArtistsButton: 'Mostra +5 artisti',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostra +5 canzoni',
 		myMusicalProfilePageCrownIconAltText: 'Icona di corona',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Errore durante il caricamento di altri artisti',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Errore durante il caricamento di altre canzoni'
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
+			'Errore durante il caricamento di altri artisti',
+		myMusicalProfilePageShowMoreFiveTracksErrorToast:
+			'Errore durante il caricamento di altre canzoni'
 	},
 	discoveriesPage: {
 		title: 'Scoperte Musicali | Allify',
@@ -157,7 +159,8 @@ export const it = {
 		discoveriesPageDiscoverNowButton: 'Scopri ora',
 		discoveriesPageDiscoverAgainButton: 'Scopri di nuovo',
 		alliMascotWavingAltText: 'Mascotte Alli che saluta nella pagina delle scoperte',
-		discoveriesPageDiscoveriesErrorToast: 'Qualcosa è andato storto durante il caricamento delle tue scoperte. Riprova più tardi.'
+		discoveriesPageDiscoveriesErrorToast:
+			'Qualcosa è andato storto durante il caricamento delle tue scoperte. Riprova più tardi.'
 	},
 	musicCommunityPage: {
 		title: 'Community musicale | Allify',

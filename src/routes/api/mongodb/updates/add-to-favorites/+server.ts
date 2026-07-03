@@ -22,7 +22,8 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { emailToSave, email, name, image, spotifyConnected, deezerConnected } = await request.json();
+		const { emailToSave, email, name, image, spotifyConnected, deezerConnected } =
+			await request.json();
 
 		if (!emailToSave || !email || !name || !image) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), {

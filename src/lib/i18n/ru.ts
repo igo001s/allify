@@ -137,7 +137,8 @@ export const ru = {
 		myMusicalProfilePageShowMoreFiveArtistsButton: 'Показать +5 исполнителей',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Показать +5 треков',
 		myMusicalProfilePageCrownIconAltText: 'Иконка короны',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Ошибка при загрузке дополнительных исполнителей',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
+			'Ошибка при загрузке дополнительных исполнителей',
 		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Ошибка при загрузке дополнительных треков'
 	},
 	discoveriesPage: {
@@ -156,7 +157,8 @@ export const ru = {
 		discoveriesPageDiscoverNowButton: 'Открыть сейчас',
 		discoveriesPageDiscoverAgainButton: 'Открыть снова',
 		alliMascotWavingAltText: 'Маскот Alli машет на странице открытий',
-		discoveriesPageDiscoveriesErrorToast: 'Что-то пошло не так при загрузке ваших открытий. Пожалуйста, попробуйте позже.'
+		discoveriesPageDiscoveriesErrorToast:
+			'Что-то пошло не так при загрузке ваших открытий. Пожалуйста, попробуйте позже.'
 	},
 	musicCommunityPage: {
 		title: 'Музыкальное сообщество | Allify',

@@ -157,7 +157,8 @@ export const pt = {
 		discoveriesPageDiscoverNowButton: 'Descobrir agora',
 		discoveriesPageDiscoverAgainButton: 'Descobrir novamente',
 		alliMascotWavingAltText: 'Mascote Alli acenando na página de descobertas',
-		discoveriesPageDiscoveriesErrorToast: 'Algo deu errado ao carregar suas descobertas. Por favor, tente novamente mais tarde.'
+		discoveriesPageDiscoveriesErrorToast:
+			'Algo deu errado ao carregar suas descobertas. Por favor, tente novamente mais tarde.'
 	},
 	musicCommunityPage: {
 		title: 'Comunidade Musical | Allify',
@@ -186,7 +187,7 @@ export const pt = {
 			'Tente buscar com outro nome ou verifique se a pontuação está correta.',
 		musicCommunityStarIconAltText: 'Ícone de estrela para favoritar perfil',
 		musicCommunityStarIconRemoveAltText: 'Ícone de estrela para remover perfil dos favoritos',
-		musicCommunityToastErrorAddToFavoritesMessage: 'Não é possível favoritar a si mesmo',
+		musicCommunityToastErrorAddToFavoritesMessage: 'Não é possível favoritar a si mesmo'
 	},
 	profilePage: {
 		title: 'Perfil | Allify',

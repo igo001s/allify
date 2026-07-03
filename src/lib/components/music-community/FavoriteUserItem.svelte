@@ -21,13 +21,9 @@
 	// Props
 	export let favorite: FavoriteUser;
 
-	$: userOnFavorites =
-		$userInfo?.favorites.some((fav) => fav.email === favorite.email) || false;
+	$: userOnFavorites = $userInfo?.favorites.some((fav) => fav.email === favorite.email) || false;
 
-	async function handlerRemoveFromFavorites(
-		emailToSave?: string,
-		email?: string,
-	) {
+	async function handlerRemoveFromFavorites(emailToSave?: string, email?: string) {
 		if (!emailToSave || !email) return;
 
 		const alreadyExists = $userInfo?.favorites.some((fav) => fav.email === email);
@@ -39,9 +35,7 @@
 
 			userInfo.update((user) => {
 				if (user) {
-					user.favorites = user.favorites.filter(
-						(fav) => fav.email !== data.removedFavorite.email
-					);
+					user.favorites = user.favorites.filter((fav) => fav.email !== data.removedFavorite.email);
 				}
 
 				return user;
@@ -53,7 +47,7 @@
 </script>
 
 <article
-	class="flex w-full items-center justify-between rounded-xl border border-b-default bg-s-muted transition hover:border-brand-primary"
+	class="flex h-fit w-full items-center justify-between rounded-xl border border-b-default bg-s-muted transition hover:border-brand-primary"
 >
 	<button
 		class="flex w-11/12 min-w-0 cursor-pointer items-center gap-4 py-2.5 pl-2.5"
