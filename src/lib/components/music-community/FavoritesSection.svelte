@@ -36,7 +36,11 @@
 	</div>
 
 	<div
-		class={`flex max-h-64 gap-4 ${favorites && favorites.length > 0 ? 'overflow-auto flex-wrap' : 'overflow-hidden flex-col h-64'}`}
+		class={`${
+			favorites && favorites.length > 0
+				? 'grid max-h-64 grid-cols-1 gap-4 overflow-auto sm:grid-cols-2'
+				: 'flex h-64 flex-col overflow-hidden'
+		}`}
 	>
 		{#if favorites && favorites.length > 0}
 			{#each favorites as favorite}
