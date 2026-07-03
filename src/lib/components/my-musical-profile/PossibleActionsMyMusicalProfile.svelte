@@ -21,7 +21,7 @@
 
 <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
 	<span class="flex flex-col gap-1 text-xs text-t-secondary sm:gap-2 md:flex-row">
-		{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedLastUpdate}
+		{$translationsStore.myMusicalProfilePage.myMusicalProfilePageLastUpdate}
 
 		<strong class="font-medium text-t-primary">
 			{lastSync ? new Date(lastSync).toLocaleString($translationsStore.locale) : '-'}
@@ -33,20 +33,20 @@
 			<ReloadIcon
 				iconSvgClass="h-4 w-4 text-brand-primary transition-transform duration-200 group-hover:rotate-90"
 				iconAltText={$translationsStore.myMusicalProfilePage
-					.myMusicalProfilePageMostListenedReloadIconAltText}
+					.myMusicalProfilePageReloadIconAltText}
 			/>
 
-			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedButtonUpdate}
+			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageButtonUpdate}
 		</button>
 
 		<button class={btnClass}>
 			<ShareIcon
 				iconSvgClass="h-4 w-4 text-brand-primary"
 				iconAltText={$translationsStore.myMusicalProfilePage
-					.myMusicalProfilePageMostListenedShareIconAltText}
+					.myMusicalProfilePageShareIconAltText}
 			/>
 
-			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedShareButton}
+			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShareButton}
 		</button>
 	</div>
 </div>

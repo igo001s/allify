@@ -19,7 +19,7 @@
 		<CrownIcon
 			iconSvgClass="absolute -top-3 -left-3 h-8 w-8 -rotate-32 text-yellow-400 lg:h-9 lg:w-9 lg:-top-5 lg:h-10 lg:w-10"
 			iconAltText={$translationsStore.myMusicalProfilePage
-				.myMusicalProfilePageMostListenedCrownIconAltText}
+				.myMusicalProfilePageCrownIconAltText}
 		/>
 
 		<img

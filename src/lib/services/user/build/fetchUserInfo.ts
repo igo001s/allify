@@ -1,4 +1,3 @@
-// Stores
 // Services
 import { createUser } from './createUser';
 import { sendEmail } from '../../email/sendEmail';
