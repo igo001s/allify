@@ -53,9 +53,14 @@
 </script>
 
 <article
-	class="flex h-fit w-full cursor-pointer items-center justify-between gap-4 rounded-xl border border-b-default bg-s-muted p-2.5 transition hover:border-brand-primary sm:w-[calc(50%-0.5rem)]"
+	class="flex w-full items-center justify-between rounded-xl border border-b-default bg-s-muted transition hover:border-brand-primary"
 >
-	<div class="flex min-w-0 items-center gap-4">
+	<button
+		class="flex w-11/12 min-w-0 cursor-pointer items-center gap-4 py-2.5 pl-2.5"
+		on:click={() => {
+			console.log(favorite);
+		}}
+	>
 		{#if favorite.image}
 			<img
 				src={favorite.image.url}
@@ -79,25 +84,27 @@
 				/>
 
 				<DeezerIcon
-					iconSvgClass={`h-3.5 w-3.5 ${favorite.deezerConnected ? 'text-deezer' : 'text-t-secondary'}`}
+					iconSvgClass={`h-3.5 w-3.5 ${
+						favorite.deezerConnected ? 'text-deezer' : 'text-t-secondary'
+					}`}
 				/>
 			</div>
 		</div>
-	</div>
+	</button>
 
 	<button
-		class="mr-2 shrink-0 cursor-pointer text-brand-primary transition hover:text-brand-primary-dark"
+		class="mr-2 w-1/12 shrink-0 cursor-pointer text-brand-primary transition hover:text-brand-primary-dark"
 		aria-label={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
 		on:click={() => handlerRemoveFromFavorites($userInfo?.email, favorite.email)}
 	>
 		{#if userOnFavorites}
 			<FilledStar
-				iconSvgClass="h-4 w-4"
+				iconSvgClass="h-3.5 w-3.5 2xl:h-4 2xl:w-4"
 				iconAltText={$translationsStore.musicCommunityPage.musicCommunityStarIconRemoveAltText}
 			/>
 		{:else}
 			<OutlinedStar
-				iconSvgClass="h-4 w-4"
+				iconSvgClass="h-3.5 w-3.5 2xl:h-4 2xl:w-4"
 				iconAltText={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
 			/>
 		{/if}
