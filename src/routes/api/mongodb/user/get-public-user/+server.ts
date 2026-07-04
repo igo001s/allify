@@ -4,6 +4,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 // Server
 import { connectDB } from '$lib/server/mongodb';
 
+// MongoDB
+import { ObjectId } from 'mongodb';
+
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
 
@@ -19,41 +22,27 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { user } = await request.json();
+		const body = await request.json();
 
-		if (!user) {
-			return new Response(JSON.stringify({ error: 'User is required' }), { status: 400 });
+		const { id } = body;
+
+		if (!id) {
+			return new Response(JSON.stringify({ error: 'ID is required' }), { status: 400 });
 		}
 
 		const client = await connectDB();
 		const db = client.db(MONGO_DB);
 		const users = db.collection('users');
 
-		const foundUsers = await users
-			.find({
-				name: {
-					$regex: user,
-					$options: 'i'
-				}
-			})
-			.toArray();
+		const userFoundedById = await users.findOne({ _id: new ObjectId(id) });
 
-		if (!foundUsers || foundUsers.length === 0) {
-			return new Response(JSON.stringify({ error: 'Users not found' }), { status: 404 });
+		if (!userFoundedById) {
+			return new Response(JSON.stringify({ error: 'User not found' }), { status: 404 });
 		}
 
 		return new Response(
 			JSON.stringify({
-				users: foundUsers.map((user) => ({
-					_id: user._id,
-					name: user.name,
-					image: user.primaryStreaming === 'spotify' ? user.connectedStreamings.spotify.image : '',
-					spotifyConnected:
-						user.connectedStreamings.spotify && user.connectedStreamings.spotify.connected === true
-							? true
-							: false,
-					deezerConnected: false
-				}))
+				userFoundedById
 			}),
 			{ status: 200 }
 		);
@@ -63,3 +52,4 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	}
 };
+        

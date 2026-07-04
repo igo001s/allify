@@ -1,6 +1,9 @@
+// MongoDB
+import type { ObjectId } from 'mongodb';
+
 export async function addToFavorites(
-	emailToSave: string,
-	email: string,
+	idToSave: ObjectId,
+	id: ObjectId,
 	name: string,
 	image: {
 		url: string;
@@ -11,7 +14,7 @@ export async function addToFavorites(
 	deezerConnected?: boolean
 ) {
 	try {
-		if (!emailToSave || !email || !name || !image) return;
+		if (!idToSave || !id || !name || !image) return;
 
 		const response = await fetch('/api/mongodb/updates/add-to-favorites', {
 			method: 'POST',
@@ -19,8 +22,8 @@ export async function addToFavorites(
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
-				emailToSave,
-				email,
+				idToSave,
+				id,
 				name,
 				image,
 				spotifyConnected,
@@ -33,7 +36,9 @@ export async function addToFavorites(
 			throw new Error(error.error);
 		}
 
-		return response;
+		const data = await response.json();
+
+		return data;
 	} catch (error) {
 		if (import.meta.env.DEV) {
 			console.error(

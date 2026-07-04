@@ -79,8 +79,6 @@
 		} else if (additionalItemsType === 'tracks') {
 			const response = await updateMostListenedTracks(userEmail, tracksLimit, userTickets);
 
-			console.log('response', response);
-
 			if (!response) {
 				toastStore.set({
 					showToast: true,

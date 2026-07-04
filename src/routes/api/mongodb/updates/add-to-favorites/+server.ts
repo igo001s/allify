@@ -7,6 +7,9 @@ import { connectDB } from '$lib/server/mongodb';
 // Types
 import type { UserInfo } from '$lib/types/UserInfo.type';
 
+// MongoDB
+import { ObjectId } from 'mongodb';
+
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
 
@@ -22,16 +25,15 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { emailToSave, email, name, image, spotifyConnected, deezerConnected } =
-			await request.json();
+		const { idToSave, id, name, image, spotifyConnected, deezerConnected } = await request.json();
 
-		if (!emailToSave || !email || !name || !image) {
+		if (!idToSave || !id || !name || !image) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), {
 				status: 400
 			});
 		}
 
-		if (emailToSave === email) {
+		if (idToSave === id) {
 			return new Response(JSON.stringify({ error: 'Cannot add yourself to favorites' }), {
 				status: 400
 			});
@@ -42,11 +44,11 @@ export const POST: RequestHandler = async ({ request }) => {
 		const users = db.collection<UserInfo>('users');
 
 		await users.updateOne(
-			{ email: emailToSave },
+			{ _id: new ObjectId(idToSave) },
 			{
 				$push: {
 					favorites: {
-						email,
+						_id: new ObjectId(id),
 						name,
 						image,
 						spotifyConnected: spotifyConnected,
@@ -59,7 +61,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		return new Response(
 			JSON.stringify({
 				addedFavorite: {
-					email,
+					_id: id,
 					name,
 					image,
 					spotifyConnected: spotifyConnected,

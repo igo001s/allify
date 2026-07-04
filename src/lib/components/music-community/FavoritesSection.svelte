@@ -38,7 +38,7 @@
 	<div class="flex h-64 max-h-64 flex-col overflow-hidden">
 		{#if favorites && favorites.length > 0}
 			<div
-				class="grid max-h-70 w-full auto-rows-max grid-cols-1 gap-4 pr-1.5 overflow-auto sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2"
+				class="grid max-h-70 w-full auto-rows-max grid-cols-1 gap-4 overflow-auto pr-1.5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2"
 			>
 				{#each favorites as favorite}
 					<FavoriteUserItem {favorite} />

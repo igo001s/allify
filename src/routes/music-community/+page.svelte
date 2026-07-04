@@ -34,6 +34,7 @@
 
 		try {
 			const data = await searchUsers(searchUserInputValue);
+
 			foundedUsers = data;
 		} catch (err) {
 			foundedUsers = [];
