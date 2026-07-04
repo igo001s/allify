@@ -90,24 +90,15 @@ input[type='number'] {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(
-		180deg,
-		var(--color-brand-primary-light),
-		var(--color-brand-primary)
-	);
+	background: linear-gradient(180deg, var(--color-brand-primary-light), var(--color-brand-primary));
 	border-radius: 9999px;
 	border: 2px solid var(--color-s-muted);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(
-		180deg,
-		var(--color-brand-primary),
-		var(--color-brand-primary-dark)
-	);
+	background: linear-gradient(180deg, var(--color-brand-primary), var(--color-brand-primary-dark));
 }
 
 ::-webkit-scrollbar-corner {
 	background: var(--color-s-muted);
 }
-

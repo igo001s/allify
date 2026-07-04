@@ -1,6 +1,9 @@
-export async function removeFromFavorites(emailFromRemove: string, email: string) {
+// MongoDB
+import type { ObjectId } from 'mongodb';
+
+export async function removeFromFavorites(idToRemove: ObjectId, id: ObjectId) {
 	try {
-		if (!emailFromRemove || !email) return;
+		if (!idToRemove || !id) return;
 
 		const response = await fetch('/api/mongodb/updates/remove-from-favorites', {
 			method: 'POST',
@@ -8,8 +11,8 @@ export async function removeFromFavorites(emailFromRemove: string, email: string
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
-				emailFromRemove,
-				email
+				idToRemove,
+				id
 			})
 		});
 

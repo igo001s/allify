@@ -45,8 +45,8 @@ export const POST: RequestHandler = async ({ request }) => {
 		return new Response(
 			JSON.stringify({
 				users: foundUsers.map((user) => ({
+					_id: user._id,
 					name: user.name,
-					email: user.email,
 					image: user.primaryStreaming === 'spotify' ? user.connectedStreamings.spotify.image : '',
 					spotifyConnected:
 						user.connectedStreamings.spotify && user.connectedStreamings.spotify.connected === true

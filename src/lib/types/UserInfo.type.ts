@@ -1,7 +1,11 @@
+// MongoDB
+import type { ObjectId } from 'mongodb';
+
 // Types
 import type { UserInfoSpotify } from './SpotifyData.type';
 
 export type UserInfo = {
+	_id: ObjectId;
 	name: string;
 	email: string;
 	tickets: number;
@@ -19,7 +23,7 @@ export type UserInfo = {
 };
 
 export type SearchUserInfo = {
-	email: string;
+	_id: ObjectId;
 	name: string;
 	image: {
 		url: string;

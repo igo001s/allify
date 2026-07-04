@@ -13,6 +13,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { toastStore } from '$lib/stores/toast.store';
 
+	// MongoDB
+	import type { ObjectId } from 'mongodb';
+
 	// Services
 	import { addToFavorites } from '$lib/services/user/updates/addToFavorites';
 	import { removeFromFavorites } from '$lib/services/user/updates/removeFromFavorites';
@@ -23,20 +26,19 @@
 	// Props
 	export let user: SearchUserInfo;
 
-	$: userOnFavorites =
-		$userInfo?.favorites.some((favorite) => favorite.email === user.email) || false;
+	$: userOnFavorites = $userInfo?.favorites.some((favorite) => favorite._id === user._id) || false;
 
-	async function handleToggleFavorites(
-		emailToSave?: string,
-		email?: string,
+	async function handleSaveFavorites(
+		idToSave: ObjectId,
+		id: ObjectId,
 		name?: string,
 		image?: { url: string; height: number | null; width: number | null },
 		spotifyConnected = false,
 		deezerConnected = false
 	) {
-		if (!emailToSave || !email || !name || !image) return;
+		if (!idToSave || !id || !name || !image) return false;
 
-		if (emailToSave === email) {
+		if (idToSave === id) {
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',
@@ -44,47 +46,71 @@
 					$translationsStore.musicCommunityPage.musicCommunityToastErrorAddToFavoritesMessage
 			});
 
-			return;
+			return false;
 		}
 
-		const alreadyExists = $userInfo?.favorites.some((favorite) => favorite.email === email);
+		const data = await addToFavorites(idToSave, id, name, image, spotifyConnected, deezerConnected);
 
-		if (alreadyExists) {
-			const data = await removeFromFavorites(emailToSave, email);
-
-			if (!data) return;
-
-			userInfo.update((user) => {
-				if (user) {
-					user.favorites = user.favorites.filter(
-						(favorite) => favorite.email !== data.removedFavorite.email
-					);
-				}
-
-				return user;
-			});
-
-			return;
-		}
-
-		const data = await addToFavorites(
-			emailToSave,
-			email,
-			name,
-			image,
-			spotifyConnected,
-			deezerConnected
-		);
-
-		if (!data) return;
+		if (!data) return false;
 
 		userInfo.update((user) => {
 			if (user) {
-				user.favorites.push({ email, name, image, spotifyConnected, deezerConnected });
+				user.favorites.push({
+					_id: id,
+					name,
+					image,
+					spotifyConnected,
+					deezerConnected
+				});
 			}
 
 			return user;
 		});
+
+		return true;
+	}
+
+	async function handleRemoveFromFavorites(idToRemove: ObjectId, id: ObjectId) {
+		if (!idToRemove || !id) return false;
+
+		const data = await removeFromFavorites(idToRemove, id);
+
+		if (!data) return false;
+
+		userInfo.update((user) => {
+			if (user) {
+				user.favorites = user.favorites.filter(
+					(favorite) => favorite._id !== data.removedFavorite._id
+				);
+			}
+
+			return user;
+		});
+
+		return true;
+	}
+
+	async function handleToggleFavorites(
+		idToToggle?: ObjectId,
+		id?: ObjectId,
+		name?: string,
+		image?: { url: string; height: number | null; width: number | null },
+		spotifyConnected = false,
+		deezerConnected = false
+	) {
+		if (!idToToggle || !id || !name || !image) return;
+
+		const alreadyExists = $userInfo?.favorites.some((favorite) => favorite._id === id) ?? false;
+
+		if (alreadyExists) {
+			await handleRemoveFromFavorites(idToToggle, id);
+		} else {
+			await handleSaveFavorites(idToToggle, id, name, image, spotifyConnected, deezerConnected);
+		}
+	}
+
+	function handleGoToUserProfile() {
+		window.location.href = `/music-community/${user._id}`;
 	}
 </script>
 
@@ -93,9 +119,7 @@
 >
 	<button
 		class="flex w-11/12 min-w-0 cursor-pointer items-center gap-4 py-2.5 pl-2.5"
-		on:click={() => {
-			console.log(user);
-		}}
+		on:click={handleGoToUserProfile}
 	>
 		{#if user.image}
 			<img
@@ -131,8 +155,8 @@
 		aria-label={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
 		on:click={() =>
 			handleToggleFavorites(
-				$userInfo?.email,
-				user.email,
+				$userInfo?._id,
+				user._id,
 				user.name,
 				user.image,
 				user.spotifyConnected,

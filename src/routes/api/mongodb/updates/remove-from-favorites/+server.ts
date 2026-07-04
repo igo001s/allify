@@ -7,6 +7,9 @@ import { connectDB } from '$lib/server/mongodb';
 // Types
 import type { UserInfo } from '$lib/types/UserInfo.type';
 
+// MongoDB
+import { ObjectId } from 'mongodb';
+
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
 
@@ -22,9 +25,9 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { emailFromRemove, email } = await request.json();
+		const { idToRemove, id } = await request.json();
 
-		if (!emailFromRemove || !email) {
+		if (!idToRemove || !id) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), {
 				status: 400
 			});
@@ -35,11 +38,11 @@ export const POST: RequestHandler = async ({ request }) => {
 		const users = db.collection<UserInfo>('users');
 
 		const result = await users.updateOne(
-			{ email: emailFromRemove },
+			{ _id: new ObjectId(idToRemove) },
 			{
 				$pull: {
 					favorites: {
-						email
+						_id: new ObjectId(id)
 					}
 				}
 			}
@@ -59,7 +62,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		return new Response(
 			JSON.stringify({
 				removedFavorite: {
-					email
+					_id: id
 				}
 			}),
 			{

@@ -12,6 +12,9 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
 
+	// MongoDB
+	import type { ObjectId } from 'mongodb';
+
 	// Services
 	import { removeFromFavorites } from '$lib/services/user/updates/removeFromFavorites';
 
@@ -21,28 +24,28 @@
 	// Props
 	export let favorite: FavoriteUser;
 
-	$: userOnFavorites = $userInfo?.favorites.some((fav) => fav.email === favorite.email) || false;
+	$: userOnFavorites = $userInfo?.favorites.some((fav) => fav._id === favorite._id) || false;
 
-	async function handlerRemoveFromFavorites(emailToSave?: string, email?: string) {
-		if (!emailToSave || !email) return;
+	async function handlerRemoveFromFavorites(idToRemove?: ObjectId, id?: ObjectId) {
+		if (!idToRemove || !id) return;
 
-		const alreadyExists = $userInfo?.favorites.some((fav) => fav.email === email);
+		const data = await removeFromFavorites(idToRemove, id);
 
-		if (alreadyExists) {
-			const data = await removeFromFavorites(emailToSave, email);
+		if (!data) return;
 
-			if (!data) return;
+		userInfo.update((user) => {
+			if (user) {
+				user.favorites = user.favorites.filter((fav) => fav._id !== data.removedFavorite._id);
+			}
 
-			userInfo.update((user) => {
-				if (user) {
-					user.favorites = user.favorites.filter((fav) => fav.email !== data.removedFavorite.email);
-				}
+			return user;
+		});
 
-				return user;
-			});
+		return;
+	}
 
-			return;
-		}
+	function handleGoToFavoriteProfile() {
+		window.location.href = `/music-community/${favorite._id}`;
 	}
 </script>
 
@@ -51,9 +54,7 @@
 >
 	<button
 		class="flex w-11/12 min-w-0 cursor-pointer items-center gap-4 py-2.5 pl-2.5"
-		on:click={() => {
-			console.log(favorite);
-		}}
+		on:click={handleGoToFavoriteProfile}
 	>
 		{#if favorite.image}
 			<img
@@ -89,7 +90,7 @@
 	<button
 		class="mr-2 w-1/12 shrink-0 cursor-pointer text-brand-primary transition hover:text-brand-primary-dark"
 		aria-label={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
-		on:click={() => handlerRemoveFromFavorites($userInfo?.email, favorite.email)}
+		on:click={() => handlerRemoveFromFavorites($userInfo?._id, favorite._id)}
 	>
 		{#if userOnFavorites}
 			<FilledStar
