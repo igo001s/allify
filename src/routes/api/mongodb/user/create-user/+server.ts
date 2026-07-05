@@ -39,6 +39,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			name: name,
 			email: email,
 			tickets: 5,
+			public: true,
 			primaryStreaming: streaming,
 			connectedStreamings: { [streaming]: streamingData }
 		};

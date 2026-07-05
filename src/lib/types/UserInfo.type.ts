@@ -9,6 +9,7 @@ export type UserInfo = {
 	name: string;
 	email: string;
 	tickets: number;
+	public: boolean;
 	primaryStreaming: 'spotify' | 'deezer';
 	connectedStreamings: {
 		spotify?: UserInfoSpotify;
