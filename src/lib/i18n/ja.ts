@@ -184,7 +184,14 @@ export const ja = {
 			'別の名前で検索するか、スペルを確認してください。',
 		musicCommunityStarIconAltText: 'プロフィールをお気に入りに追加するための星アイコン',
 		musicCommunityStarIconRemoveAltText: 'プロフィールをお気に入りから削除するための星アイコン',
-		musicCommunityToastErrorAddToFavoritesMessage: '自分自身をお気に入りに追加することはできません'
+		musicCommunityToastErrorAddToFavoritesMessage: '自分自身をお気に入りに追加することはできません',
+		publicUser: {
+			title: '{userName}のプロフィール | Allify',
+			musicCommunityPagePublicUserMetaDescription:
+				'{userName}が最もよく聴く音楽を確認し、最もよく聴く曲やアーティストを発見し、プロフィールに残されたコメントをチェックして、自分のコメントも残しましょう。',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent:
+				'{userName}が最もよく聴く音楽を確認し、最もよく聴く曲やアーティストを発見し、プロフィールに残されたコメントをチェックして、自分のコメントも残しましょう。'
+		}
 	},
 	profilePage: {
 		title: 'プロフィール | Allify',

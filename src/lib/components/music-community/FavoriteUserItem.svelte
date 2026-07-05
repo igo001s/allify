@@ -24,7 +24,7 @@
 	// Props
 	export let favorite: FavoriteUser;
 
-	$: userOnFavorites = $userInfo?.favorites.some((fav) => fav._id === favorite._id) || false;
+	$: userOnFavorites = $userInfo?.favorites?.some((fav) => fav._id === favorite._id) || false;
 
 	async function handlerRemoveFromFavorites(idToRemove?: ObjectId, id?: ObjectId) {
 		if (!idToRemove || !id) return;
@@ -35,7 +35,7 @@
 
 		userInfo.update((user) => {
 			if (user) {
-				user.favorites = user.favorites.filter((fav) => fav._id !== data.removedFavorite._id);
+				user.favorites = user.favorites?.filter((fav) => fav._id !== data.removedFavorite._id);
 			}
 
 			return user;

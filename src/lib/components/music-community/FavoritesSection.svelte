@@ -4,12 +4,7 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
-
-	// Types
-	import type { FavoriteUser } from '$lib/types/UserInfo.type';
-
-	// Props
-	export let favorites: FavoriteUser[];
+	import { userInfo } from '$lib/stores/userInfo.store';
 </script>
 
 <div class="w-full rounded-xl border border-b-default bg-s-default p-5 xl:w-2/5">
@@ -27,8 +22,8 @@
 		<span
 			class="w-fit rounded-full bg-brand-primary/10 px-3 py-1 text-sm font-semibold text-brand-primary"
 		>
-			{#if favorites}
-				{favorites.length}
+			{#if $userInfo?.favorites}
+				{$userInfo.favorites.length}
 			{:else}
 				0
 			{/if}
@@ -36,11 +31,11 @@
 	</div>
 
 	<div class="flex h-64 max-h-64 flex-col overflow-hidden">
-		{#if favorites && favorites.length > 0}
+		{#if $userInfo?.favorites && $userInfo.favorites.length > 0}
 			<div
 				class="grid max-h-70 w-full auto-rows-max grid-cols-1 gap-4 overflow-auto pr-1.5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2"
 			>
-				{#each favorites as favorite}
+				{#each $userInfo.favorites as favorite}
 					<FavoriteUserItem {favorite} />
 				{/each}
 			</div>

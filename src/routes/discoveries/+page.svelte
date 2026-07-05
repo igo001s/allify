@@ -22,8 +22,8 @@
 
 	let loadingDiscoveries = false;
 
-	$: mostListenedArtists = $userInfo?.discoveries.artists;
-	$: mostListenedTracks = $userInfo?.discoveries.tracks;
+	$: mostListenedArtists = $userInfo?.discoveries?.artists;
+	$: mostListenedTracks = $userInfo?.discoveries?.tracks;
 
 	async function handleLoadDiscoveries() {
 		if (($userInfo?.tickets ?? 0) === 0) {
@@ -44,7 +44,7 @@
 				(track) => `${track.name} - ${track.artists.map((artist) => artist).join(', ')}`
 			) ?? [];
 
-		if ($userInfo?.discoveries.artists.length === 0 && $userInfo?.discoveries.tracks.length === 0) {
+		if (!$userInfo?.discoveries) {
 			const freeDiscoveries = await getFreeDiscoveries(
 				userEmail,
 				artistsForRequest,
@@ -75,9 +75,9 @@
 				return {
 					...user,
 					discoveries: {
-						artists: artists ?? user.discoveries.artists,
-						tracks: tracks ?? user.discoveries.tracks,
-						updatedAt: updatedAt ?? user.discoveries.updatedAt
+						artists: artists ?? user.discoveries?.artists,
+						tracks: tracks ?? user.discoveries?.tracks,
+						updatedAt: updatedAt ?? user.discoveries?.updatedAt
 					}
 				};
 			});
@@ -113,9 +113,9 @@
 				return {
 					...user,
 					discoveries: {
-						artists: artists ?? user.discoveries.artists,
-						tracks: tracks ?? user.discoveries.tracks,
-						updatedAt: updatedAt ?? user.discoveries.updatedAt
+						artists: artists ?? user.discoveries?.artists,
+						tracks: tracks ?? user.discoveries?.tracks,
+						updatedAt: updatedAt ?? user.discoveries?.updatedAt
 					},
 					tickets: tickets ?? user.tickets
 				};
@@ -202,9 +202,9 @@
 						</div>
 					{:else}
 						<div
-							class={`flex w-full justify-center text-center text-sm text-t-muted ${$userInfo.discoveries.artists.length === 0 && $userInfo.discoveries.tracks.length === 0 ? 'my-auto' : ''}`}
+							class={`flex w-full justify-center text-center text-sm text-t-muted ${!$userInfo.discoveries ? 'my-auto' : ''}`}
 						>
-							{#if $userInfo.discoveries.artists.length === 0 && $userInfo.discoveries.tracks.length === 0}
+							{#if !$userInfo.discoveries}
 								{$translationsStore.discoveriesPage.discoveriesPageDiscoverNow}
 							{:else}
 								{$translationsStore.discoveriesPage.discoveriesPageDiscoverAgain}
@@ -218,7 +218,7 @@
 					disabled={loadingDiscoveries}
 					onclick={handleLoadDiscoveries}
 				>
-					{#if $userInfo.discoveries.artists.length === 0 && $userInfo.discoveries.tracks.length === 0}
+					{#if !$userInfo.discoveries}
 						<span class="text-sm leading-none font-semibold">
 							{$translationsStore.discoveriesPage.discoveriesPageDiscoverNowButton}
 						</span>

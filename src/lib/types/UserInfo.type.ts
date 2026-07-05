@@ -9,17 +9,18 @@ export type UserInfo = {
 	name: string;
 	email: string;
 	tickets: number;
+	public: boolean;
 	primaryStreaming: 'spotify' | 'deezer';
-	discoveries: {
-		updatedAt: Date | undefined;
+	connectedStreamings: {
+		spotify?: UserInfoSpotify;
+		deezer?: undefined;
+	};
+	discoveries?: {
+		updatedAt: Date;
 		tracks: string[];
 		artists: string[];
 	};
-	favorites: FavoriteUser[];
-	connectedStreamings: {
-		spotify: UserInfoSpotify | undefined;
-		deezer: undefined;
-	};
+	favorites?: FavoriteUser[];
 };
 
 export type SearchUserInfo = {
