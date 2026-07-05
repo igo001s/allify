@@ -3,10 +3,13 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 
+	import { userInfo } from '$lib/stores/userInfo.store';
+
 	// Services
 	import { getPublicUser } from '$lib/services/user/getters/getPublicUser';
 
 	onMount(async () => {
+		console.log($userInfo)
 		const userId = $page.params.id;
 		
 		if (!userId) {

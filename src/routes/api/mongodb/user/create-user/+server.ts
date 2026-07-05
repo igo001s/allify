@@ -40,7 +40,6 @@ export const POST: RequestHandler = async ({ request }) => {
 			email: email,
 			tickets: 5,
 			primaryStreaming: streaming,
-			discoveries: { updatedAt: undefined, tracks: [], artists: [] },
 			favorites: [],
 			connectedStreamings: { [streaming]: streamingData }
 		};

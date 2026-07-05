@@ -10,16 +10,16 @@ export type UserInfo = {
 	email: string;
 	tickets: number;
 	primaryStreaming: 'spotify' | 'deezer';
-	discoveries: {
-		updatedAt: Date | undefined;
+	connectedStreamings: {
+		spotify?: UserInfoSpotify;
+		deezer?: undefined;
+	};
+	discoveries?: {
+		updatedAt: Date;
 		tracks: string[];
 		artists: string[];
 	};
-	favorites: FavoriteUser[];
-	connectedStreamings: {
-		spotify: UserInfoSpotify | undefined;
-		deezer: undefined;
-	};
+	favorites?: FavoriteUser[];
 };
 
 export type SearchUserInfo = {
