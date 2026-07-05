@@ -188,7 +188,12 @@ export const ru = {
 			'Попробуйте поискать другое имя или проверьте правильность написания.',
 		musicCommunityStarIconAltText: 'Иконка звезды для добавления профиля в избранное',
 		musicCommunityStarIconRemoveAltText: 'Иконка звезды для удаления профиля из избранного',
-		musicCommunityToastErrorAddToFavoritesMessage: 'Вы не можете добавить себя в избранное'
+		musicCommunityToastErrorAddToFavoritesMessage: 'Вы не можете добавить себя в избранное',
+		publicUser: {
+			title: 'Профиль {userName} | Allify',
+			musicCommunityPagePublicUserMetaDescription: 'Смотрите, что {userName} слушает больше всего, открывайте для себя их самые прослушиваемые треки и исполнителей, просматривайте комментарии на их профиле и оставляйте свои.',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent: 'Смотрите, что {userName} слушает больше всего, открывайте для себя их самые прослушиваемые треки и исполнителей, просматривайте комментарии на их профиле и оставляйте свои.'
+		}
 	},
 	profilePage: {
 		title: 'Профиль | Allify',

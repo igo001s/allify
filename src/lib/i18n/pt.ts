@@ -187,7 +187,14 @@ export const pt = {
 			'Tente buscar com outro nome ou verifique se a pontuação está correta.',
 		musicCommunityStarIconAltText: 'Ícone de estrela para favoritar perfil',
 		musicCommunityStarIconRemoveAltText: 'Ícone de estrela para remover perfil dos favoritos',
-		musicCommunityToastErrorAddToFavoritesMessage: 'Não é possível favoritar a si mesmo'
+		musicCommunityToastErrorAddToFavoritesMessage: 'Não é possível favoritar a si mesmo',
+		publicUser: {
+			title: 'Perfil de {userName} | Allify',
+			musicCommunityPagePublicUserMetaDescription:
+				'Veja o que {userName} mais escuta, descubra as músicas e os artistas mais ouvidos, confira os comentários deixados no perfil e deixe o seu também.',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent:
+				'Veja o que {userName} mais escuta, descubra as músicas e os artistas mais ouvidos, confira os comentários deixados no perfil e deixe o seu também.'
+		}
 	},
 	profilePage: {
 		title: 'Perfil | Allify',

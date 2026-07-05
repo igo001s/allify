@@ -190,7 +190,12 @@ export const de = {
 		musicCommunityStarIconAltText: 'Sternsymbol zum Favorisieren eines Profils',
 		musicCommunityStarIconRemoveAltText:
 			'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
-		musicCommunityToastErrorAddToFavoritesMessage: 'Du kannst dich nicht selbst favorisieren'
+		musicCommunityToastErrorAddToFavoritesMessage: 'Du kannst dich nicht selbst favorisieren',
+		publicUser: {
+			title: 'Profil von {userName} | Allify',
+			musicCommunityPagePublicUserMetaDescription: 'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent: 'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.'
+		}
 	},
 	profilePage: {
 		title: 'Profil | Allify',

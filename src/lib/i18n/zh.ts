@@ -174,7 +174,14 @@ export const zh = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2: '尝试搜索其他名称或检查拼写。',
 		musicCommunityStarIconAltText: '用于收藏个人资料的星形图标',
 		musicCommunityStarIconRemoveAltText: '用于从收藏夹中删除个人资料的星形图标',
-		musicCommunityToastErrorAddToFavoritesMessage: '您不能将自己添加到收藏夹'
+		musicCommunityToastErrorAddToFavoritesMessage: '您不能将自己添加到收藏夹',
+		publicUser: {
+			title: '{userName} 的个人资料 | Allify',
+			musicCommunityPagePublicUserMetaDescription:
+				'查看 {userName} 最常听的内容，发现他们最常听的曲目和艺术家，查看他们个人资料上的评论，并留下您自己的评论。',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent:
+				'查看 {userName} 最常听的内容，发现他们最常听的曲目和艺术家，查看他们个人资料上的评论，并留下您自己的评论。'
+		}
 	},
 	profilePage: {
 		title: '资料 | Allify',
