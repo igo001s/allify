@@ -111,7 +111,7 @@
 				<FoundedUsers {searchUserInputValue} {foundedUsers} {loadingFoundedUsers} {hasSearched} />
 			</div>
 
-			<FavoritesSection favorites={$userInfo?.favorites} />
+			<FavoritesSection />
 		</div>
 	</section>
 {:else}

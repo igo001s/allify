@@ -26,7 +26,7 @@
 	// Props
 	export let user: SearchUserInfo;
 
-	$: userOnFavorites = $userInfo?.favorites.some((favorite) => favorite._id === user._id) || false;
+	$: userOnFavorites = $userInfo?.favorites?.some((favorite) => favorite._id === user._id) || false;
 
 	async function handleSaveFavorites(
 		idToSave: ObjectId,
@@ -55,15 +55,27 @@
 
 		userInfo.update((user) => {
 			if (user) {
-				user.favorites.push({
-					_id: id,
-					name,
-					image,
-					spotifyConnected,
-					deezerConnected
-				});
-			}
-
+				if (user.favorites) {
+					user.favorites?.push({
+						_id: id,
+						name,
+						image,
+						spotifyConnected,
+						deezerConnected
+					});
+				} else {
+					user.favorites = [
+						{
+							_id: id,
+							name,
+							image,
+							spotifyConnected,
+							deezerConnected
+						}
+					];
+				}
+			} 
+			
 			return user;
 		});
 
@@ -79,7 +91,7 @@
 
 		userInfo.update((user) => {
 			if (user) {
-				user.favorites = user.favorites.filter(
+				user.favorites = user.favorites?.filter(
 					(favorite) => favorite._id !== data.removedFavorite._id
 				);
 			}
@@ -100,7 +112,7 @@
 	) {
 		if (!idToToggle || !id || !name || !image) return;
 
-		const alreadyExists = $userInfo?.favorites.some((favorite) => favorite._id === id) ?? false;
+		const alreadyExists = $userInfo?.favorites?.some((favorite) => favorite._id === id) ?? false;
 
 		if (alreadyExists) {
 			await handleRemoveFromFavorites(idToToggle, id);
