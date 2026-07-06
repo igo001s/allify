@@ -34,6 +34,7 @@ export const zh = {
 		cardProfileAsideMenuParagraph1: '登录或创建账户',
 		footerFirstSectionText1: '将音乐数据转化为发现、连接和新的音乐聆听方式。',
 		footerFirstSectionText2: '出品方',
+		footerFirstSectionIgoLogoAltText: 'Igo 标志，Allify 开发者',
 		footerCopyrightText: '版权所有。',
 		footerColumn1Title: '关注我们',
 		footerColumn1Item1AltText: 'LinkedIn 图标',

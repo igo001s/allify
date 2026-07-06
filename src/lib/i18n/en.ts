@@ -35,6 +35,7 @@ export const en = {
 		footerFirstSectionText1:
 			'Transforming music data into discoveries, connections, and new ways to listen to music.',
 		footerFirstSectionText2: 'A product by',
+		footerFirstSectionIgoLogoAltText: 'Igo logo, developer of Allify',
 		footerCopyrightText: 'All rights reserved.',
 		footerColumn1Title: 'FOLLOW',
 		footerColumn1Item1AltText: 'LinkedIn icon',

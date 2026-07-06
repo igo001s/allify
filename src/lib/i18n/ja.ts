@@ -34,6 +34,7 @@ export const ja = {
 		cardProfileAsideMenuParagraph1: 'ログインまたはアカウント作成',
 		footerFirstSectionText1: '音楽データを発見、接続、そして新しい音楽の聴き方に変える。',
 		footerFirstSectionText2: '製品提供元',
+		footerFirstSectionIgoLogoAltText: 'Igoのロゴ、Allifyの開発者',
 		footerCopyrightText: '全著作権所有',
 		footerColumn1Title: 'フォロー',
 		footerColumn1Item1AltText: 'LinkedInアイコン',

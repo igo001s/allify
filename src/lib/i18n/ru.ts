@@ -35,6 +35,7 @@ export const ru = {
 		footerFirstSectionText1:
 			'Преобразуем музыкальные данные в открытия, связи и новые способы прослушивания музыки.',
 		footerFirstSectionText2: 'Продукт компании',
+		footerFirstSectionIgoLogoAltText: 'Логотип Igo, разработчика Allify',
 		footerCopyrightText: 'Все права защищены.',
 		footerColumn1Title: 'МЫ В СЕТИ',
 		footerColumn1Item1AltText: 'Иконка LinkedIn',

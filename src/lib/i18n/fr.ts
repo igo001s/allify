@@ -35,6 +35,7 @@ export const fr = {
 		footerFirstSectionText1:
 			"Transformer les données musicales en découvertes, connexions et nouvelles façons d'écouter de la musique.",
 		footerFirstSectionText2: 'Un produit de',
+		footerFirstSectionIgoLogoAltText: 'Logo d’Igo, développeur d’Allify',
 		footerCopyrightText: 'Tous droits réservés.',
 		footerColumn1Title: 'SUIVRE',
 		footerColumn1Item1AltText: 'Icône LinkedIn',
