@@ -192,8 +192,10 @@ export const en = {
 		musicCommunityToastErrorAddToFavoritesMessage: 'You cannot favorite yourself',
 		publicUser: {
 			title: 'Profile of {userName} | Allify',
-			musicCommunityPagePublicUserMetaDescription: 'See what {userName} listens to the most, discover their most listened-to songs and artists, check out the comments on their profile, and leave your own.',
-			musicCommunityPagePublicUserMetaOgAndTwitterContent: 'See what {userName} listens to the most, discover their most listened-to songs and artists, check out the comments on their profile, and leave your own.'
+			musicCommunityPagePublicUserMetaDescription:
+				'See what {userName} listens to the most, discover their most listened-to songs and artists, check out the comments on their profile, and leave your own.',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent:
+				'See what {userName} listens to the most, discover their most listened-to songs and artists, check out the comments on their profile, and leave your own.'
 		}
 	},
 	profilePage: {

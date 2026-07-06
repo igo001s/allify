@@ -194,8 +194,10 @@ export const it = {
 		musicCommunityToastErrorAddToFavoritesMessage: 'Non puoi aggiungerti ai preferiti',
 		publicUser: {
 			title: 'Profilo di {userName} | Allify',
-			musicCommunityPagePublicUserMetaDescription: 'Scopri cosa ascolta di più {userName}, esplora le sue canzoni e artisti più ascoltati, consulta i commenti sul suo profilo e lascia il tuo.',
-			musicCommunityPagePublicUserMetaOgAndTwitterContent: 'Scopri cosa ascolta di più {userName}, esplora le sue canzoni e artisti più ascoltati, consulta i commenti sul suo profilo e lascia il tuo.'
+			musicCommunityPagePublicUserMetaDescription:
+				'Scopri cosa ascolta di più {userName}, esplora le sue canzoni e artisti più ascoltati, consulta i commenti sul suo profilo e lascia il tuo.',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent:
+				'Scopri cosa ascolta di più {userName}, esplora le sue canzoni e artisti più ascoltati, consulta i commenti sul suo profilo e lascia il tuo.'
 		}
 	},
 	profilePage: {

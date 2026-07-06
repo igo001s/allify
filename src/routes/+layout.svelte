@@ -51,7 +51,7 @@
 	<meta name="color-scheme" content="light" />
 	<meta name="theme-color" content="#09623a" />
 	<!-- Google -->
-	<meta name="google" content="notranslate">
+	<meta name="google" content="notranslate" />
 	<!-- Open Graph -->
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Allify" />

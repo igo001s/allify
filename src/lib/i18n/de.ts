@@ -194,8 +194,10 @@ export const de = {
 		musicCommunityToastErrorAddToFavoritesMessage: 'Du kannst dich nicht selbst favorisieren',
 		publicUser: {
 			title: 'Profil von {userName} | Allify',
-			musicCommunityPagePublicUserMetaDescription: 'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.',
-			musicCommunityPagePublicUserMetaOgAndTwitterContent: 'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.'
+			musicCommunityPagePublicUserMetaDescription:
+				'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent:
+				'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.'
 		}
 	},
 	profilePage: {

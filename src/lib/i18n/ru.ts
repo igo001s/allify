@@ -192,8 +192,10 @@ export const ru = {
 		musicCommunityToastErrorAddToFavoritesMessage: 'Вы не можете добавить себя в избранное',
 		publicUser: {
 			title: 'Профиль {userName} | Allify',
-			musicCommunityPagePublicUserMetaDescription: 'Смотрите, что {userName} слушает больше всего, открывайте для себя их самые прослушиваемые треки и исполнителей, просматривайте комментарии на их профиле и оставляйте свои.',
-			musicCommunityPagePublicUserMetaOgAndTwitterContent: 'Смотрите, что {userName} слушает больше всего, открывайте для себя их самые прослушиваемые треки и исполнителей, просматривайте комментарии на их профиле и оставляйте свои.'
+			musicCommunityPagePublicUserMetaDescription:
+				'Смотрите, что {userName} слушает больше всего, открывайте для себя их самые прослушиваемые треки и исполнителей, просматривайте комментарии на их профиле и оставляйте свои.',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent:
+				'Смотрите, что {userName} слушает больше всего, открывайте для себя их самые прослушиваемые треки и исполнителей, просматривайте комментарии на их профиле и оставляйте свои.'
 		}
 	},
 	profilePage: {
