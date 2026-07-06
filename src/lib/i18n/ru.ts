@@ -201,47 +201,14 @@ export const ru = {
 	profilePage: {
 		title: 'Профиль | Allify',
 		profilePageMetaDescription:
-			'Просматривайте свой публичный профиль, делитесь статистикой прослушивания, понравившимися треками, плейлистами и сохранёнными альбомами, подключайте стриминговые платформы для персональных инсайтов.',
+			'Просматривайте свой публичный профиль, делитесь статистикой прослушивания, понравившимися треками, плейлистами и сохранёнными альбомами, а также подключайте свои стриминговые платформы для получения персонализированной аналитики.',
 		profilePageMetaOgAndTwitterContent:
-			'Просматривайте свой публичный профиль, делитесь статистикой прослушивания, понравившимися треками, плейлистами и сохранёнными альбомами, подключайте стриминговые платформы для персональных инсайтов.',
+			'Просматривайте свой публичный профиль, делитесь статистикой прослушивания, понравившимися треками, плейлистами и сохранёнными альбомами, а также подключайте свои стриминговые платформы для получения персонализированной аналитики.',
 		profilePageImageAltText: 'Фото профиля',
-		profilePageFollowers: 'подписчиков',
+		profilePageFollowers: 'подписчики',
 		profilePageAddTicketsAltText: 'Добавить билеты',
-		profilePageCarouselButtonAriaLabelPrev: 'Предыдущая кнопка карусели',
-		profilePageCarouselButtonAriaLabelNext: 'Следующая кнопка карусели',
-		profilePageCarouselArrowIconAltText: 'Иконка стрелки карусели',
-		profilePageUserSavedTracksSectionHeading2: 'Понравившиеся треки',
-		profilePageUserSavedTracksSectionParagraph1:
-			'Ваши треки появятся здесь, как только вы сохраните хотя бы один.',
-		profilePageUserPlaylistsSectionHeading2: 'Ваши плейлисты',
-		profilePageUserPlaylistsSectionParagraph1:
-			'Ваши плейлисты появятся здесь, как только вы создадите или сохраните хотя бы один.',
-		profilePageUserSavedAlbumsSectionHeading2: 'Сохранённые альбомы',
-		profilePageUserSavedAlbumsSectionParagraph1:
-			'Ваши альбомы появятся здесь, как только вы сохраните хотя бы один.',
-		profilePageExternalLinkSpotify: 'Посмотреть профиль в Spotify',
-		profilePageExternalLinkDeezer: 'Посмотреть профиль в Deezer',
-		profilePageUserPlaylistItemBy: 'Автор',
-		profilePageUserPlaylistItemMusics: 'треков',
-		profilePageUserSelectedSavedTrackCloseButtonAriaLabel: 'Закрыть модальное окно трека',
-		profilePageUserSelectedSavedTrack: 'Трек',
-		profilePageUserSelectedSavedTrackExplicit: 'Явный контент',
-		profilePageUserSelectedSavedTrackClean: 'Чистый',
-		profilePageUserSelectedSavedTrackOpenOnSpotify: 'Открыть в Spotify',
-		profilePageUserSelectedPlaylistCloseButtonAriaLabel: 'Закрыть модальное окно плейлиста',
-		profilePageUserSelectedPlaylistModalPublic: 'Публичный',
-		profilePageUserSelectedPlaylistModalPrivate: 'Приватный',
-		profilePageUserSelectedPlaylistModalParagraph1: 'Плейлист',
-		profilePageUserSelectedPlaylistModalMusics: 'треков',
-		profilePageUserSelectedPlaylistModalExternalLink: 'Открыть плейлист в Spotify',
-		profilePageUserSelectedPlaylistModalLoadingMusics: 'Загружаем треки плейлиста...',
-		profilePageUserSelectedPlaylistModalMusicsNotFound: 'В этом плейлисте треки не найдены.',
-		profilePageUserSelectedPlaylistModalAddedBy: 'Добавлено пользователем',
-		profilePageUserAlbumItemTracks: 'треков',
-		profilePageUserSelectedSavedAlbumCloseButtonAriaLabel: 'Закрыть модальное окно альбома',
-		profilePageUserSelectedSavedAlbum: 'Альбом',
-		profilePageUserSelectedSavedAlbumItemTracks: 'треков',
-		profilePageUserSelectedSavedAlbumOpenOnSpotify: 'Открыть альбом в Spotify'
+		profilePageExternalLinkSpotify: 'Открыть профиль в Spotify',
+		profilePageExternalLinkDeezer: 'Открыть профиль в Deezer'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

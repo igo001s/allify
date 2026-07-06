@@ -205,49 +205,14 @@ export const fr = {
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			"Consultez votre profil public, partagez vos statistiques d'écoute, chansons likées, playlists et albums sauvegardés, et connectez vos plateformes de streaming pour des insights personnalisés.",
+			'Consultez votre profil public, partagez vos statistiques d’écoute, vos morceaux favoris, vos playlists et vos albums enregistrés, puis connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
 		profilePageMetaOgAndTwitterContent:
-			"Consultez votre profil public, partagez vos statistiques d'écoute, chansons likées, playlists et albums sauvegardés, et connectez vos plateformes de streaming pour des insights personnalisés.",
+			'Consultez votre profil public, partagez vos statistiques d’écoute, vos morceaux favoris, vos playlists et vos albums enregistrés, puis connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
 		profilePageImageAltText: 'Photo de profil de',
-		profilePageFollowers: 'Abonnés',
-		profilePageAddTicketsAltText: 'Ajouter des tickets',
-		profilePageCarouselButtonAriaLabelPrev: 'Bouton carrousel précédent',
-		profilePageCarouselButtonAriaLabelNext: 'Bouton carrousel suivant',
-		profilePageCarouselArrowIconAltText: 'Icône de flèche du carrousel',
-		profilePageUserSavedTracksSectionHeading2: 'Chansons likées',
-		profilePageUserSavedTracksSectionParagraph1:
-			'Vos chansons apparaîtront ici une fois que vous en aurez sauvegardé.',
-		profilePageUserPlaylistsSectionHeading2: 'Vos playlists',
-		profilePageUserPlaylistsSectionParagraph1:
-			'Vos playlists apparaîtront ici une fois que vous en aurez créé ou sauvegardé.',
-		profilePageUserSavedAlbumsSectionHeading2: 'Albums sauvegardés',
-		profilePageUserSavedAlbumsSectionParagraph1:
-			'Vos albums apparaîtront ici une fois que vous en aurez sauvegardé.',
+		profilePageFollowers: 'abonnés',
+		profilePageAddTicketsAltText: 'Ajouter des billets',
 		profilePageExternalLinkSpotify: 'Voir le profil sur Spotify',
-		profilePageExternalLinkDeezer: 'Voir le profil sur Deezer',
-		profilePageUserPlaylistItemBy: 'Par',
-		profilePageUserPlaylistItemMusics: 'Chansons',
-		profilePageUserSelectedSavedTrackCloseButtonAriaLabel: 'Fermer la piste sauvegardée',
-		profilePageUserSelectedSavedTrack: 'Piste',
-		profilePageUserSelectedSavedTrackExplicit: 'Explicite',
-		profilePageUserSelectedSavedTrackClean: 'Propre',
-		profilePageUserSelectedSavedTrackOpenOnSpotify: 'Ouvrir sur Spotify',
-		profilePageUserSelectedPlaylistCloseButtonAriaLabel: 'Fermer la fenêtre de playlist',
-		profilePageUserSelectedPlaylistModalPublic: 'Publique',
-		profilePageUserSelectedPlaylistModalPrivate: 'Privée',
-		profilePageUserSelectedPlaylistModalParagraph1: 'Playlist',
-		profilePageUserSelectedPlaylistModalMusics: 'Chansons',
-		profilePageUserSelectedPlaylistModalExternalLink: 'Voir la playlist sur Spotify',
-		profilePageUserSelectedPlaylistModalLoadingMusics: 'Chargement des chansons de la playlist...',
-		profilePageUserSelectedPlaylistModalMusicsNotFound:
-			'Aucune chanson trouvée dans cette playlist.',
-		profilePageUserSelectedPlaylistModalAddedBy: 'Ajouté par',
-		profilePageUserAlbumItemTracks: 'Chansons',
-		profilePageUserSelectedSavedAlbumCloseButtonAriaLabel:
-			"Fermer la fenêtre de l'album sauvegardé",
-		profilePageUserSelectedSavedAlbum: 'Album',
-		profilePageUserSelectedSavedAlbumItemTracks: 'Chansons',
-		profilePageUserSelectedSavedAlbumOpenOnSpotify: "Ouvrir l'album sur Spotify"
+		profilePageExternalLinkDeezer: 'Voir le profil sur Deezer'
 	},
 	settingsPage: {
 		title: 'Paramètres | Allify',

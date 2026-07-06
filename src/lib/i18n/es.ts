@@ -202,48 +202,14 @@ export const es = {
 	profilePage: {
 		title: 'Perfil | Allify',
 		profilePageMetaDescription:
-			'Ve tu perfil público, comparte tus estadísticas de escucha, canciones que te gustan, playlists y álbumes guardados, y conecta tus plataformas de streaming para insights personalizados.',
+			'Consulta tu perfil público, comparte tus estadísticas de escucha, canciones que te gustan, listas de reproducción y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
 		profilePageMetaOgAndTwitterContent:
-			'Ve tu perfil público, comparte tus estadísticas de escucha, canciones que te gustan, playlists y álbumes guardados, y conecta tus plataformas de streaming para insights personalizados.',
+			'Consulta tu perfil público, comparte tus estadísticas de escucha, canciones que te gustan, listas de reproducción y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
 		profilePageImageAltText: 'Foto de perfil de',
 		profilePageFollowers: 'seguidores',
-		profilePageAddTicketsAltText: 'Agregar tickets',
-		profilePageCarouselButtonAriaLabelPrev: 'Botón anterior del carrusel',
-		profilePageCarouselButtonAriaLabelNext: 'Botón siguiente del carrusel',
-		profilePageCarouselArrowIconAltText: 'Ícono de flecha del carrusel',
-		profilePageUserSavedTracksSectionHeading2: 'Canciones que te gustan',
-		profilePageUserSavedTracksSectionParagraph1:
-			'Tus canciones aparecerán aquí cuando guardes alguna.',
-		profilePageUserPlaylistsSectionHeading2: 'Tus playlists',
-		profilePageUserPlaylistsSectionParagraph1:
-			'Tus playlists aparecerán aquí cuando crees o guardes alguna.',
-		profilePageUserSavedAlbumsSectionHeading2: 'Álbumes guardados',
-		profilePageUserSavedAlbumsSectionParagraph1:
-			'Tus álbumes aparecerán aquí cuando guardes alguno.',
+		profilePageAddTicketsAltText: 'Añadir entradas',
 		profilePageExternalLinkSpotify: 'Ver perfil en Spotify',
-		profilePageExternalLinkDeezer: 'Ver perfil en Deezer',
-		profilePageUserPlaylistItemBy: 'Por',
-		profilePageUserPlaylistItemMusics: 'canciones',
-		profilePageUserSelectedSavedTrackCloseButtonAriaLabel: 'Cerrar modal de canción guardada',
-		profilePageUserSelectedSavedTrack: 'Canción',
-		profilePageUserSelectedSavedTrackExplicit: 'Explícita',
-		profilePageUserSelectedSavedTrackClean: 'Limpia',
-		profilePageUserSelectedSavedTrackOpenOnSpotify: 'Abrir en Spotify',
-		profilePageUserSelectedPlaylistCloseButtonAriaLabel: 'Cerrar modal de playlist',
-		profilePageUserSelectedPlaylistModalPublic: 'Pública',
-		profilePageUserSelectedPlaylistModalPrivate: 'Privada',
-		profilePageUserSelectedPlaylistModalParagraph1: 'Playlist',
-		profilePageUserSelectedPlaylistModalMusics: 'canciones',
-		profilePageUserSelectedPlaylistModalExternalLink: 'Ver playlist en Spotify',
-		profilePageUserSelectedPlaylistModalLoadingMusics: 'Cargando canciones de la playlist...',
-		profilePageUserSelectedPlaylistModalMusicsNotFound:
-			'No se encontraron canciones en esta playlist.',
-		profilePageUserSelectedPlaylistModalAddedBy: 'Añadida por',
-		profilePageUserAlbumItemTracks: 'canciones',
-		profilePageUserSelectedSavedAlbumCloseButtonAriaLabel: 'Cerrar modal de álbum guardado',
-		profilePageUserSelectedSavedAlbum: 'Álbum',
-		profilePageUserSelectedSavedAlbumItemTracks: 'canciones',
-		profilePageUserSelectedSavedAlbumOpenOnSpotify: 'Abrir álbum en Spotify'
+		profilePageExternalLinkDeezer: 'Ver perfil en Deezer'
 	},
 	settingsPage: {
 		title: 'Configuración | Allify',

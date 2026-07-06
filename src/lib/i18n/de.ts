@@ -203,47 +203,14 @@ export const de = {
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, gelikete Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, mit „Gefällt mir“ markierte Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageMetaOgAndTwitterContent:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, gelikete Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, mit „Gefällt mir“ markierte Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageImageAltText: 'Profilbild von',
 		profilePageFollowers: 'Follower',
 		profilePageAddTicketsAltText: 'Tickets hinzufügen',
-		profilePageCarouselButtonAriaLabelPrev: 'Vorherige Karussell-Schaltfläche',
-		profilePageCarouselButtonAriaLabelNext: 'Nächste Karussell-Schaltfläche',
-		profilePageCarouselArrowIconAltText: 'Karussell-Pfeil-Symbol',
-		profilePageUserSavedTracksSectionHeading2: 'Gelikte Songs',
-		profilePageUserSavedTracksSectionParagraph1:
-			'Deine Songs erscheinen hier, sobald du welche gespeichert hast.',
-		profilePageUserPlaylistsSectionHeading2: 'Deine Playlists',
-		profilePageUserPlaylistsSectionParagraph1:
-			'Deine Playlists erscheinen hier, sobald du welche erstellt oder gespeichert hast.',
-		profilePageUserSavedAlbumsSectionHeading2: 'Gespeicherte Alben',
-		profilePageUserSavedAlbumsSectionParagraph1:
-			'Deine Alben erscheinen hier, sobald du welche gespeichert hast.',
 		profilePageExternalLinkSpotify: 'Profil auf Spotify ansehen',
-		profilePageExternalLinkDeezer: 'Profil auf Deezer ansehen',
-		profilePageUserPlaylistItemBy: 'Von',
-		profilePageUserPlaylistItemMusics: 'Songs',
-		profilePageUserSelectedSavedTrackCloseButtonAriaLabel: 'Gespeicherten Track schließen',
-		profilePageUserSelectedSavedTrack: 'Track',
-		profilePageUserSelectedSavedTrackExplicit: 'Explizit',
-		profilePageUserSelectedSavedTrackClean: 'Sauber',
-		profilePageUserSelectedSavedTrackOpenOnSpotify: 'Auf Spotify öffnen',
-		profilePageUserSelectedPlaylistCloseButtonAriaLabel: 'Playlist-Modal schließen',
-		profilePageUserSelectedPlaylistModalPublic: 'Öffentlich',
-		profilePageUserSelectedPlaylistModalPrivate: 'Privat',
-		profilePageUserSelectedPlaylistModalParagraph1: 'Playlist',
-		profilePageUserSelectedPlaylistModalMusics: 'Songs',
-		profilePageUserSelectedPlaylistModalExternalLink: 'Playlist auf Spotify ansehen',
-		profilePageUserSelectedPlaylistModalLoadingMusics: 'Playlist-Songs werden geladen...',
-		profilePageUserSelectedPlaylistModalMusicsNotFound: 'Keine Songs in dieser Playlist gefunden.',
-		profilePageUserSelectedPlaylistModalAddedBy: 'Hinzugefügt von',
-		profilePageUserAlbumItemTracks: 'Songs',
-		profilePageUserSelectedSavedAlbumCloseButtonAriaLabel: 'Gespeichertes Album Modal schließen',
-		profilePageUserSelectedSavedAlbum: 'Album',
-		profilePageUserSelectedSavedAlbumItemTracks: 'Songs',
-		profilePageUserSelectedSavedAlbumOpenOnSpotify: 'Album auf Spotify öffnen'
+		profilePageExternalLinkDeezer: 'Profil auf Deezer ansehen'
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',
