@@ -1,5 +1,6 @@
 <script lang="ts">
-	// Components
+	// Assets
+	import IgoLogo from '$lib/assets/images/logos/IgoLogo.svelte';
 	import AllifyLogoLight from '$lib/assets/images/logos/AllifyLogoLight.svelte';
 
 	// Stores
@@ -25,6 +26,9 @@
 			{$translationsStore.generalTexts.footerFirstSectionText2}
 		</p>
 
-		<p class="mt-2 text-sm font-light text-t-inverse">STWSZ</p>
+		<IgoLogo
+			logoSvgClass="w-14 mt-2 h-fit text-t-inverse cursor-pointer transition-all hover:scale-102"
+			logoAltText={$translationsStore.generalTexts.footerFirstSectionIgoLogoAltText}
+		/>
 	</div>
 </div>

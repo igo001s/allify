@@ -38,7 +38,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				public: true
 			})
 			.toArray();
-			
+
 		if (!foundUsers || foundUsers.length === 0) {
 			return new Response(JSON.stringify({ error: 'Users not found' }), { status: 404 });
 		}

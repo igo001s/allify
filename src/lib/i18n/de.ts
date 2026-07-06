@@ -35,6 +35,7 @@ export const de = {
 		footerFirstSectionText1:
 			'Wir verwandeln Musikdaten in Entdeckungen, Verbindungen und neue Möglichkeiten, Musik zu hören.',
 		footerFirstSectionText2: 'Ein Produkt von',
+		footerFirstSectionIgoLogoAltText: 'Logo von Igo, Entwickler von Allify',
 		footerCopyrightText: 'Alle Rechte vorbehalten.',
 		footerColumn1Title: 'FOLGEN',
 		footerColumn1Item1AltText: 'LinkedIn-Symbol',
@@ -193,54 +194,23 @@ export const de = {
 		musicCommunityToastErrorAddToFavoritesMessage: 'Du kannst dich nicht selbst favorisieren',
 		publicUser: {
 			title: 'Profil von {userName} | Allify',
-			musicCommunityPagePublicUserMetaDescription: 'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.',
-			musicCommunityPagePublicUserMetaOgAndTwitterContent: 'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.'
+			musicCommunityPagePublicUserMetaDescription:
+				'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.',
+			musicCommunityPagePublicUserMetaOgAndTwitterContent:
+				'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.'
 		}
 	},
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, gelikete Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, mit „Gefällt mir“ markierte Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageMetaOgAndTwitterContent:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, gelikete Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, mit „Gefällt mir“ markierte Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageImageAltText: 'Profilbild von',
 		profilePageFollowers: 'Follower',
 		profilePageAddTicketsAltText: 'Tickets hinzufügen',
-		profilePageCarouselButtonAriaLabelPrev: 'Vorherige Karussell-Schaltfläche',
-		profilePageCarouselButtonAriaLabelNext: 'Nächste Karussell-Schaltfläche',
-		profilePageCarouselArrowIconAltText: 'Karussell-Pfeil-Symbol',
-		profilePageUserSavedTracksSectionHeading2: 'Gelikte Songs',
-		profilePageUserSavedTracksSectionParagraph1:
-			'Deine Songs erscheinen hier, sobald du welche gespeichert hast.',
-		profilePageUserPlaylistsSectionHeading2: 'Deine Playlists',
-		profilePageUserPlaylistsSectionParagraph1:
-			'Deine Playlists erscheinen hier, sobald du welche erstellt oder gespeichert hast.',
-		profilePageUserSavedAlbumsSectionHeading2: 'Gespeicherte Alben',
-		profilePageUserSavedAlbumsSectionParagraph1:
-			'Deine Alben erscheinen hier, sobald du welche gespeichert hast.',
 		profilePageExternalLinkSpotify: 'Profil auf Spotify ansehen',
-		profilePageExternalLinkDeezer: 'Profil auf Deezer ansehen',
-		profilePageUserPlaylistItemBy: 'Von',
-		profilePageUserPlaylistItemMusics: 'Songs',
-		profilePageUserSelectedSavedTrackCloseButtonAriaLabel: 'Gespeicherten Track schließen',
-		profilePageUserSelectedSavedTrack: 'Track',
-		profilePageUserSelectedSavedTrackExplicit: 'Explizit',
-		profilePageUserSelectedSavedTrackClean: 'Sauber',
-		profilePageUserSelectedSavedTrackOpenOnSpotify: 'Auf Spotify öffnen',
-		profilePageUserSelectedPlaylistCloseButtonAriaLabel: 'Playlist-Modal schließen',
-		profilePageUserSelectedPlaylistModalPublic: 'Öffentlich',
-		profilePageUserSelectedPlaylistModalPrivate: 'Privat',
-		profilePageUserSelectedPlaylistModalParagraph1: 'Playlist',
-		profilePageUserSelectedPlaylistModalMusics: 'Songs',
-		profilePageUserSelectedPlaylistModalExternalLink: 'Playlist auf Spotify ansehen',
-		profilePageUserSelectedPlaylistModalLoadingMusics: 'Playlist-Songs werden geladen...',
-		profilePageUserSelectedPlaylistModalMusicsNotFound: 'Keine Songs in dieser Playlist gefunden.',
-		profilePageUserSelectedPlaylistModalAddedBy: 'Hinzugefügt von',
-		profilePageUserAlbumItemTracks: 'Songs',
-		profilePageUserSelectedSavedAlbumCloseButtonAriaLabel: 'Gespeichertes Album Modal schließen',
-		profilePageUserSelectedSavedAlbum: 'Album',
-		profilePageUserSelectedSavedAlbumItemTracks: 'Songs',
-		profilePageUserSelectedSavedAlbumOpenOnSpotify: 'Album auf Spotify öffnen'
+		profilePageExternalLinkDeezer: 'Profil auf Deezer ansehen'
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',

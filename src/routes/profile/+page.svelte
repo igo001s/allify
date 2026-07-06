@@ -7,9 +7,6 @@
 
 	//Components
 	import KeyInformation from '$lib/components/profile/KeyInformation.svelte';
-	import UserSavedAlbums from '$lib/components/profile/saved-albums/UserSavedAlbums.svelte';
-	import UserPlaylists from '$lib/components/profile/user-playlists/UserPlaylists.svelte';
-	import UserSavedTracks from '$lib/components/profile/saved-tracks/UserSavedTracks.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -48,26 +45,6 @@
 				userInfo={selectedStreaming ? $userInfo.connectedStreamings.spotify : null}
 				tickets={$userInfo.tickets}
 			/>
-
-			<div class="flex w-full flex-col gap-8 sm:gap-10">
-				<UserSavedTracks
-					likedTracks={selectedStreaming
-						? $userInfo.connectedStreamings.spotify.likedTracks?.likedTracksItems || []
-						: []}
-				/>
-
-				<UserPlaylists
-					userPlaylists={selectedStreaming
-						? $userInfo.connectedStreamings.spotify.playlists?.playlistItems || []
-						: []}
-				/>
-
-				<UserSavedAlbums
-					userSavedAlbums={selectedStreaming
-						? $userInfo.connectedStreamings.spotify.albums?.albumItems || []
-						: []}
-				/>
-			</div>
 		</div>
 	</section>
 {:else}

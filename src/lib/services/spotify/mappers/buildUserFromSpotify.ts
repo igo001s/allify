@@ -4,24 +4,12 @@ import type { UserInfoSpotify } from '$lib/types/SpotifyData.type';
 // Services
 import { getMostListenedArtists } from '../stats/getMostListenedArtists';
 import { getMostListenedTracks } from '../stats/getMostListenedTracks';
-import { getUserLikedTracks } from '../library/getUserLikedTracks';
-import { getUserPlaylists } from '../library/getUserPlaylists';
-import { getUserSavedAlbums } from '../library/getUserSavedAlbums';
 
 export async function buildUserFromSpotify(infoFromSpotify: any) {
 	try {
-		const [
-			mostListenedArtistsResult,
-			mostListenedTracksResult,
-			likedTracksResult,
-			playlistsResult,
-			albumsResult
-		] = await Promise.allSettled([
+		const [mostListenedArtistsResult, mostListenedTracksResult] = await Promise.allSettled([
 			getMostListenedArtists(),
-			getMostListenedTracks(),
-			getUserLikedTracks(),
-			getUserPlaylists(),
-			getUserSavedAlbums()
+			getMostListenedTracks()
 		]);
 
 		const dataFromSpotify: UserInfoSpotify = {
@@ -32,22 +20,12 @@ export async function buildUserFromSpotify(infoFromSpotify: any) {
 			country: infoFromSpotify.country,
 			followers: infoFromSpotify.followers.total,
 			profileLink: infoFromSpotify.external_urls.spotify,
-
 			mostListenedArtists:
 				mostListenedArtistsResult.status === 'fulfilled'
 					? mostListenedArtistsResult.value
 					: undefined,
-
 			mostListenedTracks:
-				mostListenedTracksResult.status === 'fulfilled'
-					? mostListenedTracksResult.value
-					: undefined,
-
-			likedTracks: likedTracksResult.status === 'fulfilled' ? likedTracksResult.value : undefined,
-
-			playlists: playlistsResult.status === 'fulfilled' ? playlistsResult.value : undefined,
-
-			albums: albumsResult.status === 'fulfilled' ? albumsResult.value : undefined
+				mostListenedTracksResult.status === 'fulfilled' ? mostListenedTracksResult.value : undefined
 		};
 
 		return dataFromSpotify;
