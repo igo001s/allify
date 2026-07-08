@@ -55,7 +55,7 @@
 	>
 		<div class="border-b border-b-default p-7 lg:p-8">
 			<button
-				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
+				class="absolute top-2.5 right-2.5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 				on:click={closeAddTicketsModal}
 				aria-label={$translationsStore.addTickets.addTicketsModalAriaLabel}
 			>
@@ -78,7 +78,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-6 p-7 lg:p-8">
+		<div class="flex flex-col gap-6 p-6 lg:p-8">
 			<div class="flex flex-col gap-3">
 				<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
 					{$translationsStore.addTickets.addTicketsModalParagraph3}

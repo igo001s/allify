@@ -79,7 +79,7 @@
 		</p>
 	</div>
 
-	<div class="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-end">
+	<div class="mt-4 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
 		<button
 			on:click={backToPreviousStep}
 			class="flex w-full cursor-pointer items-center justify-center rounded-lg border border-b-default px-4 py-2 text-xs font-semibold text-t-primary transition hover:scale-102 sm:w-auto"
