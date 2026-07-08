@@ -11,6 +11,7 @@
 	import LoadingAfterConnection from '$lib/components/general/LoadingAfterConnection.svelte';
 	import Toast from '$lib/components/general/Toast.svelte';
 	import AddTicketsModal from '$lib/components/general/AddTicketsModal.svelte';
+	import BuildProfileModal from '$lib/components/general/BuildProfileModal.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -78,16 +79,24 @@
 
 <Footer />
 
+<!-- Toast notifications -->
 {#if $toastStore.showToast}
 	<Toast />
 {/if}
 
+<!-- Loading after streaming connection -->
 {#if $loadingAfterConnectionStore.loading}
 	<LoadingAfterConnection
 		streamingPlatform={$loadingAfterConnectionStore.streamingPlatform ?? undefined}
 	/>
 {/if}
 
+<!-- Add Tickets Modal -->
 {#if $showAddTickets}
 	<AddTicketsModal />
+{/if}
+
+<!-- Build Profile -->
+{#if $userInfo}
+	<BuildProfileModal />
 {/if}

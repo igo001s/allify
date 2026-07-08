@@ -73,6 +73,11 @@ export const ja = {
 		ticketAltText: 'チケットアイコン',
 		ticket: 'チケット',
 		tickets: 'チケット',
+		buildProfileFirstAccessSectionParagraph1: 'こんにちは、{name}さん！Allifyへようこそ。',
+		buildProfileFirstAccessSectionParagraph2:
+			'プロフィールを完成させて、あなたに合わせた体験を楽しみましょう。後でプロフィールから設定することもでき、プロフィールの公開範囲は設定画面でいつでも変更できます。',
+		buildProfileFirstAccessSectionButtonCompleteProfile: 'プロフィールを完成する',
+		buildProfileFirstAccessSectionButtonCompleteLater: '後で行う',
 		toastSuccessTitle: '成功',
 		toastSuccessAltText: '成功アイコン',
 		toastWarningTitle: '警告',

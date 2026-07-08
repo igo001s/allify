@@ -74,6 +74,11 @@ export const ru = {
 		ticketAltText: 'Иконка билета',
 		ticket: 'Билет',
 		tickets: 'Билеты',
+		buildProfileFirstAccessSectionParagraph1: 'Здравствуйте, {name}! Добро пожаловать в Allify.',
+		buildProfileFirstAccessSectionParagraph2:
+			'Заполните свой профиль, чтобы сделать использование Allify более персонализированным. Если хотите, вы можете сделать это позже в своем профиле, а также в любое время изменить видимость профиля в настройках.',
+		buildProfileFirstAccessSectionButtonCompleteProfile: 'Заполнить профиль',
+		buildProfileFirstAccessSectionButtonCompleteLater: 'Позже',
 		toastSuccessTitle: 'Успех',
 		toastSuccessAltText: 'Иконка успеха',
 		toastWarningTitle: 'Предупреждение',

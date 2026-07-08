@@ -74,6 +74,11 @@ export const it = {
 		ticketAltText: 'Icona di ticket',
 		ticket: 'Ticket',
 		tickets: 'Tickets',
+		buildProfileFirstAccessSectionParagraph1: 'Ciao, {name}! Benvenuto su Allify.',
+		buildProfileFirstAccessSectionParagraph2:
+			'Completa il tuo profilo per personalizzare la tua esperienza. Se preferisci, puoi farlo in un secondo momento dal tuo profilo e modificare la visibilità del tuo profilo nelle impostazioni quando vuoi.',
+		buildProfileFirstAccessSectionButtonCompleteProfile: 'Completa il profilo',
+		buildProfileFirstAccessSectionButtonCompleteLater: 'Più tardi',
 		toastSuccessTitle: 'Successo',
 		toastSuccessAltText: 'Icona di successo',
 		toastWarningTitle: 'Attenzione',
