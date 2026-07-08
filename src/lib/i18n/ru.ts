@@ -74,11 +74,22 @@ export const ru = {
 		ticketAltText: 'Иконка билета',
 		ticket: 'Билет',
 		tickets: 'Билеты',
+		buildProfileCloseModalAriaLabel: 'Закрыть модальное окно создания профиля',
 		buildProfileFirstAccessSectionParagraph1: 'Здравствуйте, {name}! Добро пожаловать в Allify.',
 		buildProfileFirstAccessSectionParagraph2:
 			'Заполните свой профиль, чтобы сделать использование Allify более персонализированным. Если хотите, вы можете сделать это позже в своем профиле, а также в любое время изменить видимость профиля в настройках.',
 		buildProfileFirstAccessSectionButtonCompleteProfile: 'Заполнить профиль',
 		buildProfileFirstAccessSectionButtonCompleteLater: 'Позже',
+		buildProfileFirstStepTrackSectionParagraph1: 'Выберите свою любимую песню на данный момент',
+		buildProfileFirstStepTrackSectionParagraph2:
+			'Выберите песню, которая лучше всего отражает ваше текущее настроение. Она будет отображаться в вашем профиле и поможет персонализировать ваш опыт использования Allify.',
+		buildProfileFirstStepTrackSectionParagraph3:
+			'Ваши самые прослушиваемые песни за последнее время',
+		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: 'Выбор песни для музыкального профиля',
+		buildProfileFirstStepTrackSectionParagraph4:
+			'Продолжайте открывать новые песни и делайте свой профиль ещё более персонализированным.',
+		buildProfileFirstStepTrackSectionNextStepButton: 'Продолжить',
+		buildProfileFirstStepTrackSectionBackStepButton: 'Назад',
 		toastSuccessTitle: 'Успех',
 		toastSuccessAltText: 'Иконка успеха',
 		toastWarningTitle: 'Предупреждение',

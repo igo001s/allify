@@ -68,7 +68,7 @@
 							<div class="flex flex-wrap gap-2">
 								{#each artist.genres.slice(0, 2) as genre}
 									<span
-										class="rounded-xl bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse"
+										class="rounded-lg bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse"
 									>
 										{genre}
 									</span>

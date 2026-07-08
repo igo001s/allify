@@ -39,7 +39,7 @@
 
 	function setCLassByStreaming(streaming: string) {
 		let baseClass: string =
-			'inline-flex items-center cursor-pointer justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-md transition-all duration-200 hover:scale-102';
+			'inline-flex items-center cursor-pointer justify-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-md transition-all duration-200 hover:scale-102';
 
 		if (streaming === 'spotify') {
 			baseClass = `${baseClass} bg-spotify`;

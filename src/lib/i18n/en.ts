@@ -74,11 +74,21 @@ export const en = {
 		ticketAltText: 'Ticket icon',
 		ticket: 'Ticket',
 		tickets: 'Tickets',
+		buildProfileCloseModalAriaLabel: 'Close build profile modal',
 		buildProfileFirstAccessSectionParagraph1: 'Hello, {name}! Welcome to Allify.',
 		buildProfileFirstAccessSectionParagraph2:
 			'Complete your profile to personalize your experience. If you prefer, you can do it later from your profile, and you can change your profile visibility in the settings at any time.',
 		buildProfileFirstAccessSectionButtonCompleteProfile: 'Complete profile',
 		buildProfileFirstAccessSectionButtonCompleteLater: 'Do it later',
+		buildProfileFirstStepTrackSectionParagraph1: 'Choose your current favorite track',
+		buildProfileFirstStepTrackSectionParagraph2:
+			'Choose a track that represents your current vibe. It will be displayed on your profile and help personalize your Allify experience.',
+		buildProfileFirstStepTrackSectionParagraph3: 'Your most played tracks recently',
+		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: 'Track selection for music profile',
+		buildProfileFirstStepTrackSectionParagraph4:
+			'Keep unlocking more tracks and personalize your profile even further.',
+		buildProfileFirstStepTrackSectionNextStepButton: 'Continue',
+		buildProfileFirstStepTrackSectionBackStepButton: 'Back',
 		toastSuccessTitle: 'Success',
 		toastSuccessAltText: 'Success icon',
 		toastWarningTitle: 'Warning',

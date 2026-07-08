@@ -38,7 +38,7 @@
 					<img
 						src={track.image?.url}
 						alt={track.name}
-						class="h-20 w-20 rounded-xl object-cover shadow-md lg:h-42 lg:w-42"
+						class="h-20 w-20 rounded-lg object-cover shadow-md lg:h-42 lg:w-42"
 						loading="lazy"
 					/>
 
@@ -65,7 +65,7 @@
 						{#if track.albumName}
 							<div class="flex flex-wrap gap-2">
 								<span
-									class="rounded-xl bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse"
+									class="rounded-lg bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse"
 								>
 									{track.albumName}
 								</span>

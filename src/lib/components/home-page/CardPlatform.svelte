@@ -25,7 +25,7 @@
 				? 'hover:border-spotify hover:text-spotify'
 				: 'hover:border-deezer hover:text-deezer';
 
-		let baseClass = `flex cursor-pointer items-center gap-1 rounded-xl border px-3 py-1.5 transition-all text-xs lg:text-base ${hoverClass}`;
+		let baseClass = `flex cursor-pointer items-center gap-1 rounded-lg border px-3 py-1.5 transition-all text-xs lg:text-base ${hoverClass}`;
 
 		if (isPlatformConnected()) {
 			baseClass += ` ${
@@ -44,7 +44,7 @@
 </script>
 
 <li
-	class="flex h-96 w-full flex-col justify-between rounded-xl bg-s-default text-t-primary shadow-md sm:w-10/12 lg:w-1/2 2xl:w-2/5"
+	class="flex h-96 w-full flex-col justify-between rounded-lg bg-s-default text-t-primary shadow-md sm:w-10/12 lg:w-1/2 2xl:w-2/5"
 >
 	<div class="flex flex-col gap-4 p-6 lg:gap-6 lg:p-10">
 		<div class="flex items-center justify-between font-medium">

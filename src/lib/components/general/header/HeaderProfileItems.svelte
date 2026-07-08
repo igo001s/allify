@@ -67,7 +67,7 @@
 		animate-fadeIn
 		absolute
 		z-50
-		rounded-xl
+		rounded-lg
 		border
 		border-b-muted/10
 		bg-s-default/95
@@ -129,7 +129,7 @@
 			class="
 					w-full
 					cursor-pointer
-					rounded-xl
+					rounded-lg
 					bg-status-error
 					px-3
 					py-2
@@ -145,7 +145,7 @@
 	{:else}
 		<ul class="space-y-1">
 			{#each notLoggedItems as item}
-				<li class="rounded-xl transition-all hover:bg-s-muted">
+				<li class="rounded-lg transition-all hover:bg-s-muted">
 					<button
 						disabled={item.streaming === 'deezer'}
 						title={setTitleByStreaming(item.streaming)}

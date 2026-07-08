@@ -164,7 +164,7 @@
 				</p>
 
 				<div
-					class={`flex min-h-45 flex-col gap-6 rounded-xl border border-b-default bg-s-default px-6 py-4 shadow-sm sm:flex-row md:px-8 md:py-6 ${loadingDiscoveries ? 'h-30' : 'h-auto'}`}
+					class={`flex min-h-45 flex-col gap-6 rounded-lg border border-b-default bg-s-default px-6 py-4 shadow-sm sm:flex-row md:px-8 md:py-6 ${loadingDiscoveries ? 'h-30' : 'h-auto'}`}
 				>
 					{#if loadingDiscoveries}
 						<div class="mx-auto flex h-full items-center justify-center">
@@ -214,7 +214,7 @@
 				</div>
 
 				<button
-					class="mx-auto mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-lg shadow-brand-primary/25 transition-all duration-300 hover:scale-102 hover:bg-brand-primary-dark sm:w-fit"
+					class="mx-auto mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg border border-white/10 bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-lg shadow-brand-primary/25 transition-all duration-300 hover:scale-102 hover:bg-brand-primary-dark sm:w-fit"
 					disabled={loadingDiscoveries}
 					onclick={handleLoadDiscoveries}
 				>

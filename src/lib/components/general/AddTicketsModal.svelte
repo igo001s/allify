@@ -51,9 +51,9 @@
 	class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-4 backdrop-blur-md"
 >
 	<div
-		class="relative flex w-full max-w-md flex-col overflow-hidden rounded-xl border border-b-default bg-s-default shadow-xl"
+		class="relative flex w-full max-w-lg flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl"
 	>
-		<div class="border-b border-b-default px-6 py-5">
+		<div class="border-b border-b-default p-7 lg:p-8">
 			<button
 				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 				on:click={closeAddTicketsModal}
@@ -78,7 +78,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-6 p-7">
+		<div class="flex flex-col gap-6 p-7 lg:p-8">
 			<div class="flex flex-col gap-3">
 				<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
 					{$translationsStore.addTickets.addTicketsModalParagraph3}
@@ -87,7 +87,7 @@
 				<div class="mt-1 grid grid-cols-4 gap-3">
 					{#each options as opt}
 						<button
-							class="cursor-pointer rounded-xl border py-3 text-sm font-semibold transition
+							class="cursor-pointer rounded-lg border py-3 text-sm font-semibold transition
 								{quantity === opt
 								? 'border-brand-primary bg-brand-primary text-t-inverse'
 								: 'border-b-default bg-s-muted text-t-primary hover:border-brand-primary hover:text-brand-primary'}"
@@ -101,7 +101,7 @@
 						type="number"
 						min="1"
 						placeholder={$translationsStore.addTickets.addTicketsModalPlaceholder}
-						class="col-span-4 mt-1 rounded-xl border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted
+						class="col-span-4 mt-1 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted
 							{!options.includes(quantity)
 							? 'border-brand-primary'
 							: 'border-b-default focus:border-brand-primary'}"
@@ -112,7 +112,7 @@
 
 			<div class="flex items-center gap-2">
 				<span
-					class="inline-flex shrink-0 items-center rounded-xl bg-brand-primary px-3 py-1 text-[11px] font-medium text-t-inverse"
+					class="inline-flex shrink-0 items-center rounded-lg bg-brand-primary px-3 py-1 text-[11px] font-medium text-t-inverse"
 				>
 					{quantity}
 					{quantity === 1
@@ -128,7 +128,7 @@
 			</div>
 
 			<button
-				class="w-full cursor-pointer rounded-xl bg-brand-primary px-4 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
+				class="w-full cursor-pointer rounded-lg bg-brand-primary px-4 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
 				on:click={() => handleCreateCheckout(quantity)}
 			>
 				{$translationsStore.addTickets.addTicketsModalButton}

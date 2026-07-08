@@ -39,7 +39,7 @@
 <ul class="space-y-1">
 	{#if loggedIn}
 		{#each loggedItems as item}
-			<li class="rounded-xl transition-all hover:bg-s-muted">
+			<li class="rounded-lg transition-all hover:bg-s-muted">
 				<button
 					on:click={() => {
 						goto(item.href);
@@ -54,7 +54,7 @@
 		{/each}
 	{:else}
 		{#each notLoggedItems as item}
-			<li class="rounded-xl transition-all hover:bg-s-muted">
+			<li class="rounded-lg transition-all hover:bg-s-muted">
 				<button
 					on:click={() =>
 						signInWrapper(

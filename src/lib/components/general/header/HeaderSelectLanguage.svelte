@@ -57,7 +57,7 @@
 	<button
 		class="
 			flex min-w-36 cursor-pointer items-center justify-between
-			gap-3 rounded-xl
+			gap-3 rounded-lg
 			border
 			border-b-default
 			bg-s-default

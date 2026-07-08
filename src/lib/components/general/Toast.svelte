@@ -30,7 +30,7 @@
 
 <div
 	class={`animate-in fade-in slide-in-from-top-2 fixed top-4 right-2 z-50 flex w-10/12 
-	max-w-sm items-start gap-4 rounded-xl 
+	max-w-sm items-start gap-4 rounded-lg 
 	border bg-s-default p-4 shadow-lg transition-all 
 	duration-300 sm:top-6 sm:right-6 sm:left-auto sm:max-w-md md:max-w-lg
 	${

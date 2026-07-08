@@ -24,7 +24,7 @@
 		<img
 			src={mostListenedTrackItem.image?.url}
 			alt={mostListenedTrackItem.name}
-			class="h-40 w-40 rounded-xl object-cover shadow-lg lg:h-60 lg:w-60"
+			class="h-40 w-40 rounded-lg object-cover shadow-lg lg:h-60 lg:w-60"
 			loading="lazy"
 		/>
 	</div>
@@ -52,7 +52,7 @@
 		{#if mostListenedTrackItem.albumName}
 			<div class="flex flex-wrap gap-2">
 				<span
-					class="rounded-xl bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse lg:text-xs"
+					class="rounded-lg bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse lg:text-xs"
 				>
 					{mostListenedTrackItem.albumName}
 				</span>
