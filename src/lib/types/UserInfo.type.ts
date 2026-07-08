@@ -3,14 +3,23 @@ import type { ObjectId } from 'mongodb';
 
 // Types
 import type { UserInfoSpotify } from './SpotifyData.type';
+import type { TrackSpotify } from './SpotifyData.type';
+import type { ArtistSpotify } from './SpotifyData.type';
 
 export type UserInfo = {
 	_id: ObjectId;
 	name: string;
 	email: string;
-	tickets: number;
-	public: boolean;
+	image?: {
+		url: string;
+		height: number | null;
+		width: number | null;
+	};
 	primaryStreaming: 'spotify' | 'deezer';
+	tickets: number;
+	trackOfTheMoment?: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
+	artistOfTheMoment?: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
+	public: boolean;
 	connectedStreamings: {
 		spotify?: UserInfoSpotify;
 		deezer?: undefined;

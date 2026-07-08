@@ -78,7 +78,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-6 px-6 py-5">
+		<div class="flex flex-col gap-6 p-7">
 			<div class="flex flex-col gap-3">
 				<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
 					{$translationsStore.addTickets.addTicketsModalParagraph3}

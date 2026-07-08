@@ -68,7 +68,12 @@ export const zh = {
 		ticketAltText: '票券图标',
 		ticket: '票券',
 		tickets: '票券',
-		toastSuccessTitle: '成功',
+		buildProfileFirstAccessSectionParagraph1: '你好，{name}！欢迎来到 Allify。',
+		buildProfileFirstAccessSectionParagraph2:
+			'完善你的个人资料，享受更加个性化的体验。如果你愿意，也可以稍后在个人资料页面完成，并且可以随时在设置中更改个人资料的可见性。',
+		buildProfileFirstAccessSectionButtonCompleteProfile: '完善个人资料',
+		buildProfileFirstAccessSectionButtonCompleteLater: '稍后再说',
+				toastSuccessTitle: '成功',
 		toastSuccessAltText: '成功图标',
 		toastWarningTitle: '警告',
 		toastWarningAltText: '警告图标',
