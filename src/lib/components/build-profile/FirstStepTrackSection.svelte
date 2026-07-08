@@ -24,12 +24,12 @@
 	}
 </script>
 
-<div class="flex flex-col gap-3.5">
-	<p class="text-xl font-bold text-t-primary sm:text-2xl">
+<div class="flex w-full flex-col gap-4">
+	<p class="text-xl font-bold leading-tight text-t-primary sm:text-2xl">
 		{$translationsStore.generalTexts.buildProfileFirstStepTrackSectionParagraph1}
 	</p>
 
-	<p class="text-sm text-t-secondary">
+	<p class="text-sm leading-relaxed text-t-secondary">
 		{$translationsStore.generalTexts.buildProfileFirstStepTrackSectionParagraph2}
 	</p>
 
@@ -39,54 +39,53 @@
 		</p>
 
 		<div
-			class="grid h-96 max-h-96 grid-cols-2 justify-center gap-4 overflow-y-auto pr-2 sm:grid-cols-3 md:grid-cols-4"
+			class="grid max-h-80 grid-cols-2 gap-3 overflow-y-auto pr-1 sm:max-h-96 sm:grid-cols-3 sm:gap-4 md:grid-cols-4"
 		>
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems as track}
 				<button
-					class={`${buildProfileTrack?.id === track.id ? 'border-brand-primary' : 'border-s-muted'} relative mx-auto flex w-36 shrink-0 cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border-2 bg-s-muted p-2.5 transition-all duration-200 hover:bg-s-muted/60`}
-					aria-label={$translationsStore.generalTexts
-						.buildProfileFirstStepTrackSectionSelectTrackAriaLabel}
+					class={`${buildProfileTrack?.id === track.id ? 'border-brand-primary' : 'border-s-muted'} relative flex w-full cursor-pointer flex-col justify-center items-center gap-2 rounded-lg border-2 bg-s-muted p-2.5 transition-all duration-200 hover:bg-s-muted/60`}
+					aria-label={$translationsStore.generalTexts.buildProfileFirstStepTrackSectionSelectTrackAriaLabel}
 					on:click={() => handleTrackSelection(track)}
 				>
 					{#if track.image}
 						<img
-							src={track.image?.url}
+							src={track.image.url}
 							alt={track.name}
-							class="h-20 w-20 rounded-lg object-cover"
+							class="h-18 w-18 rounded-lg object-cover sm:h-20 sm:w-20"
 							loading="lazy"
 						/>
 					{/if}
 
-					<div class="flex w-full flex-col gap-0.5 text-center">
-						<p class="line-clamp-2 text-center text-xs leading-tight font-semibold text-t-primary">
+					<div class="flex w-full flex-col gap-1 text-center">
+						<p class="line-clamp-2 text-xs leading-tight font-semibold text-t-primary">
 							{track.name}
 						</p>
 
-						<p class="line-clamp-1 text-center text-[11px] text-t-secondary">
+						<p class="line-clamp-1 text-[11px] text-t-secondary">
 							{track.artists.join(', ')}
 						</p>
 
-						<p class="line-clamp-1 text-center text-[10px] text-t-secondary/70">
+						<p class="line-clamp-1 text-[10px] text-t-secondary/70">
 							{track.albumName}
 						</p>
 					</div>
 
 					<SpotifyIcon
-						iconSvgClass={`${buildProfileTrack?.id === track.id ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 w-4 h-4`}
+						iconSvgClass={`${buildProfileTrack?.id === track.id ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-2 right-2 h-4 w-4`}
 					/>
 				</button>
 			{/each}
 		</div>
 
-		<p class="mt-2 text-center text-[11px] text-t-secondary">
+		<p class="text-center text-[11px] leading-relaxed text-t-secondary">
 			{$translationsStore.generalTexts.buildProfileFirstStepTrackSectionParagraph4}
 		</p>
 	</div>
 
-	<div class="mt-4 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+	<div class="mt-2 flex flex-col-reverse gap-3 sm:mt-4 sm:flex-row sm:justify-end">
 		<button
 			on:click={backToPreviousStep}
-			class="flex w-full cursor-pointer items-center justify-center rounded-lg border border-b-default px-4 py-2 text-xs font-semibold text-t-primary transition hover:scale-102 sm:w-auto"
+			class="flex min-h-11 w-full cursor-pointer items-center justify-center rounded-lg border border-b-default px-5 py-2 text-sm font-semibold text-t-primary transition hover:scale-102 sm:min-h-10 sm:w-auto sm:text-xs"
 		>
 			{$translationsStore.generalTexts.buildProfileBackStepButton}
 		</button>
@@ -94,7 +93,7 @@
 		<button
 			on:click={goToNextStep}
 			disabled={!buildProfileTrack}
-			class="flex w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 disabled:bg-s-inverse-muted sm:w-auto"
+			class="flex min-h-11 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-5 py-2 text-sm font-semibold text-s-default transition hover:scale-102 disabled:bg-s-inverse-muted sm:min-h-10 sm:w-auto sm:text-xs"
 		>
 			{$translationsStore.generalTexts.buildProfileNextStepButton}
 		</button>

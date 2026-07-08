@@ -25,8 +25,8 @@
 			: 1;
 
 	let buildProfileInfo = {
-		track: {} as TrackSpotify,
-		artist: {} as ArtistSpotify,
+		track: undefined as TrackSpotify | undefined,
+		artist: undefined as ArtistSpotify | undefined,
 		public: false
 	};
 
@@ -49,30 +49,39 @@
 
 	onDestroy(() => {
 		document.body.style.overflow = '';
+
+		buildProfileInfo = {
+			track: undefined,
+			artist: undefined,
+			public: false
+		};
 	});
 </script>
 
 {#if showBuildProfile}
 	<div
-		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-4 backdrop-blur-md transition-all"
+		class="fixed inset-0 z-50 flex items-end justify-center bg-s-inverse/60 p-3 backdrop-blur-md transition-all sm:items-center sm:p-4"
 	>
 		<div
-			class={`${currentStepIndex === 0 ? 'max-w-xl' : 'max-w-3xl'} relative flex h-fit w-full flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl`}
+			class={`${currentStepIndex === 0 ? 'max-w-xl' : 'max-w-3xl'} relative flex max-h-[90vh] w-full flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl`}
 		>
 			<button
-				class="absolute top-2.5 right-2.5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
+				class="absolute top-3 right-3 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 				on:click={closeModal}
 				aria-label={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
 			>
 				<CloseIcon
 					iconAltText={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
-					iconSvgClass="w-5 h-5 text-brand-primary"
+					iconSvgClass="h-5 w-5 text-brand-primary"
 				/>
 			</button>
 
-			<div class="min-w-0 p-6 lg:p-8">
+			<div class="min-w-0 overflow-y-auto p-5 sm:p-6 lg:p-8">
 				{#if currentStepIndex === 0}
-					<FirstAccessSection {closeModal} {goToNextStep} />
+					<FirstAccessSection
+						{closeModal}
+						{goToNextStep}
+					/>
 				{:else if currentStepIndex === 1}
 					<FirstStepTrackSection
 						{goToNextStep}
