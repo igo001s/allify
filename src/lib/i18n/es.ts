@@ -88,8 +88,16 @@ export const es = {
 			'Selección de canción para el perfil musical',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
-		buildProfileFirstStepTrackSectionNextStepButton: 'Continuar',
-		buildProfileFirstStepTrackSectionBackStepButton: 'Volver',
+		buildProfileFirstStepArtistSectionParagraph1: 'Elige tu artista del momento',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'Elige un artista que represente tu momento actual. Se mostrará en tu perfil y ayudará a personalizar tu experiencia en Allify.',
+		buildProfileFirstStepArtistSectionParagraph3: 'Tus artistas escuchados recientemente',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'Selección de artista para el perfil musical',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
+		buildProfileNextStepButton: 'Continuar',
+		buildProfileBackStepButton: 'Volver',
 		toastSuccessTitle: 'Éxito',
 		toastSuccessAltText: 'Ícono de éxito',
 		toastWarningTitle: 'Advertencia',

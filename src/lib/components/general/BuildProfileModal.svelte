@@ -8,6 +8,7 @@
 	// Components
 	import FirstAccessSection from '$lib/components/build-profile/FirstAccessSection.svelte';
 	import FirstStepTrackSection from '$lib/components/build-profile/FirstStepTrackSection.svelte';
+	import SecondStepArtistSection from '$lib/components/build-profile/SecondStepArtistSection.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -24,8 +25,8 @@
 			: 1;
 
 	let buildProfileInfo = {
-		artist: {} as ArtistSpotify,
 		track: {} as TrackSpotify,
+		artist: {} as ArtistSpotify,
 		public: false
 	};
 
@@ -79,7 +80,11 @@
 						bind:buildProfileTrack={buildProfileInfo.track}
 					/>
 				{:else if currentStepIndex === 2}
-					<!-- Step 2 - Artist -->
+					<SecondStepArtistSection
+						{goToNextStep}
+						{backToPreviousStep}
+						bind:buildProfileArtist={buildProfileInfo.artist}
+					/>
 				{:else if currentStepIndex === 3}
 					<!-- Step 3 - Profile Visibility -->
 				{/if}

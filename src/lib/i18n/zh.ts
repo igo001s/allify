@@ -80,8 +80,16 @@ export const zh = {
 		buildProfileFirstStepTrackSectionParagraph3: '你最近最常播放的歌曲',
 		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: '音乐资料歌曲选择',
 		buildProfileFirstStepTrackSectionParagraph4: '继续解锁更多歌曲，让你的个人资料更加个性化。',
-		buildProfileFirstStepTrackSectionNextStepButton: '继续',
-		buildProfileFirstStepTrackSectionBackStepButton: '返回',
+		buildProfileFirstStepArtistSectionParagraph1: '选择你当前最喜欢的艺人',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'选择一位能够代表你当前状态的艺人。该艺人将显示在你的个人资料中，并帮助个性化你的 Allify 使用体验。',
+		buildProfileFirstStepArtistSectionParagraph3: '你最近收听的艺人',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'音乐个人资料艺人选择',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'继续解锁更多艺人，进一步打造属于你的个人资料。',
+		buildProfileNextStepButton: '继续',
+		buildProfileBackStepButton: '返回',
 		toastSuccessTitle: '成功',
 		toastSuccessAltText: '成功图标',
 		toastWarningTitle: '警告',

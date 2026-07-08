@@ -88,8 +88,16 @@ export const ru = {
 		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: 'Выбор песни для музыкального профиля',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'Продолжайте открывать новые песни и делайте свой профиль ещё более персонализированным.',
-		buildProfileFirstStepTrackSectionNextStepButton: 'Продолжить',
-		buildProfileFirstStepTrackSectionBackStepButton: 'Назад',
+		buildProfileFirstStepArtistSectionParagraph1: 'Выберите своего артиста момента',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'Выберите артиста, который отражает ваше текущее настроение. Он будет отображаться в вашем профиле и поможет сделать работу с Allify более персонализированной.',
+		buildProfileFirstStepArtistSectionParagraph3: 'Ваши недавно прослушанные артисты',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'Выбор артиста для музыкального профиля',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'Продолжайте открывать новых артистов и персонализировать свой профиль ещё больше.',
+		buildProfileNextStepButton: 'Продолжить',
+		buildProfileBackStepButton: 'Назад',
 		toastSuccessTitle: 'Успех',
 		toastSuccessAltText: 'Иконка успеха',
 		toastWarningTitle: 'Предупреждение',

@@ -86,8 +86,16 @@ export const ja = {
 		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: '音楽プロフィール用の楽曲選択',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
-		buildProfileFirstStepTrackSectionNextStepButton: '続行',
-		buildProfileFirstStepTrackSectionBackStepButton: '戻る',
+		buildProfileFirstStepArtistSectionParagraph1: '今のお気に入りアーティストを選択',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'今のあなたを表すアーティストを選択してください。プロフィールに表示され、Allifyでの体験がよりパーソナライズされます。',
+		buildProfileFirstStepArtistSectionParagraph3: '最近よく聴いたアーティスト',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'音楽プロフィール用のアーティスト選択',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくしましょう。',
+		buildProfileNextStepButton: '続行',
+		buildProfileBackStepButton: '戻る',
 		toastSuccessTitle: '成功',
 		toastSuccessAltText: '成功アイコン',
 		toastWarningTitle: '警告',
