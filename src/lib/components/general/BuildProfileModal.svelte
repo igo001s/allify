@@ -60,7 +60,7 @@
 			class={`${currentStepIndex === 0 ? 'max-w-xl' : 'max-w-3xl'} relative flex h-fit w-full flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl`}
 		>
 			<button
-				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
+				class="absolute top-2.5 right-2.5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 				on:click={closeModal}
 				aria-label={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
 			>
@@ -70,7 +70,7 @@
 				/>
 			</button>
 
-			<div class="min-w-0 p-7 lg:p-8">
+			<div class="min-w-0 p-6 lg:p-8">
 				{#if currentStepIndex === 0}
 					<FirstAccessSection {closeModal} {goToNextStep} />
 				{:else if currentStepIndex === 1}
