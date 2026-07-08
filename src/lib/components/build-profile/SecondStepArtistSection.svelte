@@ -13,7 +13,7 @@
 	export let goToNextStep: () => void;
 	export let backToPreviousStep: () => void;
 	export let buildProfileArtist: ArtistSpotify | undefined = undefined;
-
+	
 	function handleArtistSelection(artist: ArtistSpotify) {
 		if (buildProfileArtist?.id === artist.id) {
 			buildProfileArtist = undefined;

@@ -25,8 +25,8 @@
 			: 1;
 
 	let buildProfileInfo = {
-		track: {} as TrackSpotify,
-		artist: {} as ArtistSpotify,
+		track: undefined as TrackSpotify | undefined,
+		artist: undefined as ArtistSpotify | undefined,
 		public: false
 	};
 
@@ -49,6 +49,12 @@
 
 	onDestroy(() => {
 		document.body.style.overflow = '';
+
+		buildProfileInfo = {
+			track: undefined,
+			artist: undefined,
+			public: false
+		};
 	});
 </script>
 
