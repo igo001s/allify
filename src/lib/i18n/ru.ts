@@ -74,11 +74,30 @@ export const ru = {
 		ticketAltText: 'Иконка билета',
 		ticket: 'Билет',
 		tickets: 'Билеты',
+		buildProfileCloseModalAriaLabel: 'Закрыть модальное окно создания профиля',
 		buildProfileFirstAccessSectionParagraph1: 'Здравствуйте, {name}! Добро пожаловать в Allify.',
 		buildProfileFirstAccessSectionParagraph2:
 			'Заполните свой профиль, чтобы сделать использование Allify более персонализированным. Если хотите, вы можете сделать это позже в своем профиле, а также в любое время изменить видимость профиля в настройках.',
 		buildProfileFirstAccessSectionButtonCompleteProfile: 'Заполнить профиль',
 		buildProfileFirstAccessSectionButtonCompleteLater: 'Позже',
+		buildProfileFirstStepTrackSectionParagraph1: 'Выберите свою любимую песню на данный момент',
+		buildProfileFirstStepTrackSectionParagraph2:
+			'Выберите песню, которая лучше всего отражает ваше текущее настроение. Она будет отображаться в вашем профиле и поможет персонализировать ваш опыт использования Allify.',
+		buildProfileFirstStepTrackSectionParagraph3:
+			'Ваши самые прослушиваемые песни за последнее время',
+		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: 'Выбор песни для музыкального профиля',
+		buildProfileFirstStepTrackSectionParagraph4:
+			'Продолжайте открывать новые песни и делайте свой профиль ещё более персонализированным.',
+		buildProfileFirstStepArtistSectionParagraph1: 'Выберите своего артиста момента',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'Выберите артиста, который отражает ваше текущее настроение. Он будет отображаться в вашем профиле и поможет сделать работу с Allify более персонализированной.',
+		buildProfileFirstStepArtistSectionParagraph3: 'Ваши недавно прослушанные артисты',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'Выбор артиста для музыкального профиля',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'Продолжайте открывать новых артистов и персонализировать свой профиль ещё больше.',
+		buildProfileNextStepButton: 'Продолжить',
+		buildProfileBackStepButton: 'Назад',
 		toastSuccessTitle: 'Успех',
 		toastSuccessAltText: 'Иконка успеха',
 		toastWarningTitle: 'Предупреждение',

@@ -88,7 +88,7 @@
 						maxlength="30"
 						placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
 						bind:value={searchUserInputValue}
-						class="flex-1 rounded-xl border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted focus:border-brand-primary"
+						class="flex-1 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted focus:border-brand-primary"
 						on:keydown={(e) => {
 							if (e.key === 'Enter') {
 								handleSearchUser();
@@ -97,7 +97,7 @@
 					/>
 
 					<button
-						class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-xl bg-brand-primary transition-colors hover:bg-brand-primary-dark"
+						class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-brand-primary transition-colors hover:bg-brand-primary-dark"
 						disabled={!searchUserInputValue || searchUserInputValue.length < 2}
 						on:click={handleSearchUser}
 					>

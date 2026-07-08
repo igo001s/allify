@@ -65,7 +65,7 @@ body {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	scrollbar-width: thin;
-	scrollbar-color: var(--color-brand-primary) var(--color-s-muted);
+	scrollbar-color: var(--color-s-inverse-muted) var(--color-s-muted);
 }
 
 input[type='number']::-webkit-outer-spin-button,
@@ -90,13 +90,13 @@ input[type='number'] {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(180deg, var(--color-brand-primary-light), var(--color-brand-primary));
+	background: var(--color-s-inverse-muted);
 	border-radius: 9999px;
 	border: 2px solid var(--color-s-muted);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(180deg, var(--color-brand-primary), var(--color-brand-primary-dark));
+	background: var(--color-s-inverse-muted);
 }
 
 ::-webkit-scrollbar-corner {

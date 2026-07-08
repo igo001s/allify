@@ -18,7 +18,7 @@
 	export let hasSearched: boolean = false;
 </script>
 
-<div class="flex h-80 max-h-80 rounded-xl border border-b-default bg-s-default p-5">
+<div class="flex h-80 max-h-80 rounded-lg border border-b-default bg-s-default p-5">
 	{#if loadingFoundedUsers}
 		<div class="mx-auto flex h-full items-center justify-center">
 			<DotsLoading dotsTheme="base" />
@@ -33,7 +33,7 @@
 		</div>
 	{:else if !hasSearched}
 		<div
-			class="flex w-full flex-col items-center justify-center rounded-xl border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
+			class="flex w-full flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
 		>
 			<p class="font-medium text-t-primary">
 				{$translationsStore.musicCommunityPage.musicCommunityFavoritesAfterSearchByParagraph1}
@@ -47,7 +47,7 @@
 		</div>
 	{:else}
 		<div
-			class="flex w-full flex-col items-center justify-center rounded-xl border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
+			class="flex w-full flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
 		>
 			<p class="font-medium text-t-primary">
 				{$translationsStore.musicCommunityPage

@@ -74,11 +74,30 @@ export const it = {
 		ticketAltText: 'Icona di ticket',
 		ticket: 'Ticket',
 		tickets: 'Tickets',
+		buildProfileCloseModalAriaLabel: 'Chiudi il modal di creazione del profilo',
 		buildProfileFirstAccessSectionParagraph1: 'Ciao, {name}! Benvenuto su Allify.',
 		buildProfileFirstAccessSectionParagraph2:
 			'Completa il tuo profilo per personalizzare la tua esperienza. Se preferisci, puoi farlo in un secondo momento dal tuo profilo e modificare la visibilità del tuo profilo nelle impostazioni quando vuoi.',
 		buildProfileFirstAccessSectionButtonCompleteProfile: 'Completa il profilo',
 		buildProfileFirstAccessSectionButtonCompleteLater: 'Più tardi',
+		buildProfileFirstStepTrackSectionParagraph1: 'Scegli il brano del momento',
+		buildProfileFirstStepTrackSectionParagraph2:
+			'Scegli un brano che rappresenti il tuo momento attuale. Verrà mostrato sul tuo profilo e contribuirà a personalizzare la tua esperienza su Allify.',
+		buildProfileFirstStepTrackSectionParagraph3: 'I tuoi brani più ascoltati di recente',
+		buildProfileFirstStepTrackSectionSelectTrackAriaLabel:
+			'Selezione del brano per il profilo musicale',
+		buildProfileFirstStepTrackSectionParagraph4:
+			'Continua a sbloccare nuovi brani e personalizza ancora di più il tuo profilo.',
+		buildProfileFirstStepArtistSectionParagraph1: 'Scegli l\'artista del momento',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'Scegli un artista che rappresenti il tuo stato d\'animo attuale. Verrà mostrato sul tuo profilo e contribuirà a personalizzare la tua esperienza su Allify.',
+		buildProfileFirstStepArtistSectionParagraph3: 'I tuoi artisti più ascoltati di recente',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'Selezione dell\'artista per il profilo musicale',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'Continua a sbloccare nuovi artisti e personalizza ancora di più il tuo profilo.',
+		buildProfileNextStepButton: 'Continua',
+		buildProfileBackStepButton: 'Indietro',
 		toastSuccessTitle: 'Successo',
 		toastSuccessAltText: 'Icona di successo',
 		toastWarningTitle: 'Attenzione',

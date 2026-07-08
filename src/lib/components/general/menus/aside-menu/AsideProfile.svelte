@@ -41,7 +41,7 @@
 <div class="mt-auto border-t border-b-muted/10 px-4 py-4 sm:px-5 sm:py-5">
 	<div
 		class="
-			rounded-xl
+			rounded-lg
 			border
 			border-b-muted/10
 			bg-s-default/95
@@ -176,7 +176,7 @@
 						class="
 							w-full
 							cursor-pointer
-							rounded-xl
+							rounded-lg
 							bg-status-error
 							px-3
 							py-2

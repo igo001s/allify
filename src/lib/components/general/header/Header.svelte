@@ -45,7 +45,7 @@
 
 		<button
 			aria-label={$translationsStore.generalTexts.burgerMenuAltText}
-			class="cursor-pointer rounded-xl p-0.5 transition-all hover:bg-s-muted lg:hidden"
+			class="cursor-pointer rounded-lg p-0.5 transition-all hover:bg-s-muted lg:hidden"
 			aria-expanded={isAsideMenuOpen}
 			on:click={OpenAsideMenu}
 		>

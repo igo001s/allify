@@ -127,7 +127,7 @@
 </script>
 
 <article
-	class="flex h-fit w-full items-center justify-between rounded-xl border border-b-default bg-s-muted transition hover:border-brand-primary"
+	class="flex h-fit w-full items-center justify-between rounded-lg border border-b-default bg-s-muted transition hover:border-brand-primary"
 >
 	<button
 		class="flex w-11/12 min-w-0 cursor-pointer items-center gap-4 py-2.5 pl-2.5"

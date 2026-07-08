@@ -7,7 +7,7 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 </script>
 
-<div class="w-full rounded-xl border border-b-default bg-s-default p-5 xl:w-2/5">
+<div class="w-full rounded-lg border border-b-default bg-s-default p-5 xl:w-2/5">
 	<div class="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 		<div>
 			<h2 class="text-xl font-semibold text-t-primary">
@@ -41,7 +41,7 @@
 			</div>
 		{:else}
 			<div
-				class="flex h-full w-full flex-col items-center justify-center rounded-xl border border-dashed border-b-default bg-s-muted px-6 text-center"
+				class="flex h-full w-full flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-muted px-6 text-center"
 			>
 				<p class="font-medium text-t-primary">
 					{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionEmptyParagraph1}

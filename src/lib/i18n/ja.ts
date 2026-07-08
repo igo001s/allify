@@ -73,11 +73,29 @@ export const ja = {
 		ticketAltText: 'チケットアイコン',
 		ticket: 'チケット',
 		tickets: 'チケット',
+		buildProfileCloseModalAriaLabel: 'プロフィール作成モーダルを閉じる',
 		buildProfileFirstAccessSectionParagraph1: 'こんにちは、{name}さん！Allifyへようこそ。',
 		buildProfileFirstAccessSectionParagraph2:
 			'プロフィールを完成させて、あなたに合わせた体験を楽しみましょう。後でプロフィールから設定することもでき、プロフィールの公開範囲は設定画面でいつでも変更できます。',
 		buildProfileFirstAccessSectionButtonCompleteProfile: 'プロフィールを完成する',
 		buildProfileFirstAccessSectionButtonCompleteLater: '後で行う',
+		buildProfileFirstStepTrackSectionParagraph1: '今のお気に入りの曲を選びましょう',
+		buildProfileFirstStepTrackSectionParagraph2:
+			'今のあなたを表す1曲を選んでください。この曲はプロフィールに表示され、Allifyでの体験をよりあなたらしくカスタマイズします。',
+		buildProfileFirstStepTrackSectionParagraph3: '最近よく聴いている曲',
+		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: '音楽プロフィール用の楽曲選択',
+		buildProfileFirstStepTrackSectionParagraph4:
+			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
+		buildProfileFirstStepArtistSectionParagraph1: '今のお気に入りアーティストを選択',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'今のあなたを表すアーティストを選択してください。プロフィールに表示され、Allifyでの体験がよりパーソナライズされます。',
+		buildProfileFirstStepArtistSectionParagraph3: '最近よく聴いたアーティスト',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'音楽プロフィール用のアーティスト選択',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくしましょう。',
+		buildProfileNextStepButton: '続行',
+		buildProfileBackStepButton: '戻る',
 		toastSuccessTitle: '成功',
 		toastSuccessAltText: '成功アイコン',
 		toastWarningTitle: '警告',

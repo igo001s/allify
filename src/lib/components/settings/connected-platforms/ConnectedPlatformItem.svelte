@@ -19,11 +19,11 @@
 </script>
 
 <div
-	class="flex w-full flex-col gap-3 rounded-xl border border-b-default bg-s-default p-4 sm:gap-4 sm:p-5 md:w-130 md:flex-row md:items-center md:justify-between"
+	class="flex w-full flex-col gap-3 rounded-lg border border-b-default bg-s-default p-4 sm:gap-4 sm:p-5 md:w-130 md:flex-row md:items-center md:justify-between"
 >
 	<div class="flex items-center gap-4">
 		<div
-			class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl sm:h-14 sm:w-14 ${streaming.name === 'spotify' ? 'bg-spotify/10' : 'bg-deezer/10'}`}
+			class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-lg sm:h-14 sm:w-14 ${streaming.name === 'spotify' ? 'bg-spotify/10' : 'bg-deezer/10'}`}
 		>
 			<svelte:component
 				this={streaming.icon}
@@ -48,7 +48,7 @@
 
 	{#if $userInfo?.connectedStreamings[streaming.name]?.connected === true}
 		<button
-			class="shrink-0 cursor-pointer rounded-xl border border-status-error/40 px-2.5 py-1.5 text-xs font-medium text-status-error transition-all hover:bg-status-error/10 sm:px-3.5"
+			class="shrink-0 cursor-pointer rounded-lg border border-status-error/40 px-2.5 py-1.5 text-xs font-medium text-status-error transition-all hover:bg-status-error/10 sm:px-3.5"
 			on:click={() =>
 				logoutWrapper(
 					streaming.name.toLocaleLowerCase() as 'spotify' | 'deezer',
@@ -60,7 +60,7 @@
 		</button>
 	{:else}
 		<button
-			class="shrink-0 cursor-pointer rounded-xl bg-brand-primary px-2.5 py-1.5 text-xs font-medium text-t-inverse transition-all hover:bg-brand-primary-dark sm:px-3.5"
+			class="shrink-0 cursor-pointer rounded-lg bg-brand-primary px-2.5 py-1.5 text-xs font-medium text-t-inverse transition-all hover:bg-brand-primary-dark sm:px-3.5"
 			on:click={() =>
 				signInWrapper(
 					streaming.name.toLocaleLowerCase() as 'spotify' | 'deezer',

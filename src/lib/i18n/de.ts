@@ -74,11 +74,29 @@ export const de = {
 		ticketAltText: 'Ticket-Symbol',
 		ticket: 'Ticket',
 		tickets: 'Tickets',
+		buildProfileCloseModalAriaLabel: 'Profil-Erstellungsmodal schließen',
 		buildProfileFirstAccessSectionParagraph1: 'Hallo, {name}! Willkommen bei Allify.',
 		buildProfileFirstAccessSectionParagraph2:
 			'Vervollständige dein Profil, um dein Erlebnis zu personalisieren. Wenn du möchtest, kannst du das später über dein Profil erledigen. Die Sichtbarkeit deines Profils kannst du jederzeit in den Einstellungen ändern.',
 		buildProfileFirstAccessSectionButtonCompleteProfile: 'Profil vervollständigen',
 		buildProfileFirstAccessSectionButtonCompleteLater: 'Später erledigen',
+		buildProfileFirstStepTrackSectionParagraph1: 'Wähle deinen aktuellen Lieblingssong',
+		buildProfileFirstStepTrackSectionParagraph2:
+			'Wähle einen Song, der deine aktuelle Stimmung widerspiegelt. Er wird in deinem Profil angezeigt und hilft dabei, dein Allify-Erlebnis zu personalisieren.',
+		buildProfileFirstStepTrackSectionParagraph3: 'Deine zuletzt meistgehörten Songs',
+		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: 'Songauswahl für das Musikprofil',
+		buildProfileFirstStepTrackSectionParagraph4:
+			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
+		buildProfileFirstStepArtistSectionParagraph1: 'Wähle deinen aktuellen Lieblingskünstler',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'Wähle einen Künstler, der deine aktuelle Stimmung widerspiegelt. Er wird auf deinem Profil angezeigt und hilft dabei, dein Allify-Erlebnis zu personalisieren.',
+		buildProfileFirstStepArtistSectionParagraph3: 'Deine zuletzt gehörten Künstler',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'Künstlerauswahl für das Musikprofil',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
+		buildProfileNextStepButton: 'Weiter',
+		buildProfileBackStepButton: 'Zurück',
 		toastSuccessTitle: 'Erfolg',
 		toastSuccessAltText: 'Erfolgssymbol',
 		toastWarningTitle: 'Warnung',

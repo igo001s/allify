@@ -7,13 +7,28 @@
 
 	// Components
 	import FirstAccessSection from '$lib/components/build-profile/FirstAccessSection.svelte';
+	import FirstStepTrackSection from '$lib/components/build-profile/FirstStepTrackSection.svelte';
+	import SecondStepArtistSection from '$lib/components/build-profile/SecondStepArtistSection.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '$lib/stores/translations.store';
+
+	// Types
+	import type { ArtistSpotify, TrackSpotify } from '$lib/types/SpotifyData.type';
 
 	// Props
 	export let showBuildProfile: boolean = true;
-	export let currentStepIndex: number = !$userInfo?.trackOfTheMoment && !$userInfo?.artistOfTheMoment && $userInfo?.public === false ? 0 : 1;
+	export let currentStepIndex: number =
+		!$userInfo?.trackOfTheMoment && !$userInfo?.artistOfTheMoment && $userInfo?.public === false
+			? 0
+			: 1;
+
+	let buildProfileInfo = {
+		track: {} as TrackSpotify,
+		artist: {} as ArtistSpotify,
+		public: false
+	};
 
 	function closeModal() {
 		showBuildProfile = false;
@@ -22,6 +37,10 @@
 
 	function goToNextStep() {
 		currentStepIndex += 1;
+	}
+
+	function backToPreviousStep() {
+		currentStepIndex -= 1;
 	}
 
 	onMount(() => {
@@ -35,26 +54,37 @@
 
 {#if showBuildProfile}
 	<div
-		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-4 transition-all backdrop-blur-md"
+		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-4 backdrop-blur-md transition-all"
 	>
 		<div
-			class="relative flex h-fit w-full max-w-2xl flex-col overflow-hidden rounded-xl border border-b-default bg-s-default shadow-xl"
+			class={`${currentStepIndex === 0 ? 'max-w-xl' : 'max-w-3xl'} relative flex h-fit w-full flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl`}
 		>
 			<button
 				class="absolute top-5 right-5 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 				on:click={closeModal}
-				aria-label="Close Build Profile Modal"
+				aria-label={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
 			>
-				<CloseIcon iconAltText={'Close Build Profile Modal'} iconSvgClass="w-5 h-5 text-brand-primary" />
+				<CloseIcon
+					iconAltText={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
+					iconSvgClass="w-5 h-5 text-brand-primary"
+				/>
 			</button>
 
-			<div class="min-w-0 p-7">
+			<div class="min-w-0 p-7 lg:p-8">
 				{#if currentStepIndex === 0}
 					<FirstAccessSection {closeModal} {goToNextStep} />
 				{:else if currentStepIndex === 1}
-					<!-- Step 1 - Track -->
+					<FirstStepTrackSection
+						{goToNextStep}
+						{backToPreviousStep}
+						bind:buildProfileTrack={buildProfileInfo.track}
+					/>
 				{:else if currentStepIndex === 2}
-					<!-- Step 2 - Artist -->
+					<SecondStepArtistSection
+						{goToNextStep}
+						{backToPreviousStep}
+						bind:buildProfileArtist={buildProfileInfo.artist}
+					/>
 				{:else if currentStepIndex === 3}
 					<!-- Step 3 - Profile Visibility -->
 				{/if}

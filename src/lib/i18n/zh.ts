@@ -68,12 +68,29 @@ export const zh = {
 		ticketAltText: '票券图标',
 		ticket: '票券',
 		tickets: '票券',
+		buildProfileCloseModalAriaLabel: '关闭建立个人资料的弹窗',
 		buildProfileFirstAccessSectionParagraph1: '你好，{name}！欢迎来到 Allify。',
 		buildProfileFirstAccessSectionParagraph2:
 			'完善你的个人资料，享受更加个性化的体验。如果你愿意，也可以稍后在个人资料页面完成，并且可以随时在设置中更改个人资料的可见性。',
 		buildProfileFirstAccessSectionButtonCompleteProfile: '完善个人资料',
 		buildProfileFirstAccessSectionButtonCompleteLater: '稍后再说',
-				toastSuccessTitle: '成功',
+		buildProfileFirstStepTrackSectionParagraph1: '选择你当前最喜欢的歌曲',
+		buildProfileFirstStepTrackSectionParagraph2:
+			'选择一首能够代表你当前心情的歌曲。它将显示在你的个人资料中，并帮助打造更加个性化的 Allify 使用体验。',
+		buildProfileFirstStepTrackSectionParagraph3: '你最近最常播放的歌曲',
+		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: '音乐资料歌曲选择',
+		buildProfileFirstStepTrackSectionParagraph4: '继续解锁更多歌曲，让你的个人资料更加个性化。',
+		buildProfileFirstStepArtistSectionParagraph1: '选择你当前最喜欢的艺人',
+		buildProfileFirstStepArtistSectionParagraph2:
+			'选择一位能够代表你当前状态的艺人。该艺人将显示在你的个人资料中，并帮助个性化你的 Allify 使用体验。',
+		buildProfileFirstStepArtistSectionParagraph3: '你最近收听的艺人',
+		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+			'音乐个人资料艺人选择',
+		buildProfileFirstStepArtistSectionParagraph4:
+			'继续解锁更多艺人，进一步打造属于你的个人资料。',
+		buildProfileNextStepButton: '继续',
+		buildProfileBackStepButton: '返回',
+		toastSuccessTitle: '成功',
 		toastSuccessAltText: '成功图标',
 		toastWarningTitle: '警告',
 		toastWarningAltText: '警告图标',

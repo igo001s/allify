@@ -10,7 +10,7 @@
 	export let lastSync: Date | undefined;
 
 	const btnClass = [
-		'group flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl',
+		'group flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-lg',
 		'border border-brand-primary/20 bg-white px-4 py-2.5',
 		'text-xs font-medium text-brand-primary',
 		'transition-all duration-200',
