@@ -8,29 +8,29 @@
 	export let goToNextStep: () => void;
 </script>
 
-<div class="flex w-full flex-col gap-4">
-	<p class="text-xl leading-tight font-bold text-t-primary sm:text-2xl">
+<div class="flex w-full flex-col gap-3 sm:gap-4">
+	<p class="text-lg leading-tight font-bold text-t-primary sm:text-xl">
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionParagraph1.replace(
 			'{name}',
 			$userInfo?.name || ''
 		)}
 	</p>
 
-	<p class="text-sm leading-relaxed text-t-secondary sm:text-xs sm:tracking-widest">
+	<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionParagraph2}
 	</p>
 
-	<div class="mt-2 flex flex-col-reverse gap-3 sm:mt-4 sm:flex-row sm:justify-end">
+	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
 		<button
 			on:click={closeModal}
-			class="flex min-h-11 w-full cursor-pointer items-center justify-center rounded-lg border border-b-default px-5 py-2 text-sm font-semibold text-t-primary transition hover:scale-102 sm:min-h-10 sm:w-auto sm:text-xs"
+			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg border border-b-default px-4 py-2 text-xs font-semibold text-t-primary transition hover:scale-102 sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
 		>
 			{$translationsStore.generalTexts.buildProfileFirstAccessSectionButtonCompleteLater}
 		</button>
 
 		<button
 			on:click={goToNextStep}
-			class="flex min-h-11 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-5 py-2 text-sm font-semibold text-s-default transition hover:scale-102 sm:min-h-10 sm:w-auto sm:text-xs"
+			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
 		>
 			{$translationsStore.generalTexts.buildProfileFirstAccessSectionButtonCompleteProfile}
 		</button>

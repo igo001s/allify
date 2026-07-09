@@ -70,11 +70,11 @@
 					{$translationsStore.addTickets.addTicketsModalTitle}
 				</p>
 
-				<p class="text-xl leading-tight font-bold text-t-primary sm:text-2xl">
+				<p class="text-base leading-tight font-bold text-t-primary sm:text-xl">
 					{$translationsStore.addTickets.addTicketsModalParagraph1}
 				</p>
 
-				<p class="text-sm leading-relaxed text-t-secondary">
+				<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
 					{$translationsStore.addTickets.addTicketsModalParagraph2}
 				</p>
 			</div>

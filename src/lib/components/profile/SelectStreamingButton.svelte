@@ -16,7 +16,7 @@
 	on:click={onClick}
 	class={[
 		'flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg',
-		'border px-5 py-2 text-xs font-medium capitalize transition-all duration-200 lg:text-sm',
+		'border px-4 py-2 text-xs font-medium capitalize transition-all duration-200 lg:text-sm',
 		selected
 			? isSpotify
 				? 'border-spotify text-spotify'
