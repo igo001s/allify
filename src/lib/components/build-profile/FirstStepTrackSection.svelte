@@ -29,17 +29,17 @@
 		{$translationsStore.generalTexts.buildProfileFirstStepTrackSectionParagraph1}
 	</p>
 
-	<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+	<p class="text-xs leading-relaxed text-t-secondary text-justify sm:text-sm">
 		{$translationsStore.generalTexts.buildProfileFirstStepTrackSectionParagraph2}
 	</p>
 
-	<div class="mt-1 flex flex-col gap-3 sm:mt-2 sm:gap-4">
+	<div class="mt-1 flex flex-col gap-4 sm:mt-2">
 		<p class="text-xs font-semibold text-t-primary sm:text-sm">
 			{$translationsStore.generalTexts.buildProfileFirstStepTrackSectionParagraph3}
 		</p>
 
 		<div
-			class="grid max-h-60 grid-cols-2 gap-2 overflow-y-auto pr-2 sm:max-h-96 sm:grid-cols-3 sm:gap-4 md:grid-cols-4"
+			class="grid max-h-60 grid-cols-2 gap-4 overflow-y-auto pr-2 sm:max-h-96 sm:grid-cols-3 sm:gap-6 md:grid-cols-4"
 		>
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems as track}
 				<button
@@ -48,7 +48,7 @@
 							? 'border-brand-primary bg-brand-primary/5'
 							: 'border-s-muted bg-s-muted'
 					}
-						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 p-2 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
+						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 py-3.5 px-2 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
 					aria-label={$translationsStore.generalTexts
 						.buildProfileFirstStepTrackSectionSelectTrackAriaLabel}
 					on:click={() => handleTrackSelection(track)}
