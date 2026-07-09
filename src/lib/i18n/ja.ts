@@ -103,6 +103,7 @@ export const ja = {
 		buildProfileThirdStepVisibilitySectionPrivateOption: '非公開プロフィール',
 		buildProfileThirdStepVisibilitySectionPrivateDescription:
 			'あなたのプロフィールは他のユーザーには表示されません。公開することを選択するまでは、あなたのみがすべての情報を閲覧できます。',
+		buildProfileThirdStepVisibilitySectionParagraph3: 'オプションが選択されていない場合、デフォルトではプロフィールは公開されます。この設定はいつでも変更できます。',
 		buildProfileNextStepButton: '続行',
 		buildProfileBackStepButton: '戻る',
 		toastSuccessTitle: '成功',

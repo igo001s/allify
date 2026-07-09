@@ -22,7 +22,7 @@
 		{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionParagraph1}
 	</p>
 
-	<p class="text-xs leading-relaxed text-t-secondary text-justify sm:text-sm">
+	<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
 		{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionParagraph2}
 	</p>
 
@@ -30,7 +30,7 @@
 		<button
 			on:click={() => handleVisibilitySelection('public')}
 			class={`${buildProfileVisibility === 'public' ? 'border-brand-primary bg-brand-primary/5' : 'border-s-muted'}
-				flex w-full cursor-pointer flex-col items-start rounded-xl border-2 p-4 gap-2 text-left transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:py-3 lg:px-6`}
+				flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3`}
 		>
 			<p class="text-xs font-semibold text-t-primary sm:text-sm">
 				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption}
@@ -44,7 +44,7 @@
 		<button
 			on:click={() => handleVisibilitySelection('private')}
 			class={`${buildProfileVisibility === 'private' ? 'border-brand-primary bg-brand-primary/5' : 'border-s-muted'}
-				flex w-full cursor-pointer flex-col items-start rounded-xl border-2 p-4 gap-2 text-left transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:py-3 lg:px-6`}
+				flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3`}
 		>
 			<p class="text-xs font-semibold text-t-primary sm:text-sm">
 				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption}
@@ -55,6 +55,10 @@
 			</p>
 		</button>
 	</div>
+
+	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
+		{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionParagraph3}
+	</p>
 
 	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
 		<button

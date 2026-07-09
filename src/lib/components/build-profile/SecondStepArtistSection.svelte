@@ -29,7 +29,7 @@
 		{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph1}
 	</p>
 
-	<p class="text-xs leading-relaxed text-justify text-t-secondary sm:text-sm">
+	<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
 		{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph2}
 	</p>
 
@@ -48,8 +48,9 @@
 							? 'border-brand-primary bg-brand-primary/5'
 							: 'border-s-muted bg-s-muted'
 					}
-						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 py-5 px-2 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
-					aria-label={$translationsStore.generalTexts.buildProfileSecondStepArtistSectionSelectArtistAriaLabel}
+						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-5 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
+					aria-label={$translationsStore.generalTexts
+						.buildProfileSecondStepArtistSectionSelectArtistAriaLabel}
 					on:click={() => handleArtistSelection(artist)}
 				>
 					{#if artist.image}
@@ -62,7 +63,9 @@
 					{/if}
 
 					<div class="flex w-full flex-col gap-0.5 text-center">
-						<p class="line-clamp-2 text-[11px] leading-tight font-semibold text-t-primary sm:text-xs">
+						<p
+							class="line-clamp-2 text-[11px] leading-tight font-semibold text-t-primary sm:text-xs"
+						>
 							{artist.name}
 						</p>
 

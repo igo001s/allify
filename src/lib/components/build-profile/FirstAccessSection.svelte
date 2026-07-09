@@ -16,7 +16,7 @@
 		)}
 	</p>
 
-	<p class="text-xs leading-relaxed text-t-secondary text-justify sm:text-sm">
+	<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionParagraph2}
 	</p>
 
