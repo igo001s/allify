@@ -80,14 +80,21 @@ export const zh = {
 		buildProfileFirstStepTrackSectionParagraph3: '你最近最常播放的歌曲',
 		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: '音乐资料歌曲选择',
 		buildProfileFirstStepTrackSectionParagraph4: '继续解锁更多歌曲，让你的个人资料更加个性化。',
-		buildProfileFirstStepArtistSectionParagraph1: '选择你当前最喜欢的艺人',
-		buildProfileFirstStepArtistSectionParagraph2:
+		buildProfileSecondStepArtistSectionParagraph1: '选择你当前最喜欢的艺人',
+		buildProfileSecondStepArtistSectionParagraph2:
 			'选择一位能够代表你当前状态的艺人。该艺人将显示在你的个人资料中，并帮助个性化你的 Allify 使用体验。',
-		buildProfileFirstStepArtistSectionParagraph3: '你最近收听的艺人',
-		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
-			'音乐个人资料艺人选择',
-		buildProfileFirstStepArtistSectionParagraph4:
-			'继续解锁更多艺人，进一步打造属于你的个人资料。',
+		buildProfileSecondStepArtistSectionParagraph3: '你最近收听的艺人',
+		buildProfileSecondStepArtistSectionSelectArtistAriaLabel: '音乐个人资料艺人选择',
+		buildProfileSecondStepArtistSectionParagraph4: '继续解锁更多艺人，进一步打造属于你的个人资料。',
+		buildProfileThirdStepVisibilitySectionParagraph1: '选择您的个人资料可见性',
+		buildProfileThirdStepVisibilitySectionParagraph2:
+			'设置谁可以在 Allify 上找到并查看您的个人资料。您可以随时在账户设置中更改此设置。',
+		buildProfileThirdStepVisibilitySectionPublicOption: '公开个人资料',
+		buildProfileThirdStepVisibilitySectionPublicDescription:
+			'其他用户可以找到您的个人资料、查看您的公开信息，并关注您在平台上的活动。',
+		buildProfileThirdStepVisibilitySectionPrivateOption: '私人个人资料',
+		buildProfileThirdStepVisibilitySectionPrivateDescription:
+			'您的个人资料将对其他用户隐藏。在您决定公开之前，只有您自己可以查看完整的个人资料信息。',
 		buildProfileNextStepButton: '继续',
 		buildProfileBackStepButton: '返回',
 		toastSuccessTitle: '成功',

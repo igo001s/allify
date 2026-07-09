@@ -9,20 +9,18 @@
 </script>
 
 <div class="flex w-full flex-col gap-4">
-	<p class="text-xl font-bold leading-tight text-t-primary sm:text-2xl">
+	<p class="text-xl leading-tight font-bold text-t-primary sm:text-2xl">
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionParagraph1.replace(
 			'{name}',
 			$userInfo?.name || ''
 		)}
 	</p>
 
-	<p
-		class="text-sm leading-relaxed text-t-secondary sm:text-xs sm:tracking-widest"
-	>
+	<p class="text-sm leading-relaxed text-t-secondary sm:text-xs sm:tracking-widest">
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionParagraph2}
 	</p>
 
-	<div class="mt-2 flex flex-col gap-3 sm:mt-4 sm:flex-row sm:justify-end">
+	<div class="mt-2 flex flex-col-reverse gap-3 sm:mt-4 sm:flex-row sm:justify-end">
 		<button
 			on:click={closeModal}
 			class="flex min-h-11 w-full cursor-pointer items-center justify-center rounded-lg border border-b-default px-5 py-2 text-sm font-semibold text-t-primary transition hover:scale-102 sm:min-h-10 sm:w-auto sm:text-xs"

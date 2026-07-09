@@ -25,7 +25,7 @@
 </script>
 
 <div class="flex w-full flex-col gap-4">
-	<p class="text-xl font-bold leading-tight text-t-primary sm:text-2xl">
+	<p class="text-xl leading-tight font-bold text-t-primary sm:text-2xl">
 		{$translationsStore.generalTexts.buildProfileFirstStepTrackSectionParagraph1}
 	</p>
 
@@ -43,8 +43,9 @@
 		>
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems as track}
 				<button
-					class={`${buildProfileTrack?.id === track.id ? 'border-brand-primary' : 'border-s-muted'} relative flex w-full cursor-pointer flex-col justify-center items-center gap-2 rounded-lg border-2 bg-s-muted p-2.5 transition-all duration-200 hover:bg-s-muted/60`}
-					aria-label={$translationsStore.generalTexts.buildProfileFirstStepTrackSectionSelectTrackAriaLabel}
+					class={`${buildProfileTrack?.id === track.id ? 'border-brand-primary' : 'border-s-muted'} relative flex w-full cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border-2 bg-s-muted p-2.5 transition-all duration-200 hover:bg-s-muted/60`}
+					aria-label={$translationsStore.generalTexts
+						.buildProfileFirstStepTrackSectionSelectTrackAriaLabel}
 					on:click={() => handleTrackSelection(track)}
 				>
 					{#if track.image}

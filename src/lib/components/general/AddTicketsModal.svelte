@@ -66,11 +66,11 @@
 			</button>
 
 			<div class="flex flex-col gap-3 pr-8">
-				<p class="text-xs font-medium tracking-widest uppercase text-t-secondary">
+				<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
 					{$translationsStore.addTickets.addTicketsModalTitle}
 				</p>
 
-				<p class="text-xl font-bold leading-tight text-t-primary sm:text-2xl">
+				<p class="text-xl leading-tight font-bold text-t-primary sm:text-2xl">
 					{$translationsStore.addTickets.addTicketsModalParagraph1}
 				</p>
 
@@ -82,7 +82,7 @@
 
 		<div class="flex flex-col gap-6 overflow-y-auto p-5 sm:p-6 lg:p-8">
 			<div class="flex flex-col gap-3">
-				<p class="text-xs font-medium tracking-widest uppercase text-t-secondary">
+				<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
 					{$translationsStore.addTickets.addTicketsModalParagraph3}
 				</p>
 
@@ -91,8 +91,8 @@
 						<button
 							class="cursor-pointer rounded-lg border py-3 text-sm font-semibold transition
 								{quantity === opt
-									? 'border-brand-primary bg-brand-primary text-t-inverse'
-									: 'border-b-default bg-s-muted text-t-primary hover:border-brand-primary hover:text-brand-primary'}"
+								? 'border-brand-primary bg-brand-primary text-t-inverse'
+								: 'border-b-default bg-s-muted text-t-primary hover:border-brand-primary hover:text-brand-primary'}"
 							on:click={() => handleQuantityChange(opt)}
 						>
 							{opt}
@@ -103,10 +103,10 @@
 						type="number"
 						min="1"
 						placeholder={$translationsStore.addTickets.addTicketsModalPlaceholder}
-						class="col-span-2 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary outline-none transition placeholder:text-t-muted sm:col-span-4
+						class="col-span-2 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted sm:col-span-4
 							{!options.includes(quantity)
-								? 'border-brand-primary'
-								: 'border-b-default focus:border-brand-primary'}"
+							? 'border-brand-primary'
+							: 'border-b-default focus:border-brand-primary'}"
 						on:input={handleInputChange}
 					/>
 				</div>

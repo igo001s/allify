@@ -13,7 +13,7 @@
 	export let goToNextStep: () => void;
 	export let backToPreviousStep: () => void;
 	export let buildProfileArtist: ArtistSpotify | undefined = undefined;
-	
+
 	function handleArtistSelection(artist: ArtistSpotify) {
 		if (buildProfileArtist?.id === artist.id) {
 			buildProfileArtist = undefined;
@@ -25,17 +25,17 @@
 </script>
 
 <div class="flex w-full flex-col gap-4">
-	<p class="text-xl font-bold leading-tight text-t-primary sm:text-2xl">
-		{$translationsStore.generalTexts.buildProfileFirstStepArtistSectionParagraph1}
+	<p class="text-xl leading-tight font-bold text-t-primary sm:text-2xl">
+		{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph1}
 	</p>
 
 	<p class="text-sm leading-relaxed text-t-secondary">
-		{$translationsStore.generalTexts.buildProfileFirstStepArtistSectionParagraph2}
+		{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph2}
 	</p>
 
 	<div class="mt-2 flex flex-col gap-4">
 		<p class="text-sm font-semibold text-t-primary">
-			{$translationsStore.generalTexts.buildProfileFirstStepArtistSectionParagraph3}
+			{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph3}
 		</p>
 
 		<div
@@ -43,8 +43,9 @@
 		>
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
 				<button
-					class={`${buildProfileArtist?.id === artist.id ? 'border-brand-primary' : 'border-s-muted'} relative flex w-full cursor-pointer flex-col justify-center items-center gap-2 rounded-lg border-2 bg-s-muted p-2.5 transition-all duration-200 hover:bg-s-muted/60`}
-					aria-label={$translationsStore.generalTexts.buildProfileFirstStepArtistSectionSelectArtistAriaLabel}
+					class={`${buildProfileArtist?.id === artist.id ? 'border-brand-primary' : 'border-s-muted'} relative flex w-full cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border-2 bg-s-muted p-2.5 transition-all duration-200 hover:bg-s-muted/60`}
+					aria-label={$translationsStore.generalTexts
+						.buildProfileSecondStepArtistSectionSelectArtistAriaLabel}
 					on:click={() => handleArtistSelection(artist)}
 				>
 					{#if artist.image}
@@ -74,7 +75,7 @@
 		</div>
 
 		<p class="text-center text-[11px] leading-relaxed text-t-secondary">
-			{$translationsStore.generalTexts.buildProfileFirstStepArtistSectionParagraph4}
+			{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph4}
 		</p>
 	</div>
 

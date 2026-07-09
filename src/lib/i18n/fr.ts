@@ -88,14 +88,23 @@ export const fr = {
 			'Sélection d’un morceau pour le profil musical',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'Continuez à débloquer de nouveaux morceaux et personnalisez encore davantage votre profil.',
-		buildProfileFirstStepArtistSectionParagraph1: 'Choisissez votre artiste du moment',
-		buildProfileFirstStepArtistSectionParagraph2:
+		buildProfileSecondStepArtistSectionParagraph1: 'Choisissez votre artiste du moment',
+		buildProfileSecondStepArtistSectionParagraph2:
 			'Choisissez un artiste qui représente votre état d’esprit actuel. Il sera affiché sur votre profil et contribuera à personnaliser votre expérience sur Allify.',
-		buildProfileFirstStepArtistSectionParagraph3: 'Vos artistes écoutés récemment',
-		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+		buildProfileSecondStepArtistSectionParagraph3: 'Vos artistes écoutés récemment',
+		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Sélection d’un artiste pour le profil musical',
-		buildProfileFirstStepArtistSectionParagraph4:
+		buildProfileSecondStepArtistSectionParagraph4:
 			'Continuez à débloquer de nouveaux artistes et personnalisez encore davantage votre profil.',
+		buildProfileThirdStepVisibilitySectionParagraph1: 'Choisissez la visibilité de votre profil',
+		buildProfileThirdStepVisibilitySectionParagraph2:
+			'Définissez qui peut trouver et consulter votre profil sur Allify. Vous pourrez modifier ce paramètre à tout moment dans les paramètres de votre compte.',
+		buildProfileThirdStepVisibilitySectionPublicOption: 'Profil public',
+		buildProfileThirdStepVisibilitySectionPublicDescription:
+			'Les autres utilisateurs pourront trouver votre profil, consulter vos informations publiques et suivre votre activité sur la plateforme.',
+		buildProfileThirdStepVisibilitySectionPrivateOption: 'Profil privé',
+		buildProfileThirdStepVisibilitySectionPrivateDescription:
+			'Votre profil sera masqué pour les autres utilisateurs. Vous seul pourrez consulter toutes vos informations jusqu’à ce que vous décidiez de le rendre public.',
 		buildProfileNextStepButton: 'Continuer',
 		buildProfileBackStepButton: 'Retour',
 		toastSuccessTitle: 'Succès',
