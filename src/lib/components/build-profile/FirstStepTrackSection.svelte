@@ -43,7 +43,12 @@
 		>
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems as track}
 				<button
-					class={`${buildProfileTrack?.id === track.id ? 'border-brand-primary' : 'border-s-muted'} relative flex w-full cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border-2 bg-s-muted p-2.5 transition-all duration-200 hover:bg-s-muted/60`}
+					class={`${
+						buildProfileTrack?.id === track.id
+							? 'border-brand-primary bg-brand-primary/5'
+							: 'border-s-muted bg-s-muted'
+					}
+						relative flex w-full cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border-2 p-2.5 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
 					aria-label={$translationsStore.generalTexts
 						.buildProfileFirstStepTrackSectionSelectTrackAriaLabel}
 					on:click={() => handleTrackSelection(track)}
