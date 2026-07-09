@@ -87,14 +87,22 @@ export const en = {
 		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: 'Track selection for music profile',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'Keep unlocking more tracks and personalize your profile even further.',
-		buildProfileFirstStepArtistSectionParagraph1: 'Choose your current favorite artist',
-		buildProfileFirstStepArtistSectionParagraph2:
+		buildProfileSecondStepArtistSectionParagraph1: 'Choose your current favorite artist',
+		buildProfileSecondStepArtistSectionParagraph2:
 			'Choose an artist that represents your current moment. It will be displayed on your profile and help personalize your experience on Allify.',
-		buildProfileFirstStepArtistSectionParagraph3: 'Your recently played artists',
-		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
-			'Artist selection for music profile',
-		buildProfileFirstStepArtistSectionParagraph4:
+		buildProfileSecondStepArtistSectionParagraph3: 'Your recently played artists',
+		buildProfileSecondStepArtistSectionSelectArtistAriaLabel: 'Artist selection for music profile',
+		buildProfileSecondStepArtistSectionParagraph4:
 			'Keep unlocking more artists and personalize your profile even further.',
+		buildProfileThirdStepVisibilitySectionParagraph1: 'Choose your profile visibility',
+		buildProfileThirdStepVisibilitySectionParagraph2:
+			'Choose who can find and view your profile on Allify. You can change this setting at any time in your account settings.',
+		buildProfileThirdStepVisibilitySectionPublicOption: 'Public profile',
+		buildProfileThirdStepVisibilitySectionPublicDescription:
+			'Other users can find your profile, view your public information, and follow your activity on the platform.',
+		buildProfileThirdStepVisibilitySectionPrivateOption: 'Private profile',
+		buildProfileThirdStepVisibilitySectionPrivateDescription:
+			'Your profile will be hidden from other users. Only you will be able to view your complete information until you decide to make it public.',
 		buildProfileNextStepButton: 'Continue',
 		buildProfileBackStepButton: 'Back',
 		toastSuccessTitle: 'Success',

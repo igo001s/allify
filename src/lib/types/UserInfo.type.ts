@@ -19,7 +19,7 @@ export type UserInfo = {
 	tickets: number;
 	trackOfTheMoment?: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
 	artistOfTheMoment?: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
-	public: boolean;
+	profileVisibility: 'public' | 'private';
 	connectedStreamings: {
 		spotify?: UserInfoSpotify;
 		deezer?: undefined;

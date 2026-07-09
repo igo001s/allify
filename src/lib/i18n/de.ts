@@ -87,14 +87,22 @@ export const de = {
 		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: 'Songauswahl für das Musikprofil',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
-		buildProfileFirstStepArtistSectionParagraph1: 'Wähle deinen aktuellen Lieblingskünstler',
-		buildProfileFirstStepArtistSectionParagraph2:
+		buildProfileSecondStepArtistSectionParagraph1: 'Wähle deinen aktuellen Lieblingskünstler',
+		buildProfileSecondStepArtistSectionParagraph2:
 			'Wähle einen Künstler, der deine aktuelle Stimmung widerspiegelt. Er wird auf deinem Profil angezeigt und hilft dabei, dein Allify-Erlebnis zu personalisieren.',
-		buildProfileFirstStepArtistSectionParagraph3: 'Deine zuletzt gehörten Künstler',
-		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
-			'Künstlerauswahl für das Musikprofil',
-		buildProfileFirstStepArtistSectionParagraph4:
+		buildProfileSecondStepArtistSectionParagraph3: 'Deine zuletzt gehörten Künstler',
+		buildProfileSecondStepArtistSectionSelectArtistAriaLabel: 'Künstlerauswahl für das Musikprofil',
+		buildProfileSecondStepArtistSectionParagraph4:
 			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
+		buildProfileThirdStepVisibilitySectionParagraph1: 'Wähle die Sichtbarkeit deines Profils',
+		buildProfileThirdStepVisibilitySectionParagraph2:
+			'Lege fest, wer dein Profil auf Allify finden und ansehen kann. Du kannst diese Einstellung jederzeit in deinen Kontoeinstellungen ändern.',
+		buildProfileThirdStepVisibilitySectionPublicOption: 'Öffentliches Profil',
+		buildProfileThirdStepVisibilitySectionPublicDescription:
+			'Andere Nutzer können dein Profil finden, deine öffentlichen Informationen ansehen und deiner Aktivität auf der Plattform folgen.',
+		buildProfileThirdStepVisibilitySectionPrivateOption: 'Privates Profil',
+		buildProfileThirdStepVisibilitySectionPrivateDescription:
+			'Dein Profil wird für andere Nutzer verborgen. Nur du kannst deine vollständigen Informationen sehen, bis du dich entscheidest, dein Profil öffentlich zu machen.',
 		buildProfileNextStepButton: 'Weiter',
 		buildProfileBackStepButton: 'Zurück',
 		toastSuccessTitle: 'Erfolg',

@@ -9,6 +9,7 @@
 	import FirstAccessSection from '$lib/components/build-profile/FirstAccessSection.svelte';
 	import FirstStepTrackSection from '$lib/components/build-profile/FirstStepTrackSection.svelte';
 	import SecondStepArtistSection from '$lib/components/build-profile/SecondStepArtistSection.svelte';
+	import ThirdStepVisibilitySection from '$lib/components/build-profile/ThirdStepVisibilitySection.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -20,14 +21,16 @@
 	// Props
 	export let showBuildProfile: boolean = true;
 	export let currentStepIndex: number =
-		!$userInfo?.trackOfTheMoment && !$userInfo?.artistOfTheMoment && $userInfo?.public === false
+		!$userInfo?.trackOfTheMoment &&
+		!$userInfo?.artistOfTheMoment &&
+		$userInfo?.profileVisibility === 'public'
 			? 0
 			: 1;
 
 	let buildProfileInfo = {
 		track: undefined as TrackSpotify | undefined,
 		artist: undefined as ArtistSpotify | undefined,
-		public: false
+		profileVisibility: undefined as 'public' | 'private' | undefined
 	};
 
 	function closeModal() {
@@ -53,14 +56,14 @@
 		buildProfileInfo = {
 			track: undefined,
 			artist: undefined,
-			public: false
+			profileVisibility: undefined
 		};
 	});
 </script>
 
 {#if showBuildProfile}
 	<div
-		class="fixed inset-0 z-50 flex items-end justify-center bg-s-inverse/60 p-3 backdrop-blur-md transition-all sm:items-center sm:p-4"
+		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-3 backdrop-blur-md transition-all sm:p-4"
 	>
 		<div
 			class={`${currentStepIndex === 0 ? 'max-w-xl' : 'max-w-3xl'} relative flex max-h-[90vh] w-full flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl`}
@@ -78,10 +81,7 @@
 
 			<div class="min-w-0 overflow-y-auto p-5 sm:p-6 lg:p-8">
 				{#if currentStepIndex === 0}
-					<FirstAccessSection
-						{closeModal}
-						{goToNextStep}
-					/>
+					<FirstAccessSection {closeModal} {goToNextStep} />
 				{:else if currentStepIndex === 1}
 					<FirstStepTrackSection
 						{goToNextStep}
@@ -95,7 +95,11 @@
 						bind:buildProfileArtist={buildProfileInfo.artist}
 					/>
 				{:else if currentStepIndex === 3}
-					<!-- Step 3 - Profile Visibility -->
+					<ThirdStepVisibilitySection
+						{goToNextStep}
+						{backToPreviousStep}
+						bind:buildProfileVisibility={buildProfileInfo.profileVisibility}
+					/>
 				{/if}
 			</div>
 		</div>

@@ -86,14 +86,23 @@ export const ja = {
 		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: '音楽プロフィール用の楽曲選択',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
-		buildProfileFirstStepArtistSectionParagraph1: '今のお気に入りアーティストを選択',
-		buildProfileFirstStepArtistSectionParagraph2:
+		buildProfileSecondStepArtistSectionParagraph1: '今のお気に入りアーティストを選択',
+		buildProfileSecondStepArtistSectionParagraph2:
 			'今のあなたを表すアーティストを選択してください。プロフィールに表示され、Allifyでの体験がよりパーソナライズされます。',
-		buildProfileFirstStepArtistSectionParagraph3: '最近よく聴いたアーティスト',
-		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+		buildProfileSecondStepArtistSectionParagraph3: '最近よく聴いたアーティスト',
+		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'音楽プロフィール用のアーティスト選択',
-		buildProfileFirstStepArtistSectionParagraph4:
+		buildProfileSecondStepArtistSectionParagraph4:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくしましょう。',
+		buildProfileThirdStepVisibilitySectionParagraph1: 'プロフィールの公開設定を選択してください',
+		buildProfileThirdStepVisibilitySectionParagraph2:
+			'Allifyであなたのプロフィールを見つけたり閲覧したりできるユーザーを設定します。この設定はアカウント設定からいつでも変更できます。',
+		buildProfileThirdStepVisibilitySectionPublicOption: '公開プロフィール',
+		buildProfileThirdStepVisibilitySectionPublicDescription:
+			'他のユーザーがあなたのプロフィールを見つけ、公開情報を閲覧し、プラットフォーム上でのあなたのアクティビティを確認できます。',
+		buildProfileThirdStepVisibilitySectionPrivateOption: '非公開プロフィール',
+		buildProfileThirdStepVisibilitySectionPrivateDescription:
+			'あなたのプロフィールは他のユーザーには表示されません。公開することを選択するまでは、あなたのみがすべての情報を閲覧できます。',
 		buildProfileNextStepButton: '続行',
 		buildProfileBackStepButton: '戻る',
 		toastSuccessTitle: '成功',

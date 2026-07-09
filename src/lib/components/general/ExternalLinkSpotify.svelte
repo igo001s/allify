@@ -15,7 +15,7 @@
 	target="_blank"
 	rel="noopener noreferrer"
 	class={`inline-flex items-center justify-center gap-3 rounded-lg
-		px-5 py-2.5 text-xs font-medium text-t-inverse
+		px-4 py-2.5 text-xs font-medium text-t-inverse
 		shadow-md transition-all duration-200 hover:scale-[1.02]
 		${
 			streamingPlatform === 'spotify'

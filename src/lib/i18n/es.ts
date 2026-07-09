@@ -88,14 +88,23 @@ export const es = {
 			'Selección de canción para el perfil musical',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
-		buildProfileFirstStepArtistSectionParagraph1: 'Elige tu artista del momento',
-		buildProfileFirstStepArtistSectionParagraph2:
+		buildProfileSecondStepArtistSectionParagraph1: 'Elige tu artista del momento',
+		buildProfileSecondStepArtistSectionParagraph2:
 			'Elige un artista que represente tu momento actual. Se mostrará en tu perfil y ayudará a personalizar tu experiencia en Allify.',
-		buildProfileFirstStepArtistSectionParagraph3: 'Tus artistas escuchados recientemente',
-		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+		buildProfileSecondStepArtistSectionParagraph3: 'Tus artistas escuchados recientemente',
+		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Selección de artista para el perfil musical',
-		buildProfileFirstStepArtistSectionParagraph4:
+		buildProfileSecondStepArtistSectionParagraph4:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
+		buildProfileThirdStepVisibilitySectionParagraph1: 'Elige la visibilidad de tu perfil',
+		buildProfileThirdStepVisibilitySectionParagraph2:
+			'Define quién podrá encontrar y ver tu perfil en Allify. Puedes cambiar esta configuración en cualquier momento desde la configuración de tu cuenta.',
+		buildProfileThirdStepVisibilitySectionPublicOption: 'Perfil público',
+		buildProfileThirdStepVisibilitySectionPublicDescription:
+			'Otros usuarios podrán encontrar tu perfil, ver tu información pública y seguir tu actividad en la plataforma.',
+		buildProfileThirdStepVisibilitySectionPrivateOption: 'Perfil privado',
+		buildProfileThirdStepVisibilitySectionPrivateDescription:
+			'Tu perfil permanecerá oculto para otros usuarios. Solo tú podrás ver toda tu información hasta que decidas hacerlo público.',
 		buildProfileNextStepButton: 'Continuar',
 		buildProfileBackStepButton: 'Volver',
 		toastSuccessTitle: 'Éxito',

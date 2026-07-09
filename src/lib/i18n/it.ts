@@ -88,14 +88,23 @@ export const it = {
 			'Selezione del brano per il profilo musicale',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'Continua a sbloccare nuovi brani e personalizza ancora di più il tuo profilo.',
-		buildProfileFirstStepArtistSectionParagraph1: 'Scegli l\'artista del momento',
-		buildProfileFirstStepArtistSectionParagraph2:
-			'Scegli un artista che rappresenti il tuo stato d\'animo attuale. Verrà mostrato sul tuo profilo e contribuirà a personalizzare la tua esperienza su Allify.',
-		buildProfileFirstStepArtistSectionParagraph3: 'I tuoi artisti più ascoltati di recente',
-		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
-			'Selezione dell\'artista per il profilo musicale',
-		buildProfileFirstStepArtistSectionParagraph4:
+		buildProfileSecondStepArtistSectionParagraph1: "Scegli l'artista del momento",
+		buildProfileSecondStepArtistSectionParagraph2:
+			"Scegli un artista che rappresenti il tuo stato d'animo attuale. Verrà mostrato sul tuo profilo e contribuirà a personalizzare la tua esperienza su Allify.",
+		buildProfileSecondStepArtistSectionParagraph3: 'I tuoi artisti più ascoltati di recente',
+		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
+			"Selezione dell'artista per il profilo musicale",
+		buildProfileSecondStepArtistSectionParagraph4:
 			'Continua a sbloccare nuovi artisti e personalizza ancora di più il tuo profilo.',
+		buildProfileThirdStepVisibilitySectionParagraph1: 'Scegli la visibilità del tuo profilo',
+		buildProfileThirdStepVisibilitySectionParagraph2:
+			'Decidi chi può trovare e visualizzare il tuo profilo su Allify. Puoi modificare questa impostazione in qualsiasi momento dalle impostazioni del tuo account.',
+		buildProfileThirdStepVisibilitySectionPublicOption: 'Profilo pubblico',
+		buildProfileThirdStepVisibilitySectionPublicDescription:
+			'Gli altri utenti potranno trovare il tuo profilo, visualizzare le tue informazioni pubbliche e seguire la tua attività sulla piattaforma.',
+		buildProfileThirdStepVisibilitySectionPrivateOption: 'Profilo privato',
+		buildProfileThirdStepVisibilitySectionPrivateDescription:
+			'Il tuo profilo sarà nascosto agli altri utenti. Solo tu potrai visualizzare tutte le tue informazioni finché non deciderai di renderlo pubblico.',
 		buildProfileNextStepButton: 'Continua',
 		buildProfileBackStepButton: 'Indietro',
 		toastSuccessTitle: 'Successo',

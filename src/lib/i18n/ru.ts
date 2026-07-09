@@ -88,14 +88,23 @@ export const ru = {
 		buildProfileFirstStepTrackSectionSelectTrackAriaLabel: 'Выбор песни для музыкального профиля',
 		buildProfileFirstStepTrackSectionParagraph4:
 			'Продолжайте открывать новые песни и делайте свой профиль ещё более персонализированным.',
-		buildProfileFirstStepArtistSectionParagraph1: 'Выберите своего артиста момента',
-		buildProfileFirstStepArtistSectionParagraph2:
+		buildProfileSecondStepArtistSectionParagraph1: 'Выберите своего артиста момента',
+		buildProfileSecondStepArtistSectionParagraph2:
 			'Выберите артиста, который отражает ваше текущее настроение. Он будет отображаться в вашем профиле и поможет сделать работу с Allify более персонализированной.',
-		buildProfileFirstStepArtistSectionParagraph3: 'Ваши недавно прослушанные артисты',
-		buildProfileFirstStepArtistSectionSelectArtistAriaLabel:
+		buildProfileSecondStepArtistSectionParagraph3: 'Ваши недавно прослушанные артисты',
+		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Выбор артиста для музыкального профиля',
-		buildProfileFirstStepArtistSectionParagraph4:
+		buildProfileSecondStepArtistSectionParagraph4:
 			'Продолжайте открывать новых артистов и персонализировать свой профиль ещё больше.',
+		buildProfileThirdStepVisibilitySectionParagraph1: 'Выберите видимость своего профиля',
+		buildProfileThirdStepVisibilitySectionParagraph2:
+			'Определите, кто сможет находить и просматривать ваш профиль в Allify. Вы можете изменить этот параметр в любое время в настройках своей учетной записи.',
+		buildProfileThirdStepVisibilitySectionPublicOption: 'Публичный профиль',
+		buildProfileThirdStepVisibilitySectionPublicDescription:
+			'Другие пользователи смогут находить ваш профиль, просматривать общедоступную информацию и следить за вашей активностью на платформе.',
+		buildProfileThirdStepVisibilitySectionPrivateOption: 'Приватный профиль',
+		buildProfileThirdStepVisibilitySectionPrivateDescription:
+			'Ваш профиль будет скрыт от других пользователей. Только вы сможете просматривать всю информацию о своем профиле, пока не решите сделать его публичным.',
 		buildProfileNextStepButton: 'Продолжить',
 		buildProfileBackStepButton: 'Назад',
 		toastSuccessTitle: 'Успех',
