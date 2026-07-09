@@ -63,13 +63,13 @@
 
 {#if showBuildProfile}
 	<div
-		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-3 backdrop-blur-md transition-all sm:p-4"
+		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-5 backdrop-blur-md transition-all"
 	>
 		<div
 			class={`${currentStepIndex === 0 ? 'max-w-xl' : 'max-w-3xl'} relative flex max-h-[90vh] w-full flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl`}
 		>
 			<button
-				class="absolute top-3 right-3 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
+				class="absolute top-2 right-2 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
 				on:click={closeModal}
 				aria-label={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
 			>

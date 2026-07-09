@@ -105,6 +105,7 @@ export const es = {
 		buildProfileThirdStepVisibilitySectionPrivateOption: 'Perfil privado',
 		buildProfileThirdStepVisibilitySectionPrivateDescription:
 			'Tu perfil permanecerá oculto para otros usuarios. Solo tú podrás ver toda tu información hasta que decidas hacerlo público.',
+		buildProfileThirdStepVisibilitySectionParagraph3: 'Si no se selecciona ninguna opción, tu perfil será público por defecto. Puedes cambiar esta configuración en cualquier momento.',
 		buildProfileNextStepButton: 'Continuar',
 		buildProfileBackStepButton: 'Volver',
 		toastSuccessTitle: 'Éxito',
