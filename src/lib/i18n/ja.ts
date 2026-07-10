@@ -104,8 +104,11 @@ export const ja = {
 		buildProfileThirdStepVisibilitySectionPrivateDescription:
 			'あなたのプロフィールは他のユーザーには表示されません。公開することを選択するまでは、あなたのみがすべての情報を閲覧できます。',
 		buildProfileThirdStepVisibilitySectionParagraph3: 'オプションが選択されていない場合、デフォルトではプロフィールは公開されます。この設定はいつでも変更できます。',
+		buildProfileSaveBuiltUserSectionParagraph1: 'プロフィールを保存する',
+		buildProfileSaveBuiltUserSectionParagraph2: '保存する前に情報を確認してください。完了後は、いつでもプロフィールを編集できます。',
 		buildProfileNextStepButton: '続行',
 		buildProfileBackStepButton: '戻る',
+		buildProfileSaveProfileButton: 'プロフィールを保存',
 		toastSuccessTitle: '成功',
 		toastSuccessAltText: '成功アイコン',
 		toastWarningTitle: '警告',

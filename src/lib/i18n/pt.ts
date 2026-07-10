@@ -106,8 +106,11 @@ export const pt = {
 		buildProfileThirdStepVisibilitySectionPrivateDescription:
 			'Seu perfil ficará oculto para outros usuários. Apenas você poderá visualizar suas informações completas até decidir torná-lo público.',
 		buildProfileThirdStepVisibilitySectionParagraph3: 'Se nenhuma opção for selecionada, seu perfil será público por padrão. Você poderá alterar essa configuração a qualquer momento.',
+		buildProfileSaveBuiltUserSectionParagraph1: 'Salvar seu perfil',
+		buildProfileSaveBuiltUserSectionParagraph2: 'Revise as informações antes de salvar. Após a conclusão, você poderá editar seu perfil sempre que desejar.',
 		buildProfileNextStepButton: 'Continuar',
 		buildProfileBackStepButton: 'Voltar',
+		buildProfileSaveProfileButton: 'Salvar perfil',
 		toastSuccessTitle: 'Sucesso',
 		toastSuccessAltText: 'Ícone de sucesso',
 		toastWarningTitle: 'Atenção',
