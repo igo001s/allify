@@ -103,9 +103,11 @@ export const en = {
 		buildProfileThirdStepVisibilitySectionPrivateOption: 'Private profile',
 		buildProfileThirdStepVisibilitySectionPrivateDescription:
 			'Your profile will be hidden from other users. Only you will be able to view your complete information until you decide to make it public.',
-		buildProfileThirdStepVisibilitySectionParagraph3: 'If no option is selected, your profile will be public by default. You can change this setting at any time.',
+		buildProfileThirdStepVisibilitySectionParagraph3:
+			'If no option is selected, your profile will be public by default. You can change this setting at any time.',
 		buildProfileSaveBuiltUserSectionParagraph1: 'Save your profile',
-		buildProfileSaveBuiltUserSectionParagraph2: 'Review the information before saving. Once completed, you can edit your profile whenever you want.',
+		buildProfileSaveBuiltUserSectionParagraph2:
+			'Review the information before saving. Once completed, you can edit your profile whenever you want.',
 		buildProfileNextStepButton: 'Continue',
 		buildProfileBackStepButton: 'Back',
 		buildProfileSaveProfileButton: 'Save profile',

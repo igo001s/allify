@@ -102,10 +102,7 @@
 						bind:buildProfileVisibility={buildProfileData.profileVisibility}
 					/>
 				{:else if currentStepIndex === 4}
-					<SaveBuiltUserSection
-						{backToPreviousStep}
-						bind:buildProfileData={buildProfileData}
-					/>
+					<SaveBuiltUserSection {backToPreviousStep} {closeModal} bind:buildProfileData />
 				{/if}
 			</div>
 		</div>

@@ -97,6 +97,6 @@
 {/if}
 
 <!-- Build Profile -->
-{#if $userInfo}
+{#if $userInfo && !$userInfo?.artistOfTheMoment && !$userInfo?.trackOfTheMoment && $userInfo?.profileVisibility === 'public'}
 	<BuildProfileModal />
 {/if}

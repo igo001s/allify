@@ -105,9 +105,11 @@ export const ru = {
 		buildProfileThirdStepVisibilitySectionPrivateOption: 'Приватный профиль',
 		buildProfileThirdStepVisibilitySectionPrivateDescription:
 			'Ваш профиль будет скрыт от других пользователей. Только вы сможете просматривать всю информацию о своем профиле, пока не решите сделать его публичным.',
-		buildProfileThirdStepVisibilitySectionParagraph3: 'Если ни одна опция не выбрана, ваш профиль по умолчанию будет публичным. Вы можете изменить этот параметр в любое время.',
+		buildProfileThirdStepVisibilitySectionParagraph3:
+			'Если ни одна опция не выбрана, ваш профиль по умолчанию будет публичным. Вы можете изменить этот параметр в любое время.',
 		buildProfileSaveBuiltUserSectionParagraph1: 'Сохраните свой профиль',
-		buildProfileSaveBuiltUserSectionParagraph2: 'Проверьте информацию перед сохранением. После завершения вы сможете редактировать свой профиль в любое время.',
+		buildProfileSaveBuiltUserSectionParagraph2:
+			'Проверьте информацию перед сохранением. После завершения вы сможете редактировать свой профиль в любое время.',
 		buildProfileNextStepButton: 'Продолжить',
 		buildProfileBackStepButton: 'Назад',
 		buildProfileSaveProfileButton: 'Сохранить профиль',
