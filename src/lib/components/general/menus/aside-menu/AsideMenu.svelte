@@ -1,4 +1,7 @@
 <script lang="ts">
+	// Svelte
+	import { onMount, onDestroy } from 'svelte';
+	
 	// Assets
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
 	import AllifyLogoColorful from '$lib/assets/images/logos/AllifyLogoColorful.svelte';
@@ -15,7 +18,17 @@
 
 	function closeMenu() {
 		isAsideMenuOpen = false;
+
+		document.body.style.overflow = 'auto';
 	}
+
+	onMount(() => {
+		document.body.style.overflow = isAsideMenuOpen ? 'hidden' : 'auto';
+	});
+
+	onDestroy(() => {
+		document.body.style.overflow = 'auto';
+	});
 </script>
 
 <div
