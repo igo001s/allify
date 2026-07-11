@@ -31,11 +31,11 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		const foundUsers = await users
 			.find({
-				name: {
+				name: {	
 					$regex: user,
 					$options: 'i'
 				},
-				public: true
+				profileVisibility: 'public'
 			})
 			.toArray();
 
