@@ -45,3 +45,9 @@ export type SearchUserInfo = {
 };
 
 export type FavoriteUser = SearchUserInfo;
+
+export type buildProfileInfo = {
+	track: TrackSpotify | undefined;
+	artist: ArtistSpotify | undefined;
+	profileVisibility: 'public' | 'private' | undefined;
+};
