@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 export async function sendEmail(subject: string, email: string, message: string) {
 	try {
 		await fetch('/api/email/send-email', {
@@ -14,8 +17,8 @@ export async function sendEmail(subject: string, email: string, message: string)
 
 		return;
 	} catch (error) {
-		if (import.meta.env.DEV) {
-			console.error('Email error:', error instanceof Error ? error.message : String(error));
+		if (dev) {
+			console.error('Email error:', error);
 		}
 
 		return;

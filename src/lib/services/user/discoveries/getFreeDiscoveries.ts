@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 export async function getFreeDiscoveries(
 	email: string,
 	mostListenedArtists: string[],
@@ -35,10 +38,10 @@ export async function getFreeDiscoveries(
 			updatedAt: updateData.discoveries.updatedAt
 		};
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User getFreeDiscoveries error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

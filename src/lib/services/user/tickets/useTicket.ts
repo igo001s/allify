@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 export async function useTicket(email: string, tickets: number) {
 	try {
 		const response = await fetch('/api/mongodb/tickets/use-ticket', {
@@ -7,10 +10,10 @@ export async function useTicket(email: string, tickets: number) {
 
 		return response.json();
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User useTicket error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

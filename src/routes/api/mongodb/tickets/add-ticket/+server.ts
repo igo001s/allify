@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectDB } from '$lib/server/mongodb';
+import { connectToMongoDB, disconnectFromMongoDB } from '$lib/server/mongodb';
 
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
@@ -24,11 +24,11 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const client = await connectDB();
-		const db = client.db(MONGO_DB);
-		const users = db.collection('users');
+		const client = await connectToMongoDB();
+		const db = client?.db(MONGO_DB);
+		const users = db?.collection('users');
 
-		await users.updateOne(
+		await users?.updateOne(
 			{ email },
 			{
 				$inc: { tickets }
@@ -37,6 +37,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(JSON.stringify({ tickets: tickets + 1 }), { status: 200 });
 	} catch (error) {
-		return new Response(JSON.stringify({ error: (error as Error).message }), { status: 500 });
+		return new Response(JSON.stringify({ error }), { status: 500 });
+	} finally {
+		await disconnectFromMongoDB();
 	}
 };

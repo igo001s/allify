@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // Services
 import { useTicket } from '$lib/services/user/tickets/useTicket';
 import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListenedTracks';
@@ -42,10 +45,10 @@ export async function updateMostListenedTracks(email: string, limit: number, tic
 			tickets: responseUseTicket.tickets
 		};
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User updateMostListenedTracks error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

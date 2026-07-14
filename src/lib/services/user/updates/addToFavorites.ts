@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
@@ -40,10 +43,10 @@ export async function addToFavorites(
 
 		return data;
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User addToFavorites error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

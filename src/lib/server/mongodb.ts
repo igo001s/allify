@@ -1,15 +1,26 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // mongoDB
 import { MongoClient } from 'mongodb';
+
+// Environment variables
 import { MONGO_URI } from '$env/static/private';
 
-let client: MongoClient;
-let clientPromise: Promise<MongoClient>;
+const client = new MongoClient(MONGO_URI);
 
-export function connectDB() {
-	if (!clientPromise) {
-		client = new MongoClient(MONGO_URI);
-		clientPromise = client.connect();
+export async function connectToMongoDB() {
+	try {
+		await client.connect();
+
+		return client;
+	} catch (error) {
+		if (dev) {
+			console.error('Error connecting to MongoDB:', error);
+		}
 	}
+}
 
-	return clientPromise;
+export async function disconnectFromMongoDB() {
+	await client.close();
 }

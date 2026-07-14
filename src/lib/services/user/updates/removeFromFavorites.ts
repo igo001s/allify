@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
@@ -25,10 +28,10 @@ export async function removeFromFavorites(idToRemove: ObjectId, id: ObjectId) {
 
 		return data;
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User removeFromFavorites error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

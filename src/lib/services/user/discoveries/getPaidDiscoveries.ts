@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // Services
 import { useTicket } from '../tickets/useTicket';
 
@@ -45,10 +48,10 @@ export async function getPaidDiscoveries(
 			tickets: responseUseTicket.tickets
 		};
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User getPaidDiscoveries error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

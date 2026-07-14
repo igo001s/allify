@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 export async function getPublicUser(id: string) {
 	try {
 		const response = await fetch('/api/mongodb/user/get-public-user', {
@@ -12,10 +15,10 @@ export async function getPublicUser(id: string) {
 
 		return data.userFoundedById;
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User getPublicUser error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

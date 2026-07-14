@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 export async function searchUsers(user: string) {
 	try {
 		const response = await fetch('/api/mongodb/user/search-users', {
@@ -12,10 +15,10 @@ export async function searchUsers(user: string) {
 
 		return data.users;
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
-				'User getFreeDiscoveries error:',
-				error instanceof Error ? error.message : String(error)
+				'User searchUsers error:',
+				error
 			);
 		}
 

@@ -1,13 +1,16 @@
+// Svelte
+import { dev } from '$app/environment';
+
 export function signInSpotify() {
 	try {
 		window.location.href = `/api/spotify/auth/login`;
 
 		return;
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'Spotify sign-in error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 
