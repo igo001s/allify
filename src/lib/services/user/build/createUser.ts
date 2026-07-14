@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // Types
 import type { UserInfoSpotify } from '$lib/types/SpotifyData.type';
 
@@ -24,10 +27,10 @@ export async function createUser(
 
 		return responseData;
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User createUser error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

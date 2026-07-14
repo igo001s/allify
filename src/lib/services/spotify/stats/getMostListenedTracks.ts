@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // Types
 import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
@@ -47,10 +50,10 @@ export async function getMostListenedTracks(limit: number = 5) {
 			mostListenedTracksItems
 		};
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'Spotify getMostListenedTracks error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // Services
 import { getUserFromDatabase } from '../../user/build/getUserFromDatabase';
 
@@ -22,10 +25,10 @@ export async function existingSpotifyUser() {
 
 		return getUserInfoFromSpotify.userInfoFromMongoDB;
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'Spotify existingSpotifyUser error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

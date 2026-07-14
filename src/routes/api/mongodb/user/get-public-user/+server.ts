@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectDB } from '$lib/server/mongodb';
+import { connectToMongoDB, disconnectFromMongoDB } from '$lib/server/mongodb';
 
 // MongoDB
 import { ObjectId } from 'mongodb';
@@ -30,11 +30,11 @@ export const POST: RequestHandler = async ({ request }) => {
 			return new Response(JSON.stringify({ error: 'ID is required' }), { status: 400 });
 		}
 
-		const client = await connectDB();
-		const db = client.db(MONGO_DB);
-		const users = db.collection('users');
+		const client = await connectToMongoDB();
+		const db = client?.db(MONGO_DB);
+		const users = db?.collection('users');
 
-		const userFoundedById = await users.findOne({ _id: new ObjectId(id) });
+		const userFoundedById = await users?.findOne({ _id: new ObjectId(id) });
 
 		if (!userFoundedById) {
 			return new Response(JSON.stringify({ error: 'User not found' }), { status: 404 });
@@ -47,8 +47,10 @@ export const POST: RequestHandler = async ({ request }) => {
 			{ status: 200 }
 		);
 	} catch (error) {
-		return new Response(JSON.stringify({ error: (error as Error).message }), {
+		return new Response(JSON.stringify({ error }), {
 			status: 500
 		});
+	} finally {
+		await disconnectFromMongoDB();
 	}
 };

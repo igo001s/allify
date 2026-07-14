@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectDB } from '$lib/server/mongodb';
+import { connectToMongoDB, disconnectFromMongoDB } from '$lib/server/mongodb';
 
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
@@ -25,13 +25,13 @@ export const POST: RequestHandler = async ({ request }) => {
 			return new Response(JSON.stringify({ error: 'User is required' }), { status: 400 });
 		}
 
-		const client = await connectDB();
-		const db = client.db(MONGO_DB);
-		const users = db.collection('users');
+		const client = await connectToMongoDB();
+		const db = client?.db(MONGO_DB);
+		const users = db?.collection('users');
 
 		const foundUsers = await users
-			.find({
-				name: {	
+			?.find({
+				name: {
 					$regex: user,
 					$options: 'i'
 				},
@@ -59,8 +59,10 @@ export const POST: RequestHandler = async ({ request }) => {
 			{ status: 200 }
 		);
 	} catch (error) {
-		return new Response(JSON.stringify({ error: (error as Error).message }), {
+		return new Response(JSON.stringify({ error }), {
 			status: 500
 		});
+	} finally {
+		await disconnectFromMongoDB();
 	}
 };

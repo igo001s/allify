@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Svelte
 	import { onMount, onDestroy } from 'svelte';
-	
+
 	// Assets
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
 	import AllifyLogoColorful from '$lib/assets/images/logos/AllifyLogoColorful.svelte';

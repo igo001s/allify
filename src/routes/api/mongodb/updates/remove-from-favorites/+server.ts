@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectDB } from '$lib/server/mongodb';
+import { connectToMongoDB, disconnectFromMongoDB } from '$lib/server/mongodb';
 
 // Types
 import type { UserInfo } from '$lib/types/UserInfo.type';
@@ -33,11 +33,11 @@ export const POST: RequestHandler = async ({ request }) => {
 			});
 		}
 
-		const client = await connectDB();
-		const db = client.db(MONGO_DB);
-		const users = db.collection<UserInfo>('users');
+		const client = await connectToMongoDB();
+		const db = client?.db(MONGO_DB);
+		const users = db?.collection<UserInfo>('users');
 
-		const result = await users.updateOne(
+		const result = await users?.updateOne(
 			{ _id: new ObjectId(idToRemove) },
 			{
 				$pull: {
@@ -48,7 +48,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			}
 		);
 
-		if (result.modifiedCount === 0) {
+		if (result?.modifiedCount === 0) {
 			return new Response(
 				JSON.stringify({
 					error: 'Favorite not found'
@@ -72,11 +72,13 @@ export const POST: RequestHandler = async ({ request }) => {
 	} catch (error) {
 		return new Response(
 			JSON.stringify({
-				error: (error as Error).message
+				error
 			}),
 			{
 				status: 500
 			}
 		);
+	} finally {
+		await disconnectFromMongoDB();
 	}
 };

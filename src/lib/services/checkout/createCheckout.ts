@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 export async function createCheckout(quantity: number): Promise<void> {
 	try {
 		const response = await fetch('/api/checkout/tickets/create-checkout', {
@@ -31,8 +34,8 @@ export async function createCheckout(quantity: number): Promise<void> {
 
 		return;
 	} catch (error) {
-		if (import.meta.env.DEV) {
-			console.error('Checkout error:', error instanceof Error ? error.message : String(error));
+		if (dev) {
+			console.error('Checkout error:', error);
 		}
 
 		return;

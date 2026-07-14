@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 export async function getUserFromDatabase(email: string) {
 	try {
 		const getUserRequest = await fetch('/api/mongodb/user/get-user', {
@@ -8,10 +11,10 @@ export async function getUserFromDatabase(email: string) {
 
 		return await getUserRequest.json();
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User getUserFromDatabase error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

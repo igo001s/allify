@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectDB } from '$lib/server/mongodb';
+import { connectToMongoDB, disconnectFromMongoDB } from '$lib/server/mongodb';
 
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
@@ -25,11 +25,11 @@ export const POST: RequestHandler = async ({ request }) => {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
 		}
 
-		const client = await connectDB();
-		const db = client.db(MONGO_DB);
-		const users = db.collection('users');
+		const client = await connectToMongoDB();
+		const db = client?.db(MONGO_DB);
+		const users = db?.collection('users');
 
-		const existingUser = await users.findOne({ email: email });
+		const existingUser = await users?.findOne({ email: email });
 
 		if (existingUser) {
 			return new Response(JSON.stringify({ error: 'User already exists' }), { status: 409 });
@@ -44,7 +44,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			connectedStreamings: { [streaming]: streamingData }
 		};
 
-		const result = await users.insertOne({
+		const result = await users?.insertOne({
 			...user,
 			createdAt: new Date()
 		});
@@ -53,14 +53,16 @@ export const POST: RequestHandler = async ({ request }) => {
 			JSON.stringify({
 				createdUser: {
 					...user,
-					_id: result.insertedId
+					_id: result?.insertedId
 				}
 			}),
 			{ status: 201 }
 		);
 	} catch (error) {
-		return new Response(JSON.stringify({ error: (error as Error).message }), {
+		return new Response(JSON.stringify({ error }), {
 			status: 500
 		});
+	} finally {
+		await disconnectFromMongoDB();
 	}
 };

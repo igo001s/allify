@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // Types
 import type { buildProfileInfo } from '$lib/types/UserInfo.type';
 
@@ -22,10 +25,10 @@ export async function saveBuiltProfile(id: ObjectId, builtUser: buildProfileInfo
 
 		return responseData;
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User saveBuiltProfile error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 

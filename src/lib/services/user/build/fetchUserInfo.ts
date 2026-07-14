@@ -1,3 +1,6 @@
+// Svelte
+import { dev } from '$app/environment';
+
 // Services
 import { createUser } from './createUser';
 import { sendEmail } from '../../email/sendEmail';
@@ -39,10 +42,10 @@ export async function fetchUserInfo(emailMessage: string) {
 			return userFromSpotify;
 		}
 	} catch (error) {
-		if (import.meta.env.DEV) {
+		if (dev) {
 			console.error(
 				'User fetchUserInfo error:',
-				error instanceof Error ? error.message : String(error)
+				error
 			);
 		}
 
