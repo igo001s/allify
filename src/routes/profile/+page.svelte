@@ -7,6 +7,8 @@
 
 	//Components
 	import KeyInformation from '$lib/components/profile/KeyInformation.svelte';
+	import MusicOnProfile from '$lib/components/profile/MusicOnProfile.svelte';
+	import ArtistOnProfile from '$lib/components/profile/ArtistOnProfile.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -45,6 +47,12 @@
 				userInfo={selectedStreaming ? $userInfo.connectedStreamings.spotify : null}
 				tickets={$userInfo.tickets}
 			/>
+		</div>
+
+		<div class="mt-10 flex w-full flex-col">
+			<MusicOnProfile />
+
+			<ArtistOnProfile />
 		</div>
 	</section>
 {:else}
