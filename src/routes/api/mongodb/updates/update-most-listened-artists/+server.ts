@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectToMongoDB, disconnectFromMongoDB } from '$lib/server/mongodb';
+import { connectToMongoDB } from '$lib/server/mongodb';
 
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
@@ -58,7 +58,5 @@ export const POST: RequestHandler = async ({ request }) => {
 		return new Response(JSON.stringify({ error }), {
 			status: 500
 		});
-	} finally {
-		await disconnectFromMongoDB();
 	}
 };

@@ -18,9 +18,7 @@ export async function connectToMongoDB() {
 		if (dev) {
 			console.error('Error connecting to MongoDB:', error);
 		}
-	}
-}
 
-export async function disconnectFromMongoDB() {
-	await client.close();
+		return null;
+	}
 }
