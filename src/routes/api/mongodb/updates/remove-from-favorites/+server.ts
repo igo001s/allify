@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectToMongoDB, disconnectFromMongoDB } from '$lib/server/mongodb';
+import { connectToMongoDB } from '$lib/server/mongodb';
 
 // Types
 import type { UserInfo } from '$lib/types/UserInfo.type';
@@ -78,7 +78,5 @@ export const POST: RequestHandler = async ({ request }) => {
 				status: 500
 			}
 		);
-	} finally {
-		await disconnectFromMongoDB();
 	}
 };
