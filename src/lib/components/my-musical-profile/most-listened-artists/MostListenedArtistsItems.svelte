@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Components
 	import TopArtistItem from './TopArtistItem.svelte';
-	import ExternalLinkSpotify from '../../general/ExternalLinkSpotify.svelte';
+	import ExternalLink from '../../general/ExternalLink.svelte';
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import MoreMyMusicalProfileItems from '../MoreMyMusicalProfileItems.svelte';
 	import PossibleActionsMyMusicalProfile from '../PossibleActionsMyMusicalProfile.svelte';
@@ -80,7 +80,7 @@
 					<div class="col-span-2 flex w-full flex-col gap-2 lg:col-span-1 lg:w-70 lg:items-start">
 						<Popularity item={artist} />
 
-						<ExternalLinkSpotify
+						<ExternalLink
 							additionalClass="w-full mt-2"
 							streamingPlatform="spotify"
 							externalLink={artist.artistLink}

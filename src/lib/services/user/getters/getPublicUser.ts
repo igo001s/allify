@@ -16,10 +16,7 @@ export async function getPublicUser(id: string) {
 		return data.userFoundedById;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User getPublicUser error:',
-				error
-			);
+			console.error('User getPublicUser error:', error);
 		}
 
 		return;

@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Components
 	import TopTrackItem from './TopTrackItem.svelte';
-	import ExternalLink from '../../general/ExternalLinkSpotify.svelte';
+	import ExternalLink from '../../general/ExternalLink.svelte';
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import MoreMyMusicalProfileItems from '../MoreMyMusicalProfileItems.svelte';
 	import PossibleActionsMyMusicalProfile from '../PossibleActionsMyMusicalProfile.svelte';

@@ -43,10 +43,7 @@ export async function fetchUserInfo(emailMessage: string) {
 		}
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User fetchUserInfo error:',
-				error
-			);
+			console.error('User fetchUserInfo error:', error);
 		}
 
 		return undefined;

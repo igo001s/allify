@@ -12,10 +12,7 @@ export async function getUserFromDatabase(email: string) {
 		return await getUserRequest.json();
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User getUserFromDatabase error:',
-				error
-			);
+			console.error('User getUserFromDatabase error:', error);
 		}
 
 		return;

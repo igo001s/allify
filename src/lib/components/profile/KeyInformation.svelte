@@ -4,7 +4,7 @@
 	import PlusIcon from '$lib/assets/images/icons/PlusIcon.svelte';
 
 	// Components
-	import ExternalLink from '$lib/components/general/ExternalLinkSpotify.svelte';
+	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
 	import StreamingSelector from '../general/StreamingSelector.svelte';
 
 	// Stores
@@ -66,7 +66,7 @@
 		<div class="flex flex-col justify-center gap-2 text-t-primary">
 			<div class="mb-2 flex flex-col items-center gap-1 md:flex-row md:gap-8">
 				{#if userInfo.name}
-					<h1 class="mb-3 text-2xl font-semibold sm:text-3xl md:mb-0">
+					<h1 class="mb-3 text-3xl font-semibold sm:text-4xl md:mb-0">
 						{userInfo.name}
 					</h1>
 				{/if}

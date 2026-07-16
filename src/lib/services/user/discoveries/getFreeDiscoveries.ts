@@ -39,10 +39,7 @@ export async function getFreeDiscoveries(
 		};
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User getFreeDiscoveries error:',
-				error
-			);
+			console.error('User getFreeDiscoveries error:', error);
 		}
 
 		return;

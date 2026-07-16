@@ -49,10 +49,7 @@ export async function getPaidDiscoveries(
 		};
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User getPaidDiscoveries error:',
-				error
-			);
+			console.error('User getPaidDiscoveries error:', error);
 		}
 
 		return;

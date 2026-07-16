@@ -1,19 +1,19 @@
 <script lang="ts">
 	// Components
-	import MusicOnProfileItem from "./MusicOnProfileItem.svelte";
-    
+	import MusicOnProfileItem from './MusicOnProfileItem.svelte';
+
 	// Stores
-	import { userInfo } from "$lib/stores/userInfo.store";
+	import { userInfo } from '$lib/stores/userInfo.store';
 </script>
 
-<div>
-    <h2>Music</h2>
+<section class="space-y-6">
+	<h2 class="text-2xl font-semibold text-t-primary">Music</h2>
 
-	<div class="flex flex-col gap-4 lg:flex-row lg:gap-8">
-		{#each [{ trackItem: $userInfo?.trackOfTheMoment, type: 'trackOfTheMoment' }, { trackItem: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem, type: 'mostListenedTrackItem' }] as {trackItem, type}}
-			{#if trackItem && type}
+	<div class="flex w-full gap-10">
+		{#each [{ trackItem: $userInfo?.trackOfTheMoment, type: 'trackOfTheMoment' }, { trackItem: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem, type: 'mostListenedTrackItem' }] as { trackItem, type }}
+			{#if trackItem}
 				<MusicOnProfileItem trackItem={{ track: trackItem, type }} />
 			{/if}
 		{/each}
 	</div>
-</div>
+</section>

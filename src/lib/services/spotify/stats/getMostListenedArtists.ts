@@ -51,10 +51,7 @@ export async function getMostListenedArtists(limit: number = 5) {
 		};
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'Spotify getMostListenedArtists error:',
-				error
-			);
+			console.error('Spotify getMostListenedArtists error:', error);
 		}
 
 		return undefined;

@@ -49,7 +49,7 @@
 			/>
 		</div>
 
-		<div class="mt-10 flex w-full flex-col">
+		<div class="mt-10 flex w-full flex-col gap-8 lg:gap-14">
 			<MusicOnProfile />
 
 			<ArtistOnProfile />

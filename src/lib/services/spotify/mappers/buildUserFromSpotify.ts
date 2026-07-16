@@ -34,10 +34,7 @@ export async function buildUserFromSpotify(infoFromSpotify: any) {
 		return dataFromSpotify;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'Spotify buildUserFromSpotify error:',
-				error
-			);
+			console.error('Spotify buildUserFromSpotify error:', error);
 		}
 
 		return undefined;
