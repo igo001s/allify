@@ -26,10 +26,7 @@ export async function saveBuiltProfile(id: ObjectId, builtUser: buildProfileInfo
 		return responseData;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User saveBuiltProfile error:',
-				error
-			);
+			console.error('User saveBuiltProfile error:', error);
 		}
 
 		return;

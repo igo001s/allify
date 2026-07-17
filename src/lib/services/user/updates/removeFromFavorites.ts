@@ -29,10 +29,7 @@ export async function removeFromFavorites(idToRemove: ObjectId, id: ObjectId) {
 		return data;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User removeFromFavorites error:',
-				error
-			);
+			console.error('User removeFromFavorites error:', error);
 		}
 
 		return null;

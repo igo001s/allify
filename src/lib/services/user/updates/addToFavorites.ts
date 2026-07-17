@@ -44,10 +44,7 @@ export async function addToFavorites(
 		return data;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User addToFavorites error:',
-				error
-			);
+			console.error('User addToFavorites error:', error);
 		}
 
 		return null;

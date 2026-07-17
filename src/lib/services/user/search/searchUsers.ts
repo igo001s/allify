@@ -16,10 +16,7 @@ export async function searchUsers(user: string) {
 		return data.users;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User searchUsers error:',
-				error
-			);
+			console.error('User searchUsers error:', error);
 		}
 
 		return;

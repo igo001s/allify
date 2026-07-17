@@ -3,7 +3,7 @@
 	import CrownIcon from '$lib/assets/images/icons/CrownIcon.svelte';
 
 	// Components
-	import ExternalLink from '../../general/ExternalLinkSpotify.svelte';
+	import ExternalLink from '../../general/ExternalLink.svelte';
 	import Popularity from '$lib/components/general/Popularity.svelte';
 
 	// Stores

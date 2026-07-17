@@ -11,10 +11,7 @@ export async function logoutSpotify() {
 		return;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'Spotify logout error:',
-				error
-			);
+			console.error('Spotify logout error:', error);
 		}
 
 		return;

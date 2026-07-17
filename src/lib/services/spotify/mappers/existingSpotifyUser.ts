@@ -26,10 +26,7 @@ export async function existingSpotifyUser() {
 		return getUserInfoFromSpotify.userInfoFromMongoDB;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'Spotify existingSpotifyUser error:',
-				error
-			);
+			console.error('Spotify existingSpotifyUser error:', error);
 		}
 
 		return undefined;

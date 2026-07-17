@@ -11,10 +11,7 @@ export async function useTicket(email: string, tickets: number) {
 		return response.json();
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User useTicket error:',
-				error
-			);
+			console.error('User useTicket error:', error);
 		}
 
 		return;

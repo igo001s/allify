@@ -51,10 +51,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 		};
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'Spotify getMostListenedTracks error:',
-				error
-			);
+			console.error('Spotify getMostListenedTracks error:', error);
 		}
 
 		return undefined;

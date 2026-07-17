@@ -249,7 +249,14 @@ export const it = {
 		profilePageFollowers: 'follower',
 		profilePageAddTicketsAltText: 'Aggiungi biglietti',
 		profilePageExternalLinkSpotify: 'Visualizza il profilo su Spotify',
-		profilePageExternalLinkDeezer: 'Visualizza il profilo su Deezer'
+		profilePageExternalLinkDeezer: 'Visualizza il profilo su Deezer',
+		profilePageYourSongsOnProfileHeading2: 'Le tue canzoni',
+		profilePageYourSongsOnProfileHeading3v1: 'Brano più ascoltato',
+		profilePageYourSongsOnProfileHeading3v2: 'Brano del momento',
+		profilePageYourArtistsOnProfileHeading2: 'I tuoi artisti',
+		profilePageYourArtistsOnProfileHeading3v1: 'Artista più ascoltato',
+		profilePageYourArtistsOnProfileHeading3v2: 'Artista del momento',
+		profilePageYourArtistsOnProfileFollowers: 'follower'
 	},
 	settingsPage: {
 		title: 'Impostazioni | Allify',

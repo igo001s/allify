@@ -46,10 +46,7 @@ export async function updateMostListenedArtists(email: string, limit: number, ti
 		};
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User updateMostListenedArtists error:',
-				error
-			);
+			console.error('User updateMostListenedArtists error:', error);
 		}
 
 		return;

@@ -8,10 +8,7 @@ export function signInSpotify() {
 		return;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'Spotify sign-in error:',
-				error
-			);
+			console.error('Spotify sign-in error:', error);
 		}
 
 		return;

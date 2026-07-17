@@ -28,10 +28,7 @@ export async function createUser(
 		return responseData;
 	} catch (error) {
 		if (dev) {
-			console.error(
-				'User createUser error:',
-				error
-			);
+			console.error('User createUser error:', error);
 		}
 
 		return;
