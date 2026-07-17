@@ -3,6 +3,9 @@
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import ExternalLink from '../general/ExternalLink.svelte';
 
+	// Stores
+	import { translationsStore } from '$lib/stores/translations.store';
+
 	// Types
 	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
@@ -15,7 +18,9 @@
 
 <div class="flex w-2/6 flex-col gap-4">
 	<h3 class="text-xs font-semibold tracking-[0.18em] text-t-secondary uppercase">
-		{artistItem.type === 'artistOfTheMoment' ? 'Artist of the Moment' : 'Most Listened Artist'}
+		{artistItem.type === 'mostListenedArtist'
+			? $translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v1
+			: $translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v2}
 	</h3>
 
 	<div
@@ -26,8 +31,8 @@
 				src={artistItem.artist.image.url}
 				alt={artistItem.artist.name}
 				class="h-40 w-40 shrink-0 self-center rounded-lg object-cover md:h-44 md:w-44 md:self-start"
-				loading="eager"
-				fetchpriority="high"
+				loading="lazy"
+				fetchpriority="low"
 			/>
 		{/if}
 
@@ -41,7 +46,8 @@
 
 				{#if artistItem.artist.followers}
 					<p class="text-xs text-t-secondary">
-						{artistItem.artist.followers.toLocaleString()} followers
+						{artistItem.artist.followers.toLocaleString()}
+						{$translationsStore.profilePage.profilePageYourArtistsOnProfileFollowers}
 					</p>
 				{/if}
 
@@ -57,9 +63,9 @@
 
 						{#if artistItem.artist.genres?.length > 3}
 							<span
-								class="rounded-full border border-brand-primary/15 bg-brand-primary/8 px-3 py-1 text-[9px] font-medium text-brand-primary"
+								class="rounded-full border border-brand-primary/15 bg-brand-primary/8 px-3 py-1 text-[10px] font-medium text-brand-primary"
 							>
-								+{artistItem.artist.genres?.length - 3} more
+								+{artistItem.artist.genres?.length - 3}
 							</span>
 						{/if}
 					</div>
@@ -72,8 +78,7 @@
 				{#if artistItem.artist.artistLink}
 					<ExternalLink
 						externalLink={artistItem.artist.artistLink}
-						externalLinkText="Open on Spotify"
-						additionalClass="md:w-auto"
+						externalLinkText={$translationsStore.generalTexts.seeOnSpotify}
 					/>
 				{/if}
 			</div>

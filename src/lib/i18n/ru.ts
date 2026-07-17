@@ -247,7 +247,14 @@ export const ru = {
 		profilePageFollowers: 'подписчики',
 		profilePageAddTicketsAltText: 'Добавить билеты',
 		profilePageExternalLinkSpotify: 'Открыть профиль в Spotify',
-		profilePageExternalLinkDeezer: 'Открыть профиль в Deezer'
+		profilePageExternalLinkDeezer: 'Открыть профиль в Deezer',
+		profilePageYourSongsOnProfileHeading2: 'Ваши песни',
+		profilePageYourSongsOnProfileHeading3v1: 'Самая прослушиваемая песня',
+		profilePageYourSongsOnProfileHeading3v2: 'Песня момента',
+		profilePageYourArtistsOnProfileHeading2: 'Ваши исполнители',
+		profilePageYourArtistsOnProfileHeading3v1: 'Самый прослушиваемый исполнитель',
+		profilePageYourArtistsOnProfileHeading3v2: 'Исполнитель момента',
+		profilePageYourArtistsOnProfileFollowers: 'подписчиков'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

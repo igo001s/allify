@@ -229,7 +229,14 @@ export const zh = {
 		profilePageFollowers: '关注者',
 		profilePageAddTicketsAltText: '添加门票',
 		profilePageExternalLinkSpotify: '在 Spotify 上查看个人资料',
-		profilePageExternalLinkDeezer: '在 Deezer 上查看个人资料'
+		profilePageExternalLinkDeezer: '在 Deezer 上查看个人资料',
+		profilePageYourSongsOnProfileHeading2: '您的歌曲',
+		profilePageYourSongsOnProfileHeading3v1: '最常听的曲目',
+		profilePageYourSongsOnProfileHeading3v2: '当下的音乐',
+		profilePageYourArtistsOnProfileHeading2: '您的艺人',
+		profilePageYourArtistsOnProfileHeading3v1: '最常听的艺人',
+		profilePageYourArtistsOnProfileHeading3v2: '当下的艺人',
+		profilePageYourArtistsOnProfileFollowers: '关注者'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

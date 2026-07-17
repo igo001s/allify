@@ -242,7 +242,14 @@ export const ja = {
 		profilePageFollowers: 'フォロワー',
 		profilePageAddTicketsAltText: 'チケットを追加',
 		profilePageExternalLinkSpotify: 'Spotifyでプロフィールを見る',
-		profilePageExternalLinkDeezer: 'Deezerでプロフィールを見る'
+		profilePageExternalLinkDeezer: 'Deezerでプロフィールを見る',
+		profilePageYourSongsOnProfileHeading2: 'あなたの曲',
+		profilePageYourSongsOnProfileHeading3v1: '最もよく聴く曲',
+		profilePageYourSongsOnProfileHeading3v2: '今の曲',
+		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
+		profilePageYourArtistsOnProfileHeading3v1: '最もよく聴くアーティスト',
+		profilePageYourArtistsOnProfileHeading3v2: '今のアーティスト',
+		profilePageYourArtistsOnProfileFollowers: 'フォロワー'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

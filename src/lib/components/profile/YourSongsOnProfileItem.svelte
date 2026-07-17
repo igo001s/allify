@@ -3,6 +3,9 @@
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import ExternalLink from '../general/ExternalLink.svelte';
 
+	// Stores
+	import { translationsStore } from '$lib/stores/translations.store';
+
 	// Types
 	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
@@ -15,7 +18,9 @@
 
 <div class="flex w-2/6 flex-col gap-4">
 	<h3 class="text-xs font-semibold tracking-[0.18em] text-t-secondary uppercase">
-		{trackItem.type === 'trackOfTheMoment' ? 'Music of the Moment' : 'Most Listened Track'}
+		{trackItem.type === 'mostListenedTrack'
+			? $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v1
+			: $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v2}
 	</h3>
 
 	<div
@@ -58,8 +63,7 @@
 				{#if trackItem.track.trackLink}
 					<ExternalLink
 						externalLink={trackItem.track.trackLink}
-						externalLinkText="Listen on Spotify"
-						additionalClass="md:w-auto"
+						externalLinkText={$translationsStore.generalTexts.seeOnSpotify}
 					/>
 				{/if}
 			</div>

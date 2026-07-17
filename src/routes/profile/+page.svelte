@@ -7,8 +7,8 @@
 
 	//Components
 	import KeyInformation from '$lib/components/profile/KeyInformation.svelte';
-	import MusicOnProfile from '$lib/components/profile/MusicOnProfile.svelte';
-	import ArtistOnProfile from '$lib/components/profile/ArtistOnProfile.svelte';
+	import YourSongsOnProfile from '$lib/components/profile/YourSongsOnProfile.svelte';
+	import YourArtistsOnProfile from '$lib/components/profile/YourArtistsOnProfile.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -50,9 +50,9 @@
 		</div>
 
 		<div class="mt-10 flex w-full flex-col gap-8 lg:gap-14">
-			<MusicOnProfile />
+			<YourSongsOnProfile />
 
-			<ArtistOnProfile />
+			<YourArtistsOnProfile />
 		</div>
 	</section>
 {:else}
