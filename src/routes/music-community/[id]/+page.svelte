@@ -9,6 +9,19 @@
 	// Services
 	import { getPublicUser } from '$lib/services/user/getters/getPublicUser';
 
+	// Schema
+	import { getPublicUserJsonLd } from '$lib/utils/getSchemaInfo';
+
+	$: jsonLd = getPublicUserJsonLd(
+		$page.params.id ?? '',
+		user?.name ?? $page.params.id,
+		$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserMetaDescription.replace(
+			'{userName}',
+			user?.name ?? $page.params.id
+		),
+		$translationsStore.configuration.langAttribute
+	);
+
 	let user: any;
 
 	onMount(async () => {
@@ -25,6 +38,8 @@
 </script>
 
 <svelte:head>
+	<!-- Schema.org -->
+	{@html `<script type="application/ld+json">${jsonLd}</script>`}
 	<!-- General -->
 	<title
 		>{$translationsStore.musicCommunityPage.publicUser.title.replace(
@@ -39,10 +54,10 @@
 			user?.name || $page.params.id
 		)}
 	/>
-	<link rel="canonical" href={`https://allify.app${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta
 		property="og:title"
 		content={$translationsStore.musicCommunityPage.publicUser.title.replace(
@@ -58,7 +73,7 @@
 		)}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta
 		name="twitter:title"
 		content={$translationsStore.musicCommunityPage.publicUser.title.replace(

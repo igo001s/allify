@@ -10,54 +10,32 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Types
+	import type { Locale } from '$lib/types/Schema.type';
+
 	// Schema
-	import { getSchemaInfo } from '$lib/utils/getSchemaInfo';
+	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
-	const schema = getSchemaInfo('homePage');
-	$: locale = $translationsStore.configuration.langAttribute as keyof typeof schema.description;
-
-	$: jsonLd = {
-		'@context': schema.context,
-		'@type': schema.type,
-		name: schema.name,
-		url: schema.url,
-		description: schema.description[locale] ?? schema.description['en'],
-		applicationCategory: schema.applicationCategory,
-		applicationSubCategory: schema.applicationSubCategory,
-		operatingSystem: schema.operatingSystem,
-		inLanguage: schema.inLanguage,
-		featureList: schema.featureList[locale] ?? schema.featureList['en'],
-		offers: schema.offers.map((o) => ({
-			'@type': o.type,
-			price: o.price,
-			priceCurrency: o.priceCurrency,
-			description: o.description[locale] ?? o.description['en']
-		})),
-		publisher: {
-			'@type': schema.publisher.type,
-			name: schema.publisher.name,
-			url: schema.publisher.url
-		}
-	};
+	$: jsonLd = getJsonLdByPage('homePage', $translationsStore.language as Locale);
 </script>
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
+	{@html `<script type="application/ld+json">${jsonLd}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.homePage.title}</title>
 	<meta name="description" content={$translationsStore.homePage.homePageMetaDescription} />
-	<link rel="canonical" href={`https://allify.app${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta property="og:title" content={$translationsStore.homePage.title} />
 	<meta
 		property="og:description"
 		content={$translationsStore.homePage.homePageMetaOgAndTwitterContent}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta name="twitter:title" content={$translationsStore.homePage.title} />
 	<meta
 		name="twitter:description"
