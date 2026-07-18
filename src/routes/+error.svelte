@@ -32,10 +32,10 @@
 			? $translationsStore.errorPage.errorPage404MetaDescription
 			: $translationsStore.errorPage.errorPageOtherErrorsMetaDescription}
 	/>
-	<link rel="canonical" href={`https://allify.app${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta
 		property="og:title"
 		content={status === 404
@@ -49,7 +49,7 @@
 			: $translationsStore.errorPage.errorPageOtherErrorsMetaOgAndTwitterContent}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta
 		name="twitter:title"
 		content={status === 404

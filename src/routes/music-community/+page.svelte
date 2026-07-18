@@ -19,6 +19,12 @@
 
 	// Types
 	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
+	import type { Locale } from '$lib/types/Schema.type';
+
+	// Schema
+	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+
+	$: jsonLd = getJsonLdByPage('musicCommunityPage', $translationsStore.language as Locale);
 
 	let searchUserInputValue: string = '';
 	let loadingFoundedUsers = false;
@@ -45,23 +51,25 @@
 </script>
 
 <svelte:head>
+	<!-- Schema.org -->
+	{@html `<script type="application/ld+json">${jsonLd}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.musicCommunityPage.title}</title>
 	<meta
 		name="description"
 		content={$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription}
 	/>
-	<link rel="canonical" href={`https://allify.app${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta property="og:title" content={$translationsStore.musicCommunityPage.title} />
 	<meta
 		property="og:description"
 		content={$translationsStore.musicCommunityPage.musicCommunityPageMetaOgAndTwitterContent}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta name="twitter:title" content={$translationsStore.musicCommunityPage.title} />
 	<meta
 		name="twitter:description"

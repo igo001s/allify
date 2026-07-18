@@ -2,8 +2,8 @@
 import { ALLIFY_URL } from '$env/static/private';
 
 export const GET = () => {
-    return new Response(
-        `# Allify
+	return new Response(
+		`# Allify
 
 > Canonical: ${ALLIFY_URL}
 
@@ -101,5 +101,5 @@ Avoid treating user-generated profile pages as canonical documentation for the p
 - User profiles are based on data imported from connected streaming services.
 - Public profile visibility depends on each user's privacy settings.
 - Please use canonical URLs when referencing pages.`
-    )
-}
+	);
+};

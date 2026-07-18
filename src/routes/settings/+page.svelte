@@ -9,23 +9,33 @@
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
+
+	// Types
+	import type { Locale } from '$lib/types/Schema.type';
+
+	// Schema
+	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+
+	$: jsonLd = getJsonLdByPage('settingsPage', $translationsStore.language as Locale);
 </script>
 
 <svelte:head>
+	<!-- Schema.org -->
+	{@html `<script type="application/ld+json">${jsonLd}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.settingsPage.title}</title>
 	<meta name="description" content={$translationsStore.settingsPage.settingsPageMetaDescription} />
-	<link rel="canonical" href={`https://allify.app${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta property="og:title" content={$translationsStore.settingsPage.title} />
 	<meta
 		property="og:description"
 		content={$translationsStore.settingsPage.settingsPageMetaOgAndTwitterContent}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify.app${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
 	<meta name="twitter:title" content={$translationsStore.settingsPage.title} />
 	<meta
 		name="twitter:description"

@@ -51,7 +51,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
                         style="line-height: 0;"
                     >
                         <img
-                            src="https://allify-sv.netlify.app/email-images/allify-logo.png"
+                            src="https://allify-sv.netlify.app/public-logo/allify-logo.png"
                             alt="${$translationsStore.templateEmail.allifyLogoAltText}"
                             style="
                                 height: 38px;
