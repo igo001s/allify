@@ -69,6 +69,8 @@ export const ja = {
 		notLoggedLoginLinkDeezer: 'Deezerでログイン',
 		loginWith: 'でログイン',
 		seeOnSpotify: 'Spotifyで見る',
+		seeMusicOnSpotify: 'Spotifyで音楽を見る',
+		seeArtistOnSpotify: 'Spotifyでアーティストを見る',
 		popularity: '人気度',
 		ticketAltText: 'チケットアイコン',
 		ticket: 'チケット',

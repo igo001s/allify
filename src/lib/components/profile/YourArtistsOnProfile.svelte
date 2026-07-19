@@ -12,7 +12,7 @@
 		{$translationsStore.profilePage.profilePageYourArtistsOnProfileHeading2}
 	</h2>
 
-	<div class="flex w-full gap-10">
+	<div class="flex flex-col gap-8 xl:flex-row">
 		{#each [{ artistItem: $userInfo?.artistOfTheMoment, type: 'artistOfTheMoment' }, { artistItem: $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistItem, type: 'mostListenedArtist' }] as { artistItem, type }}
 			{#if artistItem}
 				<YourArtistOnProfileItem artistItem={{ artist: artistItem, type }} />

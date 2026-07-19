@@ -70,6 +70,8 @@ export const ru = {
 		notLoggedLoginLinkDeezer: 'Войти через Deezer',
 		loginWith: 'Войти через ',
 		seeOnSpotify: 'Открыть в Spotify',
+		seeMusicOnSpotify: 'Открыть музыку в Spotify',
+		seeArtistOnSpotify: 'Открыть исполнителя в Spotify',
 		popularity: 'Популярность',
 		ticketAltText: 'Иконка билета',
 		ticket: 'Билет',

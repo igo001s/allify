@@ -8,7 +8,7 @@
 </script>
 
 <footer class="bg-s-inverse">
-	<div class="px-8 py-12 sm:px-12 2xl:px-24">
+	<div class="px-8 py-12 sm:px-12 2xl:px-20">
 		<div
 			class="
 				grid
