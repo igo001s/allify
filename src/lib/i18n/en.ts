@@ -268,7 +268,10 @@ export const en = {
 			'Manage your streaming integrations, view which accounts are active, and disconnect whenever you want.',
 		settingsPageConnectedStreamingNotConnected: 'Not connected',
 		settingsPageConnectedStreamingDisconnect: 'Disconnect',
-		settingsPageConnectedStreamingConnect: 'Connect'
+		settingsPageConnectedStreamingConnect: 'Connect',
+		settingsPageProfileVisibilityHeading2: 'Profile visibility',
+		settingsPageProfileVisibilityParagraph1: 'Manage your profile visibility, choose between public or private, and change this setting anytime.'
+
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify Tickets',

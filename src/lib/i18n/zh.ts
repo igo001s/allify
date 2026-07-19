@@ -252,7 +252,10 @@ export const zh = {
 			'管理您与流媒体平台的连接，查看哪些账户处于活跃状态，随时断开连接。',
 		settingsPageConnectedStreamingNotConnected: '未连接',
 		settingsPageConnectedStreamingDisconnect: '断开连接',
-		settingsPageConnectedStreamingConnect: '连接'
+		settingsPageConnectedStreamingConnect: '连接',
+		settingsPageProfileVisibilityHeading2: '个人资料可见性',
+		settingsPageProfileVisibilityParagraph1:
+			'管理您的个人资料可见性，在公开或私人之间进行选择，并随时更改此设置。'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify 门票',

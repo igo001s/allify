@@ -59,7 +59,7 @@
 			/>
 		</div>
 
-		<div class="mt-10 flex w-full flex-col gap-8 lg:gap-14">
+		<div class="mt-14 flex w-full flex-col gap-8 lg:gap-14">
 			<YourSongsOnProfile />
 
 			<YourArtistsOnProfile />

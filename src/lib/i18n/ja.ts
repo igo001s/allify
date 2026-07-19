@@ -265,7 +265,10 @@ export const ja = {
 			'ストリーミングプラットフォームとの接続を管理し、アクティブなアカウントを確認し、いつでも切断できます。',
 		settingsPageConnectedStreamingNotConnected: '未接続',
 		settingsPageConnectedStreamingDisconnect: '切断',
-		settingsPageConnectedStreamingConnect: '接続'
+		settingsPageConnectedStreamingConnect: '接続',
+		settingsPageProfileVisibilityHeading2: 'プロフィールの公開設定',
+		settingsPageProfileVisibilityParagraph1:
+			'Allifyであなたのプロフィールを見つけたり閲覧したりできるユーザーを設定します。この設定はアカウント設定からいつでも変更できます。',
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allifyチケット',
