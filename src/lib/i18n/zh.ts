@@ -64,6 +64,8 @@ export const zh = {
 		notLoggedLoginLinkDeezer: '通过 Deezer 登录',
 		loginWith: '登录方式：',
 		seeOnSpotify: '在 Spotify 上查看',
+		seeMusicOnSpotify: '在 Spotify 上查看音乐',
+		seeArtistOnSpotify: '在 Spotify 上查看艺人',
 		popularity: '热度',
 		ticketAltText: '票券图标',
 		ticket: '票券',

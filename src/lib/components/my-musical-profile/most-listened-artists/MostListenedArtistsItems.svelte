@@ -84,7 +84,7 @@
 							additionalClass="w-full mt-2"
 							streamingPlatform="spotify"
 							externalLink={artist.artistLink}
-							externalLinkText={$translationsStore.generalTexts.seeOnSpotify}
+							externalLinkText={$translationsStore.generalTexts.seeArtistOnSpotify}
 						/>
 					</div>
 				</div>

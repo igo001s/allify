@@ -70,6 +70,8 @@ export const pt = {
 		notLoggedLoginLinkDeezer: 'Fazer login com Deezer',
 		loginWith: 'Faça login com ',
 		seeOnSpotify: 'Ver no Spotify',
+		seeMusicOnSpotify: 'Ver música no Spotify',
+		seeArtistOnSpotify: 'Ver artista no Spotify',
 		popularity: 'Popularidade',
 		ticketAltText: 'Ícone de ticket',
 		ticket: 'Ticket',

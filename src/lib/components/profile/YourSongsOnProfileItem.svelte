@@ -62,7 +62,7 @@
 				{#if trackItem.track.trackLink}
 					<ExternalLink
 						externalLink={trackItem.track.trackLink}
-						externalLinkText={$translationsStore.generalTexts.seeOnSpotify}
+						externalLinkText={$translationsStore.generalTexts.seeMusicOnSpotify}
 					/>
 				{/if}
 			</div>

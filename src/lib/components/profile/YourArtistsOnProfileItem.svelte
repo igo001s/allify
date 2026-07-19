@@ -78,7 +78,7 @@
 				{#if artistItem.artist.artistLink}
 					<ExternalLink
 						externalLink={artistItem.artist.artistLink}
-						externalLinkText={$translationsStore.generalTexts.seeOnSpotify}
+						externalLinkText={$translationsStore.generalTexts.seeArtistOnSpotify}
 					/>
 				{/if}
 			</div>
