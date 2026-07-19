@@ -270,7 +270,9 @@ export const ru = {
 			'Управляйте подключениями к стриминговым платформам, просматривайте активные аккаунты и отключайтесь в любой момент.',
 		settingsPageConnectedStreamingNotConnected: 'Не подключено',
 		settingsPageConnectedStreamingDisconnect: 'Отключить',
-		settingsPageConnectedStreamingConnect: 'Подключить'
+		settingsPageConnectedStreamingConnect: 'Подключить',
+		settingsPageProfileVisibilityHeading2: 'Видимость профиля',
+		settingsPageProfileVisibilityParagraph1: 'Управляйте видимостью своего профиля, выбирайте между публичным или приватным и изменяйте эту настройку в любое время.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Билеты Allify',

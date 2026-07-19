@@ -274,7 +274,9 @@ export const fr = {
 			'Gérez vos connexions aux plateformes de streaming, voyez quels comptes sont actifs et déconnectez-vous quand vous le souhaitez.',
 		settingsPageConnectedStreamingNotConnected: 'Non connecté',
 		settingsPageConnectedStreamingDisconnect: 'Déconnecter',
-		settingsPageConnectedStreamingConnect: 'Connecter'
+		settingsPageConnectedStreamingConnect: 'Connecter',
+		settingsPageProfileVisibilityHeading2: 'Visibilité du profil',
+		settingsPageProfileVisibilityParagraph1: 'Gérez la visibilité de votre profil, choisissez entre public ou privé et modifiez ce paramètre à tout moment.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Tickets Allify',

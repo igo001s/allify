@@ -3,8 +3,9 @@
 	import { page } from '$app/stores';
 
 	// Components
-	import ConnectedPlatforms from '$lib/components/settings/connected-platforms/ConnectedPlatforms.svelte';
+	import ConnectedPlatforms from '$lib/components/settings/ConnectedPlatforms.svelte';
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
+	import ChangeVisibility from '$lib/components/settings/ChangeVisibility.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -47,7 +48,11 @@
 	<section class="base-section settings-page">
 		<h1 class="mb-10">{$translationsStore.settingsPage.settingsPageHeading1}</h1>
 
-		<ConnectedPlatforms />
+		<div class="flex flex-col items-start gap-14">
+			<ConnectedPlatforms />
+
+			<ChangeVisibility />
+		</div>
 	</section>
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedSettingsParagraph1} />

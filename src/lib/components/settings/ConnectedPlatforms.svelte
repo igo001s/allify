@@ -7,7 +7,7 @@
 	import DeezerIcon from '$lib/assets/images/icons/streamings/DeezerIcon.svelte';
 
 	// Components
-	import ConnectedPlatform from '$lib/components/settings/connected-platforms/ConnectedPlatformItem.svelte';
+	import ConnectedPlatform from '$lib/components/settings/ConnectedPlatformItem.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
