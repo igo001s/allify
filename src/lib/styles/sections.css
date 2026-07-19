@@ -1,5 +1,5 @@
 .base-section {
-	@apply px-8 pt-12 pb-20 sm:px-12 lg:pt-22 lg:pb-30 2xl:px-24;
+	@apply px-8 pt-12 pb-20 sm:px-12 lg:pt-22 lg:pb-30 2xl:px-20;
 }
 
 .base-section.core-page h1 {

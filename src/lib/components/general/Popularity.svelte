@@ -6,7 +6,7 @@
 	export let item: any;
 </script>
 
-<div class="flex w-full items-center justify-between">
+<div class="flex w-full items-center justify-between gap-2">
 	<span class="w-fit text-xs text-t-secondary">
 		{$translationsStore.generalTexts.popularity}
 	</span>
