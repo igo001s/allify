@@ -269,6 +269,11 @@ export const ja = {
 		settingsPageProfileVisibilityHeading2: 'プロフィールの公開設定',
 		settingsPageProfileVisibilityParagraph1:
 			'Allifyであなたのプロフィールを見つけたり閲覧したりできるユーザーを設定します。この設定はアカウント設定からいつでも変更できます。',
+		settingsPageProfileVisibilityPublicOption: '公開プロフィール',
+		settingsPageProfileVisibilityPrivateOption: '非公開プロフィール',
+		settingsPageProfileVisibilityPublicDescription: 'あなたのプロフィールは誰でも閲覧でき、プロフィールリンクを共有できます。',
+		settingsPageProfileVisibilityPrivateDescription: 'あなたのプロフィールは他のユーザーには表示されず、自分だけがアクセスできます。',
+		settingsPageProfileVisibilityChangeAgainMessage: '<strong>x時間</strong>後にプロフィールの公開設定を再度変更できます。',
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allifyチケット',

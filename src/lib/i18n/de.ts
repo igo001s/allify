@@ -272,7 +272,12 @@ export const de = {
 		settingsPageConnectedStreamingDisconnect: 'Trennen',
 		settingsPageConnectedStreamingConnect: 'Verbinden',
 		settingsPageProfileVisibilityHeading2: 'Profil-Sichtbarkeit',
-		settingsPageProfileVisibilityParagraph1: 'Verwalte die Sichtbarkeit deines Profils, wähle zwischen öffentlich oder privat und ändere diese Einstellung jederzeit.'
+		settingsPageProfileVisibilityParagraph1: 'Verwalte die Sichtbarkeit deines Profils, wähle zwischen öffentlich oder privat und ändere diese Einstellung jederzeit.',
+		settingsPageProfileVisibilityPublicOption: 'Öffentliches Profil',
+		settingsPageProfileVisibilityPrivateOption: 'Privates Profil',
+		settingsPageProfileVisibilityPublicDescription: 'Dein Profil ist für alle sichtbar und kann über deinen Profil-Link geteilt werden.',
+		settingsPageProfileVisibilityPrivateDescription: 'Dein Profil ist für andere Nutzer verborgen und nur für dich zugänglich.',
+		settingsPageProfileVisibilityChangeAgainMessage: 'Du kannst die Sichtbarkeit deines Profils in <strong>x Stunden</strong> erneut ändern.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify Tickets',

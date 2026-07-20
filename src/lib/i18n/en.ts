@@ -270,7 +270,12 @@ export const en = {
 		settingsPageConnectedStreamingDisconnect: 'Disconnect',
 		settingsPageConnectedStreamingConnect: 'Connect',
 		settingsPageProfileVisibilityHeading2: 'Profile visibility',
-		settingsPageProfileVisibilityParagraph1: 'Manage your profile visibility, choose between public or private, and change this setting anytime.'
+		settingsPageProfileVisibilityParagraph1: 'Manage your profile visibility, choose between public or private, and change this setting anytime.',
+		settingsPageProfileVisibilityPublicOption: 'Public profile',
+		settingsPageProfileVisibilityPrivateOption: 'Private profile',
+		settingsPageProfileVisibilityPublicDescription: 'Your profile is visible to everyone and can be shared using your profile link.',
+		settingsPageProfileVisibilityPrivateDescription: 'Your profile is hidden from other users and only accessible by you.',
+		settingsPageProfileVisibilityChangeAgainMessage: 'You can change your profile visibility again in <strong>x hours</strong>.'
 
 	},
 	addTickets: {
