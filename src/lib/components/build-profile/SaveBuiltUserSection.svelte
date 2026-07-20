@@ -16,6 +16,10 @@
 
 	async function handleSaveBuiltProfile() {
 		if ($userInfo?._id) {
+			if (buildProfileData.profileVisibility === undefined) {
+				buildProfileData.profileVisibility = 'public';
+			}
+
 			const response = await saveBuiltProfile($userInfo._id, buildProfileData);
 
 			userInfo.update((currentUserInfo) => {

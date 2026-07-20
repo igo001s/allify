@@ -14,7 +14,10 @@
 
 			return {
 				...user,
-				profileVisibility: option
+				profileVisibility: {
+					visibility: option,
+					updatedAt: new Date()
+				}
 			};
 		});
 	}

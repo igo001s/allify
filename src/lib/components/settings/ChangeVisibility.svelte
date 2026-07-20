@@ -16,5 +16,5 @@
         {$translationsStore.settingsPage.settingsPageProfileVisibilityParagraph1}
 	</p>
 
-	<ChangeVisibilityToggle visibility={$userInfo?.profileVisibility ?? 'public'} />
+	<ChangeVisibilityToggle visibility={$userInfo?.profileVisibility?.visibility ?? 'public'} />
 </div>

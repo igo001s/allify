@@ -39,7 +39,9 @@ export const POST: RequestHandler = async ({ request }) => {
 			name: name,
 			email: email,
 			tickets: 5,
-			profileVisibility: 'public',
+			profileVisibility: {
+				visibility: 'public',
+			},
 			primaryStreaming: streaming,
 			connectedStreamings: { [streaming]: streamingData }
 		};

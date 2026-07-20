@@ -43,7 +43,9 @@ export const POST: RequestHandler = async ({ request }) => {
 				$set: {
 					trackOfTheMoment: builtUser.track,
 					artistOfTheMoment: builtUser.artist,
-					profileVisibility: builtUser.profileVisibility
+					profileVisibility: {
+						visibility: builtUser.profileVisibility,
+					}
 				}
 			}
 		);
@@ -53,7 +55,9 @@ export const POST: RequestHandler = async ({ request }) => {
 				builtUser: {
 					trackOfTheMoment: builtUser.track,
 					artistOfTheMoment: builtUser.artist,
-					profileVisibility: builtUser.profileVisibility
+					profileVisibility: {
+						visibility: builtUser.profileVisibility,
+					}
 				}
 			}),
 			{
