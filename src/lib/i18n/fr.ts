@@ -276,7 +276,12 @@ export const fr = {
 		settingsPageConnectedStreamingDisconnect: 'Déconnecter',
 		settingsPageConnectedStreamingConnect: 'Connecter',
 		settingsPageProfileVisibilityHeading2: 'Visibilité du profil',
-		settingsPageProfileVisibilityParagraph1: 'Gérez la visibilité de votre profil, choisissez entre public ou privé et modifiez ce paramètre à tout moment.'
+		settingsPageProfileVisibilityParagraph1: 'Gérez la visibilité de votre profil, choisissez entre public ou privé et modifiez ce paramètre à tout moment.',
+		settingsPageProfileVisibilityPublicOption: 'Profil public',
+		settingsPageProfileVisibilityPrivateOption: 'Profil privé',
+		settingsPageProfileVisibilityPublicDescription: 'Votre profil est visible par tous et peut être partagé via le lien de votre profil.',
+		settingsPageProfileVisibilityPrivateDescription: 'Votre profil est masqué pour les autres utilisateurs et n’est accessible que par vous.',
+		settingsPageProfileVisibilityChangeAgainMessage: 'Vous pouvez modifier la visibilité de votre profil à nouveau dans <strong>x heures</strong>.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Tickets Allify',

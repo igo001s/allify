@@ -255,7 +255,12 @@ export const zh = {
 		settingsPageConnectedStreamingConnect: '连接',
 		settingsPageProfileVisibilityHeading2: '个人资料可见性',
 		settingsPageProfileVisibilityParagraph1:
-			'管理您的个人资料可见性，在公开或私人之间进行选择，并随时更改此设置。'
+			'管理您的个人资料可见性，在公开或私人之间进行选择，并随时更改此设置。',
+		settingsPageProfileVisibilityPublicOption: '公开资料',
+		settingsPageProfileVisibilityPrivateOption: '私密资料',
+		settingsPageProfileVisibilityPublicDescription: '所有人都可以查看您的个人资料，并可通过您的个人资料链接进行分享。',
+		settingsPageProfileVisibilityPrivateDescription: '您的个人资料对其他用户隐藏，仅您本人可以访问。',
+		settingsPageProfileVisibilityChangeAgainMessage: '您可以在<strong>x小时</strong>后再次更改个人资料可见性。',
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify 门票',

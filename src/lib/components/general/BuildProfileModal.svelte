@@ -24,7 +24,7 @@
 	export let currentStepIndex: number =
 		!$userInfo?.trackOfTheMoment &&
 		!$userInfo?.artistOfTheMoment &&
-		$userInfo?.profileVisibility === 'public'
+		$userInfo?.profileVisibility?.visibility === 'public'
 			? 0
 			: 1;
 
