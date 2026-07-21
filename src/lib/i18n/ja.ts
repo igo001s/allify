@@ -248,10 +248,14 @@ export const ja = {
 		profilePageYourSongsOnProfileHeading2: 'あなたの曲',
 		profilePageYourSongsOnProfileHeading3v1: '最もよく聴く曲',
 		profilePageYourSongsOnProfileHeading3v2: '今の曲',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '現在の楽曲を編集するボタン',
+		profilePageYourSongsOnProfileEditMusicIconAltText: '現在の楽曲を編集するアイコン',
 		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
 		profilePageYourArtistsOnProfileHeading3v1: '最もよく聴くアーティスト',
 		profilePageYourArtistsOnProfileHeading3v2: '今のアーティスト',
-		profilePageYourArtistsOnProfileFollowers: 'フォロワー'
+		profilePageYourArtistsOnProfileFollowers: 'フォロワー',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '現在のアーティストを編集するボタン',
+		profilePageYourArtistsOnProfileEditArtistIconAltText: '現在のアーティストを編集するアイコン'
 	},
 	settingsPage: {
 		title: '設定 | Allify',
@@ -271,9 +275,12 @@ export const ja = {
 			'Allifyであなたのプロフィールを見つけたり閲覧したりできるユーザーを設定します。この設定はアカウント設定からいつでも変更できます。',
 		settingsPageProfileVisibilityPublicOption: '公開プロフィール',
 		settingsPageProfileVisibilityPrivateOption: '非公開プロフィール',
-		settingsPageProfileVisibilityPublicDescription: 'あなたのプロフィールは誰でも閲覧でき、プロフィールリンクを共有できます。',
-		settingsPageProfileVisibilityPrivateDescription: 'あなたのプロフィールは他のユーザーには表示されず、自分だけがアクセスできます。',
-		settingsPageProfileVisibilityChangeAgainMessage: '<strong>x時間</strong>後にプロフィールの公開設定を再度変更できます。',
+		settingsPageProfileVisibilityPublicDescription:
+			'あなたのプロフィールは誰でも閲覧でき、プロフィールリンクを共有できます。',
+		settingsPageProfileVisibilityPrivateDescription:
+			'あなたのプロフィールは他のユーザーには表示されず、自分だけがアクセスできます。',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'<strong>x時間</strong>後にプロフィールの公開設定を再度変更できます。'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allifyチケット',

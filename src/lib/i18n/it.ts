@@ -255,10 +255,17 @@ export const it = {
 		profilePageYourSongsOnProfileHeading2: 'Le tue canzoni',
 		profilePageYourSongsOnProfileHeading3v1: 'Brano più ascoltato',
 		profilePageYourSongsOnProfileHeading3v2: 'Brano del momento',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
+			'Pulsante per modificare il brano del momento',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Icona per modificare il brano del momento',
 		profilePageYourArtistsOnProfileHeading2: 'I tuoi artisti',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista più ascoltato',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista del momento',
-		profilePageYourArtistsOnProfileFollowers: 'follower'
+		profilePageYourArtistsOnProfileFollowers: 'follower',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+			'Pulsante per modificare l’artista del momento',
+		profilePageYourArtistsOnProfileEditArtistIconAltText:
+			'Icona per modificare l’artista del momento'
 	},
 	settingsPage: {
 		title: 'Impostazioni | Allify',
@@ -274,12 +281,16 @@ export const it = {
 		settingsPageConnectedStreamingDisconnect: 'Disconnetti',
 		settingsPageConnectedStreamingConnect: 'Connetti',
 		settingsPageProfileVisibilityHeading2: 'Visibilità del profilo',
-		settingsPageProfileVisibilityParagraph1: 'Gestisci la visibilità del tuo profilo, scegli tra pubblico o privato e modifica questa impostazione in qualsiasi momento.',
+		settingsPageProfileVisibilityParagraph1:
+			'Gestisci la visibilità del tuo profilo, scegli tra pubblico o privato e modifica questa impostazione in qualsiasi momento.',
 		settingsPageProfileVisibilityPublicOption: 'Profilo pubblico',
 		settingsPageProfileVisibilityPrivateOption: 'Profilo privato',
-		settingsPageProfileVisibilityPublicDescription: 'Il tuo profilo è visibile a tutti e può essere condiviso tramite il link del tuo profilo.',
-		settingsPageProfileVisibilityPrivateDescription: 'Il tuo profilo è nascosto agli altri utenti ed è accessibile solo da te.',
-		settingsPageProfileVisibilityChangeAgainMessage: 'Puoi modificare la visibilità del tuo profilo di nuovo tra <strong>x ore</strong>.'
+		settingsPageProfileVisibilityPublicDescription:
+			'Il tuo profilo è visibile a tutti e può essere condiviso tramite il link del tuo profilo.',
+		settingsPageProfileVisibilityPrivateDescription:
+			'Il tuo profilo è nascosto agli altri utenti ed è accessibile solo da te.',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'Puoi modificare la visibilità del tuo profilo di nuovo tra <strong>x ore</strong>.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify Tickets',
