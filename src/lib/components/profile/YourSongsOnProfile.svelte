@@ -7,8 +7,11 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	const songsItems = [
-		{ trackItem: $userInfo?.trackOfTheMoment, type: 'trackOfTheMoment' },
-		{ trackItem: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem, type: 'mostListenedTrack' }
+		{
+			trackItem: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem,
+			type: 'mostListenedTrack'
+		},
+		{ trackItem: $userInfo?.trackOfTheMoment, type: 'trackOfTheMoment' }
 	];
 </script>
 

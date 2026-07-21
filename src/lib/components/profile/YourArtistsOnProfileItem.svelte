@@ -1,4 +1,7 @@
 <script lang="ts">
+	// Assets
+	import EditArtistIcon from '$lib/assets/images/icons/EditArtistIcon.svelte';
+
 	// Components
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import ExternalLink from '../general/ExternalLink.svelte';
@@ -24,8 +27,22 @@
 	</h3>
 
 	<div
-		class="flex flex-col gap-6 rounded-xl border border-b-default p-5 shadow-xl transition-all duration-300 md:flex-row lg:p-6"
+		class="relative flex flex-col gap-6 rounded-xl border border-b-default p-5 shadow-xl transition-all duration-300 md:flex-row lg:p-6"
 	>
+		{#if artistItem.type === 'artistOfTheMoment'}
+			<button
+				class="absolute top-5 right-5 cursor-pointer text-t-primary transition-all hover:scale-105 hover:text-brand-primary"
+				aria-label={$translationsStore.profilePage
+					.profilePageYourArtistsOnProfileEditArtistIconAriaLabel}
+			>
+				<EditArtistIcon
+					iconSvgClass="h-6 w-6"
+					iconAltText={$translationsStore.profilePage
+						.profilePageYourArtistsOnProfileEditArtistIconAltText}
+				/>
+			</button>
+		{/if}
+
 		{#if artistItem.artist.image?.url}
 			<img
 				src={artistItem.artist.image.url}

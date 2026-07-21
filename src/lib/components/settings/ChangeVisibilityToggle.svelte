@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
-    import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Props
 	export let visibility: 'public' | 'private';
@@ -23,9 +23,9 @@
 	}
 </script>
 
-<div class="flex flex-col gap-3 w-full">
+<div class="flex w-full flex-col gap-3">
 	<div
-		class="flex w-full flex-col gap-3 rounded-xl border border-brand-primary/20 bg-background-secondary p-3 max-w-xl sm:flex-row sm:gap-4"
+		class="bg-background-secondary flex w-full max-w-xl flex-col gap-3 rounded-xl border border-brand-primary/20 p-3 sm:flex-row sm:gap-4"
 	>
 		{#each visibilityOptions as option}
 			<button
@@ -45,16 +45,16 @@
 	</div>
 
 	<div class="flex flex-col gap-5">
-        <p class="text-sm leading-relaxed text-t-secondary">
-            {#if visibility === 'public'}
-                {$translationsStore.settingsPage.settingsPageProfileVisibilityPublicDescription}
-            {:else}
-                {$translationsStore.settingsPage.settingsPageProfileVisibilityPrivateDescription}
-            {/if}
-        </p>
+		<p class="text-sm leading-relaxed text-t-secondary">
+			{#if visibility === 'public'}
+				{$translationsStore.settingsPage.settingsPageProfileVisibilityPublicDescription}
+			{:else}
+				{$translationsStore.settingsPage.settingsPageProfileVisibilityPrivateDescription}
+			{/if}
+		</p>
 
-        <span class="text-xs text-t-secondary/70">
-            {@html $translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainMessage}
-        </span>
-    </div>
+		<span class="text-xs text-t-secondary/70">
+			{@html $translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainMessage}
+		</span>
+	</div>
 </div>

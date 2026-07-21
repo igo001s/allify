@@ -7,7 +7,11 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	const artistItems = [
-		{ artistItem: $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistItem, type: 'mostListenedArtist' },
+		{
+			artistItem:
+				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistItem,
+			type: 'mostListenedArtist'
+		},
 		{ artistItem: $userInfo?.artistOfTheMoment, type: 'artistOfTheMoment' }
 	];
 </script>

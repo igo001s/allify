@@ -1,4 +1,7 @@
 <script lang="ts">
+	// Assets
+	import EditMusicIcon from '$lib/assets/images/icons/EditMusicIcon.svelte';
+
 	// Components
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import ExternalLink from '../general/ExternalLink.svelte';
@@ -23,8 +26,22 @@
 	</h3>
 
 	<div
-		class="flex flex-col gap-6 rounded-xl border border-b-default p-5 shadow-xl transition-all duration-300 md:flex-row lg:p-6"
+		class="relative flex flex-col gap-6 rounded-xl border border-b-default p-5 shadow-xl transition-all duration-300 md:flex-row lg:p-6"
 	>
+		{#if trackItem.type === 'trackOfTheMoment'}
+			<button
+				class="absolute top-5 right-5 cursor-pointer text-t-primary transition-all hover:scale-105 hover:text-brand-primary"
+				aria-label={$translationsStore.profilePage
+					.profilePageYourSongsOnProfileEditMusicIconAriaLabel}
+			>
+				<EditMusicIcon
+					iconSvgClass="h-6 w-6"
+					iconAltText={$translationsStore.profilePage
+						.profilePageYourSongsOnProfileEditMusicIconAltText}
+				/>
+			</button>
+		{/if}
+
 		{#if trackItem.track.image?.url}
 			<img
 				src={trackItem.track.image.url}

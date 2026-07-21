@@ -253,10 +253,16 @@ export const ru = {
 		profilePageYourSongsOnProfileHeading2: 'Ваши песни',
 		profilePageYourSongsOnProfileHeading3v1: 'Самая прослушиваемая песня',
 		profilePageYourSongsOnProfileHeading3v2: 'Песня момента',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Кнопка для редактирования текущей песни',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Значок редактирования текущей песни',
 		profilePageYourArtistsOnProfileHeading2: 'Ваши исполнители',
 		profilePageYourArtistsOnProfileHeading3v1: 'Самый прослушиваемый исполнитель',
 		profilePageYourArtistsOnProfileHeading3v2: 'Исполнитель момента',
-		profilePageYourArtistsOnProfileFollowers: 'подписчиков'
+		profilePageYourArtistsOnProfileFollowers: 'подписчиков',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+			'Кнопка для редактирования текущего исполнителя',
+		profilePageYourArtistsOnProfileEditArtistIconAltText:
+			'Значок редактирования текущего исполнителя'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',
@@ -272,12 +278,16 @@ export const ru = {
 		settingsPageConnectedStreamingDisconnect: 'Отключить',
 		settingsPageConnectedStreamingConnect: 'Подключить',
 		settingsPageProfileVisibilityHeading2: 'Видимость профиля',
-		settingsPageProfileVisibilityParagraph1: 'Управляйте видимостью своего профиля, выбирайте между публичным или приватным и изменяйте эту настройку в любое время.',
+		settingsPageProfileVisibilityParagraph1:
+			'Управляйте видимостью своего профиля, выбирайте между публичным или приватным и изменяйте эту настройку в любое время.',
 		settingsPageProfileVisibilityPublicOption: 'Публичный профиль',
 		settingsPageProfileVisibilityPrivateOption: 'Приватный профиль',
-		settingsPageProfileVisibilityPublicDescription: 'Ваш профиль виден всем и может быть доступен по ссылке на профиль.',
-		settingsPageProfileVisibilityPrivateDescription: 'Ваш профиль скрыт от других пользователей и доступен только вам.',
-		settingsPageProfileVisibilityChangeAgainMessage: 'Вы сможете снова изменить видимость профиля через <strong>x часов</strong>.',
+		settingsPageProfileVisibilityPublicDescription:
+			'Ваш профиль виден всем и может быть доступен по ссылке на профиль.',
+		settingsPageProfileVisibilityPrivateDescription:
+			'Ваш профиль скрыт от других пользователей и доступен только вам.',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'Вы сможете снова изменить видимость профиля через <strong>x часов</strong>.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Билеты Allify',

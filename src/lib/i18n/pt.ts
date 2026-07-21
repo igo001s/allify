@@ -252,10 +252,14 @@ export const pt = {
 		profilePageYourSongsOnProfileHeading2: 'Suas músicas',
 		profilePageYourSongsOnProfileHeading3v1: 'Música mais ouvida',
 		profilePageYourSongsOnProfileHeading3v2: 'Música do momento',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Botão para editar música do momento',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Ícone de editar música do momento',
 		profilePageYourArtistsOnProfileHeading2: 'Seus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista mais ouvido',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista do momento',
-		profilePageYourArtistsOnProfileFollowers: 'seguidores'
+		profilePageYourArtistsOnProfileFollowers: 'seguidores',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Botão para editar artista do momento',
+		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Ícone de editar artista do momento'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',
@@ -275,9 +279,12 @@ export const pt = {
 			'Gerencie a visibilidade do seu perfil, escolha entre público ou privado e altere essa configuração sempre que desejar.',
 		settingsPageProfileVisibilityPublicOption: 'Perfil público',
 		settingsPageProfileVisibilityPrivateOption: 'Perfil privado',
-		settingsPageProfileVisibilityPublicDescription: 'Seu perfil é visível para todos e pode ser compartilhado usando o link do seu perfil.',
-		settingsPageProfileVisibilityPrivateDescription: 'Seu perfil está oculto para outros usuários e só é acessível por você.',
-		settingsPageProfileVisibilityChangeAgainMessage: 'Você pode alterar a visibilidade do seu perfil novamente em <strong>x horas</strong>.'
+		settingsPageProfileVisibilityPublicDescription:
+			'Seu perfil é visível para todos e pode ser compartilhado usando o link do seu perfil.',
+		settingsPageProfileVisibilityPrivateDescription:
+			'Seu perfil está oculto para outros usuários e só é acessível por você.',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'Você pode alterar a visibilidade do seu perfil novamente em <strong>x horas</strong>.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify Tickets',

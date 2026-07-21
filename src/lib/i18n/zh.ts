@@ -235,10 +235,14 @@ export const zh = {
 		profilePageYourSongsOnProfileHeading2: '您的歌曲',
 		profilePageYourSongsOnProfileHeading3v1: '最常听的曲目',
 		profilePageYourSongsOnProfileHeading3v2: '当下的音乐',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '编辑当前歌曲按钮',
+		profilePageYourSongsOnProfileEditMusicIconAltText: '编辑当前歌曲图标',
 		profilePageYourArtistsOnProfileHeading2: '您的艺人',
 		profilePageYourArtistsOnProfileHeading3v1: '最常听的艺人',
 		profilePageYourArtistsOnProfileHeading3v2: '当下的艺人',
-		profilePageYourArtistsOnProfileFollowers: '关注者'
+		profilePageYourArtistsOnProfileFollowers: '关注者',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '编辑当前艺人按钮',
+		profilePageYourArtistsOnProfileEditArtistIconAltText: '编辑当前艺人图标'
 	},
 	settingsPage: {
 		title: '设置 | Allify',
@@ -258,9 +262,12 @@ export const zh = {
 			'管理您的个人资料可见性，在公开或私人之间进行选择，并随时更改此设置。',
 		settingsPageProfileVisibilityPublicOption: '公开资料',
 		settingsPageProfileVisibilityPrivateOption: '私密资料',
-		settingsPageProfileVisibilityPublicDescription: '所有人都可以查看您的个人资料，并可通过您的个人资料链接进行分享。',
-		settingsPageProfileVisibilityPrivateDescription: '您的个人资料对其他用户隐藏，仅您本人可以访问。',
-		settingsPageProfileVisibilityChangeAgainMessage: '您可以在<strong>x小时</strong>后再次更改个人资料可见性。',
+		settingsPageProfileVisibilityPublicDescription:
+			'所有人都可以查看您的个人资料，并可通过您的个人资料链接进行分享。',
+		settingsPageProfileVisibilityPrivateDescription:
+			'您的个人资料对其他用户隐藏，仅您本人可以访问。',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'您可以在<strong>x小时</strong>后再次更改个人资料可见性。'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify 门票',

@@ -251,10 +251,14 @@ export const en = {
 		profilePageYourSongsOnProfileHeading2: 'Your Songs',
 		profilePageYourSongsOnProfileHeading3v1: 'Most Listened Track',
 		profilePageYourSongsOnProfileHeading3v2: 'Music of the Moment',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Button to edit current song',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Current song edit icon',
 		profilePageYourArtistsOnProfileHeading2: 'Your Artists',
 		profilePageYourArtistsOnProfileHeading3v1: 'Most Listened Artist',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artist of the Moment',
-		profilePageYourArtistsOnProfileFollowers: 'followers'
+		profilePageYourArtistsOnProfileFollowers: 'followers',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Button to edit current artist',
+		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Current artist edit icon'
 	},
 	settingsPage: {
 		title: 'Settings | Allify',
@@ -270,13 +274,16 @@ export const en = {
 		settingsPageConnectedStreamingDisconnect: 'Disconnect',
 		settingsPageConnectedStreamingConnect: 'Connect',
 		settingsPageProfileVisibilityHeading2: 'Profile visibility',
-		settingsPageProfileVisibilityParagraph1: 'Manage your profile visibility, choose between public or private, and change this setting anytime.',
+		settingsPageProfileVisibilityParagraph1:
+			'Manage your profile visibility, choose between public or private, and change this setting anytime.',
 		settingsPageProfileVisibilityPublicOption: 'Public profile',
 		settingsPageProfileVisibilityPrivateOption: 'Private profile',
-		settingsPageProfileVisibilityPublicDescription: 'Your profile is visible to everyone and can be shared using your profile link.',
-		settingsPageProfileVisibilityPrivateDescription: 'Your profile is hidden from other users and only accessible by you.',
-		settingsPageProfileVisibilityChangeAgainMessage: 'You can change your profile visibility again in <strong>x hours</strong>.'
-
+		settingsPageProfileVisibilityPublicDescription:
+			'Your profile is visible to everyone and can be shared using your profile link.',
+		settingsPageProfileVisibilityPrivateDescription:
+			'Your profile is hidden from other users and only accessible by you.',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'You can change your profile visibility again in <strong>x hours</strong>.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify Tickets',
