@@ -3,20 +3,27 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Services
+	import { changeVisibility } from '$lib/services/user/updates/changeVisibility';
+
 	// Props
 	export let visibility: 'public' | 'private';
 
 	const visibilityOptions: Array<'public' | 'private'> = ['public', 'private'];
 
-	function handleVisibilityChange(option: 'public' | 'private') {
+	async function handleVisibilityChange(option: 'public' | 'private') {
+		if (!option || !$userInfo?._id) return;
+
+		const { visibility, updatedAt } = await changeVisibility($userInfo?._id, option);
+
 		userInfo.update((user) => {
 			if (!user) return user;
 
 			return {
 				...user,
 				profileVisibility: {
-					visibility: option,
-					updatedAt: new Date()
+					visibility,
+					updatedAt
 				}
 			};
 		});
