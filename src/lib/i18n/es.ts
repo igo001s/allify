@@ -285,8 +285,12 @@ export const es = {
 			'Tu perfil es visible para todos y puede compartirse usando el enlace de tu perfil.',
 		settingsPageProfileVisibilityPrivateDescription:
 			'Tu perfil está oculto para otros usuarios y solo es accesible por ti.',
-		settingsPageProfileVisibilityChangeAgainMessage:
-			'Puedes cambiar la visibilidad de tu perfil nuevamente en <strong>x horas</strong>.'
+		settingsPageProfileVisibilityChangeAgainSingularMessage:
+			'Podrás cambiar la visibilidad de tu perfil nuevamente en <strong>{hours} hora</strong>.',
+		settingsPageProfileVisibilityChangeAgainPluralMessage:
+			'Podrás cambiar la visibilidad de tu perfil nuevamente en <strong>{hours} horas</strong>.',
+		settingsPageProfileVisibilityChangeAgainAvailableMessage:
+			'Puedes cambiar la visibilidad de tu perfil nuevamente ahora.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Tickets de Allify',
