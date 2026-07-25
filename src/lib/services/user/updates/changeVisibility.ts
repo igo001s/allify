@@ -4,7 +4,11 @@ import { dev } from '$app/environment';
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
-export async function changeVisibility(id: ObjectId, profileVisibility: string, remainingHours: number) {
+export async function changeVisibility(
+	id: ObjectId,
+	profileVisibility: string,
+	remainingHours: number
+) {
 	try {
 		if (!id || !profileVisibility) return;
 

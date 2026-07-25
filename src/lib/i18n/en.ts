@@ -286,7 +286,8 @@ export const en = {
 			'You can change your profile visibility again in <strong>{hours} hour</strong>.',
 		settingsPageProfileVisibilityChangeAgainPluralMessage:
 			'You can change your profile visibility again in <strong>{hours} hours</strong>.',
-		settingsPageProfileVisibilityChangeAgainAvailableMessage: 'You can change your profile visibility again now.'
+		settingsPageProfileVisibilityChangeAgainAvailableMessage:
+			'You can change your profile visibility again now.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify Tickets',

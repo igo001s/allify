@@ -15,10 +15,7 @@
 		return Math.max(
 			0,
 			Math.ceil(
-				(new Date(updatedAt).getTime() +
-					6 * 60 * 60 * 1000 -
-					Date.now()) /
-					(60 * 60 * 1000)
+				(new Date(updatedAt).getTime() + 6 * 60 * 60 * 1000 - Date.now()) / (60 * 60 * 1000)
 			)
 		);
 	}
@@ -31,10 +28,8 @@
 
 	$: changeAgainMessage =
 		remainingHours === 1
-			? $translationsStore.settingsPage
-					.settingsPageProfileVisibilityChangeAgainSingularMessage
-			: $translationsStore.settingsPage
-					.settingsPageProfileVisibilityChangeAgainPluralMessage;
+			? $translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainSingularMessage
+			: $translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainPluralMessage;
 
 	async function handleVisibilityChange(option: 'public' | 'private') {
 		if (!option || !$userInfo?._id || !canChangeVisibility) return;

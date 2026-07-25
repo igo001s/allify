@@ -270,7 +270,7 @@ export const zh = {
 			'您可以在<strong>{hours}小时</strong>后再次更改您的个人资料可见性。',
 		settingsPageProfileVisibilityChangeAgainPluralMessage:
 			'您可以在<strong>{hours}小时</strong>后再次更改您的个人资料可见性。',
-		settingsPageProfileVisibilityChangeAgainAvailableMessage: '您可以随时更改您的个人资料可见性。',
+		settingsPageProfileVisibilityChangeAgainAvailableMessage: '您可以随时更改您的个人资料可见性。'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify 门票',

@@ -290,7 +290,8 @@ export const ru = {
 			'Вы сможете снова изменить видимость своего профиля через <strong>{hours} час</strong>.',
 		settingsPageProfileVisibilityChangeAgainPluralMessage:
 			'Вы сможете снова изменить видимость своего профиля через <strong>{hours} часов</strong>.',
-		settingsPageProfileVisibilityChangeAgainAvailableMessage: 'Вы можете снова изменить видимость своего профиля в любое время.',
+		settingsPageProfileVisibilityChangeAgainAvailableMessage:
+			'Вы можете снова изменить видимость своего профиля в любое время.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Билеты Allify',

@@ -283,7 +283,8 @@ export const ja = {
 			'<strong>{hours}時間</strong>後にプロフィールの公開設定を再度変更できます。',
 		settingsPageProfileVisibilityChangeAgainPluralMessage:
 			'<strong>{hours}時間</strong>後にプロフィールの公開設定を再度変更できます。',
-		settingsPageProfileVisibilityChangeAgainAvailableMessage: 'プロフィールの公開設定を再度変更できます。',
+		settingsPageProfileVisibilityChangeAgainAvailableMessage:
+			'プロフィールの公開設定を再度変更できます。'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allifyチケット',

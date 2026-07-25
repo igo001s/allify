@@ -289,7 +289,8 @@ export const es = {
 			'Podrás cambiar la visibilidad de tu perfil nuevamente en <strong>{hours} hora</strong>.',
 		settingsPageProfileVisibilityChangeAgainPluralMessage:
 			'Podrás cambiar la visibilidad de tu perfil nuevamente en <strong>{hours} horas</strong>.',
-		settingsPageProfileVisibilityChangeAgainAvailableMessage: 'Puedes cambiar la visibilidad de tu perfil nuevamente ahora.'
+		settingsPageProfileVisibilityChangeAgainAvailableMessage:
+			'Puedes cambiar la visibilidad de tu perfil nuevamente ahora.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Tickets de Allify',

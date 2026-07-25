@@ -27,9 +27,12 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		if (remainingHours > 0) {
-			return new Response(JSON.stringify({ error: `You need to wait ${remainingHours} hour(s).` }), {
-				status: 400
-			});
+			return new Response(
+				JSON.stringify({ error: `You need to wait ${remainingHours} hour(s).` }),
+				{
+					status: 400
+				}
+			);
 		}
 
 		const client = await connectToMongoDB();

@@ -293,7 +293,8 @@ export const it = {
 			'Potrai modificare nuovamente la visibilità del tuo profilo tra <strong>{hours} ora</strong>.',
 		settingsPageProfileVisibilityChangeAgainPluralMessage:
 			'Potrai modificare nuovamente la visibilità del tuo profilo tra <strong>{hours} ore</strong>.',
-		settingsPageProfileVisibilityChangeAgainAvailableMessage: 'Puoi modificare nuovamente la visibilità del tuo profilo in qualsiasi momento.',
+		settingsPageProfileVisibilityChangeAgainAvailableMessage:
+			'Puoi modificare nuovamente la visibilità del tuo profilo in qualsiasi momento.'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify Tickets',
