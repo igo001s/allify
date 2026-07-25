@@ -20,10 +20,16 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { id, profileVisibility } = await request.json();
+		const { id, profileVisibility, remainingHours } = await request.json();
 
 		if (!id || !profileVisibility) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
+		}
+
+		if (remainingHours > 0) {
+			return new Response(JSON.stringify({ error: `You need to wait ${remainingHours} hour(s).` }), {
+				status: 400
+			});
 		}
 
 		const client = await connectToMongoDB();

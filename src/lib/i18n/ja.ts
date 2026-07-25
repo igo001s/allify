@@ -279,8 +279,11 @@ export const ja = {
 			'あなたのプロフィールは誰でも閲覧でき、プロフィールリンクを共有できます。',
 		settingsPageProfileVisibilityPrivateDescription:
 			'あなたのプロフィールは他のユーザーには表示されず、自分だけがアクセスできます。',
-		settingsPageProfileVisibilityChangeAgainMessage:
-			'<strong>x時間</strong>後にプロフィールの公開設定を再度変更できます。'
+		settingsPageProfileVisibilityChangeAgainSingularMessage:
+			'<strong>{hours}時間</strong>後にプロフィールの公開設定を再度変更できます。',
+		settingsPageProfileVisibilityChangeAgainPluralMessage:
+			'<strong>{hours}時間</strong>後にプロフィールの公開設定を再度変更できます。',
+		settingsPageProfileVisibilityChangeAgainAvailableMessage: 'プロフィールの公開設定を再度変更できます。',
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allifyチケット',

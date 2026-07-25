@@ -11,10 +11,35 @@
 
 	const visibilityOptions: Array<'public' | 'private'> = ['public', 'private'];
 
-	async function handleVisibilityChange(option: 'public' | 'private') {
-		if (!option || !$userInfo?._id) return;
+	function getRemainingHours(updatedAt: string | Date): number {
+		return Math.max(
+			0,
+			Math.ceil(
+				(new Date(updatedAt).getTime() +
+					6 * 60 * 60 * 1000 -
+					Date.now()) /
+					(60 * 60 * 1000)
+			)
+		);
+	}
 
-		const { visibility, updatedAt } = await changeVisibility($userInfo?._id, option);
+	$: remainingHours = $userInfo?.profileVisibility?.updatedAt
+		? getRemainingHours($userInfo.profileVisibility.updatedAt)
+		: 0;
+
+	$: canChangeVisibility = remainingHours === 0;
+
+	$: changeAgainMessage =
+		remainingHours === 1
+			? $translationsStore.settingsPage
+					.settingsPageProfileVisibilityChangeAgainSingularMessage
+			: $translationsStore.settingsPage
+					.settingsPageProfileVisibilityChangeAgainPluralMessage;
+
+	async function handleVisibilityChange(option: 'public' | 'private') {
+		if (!option || !$userInfo?._id || !canChangeVisibility) return;
+
+		const { visibility, updatedAt } = await changeVisibility($userInfo._id, option, remainingHours);
 
 		userInfo.update((user) => {
 			if (!user) return user;
@@ -36,12 +61,14 @@
 	>
 		{#each visibilityOptions as option}
 			<button
-				disabled={visibility === option}
+				disabled={visibility === option || !canChangeVisibility}
 				on:click={() => handleVisibilityChange(option)}
 				class={`w-full rounded-lg px-5 py-2.5 text-sm font-medium transition-all duration-200 sm:min-w-32 ${
 					visibility === option
 						? 'bg-brand-primary text-t-inverse shadow-sm'
-						: 'cursor-pointer bg-brand-primary/10 text-t-primary'
+						: canChangeVisibility
+							? 'cursor-pointer bg-brand-primary/10 text-t-primary'
+							: 'cursor-not-allowed bg-brand-primary/5 text-t-secondary opacity-50'
 				}`}
 			>
 				{option === 'public'
@@ -61,7 +88,11 @@
 		</p>
 
 		<span class="text-xs text-t-secondary/70">
-			{@html $translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainMessage}
+			{#if canChangeVisibility}
+				{$translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainAvailableMessage}
+			{:else}
+				{@html changeAgainMessage.replace('{hours}', remainingHours.toString())}
+			{/if}
 		</span>
 	</div>
 </div>

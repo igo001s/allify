@@ -286,8 +286,11 @@ export const ru = {
 			'Ваш профиль виден всем и может быть доступен по ссылке на профиль.',
 		settingsPageProfileVisibilityPrivateDescription:
 			'Ваш профиль скрыт от других пользователей и доступен только вам.',
-		settingsPageProfileVisibilityChangeAgainMessage:
-			'Вы сможете снова изменить видимость профиля через <strong>x часов</strong>.'
+		settingsPageProfileVisibilityChangeAgainSingularMessage:
+			'Вы сможете снова изменить видимость своего профиля через <strong>{hours} час</strong>.',
+		settingsPageProfileVisibilityChangeAgainPluralMessage:
+			'Вы сможете снова изменить видимость своего профиля через <strong>{hours} часов</strong>.',
+		settingsPageProfileVisibilityChangeAgainAvailableMessage: 'Вы можете снова изменить видимость своего профиля в любое время.',
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Билеты Allify',

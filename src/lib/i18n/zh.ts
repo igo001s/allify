@@ -266,8 +266,11 @@ export const zh = {
 			'所有人都可以查看您的个人资料，并可通过您的个人资料链接进行分享。',
 		settingsPageProfileVisibilityPrivateDescription:
 			'您的个人资料对其他用户隐藏，仅您本人可以访问。',
-		settingsPageProfileVisibilityChangeAgainMessage:
-			'您可以在<strong>x小时</strong>后再次更改个人资料可见性。'
+		settingsPageProfileVisibilityChangeAgainSingularMessage:
+			'您可以在<strong>{hours}小时</strong>后再次更改您的个人资料可见性。',
+		settingsPageProfileVisibilityChangeAgainPluralMessage:
+			'您可以在<strong>{hours}小时</strong>后再次更改您的个人资料可见性。',
+		settingsPageProfileVisibilityChangeAgainAvailableMessage: '您可以随时更改您的个人资料可见性。',
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify 门票',
