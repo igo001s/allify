@@ -96,6 +96,7 @@ export const pt = {
 		buildProfileSecondStepArtistSectionParagraph3: 'Seus artistas mais ouvidos recentemente',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Seleção de artista para o perfil musical',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'seguidores',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Escolha a visibilidade do seu perfil',

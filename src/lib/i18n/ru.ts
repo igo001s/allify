@@ -96,6 +96,7 @@ export const ru = {
 		buildProfileSecondStepArtistSectionParagraph3: 'Ваши недавно прослушанные артисты',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Выбор артиста для музыкального профиля',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'Подписчики',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Продолжайте открывать новых артистов и персонализировать свой профиль ещё больше.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Выберите видимость своего профиля',

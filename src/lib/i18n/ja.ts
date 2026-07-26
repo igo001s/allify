@@ -94,6 +94,7 @@ export const ja = {
 		buildProfileSecondStepArtistSectionParagraph3: '最近よく聴いたアーティスト',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'音楽プロフィール用のアーティスト選択',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'フォロワー',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくしましょう。',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'プロフィールの公開設定を選択してください',

@@ -94,6 +94,7 @@ export const en = {
 			'Choose an artist that represents your current moment. It will be displayed on your profile and help personalize your experience on Allify.',
 		buildProfileSecondStepArtistSectionParagraph3: 'Your recently played artists',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel: 'Artist selection for music profile',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'Followers',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Keep unlocking more artists and personalize your profile even further.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Choose your profile visibility',

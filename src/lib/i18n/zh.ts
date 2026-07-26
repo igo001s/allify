@@ -87,6 +87,7 @@ export const zh = {
 			'选择一位能够代表你当前状态的艺人。该艺人将显示在你的个人资料中，并帮助个性化你的 Allify 使用体验。',
 		buildProfileSecondStepArtistSectionParagraph3: '你最近收听的艺人',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel: '音乐个人资料艺人选择',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: '粉丝',
 		buildProfileSecondStepArtistSectionParagraph4: '继续解锁更多艺人，进一步打造属于你的个人资料。',
 		buildProfileThirdStepVisibilitySectionParagraph1: '选择您的个人资料可见性',
 		buildProfileThirdStepVisibilitySectionParagraph2:
