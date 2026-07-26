@@ -254,6 +254,10 @@ export const ja = {
 		profilePageChangeYourMusicCloseModalAriaLabel: '今のお気に入りの楽曲変更モーダルを閉じる',
 		profilePageChangeYourMusicParagraph1: 'プロフィールの今のお気に入りの楽曲を更新しましょう',
 		profilePageChangeYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選んでください。',
+		profilePageChangeYourMusicChooseMusicAriaLabel:
+			'プロフィールに表示する現在のお気に入りの曲を選択',
+		profilePageChangeYourMusicUnlockMoreMusic:
+			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
 		profilePageYourArtistsOnProfileHeading3v1: '最も再生したアーティスト',
 		profilePageYourArtistsOnProfileHeading3v2: '今のお気に入りのアーティスト',
@@ -269,7 +273,14 @@ export const ja = {
 		profilePageChangeYourArtistParagraph1:
 			'プロフィールの今のお気に入りのアーティストを更新しましょう',
 		profilePageChangeYourArtistParagraph2:
-			'今聴いている音楽を最もよく表すアーティストを選んでください。'
+			'今聴いている音楽を最もよく表すアーティストを選んでください。',
+		profilePageChangeYourArtistChooseArtistAriaLabel:
+			'プロフィールに表示する現在のお気に入りのアーティストを選択',
+		profilePageChangeYourArtistChooseArtistFollowers: 'フォロワー',
+		profilePageChangeYourArtistUnlockMoreMusic:
+			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
+		profilePageChangeYourItemsModalCloseModal: '閉じる',
+		profilePageChangeYourItemsModalSaveChanges: '変更を保存'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

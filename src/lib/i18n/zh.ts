@@ -241,6 +241,8 @@ export const zh = {
 		profilePageChangeYourMusicCloseModalAriaLabel: '关闭当前歌曲更改弹窗',
 		profilePageChangeYourMusicParagraph1: '更新您个人资料中的当前歌曲',
 		profilePageChangeYourMusicParagraph2: '选择最能代表您当前正在收听内容的歌曲。',
+		profilePageChangeYourMusicChooseMusicAriaLabel: '选择要在个人资料中显示的当前最喜欢的歌曲',
+		profilePageChangeYourMusicUnlockMoreMusic: '继续解锁更多歌曲，让您的个人资料更加个性化。',
 		profilePageYourArtistsOnProfileHeading2: '您的艺术家',
 		profilePageYourArtistsOnProfileHeading3v1: '播放次数最多的艺术家',
 		profilePageYourArtistsOnProfileHeading3v2: '当前艺术家',
@@ -250,7 +252,12 @@ export const zh = {
 		profilePageChangeYourArtistCloseModalAltText: '关闭当前艺术家更改弹窗图标',
 		profilePageChangeYourArtistCloseModalAriaLabel: '关闭当前艺术家更改弹窗',
 		profilePageChangeYourArtistParagraph1: '更新您个人资料中的当前艺术家',
-		profilePageChangeYourArtistParagraph2: '选择最能代表您当前正在收听内容的艺术家。'
+		profilePageChangeYourArtistParagraph2: '选择最能代表您当前正在收听内容的艺术家。',
+		profilePageChangeYourArtistChooseArtistAriaLabel: '选择要在个人资料中显示的当前最喜欢的艺人',
+		profilePageChangeYourArtistChooseArtistFollowers: '关注者',
+		profilePageChangeYourArtistUnlockMoreMusic: '继续解锁更多艺术家，让您的个人资料更加个性化。',
+		profilePageChangeYourItemsModalCloseModal: '关闭',
+		profilePageChangeYourItemsModalSaveChanges: '保存'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

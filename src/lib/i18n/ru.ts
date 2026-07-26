@@ -260,6 +260,9 @@ export const ru = {
 		profilePageChangeYourMusicParagraph1: 'Обновите песню момента в своём профиле',
 		profilePageChangeYourMusicParagraph2:
 			'Выберите песню, которая лучше всего отражает то, что вы сейчас слушаете.',
+		profilePageChangeYourMusicChooseMusicAriaLabel: 'Выберите свою любимую песню для профиля',
+		profilePageChangeYourMusicUnlockMoreMusic:
+			'Продолжайте открывать новые песни и персонализировать свой профиль ещё больше.',
 		profilePageYourArtistsOnProfileHeading2: 'Ваши исполнители',
 		profilePageYourArtistsOnProfileHeading3v1: 'Самый прослушиваемый исполнитель',
 		profilePageYourArtistsOnProfileHeading3v2: 'Исполнитель момента',
@@ -271,7 +274,14 @@ export const ru = {
 		profilePageChangeYourArtistCloseModalAriaLabel: 'Закрыть окно смены исполнителя момента',
 		profilePageChangeYourArtistParagraph1: 'Обновите исполнителя момента в своём профиле',
 		profilePageChangeYourArtistParagraph2:
-			'Выберите исполнителя, который лучше всего отражает то, что вы сейчас слушаете.'
+			'Выберите исполнителя, который лучше всего отражает то, что вы сейчас слушаете.',
+		profilePageChangeYourArtistChooseArtistAriaLabel:
+			'Выберите своего любимого исполнителя для профиля',
+		profilePageChangeYourArtistChooseArtistFollowers: 'подписчиков',
+		profilePageChangeYourArtistUnlockMoreMusic:
+			'Продолжайте открывать новых исполнителей и персонализировать свой профиль ещё больше.',
+		profilePageChangeYourItemsModalCloseModal: 'Закрыть',
+		profilePageChangeYourItemsModalSaveChanges: 'Сохранить'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',
