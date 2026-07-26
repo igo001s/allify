@@ -9,6 +9,7 @@
 	import KeyInformation from '$lib/components/profile/KeyInformation.svelte';
 	import YourSongsOnProfile from '$lib/components/profile/YourSongsOnProfile.svelte';
 	import YourArtistsOnProfile from '$lib/components/profile/YourArtistsOnProfile.svelte';
+	import ChangeYourItemsModal from '$lib/components/profile/ChangeYourItemsModal.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -20,10 +21,23 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
+	let showChangeYourItemsModal = false;
+	let selectedItemType: 'artist' | 'music';
+
 	$: selectedStreaming =
 		$userInfo?.connectedStreamings.spotify?.connected === true ? 'spotify' : null;
 
 	$: jsonLd = getJsonLdByPage('profilePage', $translationsStore.language as Locale);
+
+	function openChangeYourItemsModal(itemType: 'artist' | 'music') {
+		showChangeYourItemsModal = true;
+		selectedItemType = itemType;
+	}
+
+	function closeChangeYourItemsModal() {
+		showChangeYourItemsModal = false;
+		document.body.style.overflow = '';
+	}
 </script>
 
 <svelte:head>
@@ -60,11 +74,15 @@
 		</div>
 
 		<div class="mt-14 flex w-full flex-col gap-8 lg:gap-14">
-			<YourSongsOnProfile />
+			<YourSongsOnProfile openChangeYourItemsModal={() => openChangeYourItemsModal('music')} />
 
-			<YourArtistsOnProfile />
+			<YourArtistsOnProfile openChangeYourItemsModal={() => openChangeYourItemsModal('artist')} />
 		</div>
 	</section>
+
+	{#if showChangeYourItemsModal}
+		<ChangeYourItemsModal {closeChangeYourItemsModal} itemType={selectedItemType} />
+	{/if}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />
 {/if}

@@ -6,6 +6,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Props
+	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
+
 	const songsItems = [
 		{
 			trackItem: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem,
@@ -23,7 +26,7 @@
 	<div class="flex flex-col gap-8 xl:flex-row">
 		{#each songsItems as { trackItem, type }}
 			{#if trackItem}
-				<YourSongsOnProfileItem trackItem={{ track: trackItem, type }} />
+				<YourSongsOnProfileItem trackItem={{ track: trackItem, type }} {openChangeYourItemsModal} />
 			{/if}
 		{/each}
 	</div>

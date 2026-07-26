@@ -240,25 +240,36 @@ export const en = {
 	profilePage: {
 		title: 'Profile | Allify',
 		profilePageMetaDescription:
-			'View your public profile, share your listening stats, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your public profile, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageMetaOgAndTwitterContent:
-			'View your public profile, share your listening stats, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your public profile, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageImageAltText: 'Profile picture of',
 		profilePageFollowers: 'followers',
 		profilePageAddTicketsAltText: 'Add tickets',
-		profilePageExternalLinkSpotify: 'View profile on Spotify',
-		profilePageExternalLinkDeezer: 'View profile on Deezer',
-		profilePageYourSongsOnProfileHeading2: 'Your Songs',
-		profilePageYourSongsOnProfileHeading3v1: 'Most Listened Track',
-		profilePageYourSongsOnProfileHeading3v2: 'Music of the Moment',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Button to edit current song',
-		profilePageYourSongsOnProfileEditMusicIconAltText: 'Current song edit icon',
-		profilePageYourArtistsOnProfileHeading2: 'Your Artists',
-		profilePageYourArtistsOnProfileHeading3v1: 'Most Listened Artist',
-		profilePageYourArtistsOnProfileHeading3v2: 'Artist of the Moment',
+		profilePageExternalLinkSpotify: 'View Spotify profile',
+		profilePageExternalLinkDeezer: 'View Deezer profile',
+		profilePageYourSongsOnProfileHeading2: 'Your songs',
+		profilePageYourSongsOnProfileHeading3v1: 'Most listened song',
+		profilePageYourSongsOnProfileHeading3v2: 'Current favorite song',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Button to edit current favorite song',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Edit current favorite song icon',
+		profilePageChangeYourMusicCloseModalAltText: 'Close current favorite song modal icon',
+		profilePageChangeYourMusicCloseModalAriaLabel: 'Close current favorite song modal',
+		profilePageChangeYourMusicParagraph1: 'Update your current favorite song on your profile',
+		profilePageChangeYourMusicParagraph2:
+			'Choose the song that best represents what you are listening to right now.',
+		profilePageYourArtistsOnProfileHeading2: 'Your artists',
+		profilePageYourArtistsOnProfileHeading3v1: 'Most listened artist',
+		profilePageYourArtistsOnProfileHeading3v2: 'Current favorite artist',
 		profilePageYourArtistsOnProfileFollowers: 'followers',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Button to edit current artist',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Current artist edit icon'
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+			'Button to edit current favorite artist',
+		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Edit current favorite artist icon',
+		profilePageChangeYourArtistCloseModalAltText: 'Close current favorite artist modal icon',
+		profilePageChangeYourArtistCloseModalAriaLabel: 'Close current favorite artist modal',
+		profilePageChangeYourArtistParagraph1: 'Update your current favorite artist on your profile',
+		profilePageChangeYourArtistParagraph2:
+			'Choose the artist that best represents what you are listening to right now.'
 	},
 	settingsPage: {
 		title: 'Settings | Allify',

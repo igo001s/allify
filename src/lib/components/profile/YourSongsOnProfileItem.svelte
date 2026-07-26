@@ -12,6 +12,8 @@
 	// Types
 	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
+	// Props
+	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
 	export let trackItem: {
 		track: TrackSpotify;
 		type: string;
@@ -33,6 +35,7 @@
 				class="absolute top-5 right-5 cursor-pointer text-t-primary transition-all hover:scale-105 hover:text-brand-primary"
 				aria-label={$translationsStore.profilePage
 					.profilePageYourSongsOnProfileEditMusicIconAriaLabel}
+				on:click={() => openChangeYourItemsModal('music')}
 			>
 				<EditMusicIcon
 					iconSvgClass="h-6 w-6"

@@ -254,12 +254,24 @@ export const pt = {
 		profilePageYourSongsOnProfileHeading3v2: 'Música do momento',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Botão para editar música do momento',
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Ícone de editar música do momento',
+		profilePageChangeYourMusicCloseModalAltText:
+			'Ícone de fechar modal de troca de música do momento',
+		profilePageChangeYourMusicCloseModalAriaLabel: 'Fechar modal de troca de música do momento',
+		profilePageChangeYourMusicParagraph1: 'Atualize a sua música do momento no seu perfil',
+		profilePageChangeYourMusicParagraph2:
+			'Escolha a música que melhor representa o que você está ouvindo no momento.',
 		profilePageYourArtistsOnProfileHeading2: 'Seus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista mais ouvido',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista do momento',
 		profilePageYourArtistsOnProfileFollowers: 'seguidores',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Botão para editar artista do momento',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Ícone de editar artista do momento'
+		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Ícone de editar artista do momento',
+		profilePageChangeYourArtistCloseModalAltText:
+			'Ícone de fechar modal de troca de artista do momento',
+		profilePageChangeYourArtistCloseModalAriaLabel: 'Fechar modal de troca de artista do momento',
+		profilePageChangeYourArtistParagraph1: 'Atualize o seu artista do momento no seu perfil',
+		profilePageChangeYourArtistParagraph2:
+			'Escolha o artista que melhor representa o que você está ouvindo no momento.'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

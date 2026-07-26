@@ -244,20 +244,27 @@ export const it = {
 	profilePage: {
 		title: 'Profilo | Allify',
 		profilePageMetaDescription:
-			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani che ti piacciono, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere informazioni personalizzate.',
+			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani preferiti, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere approfondimenti personalizzati.',
 		profilePageMetaOgAndTwitterContent:
-			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani che ti piacciono, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere informazioni personalizzate.',
+			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani preferiti, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere approfondimenti personalizzati.',
 		profilePageImageAltText: 'Foto del profilo di',
 		profilePageFollowers: 'follower',
-		profilePageAddTicketsAltText: 'Aggiungi biglietti',
-		profilePageExternalLinkSpotify: 'Visualizza il profilo su Spotify',
-		profilePageExternalLinkDeezer: 'Visualizza il profilo su Deezer',
+		profilePageAddTicketsAltText: 'Aggiungi ticket',
+		profilePageExternalLinkSpotify: 'Visualizza il profilo Spotify',
+		profilePageExternalLinkDeezer: 'Visualizza il profilo Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Le tue canzoni',
 		profilePageYourSongsOnProfileHeading3v1: 'Brano più ascoltato',
 		profilePageYourSongsOnProfileHeading3v2: 'Brano del momento',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
 			'Pulsante per modificare il brano del momento',
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Icona per modificare il brano del momento',
+		profilePageChangeYourMusicCloseModalAltText:
+			'Icona per chiudere la finestra di modifica del brano del momento',
+		profilePageChangeYourMusicCloseModalAriaLabel:
+			'Chiudi la finestra di modifica del brano del momento',
+		profilePageChangeYourMusicParagraph1: 'Aggiorna il tuo brano del momento sul tuo profilo',
+		profilePageChangeYourMusicParagraph2:
+			'Scegli il brano che rappresenta meglio ciò che stai ascoltando in questo momento.',
 		profilePageYourArtistsOnProfileHeading2: 'I tuoi artisti',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista più ascoltato',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista del momento',
@@ -265,7 +272,14 @@ export const it = {
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
 			'Pulsante per modificare l’artista del momento',
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
-			'Icona per modificare l’artista del momento'
+			'Icona per modificare l’artista del momento',
+		profilePageChangeYourArtistCloseModalAltText:
+			'Icona per chiudere la finestra di modifica dell’artista del momento',
+		profilePageChangeYourArtistCloseModalAriaLabel:
+			'Chiudi la finestra di modifica dell’artista del momento',
+		profilePageChangeYourArtistParagraph1: 'Aggiorna il tuo artista del momento sul tuo profilo',
+		profilePageChangeYourArtistParagraph2:
+			'Scegli l’artista che rappresenta meglio ciò che stai ascoltando in questo momento.'
 	},
 	settingsPage: {
 		title: 'Impostazioni | Allify',

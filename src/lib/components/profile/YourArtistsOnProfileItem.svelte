@@ -13,6 +13,7 @@
 	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
 	// Props
+	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
 	export let artistItem: {
 		artist: ArtistSpotify;
 		type: string;
@@ -34,6 +35,7 @@
 				class="absolute top-5 right-5 cursor-pointer text-t-primary transition-all hover:scale-105 hover:text-brand-primary"
 				aria-label={$translationsStore.profilePage
 					.profilePageYourArtistsOnProfileEditArtistIconAriaLabel}
+				on:click={() => openChangeYourItemsModal('artist')}
 			>
 				<EditArtistIcon
 					iconSvgClass="h-6 w-6"

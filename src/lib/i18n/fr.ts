@@ -246,21 +246,28 @@ export const fr = {
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			'Consultez votre profil public, partagez vos statistiques d’écoute, vos morceaux favoris, vos playlists et vos albums enregistrés, puis connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
+			'Consultez votre profil public, partagez vos statistiques d’écoute, vos chansons préférées, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
 		profilePageMetaOgAndTwitterContent:
-			'Consultez votre profil public, partagez vos statistiques d’écoute, vos morceaux favoris, vos playlists et vos albums enregistrés, puis connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
+			'Consultez votre profil public, partagez vos statistiques d’écoute, vos chansons préférées, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
 		profilePageImageAltText: 'Photo de profil de',
 		profilePageFollowers: 'abonnés',
-		profilePageAddTicketsAltText: 'Ajouter des billets',
-		profilePageExternalLinkSpotify: 'Voir le profil sur Spotify',
-		profilePageExternalLinkDeezer: 'Voir le profil sur Deezer',
+		profilePageAddTicketsAltText: 'Ajouter des tickets',
+		profilePageExternalLinkSpotify: 'Voir le profil Spotify',
+		profilePageExternalLinkDeezer: 'Voir le profil Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Vos chansons',
-		profilePageYourSongsOnProfileHeading3v1: 'Morceau le plus écouté',
-		profilePageYourSongsOnProfileHeading3v2: 'Morceau du moment',
+		profilePageYourSongsOnProfileHeading3v1: 'Chanson la plus écoutée',
+		profilePageYourSongsOnProfileHeading3v2: 'Chanson du moment',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
 			'Bouton pour modifier la chanson du moment',
 		profilePageYourSongsOnProfileEditMusicIconAltText:
 			'Icône de modification de la chanson du moment',
+		profilePageChangeYourMusicCloseModalAltText:
+			'Icône de fermeture de la fenêtre de changement de la chanson du moment',
+		profilePageChangeYourMusicCloseModalAriaLabel:
+			'Fermer la fenêtre de changement de la chanson du moment',
+		profilePageChangeYourMusicParagraph1: 'Mettez à jour votre chanson du moment sur votre profil',
+		profilePageChangeYourMusicParagraph2:
+			'Choisissez la chanson qui représente le mieux ce que vous écoutez en ce moment.',
 		profilePageYourArtistsOnProfileHeading2: 'Vos artistes',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artiste le plus écouté',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artiste du moment',
@@ -268,7 +275,14 @@ export const fr = {
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
 			'Bouton pour modifier l’artiste du moment',
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
-			'Icône de modification de l’artiste du moment'
+			'Icône de modification de l’artiste du moment',
+		profilePageChangeYourArtistCloseModalAltText:
+			'Icône de fermeture de la fenêtre de changement de l’artiste du moment',
+		profilePageChangeYourArtistCloseModalAriaLabel:
+			'Fermer la fenêtre de changement de l’artiste du moment',
+		profilePageChangeYourArtistParagraph1: 'Mettez à jour votre artiste du moment sur votre profil',
+		profilePageChangeYourArtistParagraph2:
+			'Choisissez l’artiste qui représente le mieux ce que vous écoutez en ce moment.'
 	},
 	settingsPage: {
 		title: 'Paramètres | Allify',

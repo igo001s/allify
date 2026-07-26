@@ -248,20 +248,36 @@ export const es = {
 			'Consulta tu perfil público, comparte tus estadísticas de escucha, canciones que te gustan, listas de reproducción y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
 		profilePageImageAltText: 'Foto de perfil de',
 		profilePageFollowers: 'seguidores',
-		profilePageAddTicketsAltText: 'Añadir entradas',
+		profilePageAddTicketsAltText: 'Agregar tickets',
 		profilePageExternalLinkSpotify: 'Ver perfil en Spotify',
 		profilePageExternalLinkDeezer: 'Ver perfil en Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Tus canciones',
 		profilePageYourSongsOnProfileHeading3v1: 'Canción más escuchada',
 		profilePageYourSongsOnProfileHeading3v2: 'Canción del momento',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Botón para editar la canción actual',
-		profilePageYourSongsOnProfileEditMusicIconAltText: 'Icono para editar la canción actual',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Botón para editar la canción del momento',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Icono para editar la canción del momento',
+		profilePageChangeYourMusicCloseModalAltText:
+			'Icono para cerrar el modal de cambio de la canción del momento',
+		profilePageChangeYourMusicCloseModalAriaLabel:
+			'Cerrar el modal de cambio de la canción del momento',
+		profilePageChangeYourMusicParagraph1: 'Actualiza tu canción del momento en tu perfil',
+		profilePageChangeYourMusicParagraph2:
+			'Elige la canción que mejor represente lo que estás escuchando en este momento.',
 		profilePageYourArtistsOnProfileHeading2: 'Tus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista más escuchado',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista del momento',
 		profilePageYourArtistsOnProfileFollowers: 'seguidores',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Botón para editar el artista actual',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Icono para editar el artista actual'
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+			'Botón para editar el artista del momento',
+		profilePageYourArtistsOnProfileEditArtistIconAltText:
+			'Icono para editar el artista del momento',
+		profilePageChangeYourArtistCloseModalAltText:
+			'Icono para cerrar el modal de cambio del artista del momento',
+		profilePageChangeYourArtistCloseModalAriaLabel:
+			'Cerrar el modal de cambio del artista del momento',
+		profilePageChangeYourArtistParagraph1: 'Actualiza tu artista del momento en tu perfil',
+		profilePageChangeYourArtistParagraph2:
+			'Elige el artista que mejor represente lo que estás escuchando en este momento.'
 	},
 	settingsPage: {
 		title: 'Configuración | Allify',

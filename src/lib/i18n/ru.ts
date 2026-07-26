@@ -242,27 +242,36 @@ export const ru = {
 	profilePage: {
 		title: 'Профиль | Allify',
 		profilePageMetaDescription:
-			'Просматривайте свой публичный профиль, делитесь статистикой прослушивания, понравившимися треками, плейлистами и сохранёнными альбомами, а также подключайте свои стриминговые платформы для получения персонализированной аналитики.',
+			'Просматривайте свой публичный профиль, делитесь статистикой прослушиваний, любимыми треками, плейлистами и сохранёнными альбомами, а также подключайте свои стриминговые платформы для получения персонализированной аналитики.',
 		profilePageMetaOgAndTwitterContent:
-			'Просматривайте свой публичный профиль, делитесь статистикой прослушивания, понравившимися треками, плейлистами и сохранёнными альбомами, а также подключайте свои стриминговые платформы для получения персонализированной аналитики.',
+			'Просматривайте свой публичный профиль, делитесь статистикой прослушиваний, любимыми треками, плейлистами и сохранёнными альбомами, а также подключайте свои стриминговые платформы для получения персонализированной аналитики.',
 		profilePageImageAltText: 'Фото профиля',
-		profilePageFollowers: 'подписчики',
-		profilePageAddTicketsAltText: 'Добавить билеты',
+		profilePageFollowers: 'подписчиков',
+		profilePageAddTicketsAltText: 'Добавить тикеты',
 		profilePageExternalLinkSpotify: 'Открыть профиль в Spotify',
 		profilePageExternalLinkDeezer: 'Открыть профиль в Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Ваши песни',
 		profilePageYourSongsOnProfileHeading3v1: 'Самая прослушиваемая песня',
 		profilePageYourSongsOnProfileHeading3v2: 'Песня момента',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Кнопка для редактирования текущей песни',
-		profilePageYourSongsOnProfileEditMusicIconAltText: 'Значок редактирования текущей песни',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Кнопка для изменения песни момента',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Значок изменения песни момента',
+		profilePageChangeYourMusicCloseModalAltText: 'Значок закрытия окна смены песни момента',
+		profilePageChangeYourMusicCloseModalAriaLabel: 'Закрыть окно смены песни момента',
+		profilePageChangeYourMusicParagraph1: 'Обновите песню момента в своём профиле',
+		profilePageChangeYourMusicParagraph2:
+			'Выберите песню, которая лучше всего отражает то, что вы сейчас слушаете.',
 		profilePageYourArtistsOnProfileHeading2: 'Ваши исполнители',
 		profilePageYourArtistsOnProfileHeading3v1: 'Самый прослушиваемый исполнитель',
 		profilePageYourArtistsOnProfileHeading3v2: 'Исполнитель момента',
 		profilePageYourArtistsOnProfileFollowers: 'подписчиков',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
-			'Кнопка для редактирования текущего исполнителя',
-		profilePageYourArtistsOnProfileEditArtistIconAltText:
-			'Значок редактирования текущего исполнителя'
+			'Кнопка для изменения исполнителя момента',
+		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Значок изменения исполнителя момента',
+		profilePageChangeYourArtistCloseModalAltText: 'Значок закрытия окна смены исполнителя момента',
+		profilePageChangeYourArtistCloseModalAriaLabel: 'Закрыть окно смены исполнителя момента',
+		profilePageChangeYourArtistParagraph1: 'Обновите исполнителя момента в своём профиле',
+		profilePageChangeYourArtistParagraph2:
+			'Выберите исполнителя, который лучше всего отражает то, что вы сейчас слушаете.'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',
