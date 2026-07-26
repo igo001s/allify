@@ -6,6 +6,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Props
+	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
+
 	const artistItems = [
 		{
 			artistItem:
@@ -24,7 +27,10 @@
 	<div class="flex flex-col gap-8 xl:flex-row">
 		{#each artistItems as { artistItem, type }}
 			{#if artistItem}
-				<YourArtistOnProfileItem artistItem={{ artist: artistItem, type }} />
+				<YourArtistOnProfileItem
+					artistItem={{ artist: artistItem, type }}
+					{openChangeYourItemsModal}
+				/>
 			{/if}
 		{/each}
 	</div>

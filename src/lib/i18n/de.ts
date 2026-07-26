@@ -242,28 +242,45 @@ export const de = {
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, mit „Gefällt mir“ markierte Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageMetaOgAndTwitterContent:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, mit „Gefällt mir“ markierte Songs, Playlists und gespeicherte Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageImageAltText: 'Profilbild von',
 		profilePageFollowers: 'Follower',
 		profilePageAddTicketsAltText: 'Tickets hinzufügen',
-		profilePageExternalLinkSpotify: 'Profil auf Spotify ansehen',
-		profilePageExternalLinkDeezer: 'Profil auf Deezer ansehen',
+		profilePageExternalLinkSpotify: 'Spotify-Profil anzeigen',
+		profilePageExternalLinkDeezer: 'Deezer-Profil anzeigen',
 		profilePageYourSongsOnProfileHeading2: 'Deine Songs',
 		profilePageYourSongsOnProfileHeading3v1: 'Meistgehörter Song',
-		profilePageYourSongsOnProfileHeading3v2: 'Song des Moments',
+		profilePageYourSongsOnProfileHeading3v2: 'Aktueller Lieblingssong',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
-			'Schaltfläche zum Bearbeiten des aktuellen Songs',
-		profilePageYourSongsOnProfileEditMusicIconAltText: 'Symbol zum Bearbeiten des aktuellen Songs',
+			'Schaltfläche zum Bearbeiten des aktuellen Lieblingssongs',
+		profilePageYourSongsOnProfileEditMusicIconAltText:
+			'Symbol zum Bearbeiten des aktuellen Lieblingssongs',
+		profilePageChangeYourMusicCloseModalAltText:
+			'Symbol zum Schließen des Modals für den aktuellen Lieblingssong',
+		profilePageChangeYourMusicCloseModalAriaLabel:
+			'Modal für den aktuellen Lieblingssong schließen',
+		profilePageChangeYourMusicParagraph1:
+			'Aktualisiere deinen aktuellen Lieblingssong in deinem Profil',
+		profilePageChangeYourMusicParagraph2:
+			'Wähle den Song aus, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageYourArtistsOnProfileHeading2: 'Deine Künstler',
 		profilePageYourArtistsOnProfileHeading3v1: 'Meistgehörter Künstler',
-		profilePageYourArtistsOnProfileHeading3v2: 'Künstler des Moments',
+		profilePageYourArtistsOnProfileHeading3v2: 'Aktueller Lieblingskünstler',
 		profilePageYourArtistsOnProfileFollowers: 'Follower',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
-			'Schaltfläche zum Bearbeiten des aktuellen Künstlers',
+			'Schaltfläche zum Bearbeiten des aktuellen Lieblingskünstlers',
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
-			'Symbol zum Bearbeiten des aktuellen Künstlers'
+			'Symbol zum Bearbeiten des aktuellen Lieblingskünstlers',
+		profilePageChangeYourArtistCloseModalAltText:
+			'Symbol zum Schließen des Modals für den aktuellen Lieblingskünstler',
+		profilePageChangeYourArtistCloseModalAriaLabel:
+			'Modal für den aktuellen Lieblingskünstler schließen',
+		profilePageChangeYourArtistParagraph1:
+			'Aktualisiere deinen aktuellen Lieblingskünstler in deinem Profil',
+		profilePageChangeYourArtistParagraph2:
+			'Wähle den Künstler aus, der am besten widerspiegelt, was du gerade hörst.'
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',

@@ -237,25 +237,39 @@ export const ja = {
 	profilePage: {
 		title: 'プロフィール | Allify',
 		profilePageMetaDescription:
-			'公開プロフィールを表示し、再生統計、お気に入りの曲、プレイリスト、保存済みアルバムを共有して、ストリーミングサービスを連携し、パーソナライズされた分析情報を取得しましょう。',
+			'公開プロフィールを表示し、再生統計、お気に入りの楽曲、プレイリスト、保存済みアルバムを共有して、ストリーミングサービスを連携し、パーソナライズされたインサイトを取得しましょう。',
 		profilePageMetaOgAndTwitterContent:
-			'公開プロフィールを表示し、再生統計、お気に入りの曲、プレイリスト、保存済みアルバムを共有して、ストリーミングサービスを連携し、パーソナライズされた分析情報を取得しましょう。',
+			'公開プロフィールを表示し、再生統計、お気に入りの楽曲、プレイリスト、保存済みアルバムを共有して、ストリーミングサービスを連携し、パーソナライズされたインサイトを取得しましょう。',
 		profilePageImageAltText: 'プロフィール画像：',
 		profilePageFollowers: 'フォロワー',
 		profilePageAddTicketsAltText: 'チケットを追加',
-		profilePageExternalLinkSpotify: 'Spotifyでプロフィールを見る',
-		profilePageExternalLinkDeezer: 'Deezerでプロフィールを見る',
-		profilePageYourSongsOnProfileHeading2: 'あなたの曲',
-		profilePageYourSongsOnProfileHeading3v1: '最もよく聴く曲',
-		profilePageYourSongsOnProfileHeading3v2: '今の曲',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '現在の楽曲を編集するボタン',
-		profilePageYourSongsOnProfileEditMusicIconAltText: '現在の楽曲を編集するアイコン',
+		profilePageExternalLinkSpotify: 'Spotifyプロフィールを見る',
+		profilePageExternalLinkDeezer: 'Deezerプロフィールを見る',
+		profilePageYourSongsOnProfileHeading2: 'あなたの楽曲',
+		profilePageYourSongsOnProfileHeading3v1: '最も再生した楽曲',
+		profilePageYourSongsOnProfileHeading3v2: '今のお気に入りの楽曲',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '今のお気に入りの楽曲を編集するボタン',
+		profilePageYourSongsOnProfileEditMusicIconAltText: '今のお気に入りの楽曲を編集するアイコン',
+		profilePageChangeYourMusicCloseModalAltText: '今のお気に入りの楽曲変更モーダルを閉じるアイコン',
+		profilePageChangeYourMusicCloseModalAriaLabel: '今のお気に入りの楽曲変更モーダルを閉じる',
+		profilePageChangeYourMusicParagraph1: 'プロフィールの今のお気に入りの楽曲を更新しましょう',
+		profilePageChangeYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選んでください。',
 		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
-		profilePageYourArtistsOnProfileHeading3v1: '最もよく聴くアーティスト',
-		profilePageYourArtistsOnProfileHeading3v2: '今のアーティスト',
+		profilePageYourArtistsOnProfileHeading3v1: '最も再生したアーティスト',
+		profilePageYourArtistsOnProfileHeading3v2: '今のお気に入りのアーティスト',
 		profilePageYourArtistsOnProfileFollowers: 'フォロワー',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '現在のアーティストを編集するボタン',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: '現在のアーティストを編集するアイコン'
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+			'今のお気に入りのアーティストを編集するボタン',
+		profilePageYourArtistsOnProfileEditArtistIconAltText:
+			'今のお気に入りのアーティストを編集するアイコン',
+		profilePageChangeYourArtistCloseModalAltText:
+			'今のお気に入りのアーティスト変更モーダルを閉じるアイコン',
+		profilePageChangeYourArtistCloseModalAriaLabel:
+			'今のお気に入りのアーティスト変更モーダルを閉じる',
+		profilePageChangeYourArtistParagraph1:
+			'プロフィールの今のお気に入りのアーティストを更新しましょう',
+		profilePageChangeYourArtistParagraph2:
+			'今聴いている音楽を最もよく表すアーティストを選んでください。'
 	},
 	settingsPage: {
 		title: '設定 | Allify',
