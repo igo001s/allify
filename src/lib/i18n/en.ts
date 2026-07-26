@@ -94,6 +94,7 @@ export const en = {
 			'Choose an artist that represents your current moment. It will be displayed on your profile and help personalize your experience on Allify.',
 		buildProfileSecondStepArtistSectionParagraph3: 'Your recently played artists',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel: 'Artist selection for music profile',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'Followers',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Keep unlocking more artists and personalize your profile even further.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Choose your profile visibility',
@@ -255,9 +256,12 @@ export const en = {
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Edit current favorite song icon',
 		profilePageChangeYourMusicCloseModalAltText: 'Close current favorite song modal icon',
 		profilePageChangeYourMusicCloseModalAriaLabel: 'Close current favorite song modal',
+		profilePageChangeYourMusicUnlockMoreMusic:
+			'Keep unlocking more songs and personalize your profile even further.',
 		profilePageChangeYourMusicParagraph1: 'Update your current favorite song on your profile',
 		profilePageChangeYourMusicParagraph2:
 			'Choose the song that best represents what you are listening to right now.',
+		profilePageChangeYourMusicChooseMusicAriaLabel: 'Choose your current song for your profile',
 		profilePageYourArtistsOnProfileHeading2: 'Your artists',
 		profilePageYourArtistsOnProfileHeading3v1: 'Most listened artist',
 		profilePageYourArtistsOnProfileHeading3v2: 'Current favorite artist',
@@ -269,7 +273,13 @@ export const en = {
 		profilePageChangeYourArtistCloseModalAriaLabel: 'Close current favorite artist modal',
 		profilePageChangeYourArtistParagraph1: 'Update your current favorite artist on your profile',
 		profilePageChangeYourArtistParagraph2:
-			'Choose the artist that best represents what you are listening to right now.'
+			'Choose the artist that best represents what you are listening to right now.',
+		profilePageChangeYourArtistChooseArtistAriaLabel: 'Choose your current artist for your profile',
+		profilePageChangeYourArtistChooseArtistFollowers: 'followers',
+		profilePageChangeYourArtistUnlockMoreMusic:
+			'Keep unlocking more artists and personalize your profile even further.',
+		profilePageChangeYourItemsModalCloseModal: 'Close',
+		profilePageChangeYourItemsModalSaveChanges: 'Save changes'
 	},
 	settingsPage: {
 		title: 'Settings | Allify',

@@ -96,6 +96,7 @@ export const pt = {
 		buildProfileSecondStepArtistSectionParagraph3: 'Seus artistas mais ouvidos recentemente',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Seleção de artista para o perfil musical',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'seguidores',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Escolha a visibilidade do seu perfil',
@@ -260,6 +261,9 @@ export const pt = {
 		profilePageChangeYourMusicParagraph1: 'Atualize a sua música do momento no seu perfil',
 		profilePageChangeYourMusicParagraph2:
 			'Escolha a música que melhor representa o que você está ouvindo no momento.',
+		profilePageChangeYourMusicChooseMusicAriaLabel: 'Selecionar música do momento para o perfil',
+		profilePageChangeYourMusicUnlockMoreMusic:
+			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageYourArtistsOnProfileHeading2: 'Seus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista mais ouvido',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista do momento',
@@ -271,7 +275,13 @@ export const pt = {
 		profilePageChangeYourArtistCloseModalAriaLabel: 'Fechar modal de troca de artista do momento',
 		profilePageChangeYourArtistParagraph1: 'Atualize o seu artista do momento no seu perfil',
 		profilePageChangeYourArtistParagraph2:
-			'Escolha o artista que melhor representa o que você está ouvindo no momento.'
+			'Escolha o artista que melhor representa o que você está ouvindo no momento.',
+		profilePageChangeYourArtistChooseArtistAriaLabel: 'Selecionar artista do momento para o perfil',
+		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
+		profilePageChangeYourArtistUnlockMoreMusic:
+			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
+		profilePageChangeYourItemsModalCloseModal: 'Fechar',
+		profilePageChangeYourItemsModalSaveChanges: 'Salvar alterações'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

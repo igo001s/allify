@@ -96,6 +96,7 @@ export const es = {
 		buildProfileSecondStepArtistSectionParagraph3: 'Tus artistas escuchados recientemente',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Selección de artista para el perfil musical',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'Seguidores',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Elige la visibilidad de tu perfil',
@@ -263,6 +264,10 @@ export const es = {
 		profilePageChangeYourMusicParagraph1: 'Actualiza tu canción del momento en tu perfil',
 		profilePageChangeYourMusicParagraph2:
 			'Elige la canción que mejor represente lo que estás escuchando en este momento.',
+		profilePageChangeYourMusicChooseMusicAriaLabel:
+			'Selecciona tu canción del momento para tu perfil',
+		profilePageChangeYourMusicUnlockMoreMusic:
+			'Continúa desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageYourArtistsOnProfileHeading2: 'Tus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista más escuchado',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista del momento',
@@ -277,7 +282,14 @@ export const es = {
 			'Cerrar el modal de cambio del artista del momento',
 		profilePageChangeYourArtistParagraph1: 'Actualiza tu artista del momento en tu perfil',
 		profilePageChangeYourArtistParagraph2:
-			'Elige el artista que mejor represente lo que estás escuchando en este momento.'
+			'Elige el artista que mejor represente lo que estás escuchando en este momento.',
+		profilePageChangeYourArtistChooseArtistAriaLabel:
+			'Selecciona tu artista del momento para tu perfil',
+		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
+		profilePageChangeYourArtistUnlockMoreMusic:
+			'Continúa desbloqueando más artistas y personalizando aún más tu perfil.',
+		profilePageChangeYourItemsModalCloseModal: 'Cerrar',
+		profilePageChangeYourItemsModalSaveChanges: 'Guardar cambios'
 	},
 	settingsPage: {
 		title: 'Configuración | Allify',

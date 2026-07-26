@@ -96,6 +96,7 @@ export const fr = {
 		buildProfileSecondStepArtistSectionParagraph3: 'Vos artistes écoutés récemment',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Sélection d’un artiste pour le profil musical',
+		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'Abonnés',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Continuez à débloquer de nouveaux artistes et personnalisez encore davantage votre profil.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Choisissez la visibilité de votre profil',
@@ -268,6 +269,10 @@ export const fr = {
 		profilePageChangeYourMusicParagraph1: 'Mettez à jour votre chanson du moment sur votre profil',
 		profilePageChangeYourMusicParagraph2:
 			'Choisissez la chanson qui représente le mieux ce que vous écoutez en ce moment.',
+		profilePageChangeYourMusicChooseMusicAriaLabel:
+			'Sélectionnez votre chanson du moment pour votre profil',
+		profilePageChangeYourMusicUnlockMoreMusic:
+			'Continuez à débloquer plus de chansons et personnalisez encore plus votre profil.',
 		profilePageYourArtistsOnProfileHeading2: 'Vos artistes',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artiste le plus écouté',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artiste du moment',
@@ -282,7 +287,14 @@ export const fr = {
 			'Fermer la fenêtre de changement de l’artiste du moment',
 		profilePageChangeYourArtistParagraph1: 'Mettez à jour votre artiste du moment sur votre profil',
 		profilePageChangeYourArtistParagraph2:
-			'Choisissez l’artiste qui représente le mieux ce que vous écoutez en ce moment.'
+			'Choisissez l’artiste qui représente le mieux ce que vous écoutez en ce moment.',
+		profilePageChangeYourArtistChooseArtistAriaLabel:
+			'Sélectionnez votre artiste du moment pour votre profil',
+		profilePageChangeYourArtistChooseArtistFollowers: 'abonnés',
+		profilePageChangeYourArtistUnlockMoreMusic:
+			'Continuez à débloquer plus d’artistes et personnalisez encore plus votre profil.',
+		profilePageChangeYourItemsModalCloseModal: 'Fermer',
+		profilePageChangeYourItemsModalSaveChanges: 'Enregistrer les modifications'
 	},
 	settingsPage: {
 		title: 'Paramètres | Allify',
