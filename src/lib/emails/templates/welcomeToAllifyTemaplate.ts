@@ -51,7 +51,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
                         style="line-height: 0;"
                     >
                         <img
-                            src="https://allify-sv.netlify.app/public-logo/allify-logo.png"
+                            src="https://allify.club/public-logo/allify-logo.png"
                             alt="${$translationsStore.templateEmail.allifyLogoAltText}"
                             style="
                                 height: 38px;
@@ -71,7 +71,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
 													streaming === 'Spotify'
 														? `
                             <img
-                                src="https://allify-sv.netlify.app/email-images/spotify-logo.png"
+                                src="https://allify.club/email-images/spotify-logo.png"
                                 alt="${$translationsStore.templateEmail.spotifyLogoAltText}"
                                 style="
                                     height: 26px;
@@ -87,7 +87,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
 													streaming === 'Deezer'
 														? `
                             <img
-                                src="https://allify-sv.netlify.app/email-images/deezer-logo.png"
+                                src="https://allify.club/email-images/deezer-logo.png"
                                 alt="${$translationsStore.templateEmail.deezerLogoAltText}"
                                 style="
                                     height: 26px;
@@ -141,7 +141,7 @@ export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
             <div style="text-align: center;">
 
                 <a
-                    href="https://allify-sv.netlify.app/my-musical-profile"
+                    href="https://allify.club/my-musical-profile"
                     style="
                         display: inline-block;
                         background-color: #09623a;

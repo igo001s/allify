@@ -58,7 +58,7 @@
 	<meta property="og:site_name" content="Allify" />
 	<meta
 		property="og:image"
-		content="https://allify-sv.netlify.app/open-graph-images/og-image-allify.webp"
+		content="https://allify.club/open-graph-images/og-image-allify.webp"
 	/>
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
@@ -67,7 +67,7 @@
 	<meta name="twitter:site" content="@allifyapp" />
 	<meta
 		name="twitter:image"
-		content="https://allify-sv.netlify.app/open-graph-images/og-image-allify.webp"
+		content="https://allify.club/open-graph-images/og-image-allify.webp"
 	/>
 </svelte:head>
 

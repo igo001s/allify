@@ -1,11 +1,11 @@
 export const organizationSchema = {
 	'@type': 'Organization',
-	'@id': 'https://allify-sv.netlify.app/#organization',
+	'@id': 'https://allify.club/#organization',
 	name: 'Allify',
-	url: 'https://allify-sv.netlify.app/',
+	url: 'https://allify.club/',
 	logo: {
 		'@type': 'ImageObject',
-		url: 'https://allify-sv.netlify.app/public-logo/allify-logo.png'
+		url: 'https://allify.club/public-logo/allify-logo.png'
 	},
 	description:
 		'Music profile and analytics platform that helps users understand and share their music taste.'
@@ -13,21 +13,21 @@ export const organizationSchema = {
 
 export const websiteSchema = {
 	'@type': 'WebSite',
-	'@id': 'https://allify-sv.netlify.app/#website',
-	url: 'https://allify-sv.netlify.app/',
+	'@id': 'https://allify.club/#website',
+	url: 'https://allify.club/',
 	name: 'Allify',
 	description: 'Music profile and analytics platform.',
 	inLanguage: ['pt-BR', 'en', 'es', 'de', 'fr', 'it', 'ja', 'ru', 'zh'],
 	publisher: {
-		'@id': 'https://allify-sv.netlify.app/#organization'
+		'@id': 'https://allify.club/#organization'
 	}
 };
 
 export const webApplicationSchema = {
 	'@type': 'WebApplication',
-	'@id': 'https://allify-sv.netlify.app/#webapplication',
+	'@id': 'https://allify.club/#webapplication',
 	name: 'Allify',
-	url: 'https://allify-sv.netlify.app/',
+	url: 'https://allify.club/',
 	applicationCategory: 'MusicApplication',
 	operatingSystem: 'Web',
 	description:
@@ -47,7 +47,7 @@ export const webApplicationSchema = {
 		availability: 'https://schema.org/InStock'
 	},
 	publisher: {
-		'@id': 'https://allify-sv.netlify.app/#organization'
+		'@id': 'https://allify.club/#organization'
 	}
 };
 
@@ -56,7 +56,7 @@ const schema = {
 		context: 'https://schema.org',
 		type: 'WebApplication',
 		name: 'Allify',
-		url: 'https://allify-sv.netlify.app',
+		url: 'https://allify.club',
 		applicationCategory: 'MusicApplication',
 		applicationSubCategory: 'Music Analytics',
 		operatingSystem: 'Web',
@@ -169,7 +169,7 @@ const schema = {
 		publisher: {
 			type: 'Organization',
 			name: 'Allify',
-			url: 'https://allify-sv.netlify.app'
+			url: 'https://allify.club'
 		}
 	},
 	myMusicalProfilePage: {
@@ -303,22 +303,22 @@ export function getPublicUserJsonLd(
 			websiteSchema,
 			{
 				'@type': 'ProfilePage',
-				'@id': `https://allify-sv.netlify.app/music-community/${userId}/#page`,
-				url: `https://allify-sv.netlify.app/music-community/${userId}`,
+				'@id': `https://allify.club/music-community/${userId}/#page`,
+				url: `https://allify.club/music-community/${userId}`,
 				name: `${userName} - Music Profile`,
 				description,
 				inLanguage: locale,
 				isPartOf: {
-					'@id': 'https://allify-sv.netlify.app/#website'
+					'@id': 'https://allify.club/#website'
 				},
 				mainEntity: {
 					'@type': 'Person',
-					'@id': `https://allify-sv.netlify.app/music-community/${userId}/#person`,
+					'@id': `https://allify.club/music-community/${userId}/#person`,
 					name: userName,
-					url: `https://allify-sv.netlify.app/music-community/${userId}`
+					url: `https://allify.club/music-community/${userId}`
 				},
 				about: {
-					'@id': 'https://allify-sv.netlify.app/#webapplication'
+					'@id': 'https://allify.club/#webapplication'
 				}
 			}
 		]

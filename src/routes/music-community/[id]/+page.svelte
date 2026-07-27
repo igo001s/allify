@@ -54,10 +54,10 @@
 			user?.name || $page.params.id
 		)}
 	/>
-	<link rel="canonical" href={`https://allify-sv.netlify.app${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify.club${$page.url.pathname}`} />
 	<meta
 		property="og:title"
 		content={$translationsStore.musicCommunityPage.publicUser.title.replace(
@@ -73,7 +73,7 @@
 		)}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify-sv.netlify.app${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify.club${$page.url.pathname}`} />
 	<meta
 		name="twitter:title"
 		content={$translationsStore.musicCommunityPage.publicUser.title.replace(

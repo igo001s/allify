@@ -44,18 +44,18 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					websiteSchema,
 					{
 						'@type': 'ProfilePage',
-						'@id': 'https://allify-sv.netlify.app/my-musical-profile/#page',
-						url: 'https://allify-sv.netlify.app/my-musical-profile',
+						'@id': 'https://allify.club/my-musical-profile/#page',
+						url: 'https://allify.club/my-musical-profile',
 						description: schema.description[locale] ?? schema.description.en,
 						inLanguage: locale,
 						isPartOf: {
-							'@id': 'https://allify-sv.netlify.app/#website'
+							'@id': 'https://allify.club/#website'
 						},
 						about: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						},
 						mainEntity: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						}
 					}
 				]
@@ -71,18 +71,18 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					websiteSchema,
 					{
 						'@type': 'CollectionPage',
-						'@id': 'https://allify-sv.netlify.app/discoveries/#page',
-						url: 'https://allify-sv.netlify.app/discoveries',
+						'@id': 'https://allify.club/discoveries/#page',
+						url: 'https://allify.club/discoveries',
 						description: schema.description[locale] ?? schema.description.en,
 						inLanguage: locale,
 						isPartOf: {
-							'@id': 'https://allify-sv.netlify.app/#website'
+							'@id': 'https://allify.club/#website'
 						},
 						about: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						},
 						mainEntity: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						}
 					}
 				]
@@ -98,17 +98,17 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					websiteSchema,
 					{
 						'@type': 'CollectionPage',
-						'@id': 'https://allify-sv.netlify.app/music-community/#page',
-						url: 'https://allify-sv.netlify.app/music-community',
+						'@id': 'https://allify.club/music-community/#page',
+						url: 'https://allify.club/music-community',
 						name: 'Music Community',
 						description:
 							schema.description[locale as keyof typeof schema.description] ??
 							schema.description.en,
 						isPartOf: {
-							'@id': 'https://allify-sv.netlify.app/#website'
+							'@id': 'https://allify.club/#website'
 						},
 						about: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						},
 						inLanguage: locale
 					}
@@ -125,18 +125,18 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					websiteSchema,
 					{
 						'@type': 'ProfilePage',
-						'@id': 'https://allify-sv.netlify.app/profile/#page',
-						url: 'https://allify-sv.netlify.app/profile',
+						'@id': 'https://allify.club/profile/#page',
+						url: 'https://allify.club/profile',
 						description: schema.description[locale] ?? schema.description.en,
 						inLanguage: locale,
 						isPartOf: {
-							'@id': 'https://allify-sv.netlify.app/#website'
+							'@id': 'https://allify.club/#website'
 						},
 						about: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						},
 						mainEntity: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						}
 					}
 				]
@@ -152,19 +152,19 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					websiteSchema,
 					{
 						'@type': 'WebPage',
-						'@id': 'https://allify-sv.netlify.app/settings/#page',
-						url: 'https://allify-sv.netlify.app/settings',
+						'@id': 'https://allify.club/settings/#page',
+						url: 'https://allify.club/settings',
 						name: 'Settings',
 						description: schema.description[locale] ?? schema.description.en,
 						inLanguage: locale,
 						isPartOf: {
-							'@id': 'https://allify-sv.netlify.app/#website'
+							'@id': 'https://allify.club/#website'
 						},
 						about: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						},
 						mainEntity: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						}
 					}
 				]
@@ -180,16 +180,16 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					websiteSchema,
 					{
 						'@type': 'WebPage',
-						'@id': 'https://allify-sv.netlify.app/data-usage/#page',
-						url: 'https://allify-sv.netlify.app/data-usage',
+						'@id': 'https://allify.club/data-usage/#page',
+						url: 'https://allify.club/data-usage',
 						name: 'Data Usage',
 						description: schema.description[locale] ?? schema.description.en,
 						inLanguage: locale,
 						isPartOf: {
-							'@id': 'https://allify-sv.netlify.app/#website'
+							'@id': 'https://allify.club/#website'
 						},
 						about: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						}
 					}
 				]
@@ -205,16 +205,16 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					websiteSchema,
 					{
 						'@type': 'WebPage',
-						'@id': 'https://allify-sv.netlify.app/privacy-policy/#page',
-						url: 'https://allify-sv.netlify.app/privacy-policy',
+						'@id': 'https://allify.club/privacy-policy/#page',
+						url: 'https://allify.club/privacy-policy',
 						name: 'Privacy Policy',
 						description: schema.description[locale] ?? schema.description.en,
 						inLanguage: locale,
 						isPartOf: {
-							'@id': 'https://allify-sv.netlify.app/#website'
+							'@id': 'https://allify.club/#website'
 						},
 						about: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						}
 					}
 				]
@@ -230,16 +230,16 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					websiteSchema,
 					{
 						'@type': 'WebPage',
-						'@id': 'https://allify-sv.netlify.app/terms-of-service/#page',
-						url: 'https://allify-sv.netlify.app/terms-of-service',
+						'@id': 'https://allify.club/terms-of-service/#page',
+						url: 'https://allify.club/terms-of-service',
 						name: 'Terms of Service',
 						description: schema.description[locale] ?? schema.description.en,
 						inLanguage: locale,
 						isPartOf: {
-							'@id': 'https://allify-sv.netlify.app/#website'
+							'@id': 'https://allify.club/#website'
 						},
 						about: {
-							'@id': 'https://allify-sv.netlify.app/#webapplication'
+							'@id': 'https://allify.club/#webapplication'
 						}
 					}
 				]

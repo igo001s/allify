@@ -6,7 +6,7 @@
 
 <br />
 
-<img src="https://allify-sv.netlify.app/favicon/web-app-manifest-512x512.png" width="200px" alt="Allify" />
+<img src="https://allify.club/favicon/web-app-manifest-512x512.png" width="200px" alt="Allify" />
 
 <br />
 
@@ -14,7 +14,7 @@
 
 <br />
 
-[![Live](https://img.shields.io/badge/→%20Open%20Allify-09623a?style=for-the-badge)](https://allify-sv.netlify.app/)&nbsp;
+[![Live](https://img.shields.io/badge/→%20Open%20Allify-09623a?style=for-the-badge)](https://allify.club/)&nbsp;
 
 <br />
 
