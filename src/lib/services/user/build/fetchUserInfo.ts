@@ -27,7 +27,7 @@ export async function fetchUserInfo(emailMessage: string) {
 
 				sendEmail(
 					emailMessage,
-					'igorgabsprofissional@gmail.com',
+					builtUser.email,
 					welcomeToAllifyTemplate(
 						createUserResult.createdUser.connectedStreamings.spotify.name,
 						'Spotify'

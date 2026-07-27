@@ -28,7 +28,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	const { error } = await resend.emails.send({
-		from: 'Acme <onboarding@resend.dev>',
+		from: 'Allify <contact@allify.club>',
 		to: email,
 		subject: subject,
 		html: `${message}`
