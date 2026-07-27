@@ -472,7 +472,7 @@ export const ru = {
 			privacyPolicyDiv13Paragraph1:
 				'Если у вас есть вопросы по данной Политике конфиденциальности, вы можете связаться с нами:',
 			privacyPolicyDiv13Paragraph2: 'Allify',
-			privacyPolicyDiv13Paragraph3: 'Email: contact@allify.app'
+			privacyPolicyDiv13Paragraph3: 'Email: contact@allify.club'
 		},
 		dataUsage: {
 			title: 'Использование данных | Allify',

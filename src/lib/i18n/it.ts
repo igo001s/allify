@@ -480,7 +480,7 @@ export const it = {
 			privacyPolicyDiv13Paragraph1:
 				'Se hai domande su questa informativa sulla privacy, puoi contattarci:',
 			privacyPolicyDiv13Paragraph2: 'Allify',
-			privacyPolicyDiv13Paragraph3: 'Email: contact@allify.app'
+			privacyPolicyDiv13Paragraph3: 'Email: contact@allify.club'
 		},
 		dataUsage: {
 			title: 'Utilizzo dei dati | Allify',

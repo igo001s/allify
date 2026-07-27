@@ -415,7 +415,7 @@ export const zh = {
 			privacyPolicyDiv13Heading2: '12. 联系信息',
 			privacyPolicyDiv13Paragraph1: '如果您对本隐私政策有任何疑问，请联系我们：',
 			privacyPolicyDiv13Paragraph2: 'Allify',
-			privacyPolicyDiv13Paragraph3: '电子邮件：contact@allify.app'
+			privacyPolicyDiv13Paragraph3: '电子邮件：contact@allify.club'
 		},
 		dataUsage: {
 			title: '数据使用 | Allify',

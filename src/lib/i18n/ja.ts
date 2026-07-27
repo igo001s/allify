@@ -462,7 +462,7 @@ export const ja = {
 			privacyPolicyDiv13Paragraph1:
 				'このプライバシーポリシーについてご質問がある場合は、以下の方法でご連絡ください：',
 			privacyPolicyDiv13Paragraph2: 'Allify',
-			privacyPolicyDiv13Paragraph3: 'メール：contact@allify.app'
+			privacyPolicyDiv13Paragraph3: 'メール：contact@allify.club'
 		},
 		dataUsage: {
 			title: 'データ利用 | Allify',

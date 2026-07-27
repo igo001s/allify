@@ -466,7 +466,7 @@ export const pt = {
 			privacyPolicyDiv13Paragraph1:
 				'Se você tiver dúvidas sobre esta Política de Privacidade, pode entrar em contato:',
 			privacyPolicyDiv13Paragraph2: 'Allify',
-			privacyPolicyDiv13Paragraph3: 'Email: contact@allify.app'
+			privacyPolicyDiv13Paragraph3: 'Email: contact@allify.club'
 		},
 		dataUsage: {
 			title: 'Uso de Dados | Allify',
