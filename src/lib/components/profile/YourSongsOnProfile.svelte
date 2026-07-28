@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Components
 	import YourSongsOnProfileItem from './YourSongsOnProfileItem.svelte';
+	import EmptyTrackOfTheMoment from './EmptyTrackOfTheMoment.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -27,6 +28,8 @@
 		{#each songsItems as { trackItem, type }}
 			{#if trackItem}
 				<YourSongsOnProfileItem trackItem={{ track: trackItem, type }} {openChangeYourItemsModal} />
+			{:else}
+				<EmptyTrackOfTheMoment />
 			{/if}
 		{/each}
 	</div>

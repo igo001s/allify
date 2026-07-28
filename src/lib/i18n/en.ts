@@ -241,45 +241,66 @@ export const en = {
 	profilePage: {
 		title: 'Profile | Allify',
 		profilePageMetaDescription:
-			'View your public profile, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your public profile, share your listening stats, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageMetaOgAndTwitterContent:
-			'View your public profile, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your public profile, share your listening stats, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageImageAltText: 'Profile picture of',
 		profilePageFollowers: 'followers',
 		profilePageAddTicketsAltText: 'Add tickets',
 		profilePageExternalLinkSpotify: 'View Spotify profile',
 		profilePageExternalLinkDeezer: 'View Deezer profile',
 		profilePageYourSongsOnProfileHeading2: 'Your songs',
-		profilePageYourSongsOnProfileHeading3v1: 'Most listened song',
-		profilePageYourSongsOnProfileHeading3v2: 'Current favorite song',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Button to edit current favorite song',
-		profilePageYourSongsOnProfileEditMusicIconAltText: 'Edit current favorite song icon',
-		profilePageChangeYourMusicCloseModalAltText: 'Close current favorite song modal icon',
-		profilePageChangeYourMusicCloseModalAriaLabel: 'Close current favorite song modal',
-		profilePageChangeYourMusicUnlockMoreMusic:
-			'Keep unlocking more songs and personalize your profile even further.',
-		profilePageChangeYourMusicParagraph1: 'Update your current favorite song on your profile',
+		profilePageYourSongsOnProfileHeading3v1: 'Most played song',
+		profilePageYourSongsOnProfileHeading3v2: 'Song of the moment',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
+			'Button to edit the song of the moment',
+		profilePageYourSongsOnProfileEditMusicIconAltText:
+			'Edit song of the moment icon',
+		profilePageChangeYourMusicCloseModalAltText:
+			'Close song of the moment selection modal icon',
+		profilePageChangeYourMusicCloseModalAriaLabel:
+			'Close song of the moment selection modal',
+		profilePageChangeYourMusicParagraph1:
+			'Update your song of the moment on your profile',
 		profilePageChangeYourMusicParagraph2:
 			'Choose the song that best represents what you are listening to right now.',
-		profilePageChangeYourMusicChooseMusicAriaLabel: 'Choose your current song for your profile',
+		profilePageChangeYourMusicChooseMusicAriaLabel:
+			'Select song of the moment for profile',
+		profilePageChangeYourMusicUnlockMoreMusic:
+			'Keep unlocking more songs and personalize your profile even further.',
+		profilePageEmptyMusicOfTheMomentHeading1: 'Song of the moment',
+		profilePageEmptyMusicOfTheMomentAltText: 'Song of the moment selection icon',
+		profilePageEmptyMusicOfTheMomentHeading2: 'Select song of the moment',
+		profilePageEmptyMusicOfTheMomentParagraph1:
+			'Choose the song that best represents you right now to feature it on your profile.',
 		profilePageYourArtistsOnProfileHeading2: 'Your artists',
-		profilePageYourArtistsOnProfileHeading3v1: 'Most listened artist',
-		profilePageYourArtistsOnProfileHeading3v2: 'Current favorite artist',
+		profilePageYourArtistsOnProfileHeading3v1: 'Most played artist',
+		profilePageYourArtistsOnProfileHeading3v2: 'Artist of the moment',
 		profilePageYourArtistsOnProfileFollowers: 'followers',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
-			'Button to edit current favorite artist',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Edit current favorite artist icon',
-		profilePageChangeYourArtistCloseModalAltText: 'Close current favorite artist modal icon',
-		profilePageChangeYourArtistCloseModalAriaLabel: 'Close current favorite artist modal',
-		profilePageChangeYourArtistParagraph1: 'Update your current favorite artist on your profile',
+			'Button to edit the artist of the moment',
+		profilePageYourArtistsOnProfileEditArtistIconAltText:
+			'Edit artist of the moment icon',
+		profilePageChangeYourArtistCloseModalAltText:
+			'Close artist of the moment selection modal icon',
+		profilePageChangeYourArtistCloseModalAriaLabel:
+			'Close artist of the moment selection modal',
+		profilePageChangeYourArtistParagraph1:
+			'Update your artist of the moment on your profile',
 		profilePageChangeYourArtistParagraph2:
 			'Choose the artist that best represents what you are listening to right now.',
-		profilePageChangeYourArtistChooseArtistAriaLabel: 'Choose your current artist for your profile',
+		profilePageChangeYourArtistChooseArtistAriaLabel:
+			'Select artist of the moment for profile',
 		profilePageChangeYourArtistChooseArtistFollowers: 'followers',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Keep unlocking more artists and personalize your profile even further.',
 		profilePageChangeYourItemsModalCloseModal: 'Close',
-		profilePageChangeYourItemsModalSaveChanges: 'Save changes'
+		profilePageChangeYourItemsModalSaveChanges: 'Save changes',
+		profilePageEmptyArtistOfTheMomentHeading1: 'Artist of the moment',
+		profilePageEmptyArtistOfTheMomentAltText: 'Artist of the moment selection icon',
+		profilePageEmptyArtistOfTheMomentHeading2: 'Select artist of the moment',
+		profilePageEmptyArtistOfTheMomentParagraph1:
+			'Choose the artist that best represents you right now to feature it on your profile.'
 	},
 	settingsPage: {
 		title: 'Settings | Allify',

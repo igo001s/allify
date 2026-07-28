@@ -264,6 +264,10 @@ export const pt = {
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Selecionar música do momento para o perfil',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
+		profilePageEmptyMusicOfTheMomentHeading1: 'Música do momento',
+		profilePageEmptyMusicOfTheMomentAltText: 'Ícone de seleção de música do momento',
+		profilePageEmptyMusicOfTheMomentHeading2: 'Selecionar música do momento',
+		profilePageEmptyMusicOfTheMomentParagraph1: 'Escolha a música que mais representa você no momento para destacar no seu perfil.',
 		profilePageYourArtistsOnProfileHeading2: 'Seus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista mais ouvido',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista do momento',
@@ -281,7 +285,11 @@ export const pt = {
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		profilePageChangeYourItemsModalCloseModal: 'Fechar',
-		profilePageChangeYourItemsModalSaveChanges: 'Salvar alterações'
+		profilePageChangeYourItemsModalSaveChanges: 'Salvar alterações',
+		profilePageEmptyArtistOfTheMomentHeading1: 'Artista do momento',
+		profilePageEmptyArtistOfTheMomentAltText: 'Ícone de seleção de artista do momento',
+		profilePageEmptyArtistOfTheMomentHeading2: 'Selecionar artista do momento',
+		profilePageEmptyArtistOfTheMomentParagraph1: 'Escolha o artista que mais representa você no momento para destacar no seu perfil.'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

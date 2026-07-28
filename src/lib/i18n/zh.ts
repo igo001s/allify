@@ -225,40 +225,66 @@ export const zh = {
 	profilePage: {
 		title: '个人资料 | Allify',
 		profilePageMetaDescription:
-			'查看您的公开个人资料，分享您的收听统计、喜欢的歌曲、播放列表和已保存的专辑，并连接您的流媒体平台以获取个性化分析。',
+			'查看您的公开个人资料，分享您的收听统计、喜欢的歌曲、播放列表和已保存的专辑，并连接您的流媒体平台以获取个性化数据分析。',
 		profilePageMetaOgAndTwitterContent:
-			'查看您的公开个人资料，分享您的收听统计、喜欢的歌曲、播放列表和已保存的专辑，并连接您的流媒体平台以获取个性化分析。',
-		profilePageImageAltText: '个人资料照片：',
-		profilePageFollowers: '关注者',
+			'查看您的公开个人资料，分享您的收听统计、喜欢的歌曲、播放列表和已保存的专辑，并连接您的流媒体平台以获取个性化数据分析。',
+		profilePageImageAltText: '个人资料图片：',
+		profilePageFollowers: '位粉丝',
 		profilePageAddTicketsAltText: '添加票券',
 		profilePageExternalLinkSpotify: '查看 Spotify 个人资料',
 		profilePageExternalLinkDeezer: '查看 Deezer 个人资料',
 		profilePageYourSongsOnProfileHeading2: '您的歌曲',
 		profilePageYourSongsOnProfileHeading3v1: '播放次数最多的歌曲',
-		profilePageYourSongsOnProfileHeading3v2: '当前歌曲',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '编辑当前歌曲按钮',
-		profilePageYourSongsOnProfileEditMusicIconAltText: '编辑当前歌曲图标',
-		profilePageChangeYourMusicCloseModalAltText: '关闭当前歌曲更改弹窗图标',
-		profilePageChangeYourMusicCloseModalAriaLabel: '关闭当前歌曲更改弹窗',
-		profilePageChangeYourMusicParagraph1: '更新您个人资料中的当前歌曲',
-		profilePageChangeYourMusicParagraph2: '选择最能代表您当前正在收听内容的歌曲。',
-		profilePageChangeYourMusicChooseMusicAriaLabel: '选择要在个人资料中显示的当前最喜欢的歌曲',
-		profilePageChangeYourMusicUnlockMoreMusic: '继续解锁更多歌曲，让您的个人资料更加个性化。',
+		profilePageYourSongsOnProfileHeading3v2: '当前最喜欢的歌曲',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
+			'编辑当前最喜欢歌曲按钮',
+		profilePageYourSongsOnProfileEditMusicIconAltText:
+			'编辑当前最喜欢歌曲图标',
+		profilePageChangeYourMusicCloseModalAltText:
+			'关闭当前最喜欢歌曲选择窗口图标',
+		profilePageChangeYourMusicCloseModalAriaLabel:
+			'关闭当前最喜欢歌曲选择窗口',
+		profilePageChangeYourMusicParagraph1:
+			'更新您个人资料中的当前最喜欢歌曲。',
+		profilePageChangeYourMusicParagraph2:
+			'选择最能代表您当前正在收听内容的歌曲。',
+		profilePageChangeYourMusicChooseMusicAriaLabel:
+			'为个人资料选择当前最喜欢的歌曲',
+		profilePageChangeYourMusicUnlockMoreMusic:
+			'解锁更多歌曲，进一步个性化您的个人资料。',
+		profilePageEmptyMusicOfTheMomentHeading1: '当前最喜欢的歌曲',
+		profilePageEmptyMusicOfTheMomentAltText: '当前最喜欢歌曲选择图标',
+		profilePageEmptyMusicOfTheMomentHeading2: '选择当前最喜欢的歌曲',
+		profilePageEmptyMusicOfTheMomentParagraph1:
+			'选择最能代表您此刻的歌曲，并将其展示在您的个人资料中。',
 		profilePageYourArtistsOnProfileHeading2: '您的艺术家',
 		profilePageYourArtistsOnProfileHeading3v1: '播放次数最多的艺术家',
-		profilePageYourArtistsOnProfileHeading3v2: '当前艺术家',
-		profilePageYourArtistsOnProfileFollowers: '关注者',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '编辑当前艺术家按钮',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: '编辑当前艺术家图标',
-		profilePageChangeYourArtistCloseModalAltText: '关闭当前艺术家更改弹窗图标',
-		profilePageChangeYourArtistCloseModalAriaLabel: '关闭当前艺术家更改弹窗',
-		profilePageChangeYourArtistParagraph1: '更新您个人资料中的当前艺术家',
-		profilePageChangeYourArtistParagraph2: '选择最能代表您当前正在收听内容的艺术家。',
-		profilePageChangeYourArtistChooseArtistAriaLabel: '选择要在个人资料中显示的当前最喜欢的艺人',
-		profilePageChangeYourArtistChooseArtistFollowers: '关注者',
-		profilePageChangeYourArtistUnlockMoreMusic: '继续解锁更多艺术家，让您的个人资料更加个性化。',
+		profilePageYourArtistsOnProfileHeading3v2: '当前最喜欢的艺术家',
+		profilePageYourArtistsOnProfileFollowers: '位粉丝',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+			'编辑当前最喜欢艺术家按钮',
+		profilePageYourArtistsOnProfileEditArtistIconAltText:
+			'编辑当前最喜欢艺术家图标',
+		profilePageChangeYourArtistCloseModalAltText:
+			'关闭当前最喜欢艺术家选择窗口图标',
+		profilePageChangeYourArtistCloseModalAriaLabel:
+			'关闭当前最喜欢艺术家选择窗口',
+		profilePageChangeYourArtistParagraph1:
+			'更新您个人资料中的当前最喜欢艺术家。',
+		profilePageChangeYourArtistParagraph2:
+			'选择最能代表您当前正在收听内容的艺术家。',
+		profilePageChangeYourArtistChooseArtistAriaLabel:
+			'为个人资料选择当前最喜欢的艺术家',
+		profilePageChangeYourArtistChooseArtistFollowers: '位粉丝',
+		profilePageChangeYourArtistUnlockMoreMusic:
+			'解锁更多艺术家，进一步个性化您的个人资料。',
 		profilePageChangeYourItemsModalCloseModal: '关闭',
-		profilePageChangeYourItemsModalSaveChanges: '保存'
+		profilePageChangeYourItemsModalSaveChanges: '保存更改',
+		profilePageEmptyArtistOfTheMomentHeading1: '当前最喜欢的艺术家',
+		profilePageEmptyArtistOfTheMomentAltText: '当前最喜欢艺术家选择图标',
+		profilePageEmptyArtistOfTheMomentHeading2: '选择当前最喜欢的艺术家',
+		profilePageEmptyArtistOfTheMomentParagraph1:
+			'选择最能代表您此刻的艺术家，并将其展示在您的个人资料中。'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

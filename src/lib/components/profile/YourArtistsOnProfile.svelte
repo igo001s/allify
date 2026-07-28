@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Components
 	import YourArtistOnProfileItem from './YourArtistsOnProfileItem.svelte';
+	import EmptyArtistOfTheMoment from './EmptyArtistOfTheMoment.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -31,6 +32,8 @@
 					artistItem={{ artist: artistItem, type }}
 					{openChangeYourItemsModal}
 				/>
+			{:else}
+				<EmptyArtistOfTheMoment />
 			{/if}
 		{/each}
 	</div>

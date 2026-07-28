@@ -253,44 +253,53 @@ export const de = {
 		profilePageExternalLinkDeezer: 'Deezer-Profil anzeigen',
 		profilePageYourSongsOnProfileHeading2: 'Deine Songs',
 		profilePageYourSongsOnProfileHeading3v1: 'Meistgehörter Song',
-		profilePageYourSongsOnProfileHeading3v2: 'Aktueller Lieblingssong',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
-			'Schaltfläche zum Bearbeiten des aktuellen Lieblingssongs',
-		profilePageYourSongsOnProfileEditMusicIconAltText:
-			'Symbol zum Bearbeiten des aktuellen Lieblingssongs',
+		profilePageYourSongsOnProfileHeading3v2: 'Song des Moments',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Schaltfläche zum Bearbeiten des Songs des Moments',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Symbol zum Bearbeiten des Songs des Moments',
 		profilePageChangeYourMusicCloseModalAltText:
-			'Symbol zum Schließen des Modals für den aktuellen Lieblingssong',
+			'Symbol zum Schließen des Dialogs zum Ändern des Songs des Moments',
 		profilePageChangeYourMusicCloseModalAriaLabel:
-			'Modal für den aktuellen Lieblingssong schließen',
-		profilePageChangeYourMusicParagraph1:
-			'Aktualisiere deinen aktuellen Lieblingssong in deinem Profil',
+			'Dialog zum Ändern des Songs des Moments schließen',
+		profilePageChangeYourMusicParagraph1: 'Aktualisiere deinen Song des Moments auf deinem Profil',
 		profilePageChangeYourMusicParagraph2:
 			'Wähle den Song aus, der am besten widerspiegelt, was du gerade hörst.',
-		profilePageChangeYourMusicChooseMusicAriaLabel: 'Aktuellen Song für das Profil auswählen',
+		profilePageChangeYourMusicChooseMusicAriaLabel:
+			'Song des Moments für das Profil auswählen',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
+		profilePageEmptyMusicOfTheMomentHeading1: 'Song des Moments',
+		profilePageEmptyMusicOfTheMomentAltText: 'Symbol zur Auswahl des Songs des Moments',
+		profilePageEmptyMusicOfTheMomentHeading2: 'Song des Moments auswählen',
+		profilePageEmptyMusicOfTheMomentParagraph1:
+			'Wähle den Song aus, der dich im Moment am besten repräsentiert, um ihn auf deinem Profil hervorzuheben.',
 		profilePageYourArtistsOnProfileHeading2: 'Deine Künstler',
 		profilePageYourArtistsOnProfileHeading3v1: 'Meistgehörter Künstler',
-		profilePageYourArtistsOnProfileHeading3v2: 'Aktueller Lieblingskünstler',
+		profilePageYourArtistsOnProfileHeading3v2: 'Künstler des Moments',
 		profilePageYourArtistsOnProfileFollowers: 'Follower',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
-			'Schaltfläche zum Bearbeiten des aktuellen Lieblingskünstlers',
+			'Schaltfläche zum Bearbeiten des Künstlers des Moments',
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
-			'Symbol zum Bearbeiten des aktuellen Lieblingskünstlers',
+			'Symbol zum Bearbeiten des Künstlers des Moments',
 		profilePageChangeYourArtistCloseModalAltText:
-			'Symbol zum Schließen des Modals für den aktuellen Lieblingskünstler',
+			'Symbol zum Schließen des Dialogs zum Ändern des Künstlers des Moments',
 		profilePageChangeYourArtistCloseModalAriaLabel:
-			'Modal für den aktuellen Lieblingskünstler schließen',
+			'Dialog zum Ändern des Künstlers des Moments schließen',
 		profilePageChangeYourArtistParagraph1:
-			'Aktualisiere deinen aktuellen Lieblingskünstler in deinem Profil',
+			'Aktualisiere deinen Künstler des Moments auf deinem Profil',
 		profilePageChangeYourArtistParagraph2:
 			'Wähle den Künstler aus, der am besten widerspiegelt, was du gerade hörst.',
-		profilePageChangeYourArtistChooseArtistAriaLabel: 'Aktuellen Künstler für das Profil auswählen',
+		profilePageChangeYourArtistChooseArtistAriaLabel:
+			'Künstler des Moments für das Profil auswählen',
 		profilePageChangeYourArtistChooseArtistFollowers: 'Follower',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
 		profilePageChangeYourItemsModalCloseModal: 'Schließen',
-		profilePageChangeYourItemsModalSaveChanges: 'Änderungen speichern'
+		profilePageChangeYourItemsModalSaveChanges: 'Änderungen speichern',
+		profilePageEmptyArtistOfTheMomentHeading1: 'Künstler des Moments',
+		profilePageEmptyArtistOfTheMomentAltText: 'Symbol zur Auswahl des Künstlers des Moments',
+		profilePageEmptyArtistOfTheMomentHeading2: 'Künstler des Moments auswählen',
+		profilePageEmptyArtistOfTheMomentParagraph1:
+			'Wähle den Künstler aus, der dich im Moment am besten repräsentiert, um ihn auf deinem Profil hervorzuheben.'
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',
