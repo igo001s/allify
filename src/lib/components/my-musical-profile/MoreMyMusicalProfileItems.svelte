@@ -51,17 +51,17 @@
 				return;
 			}
 
-			userInfo.update((current) => {
-				if (!current || !current.connectedStreamings.spotify) return current;
+			userInfo.update((currentUser) => {
+				if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
 
 				return {
-					...current,
+					...currentUser,
 					tickets: response.tickets,
 					connectedStreamings: {
-						...current.connectedStreamings,
+						...currentUser.connectedStreamings,
 						spotify: {
-							...current.connectedStreamings.spotify,
-							connected: current.connectedStreamings.spotify.connected,
+							...currentUser.connectedStreamings.spotify,
+							connected: currentUser.connectedStreamings.spotify.connected,
 							mostListenedArtists: {
 								artistsLimit: response.limit,
 								updatedAt: response.updatedAt,
@@ -92,17 +92,17 @@
 				return;
 			}
 
-			userInfo.update((current) => {
-				if (!current || !current.connectedStreamings.spotify) return current;
+			userInfo.update((currentUser) => {
+				if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
 
 				return {
-					...current,
+					...currentUser,
 					tickets: response.tickets,
 					connectedStreamings: {
-						...current.connectedStreamings,
+						...currentUser.connectedStreamings,
 						spotify: {
-							...current.connectedStreamings.spotify,
-							connected: current.connectedStreamings.spotify.connected,
+							...currentUser.connectedStreamings.spotify,
+							connected: currentUser.connectedStreamings.spotify.connected,
 							mostListenedTracks: {
 								tracksLimit: response.limit,
 								updatedAt: response.updatedAt,

@@ -6,6 +6,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Services
+	import { updateArtistOfTheMoment } from '$lib/services/user/updates/updateArtistOfTheMoment';
+
 	// Types
 	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
@@ -21,6 +24,25 @@
 		}
 
 		choosedArtist = artist;
+	}
+
+	async function handleChangeArtistOfTheMoment() {
+		if (!choosedArtist || !$userInfo?._id) return;
+
+		const updatedArtist = await updateArtistOfTheMoment($userInfo?._id, choosedArtist);
+
+		if (updatedArtist) {
+			userInfo.update((currentUser) => {
+				if (!currentUser) return currentUser;
+
+				return {
+					...currentUser,
+					artistOfTheMoment: updatedArtist
+				};
+			});
+		}
+
+		closeChangeYourItemsModal();
 	}
 </script>
 
@@ -81,6 +103,7 @@
 		<button
 			disabled={!choosedArtist}
 			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 disabled:bg-s-inverse-muted sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
+			on:click={handleChangeArtistOfTheMoment}
 		>
 			{$translationsStore.profilePage.profilePageChangeYourItemsModalSaveChanges}
 		</button>

@@ -6,6 +6,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Services
+	import { updateTrackOfTheMoment } from '$lib/services/user/updates/updateTrackOfTheMoment';
+
 	// Types
 	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
@@ -21,6 +24,25 @@
 		}
 
 		choosedTrack = track;
+	}
+
+	async function handleChangeTrackOfTheMoment() {
+		if (!choosedTrack || !$userInfo?._id) return;
+
+		const updatedTrack = await updateTrackOfTheMoment($userInfo?._id, choosedTrack);
+
+		if (updatedTrack) {
+			userInfo.update((currentUser) => {
+				if (!currentUser) return currentUser;
+
+				return {
+					...currentUser,
+					trackOfTheMoment: updatedTrack
+				};
+			});
+		}
+
+		closeChangeYourItemsModal();
 	}
 </script>
 
@@ -84,6 +106,7 @@
 		<button
 			disabled={!choosedTrack}
 			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 disabled:bg-s-inverse-muted sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
+			on:click={handleChangeTrackOfTheMoment}
 		>
 			{$translationsStore.profilePage.profilePageChangeYourItemsModalSaveChanges}
 		</button>

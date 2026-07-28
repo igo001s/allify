@@ -9,7 +9,7 @@
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
 
-	const songsItems = [
+	$: songsItems = [
 		{
 			trackItem: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem,
 			type: 'mostListenedTrack'

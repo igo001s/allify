@@ -77,15 +77,15 @@
 				return;
 			}
 
-			userInfo.update((user) => {
-				if (!user?.email) return user;
+			userInfo.update((currentUser) => {
+				if (!currentUser?.email) return currentUser;
 
 				return {
-					...user,
+					...currentUser,
 					discoveries: {
-						artists: artists ?? user.discoveries?.artists,
-						tracks: tracks ?? user.discoveries?.tracks,
-						updatedAt: updatedAt ?? user.discoveries?.updatedAt
+						artists: artists ?? currentUser.discoveries?.artists,
+						tracks: tracks ?? currentUser.discoveries?.tracks,
+						updatedAt: updatedAt ?? currentUser.discoveries?.updatedAt
 					}
 				};
 			});
@@ -115,17 +115,17 @@
 				return;
 			}
 
-			userInfo.update((user) => {
-				if (!user?.email) return user;
+			userInfo.update((currentUser) => {
+				if (!currentUser?.email) return currentUser;
 
 				return {
-					...user,
+					...currentUser,
 					discoveries: {
-						artists: artists ?? user.discoveries?.artists,
-						tracks: tracks ?? user.discoveries?.tracks,
-						updatedAt: updatedAt ?? user.discoveries?.updatedAt
+						artists: artists ?? currentUser.discoveries?.artists,
+						tracks: tracks ?? currentUser.discoveries?.tracks,
+						updatedAt: updatedAt ?? currentUser.discoveries?.updatedAt
 					},
-					tickets: tickets ?? user.tickets
+					tickets: tickets ?? currentUser.tickets
 				};
 			});
 		}

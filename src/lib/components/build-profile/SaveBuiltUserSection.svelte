@@ -22,11 +22,11 @@
 
 			const response = await saveBuiltProfile($userInfo._id, buildProfileData);
 
-			userInfo.update((currentUserInfo) => {
-				if (currentUserInfo) {
-					return { ...currentUserInfo, ...response };
+			userInfo.update((currentUser) => {
+				if (currentUser) {
+					return { ...currentUser, ...response };
 				}
-				return currentUserInfo;
+				return currentUser;
 			});
 
 			closeModal();

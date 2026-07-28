@@ -33,12 +33,12 @@
 
 		if (!data) return;
 
-		userInfo.update((user) => {
-			if (user) {
-				user.favorites = user.favorites?.filter((fav) => fav._id !== data.removedFavorite._id);
+		userInfo.update((currentUser) => {
+			if (currentUser) {
+				currentUser.favorites = currentUser.favorites?.filter((fav) => fav._id !== data.removedFavorite._id);
 			}
 
-			return user;
+			return currentUser;
 		});
 
 		return;

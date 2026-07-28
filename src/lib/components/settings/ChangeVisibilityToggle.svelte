@@ -36,11 +36,11 @@
 
 		const { visibility, updatedAt } = await changeVisibility($userInfo._id, option, remainingHours);
 
-		userInfo.update((user) => {
-			if (!user) return user;
+		userInfo.update((currentUser) => {
+			if (!currentUser) return currentUser;
 
 			return {
-				...user,
+				...currentUser,
 				profileVisibility: {
 					visibility,
 					updatedAt

@@ -53,10 +53,10 @@
 
 		if (!data) return false;
 
-		userInfo.update((user) => {
-			if (user) {
-				if (user.favorites) {
-					user.favorites?.push({
+		userInfo.update((currentUser) => {
+			if (currentUser) {
+				if (currentUser.favorites) {
+					currentUser.favorites?.push({
 						_id: id,
 						name,
 						image,
@@ -64,7 +64,7 @@
 						deezerConnected
 					});
 				} else {
-					user.favorites = [
+					currentUser.favorites = [
 						{
 							_id: id,
 							name,
@@ -76,7 +76,7 @@
 				}
 			}
 
-			return user;
+			return currentUser;
 		});
 
 		return true;
@@ -89,14 +89,14 @@
 
 		if (!data) return false;
 
-		userInfo.update((user) => {
-			if (user) {
-				user.favorites = user.favorites?.filter(
+		userInfo.update((currentUser) => {
+			if (currentUser) {
+				currentUser.favorites = currentUser.favorites?.filter(
 					(favorite) => favorite._id !== data.removedFavorite._id
 				);
 			}
 
-			return user;
+			return currentUser;
 		});
 
 		return true;
