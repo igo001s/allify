@@ -53,12 +53,13 @@
 		{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
 			<button
 				class={`${
-					choosedArtist?.id === artist.id
+					choosedArtist?.id === artist.id || (!choosedArtist && $userInfo?.artistOfTheMoment?.id === artist.id)
 						? 'border-brand-primary bg-brand-primary/5'
 						: 'border-s-muted bg-s-muted'
 				}
 						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-5 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
 				aria-label={$translationsStore.profilePage.profilePageChangeYourArtistChooseArtistAriaLabel}
+				disabled={choosedArtist === undefined && $userInfo?.artistOfTheMoment?.id === artist.id}
 				on:click={() => handleArtistSelection(artist)}
 			>
 				{#if artist.image}
@@ -82,7 +83,7 @@
 				</div>
 
 				<SpotifyIcon
-					iconSvgClass={`${choosedArtist?.id === artist.id ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
+					iconSvgClass={`${choosedArtist?.id === artist.id || (!choosedArtist && $userInfo?.artistOfTheMoment?.id === artist.id) ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
 				/>
 			</button>
 		{/each}
