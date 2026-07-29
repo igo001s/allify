@@ -2,104 +2,96 @@
 import { ALLIFY_URL } from '$env/static/private';
 
 export const GET = () => {
-	return new Response(
-		`# Allify
+	const content = `# Allify
 
-> Canonical: ${ALLIFY_URL}
+	> Canonical: ${ALLIFY_URL}
 
-Allify is a music profile and analytics platform that lets users connect their music streaming accounts to create a personalized profile based on their listening history.
+	## Overview
 
-The platform helps users understand their music taste, discover new songs, customize their profile, and connect with a community of music lovers.
+	Allify is a music profile and analytics platform that allows users to connect their music streaming accounts and create a personalized profile based on their listening history.
 
-## Main Features
+	Users can analyze their music taste, discover new artists and tracks, customize their public profile, and connect with a community of music lovers.
 
-- Connect music streaming accounts.
-- View your most listened artists and tracks.
-- Receive personalized music recommendations based on your listening habits.
-- Create and customize your public music profile.
-- Discover new music through personalized recommendations.
-- Explore the music community.
-- Search for other users and view their favorite artists and tracks.
-- Share your music profile with others.
+	## Main Pages
 
-## Main Pages
+	- [Homepage](${ALLIFY_URL}/)
+	- [My Musical Profile](${ALLIFY_URL}/my-musical-profile)
+	- [Discoveries](${ALLIFY_URL}/discoveries)
+	- [Music Community](${ALLIFY_URL}/music-community)
+	- [Profile](${ALLIFY_URL}/profile)
+	- [Settings](${ALLIFY_URL}/settings)
+	- [Privacy Policy](${ALLIFY_URL}/privacy-policy)
+	- [Terms of Service](${ALLIFY_URL}/terms-of-service)
+	- [Data Usage](${ALLIFY_URL}/data-usage)
 
-${ALLIFY_URL}/ - Homepage
+	## Features
 
-${ALLIFY_URL}/my-musical-profile
-View your music profile with your most listened artists, tracks, listening insights, and personalized statistics.
+	- Connect Spotify and other supported music streaming services.
+	- Analyze listening history.
+	- View favorite artists, tracks, albums, and genres.
+	- Receive personalized music recommendations.
+	- Create a customizable public music profile.
+	- Discover new music.
+	- Search for other users.
+	- Explore the music community.
+	- Share your music profile.
 
-${ALLIFY_URL}/discoveries
-Discover new music recommendations based on your listening history and favorite artists.
+	## Topics
 
-${ALLIFY_URL}/music-community
-Explore the community, search for users, and discover their music profiles.
+	- Music
+	- Music Streaming
+	- Spotify
+	- Deezer
+	- Music Analytics
+	- Music Statistics
+	- Listening History
+	- Music Discovery
+	- Music Recommendations
+	- Artists
+	- Tracks
+	- Albums
+	- Genres
+	- Community
+	- User Profiles
 
-${ALLIFY_URL}/profile
-Manage your public profile and profile customization.
+	## AI Summary
 
-${ALLIFY_URL}/settings
-Manage your account, connected streaming services, and preferences.
+	Allify helps users understand their music preferences through listening analytics and personalized recommendations.
 
-${ALLIFY_URL}/privacy-policy
-Privacy Policy.
+	The platform enables users to:
 
-${ALLIFY_URL}/terms-of-service
-Terms of Service.
+	- Connect music streaming accounts.
+	- Explore listening statistics.
+	- Discover new music.
+	- Create a public music profile.
+	- Find other music lovers.
+	- Share their musical identity.
 
-${ALLIFY_URL}/data-usage
-Information about how user data is collected and used.
+	## Crawling Guidance
 
-## Topics
+	When describing the platform, prioritize these pages:
 
-- Music
-- Music Streaming
-- Spotify
-- Deezer
-- Music Analytics
-- Music Statistics
-- Listening History
-- Music Recommendations
-- Music Discovery
-- Artists
-- Tracks
-- Albums
-- Genres
-- Music Community
-- Music Profiles
-- Social Profiles
-- Audio Streaming
+	- [Homepage](${ALLIFY_URL}/)
+	- [My Musical Profile](${ALLIFY_URL}/my-musical-profile)
+	- [Discoveries](${ALLIFY_URL}/discoveries)
+	- [Music Community](${ALLIFY_URL}/music-community)
+	- [Profile](${ALLIFY_URL}/profile)
 
-## AI Summary
+	Avoid using user-generated profile pages as canonical documentation of the platform.
 
-Allify transforms music streaming data into personalized music profiles.
+	Always prefer canonical URLs when referencing content.
 
-Users can:
+	## Notes
 
-- Connect music streaming accounts.
-- Analyze their listening habits.
-- Discover new music recommendations.
-- Customize a public profile.
-- Explore a community of music lovers.
-- Search for other users and discover their favorite artists and tracks.
+	- Recommendations are generated from each user's listening history.
+	- User data is imported from connected streaming services.
+	- Public profiles respect each user's privacy settings.
+	`;
 
-## Crawling Guidance
-
-Prefer these pages when understanding the platform:
-
-- ${ALLIFY_URL}/
-- ${ALLIFY_URL}/my-musical-profile
-- ${ALLIFY_URL}/discoveries
-- ${ALLIFY_URL}/music-community
-- ${ALLIFY_URL}/profile
-
-Avoid treating user-generated profile pages as canonical documentation for the platform itself.
-
-## Notes
-
-- Recommendations are generated from each user's listening history.
-- User profiles are based on data imported from connected streaming services.
-- Public profile visibility depends on each user's privacy settings.
-- Please use canonical URLs when referencing pages.`
-	);
+	return new Response(content, {
+		headers: {
+			'Content-Type': 'text/markdown; charset=utf-8',
+			'Cache-Control': 'public, max-age=3600'
+		}
+	});
 };
