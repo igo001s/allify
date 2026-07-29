@@ -30,7 +30,7 @@
 			{#if trackItem}
 				<YourSongsOnProfileItem trackItem={{ track: trackItem, type }} {openChangeYourItemsModal} />
 			{:else}
-				<EmptyTrackOfTheMoment {openSelectYourItemsModal}  />
+				<EmptyTrackOfTheMoment {openSelectYourItemsModal} />
 			{/if}
 		{/each}
 	</div>

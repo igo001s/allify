@@ -7,10 +7,7 @@ import type { ObjectId } from 'mongodb';
 // Types
 import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
-export async function updateArtistOfTheMoment(
-	id: ObjectId,
-	artistOfTheMoment: ArtistSpotify
-) {
+export async function updateArtistOfTheMoment(id: ObjectId, artistOfTheMoment: ArtistSpotify) {
 	try {
 		if (!id || !artistOfTheMoment) return;
 

@@ -53,7 +53,8 @@
 		{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
 			<button
 				class={`${
-					choosedArtist?.id === artist.id || (!choosedArtist && $userInfo?.artistOfTheMoment?.id === artist.id)
+					choosedArtist?.id === artist.id ||
+					(!choosedArtist && $userInfo?.artistOfTheMoment?.id === artist.id)
 						? 'border-brand-primary bg-brand-primary/5'
 						: 'border-s-muted bg-s-muted'
 				}

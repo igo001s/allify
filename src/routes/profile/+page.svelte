@@ -86,9 +86,15 @@
 		</div>
 
 		<div class="mt-14 flex w-full flex-col gap-8 lg:gap-14">
-			<YourSongsOnProfile openChangeYourItemsModal={() => openChangeYourItemsModal('music')} openSelectYourItemsModal={() => openSelectYourItemsModal('music')} />
+			<YourSongsOnProfile
+				openChangeYourItemsModal={() => openChangeYourItemsModal('music')}
+				openSelectYourItemsModal={() => openSelectYourItemsModal('music')}
+			/>
 
-			<YourArtistsOnProfile openChangeYourItemsModal={() => openChangeYourItemsModal('artist')} openSelectYourItemsModal={() => openSelectYourItemsModal('artist')} />
+			<YourArtistsOnProfile
+				openChangeYourItemsModal={() => openChangeYourItemsModal('artist')}
+				openSelectYourItemsModal={() => openSelectYourItemsModal('artist')}
+			/>
 		</div>
 	</section>
 

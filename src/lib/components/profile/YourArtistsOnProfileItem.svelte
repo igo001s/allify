@@ -28,7 +28,7 @@
 	</h3>
 
 	<div
-		class="relative flex flex-col gap-6 rounded-xl border border-b-default p-5 shadow-xl transition-all min-h-56 max-h-56 duration-300 md:flex-row lg:p-6"
+		class="relative flex max-h-56 min-h-56 flex-col gap-6 rounded-xl border border-b-default p-5 shadow-xl transition-all duration-300 md:flex-row lg:p-6"
 	>
 		{#if artistItem.type === 'artistOfTheMoment'}
 			<button

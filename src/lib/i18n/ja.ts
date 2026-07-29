@@ -251,12 +251,10 @@ export const ja = {
 		profilePageYourSongsOnProfileHeading3v2: '今の一曲',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '今の一曲を編集するボタン',
 		profilePageYourSongsOnProfileEditMusicIconAltText: '今の一曲を編集するアイコン',
-		profilePageChangeYourMusicCloseModalAltText:
-			'今の一曲変更モーダルを閉じるアイコン',
+		profilePageChangeYourMusicCloseModalAltText: '今の一曲変更モーダルを閉じるアイコン',
 		profilePageChangeYourMusicCloseModalAriaLabel: '今の一曲変更モーダルを閉じる',
 		profilePageChangeYourMusicParagraph1: 'プロフィールの今の一曲を更新しましょう',
-		profilePageChangeYourMusicParagraph2:
-			'今聴いている音楽を最もよく表す楽曲を選択してください。',
+		profilePageChangeYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選択してください。',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'プロフィール用の今の一曲を選択',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'さらに多くの楽曲をアンロックして、プロフィールをもっとカスタマイズしましょう。',
@@ -268,16 +266,14 @@ export const ja = {
 		profilePageSelectYourMusicCloseModalAriaLabel: '今の一曲選択モーダルを閉じる',
 		profilePageSelectYourMusicCloseModalAltText: '今の一曲選択モーダルを閉じるアイコン',
 		profilePageSelectYourMusicParagraph1: '今の一曲を選択',
-		profilePageSelectYourMusicParagraph2:
-			'今聴いている音楽を最もよく表す楽曲を選択してください。',
+		profilePageSelectYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選択してください。',
 		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
 		profilePageYourArtistsOnProfileHeading3v1: '最も再生したアーティスト',
 		profilePageYourArtistsOnProfileHeading3v2: '今のアーティスト',
 		profilePageYourArtistsOnProfileFollowers: 'フォロワー',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '今のアーティストを編集するボタン',
 		profilePageYourArtistsOnProfileEditArtistIconAltText: '今のアーティストを編集するアイコン',
-		profilePageChangeYourArtistCloseModalAltText:
-			'今のアーティスト変更モーダルを閉じるアイコン',
+		profilePageChangeYourArtistCloseModalAltText: '今のアーティスト変更モーダルを閉じるアイコン',
 		profilePageChangeYourArtistCloseModalAriaLabel: '今のアーティスト変更モーダルを閉じる',
 		profilePageChangeYourArtistParagraph1: 'プロフィールの今のアーティストを更新しましょう',
 		profilePageChangeYourArtistParagraph2:

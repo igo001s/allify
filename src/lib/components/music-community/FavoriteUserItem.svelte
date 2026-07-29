@@ -35,7 +35,9 @@
 
 		userInfo.update((currentUser) => {
 			if (currentUser) {
-				currentUser.favorites = currentUser.favorites?.filter((fav) => fav._id !== data.removedFavorite._id);
+				currentUser.favorites = currentUser.favorites?.filter(
+					(fav) => fav._id !== data.removedFavorite._id
+				);
 			}
 
 			return currentUser;

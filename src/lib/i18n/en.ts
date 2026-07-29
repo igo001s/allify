@@ -254,8 +254,7 @@ export const en = {
 		profilePageYourSongsOnProfileHeading3v2: 'Song of the moment',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Button to edit song of the moment',
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Edit song of the moment icon',
-		profilePageChangeYourMusicCloseModalAltText:
-			'Close song of the moment change modal icon',
+		profilePageChangeYourMusicCloseModalAltText: 'Close song of the moment change modal icon',
 		profilePageChangeYourMusicCloseModalAriaLabel: 'Close song of the moment change modal',
 		profilePageChangeYourMusicParagraph1: 'Update your song of the moment on your profile',
 		profilePageChangeYourMusicParagraph2:
@@ -279,8 +278,7 @@ export const en = {
 		profilePageYourArtistsOnProfileFollowers: 'followers',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Button to edit artist of the moment',
 		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Edit artist of the moment icon',
-		profilePageChangeYourArtistCloseModalAltText:
-			'Close artist of the moment change modal icon',
+		profilePageChangeYourArtistCloseModalAltText: 'Close artist of the moment change modal icon',
 		profilePageChangeYourArtistCloseModalAriaLabel: 'Close artist of the moment change modal',
 		profilePageChangeYourArtistParagraph1: 'Update your artist of the moment on your profile',
 		profilePageChangeYourArtistParagraph2:

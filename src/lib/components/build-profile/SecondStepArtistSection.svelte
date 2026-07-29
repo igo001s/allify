@@ -70,7 +70,9 @@
 						</p>
 
 						<p class="line-clamp-1 text-[9px] text-t-secondary/70 sm:text-[10px]">
-							{artist.followers.toLocaleString()} {$translationsStore.generalTexts.buildProfileSecondStepArtistSectionSelectArtistFollowers}
+							{artist.followers.toLocaleString()}
+							{$translationsStore.generalTexts
+								.buildProfileSecondStepArtistSectionSelectArtistFollowers}
 						</p>
 					</div>
 

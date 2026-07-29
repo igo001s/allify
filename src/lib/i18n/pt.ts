@@ -267,11 +267,14 @@ export const pt = {
 		profilePageEmptyMusicOfTheMomentHeading1: 'Música do momento',
 		profilePageEmptyMusicOfTheMomentAltText: 'Ícone de seleção de música do momento',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Selecionar música do momento',
-		profilePageEmptyMusicOfTheMomentParagraph1: 'Escolha a música que mais representa você no momento para destacar no seu perfil.',
+		profilePageEmptyMusicOfTheMomentParagraph1:
+			'Escolha a música que mais representa você no momento para destacar no seu perfil.',
 		profilePageSelectYourMusicCloseModalAriaLabel: 'Fechar modal de seleção de música do momento',
-		profilePageSelectYourMusicCloseModalAltText: 'Ícone de fechar modal de seleção de música do momento',
+		profilePageSelectYourMusicCloseModalAltText:
+			'Ícone de fechar modal de seleção de música do momento',
 		profilePageSelectYourMusicParagraph1: 'Escolha a sua música do momento',
-		profilePageSelectYourMusicParagraph2: 'Escolha a música que melhor representa o que você está ouvindo no momento.',
+		profilePageSelectYourMusicParagraph2:
+			'Escolha a música que melhor representa o que você está ouvindo no momento.',
 		profilePageYourArtistsOnProfileHeading2: 'Seus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista mais ouvido',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista do momento',
@@ -293,11 +296,14 @@ export const pt = {
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista do momento',
 		profilePageEmptyArtistOfTheMomentAltText: 'Ícone de seleção de artista do momento',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Selecionar artista do momento',
-		profilePageEmptyArtistOfTheMomentParagraph1: 'Escolha o artista que mais representa você no momento para destacar no seu perfil.',
+		profilePageEmptyArtistOfTheMomentParagraph1:
+			'Escolha o artista que mais representa você no momento para destacar no seu perfil.',
 		profilePageSelectYourArtistCloseModalAriaLabel: 'Fechar modal de seleção de artista do momento',
-		profilePageSelectYourArtistCloseModalAltText: 'Ícone de fechar modal de seleção de artista do momento',
+		profilePageSelectYourArtistCloseModalAltText:
+			'Ícone de fechar modal de seleção de artista do momento',
 		profilePageSelectYourArtistParagraph1: 'Escolha o seu artista do momento',
-		profilePageSelectYourArtistParagraph2: 'Escolha o artista que melhor representa o que você está ouvindo no momento.'
+		profilePageSelectYourArtistParagraph2:
+			'Escolha o artista que melhor representa o que você está ouvindo no momento.'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

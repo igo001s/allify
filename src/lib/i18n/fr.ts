@@ -258,15 +258,19 @@ export const fr = {
 		profilePageYourSongsOnProfileHeading2: 'Vos chansons',
 		profilePageYourSongsOnProfileHeading3v1: 'Chanson la plus écoutée',
 		profilePageYourSongsOnProfileHeading3v2: 'Chanson du moment',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Bouton pour modifier la chanson du moment',
-		profilePageYourSongsOnProfileEditMusicIconAltText: 'Icône de modification de la chanson du moment',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
+			'Bouton pour modifier la chanson du moment',
+		profilePageYourSongsOnProfileEditMusicIconAltText:
+			'Icône de modification de la chanson du moment',
 		profilePageChangeYourMusicCloseModalAltText:
 			'Icône pour fermer la fenêtre de modification de la chanson du moment',
-		profilePageChangeYourMusicCloseModalAriaLabel: 'Fermer la fenêtre de modification de la chanson du moment',
+		profilePageChangeYourMusicCloseModalAriaLabel:
+			'Fermer la fenêtre de modification de la chanson du moment',
 		profilePageChangeYourMusicParagraph1: 'Mettez à jour votre chanson du moment sur votre profil',
 		profilePageChangeYourMusicParagraph2:
 			'Choisissez la chanson qui représente le mieux ce que vous écoutez en ce moment.',
-		profilePageChangeYourMusicChooseMusicAriaLabel: 'Sélectionner la chanson du moment pour le profil',
+		profilePageChangeYourMusicChooseMusicAriaLabel:
+			'Sélectionner la chanson du moment pour le profil',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Continuez à débloquer plus de chansons et personnalisez encore davantage votre profil.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Chanson du moment',
@@ -274,8 +278,10 @@ export const fr = {
 		profilePageEmptyMusicOfTheMomentHeading2: 'Sélectionner la chanson du moment',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Choisissez la chanson qui vous représente le mieux en ce moment pour la mettre en avant sur votre profil.',
-		profilePageSelectYourMusicCloseModalAriaLabel: 'Fermer la fenêtre de sélection de la chanson du moment',
-		profilePageSelectYourMusicCloseModalAltText: 'Icône pour fermer la fenêtre de sélection de la chanson du moment',
+		profilePageSelectYourMusicCloseModalAriaLabel:
+			'Fermer la fenêtre de sélection de la chanson du moment',
+		profilePageSelectYourMusicCloseModalAltText:
+			'Icône pour fermer la fenêtre de sélection de la chanson du moment',
 		profilePageSelectYourMusicParagraph1: 'Choisissez votre chanson du moment',
 		profilePageSelectYourMusicParagraph2:
 			'Choisissez la chanson qui représente le mieux ce que vous écoutez en ce moment.',
@@ -283,15 +289,19 @@ export const fr = {
 		profilePageYourArtistsOnProfileHeading3v1: 'Artiste le plus écouté',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artiste du moment',
 		profilePageYourArtistsOnProfileFollowers: 'abonnés',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Bouton pour modifier l’artiste du moment',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Icône de modification de l’artiste du moment',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+			'Bouton pour modifier l’artiste du moment',
+		profilePageYourArtistsOnProfileEditArtistIconAltText:
+			'Icône de modification de l’artiste du moment',
 		profilePageChangeYourArtistCloseModalAltText:
 			'Icône pour fermer la fenêtre de modification de l’artiste du moment',
-		profilePageChangeYourArtistCloseModalAriaLabel: 'Fermer la fenêtre de modification de l’artiste du moment',
+		profilePageChangeYourArtistCloseModalAriaLabel:
+			'Fermer la fenêtre de modification de l’artiste du moment',
 		profilePageChangeYourArtistParagraph1: 'Mettez à jour votre artiste du moment sur votre profil',
 		profilePageChangeYourArtistParagraph2:
 			'Choisissez l’artiste qui représente le mieux ce que vous écoutez en ce moment.',
-		profilePageChangeYourArtistChooseArtistAriaLabel: 'Sélectionner l’artiste du moment pour le profil',
+		profilePageChangeYourArtistChooseArtistAriaLabel:
+			'Sélectionner l’artiste du moment pour le profil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'abonnés',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Continuez à débloquer plus d’artistes et personnalisez encore davantage votre profil.',
@@ -302,8 +312,10 @@ export const fr = {
 		profilePageEmptyArtistOfTheMomentHeading2: 'Sélectionner l’artiste du moment',
 		profilePageEmptyArtistOfTheMomentParagraph1:
 			'Choisissez l’artiste qui vous représente le mieux en ce moment pour le mettre en avant sur votre profil.',
-		profilePageSelectYourArtistCloseModalAriaLabel: 'Fermer la fenêtre de sélection de l’artiste du moment',
-		profilePageSelectYourArtistCloseModalAltText: 'Icône pour fermer la fenêtre de sélection de l’artiste du moment',
+		profilePageSelectYourArtistCloseModalAriaLabel:
+			'Fermer la fenêtre de sélection de l’artiste du moment',
+		profilePageSelectYourArtistCloseModalAltText:
+			'Icône pour fermer la fenêtre de sélection de l’artiste du moment',
 		profilePageSelectYourArtistParagraph1: 'Choisissez votre artiste du moment',
 		profilePageSelectYourArtistParagraph2:
 			'Choisissez l’artiste qui représente le mieux ce que vous écoutez en ce moment.'

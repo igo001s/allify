@@ -238,15 +238,12 @@ export const zh = {
 		profilePageYourSongsOnProfileHeading3v2: '此刻歌曲',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '编辑此刻歌曲按钮',
 		profilePageYourSongsOnProfileEditMusicIconAltText: '编辑此刻歌曲图标',
-		profilePageChangeYourMusicCloseModalAltText:
-			'关闭更改此刻歌曲弹窗图标',
+		profilePageChangeYourMusicCloseModalAltText: '关闭更改此刻歌曲弹窗图标',
 		profilePageChangeYourMusicCloseModalAriaLabel: '关闭更改此刻歌曲弹窗',
 		profilePageChangeYourMusicParagraph1: '更新您个人资料中的此刻歌曲',
-		profilePageChangeYourMusicParagraph2:
-			'选择最能代表您当前正在收听内容的歌曲。',
+		profilePageChangeYourMusicParagraph2: '选择最能代表您当前正在收听内容的歌曲。',
 		profilePageChangeYourMusicChooseMusicAriaLabel: '为个人资料选择此刻歌曲',
-		profilePageChangeYourMusicUnlockMoreMusic:
-			'继续解锁更多歌曲，并进一步个性化您的个人资料。',
+		profilePageChangeYourMusicUnlockMoreMusic: '继续解锁更多歌曲，并进一步个性化您的个人资料。',
 		profilePageEmptyMusicOfTheMomentHeading1: '此刻歌曲',
 		profilePageEmptyMusicOfTheMomentAltText: '选择此刻歌曲图标',
 		profilePageEmptyMusicOfTheMomentHeading2: '选择此刻歌曲',
@@ -255,24 +252,20 @@ export const zh = {
 		profilePageSelectYourMusicCloseModalAriaLabel: '关闭选择此刻歌曲弹窗',
 		profilePageSelectYourMusicCloseModalAltText: '关闭选择此刻歌曲弹窗图标',
 		profilePageSelectYourMusicParagraph1: '选择您的此刻歌曲',
-		profilePageSelectYourMusicParagraph2:
-			'选择最能代表您当前正在收听内容的歌曲。',
+		profilePageSelectYourMusicParagraph2: '选择最能代表您当前正在收听内容的歌曲。',
 		profilePageYourArtistsOnProfileHeading2: '您的艺人',
 		profilePageYourArtistsOnProfileHeading3v1: '播放次数最多的艺人',
 		profilePageYourArtistsOnProfileHeading3v2: '此刻艺人',
 		profilePageYourArtistsOnProfileFollowers: '位粉丝',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '编辑此刻艺人按钮',
 		profilePageYourArtistsOnProfileEditArtistIconAltText: '编辑此刻艺人图标',
-		profilePageChangeYourArtistCloseModalAltText:
-			'关闭更改此刻艺人弹窗图标',
+		profilePageChangeYourArtistCloseModalAltText: '关闭更改此刻艺人弹窗图标',
 		profilePageChangeYourArtistCloseModalAriaLabel: '关闭更改此刻艺人弹窗',
 		profilePageChangeYourArtistParagraph1: '更新您个人资料中的此刻艺人',
-		profilePageChangeYourArtistParagraph2:
-			'选择最能代表您当前正在收听内容的艺人。',
+		profilePageChangeYourArtistParagraph2: '选择最能代表您当前正在收听内容的艺人。',
 		profilePageChangeYourArtistChooseArtistAriaLabel: '为个人资料选择此刻艺人',
 		profilePageChangeYourArtistChooseArtistFollowers: '位粉丝',
-		profilePageChangeYourArtistUnlockMoreMusic:
-			'继续解锁更多艺人，并进一步个性化您的个人资料。',
+		profilePageChangeYourArtistUnlockMoreMusic: '继续解锁更多艺人，并进一步个性化您的个人资料。',
 		profilePageChangeYourItemsModalCloseModal: '关闭',
 		profilePageChangeYourItemsModalSaveChanges: '保存更改',
 		profilePageEmptyArtistOfTheMomentHeading1: '此刻艺人',
@@ -283,8 +276,7 @@ export const zh = {
 		profilePageSelectYourArtistCloseModalAriaLabel: '关闭选择此刻艺人弹窗',
 		profilePageSelectYourArtistCloseModalAltText: '关闭选择此刻艺人弹窗图标',
 		profilePageSelectYourArtistParagraph1: '选择您的此刻艺人',
-		profilePageSelectYourArtistParagraph2:
-			'选择最能代表您当前正在收听内容的艺人。'
+		profilePageSelectYourArtistParagraph2: '选择最能代表您当前正在收听内容的艺人。'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

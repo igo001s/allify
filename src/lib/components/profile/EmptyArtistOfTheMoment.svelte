@@ -10,12 +10,12 @@
 </script>
 
 <div class="flex w-full flex-col gap-4 2xl:w-2/6">
-	<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-t-secondary">
+	<h3 class="text-xs font-semibold tracking-[0.18em] text-t-secondary uppercase">
 		{$translationsStore.profilePage.profilePageEmptyArtistOfTheMomentHeading1}
 	</h3>
 
 	<button
-		class="flex h-full cursor-pointer flex-col items-center justify-center min-h-56 max-h-56 gap-2 rounded-xl border border-b-default p-6 text-t-primary shadow-xl transition-all duration-300"
+		class="flex h-full max-h-56 min-h-56 cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-6 text-t-primary shadow-xl transition-all duration-300"
 		on:click={() => openSelectYourItemsModal('artist')}
 	>
 		<div class="flex h-20 w-20 items-center justify-center rounded-full bg-s-muted">

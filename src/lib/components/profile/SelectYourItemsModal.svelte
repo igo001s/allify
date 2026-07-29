@@ -44,7 +44,9 @@
 
 		<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
 			<p class="text-lg leading-tight font-bold text-t-primary sm:text-xl">
-				{itemType === 'artist' ? $translationsStore.profilePage.profilePageSelectYourArtistParagraph1 : $translationsStore.profilePage.profilePageSelectYourMusicParagraph1}
+				{itemType === 'artist'
+					? $translationsStore.profilePage.profilePageSelectYourArtistParagraph1
+					: $translationsStore.profilePage.profilePageSelectYourMusicParagraph1}
 			</p>
 
 			<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">

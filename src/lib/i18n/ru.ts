@@ -256,8 +256,7 @@ export const ru = {
 		profilePageYourSongsOnProfileHeading3v2: 'Песня момента',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Кнопка для изменения песни момента',
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Значок изменения песни момента',
-		profilePageChangeYourMusicCloseModalAltText:
-			'Значок закрытия окна изменения песни момента',
+		profilePageChangeYourMusicCloseModalAltText: 'Значок закрытия окна изменения песни момента',
 		profilePageChangeYourMusicCloseModalAriaLabel: 'Закрыть окно изменения песни момента',
 		profilePageChangeYourMusicParagraph1: 'Обновите песню момента в своём профиле',
 		profilePageChangeYourMusicParagraph2:
@@ -279,7 +278,8 @@ export const ru = {
 		profilePageYourArtistsOnProfileHeading3v1: 'Самый прослушиваемый исполнитель',
 		profilePageYourArtistsOnProfileHeading3v2: 'Исполнитель момента',
 		profilePageYourArtistsOnProfileFollowers: 'подписчиков',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Кнопка для изменения исполнителя момента',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+			'Кнопка для изменения исполнителя момента',
 		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Значок изменения исполнителя момента',
 		profilePageChangeYourArtistCloseModalAltText:
 			'Значок закрытия окна изменения исполнителя момента',
