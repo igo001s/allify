@@ -15,7 +15,7 @@
 	</h3>
 
 	<button
-		class="flex h-full max-h-56 min-h-56 cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-6 text-t-primary shadow-xl transition-all duration-300"
+		class="flex h-full cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-6 text-t-primary shadow-xl md:max-h-56 md:min-h-56"
 		on:click={() => openSelectYourItemsModal('artist')}
 	>
 		<div class="flex h-20 w-20 items-center justify-center rounded-full bg-s-muted">
