@@ -10,6 +10,7 @@
 	import YourSongsOnProfile from '$lib/components/profile/YourSongsOnProfile.svelte';
 	import YourArtistsOnProfile from '$lib/components/profile/YourArtistsOnProfile.svelte';
 	import ChangeYourItemsModal from '$lib/components/profile/ChangeYourItemsModal.svelte';
+	import SelectYourItemsModal from '$lib/components/profile/SelectYourItemsModal.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -22,6 +23,7 @@
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
 	let showChangeYourItemsModal = false;
+	let showSelectYourItemsModal = false;
 	let selectedItemType: 'artist' | 'music';
 
 	$: selectedStreaming =
@@ -34,8 +36,18 @@
 		selectedItemType = itemType;
 	}
 
+	function openSelectYourItemsModal(itemType: 'artist' | 'music') {
+		showSelectYourItemsModal = true;
+		selectedItemType = itemType;
+	}
+
 	function closeChangeYourItemsModal() {
 		showChangeYourItemsModal = false;
+		document.body.style.overflow = '';
+	}
+
+	function closeSelectYourItemsModal() {
+		showSelectYourItemsModal = false;
 		document.body.style.overflow = '';
 	}
 </script>
@@ -74,14 +86,18 @@
 		</div>
 
 		<div class="mt-14 flex w-full flex-col gap-8 lg:gap-14">
-			<YourSongsOnProfile openChangeYourItemsModal={() => openChangeYourItemsModal('music')} />
+			<YourSongsOnProfile openChangeYourItemsModal={() => openChangeYourItemsModal('music')} openSelectYourItemsModal={() => openSelectYourItemsModal('music')} />
 
-			<YourArtistsOnProfile openChangeYourItemsModal={() => openChangeYourItemsModal('artist')} />
+			<YourArtistsOnProfile openChangeYourItemsModal={() => openChangeYourItemsModal('artist')} openSelectYourItemsModal={() => openSelectYourItemsModal('artist')} />
 		</div>
 	</section>
 
 	{#if showChangeYourItemsModal}
 		<ChangeYourItemsModal {closeChangeYourItemsModal} itemType={selectedItemType} />
+	{/if}
+
+	{#if showSelectYourItemsModal}
+		<SelectYourItemsModal {closeSelectYourItemsModal} itemType={selectedItemType} />
 	{/if}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />

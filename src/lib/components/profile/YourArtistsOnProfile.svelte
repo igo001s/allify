@@ -9,6 +9,7 @@
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
+	export let openSelectYourItemsModal: (itemType: 'artist' | 'music') => void;
 
 	$: artistItems = [
 		{
@@ -33,7 +34,7 @@
 					{openChangeYourItemsModal}
 				/>
 			{:else}
-				<EmptyArtistOfTheMoment />
+				<EmptyArtistOfTheMoment {openSelectYourItemsModal} />
 			{/if}
 		{/each}
 	</div>

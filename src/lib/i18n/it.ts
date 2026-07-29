@@ -245,66 +245,66 @@ export const it = {
 	profilePage: {
 		title: 'Profilo | Allify',
 		profilePageMetaDescription:
-			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani preferiti, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere approfondimenti personalizzati.',
+			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani preferiti, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere informazioni personalizzate.',
 		profilePageMetaOgAndTwitterContent:
-			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani preferiti, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere approfondimenti personalizzati.',
+			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani preferiti, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere informazioni personalizzate.',
 		profilePageImageAltText: 'Foto del profilo di',
 		profilePageFollowers: 'follower',
 		profilePageAddTicketsAltText: 'Aggiungi ticket',
 		profilePageExternalLinkSpotify: 'Visualizza il profilo Spotify',
 		profilePageExternalLinkDeezer: 'Visualizza il profilo Deezer',
-		profilePageYourSongsOnProfileHeading2: 'I tuoi brani',
+		profilePageYourSongsOnProfileHeading2: 'Le tue canzoni',
 		profilePageYourSongsOnProfileHeading3v1: 'Brano più ascoltato',
 		profilePageYourSongsOnProfileHeading3v2: 'Brano del momento',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
-			'Pulsante per modificare il brano del momento',
-		profilePageYourSongsOnProfileEditMusicIconAltText:
-			'Icona per modificare il brano del momento',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Pulsante per modificare il brano del momento',
+		profilePageYourSongsOnProfileEditMusicIconAltText: 'Icona di modifica del brano del momento',
 		profilePageChangeYourMusicCloseModalAltText:
-			'Icona per chiudere la finestra di selezione del brano del momento',
-		profilePageChangeYourMusicCloseModalAriaLabel:
-			'Chiudi la finestra di selezione del brano del momento',
-		profilePageChangeYourMusicParagraph1:
-			'Aggiorna il tuo brano del momento sul tuo profilo',
+			'Icona per chiudere la finestra di modifica del brano del momento',
+		profilePageChangeYourMusicCloseModalAriaLabel: 'Chiudi la finestra di modifica del brano del momento',
+		profilePageChangeYourMusicParagraph1: 'Aggiorna il tuo brano del momento sul tuo profilo',
 		profilePageChangeYourMusicParagraph2:
 			'Scegli il brano che rappresenta meglio ciò che stai ascoltando in questo momento.',
-		profilePageChangeYourMusicChooseMusicAriaLabel:
-			'Seleziona il brano del momento per il profilo',
+		profilePageChangeYourMusicChooseMusicAriaLabel: 'Seleziona il brano del momento per il profilo',
 		profilePageChangeYourMusicUnlockMoreMusic:
-			'Continua a sbloccare nuovi brani e personalizza ancora di più il tuo profilo.',
+			'Continua a sbloccare altri brani e personalizza ancora di più il tuo profilo.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Brano del momento',
 		profilePageEmptyMusicOfTheMomentAltText: 'Icona di selezione del brano del momento',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Seleziona il brano del momento',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Scegli il brano che ti rappresenta meglio in questo momento per metterlo in evidenza sul tuo profilo.',
+		profilePageSelectYourMusicCloseModalAriaLabel: 'Chiudi la finestra di selezione del brano del momento',
+		profilePageSelectYourMusicCloseModalAltText: 'Icona per chiudere la finestra di selezione del brano del momento',
+		profilePageSelectYourMusicParagraph1: 'Scegli il tuo brano del momento',
+		profilePageSelectYourMusicParagraph2:
+			'Scegli il brano che rappresenta meglio ciò che stai ascoltando in questo momento.',
 		profilePageYourArtistsOnProfileHeading2: 'I tuoi artisti',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista più ascoltato',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista del momento',
 		profilePageYourArtistsOnProfileFollowers: 'follower',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
-			'Pulsante per modificare l’artista del momento',
-		profilePageYourArtistsOnProfileEditArtistIconAltText:
-			'Icona per modificare l’artista del momento',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Pulsante per modificare l’artista del momento',
+		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Icona di modifica dell’artista del momento',
 		profilePageChangeYourArtistCloseModalAltText:
-			'Icona per chiudere la finestra di selezione dell’artista del momento',
-		profilePageChangeYourArtistCloseModalAriaLabel:
-			'Chiudi la finestra di selezione dell’artista del momento',
-		profilePageChangeYourArtistParagraph1:
-			'Aggiorna il tuo artista del momento sul tuo profilo',
+			'Icona per chiudere la finestra di modifica dell’artista del momento',
+		profilePageChangeYourArtistCloseModalAriaLabel: 'Chiudi la finestra di modifica dell’artista del momento',
+		profilePageChangeYourArtistParagraph1: 'Aggiorna il tuo artista del momento sul tuo profilo',
 		profilePageChangeYourArtistParagraph2:
 			'Scegli l’artista che rappresenta meglio ciò che stai ascoltando in questo momento.',
-		profilePageChangeYourArtistChooseArtistAriaLabel:
-			'Seleziona l’artista del momento per il profilo',
+		profilePageChangeYourArtistChooseArtistAriaLabel: 'Seleziona l’artista del momento per il profilo',
 		profilePageChangeYourArtistChooseArtistFollowers: 'follower',
 		profilePageChangeYourArtistUnlockMoreMusic:
-			'Continua a sbloccare nuovi artisti e personalizza ancora di più il tuo profilo.',
+			'Continua a sbloccare altri artisti e personalizza ancora di più il tuo profilo.',
 		profilePageChangeYourItemsModalCloseModal: 'Chiudi',
 		profilePageChangeYourItemsModalSaveChanges: 'Salva modifiche',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista del momento',
 		profilePageEmptyArtistOfTheMomentAltText: 'Icona di selezione dell’artista del momento',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Seleziona l’artista del momento',
 		profilePageEmptyArtistOfTheMomentParagraph1:
-			'Scegli l’artista che ti rappresenta meglio in questo momento per metterlo in evidenza sul tuo profilo.'
+			'Scegli l’artista che ti rappresenta meglio in questo momento per metterlo in evidenza sul tuo profilo.',
+		profilePageSelectYourArtistCloseModalAriaLabel: 'Chiudi la finestra di selezione dell’artista del momento',
+		profilePageSelectYourArtistCloseModalAltText: 'Icona per chiudere la finestra di selezione dell’artista del momento',
+		profilePageSelectYourArtistParagraph1: 'Scegli il tuo artista del momento',
+		profilePageSelectYourArtistParagraph2:
+			'Scegli l’artista che rappresenta meglio ciò che stai ascoltando in questo momento.'
 	},
 	settingsPage: {
 		title: 'Impostazioni | Allify',

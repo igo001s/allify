@@ -9,6 +9,7 @@
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
+	export let openSelectYourItemsModal: (itemType: 'artist' | 'music') => void;
 
 	$: songsItems = [
 		{
@@ -29,7 +30,7 @@
 			{#if trackItem}
 				<YourSongsOnProfileItem trackItem={{ track: trackItem, type }} {openChangeYourItemsModal} />
 			{:else}
-				<EmptyTrackOfTheMoment />
+				<EmptyTrackOfTheMoment {openSelectYourItemsModal}  />
 			{/if}
 		{/each}
 	</div>
