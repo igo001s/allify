@@ -5,7 +5,9 @@ export const organizationSchema = {
 	url: 'https://allify.club/',
 	logo: {
 		'@type': 'ImageObject',
-		url: 'https://allify.club/public-logo/allify-logo.png'
+		'@id': 'https://allify.club/#logo',
+		url: 'https://allify.club/public-logo/allify-logo.png',
+		contentUrl: 'https://allify.club/public-logo/allify-logo.png'
 	},
 	description:
 		'Music profile and analytics platform that helps users understand and share their music taste.'

@@ -20,6 +20,23 @@ export function getJsonLdByPage(page: PageType, locale: Locale) {
 					organizationSchema,
 					websiteSchema,
 					{
+						'@type': 'WebPage',
+						'@id': 'https://allify.club/#webpage',
+						url: 'https://allify.club/',
+						name: 'Allify',
+						description: schema.description[locale] ?? schema.description.en,
+						inLanguage: locale,
+						isPartOf: {
+							'@id': 'https://allify.club/#website'
+						},
+						about: {
+							'@id': 'https://allify.club/#webapplication'
+						},
+						mainEntity: {
+							'@id': 'https://allify.club/#webapplication'
+						}
+					},
+					{
 						...webApplicationSchema,
 						inLanguage: locale,
 						description: schema.description[locale] ?? schema.description.en,
