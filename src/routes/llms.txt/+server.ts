@@ -2,7 +2,8 @@
 import { ALLIFY_URL } from '$env/static/private';
 
 export const GET = () => {
-	const content = `# Allify
+	const content = `
+	# Allify
 
 	> Canonical: ${ALLIFY_URL}
 
