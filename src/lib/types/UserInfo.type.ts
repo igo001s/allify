@@ -17,8 +17,6 @@ export type UserInfo = {
 	};
 	primaryStreaming: 'spotify' | 'deezer';
 	tickets: number;
-	trackOfTheMoment?: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
-	artistOfTheMoment?: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
 	profileVisibility: {
 		visibility: 'public' | 'private';
 		updatedAt?: Date;
@@ -27,6 +25,16 @@ export type UserInfo = {
 		spotify?: UserInfoSpotify;
 		deezer?: undefined;
 	};
+	trackOfTheMoment?: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
+	artistOfTheMoment?: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
+	customTrack?: {
+		title: string;
+		track: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
+	}
+	customArtist?: {
+		name: string;
+		artist: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
+	}
 	discoveries?: {
 		updatedAt: Date;
 		tracks: string[];
