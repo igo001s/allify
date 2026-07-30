@@ -244,9 +244,9 @@ export const es = {
 	profilePage: {
 		title: 'Perfil | Allify',
 		profilePageMetaDescription:
-			'Mira tu perfil público, comparte tus estadísticas de escucha, canciones que te gustan, listas de reproducción y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
+			'Consulta tu perfil público, comparte tus estadísticas de escucha, canciones favoritas, playlists y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
 		profilePageMetaOgAndTwitterContent:
-			'Mira tu perfil público, comparte tus estadísticas de escucha, canciones que te gustan, listas de reproducción y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
+			'Consulta tu perfil público, comparte tus estadísticas de escucha, canciones favoritas, playlists y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
 		profilePageImageAltText: 'Foto de perfil de',
 		profilePageFollowers: 'seguidores',
 		profilePageAddTicketsAltText: 'Añadir entradas',
@@ -263,7 +263,7 @@ export const es = {
 			'Cerrar el modal de cambio de canción del momento',
 		profilePageChangeYourMusicParagraph1: 'Actualiza tu canción del momento en tu perfil',
 		profilePageChangeYourMusicParagraph2:
-			'Elige la canción que mejor representa lo que estás escuchando en este momento.',
+			'Elige la canción que mejor representa lo que estás escuchando ahora.',
 		profilePageChangeYourMusicChooseMusicAriaLabel:
 			'Seleccionar la canción del momento para el perfil',
 		profilePageChangeYourMusicUnlockMoreMusic:
@@ -272,19 +272,24 @@ export const es = {
 		profilePageEmptyMusicOfTheMomentAltText: 'Icono de selección de canción del momento',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Seleccionar canción del momento',
 		profilePageEmptyMusicOfTheMomentParagraph1:
-			'Elige la canción que más te representa en este momento para destacarla en tu perfil.',
+			'Elige la canción que mejor te representa en este momento para destacarla en tu perfil.',
 		profilePageSelectYourMusicCloseModalAriaLabel:
 			'Cerrar el modal de selección de canción del momento',
 		profilePageSelectYourMusicCloseModalAltText:
 			'Icono para cerrar el modal de selección de canción del momento',
 		profilePageSelectYourMusicParagraph1: 'Elige tu canción del momento',
 		profilePageSelectYourMusicParagraph2:
-			'Elige la canción que mejor representa lo que estás escuchando en este momento.',
+			'Elige la canción que mejor representa lo que estás escuchando ahora.',
 		profilePageSelectYourMusicChooseMusicAriaLabel:
 			'Seleccionar la canción del momento para el perfil',
 		profilePageSelectYourMusicChooseMusicFollowers: 'seguidores',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
+		profilePageEmptyCustomMusicHeading1: 'Tu canción, a tu manera',
+		profilePageEmptyCustomMusicAltText: 'Icono de selección de canción personalizada',
+		profilePageEmptyCustomMusicHeading2: 'Dale un significado a tu canción',
+		profilePageEmptyCustomMusicParagraph1:
+			'Elige una de tus canciones más escuchadas y personaliza el título como quieras.',
 		profilePageYourArtistsOnProfileHeading2: 'Tus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista más escuchado',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista del momento',
@@ -299,31 +304,36 @@ export const es = {
 			'Cerrar el modal de cambio de artista del momento',
 		profilePageChangeYourArtistParagraph1: 'Actualiza tu artista del momento en tu perfil',
 		profilePageChangeYourArtistParagraph2:
-			'Elige el artista que mejor representa lo que estás escuchando en este momento.',
+			'Elige el artista que mejor representa lo que estás escuchando ahora.',
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Seleccionar el artista del momento para el perfil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
-		profilePageChangeYourItemsModalCloseModal: 'Cerrar',
-		profilePageChangeYourItemsModalSaveChanges: 'Guardar cambios',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista del momento',
 		profilePageEmptyArtistOfTheMomentAltText: 'Icono de selección de artista del momento',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Seleccionar artista del momento',
 		profilePageEmptyArtistOfTheMomentParagraph1:
-			'Elige el artista que más te representa en este momento para destacarlo en tu perfil.',
+			'Elige el artista que mejor te representa en este momento para destacarlo en tu perfil.',
 		profilePageSelectYourArtistCloseModalAriaLabel:
 			'Cerrar el modal de selección de artista del momento',
 		profilePageSelectYourArtistCloseModalAltText:
 			'Icono para cerrar el modal de selección de artista del momento',
 		profilePageSelectYourArtistParagraph1: 'Elige tu artista del momento',
 		profilePageSelectYourArtistParagraph2:
-			'Elige el artista que mejor representa lo que estás escuchando en este momento.',
+			'Elige el artista que mejor representa lo que estás escuchando ahora.',
 		profilePageSelectYourArtistChooseArtistAriaLabel:
 			'Seleccionar el artista del momento para el perfil',
 		profilePageSelectYourArtistChooseArtistFollowers: 'seguidores',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
+		profilePageEmptyCustomArtistHeading1: 'Tu artista, a tu manera',
+		profilePageEmptyCustomArtistAltText: 'Icono de selección de artista personalizado',
+		profilePageEmptyCustomArtistHeading2: 'Dale un significado a tu artista',
+		profilePageEmptyCustomArtistParagraph1:
+			'Elige uno de tus artistas más escuchados y personaliza el título como quieras.',
+		profilePageChangeYourItemsModalCloseModal: 'Cerrar',
+		profilePageChangeYourItemsModalSaveChanges: 'Guardar cambios',
 		profilePageSelectYourItemsModalCloseModal: 'Cerrar',
 		profilePageSelectYourItemsModalSaveChanges: 'Guardar cambios'
 	},

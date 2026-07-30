@@ -2,6 +2,7 @@
 	// Components
 	import YourArtistOnProfileItem from './YourArtistsOnProfileItem.svelte';
 	import EmptyArtistOfTheMoment from './EmptyArtistOfTheMoment.svelte';
+	import EmptyCustomArtist from './EmptyCustomArtist.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -17,7 +18,8 @@
 				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistItem,
 			type: 'mostListenedArtist'
 		},
-		{ artistItem: $userInfo?.artistOfTheMoment, type: 'artistOfTheMoment' }
+		{ artistItem: $userInfo?.artistOfTheMoment, type: 'artistOfTheMoment' },
+		{ artistItem: $userInfo?.customArtist?.artist, type: 'customArtist' }
 	];
 </script>
 
@@ -33,8 +35,10 @@
 					artistItem={{ artist: artistItem, type }}
 					{openChangeYourItemsModal}
 				/>
-			{:else}
+			{:else if type === 'artistOfTheMoment'}
 				<EmptyArtistOfTheMoment {openSelectYourItemsModal} />
+			{:else if type === 'customArtist'}
+				<EmptyCustomArtist />
 			{/if}
 		{/each}
 	</div>

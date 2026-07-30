@@ -261,12 +261,12 @@ export const en = {
 			'Choose the song that best represents what you are listening to right now.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Select song of the moment for your profile',
 		profilePageChangeYourMusicUnlockMoreMusic:
-			'Keep unlocking more songs and personalize your profile even further.',
+			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Song of the moment',
 		profilePageEmptyMusicOfTheMomentAltText: 'Song of the moment selection icon',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Select song of the moment',
 		profilePageEmptyMusicOfTheMomentParagraph1:
-			'Choose the song that best represents you right now to highlight it on your profile.',
+			'Choose the song that best represents you right now and feature it on your profile.',
 		profilePageSelectYourMusicCloseModalAriaLabel: 'Close song of the moment selection modal',
 		profilePageSelectYourMusicCloseModalAltText: 'Close song of the moment selection modal icon',
 		profilePageSelectYourMusicParagraph1: 'Choose your song of the moment',
@@ -275,7 +275,12 @@ export const en = {
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'Select song of the moment for your profile',
 		profilePageSelectYourMusicChooseMusicFollowers: 'followers',
 		profilePageSelectYourMusicUnlockMoreMusic:
-			'Keep unlocking more songs and personalize your profile even further.',
+			'Keep unlocking more songs and personalizing your profile even further.',
+		profilePageEmptyCustomMusicHeading1: 'Your song, your way',
+		profilePageEmptyCustomMusicAltText: 'Custom song selection icon',
+		profilePageEmptyCustomMusicHeading2: 'Give your song a meaning',
+		profilePageEmptyCustomMusicParagraph1:
+			'Choose one of your most listened-to songs and personalize the title however you like.',
 		profilePageYourArtistsOnProfileHeading2: 'Your artists',
 		profilePageYourArtistsOnProfileHeading3v1: 'Most listened-to artist',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artist of the moment',
@@ -291,14 +296,12 @@ export const en = {
 			'Select artist of the moment for your profile',
 		profilePageChangeYourArtistChooseArtistFollowers: 'followers',
 		profilePageChangeYourArtistUnlockMoreMusic:
-			'Keep unlocking more artists and personalize your profile even further.',
-		profilePageChangeYourItemsModalCloseModal: 'Close',
-		profilePageChangeYourItemsModalSaveChanges: 'Save changes',
+			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artist of the moment',
 		profilePageEmptyArtistOfTheMomentAltText: 'Artist of the moment selection icon',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Select artist of the moment',
 		profilePageEmptyArtistOfTheMomentParagraph1:
-			'Choose the artist that best represents you right now to highlight it on your profile.',
+			'Choose the artist that best represents you right now and feature them on your profile.',
 		profilePageSelectYourArtistCloseModalAriaLabel: 'Close artist of the moment selection modal',
 		profilePageSelectYourArtistCloseModalAltText: 'Close artist of the moment selection modal icon',
 		profilePageSelectYourArtistParagraph1: 'Choose your artist of the moment',
@@ -308,7 +311,14 @@ export const en = {
 			'Select artist of the moment for your profile',
 		profilePageSelectYourArtistChooseArtistFollowers: 'followers',
 		profilePageSelectYourArtistUnlockMoreMusic:
-			'Keep unlocking more artists and personalize your profile even further.',
+			'Keep unlocking more artists and personalizing your profile even further.',
+		profilePageEmptyCustomArtistHeading1: 'Your artist, your way',
+		profilePageEmptyCustomArtistAltText: 'Custom artist selection icon',
+		profilePageEmptyCustomArtistHeading2: 'Give your artist a meaning',
+		profilePageEmptyCustomArtistParagraph1:
+			'Choose one of your most listened-to artists and personalize the title however you like.',
+		profilePageChangeYourItemsModalCloseModal: 'Close',
+		profilePageChangeYourItemsModalSaveChanges: 'Save changes',
 		profilePageSelectYourItemsModalCloseModal: 'Close',
 		profilePageSelectYourItemsModalSaveChanges: 'Save changes'
 	},

@@ -2,6 +2,7 @@
 	// Components
 	import YourSongsOnProfileItem from './YourSongsOnProfileItem.svelte';
 	import EmptyTrackOfTheMoment from './EmptyTrackOfTheMoment.svelte';
+	import EmptyCustomTrack from './EmptyCustomTrack.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -16,7 +17,8 @@
 			trackItem: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem,
 			type: 'mostListenedTrack'
 		},
-		{ trackItem: $userInfo?.trackOfTheMoment, type: 'trackOfTheMoment' }
+		{ trackItem: $userInfo?.trackOfTheMoment, type: 'trackOfTheMoment' },
+		{ trackItem: $userInfo?.customTrack?.track, type: 'customTrack' }
 	];
 </script>
 
@@ -29,8 +31,10 @@
 		{#each songsItems as { trackItem, type }}
 			{#if trackItem}
 				<YourSongsOnProfileItem trackItem={{ track: trackItem, type }} {openChangeYourItemsModal} />
-			{:else}
+			{:else if type === 'trackOfTheMoment'}
 				<EmptyTrackOfTheMoment {openSelectYourItemsModal} />
+			{:else if type === 'customTrack'}
+				<EmptyCustomTrack />
 			{/if}
 		{/each}
 	</div>

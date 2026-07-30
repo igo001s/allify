@@ -279,6 +279,11 @@ export const pt = {
 		profilePageSelectYourMusicChooseMusicFollowers: 'seguidores',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
+		profilePageEmptyCustomMusicHeading1: 'Sua música, do seu jeito',
+		profilePageEmptyCustomMusicAltText: 'Ícone de seleção de música personalizada',
+		profilePageEmptyCustomMusicHeading2: 'Dê um significado à sua música',
+		profilePageEmptyCustomMusicParagraph1:
+			'Escolha uma das suas músicas mais ouvidas e personalize o título como quiser.',
 		profilePageYourArtistsOnProfileHeading2: 'Seus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista mais ouvido',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista do momento',
@@ -295,8 +300,6 @@ export const pt = {
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
-		profilePageChangeYourItemsModalCloseModal: 'Fechar',
-		profilePageChangeYourItemsModalSaveChanges: 'Salvar alterações',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista do momento',
 		profilePageEmptyArtistOfTheMomentAltText: 'Ícone de seleção de artista do momento',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Selecionar artista do momento',
@@ -312,6 +315,13 @@ export const pt = {
 		profilePageSelectYourArtistChooseArtistFollowers: 'seguidores',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
+		profilePageEmptyCustomArtistHeading1: 'Seu artista, do seu jeito',
+		profilePageEmptyCustomArtistAltText: 'Ícone de seleção de artista personalizado',
+		profilePageEmptyCustomArtistHeading2: 'Dê um significado ao seu artista',
+		profilePageEmptyCustomArtistParagraph1:
+			'Escolha um dos seus artistas mais ouvidos e personalize o título como quiser.',
+		profilePageChangeYourItemsModalCloseModal: 'Fechar',
+		profilePageChangeYourItemsModalSaveChanges: 'Salvar alterações',
 		profilePageSelectYourItemsModalCloseModal: 'Fechar',
 		profilePageSelectYourItemsModalSaveChanges: 'Salvar alterações'
 	},

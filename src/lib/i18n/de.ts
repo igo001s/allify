@@ -243,9 +243,9 @@ export const de = {
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, deine Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageMetaOgAndTwitterContent:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, deine Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageImageAltText: 'Profilbild von',
 		profilePageFollowers: 'Follower',
 		profilePageAddTicketsAltText: 'Tickets hinzufügen',
@@ -259,31 +259,36 @@ export const de = {
 		profilePageYourSongsOnProfileEditMusicIconAltText:
 			'Symbol zum Bearbeiten des Songs des Moments',
 		profilePageChangeYourMusicCloseModalAltText:
-			'Symbol zum Schließen des Dialogfensters zum Ändern des Songs des Moments',
+			'Symbol zum Schließen des Dialogs zum Ändern des Songs des Moments',
 		profilePageChangeYourMusicCloseModalAriaLabel:
-			'Dialogfenster zum Ändern des Songs des Moments schließen',
+			'Dialog zum Ändern des Songs des Moments schließen',
 		profilePageChangeYourMusicParagraph1: 'Aktualisiere deinen Song des Moments in deinem Profil',
 		profilePageChangeYourMusicParagraph2:
 			'Wähle den Song, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Song des Moments für das Profil auswählen',
 		profilePageChangeYourMusicUnlockMoreMusic:
-			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
+			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Song des Moments',
 		profilePageEmptyMusicOfTheMomentAltText: 'Symbol zur Auswahl des Songs des Moments',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Song des Moments auswählen',
 		profilePageEmptyMusicOfTheMomentParagraph1:
-			'Wähle den Song, der dich im Moment am besten repräsentiert, um ihn in deinem Profil hervorzuheben.',
+			'Wähle den Song, der dich im Moment am besten repräsentiert, und hebe ihn in deinem Profil hervor.',
 		profilePageSelectYourMusicCloseModalAriaLabel:
-			'Dialogfenster zur Auswahl des Songs des Moments schließen',
+			'Dialog zur Auswahl des Songs des Moments schließen',
 		profilePageSelectYourMusicCloseModalAltText:
-			'Symbol zum Schließen des Dialogfensters zur Auswahl des Songs des Moments',
+			'Symbol zum Schließen des Dialogs zur Auswahl des Songs des Moments',
 		profilePageSelectYourMusicParagraph1: 'Wähle deinen Song des Moments',
 		profilePageSelectYourMusicParagraph2:
 			'Wähle den Song, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'Song des Moments für das Profil auswählen',
 		profilePageSelectYourMusicChooseMusicFollowers: 'Follower',
 		profilePageSelectYourMusicUnlockMoreMusic:
-			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
+			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
+		profilePageEmptyCustomMusicHeading1: 'Dein Song, auf deine Art',
+		profilePageEmptyCustomMusicAltText: 'Symbol zur Auswahl eines personalisierten Songs',
+		profilePageEmptyCustomMusicHeading2: 'Gib deinem Song eine Bedeutung',
+		profilePageEmptyCustomMusicParagraph1:
+			'Wähle einen deiner meistgehörten Songs und passe den Titel ganz nach deinen Wünschen an.',
 		profilePageYourArtistsOnProfileHeading2: 'Deine Künstler',
 		profilePageYourArtistsOnProfileHeading3v1: 'Meistgehörter Künstler',
 		profilePageYourArtistsOnProfileHeading3v2: 'Künstler des Moments',
@@ -293,9 +298,9 @@ export const de = {
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
 			'Symbol zum Bearbeiten des Künstlers des Moments',
 		profilePageChangeYourArtistCloseModalAltText:
-			'Symbol zum Schließen des Dialogfensters zum Ändern des Künstlers des Moments',
+			'Symbol zum Schließen des Dialogs zum Ändern des Künstlers des Moments',
 		profilePageChangeYourArtistCloseModalAriaLabel:
-			'Dialogfenster zum Ändern des Künstlers des Moments schließen',
+			'Dialog zum Ändern des Künstlers des Moments schließen',
 		profilePageChangeYourArtistParagraph1:
 			'Aktualisiere deinen Künstler des Moments in deinem Profil',
 		profilePageChangeYourArtistParagraph2:
@@ -304,18 +309,16 @@ export const de = {
 			'Künstler des Moments für das Profil auswählen',
 		profilePageChangeYourArtistChooseArtistFollowers: 'Follower',
 		profilePageChangeYourArtistUnlockMoreMusic:
-			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',
-		profilePageChangeYourItemsModalCloseModal: 'Schließen',
-		profilePageChangeYourItemsModalSaveChanges: 'Änderungen speichern',
+			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Künstler des Moments',
 		profilePageEmptyArtistOfTheMomentAltText: 'Symbol zur Auswahl des Künstlers des Moments',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Künstler des Moments auswählen',
 		profilePageEmptyArtistOfTheMomentParagraph1:
-			'Wähle den Künstler, der dich im Moment am besten repräsentiert, um ihn in deinem Profil hervorzuheben.',
+			'Wähle den Künstler, der dich im Moment am besten repräsentiert, und hebe ihn in deinem Profil hervor.',
 		profilePageSelectYourArtistCloseModalAriaLabel:
-			'Dialogfenster zur Auswahl des Künstlers des Moments schließen',
+			'Dialog zur Auswahl des Künstlers des Moments schließen',
 		profilePageSelectYourArtistCloseModalAltText:
-			'Symbol zum Schließen des Dialogfensters zur Auswahl des Künstlers des Moments',
+			'Symbol zum Schließen des Dialogs zur Auswahl des Künstlers des Moments',
 		profilePageSelectYourArtistParagraph1: 'Wähle deinen Künstler des Moments',
 		profilePageSelectYourArtistParagraph2:
 			'Wähle den Künstler, der am besten widerspiegelt, was du gerade hörst.',
@@ -323,7 +326,14 @@ export const de = {
 			'Künstler des Moments für das Profil auswählen',
 		profilePageSelectYourArtistChooseArtistFollowers: 'Follower',
 		profilePageSelectYourArtistUnlockMoreMusic:
-			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',
+			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
+		profilePageEmptyCustomArtistHeading1: 'Dein Künstler, auf deine Art',
+		profilePageEmptyCustomArtistAltText: 'Symbol zur Auswahl eines personalisierten Künstlers',
+		profilePageEmptyCustomArtistHeading2: 'Gib deinem Künstler eine Bedeutung',
+		profilePageEmptyCustomArtistParagraph1:
+			'Wähle einen deiner meistgehörten Künstler und passe den Titel ganz nach deinen Wünschen an.',
+		profilePageChangeYourItemsModalCloseModal: 'Schließen',
+		profilePageChangeYourItemsModalSaveChanges: 'Änderungen speichern',
 		profilePageSelectYourItemsModalCloseModal: 'Schließen',
 		profilePageSelectYourItemsModalSaveChanges: 'Änderungen speichern'
 	},

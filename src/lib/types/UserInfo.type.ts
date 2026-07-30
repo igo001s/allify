@@ -30,11 +30,11 @@ export type UserInfo = {
 	customTrack?: {
 		title: string;
 		track: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
-	}
+	};
 	customArtist?: {
-		name: string;
+		title: string;
 		artist: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
-	}
+	};
 	discoveries?: {
 		updatedAt: Date;
 		tracks: string[];
