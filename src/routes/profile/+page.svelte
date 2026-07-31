@@ -68,13 +68,11 @@
 	}
 
 	function openChangeCustomItemModal(itemType: 'artist' | 'music') {
-		console.log('openChangeCustomItemModal', itemType);
 		showChangeCustomItemModal = true;
 		selectedItemType = itemType;
 	}
 
 	function closeChangeCustomItemModal() {
-		console.log('closeChangeCustomItemModal', selectedItemType);
 		showChangeCustomItemModal = false;
 		document.body.style.overflow = '';
 	}
