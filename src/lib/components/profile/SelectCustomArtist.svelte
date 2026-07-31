@@ -6,6 +6,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Services
+	import { selectCustomArtist } from '$lib/services/user/updates/selectCustomArtist';
+
 	// Types
 	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
@@ -25,7 +28,27 @@
 	}
 
 	async function handleSelectCustomArtist() {
-		if (!choosedArtist || !$userInfo?._id) return;
+		if (!choosedArtistTitle || !choosedArtist || !$userInfo?._id) return;
+
+		const updatedArtist = await selectCustomArtist(
+			$userInfo?._id,
+			choosedArtistTitle,
+			choosedArtist
+		);
+
+		if (updatedArtist) {
+			userInfo.update((currentUser) => {
+				if (!currentUser) return currentUser;
+
+				return {
+					...currentUser,
+					customArtist: {
+						title: updatedArtist.title,
+						artist: updatedArtist.artist
+					}
+				};
+			});
+		}
 
 		closeSelectCustomItemModal();
 	}

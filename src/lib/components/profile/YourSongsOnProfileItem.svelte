@@ -8,6 +8,7 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Types
 	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
@@ -31,9 +32,13 @@
 
 <div class="flex w-full flex-col gap-3 sm:gap-4 xl:w-1/3">
 	<h3 class="text-xs font-semibold tracking-[0.18em] text-t-secondary uppercase">
-		{trackItem.type === 'mostListenedTrack'
-			? $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v1
-			: $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v2}
+		{#if trackItem.type === 'mostListenedTrack'}
+			{$translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v1}
+		{:else if trackItem.type === 'trackOfTheMoment'}
+			{$translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v2}
+		{:else if trackItem.type === 'customTrack'}
+			{$userInfo?.customTrack?.title}
+		{/if}
 	</h3>
 
 	<div

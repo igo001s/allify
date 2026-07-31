@@ -8,6 +8,7 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Types
 	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
@@ -31,9 +32,13 @@
 
 <div class="flex w-full flex-col gap-3 sm:gap-4 xl:w-1/3">
 	<h3 class="text-xs font-semibold tracking-[0.18em] text-t-secondary uppercase">
-		{artistItem.type === 'mostListenedArtist'
-			? $translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v1
-			: $translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v2}
+		{#if artistItem.type === 'mostListenedArtist'}
+			{$translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v1}
+		{:else if artistItem.type === 'artistOfTheMoment'}
+			{$translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v2}
+		{:else if artistItem.type === 'customArtist'}
+			{$userInfo?.customArtist?.title}
+		{/if}
 	</h3>
 
 	<div

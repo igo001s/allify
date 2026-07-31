@@ -6,6 +6,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Services
+	import { selectCustomTrack } from '$lib/services/user/updates/selectCustomTrack';
+
 	// Types
 	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
@@ -25,7 +28,23 @@
 	}
 
 	async function handleSelectCustomTrack() {
-		if (!choosedTrack || !$userInfo?._id) return;
+		if (!choosedTrackTitle || !choosedTrack || !$userInfo?._id) return;
+
+		const updatedTrack = await selectCustomTrack($userInfo?._id, choosedTrackTitle, choosedTrack);
+
+		if (updatedTrack) {
+			userInfo.update((currentUser) => {
+				if (!currentUser) return currentUser;
+
+				return {
+					...currentUser,
+					customTrack: {
+						title: updatedTrack.title,
+						track: updatedTrack.track
+					}
+				};
+			});
+		}
 
 		closeSelectCustomItemModal();
 	}

@@ -4,7 +4,6 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Props
 	export let openSelectCustomItemModal: (itemType: 'music') => void;
@@ -12,11 +11,7 @@
 
 <div class="flex w-full flex-col gap-3 sm:gap-4 xl:w-1/3">
 	<h3 class="truncate text-xs font-semibold tracking-[0.18em] text-t-secondary uppercase">
-		{#if $userInfo?.customTrack?.title}
-			{$userInfo?.customTrack?.title}
-		{:else}
-			{$translationsStore.profilePage.profilePageEmptyCustomMusicHeading1}
-		{/if}
+		{$translationsStore.profilePage.profilePageEmptyCustomMusicHeading1}
 	</h3>
 
 	<button
