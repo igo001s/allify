@@ -13,11 +13,20 @@
 	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
 	// Props
-	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
+	export let openChangeYourItemsModal: (itemType: 'music') => void;
+	export let openChangeCustomItemModal: (itemType: 'music') => void;
 	export let trackItem: {
 		track: TrackSpotify;
 		type: string;
 	};
+
+	function handleEditButtonClick() {
+		if (trackItem.type === 'trackOfTheMoment') {
+			openChangeYourItemsModal('music');
+		} else if (trackItem.type === 'customTrack') {
+			openChangeCustomItemModal('music');
+		}
+	}
 </script>
 
 <div class="flex w-full flex-col gap-4 2xl:w-2/6">
@@ -30,17 +39,21 @@
 	<div
 		class="relative flex flex-col gap-6 rounded-xl border border-b-default p-5 shadow-xl transition-all duration-300 md:max-h-56 md:min-h-56 md:flex-row lg:p-6"
 	>
-		{#if trackItem.type === 'trackOfTheMoment'}
+		{#if trackItem.type === 'trackOfTheMoment' || trackItem.type === 'customTrack'}
 			<button
 				class="absolute top-5 right-5 cursor-pointer text-t-primary transition-all hover:scale-105 hover:text-brand-primary"
-				aria-label={$translationsStore.profilePage
-					.profilePageYourSongsOnProfileEditMusicIconAriaLabel}
-				on:click={() => openChangeYourItemsModal('music')}
+				aria-label={trackItem.type === 'trackOfTheMoment'
+					? $translationsStore.profilePage.profilePageYourSongsOnProfileEditMusicIconAriaLabel
+					: $translationsStore.profilePage
+							.profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel}
+				on:click={handleEditButtonClick}
 			>
 				<EditMusicIcon
 					iconSvgClass="h-6 w-6"
-					iconAltText={$translationsStore.profilePage
-						.profilePageYourSongsOnProfileEditMusicIconAltText}
+					iconAltText={trackItem.type === 'trackOfTheMoment'
+						? $translationsStore.profilePage.profilePageYourSongsOnProfileEditMusicIconAltText
+						: $translationsStore.profilePage
+								.profilePageYourSongsOnProfileEditCustomMusicIconAltText}
 				/>
 			</button>
 		{/if}

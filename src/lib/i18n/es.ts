@@ -256,18 +256,26 @@ export const es = {
 		profilePageYourSongsOnProfileHeading3v1: 'Canción más escuchada',
 		profilePageYourSongsOnProfileHeading3v2: 'Canción del momento',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Botón para editar la canción del momento',
+		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
+			'Botón para editar la canción personalizada',
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Icono para editar la canción del momento',
-		profilePageChangeYourMusicCloseModalAltText:
-			'Icono para cerrar el modal de cambio de canción del momento',
+		profilePageYourSongsOnProfileEditCustomMusicIconAltText:
+			'Icono para editar la canción personalizada',
 		profilePageChangeYourMusicCloseModalAriaLabel:
-			'Cerrar el modal de cambio de canción del momento',
+			'Cerrar el modal para cambiar la canción del momento',
+		profilePageChangeYourMusicCloseModalAltText:
+			'Icono para cerrar el modal para cambiar la canción del momento',
 		profilePageChangeYourMusicParagraph1: 'Actualiza tu canción del momento en tu perfil',
 		profilePageChangeYourMusicParagraph2:
-			'Elige la canción que mejor representa lo que estás escuchando ahora.',
+			'Elige la canción que mejor representa lo que estás escuchando en este momento.',
 		profilePageChangeYourMusicChooseMusicAriaLabel:
 			'Seleccionar la canción del momento para el perfil',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
+		profilePageChangeYourCustomMusicCloseModalAriaLabel:
+			'Cerrar el modal para cambiar la canción personalizada',
+		profilePageChangeYourCustomMusicCloseModalAltText:
+			'Icono para cerrar el modal para cambiar la canción personalizada',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Canción del momento',
 		profilePageEmptyMusicOfTheMomentAltText: 'Icono de selección de canción del momento',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Seleccionar canción del momento',
@@ -279,12 +287,16 @@ export const es = {
 			'Icono para cerrar el modal de selección de canción del momento',
 		profilePageSelectYourMusicParagraph1: 'Elige tu canción del momento',
 		profilePageSelectYourMusicParagraph2:
-			'Elige la canción que mejor representa lo que estás escuchando ahora.',
+			'Elige la canción que mejor representa lo que estás escuchando en este momento.',
 		profilePageSelectYourMusicChooseMusicAriaLabel:
 			'Seleccionar la canción del momento para el perfil',
 		profilePageSelectYourMusicChooseMusicFollowers: 'seguidores',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
+		profilePageSelectYourCustomMusicCloseModalAriaLabel:
+			'Cerrar el modal de selección de canción personalizada',
+		profilePageSelectYourCustomMusicCloseModalAltText:
+			'Icono para cerrar el modal de selección de canción personalizada',
 		profilePageEmptyCustomMusicHeading1: 'Tu canción, a tu manera',
 		profilePageEmptyCustomMusicAltText: 'Icono de selección de canción personalizada',
 		profilePageEmptyCustomMusicHeading2: 'Dale un significado a tu canción',
@@ -296,20 +308,28 @@ export const es = {
 		profilePageYourArtistsOnProfileFollowers: 'seguidores',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
 			'Botón para editar el artista del momento',
+		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
+			'Botón para editar el artista personalizado',
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
 			'Icono para editar el artista del momento',
 		profilePageChangeYourArtistCloseModalAltText:
-			'Icono para cerrar el modal de cambio de artista del momento',
+			'Icono para cerrar el modal para cambiar el artista del momento',
+		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
+			'Icono para editar el artista personalizado',
 		profilePageChangeYourArtistCloseModalAriaLabel:
-			'Cerrar el modal de cambio de artista del momento',
+			'Cerrar el modal para cambiar el artista del momento',
 		profilePageChangeYourArtistParagraph1: 'Actualiza tu artista del momento en tu perfil',
 		profilePageChangeYourArtistParagraph2:
-			'Elige el artista que mejor representa lo que estás escuchando ahora.',
+			'Elige el artista que mejor representa lo que estás escuchando en este momento.',
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Seleccionar el artista del momento para el perfil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
+		profilePageChangeYourCustomArtistCloseModalAriaLabel:
+			'Cerrar el modal para cambiar el artista personalizado',
+		profilePageChangeYourCustomArtistCloseModalAltText:
+			'Icono para cerrar el modal para cambiar el artista personalizado',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista del momento',
 		profilePageEmptyArtistOfTheMomentAltText: 'Icono de selección de artista del momento',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Seleccionar artista del momento',
@@ -321,17 +341,31 @@ export const es = {
 			'Icono para cerrar el modal de selección de artista del momento',
 		profilePageSelectYourArtistParagraph1: 'Elige tu artista del momento',
 		profilePageSelectYourArtistParagraph2:
-			'Elige el artista que mejor representa lo que estás escuchando ahora.',
+			'Elige el artista que mejor representa lo que estás escuchando en este momento.',
 		profilePageSelectYourArtistChooseArtistAriaLabel:
 			'Seleccionar el artista del momento para el perfil',
 		profilePageSelectYourArtistChooseArtistFollowers: 'seguidores',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
+		profilePageSelectYourCustomArtistCloseModalAriaLabel:
+			'Cerrar el modal de selección de artista personalizado',
+		profilePageSelectYourCustomArtistCloseModalAltText:
+			'Icono para cerrar el modal de selección de artista personalizado',
 		profilePageEmptyCustomArtistHeading1: 'Tu artista, a tu manera',
 		profilePageEmptyCustomArtistAltText: 'Icono de selección de artista personalizado',
 		profilePageEmptyCustomArtistHeading2: 'Dale un significado a tu artista',
 		profilePageEmptyCustomArtistParagraph1:
 			'Elige uno de tus artistas más escuchados y personaliza el título como quieras.',
+		profilePageSelectYourCustomItemParagraph1: 'A tu manera',
+		profilePageSelectYourCustomMusicParagraph2:
+			'Elige una canción y dale un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
+		profilePageSelectYourCustomArtistParagraph2:
+			'Elige un artista y dale un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
+		profilePageChangeYourCustomItemParagraph1: 'Actualízalo a tu manera',
+		profilePageChangeYourCustomArtistParagraph2:
+			'Elige otro artista y dale un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
+		profilePageChangeYourCustomMusicParagraph2:
+			'Elige otra canción y dale un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
 		profilePageChangeYourItemsModalCloseModal: 'Cerrar',
 		profilePageChangeYourItemsModalSaveChanges: 'Guardar cambios',
 		profilePageSelectYourItemsModalCloseModal: 'Cerrar',

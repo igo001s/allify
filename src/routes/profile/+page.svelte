@@ -9,8 +9,10 @@
 	import KeyInformation from '$lib/components/profile/KeyInformation.svelte';
 	import YourSongsOnProfile from '$lib/components/profile/YourSongsOnProfile.svelte';
 	import YourArtistsOnProfile from '$lib/components/profile/YourArtistsOnProfile.svelte';
-	import ChangeYourItemsModal from '$lib/components/profile/ChangeYourItemsModal.svelte';
-	import SelectYourItemsModal from '$lib/components/profile/SelectYourItemsModal.svelte';
+	import ChangeItemOfTheMomentModal from '$lib/components/profile/ChangeItemOfTheMomentModal.svelte';
+	import SelectItemOfTheMomentModal from '$lib/components/profile/SelectItemOfTheMomentModal.svelte';
+	import SelectCustomItemModal from '$lib/components/profile/SelectCustomItemModal.svelte';
+	import ChangeCustomItemModal from '$lib/components/profile/ChangeCustomItemModal.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -22,8 +24,12 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
-	let showChangeYourItemsModal = false;
-	let showSelectYourItemsModal = false;
+	let showChangeItemOfTheMomentModal = false;
+	let showSelectItemOfTheMomentModal = false;
+
+	let showChangeCustomItemModal = false;
+	let showSelectCustomItemModal = false;
+
 	let selectedItemType: 'artist' | 'music';
 
 	$: selectedStreaming =
@@ -31,23 +37,45 @@
 
 	$: jsonLd = getJsonLdByPage('profilePage', $translationsStore.language as Locale);
 
-	function openChangeYourItemsModal(itemType: 'artist' | 'music') {
-		showChangeYourItemsModal = true;
+	function openSelectItemOfTheMomentModal(itemType: 'artist' | 'music') {
+		showSelectItemOfTheMomentModal = true;
 		selectedItemType = itemType;
 	}
 
-	function openSelectYourItemsModal(itemType: 'artist' | 'music') {
-		showSelectYourItemsModal = true;
-		selectedItemType = itemType;
-	}
-
-	function closeChangeYourItemsModal() {
-		showChangeYourItemsModal = false;
+	function closeSelectItemOfTheMomentModal() {
+		showSelectItemOfTheMomentModal = false;
 		document.body.style.overflow = '';
 	}
 
-	function closeSelectYourItemsModal() {
-		showSelectYourItemsModal = false;
+	function openChangeItemOfTheMomentModal(itemType: 'artist' | 'music') {
+		showChangeItemOfTheMomentModal = true;
+		selectedItemType = itemType;
+	}
+
+	function closeChangeItemOfTheMomentModal() {
+		showChangeItemOfTheMomentModal = false;
+		document.body.style.overflow = '';
+	}
+
+	function openSelectCustomItemModal(itemType: 'artist' | 'music') {
+		showSelectCustomItemModal = true;
+		selectedItemType = itemType;
+	}
+
+	function closeSelectCustomItemModal() {
+		showSelectCustomItemModal = false;
+		document.body.style.overflow = '';
+	}
+
+	function openChangeCustomItemModal(itemType: 'artist' | 'music') {
+		console.log('openChangeCustomItemModal', itemType);
+		showChangeCustomItemModal = true;
+		selectedItemType = itemType;
+	}
+
+	function closeChangeCustomItemModal() {
+		console.log('closeChangeCustomItemModal', selectedItemType);
+		showChangeCustomItemModal = false;
 		document.body.style.overflow = '';
 	}
 </script>
@@ -87,23 +115,35 @@
 
 		<div class="mt-14 flex w-full flex-col gap-8 lg:gap-14">
 			<YourSongsOnProfile
-				openChangeYourItemsModal={() => openChangeYourItemsModal('music')}
-				openSelectYourItemsModal={() => openSelectYourItemsModal('music')}
+				openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('music')}
+				openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('music')}
+				openChangeCustomItemModal={() => openChangeCustomItemModal('music')}
+				openSelectCustomItemModal={() => openSelectCustomItemModal('music')}
 			/>
 
 			<YourArtistsOnProfile
-				openChangeYourItemsModal={() => openChangeYourItemsModal('artist')}
-				openSelectYourItemsModal={() => openSelectYourItemsModal('artist')}
+				openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('artist')}
+				openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('artist')}
+				openChangeCustomItemModal={() => openChangeCustomItemModal('artist')}
+				openSelectCustomItemModal={() => openSelectCustomItemModal('artist')}
 			/>
 		</div>
 	</section>
 
-	{#if showChangeYourItemsModal}
-		<ChangeYourItemsModal {closeChangeYourItemsModal} itemType={selectedItemType} />
+	{#if showSelectItemOfTheMomentModal}
+		<SelectItemOfTheMomentModal {closeSelectItemOfTheMomentModal} itemType={selectedItemType} />
 	{/if}
 
-	{#if showSelectYourItemsModal}
-		<SelectYourItemsModal {closeSelectYourItemsModal} itemType={selectedItemType} />
+	{#if showSelectCustomItemModal}
+		<SelectCustomItemModal {closeSelectCustomItemModal} itemType={selectedItemType} />
+	{/if}
+
+	{#if showChangeItemOfTheMomentModal}
+		<ChangeItemOfTheMomentModal {closeChangeItemOfTheMomentModal} itemType={selectedItemType} />
+	{/if}
+
+	{#if showChangeCustomItemModal}
+		<ChangeCustomItemModal {closeChangeCustomItemModal} itemType={selectedItemType} />
 	{/if}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />

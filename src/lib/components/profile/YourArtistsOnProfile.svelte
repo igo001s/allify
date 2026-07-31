@@ -9,8 +9,10 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Props
-	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
-	export let openSelectYourItemsModal: (itemType: 'artist' | 'music') => void;
+	export let openChangeYourItemsModal: (itemType: 'artist') => void;
+	export let openSelectYourItemsModal: (itemType: 'artist') => void;
+	export let openChangeCustomItemModal: (itemType: 'artist') => void;
+	export let openSelectCustomItemModal: (itemType: 'artist') => void;
 
 	$: artistItems = [
 		{
@@ -34,11 +36,12 @@
 				<YourArtistOnProfileItem
 					artistItem={{ artist: artistItem, type }}
 					{openChangeYourItemsModal}
+					{openChangeCustomItemModal}
 				/>
 			{:else if type === 'artistOfTheMoment'}
 				<EmptyArtistOfTheMoment {openSelectYourItemsModal} />
 			{:else if type === 'customArtist'}
-				<EmptyCustomArtist />
+				<EmptyCustomArtist {openSelectCustomItemModal} />
 			{/if}
 		{/each}
 	</div>

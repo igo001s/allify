@@ -13,11 +13,20 @@
 	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
 	// Props
-	export let openChangeYourItemsModal: (itemType: 'artist' | 'music') => void;
+	export let openChangeYourItemsModal: (itemType: 'artist') => void;
+	export let openChangeCustomItemModal: (itemType: 'artist') => void;
 	export let artistItem: {
 		artist: ArtistSpotify;
 		type: string;
 	};
+
+	function handleEditButtonClick() {
+		if (artistItem.type === 'artistOfTheMoment') {
+			openChangeYourItemsModal('artist');
+		} else if (artistItem.type === 'customArtist') {
+			openChangeCustomItemModal('artist');
+		}
+	}
 </script>
 
 <div class="flex w-full flex-col gap-4 2xl:w-2/6">
@@ -30,17 +39,21 @@
 	<div
 		class="relative flex flex-col gap-6 rounded-xl border border-b-default p-5 shadow-xl transition-all duration-300 md:max-h-56 md:min-h-56 md:flex-row lg:p-6"
 	>
-		{#if artistItem.type === 'artistOfTheMoment'}
+		{#if artistItem.type === 'artistOfTheMoment' || artistItem.type === 'customArtist'}
 			<button
 				class="absolute top-5 right-5 cursor-pointer text-t-primary transition-all hover:scale-105 hover:text-brand-primary"
-				aria-label={$translationsStore.profilePage
-					.profilePageYourArtistsOnProfileEditArtistIconAriaLabel}
-				on:click={() => openChangeYourItemsModal('artist')}
+				aria-label={artistItem.type === 'artistOfTheMoment'
+					? $translationsStore.profilePage.profilePageYourArtistsOnProfileEditArtistIconAriaLabel
+					: $translationsStore.profilePage
+							.profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel}
+				on:click={handleEditButtonClick}
 			>
 				<EditArtistIcon
 					iconSvgClass="h-6 w-6"
-					iconAltText={$translationsStore.profilePage
-						.profilePageYourArtistsOnProfileEditArtistIconAltText}
+					iconAltText={artistItem.type === 'artistOfTheMoment'
+						? $translationsStore.profilePage.profilePageYourArtistsOnProfileEditArtistIconAltText
+						: $translationsStore.profilePage
+								.profilePageYourArtistsOnProfileEditCustomArtistIconAltText}
 				/>
 			</button>
 		{/if}

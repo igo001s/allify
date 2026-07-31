@@ -11,7 +11,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Props
-	export let closeSelectYourItemsModal: () => void;
+	export let closeSelectItemOfTheMomentModal: () => void;
 	export let itemType: 'artist' | 'music';
 
 	onMount(() => {
@@ -31,7 +31,7 @@
 	>
 		<button
 			class="absolute top-2 right-2 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
-			on:click={closeSelectYourItemsModal}
+			on:click={closeSelectItemOfTheMomentModal}
 			aria-label={itemType === 'artist'
 				? $translationsStore.profilePage.profilePageSelectYourArtistCloseModalAriaLabel
 				: $translationsStore.profilePage.profilePageSelectYourMusicCloseModalAriaLabel}
@@ -58,9 +58,9 @@
 			</p>
 
 			{#if itemType === 'artist'}
-				<SelectArtistOfTheMoment {closeSelectYourItemsModal} />
+				<SelectArtistOfTheMoment {closeSelectItemOfTheMomentModal} />
 			{:else}
-				<SelectTrackOfTheMoment {closeSelectYourItemsModal} />
+				<SelectTrackOfTheMoment {closeSelectItemOfTheMomentModal} />
 			{/if}
 		</div>
 	</div>
