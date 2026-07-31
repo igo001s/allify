@@ -271,6 +271,10 @@ export const pt = {
 			'Fechar modal de troca de música personalizada',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Ícone de fechar modal de troca de música personalizada',
+		profilePageChangeYourCustomMusicTitleInputLabel: 'Dê um título à sua música',
+		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ex.: A trilha sonora da minha vida',
+		profilePageChangeYourCustomMusicUnlockMoreMusic:
+			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Música do momento',
 		profilePageEmptyMusicOfTheMomentAltText: 'Ícone de seleção de música do momento',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Selecionar música do momento',
@@ -286,10 +290,14 @@ export const pt = {
 		profilePageSelectYourMusicChooseMusicFollowers: 'seguidores',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
+		profilePageSelectYourCustomMusicTitleInputLabel: 'Dê um título à sua música',
+		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Ex.: A trilha sonora da minha vida',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel:
 			'Fechar modal de seleção de música personalizada',
 		profilePageSelectYourCustomMusicCloseModalAltText:
 			'Ícone de fechar modal de seleção de música personalizada',
+		profilePageSelectYourCustomMusicUnlockMoreMusic:
+			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyCustomMusicHeading1: 'Sua música, do seu jeito',
 		profilePageEmptyCustomMusicAltText: 'Ícone de seleção de música personalizada',
 		profilePageEmptyCustomMusicHeading2: 'Dê um significado à sua música',
@@ -319,6 +327,10 @@ export const pt = {
 			'Fechar modal de troca de artista personalizado',
 		profilePageChangeYourCustomArtistCloseModalAltText:
 			'Ícone de fechar modal de troca de artista personalizado',
+		profilePageChangeYourCustomArtistTitleInputLabel: 'Dê um título para o seu artista',
+		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Ex.: Minha maior inspiração',
+		profilePageChangeYourCustomArtistUnlockMoreMusic:
+			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista do momento',
 		profilePageEmptyArtistOfTheMomentAltText: 'Ícone de seleção de artista do momento',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Selecionar artista do momento',
@@ -338,6 +350,10 @@ export const pt = {
 			'Fechar modal de seleção de artista personalizado',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Ícone de fechar modal de seleção de artista personalizado',
+		profilePageSelectYourCustomArtistTitleInputLabel: 'Dê um título para o seu artista',
+		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ex.: Minha maior inspiração',
+		profilePageSelectYourCustomArtistUnlockMoreMusic:
+			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyCustomArtistHeading1: 'Seu artista, do seu jeito',
 		profilePageEmptyCustomArtistAltText: 'Ícone de seleção de artista personalizado',
 		profilePageEmptyCustomArtistHeading2: 'Dê um significado ao seu artista',
@@ -356,7 +372,11 @@ export const pt = {
 		profilePageChangeYourItemsModalCloseModal: 'Fechar',
 		profilePageChangeYourItemsModalSaveChanges: 'Salvar alterações',
 		profilePageSelectYourItemsModalCloseModal: 'Fechar',
-		profilePageSelectYourItemsModalSaveChanges: 'Salvar alterações'
+		profilePageSelectYourItemsModalSaveChanges: 'Salvar seleção',
+		profilePageChangeYourCustomItemModalCloseModal: 'Fechar',
+		profilePageChangeYourCustomItemModalSaveChanges: 'Salvar alterações',
+		profilePageSelectYourCustomItemModalCloseModal: 'Fechar',
+		profilePageSelectYourCustomItemModalSaveChanges: 'Salvar seleção'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

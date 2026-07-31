@@ -247,9 +247,9 @@ export const fr = {
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			'Consultez votre profil public, partagez vos statistiques d’écoute, vos titres favoris, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
+			'Consultez votre profil public, partagez vos statistiques d’écoute, vos titres préférés, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
 		profilePageMetaOgAndTwitterContent:
-			'Consultez votre profil public, partagez vos statistiques d’écoute, vos titres favoris, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
+			'Consultez votre profil public, partagez vos statistiques d’écoute, vos titres préférés, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
 		profilePageImageAltText: 'Photo de profil de',
 		profilePageFollowers: 'abonnés',
 		profilePageAddTicketsAltText: 'Ajouter des billets',
@@ -279,6 +279,10 @@ export const fr = {
 			'Fermer la fenêtre de modification du titre personnalisé',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Icône pour fermer la fenêtre de modification du titre personnalisé',
+		profilePageChangeYourCustomMusicTitleInputLabel: 'Donnez un titre à votre morceau',
+		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ex. : La bande originale de ma vie',
+		profilePageChangeYourCustomMusicUnlockMoreMusic:
+			'Continuez à débloquer plus de titres et à personnaliser davantage votre profil.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Titre du moment',
 		profilePageEmptyMusicOfTheMomentAltText: 'Icône de sélection du titre du moment',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Sélectionner le titre du moment',
@@ -296,15 +300,19 @@ export const fr = {
 		profilePageSelectYourMusicChooseMusicFollowers: 'abonnés',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Continuez à débloquer plus de titres et à personnaliser davantage votre profil.',
+		profilePageSelectYourCustomMusicTitleInputLabel: 'Donnez un titre à votre morceau',
+		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Ex. : La bande originale de ma vie',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel:
 			'Fermer la fenêtre de sélection du titre personnalisé',
 		profilePageSelectYourCustomMusicCloseModalAltText:
 			'Icône pour fermer la fenêtre de sélection du titre personnalisé',
-		profilePageEmptyCustomMusicHeading1: 'Votre titre, à votre façon',
-		profilePageEmptyCustomMusicAltText: 'Icône de sélection du titre personnalisé',
-		profilePageEmptyCustomMusicHeading2: 'Donnez du sens à votre titre',
+		profilePageSelectYourCustomMusicUnlockMoreMusic:
+			'Continuez à débloquer plus de titres et à personnaliser davantage votre profil.',
+		profilePageEmptyCustomMusicHeading1: 'Votre musique, à votre façon',
+		profilePageEmptyCustomMusicAltText: 'Icône de sélection de musique personnalisée',
+		profilePageEmptyCustomMusicHeading2: 'Donnez du sens à votre musique',
 		profilePageEmptyCustomMusicParagraph1:
-			'Choisissez l’un de vos titres les plus écoutés et personnalisez le titre comme vous le souhaitez.',
+			'Choisissez l’un de vos titres les plus écoutés et personnalisez son titre comme vous le souhaitez.',
 		profilePageYourArtistsOnProfileHeading2: 'Vos artistes',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artiste le plus écouté',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artiste du moment',
@@ -332,6 +340,10 @@ export const fr = {
 			'Fermer la fenêtre de modification de l’artiste personnalisé',
 		profilePageChangeYourCustomArtistCloseModalAltText:
 			'Icône pour fermer la fenêtre de modification de l’artiste personnalisé',
+		profilePageChangeYourCustomArtistTitleInputLabel: 'Donnez un titre à votre artiste',
+		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Ex. : Ma plus grande inspiration',
+		profilePageChangeYourCustomArtistUnlockMoreMusic:
+			'Continuez à débloquer plus d’artistes et à personnaliser davantage votre profil.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artiste du moment',
 		profilePageEmptyArtistOfTheMomentAltText: 'Icône de sélection de l’artiste du moment',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Sélectionner l’artiste du moment',
@@ -353,25 +365,33 @@ export const fr = {
 			'Fermer la fenêtre de sélection de l’artiste personnalisé',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Icône pour fermer la fenêtre de sélection de l’artiste personnalisé',
+		profilePageSelectYourCustomArtistTitleInputLabel: 'Donnez un titre à votre artiste',
+		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ex. : Ma plus grande inspiration',
+		profilePageSelectYourCustomArtistUnlockMoreMusic:
+			'Continuez à débloquer plus d’artistes et à personnaliser davantage votre profil.',
 		profilePageEmptyCustomArtistHeading1: 'Votre artiste, à votre façon',
-		profilePageEmptyCustomArtistAltText: 'Icône de sélection d’un artiste personnalisé',
+		profilePageEmptyCustomArtistAltText: 'Icône de sélection d’artiste personnalisé',
 		profilePageEmptyCustomArtistHeading2: 'Donnez du sens à votre artiste',
 		profilePageEmptyCustomArtistParagraph1:
-			'Choisissez l’un de vos artistes les plus écoutés et personnalisez le titre comme vous le souhaitez.',
+			'Choisissez l’un de vos artistes les plus écoutés et personnalisez son titre comme vous le souhaitez.',
 		profilePageSelectYourCustomItemParagraph1: 'À votre façon',
 		profilePageSelectYourCustomMusicParagraph2:
-			'Choisissez un titre et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+			'Choisissez un titre et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous remémorez en ce moment.',
 		profilePageSelectYourCustomArtistParagraph2:
-			'Choisissez un artiste et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+			'Choisissez un artiste et donnez-lui un titre qui représente ce que vous ressentez, vivez ou vous remémorez en ce moment.',
 		profilePageChangeYourCustomItemParagraph1: 'Mettez à jour à votre façon',
 		profilePageChangeYourCustomArtistParagraph2:
-			'Choisissez un autre artiste et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+			'Choisissez un autre artiste et donnez-lui un titre qui représente ce que vous ressentez, vivez ou vous remémorez en ce moment.',
 		profilePageChangeYourCustomMusicParagraph2:
-			'Choisissez un autre titre et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+			'Choisissez un autre titre et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous remémorez en ce moment.',
 		profilePageChangeYourItemsModalCloseModal: 'Fermer',
 		profilePageChangeYourItemsModalSaveChanges: 'Enregistrer les modifications',
 		profilePageSelectYourItemsModalCloseModal: 'Fermer',
-		profilePageSelectYourItemsModalSaveChanges: 'Enregistrer les modifications'
+		profilePageSelectYourItemsModalSaveChanges: 'Enregistrer la sélection',
+		profilePageChangeYourCustomItemModalCloseModal: 'Fermer',
+		profilePageChangeYourCustomItemModalSaveChanges: 'Enregistrer les modifications',
+		profilePageSelectYourCustomItemModalCloseModal: 'Fermer',
+		profilePageSelectYourCustomItemModalSaveChanges: 'Enregistrer la sélection'
 	},
 	settingsPage: {
 		title: 'Paramètres | Allify',

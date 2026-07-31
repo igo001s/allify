@@ -243,66 +243,74 @@ export const ru = {
 	profilePage: {
 		title: 'Профиль | Allify',
 		profilePageMetaDescription:
-			'Просматривайте свой публичный профиль, делитесь статистикой прослушиваний, любимыми треками, плейлистами и сохранёнными альбомами, а также подключайте стриминговые платформы для получения персонализированной аналитики.',
+			'Просматривайте свой публичный профиль, делитесь статистикой прослушиваний, любимыми треками, плейлистами и сохранёнными альбомами, а также подключайте стриминговые платформы для получения персонализированной информации.',
 		profilePageMetaOgAndTwitterContent:
-			'Просматривайте свой публичный профиль, делитесь статистикой прослушиваний, любимыми треками, плейлистами и сохранёнными альбомами, а также подключайте стриминговые платформы для получения персонализированной аналитики.',
+			'Просматривайте свой публичный профиль, делитесь статистикой прослушиваний, любимыми треками, плейлистами и сохранёнными альбомами, а также подключайте стриминговые платформы для получения персонализированной информации.',
 		profilePageImageAltText: 'Фото профиля',
-		profilePageFollowers: 'подписчиков',
+		profilePageFollowers: 'подписчики',
 		profilePageAddTicketsAltText: 'Добавить билеты',
 		profilePageExternalLinkSpotify: 'Посмотреть профиль в Spotify',
 		profilePageExternalLinkDeezer: 'Посмотреть профиль в Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Ваши треки',
 		profilePageYourSongsOnProfileHeading3v1: 'Самый прослушиваемый трек',
 		profilePageYourSongsOnProfileHeading3v2: 'Трек момента',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Кнопка для редактирования трека момента',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Кнопка редактирования трека момента',
 		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
-			'Кнопка для редактирования пользовательского трека',
+			'Кнопка редактирования пользовательского трека',
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Значок редактирования трека момента',
 		profilePageYourSongsOnProfileEditCustomMusicIconAltText:
 			'Значок редактирования пользовательского трека',
 		profilePageChangeYourMusicCloseModalAriaLabel: 'Закрыть окно изменения трека момента',
 		profilePageChangeYourMusicCloseModalAltText: 'Значок закрытия окна изменения трека момента',
-		profilePageChangeYourMusicParagraph1: 'Обновите свой трек момента в профиле',
+		profilePageChangeYourMusicParagraph1: 'Обновите трек момента в своём профиле',
 		profilePageChangeYourMusicParagraph2:
 			'Выберите трек, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Выбрать трек момента для профиля',
 		profilePageChangeYourMusicUnlockMoreMusic:
-			'Продолжайте открывать больше треков и делать свой профиль ещё более персонализированным.',
+			'Продолжайте открывать новые треки и делать свой профиль ещё более персонализированным.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:
 			'Закрыть окно изменения пользовательского трека',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Значок закрытия окна изменения пользовательского трека',
+		profilePageChangeYourCustomMusicTitleInputLabel: 'Дайте своему треку название',
+		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Например: Саундтрек моей жизни',
+		profilePageChangeYourCustomMusicUnlockMoreMusic:
+			'Продолжайте открывать новые треки и делать свой профиль ещё более персонализированным.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Трек момента',
 		profilePageEmptyMusicOfTheMomentAltText: 'Значок выбора трека момента',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Выбрать трек момента',
 		profilePageEmptyMusicOfTheMomentParagraph1:
-			'Выберите трек, который лучше всего представляет вас сейчас, чтобы выделить его в своём профиле.',
+			'Выберите трек, который лучше всего отражает вас сейчас, чтобы выделить его в своём профиле.',
 		profilePageSelectYourMusicCloseModalAriaLabel: 'Закрыть окно выбора трека момента',
 		profilePageSelectYourMusicCloseModalAltText: 'Значок закрытия окна выбора трека момента',
 		profilePageSelectYourMusicParagraph1: 'Выберите свой трек момента',
 		profilePageSelectYourMusicParagraph2:
 			'Выберите трек, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'Выбрать трек момента для профиля',
-		profilePageSelectYourMusicChooseMusicFollowers: 'подписчиков',
+		profilePageSelectYourMusicChooseMusicFollowers: 'подписчики',
 		profilePageSelectYourMusicUnlockMoreMusic:
-			'Продолжайте открывать больше треков и делать свой профиль ещё более персонализированным.',
+			'Продолжайте открывать новые треки и делать свой профиль ещё более персонализированным.',
+		profilePageSelectYourCustomMusicTitleInputLabel: 'Дайте своему треку название',
+		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Например: Саундтрек моей жизни',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel:
 			'Закрыть окно выбора пользовательского трека',
 		profilePageSelectYourCustomMusicCloseModalAltText:
 			'Значок закрытия окна выбора пользовательского трека',
+		profilePageSelectYourCustomMusicUnlockMoreMusic:
+			'Продолжайте открывать новые треки и делать свой профиль ещё более персонализированным.',
 		profilePageEmptyCustomMusicHeading1: 'Ваш трек, по-вашему',
 		profilePageEmptyCustomMusicAltText: 'Значок выбора пользовательского трека',
 		profilePageEmptyCustomMusicHeading2: 'Придайте своему треку особый смысл',
 		profilePageEmptyCustomMusicParagraph1:
-			'Выберите один из своих самых прослушиваемых треков и настройте название так, как вам нравится.',
+			'Выберите один из своих самых прослушиваемых треков и настройте его название по своему вкусу.',
 		profilePageYourArtistsOnProfileHeading2: 'Ваши исполнители',
 		profilePageYourArtistsOnProfileHeading3v1: 'Самый прослушиваемый исполнитель',
 		profilePageYourArtistsOnProfileHeading3v2: 'Исполнитель момента',
-		profilePageYourArtistsOnProfileFollowers: 'подписчиков',
+		profilePageYourArtistsOnProfileFollowers: 'подписчики',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
-			'Кнопка для редактирования исполнителя момента',
+			'Кнопка редактирования исполнителя момента',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
-			'Кнопка для редактирования пользовательского исполнителя',
+			'Кнопка редактирования пользовательского исполнителя',
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
 			'Значок редактирования исполнителя момента',
 		profilePageChangeYourArtistCloseModalAltText:
@@ -310,40 +318,48 @@ export const ru = {
 		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
 			'Значок редактирования пользовательского исполнителя',
 		profilePageChangeYourArtistCloseModalAriaLabel: 'Закрыть окно изменения исполнителя момента',
-		profilePageChangeYourArtistParagraph1: 'Обновите своего исполнителя момента в профиле',
+		profilePageChangeYourArtistParagraph1: 'Обновите исполнителя момента в своём профиле',
 		profilePageChangeYourArtistParagraph2:
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'Выбрать исполнителя момента для профиля',
-		profilePageChangeYourArtistChooseArtistFollowers: 'подписчиков',
+		profilePageChangeYourArtistChooseArtistFollowers: 'подписчики',
 		profilePageChangeYourArtistUnlockMoreMusic:
-			'Продолжайте открывать больше исполнителей и делать свой профиль ещё более персонализированным.',
+			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персонализированным.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:
 			'Закрыть окно изменения пользовательского исполнителя',
 		profilePageChangeYourCustomArtistCloseModalAltText:
 			'Значок закрытия окна изменения пользовательского исполнителя',
+		profilePageChangeYourCustomArtistTitleInputLabel: 'Дайте своему исполнителю название',
+		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Например: Моё главное вдохновение',
+		profilePageChangeYourCustomArtistUnlockMoreMusic:
+			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персонализированным.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Исполнитель момента',
 		profilePageEmptyArtistOfTheMomentAltText: 'Значок выбора исполнителя момента',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Выбрать исполнителя момента',
 		profilePageEmptyArtistOfTheMomentParagraph1:
-			'Выберите исполнителя, который лучше всего представляет вас сейчас, чтобы выделить его в своём профиле.',
+			'Выберите исполнителя, который лучше всего отражает вас сейчас, чтобы выделить его в своём профиле.',
 		profilePageSelectYourArtistCloseModalAriaLabel: 'Закрыть окно выбора исполнителя момента',
 		profilePageSelectYourArtistCloseModalAltText: 'Значок закрытия окна выбора исполнителя момента',
 		profilePageSelectYourArtistParagraph1: 'Выберите своего исполнителя момента',
 		profilePageSelectYourArtistParagraph2:
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageSelectYourArtistChooseArtistAriaLabel: 'Выбрать исполнителя момента для профиля',
-		profilePageSelectYourArtistChooseArtistFollowers: 'подписчиков',
+		profilePageSelectYourArtistChooseArtistFollowers: 'подписчики',
 		profilePageSelectYourArtistUnlockMoreMusic:
-			'Продолжайте открывать больше исполнителей и делать свой профиль ещё более персонализированным.',
+			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персонализированным.',
 		profilePageSelectYourCustomArtistCloseModalAriaLabel:
 			'Закрыть окно выбора пользовательского исполнителя',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Значок закрытия окна выбора пользовательского исполнителя',
+		profilePageSelectYourCustomArtistTitleInputLabel: 'Дайте своему исполнителю название',
+		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Например: Моё главное вдохновение',
+		profilePageSelectYourCustomArtistUnlockMoreMusic:
+			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персонализированным.',
 		profilePageEmptyCustomArtistHeading1: 'Ваш исполнитель, по-вашему',
 		profilePageEmptyCustomArtistAltText: 'Значок выбора пользовательского исполнителя',
 		profilePageEmptyCustomArtistHeading2: 'Придайте своему исполнителю особый смысл',
 		profilePageEmptyCustomArtistParagraph1:
-			'Выберите одного из своих самых прослушиваемых исполнителей и настройте название так, как вам нравится.',
+			'Выберите одного из своих самых прослушиваемых исполнителей и настройте его название по своему вкусу.',
 		profilePageSelectYourCustomItemParagraph1: 'По-вашему',
 		profilePageSelectYourCustomMusicParagraph2:
 			'Выберите трек и дайте ему название, которое отражает то, что вы сейчас чувствуете, переживаете или вспоминаете.',
@@ -357,7 +373,11 @@ export const ru = {
 		profilePageChangeYourItemsModalCloseModal: 'Закрыть',
 		profilePageChangeYourItemsModalSaveChanges: 'Сохранить изменения',
 		profilePageSelectYourItemsModalCloseModal: 'Закрыть',
-		profilePageSelectYourItemsModalSaveChanges: 'Сохранить изменения'
+		profilePageSelectYourItemsModalSaveChanges: 'Сохранить выбор',
+		profilePageChangeYourCustomItemModalCloseModal: 'Закрыть',
+		profilePageChangeYourCustomItemModalSaveChanges: 'Сохранить изменения',
+		profilePageSelectYourCustomItemModalCloseModal: 'Закрыть',
+		profilePageSelectYourCustomItemModalSaveChanges: 'Сохранить выбор'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

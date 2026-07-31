@@ -238,10 +238,10 @@ export const ja = {
 	profilePage: {
 		title: 'プロフィール | Allify',
 		profilePageMetaDescription:
-			'公開プロフィールを確認し、再生統計、お気に入りの曲、プレイリスト、保存したアルバムを共有しましょう。ストリーミングサービスを連携すると、パーソナライズされたインサイトを取得できます。',
+			'公開プロフィールを確認し、再生統計、お気に入りの曲、プレイリスト、保存したアルバムを共有しましょう。ストリーミングプラットフォームを連携すると、パーソナライズされたインサイトを得られます。',
 		profilePageMetaOgAndTwitterContent:
-			'公開プロフィールを確認し、再生統計、お気に入りの曲、プレイリスト、保存したアルバムを共有しましょう。ストリーミングサービスを連携すると、パーソナライズされたインサイトを取得できます。',
-		profilePageImageAltText: 'プロフィール写真:',
+			'公開プロフィールを確認し、再生統計、お気に入りの曲、プレイリスト、保存したアルバムを共有しましょう。ストリーミングプラットフォームを連携すると、パーソナライズされたインサイトを得られます。',
+		profilePageImageAltText: 'プロフィール写真：',
 		profilePageFollowers: 'フォロワー',
 		profilePageAddTicketsAltText: 'チケットを追加',
 		profilePageExternalLinkSpotify: 'Spotifyでプロフィールを見る',
@@ -256,13 +256,17 @@ export const ja = {
 		profilePageChangeYourMusicCloseModalAriaLabel: '今の一曲を変更するモーダルを閉じる',
 		profilePageChangeYourMusicCloseModalAltText: '今の一曲を変更するモーダルを閉じるアイコン',
 		profilePageChangeYourMusicParagraph1: 'プロフィールの今の一曲を更新しましょう',
-		profilePageChangeYourMusicParagraph2: '今聴いている音楽を最もよく表す曲を選びましょう。',
+		profilePageChangeYourMusicParagraph2: '今聴いているものを最もよく表す曲を選びましょう。',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'プロフィール用の今の一曲を選択',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'さらに多くの曲をアンロックして、プロフィールをもっと自分らしくしましょう。',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'カスタム曲を変更するモーダルを閉じる',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'カスタム曲を変更するモーダルを閉じるアイコン',
+		profilePageChangeYourCustomMusicTitleInputLabel: '曲にタイトルを付ける',
+		profilePageChangeYourCustomMusicTitleInputPlaceholder: '例：私の人生のサウンドトラック',
+		profilePageChangeYourCustomMusicUnlockMoreMusic:
+			'さらに多くの曲をアンロックして、プロフィールをもっと自分らしくしましょう。',
 		profilePageEmptyMusicOfTheMomentHeading1: '今の一曲',
 		profilePageEmptyMusicOfTheMomentAltText: '今の一曲の選択アイコン',
 		profilePageEmptyMusicOfTheMomentHeading2: '今の一曲を選択',
@@ -271,19 +275,23 @@ export const ja = {
 		profilePageSelectYourMusicCloseModalAriaLabel: '今の一曲を選択するモーダルを閉じる',
 		profilePageSelectYourMusicCloseModalAltText: '今の一曲を選択するモーダルを閉じるアイコン',
 		profilePageSelectYourMusicParagraph1: '今の一曲を選びましょう',
-		profilePageSelectYourMusicParagraph2: '今聴いている音楽を最もよく表す曲を選びましょう。',
+		profilePageSelectYourMusicParagraph2: '今聴いているものを最もよく表す曲を選びましょう。',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'プロフィール用の今の一曲を選択',
 		profilePageSelectYourMusicChooseMusicFollowers: 'フォロワー',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'さらに多くの曲をアンロックして、プロフィールをもっと自分らしくしましょう。',
+		profilePageSelectYourCustomMusicTitleInputLabel: '曲にタイトルを付ける',
+		profilePageSelectYourCustomMusicTitleInputPlaceholder: '例：私の人生のサウンドトラック',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel: 'カスタム曲を選択するモーダルを閉じる',
 		profilePageSelectYourCustomMusicCloseModalAltText:
 			'カスタム曲を選択するモーダルを閉じるアイコン',
+		profilePageSelectYourCustomMusicUnlockMoreMusic:
+			'さらに多くの曲をアンロックして、プロフィールをもっと自分らしくしましょう。',
 		profilePageEmptyCustomMusicHeading1: 'あなたの曲、あなたらしく',
 		profilePageEmptyCustomMusicAltText: 'カスタム曲の選択アイコン',
 		profilePageEmptyCustomMusicHeading2: 'あなたの曲に意味を与えよう',
 		profilePageEmptyCustomMusicParagraph1:
-			'最もよく聴く曲の中から1曲を選び、好きなようにタイトルをカスタマイズしましょう。',
+			'よく聴く曲の中から1曲を選び、好きなようにタイトルをカスタマイズしましょう。',
 		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
 		profilePageYourArtistsOnProfileHeading3v1: '最も聴いたアーティスト',
 		profilePageYourArtistsOnProfileHeading3v2: '今のアーティスト',
@@ -299,7 +307,7 @@ export const ja = {
 		profilePageChangeYourArtistCloseModalAriaLabel: '今のアーティストを変更するモーダルを閉じる',
 		profilePageChangeYourArtistParagraph1: 'プロフィールの今のアーティストを更新しましょう',
 		profilePageChangeYourArtistParagraph2:
-			'今聴いている音楽を最もよく表すアーティストを選びましょう。',
+			'今聴いているものを最もよく表すアーティストを選びましょう。',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'プロフィール用の今のアーティストを選択',
 		profilePageChangeYourArtistChooseArtistFollowers: 'フォロワー',
 		profilePageChangeYourArtistUnlockMoreMusic:
@@ -308,6 +316,10 @@ export const ja = {
 			'カスタムアーティストを変更するモーダルを閉じる',
 		profilePageChangeYourCustomArtistCloseModalAltText:
 			'カスタムアーティストを変更するモーダルを閉じるアイコン',
+		profilePageChangeYourCustomArtistTitleInputLabel: 'アーティストにタイトルを付ける',
+		profilePageChangeYourCustomArtistTitleInputPlaceholder: '例：私の最大のインスピレーション',
+		profilePageChangeYourCustomArtistUnlockMoreMusic:
+			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくしましょう。',
 		profilePageEmptyArtistOfTheMomentHeading1: '今のアーティスト',
 		profilePageEmptyArtistOfTheMomentAltText: '今のアーティストの選択アイコン',
 		profilePageEmptyArtistOfTheMomentHeading2: '今のアーティストを選択',
@@ -318,7 +330,7 @@ export const ja = {
 			'今のアーティストを選択するモーダルを閉じるアイコン',
 		profilePageSelectYourArtistParagraph1: '今のアーティストを選びましょう',
 		profilePageSelectYourArtistParagraph2:
-			'今聴いている音楽を最もよく表すアーティストを選びましょう。',
+			'今聴いているものを最もよく表すアーティストを選びましょう。',
 		profilePageSelectYourArtistChooseArtistAriaLabel: 'プロフィール用の今のアーティストを選択',
 		profilePageSelectYourArtistChooseArtistFollowers: 'フォロワー',
 		profilePageSelectYourArtistUnlockMoreMusic:
@@ -327,11 +339,15 @@ export const ja = {
 			'カスタムアーティストを選択するモーダルを閉じる',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'カスタムアーティストを選択するモーダルを閉じるアイコン',
+		profilePageSelectYourCustomArtistTitleInputLabel: 'アーティストにタイトルを付ける',
+		profilePageSelectYourCustomArtistTitleInputPlaceholder: '例：私の最大のインスピレーション',
+		profilePageSelectYourCustomArtistUnlockMoreMusic:
+			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくしましょう。',
 		profilePageEmptyCustomArtistHeading1: 'あなたのアーティスト、あなたらしく',
 		profilePageEmptyCustomArtistAltText: 'カスタムアーティストの選択アイコン',
 		profilePageEmptyCustomArtistHeading2: 'あなたのアーティストに意味を与えよう',
 		profilePageEmptyCustomArtistParagraph1:
-			'最もよく聴くアーティストの中から1組を選び、好きなようにタイトルをカスタマイズしましょう。',
+			'よく聴くアーティストの中から1人を選び、好きなようにタイトルをカスタマイズしましょう。',
 		profilePageSelectYourCustomItemParagraph1: 'あなたらしく',
 		profilePageSelectYourCustomMusicParagraph2:
 			'曲を選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
@@ -345,7 +361,11 @@ export const ja = {
 		profilePageChangeYourItemsModalCloseModal: '閉じる',
 		profilePageChangeYourItemsModalSaveChanges: '変更を保存',
 		profilePageSelectYourItemsModalCloseModal: '閉じる',
-		profilePageSelectYourItemsModalSaveChanges: '変更を保存'
+		profilePageSelectYourItemsModalSaveChanges: '選択を保存',
+		profilePageChangeYourCustomItemModalCloseModal: '閉じる',
+		profilePageChangeYourCustomItemModalSaveChanges: '変更を保存',
+		profilePageSelectYourCustomItemModalCloseModal: '閉じる',
+		profilePageSelectYourCustomItemModalSaveChanges: '選択を保存'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

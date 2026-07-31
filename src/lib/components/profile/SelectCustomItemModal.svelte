@@ -4,6 +4,8 @@
 
 	// Components
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
+	import SelectCustomArtist from '$lib/components/profile/SelectCustomArtist.svelte';
+	import SelectCustomTrack from '$lib/components/profile/SelectCustomTrack.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -52,6 +54,12 @@
 					? $translationsStore.profilePage.profilePageSelectYourCustomArtistParagraph2
 					: $translationsStore.profilePage.profilePageSelectYourCustomMusicParagraph2}
 			</p>
+
+			{#if itemType === 'artist'}
+				<SelectCustomArtist {closeSelectCustomItemModal} />
+			{:else if itemType === 'music'}
+				<SelectCustomTrack {closeSelectCustomItemModal} />
+			{/if}
 		</div>
 	</div>
 </div>

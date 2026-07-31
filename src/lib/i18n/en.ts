@@ -241,9 +241,9 @@ export const en = {
 	profilePage: {
 		title: 'Profile | Allify',
 		profilePageMetaDescription:
-			'View your public profile, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageMetaOgAndTwitterContent:
-			'View your public profile, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageImageAltText: 'Profile picture of',
 		profilePageFollowers: 'followers',
 		profilePageAddTicketsAltText: 'Add tickets',
@@ -263,9 +263,13 @@ export const en = {
 			'Choose the song that best represents what you are listening to right now.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Select song of the moment for your profile',
 		profilePageChangeYourMusicUnlockMoreMusic:
-			'Keep unlocking more songs and personalize your profile even further.',
+			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'Close custom song change modal',
 		profilePageChangeYourCustomMusicCloseModalAltText: 'Close custom song change modal icon',
+		profilePageChangeYourCustomMusicTitleInputLabel: 'Give your song a title',
+		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'E.g.: The soundtrack of my life',
+		profilePageChangeYourCustomMusicUnlockMoreMusic:
+			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Song of the moment',
 		profilePageEmptyMusicOfTheMomentAltText: 'Song of the moment selection icon',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Select song of the moment',
@@ -279,14 +283,18 @@ export const en = {
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'Select song of the moment for your profile',
 		profilePageSelectYourMusicChooseMusicFollowers: 'followers',
 		profilePageSelectYourMusicUnlockMoreMusic:
-			'Keep unlocking more songs and personalize your profile even further.',
+			'Keep unlocking more songs and personalizing your profile even further.',
+		profilePageSelectYourCustomMusicTitleInputLabel: 'Give your song a title',
+		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'E.g.: The soundtrack of my life',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel: 'Close custom song selection modal',
 		profilePageSelectYourCustomMusicCloseModalAltText: 'Close custom song selection modal icon',
+		profilePageSelectYourCustomMusicUnlockMoreMusic:
+			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageEmptyCustomMusicHeading1: 'Your song, your way',
 		profilePageEmptyCustomMusicAltText: 'Custom song selection icon',
 		profilePageEmptyCustomMusicHeading2: 'Give your song a meaning',
 		profilePageEmptyCustomMusicParagraph1:
-			'Choose one of your most listened-to songs and customize the title however you like.',
+			'Choose one of your most listened-to songs and customize its title however you like.',
 		profilePageYourArtistsOnProfileHeading2: 'Your artists',
 		profilePageYourArtistsOnProfileHeading3v1: 'Most listened-to artist',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artist of the moment',
@@ -304,9 +312,13 @@ export const en = {
 			'Select artist of the moment for your profile',
 		profilePageChangeYourArtistChooseArtistFollowers: 'followers',
 		profilePageChangeYourArtistUnlockMoreMusic:
-			'Keep unlocking more artists and personalize your profile even further.',
+			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel: 'Close custom artist change modal',
 		profilePageChangeYourCustomArtistCloseModalAltText: 'Close custom artist change modal icon',
+		profilePageChangeYourCustomArtistTitleInputLabel: 'Give your artist a title',
+		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'E.g.: My greatest inspiration',
+		profilePageChangeYourCustomArtistUnlockMoreMusic:
+			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artist of the moment',
 		profilePageEmptyArtistOfTheMomentAltText: 'Artist of the moment selection icon',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Select artist of the moment',
@@ -321,28 +333,36 @@ export const en = {
 			'Select artist of the moment for your profile',
 		profilePageSelectYourArtistChooseArtistFollowers: 'followers',
 		profilePageSelectYourArtistUnlockMoreMusic:
-			'Keep unlocking more artists and personalize your profile even further.',
+			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageSelectYourCustomArtistCloseModalAriaLabel: 'Close custom artist selection modal',
 		profilePageSelectYourCustomArtistCloseModalAltText: 'Close custom artist selection modal icon',
+		profilePageSelectYourCustomArtistTitleInputLabel: 'Give your artist a title',
+		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'E.g.: My greatest inspiration',
+		profilePageSelectYourCustomArtistUnlockMoreMusic:
+			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageEmptyCustomArtistHeading1: 'Your artist, your way',
 		profilePageEmptyCustomArtistAltText: 'Custom artist selection icon',
 		profilePageEmptyCustomArtistHeading2: 'Give your artist a meaning',
 		profilePageEmptyCustomArtistParagraph1:
-			'Choose one of your most listened-to artists and customize the title however you like.',
+			'Choose one of your most listened-to artists and customize its title however you like.',
 		profilePageSelectYourCustomItemParagraph1: 'Your way',
 		profilePageSelectYourCustomMusicParagraph2:
-			'Choose a song and give it a title that represents what you are feeling, experiencing, or remembering right now.',
+			'Choose a song and give it a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageSelectYourCustomArtistParagraph2:
-			'Choose an artist and give it a title that represents what you are feeling, experiencing, or remembering right now.',
+			'Choose an artist and give them a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageChangeYourCustomItemParagraph1: 'Update it your way',
 		profilePageChangeYourCustomArtistParagraph2:
-			'Choose another artist and give it a title that represents what you are feeling, experiencing, or remembering right now.',
+			'Choose another artist and give them a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageChangeYourCustomMusicParagraph2:
-			'Choose another song and give it a title that represents what you are feeling, experiencing, or remembering right now.',
+			'Choose another song and give it a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageChangeYourItemsModalCloseModal: 'Close',
 		profilePageChangeYourItemsModalSaveChanges: 'Save changes',
 		profilePageSelectYourItemsModalCloseModal: 'Close',
-		profilePageSelectYourItemsModalSaveChanges: 'Save changes'
+		profilePageSelectYourItemsModalSaveChanges: 'Save selection',
+		profilePageChangeYourCustomItemModalCloseModal: 'Close',
+		profilePageChangeYourCustomItemModalSaveChanges: 'Save changes',
+		profilePageSelectYourCustomItemModalCloseModal: 'Close',
+		profilePageSelectYourCustomItemModalSaveChanges: 'Save selection'
 	},
 	settingsPage: {
 		title: 'Settings | Allify',
