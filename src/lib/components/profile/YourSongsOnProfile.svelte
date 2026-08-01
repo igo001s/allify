@@ -24,12 +24,12 @@
 	];
 </script>
 
-<section class="space-y-4 sm:space-y-6">
+<section class="space-y-7">
 	<h2 class="text-xl font-semibold text-t-primary sm:text-2xl">
 		{$translationsStore.profilePage.profilePageYourSongsOnProfileHeading2}
 	</h2>
 
-	<div class="flex flex-col gap-4 sm:gap-6 xl:flex-row xl:gap-8">
+	<div class="flex flex-col gap-8 xl:flex-row">
 		{#each songsItems as { trackItem, type }}
 			{#if trackItem}
 				<YourSongsOnProfileItem

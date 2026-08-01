@@ -9,7 +9,7 @@
 	export let openSelectCustomItemModal: (itemType: 'artist') => void;
 </script>
 
-<div class="flex w-full flex-col gap-3 sm:gap-4 xl:w-1/3">
+<div class="flex w-full flex-col gap-4 xl:w-1/3">
 	<h3 class="truncate text-xs font-semibold tracking-[0.18em] text-t-secondary uppercase">
 		{$translationsStore.profilePage.profilePageEmptyCustomArtistHeading1}
 	</h3>
