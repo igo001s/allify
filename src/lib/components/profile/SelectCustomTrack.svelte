@@ -7,7 +7,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Services
-	import { selectCustomTrack } from '$lib/services/user/updates/selectCustomTrack';
+	import { updateCustomTrack } from '$lib/services/user/updates/updateCustomTrack';
 
 	// Types
 	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
@@ -30,7 +30,7 @@
 	async function handleSelectCustomTrack() {
 		if (!choosedTrackTitle || !choosedTrack || !$userInfo?._id) return;
 
-		const updatedTrack = await selectCustomTrack($userInfo?._id, choosedTrackTitle, choosedTrack);
+		const updatedTrack = await updateCustomTrack($userInfo?._id, choosedTrackTitle, choosedTrack);
 
 		if (updatedTrack) {
 			userInfo.update((currentUser) => {

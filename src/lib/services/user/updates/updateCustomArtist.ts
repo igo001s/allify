@@ -7,7 +7,7 @@ import type { ObjectId } from 'mongodb';
 // Types
 import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
-export async function selectCustomArtist(
+export async function updateCustomArtist(
 	id: ObjectId,
 	customArtistTitle: string,
 	customArtist: ArtistSpotify
@@ -15,7 +15,7 @@ export async function selectCustomArtist(
 	try {
 		if (!id || !customArtistTitle || !customArtist) return;
 
-		const response = await fetch('/api/mongodb/updates/select-custom-artist', {
+		const response = await fetch('/api/mongodb/updates/update-custom-artist', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export async function selectCustomArtist(
 		return data.customArtist;
 	} catch (error) {
 		if (dev) {
-			console.error('User selectCustomArtist error:', error);
+			console.error('User updateCustomArtist error:', error);
 		}
 
 		return null;

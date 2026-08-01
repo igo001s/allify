@@ -7,7 +7,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Services
-	import { selectCustomArtist } from '$lib/services/user/updates/selectCustomArtist';
+	import { updateCustomArtist } from '$lib/services/user/updates/updateCustomArtist';
 
 	// Types
 	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
@@ -30,7 +30,7 @@
 	async function handleSelectCustomArtist() {
 		if (!choosedArtistTitle || !choosedArtist || !$userInfo?._id) return;
 
-		const updatedArtist = await selectCustomArtist(
+		const updatedArtist = await updateCustomArtist(
 			$userInfo?._id,
 			choosedArtistTitle,
 			choosedArtist

@@ -6,14 +6,17 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Services
+	import { updateCustomTrack } from '$lib/services/user/updates/updateCustomTrack';
+
 	// Types
 	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
 	// Props
 	export let closeChangeCustomItemModal: () => void;
 
-	let choosedTrackTitle: string | undefined = '';
-	let choosedTrack: TrackSpotify | undefined = undefined;
+	let choosedTrackTitle: string | undefined = $userInfo?.customTrack?.title || '';
+	let choosedTrack: TrackSpotify | undefined = $userInfo?.customTrack?.track || undefined;
 
 	function handleTrackSelection(track: TrackSpotify) {
 		if (choosedTrack?.id === track.id) {
@@ -25,7 +28,23 @@
 	}
 
 	async function handleChangeCustomTrack() {
-		if (!choosedTrack || !$userInfo?._id) return;
+		if (!choosedTrackTitle || !choosedTrack || !$userInfo?._id) return;
+
+		const updatedTrack = await updateCustomTrack($userInfo?._id, choosedTrackTitle, choosedTrack);
+
+		if (updatedTrack) {
+			userInfo.update((currentUser) => {
+				if (!currentUser) return currentUser;
+
+				return {
+					...currentUser,
+					customTrack: {
+						title: updatedTrack.title,
+						track: updatedTrack.track
+					}
+				};
+			});
+		}
 
 		closeChangeCustomItemModal();
 	}
@@ -33,13 +52,13 @@
 
 <div class="flex w-full flex-col gap-4">
 	<label class="my-2 flex flex-col gap-1.5 text-sm font-medium text-t-primary">
-		{$translationsStore.profilePage.profilePageChangeYourCustomMusicTitleInputLabel}
+		{$translationsStore.profilePage.profilePageChangeYourCustomArtistTitleInputLabel}
 
 		<input
 			type="text"
 			class="mt-1 w-full rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary transition-all outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
 			placeholder={$translationsStore.profilePage
-				.profilePageChangeYourCustomMusicTitleInputPlaceholder}
+				.profilePageChangeYourCustomArtistTitleInputPlaceholder}
 			bind:value={choosedTrackTitle}
 		/>
 	</label>
@@ -51,13 +70,13 @@
 			<button
 				class={`${
 					choosedTrack?.id === track.id ||
-					(!choosedTrack && $userInfo?.trackOfTheMoment?.id === track.id)
+					(!choosedTrack && $userInfo?.customTrack?.track?.id === track.id)
 						? 'border-brand-primary bg-brand-primary/5'
 						: 'border-s-muted bg-s-muted'
 				}
 						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-5 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
 				aria-label={$translationsStore.profilePage.profilePageChangeYourMusicChooseMusicAriaLabel}
-				disabled={choosedTrack === undefined && $userInfo?.trackOfTheMoment?.id === track.id}
+				disabled={choosedTrack === undefined && $userInfo?.customTrack?.track?.id === track.id}
 				on:click={() => handleTrackSelection(track)}
 			>
 				{#if track.image}
@@ -84,14 +103,14 @@
 				</div>
 
 				<SpotifyIcon
-					iconSvgClass={`${choosedTrack?.id === track.id || (!choosedTrack && $userInfo?.trackOfTheMoment?.id === track.id) ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
+					iconSvgClass={`${choosedTrack?.id === track.id || (!choosedTrack && $userInfo?.customTrack?.track?.id === track.id) ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
 				/>
 			</button>
 		{/each}
 	</div>
 
 	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
-		{$translationsStore.profilePage.profilePageChangeYourCustomMusicUnlockMoreMusic}
+		{$translationsStore.profilePage.profilePageChangeYourMusicUnlockMoreMusic}
 	</p>
 
 	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
@@ -99,15 +118,18 @@
 			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg border border-b-default px-4 py-2 text-xs font-semibold text-t-primary transition hover:scale-102 sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
 			on:click={closeChangeCustomItemModal}
 		>
-			{$translationsStore.profilePage.profilePageChangeYourCustomItemModalCloseModal}
+			{$translationsStore.profilePage.profilePageChangeYourItemsModalCloseModal}
 		</button>
 
 		<button
-			disabled={!choosedTrack}
+			disabled={!choosedTrack ||
+				!choosedTrackTitle ||
+				($userInfo?.customTrack?.track?.id === choosedTrack?.id &&
+					$userInfo?.customTrack?.title === choosedTrackTitle)}
 			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 disabled:bg-s-inverse-muted sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
 			on:click={handleChangeCustomTrack}
 		>
-			{$translationsStore.profilePage.profilePageChangeYourCustomItemModalSaveChanges}
+			{$translationsStore.profilePage.profilePageChangeYourItemsModalSaveChanges}
 		</button>
 	</div>
 </div>
