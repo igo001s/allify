@@ -42,7 +42,8 @@ export const POST: RequestHandler = async ({ request }) => {
 				$set: {
 					customArtist: {
 						title: customArtistTitle,
-						artist: customArtist
+						artist: customArtist,
+						updatedAt: new Date()
 					}
 				}
 			}
@@ -52,7 +53,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			JSON.stringify({
 				customArtist: {
 					title: customArtistTitle,
-					artist: customArtist
+					artist: customArtist,
+					updatedAt: new Date()
 				}
 			}),
 			{ status: 200 }

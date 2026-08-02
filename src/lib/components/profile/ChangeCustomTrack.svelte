@@ -40,7 +40,8 @@
 					...currentUser,
 					customTrack: {
 						title: updatedTrack.title,
-						track: updatedTrack.track
+						track: updatedTrack.track,
+						updatedAt: updatedTrack.updatedAt
 					}
 				};
 			});

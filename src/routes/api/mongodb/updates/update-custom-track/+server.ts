@@ -42,7 +42,8 @@ export const POST: RequestHandler = async ({ request }) => {
 				$set: {
 					customTrack: {
 						title: customTrackTitle,
-						track: customTrack
+						track: customTrack,
+						updatedAt: new Date()
 					}
 				}
 			}
@@ -52,7 +53,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			JSON.stringify({
 				customTrack: {
 					title: customTrackTitle,
-					track: customTrack
+					track: customTrack,
+					updatedAt: new Date()
 				}
 			}),
 			{ status: 200 }

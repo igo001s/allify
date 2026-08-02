@@ -44,7 +44,8 @@
 					...currentUser,
 					customArtist: {
 						title: updatedArtist.title,
-						artist: updatedArtist.artist
+						artist: updatedArtist.artist,
+						updatedAt: updatedArtist.updatedAt
 					}
 				};
 			});
