@@ -40,14 +40,20 @@ export const POST: RequestHandler = async ({ request }) => {
 			},
 			{
 				$set: {
-					artistOfTheMoment
+					artistOfTheMoment: {
+						artist: artistOfTheMoment,
+						updatedAt: new Date()
+					}
 				}
 			}
 		);
 
 		return new Response(
 			JSON.stringify({
-				artistOfTheMoment
+				artistOfTheMoment: {
+					artist: artistOfTheMoment,
+					updatedAt: new Date()
+				}
 			}),
 			{ status: 200 }
 		);

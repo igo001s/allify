@@ -25,15 +25,23 @@ export type UserInfo = {
 		spotify?: UserInfoSpotify;
 		deezer?: undefined;
 	};
-	trackOfTheMoment?: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
-	artistOfTheMoment?: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
+	trackOfTheMoment?: {
+		track: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
+		updatedAt?: Date;
+	};
+	artistOfTheMoment?: {
+		artist: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
+		updatedAt?: Date;
+	};
 	customTrack?: {
 		title: string;
 		track: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
+		updatedAt?: Date;
 	};
 	customArtist?: {
 		title: string;
 		artist: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
+		updatedAt?: Date;
 	};
 	discoveries?: {
 		updatedAt: Date;

@@ -40,14 +40,20 @@ export const POST: RequestHandler = async ({ request }) => {
 			},
 			{
 				$set: {
-					trackOfTheMoment
+					trackOfTheMoment: {
+						track: trackOfTheMoment,
+						updatedAt: new Date()
+					}
 				}
 			}
 		);
 
 		return new Response(
 			JSON.stringify({
-				trackOfTheMoment
+				trackOfTheMoment: {
+					track: trackOfTheMoment,
+					updatedAt: new Date()
+				}
 			}),
 			{ status: 200 }
 		);

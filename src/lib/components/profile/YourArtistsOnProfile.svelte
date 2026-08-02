@@ -20,7 +20,7 @@
 				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistItem,
 			type: 'mostListenedArtist'
 		},
-		{ artistItem: $userInfo?.artistOfTheMoment, type: 'artistOfTheMoment' },
+		{ artistItem: $userInfo?.artistOfTheMoment?.artist, type: 'artistOfTheMoment' },
 		{ artistItem: $userInfo?.customArtist?.artist, type: 'customArtist' }
 	];
 </script>

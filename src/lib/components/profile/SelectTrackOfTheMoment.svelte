@@ -37,7 +37,10 @@
 
 				return {
 					...currentUser,
-					trackOfTheMoment: updatedTrack
+					trackOfTheMoment: {
+						track: updatedTrack.track,
+						updatedAt: updatedTrack.updatedAt
+					}
 				};
 			});
 		}
