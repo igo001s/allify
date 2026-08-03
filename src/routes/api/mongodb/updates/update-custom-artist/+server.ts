@@ -4,6 +4,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 // Server
 import { connectToMongoDB } from '$lib/server/mongodb';
 
+// Utils
+import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+
 // MongoDB
 import { ObjectId } from 'mongodb';
 
@@ -43,7 +46,7 @@ export const POST: RequestHandler = async ({ request }) => {
 					customArtist: {
 						title: customArtistTitle,
 						artist: customArtist,
-						updatedAt: new Date()
+						nextFreeUpdate: nextFreeUpdateTime()
 					}
 				}
 			}
@@ -54,7 +57,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				customArtist: {
 					title: customArtistTitle,
 					artist: customArtist,
-					updatedAt: new Date()
+					nextFreeUpdate: nextFreeUpdateTime()
 				}
 			}),
 			{ status: 200 }

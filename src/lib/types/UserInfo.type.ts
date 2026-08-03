@@ -19,7 +19,7 @@ export type UserInfo = {
 	tickets: number;
 	profileVisibility: {
 		visibility: 'public' | 'private';
-		updatedAt?: Date;
+		nextFreeUpdate?: Date;
 	};
 	connectedStreamings: {
 		spotify?: UserInfoSpotify;
@@ -27,26 +27,26 @@ export type UserInfo = {
 	};
 	trackOfTheMoment?: {
 		track: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
-		updatedAt?: Date;
+		nextFreeUpdate?: Date;
 	};
 	artistOfTheMoment?: {
 		artist: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
-		updatedAt?: Date;
+		nextFreeUpdate?: Date;
 	};
 	customTrack?: {
 		title: string;
 		track: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
-		updatedAt?: Date;
+		nextFreeUpdate?: Date;
 	};
 	customArtist?: {
 		title: string;
 		artist: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
-		updatedAt?: Date;
+		nextFreeUpdate?: Date;
 	};
 	discoveries?: {
-		updatedAt: Date;
 		tracks: string[];
 		artists: string[];
+		nextFreeUpdate?: Date;
 	};
 	favorites?: FavoriteUser[];
 };

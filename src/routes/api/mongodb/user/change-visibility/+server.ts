@@ -4,6 +4,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 // Server
 import { connectToMongoDB } from '$lib/server/mongodb';
 
+// Utils
+import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
 import { ObjectId } from 'mongodb';
@@ -45,7 +48,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				$set: {
 					profileVisibility: {
 						visibility: profileVisibility,
-						updatedAt: new Date()
+						updatedAt: nextFreeUpdateTime()
 					}
 				}
 			}
@@ -55,7 +58,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			JSON.stringify({
 				profileVisibilityUpdated: {
 					visibility: profileVisibility,
-					updatedAt: new Date()
+					updatedAt: nextFreeUpdateTime()
 				}
 			}),
 			{ status: 200 }
