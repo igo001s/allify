@@ -30,7 +30,14 @@
 	async function handleChangeCustomTrack() {
 		if (!choosedTrackTitle || !choosedTrack || !$userInfo?._id) return;
 
-		const updatedTrack = await updateCustomTrack($userInfo?._id, choosedTrackTitle, choosedTrack);
+		const updatedTrack = await updateCustomTrack(
+			$userInfo?._id,
+			choosedTrackTitle,
+			choosedTrack,
+			$userInfo?.email,
+			$userInfo?.tickets,
+			$userInfo?.customTrack?.nextFreeUpdate
+		);
 
 		if (updatedTrack) {
 			userInfo.update((currentUser) => {
@@ -41,7 +48,7 @@
 					customTrack: {
 						title: updatedTrack.title,
 						track: updatedTrack.track,
-						updatedAt: updatedTrack.updatedAt
+						nextFreeUpdate: updatedTrack.nextFreeUpdate
 					}
 				};
 			});

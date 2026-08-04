@@ -1,6 +1,13 @@
 // Svelte
 import { dev } from '$app/environment';
 
+// Stores
+import { showAddTickets } from '$lib/stores/showAddTickets.store';
+import { userInfo } from '$lib/stores/userInfo.store';
+
+// Services
+import { useTicket } from '../tickets/useTicket';
+
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
@@ -10,10 +17,41 @@ import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 export async function updateCustomTrack(
 	id: ObjectId,
 	customTrackTitle: string,
-	customTrack: TrackSpotify
+	customTrack: TrackSpotify,
+	email?: string,
+	tickets?: number,
+	nextFreeUpdate?: Date
 ) {
 	try {
-		if (!id || !customTrackTitle || !customTrack) return;
+		if (!id || !customTrackTitle || !customTrack) {
+			return null;
+		}
+
+		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
+
+		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
+
+		if (!freeUpdateIsAvailable) {
+			if (tickets === undefined || tickets <= 0) {
+				showAddTickets.set(true);
+
+				return null;
+			}
+
+			const ticketWasUsed = await useTicket(email || '', tickets);
+
+			if (!ticketWasUsed) {
+				throw new Error('Failed to use ticket');
+			}
+
+			userInfo.update((currentUser) => {
+				if (currentUser) {
+					currentUser.tickets = (currentUser.tickets || 0) - 1;
+				}
+
+				return currentUser;
+			});
+		}
 
 		const response = await fetch('/api/mongodb/updates/update-custom-track', {
 			method: 'POST',
