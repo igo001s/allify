@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Assets
 	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -101,8 +102,23 @@
 	</div>
 
 	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
-		{$translationsStore.profilePage.profilePageChangeYourArtistUnlockMoreMusic}
+		{#if $userInfo?.artistOfTheMoment?.nextFreeUpdate && new Date($userInfo.artistOfTheMoment.nextFreeUpdate) > new Date()}
+			{$translationsStore.profilePage.profilePageChangeYourArtistTimeToNextFreeUpdate}
+
+			<strong class="font-semibold text-t-primary">
+				{new Date($userInfo.artistOfTheMoment.nextFreeUpdate).toLocaleString(
+				$translationsStore.locale,
+					{
+						dateStyle: 'short',
+						timeStyle: 'short'
+					}
+				)}
+			</strong>
+		{:else}
+			{$translationsStore.profilePage.profilePageChangeYourArtistUnlockMoreMusic}
+		{/if}
 	</p>
+	
 
 	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
 		<button
@@ -117,7 +133,18 @@
 			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 disabled:bg-s-inverse-muted sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
 			on:click={handleChangeArtistOfTheMoment}
 		>
+			
 			{$translationsStore.profilePage.profilePageChangeYourItemsModalSaveChanges}
+
+			{#if $userInfo?.artistOfTheMoment?.nextFreeUpdate && new Date($userInfo.artistOfTheMoment.nextFreeUpdate) > new Date()}
+				<div
+					class="flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm ml-2"
+				>
+					<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-3 w-3" />
+
+					<span class="text-[11px] leading-none font-bold">-1</span>
+				</div>
+			{/if}
 		</button>
 	</div>
 </div>

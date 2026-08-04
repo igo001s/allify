@@ -321,6 +321,7 @@ export const pt = {
 			'Escolha o artista que melhor representa o que você está ouvindo no momento.',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'Selecionar artista do momento para o perfil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Você poderá atualizar gratuitamente em',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:

@@ -311,6 +311,7 @@ export const en = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Select artist of the moment for your profile',
 		profilePageChangeYourArtistChooseArtistFollowers: 'followers',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: 'You can update for free in',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel: 'Close custom artist change modal',

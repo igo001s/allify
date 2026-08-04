@@ -310,6 +310,7 @@ export const ja = {
 			'今聴いているものを最もよく表すアーティストを選びましょう。',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'プロフィール用の今のアーティストを選択',
 		profilePageChangeYourArtistChooseArtistFollowers: 'フォロワー',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: '無料で更新できるまであと',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくしましょう。',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:

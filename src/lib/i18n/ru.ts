@@ -323,6 +323,7 @@ export const ru = {
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'Выбрать исполнителя момента для профиля',
 		profilePageChangeYourArtistChooseArtistFollowers: 'подписчики',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Вы сможете бесплатно обновить через',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персонализированным.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:

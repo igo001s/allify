@@ -334,6 +334,7 @@ export const fr = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Sélectionner l’artiste du moment pour le profil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'abonnés',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Vous pourrez effectuer une mise à jour gratuitement dans',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Continuez à débloquer plus d’artistes et à personnaliser davantage votre profil.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:

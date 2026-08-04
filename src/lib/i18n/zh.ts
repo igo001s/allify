@@ -287,6 +287,7 @@ export const zh = {
 		profilePageChangeYourArtistParagraph2: '选择最能代表你此刻正在聆听内容的艺人。',
 		profilePageChangeYourArtistChooseArtistAriaLabel: '为个人资料选择此刻艺人',
 		profilePageChangeYourArtistChooseArtistFollowers: '关注者',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: '您将在以下时间后免费更新',
 		profilePageChangeYourArtistUnlockMoreMusic: '继续解锁更多艺人，让你的个人资料更加个性化。',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel: '关闭更改自定义艺人的弹窗',
 		profilePageChangeYourCustomArtistCloseModalAltText: '关闭更改自定义艺人弹窗的图标',
