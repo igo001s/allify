@@ -46,7 +46,7 @@ export async function updateCustomArtist(
 
 			userInfo.update((currentUser) => {
 				if (currentUser) {
-					currentUser.tickets = (currentUser.tickets || 0) - 1;
+					currentUser.tickets = currentUser.tickets - 1;
 				}
 
 				return currentUser;

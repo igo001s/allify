@@ -22,6 +22,15 @@ export async function updateCustomTrack(
 	tickets?: number,
 	nextFreeUpdate?: Date
 ) {
+	console.log('updateCustomTrack called with:', {
+		id,
+		customTrackTitle,
+		customTrack,
+		email,
+		tickets,
+		nextFreeUpdate
+	});
+
 	try {
 		if (!id || !customTrackTitle || !customTrack) {
 			return null;
@@ -46,7 +55,7 @@ export async function updateCustomTrack(
 
 			userInfo.update((currentUser) => {
 				if (currentUser) {
-					currentUser.tickets = (currentUser.tickets || 0) - 1;
+					currentUser.tickets = currentUser.tickets - 1;
 				}
 
 				return currentUser;
