@@ -29,7 +29,13 @@
 	async function handleChangeTrackOfTheMoment() {
 		if (!choosedTrack || !$userInfo?._id) return;
 
-		const updatedTrack = await updateTrackOfTheMoment($userInfo?._id, choosedTrack, $userInfo?.email, $userInfo?.tickets, $userInfo?.trackOfTheMoment?.nextFreeUpdate);
+		const updatedTrack = await updateTrackOfTheMoment(
+			$userInfo?._id,
+			choosedTrack,
+			$userInfo?.email,
+			$userInfo?.tickets,
+			$userInfo?.trackOfTheMoment?.nextFreeUpdate
+		);
 
 		if (updatedTrack) {
 			userInfo.update((currentUser) => {

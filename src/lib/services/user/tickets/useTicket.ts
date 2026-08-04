@@ -8,7 +8,7 @@ export async function useTicket(email: string, tickets: number) {
 	try {
 		if (email && tickets <= 0) {
 			showAddTickets.set(true);
-			
+
 			return false;
 		}
 

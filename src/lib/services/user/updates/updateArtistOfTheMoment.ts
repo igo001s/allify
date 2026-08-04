@@ -26,12 +26,9 @@ export async function updateArtistOfTheMoment(
 			return null;
 		}
 
-		const nextFreeUpdateDate = nextFreeUpdate
-			? new Date(nextFreeUpdate)
-			: null;
+		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
 
-		const freeUpdateIsAvailable =
-			!nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
+		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
 		if (!freeUpdateIsAvailable) {
 			if (tickets === undefined || tickets <= 0) {
@@ -50,7 +47,7 @@ export async function updateArtistOfTheMoment(
 				if (currentUser) {
 					currentUser.tickets = (currentUser.tickets || 0) - 1;
 				}
-				
+
 				return currentUser;
 			});
 		}
