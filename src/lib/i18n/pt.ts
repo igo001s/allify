@@ -265,6 +265,7 @@ export const pt = {
 		profilePageChangeYourMusicParagraph2:
 			'Escolha a música que melhor representa o que você está ouvindo no momento.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Selecionar música do momento para o perfil',
+		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Você poderá atualizar gratuitamente em',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:

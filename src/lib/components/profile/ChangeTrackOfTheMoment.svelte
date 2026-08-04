@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Assets
 	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -103,7 +104,21 @@
 	</div>
 
 	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
-		{$translationsStore.profilePage.profilePageChangeYourMusicUnlockMoreMusic}
+		{#if $userInfo?.trackOfTheMoment?.nextFreeUpdate && new Date($userInfo.trackOfTheMoment.nextFreeUpdate) > new Date()}
+			{$translationsStore.profilePage.profilePageChangeYourMusicTimeToNextFreeUpdate}
+
+			<strong class="font-semibold text-t-primary">
+				{new Date($userInfo.trackOfTheMoment.nextFreeUpdate).toLocaleString(
+					$translationsStore.locale,
+					{
+						dateStyle: 'short',
+						timeStyle: 'short'
+					}
+				)}
+			</strong>
+		{:else}
+			{$translationsStore.profilePage.profilePageChangeYourMusicUnlockMoreMusic}
+		{/if}
 	</p>
 
 	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
@@ -120,6 +135,20 @@
 			on:click={handleChangeTrackOfTheMoment}
 		>
 			{$translationsStore.profilePage.profilePageChangeYourItemsModalSaveChanges}
+
+			{#if $userInfo?.trackOfTheMoment?.nextFreeUpdate && new Date($userInfo.trackOfTheMoment.nextFreeUpdate) > new Date()}
+				<div
+					class="ml-2 flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm"
+				>
+					<img
+						src={TicketIcon}
+						alt={$translationsStore.generalTexts.ticketAltText}
+						class="h-3 w-3"
+					/>
+
+					<span class="text-[11px] leading-none font-bold">-1</span>
+				</div>
+			{/if}
 		</button>
 	</div>
 </div>

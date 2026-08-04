@@ -249,7 +249,7 @@ export const es = {
 			'Consulta tu perfil público, comparte tus estadísticas de escucha, canciones favoritas, playlists y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
 		profilePageImageAltText: 'Foto de perfil de',
 		profilePageFollowers: 'seguidores',
-		profilePageAddTicketsAltText: 'Añadir entradas',
+		profilePageAddTicketsAltText: 'Añadir tickets',
 		profilePageExternalLinkSpotify: 'Ver perfil en Spotify',
 		profilePageExternalLinkDeezer: 'Ver perfil en Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Tus canciones',
@@ -270,6 +270,7 @@ export const es = {
 			'Elige la canción que mejor represente lo que estás escuchando en este momento.',
 		profilePageChangeYourMusicChooseMusicAriaLabel:
 			'Seleccionar la canción del momento para el perfil',
+		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Podrás actualizar gratis el',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:
@@ -277,7 +278,7 @@ export const es = {
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Icono para cerrar el modal para cambiar la canción personalizada',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Ponle un título a tu canción',
-		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'P. ej.: La banda sonora de mi vida',
+		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ej.: La banda sonora de mi vida',
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Canción del momento',
@@ -298,7 +299,7 @@ export const es = {
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Ponle un título a tu canción',
-		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'P. ej.: La banda sonora de mi vida',
+		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Ej.: La banda sonora de mi vida',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel:
 			'Cerrar el modal de selección de canción personalizada',
 		profilePageSelectYourCustomMusicCloseModalAltText:
@@ -332,7 +333,7 @@ export const es = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Seleccionar el artista del momento para el perfil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
-		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Podrás actualizar de forma gratuita en',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Podrás actualizar gratis el',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:
@@ -340,7 +341,7 @@ export const es = {
 		profilePageChangeYourCustomArtistCloseModalAltText:
 			'Icono para cerrar el modal para cambiar el artista personalizado',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'Ponle un título a tu artista',
-		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'P. ej.: Mi mayor inspiración',
+		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Ej.: Mi mayor inspiración',
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista del momento',
@@ -365,7 +366,7 @@ export const es = {
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Icono para cerrar el modal de selección de artista personalizado',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Ponle un título a tu artista',
-		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'P. ej.: Mi mayor inspiración',
+		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ej.: Mi mayor inspiración',
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
 		profilePageEmptyCustomArtistHeading1: 'Tu artista, a tu manera',
@@ -378,7 +379,7 @@ export const es = {
 			'Elige una canción y ponle un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
 		profilePageSelectYourCustomArtistParagraph2:
 			'Elige un artista y ponle un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
-		profilePageChangeYourCustomItemParagraph1: 'Actualízalo a tu manera',
+		profilePageChangeYourCustomItemParagraph1: 'Actualiza a tu manera',
 		profilePageChangeYourCustomArtistParagraph2:
 			'Elige otro artista y ponle un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
 		profilePageChangeYourCustomMusicParagraph2:
