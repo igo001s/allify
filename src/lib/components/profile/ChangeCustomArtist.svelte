@@ -33,7 +33,10 @@
 		const updatedArtist = await updateCustomArtist(
 			$userInfo?._id,
 			choosedArtistTitle,
-			choosedArtist
+			choosedArtist,
+			$userInfo?.email,
+			$userInfo?.tickets,
+			$userInfo?.customArtist?.nextFreeUpdate
 		);
 
 		if (updatedArtist) {
@@ -45,7 +48,7 @@
 					customArtist: {
 						title: updatedArtist.title,
 						artist: updatedArtist.artist,
-						updatedAt: updatedArtist.updatedAt
+						nextFreeUpdate: updatedArtist.nextFreeUpdate
 					}
 				};
 			});
