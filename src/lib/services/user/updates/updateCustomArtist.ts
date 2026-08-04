@@ -61,7 +61,9 @@ export async function updateCustomArtist(
 			body: JSON.stringify({
 				id,
 				customArtistTitle,
-				customArtist
+				customArtist,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
 			})
 		});
 

@@ -59,7 +59,9 @@ export async function updateArtistOfTheMoment(
 			},
 			body: JSON.stringify({
 				id,
-				artistOfTheMoment
+				artistOfTheMoment,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
 			})
 		});
 

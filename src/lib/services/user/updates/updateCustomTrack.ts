@@ -70,7 +70,9 @@ export async function updateCustomTrack(
 			body: JSON.stringify({
 				id,
 				customTrackTitle,
-				customTrack
+				customTrack,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
 			})
 		});
 

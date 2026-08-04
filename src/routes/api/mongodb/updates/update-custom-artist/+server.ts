@@ -24,7 +24,8 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	}
 
-	const { id, customArtistTitle, customArtist } = await request.json();
+	const { id, customArtistTitle, customArtist, freeUpdateIsAvailable, nextFreeUpdate } =
+		await request.json();
 
 	if (!id || !customArtistTitle || !customArtist) {
 		return new Response(JSON.stringify({ error: 'Missing required fields' }), {
@@ -46,7 +47,7 @@ export const POST: RequestHandler = async ({ request }) => {
 					customArtist: {
 						title: customArtistTitle,
 						artist: customArtist,
-						nextFreeUpdate: nextFreeUpdateTime()
+						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 					}
 				}
 			}
@@ -57,7 +58,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				customArtist: {
 					title: customArtistTitle,
 					artist: customArtist,
-					nextFreeUpdate: nextFreeUpdateTime()
+					nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 				}
 			}),
 			{ status: 200 }

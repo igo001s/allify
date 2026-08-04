@@ -24,7 +24,8 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	}
 
-	const { id, customTrackTitle, customTrack } = await request.json();
+	const { id, customTrackTitle, customTrack, freeUpdateIsAvailable, nextFreeUpdate } =
+		await request.json();
 
 	if (!id || !customTrackTitle || !customTrack) {
 		return new Response(JSON.stringify({ error: 'Missing required fields' }), {
@@ -46,7 +47,7 @@ export const POST: RequestHandler = async ({ request }) => {
 					customTrack: {
 						title: customTrackTitle,
 						track: customTrack,
-						nextFreeUpdate: nextFreeUpdateTime()
+						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 					}
 				}
 			}
@@ -57,7 +58,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				customTrack: {
 					title: customTrackTitle,
 					track: customTrack,
-					nextFreeUpdate: nextFreeUpdateTime()
+					nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 				}
 			}),
 			{ status: 200 }

@@ -59,7 +59,9 @@ export async function updateTrackOfTheMoment(
 			},
 			body: JSON.stringify({
 				id,
-				trackOfTheMoment
+				trackOfTheMoment,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
 			})
 		});
 
