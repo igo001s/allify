@@ -120,13 +120,10 @@
 			{$translationsStore.profilePage.profilePageChangeYourArtistTimeToNextFreeUpdate}
 
 			<strong class="font-semibold text-t-primary">
-				{new Date($userInfo.customArtist.nextFreeUpdate).toLocaleString(
-				$translationsStore.locale,
-					{
-						dateStyle: 'short',
-						timeStyle: 'short'
-					}
-				)}
+				{new Date($userInfo.customArtist.nextFreeUpdate).toLocaleString($translationsStore.locale, {
+					dateStyle: 'short',
+					timeStyle: 'short'
+				})}
 			</strong>
 		{:else}
 			{$translationsStore.profilePage.profilePageChangeYourArtistUnlockMoreMusic}
@@ -153,9 +150,13 @@
 
 			{#if $userInfo?.customArtist?.nextFreeUpdate && new Date($userInfo.customArtist.nextFreeUpdate) > new Date()}
 				<div
-					class="flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm ml-2"
+					class="ml-2 flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm"
 				>
-					<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-3 w-3" />
+					<img
+						src={TicketIcon}
+						alt={$translationsStore.generalTexts.ticketAltText}
+						class="h-3 w-3"
+					/>
 
 					<span class="text-[11px] leading-none font-bold">-1</span>
 				</div>
