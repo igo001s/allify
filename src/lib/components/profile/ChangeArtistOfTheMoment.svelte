@@ -29,7 +29,13 @@
 	async function handleChangeArtistOfTheMoment() {
 		if (!choosedArtist || !$userInfo?._id) return;
 
-		const updatedArtist = await updateArtistOfTheMoment($userInfo?._id, choosedArtist);
+		const updatedArtist = await updateArtistOfTheMoment(
+			$userInfo?._id,
+			choosedArtist,
+			$userInfo?.email,
+			$userInfo?.tickets,
+			$userInfo?.artistOfTheMoment?.nextFreeUpdate
+		);
 
 		if (updatedArtist) {
 			userInfo.update((currentUser) => {
