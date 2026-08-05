@@ -61,6 +61,8 @@
 
 		<input
 			type="text"
+			minlength="1"
+			maxlength="56"
 			class="mt-1 w-full rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary transition-all outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
 			placeholder={$translationsStore.profilePage
 				.profilePageSelectYourCustomArtistTitleInputPlaceholder}
