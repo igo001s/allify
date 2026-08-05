@@ -274,7 +274,7 @@ export const fr = {
 		profilePageChangeYourMusicChooseMusicAriaLabel:
 			'Sélectionner le titre du moment pour le profil',
 		profilePageChangeYourMusicTimeToNextFreeUpdate:
-			'Vous pourrez effectuer une mise à jour gratuitement le',
+			'Vous pourrez effectuer une mise à jour gratuitement dans',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Continuez à débloquer davantage de titres et à personnaliser encore plus votre profil.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:
@@ -283,6 +283,10 @@ export const fr = {
 			'Icône de fermeture de la fenêtre de modification du titre personnalisé',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Donnez un titre à votre morceau',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ex. : La bande originale de ma vie',
+		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'Votre titre doit contenir entre 1 et 56 caractères',
+		profilePageChangeYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'Votre titre doit contenir uniquement des lettres et des chiffres',
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'Continuez à débloquer davantage de titres et à personnaliser encore plus votre profil.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Titre du moment',
@@ -304,17 +308,21 @@ export const fr = {
 			'Continuez à débloquer davantage de titres et à personnaliser encore plus votre profil.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Donnez un titre à votre morceau',
 		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Ex. : La bande originale de ma vie',
+		profilePageSelectYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'Votre titre doit contenir entre 1 et 56 caractères',
+		profilePageSelectYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'Votre titre doit contenir uniquement des lettres et des chiffres',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel:
 			'Fermer la fenêtre de sélection du titre personnalisé',
 		profilePageSelectYourCustomMusicCloseModalAltText:
 			'Icône de fermeture de la fenêtre de sélection du titre personnalisé',
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
 			'Continuez à débloquer davantage de titres et à personnaliser encore plus votre profil.',
-		profilePageEmptyCustomMusicHeading1: 'Votre titre, à votre façon',
-		profilePageEmptyCustomMusicAltText: 'Icône de sélection du titre personnalisé',
-		profilePageEmptyCustomMusicHeading2: 'Donnez un sens à votre titre',
+		profilePageEmptyCustomMusicHeading1: 'Votre morceau, à votre façon',
+		profilePageEmptyCustomMusicAltText: 'Icône de sélection d’un morceau personnalisé',
+		profilePageEmptyCustomMusicHeading2: 'Donnez du sens à votre morceau',
 		profilePageEmptyCustomMusicParagraph1:
-			'Choisissez l’un de vos titres les plus écoutés et personnalisez son titre comme vous le souhaitez.',
+			'Choisissez l’un de vos morceaux les plus écoutés et personnalisez son titre comme vous le souhaitez.',
 		profilePageYourArtistsOnProfileHeading2: 'Vos artistes',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artiste le plus écouté',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artiste du moment',
@@ -338,7 +346,7 @@ export const fr = {
 			'Sélectionner l’artiste du moment pour le profil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'abonnés',
 		profilePageChangeYourArtistTimeToNextFreeUpdate:
-			'Vous pourrez effectuer une mise à jour gratuitement le',
+			'Vous pourrez effectuer une mise à jour gratuitement dans',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Continuez à débloquer davantage d’artistes et à personnaliser encore plus votre profil.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:
@@ -347,6 +355,10 @@ export const fr = {
 			'Icône de fermeture de la fenêtre de modification de l’artiste personnalisé',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'Donnez un titre à votre artiste',
 		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Ex. : Ma plus grande inspiration',
+		profilePageChangeYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'Votre titre doit contenir entre 1 et 56 caractères',
+		profilePageChangeYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'Votre titre doit contenir uniquement des lettres et des chiffres',
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'Continuez à débloquer davantage d’artistes et à personnaliser encore plus votre profil.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artiste du moment',
@@ -372,23 +384,27 @@ export const fr = {
 			'Icône de fermeture de la fenêtre de sélection de l’artiste personnalisé',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Donnez un titre à votre artiste',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ex. : Ma plus grande inspiration',
+		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'Votre titre doit contenir entre 1 et 56 caractères',
+		profilePageSelectYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'Votre titre doit contenir uniquement des lettres et des chiffres',
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'Continuez à débloquer davantage d’artistes et à personnaliser encore plus votre profil.',
 		profilePageEmptyCustomArtistHeading1: 'Votre artiste, à votre façon',
-		profilePageEmptyCustomArtistAltText: 'Icône de sélection de l’artiste personnalisé',
-		profilePageEmptyCustomArtistHeading2: 'Donnez un sens à votre artiste',
+		profilePageEmptyCustomArtistAltText: 'Icône de sélection d’un artiste personnalisé',
+		profilePageEmptyCustomArtistHeading2: 'Donnez du sens à votre artiste',
 		profilePageEmptyCustomArtistParagraph1:
 			'Choisissez l’un de vos artistes les plus écoutés et personnalisez son titre comme vous le souhaitez.',
 		profilePageSelectYourCustomItemParagraph1: 'À votre façon',
 		profilePageSelectYourCustomMusicParagraph2:
-			'Choisissez un titre et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+			'Choisissez un morceau et donnez-lui un titre qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
 		profilePageSelectYourCustomArtistParagraph2:
-			'Choisissez un artiste et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+			'Choisissez un artiste et donnez-lui un titre qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
 		profilePageChangeYourCustomItemParagraph1: 'Mettez à jour à votre façon',
 		profilePageChangeYourCustomArtistParagraph2:
-			'Choisissez un autre artiste et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+			'Choisissez un autre artiste et donnez-lui un titre qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
 		profilePageChangeYourCustomMusicParagraph2:
-			'Choisissez un autre titre et donnez-lui un nom qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+			'Choisissez un autre morceau et donnez-lui un titre qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
 		profilePageChangeYourItemsModalCloseModal: 'Fermer',
 		profilePageChangeYourItemsModalSaveChanges: 'Enregistrer les modifications',
 		profilePageSelectYourItemsModalCloseModal: 'Fermer',

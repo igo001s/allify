@@ -238,61 +238,69 @@ export const ja = {
 	profilePage: {
 		title: 'プロフィール | Allify',
 		profilePageMetaDescription:
-			'公開プロフィールを確認し、再生統計、お気に入りの曲、プレイリスト、保存したアルバムを共有できます。ストリーミングサービスを連携して、パーソナライズされたインサイトを取得しましょう。',
+			'公開プロフィールを表示し、再生統計、お気に入りの楽曲、プレイリスト、保存したアルバムを共有しましょう。ストリーミングプラットフォームを連携すると、パーソナライズされたインサイトを確認できます。',
 		profilePageMetaOgAndTwitterContent:
-			'公開プロフィールを確認し、再生統計、お気に入りの曲、プレイリスト、保存したアルバムを共有できます。ストリーミングサービスを連携して、パーソナライズされたインサイトを取得しましょう。',
+			'公開プロフィールを表示し、再生統計、お気に入りの楽曲、プレイリスト、保存したアルバムを共有しましょう。ストリーミングプラットフォームを連携すると、パーソナライズされたインサイトを確認できます。',
 		profilePageImageAltText: 'プロフィール写真：',
 		profilePageFollowers: 'フォロワー',
 		profilePageAddTicketsAltText: 'チケットを追加',
 		profilePageExternalLinkSpotify: 'Spotifyでプロフィールを見る',
 		profilePageExternalLinkDeezer: 'Deezerでプロフィールを見る',
-		profilePageYourSongsOnProfileHeading2: 'あなたの曲',
-		profilePageYourSongsOnProfileHeading3v1: '最も聴いた曲',
+		profilePageYourSongsOnProfileHeading2: 'あなたの楽曲',
+		profilePageYourSongsOnProfileHeading3v1: '最も聴いた楽曲',
 		profilePageYourSongsOnProfileHeading3v2: '今の一曲',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '今の一曲を編集するボタン',
-		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel: 'カスタム曲を編集するボタン',
+		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel: 'カスタム楽曲を編集するボタン',
 		profilePageYourSongsOnProfileEditMusicIconAltText: '今の一曲を編集するアイコン',
-		profilePageYourSongsOnProfileEditCustomMusicIconAltText: 'カスタム曲を編集するアイコン',
+		profilePageYourSongsOnProfileEditCustomMusicIconAltText: 'カスタム楽曲を編集するアイコン',
 		profilePageChangeYourMusicCloseModalAriaLabel: '今の一曲を変更するモーダルを閉じる',
 		profilePageChangeYourMusicCloseModalAltText: '今の一曲を変更するモーダルを閉じるアイコン',
 		profilePageChangeYourMusicParagraph1: 'プロフィールの今の一曲を更新',
-		profilePageChangeYourMusicParagraph2: '今聴いているものを最もよく表す曲を選んでください。',
+		profilePageChangeYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選んでください。',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'プロフィールの今の一曲を選択',
-		profilePageChangeYourMusicTimeToNextFreeUpdate: '無料で更新できるのは',
+		profilePageChangeYourMusicTimeToNextFreeUpdate: '無料で更新できるまで',
 		profilePageChangeYourMusicUnlockMoreMusic:
-			'さらに多くの曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
-		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'カスタム曲を変更するモーダルを閉じる',
+			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
+		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'カスタム楽曲を変更するモーダルを閉じる',
 		profilePageChangeYourCustomMusicCloseModalAltText:
-			'カスタム曲を変更するモーダルを閉じるアイコン',
-		profilePageChangeYourCustomMusicTitleInputLabel: '曲にタイトルを付ける',
+			'カスタム楽曲を変更するモーダルを閉じるアイコン',
+		profilePageChangeYourCustomMusicTitleInputLabel: '楽曲にタイトルを付ける',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: '例：私の人生のサウンドトラック',
+		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'タイトルは1〜56文字で入力してください',
+		profilePageChangeYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'タイトルには文字と数字のみを使用してください',
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
-			'さらに多くの曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
+			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageEmptyMusicOfTheMomentHeading1: '今の一曲',
 		profilePageEmptyMusicOfTheMomentAltText: '今の一曲の選択アイコン',
 		profilePageEmptyMusicOfTheMomentHeading2: '今の一曲を選択',
 		profilePageEmptyMusicOfTheMomentParagraph1:
-			'今のあなたを最もよく表す曲を選び、プロフィールで紹介しましょう。',
+			'今のあなたを最もよく表す楽曲を選び、プロフィールで紹介しましょう。',
 		profilePageSelectYourMusicCloseModalAriaLabel: '今の一曲を選択するモーダルを閉じる',
 		profilePageSelectYourMusicCloseModalAltText: '今の一曲を選択するモーダルを閉じるアイコン',
 		profilePageSelectYourMusicParagraph1: '今の一曲を選ぶ',
-		profilePageSelectYourMusicParagraph2: '今聴いているものを最もよく表す曲を選んでください。',
+		profilePageSelectYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選んでください。',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'プロフィールの今の一曲を選択',
 		profilePageSelectYourMusicChooseMusicFollowers: 'フォロワー',
 		profilePageSelectYourMusicUnlockMoreMusic:
-			'さらに多くの曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
-		profilePageSelectYourCustomMusicTitleInputLabel: '曲にタイトルを付ける',
+			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
+		profilePageSelectYourCustomMusicTitleInputLabel: '楽曲にタイトルを付ける',
 		profilePageSelectYourCustomMusicTitleInputPlaceholder: '例：私の人生のサウンドトラック',
-		profilePageSelectYourCustomMusicCloseModalAriaLabel: 'カスタム曲を選択するモーダルを閉じる',
+		profilePageSelectYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'タイトルは1〜56文字で入力してください',
+		profilePageSelectYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'タイトルには文字と数字のみを使用してください',
+		profilePageSelectYourCustomMusicCloseModalAriaLabel: 'カスタム楽曲を選択するモーダルを閉じる',
 		profilePageSelectYourCustomMusicCloseModalAltText:
-			'カスタム曲を選択するモーダルを閉じるアイコン',
+			'カスタム楽曲を選択するモーダルを閉じるアイコン',
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
-			'さらに多くの曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
-		profilePageEmptyCustomMusicHeading1: 'あなたの曲、あなたらしく',
-		profilePageEmptyCustomMusicAltText: 'カスタム曲の選択アイコン',
-		profilePageEmptyCustomMusicHeading2: '曲に意味を与えよう',
+			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
+		profilePageEmptyCustomMusicHeading1: 'あなたの楽曲、あなたらしく',
+		profilePageEmptyCustomMusicAltText: 'カスタム楽曲の選択アイコン',
+		profilePageEmptyCustomMusicHeading2: '楽曲に意味を与えよう',
 		profilePageEmptyCustomMusicParagraph1:
-			'よく聴く曲の中から1曲を選び、好きなようにタイトルをカスタマイズしましょう。',
+			'最もよく聴く楽曲の中から1曲を選び、好きなようにタイトルをカスタマイズしましょう。',
 		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
 		profilePageYourArtistsOnProfileHeading3v1: '最も聴いたアーティスト',
 		profilePageYourArtistsOnProfileHeading3v2: '今のアーティスト',
@@ -308,10 +316,10 @@ export const ja = {
 		profilePageChangeYourArtistCloseModalAriaLabel: '今のアーティストを変更するモーダルを閉じる',
 		profilePageChangeYourArtistParagraph1: 'プロフィールの今のアーティストを更新',
 		profilePageChangeYourArtistParagraph2:
-			'今聴いているものを最もよく表すアーティストを選んでください。',
+			'今聴いている音楽を最もよく表すアーティストを選んでください。',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'プロフィールの今のアーティストを選択',
 		profilePageChangeYourArtistChooseArtistFollowers: 'フォロワー',
-		profilePageChangeYourArtistTimeToNextFreeUpdate: '無料で更新できるのは',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: '無料で更新できるまで',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:
@@ -320,6 +328,10 @@ export const ja = {
 			'カスタムアーティストを変更するモーダルを閉じるアイコン',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'アーティストにタイトルを付ける',
 		profilePageChangeYourCustomArtistTitleInputPlaceholder: '例：私の最大のインスピレーション',
+		profilePageChangeYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'タイトルは1〜56文字で入力してください',
+		profilePageChangeYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'タイトルには文字と数字のみを使用してください',
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageEmptyArtistOfTheMomentHeading1: '今のアーティスト',
@@ -332,7 +344,7 @@ export const ja = {
 			'今のアーティストを選択するモーダルを閉じるアイコン',
 		profilePageSelectYourArtistParagraph1: '今のアーティストを選ぶ',
 		profilePageSelectYourArtistParagraph2:
-			'今聴いているものを最もよく表すアーティストを選んでください。',
+			'今聴いている音楽を最もよく表すアーティストを選んでください。',
 		profilePageSelectYourArtistChooseArtistAriaLabel: 'プロフィールの今のアーティストを選択',
 		profilePageSelectYourArtistChooseArtistFollowers: 'フォロワー',
 		profilePageSelectYourArtistUnlockMoreMusic:
@@ -343,23 +355,27 @@ export const ja = {
 			'カスタムアーティストを選択するモーダルを閉じるアイコン',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'アーティストにタイトルを付ける',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: '例：私の最大のインスピレーション',
+		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'タイトルは1〜56文字で入力してください',
+		profilePageSelectYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'タイトルには文字と数字のみを使用してください',
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageEmptyCustomArtistHeading1: 'あなたのアーティスト、あなたらしく',
 		profilePageEmptyCustomArtistAltText: 'カスタムアーティストの選択アイコン',
 		profilePageEmptyCustomArtistHeading2: 'アーティストに意味を与えよう',
 		profilePageEmptyCustomArtistParagraph1:
-			'よく聴くアーティストの中から1組を選び、好きなようにタイトルをカスタマイズしましょう。',
+			'最もよく聴くアーティストの中から1人を選び、好きなようにタイトルをカスタマイズしましょう。',
 		profilePageSelectYourCustomItemParagraph1: 'あなたらしく',
 		profilePageSelectYourCustomMusicParagraph2:
-			'曲を選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
+			'楽曲を選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
 		profilePageSelectYourCustomArtistParagraph2:
 			'アーティストを選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
 		profilePageChangeYourCustomItemParagraph1: 'あなたらしく更新',
 		profilePageChangeYourCustomArtistParagraph2:
 			'別のアーティストを選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
 		profilePageChangeYourCustomMusicParagraph2:
-			'別の曲を選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
+			'別の楽曲を選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
 		profilePageChangeYourItemsModalCloseModal: '閉じる',
 		profilePageChangeYourItemsModalSaveChanges: '変更を保存',
 		profilePageSelectYourItemsModalCloseModal: '閉じる',

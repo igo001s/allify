@@ -274,6 +274,10 @@ export const pt = {
 			'Ícone de fechar modal de troca de música personalizada',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Dê um título à sua música',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ex.: A trilha sonora da minha vida',
+		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'O seu título deve ter entre 1 e 56 caracteres',
+		profilePageChangeYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'O seu título deve conter apenas letras e números',
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Música do momento',
@@ -293,6 +297,10 @@ export const pt = {
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Dê um título à sua música',
 		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Ex.: A trilha sonora da minha vida',
+		profilePageSelectYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'O seu título deve ter entre 1 e 56 caracteres',
+		profilePageSelectYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'O seu título deve conter apenas letras e números',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel:
 			'Fechar modal de seleção de música personalizada',
 		profilePageSelectYourCustomMusicCloseModalAltText:
@@ -331,6 +339,10 @@ export const pt = {
 			'Ícone de fechar modal de troca de artista personalizado',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'Dê um título para o seu artista',
 		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Ex.: Minha maior inspiração',
+		profilePageChangeYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'O seu título deve ter entre 1 e 56 caracteres',
+		profilePageChangeYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'O seu título deve conter apenas letras e números',
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista do momento',
@@ -354,6 +366,10 @@ export const pt = {
 			'Ícone de fechar modal de seleção de artista personalizado',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Dê um título para o seu artista',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ex.: Minha maior inspiração',
+		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'O seu título deve ter entre 1 e 56 caracteres',
+		profilePageSelectYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'O seu título deve conter apenas letras e números',
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyCustomArtistHeading1: 'Seu artista, do seu jeito',

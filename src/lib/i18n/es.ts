@@ -270,7 +270,7 @@ export const es = {
 			'Elige la canción que mejor represente lo que estás escuchando en este momento.',
 		profilePageChangeYourMusicChooseMusicAriaLabel:
 			'Seleccionar la canción del momento para el perfil',
-		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Podrás actualizar gratis el',
+		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Podrás actualizar gratis en',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:
@@ -279,17 +279,21 @@ export const es = {
 			'Icono para cerrar el modal para cambiar la canción personalizada',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Ponle un título a tu canción',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ej.: La banda sonora de mi vida',
+		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'Tu título debe tener entre 1 y 56 caracteres',
+		profilePageChangeYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'Tu título solo debe contener letras y números',
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Canción del momento',
-		profilePageEmptyMusicOfTheMomentAltText: 'Icono de selección de canción del momento',
-		profilePageEmptyMusicOfTheMomentHeading2: 'Seleccionar canción del momento',
+		profilePageEmptyMusicOfTheMomentAltText: 'Icono de selección de la canción del momento',
+		profilePageEmptyMusicOfTheMomentHeading2: 'Seleccionar la canción del momento',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Elige la canción que mejor te represente en este momento para destacarla en tu perfil.',
 		profilePageSelectYourMusicCloseModalAriaLabel:
-			'Cerrar el modal de selección de canción del momento',
+			'Cerrar el modal de selección de la canción del momento',
 		profilePageSelectYourMusicCloseModalAltText:
-			'Icono para cerrar el modal de selección de canción del momento',
+			'Icono para cerrar el modal de selección de la canción del momento',
 		profilePageSelectYourMusicParagraph1: 'Elige tu canción del momento',
 		profilePageSelectYourMusicParagraph2:
 			'Elige la canción que mejor represente lo que estás escuchando en este momento.',
@@ -300,10 +304,14 @@ export const es = {
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Ponle un título a tu canción',
 		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Ej.: La banda sonora de mi vida',
+		profilePageSelectYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'Tu título debe tener entre 1 y 56 caracteres',
+		profilePageSelectYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'Tu título solo debe contener letras y números',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel:
-			'Cerrar el modal de selección de canción personalizada',
+			'Cerrar el modal de selección de la canción personalizada',
 		profilePageSelectYourCustomMusicCloseModalAltText:
-			'Icono para cerrar el modal de selección de canción personalizada',
+			'Icono para cerrar el modal de selección de la canción personalizada',
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageEmptyCustomMusicHeading1: 'Tu canción, a tu manera',
@@ -333,7 +341,7 @@ export const es = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Seleccionar el artista del momento para el perfil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
-		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Podrás actualizar gratis el',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Podrás actualizar gratis en',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:
@@ -342,17 +350,21 @@ export const es = {
 			'Icono para cerrar el modal para cambiar el artista personalizado',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'Ponle un título a tu artista',
 		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Ej.: Mi mayor inspiración',
+		profilePageChangeYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'Tu título debe tener entre 1 y 56 caracteres',
+		profilePageChangeYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'Tu título solo debe contener letras y números',
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artista del momento',
-		profilePageEmptyArtistOfTheMomentAltText: 'Icono de selección de artista del momento',
-		profilePageEmptyArtistOfTheMomentHeading2: 'Seleccionar artista del momento',
+		profilePageEmptyArtistOfTheMomentAltText: 'Icono de selección del artista del momento',
+		profilePageEmptyArtistOfTheMomentHeading2: 'Seleccionar el artista del momento',
 		profilePageEmptyArtistOfTheMomentParagraph1:
 			'Elige el artista que mejor te represente en este momento para destacarlo en tu perfil.',
 		profilePageSelectYourArtistCloseModalAriaLabel:
-			'Cerrar el modal de selección de artista del momento',
+			'Cerrar el modal de selección del artista del momento',
 		profilePageSelectYourArtistCloseModalAltText:
-			'Icono para cerrar el modal de selección de artista del momento',
+			'Icono para cerrar el modal de selección del artista del momento',
 		profilePageSelectYourArtistParagraph1: 'Elige tu artista del momento',
 		profilePageSelectYourArtistParagraph2:
 			'Elige el artista que mejor represente lo que estás escuchando en este momento.',
@@ -362,11 +374,15 @@ export const es = {
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
 		profilePageSelectYourCustomArtistCloseModalAriaLabel:
-			'Cerrar el modal de selección de artista personalizado',
+			'Cerrar el modal de selección del artista personalizado',
 		profilePageSelectYourCustomArtistCloseModalAltText:
-			'Icono para cerrar el modal de selección de artista personalizado',
+			'Icono para cerrar el modal de selección del artista personalizado',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Ponle un título a tu artista',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ej.: Mi mayor inspiración',
+		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'Tu título debe tener entre 1 y 56 caracteres',
+		profilePageSelectYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'Tu título solo debe contener letras y números',
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'Sigue desbloqueando más artistas y personalizando aún más tu perfil.',
 		profilePageEmptyCustomArtistHeading1: 'Tu artista, a tu manera',
@@ -379,7 +395,7 @@ export const es = {
 			'Elige una canción y ponle un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
 		profilePageSelectYourCustomArtistParagraph2:
 			'Elige un artista y ponle un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
-		profilePageChangeYourCustomItemParagraph1: 'Actualiza a tu manera',
+		profilePageChangeYourCustomItemParagraph1: 'Actualízalo a tu manera',
 		profilePageChangeYourCustomArtistParagraph2:
 			'Elige otro artista y ponle un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
 		profilePageChangeYourCustomMusicParagraph2:

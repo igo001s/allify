@@ -241,16 +241,16 @@ export const en = {
 	profilePage: {
 		title: 'Profile | Allify',
 		profilePageMetaDescription:
-			'View your public profile, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageMetaOgAndTwitterContent:
-			'View your public profile, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageImageAltText: 'Profile picture of',
 		profilePageFollowers: 'followers',
 		profilePageAddTicketsAltText: 'Add tickets',
 		profilePageExternalLinkSpotify: 'View profile on Spotify',
 		profilePageExternalLinkDeezer: 'View profile on Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Your songs',
-		profilePageYourSongsOnProfileHeading3v1: 'Most listened song',
+		profilePageYourSongsOnProfileHeading3v1: 'Most listened-to song',
 		profilePageYourSongsOnProfileHeading3v2: 'Song of the moment',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Button to edit song of the moment',
 		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel: 'Button to edit custom song',
@@ -262,20 +262,24 @@ export const en = {
 		profilePageChangeYourMusicParagraph2:
 			'Choose the song that best represents what you are listening to right now.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Select song of the moment for your profile',
-		profilePageChangeYourMusicTimeToNextFreeUpdate: 'You can update for free on',
+		profilePageChangeYourMusicTimeToNextFreeUpdate: 'You will be able to update for free in',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'Close custom song change modal',
 		profilePageChangeYourCustomMusicCloseModalAltText: 'Close custom song change modal icon',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Give your song a title',
-		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Example: The soundtrack of my life',
+		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'E.g.: The soundtrack of my life',
+		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'Your title must be between 1 and 56 characters',
+		profilePageChangeYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'Your title must contain only letters and numbers',
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Song of the moment',
 		profilePageEmptyMusicOfTheMomentAltText: 'Song of the moment selection icon',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Select song of the moment',
 		profilePageEmptyMusicOfTheMomentParagraph1:
-			'Choose the song that best represents you right now to highlight on your profile.',
+			'Choose the song that best represents you right now to feature on your profile.',
 		profilePageSelectYourMusicCloseModalAriaLabel: 'Close song of the moment selection modal',
 		profilePageSelectYourMusicCloseModalAltText: 'Close song of the moment selection modal icon',
 		profilePageSelectYourMusicParagraph1: 'Choose your song of the moment',
@@ -286,7 +290,11 @@ export const en = {
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Give your song a title',
-		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Example: The soundtrack of my life',
+		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'E.g.: The soundtrack of my life',
+		profilePageSelectYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'Your title must be between 1 and 56 characters',
+		profilePageSelectYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'Your title must contain only letters and numbers',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel: 'Close custom song selection modal',
 		profilePageSelectYourCustomMusicCloseModalAltText: 'Close custom song selection modal icon',
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
@@ -295,9 +303,9 @@ export const en = {
 		profilePageEmptyCustomMusicAltText: 'Custom song selection icon',
 		profilePageEmptyCustomMusicHeading2: 'Give your song a meaning',
 		profilePageEmptyCustomMusicParagraph1:
-			'Choose one of your most listened songs and customize its title however you like.',
+			'Choose one of your most listened-to songs and personalize its title however you like.',
 		profilePageYourArtistsOnProfileHeading2: 'Your artists',
-		profilePageYourArtistsOnProfileHeading3v1: 'Most listened artist',
+		profilePageYourArtistsOnProfileHeading3v1: 'Most listened-to artist',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artist of the moment',
 		profilePageYourArtistsOnProfileFollowers: 'followers',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Button to edit artist of the moment',
@@ -312,20 +320,24 @@ export const en = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Select artist of the moment for your profile',
 		profilePageChangeYourArtistChooseArtistFollowers: 'followers',
-		profilePageChangeYourArtistTimeToNextFreeUpdate: 'You can update for free on',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: 'You will be able to update for free in',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel: 'Close custom artist change modal',
 		profilePageChangeYourCustomArtistCloseModalAltText: 'Close custom artist change modal icon',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'Give your artist a title',
-		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Example: My greatest inspiration',
+		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'E.g.: My greatest inspiration',
+		profilePageChangeYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'Your title must be between 1 and 56 characters',
+		profilePageChangeYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'Your title must contain only letters and numbers',
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artist of the moment',
 		profilePageEmptyArtistOfTheMomentAltText: 'Artist of the moment selection icon',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Select artist of the moment',
 		profilePageEmptyArtistOfTheMomentParagraph1:
-			'Choose the artist that best represents you right now to highlight on your profile.',
+			'Choose the artist that best represents you right now to feature on your profile.',
 		profilePageSelectYourArtistCloseModalAriaLabel: 'Close artist of the moment selection modal',
 		profilePageSelectYourArtistCloseModalAltText: 'Close artist of the moment selection modal icon',
 		profilePageSelectYourArtistParagraph1: 'Choose your artist of the moment',
@@ -339,24 +351,28 @@ export const en = {
 		profilePageSelectYourCustomArtistCloseModalAriaLabel: 'Close custom artist selection modal',
 		profilePageSelectYourCustomArtistCloseModalAltText: 'Close custom artist selection modal icon',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Give your artist a title',
-		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Example: My greatest inspiration',
+		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'E.g.: My greatest inspiration',
+		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'Your title must be between 1 and 56 characters',
+		profilePageSelectYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'Your title must contain only letters and numbers',
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageEmptyCustomArtistHeading1: 'Your artist, your way',
 		profilePageEmptyCustomArtistAltText: 'Custom artist selection icon',
 		profilePageEmptyCustomArtistHeading2: 'Give your artist a meaning',
 		profilePageEmptyCustomArtistParagraph1:
-			'Choose one of your most listened artists and customize its title however you like.',
+			'Choose one of your most listened-to artists and personalize its title however you like.',
 		profilePageSelectYourCustomItemParagraph1: 'Your way',
 		profilePageSelectYourCustomMusicParagraph2:
-			'Choose a song and give it a title that represents what you are feeling, experiencing, or remembering right now.',
+			'Choose a song and give it a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageSelectYourCustomArtistParagraph2:
-			'Choose an artist and give it a title that represents what you are feeling, experiencing, or remembering right now.',
+			'Choose an artist and give them a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageChangeYourCustomItemParagraph1: 'Update it your way',
 		profilePageChangeYourCustomArtistParagraph2:
-			'Choose another artist and give it a title that represents what you are feeling, experiencing, or remembering right now.',
+			'Choose another artist and give them a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageChangeYourCustomMusicParagraph2:
-			'Choose another song and give it a title that represents what you are feeling, experiencing, or remembering right now.',
+			'Choose another song and give it a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageChangeYourItemsModalCloseModal: 'Close',
 		profilePageChangeYourItemsModalSaveChanges: 'Save changes',
 		profilePageSelectYourItemsModalCloseModal: 'Close',

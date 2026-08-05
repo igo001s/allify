@@ -263,53 +263,61 @@ export const de = {
 		profilePageYourSongsOnProfileEditCustomMusicIconAltText:
 			'Symbol zum Bearbeiten des personalisierten Songs',
 		profilePageChangeYourMusicCloseModalAriaLabel:
-			'Dialog zum Ändern des Songs des Moments schließen',
+			'Modal zum Ändern des Songs des Moments schließen',
 		profilePageChangeYourMusicCloseModalAltText:
-			'Symbol zum Schließen des Dialogs zum Ändern des Songs des Moments',
+			'Symbol zum Schließen des Modals zum Ändern des Songs des Moments',
 		profilePageChangeYourMusicParagraph1: 'Aktualisiere deinen Song des Moments in deinem Profil',
 		profilePageChangeYourMusicParagraph2:
 			'Wähle den Song, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Song des Moments für das Profil auswählen',
-		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Du kannst kostenlos aktualisieren am',
+		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Du kannst kostenlos aktualisieren in',
 		profilePageChangeYourMusicUnlockMoreMusic:
-			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
+			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:
-			'Dialog zum Ändern des personalisierten Songs schließen',
+			'Modal zum Ändern des personalisierten Songs schließen',
 		profilePageChangeYourCustomMusicCloseModalAltText:
-			'Symbol zum Schließen des Dialogs zum Ändern des personalisierten Songs',
+			'Symbol zum Schließen des Modals zum Ändern des personalisierten Songs',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Gib deinem Song einen Titel',
-		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Beispiel: Der Soundtrack meines Lebens',
+		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'z. B.: Der Soundtrack meines Lebens',
+		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'Dein Titel muss zwischen 1 und 56 Zeichen lang sein',
+		profilePageChangeYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'Dein Titel darf nur Buchstaben und Zahlen enthalten',
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
-			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
+			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Song des Moments',
-		profilePageEmptyMusicOfTheMomentAltText: 'Auswahlsymbol für den Song des Moments',
+		profilePageEmptyMusicOfTheMomentAltText: 'Symbol zur Auswahl des Songs des Moments',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Song des Moments auswählen',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Wähle den Song, der dich gerade am besten repräsentiert, um ihn in deinem Profil hervorzuheben.',
 		profilePageSelectYourMusicCloseModalAriaLabel:
-			'Dialog zur Auswahl des Songs des Moments schließen',
+			'Modal zur Auswahl des Songs des Moments schließen',
 		profilePageSelectYourMusicCloseModalAltText:
-			'Symbol zum Schließen des Dialogs zur Auswahl des Songs des Moments',
+			'Symbol zum Schließen des Modals zur Auswahl des Songs des Moments',
 		profilePageSelectYourMusicParagraph1: 'Wähle deinen Song des Moments',
 		profilePageSelectYourMusicParagraph2:
 			'Wähle den Song, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'Song des Moments für das Profil auswählen',
 		profilePageSelectYourMusicChooseMusicFollowers: 'Follower',
 		profilePageSelectYourMusicUnlockMoreMusic:
-			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
+			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Gib deinem Song einen Titel',
-		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'Beispiel: Der Soundtrack meines Lebens',
+		profilePageSelectYourCustomMusicTitleInputPlaceholder: 'z. B.: Der Soundtrack meines Lebens',
+		profilePageSelectYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:
+			'Dein Titel muss zwischen 1 und 56 Zeichen lang sein',
+		profilePageSelectYourCustomMusicTitleInputErrorInvalidCharactersMessage:
+			'Dein Titel darf nur Buchstaben und Zahlen enthalten',
 		profilePageSelectYourCustomMusicCloseModalAriaLabel:
-			'Dialog zur Auswahl des personalisierten Songs schließen',
+			'Modal zur Auswahl des personalisierten Songs schließen',
 		profilePageSelectYourCustomMusicCloseModalAltText:
-			'Symbol zum Schließen des Dialogs zur Auswahl des personalisierten Songs',
+			'Symbol zum Schließen des Modals zur Auswahl des personalisierten Songs',
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
-			'Schalte weitere Songs frei und personalisiere dein Profil noch mehr.',
+			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
 		profilePageEmptyCustomMusicHeading1: 'Dein Song, auf deine Art',
-		profilePageEmptyCustomMusicAltText: 'Auswahlsymbol für den personalisierten Song',
+		profilePageEmptyCustomMusicAltText: 'Symbol zur Auswahl eines personalisierten Songs',
 		profilePageEmptyCustomMusicHeading2: 'Gib deinem Song eine Bedeutung',
 		profilePageEmptyCustomMusicParagraph1:
-			'Wähle einen deiner meistgehörten Songs und passe den Titel nach deinen Wünschen an.',
+			'Wähle einen deiner meistgehörten Songs und personalisiere den Titel nach deinen Wünschen.',
 		profilePageYourArtistsOnProfileHeading2: 'Deine Künstler',
 		profilePageYourArtistsOnProfileHeading3v1: 'Meistgehörter Künstler',
 		profilePageYourArtistsOnProfileHeading3v2: 'Künstler des Moments',
@@ -321,11 +329,11 @@ export const de = {
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
 			'Symbol zum Bearbeiten des Künstlers des Moments',
 		profilePageChangeYourArtistCloseModalAltText:
-			'Symbol zum Schließen des Dialogs zum Ändern des Künstlers des Moments',
+			'Symbol zum Schließen des Modals zum Ändern des Künstlers des Moments',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
 			'Symbol zum Bearbeiten des personalisierten Künstlers',
 		profilePageChangeYourArtistCloseModalAriaLabel:
-			'Dialog zum Ändern des Künstlers des Moments schließen',
+			'Modal zum Ändern des Künstlers des Moments schließen',
 		profilePageChangeYourArtistParagraph1:
 			'Aktualisiere deinen Künstler des Moments in deinem Profil',
 		profilePageChangeYourArtistParagraph2:
@@ -333,26 +341,30 @@ export const de = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Künstler des Moments für das Profil auswählen',
 		profilePageChangeYourArtistChooseArtistFollowers: 'Follower',
-		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Du kannst kostenlos aktualisieren am',
+		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Du kannst kostenlos aktualisieren in',
 		profilePageChangeYourArtistUnlockMoreMusic:
-			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
+			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',
 		profilePageChangeYourCustomArtistCloseModalAriaLabel:
-			'Dialog zum Ändern des personalisierten Künstlers schließen',
+			'Modal zum Ändern des personalisierten Künstlers schließen',
 		profilePageChangeYourCustomArtistCloseModalAltText:
-			'Symbol zum Schließen des Dialogs zum Ändern des personalisierten Künstlers',
+			'Symbol zum Schließen des Modals zum Ändern des personalisierten Künstlers',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'Gib deinem Künstler einen Titel',
-		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Beispiel: Meine größte Inspiration',
+		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'z. B.: Meine größte Inspiration',
+		profilePageChangeYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'Dein Titel muss zwischen 1 und 56 Zeichen lang sein',
+		profilePageChangeYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'Dein Titel darf nur Buchstaben und Zahlen enthalten',
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
-			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
+			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Künstler des Moments',
-		profilePageEmptyArtistOfTheMomentAltText: 'Auswahlsymbol für den Künstler des Moments',
+		profilePageEmptyArtistOfTheMomentAltText: 'Symbol zur Auswahl des Künstlers des Moments',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Künstler des Moments auswählen',
 		profilePageEmptyArtistOfTheMomentParagraph1:
 			'Wähle den Künstler, der dich gerade am besten repräsentiert, um ihn in deinem Profil hervorzuheben.',
 		profilePageSelectYourArtistCloseModalAriaLabel:
-			'Dialog zur Auswahl des Künstlers des Moments schließen',
+			'Modal zur Auswahl des Künstlers des Moments schließen',
 		profilePageSelectYourArtistCloseModalAltText:
-			'Symbol zum Schließen des Dialogs zur Auswahl des Künstlers des Moments',
+			'Symbol zum Schließen des Modals zur Auswahl des Künstlers des Moments',
 		profilePageSelectYourArtistParagraph1: 'Wähle deinen Künstler des Moments',
 		profilePageSelectYourArtistParagraph2:
 			'Wähle den Künstler, der am besten widerspiegelt, was du gerade hörst.',
@@ -360,26 +372,30 @@ export const de = {
 			'Künstler des Moments für das Profil auswählen',
 		profilePageSelectYourArtistChooseArtistFollowers: 'Follower',
 		profilePageSelectYourArtistUnlockMoreMusic:
-			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
+			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',
 		profilePageSelectYourCustomArtistCloseModalAriaLabel:
-			'Dialog zur Auswahl des personalisierten Künstlers schließen',
+			'Modal zur Auswahl des personalisierten Künstlers schließen',
 		profilePageSelectYourCustomArtistCloseModalAltText:
-			'Symbol zum Schließen des Dialogs zur Auswahl des personalisierten Künstlers',
+			'Symbol zum Schließen des Modals zur Auswahl des personalisierten Künstlers',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Gib deinem Künstler einen Titel',
-		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Beispiel: Meine größte Inspiration',
+		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'z. B.: Meine größte Inspiration',
+		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
+			'Dein Titel muss zwischen 1 und 56 Zeichen lang sein',
+		profilePageSelectYourCustomArtistTitleInputErrorInvalidCharactersMessage:
+			'Dein Titel darf nur Buchstaben und Zahlen enthalten',
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
-			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
+			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',
 		profilePageEmptyCustomArtistHeading1: 'Dein Künstler, auf deine Art',
-		profilePageEmptyCustomArtistAltText: 'Auswahlsymbol für den personalisierten Künstler',
+		profilePageEmptyCustomArtistAltText: 'Symbol zur Auswahl eines personalisierten Künstlers',
 		profilePageEmptyCustomArtistHeading2: 'Gib deinem Künstler eine Bedeutung',
 		profilePageEmptyCustomArtistParagraph1:
-			'Wähle einen deiner meistgehörten Künstler und passe den Titel nach deinen Wünschen an.',
+			'Wähle einen deiner meistgehörten Künstler und personalisiere den Titel nach deinen Wünschen.',
 		profilePageSelectYourCustomItemParagraph1: 'Auf deine Art',
 		profilePageSelectYourCustomMusicParagraph2:
 			'Wähle einen Song und gib ihm einen Titel, der ausdrückt, was du gerade fühlst, erlebst oder woran du dich erinnerst.',
 		profilePageSelectYourCustomArtistParagraph2:
 			'Wähle einen Künstler und gib ihm einen Titel, der ausdrückt, was du gerade fühlst, erlebst oder woran du dich erinnerst.',
-		profilePageChangeYourCustomItemParagraph1: 'Aktualisiere auf deine Art',
+		profilePageChangeYourCustomItemParagraph1: 'Aktualisiere es auf deine Art',
 		profilePageChangeYourCustomArtistParagraph2:
 			'Wähle einen anderen Künstler und gib ihm einen Titel, der ausdrückt, was du gerade fühlst, erlebst oder woran du dich erinnerst.',
 		profilePageChangeYourCustomMusicParagraph2:
