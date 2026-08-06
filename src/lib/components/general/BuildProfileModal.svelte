@@ -16,6 +16,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Services
+	import { setProfileVisibilityPublicByDefault } from '$lib/services/user/build/setProfileVisibilityPublicByDefault';
+
 	// Types
 	import type { buildProfileInfo } from '$lib/types/UserInfo.type';
 
@@ -24,7 +27,7 @@
 	export let currentStepIndex: number =
 		!$userInfo?.trackOfTheMoment &&
 		!$userInfo?.artistOfTheMoment &&
-		$userInfo?.profileVisibility?.visibility === 'public'
+		$userInfo?.profileVisibility?.visibility === undefined
 			? 0
 			: 1;
 
@@ -34,9 +37,22 @@
 		profileVisibility: undefined
 	};
 
-	function closeModal() {
+	async function closeModal() {
 		showBuildProfile = false;
 		document.body.style.overflow = '';
+
+		if ($userInfo?._id) {
+			const profileVisibility = await setProfileVisibilityPublicByDefault($userInfo?._id);
+
+			userInfo.update((currentUser) => {
+				if (currentUser) {
+					currentUser.profileVisibility = {
+						visibility: profileVisibility?.visibility || 'public'
+					};
+				}
+				return currentUser;
+			});
+		}
 	}
 
 	function goToNextStep() {

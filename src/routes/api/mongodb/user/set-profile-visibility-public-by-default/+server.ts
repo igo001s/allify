@@ -4,6 +4,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 // Server
 import { connectToMongoDB } from '$lib/server/mongodb';
 
+// MongoDB
+import { ObjectId } from 'mongodb';
+
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
 
@@ -18,47 +21,39 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	}
 
+	const { id } = await request.json();
+
+	if (!id) {
+		return new Response(JSON.stringify({ error: 'Missing required field' }), {
+			status: 400
+		});
+	}
+
 	try {
-		const { name, email, streaming, streamingData } = await request.json();
-
-		if (!name || !email || !streaming || !streamingData) {
-			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
-		}
-
 		const client = await connectToMongoDB();
 		const db = client?.db(MONGO_DB);
 		const users = db?.collection('users');
 
-		const existingUser = await users?.findOne({ email: email });
-
-		if (existingUser) {
-			return new Response(JSON.stringify({ error: 'User already exists' }), { status: 409 });
-		}
-
-		const user = {
-			name: name,
-			email: email,
-			tickets: 5,
-			profileVisibility: {
-				visibility: undefined
+		await users?.updateOne(
+			{
+				_id: new ObjectId(id)
 			},
-			primaryStreaming: streaming,
-			connectedStreamings: { [streaming]: streamingData }
-		};
-
-		const result = await users?.insertOne({
-			...user,
-			createdAt: new Date()
-		});
+			{
+				$set: {
+					profileVisibility: {
+						visibility: 'public'
+					}
+				}
+			}
+		);
 
 		return new Response(
 			JSON.stringify({
-				createdUser: {
-					...user,
-					_id: result?.insertedId
+				profileVisibility: {
+					visibility: 'public'
 				}
 			}),
-			{ status: 201 }
+			{ status: 200 }
 		);
 	} catch (error) {
 		return new Response(JSON.stringify({ error }), {
