@@ -35,7 +35,7 @@ export const POST: RequestHandler = async ({ request }) => {
 					$regex: user,
 					$options: 'i'
 				},
-				profileVisibility: 'public'
+				'profileVisibility.visibility': 'public'
 			})
 			.toArray();
 
