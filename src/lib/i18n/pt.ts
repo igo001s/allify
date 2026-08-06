@@ -418,10 +418,8 @@ export const pt = {
 			'Seu perfil é visível para todos e pode ser compartilhado usando o link do seu perfil.',
 		settingsPageProfileVisibilityPrivateDescription:
 			'Seu perfil está oculto para outros usuários e só é acessível por você.',
-		settingsPageProfileVisibilityChangeAgainSingularMessage:
-			'Você poderá alterar a visibilidade do seu perfil novamente em <strong>{hours} hora</strong>.',
-		settingsPageProfileVisibilityChangeAgainPluralMessage:
-			'Você poderá alterar a visibilidade do seu perfil novamente em <strong>{hours} horas</strong>.',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'Você pode alterar a visibilidade do seu perfil gratuitamente em',
 		settingsPageProfileVisibilityChangeAgainAvailableMessage:
 			'Você pode alterar a visibilidade do seu perfil novamente agora.'
 	},

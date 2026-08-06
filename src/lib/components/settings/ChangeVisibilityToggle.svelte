@@ -1,40 +1,29 @@
 <script lang="ts">
+	// Assets
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
+
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Services
-	import { changeVisibility } from '$lib/services/user/updates/changeVisibility';
+	import { updateProfileVisibility } from '$lib/services/user/updates/updateProfileVisibility';
 
 	// Props
 	export let visibility: 'public' | 'private';
 
 	const visibilityOptions: Array<'public' | 'private'> = ['public', 'private'];
 
-	function getRemainingHours(updatedAt: string | Date): number {
-		return Math.max(
-			0,
-			Math.ceil(
-				(new Date(updatedAt).getTime() + 6 * 60 * 60 * 1000 - Date.now()) / (60 * 60 * 1000)
-			)
-		);
-	}
-
-	$: remainingHours = $userInfo?.profileVisibility?.updatedAt
-		? getRemainingHours($userInfo.profileVisibility.updatedAt)
-		: 0;
-
-	$: canChangeVisibility = remainingHours === 0;
-
-	$: changeAgainMessage =
-		remainingHours === 1
-			? $translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainSingularMessage
-			: $translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainPluralMessage;
-
 	async function handleVisibilityChange(option: 'public' | 'private') {
-		if (!option || !$userInfo?._id || !canChangeVisibility) return;
+		if (!option || !$userInfo?._id) return;
 
-		const { visibility, updatedAt } = await changeVisibility($userInfo._id, option, remainingHours);
+		const updatedVisibility = await updateProfileVisibility(
+			$userInfo._id,
+			option,
+			$userInfo?.email,
+			$userInfo?.tickets,
+			$userInfo?.profileVisibility?.nextFreeUpdate
+		);
 
 		userInfo.update((currentUser) => {
 			if (!currentUser) return currentUser;
@@ -42,8 +31,8 @@
 			return {
 				...currentUser,
 				profileVisibility: {
-					visibility,
-					updatedAt
+					visibility: updatedVisibility.visibility,
+					nextFreeUpdate: updatedVisibility.nextFreeUpdate
 				}
 			};
 		});
@@ -56,16 +45,27 @@
 	>
 		{#each visibilityOptions as option}
 			<button
-				disabled={visibility === option || !canChangeVisibility}
 				on:click={() => handleVisibilityChange(option)}
-				class={`w-full rounded-lg px-5 py-2.5 text-sm font-medium transition-all duration-200 sm:min-w-32 ${
+				class={`flex w-full items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium transition-all duration-200 sm:min-w-32 ${
 					visibility === option
 						? 'bg-brand-primary text-t-inverse shadow-sm'
-						: canChangeVisibility
-							? 'cursor-pointer bg-brand-primary/10 text-t-primary'
-							: 'cursor-not-allowed bg-brand-primary/5 text-t-secondary opacity-50'
+						: 'cursor-pointer bg-brand-primary/10 pr-10 text-t-primary'
 				}`}
 			>
+				{#if visibility !== option && $userInfo?.profileVisibility?.nextFreeUpdate && new Date($userInfo.profileVisibility.nextFreeUpdate) > new Date()}
+					<div
+						class="ml-2 flex w-fit items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm"
+					>
+						<img
+							src={TicketIcon}
+							alt={$translationsStore.generalTexts.ticketAltText}
+							class="h-3 w-3"
+						/>
+
+						<span class="text-[11px] leading-none font-bold">-1</span>
+					</div>
+				{/if}
+
 				{option === 'public'
 					? $translationsStore.settingsPage.settingsPageProfileVisibilityPublicOption
 					: $translationsStore.settingsPage.settingsPageProfileVisibilityPrivateOption}
@@ -83,10 +83,20 @@
 		</p>
 
 		<span class="text-xs text-t-secondary/70">
-			{#if canChangeVisibility}
-				{$translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainAvailableMessage}
+			{#if $userInfo?.profileVisibility.nextFreeUpdate && new Date($userInfo.profileVisibility.nextFreeUpdate) > new Date()}
+				{$translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainMessage}
+
+				<strong class="font-semibold text-t-primary">
+					{new Date($userInfo.profileVisibility.nextFreeUpdate).toLocaleString(
+						$translationsStore.locale,
+						{
+							dateStyle: 'short',
+							timeStyle: 'short'
+						}
+					)}
+				</strong>
 			{:else}
-				{@html changeAgainMessage.replace('{hours}', remainingHours.toString())}
+				{$translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainAvailableMessage}
 			{/if}
 		</span>
 	</div>

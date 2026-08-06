@@ -431,10 +431,8 @@ export const de = {
 			'Dein Profil ist für alle sichtbar und kann über deinen Profil-Link geteilt werden.',
 		settingsPageProfileVisibilityPrivateDescription:
 			'Dein Profil ist für andere Nutzer verborgen und nur für dich zugänglich.',
-		settingsPageProfileVisibilityChangeAgainSingularMessage:
-			'Du kannst die Sichtbarkeit deines Profils in <strong>{hours} Stunde</strong> erneut ändern.',
-		settingsPageProfileVisibilityChangeAgainPluralMessage:
-			'Du kannst die Sichtbarkeit deines Profils in <strong>{hours} Stunden</strong> erneut ändern.',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'Sie können die Sichtbarkeit Ihres Profils kostenlos ändern unter',
 		settingsPageProfileVisibilityChangeAgainAvailableMessage:
 			'Du kannst die Sichtbarkeit deines Profils jetzt erneut ändern.'
 	},

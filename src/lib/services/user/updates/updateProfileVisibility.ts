@@ -11,19 +11,15 @@ import { useTicket } from '../tickets/useTicket';
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
-// Types
-import type { TrackSpotify } from '$lib/types/SpotifyData.type';
-
-export async function updateCustomTrack(
+export async function updateProfileVisibility(
 	id: ObjectId,
-	customTrackTitle: string,
-	customTrack: TrackSpotify,
+	profileVisibility: string,
 	email?: string,
 	tickets?: number,
 	nextFreeUpdate?: Date
 ) {
 	try {
-		if (!id || !customTrackTitle || !customTrack) {
+		if (!id || !profileVisibility) {
 			return null;
 		}
 
@@ -53,16 +49,14 @@ export async function updateCustomTrack(
 			});
 		}
 
-		const response = await fetch('/api/mongodb/updates/update-custom-track', {
+		const response = await fetch('/api/mongodb/user/change-visibility', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
 				id,
-				customTrackTitle,
-				customTrack,
-				freeUpdateIsAvailable,
+				profileVisibility,
 				nextFreeUpdate
 			})
 		});
@@ -74,10 +68,10 @@ export async function updateCustomTrack(
 
 		const data = await response.json();
 
-		return data.customTrack;
+		return data.profileVisibilityUpdated;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateCustomTrack error:', error);
+			console.error('User changeVisibility error:', error);
 		}
 
 		return null;

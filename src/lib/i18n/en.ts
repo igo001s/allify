@@ -404,10 +404,8 @@ export const en = {
 			'Your profile is visible to everyone and can be shared using your profile link.',
 		settingsPageProfileVisibilityPrivateDescription:
 			'Your profile is hidden from other users and only accessible by you.',
-		settingsPageProfileVisibilityChangeAgainSingularMessage:
-			'You can change your profile visibility again in <strong>{hours} hour</strong>.',
-		settingsPageProfileVisibilityChangeAgainPluralMessage:
-			'You can change your profile visibility again in <strong>{hours} hours</strong>.',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'You can change your profile visibility for free at',
 		settingsPageProfileVisibilityChangeAgainAvailableMessage:
 			'You can change your profile visibility again now.'
 	},

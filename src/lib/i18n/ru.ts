@@ -418,10 +418,8 @@ export const ru = {
 			'Ваш профиль виден всем и может быть доступен по ссылке на профиль.',
 		settingsPageProfileVisibilityPrivateDescription:
 			'Ваш профиль скрыт от других пользователей и доступен только вам.',
-		settingsPageProfileVisibilityChangeAgainSingularMessage:
-			'Вы сможете снова изменить видимость своего профиля через <strong>{hours} час</strong>.',
-		settingsPageProfileVisibilityChangeAgainPluralMessage:
-			'Вы сможете снова изменить видимость своего профиля через <strong>{hours} часов</strong>.',
+		settingsPageProfileVisibilityChangeAgainMessage:
+			'Вы можете бесплатно изменить видимость своего профиля на',
 		settingsPageProfileVisibilityChangeAgainAvailableMessage:
 			'Вы можете снова изменить видимость своего профиля в любое время.'
 	},
