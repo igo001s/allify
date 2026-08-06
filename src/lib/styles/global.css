@@ -3,9 +3,6 @@
 @import './fonts.css';
 @import './sections.css';
 
-@import 'tailwindcss';
-@import './fonts.css';
-
 @theme {
 	/* TEXT */
 	--color-t-primary: #161616;
