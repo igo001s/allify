@@ -49,7 +49,7 @@ export async function updateProfileVisibility(
 			});
 		}
 
-		const response = await fetch('/api/mongodb/user/change-visibility', {
+		const response = await fetch('/api/mongodb/user/update-profile-visibility', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
