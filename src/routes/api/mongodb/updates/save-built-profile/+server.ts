@@ -7,6 +7,9 @@ import { connectToMongoDB } from '$lib/server/mongodb';
 // Types
 import type { UserInfo } from '$lib/types/UserInfo.type';
 
+// Utils
+import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+
 // MongoDB
 import { ObjectId } from 'mongodb';
 
@@ -41,8 +44,14 @@ export const POST: RequestHandler = async ({ request }) => {
 			{ _id: new ObjectId(id) },
 			{
 				$set: {
-					trackOfTheMoment: builtUser.track,
-					artistOfTheMoment: builtUser.artist,
+					trackOfTheMoment: {
+						track: builtUser.track,
+						nextFreeUpdate: nextFreeUpdateTime()
+					},
+					artistOfTheMoment: {
+						artist: builtUser.artist,
+						nextFreeUpdate: nextFreeUpdateTime()
+					},
 					profileVisibility: {
 						visibility: builtUser.profileVisibility
 					}
@@ -53,8 +62,14 @@ export const POST: RequestHandler = async ({ request }) => {
 		return new Response(
 			JSON.stringify({
 				builtUser: {
-					trackOfTheMoment: builtUser.track,
-					artistOfTheMoment: builtUser.artist,
+					trackOfTheMoment: {
+						track: builtUser.track,
+						nextFreeUpdate: nextFreeUpdateTime()
+					},
+					artistOfTheMoment: {
+						artist: builtUser.artist,
+						nextFreeUpdate: nextFreeUpdateTime()
+					},
 					profileVisibility: {
 						visibility: builtUser.profileVisibility
 					}

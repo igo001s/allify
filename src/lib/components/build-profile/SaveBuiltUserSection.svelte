@@ -24,7 +24,20 @@
 
 			userInfo.update((currentUser) => {
 				if (currentUser) {
-					return { ...currentUser, ...response };
+					return {
+						...currentUser,
+						trackOfTheMoment: {
+							track: response.trackOfTheMoment.track,
+							nextFreeUpdate: response.trackOfTheMoment.nextFreeUpdate
+						},
+						artistOfTheMoment: {
+							artist: response.artistOfTheMoment.artist,
+							nextFreeUpdate: response.artistOfTheMoment.nextFreeUpdate
+						},
+						profileVisibility: {
+							visibility: response.profileVisibility.visibility
+						}
+					};
 				}
 				return currentUser;
 			});
