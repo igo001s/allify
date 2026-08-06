@@ -57,6 +57,7 @@ export async function updateProfileVisibility(
 			body: JSON.stringify({
 				id,
 				profileVisibility,
+				freeUpdateIsAvailable,
 				nextFreeUpdate
 			})
 		});

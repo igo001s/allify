@@ -23,7 +23,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { id, profileVisibility, nextFreeUpdate } = await request.json();
+		const { id, profileVisibility, freeUpdateIsAvailable, nextFreeUpdate } = await request.json();
 
 		if (!id || !profileVisibility) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
@@ -39,7 +39,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				$set: {
 					profileVisibility: {
 						visibility: profileVisibility,
-						nextFreeUpdate: nextFreeUpdate ? nextFreeUpdate : nextFreeUpdateTime()
+						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 					}
 				}
 			}
@@ -49,7 +49,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			JSON.stringify({
 				profileVisibilityUpdated: {
 					visibility: profileVisibility,
-					nextFreeUpdate: nextFreeUpdate ? nextFreeUpdate : nextFreeUpdateTime()
+					nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 				}
 			}),
 			{ status: 200 }
