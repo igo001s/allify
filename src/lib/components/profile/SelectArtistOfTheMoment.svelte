@@ -37,9 +37,12 @@
 
 				return {
 					...currentUser,
-					artistOfTheMoment: {
-						artist: updatedArtist.artist,
-						updatedAt: updatedArtist.updatedAt
+					artists: {
+						...currentUser.artists,
+						artistOfTheMoment: {
+							artist: updatedArtist.artist,
+							updatedAt: updatedArtist.updatedAt
+						}
 					}
 				};
 			});

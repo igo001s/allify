@@ -51,10 +51,13 @@
 
 				return {
 					...currentUser,
-					customArtist: {
-						title: updatedArtist.title,
-						artist: updatedArtist.artist,
-						nextFreeUpdate: updatedArtist.nextFreeUpdate
+					artists: {
+						...currentUser.artists,
+						customArtist: {
+							title: updatedArtist.title,
+							artist: updatedArtist.artist,
+							nextFreeUpdate: updatedArtist.nextFreeUpdate
+						}
 					}
 				};
 			});

@@ -39,7 +39,7 @@
 		{:else if artistItem.type === 'artistOfTheMoment'}
 			{$translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v2}
 		{:else if artistItem.type === 'customArtist'}
-			{$userInfo?.customArtist?.title}
+			{$userInfo?.artists?.customArtist?.title}
 		{/if}
 	</h3>
 

@@ -44,7 +44,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			},
 			{
 				$set: {
-					customArtist: {
+					'artists.customArtist': {
 						title: customArtistTitle,
 						artist: customArtist,
 						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate

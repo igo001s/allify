@@ -43,7 +43,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			},
 			{
 				$set: {
-					artistOfTheMoment: {
+					'artists.artistOfTheMoment': {
 						artist: artistOfTheMoment,
 						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 					}

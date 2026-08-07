@@ -44,13 +44,17 @@ export const POST: RequestHandler = async ({ request }) => {
 			{ _id: new ObjectId(id) },
 			{
 				$set: {
-					trackOfTheMoment: {
-						track: builtUser.track,
-						nextFreeUpdate: nextFreeUpdateTime()
+					tracks: {
+						trackOfTheMoment: {
+							track: builtUser.track,
+							nextFreeUpdate: nextFreeUpdateTime()
+						}
 					},
-					artistOfTheMoment: {
-						artist: builtUser.artist,
-						nextFreeUpdate: nextFreeUpdateTime()
+					artists: {
+						artistOfTheMoment: {
+							artist: builtUser.artist,
+							nextFreeUpdate: nextFreeUpdateTime()
+						}
 					},
 					profileVisibility: {
 						visibility: builtUser.profileVisibility
@@ -66,10 +70,12 @@ export const POST: RequestHandler = async ({ request }) => {
 						track: builtUser.track,
 						nextFreeUpdate: nextFreeUpdateTime()
 					},
+
 					artistOfTheMoment: {
 						artist: builtUser.artist,
 						nextFreeUpdate: nextFreeUpdateTime()
 					},
+
 					profileVisibility: {
 						visibility: builtUser.profileVisibility
 					}

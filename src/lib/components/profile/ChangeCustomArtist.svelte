@@ -19,8 +19,9 @@
 	// Props
 	export let closeChangeCustomItemModal: () => void;
 
-	let choosedArtistTitle: string | undefined = $userInfo?.customArtist?.title || '';
-	let choosedArtist: ArtistSpotify | undefined = $userInfo?.customArtist?.artist || undefined;
+	let choosedArtistTitle: string | undefined = $userInfo?.artists?.customArtist?.title || '';
+	let choosedArtist: ArtistSpotify | undefined =
+		$userInfo?.artists?.customArtist?.artist || undefined;
 
 	let isArtistTitleValid: { typeError: string; error: boolean } = { typeError: '', error: false };
 
@@ -46,7 +47,7 @@
 			choosedArtist,
 			$userInfo?.email,
 			$userInfo?.tickets,
-			$userInfo?.customArtist?.nextFreeUpdate
+			$userInfo?.artists?.customArtist?.nextFreeUpdate
 		);
 
 		if (updatedArtist) {
@@ -55,10 +56,13 @@
 
 				return {
 					...currentUser,
-					customArtist: {
-						title: updatedArtist.title,
-						artist: updatedArtist.artist,
-						nextFreeUpdate: updatedArtist.nextFreeUpdate
+					artists: {
+						...currentUser.artists,
+						customArtist: {
+							title: updatedArtist.title,
+							artist: updatedArtist.artist,
+							nextFreeUpdate: updatedArtist.nextFreeUpdate
+						}
 					}
 				};
 			});
@@ -103,13 +107,14 @@
 			<button
 				class={`${
 					choosedArtist?.id === artist.id ||
-					(!choosedArtist && $userInfo?.customArtist?.artist?.id === artist.id)
+					(!choosedArtist && $userInfo?.artists?.customArtist?.artist?.id === artist.id)
 						? 'border-brand-primary bg-brand-primary/5'
 						: 'border-s-muted bg-s-muted'
 				}
 						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-5 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
 				aria-label={$translationsStore.profilePage.profilePageChangeYourArtistChooseArtistAriaLabel}
-				disabled={choosedArtist === undefined && $userInfo?.customArtist?.artist?.id === artist.id}
+				disabled={choosedArtist === undefined &&
+					$userInfo?.artists?.customArtist?.artist?.id === artist.id}
 				on:click={() => handleArtistSelection(artist)}
 			>
 				{#if artist.image}
@@ -133,21 +138,24 @@
 				</div>
 
 				<SpotifyIcon
-					iconSvgClass={`${choosedArtist?.id === artist.id || (!choosedArtist && $userInfo?.customArtist?.artist?.id === artist.id) ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
+					iconSvgClass={`${choosedArtist?.id === artist.id || (!choosedArtist && $userInfo?.artists?.customArtist?.artist?.id === artist.id) ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
 				/>
 			</button>
 		{/each}
 	</div>
 
 	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
-		{#if $userInfo?.customArtist?.nextFreeUpdate && new Date($userInfo.customArtist.nextFreeUpdate) > new Date()}
+		{#if $userInfo?.artists?.customArtist?.nextFreeUpdate && new Date($userInfo.artists.customArtist.nextFreeUpdate) > new Date()}
 			{$translationsStore.profilePage.profilePageChangeYourArtistTimeToNextFreeUpdate}
 
 			<strong class="font-semibold text-t-primary">
-				{new Date($userInfo.customArtist.nextFreeUpdate).toLocaleString($translationsStore.locale, {
-					dateStyle: 'short',
-					timeStyle: 'short'
-				})}
+				{new Date($userInfo.artists.customArtist.nextFreeUpdate).toLocaleString(
+					$translationsStore.locale,
+					{
+						dateStyle: 'short',
+						timeStyle: 'short'
+					}
+				)}
 			</strong>
 		{:else}
 			{$translationsStore.profilePage.profilePageChangeYourArtistUnlockMoreMusic}
@@ -166,14 +174,14 @@
 			disabled={!choosedArtist ||
 				!choosedArtistTitle ||
 				isArtistTitleValid.error === true ||
-				($userInfo?.customArtist?.artist?.id === choosedArtist?.id &&
-					$userInfo?.customArtist?.title === choosedArtistTitle)}
+				($userInfo?.artists?.customArtist?.artist?.id === choosedArtist?.id &&
+					$userInfo?.artists?.customArtist?.title === choosedArtistTitle)}
 			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 disabled:bg-s-inverse-muted sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
 			on:click={handleChangeCustomArtist}
 		>
 			{$translationsStore.profilePage.profilePageChangeYourCustomItemModalSaveChanges}
 
-			{#if $userInfo?.customArtist?.nextFreeUpdate && new Date($userInfo.customArtist.nextFreeUpdate) > new Date()}
+			{#if $userInfo?.artists?.customArtist?.nextFreeUpdate && new Date($userInfo.artists.customArtist.nextFreeUpdate) > new Date()}
 				<div
 					class="ml-2 flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm"
 				>

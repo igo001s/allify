@@ -26,13 +26,17 @@
 				if (currentUser) {
 					return {
 						...currentUser,
-						trackOfTheMoment: {
-							track: response.trackOfTheMoment.track,
-							nextFreeUpdate: response.trackOfTheMoment.nextFreeUpdate
+						tracks: {
+							trackOfTheMoment: {
+								track: response.trackOfTheMoment.track,
+								nextFreeUpdate: response.trackOfTheMoment.nextFreeUpdate
+							}
 						},
-						artistOfTheMoment: {
-							artist: response.artistOfTheMoment.artist,
-							nextFreeUpdate: response.artistOfTheMoment.nextFreeUpdate
+						artists: {
+							artistOfTheMoment: {
+								artist: response.artistOfTheMoment.artist,
+								nextFreeUpdate: response.artistOfTheMoment.nextFreeUpdate
+							}
 						},
 						profileVisibility: {
 							visibility: response.profileVisibility.visibility
