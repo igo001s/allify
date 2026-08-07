@@ -70,12 +70,10 @@ export const POST: RequestHandler = async ({ request }) => {
 						track: builtUser.track,
 						nextFreeUpdate: nextFreeUpdateTime()
 					},
-
 					artistOfTheMoment: {
 						artist: builtUser.artist,
 						nextFreeUpdate: nextFreeUpdateTime()
 					},
-
 					profileVisibility: {
 						visibility: builtUser.profileVisibility
 					}

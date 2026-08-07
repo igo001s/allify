@@ -35,7 +35,7 @@
 			choosedTrack,
 			$userInfo?.email,
 			$userInfo?.tickets,
-			$userInfo?.trackOfTheMoment?.nextFreeUpdate
+			$userInfo?.tracks?.trackOfTheMoment?.nextFreeUpdate
 		);
 
 		if (updatedTrack) {
@@ -64,13 +64,14 @@
 			<button
 				class={`${
 					choosedTrack?.id === track.id ||
-					(!choosedTrack && $userInfo?.trackOfTheMoment?.track?.id === track.id)
+					(!choosedTrack && $userInfo?.tracks?.trackOfTheMoment?.track?.id === track.id)
 						? 'border-brand-primary bg-brand-primary/5'
 						: 'border-s-muted bg-s-muted'
 				}
 						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-5 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
 				aria-label={$translationsStore.profilePage.profilePageChangeYourMusicChooseMusicAriaLabel}
-				disabled={choosedTrack === undefined && $userInfo?.trackOfTheMoment?.track?.id === track.id}
+				disabled={choosedTrack === undefined &&
+					$userInfo?.tracks?.trackOfTheMoment?.track?.id === track.id}
 				on:click={() => handleTrackSelection(track)}
 			>
 				{#if track.image}
@@ -97,18 +98,18 @@
 				</div>
 
 				<SpotifyIcon
-					iconSvgClass={`${choosedTrack?.id === track.id || (!choosedTrack && $userInfo?.trackOfTheMoment?.track?.id === track.id) ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
+					iconSvgClass={`${choosedTrack?.id === track.id || (!choosedTrack && $userInfo?.tracks?.trackOfTheMoment?.track?.id === track.id) ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
 				/>
 			</button>
 		{/each}
 	</div>
 
 	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
-		{#if $userInfo?.trackOfTheMoment?.nextFreeUpdate && new Date($userInfo.trackOfTheMoment.nextFreeUpdate) > new Date()}
+		{#if $userInfo?.tracks?.trackOfTheMoment?.nextFreeUpdate && new Date($userInfo.tracks.trackOfTheMoment.nextFreeUpdate) > new Date()}
 			{$translationsStore.profilePage.profilePageChangeYourMusicTimeToNextFreeUpdate}
 
 			<strong class="font-semibold text-t-primary">
-				{new Date($userInfo.trackOfTheMoment.nextFreeUpdate).toLocaleString(
+				{new Date($userInfo.tracks.trackOfTheMoment.nextFreeUpdate).toLocaleString(
 					$translationsStore.locale,
 					{
 						dateStyle: 'short',
@@ -136,7 +137,7 @@
 		>
 			{$translationsStore.profilePage.profilePageChangeYourItemsModalSaveChanges}
 
-			{#if $userInfo?.trackOfTheMoment?.nextFreeUpdate && new Date($userInfo.trackOfTheMoment.nextFreeUpdate) > new Date()}
+			{#if $userInfo?.tracks?.trackOfTheMoment?.nextFreeUpdate && new Date($userInfo.tracks.trackOfTheMoment.nextFreeUpdate) > new Date()}
 				<div
 					class="ml-2 flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm"
 				>

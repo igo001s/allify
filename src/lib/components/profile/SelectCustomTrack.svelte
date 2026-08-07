@@ -47,10 +47,13 @@
 
 				return {
 					...currentUser,
-					customTrack: {
-						title: updatedTrack.title,
-						track: updatedTrack.track,
-						nextFreeUpdate: updatedTrack.nextFreeUpdate
+					tracks: {
+						...currentUser.tracks,
+						customTrack: {
+							title: updatedTrack.title,
+							track: updatedTrack.track,
+							nextFreeUpdate: updatedTrack.nextFreeUpdate
+						}
 					}
 				};
 			});

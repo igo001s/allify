@@ -39,7 +39,7 @@
 		{:else if trackItem.type === 'trackOfTheMoment'}
 			{$translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v2}
 		{:else if trackItem.type === 'customTrack'}
-			{$userInfo?.customTrack?.title}
+			{$userInfo?.tracks?.customTrack?.title}
 		{/if}
 	</h3>
 

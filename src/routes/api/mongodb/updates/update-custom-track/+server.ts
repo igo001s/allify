@@ -44,7 +44,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			},
 			{
 				$set: {
-					customTrack: {
+					'tracks.customTrack': {
 						title: customTrackTitle,
 						track: customTrack,
 						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate

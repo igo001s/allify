@@ -19,8 +19,8 @@
 			trackItem: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem,
 			type: 'mostListenedTrack'
 		},
-		{ trackItem: $userInfo?.trackOfTheMoment?.track, type: 'trackOfTheMoment' },
-		{ trackItem: $userInfo?.customTrack?.track, type: 'customTrack' }
+		{ trackItem: $userInfo?.tracks?.trackOfTheMoment?.track, type: 'trackOfTheMoment' },
+		{ trackItem: $userInfo?.tracks?.customTrack?.track, type: 'customTrack' }
 	];
 </script>
 

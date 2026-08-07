@@ -43,7 +43,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			},
 			{
 				$set: {
-					trackOfTheMoment: {
+					'tracks.trackOfTheMoment': {
 						track: trackOfTheMoment,
 						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 					}
