@@ -5,7 +5,15 @@ import { dev } from '$app/environment';
 import { useTicket } from '$lib/services/user/tickets/useTicket';
 import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
 
-export async function updateMostListenedArtists(email: string, limit: number, tickets: number) {
+// Types
+import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
+
+export async function updateMostListenedArtists(
+	email: string,
+	limit: number,
+	tickets: number,
+	currentMostListenedArtists?: ArtistSpotify[]
+) {
 	try {
 		if (!email || !tickets || !limit) return;
 
@@ -23,6 +31,11 @@ export async function updateMostListenedArtists(email: string, limit: number, ti
 
 		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } = response;
 
+		const artistsWhoWereWithYou =
+			currentMostListenedArtists?.filter(
+				(artist) => !mostListenedArtistsItems.some((oldArtist) => oldArtist.id === artist.id)
+			) ?? [];
+
 		const updateResponse = await fetch('/api/mongodb/updates/update-most-listened-artists', {
 			method: 'POST',
 			body: JSON.stringify({
@@ -30,6 +43,7 @@ export async function updateMostListenedArtists(email: string, limit: number, ti
 				limit: artistsLimit,
 				mostListenedArtist: mostListenedArtistItem,
 				mostListenedArtists: mostListenedArtistsItems,
+				artistsWhoWereWithYou,
 				updatedAt
 			})
 		});

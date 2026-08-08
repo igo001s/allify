@@ -35,6 +35,7 @@ export type UserInfo = {
 			track: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
 			nextFreeUpdate?: Date;
 		};
+		tracksWhoWereWithYou?: TrackSpotify[] | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
 	};
 	artists?: {
 		artistOfTheMoment?: {
@@ -46,6 +47,7 @@ export type UserInfo = {
 			artist: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
 			nextFreeUpdate?: Date;
 		};
+		artistsWhoWereWithYou?: ArtistSpotify[] | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
 	};
 	discoveries?: {
 		tracks: string[];

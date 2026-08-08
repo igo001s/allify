@@ -18,7 +18,8 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	}
 
-	const { email, limit, updatedAt, mostListenedArtist, mostListenedArtists } = await request.json();
+	const { email, limit, updatedAt, mostListenedArtist, mostListenedArtists, artistWhoWereWithYou } =
+		await request.json();
 
 	if (!email || !limit || !updatedAt || !mostListenedArtist || !mostListenedArtists) {
 		return new Response(JSON.stringify({ error: 'Missing required fields' }), {
@@ -40,7 +41,8 @@ export const POST: RequestHandler = async ({ request }) => {
 					'connectedStreamings.spotify.mostListenedArtists.mostListenedArtistItem':
 						mostListenedArtist,
 					'connectedStreamings.spotify.mostListenedArtists.mostListenedArtistsItems':
-						mostListenedArtists
+						mostListenedArtists,
+					'artists.artistsWhoWereWithYou': artistWhoWereWithYou ? artistWhoWereWithYou : []
 				}
 			}
 		);

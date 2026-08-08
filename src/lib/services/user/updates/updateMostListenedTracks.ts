@@ -5,7 +5,15 @@ import { dev } from '$app/environment';
 import { useTicket } from '$lib/services/user/tickets/useTicket';
 import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListenedTracks';
 
-export async function updateMostListenedTracks(email: string, limit: number, tickets: number) {
+// Types
+import type { TrackSpotify } from '$lib/types/SpotifyData.type';
+
+export async function updateMostListenedTracks(
+	email: string,
+	limit: number,
+	tickets: number,
+	currentMostListenedTracks?: TrackSpotify[]
+) {
 	try {
 		if (!email || !tickets || !limit) return;
 
@@ -23,6 +31,11 @@ export async function updateMostListenedTracks(email: string, limit: number, tic
 
 		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems, updatedAt } = response;
 
+		const tracksWhoWereWithYou =
+			currentMostListenedTracks?.filter(
+				(track) => !mostListenedTracksItems.some((oldTrack) => oldTrack.id === track.id)
+			) ?? [];
+
 		const updateResponse = await fetch('/api/mongodb/updates/update-most-listened-tracks', {
 			method: 'POST',
 			body: JSON.stringify({
@@ -30,6 +43,7 @@ export async function updateMostListenedTracks(email: string, limit: number, tic
 				limit: tracksLimit,
 				mostListenedTrack: mostListenedTrackItem,
 				mostListenedTracks: mostListenedTracksItems,
+				tracksWhoWereWithYou,
 				updatedAt
 			})
 		});

@@ -35,7 +35,12 @@
 		const userTickets = $userInfo?.tickets as number;
 
 		if (additionalItemsType === 'artists') {
-			const response = await updateMostListenedArtists(userEmail, artistsLimit, userTickets);
+			const response = await updateMostListenedArtists(
+				userEmail,
+				artistsLimit,
+				userTickets,
+				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems
+			);
 
 			if (!response) {
 				toastStore.set({
@@ -77,7 +82,12 @@
 				loadingMoreItems = false;
 			}, 1000);
 		} else if (additionalItemsType === 'tracks') {
-			const response = await updateMostListenedTracks(userEmail, tracksLimit, userTickets);
+			const response = await updateMostListenedTracks(
+				userEmail,
+				tracksLimit,
+				userTickets,
+				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems
+			);
 
 			if (!response) {
 				toastStore.set({
