@@ -47,7 +47,7 @@ export type UserInfo = {
 			artist: ArtistSpotify | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
 			nextFreeUpdate?: Date;
 		};
-		artistsWhoWereWithYou?: ArtistSpotify[] | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
+		artistsWhoWereWithYou?: ArtistSpotify[];
 	};
 	discoveries?: {
 		tracks: string[];

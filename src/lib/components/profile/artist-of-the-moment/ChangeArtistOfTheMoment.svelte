@@ -3,7 +3,7 @@
 	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
 
 	// Components
-	import ArtistCardOnProfile from '$lib/components/profile/ArtistCardOnProfile.svelte';
+	import ChangeArtistCardOnProfile from '$lib/components/profile/ChangeArtistCardOnProfile.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -33,11 +33,11 @@
 		if (!choosedArtist || !$userInfo?._id) return;
 
 		const updatedArtist = await updateArtistOfTheMoment(
-			$userInfo?._id,
+			$userInfo._id,
 			choosedArtist,
-			$userInfo?.email,
-			$userInfo?.tickets,
-			$userInfo?.artists?.artistOfTheMoment?.nextFreeUpdate
+			$userInfo.email,
+			$userInfo.tickets,
+			$userInfo.artists?.artistOfTheMoment?.nextFreeUpdate
 		);
 
 		if (updatedArtist) {
@@ -64,8 +64,8 @@
 <div class="flex w-full flex-col gap-4">
 	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">
 		<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
-				<ArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
+			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems ?? [] as artist}
+				<ChangeArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
 			{/each}
 		</div>
 
@@ -77,7 +77,7 @@
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 					{#each $userInfo.artists.artistsWhoWereWithYou as artist}
-						<ArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
+						<ChangeArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
 					{/each}
 				</div>
 			</div>

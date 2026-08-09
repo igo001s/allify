@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import ArtistCardOnProfile from '$lib/components/profile/ArtistCardOnProfile.svelte';
+	import SelectArtistCardOnProfile from '$lib/components/profile/SelectArtistCardOnProfile.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -56,7 +56,7 @@
 	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">
 		<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
-				<ArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
+				<SelectArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
 			{/each}
 		</div>
 
@@ -68,7 +68,7 @@
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 					{#each $userInfo.artists.artistsWhoWereWithYou as artist}
-						<ArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
+						<SelectArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
 					{/each}
 				</div>
 			</div>
