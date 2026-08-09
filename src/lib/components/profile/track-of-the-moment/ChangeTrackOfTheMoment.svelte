@@ -3,7 +3,7 @@
 	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
 
 	// Components
-	import ChangeTrackCardOnProfile from '../ChangeTrackCardOnProfile.svelte';
+	import ChangeTrackCardOnProfile from '$lib/components/profile/ChangeTrackCardOnProfile.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -33,11 +33,11 @@
 		if (!choosedTrack || !$userInfo?._id) return;
 
 		const updatedTrack = await updateTrackOfTheMoment(
-			$userInfo?._id,
+			$userInfo._id,
 			choosedTrack,
-			$userInfo?.email,
-			$userInfo?.tickets,
-			$userInfo?.tracks?.trackOfTheMoment?.nextFreeUpdate
+			$userInfo.email,
+			$userInfo.tickets,
+			$userInfo.tracks?.trackOfTheMoment?.nextFreeUpdate
 		);
 
 		if (updatedTrack) {
@@ -46,9 +46,12 @@
 
 				return {
 					...currentUser,
-					trackOfTheMoment: {
-						track: updatedTrack.track,
-						nextFreeUpdate: updatedTrack.nextFreeUpdate
+					tracks: {
+						...currentUser.tracks,
+						trackOfTheMoment: {
+							track: updatedTrack.track,
+							nextFreeUpdate: updatedTrack.nextFreeUpdate
+						}
 					}
 				};
 			});
@@ -73,7 +76,7 @@
 				</p>
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-					{#each $userInfo?.tracks?.tracksWhoWereWithYou as track}
+					{#each $userInfo?.tracks?.tracksWhoWereWithYou ?? [] as track}
 						<ChangeTrackCardOnProfile {track} {choosedTrack} {handleTrackSelection} />
 					{/each}
 				</div>
