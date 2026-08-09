@@ -102,7 +102,12 @@
 	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">
 		<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems ?? [] as track}
-				<ChangeTrackCardOnProfile {track} {choosedTrack} {handleTrackSelection} />
+				<ChangeTrackCardOnProfile
+					{track}
+					{choosedTrack}
+					{handleTrackSelection}
+					userInfoType="customTrack"
+				/>
 			{/each}
 		</div>
 
@@ -114,7 +119,12 @@
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 					{#each $userInfo?.tracks?.tracksWhoWereWithYou as track}
-						<ChangeTrackCardOnProfile {track} {choosedTrack} {handleTrackSelection} />
+						<ChangeTrackCardOnProfile
+							{track}
+							{choosedTrack}
+							{handleTrackSelection}
+							userInfoType="tracksWhoWereWithYou"
+						/>
 					{/each}
 				</div>
 			</div>

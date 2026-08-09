@@ -65,7 +65,12 @@
 	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">
 		<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems ?? [] as artist}
-				<ChangeArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
+				<ChangeArtistCardOnProfile
+					{artist}
+					{choosedArtist}
+					{handleArtistSelection}
+					userInfoType="artistOfTheMoment"
+				/>
 			{/each}
 		</div>
 
@@ -77,7 +82,12 @@
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 					{#each $userInfo.artists.artistsWhoWereWithYou as artist}
-						<ChangeArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
+						<ChangeArtistCardOnProfile
+							{artist}
+							{choosedArtist}
+							{handleArtistSelection}
+							userInfoType="artistsWhoWereWithYou"
+						/>
 					{/each}
 				</div>
 			</div>

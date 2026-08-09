@@ -11,21 +11,28 @@
 
 	// Props
 	export let artist: ArtistSpotify;
-	export let choosedArtist: ArtistSpotify | undefined = undefined;
+	export let choosedArtist: ArtistSpotify | undefined;
 	export let handleArtistSelection: (artist: ArtistSpotify) => void;
+
+	export let userInfoType: 'artistOfTheMoment' | 'customArtist' | 'artistsWhoWereWithYou';
+
+	$: currentArtist =
+		userInfoType === 'artistsWhoWereWithYou'
+			? $userInfo?.artists?.artistsWhoWereWithYou?.find(
+					(currentArtist) => currentArtist.id === artist.id
+				)
+			: $userInfo?.artists?.[userInfoType]?.artist;
 </script>
 
 <button
 	class={`${
-		choosedArtist?.id === artist.id ||
-		(!choosedArtist && $userInfo?.artists?.artistOfTheMoment?.artist?.id === artist.id)
+		choosedArtist?.id === artist.id || (!choosedArtist && currentArtist?.id === artist.id)
 			? 'border-brand-primary bg-brand-primary/5'
 			: 'border-s-muted bg-s-muted'
 	}
 	relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-5 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
 	aria-label={$translationsStore.profilePage.profilePageChangeYourArtistChooseArtistAriaLabel}
-	disabled={choosedArtist === undefined &&
-		$userInfo?.artists?.artistOfTheMoment?.artist?.id === artist.id}
+	disabled={choosedArtist === undefined && currentArtist?.id === artist.id}
 	on:click={() => handleArtistSelection(artist)}
 >
 	{#if artist.image}
@@ -50,8 +57,7 @@
 
 	<SpotifyIcon
 		iconSvgClass={`${
-			choosedArtist?.id === artist.id ||
-			(!choosedArtist && $userInfo?.artists?.artistOfTheMoment?.artist?.id === artist.id)
+			choosedArtist?.id === artist.id || (!choosedArtist && currentArtist?.id === artist.id)
 				? 'text-brand-primary'
 				: 'text-t-secondary/70'
 		} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
