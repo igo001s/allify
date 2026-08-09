@@ -347,6 +347,7 @@ export const zh = {
 			'选择另一位艺人，并为其添加一个能表达你此刻感受、经历或回忆的标题。',
 		profilePageChangeYourCustomMusicParagraph2:
 			'选择另一首歌曲，并为它添加一个能表达你此刻感受、经历或回忆的标题。',
+		profilePageChangeYourTracksWhoWereWithYou: '曾经陪伴过你的歌曲',
 		profilePageChangeYourItemsModalCloseModal: '关闭',
 		profilePageChangeYourItemsModalSaveChanges: '保存更改',
 		profilePageSelectYourItemsModalCloseModal: '关闭',

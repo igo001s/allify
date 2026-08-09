@@ -402,6 +402,7 @@ export const es = {
 			'Elige otro artista y ponle un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
 		profilePageChangeYourCustomMusicParagraph2:
 			'Elige otra canción y ponle un título que represente lo que estás sintiendo, viviendo o recordando en este momento.',
+		profilePageChangeYourTracksWhoWereWithYou: 'Canciones que han estado contigo',
 		profilePageChangeYourItemsModalCloseModal: 'Cerrar',
 		profilePageChangeYourItemsModalSaveChanges: 'Guardar cambios',
 		profilePageSelectYourItemsModalCloseModal: 'Cerrar',

@@ -389,6 +389,7 @@ export const ru = {
 			'Выберите другого исполнителя и дайте ему название, которое отражает то, что вы сейчас чувствуете, переживаете или вспоминаете.',
 		profilePageChangeYourCustomMusicParagraph2:
 			'Выберите другой трек и дайте ему название, которое отражает то, что вы сейчас чувствуете, переживаете или вспоминаете.',
+		profilePageChangeYourTracksWhoWereWithYou: 'Песни, которые были с вами',
 		profilePageChangeYourItemsModalCloseModal: 'Закрыть',
 		profilePageChangeYourItemsModalSaveChanges: 'Сохранить изменения',
 		profilePageSelectYourItemsModalCloseModal: 'Закрыть',

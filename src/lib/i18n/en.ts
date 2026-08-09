@@ -375,6 +375,7 @@ export const en = {
 			'Choose another artist and give them a title that represents what you are feeling, experiencing or remembering right now.',
 		profilePageChangeYourCustomMusicParagraph2:
 			'Choose another song and give it a title that represents what you are feeling, experiencing or remembering right now.',
+		profilePageChangeYourTracksWhoWereWithYou: 'Songs that have been with you',
 		profilePageChangeYourItemsModalCloseModal: 'Close',
 		profilePageChangeYourItemsModalSaveChanges: 'Save changes',
 		profilePageSelectYourItemsModalCloseModal: 'Close',

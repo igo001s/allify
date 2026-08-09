@@ -378,6 +378,7 @@ export const ja = {
 			'別のアーティストを選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
 		profilePageChangeYourCustomMusicParagraph2:
 			'別の楽曲を選び、今感じていること、経験していること、思い出していることを表すタイトルを付けましょう。',
+		profilePageChangeYourTracksWhoWereWithYou: 'あなたと一緒にいた曲',
 		profilePageChangeYourItemsModalCloseModal: '閉じる',
 		profilePageChangeYourItemsModalSaveChanges: '変更を保存',
 		profilePageSelectYourItemsModalCloseModal: '閉じる',

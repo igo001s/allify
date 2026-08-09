@@ -407,6 +407,7 @@ export const fr = {
 			'Choisissez un autre artiste et donnez-lui un titre qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
 		profilePageChangeYourCustomMusicParagraph2:
 			'Choisissez un autre morceau et donnez-lui un titre qui représente ce que vous ressentez, vivez ou vous rappelez en ce moment.',
+		profilePageChangeYourTracksWhoWereWithYou: 'Chansons qui vous ont accompagné',
 		profilePageChangeYourItemsModalCloseModal: 'Fermer',
 		profilePageChangeYourItemsModalSaveChanges: 'Enregistrer les modifications',
 		profilePageSelectYourItemsModalCloseModal: 'Fermer',
