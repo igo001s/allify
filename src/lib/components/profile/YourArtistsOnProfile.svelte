@@ -1,8 +1,8 @@
 <script lang="ts">
 	// Components
 	import YourArtistOnProfileItem from './YourArtistsOnProfileItem.svelte';
-	import EmptyArtistOfTheMoment from './EmptyArtistOfTheMoment.svelte';
-	import EmptyCustomArtist from './EmptyCustomArtist.svelte';
+	import EmptyArtistOfTheMoment from './artist-of-the-moment/EmptyArtistOfTheMoment.svelte';
+	import EmptyCustomArtist from './custom-artist/EmptyCustomArtist.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';

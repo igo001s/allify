@@ -53,16 +53,10 @@
 </script>
 
 <div class="flex w-full flex-col gap-4">
-	<div class="overflow-y-auto pr-2 max-h-60 sm:max-h-96">
-		<div
-			class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4"
-		>
+	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">
+		<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
-				<ArtistCardOnProfile
-					{artist}
-					{choosedArtist}
-					{handleArtistSelection}
-				/>
+				<ArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
 			{/each}
 		</div>
 
@@ -72,15 +66,9 @@
 					{$translationsStore.profilePage.profilePageSelectYourArtistsWhoWereWithYou}
 				</p>
 
-				<div
-					class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4"
-				>
+				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
 					{#each $userInfo.artists.artistsWhoWereWithYou as artist}
-						<ArtistCardOnProfile
-							{artist}
-							{choosedArtist}
-							{handleArtistSelection}
-						/>
+						<ArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
 					{/each}
 				</div>
 			</div>

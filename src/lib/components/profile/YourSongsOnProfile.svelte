@@ -1,8 +1,8 @@
 <script lang="ts">
 	// Components
 	import YourSongsOnProfileItem from './YourSongsOnProfileItem.svelte';
-	import EmptyTrackOfTheMoment from './EmptyTrackOfTheMoment.svelte';
-	import EmptyCustomTrack from './EmptyCustomTrack.svelte';
+	import EmptyTrackOfTheMoment from './track-of-the-moment/EmptyTrackOfTheMoment.svelte';
+	import EmptyCustomTrack from './custom-track/EmptyCustomTrack.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';

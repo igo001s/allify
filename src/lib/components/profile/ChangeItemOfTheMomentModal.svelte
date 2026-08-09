@@ -4,8 +4,8 @@
 
 	// Components
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
-	import ChangeTrackOfTheMoment from './ChangeTrackOfTheMoment.svelte';
-	import ChangeArtistOfTheMoment from './ChangeArtistOfTheMoment.svelte';
+	import ChangeTrackOfTheMoment from './track-of-the-moment/ChangeTrackOfTheMoment.svelte';
+	import ChangeArtistOfTheMoment from './artist-of-the-moment/ChangeArtistOfTheMoment.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

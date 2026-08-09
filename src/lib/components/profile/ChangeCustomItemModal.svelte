@@ -4,8 +4,8 @@
 
 	// Components
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
-	import ChangeCustomArtist from '$lib/components/profile/ChangeCustomArtist.svelte';
-	import ChangeCustomTrack from '$lib/components/profile/ChangeCustomTrack.svelte';
+	import ChangeCustomArtist from '$lib/components/profile/custom-artist/ChangeCustomArtist.svelte';
+	import ChangeCustomTrack from '$lib/components/profile/custom-track/ChangeCustomTrack.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
