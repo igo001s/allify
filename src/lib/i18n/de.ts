@@ -341,6 +341,7 @@ export const de = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Künstler des Moments für das Profil auswählen',
 		profilePageChangeYourArtistChooseArtistFollowers: 'Follower',
+		profilePageChangeYourArtistsWhoWereWithYou: 'Künstler, die bereits bei dir waren',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Du kannst kostenlos aktualisieren in',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',
@@ -371,6 +372,7 @@ export const de = {
 		profilePageSelectYourArtistChooseArtistAriaLabel:
 			'Künstler des Moments für das Profil auswählen',
 		profilePageSelectYourArtistChooseArtistFollowers: 'Follower',
+		profilePageSelectYourArtistsWhoWereWithYou: 'Künstler, die bereits bei dir waren',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',
 		profilePageSelectYourCustomArtistCloseModalAriaLabel:

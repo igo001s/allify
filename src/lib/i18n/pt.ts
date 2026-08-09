@@ -330,6 +330,7 @@ export const pt = {
 			'Escolha o artista que melhor representa o que você está ouvindo no momento.',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'Selecionar artista do momento para o perfil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
+		profilePageChangeYourArtistsWhoWereWithYou: 'Artistas que já estiveram com você',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Você poderá atualizar gratuitamente em',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
@@ -358,6 +359,7 @@ export const pt = {
 			'Escolha o artista que melhor representa o que você está ouvindo no momento.',
 		profilePageSelectYourArtistChooseArtistAriaLabel: 'Selecionar artista do momento para o perfil',
 		profilePageSelectYourArtistChooseArtistFollowers: 'seguidores',
+		profilePageSelectYourArtistsWhoWereWithYou: 'Artistas que já estiveram com você',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Continue desbloqueando mais artistas e personalizando ainda mais o seu perfil.',
 		profilePageSelectYourCustomArtistCloseModalAriaLabel:

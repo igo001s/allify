@@ -331,6 +331,7 @@ export const ru = {
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'Выбрать исполнителя момента для профиля',
 		profilePageChangeYourArtistChooseArtistFollowers: 'подписчиков',
+		profilePageChangeYourArtistsWhoWereWithYou: 'Артисты, которые уже были с вами',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Вы сможете бесплатно обновить через',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персональным.',
@@ -358,6 +359,7 @@ export const ru = {
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageSelectYourArtistChooseArtistAriaLabel: 'Выбрать исполнителя момента для профиля',
 		profilePageSelectYourArtistChooseArtistFollowers: 'подписчиков',
+		profilePageSelectYourArtistsWhoWereWithYou: 'Артисты, которые уже были с вами',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персональным.',
 		profilePageSelectYourCustomArtistCloseModalAriaLabel:

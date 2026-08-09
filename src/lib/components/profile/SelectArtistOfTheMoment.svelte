@@ -1,6 +1,6 @@
 <script lang="ts">
-	// Assets
-	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
+	// Components
+	import ArtistCardOnProfile from '$lib/components/profile/ArtistCardOnProfile.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -53,45 +53,38 @@
 </script>
 
 <div class="flex w-full flex-col gap-4">
-	<div
-		class="grid max-h-60 grid-cols-2 gap-4 overflow-y-auto pr-2 sm:max-h-96 sm:grid-cols-3 sm:gap-6 md:grid-cols-4"
-	>
-		{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
-			<button
-				class={`${
-					choosedArtist?.id === artist.id
-						? 'border-brand-primary bg-brand-primary/5'
-						: 'border-s-muted bg-s-muted'
-				}
-						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-5 transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5`}
-				aria-label={$translationsStore.profilePage.profilePageSelectYourArtistChooseArtistAriaLabel}
-				on:click={() => handleArtistSelection(artist)}
-			>
-				{#if artist.image}
-					<img
-						src={artist.image.url}
-						alt={artist.name}
-						class="h-14 w-14 rounded-lg object-cover sm:h-20 sm:w-20"
-						loading="lazy"
-					/>
-				{/if}
-
-				<div class="flex w-full flex-col gap-0.5 text-center">
-					<p class="line-clamp-2 text-[11px] leading-tight font-semibold text-t-primary sm:text-xs">
-						{artist.name}
-					</p>
-
-					<p class="line-clamp-1 text-[9px] text-t-secondary/70 sm:text-[10px]">
-						{artist.followers.toLocaleString()}
-						{$translationsStore.profilePage.profilePageSelectYourArtistChooseArtistFollowers}
-					</p>
-				</div>
-
-				<SpotifyIcon
-					iconSvgClass={`${choosedArtist?.id === artist.id ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
+	<div class="overflow-y-auto pr-2 max-h-60 sm:max-h-96">
+		<div
+			class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4"
+		>
+			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
+				<ArtistCardOnProfile
+					{artist}
+					{choosedArtist}
+					{handleArtistSelection}
 				/>
-			</button>
-		{/each}
+			{/each}
+		</div>
+
+		{#if $userInfo?.artists?.artistsWhoWereWithYou?.length}
+			<div class="mt-4 flex flex-col gap-3">
+				<p class="text-sm font-semibold text-t-primary">
+					{$translationsStore.profilePage.profilePageSelectYourArtistsWhoWereWithYou}
+				</p>
+
+				<div
+					class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4"
+				>
+					{#each $userInfo.artists.artistsWhoWereWithYou as artist}
+						<ArtistCardOnProfile
+							{artist}
+							{choosedArtist}
+							{handleArtistSelection}
+						/>
+					{/each}
+				</div>
+			</div>
+		{/if}
 	</div>
 
 	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
