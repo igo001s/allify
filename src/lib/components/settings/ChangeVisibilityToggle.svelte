@@ -25,6 +25,8 @@
 			$userInfo?.profileVisibility?.nextFreeUpdate
 		);
 
+		if (!updatedVisibility) return;
+
 		userInfo.update((currentUser) => {
 			if (!currentUser) return currentUser;
 
