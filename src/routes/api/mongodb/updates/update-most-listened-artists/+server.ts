@@ -52,7 +52,8 @@ export const POST: RequestHandler = async ({ request }) => {
 				limit,
 				updatedAt,
 				mostListenedArtist,
-				mostListenedArtists
+				mostListenedArtists,
+				artistWhoWereWithYou
 			}),
 			{ status: 200 }
 		);

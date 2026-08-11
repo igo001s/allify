@@ -22,6 +22,7 @@
 
 		<PossibleActionsMyMusicalProfile
 			lastSync={$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.updatedAt}
+			sessionType="tracks"
 		/>
 	</div>
 

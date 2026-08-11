@@ -10,8 +10,8 @@
 	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
-	import { updateMostListenedTracks } from '$lib/services/user/updates/updateMostListenedTracks';
-	import { updateMostListenedArtists } from '$lib/services/user/updates/updateMostListenedArtists';
+	import { updateMostListenedTracksNewLimit } from '$lib/services/user/updates/updateMostListenedTracksNewLimit';
+	import { updateMostListenedArtistsNewLimit } from '$lib/services/user/updates/updateMostListenedArtistsNewLimit';
 
 	// Props
 	export let additionalItemsType: 'artists' | 'tracks';
@@ -35,7 +35,7 @@
 		const userTickets = $userInfo?.tickets as number;
 
 		if (additionalItemsType === 'artists') {
-			const response = await updateMostListenedArtists(
+			const response = await updateMostListenedArtistsNewLimit(
 				userEmail,
 				artistsLimit,
 				userTickets,
@@ -82,7 +82,7 @@
 				loadingMoreItems = false;
 			}, 1000);
 		} else if (additionalItemsType === 'tracks') {
-			const response = await updateMostListenedTracks(
+			const response = await updateMostListenedTracksNewLimit(
 				userEmail,
 				tracksLimit,
 				userTickets,

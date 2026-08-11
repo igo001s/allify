@@ -5,13 +5,10 @@ import { dev } from '$app/environment';
 import { useTicket } from '$lib/services/user/tickets/useTicket';
 import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
 
-// Stores
-import { showAddTickets } from '$lib/stores/showAddTickets.store';
-
 // Types
 import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
-export async function updateMostListenedArtists(
+export async function updateMostListenedArtistsNewLimit(
 	email: string,
 	limit: number,
 	tickets: number,
@@ -26,7 +23,7 @@ export async function updateMostListenedArtists(
 			throw new Error('Failed to use ticket');
 		}
 
-		const response = await getMostListenedArtists(limit);
+		const response = await getMostListenedArtists(limit + 5);
 
 		if (!response) {
 			throw new Error('Failed to get most listened artists');
@@ -52,7 +49,7 @@ export async function updateMostListenedArtists(
 		});
 
 		if (!updateResponse.ok) {
-			throw new Error('Failed to update most listened artists');
+			throw new Error('Failed to update most listened artists with new limit');
 		}
 
 		const updatedData = await updateResponse.json();
@@ -63,7 +60,7 @@ export async function updateMostListenedArtists(
 		};
 	} catch (error) {
 		if (dev) {
-			console.error('User updateMostListenedArtists error:', error);
+			console.error('User updateMostListenedArtistsNewLimit error:', error);
 		}
 
 		return;

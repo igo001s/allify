@@ -8,7 +8,7 @@ import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListen
 // Types
 import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
-export async function updateMostListenedTracks(
+export async function updateMostListenedTracksNewLimit(
 	email: string,
 	limit: number,
 	tickets: number,
@@ -23,7 +23,7 @@ export async function updateMostListenedTracks(
 			throw new Error('Failed to use ticket');
 		}
 
-		const response = await getMostListenedTracks(limit);
+		const response = await getMostListenedTracks(limit + 5);
 
 		if (!response) {
 			throw new Error('Failed to get most listened tracks');
@@ -49,7 +49,7 @@ export async function updateMostListenedTracks(
 		});
 
 		if (!updateResponse.ok) {
-			throw new Error('Failed to update most listened tracks');
+			throw new Error('Failed to update most listened tracks with new limit');
 		}
 
 		const updatedData = await updateResponse.json();
@@ -60,7 +60,7 @@ export async function updateMostListenedTracks(
 		};
 	} catch (error) {
 		if (dev) {
-			console.error('User updateMostListenedTracks error:', error);
+			console.error('User updateMostListenedTracksNewLimit error:', error);
 		}
 
 		return;
