@@ -86,7 +86,7 @@
 			{#if $userInfo?.profileVisibility.nextFreeUpdate && new Date($userInfo.profileVisibility.nextFreeUpdate) > new Date()}
 				{$translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainMessage}
 
-				<strong class="font-semibold text-t-primary">
+				<strong class="font-medium text-t-primary">
 					{new Date($userInfo.profileVisibility.nextFreeUpdate).toLocaleString(
 						$translationsStore.locale,
 						{

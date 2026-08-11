@@ -138,7 +138,7 @@
 		{#if $userInfo?.artists?.customArtist?.nextFreeUpdate && new Date($userInfo.artists.customArtist.nextFreeUpdate) > new Date()}
 			{$translationsStore.profilePage.profilePageChangeYourArtistTimeToNextFreeUpdate}
 
-			<strong class="font-semibold text-t-primary">
+			<strong class="font-medium text-t-primary">
 				{new Date($userInfo.artists.customArtist.nextFreeUpdate).toLocaleString(
 					$translationsStore.locale,
 					{

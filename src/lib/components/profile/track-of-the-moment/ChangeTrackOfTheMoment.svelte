@@ -98,7 +98,7 @@
 		{#if $userInfo?.tracks?.trackOfTheMoment?.nextFreeUpdate && new Date($userInfo.tracks.trackOfTheMoment.nextFreeUpdate) > new Date()}
 			{$translationsStore.profilePage.profilePageChangeYourMusicTimeToNextFreeUpdate}
 
-			<strong class="font-semibold text-t-primary">
+			<strong class="font-medium text-t-primary">
 				{new Date($userInfo.tracks.trackOfTheMoment.nextFreeUpdate).toLocaleString(
 					$translationsStore.locale,
 					{
