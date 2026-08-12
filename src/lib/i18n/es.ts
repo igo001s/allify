@@ -183,7 +183,10 @@ export const es = {
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostrar +5 canciones',
 		myMusicalProfilePageCrownIconAltText: 'Ícono de corona',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Error al cargar más artistas',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Error al cargar más canciones'
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Error al cargar más canciones',
+		myMusicalProfilePageUpdateArtistsSuccessToast:
+			'Artistas más escuchados actualizados con éxito!',
+		myMusicalProfilePageUpdateTracksSuccessToast: 'Canciones más escuchadas actualizadas con éxito!'
 	},
 	discoveriesPage: {
 		title: 'Descubrimientos Musicales | Allify',

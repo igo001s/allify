@@ -5,9 +5,6 @@ import { dev } from '$app/environment';
 import { useTicket } from '$lib/services/user/tickets/useTicket';
 import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
 
-// Stores
-import { showAddTickets } from '$lib/stores/showAddTickets.store';
-
 // Types
 import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
@@ -18,7 +15,7 @@ export async function updateMostListenedArtists(
 	currentMostListenedArtists?: ArtistSpotify[]
 ) {
 	try {
-		if (!email || !tickets || !limit) return;
+		if (!email || !limit) return;
 
 		const responseUseTicket = await useTicket(email, tickets);
 

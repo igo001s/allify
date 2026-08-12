@@ -180,7 +180,9 @@ export const ja = {
 		myMusicalProfilePageCrownIconAltText: '王冠アイコン',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
 			'アーティストの追加読み込み中にエラーが発生しました',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: '曲の追加読み込み中にエラーが発生しました'
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: '曲の追加読み込み中にエラーが発生しました',
+		myMusicalProfilePageUpdateArtistsSuccessToast: 'よく聴くアーティストが正常に更新されました！',
+		myMusicalProfilePageUpdateTracksSuccessToast: 'よく聴く曲が正常に更新されました！'
 	},
 	discoveriesPage: {
 		title: '音乐发现 | Allify',

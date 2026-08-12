@@ -15,7 +15,7 @@ export async function updateMostListenedTracks(
 	currentMostListenedTracks?: TrackSpotify[]
 ) {
 	try {
-		if (!email || !tickets || !limit) return;
+		if (!email || !limit) return;
 
 		const responseUseTicket = await useTicket(email, tickets);
 

@@ -170,7 +170,9 @@ export const zh = {
 		myMusicalProfilePageShowMoreFiveTracksButton: '显示 +5 歌曲',
 		myMusicalProfilePageCrownIconAltText: '皇冠图标',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast: '加载更多艺术家时出错',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: '加载更多歌曲时出错'
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: '加载更多歌曲时出错',
+		myMusicalProfilePageUpdateArtistsSuccessToast: '最常听的艺术家已成功更新！',
+		myMusicalProfilePageUpdateTracksSuccessToast: '最常听的歌曲已成功更新！'
 	},
 	discoveriesPage: {
 		title: '音楽の発見 | Allify',

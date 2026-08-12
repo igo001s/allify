@@ -181,7 +181,9 @@ export const en = {
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Show +5 tracks',
 		myMusicalProfilePageCrownIconAltText: 'Crown icon',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Error loading more artists',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Error loading more tracks'
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Error loading more tracks',
+		myMusicalProfilePageUpdateArtistsSuccessToast: 'Most listened artists updated successfully!',
+		myMusicalProfilePageUpdateTracksSuccessToast: 'Most listened tracks updated successfully!'
 	},
 	discoveriesPage: {
 		title: 'Music Discoveries | Allify',

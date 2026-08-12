@@ -181,7 +181,10 @@ export const de = {
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Zeige +5 Songs',
 		myMusicalProfilePageCrownIconAltText: 'Krone-Symbol',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Fehler beim Laden weiterer Künstler',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Fehler beim Laden weiterer Songs'
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Fehler beim Laden weiterer Songs',
+		myMusicalProfilePageUpdateArtistsSuccessToast:
+			'Meistgehörte Künstler erfolgreich aktualisiert!',
+		myMusicalProfilePageUpdateTracksSuccessToast: 'Meistgehörte Songs erfolgreich aktualisiert!'
 	},
 	discoveriesPage: {
 		title: 'Musikentdeckungen | Allify',

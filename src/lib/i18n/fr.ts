@@ -185,7 +185,11 @@ export const fr = {
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
 			'Erreur lors du chargement de plus d’artistes',
 		myMusicalProfilePageShowMoreFiveTracksErrorToast:
-			'Erreur lors du chargement de plus de chansons'
+			'Erreur lors du chargement de plus de chansons',
+		myMusicalProfilePageUpdateArtistsSuccessToast:
+			'Artistes les plus écoutés mis à jour avec succès !',
+		myMusicalProfilePageUpdateTracksSuccessToast:
+			'Chansons les plus écoutées mises à jour avec succès !'
 	},
 	discoveriesPage: {
 		title: 'Découvertes Musicales | Allify',

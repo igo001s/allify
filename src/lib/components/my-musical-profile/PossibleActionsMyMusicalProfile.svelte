@@ -6,6 +6,7 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateMostListenedArtists } from '$lib/services/user/updates/updateMostListenedArtists';
@@ -19,8 +20,7 @@
 		if (sessionType === 'artists') {
 			if (
 				$userInfo?.email &&
-				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit &&
-				$userInfo?.tickets
+				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit
 			) {
 				const response = await updateMostListenedArtists(
 					$userInfo?.email,
@@ -28,6 +28,13 @@
 					$userInfo?.tickets,
 					$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems
 				);
+
+				toastStore.set({
+					showToast: true,
+					toastType: 'success',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage.myMusicalProfilePageUpdateArtistsSuccessToast
+				});
 
 				userInfo.update((currentUser) => {
 					if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
@@ -57,8 +64,7 @@
 		} else if (sessionType === 'tracks') {
 			if (
 				$userInfo?.email &&
-				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.tracksLimit &&
-				$userInfo?.tickets
+				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.tracksLimit
 			) {
 				const response = await updateMostListenedTracks(
 					$userInfo?.email,
@@ -90,6 +96,13 @@
 							tracksWhoWereWithYou: response.tracksWhoWereWithYou
 						}
 					};
+				});
+
+				toastStore.set({
+					showToast: true,
+					toastType: 'success',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage.myMusicalProfilePageUpdateTracksSuccessToast
 				});
 			}
 		}
