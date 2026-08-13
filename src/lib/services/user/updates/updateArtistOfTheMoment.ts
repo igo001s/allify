@@ -3,6 +3,7 @@ import { dev } from '$app/environment';
 
 // Services
 import { useTicket } from '../tickets/useTicket';
+import { returnTicket } from '../tickets/returnTicket';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
@@ -46,9 +47,10 @@ export async function updateArtistOfTheMoment(
 			})
 		});
 
-		if (!updateArtistOfTheMomentResponse.ok) {
-			const error = await updateArtistOfTheMomentResponse.json();
-			throw new Error(error.error);
+		if (!updateArtistOfTheMomentResponse.ok && tickets) {
+			await returnTicket(id, tickets);
+
+			throw new Error('Failed to update artist of the moment');
 		}
 
 		const parsedUpdateArtistOfTheMoment = await updateArtistOfTheMomentResponse.json();

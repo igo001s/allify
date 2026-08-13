@@ -3,6 +3,7 @@ import { dev } from '$app/environment';
 
 // Services
 import { useTicket } from '../tickets/useTicket';
+import { returnTicket } from '../tickets/returnTicket';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
@@ -46,10 +47,10 @@ export async function updateTrackOfTheMoment(
 			})
 		});
 
-		if (!updateTrackOfTheMomentResponse.ok) {
-			const error = await updateTrackOfTheMomentResponse.json();
-
-			throw new Error(error.error || 'Failed to update track of the moment');
+		if (!updateTrackOfTheMomentResponse.ok && tickets) {
+			await returnTicket(id, tickets);
+			
+			throw new Error('Failed to update track of the moment');
 		}
 
 		const parsedUpdateTrackOfTheMoment = await updateTrackOfTheMomentResponse.json();
