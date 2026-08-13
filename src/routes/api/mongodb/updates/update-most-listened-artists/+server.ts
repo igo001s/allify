@@ -4,6 +4,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 // Server
 import { connectToMongoDB } from '$lib/server/mongodb';
 
+// MongoDB
+import { ObjectId } from 'mongodb';
+
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
 
@@ -18,10 +21,10 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	}
 
-	const { email, limit, updatedAt, mostListenedArtist, mostListenedArtists, artistWhoWereWithYou } =
+	const { id, limit, updatedAt, mostListenedArtist, mostListenedArtists, artistWhoWereWithYou } =
 		await request.json();
 
-	if (!email || !limit || !updatedAt || !mostListenedArtist || !mostListenedArtists) {
+	if (!id || !limit || !updatedAt || !mostListenedArtist || !mostListenedArtists) {
 		return new Response(JSON.stringify({ error: 'Missing required fields' }), {
 			status: 400
 		});
@@ -33,7 +36,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		const users = db?.collection('users');
 
 		await users?.updateOne(
-			{ email },
+			{ _id: new ObjectId(id) },
 			{
 				$set: {
 					'connectedStreamings.spotify.mostListenedArtists.artistsLimit': limit,

@@ -8,19 +8,22 @@ import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListen
 // Types
 import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
+// MongoDB
+import type { ObjectId } from 'mongodb';
+
 export async function updateMostListenedTracksNewLimit(
-	email: string,
+	id: ObjectId,
 	limit: number,
 	tickets: number,
 	currentMostListenedTracks?: TrackSpotify[]
 ) {
 	try {
-		if (!email || !tickets || !limit) return;
+		if (!id || !limit) return;
 
-		const responseUseTicket = await useTicket(email, tickets);
+		const responseUseTicket = await useTicket(id, tickets);
 
 		if (!responseUseTicket) {
-			throw new Error('Failed to use ticket');
+			return;
 		}
 
 		const response = await getMostListenedTracks(limit + 5);
@@ -39,7 +42,7 @@ export async function updateMostListenedTracksNewLimit(
 		const updateResponse = await fetch('/api/mongodb/updates/update-most-listened-tracks', {
 			method: 'POST',
 			body: JSON.stringify({
-				email,
+				id,
 				limit: tracksLimit,
 				mostListenedTrack: mostListenedTrackItem,
 				mostListenedTracks: mostListenedTracksItems,

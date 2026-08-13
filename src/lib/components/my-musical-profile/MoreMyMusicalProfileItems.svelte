@@ -6,12 +6,14 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
-	import { showAddTickets } from '$lib/stores/showAddTickets.store';
 	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateMostListenedTracksNewLimit } from '$lib/services/user/updates/updateMostListenedTracksNewLimit';
 	import { updateMostListenedArtistsNewLimit } from '$lib/services/user/updates/updateMostListenedArtistsNewLimit';
+
+	// MongoDb
+	import type { ObjectId } from 'mongodb';
 
 	// Props
 	export let additionalItemsType: 'artists' | 'tracks';
@@ -19,15 +21,9 @@
 	let loadingMoreItems = false;
 
 	async function handleLoadMoreMusicalItems() {
-		if (($userInfo?.tickets ?? 0) === 0) {
-			showAddTickets.set(true);
-
-			return;
-		}
-
 		loadingMoreItems = true;
 
-		const userEmail = $userInfo?.email as string;
+		const userId = $userInfo?._id as ObjectId;
 		const artistsLimit = $userInfo?.connectedStreamings.spotify?.mostListenedArtists
 			?.artistsLimit as number;
 		const tracksLimit = $userInfo?.connectedStreamings.spotify?.mostListenedTracks
@@ -36,7 +32,7 @@
 
 		if (additionalItemsType === 'artists') {
 			const response = await updateMostListenedArtistsNewLimit(
-				userEmail,
+				userId,
 				artistsLimit,
 				userTickets,
 				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems
@@ -83,7 +79,7 @@
 			}, 1000);
 		} else if (additionalItemsType === 'tracks') {
 			const response = await updateMostListenedTracksNewLimit(
-				userEmail,
+				userId,
 				tracksLimit,
 				userTickets,
 				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems

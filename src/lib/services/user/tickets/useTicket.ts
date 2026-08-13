@@ -4,9 +4,12 @@ import { dev } from '$app/environment';
 // Stores
 import { showAddTickets } from '$lib/stores/showAddTickets.store';
 
-export async function useTicket(email: string, tickets: number) {
+// MongoDB
+import type { ObjectId } from 'mongodb';
+
+export async function useTicket(id: ObjectId, tickets: number) {
 	try {
-		if (email && tickets <= 0) {
+		if (id && tickets <= 0) {
 			showAddTickets.set(true);
 
 			return false;
@@ -14,7 +17,7 @@ export async function useTicket(email: string, tickets: number) {
 
 		const response = await fetch('/api/mongodb/tickets/use-ticket', {
 			method: 'POST',
-			body: JSON.stringify({ email, tickets })
+			body: JSON.stringify({ id, tickets })
 		});
 
 		return response.json();
