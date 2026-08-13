@@ -2,6 +2,7 @@
 	// Assets
 	import ReloadIcon from '$lib/assets/images/icons/ReloadIcon.svelte';
 	import ShareIcon from '$lib/assets/images/icons/ShareIcon.svelte';
+	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -16,7 +17,11 @@
 	export let lastSync: Date | undefined;
 	export let sessionType: 'artists' | 'tracks';
 
+	let loadingUpdateItem = false;
+
 	async function handleUpdateClick() {
+		loadingUpdateItem = true;
+
 		if (sessionType === 'artists') {
 			if (
 				$userInfo?.email &&
@@ -105,6 +110,8 @@
 				});
 			}
 		}
+
+		loadingUpdateItem = false;
 	}
 </script>
 
@@ -125,14 +132,22 @@
 	<div class="flex gap-3">
 		<button
 			on:click={handleUpdateClick}
+			disabled={loadingUpdateItem}
 			class="group flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-lg border border-brand-primary/20 bg-white px-4 py-2.5 text-xs font-medium text-brand-primary transition-all hover:border-brand-primary/40 hover:bg-brand-primary/5 sm:flex-none"
 		>
-			<ReloadIcon
-				iconSvgClass="h-4 w-4 text-brand-primary transition-transform duration-200 group-hover:rotate-90"
-				iconAltText={$translationsStore.myMusicalProfilePage.myMusicalProfilePageReloadIconAltText}
-			/>
+			{#if loadingUpdateItem}
+				<DotsLoading
+					dotsTheme="base-primary"
+					animationClass="h-1 w-1"
+				/>
+			{:else}
+				<ReloadIcon
+					iconSvgClass="h-4 w-4 text-brand-primary transition-transform duration-200 group-hover:rotate-90"
+					iconAltText={$translationsStore.myMusicalProfilePage.myMusicalProfilePageReloadIconAltText}
+				/>
 
-			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageButtonUpdate}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageButtonUpdate}
+			{/if}
 		</button>
 
 		<button

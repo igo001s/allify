@@ -3,28 +3,30 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Props
-	export let dotsTheme: 'spotify' | 'deezer' | 'base-light' | 'base' = 'base';
+	export let dotsTheme: 'spotify' | 'deezer' | 'base-light' | 'base' | 'base-primary' = 'base';
 	export let animationAltText: string = $translationsStore.generalTexts.loadingComponentAriaLabel;
+	export let animationClass: string = 'h-1.5 w-1.5';
 
 	const platformColors = {
 		spotify: 'bg-spotify',
 		deezer: 'bg-deezer',
 		base: 'bg-s-inverse',
-		'base-light': 'bg-s-default'
+		'base-light': 'bg-s-default',
+		'base-primary': 'bg-brand-primary'
 	};
 </script>
 
 <div class="flex gap-2" aria-label={animationAltText} role="img">
 	<span
-		class="h-1.5 w-1.5 {platformColors[dotsTheme]} animate-bounce rounded-full"
+		class="{platformColors[dotsTheme]} {animationClass} animate-bounce rounded-full"
 		style="animation-delay: 0ms;"
 	></span>
 	<span
-		class="h-1.5 w-1.5 {platformColors[dotsTheme]} animate-bounce rounded-full"
+		class="{platformColors[dotsTheme]} {animationClass} animate-bounce rounded-full"
 		style="animation-delay: 150ms;"
 	></span>
 	<span
-		class="h-1.5 w-1.5 {platformColors[dotsTheme]} animate-bounce rounded-full"
+		class="{platformColors[dotsTheme]} {animationClass} animate-bounce rounded-full"
 		style="animation-delay: 300ms;"
 	></span>
 </div>
