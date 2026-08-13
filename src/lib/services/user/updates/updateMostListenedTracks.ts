@@ -4,7 +4,7 @@ import { dev } from '$app/environment';
 // Services
 import { useTicket } from '$lib/services/user/tickets/useTicket';
 import { returnTicket } from '$lib/services/user/tickets/returnTicket';
-import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
+import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListenedTracks';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
@@ -27,49 +27,49 @@ export async function updateMostListenedTracks(
 			throw new Error('Failed to use ticket');
 		}
 
-		const getMostListenedArtistsResponse = await getMostListenedArtists(limit);
+		const getMostListenedTracksResponse = await getMostListenedTracks(limit);
 
-		if (!getMostListenedArtistsResponse) {
+		if (!getMostListenedTracksResponse) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to get most listened artists');
+			throw new Error('Failed to get most listened tracks');
 		}
 
-		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } =
-			getMostListenedArtistsResponse;
+		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems, updatedAt } =
+			getMostListenedTracksResponse;
 
 		const artistsWhoWereWithYou =
 			currentMostListenedTracks?.filter(
-				(track) => !mostListenedArtistsItems.some((oldTrack) => oldTrack.id === track.id)
+				(track) => !mostListenedTracksItems.some((oldTrack) => oldTrack.id === track.id)
 			) ?? [];
 
-		const updateMostListenedArtistsResponse = await fetch(
-			'/api/mongodb/updates/update-most-listened-artists',
+		const updateMostListenedTracksResponse = await fetch(
+			'/api/mongodb/updates/update-most-listened-tracks',
 			{
 				method: 'POST',
 				body: JSON.stringify({
 					id,
-					limit: artistsLimit,
-					mostListenedArtist: mostListenedArtistItem,
-					mostListenedArtists: mostListenedArtistsItems,
+					limit: tracksLimit,
+					mostListenedTrack: mostListenedTrackItem,
+					mostListenedTracks: mostListenedTracksItems,
 					artistsWhoWereWithYou,
 					updatedAt
 				})
 			}
 		);
 
-		if (!updateMostListenedArtistsResponse.ok) {
+		if (!updateMostListenedTracksResponse.ok) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update most listened artists');
+			throw new Error('Failed to update most listened tracks');
 		}
 
-		const parsedUpdateMostListenedArtists = await updateMostListenedArtistsResponse.json();
+		const parsedUpdateMostListenedTracks = await updateMostListenedTracksResponse.json();
 
-		return parsedUpdateMostListenedArtists;
+		return parsedUpdateMostListenedTracks;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateMostListenedArtists error:', error);
+			console.error('User updateMostListenedTracks error:', error);
 		}
 
 		return;
