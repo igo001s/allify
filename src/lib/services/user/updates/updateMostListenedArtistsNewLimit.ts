@@ -4,6 +4,7 @@ import { dev } from '$app/environment';
 // Services
 import { useTicket } from '$lib/services/user/tickets/useTicket';
 import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
+import { returnTicket } from '../tickets/returnTicket';
 
 // Types
 import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
@@ -29,6 +30,8 @@ export async function updateMostListenedArtistsNewLimit(
 		const response = await getMostListenedArtists(limit + 5);
 
 		if (!response) {
+			await returnTicket(id, tickets);
+
 			throw new Error('Failed to get most listened artists');
 		}
 
@@ -52,6 +55,8 @@ export async function updateMostListenedArtistsNewLimit(
 		});
 
 		if (!updateResponse.ok) {
+			await returnTicket(id, tickets);
+
 			throw new Error('Failed to update most listened artists with new limit');
 		}
 
