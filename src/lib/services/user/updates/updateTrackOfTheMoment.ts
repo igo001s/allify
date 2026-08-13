@@ -28,28 +28,31 @@ export async function updateTrackOfTheMoment(
 
 		if (!freeUpdateIsAvailable && tickets) {
 			const ticketWasUsed = await useTicket(id, tickets);
-		
+
 			if (!ticketWasUsed) {
 				throw new Error('Failed to use ticket');
 			}
 		}
 
-		const updateTrackOfTheMomentResponse = await fetch('/api/mongodb/updates/update-track-of-the-moment', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				id,
-				trackOfTheMoment,
-				freeUpdateIsAvailable,
-				nextFreeUpdate
-			})
-		});
+		const updateTrackOfTheMomentResponse = await fetch(
+			'/api/mongodb/updates/update-track-of-the-moment',
+			{
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					id,
+					trackOfTheMoment,
+					freeUpdateIsAvailable,
+					nextFreeUpdate
+				})
+			}
+		);
 
 		if (!updateTrackOfTheMomentResponse.ok && tickets) {
 			await returnTicket(id, tickets);
-			
+
 			throw new Error('Failed to update track of the moment');
 		}
 

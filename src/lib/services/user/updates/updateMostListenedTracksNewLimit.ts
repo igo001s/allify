@@ -22,7 +22,7 @@ export async function updateMostListenedTracksNewLimit(
 		if (!id || !limit) return;
 
 		const ticketWasUsed = await useTicket(id, tickets);
-		
+
 		if (!ticketWasUsed) {
 			throw new Error('Failed to use ticket');
 		}
@@ -35,24 +35,28 @@ export async function updateMostListenedTracksNewLimit(
 			throw new Error('Failed to get most listened tracks');
 		}
 
-		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems, updatedAt } = getMostListenedTrackResponse;
+		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems, updatedAt } =
+			getMostListenedTrackResponse;
 
 		const tracksWhoWereWithYou =
 			currentMostListenedTracks?.filter(
 				(track) => !mostListenedTracksItems.some((oldTrack) => oldTrack.id === track.id)
 			) ?? [];
 
-		const updateMostListenedTracksResponse = await fetch('/api/mongodb/updates/update-most-listened-tracks', {
-			method: 'POST',
-			body: JSON.stringify({
-				id,
-				limit: tracksLimit,
-				mostListenedTrack: mostListenedTrackItem,
-				mostListenedTracks: mostListenedTracksItems,
-				tracksWhoWereWithYou,
-				updatedAt
-			})
-		});
+		const updateMostListenedTracksResponse = await fetch(
+			'/api/mongodb/updates/update-most-listened-tracks',
+			{
+				method: 'POST',
+				body: JSON.stringify({
+					id,
+					limit: tracksLimit,
+					mostListenedTrack: mostListenedTrackItem,
+					mostListenedTracks: mostListenedTracksItems,
+					tracksWhoWereWithYou,
+					updatedAt
+				})
+			}
+		);
 
 		if (!updateMostListenedTracksResponse.ok) {
 			await returnTicket(id, tickets);

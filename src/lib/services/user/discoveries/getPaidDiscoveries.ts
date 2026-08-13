@@ -18,7 +18,7 @@ export async function getPaidDiscoveries(
 		if (!id || !tickets || !mostListenedTracks || !mostListenedArtists) return;
 
 		const ticketWasUsed = await useTicket(id, tickets);
-			
+
 		if (!ticketWasUsed) {
 			throw new Error('Failed to use ticket');
 		}

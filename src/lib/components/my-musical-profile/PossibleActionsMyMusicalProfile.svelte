@@ -77,7 +77,7 @@
 
 					return {
 						...currentUser,
-						
+
 						connectedStreamings: {
 							...currentUser.connectedStreamings,
 							spotify: {

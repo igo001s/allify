@@ -28,24 +28,27 @@ export async function updateArtistOfTheMoment(
 
 		if (!freeUpdateIsAvailable && tickets) {
 			const ticketWasUsed = await useTicket(id, tickets);
-			
+
 			if (!ticketWasUsed) {
 				throw new Error('Failed to use ticket');
 			}
 		}
 
-		const updateArtistOfTheMomentResponse = await fetch('/api/mongodb/updates/update-artist-of-the-moment', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				id,
-				artistOfTheMoment,
-				freeUpdateIsAvailable,
-				nextFreeUpdate
-			})
-		});
+		const updateArtistOfTheMomentResponse = await fetch(
+			'/api/mongodb/updates/update-artist-of-the-moment',
+			{
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					id,
+					artistOfTheMoment,
+					freeUpdateIsAvailable,
+					nextFreeUpdate
+				})
+			}
+		);
 
 		if (!updateArtistOfTheMomentResponse.ok && tickets) {
 			await returnTicket(id, tickets);

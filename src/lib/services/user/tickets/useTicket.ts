@@ -26,12 +26,12 @@ export async function useTicket(id: ObjectId, tickets: number) {
 		}
 
 		const parsedUseTicket = await useTicketResponse.json();
-		
+
 		userInfo.update((currentUser) => {
 			if (currentUser) {
 				currentUser.tickets = parsedUseTicket.tickets;
 			}
-						
+
 			return currentUser;
 		});
 

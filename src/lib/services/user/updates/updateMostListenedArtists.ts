@@ -1,5 +1,5 @@
 // Svelte
-import { dev } from '$app/environment'
+import { dev } from '$app/environment';
 
 // Services
 import { useTicket } from '$lib/services/user/tickets/useTicket';
@@ -35,24 +35,28 @@ export async function updateMostListenedArtists(
 			throw new Error('Failed to get most listened artists');
 		}
 
-		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } = getMostListenedArtistsResponse;
+		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } =
+			getMostListenedArtistsResponse;
 
 		const artistsWhoWereWithYou =
 			currentMostListenedArtists?.filter(
 				(artist) => !mostListenedArtistsItems.some((oldArtist) => oldArtist.id === artist.id)
 			) ?? [];
 
-		const updateMostListenedArtistsResponse = await fetch('/api/mongodb/updates/update-most-listened-artists', {
-			method: 'POST',
-			body: JSON.stringify({
-				id,
-				limit: artistsLimit,
-				mostListenedArtist: mostListenedArtistItem,
-				mostListenedArtists: mostListenedArtistsItems,
-				artistsWhoWereWithYou,
-				updatedAt
-			})
-		});
+		const updateMostListenedArtistsResponse = await fetch(
+			'/api/mongodb/updates/update-most-listened-artists',
+			{
+				method: 'POST',
+				body: JSON.stringify({
+					id,
+					limit: artistsLimit,
+					mostListenedArtist: mostListenedArtistItem,
+					mostListenedArtists: mostListenedArtistsItems,
+					artistsWhoWereWithYou,
+					updatedAt
+				})
+			}
+		);
 
 		if (!updateMostListenedArtistsResponse.ok) {
 			await returnTicket(id, tickets);

@@ -25,28 +25,31 @@ export async function updateProfileVisibility(
 
 		if (!freeUpdateIsAvailable && tickets) {
 			const ticketWasUsed = await useTicket(id, tickets);
-			
+
 			if (!ticketWasUsed) {
 				throw new Error('Failed to use ticket');
 			}
 		}
 
-		const updateProfileVisibilityResponse = await fetch('/api/mongodb/user/update-profile-visibility', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				id,
-				profileVisibility,
-				freeUpdateIsAvailable,
-				nextFreeUpdate
-			})
-		});
+		const updateProfileVisibilityResponse = await fetch(
+			'/api/mongodb/user/update-profile-visibility',
+			{
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					id,
+					profileVisibility,
+					freeUpdateIsAvailable,
+					nextFreeUpdate
+				})
+			}
+		);
 
 		if (!updateProfileVisibilityResponse.ok && tickets) {
 			await returnTicket(id, tickets);
-			
+
 			throw new Error('Failed to update most listened artists');
 		}
 
