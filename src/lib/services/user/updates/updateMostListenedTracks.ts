@@ -1,66 +1,71 @@
 // Svelte
-import { dev } from '$app/environment';
+import { dev } from '$app/environment'
 
 // Services
 import { useTicket } from '$lib/services/user/tickets/useTicket';
-import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListenedTracks';
+import { returnTicket } from '$lib/services/user/tickets/returnTicket';
+import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
+
+// MongoDB
+import type { ObjectId } from 'mongodb';
 
 // Types
 import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 
 export async function updateMostListenedTracks(
-	email: string,
+	id: ObjectId,
 	limit: number,
 	tickets: number,
 	currentMostListenedTracks?: TrackSpotify[]
 ) {
 	try {
-		if (!email || !limit) return;
+		if (!id || !limit) return;
 
-		const responseUseTicket = await useTicket(email, tickets);
+		const ticketWasUsed = await useTicket(id, tickets);
 
-		if (!responseUseTicket) {
+		if (!ticketWasUsed) {
 			throw new Error('Failed to use ticket');
 		}
 
-		const response = await getMostListenedTracks(limit);
+		const getMostListenedArtistsResponse = await getMostListenedArtists(limit);
 
-		if (!response) {
-			throw new Error('Failed to get most listened tracks');
+		if (!getMostListenedArtistsResponse) {
+			await returnTicket(id, tickets);
+
+			throw new Error('Failed to get most listened artists');
 		}
 
-		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems, updatedAt } = response;
+		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } = getMostListenedArtistsResponse;
 
-		const tracksWhoWereWithYou =
+		const artistsWhoWereWithYou =
 			currentMostListenedTracks?.filter(
-				(track) => !mostListenedTracksItems.some((oldTrack) => oldTrack.id === track.id)
+				(track) => !mostListenedArtistsItems.some((oldTrack) => oldTrack.id === track.id)
 			) ?? [];
 
-		const updateResponse = await fetch('/api/mongodb/updates/update-most-listened-tracks', {
+		const updateMostListenedArtistsResponse = await fetch('/api/mongodb/updates/update-most-listened-artists', {
 			method: 'POST',
 			body: JSON.stringify({
-				email,
-				limit: tracksLimit,
-				mostListenedTrack: mostListenedTrackItem,
-				mostListenedTracks: mostListenedTracksItems,
-				tracksWhoWereWithYou,
+				id,
+				limit: artistsLimit,
+				mostListenedArtist: mostListenedArtistItem,
+				mostListenedArtists: mostListenedArtistsItems,
+				artistsWhoWereWithYou,
 				updatedAt
 			})
 		});
 
-		if (!updateResponse.ok) {
-			throw new Error('Failed to update most listened tracks');
+		if (!updateMostListenedArtistsResponse.ok) {
+			await returnTicket(id, tickets);
+
+			throw new Error('Failed to update most listened artists');
 		}
 
-		const updatedData = await updateResponse.json();
+		const parsedUpdateMostListenedArtists = await updateMostListenedArtistsResponse.json();
 
-		return {
-			...updatedData,
-			tickets: responseUseTicket.tickets
-		};
+		return parsedUpdateMostListenedArtists;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateMostListenedTracks error:', error);
+			console.error('User updateMostListenedArtists error:', error);
 		}
 
 		return;

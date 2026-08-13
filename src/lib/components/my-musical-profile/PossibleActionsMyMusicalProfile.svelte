@@ -23,7 +23,7 @@
 				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit
 			) {
 				const response = await updateMostListenedArtists(
-					$userInfo?.email,
+					$userInfo?._id,
 					$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit,
 					$userInfo?.tickets,
 					$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems
@@ -41,7 +41,6 @@
 
 					return {
 						...currentUser,
-						tickets: response.tickets,
 						connectedStreamings: {
 							...currentUser.connectedStreamings,
 							spotify: {
@@ -67,7 +66,7 @@
 				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.tracksLimit
 			) {
 				const response = await updateMostListenedTracks(
-					$userInfo?.email,
+					$userInfo?._id,
 					$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.tracksLimit,
 					$userInfo?.tickets,
 					$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems
@@ -78,7 +77,7 @@
 
 					return {
 						...currentUser,
-						tickets: response.tickets,
+						
 						connectedStreamings: {
 							...currentUser.connectedStreamings,
 							spotify: {

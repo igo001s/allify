@@ -35,7 +35,6 @@
 		const updatedTrack = await updateTrackOfTheMoment(
 			$userInfo._id,
 			choosedTrack,
-			$userInfo.email,
 			$userInfo.tickets,
 			$userInfo.tracks?.trackOfTheMoment?.nextFreeUpdate
 		);

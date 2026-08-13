@@ -35,7 +35,6 @@
 		const updatedArtist = await updateArtistOfTheMoment(
 			$userInfo._id,
 			choosedArtist,
-			$userInfo.email,
 			$userInfo.tickets,
 			$userInfo.artists?.artistOfTheMoment?.nextFreeUpdate
 		);

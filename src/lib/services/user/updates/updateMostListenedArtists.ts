@@ -1,45 +1,51 @@
 // Svelte
-import { dev } from '$app/environment';
+import { dev } from '$app/environment'
 
 // Services
 import { useTicket } from '$lib/services/user/tickets/useTicket';
+import { returnTicket } from '$lib/services/user/tickets/returnTicket';
 import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
+
+// MongoDB
+import type { ObjectId } from 'mongodb';
 
 // Types
 import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
 
 export async function updateMostListenedArtists(
-	email: string,
+	id: ObjectId,
 	limit: number,
 	tickets: number,
 	currentMostListenedArtists?: ArtistSpotify[]
 ) {
 	try {
-		if (!email || !limit) return;
+		if (!id || !limit) return;
 
-		const responseUseTicket = await useTicket(email, tickets);
+		const ticketWasUsed = await useTicket(id, tickets);
 
-		if (!responseUseTicket) {
+		if (!ticketWasUsed) {
 			throw new Error('Failed to use ticket');
 		}
 
-		const response = await getMostListenedArtists(limit);
+		const getMostListenedArtistsResponse = await getMostListenedArtists(limit);
 
-		if (!response) {
+		if (!getMostListenedArtistsResponse) {
+			await returnTicket(id, tickets);
+
 			throw new Error('Failed to get most listened artists');
 		}
 
-		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } = response;
+		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } = getMostListenedArtistsResponse;
 
 		const artistsWhoWereWithYou =
 			currentMostListenedArtists?.filter(
 				(artist) => !mostListenedArtistsItems.some((oldArtist) => oldArtist.id === artist.id)
 			) ?? [];
 
-		const updateResponse = await fetch('/api/mongodb/updates/update-most-listened-artists', {
+		const updateMostListenedArtistsResponse = await fetch('/api/mongodb/updates/update-most-listened-artists', {
 			method: 'POST',
 			body: JSON.stringify({
-				email,
+				id,
 				limit: artistsLimit,
 				mostListenedArtist: mostListenedArtistItem,
 				mostListenedArtists: mostListenedArtistsItems,
@@ -48,16 +54,15 @@ export async function updateMostListenedArtists(
 			})
 		});
 
-		if (!updateResponse.ok) {
+		if (!updateMostListenedArtistsResponse.ok) {
+			await returnTicket(id, tickets);
+
 			throw new Error('Failed to update most listened artists');
 		}
 
-		const updatedData = await updateResponse.json();
+		const parsedUpdateMostListenedArtists = await updateMostListenedArtistsResponse.json();
 
-		return {
-			...updatedData,
-			tickets: responseUseTicket.tickets
-		};
+		return parsedUpdateMostListenedArtists;
 	} catch (error) {
 		if (dev) {
 			console.error('User updateMostListenedArtists error:', error);

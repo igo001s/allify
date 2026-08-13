@@ -1,12 +1,9 @@
 // Svelte
 import { dev } from '$app/environment';
 
-// Stores
-import { showAddTickets } from '$lib/stores/showAddTickets.store';
-import { userInfo } from '$lib/stores/userInfo.store';
-
 // Services
 import { useTicket } from '../tickets/useTicket';
+import { returnTicket } from '../tickets/returnTicket';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
@@ -14,7 +11,6 @@ import type { ObjectId } from 'mongodb';
 export async function updateProfileVisibility(
 	id: ObjectId,
 	profileVisibility: string,
-	email?: string,
 	tickets?: number,
 	nextFreeUpdate?: Date
 ) {
@@ -27,29 +23,15 @@ export async function updateProfileVisibility(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable) {
-			if (tickets === undefined || tickets <= 0) {
-				showAddTickets.set(true);
-
-				return null;
-			}
-
-			const ticketWasUsed = await useTicket(email || '', tickets);
-
+		if (!freeUpdateIsAvailable && tickets) {
+			const ticketWasUsed = await useTicket(id, tickets);
+			
 			if (!ticketWasUsed) {
 				throw new Error('Failed to use ticket');
 			}
-
-			userInfo.update((currentUser) => {
-				if (currentUser) {
-					currentUser.tickets = currentUser.tickets - 1;
-				}
-
-				return currentUser;
-			});
 		}
 
-		const response = await fetch('/api/mongodb/user/update-profile-visibility', {
+		const updateProfileVisibilityResponse = await fetch('/api/mongodb/user/update-profile-visibility', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -62,14 +44,15 @@ export async function updateProfileVisibility(
 			})
 		});
 
-		if (!response.ok) {
-			const error = await response.json();
-			throw new Error(error.error);
+		if (!updateProfileVisibilityResponse.ok && tickets) {
+			await returnTicket(id, tickets);
+			
+			throw new Error('Failed to update most listened artists');
 		}
 
-		const data = await response.json();
+		const parsedupdateProfileVisibility = await updateProfileVisibilityResponse.json();
 
-		return data.profileVisibilityUpdated;
+		return parsedupdateProfileVisibility.profileVisibilityUpdated;
 	} catch (error) {
 		if (dev) {
 			console.error('User changeVisibility error:', error);
