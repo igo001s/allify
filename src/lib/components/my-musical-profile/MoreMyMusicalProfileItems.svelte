@@ -57,7 +57,6 @@
 
 				return {
 					...currentUser,
-					tickets: response.tickets,
 					connectedStreamings: {
 						...currentUser.connectedStreamings,
 						spotify: {
@@ -103,7 +102,6 @@
 
 				return {
 					...currentUser,
-					tickets: response.tickets,
 					connectedStreamings: {
 						...currentUser.connectedStreamings,
 						spotify: {

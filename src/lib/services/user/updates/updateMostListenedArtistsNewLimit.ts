@@ -21,28 +21,28 @@ export async function updateMostListenedArtistsNewLimit(
 	try {
 		if (!id || !limit) return;
 
-		const responseUseTicket = await useTicket(id, tickets);
-
-		if (!responseUseTicket) {
-			return;
+		const ticketWasUsed = await useTicket(id, tickets);
+		
+		if (!ticketWasUsed) {
+			throw new Error('Failed to use ticket');
 		}
+		
+		const getMostListenedArtistsResponse = await getMostListenedArtists(limit + 5);
 
-		const response = await getMostListenedArtists(limit + 5);
-
-		if (!response) {
+		if (!getMostListenedArtistsResponse) {
 			await returnTicket(id, tickets);
 
 			throw new Error('Failed to get most listened artists');
 		}
 
-		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } = response;
+		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } = getMostListenedArtistsResponse;
 
 		const artistsWhoWereWithYou =
 			currentMostListenedArtists?.filter(
 				(artist) => !mostListenedArtistsItems.some((oldArtist) => oldArtist.id === artist.id)
 			) ?? [];
 
-		const updateResponse = await fetch('/api/mongodb/updates/update-most-listened-artists', {
+		const updateMostListenedArtistsResponse = await fetch('/api/mongodb/updates/update-most-listened-artists', {
 			method: 'POST',
 			body: JSON.stringify({
 				id,
@@ -54,18 +54,15 @@ export async function updateMostListenedArtistsNewLimit(
 			})
 		});
 
-		if (!updateResponse.ok) {
+		if (!updateMostListenedArtistsResponse.ok) {
 			await returnTicket(id, tickets);
 
 			throw new Error('Failed to update most listened artists with new limit');
 		}
 
-		const updatedData = await updateResponse.json();
+		const parsedUpdateMostListenedArtists = await updateMostListenedArtistsResponse.json();
 
-		return {
-			...updatedData,
-			tickets: responseUseTicket.tickets
-		};
+		return parsedUpdateMostListenedArtists;
 	} catch (error) {
 		if (dev) {
 			console.error('User updateMostListenedArtistsNewLimit error:', error);
