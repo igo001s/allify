@@ -20,7 +20,6 @@
 		const updatedVisibility = await updateProfileVisibility(
 			$userInfo._id,
 			option,
-			$userInfo?.email,
 			$userInfo?.tickets,
 			$userInfo?.profileVisibility?.nextFreeUpdate
 		);
