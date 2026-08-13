@@ -1,41 +1,44 @@
 // Svelte
 import { dev } from '$app/environment';
 
+// MongoDB
+import type { ObjectId } from 'mongodb';
+
 export async function getFreeDiscoveries(
-	email: string,
+	id: ObjectId,
 	mostListenedArtists: string[],
 	mostListenedTracks: string[]
 ) {
 	try {
-		if (!email || !mostListenedTracks || !mostListenedArtists) return;
+		if (!id || !mostListenedTracks || !mostListenedArtists) return;
 
-		const response = await fetch('/api/ai/discoveries', {
+		const discoveriesResponse = await fetch('/api/ai/discoveries', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ mostListenedTracks, mostListenedArtists })
 		});
 
-		if (!response.ok) {
+		if (!discoveriesResponse.ok) {
 			throw new Error('Failed to fetch discoveries');
 		}
 
-		const { tracks, artists } = response.ok ? await response.json() : {};
+		const { tracks, artists } = await discoveriesResponse.json();
 
 		const updateDiscoveries = await fetch('/api/mongodb/updates/update-discoveries', {
 			method: 'POST',
-			body: JSON.stringify({ email, tracks, artists })
+			body: JSON.stringify({ id, tracks, artists })
 		});
 
 		if (!updateDiscoveries.ok) {
 			throw new Error('Failed to update discoveries');
 		}
 
-		const updateData = await updateDiscoveries.json();
+		const parsedUpdateDiscoveries = await updateDiscoveries.json();
 
 		return {
-			tracks: updateData.discoveries.tracks,
-			artists: updateData.discoveries.artists,
-			updatedAt: updateData.discoveries.updatedAt
+			tracks: parsedUpdateDiscoveries.discoveries.tracks,
+			artists: parsedUpdateDiscoveries.discoveries.artists,
+			updatedAt: parsedUpdateDiscoveries.discoveries.updatedAt
 		};
 	} catch (error) {
 		if (dev) {
