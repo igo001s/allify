@@ -1,12 +1,9 @@
 // Svelte
 import { dev } from '$app/environment';
 
-// Stores
-import { showAddTickets } from '$lib/stores/showAddTickets.store';
-import { userInfo } from '$lib/stores/userInfo.store';
-
 // Services
 import { useTicket } from '../tickets/useTicket';
+import { returnTicket } from '../tickets/returnTicket';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
@@ -18,7 +15,6 @@ export async function updateCustomArtist(
 	id: ObjectId,
 	customArtistTitle: string,
 	customArtist: ArtistSpotify,
-	email?: string,
 	tickets?: number,
 	nextFreeUpdate?: Date
 ) {
@@ -31,29 +27,15 @@ export async function updateCustomArtist(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable) {
-			if (tickets === undefined || tickets <= 0) {
-				showAddTickets.set(true);
-
-				return null;
-			}
-
-			const ticketWasUsed = await useTicket(email || '', tickets);
-
+		if (!freeUpdateIsAvailable && tickets) {
+			const ticketWasUsed = await useTicket(id, tickets);
+			
 			if (!ticketWasUsed) {
 				throw new Error('Failed to use ticket');
 			}
-
-			userInfo.update((currentUser) => {
-				if (currentUser) {
-					currentUser.tickets = currentUser.tickets - 1;
-				}
-
-				return currentUser;
-			});
 		}
 
-		const response = await fetch('/api/mongodb/updates/update-custom-artist', {
+		const updateCustomArtistResponse = await fetch('/api/mongodb/updates/update-custom-artist', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -67,14 +49,15 @@ export async function updateCustomArtist(
 			})
 		});
 
-		if (!response.ok) {
-			const error = await response.json();
-			throw new Error(error.error);
+		if (!updateCustomArtistResponse.ok && tickets) {
+			await returnTicket(id, tickets);
+
+			throw new Error('Failed to update custom artist');
 		}
 
-		const data = await response.json();
+		const parsedUpdateCustomArtist = await updateCustomArtistResponse.json();
 
-		return data.customArtist;
+		return parsedUpdateCustomArtist.customArtist;
 	} catch (error) {
 		if (dev) {
 			console.error('User updateCustomArtist error:', error);

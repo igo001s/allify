@@ -46,7 +46,6 @@
 			$userInfo?._id,
 			choosedTrackTitle,
 			choosedTrack,
-			$userInfo?.email,
 			$userInfo?.tickets,
 			$userInfo?.tracks?.customTrack?.nextFreeUpdate
 		);

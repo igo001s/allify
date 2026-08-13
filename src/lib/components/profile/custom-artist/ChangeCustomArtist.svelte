@@ -47,7 +47,6 @@
 			$userInfo?._id,
 			choosedArtistTitle,
 			choosedArtist,
-			$userInfo?.email,
 			$userInfo?.tickets,
 			$userInfo?.artists?.customArtist?.nextFreeUpdate
 		);
