@@ -178,7 +178,15 @@ export const pt = {
 		myMusicalProfilePageReloadIconAltText: 'Ícone de atualizar',
 		myMusicalProfilePageShareButton: 'Compartilhar',
 		myMusicalProfilePageShareIconAltText: 'Ícone de compartilhar',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
+			'Você poderá descobrir mais 5 artistas gratuitamente em',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
+			'Você pode descobrir mais 5 artistas gratuitamente agora',
 		myMusicalProfilePageShowMoreFiveArtistsButton: 'Mostrar +5 artistas',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
+			'Você poderá descobrir mais 5 músicas gratuitamente em',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
+			'Você pode descobrir mais 5 músicas gratuitamente agora',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostrar +5 músicas',
 		myMusicalProfilePageCrownIconAltText: 'Ícone de coroa',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Erro ao carregar mais artistas',

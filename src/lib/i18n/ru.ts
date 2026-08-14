@@ -163,23 +163,31 @@ export const ru = {
 	myMusicalProfilePage: {
 		title: 'Мой музыкальный профиль | Allify',
 		myMusicalProfilePageMetaDescription:
-			'Исследуйте свой музыкальный профиль, узнайте любимых исполнителей и треки, отслеживайте статистику прослушивания и подключайте стриминговые платформы для персональных инсайтов.',
+			'Исследуйте свой музыкальный профиль, узнавайте своих самых прослушиваемых исполнителей и треки, отслеживайте статистику прослушиваний и подключайте стриминговые платформы для получения персонализированной информации.',
 		myMusicalProfilePageMetaOgAndTwitterContent:
-			'Исследуйте свой музыкальный профиль, узнайте любимых исполнителей и треки, отслеживайте статистику прослушивания и подключайте стриминговые платформы для персональных инсайтов.',
-		myMusicalProfilePageHeading1: 'Вот всё, что вы слушали больше всего',
+			'Исследуйте свой музыкальный профиль, узнавайте своих самых прослушиваемых исполнителей и треки, отслеживайте статистику прослушиваний и подключайте стриминговые платформы для получения персонализированной информации.',
+		myMusicalProfilePageHeading1: 'Вот всё, что вы слушали чаще всего',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Ваши самые прослушиваемые исполнители',
 		myMusicalProfilePageMostListenedArtists: 'Самый прослушиваемый',
-		myMusicalProfilePageMostListenedTracks: 'Самая прослушиваемая',
+		myMusicalProfilePageMostListenedTracks: 'Самый прослушиваемый',
 		myMusicalProfilePageMostListenedArtistsFollowers: 'подписчиков',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Ваши самые прослушиваемые треки',
 		myMusicalProfilePageButtonUpdate: 'Обновить',
 		myMusicalProfilePageNextFreeUpdate: 'Следующее бесплатное обновление через',
-		myMusicalProfilePageNextFreeUpdateAvailable: 'Доступно бесплатное обновление',
+		myMusicalProfilePageNextFreeUpdateAvailable: 'Бесплатное обновление доступно',
 		myMusicalProfilePageReloadIconAltText: 'Иконка обновления',
 		myMusicalProfilePageShareButton: 'Поделиться',
-		myMusicalProfilePageShareIconAltText: 'Иконка для поделиться',
-		myMusicalProfilePageShowMoreFiveArtistsButton: 'Показать +5 исполнителей',
-		myMusicalProfilePageShowMoreFiveTracksButton: 'Показать +5 треков',
+		myMusicalProfilePageShareIconAltText: 'Иконка «Поделиться»',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
+			'Вы сможете бесплатно открыть ещё 5 исполнителей через',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
+			'Сейчас вы можете бесплатно открыть ещё 5 исполнителей',
+		myMusicalProfilePageShowMoreFiveArtistsButton: 'Показать ещё +5 исполнителей',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
+			'Вы сможете бесплатно открыть ещё 5 треков через',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
+			'Сейчас вы можете бесплатно открыть ещё 5 треков',
+		myMusicalProfilePageShowMoreFiveTracksButton: 'Показать ещё +5 треков',
 		myMusicalProfilePageCrownIconAltText: 'Иконка короны',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
 			'Ошибка при загрузке дополнительных исполнителей',

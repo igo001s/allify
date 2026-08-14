@@ -152,27 +152,34 @@ export const zh = {
 	myMusicalProfilePage: {
 		title: '我的音乐档案 | Allify',
 		myMusicalProfilePageMetaDescription:
-			'探索您的音乐档案，了解您最常听的艺术家和曲目，追踪聆听统计数据，连接流媒体平台获取个性化洞察。',
+			'探索你的音乐档案，发现你最常听的艺人和歌曲，查看你的收听统计，并连接你的流媒体平台，获取个性化的音乐洞察。',
 		myMusicalProfilePageMetaOgAndTwitterContent:
-			'探索您的音乐档案，了解您最常听的艺术家和曲目，追踪聆听统计数据，连接流媒体平台获取个性化洞察。',
-		myMusicalProfilePageHeading1: '这是您最常聆听的一切',
-		myMusicalProfilePageMostListenedArtistsHeading2: '您最常听的艺术家',
+			'探索你的音乐档案，发现你最常听的艺人和歌曲，查看你的收听统计，并连接你的流媒体平台，获取个性化的音乐洞察。',
+		myMusicalProfilePageHeading1: '这里是你最常听的所有音乐',
+		myMusicalProfilePageMostListenedArtistsHeading2: '你最常听的艺人',
 		myMusicalProfilePageMostListenedArtists: '最常听',
 		myMusicalProfilePageMostListenedTracks: '最常听',
 		myMusicalProfilePageMostListenedArtistsFollowers: '粉丝',
-		myMusicalProfilePageMostListenedTracksHeading2: '您最常听的歌曲',
+		myMusicalProfilePageMostListenedTracksHeading2: '你最常听的歌曲',
 		myMusicalProfilePageButtonUpdate: '更新',
-		myMusicalProfilePageNextFreeUpdate: '下一次免费更新在',
-		myMusicalProfilePageNextFreeUpdateAvailable: '免费更新可用',
+		myMusicalProfilePageNextFreeUpdate: '距离下一次免费更新还有',
+		myMusicalProfilePageNextFreeUpdateAvailable: '免费更新现已可用',
 		myMusicalProfilePageReloadIconAltText: '更新图标',
 		myMusicalProfilePageShareButton: '分享',
 		myMusicalProfilePageShareIconAltText: '分享图标',
-		myMusicalProfilePageShowMoreFiveArtistsButton: '显示 +5 艺术家',
-		myMusicalProfilePageShowMoreFiveTracksButton: '显示 +5 歌曲',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
+			'你可以在以下时间后免费发现另外 5 位艺人',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
+			'你现在可以免费发现另外 5 位艺人',
+		myMusicalProfilePageShowMoreFiveArtistsButton: '显示 +5 位艺人',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks: '你可以在以下时间后免费发现另外 5 首歌曲',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
+			'你现在可以免费发现另外 5 首歌曲',
+		myMusicalProfilePageShowMoreFiveTracksButton: '显示 +5 首歌曲',
 		myMusicalProfilePageCrownIconAltText: '皇冠图标',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast: '加载更多艺术家时出错',
+		myMusicalProfilePageShowMoreFiveArtistsErrorToast: '加载更多艺人时出错',
 		myMusicalProfilePageShowMoreFiveTracksErrorToast: '加载更多歌曲时出错',
-		myMusicalProfilePageUpdateArtistsSuccessToast: '最常听的艺术家已成功更新！',
+		myMusicalProfilePageUpdateArtistsSuccessToast: '最常听的艺人已成功更新！',
 		myMusicalProfilePageUpdateTracksSuccessToast: '最常听的歌曲已成功更新！'
 	},
 	discoveriesPage: {

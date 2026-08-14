@@ -159,31 +159,38 @@ export const ja = {
 		devicesSectionAltText: 'デバイスイラスト'
 	},
 	myMusicalProfilePage: {
-		title: '私の音楽プロフィール | Allify',
+		title: 'マイミュージックプロフィール | Allify',
 		myMusicalProfilePageMetaDescription:
-			'音楽プロフィールを探索し、最もよく聴くアーティストやトラックを発見し、リスニング統計を追跡し、ストリーミングプラットフォームを接続してパーソナライズされたインサイトを取得しましょう。',
+			'あなたの音楽プロフィールを探索し、最もよく聴いているアーティストや楽曲を見つけたり、再生統計を確認したり、ストリーミングサービスを連携してパーソナライズされたインサイトを取得しましょう。',
 		myMusicalProfilePageMetaOgAndTwitterContent:
-			'音楽プロフィールを探索し、最もよく聴くアーティストやトラックを発見し、リスニング統計を追跡し、ストリーミングプラットフォームを接続してパーソナライズされたインサイトを取得しましょう。',
-		myMusicalProfilePageHeading1: 'あなたがよく聴いたものをすべてまとめました',
-		myMusicalProfilePageMostListenedArtistsHeading2: 'よく聴くアーティスト',
-		myMusicalProfilePageMostListenedArtists: 'よく聴く',
-		myMusicalProfilePageMostListenedTracks: 'よく聴く',
+			'あなたの音楽プロフィールを探索し、最もよく聴いているアーティストや楽曲を見つけたり、再生統計を確認したり、ストリーミングサービスを連携してパーソナライズされたインサイトを取得しましょう。',
+		myMusicalProfilePageHeading1: 'あなたが最も聴いているすべての音楽',
+		myMusicalProfilePageMostListenedArtistsHeading2: '最もよく聴いているアーティスト',
+		myMusicalProfilePageMostListenedArtists: '最もよく聴いた',
+		myMusicalProfilePageMostListenedTracks: '最もよく聴いた',
 		myMusicalProfilePageMostListenedArtistsFollowers: 'フォロワー',
-		myMusicalProfilePageMostListenedTracksHeading2: 'よく聴く曲',
+		myMusicalProfilePageMostListenedTracksHeading2: '最もよく聴いている楽曲',
 		myMusicalProfilePageButtonUpdate: '更新',
-		myMusicalProfilePageNextFreeUpdate: '次の無料更新まで',
-		myMusicalProfilePageNextFreeUpdateAvailable: '無料で更新可能',
+		myMusicalProfilePageNextFreeUpdate: '次回の無料更新まで',
+		myMusicalProfilePageNextFreeUpdateAvailable: '無料更新が利用できます',
 		myMusicalProfilePageReloadIconAltText: '更新アイコン',
 		myMusicalProfilePageShareButton: '共有',
 		myMusicalProfilePageShareIconAltText: '共有アイコン',
-		myMusicalProfilePageShowMoreFiveArtistsButton: '+5アーティストを表示',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
+			'あと5人のアーティストを無料で発見できるまで',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
+			'今すぐ無料でさらに5人のアーティストを発見できます',
+		myMusicalProfilePageShowMoreFiveArtistsButton: '+5人のアーティストを表示',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks: 'あと5曲を無料で発見できるまで',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
+			'今すぐ無料でさらに5曲を発見できます',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5曲を表示',
 		myMusicalProfilePageCrownIconAltText: '王冠アイコン',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
 			'アーティストの追加読み込み中にエラーが発生しました',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: '曲の追加読み込み中にエラーが発生しました',
-		myMusicalProfilePageUpdateArtistsSuccessToast: 'よく聴くアーティストが正常に更新されました！',
-		myMusicalProfilePageUpdateTracksSuccessToast: 'よく聴く曲が正常に更新されました！'
+		myMusicalProfilePageShowMoreFiveTracksErrorToast: '楽曲の追加読み込み中にエラーが発生しました',
+		myMusicalProfilePageUpdateArtistsSuccessToast: '最もよく聴いているアーティストを更新しました！',
+		myMusicalProfilePageUpdateTracksSuccessToast: '最もよく聴いている楽曲を更新しました！'
 	},
 	discoveriesPage: {
 		title: '音乐发现 | Allify',

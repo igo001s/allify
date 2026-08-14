@@ -92,6 +92,25 @@
 			{/if}
 		{/each}
 
+		<span class="mx-auto text-xs text-t-secondary">
+			{#if $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) > new Date()}
+				{$translationsStore.myMusicalProfilePage
+					.myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists}
+
+				<strong class="font-medium text-t-primary">
+					{new Date(
+						$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate
+					).toLocaleString($translationsStore.locale, {
+						dateStyle: 'short',
+						timeStyle: 'short'
+					})}
+				</strong>
+			{:else if $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) < new Date()}
+				{$translationsStore.myMusicalProfilePage
+					.myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable}
+			{/if}
+		</span>
+
 		{#if ($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit ?? 0) < 50}
 			<MoreMyMusicalProfileItems additionalItemsType="artists" />
 		{/if}

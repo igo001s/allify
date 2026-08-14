@@ -163,13 +163,13 @@ export const de = {
 	myMusicalProfilePage: {
 		title: 'Mein Musikprofil | Allify',
 		myMusicalProfilePageMetaDescription:
-			'Erkunde dein Musikprofil, entdecke deine meistgehörten Künstler und Songs, verfolge deine Hörstatistiken und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Entdecke dein Musikprofil, finde deine meistgehörten Künstler und Titel, verfolge deine Hörstatistiken und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		myMusicalProfilePageMetaOgAndTwitterContent:
-			'Erkunde dein Musikprofil, entdecke deine meistgehörten Künstler und Songs, verfolge deine Hörstatistiken und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Entdecke dein Musikprofil, finde deine meistgehörten Künstler und Titel, verfolge deine Hörstatistiken und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		myMusicalProfilePageHeading1: 'Hier ist alles, was du am meisten gehört hast',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Deine meistgehörten Künstler',
-		myMusicalProfilePageMostListenedArtists: 'Am meisten gehört',
-		myMusicalProfilePageMostListenedTracks: 'Am meisten gehört',
+		myMusicalProfilePageMostListenedArtists: 'Am häufigsten gehört',
+		myMusicalProfilePageMostListenedTracks: 'Am häufigsten gehört',
 		myMusicalProfilePageMostListenedArtistsFollowers: 'Follower',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Deine meistgehörten Songs',
 		myMusicalProfilePageButtonUpdate: 'Aktualisieren',
@@ -178,9 +178,17 @@ export const de = {
 		myMusicalProfilePageReloadIconAltText: 'Aktualisierungssymbol',
 		myMusicalProfilePageShareButton: 'Teilen',
 		myMusicalProfilePageShareIconAltText: 'Teilen-Symbol',
-		myMusicalProfilePageShowMoreFiveArtistsButton: 'Zeige +5 Künstler',
-		myMusicalProfilePageShowMoreFiveTracksButton: 'Zeige +5 Songs',
-		myMusicalProfilePageCrownIconAltText: 'Krone-Symbol',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
+			'Du kannst in kostenlos 5 weitere Künstler entdecken',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
+			'Du kannst jetzt kostenlos 5 weitere Künstler entdecken',
+		myMusicalProfilePageShowMoreFiveArtistsButton: '+5 Künstler anzeigen',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
+			'Du kannst in kostenlos 5 weitere Songs entdecken',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
+			'Du kannst jetzt kostenlos 5 weitere Songs entdecken',
+		myMusicalProfilePageShowMoreFiveTracksButton: '+5 Songs anzeigen',
+		myMusicalProfilePageCrownIconAltText: 'Kronensymbol',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Fehler beim Laden weiterer Künstler',
 		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Fehler beim Laden weiterer Songs',
 		myMusicalProfilePageUpdateArtistsSuccessToast:

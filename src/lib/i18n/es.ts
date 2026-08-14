@@ -165,10 +165,10 @@ export const es = {
 	myMusicalProfilePage: {
 		title: 'Mi Perfil Musical | Allify',
 		myMusicalProfilePageMetaDescription:
-			'Explora tu perfil musical, descubre tus artistas y canciones más escuchados, sigue tus estadísticas de escucha y conecta tus plataformas de streaming para insights personalizados.',
+			'Explora tu perfil musical, descubre tus artistas y canciones más escuchados, consulta tus estadísticas de escucha y conecta tus plataformas de streaming para obtener información personalizada.',
 		myMusicalProfilePageMetaOgAndTwitterContent:
-			'Explora tu perfil musical, descubre tus artistas y canciones más escuchados, sigue tus estadísticas de escucha y conecta tus plataformas de streaming para insights personalizados.',
-		myMusicalProfilePageHeading1: 'Aquí está todo lo que más has escuchado',
+			'Explora tu perfil musical, descubre tus artistas y canciones más escuchados, consulta tus estadísticas de escucha y conecta tus plataformas de streaming para obtener información personalizada.',
+		myMusicalProfilePageHeading1: 'Aquí tienes todo lo que más has escuchado',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Tus artistas más escuchados',
 		myMusicalProfilePageMostListenedArtists: 'Más escuchado',
 		myMusicalProfilePageMostListenedTracks: 'Más escuchada',
@@ -177,17 +177,26 @@ export const es = {
 		myMusicalProfilePageButtonUpdate: 'Actualizar',
 		myMusicalProfilePageNextFreeUpdate: 'Próxima actualización gratuita en',
 		myMusicalProfilePageNextFreeUpdateAvailable: 'Actualización gratuita disponible',
-		myMusicalProfilePageReloadIconAltText: 'Ícono de actualizar',
+		myMusicalProfilePageReloadIconAltText: 'Icono de actualizar',
 		myMusicalProfilePageShareButton: 'Compartir',
-		myMusicalProfilePageShareIconAltText: 'Ícono de compartir',
+		myMusicalProfilePageShareIconAltText: 'Icono de compartir',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
+			'Podrás descubrir 5 artistas más gratis en',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
+			'Puedes descubrir 5 artistas más gratis ahora',
 		myMusicalProfilePageShowMoreFiveArtistsButton: 'Mostrar +5 artistas',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
+			'Podrás descubrir 5 canciones más gratis en',
+		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
+			'Puedes descubrir 5 canciones más gratis ahora',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostrar +5 canciones',
-		myMusicalProfilePageCrownIconAltText: 'Ícono de corona',
+		myMusicalProfilePageCrownIconAltText: 'Icono de corona',
 		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Error al cargar más artistas',
 		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Error al cargar más canciones',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
-			'Artistas más escuchados actualizados con éxito!',
-		myMusicalProfilePageUpdateTracksSuccessToast: 'Canciones más escuchadas actualizadas con éxito!'
+			'¡Artistas más escuchados actualizados correctamente!',
+		myMusicalProfilePageUpdateTracksSuccessToast:
+			'¡Canciones más escuchadas actualizadas correctamente!'
 	},
 	discoveriesPage: {
 		title: 'Descubrimientos Musicales | Allify',
