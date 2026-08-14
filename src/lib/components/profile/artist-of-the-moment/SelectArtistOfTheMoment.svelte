@@ -41,7 +41,7 @@
 						...currentUser.artists,
 						artistOfTheMoment: {
 							artist: updatedArtist.artist,
-							updatedAt: updatedArtist.updatedAt
+							nextFreeUpdate: updatedArtist.nextFreeUpdate
 						}
 					}
 				};

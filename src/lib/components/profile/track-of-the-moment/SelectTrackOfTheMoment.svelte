@@ -41,7 +41,7 @@
 						...currentUser.tracks,
 						trackOfTheMoment: {
 							track: updatedTrack.track,
-							updatedAt: updatedTrack.updatedAt
+							nextFreeUpdate: updatedTrack.nextFreeUpdate
 						}
 					}
 				};
