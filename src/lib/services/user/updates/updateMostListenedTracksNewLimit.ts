@@ -15,7 +15,7 @@ import type { ObjectId } from 'mongodb';
 export async function updateMostListenedTracksNewLimit(
 	id: ObjectId,
 	limit: number,
-	tickets: number,
+	tickets?: number,
 	currentMostListenedTracks?: TrackSpotify[],
 	nextFreeUpdate?: Date
 ) {
@@ -26,7 +26,7 @@ export async function updateMostListenedTracksNewLimit(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && tickets) {
+		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -37,7 +37,9 @@ export async function updateMostListenedTracksNewLimit(
 		const getMostListenedTrackResponse = await getMostListenedTracks(limit + 5);
 
 		if (!getMostListenedTrackResponse) {
-			await returnTicket(id, tickets);
+			if ((tickets !== undefined && tickets !== null)) {
+				await returnTicket(id, tickets);
+			}
 
 			throw new Error('Failed to get most listened tracks');
 		}
@@ -67,7 +69,9 @@ export async function updateMostListenedTracksNewLimit(
 		);
 
 		if (!updateMostListenedTracksResponse.ok) {
-			await returnTicket(id, tickets);
+			if ((tickets !== undefined && tickets !== null)) {
+				await returnTicket(id, tickets);
+			}
 
 			throw new Error('Failed to update most listened tracks with new limit');
 		}

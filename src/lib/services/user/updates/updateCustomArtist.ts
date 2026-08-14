@@ -27,7 +27,7 @@ export async function updateCustomArtist(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && tickets) {
+		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -49,7 +49,7 @@ export async function updateCustomArtist(
 			})
 		});
 
-		if (!updateCustomArtistResponse.ok && tickets) {
+		if (!updateCustomArtistResponse.ok && (tickets !== undefined && tickets !== null)) {
 			await returnTicket(id, tickets);
 
 			throw new Error('Failed to update custom artist');

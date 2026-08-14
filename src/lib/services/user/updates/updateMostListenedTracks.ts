@@ -15,7 +15,7 @@ import type { TrackSpotify } from '$lib/types/SpotifyData.type';
 export async function updateMostListenedTracks(
 	id: ObjectId,
 	limit: number,
-	tickets: number,
+	tickets?: number,
 	currentMostListenedTracks?: TrackSpotify[],
 	nextFreeUpdate?: Date
 ) {
@@ -26,7 +26,7 @@ export async function updateMostListenedTracks(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && tickets) {
+		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -37,7 +37,9 @@ export async function updateMostListenedTracks(
 		const getMostListenedTracksResponse = await getMostListenedTracks(limit);
 
 		if (!getMostListenedTracksResponse) {
-			await returnTicket(id, tickets);
+			if ((tickets !== undefined && tickets !== null)) {
+				await returnTicket(id, tickets);
+			}
 
 			throw new Error('Failed to get most listened tracks');
 		}
@@ -67,7 +69,9 @@ export async function updateMostListenedTracks(
 		);
 
 		if (!updateMostListenedTracksResponse.ok) {
-			await returnTicket(id, tickets);
+			if ((tickets !== undefined && tickets !== null)) {
+				await returnTicket(id, tickets);
+			}
 
 			throw new Error('Failed to update most listened tracks');
 		}

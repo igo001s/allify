@@ -23,7 +23,7 @@ export async function updateProfileVisibility(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && tickets) {
+		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -47,10 +47,10 @@ export async function updateProfileVisibility(
 			}
 		);
 
-		if (!updateProfileVisibilityResponse.ok && tickets) {
+		if (!updateProfileVisibilityResponse.ok && (tickets !== undefined && tickets !== null)) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update most listened artists');
+			throw new Error('Failed to update profile visibility');
 		}
 
 		const parsedupdateProfileVisibility = await updateProfileVisibilityResponse.json();
@@ -58,7 +58,7 @@ export async function updateProfileVisibility(
 		return parsedupdateProfileVisibility.profileVisibilityUpdated;
 	} catch (error) {
 		if (dev) {
-			console.error('User changeVisibility error:', error);
+			console.error('User updateProfileVisibility error:', error);
 		}
 
 		return null;

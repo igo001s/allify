@@ -9,6 +9,7 @@ import { userInfo } from '$lib/stores/userInfo.store';
 import type { ObjectId } from 'mongodb';
 
 export async function useTicket(id: ObjectId, tickets: number) {
+	console.log('useTicket called with id:', id, 'and tickets:', tickets);
 	try {
 		if (id && tickets <= 0) {
 			showAddTickets.set(true);

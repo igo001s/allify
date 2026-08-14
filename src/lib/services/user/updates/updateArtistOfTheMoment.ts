@@ -26,7 +26,7 @@ export async function updateArtistOfTheMoment(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && tickets) {
+		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -50,7 +50,7 @@ export async function updateArtistOfTheMoment(
 			}
 		);
 
-		if (!updateArtistOfTheMomentResponse.ok && tickets) {
+		if (!updateArtistOfTheMomentResponse.ok && (tickets !== undefined && tickets !== null)) {
 			await returnTicket(id, tickets);
 
 			throw new Error('Failed to update artist of the moment');
