@@ -21,7 +21,7 @@
 		</h2>
 
 		<PossibleActionsMyMusicalProfile
-			lastSync={$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.updatedAt}
+			nextFreeUpdate={$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate}
 			sessionType="tracks"
 		/>
 	</div>

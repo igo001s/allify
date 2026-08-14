@@ -16,15 +16,22 @@ export async function updateMostListenedTracks(
 	id: ObjectId,
 	limit: number,
 	tickets: number,
-	currentMostListenedTracks?: TrackSpotify[]
+	currentMostListenedTracks?: TrackSpotify[],
+	nextFreeUpdate?: Date
 ) {
 	try {
 		if (!id || !limit) return;
 
-		const ticketWasUsed = await useTicket(id, tickets);
+		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
 
-		if (!ticketWasUsed) {
-			throw new Error('Failed to use ticket');
+		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
+
+		if (!freeUpdateIsAvailable && tickets) {
+			const ticketWasUsed = await useTicket(id, tickets);
+
+			if (!ticketWasUsed) {
+				throw new Error('Failed to use ticket');
+			}
 		}
 
 		const getMostListenedTracksResponse = await getMostListenedTracks(limit);
@@ -35,10 +42,10 @@ export async function updateMostListenedTracks(
 			throw new Error('Failed to get most listened tracks');
 		}
 
-		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems, updatedAt } =
+		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems } =
 			getMostListenedTracksResponse;
 
-		const artistsWhoWereWithYou =
+		const tracksWhoWereWithYou =
 			currentMostListenedTracks?.filter(
 				(track) => !mostListenedTracksItems.some((oldTrack) => oldTrack.id === track.id)
 			) ?? [];
@@ -52,8 +59,9 @@ export async function updateMostListenedTracks(
 					limit: tracksLimit,
 					mostListenedTrack: mostListenedTrackItem,
 					mostListenedTracks: mostListenedTracksItems,
-					artistsWhoWereWithYou,
-					updatedAt
+					tracksWhoWereWithYou,
+					freeUpdateIsAvailable,
+					nextFreeUpdate
 				})
 			}
 		);

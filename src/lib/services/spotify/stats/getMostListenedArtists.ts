@@ -45,7 +45,6 @@ export async function getMostListenedArtists(limit: number = 5) {
 
 		return {
 			artistsLimit: limit,
-			updatedAt: new Date(),
 			mostListenedArtistItem,
 			mostListenedArtistsItems
 		};

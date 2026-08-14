@@ -35,7 +35,8 @@
 				userId,
 				artistsLimit,
 				userTickets,
-				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems
+				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems,
+				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate
 			);
 
 			if (!response) {
@@ -64,9 +65,9 @@
 							connected: currentUser.connectedStreamings.spotify.connected,
 							mostListenedArtists: {
 								artistsLimit: response.limit,
-								updatedAt: response.updatedAt,
 								mostListenedArtistItem: response.mostListenedArtist,
-								mostListenedArtistsItems: response.mostListenedArtists
+								mostListenedArtistsItems: response.mostListenedArtists,
+								nextFreeUpdate: response.nextFreeUpdate
 							}
 						}
 					}
@@ -81,7 +82,8 @@
 				userId,
 				tracksLimit,
 				userTickets,
-				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems
+				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems,
+				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate
 			);
 
 			if (!response) {
@@ -109,9 +111,9 @@
 							connected: currentUser.connectedStreamings.spotify.connected,
 							mostListenedTracks: {
 								tracksLimit: response.limit,
-								updatedAt: response.updatedAt,
 								mostListenedTrackItem: response.mostListenedTrack,
-								mostListenedTracksItems: response.mostListenedTracks
+								mostListenedTracksItems: response.mostListenedTracks,
+								nextFreeUpdate: response.nextFreeUpdate
 							}
 						}
 					}

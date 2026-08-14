@@ -45,7 +45,6 @@ export async function getMostListenedTracks(limit: number = 5) {
 
 		return {
 			tracksLimit: limit,
-			updatedAt: new Date(),
 			mostListenedTrackItem,
 			mostListenedTracksItems
 		};

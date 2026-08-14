@@ -16,15 +16,22 @@ export async function updateMostListenedArtistsNewLimit(
 	id: ObjectId,
 	limit: number,
 	tickets: number,
-	currentMostListenedArtists?: ArtistSpotify[]
+	currentMostListenedArtists?: ArtistSpotify[],
+	nextFreeUpdate?: Date
 ) {
 	try {
 		if (!id || !limit) return;
 
-		const ticketWasUsed = await useTicket(id, tickets);
+		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
 
-		if (!ticketWasUsed) {
-			throw new Error('Failed to use ticket');
+		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
+
+		if (!freeUpdateIsAvailable && tickets) {
+			const ticketWasUsed = await useTicket(id, tickets);
+
+			if (!ticketWasUsed) {
+				throw new Error('Failed to use ticket');
+			}
 		}
 
 		const getMostListenedArtistsResponse = await getMostListenedArtists(limit + 5);
@@ -35,7 +42,7 @@ export async function updateMostListenedArtistsNewLimit(
 			throw new Error('Failed to get most listened artists');
 		}
 
-		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems, updatedAt } =
+		const { artistsLimit, mostListenedArtistItem, mostListenedArtistsItems } =
 			getMostListenedArtistsResponse;
 
 		const artistsWhoWereWithYou =
@@ -53,7 +60,8 @@ export async function updateMostListenedArtistsNewLimit(
 					mostListenedArtist: mostListenedArtistItem,
 					mostListenedArtists: mostListenedArtistsItems,
 					artistsWhoWereWithYou,
-					updatedAt
+					freeUpdateIsAvailable,
+					nextFreeUpdate
 				})
 			}
 		);

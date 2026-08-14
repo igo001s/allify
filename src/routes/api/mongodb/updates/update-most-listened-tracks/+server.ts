@@ -4,6 +4,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 // Server
 import { connectToMongoDB } from '$lib/server/mongodb';
 
+// Utils
+import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+
 // MongoDB
 import { ObjectId } from 'mongodb';
 
@@ -21,10 +24,17 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	}
 
-	const { id, limit, updatedAt, mostListenedTrack, mostListenedTracks, tracksWhoWereWithYou } =
-		await request.json();
+	const {
+		id,
+		limit,
+		mostListenedTrack,
+		mostListenedTracks,
+		tracksWhoWereWithYou,
+		freeUpdateIsAvailable,
+		nextFreeUpdate
+	} = await request.json();
 
-	if (!id || !limit || !updatedAt || !mostListenedTrack || !mostListenedTracks) {
+	if (!id || !limit || !mostListenedTrack || !mostListenedTracks) {
 		return new Response(JSON.stringify({ error: 'Missing required fields' }), {
 			status: 400
 		});
@@ -40,10 +50,12 @@ export const POST: RequestHandler = async ({ request }) => {
 			{
 				$set: {
 					'connectedStreamings.spotify.mostListenedTracks.tracksLimit': limit,
-					'connectedStreamings.spotify.mostListenedTracks.updatedAt': updatedAt,
 					'connectedStreamings.spotify.mostListenedTracks.mostListenedTrackItem': mostListenedTrack,
 					'connectedStreamings.spotify.mostListenedTracks.mostListenedTracksItems':
 						mostListenedTracks,
+					'connectedStreamings.spotify.mostListenedTracks.nextFreeUpdate': freeUpdateIsAvailable
+						? nextFreeUpdateTime()
+						: nextFreeUpdate,
 					'tracks.tracksWhoWereWithYou': tracksWhoWereWithYou ? tracksWhoWereWithYou : []
 				}
 			}
@@ -52,10 +64,10 @@ export const POST: RequestHandler = async ({ request }) => {
 		return new Response(
 			JSON.stringify({
 				limit,
-				updatedAt,
 				mostListenedTrack,
 				mostListenedTracks,
-				tracksWhoWereWithYou
+				tracksWhoWereWithYou,
+				nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 			}),
 			{ status: 200 }
 		);

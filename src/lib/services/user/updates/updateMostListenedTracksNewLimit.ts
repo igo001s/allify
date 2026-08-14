@@ -3,7 +3,7 @@ import { dev } from '$app/environment';
 
 // Services
 import { useTicket } from '$lib/services/user/tickets/useTicket';
-import { returnTicket } from '../tickets/returnTicket';
+import { returnTicket } from '$lib/services/user/tickets/returnTicket';
 import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListenedTracks';
 
 // Types
@@ -16,15 +16,22 @@ export async function updateMostListenedTracksNewLimit(
 	id: ObjectId,
 	limit: number,
 	tickets: number,
-	currentMostListenedTracks?: TrackSpotify[]
+	currentMostListenedTracks?: TrackSpotify[],
+	nextFreeUpdate?: Date
 ) {
 	try {
 		if (!id || !limit) return;
 
-		const ticketWasUsed = await useTicket(id, tickets);
+		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
 
-		if (!ticketWasUsed) {
-			throw new Error('Failed to use ticket');
+		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
+
+		if (!freeUpdateIsAvailable && tickets) {
+			const ticketWasUsed = await useTicket(id, tickets);
+
+			if (!ticketWasUsed) {
+				throw new Error('Failed to use ticket');
+			}
 		}
 
 		const getMostListenedTrackResponse = await getMostListenedTracks(limit + 5);
@@ -35,7 +42,7 @@ export async function updateMostListenedTracksNewLimit(
 			throw new Error('Failed to get most listened tracks');
 		}
 
-		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems, updatedAt } =
+		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems } =
 			getMostListenedTrackResponse;
 
 		const tracksWhoWereWithYou =
@@ -53,7 +60,8 @@ export async function updateMostListenedTracksNewLimit(
 					mostListenedTrack: mostListenedTrackItem,
 					mostListenedTracks: mostListenedTracksItems,
 					tracksWhoWereWithYou,
-					updatedAt
+					freeUpdateIsAvailable,
+					nextFreeUpdate
 				})
 			}
 		);
