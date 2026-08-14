@@ -189,8 +189,6 @@ export const de = {
 			'Du kannst jetzt kostenlos 5 weitere Songs entdecken',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5 Songs anzeigen',
 		myMusicalProfilePageCrownIconAltText: 'Kronensymbol',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Fehler beim Laden weiterer Künstler',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Fehler beim Laden weiterer Songs',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Meistgehörte Künstler erfolgreich aktualisiert!',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Meistgehörte Songs erfolgreich aktualisiert!'

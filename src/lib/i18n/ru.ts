@@ -189,9 +189,6 @@ export const ru = {
 			'Сейчас вы можете бесплатно открыть ещё 5 треков',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Показать ещё +5 треков',
 		myMusicalProfilePageCrownIconAltText: 'Иконка короны',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
-			'Ошибка при загрузке дополнительных исполнителей',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Ошибка при загрузке дополнительных треков',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Самые прослушиваемые исполнители успешно обновлены!',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Самые прослушиваемые треки успешно обновлены!'

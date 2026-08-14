@@ -177,8 +177,6 @@ export const zh = {
 			'你现在可以免费发现另外 5 首歌曲',
 		myMusicalProfilePageShowMoreFiveTracksButton: '显示 +5 首歌曲',
 		myMusicalProfilePageCrownIconAltText: '皇冠图标',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast: '加载更多艺人时出错',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: '加载更多歌曲时出错',
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最常听的艺人已成功更新！',
 		myMusicalProfilePageUpdateTracksSuccessToast: '最常听的歌曲已成功更新！'
 	},

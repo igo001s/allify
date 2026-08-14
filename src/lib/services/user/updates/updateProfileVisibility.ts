@@ -23,7 +23,7 @@ export async function updateProfileVisibility(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
+		if (!freeUpdateIsAvailable && tickets !== undefined && tickets !== null) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -47,7 +47,7 @@ export async function updateProfileVisibility(
 			}
 		);
 
-		if (!updateProfileVisibilityResponse.ok && (tickets !== undefined && tickets !== null)) {
+		if (!updateProfileVisibilityResponse.ok && tickets !== undefined && tickets !== null) {
 			await returnTicket(id, tickets);
 
 			throw new Error('Failed to update profile visibility');

@@ -190,10 +190,6 @@ export const it = {
 			'Puoi scoprire gratuitamente altri 5 brani ora',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostra +5 brani',
 		myMusicalProfilePageCrownIconAltText: 'Icona della corona',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
-			'Errore durante il caricamento di altri artisti',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast:
-			'Errore durante il caricamento di altri brani',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Artisti più ascoltati aggiornati con successo!',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Brani più ascoltati aggiornati con successo!'
 	},

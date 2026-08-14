@@ -191,10 +191,6 @@ export const fr = {
 			'Vous pouvez découvrir gratuitement 5 morceaux supplémentaires maintenant',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Afficher +5 morceaux',
 		myMusicalProfilePageCrownIconAltText: 'Icône de couronne',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
-			'Erreur lors du chargement de nouveaux artistes',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast:
-			'Erreur lors du chargement de nouveaux morceaux',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Artistes les plus écoutés mis à jour avec succès !',
 		myMusicalProfilePageUpdateTracksSuccessToast:

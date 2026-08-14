@@ -35,6 +35,12 @@
 					nextFreeUpdate
 				);
 
+				if (!response) {
+					loadingUpdateItem = false;
+
+					return;
+				}
+
 				toastStore.set({
 					showToast: true,
 					toastType: 'success',
@@ -79,6 +85,12 @@
 					nextFreeUpdate
 				);
 
+				if (!response) {
+					loadingUpdateItem = false;
+
+					return;
+				}
+
 				toastStore.set({
 					showToast: true,
 					toastType: 'success',
@@ -109,13 +121,6 @@
 							tracksWhoWereWithYou: response.tracksWhoWereWithYou
 						}
 					};
-				});
-
-				toastStore.set({
-					showToast: true,
-					toastType: 'success',
-					toastMessage:
-						$translationsStore.myMusicalProfilePage.myMusicalProfilePageUpdateTracksSuccessToast
 				});
 			}
 		}

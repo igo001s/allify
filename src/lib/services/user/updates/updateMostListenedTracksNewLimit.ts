@@ -26,7 +26,7 @@ export async function updateMostListenedTracksNewLimit(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
+		if (!freeUpdateIsAvailable && tickets !== undefined && tickets !== null) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -37,7 +37,7 @@ export async function updateMostListenedTracksNewLimit(
 		const getMostListenedTrackResponse = await getMostListenedTracks(limit + 5);
 
 		if (!getMostListenedTrackResponse) {
-			if ((tickets !== undefined && tickets !== null)) {
+			if (tickets !== undefined && tickets !== null) {
 				await returnTicket(id, tickets);
 			}
 
@@ -69,7 +69,7 @@ export async function updateMostListenedTracksNewLimit(
 		);
 
 		if (!updateMostListenedTracksResponse.ok) {
-			if ((tickets !== undefined && tickets !== null)) {
+			if (tickets !== undefined && tickets !== null) {
 				await returnTicket(id, tickets);
 			}
 

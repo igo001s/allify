@@ -189,8 +189,6 @@ export const en = {
 			'You can discover 5 more tracks for free now',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Show +5 tracks',
 		myMusicalProfilePageCrownIconAltText: 'Crown icon',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Error loading more artists',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Error loading more tracks',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Most-listened-to artists updated successfully!',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Most-listened-to tracks updated successfully!'
 	},

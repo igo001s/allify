@@ -26,7 +26,7 @@ export async function updateTrackOfTheMoment(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
+		if (!freeUpdateIsAvailable && tickets !== undefined && tickets !== null) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -50,7 +50,7 @@ export async function updateTrackOfTheMoment(
 			}
 		);
 
-		if (!updateTrackOfTheMomentResponse.ok && (tickets !== undefined && tickets !== null)) {
+		if (!updateTrackOfTheMomentResponse.ok && tickets !== undefined && tickets !== null) {
 			await returnTicket(id, tickets);
 
 			throw new Error('Failed to update track of the moment');

@@ -40,14 +40,6 @@
 			);
 
 			if (!response) {
-				toastStore.set({
-					showToast: true,
-					toastType: 'error',
-					toastMessage:
-						$translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageShowMoreFiveArtistsErrorToast
-				});
-
 				loadingMoreItems = false;
 
 				return;
@@ -87,13 +79,6 @@
 			);
 
 			if (!response) {
-				toastStore.set({
-					showToast: true,
-					toastType: 'error',
-					toastMessage:
-						$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveTracksErrorToast
-				});
-
 				loadingMoreItems = false;
 
 				return;

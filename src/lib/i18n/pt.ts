@@ -189,8 +189,6 @@ export const pt = {
 			'Você pode descobrir mais 5 músicas gratuitamente agora',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostrar +5 músicas',
 		myMusicalProfilePageCrownIconAltText: 'Ícone de coroa',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast: 'Erro ao carregar mais artistas',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: 'Erro ao carregar mais músicas',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Artistas mais ouvidos atualizados com sucesso!',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Músicas mais ouvidas atualizadas com sucesso!'
 	},

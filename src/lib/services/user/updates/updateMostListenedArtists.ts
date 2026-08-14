@@ -26,7 +26,7 @@ export async function updateMostListenedArtists(
 
 		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && (tickets !== undefined && tickets !== null)) {
+		if (!freeUpdateIsAvailable && tickets !== undefined && tickets !== null) {
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
@@ -69,7 +69,7 @@ export async function updateMostListenedArtists(
 		);
 
 		if (!updateMostListenedArtistsResponse.ok) {
-			if ((tickets !== undefined && tickets !== null)) {
+			if (tickets !== undefined && tickets !== null) {
 				await returnTicket(id, tickets);
 			}
 

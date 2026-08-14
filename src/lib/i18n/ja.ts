@@ -186,9 +186,6 @@ export const ja = {
 			'今すぐ無料でさらに5曲を発見できます',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5曲を表示',
 		myMusicalProfilePageCrownIconAltText: '王冠アイコン',
-		myMusicalProfilePageShowMoreFiveArtistsErrorToast:
-			'アーティストの追加読み込み中にエラーが発生しました',
-		myMusicalProfilePageShowMoreFiveTracksErrorToast: '楽曲の追加読み込み中にエラーが発生しました',
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最もよく聴いているアーティストを更新しました！',
 		myMusicalProfilePageUpdateTracksSuccessToast: '最もよく聴いている楽曲を更新しました！'
 	},
