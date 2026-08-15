@@ -1,21 +1,22 @@
 <script lang="ts">
 	// Svelte
 	import { browser } from '$app/environment';
+	import type { Picture } from 'vite-imagetools';
 
 	// Stores
 	import { languageStore } from '$lib/stores/language.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Assets
-	import englishFlag from '$lib/assets/images/icons/flags/united-states-icon.webp';
-	import germanyFlag from '$lib/assets/images/icons/flags/germany-icon.webp';
-	import portugueseFlag from '$lib/assets/images/icons/flags/brazil-icon.webp';
-	import spanishFlag from '$lib/assets/images/icons/flags/spain-icon.webp';
-	import frenchFlag from '$lib/assets/images/icons/flags/france-icon.webp';
-	import italianFlag from '$lib/assets/images/icons/flags/italy-icon.webp';
-	import russianFlag from '$lib/assets/images/icons/flags/russia-icon.webp';
-	import chineseFlag from '$lib/assets/images/icons/flags/china-icon.webp';
-	import japaneseFlag from '$lib/assets/images/icons/flags/japan-icon.webp';
+	import englishFlag from '$lib/assets/images/icons/flags/united-states-icon.webp?enhanced';
+	import germanyFlag from '$lib/assets/images/icons/flags/germany-icon.webp?enhanced';
+	import portugueseFlag from '$lib/assets/images/icons/flags/brazil-icon.webp?enhanced';
+	import spanishFlag from '$lib/assets/images/icons/flags/spain-icon.webp?enhanced';
+	import frenchFlag from '$lib/assets/images/icons/flags/france-icon.webp?enhanced';
+	import italianFlag from '$lib/assets/images/icons/flags/italy-icon.webp?enhanced';
+	import russianFlag from '$lib/assets/images/icons/flags/russia-icon.webp?enhanced';
+	import chineseFlag from '$lib/assets/images/icons/flags/china-icon.webp?enhanced';
+	import japaneseFlag from '$lib/assets/images/icons/flags/japan-icon.webp?enhanced';
 	import ArrowIcon from '$lib/assets/images/icons/ArrowIcon.svelte';
 	import SelectedIcon from '$lib/assets/images/icons/SelectedIcon.svelte';
 
@@ -37,7 +38,7 @@
 		{ code: 'de-DE', label: $translationsStore.generalTexts.headerLanguageDe, flag: germanyFlag },
 		{ code: 'fr-FR', label: $translationsStore.generalTexts.headerLanguageFr, flag: frenchFlag },
 		{ code: 'it-IT', label: $translationsStore.generalTexts.headerLanguageIt, flag: italianFlag }
-	] as { code: string; label: string; flag: string }[];
+	] as { code: string; label: string; flag: Picture }[];
 
 	$: selectedLanguage =
 		languageOptions.find((lang) => lang.code === $languageStore) ?? languageOptions[0];
@@ -76,7 +77,7 @@
 	>
 		<div class="flex min-w-0 items-center gap-2">
 			{#if browser}
-				<img
+				<enhanced:img
 					src={selectedLanguage.flag}
 					alt={selectedLanguage.label}
 					class="h-4 w-4 shrink-0 rounded object-cover shadow-sm md:h-5 md:w-5"
@@ -119,7 +120,7 @@
 					on:click={() => selectLanguage(language.code)}
 				>
 					<div class="flex items-center gap-2 px-3 py-2.5">
-						<img
+						<enhanced:img
 							src={language.flag}
 							alt={language.label}
 							class="h-4 w-4 shrink-0 rounded object-cover shadow-sm md:h-5 md:w-5"

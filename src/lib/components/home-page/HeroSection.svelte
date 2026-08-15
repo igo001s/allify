@@ -21,7 +21,7 @@
 			{$translationsStore.homePage.homePageHeroSectionParagraph1}
 		</p>
 
-		<img
+		<enhanced:img
 			src={AlliFullBodyPointingDownwards}
 			alt={$translationsStore.homePage.alliMascotPointingDownwardsAltText}
 			class="block h-auto w-56 lg:hidden"
@@ -45,7 +45,7 @@
 		</a>
 	</div>
 
-	<img
+	<enhanced:img
 		src={AlliFullBodyPointing}
 		alt={$translationsStore.homePage.alliMascotPointingToLeftAltText}
 		class="mr-2 hidden h-auto w-80 md:mr-5 lg:block 2xl:mr-10 2xl:w-105"

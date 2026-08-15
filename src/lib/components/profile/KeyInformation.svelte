@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced?enhanced';
 	import PlusIcon from '$lib/assets/images/icons/PlusIcon.svelte';
 	import CommentIcon from '$lib/assets/images/icons/CommentIcon.svelte';
 
@@ -33,7 +33,7 @@
 	>
 		<div class="relative w-fit">
 			{#if userInfo.image?.url}
-				<img
+				<enhanced:img
 					src={userInfo.image?.url}
 					class="h-24 w-24 rounded-full border-4 border-brand-primary object-cover
 						sm:h-32 sm:w-32 lg:h-36 lg:w-36"
@@ -75,7 +75,7 @@
 				<div
 					class="flex w-fit items-center gap-3 rounded-full bg-brand-primary px-3.5 py-2.5 text-t-inverse"
 				>
-					<img
+					<enhanced:img
 						src={TicketIcon}
 						alt={$translationsStore.generalTexts.ticketAltText}
 						class="h-6.5 w-6.5 rounded-full bg-s-page p-0.5"

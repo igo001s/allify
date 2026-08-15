@@ -134,7 +134,7 @@
 		on:click={handleGoToUserProfile}
 	>
 		{#if user.image}
-			<img
+			<enhanced:img
 				src={user.image.url}
 				alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${user.name}`}
 				class="h-13 w-13 shrink-0 rounded-full object-cover"

@@ -59,7 +59,7 @@
 		on:click={handleGoToFavoriteProfile}
 	>
 		{#if favorite.image}
-			<img
+			<enhanced:img
 				src={favorite.image.url}
 				alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${favorite.name}`}
 				class="h-13 w-13 shrink-0 rounded-full object-cover"

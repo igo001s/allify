@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -88,7 +88,7 @@
 				<div
 					class="flex shrink-0 items-center gap-2 rounded-full bg-brand-primary px-2.5 py-1.5 text-t-inverse"
 				>
-					<img
+					<enhanced:img
 						src={TicketIcon}
 						alt={$translationsStore.generalTexts.ticketAltText}
 						class="h-3.5 w-3.5 rounded-full bg-s-page p-0.5"

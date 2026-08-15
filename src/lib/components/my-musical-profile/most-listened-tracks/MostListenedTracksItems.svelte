@@ -36,7 +36,7 @@
 				/>
 			{:else}
 				<div class="grid w-full grid-cols-[auto_1fr] gap-6 lg:grid-cols-[auto_1fr_auto]">
-					<img
+					<enhanced:img
 						src={track.image?.url}
 						alt={track.name}
 						class="h-20 w-20 rounded-lg object-cover shadow-md lg:h-42 lg:w-42"

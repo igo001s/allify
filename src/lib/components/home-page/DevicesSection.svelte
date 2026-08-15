@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import DevicesImage from '$lib/assets/images/devices-illustration.webp';
+	import DevicesImage from '$lib/assets/images/devices-illustration.webp?enhanced';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -10,7 +10,7 @@
 	class="flex flex-col-reverse items-center gap-16 bg-s-default px-4 py-12 lg:flex-row lg:justify-between lg:py-32 2xl:px-24"
 	id="devices-section"
 >
-	<img
+	<enhanced:img
 		src={DevicesImage}
 		alt={$translationsStore.homePage.devicesSectionAltText}
 		loading="lazy"

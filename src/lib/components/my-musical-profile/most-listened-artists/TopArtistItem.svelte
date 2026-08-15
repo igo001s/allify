@@ -21,7 +21,7 @@
 			iconAltText={$translationsStore.myMusicalProfilePage.myMusicalProfilePageCrownIconAltText}
 		/>
 
-		<img
+		<enhanced:img
 			src={mostListenedArtistItem.image?.url}
 			alt={mostListenedArtistItem.name}
 			class="h-40 w-40 rounded-lg object-cover shadow-lg lg:h-60 lg:w-60"

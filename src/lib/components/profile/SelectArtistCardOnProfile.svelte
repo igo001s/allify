@@ -25,7 +25,7 @@
 	on:click={() => handleArtistSelection(artist)}
 >
 	{#if artist.image}
-		<img
+		<enhanced:img
 			src={artist.image.url}
 			alt={artist.name}
 			class="h-14 w-14 rounded-lg object-cover sm:h-20 sm:w-20"

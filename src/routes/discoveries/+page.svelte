@@ -5,7 +5,7 @@
 	// Assets
 	import AlliFullBodyWaving from '$lib/assets/images/alli/alli-full-body-waving.webp';
 	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 
 	// Components
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
@@ -122,8 +122,7 @@
 					...currentUser,
 					discoveries: {
 						artists: artists ?? currentUser.discoveries?.artists,
-						tracks: tracks ?? currentUser.discoveries?.tracks,
-						updatedAt: updatedAt ?? currentUser.discoveries?.updatedAt
+						tracks: tracks ?? currentUser.discoveries?.tracks
 					},
 					tickets: tickets ?? currentUser.tickets
 				};
@@ -243,7 +242,7 @@
 							<div
 								class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
 							>
-								<img
+								<enhanced:img
 									src={TicketIcon}
 									alt={$translationsStore.generalTexts.ticketAltText}
 									class="h-4 w-4"
@@ -256,7 +255,7 @@
 				</button>
 			</div>
 
-			<img
+			<enhanced:img
 				src={AlliFullBodyWaving}
 				alt={$translationsStore.discoveriesPage.alliMascotWavingAltText}
 				class="mx-auto mt-5 h-auto w-40 sm:w-56 lg:mt-0 lg:w-85 xl:w-95"

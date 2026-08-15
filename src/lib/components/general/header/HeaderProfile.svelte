@@ -54,7 +54,7 @@
 >
 	{#if loggedIn}
 		{#if $userInfo?.connectedStreamings[primaryStreaming]?.image}
-			<img
+			<enhanced:img
 				class={`
 					h-${$userInfo?.connectedStreamings[primaryStreaming]?.image?.height}
 					w-${$userInfo?.connectedStreamings[primaryStreaming]?.image?.width}

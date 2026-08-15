@@ -66,7 +66,7 @@
 		{/if}
 
 		{#if artistItem.artist.image?.url}
-			<img
+			<enhanced:img
 				src={artistItem.artist.image.url}
 				alt={artistItem.artist.name}
 				class="h-24 w-24 shrink-0 self-center rounded-lg object-cover sm:h-32 sm:w-32 md:h-36 md:w-36 md:self-start lg:h-44 lg:w-44"

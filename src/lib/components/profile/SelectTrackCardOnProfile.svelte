@@ -25,7 +25,7 @@
 	on:click={() => handleTrackSelection(track)}
 >
 	{#if track.image}
-		<img
+		<enhanced:img
 			src={track.image.url}
 			alt={track.name}
 			class="h-14 w-14 rounded-lg object-cover sm:h-20 sm:w-20"

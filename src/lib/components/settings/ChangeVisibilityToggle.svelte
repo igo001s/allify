@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -57,7 +57,7 @@
 					<div
 						class="ml-2 flex w-fit items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm"
 					>
-						<img
+						<enhanced:img
 							src={TicketIcon}
 							alt={$translationsStore.generalTexts.ticketAltText}
 							class="h-3 w-3"

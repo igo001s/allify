@@ -6,9 +6,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(({ mode }) => ({
 	plugins: [
+		enhancedImages(),
 		tailwindcss(),
 		sveltekit(),
-		enhancedImages(),
 		...(mode === 'analyze' ? [visualizer()] : [])
 	],
 	build: {

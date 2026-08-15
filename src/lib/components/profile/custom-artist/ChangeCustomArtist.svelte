@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 
 	// Components
 	import ChangeArtistCardOnProfile from '$lib/components/profile/ChangeArtistCardOnProfile.svelte';
@@ -174,7 +174,7 @@
 				<div
 					class="ml-2 flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm"
 				>
-					<img
+					<enhanced:img
 						src={TicketIcon}
 						alt={$translationsStore.generalTexts.ticketAltText}
 						class="h-3 w-3"
