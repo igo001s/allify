@@ -258,6 +258,8 @@ export const ru = {
 		profilePageImageAltText: 'Фото профиля',
 		profilePageFollowers: 'подписчиков',
 		profilePageAddTicketsAltText: 'Добавить билеты',
+		profilePageOpenCommentsButtonAriaLabel: 'Открыть секцию комментариев профиля',
+		profilePageOpenCommentIconAltText: 'Иконка для открытия секции комментариев профиля',
 		profilePageExternalLinkSpotify: 'Открыть профиль в Spotify',
 		profilePageExternalLinkDeezer: 'Открыть профиль в Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Ваши треки',

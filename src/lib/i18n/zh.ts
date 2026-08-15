@@ -239,6 +239,8 @@ export const zh = {
 		profilePageImageAltText: '个人资料照片：',
 		profilePageFollowers: '位关注者',
 		profilePageAddTicketsAltText: '添加票券',
+		profilePageOpenCommentsButtonAriaLabel: '打开个人资料评论区',
+		profilePageOpenCommentIconAltText: '打开个人资料评论区的图标',
 		profilePageExternalLinkSpotify: '在 Spotify 上查看个人资料',
 		profilePageExternalLinkDeezer: '在 Deezer 上查看个人资料',
 		profilePageYourSongsOnProfileHeading2: '你的歌曲',

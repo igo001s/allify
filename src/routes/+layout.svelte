@@ -74,19 +74,19 @@
 <Footer />
 
 <!-- Toast notifications -->
-{#if $toastStore.showToast}
+{#if $toastStore.showToast === true}
 	<Toast />
 {/if}
 
 <!-- Loading after streaming connection -->
-{#if $loadingAfterConnectionStore.loading}
+{#if $loadingAfterConnectionStore.loading === true}
 	<LoadingAfterConnection
 		streamingPlatform={$loadingAfterConnectionStore.streamingPlatform ?? undefined}
 	/>
 {/if}
 
 <!-- Add Tickets Modal -->
-{#if $showAddTickets}
+{#if $showAddTickets === true}
 	<AddTicketsModal />
 {/if}
 

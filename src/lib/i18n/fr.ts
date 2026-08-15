@@ -262,6 +262,8 @@ export const fr = {
 		profilePageImageAltText: 'Photo de profil de',
 		profilePageFollowers: 'abonnés',
 		profilePageAddTicketsAltText: 'Ajouter des tickets',
+		profilePageOpenCommentsButtonAriaLabel: 'Ouvrir la section des commentaires du profil',
+		profilePageOpenCommentIconAltText: 'Icône pour ouvrir la section des commentaires du profil',
 		profilePageExternalLinkSpotify: 'Voir le profil sur Spotify',
 		profilePageExternalLinkDeezer: 'Voir le profil sur Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Vos titres',

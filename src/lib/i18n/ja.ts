@@ -251,6 +251,8 @@ export const ja = {
 		profilePageImageAltText: 'プロフィール写真：',
 		profilePageFollowers: 'フォロワー',
 		profilePageAddTicketsAltText: 'チケットを追加',
+		profilePageOpenCommentsButtonAriaLabel: 'プロフィールのコメントセクションを開く',
+		profilePageOpenCommentIconAltText: 'プロフィールのコメントセクションを開くアイコン',
 		profilePageExternalLinkSpotify: 'Spotifyでプロフィールを見る',
 		profilePageExternalLinkDeezer: 'Deezerでプロフィールを見る',
 		profilePageYourSongsOnProfileHeading2: 'あなたの楽曲',
