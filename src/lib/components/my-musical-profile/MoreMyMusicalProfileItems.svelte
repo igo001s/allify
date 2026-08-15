@@ -6,7 +6,6 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
-	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateMostListenedTracksNewLimit } from '$lib/services/user/updates/updateMostListenedTracksNewLimit';
@@ -129,13 +128,25 @@
 			{/if}
 		</span>
 
-		<div
-			class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
-		>
-			<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-4 w-4" />
+		{#if additionalItemsType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) > new Date()}
+			<div
+				class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
+			>
+				<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-4 w-4" />
 
-			<span class="text-xs leading-none font-bold">-1</span>
-		</div>
+				<span class="text-xs leading-none font-bold">-1</span>
+			</div>
+		{/if}
+
+		{#if additionalItemsType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) > new Date()}
+			<div
+				class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
+			>
+				<img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-4 w-4" />
+
+				<span class="text-xs leading-none font-bold">-1</span>
+			</div>
+		{/if}
 	</div>
 
 	{#if loadingMoreItems}
