@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import AlliFullBodyPointing from '$lib/assets/images/alli/alli-full-body-pointing.webp';
-	import AlliFullBodyPointingDownwards from '$lib/assets/images/alli/alli-full-body-pointing-downwards.webp';
+	import AlliFullBodyPointing from '$lib/assets/images/alli/alli-full-body-pointing.webp?enhanced';
+	import AlliFullBodyPointingDownwards from '$lib/assets/images/alli/alli-full-body-pointing-downwards.webp?enhanced';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

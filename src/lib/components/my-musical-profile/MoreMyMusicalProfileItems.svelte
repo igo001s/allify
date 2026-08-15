@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced?enhanced';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
 
 	// Stores

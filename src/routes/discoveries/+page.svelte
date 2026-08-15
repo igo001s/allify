@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 
 	// Assets
-	import AlliFullBodyWaving from '$lib/assets/images/alli/alli-full-body-waving.webp';
+	import AlliFullBodyWaving from '$lib/assets/images/alli/alli-full-body-waving.webp?enhanced';
 	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
 	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 

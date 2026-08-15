@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced?enhanced';
+	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 	import PlusIcon from '$lib/assets/images/icons/PlusIcon.svelte';
 	import CommentIcon from '$lib/assets/images/icons/CommentIcon.svelte';
 
