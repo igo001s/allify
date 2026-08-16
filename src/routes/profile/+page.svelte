@@ -18,9 +18,6 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
-	// Types
-	import type { Locale } from '$lib/types/Schema.type';
-
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
@@ -34,8 +31,6 @@
 
 	$: selectedStreaming =
 		$userInfo?.connectedStreamings.spotify?.connected === true ? 'spotify' : null;
-
-	$: jsonLd = getJsonLdByPage('profilePage', $translationsStore.language as Locale);
 
 	function openSelectItemOfTheMomentModal(itemType: 'artist' | 'music') {
 		showSelectItemOfTheMomentModal = true;
@@ -76,6 +71,13 @@
 		showChangeCustomItemModal = false;
 		document.body.style.overflow = '';
 	}
+
+	$: jsonLd = getJsonLdByPage(
+		'profilePage',
+		$translationsStore.locale,
+		$translationsStore.profilePage.title,
+		$translationsStore.profilePage.profilePageMetaDescription
+	);
 </script>
 
 <svelte:head>

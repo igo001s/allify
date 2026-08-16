@@ -8,13 +8,15 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
-	// Types
-	import type { Locale } from '$lib/types/Schema.type';
-
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
-	$: jsonLd = getJsonLdByPage('termsOfServicePage', $translationsStore.language as Locale);
+	$: jsonLd = getJsonLdByPage(
+		'termsOfServicePage',
+		$translationsStore.locale,
+		$translationsStore.legalPages.termsOfService.title,
+		$translationsStore.legalPages.termsOfService.termsOfServiceMetaDescription
+	);
 </script>
 
 <svelte:head>

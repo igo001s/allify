@@ -11,13 +11,15 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
-	// Types
-	import type { Locale } from '$lib/types/Schema.type';
-
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
-	$: jsonLd = getJsonLdByPage('settingsPage', $translationsStore.language as Locale);
+	$: jsonLd = getJsonLdByPage(
+		'settingsPage',
+		$translationsStore.locale,
+		$translationsStore.settingsPage.title,
+		$translationsStore.settingsPage.settingsPageMetaDescription
+	);
 </script>
 
 <svelte:head>

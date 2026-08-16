@@ -132,7 +132,11 @@
 			<div
 				class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
 			>
-				<enhanced:img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-4 w-4" />
+				<enhanced:img
+					src={TicketIcon}
+					alt={$translationsStore.generalTexts.ticketAltText}
+					class="h-4 w-4"
+				/>
 
 				<span class="text-xs leading-none font-bold">-1</span>
 			</div>
@@ -142,7 +146,11 @@
 			<div
 				class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
 			>
-				<enhanced:img src={TicketIcon} alt={$translationsStore.generalTexts.ticketAltText} class="h-4 w-4" />
+				<enhanced:img
+					src={TicketIcon}
+					alt={$translationsStore.generalTexts.ticketAltText}
+					class="h-4 w-4"
+				/>
 
 				<span class="text-xs leading-none font-bold">-1</span>
 			</div>

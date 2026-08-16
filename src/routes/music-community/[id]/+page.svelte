@@ -10,17 +10,7 @@
 	import { getPublicUser } from '$lib/services/user/getters/getPublicUser';
 
 	// Schema
-	import { getPublicUserJsonLd } from '$lib/utils/getSchemaInfo';
-
-	$: jsonLd = getPublicUserJsonLd(
-		$page.params.id ?? '',
-		user?.name ?? $page.params.id,
-		$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserMetaDescription.replace(
-			'{userName}',
-			user?.name ?? $page.params.id
-		),
-		$translationsStore.configuration.langAttribute
-	);
+	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
 	let user: any;
 
@@ -35,6 +25,14 @@
 
 		user = userReturnedById;
 	});
+
+	$: jsonLd = getJsonLdByPage(
+		'musicCommunityPageUser',
+		$translationsStore.locale,
+		$translationsStore.musicCommunityPage.title,
+		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription,
+		$page.params.id
+	);
 </script>
 
 <svelte:head>

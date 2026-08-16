@@ -12,15 +12,17 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
 
-	// Types
-	import type { Locale } from '$lib/types/Schema.type';
-
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
 	const itemsType: Array<'artists' | 'tracks'> = ['artists', 'tracks'];
 
-	$: jsonLd = getJsonLdByPage('myMusicalProfilePage', $translationsStore.language as Locale);
+	$: jsonLd = getJsonLdByPage(
+		'myMusicalProfilePage',
+		$translationsStore.locale,
+		$translationsStore.myMusicalProfilePage.title,
+		$translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription
+	);
 </script>
 
 <svelte:head>

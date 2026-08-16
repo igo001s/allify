@@ -20,13 +20,8 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { toastStore } from '$lib/stores/toast.store';
 
-	// Types
-	import type { Locale } from '$lib/types/Schema.type';
-
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
-
-	$: jsonLd = getJsonLdByPage('discoveriesPage', $translationsStore.language as Locale);
 
 	let loadingDiscoveries = false;
 
@@ -131,6 +126,13 @@
 
 		loadingDiscoveries = false;
 	}
+
+	$: jsonLd = getJsonLdByPage(
+		'discoveriesPage',
+		$translationsStore.locale,
+		$translationsStore.discoveriesPage.title,
+		$translationsStore.discoveriesPage.discoveriesPageMetaDescription
+	);
 </script>
 
 <svelte:head>

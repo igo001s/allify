@@ -19,12 +19,9 @@
 
 	// Types
 	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
-	import type { Locale } from '$lib/types/Schema.type';
 
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
-
-	$: jsonLd = getJsonLdByPage('musicCommunityPage', $translationsStore.language as Locale);
 
 	let searchUserInputValue: string = '';
 	let loadingFoundedUsers = false;
@@ -48,6 +45,13 @@
 			loadingFoundedUsers = false;
 		}
 	}
+
+	$: jsonLd = getJsonLdByPage(
+		'musicCommunityPage',
+		$translationsStore.locale,
+		$translationsStore.musicCommunityPage.title,
+		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
+	);
 </script>
 
 <svelte:head>
