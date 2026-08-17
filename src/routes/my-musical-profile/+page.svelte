@@ -16,18 +16,16 @@
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
 	const itemsType: Array<'artists' | 'tracks'> = ['artists', 'tracks'];
-
-	$: jsonLd = getJsonLdByPage(
-		'myMusicalProfilePage',
-		$translationsStore.locale,
-		$translationsStore.myMusicalProfilePage.title,
-		$translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription
-	);
 </script>
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${jsonLd}</script>`}
+	{@html `<script type="application/ld+json">${getJsonLdByPage(
+		'myMusicalProfilePage',
+		$translationsStore.locale,
+		$translationsStore.myMusicalProfilePage.title,
+		$translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription
+	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.myMusicalProfilePage.title}</title>
 	<meta

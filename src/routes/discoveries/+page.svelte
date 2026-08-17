@@ -126,18 +126,16 @@
 
 		loadingDiscoveries = false;
 	}
-
-	$: jsonLd = getJsonLdByPage(
-		'discoveriesPage',
-		$translationsStore.locale,
-		$translationsStore.discoveriesPage.title,
-		$translationsStore.discoveriesPage.discoveriesPageMetaDescription
-	);
 </script>
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${jsonLd}</script>`}
+	{@html `<script type="application/ld+json">${getJsonLdByPage(
+		'discoveriesPage',
+		$translationsStore.locale,
+		$translationsStore.discoveriesPage.title,
+		$translationsStore.discoveriesPage.discoveriesPageMetaDescription
+	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.discoveriesPage.title}</title>
 	<meta

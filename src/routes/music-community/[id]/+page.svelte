@@ -25,19 +25,17 @@
 
 		user = userReturnedById;
 	});
+</script>
 
-	$: jsonLd = getJsonLdByPage(
+<svelte:head>
+	<!-- Schema.org -->
+	{@html `<script type="application/ld+json">${getJsonLdByPage(
 		'musicCommunityPageUser',
 		$translationsStore.locale,
 		$translationsStore.musicCommunityPage.title,
 		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription,
 		$page.params.id
-	);
-</script>
-
-<svelte:head>
-	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${jsonLd}</script>`}
+	)}</script>`}
 	<!-- General -->
 	<title
 		>{$translationsStore.musicCommunityPage.publicUser.title.replace(

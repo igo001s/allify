@@ -71,18 +71,16 @@
 		showChangeCustomItemModal = false;
 		document.body.style.overflow = '';
 	}
-
-	$: jsonLd = getJsonLdByPage(
-		'profilePage',
-		$translationsStore.locale,
-		$translationsStore.profilePage.title,
-		$translationsStore.profilePage.profilePageMetaDescription
-	);
 </script>
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${jsonLd}</script>`}
+	{@html `<script type="application/ld+json">${getJsonLdByPage(
+		'profilePage',
+		$translationsStore.locale,
+		$translationsStore.profilePage.title,
+		$translationsStore.profilePage.profilePageMetaDescription
+	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.profilePage.title}</title>
 	<meta name="description" content={$translationsStore.profilePage.profilePageMetaDescription} />

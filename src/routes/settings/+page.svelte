@@ -13,18 +13,16 @@
 
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
-
-	$: jsonLd = getJsonLdByPage(
-		'settingsPage',
-		$translationsStore.locale,
-		$translationsStore.settingsPage.title,
-		$translationsStore.settingsPage.settingsPageMetaDescription
-	);
 </script>
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${jsonLd}</script>`}
+	{@html `<script type="application/ld+json">${getJsonLdByPage(
+		'settingsPage',
+		$translationsStore.locale,
+		$translationsStore.settingsPage.title,
+		$translationsStore.settingsPage.settingsPageMetaDescription
+	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.settingsPage.title}</title>
 	<meta name="description" content={$translationsStore.settingsPage.settingsPageMetaDescription} />

@@ -45,18 +45,16 @@
 			loadingFoundedUsers = false;
 		}
 	}
-
-	$: jsonLd = getJsonLdByPage(
-		'musicCommunityPage',
-		$translationsStore.locale,
-		$translationsStore.musicCommunityPage.title,
-		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
-	);
 </script>
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${jsonLd}</script>`}
+	{@html `<script type="application/ld+json">${getJsonLdByPage(
+		'musicCommunityPage',
+		$translationsStore.locale,
+		$translationsStore.musicCommunityPage.title,
+		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
+	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.musicCommunityPage.title}</title>
 	<meta
