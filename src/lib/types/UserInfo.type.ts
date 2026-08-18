@@ -21,6 +21,13 @@ export type UserInfo = {
 		visibility: 'public' | 'private';
 		nextFreeUpdate?: Date;
 	};
+	comments: {
+		author: {
+			_id: ObjectId;
+			name: string;
+		},
+		comment: string;
+	}[];
 	connectedStreamings: {
 		spotify?: UserInfoSpotify;
 		deezer?: undefined;
