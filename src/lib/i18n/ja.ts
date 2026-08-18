@@ -400,7 +400,10 @@ export const ja = {
 		profilePageCommentsCloseModalAltText: 'プロフィールコメントモーダルを閉じるアイコン',
 		profilePageCommentsParagraph1: 'あなたについてみんなが言っていること',
 		profilePageCommentsParagraph2:
-			'コミュニティがあなたのプロフィールに残したコメントをチェックしましょう。'
+			'コミュニティがあなたのプロフィールに残したコメントをチェックしましょう。',
+		profilePageAuthorCommentImageAltText: 'Foto del profilo di',
+		profilePageAuthorEmptyComments:
+			'Il tuo profilo non ha ancora commenti. Condividi il tuo profilo con i tuoi amici in modo che possano lasciare commenti!'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

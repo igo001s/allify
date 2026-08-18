@@ -7,6 +7,7 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
 
 	export let showCommentsModal: boolean;
 
@@ -44,6 +45,43 @@
 			<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
 				{$translationsStore.profilePage.profilePageCommentsParagraph2}
 			</p>
+
+			{#if $userInfo && $userInfo.comments.length > 0}
+				<div class="mt-2 flex max-h-130 flex-col gap-3 overflow-y-auto pr-2 sm:gap-4">
+					{#each $userInfo.comments as comment}
+						<div
+							class="bg-s-secondary/40 flex items-start gap-3 rounded-lg border border-b-default p-3 sm:p-4"
+						>
+							<enhanced:img
+								src={comment.author.image?.url ?? ''}
+								alt={`${$translationsStore.profilePage.profilePageAuthorCommentImageAltText} ${comment.author.name}`}
+								class="h-12 w-12 shrink-0 rounded-full object-cover"
+							/>
+
+							<div class="flex flex-col gap-1">
+								<a
+									href={`/music-community/${comment.author._id}`}
+									class="cursor-pointer leading-relaxed font-semibold text-t-secondary transition hover:text-brand-primary sm:text-sm"
+								>
+									{comment.author.name}
+								</a>
+
+								<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+									{comment.comment}
+								</p>
+							</div>
+						</div>
+					{/each}
+				</div>
+			{:else}
+				<div
+					class="mt-2 flex flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-secondary/20 p-5 text-center sm:py-12"
+				>
+					<p class="max-w-md text-xs leading-relaxed text-t-secondary/70 sm:text-sm">
+						{$translationsStore.profilePage.profilePageAuthorEmptyComments}
+					</p>
+				</div>
+			{/if}
 		</div>
 	</div>
 </div>

@@ -413,7 +413,10 @@ export const ru = {
 		profilePageCommentsCloseModalAltText: 'Значок закрытия окна комментариев профиля',
 		profilePageCommentsParagraph1: 'Что другие говорят о вас',
 		profilePageCommentsParagraph2:
-			'Посмотрите комментарии, которые сообщество оставило в вашем профиле.'
+			'Посмотрите комментарии, которые сообщество оставило в вашем профиле.',
+		profilePageAuthorCommentImageAltText: 'Фото профиля',
+		profilePageAuthorEmptyComments:
+			'В вашем профиле пока нет комментариев. Поделитесь своим профилем с друзьями, чтобы они могли оставить комментарии!'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

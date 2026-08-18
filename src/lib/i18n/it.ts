@@ -423,7 +423,11 @@ export const it = {
 		profilePageCommentsCloseModalAriaLabel: 'Chiudi la finestra dei commenti del profilo',
 		profilePageCommentsCloseModalAltText: 'Icona per chiudere la finestra dei commenti del profilo',
 		profilePageCommentsParagraph1: 'Cosa dicono gli altri di te',
-		profilePageCommentsParagraph2: 'Scopri i commenti che la community ha lasciato sul tuo profilo.'
+		profilePageCommentsParagraph2:
+			'Scopri i commenti che la community ha lasciato sul tuo profilo.',
+		profilePageAuthorCommentImageAltText: 'Foto del profilo di',
+		profilePageAuthorEmptyComments:
+			'Il tuo profilo non ha ancora commenti. Condividi il tuo profilo con i tuoi amici in modo che possano lasciare commenti!'
 	},
 	settingsPage: {
 		title: 'Impostazioni | Allify',

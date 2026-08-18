@@ -369,7 +369,10 @@ export const zh = {
 		profilePageCommentsCloseModalAriaLabel: '关闭个人资料评论弹窗',
 		profilePageCommentsCloseModalAltText: '关闭个人资料评论弹窗的图标',
 		profilePageCommentsParagraph1: '大家都在说些什么',
-		profilePageCommentsParagraph2: '看看社区成员在你的个人资料上留下的评论。'
+		profilePageCommentsParagraph2: '看看社区成员在你的个人资料上留下的评论。',
+		profilePageAuthorCommentImageAltText: '个人资料照片',
+		profilePageAuthorEmptyComments:
+			'你的个人资料尚无评论。与朋友分享你的个人资料，让他们可以发表评论！'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

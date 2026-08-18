@@ -427,7 +427,10 @@ export const es = {
 		profilePageCommentsCloseModalAriaLabel: 'Cerrar modal de comentarios del perfil',
 		profilePageCommentsCloseModalAltText: 'Icono para cerrar el modal de comentarios del perfil',
 		profilePageCommentsParagraph1: 'Lo que otros dicen sobre ti',
-		profilePageCommentsParagraph2: 'Mira los comentarios que la comunidad ha dejado en tu perfil.'
+		profilePageCommentsParagraph2: 'Mira los comentarios que la comunidad ha dejado en tu perfil.',
+		profilePageAuthorCommentImageAltText: 'Foto de perfil de',
+		profilePageAuthorEmptyComments:
+			'Tu perfil aún no tiene comentarios. ¡Comparte tu perfil con tus amigos para que puedan dejar comentarios!'
 	},
 	settingsPage: {
 		title: 'Configuración | Allify',

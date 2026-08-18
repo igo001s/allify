@@ -23,9 +23,14 @@ export type UserInfo = {
 	};
 	comments: {
 		author: {
+			image?: {
+				url: string;
+				height: number | null;
+				width: number | null;
+			};
 			_id: ObjectId;
 			name: string;
-		},
+		};
 		comment: string;
 	}[];
 	connectedStreamings: {

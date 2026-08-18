@@ -432,7 +432,10 @@ export const fr = {
 			'Icône pour fermer la fenêtre modale des commentaires du profil',
 		profilePageCommentsParagraph1: 'Ce que les autres disent de vous',
 		profilePageCommentsParagraph2:
-			'Découvrez les commentaires que la communauté a laissés sur votre profil.'
+			'Découvrez les commentaires que la communauté a laissés sur votre profil.',
+		profilePageAuthorCommentImageAltText: 'Photo de profil de',
+		profilePageAuthorEmptyComments:
+			'Votre profil n’a pas encore de commentaires. Partagez votre profil avec vos amis afin qu’ils puissent laisser des commentaires !'
 	},
 	settingsPage: {
 		title: 'Paramètres | Allify',

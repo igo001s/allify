@@ -427,7 +427,10 @@ export const de = {
 		profilePageCommentsCloseModalAltText: 'Symbol zum Schließen des Modals für Profilkommentare',
 		profilePageCommentsParagraph1: 'Was andere über dich sagen',
 		profilePageCommentsParagraph2:
-			'Sieh dir die Kommentare an, die die Community auf deinem Profil hinterlassen hat.'
+			'Sieh dir die Kommentare an, die die Community auf deinem Profil hinterlassen hat.',
+		profilePageAuthorCommentImageAltText: 'Profilfoto von',
+		profilePageAuthorEmptyComments:
+			'Dein Profil hat noch keine Kommentare. Teile dein Profil mit deinen Freunden, damit sie Kommentare hinterlassen können!'
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',
