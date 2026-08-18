@@ -365,7 +365,11 @@ export const zh = {
 		profilePageChangeYourCustomItemModalCloseModal: '关闭',
 		profilePageChangeYourCustomItemModalSaveChanges: '保存更改',
 		profilePageSelectYourCustomItemModalCloseModal: '关闭',
-		profilePageSelectYourCustomItemModalSaveChanges: '保存选择'
+		profilePageSelectYourCustomItemModalSaveChanges: '保存选择',
+		profilePageCommentsCloseModalAriaLabel: '关闭个人资料评论弹窗',
+		profilePageCommentsCloseModalAltText: '关闭个人资料评论弹窗的图标',
+		profilePageCommentsParagraph1: '大家都在说些什么',
+		profilePageCommentsParagraph2: '看看社区成员在你的个人资料上留下的评论。'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

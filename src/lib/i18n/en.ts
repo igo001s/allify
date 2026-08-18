@@ -394,7 +394,11 @@ export const en = {
 		profilePageChangeYourCustomItemModalCloseModal: 'Close',
 		profilePageChangeYourCustomItemModalSaveChanges: 'Save changes',
 		profilePageSelectYourCustomItemModalCloseModal: 'Close',
-		profilePageSelectYourCustomItemModalSaveChanges: 'Save selection'
+		profilePageSelectYourCustomItemModalSaveChanges: 'Save selection',
+		profilePageCommentsCloseModalAriaLabel: 'Close profile comments modal',
+		profilePageCommentsCloseModalAltText: 'Close icon for the profile comments modal',
+		profilePageCommentsParagraph1: 'What others are saying about you',
+		profilePageCommentsParagraph2: 'Check out the comments the community has left on your profile.'
 	},
 	settingsPage: {
 		title: 'Settings | Allify',

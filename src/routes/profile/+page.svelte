@@ -13,6 +13,7 @@
 	import SelectItemOfTheMomentModal from '$lib/components/profile/SelectItemOfTheMomentModal.svelte';
 	import SelectCustomItemModal from '$lib/components/profile/SelectCustomItemModal.svelte';
 	import ChangeCustomItemModal from '$lib/components/profile/ChangeCustomItemModal.svelte';
+	import CommentsModal from '$lib/components/profile/CommentsModal.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -26,6 +27,8 @@
 
 	let showChangeCustomItemModal = false;
 	let showSelectCustomItemModal = false;
+
+	let showCommentsModal = false;
 
 	let selectedItemType: 'artist' | 'music';
 
@@ -108,6 +111,7 @@
 			<KeyInformation
 				userInfo={selectedStreaming ? $userInfo.connectedStreamings.spotify : null}
 				tickets={$userInfo.tickets}
+				bind:showCommentsModal
 			/>
 		</div>
 
@@ -145,4 +149,8 @@
 	{/if}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />
+{/if}
+
+{#if showCommentsModal}
+	<CommentsModal bind:showCommentsModal />
 {/if}

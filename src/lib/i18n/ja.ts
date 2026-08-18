@@ -395,7 +395,12 @@ export const ja = {
 		profilePageChangeYourCustomItemModalCloseModal: '閉じる',
 		profilePageChangeYourCustomItemModalSaveChanges: '変更を保存',
 		profilePageSelectYourCustomItemModalCloseModal: '閉じる',
-		profilePageSelectYourCustomItemModalSaveChanges: '選択を保存'
+		profilePageSelectYourCustomItemModalSaveChanges: '選択を保存',
+		profilePageCommentsCloseModalAriaLabel: 'プロフィールコメントモーダルを閉じる',
+		profilePageCommentsCloseModalAltText: 'プロフィールコメントモーダルを閉じるアイコン',
+		profilePageCommentsParagraph1: 'あなたについてみんなが言っていること',
+		profilePageCommentsParagraph2:
+			'コミュニティがあなたのプロフィールに残したコメントをチェックしましょう。'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

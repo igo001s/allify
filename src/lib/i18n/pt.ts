@@ -408,7 +408,11 @@ export const pt = {
 		profilePageChangeYourCustomItemModalCloseModal: 'Fechar',
 		profilePageChangeYourCustomItemModalSaveChanges: 'Salvar alterações',
 		profilePageSelectYourCustomItemModalCloseModal: 'Fechar',
-		profilePageSelectYourCustomItemModalSaveChanges: 'Salvar seleção'
+		profilePageSelectYourCustomItemModalSaveChanges: 'Salvar seleção',
+		profilePageCommentsCloseModalAriaLabel: 'Fechar modal de comentários do perfil',
+		profilePageCommentsCloseModalAltText: 'Ícone de fechar modal de comentários do perfil',
+		profilePageCommentsParagraph1: 'O que estão dizendo sobre você',
+		profilePageCommentsParagraph2: 'Confira os comentários que a comunidade deixou no seu perfil.'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

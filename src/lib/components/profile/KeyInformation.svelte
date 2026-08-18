@@ -15,6 +15,7 @@
 	// Props
 	export let userInfo;
 	export let tickets;
+	export let showCommentsModal: boolean;
 
 	let selectedStreaming: 'spotify' | 'deezer';
 
@@ -119,7 +120,7 @@
 		<button
 			class="cursor-pointer rounded-lg border border-brand-primary/20 bg-white p-1.5 text-xs font-medium text-brand-primary transition-all hover:border-brand-primary/40 hover:bg-brand-primary/5"
 			aria-label={$translationsStore.profilePage.profilePageOpenCommentsButtonAriaLabel}
-			on:click={() => console.log('Comment button clicked')}
+			on:click={() => (showCommentsModal = true)}
 		>
 			<CommentIcon
 				iconSvgClass="text-brand-primary h-7 w-7 ml-1.5 transition-transform duration-200 md:h-9 md:w-9"

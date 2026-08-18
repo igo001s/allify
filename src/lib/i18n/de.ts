@@ -422,7 +422,12 @@ export const de = {
 		profilePageChangeYourCustomItemModalCloseModal: 'Schließen',
 		profilePageChangeYourCustomItemModalSaveChanges: 'Änderungen speichern',
 		profilePageSelectYourCustomItemModalCloseModal: 'Schließen',
-		profilePageSelectYourCustomItemModalSaveChanges: 'Auswahl speichern'
+		profilePageSelectYourCustomItemModalSaveChanges: 'Auswahl speichern',
+		profilePageCommentsCloseModalAriaLabel: 'Modal für Profilkommentare schließen',
+		profilePageCommentsCloseModalAltText: 'Symbol zum Schließen des Modals für Profilkommentare',
+		profilePageCommentsParagraph1: 'Was andere über dich sagen',
+		profilePageCommentsParagraph2:
+			'Sieh dir die Kommentare an, die die Community auf deinem Profil hinterlassen hat.'
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',

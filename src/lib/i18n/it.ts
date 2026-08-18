@@ -419,7 +419,11 @@ export const it = {
 		profilePageChangeYourCustomItemModalCloseModal: 'Chiudi',
 		profilePageChangeYourCustomItemModalSaveChanges: 'Salva modifiche',
 		profilePageSelectYourCustomItemModalCloseModal: 'Chiudi',
-		profilePageSelectYourCustomItemModalSaveChanges: 'Salva selezione'
+		profilePageSelectYourCustomItemModalSaveChanges: 'Salva selezione',
+		profilePageCommentsCloseModalAriaLabel: 'Chiudi la finestra dei commenti del profilo',
+		profilePageCommentsCloseModalAltText: 'Icona per chiudere la finestra dei commenti del profilo',
+		profilePageCommentsParagraph1: 'Cosa dicono gli altri di te',
+		profilePageCommentsParagraph2: 'Scopri i commenti che la community ha lasciato sul tuo profilo.'
 	},
 	settingsPage: {
 		title: 'Impostazioni | Allify',

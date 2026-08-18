@@ -408,7 +408,12 @@ export const ru = {
 		profilePageChangeYourCustomItemModalCloseModal: 'Закрыть',
 		profilePageChangeYourCustomItemModalSaveChanges: 'Сохранить изменения',
 		profilePageSelectYourCustomItemModalCloseModal: 'Закрыть',
-		profilePageSelectYourCustomItemModalSaveChanges: 'Сохранить выбор'
+		profilePageSelectYourCustomItemModalSaveChanges: 'Сохранить выбор',
+		profilePageCommentsCloseModalAriaLabel: 'Закрыть окно комментариев профиля',
+		profilePageCommentsCloseModalAltText: 'Значок закрытия окна комментариев профиля',
+		profilePageCommentsParagraph1: 'Что другие говорят о вас',
+		profilePageCommentsParagraph2:
+			'Посмотрите комментарии, которые сообщество оставило в вашем профиле.'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',
