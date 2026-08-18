@@ -123,7 +123,7 @@
 			on:click={() => (showCommentsModal = true)}
 		>
 			<CommentIcon
-				iconSvgClass="text-brand-primary h-7 w-7 ml-1.5 transition-transform duration-200 md:h-9 md:w-9"
+				iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 transition-transform duration-200 md:h-8 md:w-8"
 				iconAltText={$translationsStore.profilePage.profilePageOpenCommentIconAltText}
 			/>
 		</button>
