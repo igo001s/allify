@@ -75,9 +75,9 @@
 				</div>
 			{:else}
 				<div
-					class="mt-2 flex flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-secondary/20 p-5 text-center sm:py-12"
+					class="flex w-full flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
 				>
-					<p class="max-w-md text-xs leading-relaxed text-t-secondary/70 sm:text-sm">
+					<p class="max-w-lg leading-relaxed text-t-secondary text-xs">
 						{$translationsStore.profilePage.profilePageAuthorEmptyComments}
 					</p>
 				</div>
