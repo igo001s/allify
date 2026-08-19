@@ -234,6 +234,9 @@ export const ja = {
 		musicCommunityStarIconAltText: 'プロフィールをお気に入りに追加するための星アイコン',
 		musicCommunityStarIconRemoveAltText: 'プロフィールをお気に入りから削除するための星アイコン',
 		musicCommunityToastErrorAddToFavoritesMessage: '自分自身をお気に入りに追加することはできません',
+		musicCommunityPageLoadingUserTitle: 'ユーザープロフィールを読み込み中... | Allify',
+		musicCommunityPageLoadingUserMetaDescription: 'ユーザープロフィールを読み込み中です。情報を取得するまでしばらくお待ちください。',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'ユーザープロフィールを読み込み中です。情報を取得するまでしばらくお待ちください。',
 		publicUser: {
 			title: '{userName}のプロフィール | Allify',
 			musicCommunityPagePublicUserMetaDescription:

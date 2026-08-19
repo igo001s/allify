@@ -6,6 +6,9 @@
 	// Svelte
 	import { onMount } from 'svelte';
 
+	// Assets
+	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
+
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
@@ -17,18 +20,28 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
+	let loadingUser: boolean = true;
+
 	$: user = null as UserInfo | null;
 
 	onMount(async () => {
-		const userId = $page.params.id;
+		try {
+			const userId = $page.params.id;
 
-		if (!userId) {
-			return;
+			if (!userId) {
+				return;
+			}
+
+			const userReturnedById = await getPublicUser(userId);
+
+			user = userReturnedById;
+		} catch {
+			user = null;
+
+			loadingUser = false;
+		} finally {
+			loadingUser = false;
 		}
-
-		const userReturnedById = await getPublicUser(userId);
-
-		user = userReturnedById;
 	});
 </script>
 
@@ -43,14 +56,14 @@
 	)}</script>`}
 	<!-- General -->
 	<title
-		>{user ? $translationsStore.musicCommunityPage.publicUser.title.replace(
+		>{loadingUser ? $translationsStore.musicCommunityPage.musicCommunityPageLoadingUserTitle : user ? $translationsStore.musicCommunityPage.publicUser.title.replace(
 			'{userName}',
 			user?.name
 		) : $translationsStore.musicCommunityPage.noUserFound.title}</title
 	>
 	<meta
 		name="description"
-		content={user ? $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserMetaDescription.replace(
+		content={loadingUser ? $translationsStore.musicCommunityPage.musicCommunityPageLoadingUserMetaDescription : user ? $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserMetaDescription.replace(
 			'{userName}',
 			user?.name
 		) : $translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundMetaDescription}
@@ -61,14 +74,14 @@
 	<meta property="og:url" content={`https://allify.club${$page.url.pathname}`} />
 	<meta
 		property="og:title"
-		content={user ? $translationsStore.musicCommunityPage.publicUser.title.replace(
+		content={loadingUser ? $translationsStore.musicCommunityPage.musicCommunityPageLoadingUserTitle : user ? $translationsStore.musicCommunityPage.publicUser.title.replace(
 			'{userName}',
 			user?.name
 		) : $translationsStore.musicCommunityPage.noUserFound.title}
 	/>
 	<meta
 		property="og:description"
-		content={user ? $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserMetaOgAndTwitterContent.replace(
+		content={loadingUser ? $translationsStore.musicCommunityPage.musicCommunityPageLoadingUserMetaOgAndTwitterContent : user ? $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserMetaOgAndTwitterContent.replace(
 			'{userName}',
 			user?.name
 		) : $translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundMetaOgAndTwitterContent}
@@ -77,14 +90,14 @@
 	<meta name="twitter:url" content={`https://allify.club${$page.url.pathname}`} />
 	<meta
 		name="twitter:title"
-		content={user ? $translationsStore.musicCommunityPage.publicUser.title.replace(
+		content={loadingUser ? $translationsStore.musicCommunityPage.musicCommunityPageLoadingUserTitle : user ? $translationsStore.musicCommunityPage.publicUser.title.replace(
 			'{userName}',
 			user?.name
 		) : $translationsStore.musicCommunityPage.noUserFound.title}
 	/>
 	<meta
 		name="twitter:description"
-		content={user ? $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserMetaOgAndTwitterContent.replace(
+		content={loadingUser ? $translationsStore.musicCommunityPage.musicCommunityPageLoadingUserMetaOgAndTwitterContent : user ? $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserMetaOgAndTwitterContent.replace(
 			'{userName}',
 			user?.name
 		) : $translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundMetaOgAndTwitterContent}
@@ -92,7 +105,11 @@
 </svelte:head>
 
 <section class="base-section">
-	{#if user}
+	{#if loadingUser}
+		<div class="h-64 flex items-center justify-center">
+			<DotsLoading />
+		</div>
+	{:else if user}
 		<p>{user.name}</p>
 	{:else}
 		<div

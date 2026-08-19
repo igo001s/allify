@@ -245,6 +245,9 @@ export const fr = {
 		musicCommunityStarIconAltText: 'Icône d’étoile pour ajouter un profil aux favoris',
 		musicCommunityStarIconRemoveAltText: 'Icône d’étoile pour supprimer un profil des favoris',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Vous ne pouvez pas vous ajouter à vos favoris',
+		musicCommunityPageLoadingUserTitle: 'Chargement du profil de l’utilisateur... | Allify',
+		musicCommunityPageLoadingUserMetaDescription: 'Chargement du profil de l’utilisateur. Veuillez patienter pendant que nous récupérons les informations.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Chargement du profil de l’utilisateur. Veuillez patienter pendant que nous récupérons les informations.',
 		publicUser: {
 			title: 'Profil de {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:

@@ -240,6 +240,9 @@ export const pt = {
 		musicCommunityStarIconAltText: 'Ícone de estrela para favoritar perfil',
 		musicCommunityStarIconRemoveAltText: 'Ícone de estrela para remover perfil dos favoritos',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Não é possível favoritar a si mesmo',
+		musicCommunityPageLoadingUserTitle: 'Carregando perfil do usuário... | Allify',
+		musicCommunityPageLoadingUserMetaDescription: 'Estamos carregando o perfil do usuário. Por favor, aguarde enquanto buscamos as informações.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Estamos carregando o perfil do usuário. Por favor, aguarde enquanto buscamos as informações.',
 		publicUser: {
 			title: 'Perfil de {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:

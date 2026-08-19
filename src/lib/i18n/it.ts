@@ -241,6 +241,9 @@ export const it = {
 		musicCommunityStarIconAltText: 'Icona di stella per aggiungere un profilo ai preferiti',
 		musicCommunityStarIconRemoveAltText: 'Icona di stella per rimuovere un profilo dai preferiti',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Non puoi aggiungerti ai preferiti',
+		musicCommunityPageLoadingUserTitle: 'Caricamento del profilo utente... | Allify',
+		musicCommunityPageLoadingUserMetaDescription: 'Stiamo caricando il profilo dell’utente. Attendere prego mentre recuperiamo le informazioni.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Stiamo caricando il profilo dell’utente. Attendere prego mentre recuperiamo le informazioni.',
 		publicUser: {
 			title: 'Profilo di {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:

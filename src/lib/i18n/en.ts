@@ -239,6 +239,9 @@ export const en = {
 		musicCommunityStarIconAltText: 'Star icon to favorite a profile',
 		musicCommunityStarIconRemoveAltText: 'Star icon to remove a profile from favorites',
 		musicCommunityToastErrorAddToFavoritesMessage: 'You cannot favorite yourself',
+		musicCommunityPageLoadingUserTitle: 'Loading user profile... | Allify',
+		musicCommunityPageLoadingUserMetaDescription: 'We are loading the user profile. Please wait while we fetch the information.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'We are loading the user profile. Please wait while we fetch the information.',
 		publicUser: {
 			title: 'Profile of {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:

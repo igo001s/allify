@@ -241,6 +241,9 @@ export const ru = {
 		musicCommunityStarIconAltText: 'Иконка звезды для добавления профиля в избранное',
 		musicCommunityStarIconRemoveAltText: 'Иконка звезды для удаления профиля из избранного',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Вы не можете добавить себя в избранное',
+		musicCommunityPageLoadingUserTitle: 'Загрузка профиля пользователя... | Allify',
+		musicCommunityPageLoadingUserMetaDescription: 'Загрузка профиля пользователя. Пожалуйста, подождите, пока мы получаем информацию.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Загрузка профиля пользователя. Пожалуйста, подождите, пока мы получаем информацию.',
 		publicUser: {
 			title: 'Профиль {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:

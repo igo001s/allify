@@ -242,6 +242,9 @@ export const de = {
 		musicCommunityStarIconRemoveAltText:
 			'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Du kannst dich nicht selbst favorisieren',
+		musicCommunityPageLoadingUserTitle: 'Lade Benutzerprofil... | Allify',
+		musicCommunityPageLoadingUserMetaDescription: 'Lade Benutzerprofil. Bitte warten Sie, während wir die Informationen abrufen.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Lade Benutzerprofil. Bitte warten Sie, während wir die Informationen abrufen.',
 		publicUser: {
 			title: 'Profil von {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:

@@ -222,6 +222,9 @@ export const zh = {
 		musicCommunityStarIconAltText: '用于收藏个人资料的星形图标',
 		musicCommunityStarIconRemoveAltText: '用于从收藏夹中删除个人资料的星形图标',
 		musicCommunityToastErrorAddToFavoritesMessage: '您不能将自己添加到收藏夹',
+		musicCommunityPageLoadingUserTitle: '正在加载用户个人资料... | Allify',
+		musicCommunityPageLoadingUserMetaDescription: '正在加载用户个人资料。请稍候，我们正在获取信息。',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent: '正在加载用户个人资料。请稍候，我们正在获取信息。',
 		publicUser: {
 			title: '{userName} 的个人资料 | Allify',
 			musicCommunityPagePublicUserMetaDescription:
