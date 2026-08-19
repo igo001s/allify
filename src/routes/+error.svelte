@@ -80,7 +80,7 @@
 
 		<button
 			on:click={() => goto('/')}
-			class="mt-6 w-90 cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-xs font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark"
+			class="mt-4 w-60 cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-xs font-medium text-t-inverse shadow-md transition-all hover:scale-102 sm:w-90 hover:bg-brand-primary-dark"
 		>
 			{$translationsStore.errorPage.errorPageButtonGoHome}
 		</button>

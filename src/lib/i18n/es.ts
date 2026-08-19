@@ -250,6 +250,14 @@ export const es = {
 				'Ve lo que {userName} más escucha, descubre sus canciones y artistas más escuchados, revisa los comentarios en su perfil y deja el tuyo también.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'Ve lo que {userName} más escucha, descubre sus canciones y artistas más escuchados, revisa los comentarios en su perfil y deja el tuyo también.'
+		},
+		noUserFound: {
+			title: 'Perfil no encontrado | Allify',
+			musicCommunityPageNoUserFoundMetaDescription: 'No se encontró el perfil al que intentas acceder. Comprueba si el ID de usuario es correcto o intenta buscar a otro usuario en la Comunidad Musical.',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'No se encontró el perfil al que intentas acceder. Comprueba si el ID de usuario es correcto o intenta buscar a otro usuario en la Comunidad Musical.',
+			musicCommunityPageNoUserFoundHeading1: 'No encontramos al usuario que estás buscando.',
+			musicCommunityPageNoUserFoundParagraph1: 'Parece que no existe ningún usuario con este ID. Comprueba que el ID sea correcto o inténtalo de nuevo más tarde.',
+			musicCommunityPageNoUserFoundButton: 'Volver a la Comunidad Musical',
 		}
 	},
 	profilePage: {

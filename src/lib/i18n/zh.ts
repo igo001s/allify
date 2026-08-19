@@ -228,6 +228,14 @@ export const zh = {
 				'查看 {userName} 最常听的内容，发现他们最常听的曲目和艺术家，查看他们个人资料上的评论，并留下您自己的评论。',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'查看 {userName} 最常听的内容，发现他们最常听的曲目和艺术家，查看他们个人资料上的评论，并留下您自己的评论。'
+		},
+		noUserFound: {
+			title: '未找到个人资料 | Allify',
+			musicCommunityPageNoUserFoundMetaDescription: '未找到您尝试访问的个人资料。请检查用户ID是否正确，或尝试在音乐社区中搜索其他用户。',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: '未找到您尝试访问的个人资料。请检查用户ID是否正确，或尝试在音乐社区中搜索其他用户。',
+			musicCommunityPageNoUserFoundHeading1: '我们找不到您要查找的用户。',
+			musicCommunityPageNoUserFoundParagraph1: '似乎不存在与此ID对应的用户。请检查ID是否正确，或稍后再试。',
+			musicCommunityPageNoUserFoundButton: '返回音乐社区',
 		}
 	},
 	profilePage: {

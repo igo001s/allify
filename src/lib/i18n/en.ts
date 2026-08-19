@@ -245,6 +245,14 @@ export const en = {
 				'See what {userName} listens to the most, discover their most listened-to songs and artists, check out the comments on their profile, and leave your own.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'See what {userName} listens to the most, discover their most listened-to songs and artists, check out the comments on their profile, and leave your own.'
+		},
+		noUserFound: {
+			title: 'Profile Not Found | Allify',
+			musicCommunityPageNoUserFoundMetaDescription: 'The profile you are trying to access was not found. Check if the user ID is correct or try searching for another user in the Music Community.',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'The profile you are trying to access was not found. Check if the user ID is correct or try searching for another user in the Music Community.',
+			musicCommunityPageNoUserFoundHeading1: 'We could not find the user you are looking for.',
+			musicCommunityPageNoUserFoundParagraph1: 'It seems that there is no user with this ID. Please check if the ID is correct or try again later.',
+			musicCommunityPageNoUserFoundButton: 'Back to the Music Community',
 		}
 	},
 	profilePage: {

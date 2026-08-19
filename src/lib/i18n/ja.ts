@@ -240,6 +240,14 @@ export const ja = {
 				'{userName}が最もよく聴く音楽を確認し、最もよく聴く曲やアーティストを発見し、プロフィールに残されたコメントをチェックして、自分のコメントも残しましょう。',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'{userName}が最もよく聴く音楽を確認し、最もよく聴く曲やアーティストを発見し、プロフィールに残されたコメントをチェックして、自分のコメントも残しましょう。'
+		},
+		noUserFound: {
+			title: 'プロフィールが見つかりません | Allify',
+			musicCommunityPageNoUserFoundMetaDescription: 'アクセスしようとしているプロフィールが見つかりませんでした。ユーザーIDが正しいか確認するか、音楽コミュニティで別のユーザーを検索してください。',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'アクセスしようとしているプロフィールが見つかりませんでした。ユーザーIDが正しいか確認するか、音楽コミュニティで別のユーザーを検索してください。',
+			musicCommunityPageNoUserFoundHeading1: 'お探しのユーザーが見つかりませんでした。',
+			musicCommunityPageNoUserFoundParagraph1: 'このIDのユーザーは存在しないようです。IDが正しいか確認して、後でもう一度お試しください。',
+			musicCommunityPageNoUserFoundButton: '音楽コミュニティに戻る',
 		}
 	},
 	profilePage: {
