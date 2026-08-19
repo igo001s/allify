@@ -1,5 +1,5 @@
 <script lang="ts">
-	// Svelte
+	// App
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 

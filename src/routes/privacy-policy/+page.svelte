@@ -1,5 +1,5 @@
 <script lang="ts">
-	// SVelte
+	// App
 	import { page } from '$app/stores';
 
 	// Components

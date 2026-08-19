@@ -1,5 +1,5 @@
 <script lang="ts">
-	// Svelte
+	// App
 	import { page } from '$app/stores';
 
 	// Assets
