@@ -10,7 +10,7 @@
 
 <br />
 
-**Everything about your music. Connected. Shared. Yours.**
+**Your music. Your identity. Your community.**
 
 <br />
 
@@ -24,9 +24,13 @@
 
 ## The idea
 
-Most music platforms tell you what to listen to. Allify shows you who you are as a listener.
+Most music platforms focus on what you should listen to. Allify focuses on you.
 
-Connect your streaming services and discover your real listening patterns with no guesses involved. Get recommendations based on your actual taste, explore the musical community, discover people with similar tastes, and see your complete music identity in one place.
+Discover your musical identity through the artists and songs you listen to the most. Build a profile that represents your taste, personalize your artist and song of the moment, and give them your own story.
+
+Then, take your music beyond yourself. Explore the musical community, discover people with similar tastes, favorite profiles, and leave comments to connect through music.
+
+Allify brings your listening data from different streaming services together to create one place for your music, your identity, and your community.
 
 <br />
 
