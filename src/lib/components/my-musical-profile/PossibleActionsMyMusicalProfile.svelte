@@ -131,34 +131,38 @@
 
 <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
 	<span class="flex flex-col gap-1 text-xs text-t-secondary sm:gap-2 md:flex-row">
-		{#if sessionType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) > new Date()}
-			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdate}
+		{#if sessionType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate}
+			{#if new Date($userInfo.connectedStreamings.spotify.mostListenedTracks.nextFreeUpdate) > new Date()}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdate}
 
-			<strong class="font-medium text-t-primary">
-				{new Date(
-					$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate
-				).toLocaleString($translationsStore.locale, {
-					dateStyle: 'short',
-					timeStyle: 'short'
-				})}
-			</strong>
-		{:else if sessionType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) < new Date()}
-			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdateAvailable}
+				<strong class="font-medium text-t-primary">
+					{new Date(
+						$userInfo.connectedStreamings.spotify.mostListenedTracks.nextFreeUpdate
+					).toLocaleString($translationsStore.locale, {
+						dateStyle: 'short',
+						timeStyle: 'short'
+					})}
+				</strong>
+			{:else}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdateAvailable}
+			{/if}
 		{/if}
 
-		{#if sessionType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) > new Date()}
-			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdate}
+		{#if sessionType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate}
+			{#if new Date($userInfo.connectedStreamings.spotify.mostListenedArtists.nextFreeUpdate) > new Date()}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdate}
 
-			<strong class="font-medium text-t-primary">
-				{new Date(
-					$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate
-				).toLocaleString($translationsStore.locale, {
-					dateStyle: 'short',
-					timeStyle: 'short'
-				})}
-			</strong>
-		{:else if sessionType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) < new Date()}
-			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdateAvailable}
+				<strong class="font-medium text-t-primary">
+					{new Date(
+						$userInfo.connectedStreamings.spotify.mostListenedArtists.nextFreeUpdate
+					).toLocaleString($translationsStore.locale, {
+						dateStyle: 'short',
+						timeStyle: 'short'
+					})}
+				</strong>
+			{:else}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdateAvailable}
+			{/if}
 		{/if}
 	</span>
 
