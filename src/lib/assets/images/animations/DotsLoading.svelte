@@ -16,7 +16,7 @@
 	};
 </script>
 
-<div class="flex gap-2 w-fit" aria-label={animationAltText} role="img">
+<div class="flex w-fit gap-2" aria-label={animationAltText} role="img">
 	<span
 		class="{platformColors[dotsTheme]} {animationClass} animate-bounce rounded-full"
 		style="animation-delay: 0ms;"

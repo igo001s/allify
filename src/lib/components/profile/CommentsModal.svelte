@@ -77,7 +77,7 @@
 				<div
 					class="flex w-full flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
 				>
-					<p class="max-w-lg leading-relaxed text-t-secondary text-xs">
+					<p class="max-w-lg text-xs leading-relaxed text-t-secondary">
 						{$translationsStore.profilePage.profilePageAuthorEmptyComments}
 					</p>
 				</div>
