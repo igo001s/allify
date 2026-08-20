@@ -14,6 +14,7 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Services
 	import { getPublicUser } from '$lib/services/user/getters/getPublicUser';
@@ -134,7 +135,23 @@
 			<DotsLoading />
 		</div>
 	{:else if user}
-		<div class="mx-auto flex w-full flex-col gap-10 sm:gap-12 lg:gap-14">
+		<div class="mx-auto flex w-full flex-col gap-10">
+			{#if user._id === $userInfo?._id}
+				<p class="text-sm text-t-secondary">
+					<span class="font-medium text-t-primary"
+						>{$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserYourPublicProfile}</span
+					>
+					<span class="mx-1">·</span>
+					{$translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
+					<a href="/profile" class="font-medium text-brand-primary"
+						>{$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserProfilePageLink}</a
+					>.
+				</p>
+			{/if}
+
 			<PublicUserKeyInformation
 				publicUser={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
 				createdAt={user.createdAt}

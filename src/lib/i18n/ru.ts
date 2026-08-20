@@ -256,7 +256,10 @@ export const ru = {
 			musicCommunityPagePublicUserFollowers: 'подписчиков',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Профиль создан',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Посмотреть профиль в Spotify',
-			musicCommunityPagePublicUserExternalLinkDeezer: 'Посмотреть профиль в Deezer'
+			musicCommunityPagePublicUserExternalLinkDeezer: 'Посмотреть профиль в Deezer',
+			musicCommunityPagePublicUserYourPublicProfile: 'Ваш публичный профиль',
+			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Вы можете изменить его на своей',
+			musicCommunityPagePublicUserProfilePageLink: 'странице профиля'
 		},
 		noUserFound: {
 			title: 'Профиль не найден | Allify',

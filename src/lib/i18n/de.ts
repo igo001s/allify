@@ -257,7 +257,10 @@ export const de = {
 			musicCommunityPagePublicUserFollowers: 'Follower',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Profil erstellt am',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Profil auf Spotify ansehen',
-			musicCommunityPagePublicUserExternalLinkDeezer: 'Profil auf Deezer ansehen'
+			musicCommunityPagePublicUserExternalLinkDeezer: 'Profil auf Deezer ansehen',
+			musicCommunityPagePublicUserYourPublicProfile: 'Dein öffentliches Profil',
+			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Du kannst es auf deiner',
+			musicCommunityPagePublicUserProfilePageLink: 'Profilseite'
 		},
 		noUserFound: {
 			title: 'Profil nicht gefunden | Allify',
