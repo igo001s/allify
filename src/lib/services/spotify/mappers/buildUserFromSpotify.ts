@@ -20,7 +20,6 @@ export async function buildUserFromSpotify(infoFromSpotify: any) {
 			name: infoFromSpotify.display_name,
 			email: infoFromSpotify.email,
 			image: infoFromSpotify.images?.[0],
-			country: infoFromSpotify.country,
 			followers: infoFromSpotify.followers.total,
 			profileLink: infoFromSpotify.external_urls.spotify,
 			mostListenedArtists:

@@ -243,22 +243,32 @@ export const de = {
 			'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Du kannst dich nicht selbst favorisieren',
 		musicCommunityPageLoadingUserTitle: 'Lade Benutzerprofil... | Allify',
-		musicCommunityPageLoadingUserMetaDescription: 'Lade Benutzerprofil. Bitte warten Sie, während wir die Informationen abrufen.',
-		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Lade Benutzerprofil. Bitte warten Sie, während wir die Informationen abrufen.',
+		musicCommunityPageLoadingUserMetaDescription:
+			'Lade Benutzerprofil. Bitte warten Sie, während wir die Informationen abrufen.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
+			'Lade Benutzerprofil. Bitte warten Sie, während wir die Informationen abrufen.',
 		publicUser: {
 			title: 'Profil von {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.',
+				'Sehen Sie, was {userName} am häufigsten hört, entdecken Sie die meistgehörten Songs und Künstler, lesen Sie die Kommentare im Profil und hinterlassen Sie auch Ihren eigenen.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'Sieh dir an, was {userName} am meisten hört, entdecke die meistgehörten Songs und Künstler, sieh dir die Kommentare auf dem Profil an und hinterlasse auch deinen eigenen.'
+				'Sehen Sie, was {userName} am häufigsten hört, entdecken Sie die meistgehörten Songs und Künstler, lesen Sie die Kommentare im Profil und hinterlassen Sie auch Ihren eigenen.',
+			musicCommunityPagePublicUserImageAltText: 'Profilfoto von',
+			musicCommunityPagePublicUserFollowers: 'Follower',
+			musicCommunityPagePublicUserProfileCreatedAt: 'Profil erstellt am',
+			musicCommunityPagePublicUserExternalLinkSpotify: 'Profil auf Spotify ansehen',
+			musicCommunityPagePublicUserExternalLinkDeezer: 'Profil auf Deezer ansehen'
 		},
 		noUserFound: {
 			title: 'Profil nicht gefunden | Allify',
-			musicCommunityPageNoUserFoundMetaDescription: 'Das Profil, auf das Sie zugreifen möchten, wurde nicht gefunden. Überprüfen Sie, ob die Benutzer-ID korrekt ist, oder suchen Sie nach einem anderen Benutzer in der Musik-Community.',
-			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'Das Profil, auf das Sie zugreifen möchten, wurde nicht gefunden. Überprüfen Sie, ob die Benutzer-ID korrekt ist, oder suchen Sie nach einem anderen Benutzer in der Musik-Community.',
+			musicCommunityPageNoUserFoundMetaDescription:
+				'Das Profil, auf das Sie zugreifen möchten, wurde nicht gefunden. Überprüfen Sie, ob die Benutzer-ID korrekt ist, oder suchen Sie nach einem anderen Benutzer in der Musik-Community.',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent:
+				'Das Profil, auf das Sie zugreifen möchten, wurde nicht gefunden. Überprüfen Sie, ob die Benutzer-ID korrekt ist, oder suchen Sie nach einem anderen Benutzer in der Musik-Community.',
 			musicCommunityPageNoUserFoundHeading1: 'Wir konnten den gesuchten Benutzer nicht finden.',
-			musicCommunityPageNoUserFoundParagraph1: 'Anscheinend existiert kein Benutzer mit dieser ID. Überprüfen Sie bitte, ob die ID korrekt ist, oder versuchen Sie es später erneut.',
-			musicCommunityPageNoUserFoundButton: 'Zur Musik-Community zurückkehren',
+			musicCommunityPageNoUserFoundParagraph1:
+				'Anscheinend existiert kein Benutzer mit dieser ID. Überprüfen Sie bitte, ob die ID korrekt ist, oder versuchen Sie es später erneut.',
+			musicCommunityPageNoUserFoundButton: 'Zur Musik-Community zurückkehren'
 		}
 	},
 	profilePage: {

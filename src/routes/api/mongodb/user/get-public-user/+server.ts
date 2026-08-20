@@ -34,7 +34,14 @@ export const POST: RequestHandler = async ({ request }) => {
 		const db = client?.db(MONGO_DB);
 		const users = db?.collection('users');
 
-		const userFoundedById = await users?.findOne({ _id: new ObjectId(id) });
+		const userFoundedById = await users?.findOne(
+			{ _id: new ObjectId(id) },
+			{
+				projection: {
+					email: 0
+				}
+			}
+		);
 
 		if (!userFoundedById) {
 			return new Response(JSON.stringify({ error: 'User not found' }), { status: 404 });

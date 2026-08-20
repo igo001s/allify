@@ -242,22 +242,32 @@ export const it = {
 		musicCommunityStarIconRemoveAltText: 'Icona di stella per rimuovere un profilo dai preferiti',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Non puoi aggiungerti ai preferiti',
 		musicCommunityPageLoadingUserTitle: 'Caricamento del profilo utente... | Allify',
-		musicCommunityPageLoadingUserMetaDescription: 'Stiamo caricando il profilo dell’utente. Attendere prego mentre recuperiamo le informazioni.',
-		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Stiamo caricando il profilo dell’utente. Attendere prego mentre recuperiamo le informazioni.',
+		musicCommunityPageLoadingUserMetaDescription:
+			'Stiamo caricando il profilo dell’utente. Attendere prego mentre recuperiamo le informazioni.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
+			'Stiamo caricando il profilo dell’utente. Attendere prego mentre recuperiamo le informazioni.',
 		publicUser: {
 			title: 'Profilo di {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'Scopri cosa ascolta di più {userName}, esplora le sue canzoni e artisti più ascoltati, consulta i commenti sul suo profilo e lascia il tuo.',
+				'Scopri cosa ascolta di più {userName}, scopri le sue canzoni e i suoi artisti più ascoltati, leggi i commenti lasciati sul profilo e lascia anche il tuo.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'Scopri cosa ascolta di più {userName}, esplora le sue canzoni e artisti più ascoltati, consulta i commenti sul suo profilo e lascia il tuo.'
+				'Scopri cosa ascolta di più {userName}, scopri le sue canzoni e i suoi artisti più ascoltati, leggi i commenti lasciati sul profilo e lascia anche il tuo.',
+			musicCommunityPagePublicUserImageAltText: 'Foto del profilo di',
+			musicCommunityPagePublicUserFollowers: 'follower',
+			musicCommunityPagePublicUserProfileCreatedAt: 'Profilo creato il',
+			musicCommunityPagePublicUserExternalLinkSpotify: 'Visualizza il profilo su Spotify',
+			musicCommunityPagePublicUserExternalLinkDeezer: 'Visualizza il profilo su Deezer'
 		},
 		noUserFound: {
 			title: 'Profilo non trovato | Allify',
-			musicCommunityPageNoUserFoundMetaDescription: 'Il profilo a cui stai cercando di accedere non è stato trovato. Verifica che l’ID utente sia corretto o prova a cercare un altro utente nella Comunità Musicale.',
-			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'Il profilo a cui stai cercando di accedere non è stato trovato. Verifica che l’ID utente sia corretto o prova a cercare un altro utente nella Comunità Musicale.',
+			musicCommunityPageNoUserFoundMetaDescription:
+				'Il profilo a cui stai cercando di accedere non è stato trovato. Verifica che l’ID utente sia corretto o prova a cercare un altro utente nella Comunità Musicale.',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent:
+				'Il profilo a cui stai cercando di accedere non è stato trovato. Verifica che l’ID utente sia corretto o prova a cercare un altro utente nella Comunità Musicale.',
 			musicCommunityPageNoUserFoundHeading1: 'Non abbiamo trovato l’utente che stai cercando.',
-			musicCommunityPageNoUserFoundParagraph1: 'Sembra che non esista alcun utente con questo ID. Verifica che l’ID sia corretto o riprova più tardi.',
-			musicCommunityPageNoUserFoundButton: 'Torna alla Comunità Musicale',
+			musicCommunityPageNoUserFoundParagraph1:
+				'Sembra che non esista alcun utente con questo ID. Verifica che l’ID sia corretto o riprova più tardi.',
+			musicCommunityPageNoUserFoundButton: 'Torna alla Comunità Musicale'
 		}
 	},
 	profilePage: {

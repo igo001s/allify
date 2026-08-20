@@ -67,7 +67,10 @@ export type UserInfo = {
 		nextFreeUpdate?: Date;
 	};
 	favorites?: FavoriteUser[];
+	createdAt: Date;
 };
+
+export type PublicUserInfo = Omit<UserInfo, 'email'>;
 
 export type SearchUserInfo = {
 	_id: ObjectId;

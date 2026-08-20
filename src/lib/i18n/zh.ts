@@ -223,22 +223,32 @@ export const zh = {
 		musicCommunityStarIconRemoveAltText: '用于从收藏夹中删除个人资料的星形图标',
 		musicCommunityToastErrorAddToFavoritesMessage: '您不能将自己添加到收藏夹',
 		musicCommunityPageLoadingUserTitle: '正在加载用户个人资料... | Allify',
-		musicCommunityPageLoadingUserMetaDescription: '正在加载用户个人资料。请稍候，我们正在获取信息。',
-		musicCommunityPageLoadingUserMetaOgAndTwitterContent: '正在加载用户个人资料。请稍候，我们正在获取信息。',
+		musicCommunityPageLoadingUserMetaDescription:
+			'正在加载用户个人资料。请稍候，我们正在获取信息。',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
+			'正在加载用户个人资料。请稍候，我们正在获取信息。',
 		publicUser: {
-			title: '{userName} 的个人资料 | Allify',
+			title: '{userName}的个人资料 | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'查看 {userName} 最常听的内容，发现他们最常听的曲目和艺术家，查看他们个人资料上的评论，并留下您自己的评论。',
+				'查看 {userName} 最常听的音乐，发现其最常播放的歌曲和艺人，浏览个人资料中的评论，也留下你的评论。',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'查看 {userName} 最常听的内容，发现他们最常听的曲目和艺术家，查看他们个人资料上的评论，并留下您自己的评论。'
+				'查看 {userName} 最常听的音乐，发现其最常播放的歌曲和艺人，浏览个人资料中的评论，也留下你的评论。',
+			musicCommunityPagePublicUserImageAltText: '{userName}的头像',
+			musicCommunityPagePublicUserFollowers: '位关注者',
+			musicCommunityPagePublicUserProfileCreatedAt: '个人资料创建于',
+			musicCommunityPagePublicUserExternalLinkSpotify: '在 Spotify 上查看个人资料',
+			musicCommunityPagePublicUserExternalLinkDeezer: '在 Deezer 上查看个人资料'
 		},
 		noUserFound: {
 			title: '未找到个人资料 | Allify',
-			musicCommunityPageNoUserFoundMetaDescription: '未找到您尝试访问的个人资料。请检查用户ID是否正确，或尝试在音乐社区中搜索其他用户。',
-			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: '未找到您尝试访问的个人资料。请检查用户ID是否正确，或尝试在音乐社区中搜索其他用户。',
+			musicCommunityPageNoUserFoundMetaDescription:
+				'未找到您尝试访问的个人资料。请检查用户ID是否正确，或尝试在音乐社区中搜索其他用户。',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent:
+				'未找到您尝试访问的个人资料。请检查用户ID是否正确，或尝试在音乐社区中搜索其他用户。',
 			musicCommunityPageNoUserFoundHeading1: '我们找不到您要查找的用户。',
-			musicCommunityPageNoUserFoundParagraph1: '似乎不存在与此ID对应的用户。请检查ID是否正确，或稍后再试。',
-			musicCommunityPageNoUserFoundButton: '返回音乐社区',
+			musicCommunityPageNoUserFoundParagraph1:
+				'似乎不存在与此ID对应的用户。请检查ID是否正确，或稍后再试。',
+			musicCommunityPageNoUserFoundButton: '返回音乐社区'
 		}
 	},
 	profilePage: {

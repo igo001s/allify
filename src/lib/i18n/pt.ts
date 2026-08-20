@@ -241,22 +241,32 @@ export const pt = {
 		musicCommunityStarIconRemoveAltText: 'Ícone de estrela para remover perfil dos favoritos',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Não é possível favoritar a si mesmo',
 		musicCommunityPageLoadingUserTitle: 'Carregando perfil do usuário... | Allify',
-		musicCommunityPageLoadingUserMetaDescription: 'Estamos carregando o perfil do usuário. Por favor, aguarde enquanto buscamos as informações.',
-		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Estamos carregando o perfil do usuário. Por favor, aguarde enquanto buscamos as informações.',
+		musicCommunityPageLoadingUserMetaDescription:
+			'Estamos carregando o perfil do usuário. Por favor, aguarde enquanto buscamos as informações.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
+			'Estamos carregando o perfil do usuário. Por favor, aguarde enquanto buscamos as informações.',
 		publicUser: {
 			title: 'Perfil de {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'Veja o que {userName} mais escuta, descubra as músicas e os artistas mais ouvidos, confira os comentários deixados no perfil e deixe o seu também.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'Veja o que {userName} mais escuta, descubra as músicas e os artistas mais ouvidos, confira os comentários deixados no perfil e deixe o seu também.'
+				'Veja o que {userName} mais escuta, descubra as músicas e os artistas mais ouvidos, confira os comentários deixados no perfil e deixe o seu também.',
+			musicCommunityPagePublicUserImageAltText: 'Foto do perfil de',
+			musicCommunityPagePublicUserFollowers: 'seguidores',
+			musicCommunityPagePublicUserProfileCreatedAt: 'Perfil criado em',
+			musicCommunityPagePublicUserExternalLinkSpotify: 'Ver perfil no Spotify',
+			musicCommunityPagePublicUserExternalLinkDeezer: 'Ver perfil no Deezer'
 		},
 		noUserFound: {
 			title: 'Perfil não encontrado | Allify',
-			musicCommunityPageNoUserFoundMetaDescription: 'O perfil que você está tentando acessar não foi encontrado. Verifique se o ID do usuário está correto ou tente pesquisar por outro usuário na Comunidade Musical.',
-			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'O perfil que você está tentando acessar não foi encontrado. Verifique se o ID do usuário está correto ou tente pesquisar por outro usuário na Comunidade Musical.',
+			musicCommunityPageNoUserFoundMetaDescription:
+				'O perfil que você está tentando acessar não foi encontrado. Verifique se o ID do usuário está correto ou tente pesquisar por outro usuário na Comunidade Musical.',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent:
+				'O perfil que você está tentando acessar não foi encontrado. Verifique se o ID do usuário está correto ou tente pesquisar por outro usuário na Comunidade Musical.',
 			musicCommunityPageNoUserFoundHeading1: 'Não encontramos o usuário que você está procurando.',
-			musicCommunityPageNoUserFoundParagraph1: 'Parece que não existe um usuário com esse ID. Por favor, verifique se o ID está correto ou tente novamente mais tarde.',
-			musicCommunityPageNoUserFoundButton: 'Voltar para a comunidade musical',
+			musicCommunityPageNoUserFoundParagraph1:
+				'Parece que não existe um usuário com esse ID. Por favor, verifique se o ID está correto ou tente novamente mais tarde.',
+			musicCommunityPageNoUserFoundButton: 'Voltar para a comunidade musical'
 		}
 	},
 	profilePage: {

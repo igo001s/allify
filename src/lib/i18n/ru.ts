@@ -242,22 +242,32 @@ export const ru = {
 		musicCommunityStarIconRemoveAltText: 'Иконка звезды для удаления профиля из избранного',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Вы не можете добавить себя в избранное',
 		musicCommunityPageLoadingUserTitle: 'Загрузка профиля пользователя... | Allify',
-		musicCommunityPageLoadingUserMetaDescription: 'Загрузка профиля пользователя. Пожалуйста, подождите, пока мы получаем информацию.',
-		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Загрузка профиля пользователя. Пожалуйста, подождите, пока мы получаем информацию.',
+		musicCommunityPageLoadingUserMetaDescription:
+			'Загрузка профиля пользователя. Пожалуйста, подождите, пока мы получаем информацию.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
+			'Загрузка профиля пользователя. Пожалуйста, подождите, пока мы получаем информацию.',
 		publicUser: {
 			title: 'Профиль {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'Смотрите, что {userName} слушает больше всего, открывайте для себя их самые прослушиваемые треки и исполнителей, просматривайте комментарии на их профиле и оставляйте свои.',
+				'Узнайте, что чаще всего слушает {userName}, откройте для себя самые прослушиваемые песни и исполнителей, ознакомьтесь с комментариями в профиле и оставьте свой.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'Смотрите, что {userName} слушает больше всего, открывайте для себя их самые прослушиваемые треки и исполнителей, просматривайте комментарии на их профиле и оставляйте свои.'
+				'Узнайте, что чаще всего слушает {userName}, откройте для себя самые прослушиваемые песни и исполнителей, ознакомьтесь с комментариями в профиле и оставьте свой.',
+			musicCommunityPagePublicUserImageAltText: 'Фото профиля',
+			musicCommunityPagePublicUserFollowers: 'подписчиков',
+			musicCommunityPagePublicUserProfileCreatedAt: 'Профиль создан',
+			musicCommunityPagePublicUserExternalLinkSpotify: 'Посмотреть профиль в Spotify',
+			musicCommunityPagePublicUserExternalLinkDeezer: 'Посмотреть профиль в Deezer'
 		},
 		noUserFound: {
 			title: 'Профиль не найден | Allify',
-			musicCommunityPageNoUserFoundMetaDescription: 'Профиль, к которому вы пытаетесь получить доступ, не найден. Проверьте правильность ID пользователя или попробуйте найти другого пользователя в Музыкальном сообществе.',
-			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'Профиль, к которому вы пытаетесь получить доступ, не найден. Проверьте правильность ID пользователя или попробуйте найти другого пользователя в Музыкальном сообществе.',
+			musicCommunityPageNoUserFoundMetaDescription:
+				'Профиль, к которому вы пытаетесь получить доступ, не найден. Проверьте правильность ID пользователя или попробуйте найти другого пользователя в Музыкальном сообществе.',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent:
+				'Профиль, к которому вы пытаетесь получить доступ, не найден. Проверьте правильность ID пользователя или попробуйте найти другого пользователя в Музыкальном сообществе.',
 			musicCommunityPageNoUserFoundHeading1: 'Мы не нашли пользователя, которого вы ищете.',
-			musicCommunityPageNoUserFoundParagraph1: 'Похоже, пользователя с таким ID не существует. Проверьте правильность ID или попробуйте снова позже.',
-			musicCommunityPageNoUserFoundButton: 'Вернуться в Музыкальное сообщество',
+			musicCommunityPageNoUserFoundParagraph1:
+				'Похоже, пользователя с таким ID не существует. Проверьте правильность ID или попробуйте снова позже.',
+			musicCommunityPageNoUserFoundButton: 'Вернуться в Музыкальное сообщество'
 		}
 	},
 	profilePage: {

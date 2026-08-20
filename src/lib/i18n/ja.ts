@@ -235,22 +235,32 @@ export const ja = {
 		musicCommunityStarIconRemoveAltText: 'プロフィールをお気に入りから削除するための星アイコン',
 		musicCommunityToastErrorAddToFavoritesMessage: '自分自身をお気に入りに追加することはできません',
 		musicCommunityPageLoadingUserTitle: 'ユーザープロフィールを読み込み中... | Allify',
-		musicCommunityPageLoadingUserMetaDescription: 'ユーザープロフィールを読み込み中です。情報を取得するまでしばらくお待ちください。',
-		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'ユーザープロフィールを読み込み中です。情報を取得するまでしばらくお待ちください。',
+		musicCommunityPageLoadingUserMetaDescription:
+			'ユーザープロフィールを読み込み中です。情報を取得するまでしばらくお待ちください。',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
+			'ユーザープロフィールを読み込み中です。情報を取得するまでしばらくお待ちください。',
 		publicUser: {
 			title: '{userName}のプロフィール | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'{userName}が最もよく聴く音楽を確認し、最もよく聴く曲やアーティストを発見し、プロフィールに残されたコメントをチェックして、自分のコメントも残しましょう。',
+				'{userName}がよく聴いている音楽を見て、最もよく聴かれている曲やアーティストを発見しましょう。プロフィールに寄せられたコメントを確認したり、自分のコメントを残したりすることもできます。',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'{userName}が最もよく聴く音楽を確認し、最もよく聴く曲やアーティストを発見し、プロフィールに残されたコメントをチェックして、自分のコメントも残しましょう。'
+				'{userName}がよく聴いている音楽を見て、最もよく聴かれている曲やアーティストを発見しましょう。プロフィールに寄せられたコメントを確認したり、自分のコメントを残したりすることもできます。',
+			musicCommunityPagePublicUserImageAltText: '{userName}のプロフィール写真',
+			musicCommunityPagePublicUserFollowers: 'フォロワー',
+			musicCommunityPagePublicUserProfileCreatedAt: 'プロフィール作成日',
+			musicCommunityPagePublicUserExternalLinkSpotify: 'Spotifyでプロフィールを見る',
+			musicCommunityPagePublicUserExternalLinkDeezer: 'Deezerでプロフィールを見る'
 		},
 		noUserFound: {
 			title: 'プロフィールが見つかりません | Allify',
-			musicCommunityPageNoUserFoundMetaDescription: 'アクセスしようとしているプロフィールが見つかりませんでした。ユーザーIDが正しいか確認するか、音楽コミュニティで別のユーザーを検索してください。',
-			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'アクセスしようとしているプロフィールが見つかりませんでした。ユーザーIDが正しいか確認するか、音楽コミュニティで別のユーザーを検索してください。',
+			musicCommunityPageNoUserFoundMetaDescription:
+				'アクセスしようとしているプロフィールが見つかりませんでした。ユーザーIDが正しいか確認するか、音楽コミュニティで別のユーザーを検索してください。',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent:
+				'アクセスしようとしているプロフィールが見つかりませんでした。ユーザーIDが正しいか確認するか、音楽コミュニティで別のユーザーを検索してください。',
 			musicCommunityPageNoUserFoundHeading1: 'お探しのユーザーが見つかりませんでした。',
-			musicCommunityPageNoUserFoundParagraph1: 'このIDのユーザーは存在しないようです。IDが正しいか確認して、後でもう一度お試しください。',
-			musicCommunityPageNoUserFoundButton: '音楽コミュニティに戻る',
+			musicCommunityPageNoUserFoundParagraph1:
+				'このIDのユーザーは存在しないようです。IDが正しいか確認して、後でもう一度お試しください。',
+			musicCommunityPageNoUserFoundButton: '音楽コミュニティに戻る'
 		}
 	},
 	profilePage: {

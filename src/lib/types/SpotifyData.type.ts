@@ -3,7 +3,6 @@ export type UserInfoSpotify = {
 	name: string;
 	email: string;
 	image: { url: string; height: number | null; width: number | null };
-	country: string;
 	followers: number;
 	profileLink: string;
 	mostListenedArtists:

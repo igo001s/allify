@@ -246,22 +246,33 @@ export const fr = {
 		musicCommunityStarIconRemoveAltText: 'Icône d’étoile pour supprimer un profil des favoris',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Vous ne pouvez pas vous ajouter à vos favoris',
 		musicCommunityPageLoadingUserTitle: 'Chargement du profil de l’utilisateur... | Allify',
-		musicCommunityPageLoadingUserMetaDescription: 'Chargement du profil de l’utilisateur. Veuillez patienter pendant que nous récupérons les informations.',
-		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'Chargement du profil de l’utilisateur. Veuillez patienter pendant que nous récupérons les informations.',
+		musicCommunityPageLoadingUserMetaDescription:
+			'Chargement du profil de l’utilisateur. Veuillez patienter pendant que nous récupérons les informations.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
+			'Chargement du profil de l’utilisateur. Veuillez patienter pendant que nous récupérons les informations.',
 		publicUser: {
 			title: 'Profil de {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'Découvrez ce que {userName} écoute le plus, explorez ses chansons et artistes les plus écoutés, consultez les commentaires sur son profil et laissez le vôtre.',
+				'Découvrez ce que {userName} écoute le plus, découvrez ses chansons et artistes les plus écoutés, consultez les commentaires laissés sur son profil et laissez également le vôtre.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'Découvrez ce que {userName} écoute le plus, explorez ses chansons et artistes les plus écoutés, consultez les commentaires sur son profil et laissez le vôtre.'
+				'Découvrez ce que {userName} écoute le plus, découvrez ses chansons et artistes les plus écoutés, consultez les commentaires laissés sur son profil et laissez également le vôtre.',
+			musicCommunityPagePublicUserImageAltText: 'Photo de profil de',
+			musicCommunityPagePublicUserFollowers: 'abonnés',
+			musicCommunityPagePublicUserProfileCreatedAt: 'Profil créé le',
+			musicCommunityPagePublicUserExternalLinkSpotify: 'Voir le profil sur Spotify',
+			musicCommunityPagePublicUserExternalLinkDeezer: 'Voir le profil sur Deezer'
 		},
 		noUserFound: {
 			title: 'Profil introuvable | Allify',
-			musicCommunityPageNoUserFoundMetaDescription: 'Le profil auquel vous essayez d’accéder est introuvable. Vérifiez que l’identifiant utilisateur est correct ou essayez de rechercher un autre utilisateur dans la Communauté Musicale.',
-			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'Le profil auquel vous essayez d’accéder est introuvable. Vérifiez que l’identifiant utilisateur est correct ou essayez de rechercher un autre utilisateur dans la Communauté Musicale.',
-			musicCommunityPageNoUserFoundHeading1: 'Nous n’avons pas trouvé l’utilisateur que vous recherchez.',
-			musicCommunityPageNoUserFoundParagraph1: 'Il semble qu’aucun utilisateur ne corresponde à cet identifiant. Vérifiez que l’identifiant est correct ou réessayez plus tard.',
-			musicCommunityPageNoUserFoundButton: 'Retourner à la Communauté Musicale',
+			musicCommunityPageNoUserFoundMetaDescription:
+				'Le profil auquel vous essayez d’accéder est introuvable. Vérifiez que l’identifiant utilisateur est correct ou essayez de rechercher un autre utilisateur dans la Communauté Musicale.',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent:
+				'Le profil auquel vous essayez d’accéder est introuvable. Vérifiez que l’identifiant utilisateur est correct ou essayez de rechercher un autre utilisateur dans la Communauté Musicale.',
+			musicCommunityPageNoUserFoundHeading1:
+				'Nous n’avons pas trouvé l’utilisateur que vous recherchez.',
+			musicCommunityPageNoUserFoundParagraph1:
+				'Il semble qu’aucun utilisateur ne corresponde à cet identifiant. Vérifiez que l’identifiant est correct ou réessayez plus tard.',
+			musicCommunityPageNoUserFoundButton: 'Retourner à la Communauté Musicale'
 		}
 	},
 	profilePage: {

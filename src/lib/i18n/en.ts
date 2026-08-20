@@ -240,22 +240,32 @@ export const en = {
 		musicCommunityStarIconRemoveAltText: 'Star icon to remove a profile from favorites',
 		musicCommunityToastErrorAddToFavoritesMessage: 'You cannot favorite yourself',
 		musicCommunityPageLoadingUserTitle: 'Loading user profile... | Allify',
-		musicCommunityPageLoadingUserMetaDescription: 'We are loading the user profile. Please wait while we fetch the information.',
-		musicCommunityPageLoadingUserMetaOgAndTwitterContent: 'We are loading the user profile. Please wait while we fetch the information.',
+		musicCommunityPageLoadingUserMetaDescription:
+			'We are loading the user profile. Please wait while we fetch the information.',
+		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
+			'We are loading the user profile. Please wait while we fetch the information.',
 		publicUser: {
-			title: 'Profile of {userName} | Allify',
+			title: "{userName}'s Profile | Allify",
 			musicCommunityPagePublicUserMetaDescription:
-				'See what {userName} listens to the most, discover their most listened-to songs and artists, check out the comments on their profile, and leave your own.',
+				'See what {userName} listens to most, discover their most-listened songs and artists, check out the comments left on their profile, and leave your own.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'See what {userName} listens to the most, discover their most listened-to songs and artists, check out the comments on their profile, and leave your own.'
+				'See what {userName} listens to most, discover their most-listened songs and artists, check out the comments left on their profile, and leave your own.',
+			musicCommunityPagePublicUserImageAltText: 'Profile picture of',
+			musicCommunityPagePublicUserFollowers: 'followers',
+			musicCommunityPagePublicUserProfileCreatedAt: 'Profile created on',
+			musicCommunityPagePublicUserExternalLinkSpotify: 'View profile on Spotify',
+			musicCommunityPagePublicUserExternalLinkDeezer: 'View profile on Deezer'
 		},
 		noUserFound: {
 			title: 'Profile Not Found | Allify',
-			musicCommunityPageNoUserFoundMetaDescription: 'The profile you are trying to access was not found. Check if the user ID is correct or try searching for another user in the Music Community.',
-			musicCommunityPageNoUserFoundMetaOgAndTwitterContent: 'The profile you are trying to access was not found. Check if the user ID is correct or try searching for another user in the Music Community.',
+			musicCommunityPageNoUserFoundMetaDescription:
+				'The profile you are trying to access was not found. Check if the user ID is correct or try searching for another user in the Music Community.',
+			musicCommunityPageNoUserFoundMetaOgAndTwitterContent:
+				'The profile you are trying to access was not found. Check if the user ID is correct or try searching for another user in the Music Community.',
 			musicCommunityPageNoUserFoundHeading1: 'We could not find the user you are looking for.',
-			musicCommunityPageNoUserFoundParagraph1: 'It seems that there is no user with this ID. Please check if the ID is correct or try again later.',
-			musicCommunityPageNoUserFoundButton: 'Back to the Music Community',
+			musicCommunityPageNoUserFoundParagraph1:
+				'It seems that there is no user with this ID. Please check if the ID is correct or try again later.',
+			musicCommunityPageNoUserFoundButton: 'Back to the Music Community'
 		}
 	},
 	profilePage: {

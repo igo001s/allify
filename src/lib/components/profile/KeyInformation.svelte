@@ -6,7 +6,7 @@
 
 	// Components
 	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
-	import StreamingSelector from '../general/StreamingSelector.svelte';
+	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -32,7 +32,7 @@
 		class="flex flex-col items-center gap-6 text-center
 			md:flex-row md:text-left lg:gap-12"
 	>
-		<div class="relative w-fit">
+		<div class="w-fit">
 			{#if userInfo.image?.url}
 				<enhanced:img
 					src={userInfo.image?.url}
@@ -54,14 +54,6 @@
 						{userInfo.name.slice(0, 1)}
 					</p>
 				</div>
-			{/if}
-
-			{#if userInfo.country}
-				<span
-					class="absolute right-0.5 bottom-0.5 rounded-full bg-brand-primary px-2 py-0.5 text-xs font-semibold text-white"
-				>
-					{userInfo.country}
-				</span>
 			{/if}
 		</div>
 

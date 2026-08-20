@@ -24,7 +24,7 @@
 
 		if (sessionType === 'artists') {
 			if (
-				$userInfo?.email &&
+				$userInfo?._id &&
 				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit
 			) {
 				const response = await updateMostListenedArtists(
@@ -74,7 +74,7 @@
 			}
 		} else if (sessionType === 'tracks') {
 			if (
-				$userInfo?.email &&
+				$userInfo?._id &&
 				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.tracksLimit
 			) {
 				const response = await updateMostListenedTracks(
