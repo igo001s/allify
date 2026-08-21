@@ -27,6 +27,8 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
+	let showAddCommentModal: boolean = false;
+
 	let loadingUser: boolean = true;
 
 	$: user = null as PublicUserInfo | null;
@@ -131,13 +133,15 @@
 	/>
 </svelte:head>
 
-{#if $userInfo?.connectedStreamings.spotify?.connected === true}
+{#if loadingUser}
 	<section class="base-section">
-		{#if loadingUser}
-			<div class="flex h-64 items-center justify-center">
-				<DotsLoading />
-			</div>
-		{:else if user}
+		<div class="flex h-64 items-center justify-center">
+			<DotsLoading />
+		</div>
+	</section>
+{:else if $userInfo?.connectedStreamings.spotify?.connected === true}
+	<section class="base-section">
+		{#if user}
 			<div class="mx-auto flex w-full flex-col gap-12">
 				<div class="flex flex-col gap-8">
 					<a
@@ -170,6 +174,7 @@
 				<PublicUserKeyInformation
 					publicUser={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
 					createdAt={user.createdAt}
+					{showAddCommentModal}
 				/>
 			</div>
 		{:else}
@@ -178,7 +183,8 @@
 			>
 				<div class="max-w-xl">
 					<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
-						{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundHeading1}
+						{$translationsStore.musicCommunityPage.noUserFound
+							.musicCommunityPageNoUserFoundHeading1}
 					</h1>
 
 					<p class="mt-7 text-base text-t-secondary sm:text-lg">
@@ -199,4 +205,3 @@
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />
 {/if}
-

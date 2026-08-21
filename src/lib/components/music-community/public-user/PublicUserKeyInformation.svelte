@@ -1,14 +1,19 @@
 <script lang="ts">
+	// Assets
+	import AddCommentIcon from '$lib/assets/images/icons/AddCommentIcon.svelte';
+
 	// Components
 	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
 	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Props
 	export let publicUser;
 	export let createdAt: Date;
+	export let showAddCommentModal: boolean;
 
 	let selectedStreaming: 'spotify' | 'deezer';
 </script>
@@ -77,6 +82,19 @@
 	</div>
 
 	<div class="flex flex-col items-center gap-8 sm:gap-14 md:flex-row">
+		{#if $userInfo?._id !== publicUser._id}
+			<button
+				class="cursor-pointer rounded-lg border border-brand-primary/20 bg-white p-1.5 text-xs font-medium text-brand-primary transition-all hover:border-brand-primary/40 hover:bg-brand-primary/5"
+				aria-label={$translationsStore.profilePage.profilePageOpenCommentsButtonAriaLabel}
+				on:click={() => (showAddCommentModal = true)}
+			>
+				<AddCommentIcon
+					iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 transition-transform duration-200 md:h-8 md:w-8"
+					iconAltText={$translationsStore.profilePage.profilePageOpenCommentIconAltText}
+				/>
+			</button>
+		{/if}
+
 		<div class="flex flex-col gap-6">
 			<StreamingSelector bind:selectedStreaming />
 
