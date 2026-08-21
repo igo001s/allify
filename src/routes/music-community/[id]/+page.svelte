@@ -12,6 +12,7 @@
 
 	// Components
 	import PublicUserKeyInformation from '$lib/components/music-community/public-user/PublicUserKeyInformation.svelte';
+	import NotLogged from '$lib/components/general/NotLogged.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -130,67 +131,72 @@
 	/>
 </svelte:head>
 
-<section class="base-section">
-	{#if loadingUser}
-		<div class="flex h-64 items-center justify-center">
-			<DotsLoading />
-		</div>
-	{:else if user}
-		<div class="mx-auto flex w-full flex-col gap-12">
-			<div class="flex flex-col gap-8">
-				<a
-					href="/music-community"
-					class="flex items-center text-sm font-medium text-brand-primary transition-all"
-				>
-					<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
+{#if $userInfo?.connectedStreamings.spotify?.connected === true}
+	<section class="base-section">
+		{#if loadingUser}
+			<div class="flex h-64 items-center justify-center">
+				<DotsLoading />
+			</div>
+		{:else if user}
+			<div class="mx-auto flex w-full flex-col gap-12">
+				<div class="flex flex-col gap-8">
+					<a
+						href="/music-community"
+						class="flex items-center text-sm font-medium text-brand-primary transition-all"
+					>
+						<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
 
-					{$translationsStore.musicCommunityPage.publicUser
-						.musicCommunityPagePublicUserBackToMusicCommunityButton}
-				</a>
-
-				{#if user._id === $userInfo?._id}
-					<p class="text-sm text-t-secondary">
-						<span class="font-medium text-t-primary"
-							>{$translationsStore.musicCommunityPage.publicUser
-								.musicCommunityPagePublicUserYourPublicProfile}</span
-						>
-						<span class="mx-1">·</span>
 						{$translationsStore.musicCommunityPage.publicUser
-							.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
-						<a href="/profile" class="font-medium text-brand-primary"
-							>{$translationsStore.musicCommunityPage.publicUser
-								.musicCommunityPagePublicUserProfilePageLink}</a
-						>.
-					</p>
-				{/if}
+							.musicCommunityPagePublicUserBackToMusicCommunityButton}
+					</a>
+
+					{#if user._id === $userInfo?._id}
+						<p class="text-sm text-t-secondary">
+							<span class="font-medium text-t-primary"
+								>{$translationsStore.musicCommunityPage.publicUser
+									.musicCommunityPagePublicUserYourPublicProfile}</span
+							>
+							<span class="mx-1">·</span>
+							{$translationsStore.musicCommunityPage.publicUser
+								.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
+							<a href="/profile" class="font-medium text-brand-primary"
+								>{$translationsStore.musicCommunityPage.publicUser
+									.musicCommunityPagePublicUserProfilePageLink}</a
+							>.
+						</p>
+					{/if}
+				</div>
+
+				<PublicUserKeyInformation
+					publicUser={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
+					createdAt={user.createdAt}
+				/>
 			</div>
-
-			<PublicUserKeyInformation
-				publicUser={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
-				createdAt={user.createdAt}
-			/>
-		</div>
-	{:else}
-		<div
-			class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
-		>
-			<div class="max-w-xl">
-				<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
-					{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundHeading1}
-				</h1>
-
-				<p class="mt-7 text-base text-t-secondary sm:text-lg">
-					{$translationsStore.musicCommunityPage.noUserFound
-						.musicCommunityPageNoUserFoundParagraph1}
-				</p>
-			</div>
-
-			<button
-				on:click={() => goto('/music-community')}
-				class="mt-4 w-60 cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-xs font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark sm:w-90"
+		{:else}
+			<div
+				class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
 			>
-				{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundButton}
-			</button>
-		</div>
-	{/if}
-</section>
+				<div class="max-w-xl">
+					<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
+						{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundHeading1}
+					</h1>
+
+					<p class="mt-7 text-base text-t-secondary sm:text-lg">
+						{$translationsStore.musicCommunityPage.noUserFound
+							.musicCommunityPageNoUserFoundParagraph1}
+					</p>
+				</div>
+
+				<button
+					on:click={() => goto('/music-community')}
+					class="mt-4 w-60 cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-xs font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark sm:w-90"
+				>
+					{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundButton}
+				</button>
+			</div>
+		{/if}
+	</section>
+{:else}
+	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />
+{/if}
+
