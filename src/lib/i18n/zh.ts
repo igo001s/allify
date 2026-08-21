@@ -240,7 +240,8 @@ export const zh = {
 			musicCommunityPagePublicUserExternalLinkDeezer: '在 Deezer 上查看个人资料',
 			musicCommunityPagePublicUserYourPublicProfile: '你的公开个人资料',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: '你可以在你的',
-			musicCommunityPagePublicUserProfilePageLink: '个人资料页面上编辑'
+			musicCommunityPagePublicUserProfilePageLink: '个人资料页面上编辑',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: '返回音乐社区'
 		},
 		noUserFound: {
 			title: '未找到个人资料 | Allify',

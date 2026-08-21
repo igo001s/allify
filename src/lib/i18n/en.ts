@@ -257,7 +257,8 @@ export const en = {
 			musicCommunityPagePublicUserExternalLinkDeezer: 'View profile on Deezer',
 			musicCommunityPagePublicUserYourPublicProfile: 'Your public profile',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'You can edit it on your',
-			musicCommunityPagePublicUserProfilePageLink: 'profile page'
+			musicCommunityPagePublicUserProfilePageLink: 'profile page',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Back to Music Community'
 		},
 		noUserFound: {
 			title: 'Profile Not Found | Allify',

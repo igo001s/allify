@@ -263,7 +263,8 @@ export const fr = {
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Voir le profil sur Deezer',
 			musicCommunityPagePublicUserYourPublicProfile: 'Votre profil public',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Vous pouvez le modifier sur votre',
-			musicCommunityPagePublicUserProfilePageLink: 'page de profil'
+			musicCommunityPagePublicUserProfilePageLink: 'page de profil',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Retour à la Communauté Musicale'
 		},
 		noUserFound: {
 			title: 'Profil introuvable | Allify',

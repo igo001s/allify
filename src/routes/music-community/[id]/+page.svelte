@@ -8,6 +8,7 @@
 
 	// Assets
 	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
+	import ArrowIcon from '$lib/assets/images/icons/ArrowIcon.svelte';
 
 	// Components
 	import PublicUserKeyInformation from '$lib/components/music-community/public-user/PublicUserKeyInformation.svelte';
@@ -135,23 +136,31 @@
 			<DotsLoading />
 		</div>
 	{:else if user}
-		<div class="mx-auto flex w-full flex-col gap-10">
-			{#if user._id === $userInfo?._id}
-				<p class="text-sm text-t-secondary">
-					<span class="font-medium text-t-primary"
-						>{$translationsStore.musicCommunityPage.publicUser
-							.musicCommunityPagePublicUserYourPublicProfile}</span
-					>
-					<span class="mx-1">·</span>
-					{$translationsStore.musicCommunityPage.publicUser
-						.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
-					<a href="/profile" class="font-medium text-brand-primary"
-						>{$translationsStore.musicCommunityPage.publicUser
-							.musicCommunityPagePublicUserProfilePageLink}</a
-					>.
-				</p>
-			{/if}
+		<div class="mx-auto flex w-full flex-col gap-12">
+			<div class="flex flex-col gap-8">
+				<a href="/music-community" class="flex items-center text-sm font-medium text-brand-primary transition-all">
+					<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
 
+					{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserBackToMusicCommunityButton}
+				</a>
+
+				{#if user._id === $userInfo?._id}
+					<p class="text-sm text-t-secondary">
+						<span class="font-medium text-t-primary"
+							>{$translationsStore.musicCommunityPage.publicUser
+								.musicCommunityPagePublicUserYourPublicProfile}</span
+						>
+						<span class="mx-1">·</span>
+						{$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
+						<a href="/profile" class="font-medium text-brand-primary"
+							>{$translationsStore.musicCommunityPage.publicUser
+								.musicCommunityPagePublicUserProfilePageLink}</a
+						>.
+					</p>
+				{/if}
+			</div>
+		
 			<PublicUserKeyInformation
 				publicUser={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
 				createdAt={user.createdAt}

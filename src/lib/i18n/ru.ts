@@ -259,7 +259,8 @@ export const ru = {
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Посмотреть профиль в Deezer',
 			musicCommunityPagePublicUserYourPublicProfile: 'Ваш публичный профиль',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Вы можете изменить его на своей',
-			musicCommunityPagePublicUserProfilePageLink: 'странице профиля'
+			musicCommunityPagePublicUserProfilePageLink: 'странице профиля',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Вернуться в Музыкальное сообщество'
 		},
 		noUserFound: {
 			title: 'Профиль не найден | Allify',

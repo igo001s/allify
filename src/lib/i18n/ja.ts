@@ -252,7 +252,8 @@ export const ja = {
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Deezerでプロフィールを見る',
 			musicCommunityPagePublicUserYourPublicProfile: 'あなたの公開プロフィール',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'プロフィールの',
-			musicCommunityPagePublicUserProfilePageLink: 'ページで編集できます'
+			musicCommunityPagePublicUserProfilePageLink: 'ページで編集できます',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: '音楽コミュニティに戻る'
 		},
 		noUserFound: {
 			title: 'プロフィールが見つかりません | Allify',
