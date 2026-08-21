@@ -261,7 +261,7 @@ export const de = {
 			musicCommunityPagePublicUserYourPublicProfile: 'Dein öffentliches Profil',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Du kannst es auf deiner',
 			musicCommunityPagePublicUserProfilePageLink: 'Profilseite',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Zurück zur Musik-Community',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Zurück zur Musik-Community'
 		},
 		noUserFound: {
 			title: 'Profil nicht gefunden | Allify',

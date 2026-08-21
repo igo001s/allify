@@ -259,7 +259,7 @@ export const pt = {
 			musicCommunityPagePublicUserYourPublicProfile: 'Seu perfil público',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Você pode editá-lo na sua',
 			musicCommunityPagePublicUserProfilePageLink: 'página de perfil',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Voltar para Comunidade Musical',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Voltar para Comunidade Musical'
 		},
 		noUserFound: {
 			title: 'Perfil não encontrado | Allify',

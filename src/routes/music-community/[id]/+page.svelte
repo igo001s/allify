@@ -138,10 +138,14 @@
 	{:else if user}
 		<div class="mx-auto flex w-full flex-col gap-12">
 			<div class="flex flex-col gap-8">
-				<a href="/music-community" class="flex items-center text-sm font-medium text-brand-primary transition-all">
+				<a
+					href="/music-community"
+					class="flex items-center text-sm font-medium text-brand-primary transition-all"
+				>
 					<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
 
-					{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserBackToMusicCommunityButton}
+					{$translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserBackToMusicCommunityButton}
 				</a>
 
 				{#if user._id === $userInfo?._id}
@@ -160,7 +164,7 @@
 					</p>
 				{/if}
 			</div>
-		
+
 			<PublicUserKeyInformation
 				publicUser={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
 				createdAt={user.createdAt}
