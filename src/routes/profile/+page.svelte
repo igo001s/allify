@@ -146,10 +146,10 @@
 	{#if showChangeCustomItemModal}
 		<ChangeCustomItemModal {closeChangeCustomItemModal} itemType={selectedItemType} />
 	{/if}
+
+	{#if showCommentsModal}
+		<CommentsModal bind:showCommentsModal />
+	{/if}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />
-{/if}
-
-{#if showCommentsModal}
-	<CommentsModal bind:showCommentsModal />
 {/if}
