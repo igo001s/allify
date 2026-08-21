@@ -172,7 +172,8 @@
 				</div>
 
 				<PublicUserKeyInformation
-					publicUser={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
+					publicUserStreamingInfo={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
+					publicUserId={user._id}
 					createdAt={user.createdAt}
 					{showAddCommentModal}
 				/>

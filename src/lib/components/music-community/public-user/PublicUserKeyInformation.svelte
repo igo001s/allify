@@ -10,8 +10,12 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
 
+	// MongoDB
+	import type { ObjectId } from 'mongodb';
+
 	// Props
-	export let publicUser;
+	export let publicUserStreamingInfo;
+	export let publicUserId: ObjectId;
 	export let createdAt: Date;
 	export let showAddCommentModal: boolean;
 
@@ -27,25 +31,25 @@
 			md:flex-row md:text-left lg:gap-12"
 	>
 		<div class="w-fit">
-			{#if publicUser.image.url}
+			{#if publicUserStreamingInfo.image.url}
 				<enhanced:img
-					src={publicUser.image.url}
+					src={publicUserStreamingInfo.image.url}
 					class="h-24 w-24 rounded-full border-4 border-brand-primary object-cover
 						sm:h-32 sm:w-32 lg:h-36 lg:w-36"
-					alt={`${$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserImageAltText} ${publicUser.name}`}
+					alt={`${$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserImageAltText} ${publicUserStreamingInfo.name}`}
 					decoding="async"
 					fetchpriority="high"
 					loading="eager"
 				/>
-			{:else if publicUser.name}
+			{:else if publicUserStreamingInfo.name}
 				<div
 					class="flex h-24 w-24 items-center justify-center rounded-full border-4 border-brand-primary sm:h-32 sm:w-32 lg:h-36 lg:w-36"
-					aria-label={publicUser.name}
+					aria-label={publicUserStreamingInfo.name}
 				>
 					<p
 						class="flex h-18 w-18 items-center justify-center rounded-full border-2 border-brand-primary text-xl font-medium text-brand-primary lg:h-24 lg:w-24 lg:text-3xl"
 					>
-						{publicUser.name.slice(0, 1)}
+						{publicUserStreamingInfo.name.slice(0, 1)}
 					</p>
 				</div>
 			{/if}
@@ -53,16 +57,16 @@
 
 		<div class="flex flex-col justify-center gap-2 text-t-primary">
 			<div class="flex flex-col items-center gap-1 md:flex-row md:gap-8">
-				{#if publicUser.name}
+				{#if publicUserStreamingInfo.name}
 					<h1 class="text-3xl font-semibold sm:text-4xl md:mb-0">
-						{publicUser.name}
+						{publicUserStreamingInfo.name}
 					</h1>
 				{/if}
 			</div>
 
-			{#if publicUser.followers}
+			{#if publicUserStreamingInfo.followers}
 				<p class="text-xs font-medium sm:text-sm">
-					{publicUser.followers}
+					{publicUserStreamingInfo.followers}
 					{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserFollowers}
 				</p>
 			{/if}
@@ -82,7 +86,7 @@
 	</div>
 
 	<div class="flex flex-col items-center gap-8 sm:gap-14 md:flex-row">
-		{#if $userInfo?._id !== publicUser._id}
+		{#if $userInfo?._id !== publicUserId}
 			<button
 				class="cursor-pointer rounded-lg border border-brand-primary/20 bg-white p-1.5 text-xs font-medium text-brand-primary transition-all hover:border-brand-primary/40 hover:bg-brand-primary/5"
 				aria-label={$translationsStore.profilePage.profilePageOpenCommentsButtonAriaLabel}
@@ -101,8 +105,8 @@
 			<ExternalLink
 				streamingPlatform={selectedStreaming}
 				externalLink={selectedStreaming === 'spotify'
-					? publicUser.externalLink
-					: publicUser.externalLink}
+					? publicUserStreamingInfo.externalLink
+					: publicUserStreamingInfo.externalLink}
 				externalLinkText={selectedStreaming === 'spotify'
 					? $translationsStore.musicCommunityPage.publicUser
 							.musicCommunityPagePublicUserExternalLinkSpotify
