@@ -230,18 +230,32 @@ export const zh = {
 		publicUser: {
 			title: '{userName}的个人资料 | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'查看 {userName} 最常听的音乐，发现其最常播放的歌曲和艺人，浏览个人资料中的评论，也留下你的评论。',
+				'查看{userName}最常听的音乐，发现他最常听的歌曲和艺术家，浏览个人资料中的评论，也留下你的评论。',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'查看 {userName} 最常听的音乐，发现其最常播放的歌曲和艺人，浏览个人资料中的评论，也留下你的评论。',
-			musicCommunityPagePublicUserImageAltText: '{userName}的头像',
-			musicCommunityPagePublicUserFollowers: '位关注者',
+				'查看{userName}最常听的音乐，发现他最常听的歌曲和艺术家，浏览个人资料中的评论，也留下你的评论。',
+			musicCommunityPagePublicUserImageAltText: '的个人资料照片',
+			musicCommunityPagePublicUserFollowers: '粉丝',
 			musicCommunityPagePublicUserProfileCreatedAt: '个人资料创建于',
-			musicCommunityPagePublicUserExternalLinkSpotify: '在 Spotify 上查看个人资料',
-			musicCommunityPagePublicUserExternalLinkDeezer: '在 Deezer 上查看个人资料',
+			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel: '打开添加个人资料评论的弹窗',
+			musicCommunityPagePublicUserOpenAddCommentModalAltText: '打开添加个人资料评论弹窗的图标',
+			musicCommunityPagePublicUserExternalLinkSpotify: '在Spotify上查看个人资料',
+			musicCommunityPagePublicUserExternalLinkDeezer: '在Deezer上查看个人资料',
 			musicCommunityPagePublicUserYourPublicProfile: '你的公开个人资料',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: '你可以在你的',
-			musicCommunityPagePublicUserProfilePageLink: '个人资料页面上编辑',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: '返回音乐社区'
+			musicCommunityPagePublicUserProfilePageLink: '个人资料页面',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: '返回音乐社区',
+			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel: '关闭添加个人资料评论的弹窗',
+			musicCommunityPagePublicUserCloseAddCommentModalAltText: '关闭添加个人资料评论弹窗的图标',
+			musicCommunityPagePublicUserParagraph1: '在个人资料中留下评论：',
+			musicCommunityPagePublicUserParagraph2:
+				'请在评论中保持尊重。避免使用脏话、侮辱性语言和任何不当内容。个人资料所有者可以随时删除你的评论。Allify不对用户发布的内容负责。',
+			musicCommunityPagePublicUserInputLabel: '你的评论',
+			musicCommunityPagePublicUserInputPlaceholder: '写下你的评论...',
+			musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage: '评论必须包含1到200个字符',
+			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
+				'评论包含侮辱性或冒犯性语言。请检查后重试。',
+			musicCommunityPagePublicUserCloseAddCommentModal: '关闭',
+			musicCommunityPagePublicUserPostComment: '发表评论'
 		},
 		noUserFound: {
 			title: '未找到个人资料 | Allify',

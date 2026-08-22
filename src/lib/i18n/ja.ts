@@ -242,18 +242,37 @@ export const ja = {
 		publicUser: {
 			title: '{userName}のプロフィール | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'{userName}がよく聴いている音楽を見て、最もよく聴かれている曲やアーティストを発見しましょう。プロフィールに寄せられたコメントを確認したり、自分のコメントを残したりすることもできます。',
+				'{userName}がよく聴いている音楽を見たり、よく聴かれている曲やアーティストを発見したり、プロフィールに投稿されたコメントを確認したり、自分でもコメントを残したりできます。',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'{userName}がよく聴いている音楽を見て、最もよく聴かれている曲やアーティストを発見しましょう。プロフィールに寄せられたコメントを確認したり、自分のコメントを残したりすることもできます。',
-			musicCommunityPagePublicUserImageAltText: '{userName}のプロフィール写真',
+				'{userName}がよく聴いている音楽を見たり、よく聴かれている曲やアーティストを発見したり、プロフィールに投稿されたコメントを確認したり、自分でもコメントを残したりできます。',
+			musicCommunityPagePublicUserImageAltText: 'のプロフィール写真',
 			musicCommunityPagePublicUserFollowers: 'フォロワー',
 			musicCommunityPagePublicUserProfileCreatedAt: 'プロフィール作成日',
+			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
+				'プロフィールにコメントを追加するモーダルを開く',
+			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+				'プロフィールにコメントを追加するモーダルを開くアイコン',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Spotifyでプロフィールを見る',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Deezerでプロフィールを見る',
 			musicCommunityPagePublicUserYourPublicProfile: 'あなたの公開プロフィール',
-			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'プロフィールの',
-			musicCommunityPagePublicUserProfilePageLink: 'ページで編集できます',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: '音楽コミュニティに戻る'
+			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'プロフィールページで編集できます：',
+			musicCommunityPagePublicUserProfilePageLink: 'プロフィールページ',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: '音楽コミュニティに戻る',
+			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
+				'プロフィールへのコメント追加モーダルを閉じる',
+			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+				'プロフィールへのコメント追加モーダルを閉じるアイコン',
+			musicCommunityPagePublicUserParagraph1: 'プロフィールにコメントを残す：',
+			musicCommunityPagePublicUserParagraph2:
+				'コメントでは他のユーザーに配慮し、暴言、侮辱、不適切な内容は避けてください。プロフィールの所有者はいつでもコメントを削除できます。Allifyはユーザーが投稿したコンテンツについて責任を負いません。',
+			musicCommunityPagePublicUserInputLabel: 'コメント',
+			musicCommunityPagePublicUserInputPlaceholder: 'コメントを書く...',
+			musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage:
+				'コメントは1文字以上200文字以内で入力してください',
+			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
+				'コメントに侮辱的または攻撃的な表現が含まれています。内容を確認して、もう一度お試しください。',
+			musicCommunityPagePublicUserCloseAddCommentModal: '閉じる',
+			musicCommunityPagePublicUserPostComment: 'コメントを投稿'
 		},
 		noUserFound: {
 			title: 'プロフィールが見つかりません | Allify',

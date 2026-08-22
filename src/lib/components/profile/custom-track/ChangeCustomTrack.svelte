@@ -78,6 +78,8 @@
 
 		<input
 			type="text"
+			minlength="1"
+			maxlength="56"
 			class="mt-1 w-full rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary transition-all outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
 			placeholder={$translationsStore.profilePage
 				.profilePageChangeYourCustomMusicTitleInputPlaceholder}
@@ -85,17 +87,29 @@
 			bind:value={choosedTrackTitle}
 		/>
 
-		{#if isTrackTitleValid.error}
-			<span class="mt-1 text-[10px] text-status-error sm:text-[11px]">
-				{#if isTrackTitleValid.typeError === 'emptyOrTooLong'}
-					{$translationsStore.profilePage
-						.profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage}
-				{:else if isTrackTitleValid.typeError === 'invalidCharacters'}
-					{$translationsStore.profilePage
-						.profilePageChangeYourCustomMusicTitleInputErrorInvalidCharactersMessage}
-				{/if}
-			</span>
-		{/if}
+		<div class="flex items-start justify-between gap-3">
+			{#if isTrackTitleValid.error}
+				<span class="mt-1 text-[10px] text-status-error sm:text-[11px]">
+					{#if isTrackTitleValid.typeError === 'emptyOrTooLong'}
+						{$translationsStore.profilePage
+							.profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage}
+					{:else if isTrackTitleValid.typeError === 'invalidCharacters'}
+						{$translationsStore.profilePage
+							.profilePageChangeYourCustomMusicTitleInputErrorInvalidCharactersMessage}
+					{/if}
+				</span>
+			{:else}
+				<span></span>
+			{/if}
+
+			{#if choosedTrackTitle}
+				<span
+					class={`mt-1 shrink-0 text-[10px] sm:text-[11px] ${choosedTrackTitle.length >= 56 ? 'text-status-error' : 'text-t-secondary'}`}
+				>
+					{choosedTrackTitle.length}/56
+				</span>
+			{/if}
+		</div>
 	</label>
 
 	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">

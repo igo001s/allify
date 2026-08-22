@@ -89,12 +89,14 @@
 		{#if $userInfo?._id !== publicUserId}
 			<button
 				class="cursor-pointer rounded-lg border border-brand-primary/20 bg-white p-1.5 text-xs font-medium text-brand-primary transition-all hover:border-brand-primary/40 hover:bg-brand-primary/5"
-				aria-label={$translationsStore.profilePage.profilePageOpenCommentsButtonAriaLabel}
+				aria-label={$translationsStore.musicCommunityPage.publicUser
+					.musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel}
 				on:click={() => (showAddCommentModal = true)}
 			>
 				<AddCommentIcon
 					iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 transition-transform duration-200 md:h-8 md:w-8"
-					iconAltText={$translationsStore.profilePage.profilePageOpenCommentIconAltText}
+					iconAltText={$translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserOpenAddCommentModalAltText}
 				/>
 			</button>
 		{/if}

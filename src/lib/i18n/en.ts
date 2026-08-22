@@ -245,20 +245,39 @@ export const en = {
 		musicCommunityPageLoadingUserMetaOgAndTwitterContent:
 			'We are loading the user profile. Please wait while we fetch the information.',
 		publicUser: {
-			title: "{userName}'s Profile | Allify",
+			title: '{userName}’s Profile | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'See what {userName} listens to most, discover their most-listened songs and artists, check out the comments left on their profile, and leave your own.',
+				'See what {userName} listens to most, discover their most-played songs and artists, read comments left on their profile, and leave your own.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'See what {userName} listens to most, discover their most-listened songs and artists, check out the comments left on their profile, and leave your own.',
+				'See what {userName} listens to most, discover their most-played songs and artists, read comments left on their profile, and leave your own.',
 			musicCommunityPagePublicUserImageAltText: 'Profile picture of',
 			musicCommunityPagePublicUserFollowers: 'followers',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Profile created on',
+			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
+				'Open modal to add a comment to the profile',
+			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+				'Icon to open the modal to add a comment to the profile',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'View profile on Spotify',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'View profile on Deezer',
 			musicCommunityPagePublicUserYourPublicProfile: 'Your public profile',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'You can edit it on your',
 			musicCommunityPagePublicUserProfilePageLink: 'profile page',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Back to Music Community'
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Back to Music Community',
+			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
+				'Close modal for adding a comment to the profile',
+			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+				'Icon to close the modal for adding a comment to the profile',
+			musicCommunityPagePublicUserParagraph1: 'Leave a comment on',
+			musicCommunityPagePublicUserParagraph2:
+				'Please be respectful in the comments. Avoid profanity, insults, and inappropriate content. The profile owner can delete your comment at any time. Allify is not responsible for content posted by users.',
+			musicCommunityPagePublicUserInputLabel: 'Your comment',
+			musicCommunityPagePublicUserInputPlaceholder: 'Write your comment...',
+			musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage:
+				'The comment must be between 1 and 200 characters',
+			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
+				'The comment contains insults or offensive language. Please review it and try again.',
+			musicCommunityPagePublicUserCloseAddCommentModal: 'Close',
+			musicCommunityPagePublicUserPostComment: 'Post comment'
 		},
 		noUserFound: {
 			title: 'Profile Not Found | Allify',

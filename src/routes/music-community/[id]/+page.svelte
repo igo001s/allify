@@ -13,6 +13,7 @@
 	// Components
 	import PublicUserKeyInformation from '$lib/components/music-community/public-user/PublicUserKeyInformation.svelte';
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
+	import AddCommentModal from '$lib/components/music-community/AddCommentModal.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -27,9 +28,9 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
-	let showAddCommentModal: boolean = false;
-
 	let loadingUser: boolean = true;
+
+	let showAddCommentModal: boolean = false;
 
 	$: user = null as PublicUserInfo | null;
 
@@ -172,10 +173,12 @@
 				</div>
 
 				<PublicUserKeyInformation
-					publicUserStreamingInfo={selectedStreaming === 'spotify' ? user.connectedStreamings.spotify : null}
+					publicUserStreamingInfo={selectedStreaming === 'spotify'
+						? user.connectedStreamings.spotify
+						: null}
 					publicUserId={user._id}
 					createdAt={user.createdAt}
-					{showAddCommentModal}
+					bind:showAddCommentModal
 				/>
 			</div>
 		{:else}
@@ -203,6 +206,10 @@
 			</div>
 		{/if}
 	</section>
+
+	{#if showAddCommentModal && user}
+		<AddCommentModal bind:showAddCommentModal profileUserName={user.name} />
+	{/if}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />
 {/if}

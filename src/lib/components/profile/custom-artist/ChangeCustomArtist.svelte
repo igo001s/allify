@@ -88,17 +88,29 @@
 			bind:value={choosedArtistTitle}
 		/>
 
-		{#if isArtistTitleValid.error}
-			<span class="mt-1 text-[10px] text-status-error sm:text-[11px]">
-				{#if isArtistTitleValid.typeError === 'emptyOrTooLong'}
-					{$translationsStore.profilePage
-						.profilePageChangeYourCustomArtistTitleInputErrorEmptyOrTooLongMessage}
-				{:else if isArtistTitleValid.typeError === 'invalidCharacters'}
-					{$translationsStore.profilePage
-						.profilePageChangeYourCustomArtistTitleInputErrorInvalidCharactersMessage}
-				{/if}
-			</span>
-		{/if}
+		<div class="flex items-start justify-between gap-3">
+			{#if isArtistTitleValid.error}
+				<span class="mt-1 text-[10px] text-status-error sm:text-[11px]">
+					{#if isArtistTitleValid.typeError === 'emptyOrTooLong'}
+						{$translationsStore.profilePage
+							.profilePageChangeYourCustomArtistTitleInputErrorEmptyOrTooLongMessage}
+					{:else if isArtistTitleValid.typeError === 'invalidCharacters'}
+						{$translationsStore.profilePage
+							.profilePageChangeYourCustomArtistTitleInputErrorInvalidCharactersMessage}
+					{/if}
+				</span>
+			{:else}
+				<span></span>
+			{/if}
+
+			{#if choosedArtistTitle}
+				<span
+					class={`mt-1 shrink-0 text-[10px] sm:text-[11px] ${choosedArtistTitle.length >= 56 ? 'text-status-error' : 'text-t-secondary'}`}
+				>
+					{choosedArtistTitle.length}/56
+				</span>
+			{/if}
+		</div>
 	</label>
 
 	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">

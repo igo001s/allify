@@ -250,18 +250,37 @@ export const de = {
 		publicUser: {
 			title: 'Profil von {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'Sehen Sie, was {userName} am häufigsten hört, entdecken Sie die meistgehörten Songs und Künstler, lesen Sie die Kommentare im Profil und hinterlassen Sie auch Ihren eigenen.',
+				'Entdecke, was {userName} am meisten hört, finde die meistgehörten Songs und Künstler, sieh dir Kommentare im Profil an und hinterlasse selbst einen.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'Sehen Sie, was {userName} am häufigsten hört, entdecken Sie die meistgehörten Songs und Künstler, lesen Sie die Kommentare im Profil und hinterlassen Sie auch Ihren eigenen.',
-			musicCommunityPagePublicUserImageAltText: 'Profilfoto von',
+				'Entdecke, was {userName} am meisten hört, finde die meistgehörten Songs und Künstler, sieh dir Kommentare im Profil an und hinterlasse selbst einen.',
+			musicCommunityPagePublicUserImageAltText: 'Profilbild von',
 			musicCommunityPagePublicUserFollowers: 'Follower',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Profil erstellt am',
+			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
+				'Modal zum Hinzufügen eines Kommentars zum Profil öffnen',
+			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+				'Symbol zum Öffnen des Modals zum Hinzufügen eines Kommentars zum Profil',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Profil auf Spotify ansehen',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Profil auf Deezer ansehen',
 			musicCommunityPagePublicUserYourPublicProfile: 'Dein öffentliches Profil',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Du kannst es auf deiner',
-			musicCommunityPagePublicUserProfilePageLink: 'Profilseite',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Zurück zur Musik-Community'
+			musicCommunityPagePublicUserProfilePageLink: 'Profilseite bearbeiten',
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Zur Musik-Community zurück',
+			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
+				'Modal zum Hinzufügen eines Kommentars zum Profil schließen',
+			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+				'Symbol zum Schließen des Modals zum Hinzufügen eines Kommentars zum Profil',
+			musicCommunityPagePublicUserParagraph1: 'Hinterlasse einen Kommentar im Profil von',
+			musicCommunityPagePublicUserParagraph2:
+				'Bleibe in den Kommentaren respektvoll. Vermeide Schimpfwörter, Beleidigungen und unangemessene Inhalte. Der Profilinhaber kann deinen Kommentar jederzeit löschen. Allify übernimmt keine Verantwortung für von Nutzern veröffentlichte Inhalte.',
+			musicCommunityPagePublicUserInputLabel: 'Dein Kommentar',
+			musicCommunityPagePublicUserInputPlaceholder: 'Schreibe deinen Kommentar...',
+			musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage:
+				'Der Kommentar muss zwischen 1 und 200 Zeichen lang sein',
+			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
+				'Der Kommentar enthält Beleidigungen oder beleidigende Wörter. Bitte überprüfe ihn und versuche es erneut.',
+			musicCommunityPagePublicUserCloseAddCommentModal: 'Schließen',
+			musicCommunityPagePublicUserPostComment: 'Kommentar veröffentlichen'
 		},
 		noUserFound: {
 			title: 'Profil nicht gefunden | Allify',

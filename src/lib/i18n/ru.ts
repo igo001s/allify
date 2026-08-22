@@ -249,18 +249,37 @@ export const ru = {
 		publicUser: {
 			title: 'Профиль {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'Узнайте, что чаще всего слушает {userName}, откройте для себя самые прослушиваемые песни и исполнителей, ознакомьтесь с комментариями в профиле и оставьте свой.',
+				'Узнайте, что {userName} слушает чаще всего, откройте для себя самые прослушиваемые песни и исполнителей, прочитайте комментарии в профиле и оставьте свой.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'Узнайте, что чаще всего слушает {userName}, откройте для себя самые прослушиваемые песни и исполнителей, ознакомьтесь с комментариями в профиле и оставьте свой.',
+				'Узнайте, что {userName} слушает чаще всего, откройте для себя самые прослушиваемые песни и исполнителей, прочитайте комментарии в профиле и оставьте свой.',
 			musicCommunityPagePublicUserImageAltText: 'Фото профиля',
 			musicCommunityPagePublicUserFollowers: 'подписчиков',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Профиль создан',
+			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
+				'Открыть окно для добавления комментария в профиль',
+			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+				'Значок открытия окна для добавления комментария в профиль',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Посмотреть профиль в Spotify',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Посмотреть профиль в Deezer',
 			musicCommunityPagePublicUserYourPublicProfile: 'Ваш публичный профиль',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Вы можете изменить его на своей',
 			musicCommunityPagePublicUserProfilePageLink: 'странице профиля',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Вернуться в Музыкальное сообщество'
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Вернуться в музыкальное сообщество',
+			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
+				'Закрыть окно добавления комментария в профиль',
+			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+				'Значок закрытия окна добавления комментария в профиль',
+			musicCommunityPagePublicUserParagraph1: 'Оставьте комментарий в профиле',
+			musicCommunityPagePublicUserParagraph2:
+				'Соблюдайте уважение в комментариях. Избегайте нецензурной лексики, оскорблений и неприемлемого контента. Владелец профиля может удалить ваш комментарий в любое время. Allify не несёт ответственности за контент, опубликованный пользователями.',
+			musicCommunityPagePublicUserInputLabel: 'Ваш комментарий',
+			musicCommunityPagePublicUserInputPlaceholder: 'Напишите свой комментарий...',
+			musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage:
+				'Комментарий должен содержать от 1 до 200 символов',
+			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
+				'Комментарий содержит оскорбления или нецензурную лексику. Проверьте его и попробуйте снова.',
+			musicCommunityPagePublicUserCloseAddCommentModal: 'Закрыть',
+			musicCommunityPagePublicUserPostComment: 'Опубликовать комментарий'
 		},
 		noUserFound: {
 			title: 'Профиль не найден | Allify',

@@ -254,12 +254,31 @@ export const pt = {
 			musicCommunityPagePublicUserImageAltText: 'Foto do perfil de',
 			musicCommunityPagePublicUserFollowers: 'seguidores',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Perfil criado em',
+			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
+				'Abrir modal para adicionar comentário no perfil',
+			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+				'Ícone de abrir modal para adicionar comentário no perfil',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Ver perfil no Spotify',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Ver perfil no Deezer',
 			musicCommunityPagePublicUserYourPublicProfile: 'Seu perfil público',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Você pode editá-lo na sua',
 			musicCommunityPagePublicUserProfilePageLink: 'página de perfil',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Voltar para Comunidade Musical'
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Voltar para Comunidade Musical',
+			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
+				'Fechar modal de adicionar comentário no perfil',
+			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+				'Ícone de fechar modal de adicionar comentário no perfil',
+			musicCommunityPagePublicUserParagraph1: 'Deixe um comentário no perfil de',
+			musicCommunityPagePublicUserParagraph2:
+				'Mantenha o respeito nos comentários. Evite palavrões, ofensas e qualquer conteúdo inadequado. O proprietário do perfil pode excluir seu comentário a qualquer momento. O Allify não se responsabiliza pelo conteúdo publicado pelos usuários.',
+			musicCommunityPagePublicUserInputLabel: 'Seu comentário',
+			musicCommunityPagePublicUserInputPlaceholder: 'Escreva seu comentário...',
+			musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage:
+				'O comentário deve ter entre 1 e 200 caracteres',
+			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
+				'O comentário contém insultos ou palavras ofensivas. Por favor, revise e tente novamente.',
+			musicCommunityPagePublicUserCloseAddCommentModal: 'Fechar',
+			musicCommunityPagePublicUserPostComment: 'Publicar comentário'
 		},
 		noUserFound: {
 			title: 'Perfil não encontrado | Allify',

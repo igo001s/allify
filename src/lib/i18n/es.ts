@@ -252,18 +252,37 @@ export const es = {
 		publicUser: {
 			title: 'Perfil de {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
-				'Ve lo que más escucha {userName}, descubre sus canciones y artistas más escuchados, consulta los comentarios dejados en su perfil y deja el tuyo también.',
+				'Descubre lo que más escucha {userName}, encuentra sus canciones y artistas más escuchados, consulta los comentarios de su perfil y deja el tuyo.',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
-				'Ve lo que más escucha {userName}, descubre sus canciones y artistas más escuchados, consulta los comentarios dejados en su perfil y deja el tuyo también.',
+				'Descubre lo que más escucha {userName}, encuentra sus canciones y artistas más escuchados, consulta los comentarios de su perfil y deja el tuyo.',
 			musicCommunityPagePublicUserImageAltText: 'Foto de perfil de',
 			musicCommunityPagePublicUserFollowers: 'seguidores',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Perfil creado el',
+			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
+				'Abrir modal para añadir un comentario al perfil',
+			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+				'Icono para abrir el modal para añadir un comentario al perfil',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Ver perfil en Spotify',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Ver perfil en Deezer',
 			musicCommunityPagePublicUserYourPublicProfile: 'Tu perfil público',
 			musicCommunityPagePublicUserYourCanEditItOnProfilePage: 'Puedes editarlo en tu',
 			musicCommunityPagePublicUserProfilePageLink: 'página de perfil',
-			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Volver a la Comunidad Musical'
+			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Volver a la Comunidad Musical',
+			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
+				'Cerrar modal para añadir un comentario al perfil',
+			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+				'Icono para cerrar el modal para añadir un comentario al perfil',
+			musicCommunityPagePublicUserParagraph1: 'Deja un comentario en el perfil de',
+			musicCommunityPagePublicUserParagraph2:
+				'Mantén el respeto en los comentarios. Evita insultos, lenguaje ofensivo y contenido inapropiado. El propietario del perfil puede eliminar tu comentario en cualquier momento. Allify no se responsabiliza del contenido publicado por los usuarios.',
+			musicCommunityPagePublicUserInputLabel: 'Tu comentario',
+			musicCommunityPagePublicUserInputPlaceholder: 'Escribe tu comentario...',
+			musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage:
+				'El comentario debe tener entre 1 y 200 caracteres',
+			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
+				'El comentario contiene insultos o lenguaje ofensivo. Revísalo e inténtalo de nuevo.',
+			musicCommunityPagePublicUserCloseAddCommentModal: 'Cerrar',
+			musicCommunityPagePublicUserPostComment: 'Publicar comentario'
 		},
 		noUserFound: {
 			title: 'Perfil no encontrado | Allify',
