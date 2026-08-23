@@ -24,7 +24,7 @@
 	class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-5 backdrop-blur-md"
 >
 	<div
-		class="relative flex max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl"
+		class="relative flex max-h-[90vh] w-full max-w-xl flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl"
 	>
 		<button
 			class="absolute top-2 right-2 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
@@ -50,23 +50,36 @@
 				<div class="mt-2 flex max-h-130 flex-col gap-3 overflow-y-auto pr-2 sm:gap-4">
 					{#each $userInfo.comments as comment}
 						<div
-							class="bg-s-secondary/40 flex items-start gap-3 rounded-lg border border-b-default p-3 sm:p-4"
+							class="bg-s-secondary/40 flex items-start gap-3 rounded-xl border border-b-default p-3 transition-colors hover:bg-s-secondary/60 sm:gap-4 sm:p-4"
 						>
 							<enhanced:img
 								src={comment.author.image?.url ?? ''}
 								alt={`${$translationsStore.profilePage.profilePageAuthorCommentImageAltText} ${comment.author.name}`}
-								class="h-12 w-12 shrink-0 rounded-full object-cover"
+								class="h-11 w-11 shrink-0 rounded-full object-cover sm:h-12 sm:w-12"
 							/>
 
-							<div class="flex flex-col gap-1">
-								<a
-									href={`/music-community/${comment.author._id}`}
-									class="cursor-pointer leading-relaxed font-semibold text-t-secondary transition hover:text-brand-primary sm:text-sm"
-								>
-									{comment.author.name}
-								</a>
+							<div class="flex min-w-0 flex-1 flex-col gap-1">
+								<div class="flex items-start justify-between gap-3">
+									<a
+										href={`/music-community/${comment.author._id}`}
+										class="font-semibold text-t-secondary transition-colors text-sm hover:text-brand-primary"
+									>
+										{comment.author.name}
+									</a>
 
-								<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+									<time
+										datetime={new Date(comment.addedAt).toISOString()}
+										class="shrink-0 text-[11px] text-t-tertiary"
+									>
+										{new Date(comment.addedAt).toLocaleDateString($translationsStore.locale, {
+											year: 'numeric',
+											month: 'short',
+											day: 'numeric'
+										})}
+									</time>
+								</div>
+
+								<p class="text-xs leading-relaxed text-t-secondary">
 									{comment.comment}
 								</p>
 							</div>
