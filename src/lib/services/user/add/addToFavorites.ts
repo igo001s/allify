@@ -18,7 +18,7 @@ export async function addToFavorites(
 	try {
 		if (!idToSave || !id || !name || !image) return;
 
-		const response = await fetch('/api/mongodb/add/add-to-favorites', {
+		const addToFavoritesResponse = await fetch('/api/mongodb/add/add-to-favorites', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -33,14 +33,14 @@ export async function addToFavorites(
 			})
 		});
 
-		if (!response.ok) {
-			const error = await response.json();
+		if (!addToFavoritesResponse.ok) {
+			const error = await addToFavoritesResponse.json();
 			throw new Error(error.error);
 		}
 
-		const data = await response.json();
+		const parsedaddToFavorites = await addToFavoritesResponse.json();
 
-		return data;
+		return parsedaddToFavorites;
 	} catch (error) {
 		if (dev) {
 			console.error('User addToFavorites error:', error);

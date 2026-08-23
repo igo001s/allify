@@ -6,20 +6,20 @@ import { getUserFromDatabase } from '../../user/build/getUserFromDatabase';
 
 export async function existingSpotifyUser() {
 	try {
-		const response = await fetch('/api/spotify/user/get-profile', {
+		const getProfileResponse = await fetch('/api/spotify/user/get-profile', {
 			method: 'POST'
 		});
 
-		const data = await response.json();
+		const parsedGetProfile = await getProfileResponse.json();
 
-		if (!data.email) throw new Error('No email from Spotify');
+		if (!parsedGetProfile.email) throw new Error('No email from Spotify');
 
-		const getUserInfoFromSpotify = await getUserFromDatabase(data.email);
+		const getUserInfoFromSpotify = await getUserFromDatabase(parsedGetProfile.email);
 
 		if (!getUserInfoFromSpotify.userInfoFromMongoDB) {
 			return {
 				existingUser: false,
-				infoToCreateUser: data
+				infoToCreateUser: parsedGetProfile
 			};
 		}
 

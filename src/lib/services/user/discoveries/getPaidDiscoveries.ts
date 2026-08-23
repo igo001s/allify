@@ -23,18 +23,18 @@ export async function getPaidDiscoveries(
 			throw new Error('Failed to use ticket');
 		}
 
-		const responseDiscoveries = await fetch('/api/ai/discoveries', {
+		const discoveriesResponse = await fetch('/api/ai/discoveries', {
 			method: 'POST',
 			body: JSON.stringify({ mostListenedTracks, mostListenedArtists })
 		});
 
-		if (!responseDiscoveries.ok) {
+		if (!discoveriesResponse.ok) {
 			await returnTicket(id, tickets);
 
 			throw new Error('Failed to fetch discoveries');
 		}
 
-		const { tracks, artists } = await responseDiscoveries.json();
+		const { tracks, artists } = await discoveriesResponse.json();
 
 		const updateDiscoveries = await fetch('/api/mongodb/updates/update-discoveries', {
 			method: 'POST',

@@ -3,7 +3,7 @@ import { dev } from '$app/environment';
 
 export async function searchUsers(user: string) {
 	try {
-		const response = await fetch('/api/mongodb/user/search-users', {
+		const searchUsersResponse = await fetch('/api/mongodb/user/search-users', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -11,9 +11,9 @@ export async function searchUsers(user: string) {
 			body: JSON.stringify({ user })
 		});
 
-		const data = await response.json();
+		const parsedSearchUsers = await searchUsersResponse.json();
 
-		return data.users;
+		return parsedSearchUsers.users;
 	} catch (error) {
 		if (dev) {
 			console.error('User searchUsers error:', error);

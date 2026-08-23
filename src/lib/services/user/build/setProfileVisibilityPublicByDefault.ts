@@ -6,19 +6,23 @@ import type { ObjectId } from 'mongodb';
 
 export async function setProfileVisibilityPublicByDefault(id: ObjectId) {
 	try {
-		const response = await fetch('/api/mongodb/user/set-profile-visibility-public-by-default', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({ id })
-		});
+		const setProfileVisibilityPublicByDefaultResponse = await fetch(
+			'/api/mongodb/user/set-profile-visibility-public-by-default',
+			{
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ id })
+			}
+		);
 
-		const data = await response.json();
+		const parsedSetProfileVisibilityPublicByDefault =
+			await setProfileVisibilityPublicByDefaultResponse.json();
 
-		if (!data.profileVisibility) {
+		if (!parsedSetProfileVisibilityPublicByDefault.profileVisibility) {
 			throw new Error('Request failed');
 		}
 
-		return data.profileVisibility;
+		return parsedSetProfileVisibilityPublicByDefault.profileVisibility;
 	} catch (error) {
 		if (dev) {
 			console.error('User setProfileVisibilityPublicByDefault error:', error);

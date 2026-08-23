@@ -3,7 +3,7 @@ import { dev } from '$app/environment';
 
 export async function getPublicUser(id: string) {
 	try {
-		const response = await fetch('/api/mongodb/user/get-public-user', {
+		const getPublicUserResponse = await fetch('/api/mongodb/user/get-public-user', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -11,9 +11,9 @@ export async function getPublicUser(id: string) {
 			body: JSON.stringify({ id })
 		});
 
-		const data = await response.json();
+		const parsedGetPublicUser = await getPublicUserResponse.json();
 
-		return data.userFoundedById;
+		return parsedGetPublicUser.userFoundedById;
 	} catch (error) {
 		if (dev) {
 			console.error('User getPublicUser error:', error);

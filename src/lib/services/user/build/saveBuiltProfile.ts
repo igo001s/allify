@@ -9,7 +9,7 @@ import type { ObjectId } from 'mongodb';
 
 export async function saveBuiltProfile(id: ObjectId, builtUser: buildProfileInfo) {
 	try {
-		const response = await fetch('/api/mongodb/user/save-built-profile', {
+		const saveBuiltProfileResponse = await fetch('/api/mongodb/user/save-built-profile', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -17,13 +17,13 @@ export async function saveBuiltProfile(id: ObjectId, builtUser: buildProfileInfo
 			body: JSON.stringify({ id, builtUser })
 		});
 
-		const responseData = await response.json();
+		const parsedSaveBuiltProfile = await saveBuiltProfileResponse.json();
 
-		if (!responseData.builtUser) {
+		if (!parsedSaveBuiltProfile.builtUser) {
 			throw new Error('Request failed');
 		}
 
-		return responseData.builtUser;
+		return parsedSaveBuiltProfile.builtUser;
 	} catch (error) {
 		if (dev) {
 			console.error('User saveBuiltProfile error:', error);

@@ -1,5 +1,5 @@
 // Types
-import type { AvatarImage } from "./Image.type";
+import type { AvatarImage } from './Image.type';
 
 export type UserInfoSpotify = {
 	connected: boolean;

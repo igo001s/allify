@@ -9,7 +9,7 @@ export async function getMostListenedArtists(limit: number = 5) {
 	let mostListenedArtistsItems = [] as ArtistSpotify[];
 
 	try {
-		const reqMostListenedArtists = await fetch(`/api/spotify/stats/most-listened-artists`, {
+		const mostListenedArtistsResponse = await fetch(`/api/spotify/stats/most-listened-artists`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
@@ -17,29 +17,29 @@ export async function getMostListenedArtists(limit: number = 5) {
 			})
 		});
 
-		if (!reqMostListenedArtists.ok) return undefined;
+		if (!mostListenedArtistsResponse.ok) return undefined;
 
-		const resMostListenedArtists = await reqMostListenedArtists.json();
+		const parsedMostListenedArtists = await mostListenedArtistsResponse.json();
 
 		mostListenedArtistItem = {
-			id: resMostListenedArtists[0].id,
-			name: resMostListenedArtists[0].name,
-			popularity: resMostListenedArtists[0].popularity,
-			followers: resMostListenedArtists[0].followers.total,
-			genres: resMostListenedArtists[0].genres,
-			image: resMostListenedArtists[0].images[0],
-			artistLink: resMostListenedArtists[0].external_urls.spotify
+			id: parsedMostListenedArtists[0].id,
+			name: parsedMostListenedArtists[0].name,
+			popularity: parsedMostListenedArtists[0].popularity,
+			followers: parsedMostListenedArtists[0].followers.total,
+			genres: parsedMostListenedArtists[0].genres,
+			image: parsedMostListenedArtists[0].images[0],
+			artistLink: parsedMostListenedArtists[0].external_urls.spotify
 		};
 
-		for (let i = 0; i < resMostListenedArtists.length; i++) {
+		for (let i = 0; i < parsedMostListenedArtists.length; i++) {
 			mostListenedArtistsItems.push({
-				id: resMostListenedArtists[i].id,
-				name: resMostListenedArtists[i].name,
-				popularity: resMostListenedArtists[i].popularity,
-				followers: resMostListenedArtists[i].followers.total,
-				genres: resMostListenedArtists[i].genres,
-				image: resMostListenedArtists[i].images[0],
-				artistLink: resMostListenedArtists[i].external_urls.spotify
+				id: parsedMostListenedArtists[i].id,
+				name: parsedMostListenedArtists[i].name,
+				popularity: parsedMostListenedArtists[i].popularity,
+				followers: parsedMostListenedArtists[i].followers.total,
+				genres: parsedMostListenedArtists[i].genres,
+				image: parsedMostListenedArtists[i].images[0],
+				artistLink: parsedMostListenedArtists[i].external_urls.spotify
 			});
 		}
 
