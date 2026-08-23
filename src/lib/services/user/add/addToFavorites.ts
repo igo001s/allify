@@ -19,7 +19,7 @@ export async function addToFavorites(
 	try {
 		if (!idToSave || !id || !name || !image) return;
 
-		const response = await fetch('/api/mongodb/updates/add-to-favorites', {
+		const response = await fetch('/api/mongodb/add/add-to-favorites', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

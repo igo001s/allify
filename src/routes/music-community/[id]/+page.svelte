@@ -208,7 +208,11 @@
 	</section>
 
 	{#if showAddCommentModal && user}
-		<AddCommentModal bind:showAddCommentModal profileUserName={user.name} />
+		<AddCommentModal
+			bind:showAddCommentModal
+			profileUserName={user.name}
+			profileUserId={user._id}
+		/>
 	{/if}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedProfileParagraph1} />

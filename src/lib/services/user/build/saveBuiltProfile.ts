@@ -9,7 +9,7 @@ import type { ObjectId } from 'mongodb';
 
 export async function saveBuiltProfile(id: ObjectId, builtUser: buildProfileInfo) {
 	try {
-		const response = await fetch('/api/mongodb/updates/save-built-profile', {
+		const response = await fetch('/api/mongodb/user/save-built-profile', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

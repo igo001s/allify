@@ -8,7 +8,7 @@ export async function removeFromFavorites(idToRemove: ObjectId, id: ObjectId) {
 	try {
 		if (!idToRemove || !id) return;
 
-		const response = await fetch('/api/mongodb/updates/remove-from-favorites', {
+		const response = await fetch('/api/mongodb/remove/remove-from-favorites', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

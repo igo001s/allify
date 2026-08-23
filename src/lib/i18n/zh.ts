@@ -255,7 +255,9 @@ export const zh = {
 			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
 				'评论包含侮辱性或冒犯性语言。请检查后重试。',
 			musicCommunityPagePublicUserCloseAddCommentModal: '关闭',
-			musicCommunityPagePublicUserPostComment: '发表评论'
+			musicCommunityPagePublicUserPostComment: '发表评论',
+			musicCommunityPagePublicUserToastSuccessAddCommentMessage: '评论已成功添加到个人资料',
+			musicCommunityPagePublicUserToastErrorAddCommentMessage: '添加评论时出错。请稍后再试。'
 		},
 		noUserFound: {
 			title: '未找到个人资料 | Allify',

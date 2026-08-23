@@ -8,11 +8,20 @@
 	// Utils
 	import { validateComment } from '$lib/utils/validateComment';
 
+	// Services
+	import { addCommentOnPublicProfile } from '$lib/services/user/add/addCommentOnPublicProfile';
+
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
+	import { toastStore } from '$lib/stores/toast.store';
+
+	// MongoDB
+	import type { ObjectId } from 'mongodb';
 
 	// Props
 	export let profileUserName: string;
+	export let profileUserId: ObjectId;
 	export let showAddCommentModal: boolean;
 
 	let comment: string = '';
@@ -26,12 +35,36 @@
 		isCommentValid = validateComment(comment);
 	}
 
-	function handleAddComment() {
-		if (isCommentValid.error || !comment.trim()) {
+	async function handleAddComment() {
+		if (isCommentValid.error || !comment.trim() || !$userInfo) {
 			return;
 		}
 
-		console.log('Comment added:', comment);
+		const data = await addCommentOnPublicProfile(
+			{
+				image: $userInfo?.connectedStreamings?.spotify?.image,
+				_id: $userInfo?._id,
+				name: $userInfo?.name
+			},
+			profileUserId,
+			comment
+		);
+
+		if (data) {
+			showAddCommentModal = false;
+
+			toastStore.set({
+				showToast: true,
+				toastType: 'success',
+				toastMessage: $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserToastSuccessAddCommentMessage + profileUserName + '.'
+			});
+		} else {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage: $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserToastErrorAddCommentMessage
+			});
+		}
 	}
 
 	onMount(() => {

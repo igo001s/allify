@@ -278,7 +278,9 @@ export const pt = {
 			musicCommunityPagePublicUserInputErrorInvalidInsultsMessage:
 				'O comentário contém insultos ou palavras ofensivas. Por favor, revise e tente novamente.',
 			musicCommunityPagePublicUserCloseAddCommentModal: 'Fechar',
-			musicCommunityPagePublicUserPostComment: 'Publicar comentário'
+			musicCommunityPagePublicUserPostComment: 'Publicar comentário',
+			musicCommunityPagePublicUserToastSuccessAddCommentMessage: 'Comentário adicionado com sucesso no perfil de ',
+			musicCommunityPagePublicUserToastErrorAddCommentMessage: 'Ocorreu um erro ao adicionar o comentário. Por favor, tente novamente mais tarde.'
 		},
 		noUserFound: {
 			title: 'Perfil não encontrado | Allify',

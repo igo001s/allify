@@ -32,6 +32,7 @@ export type UserInfo = {
 			name: string;
 		};
 		comment: string;
+		addedAt: Date;
 	}[];
 	connectedStreamings: {
 		spotify?: UserInfoSpotify;
