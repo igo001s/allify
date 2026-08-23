@@ -2,7 +2,7 @@
 import { dev } from '$app/environment';
 
 // Types
-import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
+import type { ArtistSpotify } from '$lib/types/Spotify.type';
 
 export async function getMostListenedArtists(limit: number = 5) {
 	let mostListenedArtistItem: ArtistSpotify;

@@ -7,3 +7,8 @@ export type CardPlatformType = {
 	description: string;
 	link: string;
 };
+
+export type FooterColumnItems = {
+	title: string;
+	items: { text: string; href: string }[] | { image: unknown; href: string; altText: string }[];
+};

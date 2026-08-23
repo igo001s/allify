@@ -273,8 +273,10 @@ export const ja = {
 				'コメントに侮辱的または攻撃的な表現が含まれています。内容を確認して、もう一度お試しください。',
 			musicCommunityPagePublicUserCloseAddCommentModal: '閉じる',
 			musicCommunityPagePublicUserPostComment: 'コメントを投稿',
-			musicCommunityPagePublicUserToastSuccessAddCommentMessage: 'プロフィールにコメントを追加しました：',
-			musicCommunityPagePublicUserToastErrorAddCommentMessage: 'コメントの追加中にエラーが発生しました。後でもう一度お試しください。'
+			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
+				'プロフィールにコメントを追加しました：',
+			musicCommunityPagePublicUserToastErrorAddCommentMessage:
+				'コメントの追加中にエラーが発生しました。後でもう一度お試しください。'
 		},
 		noUserFound: {
 			title: 'プロフィールが見つかりません | Allify',

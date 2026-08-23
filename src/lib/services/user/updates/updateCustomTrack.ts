@@ -9,7 +9,7 @@ import { returnTicket } from '../tickets/returnTicket';
 import type { ObjectId } from 'mongodb';
 
 // Types
-import type { TrackSpotify } from '$lib/types/SpotifyData.type';
+import type { TrackSpotify } from '$lib/types/Spotify.type';
 
 export async function updateCustomTrack(
 	id: ObjectId,

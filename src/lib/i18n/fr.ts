@@ -284,8 +284,10 @@ export const fr = {
 				'Le commentaire contient des insultes ou des propos offensants. Veuillez le vérifier et réessayer.',
 			musicCommunityPagePublicUserCloseAddCommentModal: 'Fermer',
 			musicCommunityPagePublicUserPostComment: 'Publier le commentaire',
-			musicCommunityPagePublicUserToastSuccessAddCommentMessage: 'Commentaire ajouté avec succès sur le profil de ',
-			musicCommunityPagePublicUserToastErrorAddCommentMessage: 'Une erreur s’est produite lors de l’ajout du commentaire. Veuillez réessayer plus tard.'
+			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
+				'Commentaire ajouté avec succès sur le profil de ',
+			musicCommunityPagePublicUserToastErrorAddCommentMessage:
+				'Une erreur s’est produite lors de l’ajout du commentaire. Veuillez réessayer plus tard.'
 		},
 		noUserFound: {
 			title: 'Profil introuvable | Allify',

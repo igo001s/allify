@@ -280,8 +280,10 @@ export const it = {
 				'Il commento contiene insulti o linguaggio offensivo. Controllalo e riprova.',
 			musicCommunityPagePublicUserCloseAddCommentModal: 'Chiudi',
 			musicCommunityPagePublicUserPostComment: 'Pubblica commento',
-			musicCommunityPagePublicUserToastSuccessAddCommentMessage: 'Commento aggiunto con successo al profilo di ',
-			musicCommunityPagePublicUserToastErrorAddCommentMessage: 'Si è verificato un errore durante l’aggiunta del commento. Riprova più tardi.'
+			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
+				'Commento aggiunto con successo al profilo di ',
+			musicCommunityPagePublicUserToastErrorAddCommentMessage:
+				'Si è verificato un errore durante l’aggiunta del commento. Riprova più tardi.'
 		},
 		noUserFound: {
 			title: 'Profilo non trovato | Allify',

@@ -16,7 +16,7 @@
 	import { validateCustomItemTitle } from '$lib/utils/validateCustomItemTitle';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
+	import type { TrackSpotify } from '$lib/types/Spotify.type';
 
 	// Props
 	export let closeChangeCustomItemModal: () => void;

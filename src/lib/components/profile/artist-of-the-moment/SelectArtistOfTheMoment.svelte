@@ -10,7 +10,7 @@
 	import { updateArtistOfTheMoment } from '$lib/services/user/updates/updateArtistOfTheMoment';
 
 	// Types
-	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
+	import type { ArtistSpotify } from '$lib/types/Spotify.type';
 
 	// Props
 	export let closeSelectItemOfTheMomentModal: () => void;

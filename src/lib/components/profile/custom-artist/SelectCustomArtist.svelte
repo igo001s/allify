@@ -13,7 +13,7 @@
 	import { validateCustomItemTitle } from '$lib/utils/validateCustomItemTitle';
 
 	// Types
-	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
+	import type { ArtistSpotify } from '$lib/types/Spotify.type';
 
 	// Props
 	export let closeSelectCustomItemModal: () => void;

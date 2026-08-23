@@ -13,7 +13,7 @@
 	import { updateTrackOfTheMoment } from '$lib/services/user/updates/updateTrackOfTheMoment';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
+	import type { TrackSpotify } from '$lib/types/Spotify.type';
 
 	// Props
 	export let closeChangeItemOfTheMomentModal: () => void;

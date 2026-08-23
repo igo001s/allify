@@ -278,8 +278,10 @@ export const en = {
 				'The comment contains insults or offensive language. Please review it and try again.',
 			musicCommunityPagePublicUserCloseAddCommentModal: 'Close',
 			musicCommunityPagePublicUserPostComment: 'Post comment',
-			musicCommunityPagePublicUserToastSuccessAddCommentMessage: 'Comment successfully added on the profile of ',
-			musicCommunityPagePublicUserToastErrorAddCommentMessage: 'An error occurred while adding the comment. Please try again later.'
+			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
+				'Comment successfully added on the profile of ',
+			musicCommunityPagePublicUserToastErrorAddCommentMessage:
+				'An error occurred while adding the comment. Please try again later.'
 		},
 		noUserFound: {
 			title: 'Profile Not Found | Allify',

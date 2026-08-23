@@ -43,8 +43,8 @@ export const POST: RequestHandler = async ({ request }) => {
 				$push: {
 					comments: {
 						author: commenter,
-						comment: commentText,
-						addedAt: new Date()
+						content: commentText,
+						createdAt: new Date()
 					}
 				}
 			}

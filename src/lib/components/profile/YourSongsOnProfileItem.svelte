@@ -11,7 +11,7 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/SpotifyData.type';
+	import type { TrackSpotify } from '$lib/types/Spotify.type';
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'music') => void;

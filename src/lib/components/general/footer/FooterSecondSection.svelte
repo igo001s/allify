@@ -7,7 +7,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Types
-	import type { FooterColumnItems } from '$lib/types/FooterColumnItems.type';
+	import type { FooterColumnItems } from '$lib/types/Components.type';
 
 	$: footerColumnItems = {
 		follow: {

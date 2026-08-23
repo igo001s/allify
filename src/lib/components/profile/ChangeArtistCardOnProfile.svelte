@@ -7,7 +7,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Types
-	import type { ArtistSpotify } from '$lib/types/SpotifyData.type';
+	import type { ArtistSpotify } from '$lib/types/Spotify.type';
 
 	// Props
 	export let artist: ArtistSpotify;

@@ -281,8 +281,10 @@ export const de = {
 				'Der Kommentar enthält Beleidigungen oder beleidigende Wörter. Bitte überprüfe ihn und versuche es erneut.',
 			musicCommunityPagePublicUserCloseAddCommentModal: 'Schließen',
 			musicCommunityPagePublicUserPostComment: 'Kommentar veröffentlichen',
-			musicCommunityPagePublicUserToastSuccessAddCommentMessage: 'Kommentar erfolgreich im Profil von ',
-			musicCommunityPagePublicUserToastErrorAddCommentMessage: 'Beim Hinzufügen des Kommentars ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.'
+			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
+				'Kommentar erfolgreich im Profil von ',
+			musicCommunityPagePublicUserToastErrorAddCommentMessage:
+				'Beim Hinzufügen des Kommentars ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.'
 		},
 		noUserFound: {
 			title: 'Profil nicht gefunden | Allify',

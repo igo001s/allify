@@ -56,13 +56,19 @@
 			toastStore.set({
 				showToast: true,
 				toastType: 'success',
-				toastMessage: $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserToastSuccessAddCommentMessage + profileUserName + '.'
+				toastMessage:
+					$translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserToastSuccessAddCommentMessage +
+					profileUserName +
+					'.'
 			});
 		} else {
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',
-				toastMessage: $translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserToastErrorAddCommentMessage
+				toastMessage:
+					$translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserToastErrorAddCommentMessage
 			});
 		}
 	}

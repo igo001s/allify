@@ -280,8 +280,10 @@ export const ru = {
 				'Комментарий содержит оскорбления или нецензурную лексику. Проверьте его и попробуйте снова.',
 			musicCommunityPagePublicUserCloseAddCommentModal: 'Закрыть',
 			musicCommunityPagePublicUserPostComment: 'Опубликовать комментарий',
-			musicCommunityPagePublicUserToastSuccessAddCommentMessage: 'Комментарий успешно добавлен в профиль ',
-			musicCommunityPagePublicUserToastErrorAddCommentMessage: 'Произошла ошибка при добавлении комментария. Пожалуйста, попробуйте снова позже.'
+			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
+				'Комментарий успешно добавлен в профиль ',
+			musicCommunityPagePublicUserToastErrorAddCommentMessage:
+				'Произошла ошибка при добавлении комментария. Пожалуйста, попробуйте снова позже.'
 		},
 		noUserFound: {
 			title: 'Профиль не найден | Allify',

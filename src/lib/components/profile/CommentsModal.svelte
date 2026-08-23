@@ -50,7 +50,7 @@
 				<div class="mt-2 flex max-h-130 flex-col gap-3 overflow-y-auto pr-2 sm:gap-4">
 					{#each $userInfo.comments as comment}
 						<div
-							class="bg-s-secondary/40 flex items-start gap-3 rounded-xl border border-b-default p-3 transition-colors hover:bg-s-secondary/60 sm:gap-4 sm:p-4"
+							class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 transition-colors sm:gap-4 sm:p-4"
 						>
 							<enhanced:img
 								src={comment.author.image?.url ?? ''}
@@ -62,16 +62,16 @@
 								<div class="flex items-start justify-between gap-3">
 									<a
 										href={`/music-community/${comment.author._id}`}
-										class="font-semibold text-t-secondary transition-colors text-sm hover:text-brand-primary"
+										class="text-sm font-semibold text-t-secondary transition-colors hover:text-brand-primary"
 									>
 										{comment.author.name}
 									</a>
 
 									<time
-										datetime={new Date(comment.addedAt).toISOString()}
-										class="shrink-0 text-[11px] text-t-tertiary"
+										datetime={new Date(comment.createdAt).toISOString()}
+										class="text-t-tertiary shrink-0 text-[11px]"
 									>
-										{new Date(comment.addedAt).toLocaleDateString($translationsStore.locale, {
+										{new Date(comment.createdAt).toLocaleDateString($translationsStore.locale, {
 											year: 'numeric',
 											month: 'short',
 											day: 'numeric'
@@ -80,7 +80,7 @@
 								</div>
 
 								<p class="text-xs leading-relaxed text-t-secondary">
-									{comment.comment}
+									{comment.content}
 								</p>
 							</div>
 						</div>

@@ -2,7 +2,7 @@
 import { dev } from '$app/environment';
 
 // Types
-import type { UserInfoSpotify } from '$lib/types/SpotifyData.type';
+import type { UserInfoSpotify } from '$lib/types/Spotify.type';
 
 export async function createUser(
 	name: string,

@@ -7,7 +7,7 @@ import { returnTicket } from '$lib/services/user/tickets/returnTicket';
 import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListenedTracks';
 
 // Types
-import type { TrackSpotify } from '$lib/types/SpotifyData.type';
+import type { TrackSpotify } from '$lib/types/Spotify.type';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
