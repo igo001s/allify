@@ -16,7 +16,7 @@
 	import type { ObjectId } from 'mongodb';
 
 	// Services
-	import { removeFromFavorites } from '$lib/services/user/updates/removeFromFavorites';
+	import { removeFromFavorites } from '$lib/services/user/remove/removeFromFavorites';
 
 	// Types
 	import type { FavoriteUser } from '$lib/types/UserInfo.type';
