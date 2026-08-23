@@ -25,9 +25,9 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { commenter, commentRecipientUserId, commentText } = await request.json();
+		const { authorComment, commentRecipientUserId, commentText } = await request.json();
 
-		if (!commenter || !commentRecipientUserId || !commentText) {
+		if (!authorComment || !commentRecipientUserId || !commentText) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), {
 				status: 400
 			});
@@ -42,7 +42,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			{
 				$push: {
 					comments: {
-						author: commenter,
+						author: authorComment,
 						content: commentText,
 						createdAt: new Date()
 					}

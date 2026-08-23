@@ -1,24 +1,19 @@
 // Svelte
 import { dev } from '$app/environment';
 
+// Types
+import type { AuthorComment } from '$lib/types/Comments.type';
+
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
 export async function addCommentOnPublicProfile(
-	commenter: {
-		image?: {
-			url: string;
-			height: number | null;
-			width: number | null;
-		};
-		_id: ObjectId;
-		name: string;
-	},
+	authorComment: AuthorComment,
 	commentRecipientUserId: ObjectId,
 	commentText: string
 ) {
 	try {
-		if (!commenter || !commentRecipientUserId || !commentText) return;
+		if (!authorComment || !commentRecipientUserId || !commentText) return;
 
 		const addCommentOnPublicProfileResponse = await fetch(
 			'/api/mongodb/add/add-comment-on-public-profile',
@@ -28,7 +23,7 @@ export async function addCommentOnPublicProfile(
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify({
-					commenter,
+					authorComment,
 					commentRecipientUserId,
 					commentText
 				})

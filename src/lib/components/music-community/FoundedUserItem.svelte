@@ -22,6 +22,7 @@
 
 	// Types
 	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
+	import type { AvatarImage } from '$lib/types/Image.type';
 
 	// Props
 	export let user: SearchUserInfo;
@@ -32,7 +33,7 @@
 		idToSave: ObjectId,
 		id: ObjectId,
 		name?: string,
-		image?: { url: string; height: number | null; width: number | null },
+		image?: AvatarImage,
 		spotifyConnected = false,
 		deezerConnected = false
 	) {
@@ -106,7 +107,7 @@
 		idToToggle?: ObjectId,
 		id?: ObjectId,
 		name?: string,
-		image?: { url: string; height: number | null; width: number | null },
+		image?: AvatarImage,
 		spotifyConnected = false,
 		deezerConnected = false
 	) {
