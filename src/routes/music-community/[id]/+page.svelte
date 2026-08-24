@@ -50,9 +50,13 @@
 		} catch {
 			user = null;
 
-			loadingUser = false;
+			setTimeout(() => {
+				loadingUser = false;
+			}, 1500);
 		} finally {
-			loadingUser = false;
+			setTimeout(() => {
+				loadingUser = false;
+			}, 1500);
 		}
 	});
 </script>
