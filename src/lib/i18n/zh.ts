@@ -578,33 +578,55 @@ export const zh = {
 		},
 		dataUsage: {
 			title: '数据使用 | Allify',
-			dataUsageMetaDescription: '了解 Allify 如何收集、使用和处理与您的音乐和账户相关的数据。',
+			dataUsageMetaDescription:
+				'了解 Allify 如何收集、使用和处理与您的音乐及账户相关的数据，以及我们采取的安全措施和您可以使用的数据控制选项。',
+			dataUsageMetaKeywords:
+				'数据使用, 数据收集, 数据处理, Allify, 音乐洞察, 收听统计, 用户信息, 数据隐私, 数据安全, 流媒体服务, Spotify, Deezer',
 			dataUsageMetaOgAndTwitterContent:
-				'了解 Allify 如何收集、使用和处理与您的音乐和账户相关的数据。',
+				'了解 Allify 如何收集、使用和处理与您的音乐及账户相关的数据，以及我们采取的安全措施和您可以使用的数据控制选项。',
 			dataUsageDiv1Heading1: '数据使用',
-			dataUsageDiv1LastUpdated: '最后更新：2026年2月22日',
+			dataUsageDiv1LastUpdated: '最后更新：2026年8月25日',
 			dataUsageDiv1Paragraph1:
-				'本数据使用页面说明 Allify 在您使用我们的音乐洞察平台时如何收集、使用和处理信息。',
+				'本数据使用页面说明了您使用我们的音乐洞察平台时，Allify 如何收集、使用、处理和保护相关信息。',
 			dataUsageDiv2Heading2: '1. 我们使用的数据',
 			dataUsageDiv2Paragraph1:
-				'Allify 使用用户通过连接 Spotify 及未来的 Deezer 等流媒体服务授权的数据，以及平台运营所需的基本技术数据。',
+				'Allify 使用用户通过连接兼容的流媒体服务所授权的数据，以及平台正常运行所必需的技术数据。',
 			dataUsageDiv2Paragraph2:
-				'这可能包括账户标识符、连接状态、API 允许的音乐数据，以及运营服务所需的有限技术信息。',
+				'这些数据可能包括账户标识符、连接状态、通过授权 API 提供的音乐数据，以及运行和维护服务所需的有限技术信息。',
 			dataUsageDiv3Heading2: '2. 我们如何使用数据',
 			dataUsageDiv3Paragraph1:
-				'数据用于生成个性化音乐洞察、显示聆听统计数据、管理积分系统并确保 Allify 功能的正常运行。',
-			dataUsageDiv3Paragraph2: '我们也可能使用聚合和匿名数据进行内部分析、性能改进和平台发展。',
+				'我们使用这些数据生成个性化音乐洞察、显示收听统计、个性化功能、管理票券系统，并确保 Allify 正常运行。',
+			dataUsageDiv3Paragraph2:
+				'我们还可能使用汇总或匿名化的数据进行内部分析、性能监控、问题检测以及平台改进。',
 			dataUsageDiv4Heading2: '3. 数据处理与存储',
-			dataUsageDiv4Paragraph1: '音乐数据主要实时处理，不会永久存储，除非账户功能严格需要。',
+			dataUsageDiv4Paragraph1:
+				'音乐数据主要用于提供 Allify 的功能，并在适用情况下，仅在运营、维护和改进这些功能所需的期限内进行存储。',
 			dataUsageDiv4Paragraph2:
-				'我们采取适当的技术和组织措施，保护数据免遭未经授权的访问、更改、披露或销毁。',
-			dataUsageDiv5Heading2: '4. 第三方服务与 API',
+				'数据的存储期限和方式可能根据数据类型、使用目的以及服务运行所需的要求而有所不同。',
+			dataUsageDiv5Heading2: '4. 数据安全',
 			dataUsageDiv5Paragraph1:
-				'Allify 依赖流媒体音乐平台、托管提供商和支付服务等第三方 API 和服务，这些服务可能根据其自身政策处理数据。',
-			dataUsageDiv5Paragraph2: '我们不向第三方出售、出租或转让用户数据。',
-			dataUsageDiv6Heading2: '5. 用户控制',
-			dataUsageDiv6Paragraph1: '用户对流媒体账户的连接保持控制，可随时撤销访问权限或申请删除数据。',
-			dataUsageDiv6Paragraph2: '使用 Allify，即表示您同意本页面所述的数据使用做法。'
+				'我们采取适当的技术和组织措施，保护数据免受未经授权的访问、修改、不当披露、丢失或破坏。',
+			dataUsageDiv5Paragraph2:
+				'尽管我们采取安全措施来保护 Allify 处理的信息，但任何电子传输或存储系统及方法都无法被认为是绝对安全的。',
+			dataUsageDiv6Heading2: '5. 第三方服务和 API',
+			dataUsageDiv6Paragraph1:
+				'Allify 依赖第三方 API 和服务，包括音乐流媒体平台以及托管、基础设施、身份验证和支付服务提供商。这些第三方可能根据其自身的政策和条款处理数据。',
+			dataUsageDiv6Paragraph2:
+				'Allify 不控制这些第三方服务的数据隐私、安全性、可用性或数据处理方式。我们建议您查看相关服务的政策和条款，以了解他们如何处理您的数据。',
+			dataUsageDiv7Heading2: '6. 数据共享',
+			dataUsageDiv7Paragraph1: 'Allify 不会出售、出租或以商业方式交易用户的个人数据。',
+			dataUsageDiv7Paragraph2:
+				'部分数据可能会由运营、保护、维护和改进平台所必需的服务提供商进行处理或共享，并始终根据适用的用途和法律要求进行。',
+			dataUsageDiv8Heading2: '7. 用户控制',
+			dataUsageDiv8Paragraph1:
+				'用户可以控制与其流媒体账户的连接，并可根据相关第三方服务提供的选项，随时撤销授予这些服务的权限。',
+			dataUsageDiv8Paragraph2:
+				'在适用情况下，用户还可以根据 Allify 政策中规定的程序和要求，请求删除与其账户相关的数据。',
+			dataUsageDiv9Heading2: '8. 与隐私政策的关系',
+			dataUsageDiv9Paragraph1:
+				'本页面具体说明 Allify 如何使用和处理数据，并作为我们隐私政策的补充。',
+			dataUsageDiv9Paragraph2:
+				'如需详细了解个人数据的收集、使用、存储、保护以及与数据相关的权利，请参阅我们的隐私政策。'
 		},
 		termsOfService: {
 			title: '服务条款 | Allify',

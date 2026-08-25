@@ -640,37 +640,54 @@ export const en = {
 		dataUsage: {
 			title: 'Data Usage | Allify',
 			dataUsageMetaDescription:
-				'Understand how Allify collects, uses, and processes data related to your music and account.',
+				'Learn how Allify collects, uses, and processes data related to your music and account, as well as the security measures and controls available to you.',
+			dataUsageMetaKeywords:
+				'data usage, data collection, data processing, Allify, music insights, listening statistics, user information, data privacy, data security, streaming services, Spotify, Deezer',
 			dataUsageMetaOgAndTwitterContent:
-				'Understand how Allify collects, uses, and processes data related to your music and account.',
+				'Learn how Allify collects, uses, and processes data related to your music and account, as well as the security measures and controls available to you.',
 			dataUsageDiv1Heading1: 'Data Usage',
-			dataUsageDiv1LastUpdated: 'Last updated: February 22, 2026',
+			dataUsageDiv1LastUpdated: 'Last updated: August 25, 2026',
 			dataUsageDiv1Paragraph1:
-				'This Data Usage page explains how Allify collects, uses, and processes information when you use our music insights platform.',
+				'This Data Usage page explains how Allify collects, uses, processes, and protects information when you use our music insights platform.',
 			dataUsageDiv2Heading2: '1. Data We Use',
 			dataUsageDiv2Paragraph1:
-				'Allify uses user-authorized data through connections with streaming services such as Spotify and, in the future, Deezer, as well as essential technical data required for the platform to function.',
+				'Allify uses data authorized by the user through connections with compatible streaming services, as well as technical data essential to operating the platform.',
 			dataUsageDiv2Paragraph2:
-				'This may include account identifiers, connection status, music data permitted by the API, and limited technical information necessary to operate the service.',
-			dataUsageDiv3Heading2: '2. How We Use the Data',
+				'This may include account identifiers, connection status, music data made available through authorized APIs, and limited technical information necessary to operate and maintain the service.',
+			dataUsageDiv3Heading2: '2. How We Use Data',
 			dataUsageDiv3Paragraph1:
-				'The data is used to generate personalized music insights, display listening statistics, manage the ticket system, and ensure the proper functioning of Allify’s features.',
+				'Data is used to generate personalized music insights, display listening statistics, personalize features, manage the ticket system, and ensure the proper operation of Allify.',
 			dataUsageDiv3Paragraph2:
-				'We may also use aggregated and anonymized data for internal analytics, performance improvements, and platform development.',
+				'We may also use aggregated or anonymized data for internal analysis, performance monitoring, issue detection, and platform improvement.',
 			dataUsageDiv4Heading2: '3. Data Processing and Storage',
 			dataUsageDiv4Paragraph1:
-				'Music data is primarily processed in real time and is not permanently stored, except when strictly necessary for account functionality.',
+				'Music data is primarily processed to provide Allify features and, where applicable, is stored only for as long as necessary to operate, maintain, and improve those features.',
 			dataUsageDiv4Paragraph2:
-				'We implement appropriate technical and organizational measures to protect data against unauthorized access, alteration, disclosure, or destruction.',
-			dataUsageDiv5Heading2: '4. Third-Party Services and APIs',
+				'The duration and method of storage may vary depending on the type of data, its purpose, and the requirements necessary to operate the service.',
+			dataUsageDiv5Heading2: '4. Data Security',
 			dataUsageDiv5Paragraph1:
-				'Allify relies on third-party APIs and services, such as music streaming platforms, hosting providers, and payment services, which may process data according to their own policies.',
-			dataUsageDiv5Paragraph2: 'We do not sell, rent, or trade user data to third parties.',
-			dataUsageDiv6Heading2: '5. User Control',
+				'We implement appropriate technical and organizational measures to protect data against unauthorized access, alteration, improper disclosure, loss, or destruction.',
+			dataUsageDiv5Paragraph2:
+				'Although we implement security measures to protect information processed by Allify, no system or method of electronic transmission or storage can be considered completely secure.',
+			dataUsageDiv6Heading2: '5. Third-Party Services and APIs',
 			dataUsageDiv6Paragraph1:
-				'Users retain control over their streaming account connections and may revoke access or request data deletion at any time.',
+				'Allify relies on third-party APIs and services, including music streaming platforms, hosting, infrastructure, authentication, and payment providers, which may process data according to their own policies and terms.',
 			dataUsageDiv6Paragraph2:
-				'By using Allify, you agree to the data usage practices described on this page.'
+				'Allify does not control the privacy, security, availability, or data processing practices of these third-party services. We recommend reviewing their respective policies and terms to understand how they handle your data.',
+			dataUsageDiv7Heading2: '6. Data Sharing',
+			dataUsageDiv7Paragraph1: 'Allify does not sell, rent, or trade users’ personal data.',
+			dataUsageDiv7Paragraph2:
+				'Certain data may be processed or shared with service providers necessary to operate, protect, maintain, and improve the platform, in accordance with applicable purposes and legal requirements.',
+			dataUsageDiv8Heading2: '7. User Control',
+			dataUsageDiv8Paragraph1:
+				'Users retain control over connections to their streaming accounts and may revoke permissions granted to third-party services at any time, according to the options provided by those services.',
+			dataUsageDiv8Paragraph2:
+				'Where applicable, users may also request the deletion of data associated with their account, in accordance with the procedures and requirements described in Allify policies.',
+			dataUsageDiv9Heading2: '8. Relationship to the Privacy Policy',
+			dataUsageDiv9Paragraph1:
+				'This page specifically describes how data is used and processed by Allify and complements our Privacy Policy.',
+			dataUsageDiv9Paragraph2:
+				'For more information about the collection, use, storage, protection, and rights related to your personal data, please refer to our Privacy Policy.'
 		},
 		termsOfService: {
 			title: 'Terms of Service | Allify',

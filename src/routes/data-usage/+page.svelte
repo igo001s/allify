@@ -27,6 +27,7 @@
 		name="description"
 		content={$translationsStore.legalPages.dataUsage.dataUsageMetaDescription}
 	/>
+	<meta name="keywords" content={$translationsStore.legalPages.dataUsage.dataUsageMetaKeywords} />
 	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />

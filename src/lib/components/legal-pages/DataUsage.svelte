@@ -1,5 +1,6 @@
 <script lang="ts">
 	// Stores
+
 	import { translationsStore } from '$lib/stores/translations.store';
 </script>
 
@@ -38,5 +39,23 @@
 		<h2>{$translationsStore.legalPages.dataUsage.dataUsageDiv6Heading2}</h2>
 		<p>{$translationsStore.legalPages.dataUsage.dataUsageDiv6Paragraph1}</p>
 		<p>{$translationsStore.legalPages.dataUsage.dataUsageDiv6Paragraph2}</p>
+	</div>
+
+	<div>
+		<h2>{$translationsStore.legalPages.dataUsage.dataUsageDiv7Heading2}</h2>
+		<p>{$translationsStore.legalPages.dataUsage.dataUsageDiv7Paragraph1}</p>
+		<p>{$translationsStore.legalPages.dataUsage.dataUsageDiv7Paragraph2}</p>
+	</div>
+
+	<div>
+		<h2>{$translationsStore.legalPages.dataUsage.dataUsageDiv8Heading2}</h2>
+		<p>{$translationsStore.legalPages.dataUsage.dataUsageDiv8Paragraph1}</p>
+		<p>{$translationsStore.legalPages.dataUsage.dataUsageDiv8Paragraph2}</p>
+	</div>
+
+	<div>
+		<h2>{$translationsStore.legalPages.dataUsage.dataUsageDiv9Heading2}</h2>
+		<p>{$translationsStore.legalPages.dataUsage.dataUsageDiv9Paragraph1}</p>
+		<p>{$translationsStore.legalPages.dataUsage.dataUsageDiv9Paragraph2}</p>
 	</div>
 </section>
