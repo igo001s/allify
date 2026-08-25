@@ -673,38 +673,52 @@ export const en = {
 		termsOfService: {
 			title: 'Terms of Service | Allify',
 			termsOfServiceMetaDescription:
-				'Read the terms and conditions for accessing and using the Allify platform.',
+				'Read the Allify Terms of Service and learn about the rules for accessing and using the platform, your responsibilities, and usage limitations.',
 			termsOfServiceMetaOgAndTwitterContent:
-				'Read the terms and conditions for accessing and using the Allify platform.',
+				'Read the Allify Terms of Service and learn about the rules for accessing and using the platform, your responsibilities, and usage limitations.',
+			termsOfServiceMetaKeywords:
+				'terms of service, terms of use, Allify, music insights platform, usage policy, rights and responsibilities, platform access, code of conduct, limitation of liability',
 			termsOfServiceDiv1Heading1: 'Terms of Service',
-			termsOfServiceDiv1LastUpdated: 'Last updated: February 22, 2026',
+			termsOfServiceDiv1LastUpdated: 'Last updated: August 25, 2026',
 			termsOfServiceDiv1Paragraph1:
-				'These Terms of Service govern your access to and use of the Allify platform. By using our services, you agree to comply with these terms and conditions.',
+				'These Terms of Service govern access to and use of the Allify platform. By accessing or using Allify, you agree to comply with these terms and conditions.',
 			termsOfServiceDiv2Heading2: '1. Use of the Platform',
 			termsOfServiceDiv2Paragraph1:
-				'Allify is a platform that provides music insights based on user-authorized data from third-party streaming services such as Spotify and, in the future, Deezer.',
+				'Allify is a platform that provides music insights based on data authorized by third-party streaming services, such as Spotify and other supported services.',
 			termsOfServiceDiv2Paragraph2:
-				'You agree to use the platform only for lawful and personal purposes, in accordance with these terms, without attempting to exploit, abuse, or disrupt the service.',
+				'You agree to use the platform only for lawful, personal purposes and in accordance with these terms, without attempting to exploit, abuse, or compromise the operation, security, or integrity of the service.',
 			termsOfServiceDiv3Heading2: '2. User Responsibilities',
 			termsOfServiceDiv3Paragraph1:
-				'You are responsible for the connected account and the permissions granted through the streaming services used on the platform.',
+				'You are responsible for the connected account, the permissions you grant, and ensuring that you are authorized to use and connect your streaming service accounts to the platform.',
 			termsOfServiceDiv3Paragraph2:
-				'You agree not to use Allify for illegal, abusive, malicious automated activities or in any way that violates third-party API terms.',
-			termsOfServiceDiv4Heading2: '3. Service Availability',
+				'You agree not to use Allify for illegal, abusive, fraudulent, maliciously automated activities, or activities that violate the terms, policies, or APIs of third-party services.',
+			termsOfServiceDiv4Heading2: '3. Account and Termination',
 			termsOfServiceDiv4Paragraph1:
-				'We strive to keep Allify available and fully functional, but we do not guarantee uninterrupted or error-free operation at all times.',
+				'You are responsible for maintaining the security of your credentials and for activities carried out through your Allify account.',
 			termsOfServiceDiv4Paragraph2:
-				'We may update, modify, limit, or temporarily suspend features for maintenance, security, technical improvements, or legal compliance.',
-			termsOfServiceDiv5Heading2: '4. Limitation of Liability',
+				'You may stop using Allify and disconnect your streaming service accounts at any time, according to the features available on the platform.',
+			termsOfServiceDiv4Paragraph3:
+				'We may restrict, suspend, or terminate access to the platform when necessary to protect the service or its users, comply with legal requirements, or address violations of these Terms of Service.',
+			termsOfServiceDiv5Heading2: '4. Intellectual Property',
 			termsOfServiceDiv5Paragraph1:
-				'Allify is provided "as is" for informational and entertainment purposes related to music insights.',
+				'Allify, including its brand, name, interface, design, code, visual elements, and other proprietary content, is protected by applicable intellectual property laws.',
 			termsOfServiceDiv5Paragraph2:
-				'We are not responsible for inaccuracies in data provided by third-party APIs, external service interruptions, or decisions made based on the displayed insights.',
-			termsOfServiceDiv6Heading2: '5. Changes to the Terms',
+				'You may not copy, reproduce, modify, distribute, commercially exploit, or otherwise use elements of Allify without prior authorization, except as permitted by applicable law.',
+			termsOfServiceDiv6Heading2: '5. Service Availability',
 			termsOfServiceDiv6Paragraph1:
-				'We may update these Terms of Service periodically to reflect changes in the platform, third-party integrations, or legal requirements.',
+				'We strive to keep Allify available and functional, but we do not guarantee that the service will always be uninterrupted, secure, or error-free.',
 			termsOfServiceDiv6Paragraph2:
-				'By continuing to use Allify after updates, you automatically agree to the revised terms.'
+				'We may update, modify, limit, or temporarily suspend features for maintenance, security, technical improvements, changes to third-party services, or compliance with legal requirements.',
+			termsOfServiceDiv7Heading2: '6. Limitation of Liability',
+			termsOfServiceDiv7Paragraph1:
+				'Allify is provided on an availability basis and for informational and entertainment purposes related to music insights.',
+			termsOfServiceDiv7Paragraph2:
+				'We are not responsible for inaccuracies in data provided by third-party APIs or services, interruptions or changes to those services, or decisions made based on the insights displayed by Allify.',
+			termsOfServiceDiv8Heading2: '7. Changes to These Terms',
+			termsOfServiceDiv8Paragraph1:
+				'We may update these Terms of Service periodically to reflect changes to the platform, third-party integrations, available features, or legal requirements.',
+			termsOfServiceDiv8Paragraph2:
+				'When material changes are made, the last updated date shown on this page will be revised. By continuing to use Allify after the updated version is published, you agree to the revised terms.'
 		}
 	}
 };

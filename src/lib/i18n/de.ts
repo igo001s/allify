@@ -709,38 +709,52 @@ export const de = {
 		termsOfService: {
 			title: 'Nutzungsbedingungen | Allify',
 			termsOfServiceMetaDescription:
-				'Lesen Sie die Nutzungsbedingungen von Allify, um zu verstehen, wie Sie unsere Plattform für Musik-Insights sicher und verantwortungsbewusst nutzen können.',
+				'Lesen Sie die Nutzungsbedingungen von Allify und erfahren Sie mehr über die Regeln für den Zugriff auf und die Nutzung der Plattform, Ihre Verantwortlichkeiten und Nutzungsbeschränkungen.',
 			termsOfServiceMetaOgAndTwitterContent:
-				'Lesen Sie die Nutzungsbedingungen von Allify, um zu verstehen, wie Sie unsere Plattform für Musik-Insights sicher und verantwortungsbewusst nutzen können.',
+				'Lesen Sie die Nutzungsbedingungen von Allify und erfahren Sie mehr über die Regeln für den Zugriff auf und die Nutzung der Plattform, Ihre Verantwortlichkeiten und Nutzungsbeschränkungen.',
+			termsOfServiceMetaKeywords:
+				'Nutzungsbedingungen, Nutzungsbestimmungen, Allify, Musik-Insights-Plattform, Nutzungsrichtlinie, Rechte und Verantwortlichkeiten, Plattformzugriff, Verhaltensregeln, Haftungsbeschränkung',
 			termsOfServiceDiv1Heading1: 'Nutzungsbedingungen',
-			termsOfServiceDiv1LastUpdated: 'Letzte Aktualisierung: 22. Februar 2026',
+			termsOfServiceDiv1LastUpdated: 'Letzte Aktualisierung: 25. August 2026',
 			termsOfServiceDiv1Paragraph1:
-				'Diese Nutzungsbedingungen regeln den Zugriff auf und die Nutzung der Allify-Plattform. Durch die Nutzung unserer Dienste stimmen Sie diesen Bedingungen zu.',
+				'Diese Nutzungsbedingungen regeln den Zugriff auf und die Nutzung der Allify-Plattform. Durch den Zugriff auf oder die Nutzung von Allify erklären Sie sich mit diesen Bedingungen einverstanden.',
 			termsOfServiceDiv2Heading2: '1. Nutzung der Plattform',
 			termsOfServiceDiv2Paragraph1:
-				'Allify ist eine Plattform, die Musik-Insights auf Grundlage von vom Nutzer autorisierten Daten aus Streaming-Diensten Dritter wie Spotify und künftig Deezer bereitstellt.',
+				'Allify ist eine Plattform, die Musikeinblicke auf Grundlage von Daten bereitstellt, die von Drittanbieter-Streamingdiensten wie Spotify und anderen unterstützten Diensten autorisiert wurden.',
 			termsOfServiceDiv2Paragraph2:
-				'Sie verpflichten sich, die Plattform nur zu rechtmäßigen und persönlichen Zwecken und in Übereinstimmung mit diesen Bedingungen zu nutzen, ohne den Dienst auszunutzen, zu missbrauchen oder zu stören.',
+				'Sie verpflichten sich, die Plattform nur für rechtmäßige und persönliche Zwecke sowie gemäß diesen Bedingungen zu nutzen, ohne zu versuchen, den Betrieb, die Sicherheit oder die Integrität des Dienstes auszunutzen, zu missbrauchen oder zu beeinträchtigen.',
 			termsOfServiceDiv3Heading2: '2. Verantwortlichkeiten des Nutzers',
 			termsOfServiceDiv3Paragraph1:
-				'Sie sind verantwortlich für das verbundene Konto und die über die Streaming-Dienste erteilten Berechtigungen.',
+				'Sie sind für das verbundene Konto, die von Ihnen erteilten Berechtigungen und dafür verantwortlich, sicherzustellen, dass Sie berechtigt sind, Ihre Streamingdienstkonten mit der Plattform zu verbinden und zu nutzen.',
 			termsOfServiceDiv3Paragraph2:
-				'Sie verpflichten sich, Allify nicht für illegale, missbräuchliche oder böswillig automatisierte Aktivitäten zu nutzen oder gegen die Bedingungen von Drittanbieter-APIs zu verstoßen.',
-			termsOfServiceDiv4Heading2: '3. Verfügbarkeit des Dienstes',
+				'Sie verpflichten sich, Allify nicht für illegale, missbräuchliche, betrügerische oder böswillig automatisierte Aktivitäten zu nutzen oder Aktivitäten durchzuführen, die gegen die Bedingungen, Richtlinien oder APIs von Drittanbieterdiensten verstoßen.',
+			termsOfServiceDiv4Heading2: '3. Konto und Beendigung',
 			termsOfServiceDiv4Paragraph1:
-				'Wir bemühen uns, Allify verfügbar und funktionsfähig zu halten, garantieren jedoch keinen unterbrechungsfreien oder fehlerfreien Betrieb zu jeder Zeit.',
+				'Sie sind dafür verantwortlich, die Sicherheit Ihrer Zugangsdaten zu gewährleisten und für Aktivitäten, die über Ihr Allify-Konto durchgeführt werden.',
 			termsOfServiceDiv4Paragraph2:
-				'Wir können Funktionen zu Wartungs-, Sicherheits-, technischen Verbesserungs- oder rechtlichen Zwecken aktualisieren, ändern, einschränken oder vorübergehend aussetzen.',
-			termsOfServiceDiv5Heading2: '4. Haftungsbeschränkung',
+				'Sie können die Nutzung von Allify jederzeit einstellen und Ihre Streamingdienstkonten gemäß den auf der Plattform verfügbaren Funktionen trennen.',
+			termsOfServiceDiv4Paragraph3:
+				'Wir können den Zugriff auf die Plattform einschränken, aussetzen oder beenden, wenn dies zum Schutz des Dienstes oder seiner Nutzer, zur Erfüllung gesetzlicher Anforderungen oder bei Verstößen gegen diese Nutzungsbedingungen erforderlich ist.',
+			termsOfServiceDiv5Heading2: '4. Geistiges Eigentum',
 			termsOfServiceDiv5Paragraph1:
-				'Allify wird "wie besehen" ausschließlich zu Informations- und Unterhaltungszwecken im Zusammenhang mit Musik-Insights bereitgestellt.',
+				'Allify einschließlich seiner Marke, seines Namens, seiner Benutzeroberfläche, seines Designs, seines Codes, seiner visuellen Elemente und anderer eigener Inhalte ist durch die geltenden Gesetze zum Schutz des geistigen Eigentums geschützt.',
 			termsOfServiceDiv5Paragraph2:
-				'Wir haften nicht für Ungenauigkeiten in Daten von Drittanbieter-APIs, Ausfälle externer Dienste oder Entscheidungen, die auf den angezeigten Insights basieren.',
-			termsOfServiceDiv6Heading2: '5. Änderungen der Bedingungen',
+				'Sie dürfen Elemente von Allify ohne vorherige Genehmigung weder kopieren, vervielfältigen, verändern, verbreiten, kommerziell verwerten noch anderweitig nutzen, sofern dies nicht durch geltendes Recht erlaubt ist.',
+			termsOfServiceDiv6Heading2: '5. Verfügbarkeit des Dienstes',
 			termsOfServiceDiv6Paragraph1:
-				'Wir können diese Nutzungsbedingungen regelmäßig aktualisieren, um Änderungen an der Plattform, Drittanbieter-Integrationen oder rechtliche Anforderungen zu berücksichtigen.',
+				'Wir bemühen uns, Allify verfügbar und funktionsfähig zu halten, können jedoch nicht garantieren, dass der Dienst jederzeit ununterbrochen, sicher oder fehlerfrei verfügbar ist.',
 			termsOfServiceDiv6Paragraph2:
-				'Durch die fortgesetzte Nutzung von Allify nach Aktualisierungen stimmen Sie automatisch den überarbeiteten Bedingungen zu.'
+				'Wir können Funktionen für Wartungsarbeiten, Sicherheitsmaßnahmen, technische Verbesserungen, Änderungen an Diensten Dritter oder zur Einhaltung gesetzlicher Anforderungen aktualisieren, ändern, einschränken oder vorübergehend aussetzen.',
+			termsOfServiceDiv7Heading2: '6. Haftungsbeschränkung',
+			termsOfServiceDiv7Paragraph1:
+				'Allify wird nach Maßgabe seiner Verfügbarkeit und zu Informations- und Unterhaltungszwecken im Zusammenhang mit Musikeinblicken bereitgestellt.',
+			termsOfServiceDiv7Paragraph2:
+				'Wir sind nicht verantwortlich für Ungenauigkeiten in Daten, die von APIs oder Diensten Dritter bereitgestellt werden, für Unterbrechungen oder Änderungen dieser Dienste oder für Entscheidungen, die auf Grundlage der von Allify angezeigten Einblicke getroffen werden.',
+			termsOfServiceDiv8Heading2: '7. Änderungen dieser Bedingungen',
+			termsOfServiceDiv8Paragraph1:
+				'Wir können diese Nutzungsbedingungen regelmäßig aktualisieren, um Änderungen an der Plattform, Integrationen mit Drittanbietern, verfügbaren Funktionen oder gesetzlichen Anforderungen Rechnung zu tragen.',
+			termsOfServiceDiv8Paragraph2:
+				'Bei wesentlichen Änderungen wird das auf dieser Seite angegebene Datum der letzten Aktualisierung angepasst. Durch die weitere Nutzung von Allify nach Veröffentlichung der aktualisierten Version erklären Sie sich mit den überarbeiteten Bedingungen einverstanden.'
 		}
 	}
 };

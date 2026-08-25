@@ -706,40 +706,54 @@ export const it = {
 				'Utilizzando Allify, accetti le pratiche di utilizzo dei dati descritte in questa pagina.'
 		},
 		termsOfService: {
-			title: 'Termini di servizio | Allify',
+			title: 'Termini di Servizio | Allify',
 			termsOfServiceMetaDescription:
-				'Leggi i termini e le condizioni per accedere e utilizzare la piattaforma Allify.',
+				'Leggi i Termini di Servizio di Allify e scopri le regole per accedere e utilizzare la piattaforma, le tue responsabilità e le limitazioni d’uso.',
 			termsOfServiceMetaOgAndTwitterContent:
-				'Leggi i termini e le condizioni per accedere e utilizzare la piattaforma Allify.',
-			termsOfServiceDiv1Heading1: 'Termini di servizio',
-			termsOfServiceDiv1LastUpdated: 'Ultimo aggiornamento: 22 febbraio 2026',
+				'Leggi i Termini di Servizio di Allify e scopri le regole per accedere e utilizzare la piattaforma, le tue responsabilità e le limitazioni d’uso.',
+			termsOfServiceMetaKeywords:
+				'termini di servizio, condizioni d’uso, Allify, piattaforma di informazioni musicali, politica di utilizzo, diritti e responsabilità, accesso alla piattaforma, regole di condotta, limitazione di responsabilità',
+			termsOfServiceDiv1Heading1: 'Termini di Servizio',
+			termsOfServiceDiv1LastUpdated: 'Ultimo aggiornamento: 25 agosto 2026',
 			termsOfServiceDiv1Paragraph1:
-				"Questi termini di servizio regolano l'accesso e l'utilizzo della piattaforma Allify. Utilizzando i nostri servizi, accetti di rispettare questi termini e condizioni.",
+				'I presenti Termini di Servizio regolano l’accesso e l’utilizzo della piattaforma Allify. Accedendo o utilizzando Allify, accetti di rispettare i presenti termini e condizioni.',
 			termsOfServiceDiv2Heading2: '1. Utilizzo della piattaforma',
 			termsOfServiceDiv2Paragraph1:
-				"Allify è una piattaforma che fornisce insights musicali basati su dati autorizzati dall'utente provenienti da servizi di streaming di terze parti come Spotify e, in futuro, Deezer.",
+				'Allify è una piattaforma che fornisce informazioni musicali basate su dati autorizzati da servizi di streaming di terze parti, come Spotify e altri servizi supportati.',
 			termsOfServiceDiv2Paragraph2:
-				'Accetti di utilizzare la piattaforma solo per scopi legali e personali, in conformità con questi termini, senza tentare di sfruttare, abusare o compromettere il funzionamento del servizio.',
-			termsOfServiceDiv3Heading2: "2. Responsabilità dell'utente",
+				'Accetti di utilizzare la piattaforma esclusivamente per scopi leciti e personali e in conformità con i presenti termini, senza tentare di sfruttare, abusare o compromettere il funzionamento, la sicurezza o l’integrità del servizio.',
+			termsOfServiceDiv3Heading2: '2. Responsabilità dell’utente',
 			termsOfServiceDiv3Paragraph1:
-				"Sei responsabile dell'account connesso e delle autorizzazioni concesse tramite i servizi di streaming utilizzati sulla piattaforma.",
+				'Sei responsabile dell’account collegato, delle autorizzazioni concesse e di garantire di essere autorizzato a utilizzare e collegare i tuoi account dei servizi di streaming alla piattaforma.',
 			termsOfServiceDiv3Paragraph2:
-				'Accetti di non utilizzare Allify per attività illegali, abusive, automatizzate in modo malevolo o che violino i termini delle API di terze parti.',
-			termsOfServiceDiv4Heading2: '3. Disponibilità del servizio',
+				'Accetti di non utilizzare Allify per attività illegali, abusive, fraudolente o automatizzate in modo dannoso, né per attività che violino i termini, le politiche o le API di servizi di terze parti.',
+			termsOfServiceDiv4Heading2: '3. Account e cessazione',
 			termsOfServiceDiv4Paragraph1:
-				'Ci impegniamo a mantenere Allify disponibile e funzionale, ma non garantiamo una disponibilità ininterrotta o priva di errori in ogni momento.',
+				'Sei responsabile della sicurezza delle tue credenziali e delle attività effettuate tramite il tuo account Allify.',
 			termsOfServiceDiv4Paragraph2:
-				'Potremmo aggiornare, modificare, limitare o sospendere temporaneamente funzionalità per manutenzione, sicurezza, miglioramenti tecnici o conformità legale.',
-			termsOfServiceDiv5Heading2: '4. Limitazione di responsabilità',
+				'Puoi interrompere l’utilizzo di Allify e scollegare i tuoi account dei servizi di streaming in qualsiasi momento, in base alle funzionalità disponibili sulla piattaforma.',
+			termsOfServiceDiv4Paragraph3:
+				'Possiamo limitare, sospendere o terminare l’accesso alla piattaforma quando necessario per proteggere il servizio o i suoi utenti, rispettare i requisiti legali o gestire violazioni dei presenti Termini di Servizio.',
+			termsOfServiceDiv5Heading2: '4. Proprietà intellettuale',
 			termsOfServiceDiv5Paragraph1:
-				'Allify viene fornito "così com\'è", esclusivamente per scopi informativi e di intrattenimento relativi agli insights musicali.',
+				'Allify, inclusi il suo marchio, nome, interfaccia, design, codice, elementi visivi e altri contenuti proprietari, è protetto dalle leggi applicabili sulla proprietà intellettuale.',
 			termsOfServiceDiv5Paragraph2:
-				'Non siamo responsabili di imprecisioni nei dati forniti da API di terze parti, interruzioni di servizi esterni o decisioni prese sulla base degli insights visualizzati.',
-			termsOfServiceDiv6Heading2: '5. Modifiche ai termini',
+				'Non puoi copiare, riprodurre, modificare, distribuire, sfruttare commercialmente o utilizzare in altro modo elementi di Allify senza previa autorizzazione, salvo quanto consentito dalla legge applicabile.',
+			termsOfServiceDiv6Heading2: '5. Disponibilità del servizio',
 			termsOfServiceDiv6Paragraph1:
-				'Potremmo aggiornare periodicamente questi termini di servizio per riflettere modifiche alla piattaforma, integrazioni con terze parti o requisiti legali.',
+				'Ci impegniamo a mantenere Allify disponibile e funzionante, ma non garantiamo che il servizio sia sempre disponibile in modo ininterrotto, sicuro o privo di errori.',
 			termsOfServiceDiv6Paragraph2:
-				'Continuando a utilizzare Allify dopo gli aggiornamenti, accetti automaticamente i termini rivisti.'
+				'Possiamo aggiornare, modificare, limitare o sospendere temporaneamente le funzionalità per motivi di manutenzione, sicurezza, miglioramenti tecnici, modifiche ai servizi di terze parti o conformità ai requisiti legali.',
+			termsOfServiceDiv7Heading2: '6. Limitazione di responsabilità',
+			termsOfServiceDiv7Paragraph1:
+				'Allify viene fornito in base alla sua disponibilità e per scopi informativi e di intrattenimento relativi alle informazioni musicali.',
+			termsOfServiceDiv7Paragraph2:
+				'Non siamo responsabili per inesattezze nei dati forniti da API o servizi di terze parti, interruzioni o modifiche a tali servizi, né per decisioni prese sulla base delle informazioni mostrate da Allify.',
+			termsOfServiceDiv8Heading2: '7. Modifiche ai presenti Termini',
+			termsOfServiceDiv8Paragraph1:
+				'Possiamo aggiornare periodicamente i presenti Termini di Servizio per riflettere modifiche alla piattaforma, alle integrazioni con terze parti, alle funzionalità disponibili o ai requisiti legali.',
+			termsOfServiceDiv8Paragraph2:
+				'In caso di modifiche sostanziali, la data dell’ultimo aggiornamento indicata in questa pagina verrà modificata. Continuando a utilizzare Allify dopo la pubblicazione della versione aggiornata, accetti i termini modificati.'
 		}
 	}
 };

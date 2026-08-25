@@ -6,7 +6,9 @@
 <section class="base-section legal-pages">
 	<div>
 		<h1>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv1Heading1}</h1>
-		<p>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv1LastUpdated}</p>
+		<time datetime="2026-08-25">
+			{$translationsStore.legalPages.termsOfService.termsOfServiceDiv1LastUpdated}
+		</time>
 		<p>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv1Paragraph1}</p>
 	</div>
 
@@ -38,5 +40,17 @@
 		<h2>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv6Heading2}</h2>
 		<p>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv6Paragraph1}</p>
 		<p>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv6Paragraph2}</p>
+	</div>
+
+	<div>
+		<h2>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv7Heading2}</h2>
+		<p>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv7Paragraph1}</p>
+		<p>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv7Paragraph2}</p>
+	</div>
+
+	<div>
+		<h2>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv8Heading2}</h2>
+		<p>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv8Paragraph1}</p>
+		<p>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv8Paragraph2}</p>
 	</div>
 </section>

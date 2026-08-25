@@ -606,34 +606,53 @@ export const zh = {
 		},
 		termsOfService: {
 			title: '服务条款 | Allify',
-			termsOfServiceMetaDescription: '阅读访问和使用 Allify 平台的条款和条件。',
-			termsOfServiceMetaOgAndTwitterContent: '阅读访问和使用 Allify 平台的条款和条件。',
+			termsOfServiceMetaDescription:
+				'阅读 Allify 服务条款，了解访问和使用平台的相关规则、您的责任以及使用限制。',
+			termsOfServiceMetaOgAndTwitterContent:
+				'阅读 Allify 服务条款，了解访问和使用平台的相关规则、您的责任以及使用限制。',
+			termsOfServiceMetaKeywords:
+				'服务条款, 使用条款, Allify, 音乐洞察平台, 使用政策, 权利与责任, 平台访问, 行为规范, 责任限制',
 			termsOfServiceDiv1Heading1: '服务条款',
-			termsOfServiceDiv1LastUpdated: '最后更新：2026年2月22日',
+			termsOfServiceDiv1LastUpdated: '最后更新：2026年8月25日',
 			termsOfServiceDiv1Paragraph1:
-				'本服务条款规范对 Allify 平台的访问和使用。使用我们的服务即表示您同意遵守这些条款和条件。',
+				'本服务条款规定了对 Allify 平台的访问和使用。访问或使用 Allify 即表示您同意遵守本条款及相关条件。',
 			termsOfServiceDiv2Heading2: '1. 平台使用',
 			termsOfServiceDiv2Paragraph1:
-				'Allify 是一个平台，基于 Spotify 及未来的 Deezer 等第三方流媒体服务授权的数据提供音乐洞察。',
+				'Allify 是一个基于第三方流媒体服务（如 Spotify 及其他受支持服务）授权数据提供音乐洞察的平台。',
 			termsOfServiceDiv2Paragraph2:
-				'您同意仅将平台用于合法、个人目的，并遵守这些条款，不得试图利用、滥用或破坏服务的正常运行。',
+				'您同意仅出于合法和个人目的并按照本条款使用平台，不得试图利用、滥用或破坏服务的运行、安全性或完整性。',
 			termsOfServiceDiv3Heading2: '2. 用户责任',
-			termsOfServiceDiv3Paragraph1: '您对通过平台所使用流媒体服务连接的账户及授予的权限负责。',
+			termsOfServiceDiv3Paragraph1:
+				'您对已连接的账户、授予的权限以及确保您有权使用和将您的流媒体服务账户连接到平台负责。',
 			termsOfServiceDiv3Paragraph2:
-				'您同意不将 Allify 用于非法、滥用、恶意自动化活动或违反第三方 API 条款的行为。',
-			termsOfServiceDiv4Heading2: '3. 服务可用性',
+				'您同意不得将 Allify 用于非法、滥用、欺诈、恶意自动化活动，或用于违反第三方服务条款、政策或 API 规定的活动。',
+			termsOfServiceDiv4Heading2: '3. 账户与终止',
 			termsOfServiceDiv4Paragraph1:
-				'我们努力保持 Allify 的可用性和正常运行，但不保证在任何时候都能不间断或无错误地运行。',
+				'您有责任维护账户凭据的安全，并对通过您的 Allify 账户进行的活动负责。',
 			termsOfServiceDiv4Paragraph2:
-				'我们可能会临时更新、修改、限制或暂停功能，以进行维护、安全、技术改进或法规合规。',
-			termsOfServiceDiv5Heading2: '4. 责任限制',
-			termsOfServiceDiv5Paragraph1: 'Allify 按"现状"提供，仅用于与音乐洞察相关的信息和娱乐目的。',
+				'您可以随时停止使用 Allify，并根据平台提供的功能断开您的流媒体服务账户。',
+			termsOfServiceDiv4Paragraph3:
+				'在保护服务或用户、遵守法律要求或处理违反本服务条款的行为所必需的情况下，我们可能会限制、暂停或终止您对平台的访问。',
+			termsOfServiceDiv5Heading2: '4. 知识产权',
+			termsOfServiceDiv5Paragraph1:
+				'Allify，包括其品牌、名称、界面、设计、代码、视觉元素及其他专有内容，均受适用的知识产权法律保护。',
 			termsOfServiceDiv5Paragraph2:
-				'我们不对第三方 API 提供的数据不准确、外部服务中断或基于所显示洞察所做的决定承担责任。',
-			termsOfServiceDiv6Heading2: '5. 条款变更',
+				'除适用法律允许的情况外，未经事先授权，您不得复制、转载、修改、分发、商业利用或以其他方式使用 Allify 的任何元素。',
+			termsOfServiceDiv6Heading2: '5. 服务可用性',
 			termsOfServiceDiv6Paragraph1:
-				'我们可能会定期更新本服务条款，以反映平台变化、第三方集成或法律要求。',
-			termsOfServiceDiv6Paragraph2: '在条款更新后继续使用 Allify，即表示您自动同意修订版本。'
+				'我们会尽力保持 Allify 的可用性和正常运行，但不保证服务始终能够不间断、安全或无错误地运行。',
+			termsOfServiceDiv6Paragraph2:
+				'我们可能因维护、安全、技术改进、第三方服务变更或遵守法律要求而更新、修改、限制或暂时暂停部分功能。',
+			termsOfServiceDiv7Heading2: '6. 责任限制',
+			termsOfServiceDiv7Paragraph1:
+				'Allify 根据其可用情况提供，旨在用于与音乐洞察相关的信息和娱乐目的。',
+			termsOfServiceDiv7Paragraph2:
+				'对于第三方 API 或服务提供的数据不准确、相关服务的中断或变更，以及基于 Allify 所展示的洞察而作出的决定，我们不承担责任。',
+			termsOfServiceDiv8Heading2: '7. 条款变更',
+			termsOfServiceDiv8Paragraph1:
+				'我们可能会定期更新本服务条款，以反映平台、第三方集成、可用功能或法律要求的变化。',
+			termsOfServiceDiv8Paragraph2:
+				'如果发生重大变更，本页面显示的最后更新时间将随之更新。在更新版本发布后继续使用 Allify，即表示您同意修订后的条款。'
 		}
 	}
 };
