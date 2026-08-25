@@ -561,113 +561,132 @@ export const it = {
 	},
 	legalPages: {
 		privacyPolicy: {
-			title: 'Informativa sulla privacy | Allify',
-			privacyPolicyMetaDescription: 'Scopri come Allify protegge e utilizza i tuoi dati.',
-			privacyPolicyMetaOgAndTwitterContent: 'Scopri come Allify protegge e utilizza i tuoi dati.',
-			privacyPolicyDiv1Heading1: 'Informativa sulla privacy',
-			privacyPolicyDiv1LastUpdated: 'Ultimo aggiornamento: 22 febbraio 2026',
+			title: 'Informativa sulla Privacy | Allify',
+			privacyPolicyMetaDescription:
+				'Scopri come Allify raccoglie, utilizza, conserva e protegge i tuoi dati offrendo un’esperienza musicale personalizzata.',
+			privacyPolicyMetaKeywords:
+				'Informativa sulla Privacy, Allify, Protezione dei Dati, Privacy degli Utenti, Sicurezza delle Informazioni, Raccolta dei Dati, Utilizzo dei Dati, Trasparenza, Diritti degli Utenti, Consenso, Conservazione dei Dati, Condivisione delle Informazioni, Termini sulla Privacy',
+			privacyPolicyMetaOgAndTwitterContent:
+				'Scopri come Allify raccoglie, utilizza, conserva e protegge i tuoi dati offrendo un’esperienza musicale personalizzata.',
+			privacyPolicyDiv1Heading1: 'Informativa sulla Privacy',
+			privacyPolicyDiv1LastUpdated: 'Ultimo aggiornamento: 25 agosto 2026',
 			privacyPolicyDiv1Paragraph1:
-				'Benvenuto su Allify. La tua privacy è importante per noi. Questa informativa sulla privacy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni quando utilizzi la nostra piattaforma.',
-			privacyPolicyDiv2Heading2: '1. Chi siamo',
+				'Benvenuto su Allify. La tua privacy è importante per noi. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo, conserviamo e proteggiamo le tue informazioni quando utilizzi la nostra piattaforma.',
+			privacyPolicyDiv2Heading2: '1. Chi Siamo',
 			privacyPolicyDiv2Paragraph1:
-				"Allify è un'applicazione web indipendente che fornisce insights sulle abitudini di ascolto musicale connettendosi a servizi di streaming di terze parti come Spotify e, in futuro, Deezer.",
+				'Allify è un’applicazione web indipendente che fornisce informazioni sulle tue abitudini di ascolto musicale e funzionalità relative alla tua esperienza musicale attraverso connessioni con servizi di streaming di terze parti, come Spotify e, in futuro, Deezer.',
 			privacyPolicyDiv2Paragraph2:
 				'Allify non è affiliato, approvato o sponsorizzato da Spotify o Deezer.',
-			privacyPolicyDiv3Heading2: '2. Informazioni che raccogliamo',
-			privacyPolicyDiv3Heading3_1: "2.1 Informazioni sull'account e autenticazione",
+			privacyPolicyDiv3Heading2: '2. Informazioni che Raccogliamo',
+			privacyPolicyDiv3Heading3_1: '2.1 Informazioni sull’Account e sull’Autenticazione',
 			privacyPolicyDiv3Paragraph1:
-				'Quando utilizzi Allify e connetti il tuo account di streaming, potremmo raccogliere e archiviare:',
-			privacyPolicyDiv3List1Item1: 'Il tuo ID utente della piattaforma (Spotify e/o Deezer)',
+				'Quando utilizzi Allify e colleghi il tuo account di streaming, possiamo raccogliere e conservare le informazioni necessarie per autenticare il tuo account e fornire le funzionalità della piattaforma, tra cui:',
+			privacyPolicyDiv3List1Item1:
+				'Il tuo ID utente della piattaforma di streaming (Spotify e/o Deezer)',
 			privacyPolicyDiv3List1Item2:
-				'Informazioni di profilo di base (come il nome visualizzato, se disponibile)',
-			privacyPolicyDiv3List1Item3:
-				'Stato della connessione (es. connesso a Spotify, Deezer o entrambi)',
-			privacyPolicyDiv3List1Item4: "Identificatori interni dell'account",
+				'Informazioni di base del profilo, come il nome visualizzato, quando rese disponibili dal servizio',
+			privacyPolicyDiv3List1Item3: 'Stato della connessione ai servizi di streaming',
+			privacyPolicyDiv3List1Item4: 'Identificatori interni associati al tuo account',
 			privacyPolicyDiv3List1Item5:
-				"Il tuo saldo di ticket associato all'account (per l'accesso alle funzionalità avanzate)",
+				'Il saldo di ticket associato al tuo account, utilizzato per accedere a funzionalità aggiuntive',
 			privacyPolicyDiv3Paragraph2:
-				'NON raccogliamo né archiviamo la tua password di Spotify o Deezer.',
+				'Non raccogliamo né conserviamo la tua password di Spotify o Deezer.',
 			privacyPolicyDiv3Paragraph3:
-				"L'autenticazione avviene in modo sicuro tramite OAuth fornito dalle rispettive piattaforme.",
-			privacyPolicyDiv3Heading3_2: '2.2 Dati musicali (elaborati in tempo reale)',
-			privacyPolicyDiv3Paragraph4: 'Allify accede a dati relativi alla musica, come:',
+				'L’autenticazione viene effettuata tramite OAuth fornito dalle rispettive piattaforme di streaming.',
+			privacyPolicyDiv3Heading3_2: '2.2 Dati Musicali',
+			privacyPolicyDiv3Paragraph4:
+				'Allify può accedere, elaborare e conservare dati relativi alla tua attività musicale, nei limiti consentiti dalle API dei servizi collegati, tra cui:',
 			privacyPolicyDiv3List2Item1: 'Artisti più ascoltati',
 			privacyPolicyDiv3List2Item2: 'Canzoni più ascoltate',
-			privacyPolicyDiv3List2Item3: 'Statistiche di ascolto',
-			privacyPolicyDiv3List2Item4: "Altri insights consentiti dall'API",
+			privacyPolicyDiv3List2Item3: 'Statistiche e informazioni relative all’ascolto',
+			privacyPolicyDiv3List2Item4:
+				'Altri dati e informazioni resi disponibili dalle API dei servizi collegati',
 			privacyPolicyDiv3Paragraph5:
-				'Questi dati vengono elaborati in tempo reale e NON vengono archiviati in modo permanente nel nostro database.',
+				'I dati musicali ottenuti tramite le API possono essere elaborati e conservati nel nostro database per fornire, mantenere e migliorare le funzionalità della piattaforma.',
 			privacyPolicyDiv3Paragraph6:
-				"Visualizziamo i dati solo temporaneamente per fornire gli insights richiesti dall'utente.",
-			privacyPolicyDiv3Heading3_3: '2.3 Dati tecnici e di utilizzo',
+				'Questi dati possono essere utilizzati per generare informazioni personalizzate, visualizzare statistiche, mantenere le informazioni del tuo profilo e fornire altre funzionalità relative alla tua esperienza su Allify.',
+			privacyPolicyDiv3Heading3_3: '2.3 Dati Tecnici e di Utilizzo',
 			privacyPolicyDiv3Paragraph7:
-				'Potremmo raccogliere automaticamente dati tecnici limitati, tra cui:',
+				'Possiamo raccogliere automaticamente dati tecnici e di utilizzo limitati necessari per la sicurezza, le prestazioni e il funzionamento della piattaforma, tra cui:',
 			privacyPolicyDiv3List3Item1: 'Indirizzo IP',
 			privacyPolicyDiv3List3Item2: 'Tipo e versione del browser',
 			privacyPolicyDiv3List3Item3: 'Informazioni sul dispositivo',
-			privacyPolicyDiv3List3Item4: 'Dati di sessione',
-			privacyPolicyDiv3List3Item5: 'Log di utilizzo di base per sicurezza e prestazioni',
-			privacyPolicyDiv4Heading2: '3. Come utilizziamo le tue informazioni',
-			privacyPolicyDiv4Paragraph1: 'Utilizziamo le informazioni raccolte esclusivamente per:',
-			privacyPolicyDiv4List1Item1: 'Autenticare il tuo account tramite servizi di terze parti',
-			privacyPolicyDiv4List1Item2: 'Visualizzare insights musicali personalizzati',
-			privacyPolicyDiv4List1Item3: "Gestire il sistema di ticket e l'accesso alle funzionalità",
-			privacyPolicyDiv4List1Item4: 'Mantenere la funzionalità e la sicurezza della piattaforma',
-			privacyPolicyDiv4List1Item5: "Migliorare l'esperienza utente complessiva",
+			privacyPolicyDiv3List3Item4: 'Dati della sessione',
+			privacyPolicyDiv3List3Item5:
+				'Registri di utilizzo di base relativi alla sicurezza, alla stabilità e alle prestazioni',
+			privacyPolicyDiv4Heading2: '3. Come Utilizziamo le Tue Informazioni',
+			privacyPolicyDiv4Paragraph1: 'Utilizziamo le informazioni raccolte per:',
+			privacyPolicyDiv4List1Item1:
+				'Autenticare il tuo account tramite i servizi di terze parti collegati',
+			privacyPolicyDiv4List1Item2:
+				'Visualizzare informazioni e statistiche musicali personalizzate',
+			privacyPolicyDiv4List1Item3:
+				'Conservare e fornire le informazioni necessarie al funzionamento del tuo profilo',
+			privacyPolicyDiv4List1Item4: 'Gestire il sistema di ticket e l’accesso alle funzionalità',
+			privacyPolicyDiv4List1Item5:
+				'Mantenere la funzionalità, la sicurezza, la stabilità e le prestazioni della piattaforma',
 			privacyPolicyDiv4Paragraph2:
+				'Possiamo inoltre utilizzare dati aggregati o anonimizzati per analisi interne, miglioramenti delle prestazioni e sviluppo della piattaforma.',
+			privacyPolicyDiv4Paragraph3:
 				'Non vendiamo, affittiamo né commercializziamo i tuoi dati personali.',
-			privacyPolicyDiv5Heading2: '4. Sistema di ticket e accesso alle funzionalità',
+			privacyPolicyDiv5Heading2: '4. Sistema di Ticket e Accesso alle Funzionalità',
 			privacyPolicyDiv5Paragraph1:
 				'Allify utilizza un sistema interno di ticket che consente agli utenti di accedere a dati estesi e funzionalità aggiuntive della piattaforma.',
-			privacyPolicyDiv5Paragraph2: 'Archiviamo:',
+			privacyPolicyDiv5Paragraph2:
+				'Per gestire questo sistema, possiamo conservare informazioni relative all’utilizzo dei ticket, tra cui:',
 			privacyPolicyDiv5List1Item1: 'Il tuo saldo di ticket',
 			privacyPolicyDiv5List1Item2:
-				'Cronologia di utilizzo dei ticket (per il funzionamento della piattaforma)',
+				'La cronologia di utilizzo dei ticket necessaria per il funzionamento della piattaforma',
 			privacyPolicyDiv5Paragraph3:
-				'I ticket vengono utilizzati esclusivamente per abilitare insights aggiuntivi e non influenzano la proprietà dei tuoi dati musicali.',
-			privacyPolicyDiv6Heading2: '5. Pagamenti e fatturazione',
+				'I ticket vengono utilizzati esclusivamente per abilitare funzionalità e informazioni aggiuntive e non rappresentano la proprietà dei dati musicali o di altri contenuti forniti da servizi di terze parti.',
+			privacyPolicyDiv6Heading2: '5. Pagamenti e Fatturazione',
 			privacyPolicyDiv6Paragraph1:
-				'Allify può offrire funzionalità a pagamento tramite l\'acquisto di crediti interni ("ticket").',
+				'Allify può offrire funzionalità a pagamento tramite l’acquisto di crediti interni chiamati ticket.',
 			privacyPolicyDiv6Paragraph2:
-				'I pagamenti vengono elaborati in modo sicuro da fornitori di servizi di pagamento di terze parti come AbacatePay. Allify non raccoglie né archivia dati completi della carta o informazioni finanziarie sensibili.',
+				'I pagamenti vengono elaborati da fornitori di servizi di pagamento di terze parti, come AbacatePay. Allify non raccoglie né conserva dati completi delle carte o altre informazioni finanziarie sensibili.',
 			privacyPolicyDiv6Paragraph3:
-				"Quando viene effettuato un acquisto, potremmo ricevere dati della transazione come stato del pagamento, ID della transazione e numero di ticket acquistati per gestire il saldo dell'utente.",
-			privacyPolicyDiv7Heading2: '6. Archiviazione e conservazione dei dati',
-			privacyPolicyDiv7Paragraph1: 'Allify adotta un approccio di minimizzazione dei dati.',
+				'Quando viene effettuato un acquisto, possiamo ricevere informazioni relative alla transazione, come lo stato del pagamento, l’identificativo della transazione e il numero di ticket acquistati, per elaborare l’acquisto e gestire il saldo dell’account.',
+			privacyPolicyDiv7Heading2: '6. Conservazione e Archiviazione dei Dati',
+			privacyPolicyDiv7Paragraph1:
+				'Allify adotta un approccio di minimizzazione dei dati e cerca di conservare esclusivamente le informazioni necessarie per fornire, mantenere e migliorare le proprie funzionalità.',
 			privacyPolicyDiv7List1Item1:
-				'I dati di ascolto musicale non vengono archiviati in modo permanente nel nostro database',
+				'I dati relativi all’attività musicale possono essere conservati per fornire informazioni e funzionalità personalizzate',
 			privacyPolicyDiv7List1Item2:
-				"Solo i dati essenziali dell'account vengono archiviati per fornire il servizio",
+				'I dati essenziali dell’account vengono conservati per fornire e mantenere il servizio',
 			privacyPolicyDiv7List1Item3:
-				"Lo stato della connessione e le informazioni sui ticket possono essere conservati finché l'account è attivo",
+				'Le informazioni di connessione, i ticket e altri dati necessari al funzionamento della piattaforma possono essere conservati per il tempo necessario a fornire le funzionalità corrispondenti',
 			privacyPolicyDiv7Paragraph2:
-				"Gli utenti possono richiedere la cancellazione dell'account e dei propri dati in qualsiasi momento.",
-			privacyPolicyDiv8Heading2: '7. Servizi e API di terze parti',
+				'I periodi di conservazione possono variare in base alla finalità del trattamento, alle esigenze operative e ai requisiti legali applicabili.',
+			privacyPolicyDiv7Paragraph3:
+				'Gli utenti possono richiedere la cancellazione del proprio account e dei dati personali associati, fatte salve eventuali obbligazioni legali o operative che ne richiedano la conservazione.',
+			privacyPolicyDiv8Heading2: '7. Servizi e API di Terze Parti',
 			privacyPolicyDiv8Paragraph1:
-				'Allify dipende da servizi e API di terze parti, tra cui piattaforme di streaming musicale, provider di hosting e processori di pagamento.',
+				'Allify si affida a servizi e API di terze parti per funzionare, tra cui piattaforme di streaming musicale, fornitori di hosting e processori di pagamento.',
 			privacyPolicyDiv8Paragraph2:
-				'Questi servizi di terze parti possono elaborare i dati secondo le proprie informative sulla privacy, e consigliamo agli utenti di consultarle.',
-			privacyPolicyDiv9Heading2: '8. Cookie e sessioni',
+				'Questi servizi possono elaborare i dati in conformità con le proprie politiche sulla privacy e condizioni d’uso. Raccomandiamo agli utenti di consultare le politiche applicabili di tali servizi.',
+			privacyPolicyDiv9Heading2: '8. Cookie e Sessioni',
 			privacyPolicyDiv9Paragraph1:
-				"Allify può utilizzare cookie o tecnologie simili per mantenere sessioni sicure, migliorare l'usabilità e garantire il corretto funzionamento della piattaforma.",
+				'Allify può utilizzare cookie o tecnologie simili per mantenere sessioni sicure, autenticare gli utenti, migliorare l’usabilità e garantire il corretto funzionamento della piattaforma.',
 			privacyPolicyDiv9Paragraph2:
-				'Puoi gestire o disattivare i cookie tramite le impostazioni del tuo browser.',
-			privacyPolicyDiv10Heading2: '9. I tuoi diritti sulla privacy',
+				'Puoi gestire o disabilitare i cookie tramite le impostazioni del tuo browser. Alcune funzionalità della piattaforma potrebbero non funzionare correttamente se determinati cookie vengono disabilitati.',
+			privacyPolicyDiv10Heading2: '9. I Tuoi Diritti sulla Privacy',
 			privacyPolicyDiv10Paragraph1:
-				'A seconda della tua posizione, potresti avere il diritto di accedere, correggere o richiedere la cancellazione dei tuoi dati personali, nonché di revocare il consenso al trattamento dei dati.',
+				'A seconda della tua posizione e della legislazione applicabile, potresti avere il diritto di accedere, correggere, aggiornare o richiedere la cancellazione dei tuoi dati personali, nonché di revocare il consenso per determinate forme di trattamento.',
 			privacyPolicyDiv10Paragraph2:
-				'Per esercitare i tuoi diritti, puoi contattarci utilizzando le informazioni di contatto riportate di seguito.',
-			privacyPolicyDiv11Heading2: '10. Sicurezza dei dati',
+				'Per esercitare i tuoi diritti o chiarire eventuali dubbi sul trattamento dei tuoi dati, puoi contattarci utilizzando le informazioni disponibili su questa pagina.',
+			privacyPolicyDiv11Heading2: '10. Sicurezza dei Dati',
 			privacyPolicyDiv11Paragraph1:
-				'Implementiamo misure tecniche e organizzative appropriate per proteggere i tuoi dati da accessi non autorizzati, modifiche, divulgazioni o distruzioni.',
+				'Adottiamo misure tecniche e organizzative appropriate per proteggere i dati da accessi non autorizzati, alterazioni, divulgazioni, perdite o distruzioni.',
 			privacyPolicyDiv11Paragraph2:
-				'Tuttavia, nessun metodo di trasmissione su Internet è completamente sicuro.',
-			privacyPolicyDiv12Heading2: '11. Modifiche a questa informativa sulla privacy',
+				'Nonostante queste misure, nessun metodo di trasmissione o conservazione dei dati tramite Internet può essere considerato completamente sicuro e non possiamo garantire una sicurezza assoluta.',
+			privacyPolicyDiv12Heading2: '11. Modifiche a questa Informativa sulla Privacy',
 			privacyPolicyDiv12Paragraph1:
-				'Potremmo aggiornare periodicamente questa informativa sulla privacy. Eventuali modifiche saranno indicate aggiornando la data di "Ultimo aggiornamento" in cima a questa pagina.',
-			privacyPolicyDiv13Heading2: '12. Informazioni di contatto',
+				'Possiamo aggiornare periodicamente questa Informativa sulla Privacy per riflettere cambiamenti nella piattaforma, nei servizi utilizzati, nelle pratiche di trattamento dei dati o nei requisiti legali applicabili.',
+			privacyPolicyDiv12Paragraph2:
+				'Quando vengono apportate modifiche, la data di “Ultimo aggiornamento” indicata nella parte superiore di questa pagina verrà aggiornata. Ti consigliamo di consultare periodicamente questa pagina per rimanere informato su eventuali aggiornamenti.',
+			privacyPolicyDiv13Heading2: '12. Informazioni di Contatto',
 			privacyPolicyDiv13Paragraph1:
-				'Se hai domande su questa informativa sulla privacy, puoi contattarci:',
+				'Se hai domande su questa Informativa sulla Privacy, sul trattamento dei tuoi dati o desideri esercitare i tuoi diritti, puoi contattarci:',
 			privacyPolicyDiv13Paragraph2: 'Allify',
 			privacyPolicyDiv13Paragraph3: 'Email: contact@allify.club'
 		},

@@ -24,6 +24,10 @@
 	<!-- General -->
 	<title>{$translationsStore.legalPages.privacyPolicy.title}</title>
 	<meta
+		name="keywords"
+		content={$translationsStore.legalPages.privacyPolicy.privacyPolicyMetaKeywords}
+	/>
+	<meta
 		name="description"
 		content={$translationsStore.legalPages.privacyPolicy.privacyPolicyMetaDescription}
 	/>

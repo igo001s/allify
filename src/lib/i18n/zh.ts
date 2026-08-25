@@ -490,91 +490,116 @@ export const zh = {
 	legalPages: {
 		privacyPolicy: {
 			title: '隐私政策 | Allify',
-			privacyPolicyMetaDescription: '了解 Allify 如何保护和使用您的数据。',
-			privacyPolicyMetaOgAndTwitterContent: '了解 Allify 如何保护和使用您的数据。',
+			privacyPolicyMetaDescription:
+				'了解 Allify 如何收集、使用、存储和保护您的数据，为您提供个性化的音乐体验。',
+			privacyPolicyMetaKeywords:
+				'隐私政策, Allify, 数据保护, 用户隐私, 信息安全, 数据收集, 数据使用, 透明度, 用户权利, 同意, 数据存储, 信息共享, 隐私条款',
+			privacyPolicyMetaOgAndTwitterContent:
+				'了解 Allify 如何收集、使用、存储和保护您的数据，为您提供个性化的音乐体验。',
 			privacyPolicyDiv1Heading1: '隐私政策',
-			privacyPolicyDiv1LastUpdated: '最后更新：2026年2月22日',
+			privacyPolicyDiv1LastUpdated: '最后更新：2026年8月25日',
 			privacyPolicyDiv1Paragraph1:
-				'欢迎使用 Allify。您的隐私对我们至关重要。本隐私政策说明我们在您使用平台时如何收集、使用和保护您的信息。',
+				'欢迎使用 Allify。您的隐私对我们非常重要。本隐私政策说明了当您使用我们的平台时，我们如何收集、使用、存储和保护您的信息。',
 			privacyPolicyDiv2Heading2: '1. 关于我们',
 			privacyPolicyDiv2Paragraph1:
-				'Allify 是一款独立的网络应用程序，通过连接 Spotify 及未来的 Deezer 等第三方流媒体服务，为用户提供音乐聆听洞察。',
-			privacyPolicyDiv2Paragraph2: 'Allify 与 Spotify 或 Deezer 没有任何关联、背书或赞助关系。',
+				'Allify 是一款独立的 Web 应用程序，通过连接 Spotify 以及未来的 Deezer 等第三方音乐流媒体服务，为您提供音乐收听数据分析以及与音乐体验相关的功能。',
+			privacyPolicyDiv2Paragraph2:
+				'Allify 与 Spotify 或 Deezer 不存在关联关系，也未获得其认可或赞助。',
 			privacyPolicyDiv3Heading2: '2. 我们收集的信息',
-			privacyPolicyDiv3Heading3_1: '2.1 账户与身份验证信息',
-			privacyPolicyDiv3Paragraph1: '当您使用 Allify 并连接流媒体账户时，我们可能收集并存储：',
-			privacyPolicyDiv3List1Item1: '您的平台用户 ID（Spotify 和/或 Deezer）',
-			privacyPolicyDiv3List1Item2: '基本资料信息（如显示名称，如果可用）',
-			privacyPolicyDiv3List1Item3: '连接状态（例如：已连接 Spotify、Deezer 或两者）',
-			privacyPolicyDiv3List1Item4: '内部账户标识符',
-			privacyPolicyDiv3List1Item5: '与您账户关联的积分余额（用于访问高级功能）',
-			privacyPolicyDiv3Paragraph2: '我们不收集或存储您的 Spotify 或 Deezer 密码。',
-			privacyPolicyDiv3Paragraph3: '身份验证通过各平台提供的 OAuth 安全完成。',
-			privacyPolicyDiv3Heading3_2: '2.2 音乐数据（实时处理）',
-			privacyPolicyDiv3Paragraph4: 'Allify 访问与音乐相关的数据，例如：',
-			privacyPolicyDiv3List2Item1: '最常听的艺术家',
-			privacyPolicyDiv3List2Item2: '最常听的歌曲',
-			privacyPolicyDiv3List2Item3: '聆听统计数据',
-			privacyPolicyDiv3List2Item4: 'API 允许的其他洞察',
-			privacyPolicyDiv3Paragraph5: '这些数据实时处理，不会永久存储在我们的数据库中。',
-			privacyPolicyDiv3Paragraph6: '我们仅临时显示数据，以提供用户请求的洞察内容。',
-			privacyPolicyDiv3Heading3_3: '2.3 技术与使用数据',
-			privacyPolicyDiv3Paragraph7: '我们可能自动收集有限的技术数据，包括：',
+			privacyPolicyDiv3Heading3_1: '2.1 账户和身份验证信息',
+			privacyPolicyDiv3Paragraph1:
+				'当您使用 Allify 并连接您的音乐流媒体账户时，我们可能会收集和存储身份验证账户以及提供平台功能所需的信息，包括：',
+			privacyPolicyDiv3List1Item1: '您的音乐流媒体平台用户 ID（Spotify 和/或 Deezer）',
+			privacyPolicyDiv3List1Item2: '服务提供的基本个人资料信息，例如显示名称',
+			privacyPolicyDiv3List1Item3: '与音乐流媒体服务的连接状态',
+			privacyPolicyDiv3List1Item4: '与您的账户关联的内部标识符',
+			privacyPolicyDiv3List1Item5: '与您的账户关联的票券余额，用于访问其他功能',
+			privacyPolicyDiv3Paragraph2: '我们不会收集或存储您的 Spotify 或 Deezer 密码。',
+			privacyPolicyDiv3Paragraph3: '身份验证通过相应音乐流媒体平台提供的 OAuth 完成。',
+			privacyPolicyDiv3Heading3_2: '2.2 音乐数据',
+			privacyPolicyDiv3Paragraph4:
+				'在连接服务的 API 所允许的范围内，Allify 可能会访问、处理和存储与您的音乐活动相关的数据，包括：',
+			privacyPolicyDiv3List2Item1: '最常收听的艺术家',
+			privacyPolicyDiv3List2Item2: '最常收听的歌曲',
+			privacyPolicyDiv3List2Item3: '收听统计数据及相关信息',
+			privacyPolicyDiv3List2Item4: '连接服务的 API 提供的其他数据和分析信息',
+			privacyPolicyDiv3Paragraph5:
+				'通过 API 获取的音乐数据可能会在我们的数据库中进行处理和存储，以提供、维护和改进平台功能。',
+			privacyPolicyDiv3Paragraph6:
+				'这些数据可能用于生成个性化分析、显示统计信息、维护您的个人资料信息，以及提供与您在 Allify 上的音乐体验相关的其他功能。',
+			privacyPolicyDiv3Heading3_3: '2.3 技术数据和使用数据',
+			privacyPolicyDiv3Paragraph7:
+				'我们可能会自动收集为平台安全性、性能和正常运行所必需的有限技术数据和使用数据，包括：',
 			privacyPolicyDiv3List3Item1: 'IP 地址',
 			privacyPolicyDiv3List3Item2: '浏览器类型和版本',
 			privacyPolicyDiv3List3Item3: '设备信息',
 			privacyPolicyDiv3List3Item4: '会话数据',
-			privacyPolicyDiv3List3Item5: '用于安全和性能的基本使用日志',
+			privacyPolicyDiv3List3Item5: '与安全性、稳定性和性能相关的基本使用日志',
 			privacyPolicyDiv4Heading2: '3. 我们如何使用您的信息',
-			privacyPolicyDiv4Paragraph1: '我们严格将收集到的信息用于：',
-			privacyPolicyDiv4List1Item1: '通过第三方服务验证您的账户',
-			privacyPolicyDiv4List1Item2: '显示个性化音乐洞察',
-			privacyPolicyDiv4List1Item3: '管理积分系统和功能访问权限',
-			privacyPolicyDiv4List1Item4: '维护平台功能和安全性',
-			privacyPolicyDiv4List1Item5: '改善整体用户体验',
-			privacyPolicyDiv4Paragraph2: '我们不出售、出租或转让您的个人数据。',
-			privacyPolicyDiv5Heading2: '4. 积分系统与功能访问',
-			privacyPolicyDiv5Paragraph1: 'Allify 使用内部积分系统，允许用户访问扩展数据和平台附加功能。',
-			privacyPolicyDiv5Paragraph2: '我们存储：',
-			privacyPolicyDiv5List1Item1: '您的积分余额',
-			privacyPolicyDiv5List1Item2: '积分使用历史（用于平台运营）',
-			privacyPolicyDiv5Paragraph3: '积分仅用于解锁额外洞察功能，不影响您对音乐数据的所有权。',
-			privacyPolicyDiv6Heading2: '5. 付款与计费',
-			privacyPolicyDiv6Paragraph1: 'Allify 可能通过购买内部积分（"积分"）提供付费功能。',
+			privacyPolicyDiv4Paragraph1: '我们将收集的信息用于：',
+			privacyPolicyDiv4List1Item1: '通过连接的第三方服务验证您的账户',
+			privacyPolicyDiv4List1Item2: '显示个性化的音乐分析和统计信息',
+			privacyPolicyDiv4List1Item3: '存储和提供您的个人资料正常运行所需的信息',
+			privacyPolicyDiv4List1Item4: '管理票券系统以及功能访问权限',
+			privacyPolicyDiv4List1Item5: '维护平台的功能、安全性、稳定性和性能',
+			privacyPolicyDiv4Paragraph2:
+				'我们还可能使用汇总或匿名化的数据进行内部分析、性能优化和平台开发。',
+			privacyPolicyDiv4Paragraph3: '我们不会出售、出租或以商业方式利用您的个人数据。',
+			privacyPolicyDiv5Heading2: '4. 票券系统和功能访问',
+			privacyPolicyDiv5Paragraph1:
+				'Allify 使用内部票券系统，让用户能够访问扩展数据和平台的其他功能。',
+			privacyPolicyDiv5Paragraph2: '为了运行该系统，我们可能会存储与票券使用相关的信息，包括：',
+			privacyPolicyDiv5List1Item1: '您的票券余额',
+			privacyPolicyDiv5List1Item2: '平台运行所需的票券使用记录',
+			privacyPolicyDiv5Paragraph3:
+				'票券仅用于启用额外功能和分析信息，并不代表您拥有第三方服务提供的音乐数据或其他内容的所有权。',
+			privacyPolicyDiv6Heading2: '5. 付款和计费',
+			privacyPolicyDiv6Paragraph1: 'Allify 可能通过购买称为票券的内部积分来提供付费功能。',
 			privacyPolicyDiv6Paragraph2:
-				'付款由 AbacatePay 等第三方支付提供商安全处理。Allify 不收集或存储完整的卡片数据或敏感的财务信息。',
+				'付款由 AbacatePay 等第三方支付服务提供商处理。Allify 不会收集或存储完整的银行卡信息或其他敏感财务信息。',
 			privacyPolicyDiv6Paragraph3:
-				'进行购买时，我们可能会收到交易数据，例如付款状态、交易 ID 和购买的积分数量，以便管理用户余额。',
-			privacyPolicyDiv7Heading2: '6. 数据存储与保留',
-			privacyPolicyDiv7Paragraph1: 'Allify 遵循数据最小化原则。',
-			privacyPolicyDiv7List1Item1: '音乐聆听数据不会永久存储在我们的数据库中',
-			privacyPolicyDiv7List1Item2: '仅存储提供服务所必需的基本账户数据',
-			privacyPolicyDiv7List1Item3: '连接状态和积分信息可在账户活跃期间保留',
-			privacyPolicyDiv7Paragraph2: '用户可随时申请删除账户和数据。',
-			privacyPolicyDiv8Heading2: '7. 第三方服务与 API',
+				'当您进行购买时，我们可能会收到与交易相关的信息，例如付款状态、交易 ID 和购买的票券数量，以便处理购买并管理账户余额。',
+			privacyPolicyDiv7Heading2: '6. 数据存储和保留',
+			privacyPolicyDiv7Paragraph1:
+				'Allify 遵循数据最小化原则，仅存储提供、维护和改进平台功能所必需的信息。',
+			privacyPolicyDiv7List1Item1: '与音乐活动相关的数据可能会被存储，以提供个性化的分析和功能',
+			privacyPolicyDiv7List1Item2: '必要的账户数据会被存储，以提供和维护服务',
+			privacyPolicyDiv7List1Item3:
+				'连接信息、票券以及平台运行所需的其他数据，可能会在提供相应功能所需的期间内被保留',
+			privacyPolicyDiv7Paragraph2:
+				'数据保留期限可能根据处理目的、运营需求以及适用的法律要求而有所不同。',
+			privacyPolicyDiv7Paragraph3:
+				'用户可以请求删除其账户及相关个人数据，但如果法律或运营义务要求继续保留这些数据，则可能无法立即删除。',
+			privacyPolicyDiv8Heading2: '7. 第三方服务和 API',
 			privacyPolicyDiv8Paragraph1:
-				'Allify 依赖第三方服务和 API 运营，包括流媒体音乐平台、托管提供商和支付处理商。',
+				'Allify 依赖第三方服务和 API 来运行，包括音乐流媒体平台、托管服务提供商和支付处理商。',
 			privacyPolicyDiv8Paragraph2:
-				'这些第三方服务可能根据其自身的隐私政策处理数据，我们建议用户查阅相关政策。',
-			privacyPolicyDiv9Heading2: '8. Cookie 与会话',
+				'这些服务可能根据其自身的隐私政策和使用条款处理数据。我们建议用户查阅这些服务适用的相关政策。',
+			privacyPolicyDiv9Heading2: '8. Cookie 和会话',
 			privacyPolicyDiv9Paragraph1:
-				'Allify 可能使用 Cookie 或类似技术来维护安全会话、提升可用性并确保平台正常运行。',
-			privacyPolicyDiv9Paragraph2: '您可以通过浏览器设置管理或禁用 Cookie。',
-			privacyPolicyDiv10Heading2: '9. 您的隐私权',
+				'Allify 可能使用 Cookie 或类似技术来维护安全会话、验证用户身份、改善用户体验并确保平台正常运行。',
+			privacyPolicyDiv9Paragraph2:
+				'您可以通过浏览器设置管理或禁用 Cookie。如果禁用某些 Cookie，平台的部分功能可能无法正常运行。',
+			privacyPolicyDiv10Heading2: '9. 您的隐私权利',
 			privacyPolicyDiv10Paragraph1:
-				'根据您所在的位置，您可能有权访问、更正或请求删除您的个人数据，以及撤回数据处理同意。',
-			privacyPolicyDiv10Paragraph2: '要行使您的权利，请使用以下联系信息与我们联系。',
+				'根据您所在地区和适用法律，您可能有权访问、更正、更新或请求删除您的个人数据，以及撤回对某些数据处理方式的同意。',
+			privacyPolicyDiv10Paragraph2:
+				'如需行使您的权利或咨询有关数据处理的问题，您可以通过本页面提供的联系方式与我们联系。',
 			privacyPolicyDiv11Heading2: '10. 数据安全',
 			privacyPolicyDiv11Paragraph1:
-				'我们采取适当的技术和组织措施，保护您的数据免遭未经授权的访问、更改、披露或销毁。',
-			privacyPolicyDiv11Paragraph2: '然而，没有任何互联网传输方法是完全安全的。',
-			privacyPolicyDiv12Heading2: '11. 本隐私政策的变更',
+				'我们采取适当的技术和组织措施，以保护数据免受未经授权的访问、修改、披露、丢失或破坏。',
+			privacyPolicyDiv11Paragraph2:
+				'尽管采取了这些措施，但任何通过互联网传输或存储数据的方法都无法被认为是完全安全的，因此我们无法保证绝对的数据安全。',
+			privacyPolicyDiv12Heading2: '11. 隐私政策的变更',
 			privacyPolicyDiv12Paragraph1:
-				'我们可能会定期更新本隐私政策。任何变更将通过更新本页顶部的"最后更新"日期来体现。',
+				'我们可能会定期更新本隐私政策，以反映平台、所使用的服务、数据处理方式或适用法律要求的变化。',
+			privacyPolicyDiv12Paragraph2:
+				'如有变更，本页面顶部显示的“最后更新”日期将会更新。我们建议您定期查看本页面，以了解可能的更新。',
 			privacyPolicyDiv13Heading2: '12. 联系信息',
-			privacyPolicyDiv13Paragraph1: '如果您对本隐私政策有任何疑问，请联系我们：',
+			privacyPolicyDiv13Paragraph1:
+				'如果您对本隐私政策、您的数据处理方式有任何疑问，或希望行使您的权利，请联系我们：',
 			privacyPolicyDiv13Paragraph2: 'Allify',
-			privacyPolicyDiv13Paragraph3: '电子邮件：contact@allify.club'
+			privacyPolicyDiv13Paragraph3: '电子邮箱：contact@allify.club'
 		},
 		dataUsage: {
 			title: '数据使用 | Allify',

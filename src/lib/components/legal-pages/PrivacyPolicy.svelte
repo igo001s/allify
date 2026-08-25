@@ -71,6 +71,7 @@
 		</ul>
 
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv4Paragraph2}</p>
+		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv4Paragraph3}</p>
 	</div>
 
 	<div>
@@ -104,6 +105,7 @@
 		</ul>
 
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv7Paragraph2}</p>
+		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv7Paragraph3}</p>
 	</div>
 
 	<div>
@@ -133,6 +135,7 @@
 	<div>
 		<h2>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv12Heading2}</h2>
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv12Paragraph1}</p>
+		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv12Paragraph2}</p>
 	</div>
 
 	<div>
