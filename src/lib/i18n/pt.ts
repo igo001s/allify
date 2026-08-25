@@ -168,6 +168,8 @@ export const pt = {
 		title: 'Meu Perfil Musical | Allify',
 		myMusicalProfilePageMetaDescription:
 			'Explore seu perfil musical, descubra seus artistas e faixas mais ouvidos, acompanhe suas estatísticas de escuta e conecte suas plataformas de streaming para insights personalizados.',
+		myMusicalProfilePageMetaKeywords:
+			'perfil musical, meu perfil musical, perfil de música, estatísticas musicais, estatísticas de escuta, músicas mais ouvidas, artistas mais ouvidos, músicas mais escutadas, artistas mais escutados, histórico musical, hábitos musicais, gosto musical, descobrir seu gosto musical, análise musical, perfil de streaming',
 		myMusicalProfilePageMetaOgAndTwitterContent:
 			'Explore seu perfil musical, descubra seus artistas e faixas mais ouvidos, acompanhe suas estatísticas de escuta e conecte suas plataformas de streaming para insights personalizados.',
 		myMusicalProfilePageHeading1: 'Aqui está tudo o que você mais ouviu',
@@ -304,7 +306,8 @@ export const pt = {
 		title: 'Perfil | Allify',
 		profilePageMetaDescription:
 			'Veja seu perfil público, compartilhe suas estatísticas de escuta, músicas curtidas, playlists e álbuns salvos, e conecte suas plataformas de streaming para insights personalizados.',
-		profilePageMetaKeywords: 'música mais ouvida, música do momento, música personalizada, artista mais ouvido, artista do momento, artista personalizado, perfil musical, estatísticas musicais, perfil de música, comunidade musical',
+		profilePageMetaKeywords:
+			'música mais ouvida, música do momento, música personalizada, artista mais ouvido, artista do momento, artista personalizado, perfil musical, estatísticas musicais, perfil de música, comunidade musical',
 		profilePageMetaOgAndTwitterContent:
 			'Veja seu perfil público, compartilhe suas estatísticas de escuta, músicas curtidas, playlists e álbuns salvos, e conecte suas plataformas de streaming para insights personalizados.',
 		profilePageImageAltText: 'Foto do perfil de',

@@ -166,6 +166,8 @@ export const de = {
 		title: 'Mein Musikprofil | Allify',
 		myMusicalProfilePageMetaDescription:
 			'Entdecke dein Musikprofil, finde deine meistgehörten Künstler und Titel, verfolge deine Hörstatistiken und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+		myMusicalProfilePageMetaKeywords:
+			'Musikprofil, mein Musikprofil, Musikprofil, Musikstatistiken, Hörstatistiken, meistgehörte Songs, meistgehörte Künstler, meistgehörte Lieder, meistgehörte Künstler, Musikhistorie, Hörgewohnheiten, Musikgeschmack, entdecke deinen Musikgeschmack, Musikanalyse, Streaming-Profil',
 		myMusicalProfilePageMetaOgAndTwitterContent:
 			'Entdecke dein Musikprofil, finde deine meistgehörten Künstler und Titel, verfolge deine Hörstatistiken und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		myMusicalProfilePageHeading1: 'Hier ist alles, was du am meisten gehört hast',
@@ -304,7 +306,8 @@ export const de = {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
 			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
-		profilePageMetaKeywords: 'meistgehörte Musik, Song des Moments, personalisierte Musik, meistgehörter Künstler, Künstler des Moments, personalisierter Künstler, Musikprofil, Musikstatistiken, Musikprofil, Musik-Community',
+		profilePageMetaKeywords:
+			'meistgehörte Musik, Song des Moments, personalisierte Musik, meistgehörter Künstler, Künstler des Moments, personalisierter Künstler, Musikprofil, Musikstatistiken, Musikprofil, Musik-Community',
 		profilePageMetaOgAndTwitterContent:
 			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
 		profilePageImageAltText: 'Profilbild von',

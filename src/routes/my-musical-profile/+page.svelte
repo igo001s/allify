@@ -33,6 +33,10 @@
 		name="description"
 		content={$translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription}
 	/>
+	<meta
+		name="keywords"
+		content={$translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaKeywords}
+	/>
 	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />

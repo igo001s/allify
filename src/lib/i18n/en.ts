@@ -166,6 +166,8 @@ export const en = {
 		title: 'My Musical Profile | Allify',
 		myMusicalProfilePageMetaDescription:
 			'Explore your musical profile, discover your most-listened-to artists and tracks, track your listening statistics, and connect your streaming platforms for personalized insights.',
+		myMusicalProfilePageMetaKeywords:
+			'musical profile, my musical profile, music profile, music statistics, listening statistics, most-listened-to tracks, most-listened-to artists, most-listened-to songs, most-listened-to artists, music history, listening habits, music taste, discover your music taste, music analysis, streaming profile',
 		myMusicalProfilePageMetaOgAndTwitterContent:
 			'Explore your musical profile, discover your most-listened-to artists and tracks, track your listening statistics, and connect your streaming platforms for personalized insights.',
 		myMusicalProfilePageHeading1: 'Here’s everything you’ve listened to the most',
@@ -301,7 +303,8 @@ export const en = {
 		title: 'Profile | Allify',
 		profilePageMetaDescription:
 			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
-		profilePageMetaKeywords: 'most listened-to music, song of the moment, personalized music, most listened-to artist, artist of the moment, personalized artist, music profile, music statistics, music profile, music community',
+		profilePageMetaKeywords:
+			'most listened-to music, song of the moment, personalized music, most listened-to artist, artist of the moment, personalized artist, music profile, music statistics, music profile, music community',
 		profilePageMetaOgAndTwitterContent:
 			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageImageAltText: 'Profile picture of',

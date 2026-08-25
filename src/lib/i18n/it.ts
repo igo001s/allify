@@ -170,6 +170,8 @@ export const it = {
 		title: 'Il Mio Profilo Musicale | Allify',
 		myMusicalProfilePageMetaDescription:
 			'Esplora il tuo profilo musicale, scopri i tuoi artisti e brani più ascoltati, monitora le tue statistiche di ascolto e collega le tue piattaforme di streaming per ottenere informazioni personalizzate.',
+		myMusicalProfilePageMetaKeywords:
+			'profilo musicale, il mio profilo musicale, profilo di musica, statistiche musicali, statistiche di ascolto, brani più ascoltati, artisti più ascoltati, cronologia musicale, abitudini di ascolto, gusto musicale, scopri il tuo gusto musicale, analisi musicale, profilo di streaming',
 		myMusicalProfilePageMetaOgAndTwitterContent:
 			'Esplora il tuo profilo musicale, scopri i tuoi artisti e brani più ascoltati, monitora le tue statistiche di ascolto e collega le tue piattaforme di streaming per ottenere informazioni personalizzate.',
 		myMusicalProfilePageHeading1: 'Ecco tutto quello che hai ascoltato di più',
@@ -306,7 +308,8 @@ export const it = {
 		title: 'Profilo | Allify',
 		profilePageMetaDescription:
 			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani che ti piacciono, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere informazioni personalizzate.',
-		profilePageMetaKeywords: 'musica più ascoltata, brano del momento, musica personalizzata, artista più ascoltato, artista del momento, artista personalizzato, profilo musicale, statistiche musicali, profilo musicale, comunità musicale',
+		profilePageMetaKeywords:
+			'musica più ascoltata, brano del momento, musica personalizzata, artista più ascoltato, artista del momento, artista personalizzato, profilo musicale, statistiche musicali, profilo musicale, comunità musicale',
 		profilePageMetaOgAndTwitterContent:
 			'Visualizza il tuo profilo pubblico, condividi le tue statistiche di ascolto, i brani che ti piacciono, le playlist e gli album salvati e collega le tue piattaforme di streaming per ottenere informazioni personalizzate.',
 		profilePageImageAltText: 'Foto del profilo di',
