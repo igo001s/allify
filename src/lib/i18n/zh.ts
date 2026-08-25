@@ -116,37 +116,38 @@ export const zh = {
 		toastCloseButtonAltText: '关闭通知图标'
 	},
 	homePage: {
-		title: '关于您音乐的一切，尽在一处 | Allify',
+		title: '发现你的音乐身份，通过音乐与他人连接 | Allify',
 		homePageMetaDescription:
-			'使用 Allify 探索个性化音乐洞察，连接您的流媒体平台，发现全新的音乐聆听方式。',
+			'通过 Allify 发现你的音乐身份。了解你最常听的艺人和歌曲，自定义你的个人资料，并与其他音乐爱好者建立联系。',
 		homePageMetaOgAndTwitterContent:
-			'使用 Allify 探索个性化音乐洞察，连接您的流媒体平台，发现全新的音乐聆听方式。',
-		homePageHeroSectionHeading1: '用真实数据了解您的音乐习惯',
+			'通过 Allify 发现你的音乐身份。了解你最常听的艺人和歌曲，自定义你的个人资料，并与其他音乐爱好者建立联系。',
+		homePageHeroSectionHeading1: '发现音乐诉说的你',
 		homePageHeroSectionParagraph1:
-			'连接您的流媒体服务，追踪详细的聆听指标，获取个性化推荐，并成为热爱音乐的社区的一员。',
-		alliMascotPointingToLeftAltText: 'Alli 向左指，指向操作按钮',
-		alliMascotPointingDownwardsAltText: 'Alli 向下指，指向操作按钮',
-		homePageHeroSectionButton1: '连接我的流媒体',
-		homePageHeroSectionButton1v2: '前往我的音乐档案',
-		homePageHeroSectionButton1AriaLabel: '连接我的流媒体',
-		homePageHeroSectionButton1v2AriaLabel: '前往我的音乐档案',
-		connectPlatformsSectionHeading1: '连接您的流媒体平台',
-		connectPlatformsSectionParagraph1: '整合您的账户，在一处追踪指标、表现和洞察。',
+			'了解你最常听的艺人和歌曲，打造专属于你的音乐资料，并与热爱音乐的社区分享你的音乐热情。',
+		alliMascotPointingToLeftAltText: 'Alli 指向左侧，提示操作位置',
+		alliMascotPointingDownwardsAltText: 'Alli 指向下方，提示操作位置',
+		homePageHeroSectionButton1: '发现我的音乐',
+		homePageHeroSectionButton1v2: '进入我的音乐资料',
+		homePageHeroSectionButton1AriaLabel: '发现我的音乐',
+		homePageHeroSectionButton1v2AriaLabel: '进入我的音乐资料',
+		connectPlatformsSectionHeading1: '将你的音乐连接到 Allify',
+		connectPlatformsSectionParagraph1:
+			'连接你的音乐流媒体平台，将你的聆听习惯转化为个性化的音乐体验，让你喜欢的艺人和歌曲集中在一个地方。',
 		connectPlatformSpotifyAltText: 'Spotify 图标',
 		connectPlatformSpotifyDescription:
-			'Spotify 是全球最大的流媒体平台之一，提供数百万曲目、个性化播放列表和先进的音乐发现功能，通过数据、趋势和智能推荐连接艺术家与听众。',
+			'将 Spotify 连接到 Allify，发现你最常听的艺人和歌曲，更深入地了解自己的音乐品味。',
 		connectPlatformDeezerAltText: 'Deezer 图标',
 		connectPlatformDeezerDescription:
-			'Deezer 是全球流媒体音乐平台，汇聚海量曲目目录、编辑精选播放列表和个性化推荐功能，为不同类型的听众提供完整的音乐体验。',
+			'将 Deezer 连接到 Allify，探索你最常聆听的音乐，并创建一个展现你音乐身份的个人资料。',
 		connectPlatformCardPlatformConnectIconAltText: '连接图标',
 		connectPlatformCardPlatformConnectSpotifyButton: '连接 Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: '连接 Deezer',
 		connectPlatformCardPlatformConnectedButton: '已连接',
 		connectPlatformCardPlatformExternalLinkIconAltText: '外部链接图标',
 		connectPlatformCardPlatformExternalLink: '前往',
-		devicesSectionHeading1: '随时随地携带您的音乐',
+		devicesSectionHeading1: '随时随地，按照自己的方式享受音乐',
 		devicesSectionParagraph1:
-			'随时随地在任何设备上访问您的音乐数据，体验流畅、一致且直观的使用感受。',
+			'从任何设备访问你的音乐资料，探索你喜爱的艺人和歌曲，并不断发现表达自己音乐品味的新方式。',
 		devicesSectionAltText: '设备插图'
 	},
 	myMusicalProfilePage: {

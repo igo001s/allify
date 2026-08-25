@@ -126,39 +126,39 @@ export const pt = {
 		toastCloseButtonAltText: 'Ícone de fechar notificação'
 	},
 	homePage: {
-		title: 'Tudo sobre sua música, conectado em um só lugar | Allify',
+		title: 'Descubra sua identidade musical e conecte-se pela música | Allify',
 		homePageMetaDescription:
-			'Descubra insights musicais personalizados, conecte suas plataformas de streaming e explore novas formas de ouvir música com o Allify.',
+			'Descubra sua identidade musical com o Allify. Conheça seus artistas e músicas mais ouvidos, personalize seu perfil e conecte-se com outros amantes da música.',
 		homePageMetaOgAndTwitterContent:
-			'Descubra insights musicais personalizados, conecte suas plataformas de streaming e explore novas formas de ouvir música com o Allify.',
-		homePageHeroSectionHeading1: 'Entenda seus hábitos musicais com dados reais',
+			'Descubra sua identidade musical com o Allify. Conheça seus artistas e músicas mais ouvidos, personalize seu perfil e conecte-se com outros amantes da música.',
+		homePageHeroSectionHeading1: 'Descubra o que sua música diz sobre você',
 		homePageHeroSectionParagraph1:
-			'Conecte seus streamings, acompanhe métricas detalhadas, receba sugestões personalizadas e faça parte de uma comunidade apaixonada por música.',
+			'Descubra seus artistas e músicas mais ouvidos, personalize seu perfil musical e compartilhe o que você ama com uma comunidade apaixonada por música.',
 		alliMascotPointingToLeftAltText: 'Alli apontando para a esquerda, indicando o botão de ação',
 		alliMascotPointingDownwardsAltText: 'Alli apontando para baixo, indicando o botão de ação',
-		homePageHeroSectionButton1: 'Conectar meus streamings',
+		homePageHeroSectionButton1: 'Descobrir minha música',
 		homePageHeroSectionButton1v2: 'Ir para meu perfil musical',
-		homePageHeroSectionButton1AriaLabel: 'Conectar meus streamings',
+		homePageHeroSectionButton1AriaLabel: 'Descobrir minha música',
 		homePageHeroSectionButton1v2AriaLabel: 'Ir para meu perfil musical',
-		connectPlatformsSectionHeading1: 'Conecte suas plataformas de streaming',
+		connectPlatformsSectionHeading1: 'Conecte sua música ao Allify',
 		connectPlatformsSectionParagraph1:
-			'Integre suas contas e acompanhe métricas, desempenho e insights em um só lugar.',
+			'Conecte suas plataformas de streaming e transforme seus hábitos de escuta em uma experiência musical personalizada, com seus artistas e músicas reunidos em um só lugar.',
 		connectPlatformSpotifyAltText: 'Ícone do Spotify',
 		connectPlatformSpotifyDescription:
-			'Uma das maiores plataformas de streaming de música do mundo, o Spotify oferece milhões de faixas, playlists personalizadas e recursos avançados de descoberta, conectando artistas e ouvintes por meio de dados, tendências e recomendações inteligentes.',
+			'Conecte o Spotify ao Allify para descobrir seus artistas e músicas mais ouvidos e conhecer melhor o seu gosto musical.',
 		connectPlatformDeezerAltText: 'Ícone do Deezer',
 		connectPlatformDeezerDescription:
-			'Plataforma global de streaming de música, a Deezer reúne um vasto catálogo de faixas, playlists editoriais e recursos como recomendações personalizadas, oferecendo uma experiência musical completa para diferentes perfis de ouvintes.',
-		connectPlatformCardPlatformConnectIconAltText: 'Ícone de Conexão',
+			'Conecte o Deezer ao Allify para explorar o que você mais ouve e construir um perfil que representa sua identidade musical.',
+		connectPlatformCardPlatformConnectIconAltText: 'Ícone de conexão',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Conectar Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: 'Conectar Deezer',
 		connectPlatformCardPlatformConnectedButton: 'Conectado',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'Ícone de Link Externo',
+		connectPlatformCardPlatformExternalLinkIconAltText: 'Ícone de link externo',
 		connectPlatformCardPlatformExternalLink: 'Ir para',
-		devicesSectionHeading1: 'Leve sua música com você',
+		devicesSectionHeading1: 'Sua música, do seu jeito, onde estiver',
 		devicesSectionParagraph1:
-			'Acesse seus dados musicais de qualquer lugar e em qualquer dispositivo, com uma experiência fluida, consistente e intuitiva.',
-		devicesSectionAltText: 'Ilustração de Dispositivos'
+			'Acesse seu perfil musical de qualquer dispositivo, explore seus artistas e músicas favoritos e continue descobrindo novas formas de expressar seu gosto musical.',
+		devicesSectionAltText: 'Ilustração de dispositivos'
 	},
 	myMusicalProfilePage: {
 		title: 'Meu Perfil Musical | Allify',

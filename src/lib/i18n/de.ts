@@ -124,41 +124,39 @@ export const de = {
 		toastCloseButtonAltText: 'Symbol zum Schließen der Benachrichtigung'
 	},
 	homePage: {
-		title: 'Alles über deine Musik, an einem Ort verbunden | Allify',
+		title: 'Entdecke deine musikalische Identität und verbinde dich durch Musik | Allify',
 		homePageMetaDescription:
-			'Entdecke personalisierte Musik-Insights, verbinde deine Streaming-Plattformen und erkunde neue Möglichkeiten, Musik zu hören, mit Allify.',
+			'Entdecke deine musikalische Identität mit Allify. Finde heraus, welche Künstler und Songs du am meisten hörst, personalisiere dein Profil und vernetze dich mit anderen Musikliebhabern.',
 		homePageMetaOgAndTwitterContent:
-			'Entdecke personalisierte Musik-Insights, verbinde deine Streaming-Plattformen und erkunde neue Möglichkeiten, Musik zu hören, mit Allify.',
-		homePageHeroSectionHeading1: 'Verstehe deine Musikgewohnheiten mit echten Daten',
+			'Entdecke deine musikalische Identität mit Allify. Finde heraus, welche Künstler und Songs du am meisten hörst, personalisiere dein Profil und vernetze dich mit anderen Musikliebhabern.',
+		homePageHeroSectionHeading1: 'Entdecke, was deine Musik über dich sagt',
 		homePageHeroSectionParagraph1:
-			'Verbinde deine Streaming-Dienste, verfolge detaillierte Musikstatistiken, erhalte personalisierte Empfehlungen und werde Teil einer musikbegeisterten Community.',
-		alliMascotPointingToLeftAltText:
-			'Alli zeigt nach links und weist auf die Schaltfläche für die Handlungsaufforderung hin',
-		alliMascotPointingDownwardsAltText:
-			'Alli zeigt nach unten und weist auf die Schaltfläche für die Handlungsaufforderung hin',
-		homePageHeroSectionButton1: 'Meine Streamings verbinden',
-		homePageHeroSectionButton1v2: 'Zu meinem Musikprofil gehen',
-		homePageHeroSectionButton1AriaLabel: 'Meine Streamings verbinden',
-		homePageHeroSectionButton1v2AriaLabel: 'Zu meinem Musikprofil gehen',
-		connectPlatformsSectionHeading1: 'Verbinde deine Streaming-Plattformen',
+			'Entdecke deine meistgehörten Künstler und Songs, personalisiere dein Musikprofil und teile deine Leidenschaft für Musik mit einer begeisterten Community.',
+		alliMascotPointingToLeftAltText: 'Alli zeigt nach links und weist auf die Aktion hin',
+		alliMascotPointingDownwardsAltText: 'Alli zeigt nach unten und weist auf die Aktion hin',
+		homePageHeroSectionButton1: 'Meine Musik entdecken',
+		homePageHeroSectionButton1v2: 'Zu meinem Musikprofil',
+		homePageHeroSectionButton1AriaLabel: 'Meine Musik entdecken',
+		homePageHeroSectionButton1v2AriaLabel: 'Zu meinem Musikprofil',
+		connectPlatformsSectionHeading1: 'Verbinde deine Musik mit Allify',
 		connectPlatformsSectionParagraph1:
-			'Integriere deine Konten und verfolge Metriken, Leistung und Einblicke an einem Ort.',
+			'Verbinde deine Streaming-Plattformen und verwandle deine Hörgewohnheiten in ein personalisiertes Musikerlebnis mit deinen Künstlern und Songs an einem Ort.',
 		connectPlatformSpotifyAltText: 'Spotify-Symbol',
 		connectPlatformSpotifyDescription:
-			'Als eine der größten Musik-Streaming-Plattformen der Welt bietet Spotify Millionen von Titeln, personalisierte Playlists und fortschrittliche Entdeckungsfunktionen, die Künstler und Hörer durch Daten, Trends und intelligente Empfehlungen verbinden.',
+			'Verbinde Spotify mit Allify, um deine meistgehörten Künstler und Songs zu entdecken und deinen Musikgeschmack besser kennenzulernen.',
 		connectPlatformDeezerAltText: 'Deezer-Symbol',
 		connectPlatformDeezerDescription:
-			'Die globale Musik-Streaming-Plattform Deezer vereint einen umfangreichen Katalog an Titeln, redaktionelle Playlists und Funktionen wie personalisierte Empfehlungen, um ein umfassendes Musikerlebnis für verschiedene Hörertypen zu bieten.',
+			'Verbinde Deezer mit Allify, um zu entdecken, was du am meisten hörst, und ein Profil zu erstellen, das deine musikalische Identität widerspiegelt.',
 		connectPlatformCardPlatformConnectIconAltText: 'Verbindungssymbol',
-		connectPlatformCardPlatformConnectSpotifyButton: 'Mit Spotify verbinden',
-		connectPlatformCardPlatformConnectDeezerButton: 'Mit Deezer verbinden',
+		connectPlatformCardPlatformConnectSpotifyButton: 'Spotify verbinden',
+		connectPlatformCardPlatformConnectDeezerButton: 'Deezer verbinden',
 		connectPlatformCardPlatformConnectedButton: 'Verbunden',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'Externes Linksymbol',
-		connectPlatformCardPlatformExternalLink: 'Gehe zu',
-		devicesSectionHeading1: 'Nimm deine Musik mit',
+		connectPlatformCardPlatformExternalLinkIconAltText: 'Symbol für externen Link',
+		connectPlatformCardPlatformExternalLink: 'Öffnen',
+		devicesSectionHeading1: 'Deine Musik, dein Stil, überall dabei',
 		devicesSectionParagraph1:
-			'Greife von überall und auf jedem Gerät auf deine Musikdaten zu – mit einem nahtlosen, konsistenten und intuitiven Erlebnis.',
-		devicesSectionAltText: 'Geräte-Illustration'
+			'Greife von jedem Gerät auf dein Musikprofil zu, entdecke deine Lieblingskünstler und -songs und finde immer neue Möglichkeiten, deinen Musikgeschmack auszudrücken.',
+		devicesSectionAltText: 'Illustration von Geräten'
 	},
 	myMusicalProfilePage: {
 		title: 'Mein Musikprofil | Allify',

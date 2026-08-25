@@ -124,41 +124,39 @@ export const en = {
 		toastCloseButtonAltText: 'Close notification icon'
 	},
 	homePage: {
-		title: 'All about your music, connected in one place | Allify',
+		title: 'Discover Your Musical Identity and Connect Through Music | Allify',
 		homePageMetaDescription:
-			'Discover personalized music insights, connect your streaming platforms, and explore new ways to listen to music with Allify.',
+			'Discover your musical identity with Allify. Find out which artists and songs you listen to the most, personalize your profile, and connect with other music lovers.',
 		homePageMetaOgAndTwitterContent:
-			'Discover personalized music insights, connect your streaming platforms, and explore new ways to listen to music with Allify.',
-		homePageHeroSectionHeading1: 'Understand your music habits with real data',
+			'Discover your musical identity with Allify. Find out which artists and songs you listen to the most, personalize your profile, and connect with other music lovers.',
+		homePageHeroSectionHeading1: 'Discover what your music says about you',
 		homePageHeroSectionParagraph1:
-			'Connect your streaming services, track detailed listening metrics, receive personalized recommendations, and become part of a community passionate about music.',
-		alliMascotPointingToLeftAltText:
-			'Alli pointing to the left, indicating the call to action button',
-		alliMascotPointingDownwardsAltText:
-			'Alli pointing downwards, indicating the call to action button',
-		homePageHeroSectionButton1: 'Connect my streamings',
-		homePageHeroSectionButton1v2: 'Go to my musical profile',
-		homePageHeroSectionButton1v2AriaLabel: 'Go to my musical profile',
-		homePageHeroSectionButton1AriaLabel: 'Connect my streamings',
-		connectPlatformsSectionHeading1: 'Connect your streaming platforms',
+			'Discover your most-listened artists and songs, personalize your music profile, and share your passion for music with a community of music lovers.',
+		alliMascotPointingToLeftAltText: 'Alli pointing to the left, indicating the action',
+		alliMascotPointingDownwardsAltText: 'Alli pointing downwards, indicating the action',
+		homePageHeroSectionButton1: 'Discover my music',
+		homePageHeroSectionButton1v2: 'Go to my music profile',
+		homePageHeroSectionButton1AriaLabel: 'Discover my music',
+		homePageHeroSectionButton1v2AriaLabel: 'Go to my music profile',
+		connectPlatformsSectionHeading1: 'Connect your music to Allify',
 		connectPlatformsSectionParagraph1:
-			'Integrate your accounts and track metrics, performance, and insights in one place.',
+			'Connect your streaming platforms and turn your listening habits into a personalized music experience, with your artists and songs gathered in one place.',
 		connectPlatformSpotifyAltText: 'Spotify icon',
 		connectPlatformSpotifyDescription:
-			'One of the largest music streaming platforms in the world, Spotify offers millions of tracks, personalized playlists, and advanced discovery features, connecting artists and listeners through data, trends, and smart recommendations.',
+			'Connect Spotify to Allify to discover your most-listened artists and songs and get to know your music taste better.',
 		connectPlatformDeezerAltText: 'Deezer icon',
 		connectPlatformDeezerDescription:
-			'A global music streaming platform, Deezer brings together a vast catalog of tracks, editorial playlists, and features like personalized recommendations, offering a complete music experience for different listener profiles.',
-		connectPlatformCardPlatformConnectIconAltText: 'Connect Icon',
+			'Connect Deezer to Allify to explore what you listen to the most and build a profile that represents your musical identity.',
+		connectPlatformCardPlatformConnectIconAltText: 'Connection icon',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Connect Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: 'Connect Deezer',
 		connectPlatformCardPlatformConnectedButton: 'Connected',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'External Link Icon',
+		connectPlatformCardPlatformExternalLinkIconAltText: 'External link icon',
 		connectPlatformCardPlatformExternalLink: 'Go to',
-		devicesSectionHeading1: 'Take your music with you',
+		devicesSectionHeading1: 'Your music, your way, wherever you are',
 		devicesSectionParagraph1:
-			'Access your music data from anywhere and on any device, with a seamless, consistent, and intuitive experience.',
-		devicesSectionAltText: 'Devices Illustration'
+			'Access your music profile from any device, explore your favorite artists and songs, and keep discovering new ways to express your music taste.',
+		devicesSectionAltText: 'Illustration of devices'
 	},
 	myMusicalProfilePage: {
 		title: 'My Musical Profile | Allify',

@@ -126,38 +126,38 @@ export const ru = {
 		toastCloseButtonAltText: 'Иконка для закрытия уведомления'
 	},
 	homePage: {
-		title: 'Всё о вашей музыке — в одном месте | Allify',
+		title: 'Откройте свою музыкальную идентичность и общайтесь через музыку | Allify',
 		homePageMetaDescription:
-			'Откройте персональные музыкальные инсайты, подключите стриминговые платформы и исследуйте новые способы слушать музыку с Allify.',
+			'Откройте свою музыкальную идентичность с Allify. Узнайте, каких исполнителей и какие песни вы слушаете чаще всего, настройте свой профиль и общайтесь с другими любителями музыки.',
 		homePageMetaOgAndTwitterContent:
-			'Откройте персональные музыкальные инсайты, подключите стриминговые платформы и исследуйте новые способы слушать музыку с Allify.',
-		homePageHeroSectionHeading1: 'Узнайте свои музыкальные привычки с реальными данными',
+			'Откройте свою музыкальную идентичность с Allify. Узнайте, каких исполнителей и какие песни вы слушаете чаще всего, настройте свой профиль и общайтесь с другими любителями музыки.',
+		homePageHeroSectionHeading1: 'Узнайте, что ваша музыка говорит о вас',
 		homePageHeroSectionParagraph1:
-			'Подключите свои стриминговые сервисы, отслеживайте подробные метрики прослушивания, получайте персональные рекомендации и станьте частью сообщества, увлечённого музыкой.',
-		alliMascotPointingToLeftAltText: 'Алли указывает влево, на кнопку действия',
-		alliMascotPointingDownwardsAltText: 'Алли указывает вниз, на кнопку действия',
-		homePageHeroSectionButton1: 'Подключить мои стриминги',
-		homePageHeroSectionButton1v2: 'Перейти к моему музыкальному профилю',
-		homePageHeroSectionButton1AriaLabel: 'Подключить мои стриминги',
-		homePageHeroSectionButton1v2AriaLabel: 'Перейти к моему музыкальному профилю',
-		connectPlatformsSectionHeading1: 'Подключите свои стриминговые платформы',
+			'Откройте своих самых прослушиваемых исполнителей и песни, настройте свой музыкальный профиль и делитесь своей любовью к музыке с сообществом единомышленников.',
+		alliMascotPointingToLeftAltText: 'Alli указывает налево, обозначая действие',
+		alliMascotPointingDownwardsAltText: 'Alli указывает вниз, обозначая действие',
+		homePageHeroSectionButton1: 'Открыть мою музыку',
+		homePageHeroSectionButton1v2: 'Перейти в мой музыкальный профиль',
+		homePageHeroSectionButton1AriaLabel: 'Открыть мою музыку',
+		homePageHeroSectionButton1v2AriaLabel: 'Перейти в мой музыкальный профиль',
+		connectPlatformsSectionHeading1: 'Подключите свою музыку к Allify',
 		connectPlatformsSectionParagraph1:
-			'Интегрируйте свои аккаунты и отслеживайте метрики, производительность и инсайты в одном месте.',
-		connectPlatformSpotifyAltText: 'Иконка Spotify',
+			'Подключите свои стриминговые платформы и превратите свои музыкальные привычки в персонализированный опыт, собрав любимых исполнителей и песни в одном месте.',
+		connectPlatformSpotifyAltText: 'Значок Spotify',
 		connectPlatformSpotifyDescription:
-			'Одна из крупнейших стриминговых платформ в мире, Spotify предлагает миллионы треков, персональные плейлисты и продвинутые инструменты открытия музыки, соединяя артистов и слушателей с помощью данных, трендов и умных рекомендаций.',
-		connectPlatformDeezerAltText: 'Иконка Deezer',
+			'Подключите Spotify к Allify, чтобы узнать, каких исполнителей и какие песни вы слушаете чаще всего, и лучше понять свои музыкальные предпочтения.',
+		connectPlatformDeezerAltText: 'Значок Deezer',
 		connectPlatformDeezerDescription:
-			'Глобальная стриминговая платформа Deezer объединяет обширный каталог треков, редакционные плейлисты и персональные рекомендации, предлагая полноценный музыкальный опыт для разных типов слушателей.',
-		connectPlatformCardPlatformConnectIconAltText: 'Иконка подключения',
+			'Подключите Deezer к Allify, чтобы узнать, что вы слушаете чаще всего, и создать профиль, отражающий вашу музыкальную идентичность.',
+		connectPlatformCardPlatformConnectIconAltText: 'Значок подключения',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Подключить Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: 'Подключить Deezer',
 		connectPlatformCardPlatformConnectedButton: 'Подключено',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'Иконка внешней ссылки',
-		connectPlatformCardPlatformExternalLink: 'Перейти в',
-		devicesSectionHeading1: 'Берите музыку с собой',
+		connectPlatformCardPlatformExternalLinkIconAltText: 'Значок внешней ссылки',
+		connectPlatformCardPlatformExternalLink: 'Перейти',
+		devicesSectionHeading1: 'Ваша музыка, ваш стиль, где бы вы ни были',
 		devicesSectionParagraph1:
-			'Получайте доступ к своим музыкальным данным из любого места и с любого устройства — плавно, последовательно и интуитивно.',
+			'Получайте доступ к своему музыкальному профилю с любого устройства, открывайте любимых исполнителей и песни и находите новые способы выразить свои музыкальные предпочтения.',
 		devicesSectionAltText: 'Иллюстрация устройств'
 	},
 	myMusicalProfilePage: {
