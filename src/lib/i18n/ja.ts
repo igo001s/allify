@@ -449,9 +449,11 @@ export const ja = {
 		profilePageCommentsParagraph1: 'あなたについてみんなが言っていること',
 		profilePageCommentsParagraph2:
 			'コミュニティがあなたのプロフィールに残したコメントをチェックしましょう。',
-		profilePageAuthorCommentImageAltText: 'Foto del profilo di',
+		profilePageAuthorCommentImageAltText: 'プロフィール写真：',
 		profilePageAuthorEmptyComments:
-			'Il tuo profilo non ha ancora commenti. Condividi il tuo profilo con i tuoi amici in modo che possano lasciare commenti!'
+			'あなたのプロフィールにはまだコメントがありません。友達とプロフィールを共有して、コメントを残してもらいましょう。',
+		profilePageDeleteCommentOfAuthorAriaLabel: 'コメントを削除するボタン：',
+		profilePageDeleteCommentOfAuthorAltText: 'コメントを削除するアイコン：'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

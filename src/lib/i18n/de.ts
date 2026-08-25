@@ -478,7 +478,9 @@ export const de = {
 			'Sieh dir die Kommentare an, die die Community auf deinem Profil hinterlassen hat.',
 		profilePageAuthorCommentImageAltText: 'Profilfoto von',
 		profilePageAuthorEmptyComments:
-			'Dein Profil hat noch keine Kommentare. Teile dein Profil mit deinen Freunden, damit sie Kommentare hinterlassen können!'
+			'Dein Profil hat noch keine Kommentare. Teile dein Profil mit deinen Freunden, damit sie Kommentare hinterlassen können!',
+		profilePageDeleteCommentOfAuthorAriaLabel: 'Schaltfläche zum Löschen des Kommentars von ',
+		profilePageDeleteCommentOfAuthorAltText: 'Symbol zum Löschen des Kommentars von '
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',

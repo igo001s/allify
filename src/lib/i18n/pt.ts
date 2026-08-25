@@ -463,7 +463,9 @@ export const pt = {
 		profilePageCommentsParagraph2: 'Confira os comentários que a comunidade deixou no seu perfil.',
 		profilePageAuthorCommentImageAltText: 'Foto do perfil de',
 		profilePageAuthorEmptyComments:
-			'Seu perfil ainda não tem comentários. Compartilhe seu perfil com seus amigos para que eles possam deixar comentários!'
+			'Seu perfil ainda não tem comentários. Compartilhe seu perfil com seus amigos para que eles possam deixar comentários!',
+		profilePageDeleteCommentOfAuthorAriaLabel: 'Botão para excluir comentário de ',
+		profilePageDeleteCommentOfAuthorAltText: 'Ícone de excluir comentário de '
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

@@ -464,7 +464,9 @@ export const ru = {
 			'Посмотрите комментарии, которые сообщество оставило в вашем профиле.',
 		profilePageAuthorCommentImageAltText: 'Фото профиля',
 		profilePageAuthorEmptyComments:
-			'В вашем профиле пока нет комментариев. Поделитесь своим профилем с друзьями, чтобы они могли оставить комментарии!'
+			'В вашем профиле пока нет комментариев. Поделитесь своим профилем с друзьями, чтобы они могли оставить комментарии!',
+		profilePageDeleteCommentOfAuthorAriaLabel: 'Кнопка для удаления комментария от ',
+		profilePageDeleteCommentOfAuthorAltText: 'Иконка для удаления комментария от '
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

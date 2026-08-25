@@ -4,12 +4,42 @@
 
 	// Assets
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
+	import TrashIcon from '$lib/assets/images/icons/TrashIcon.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
 
+	// Services
+	import { deleteComment } from '$lib/services/user/remove/deleteComment';
+
+	// MongoDB
+	import type { ObjectId } from 'mongodb';
+
+	// Types
+	import type { Comment } from '$lib/types/Comments.type';
+
+	// Props
 	export let showCommentsModal: boolean;
+
+	async function handleDeleteComment(userId: ObjectId, authorId: ObjectId, comments: Comment[]) {
+		if (!userId || !authorId) {
+			return;
+		}
+
+		const commentsAfterDelete = await deleteComment(userId, authorId, comments);
+
+		userInfo.update((currentUser) => {
+			if (currentUser) {
+				return {
+					...currentUser,
+					comments: commentsAfterDelete
+				};
+			}
+
+			return currentUser;
+		});
+	}
 
 	onMount(() => {
 		document.body.style.overflow = 'hidden';
@@ -59,24 +89,43 @@
 							/>
 
 							<div class="flex min-w-0 flex-1 flex-col gap-1">
-								<div class="flex items-start justify-between gap-3">
-									<a
-										href={`/music-community/${comment.author._id}`}
-										class="text-sm font-semibold text-t-secondary transition-colors hover:text-brand-primary"
-									>
-										{comment.author.name}
-									</a>
+								<div class="flex items-center justify-between gap-2">
+									<div class="flex flex-col items-start">
+										<a
+											href={`/music-community/${comment.author._id}`}
+											class="text-sm font-semibold text-t-secondary transition-colors hover:text-brand-primary"
+										>
+											{comment.author.name}
+										</a>
 
-									<time
-										datetime={new Date(comment.createdAt).toISOString()}
-										class="text-t-tertiary shrink-0 text-[11px]"
-									>
-										{new Date(comment.createdAt).toLocaleDateString($translationsStore.locale, {
-											year: 'numeric',
-											month: 'short',
-											day: 'numeric'
-										})}
-									</time>
+										<time
+											datetime={new Date(comment.createdAt).toISOString()}
+											class="text-t-tertiary text-error shrink-0 text-[11px]"
+										>
+											{new Date(comment.createdAt).toLocaleDateString($translationsStore.locale, {
+												year: 'numeric',
+												month: 'short',
+												day: 'numeric'
+											})}
+										</time>
+									</div>
+
+									<div>
+										<button
+											on:click={() =>
+												handleDeleteComment(
+													$userInfo?._id,
+													comment.author._id,
+													$userInfo?.comments
+												)}
+											aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAriaLabel} ${comment.author.name}`}
+										>
+											<TrashIcon
+												iconAltText={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAltText} ${comment.author.name}`}
+												iconSvgClass="h-4 w-4 text-t-secondary transition-all cursor-pointer hover:text-status-error"
+											/>
+										</button>
+									</div>
 								</div>
 
 								<p class="text-xs leading-relaxed text-t-secondary">
