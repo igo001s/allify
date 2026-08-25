@@ -124,38 +124,40 @@ export const ja = {
 		toastCloseButtonAltText: '通知を閉じるアイコン'
 	},
 	homePage: {
-		title: '音楽を通して自分の音楽アイデンティティを発見し、つながろう | Allify',
+		title: 'あなたの音楽アイデンティティを発見 | Allify',
 		homePageMetaDescription:
-			'Allifyで自分の音楽アイデンティティを発見しましょう。よく聴くアーティストや楽曲を知り、プロフィールをカスタマイズして、音楽を愛する人たちとつながれます。',
+			'Allifyであなたの音楽アイデンティティを発見しましょう。よく聴くアーティストや楽曲を確認し、音楽プロフィールをカスタマイズして、音楽を愛するコミュニティとあなたの好みを共有できます。',
 		homePageMetaOgAndTwitterContent:
-			'Allifyで自分の音楽アイデンティティを発見しましょう。よく聴くアーティストや楽曲を知り、プロフィールをカスタマイズして、音楽を愛する人たちとつながれます。',
+			'Allifyであなたの音楽アイデンティティを発見しましょう。よく聴くアーティストや楽曲を確認し、音楽プロフィールをカスタマイズして、音楽を愛するコミュニティとあなたの好みを共有できます。',
+		homePageMetaKeywords:
+			'音楽アイデンティティ, 音楽の好み, 音楽プロフィール, よく聴くアーティスト, よく聴く楽曲, 音楽コミュニティ, 音楽統計, Allify',
 		homePageHeroSectionHeading1: 'あなたの音楽が語る、あなた自身を発見しよう',
 		homePageHeroSectionParagraph1:
-			'よく聴くアーティストや楽曲を見つけ、自分だけの音楽プロフィールを作り、音楽を愛するコミュニティと好きな音楽を共有しましょう。',
-		alliMascotPointingToLeftAltText: 'Alliが左を指してアクションを示している',
-		alliMascotPointingDownwardsAltText: 'Alliが下を指してアクションを示している',
+			'よく聴くアーティストや楽曲を発見し、音楽プロフィールをカスタマイズして、音楽を愛するコミュニティとあなたの好きなものを共有しましょう。',
+		alliMascotPointingToLeftAltText: 'Alliが左を指してアクションボタンを示しています',
+		alliMascotPointingDownwardsAltText: 'Alliが下を指してアクションボタンを示しています',
 		homePageHeroSectionButton1: '自分の音楽を発見する',
-		homePageHeroSectionButton1v2: '音楽プロフィールを見る',
+		homePageHeroSectionButton1v2: '音楽プロフィールへ',
 		homePageHeroSectionButton1AriaLabel: '自分の音楽を発見する',
-		homePageHeroSectionButton1v2AriaLabel: '音楽プロフィールを見る',
-		connectPlatformsSectionHeading1: 'あなたの音楽をAllifyにつなげよう',
+		homePageHeroSectionButton1v2AriaLabel: '音楽プロフィールへ',
+		connectPlatformsSectionHeading1: '音楽をAllifyに接続',
 		connectPlatformsSectionParagraph1:
-			'ストリーミングサービスを接続して、普段の音楽の聴き方をパーソナライズされた音楽体験に変えましょう。お気に入りのアーティストや楽曲を一つの場所にまとめられます。',
+			'ストリーミングサービスを接続して、あなたの聴取習慣をパーソナライズされた音楽体験に変えましょう。お気に入りのアーティストや楽曲をひとつの場所にまとめられます。',
 		connectPlatformSpotifyAltText: 'Spotifyのアイコン',
 		connectPlatformSpotifyDescription:
-			'SpotifyをAllifyに接続して、よく聴くアーティストや楽曲を発見し、自分の音楽の好みをもっと深く知りましょう。',
+			'SpotifyをAllifyに接続して、よく聴くアーティストや楽曲を発見し、自分の音楽の好みをより深く知りましょう。',
 		connectPlatformDeezerAltText: 'Deezerのアイコン',
 		connectPlatformDeezerDescription:
-			'DeezerをAllifyに接続して、よく聴く音楽をチェックし、自分の音楽アイデンティティを表現するプロフィールを作りましょう。',
+			'DeezerをAllifyに接続して、よく聴く音楽を確認し、あなたの音楽アイデンティティを表現するプロフィールを作りましょう。',
 		connectPlatformCardPlatformConnectIconAltText: '接続アイコン',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Spotifyを接続',
 		connectPlatformCardPlatformConnectDeezerButton: 'Deezerを接続',
 		connectPlatformCardPlatformConnectedButton: '接続済み',
 		connectPlatformCardPlatformExternalLinkIconAltText: '外部リンクアイコン',
-		connectPlatformCardPlatformExternalLink: '開く',
-		devicesSectionHeading1: 'いつでも、どこでも、自分らしい音楽を',
+		connectPlatformCardPlatformExternalLink: '移動',
+		devicesSectionHeading1: 'あなたの音楽を、あなたらしく、どこでも',
 		devicesSectionParagraph1:
-			'どのデバイスからでも音楽プロフィールにアクセスして、お気に入りのアーティストや楽曲を楽しみながら、自分の音楽の好みを表現する新しい方法を見つけましょう。',
+			'どのデバイスからでも音楽プロフィールにアクセスし、お気に入りのアーティストや楽曲を楽しみながら、自分の音楽の好みを表現する新しい方法を見つけましょう。',
 		devicesSectionAltText: 'デバイスのイラスト'
 	},
 	myMusicalProfilePage: {

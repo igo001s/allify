@@ -126,11 +126,13 @@ export const pt = {
 		toastCloseButtonAltText: 'Ícone de fechar notificação'
 	},
 	homePage: {
-		title: 'Descubra sua identidade musical e conecte-se pela música | Allify',
+		title: 'Descubra sua identidade musical | Allify',
 		homePageMetaDescription:
-			'Descubra sua identidade musical com o Allify. Conheça seus artistas e músicas mais ouvidos, personalize seu perfil e conecte-se com outros amantes da música.',
+			'Descubra sua identidade musical com o Allify. Veja seus artistas e músicas mais ouvidos, personalize seu perfil musical e compartilhe seu gosto com uma comunidade apaixonada por música.',
 		homePageMetaOgAndTwitterContent:
-			'Descubra sua identidade musical com o Allify. Conheça seus artistas e músicas mais ouvidos, personalize seu perfil e conecte-se com outros amantes da música.',
+			'Descubra sua identidade musical com o Allify. Veja seus artistas e músicas mais ouvidos, personalize seu perfil musical e compartilhe seu gosto com uma comunidade apaixonada por música.',
+		homePageMetaKeywords:
+			'identidade musical, gosto musical, perfil musical, artistas mais ouvidos, músicas mais ouvidas, comunidade musical, estatísticas musicais, Allify',
 		homePageHeroSectionHeading1: 'Descubra o que sua música diz sobre você',
 		homePageHeroSectionParagraph1:
 			'Descubra seus artistas e músicas mais ouvidos, personalize seu perfil musical e compartilhe o que você ama com uma comunidade apaixonada por música.',

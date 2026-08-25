@@ -124,16 +124,18 @@ export const en = {
 		toastCloseButtonAltText: 'Close notification icon'
 	},
 	homePage: {
-		title: 'Discover Your Musical Identity and Connect Through Music | Allify',
+		title: 'Discover Your Musical Identity | Allify',
 		homePageMetaDescription:
-			'Discover your musical identity with Allify. Find out which artists and songs you listen to the most, personalize your profile, and connect with other music lovers.',
+			'Discover your musical identity with Allify. See your most-listened artists and songs, personalize your music profile, and share your taste with a community passionate about music.',
 		homePageMetaOgAndTwitterContent:
-			'Discover your musical identity with Allify. Find out which artists and songs you listen to the most, personalize your profile, and connect with other music lovers.',
+			'Discover your musical identity with Allify. See your most-listened artists and songs, personalize your music profile, and share your taste with a community passionate about music.',
+		homePageMetaKeywords:
+			'musical identity, music taste, music profile, most-listened artists, most-listened songs, music community, music statistics, Allify',
 		homePageHeroSectionHeading1: 'Discover what your music says about you',
 		homePageHeroSectionParagraph1:
-			'Discover your most-listened artists and songs, personalize your music profile, and share your passion for music with a community of music lovers.',
-		alliMascotPointingToLeftAltText: 'Alli pointing to the left, indicating the action',
-		alliMascotPointingDownwardsAltText: 'Alli pointing downwards, indicating the action',
+			'Discover your most-listened artists and songs, personalize your music profile, and share what you love with a community passionate about music.',
+		alliMascotPointingToLeftAltText: 'Alli pointing left, indicating the action button',
+		alliMascotPointingDownwardsAltText: 'Alli pointing down, indicating the action button',
 		homePageHeroSectionButton1: 'Discover my music',
 		homePageHeroSectionButton1v2: 'Go to my music profile',
 		homePageHeroSectionButton1AriaLabel: 'Discover my music',
@@ -146,7 +148,7 @@ export const en = {
 			'Connect Spotify to Allify to discover your most-listened artists and songs and get to know your music taste better.',
 		connectPlatformDeezerAltText: 'Deezer icon',
 		connectPlatformDeezerDescription:
-			'Connect Deezer to Allify to explore what you listen to the most and build a profile that represents your musical identity.',
+			'Connect Deezer to Allify to explore what you listen to most and build a profile that represents your musical identity.',
 		connectPlatformCardPlatformConnectIconAltText: 'Connection icon',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Connect Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: 'Connect Deezer',

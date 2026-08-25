@@ -124,16 +124,18 @@ export const de = {
 		toastCloseButtonAltText: 'Symbol zum Schließen der Benachrichtigung'
 	},
 	homePage: {
-		title: 'Entdecke deine musikalische Identität und verbinde dich durch Musik | Allify',
+		title: 'Entdecke deine musikalische Identität | Allify',
 		homePageMetaDescription:
-			'Entdecke deine musikalische Identität mit Allify. Finde heraus, welche Künstler und Songs du am meisten hörst, personalisiere dein Profil und vernetze dich mit anderen Musikliebhabern.',
+			'Entdecke deine musikalische Identität mit Allify. Sieh dir deine meistgehörten Künstler und Songs an, personalisiere dein Musikprofil und teile deinen Musikgeschmack mit einer musikbegeisterten Community.',
 		homePageMetaOgAndTwitterContent:
-			'Entdecke deine musikalische Identität mit Allify. Finde heraus, welche Künstler und Songs du am meisten hörst, personalisiere dein Profil und vernetze dich mit anderen Musikliebhabern.',
-		homePageHeroSectionHeading1: 'Entdecke, was deine Musik über dich sagt',
+			'Entdecke deine musikalische Identität mit Allify. Sieh dir deine meistgehörten Künstler und Songs an, personalisiere dein Musikprofil und teile deinen Musikgeschmack mit einer musikbegeisterten Community.',
+		homePageMetaKeywords:
+			'musikalische Identität, Musikgeschmack, Musikprofil, meistgehörte Künstler, meistgehörte Songs, Musikcommunity, Musikstatistiken, Allify',
+		homePageHeroSectionHeading1: 'Entdecke, was deine Musik über dich aussagt',
 		homePageHeroSectionParagraph1:
-			'Entdecke deine meistgehörten Künstler und Songs, personalisiere dein Musikprofil und teile deine Leidenschaft für Musik mit einer begeisterten Community.',
-		alliMascotPointingToLeftAltText: 'Alli zeigt nach links und weist auf die Aktion hin',
-		alliMascotPointingDownwardsAltText: 'Alli zeigt nach unten und weist auf die Aktion hin',
+			'Entdecke deine meistgehörten Künstler und Songs, personalisiere dein Musikprofil und teile, was du liebst, mit einer musikbegeisterten Community.',
+		alliMascotPointingToLeftAltText: 'Alli zeigt nach links und weist auf die Schaltfläche hin',
+		alliMascotPointingDownwardsAltText: 'Alli zeigt nach unten und weist auf die Schaltfläche hin',
 		homePageHeroSectionButton1: 'Meine Musik entdecken',
 		homePageHeroSectionButton1v2: 'Zu meinem Musikprofil',
 		homePageHeroSectionButton1AriaLabel: 'Meine Musik entdecken',
@@ -152,11 +154,11 @@ export const de = {
 		connectPlatformCardPlatformConnectDeezerButton: 'Deezer verbinden',
 		connectPlatformCardPlatformConnectedButton: 'Verbunden',
 		connectPlatformCardPlatformExternalLinkIconAltText: 'Symbol für externen Link',
-		connectPlatformCardPlatformExternalLink: 'Öffnen',
-		devicesSectionHeading1: 'Deine Musik, dein Stil, überall dabei',
+		connectPlatformCardPlatformExternalLink: 'Gehe zu',
+		devicesSectionHeading1: 'Deine Musik, auf deine Art, überall',
 		devicesSectionParagraph1:
-			'Greife von jedem Gerät auf dein Musikprofil zu, entdecke deine Lieblingskünstler und -songs und finde immer neue Möglichkeiten, deinen Musikgeschmack auszudrücken.',
-		devicesSectionAltText: 'Illustration von Geräten'
+			'Greife von jedem Gerät auf dein Musikprofil zu, entdecke deine Lieblingskünstler und -songs und finde neue Möglichkeiten, deinen Musikgeschmack auszudrücken.',
+		devicesSectionAltText: 'Illustration verschiedener Geräte'
 	},
 	myMusicalProfilePage: {
 		title: 'Mein Musikprofil | Allify',

@@ -126,27 +126,29 @@ export const fr = {
 		toastCloseButtonAltText: 'Icône pour fermer la notification'
 	},
 	homePage: {
-		title: 'Découvrez votre identité musicale et connectez-vous grâce à la musique | Allify',
+		title: 'Découvrez votre identité musicale | Allify',
 		homePageMetaDescription:
-			'Découvrez votre identité musicale avec Allify. Découvrez les artistes et les morceaux que vous écoutez le plus, personnalisez votre profil et connectez-vous avec d’autres passionnés de musique.',
+			'Découvrez votre identité musicale avec Allify. Consultez vos artistes et chansons les plus écoutés, personnalisez votre profil musical et partagez vos goûts avec une communauté passionnée de musique.',
 		homePageMetaOgAndTwitterContent:
-			'Découvrez votre identité musicale avec Allify. Découvrez les artistes et les morceaux que vous écoutez le plus, personnalisez votre profil et connectez-vous avec d’autres passionnés de musique.',
+			'Découvrez votre identité musicale avec Allify. Consultez vos artistes et chansons les plus écoutés, personnalisez votre profil musical et partagez vos goûts avec une communauté passionnée de musique.',
+		homePageMetaKeywords:
+			'identité musicale, goûts musicaux, profil musical, artistes les plus écoutés, chansons les plus écoutées, communauté musicale, statistiques musicales, Allify',
 		homePageHeroSectionHeading1: 'Découvrez ce que votre musique dit de vous',
 		homePageHeroSectionParagraph1:
-			'Découvrez vos artistes et morceaux les plus écoutés, personnalisez votre profil musical et partagez votre passion pour la musique avec une communauté de passionnés.',
-		alliMascotPointingToLeftAltText: 'Alli pointant vers la gauche et indiquant l’action',
-		alliMascotPointingDownwardsAltText: 'Alli pointant vers le bas et indiquant l’action',
+			'Découvrez vos artistes et chansons les plus écoutés, personnalisez votre profil musical et partagez ce que vous aimez avec une communauté passionnée de musique.',
+		alliMascotPointingToLeftAltText: 'Alli pointant vers la gauche et indiquant le bouton d’action',
+		alliMascotPointingDownwardsAltText: 'Alli pointant vers le bas et indiquant le bouton d’action',
 		homePageHeroSectionButton1: 'Découvrir ma musique',
 		homePageHeroSectionButton1v2: 'Accéder à mon profil musical',
 		homePageHeroSectionButton1AriaLabel: 'Découvrir ma musique',
 		homePageHeroSectionButton1v2AriaLabel: 'Accéder à mon profil musical',
 		connectPlatformsSectionHeading1: 'Connectez votre musique à Allify',
 		connectPlatformsSectionParagraph1:
-			'Connectez vos plateformes de streaming et transformez vos habitudes d’écoute en une expérience musicale personnalisée, avec vos artistes et morceaux réunis au même endroit.',
-		connectPlatformSpotifyAltText: 'Icône de Spotify',
+			'Connectez vos plateformes de streaming et transformez vos habitudes d’écoute en une expérience musicale personnalisée, avec vos artistes et chansons réunis au même endroit.',
+		connectPlatformSpotifyAltText: 'Icône Spotify',
 		connectPlatformSpotifyDescription:
-			'Connectez Spotify à Allify pour découvrir vos artistes et morceaux les plus écoutés et mieux comprendre vos goûts musicaux.',
-		connectPlatformDeezerAltText: 'Icône de Deezer',
+			'Connectez Spotify à Allify pour découvrir vos artistes et chansons les plus écoutés et mieux connaître vos goûts musicaux.',
+		connectPlatformDeezerAltText: 'Icône Deezer',
 		connectPlatformDeezerDescription:
 			'Connectez Deezer à Allify pour explorer ce que vous écoutez le plus et créer un profil qui représente votre identité musicale.',
 		connectPlatformCardPlatformConnectIconAltText: 'Icône de connexion',
@@ -154,10 +156,10 @@ export const fr = {
 		connectPlatformCardPlatformConnectDeezerButton: 'Connecter Deezer',
 		connectPlatformCardPlatformConnectedButton: 'Connecté',
 		connectPlatformCardPlatformExternalLinkIconAltText: 'Icône de lien externe',
-		connectPlatformCardPlatformExternalLink: 'Accéder',
+		connectPlatformCardPlatformExternalLink: 'Accéder à',
 		devicesSectionHeading1: 'Votre musique, à votre façon, où que vous soyez',
 		devicesSectionParagraph1:
-			'Accédez à votre profil musical depuis n’importe quel appareil, explorez vos artistes et morceaux préférés et continuez à découvrir de nouvelles façons d’exprimer vos goûts musicaux.',
+			'Accédez à votre profil musical depuis n’importe quel appareil, explorez vos artistes et chansons préférés et continuez à découvrir de nouvelles façons d’exprimer vos goûts musicaux.',
 		devicesSectionAltText: 'Illustration d’appareils'
 	},
 	myMusicalProfilePage: {

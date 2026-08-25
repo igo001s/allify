@@ -126,29 +126,32 @@ export const es = {
 		toastCloseButtonAltText: 'Ícono para cerrar la notificación'
 	},
 	homePage: {
-		title: 'Descubre tu identidad musical y conecta a través de la música | Allify',
+		title: 'Descubre tu identidad musical | Allify',
 		homePageMetaDescription:
-			'Descubre tu identidad musical con Allify. Conoce los artistas y canciones que más escuchas, personaliza tu perfil y conecta con otros amantes de la música.',
+			'Descubre tu identidad musical con Allify. Mira tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
 		homePageMetaOgAndTwitterContent:
-			'Descubre tu identidad musical con Allify. Conoce los artistas y canciones que más escuchas, personaliza tu perfil y conecta con otros amantes de la música.',
+			'Descubre tu identidad musical con Allify. Mira tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
+		homePageMetaKeywords:
+			'identidad musical, gustos musicales, perfil musical, artistas más escuchados, canciones más escuchadas, comunidad musical, estadísticas musicales, Allify',
 		homePageHeroSectionHeading1: 'Descubre lo que tu música dice sobre ti',
 		homePageHeroSectionParagraph1:
-			'Descubre tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tu pasión por la música con una comunidad de amantes de la música.',
-		alliMascotPointingToLeftAltText: 'Alli señalando hacia la izquierda e indicando la acción',
-		alliMascotPointingDownwardsAltText: 'Alli señalando hacia abajo e indicando la acción',
+			'Descubre tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte lo que te encanta con una comunidad apasionada por la música.',
+		alliMascotPointingToLeftAltText:
+			'Alli señalando hacia la izquierda e indicando el botón de acción',
+		alliMascotPointingDownwardsAltText: 'Alli señalando hacia abajo e indicando el botón de acción',
 		homePageHeroSectionButton1: 'Descubrir mi música',
 		homePageHeroSectionButton1v2: 'Ir a mi perfil musical',
 		homePageHeroSectionButton1AriaLabel: 'Descubrir mi música',
 		homePageHeroSectionButton1v2AriaLabel: 'Ir a mi perfil musical',
-		connectPlatformsSectionHeading1: 'Conecta tu música con Allify',
+		connectPlatformsSectionHeading1: 'Conecta tu música a Allify',
 		connectPlatformsSectionParagraph1:
 			'Conecta tus plataformas de streaming y convierte tus hábitos de escucha en una experiencia musical personalizada, con tus artistas y canciones reunidos en un solo lugar.',
 		connectPlatformSpotifyAltText: 'Icono de Spotify',
 		connectPlatformSpotifyDescription:
-			'Conecta Spotify con Allify para descubrir tus artistas y canciones más escuchados y conocer mejor tus gustos musicales.',
+			'Conecta Spotify a Allify para descubrir tus artistas y canciones más escuchados y conocer mejor tus gustos musicales.',
 		connectPlatformDeezerAltText: 'Icono de Deezer',
 		connectPlatformDeezerDescription:
-			'Conecta Deezer con Allify para explorar lo que más escuchas y crear un perfil que represente tu identidad musical.',
+			'Conecta Deezer a Allify para explorar lo que más escuchas y crear un perfil que represente tu identidad musical.',
 		connectPlatformCardPlatformConnectIconAltText: 'Icono de conexión',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Conectar Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: 'Conectar Deezer',

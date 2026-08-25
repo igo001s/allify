@@ -126,16 +126,20 @@ export const it = {
 		toastCloseButtonAltText: 'Icona per chiudere la notifica'
 	},
 	homePage: {
-		title: 'Scopri la tua identità musicale e connettiti attraverso la musica | Allify',
+		title: 'Scopri la tua identità musicale | Allify',
 		homePageMetaDescription:
-			'Scopri la tua identità musicale con Allify. Scopri gli artisti e i brani che ascolti di più, personalizza il tuo profilo e connettiti con altri amanti della musica.',
+			'Scopri la tua identità musicale con Allify. Scopri i tuoi artisti e brani più ascoltati, personalizza il tuo profilo musicale e condividi i tuoi gusti con una community appassionata di musica.',
 		homePageMetaOgAndTwitterContent:
-			'Scopri la tua identità musicale con Allify. Scopri gli artisti e i brani che ascolti di più, personalizza il tuo profilo e connettiti con altri amanti della musica.',
+			'Scopri la tua identità musicale con Allify. Scopri i tuoi artisti e brani più ascoltati, personalizza il tuo profilo musicale e condividi i tuoi gusti con una community appassionata di musica.',
+		homePageMetaKeywords:
+			'identità musicale, gusti musicali, profilo musicale, artisti più ascoltati, brani più ascoltati, community musicale, statistiche musicali, Allify',
 		homePageHeroSectionHeading1: 'Scopri cosa dice di te la tua musica',
 		homePageHeroSectionParagraph1:
-			'Scopri i tuoi artisti e brani più ascoltati, personalizza il tuo profilo musicale e condividi la tua passione per la musica con una community di appassionati.',
-		alliMascotPointingToLeftAltText: 'Alli indica verso sinistra e segnala l’azione',
-		alliMascotPointingDownwardsAltText: 'Alli indica verso il basso e segnala l’azione',
+			'Scopri i tuoi artisti e brani più ascoltati, personalizza il tuo profilo musicale e condividi ciò che ami con una community appassionata di musica.',
+		alliMascotPointingToLeftAltText:
+			'Alli che indica verso sinistra, indicando il pulsante di azione',
+		alliMascotPointingDownwardsAltText:
+			'Alli che indica verso il basso, indicando il pulsante di azione',
 		homePageHeroSectionButton1: 'Scopri la mia musica',
 		homePageHeroSectionButton1v2: 'Vai al mio profilo musicale',
 		homePageHeroSectionButton1AriaLabel: 'Scopri la mia musica',
@@ -145,7 +149,7 @@ export const it = {
 			'Collega le tue piattaforme di streaming e trasforma le tue abitudini di ascolto in un’esperienza musicale personalizzata, con i tuoi artisti e brani riuniti in un unico posto.',
 		connectPlatformSpotifyAltText: 'Icona di Spotify',
 		connectPlatformSpotifyDescription:
-			'Collega Spotify ad Allify per scoprire gli artisti e i brani che ascolti di più e conoscere meglio i tuoi gusti musicali.',
+			'Collega Spotify ad Allify per scoprire i tuoi artisti e brani più ascoltati e conoscere meglio i tuoi gusti musicali.',
 		connectPlatformDeezerAltText: 'Icona di Deezer',
 		connectPlatformDeezerDescription:
 			'Collega Deezer ad Allify per esplorare ciò che ascolti di più e creare un profilo che rappresenti la tua identità musicale.',
