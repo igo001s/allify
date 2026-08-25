@@ -307,6 +307,7 @@ export const es = {
 		title: 'Perfil | Allify',
 		profilePageMetaDescription:
 			'Consulta tu perfil público, comparte tus estadísticas de escucha, canciones favoritas, playlists y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
+		profilePageMetaKeywords: 'música más escuchada, canción del momento, música personalizada, artista más escuchado, artista del momento, artista personalizado, perfil musical, estadísticas musicales, perfil de música, comunidad musical',
 		profilePageMetaOgAndTwitterContent:
 			'Consulta tu perfil público, comparte tus estadísticas de escucha, canciones favoritas, playlists y álbumes guardados, y conecta tus plataformas de streaming para obtener información personalizada.',
 		profilePageImageAltText: 'Foto de perfil de',

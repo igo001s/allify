@@ -87,6 +87,7 @@
 	<!-- General -->
 	<title>{$translationsStore.profilePage.title}</title>
 	<meta name="description" content={$translationsStore.profilePage.profilePageMetaDescription} />
+	<meta name="keywords" content={$translationsStore.profilePage.profilePageMetaKeywords} />
 	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />

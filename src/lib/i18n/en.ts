@@ -301,6 +301,7 @@ export const en = {
 		title: 'Profile | Allify',
 		profilePageMetaDescription:
 			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
+		profilePageMetaKeywords: 'most listened-to music, song of the moment, personalized music, most listened-to artist, artist of the moment, personalized artist, music profile, music statistics, music profile, music community',
 		profilePageMetaOgAndTwitterContent:
 			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
 		profilePageImageAltText: 'Profile picture of',

@@ -280,6 +280,7 @@ export const zh = {
 		title: '个人资料 | Allify',
 		profilePageMetaDescription:
 			'查看您的公开个人资料，分享您的收听统计、喜欢的歌曲、播放列表和已保存的专辑，并连接您的流媒体平台以获取个性化洞察。',
+		profilePageMetaKeywords: '最常听的音乐, 此刻歌曲, 个性化音乐, 最常听的艺术家, 此刻艺术家, 个性化艺术家, 音乐资料, 音乐统计, 音乐资料, 音乐社区',
 		profilePageMetaOgAndTwitterContent:
 			'查看您的公开个人资料，分享您的收听统计、喜欢的歌曲、播放列表和已保存的专辑，并连接您的流媒体平台以获取个性化洞察。',
 		profilePageImageAltText: '个人资料照片：',
