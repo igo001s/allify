@@ -488,6 +488,8 @@ export const it = {
 		title: 'Impostazioni | Allify',
 		settingsPageMetaDescription:
 			'Gestisci le tue connessioni alle piattaforme di streaming, visualizza quali account sono attivi e disconnettiti quando vuoi.',
+		settingsPageMetaKeywords:
+			'Impostazioni, Allify, Connessioni di Streaming, Account Attivi, Disconnetti Account, Gestione Account, Preferenze Utente, Impostazioni del Profilo, Impostazioni della Privacy, Impostazioni dell’Account, Personalizzazione dell’Esperienza, Controllo Accessi, Sicurezza dell’Account, Impostazioni Notifiche, Impostazioni di Visibilità',
 		settingsPageMetaOgAndTwitterContent:
 			'Gestisci le tue connessioni alle piattaforme di streaming, visualizza quali account sono attivi e disconnettiti quando vuoi.',
 		settingsPageHeading1: 'Impostazioni',

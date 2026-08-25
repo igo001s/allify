@@ -475,6 +475,8 @@ export const pt = {
 		title: 'Configurações | Allify',
 		settingsPageMetaDescription:
 			'Gerencie suas conexões com plataformas de streaming, visualize quais contas estão ativas e desconecte quando quiser.',
+		settingsPageMetaKeywords:
+			'Configurações, Allify, Conexões de Streaming, Contas Ativas, Desconectar Contas, Gerenciamento de Contas, Preferências do Usuário, Configurações de Perfil, Configurações de Privacidade, Configurações de Conta, Personalização da Experiência, Controle de Acesso, Segurança da Conta, Configurações de Notificações, Configurações de Visibilidade',
 		settingsPageMetaOgAndTwitterContent:
 			'Gerencie suas conexões com plataformas de streaming, visualize quais contas estão ativas e desconecte quando quiser.',
 		settingsPageHeading1: 'Configurações',

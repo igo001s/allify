@@ -494,6 +494,8 @@ export const fr = {
 		title: 'Paramètres | Allify',
 		settingsPageMetaDescription:
 			'Gérez vos connexions aux plateformes de streaming, voyez quels comptes sont actifs et déconnectez-vous quand vous le souhaitez.',
+		settingsPageMetaKeywords:
+			'Paramètres, Allify, Connexions de Streaming, Comptes Actifs, Déconnecter des Comptes, Gestion des Comptes, Préférences Utilisateur, Paramètres du Profil, Paramètres de Confidentialité, Paramètres du Compte, Personnalisation de l’Expérience, Contrôle d’Accès, Sécurité du Compte, Paramètres de Notification, Paramètres de Visibilité',
 		settingsPageMetaOgAndTwitterContent:
 			'Gérez vos connexions aux plateformes de streaming, voyez quels comptes sont actifs et déconnectez-vous quand vous le souhaitez.',
 		settingsPageHeading1: 'Paramètres',

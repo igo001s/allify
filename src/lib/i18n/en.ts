@@ -459,6 +459,8 @@ export const en = {
 		title: 'Settings | Allify',
 		settingsPageMetaDescription:
 			'Manage your connections with streaming platforms, view which accounts are active, and disconnect whenever you want.',
+		settingsPageMetaKeywords:
+			'Settings, Allify, Streaming Connections, Active Accounts, Disconnect Accounts, Account Management, User Preferences, Profile Settings, Privacy Settings, Account Settings, Experience Personalization, Access Control, Account Security, Notification Settings, Visibility Settings',
 		settingsPageMetaOgAndTwitterContent:
 			'Manage your connections with streaming platforms, view which accounts are active, and disconnect whenever you want.',
 		settingsPageHeading1: 'Settings',
