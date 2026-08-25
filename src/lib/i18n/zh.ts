@@ -2,7 +2,9 @@ export const zh = {
 	language: 'zh',
 	locale: 'zh-CN',
 	configuration: {
-		langAttribute: 'zh_CN'
+		langAttribute: 'zh_CN',
+		allifyDescription:
+			'通过 Allify 发现您的音乐身份。查看您最常听的艺术家和歌曲，个性化您的音乐资料，并与充满热情的音乐社区分享您的品味。'
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Allify 彩色标志',

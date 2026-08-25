@@ -18,6 +18,7 @@
 		'termsOfServicePage',
 		$translationsStore.locale,
 		$translationsStore.legalPages.termsOfService.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.legalPages.termsOfService.termsOfServiceMetaDescription
 	)}</script>`}
 	<!-- General -->

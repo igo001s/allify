@@ -2,7 +2,9 @@ export const en = {
 	language: 'en',
 	locale: 'en-US',
 	configuration: {
-		langAttribute: 'en_US'
+		langAttribute: 'en_US',
+		allifyDescription:
+			'Discover your musical identity with Allify. See your most listened to artists and songs, personalize your music profile, and share your taste with a passionate music community.'
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Colorful Allify logo',

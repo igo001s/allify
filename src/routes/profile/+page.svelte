@@ -81,6 +81,7 @@
 		'profilePage',
 		$translationsStore.locale,
 		$translationsStore.profilePage.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.profilePage.profilePageMetaDescription
 	)}</script>`}
 	<!-- General -->

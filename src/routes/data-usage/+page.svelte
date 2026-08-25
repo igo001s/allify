@@ -18,6 +18,7 @@
 		'dataUsagePage',
 		$translationsStore.locale,
 		$translationsStore.legalPages.dataUsage.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.legalPages.dataUsage.dataUsageMetaDescription
 	)}</script>`}
 	<!-- General -->

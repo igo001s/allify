@@ -20,6 +20,7 @@
 		'homePage',
 		$translationsStore.locale,
 		$translationsStore.homePage.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.homePage.homePageMetaDescription
 	)}</script>`}
 	<!-- General -->

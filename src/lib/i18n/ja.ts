@@ -2,7 +2,9 @@ export const ja = {
 	language: 'ja',
 	locale: 'ja-JP',
 	configuration: {
-		langAttribute: 'ja_JP'
+		langAttribute: 'ja_JP',
+		allifyDescription:
+			'Allifyであなたの音楽的アイデンティティを発見しましょう。最も聴いたアーティストや曲を確認し、音楽プロフィールをカスタマイズし、音楽に情熱を持つコミュニティとあなたの好みを共有しましょう。'
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Allifyのカラフルなロゴ',

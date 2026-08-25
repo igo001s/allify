@@ -21,6 +21,7 @@
 		'settingsPage',
 		$translationsStore.locale,
 		$translationsStore.settingsPage.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.settingsPage.settingsPageMetaDescription
 	)}</script>`}
 	<!-- General -->

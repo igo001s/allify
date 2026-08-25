@@ -67,6 +67,7 @@
 		'musicCommunityPageUser',
 		$translationsStore.locale,
 		$translationsStore.musicCommunityPage.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription,
 		$page.params.id
 	)}</script>`}

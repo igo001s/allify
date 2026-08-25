@@ -134,6 +134,7 @@
 		'discoveriesPage',
 		$translationsStore.locale,
 		$translationsStore.discoveriesPage.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.discoveriesPage.discoveriesPageMetaDescription
 	)}</script>`}
 	<!-- General -->

@@ -18,6 +18,7 @@
 		'privacyPolicyPage',
 		$translationsStore.locale,
 		$translationsStore.legalPages.privacyPolicy.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.legalPages.privacyPolicy.privacyPolicyMetaDescription
 	)}</script>`}
 	<!-- General -->

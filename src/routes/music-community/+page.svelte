@@ -53,6 +53,7 @@
 		'musicCommunityPage',
 		$translationsStore.locale,
 		$translationsStore.musicCommunityPage.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
 	)}</script>`}
 	<!-- General -->

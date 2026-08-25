@@ -2,7 +2,9 @@ export const ru = {
 	language: 'ru',
 	locale: 'ru-RU',
 	configuration: {
-		langAttribute: 'ru_RU'
+		langAttribute: 'ru_RU',
+		allifyDescription:
+			'Откройте для себя свою музыкальную идентичность с Allify. Смотрите своих самых прослушиваемых исполнителей и песни, персонализируйте свой музыкальный профиль и делитесь своими вкусами с увлечённым музыкальным сообществом.'
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Цветной логотип Allify',

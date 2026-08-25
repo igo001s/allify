@@ -24,6 +24,7 @@
 		'myMusicalProfilePage',
 		$translationsStore.locale,
 		$translationsStore.myMusicalProfilePage.title,
+		$translationsStore.configuration.allifyDescription,
 		$translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription
 	)}</script>`}
 	<!-- General -->

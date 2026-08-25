@@ -1,27 +1,33 @@
-const allifyOrganizationLd = {
-	'@type': 'Organization',
-	'@id': 'https://allify.club/#organization',
-	name: 'Allify',
-	url: 'https://allify.club/'
-};
-
-const allifyWebsiteLd = {
-	'@type': 'WebSite',
-	'@id': 'https://allify.club/#website',
-	name: 'Allify',
-	url: 'https://allify.club/',
-	publisher: {
-		'@id': 'https://allify.club/#organization'
-	}
-};
-
 export function getJsonLdByPage(
 	page: string,
 	locale: string,
 	name: string,
+	allifyDescription: string,
 	description: string,
 	id?: string
 ): string {
+	const allifyOrganizationLd = {
+		'@type': 'Organization',
+		'@id': 'https://allify.club/#organization',
+		name: 'Allify',
+		url: 'https://allify.club/',
+		logo: {
+			'@type': 'ImageObject',
+			url: 'https://allify.club/public-logo/allify-logo.png'
+		},
+		description: allifyDescription
+	};
+
+	const allifyWebsiteLd = {
+		'@type': 'WebSite',
+		'@id': 'https://allify.club/#website',
+		name: 'Allify',
+		url: 'https://allify.club/',
+		publisher: {
+			'@id': 'https://allify.club/#organization'
+		}
+	};
+
 	switch (page) {
 		case 'homePage': {
 			return JSON.stringify({
@@ -50,7 +56,7 @@ export function getJsonLdByPage(
 					allifyOrganizationLd,
 					allifyWebsiteLd,
 					{
-						'@type': 'WebPage',
+						'@type': 'ProfilePage',
 						'@id': 'https://allify.club/my-musical-profile#webpage',
 						url: 'https://allify.club/my-musical-profile',
 						name,
@@ -114,7 +120,7 @@ export function getJsonLdByPage(
 					allifyOrganizationLd,
 					allifyWebsiteLd,
 					{
-						'@type': 'WebPage',
+						'@type': 'ProfilePage',
 						'@id': `https://allify.club/music-community/${id}#webpage`,
 						url: `https://allify.club/music-community/${id}`,
 						name,
@@ -134,7 +140,7 @@ export function getJsonLdByPage(
 					allifyOrganizationLd,
 					allifyWebsiteLd,
 					{
-						'@type': 'WebPage',
+						'@type': 'ProfilePage',
 						'@id': `https://allify.club/profile#webpage`,
 						url: `https://allify.club/profile`,
 						name,
