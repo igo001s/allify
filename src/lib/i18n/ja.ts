@@ -199,6 +199,7 @@ export const ja = {
 		title: '音乐发现 | Allify',
 		discoveriesPageMetaDescription:
 			'使用Alli发现新音乐。根据你的音乐喜好，获取个性化的艺术家和歌曲推荐。',
+		discoveriesPageMetaKeywords: '音乐发现, 音乐推荐, 推荐艺术家, 推荐歌曲, 探索新音乐, 扩展音乐品味, Allify',
 		discoveriesPageMetaOgAndTwitterContent: '通过Alli发现专为你推荐的艺术家和歌曲。',
 		discoveriesPageHeading1: '用Alli发现新音乐',
 		discoveriesPageParagraph1:

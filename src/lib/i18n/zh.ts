@@ -191,6 +191,7 @@ export const zh = {
 		title: '音楽の発見 | Allify',
 		discoveriesPageMetaDescription:
 			'Alliと一緒に新しい音楽を見つけましょう。あなたの音楽の好みに基づいて、アーティストや楽曲のパーソナライズされたおすすめを受け取れます。',
+		discoveriesPageMetaKeywords: '音楽の発見, 音楽のおすすめ, おすすめアーティスト, おすすめ楽曲, 新しい音楽を探す, 音楽の好みを広げる, Allify',
 		discoveriesPageMetaOgAndTwitterContent:
 			'Alliで、あなたのためにおすすめされたアーティストや楽曲を発見しましょう。',
 		discoveriesPageHeading1: 'Alliで新しい音楽を発見',

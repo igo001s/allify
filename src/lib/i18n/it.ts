@@ -204,6 +204,7 @@ export const it = {
 		title: 'Scoperte Musicali | Allify',
 		discoveriesPageMetaDescription:
 			'Scopri nuova musica con Alli. Ricevi consigli personalizzati su artisti e brani in base ai tuoi gusti musicali.',
+		discoveriesPageMetaKeywords: 'scoperte musicali, consigli musicali, artisti consigliati, brani consigliati, esplora nuova musica, amplia i tuoi gusti musicali, Allify',
 		discoveriesPageMetaOgAndTwitterContent:
 			'Scopri artisti e brani consigliati appositamente per te con Alli.',
 		discoveriesPageHeading1: 'Scopri nuova musica con Alli',

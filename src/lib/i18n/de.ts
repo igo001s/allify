@@ -201,6 +201,7 @@ export const de = {
 		title: 'Musikentdeckungen | Allify',
 		discoveriesPageMetaDescription:
 			'Finde neue Musik mit Alli. Erhalte personalisierte Empfehlungen für Künstler und Songs basierend auf deinem Musikgeschmack.',
+		discoveriesPageMetaKeywords: 'musikentdeckungen, musikempfehlungen, empfohlene künstler, empfohlene songs, neue musik entdecken, musikgeschmack erweitern, Allify',
 		discoveriesPageMetaOgAndTwitterContent:
 			'Entdecke mit Alli Künstler und Songs, die speziell für dich empfohlen wurden.',
 		discoveriesPageHeading1: 'Entdecke neue Musik mit Alli',
