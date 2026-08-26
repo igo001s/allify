@@ -258,6 +258,7 @@ export const ru = {
 			title: 'Профиль {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'Узнайте, что {userName} слушает чаще всего, откройте для себя самые прослушиваемые песни и исполнителей, прочитайте комментарии в профиле и оставьте свой.',
+			musicCommunityPageMetaKeywords: 'публичный профиль, профиль пользователя, музыкальное сообщество, самые прослушиваемые исполнители, самые прослушиваемые песни, комментарии пользователей, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'Узнайте, что {userName} слушает чаще всего, откройте для себя самые прослушиваемые песни и исполнителей, прочитайте комментарии в профиле и оставьте свой.',
 			musicCommunityPagePublicUserImageAltText: 'Фото профиля',

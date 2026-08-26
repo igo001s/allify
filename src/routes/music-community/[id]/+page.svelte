@@ -91,6 +91,10 @@
 				: $translationsStore.musicCommunityPage.noUserFound
 						.musicCommunityPageNoUserFoundMetaDescription}
 	/>
+	<meta
+		name="keywords"
+		content={$translationsStore.musicCommunityPage.publicUser.musicCommunityPageMetaKeywords}
+	/>
 	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />

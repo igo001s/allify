@@ -254,6 +254,7 @@ export const en = {
 			title: '{userName}’s Profile | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'See what {userName} listens to most, discover their most-played songs and artists, read comments left on their profile, and leave your own.',
+			musicCommunityPageMetaKeywords: 'public profile, user profile, music community, most-listened-to artists, most-listened-to songs, user comments, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'See what {userName} listens to most, discover their most-played songs and artists, read comments left on their profile, and leave your own.',
 			musicCommunityPagePublicUserImageAltText: 'Profile picture of',

@@ -259,6 +259,7 @@ export const it = {
 			title: 'Profilo di {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'Scopri cosa ascolta di più {userName}, trova le sue canzoni e i suoi artisti più ascoltati, leggi i commenti lasciati sul suo profilo e lascia anche il tuo.',
+			musicCommunityPageMetaKeywords: 'profilo pubblico, profilo utente, community musicale, artisti più ascoltati, brani più ascoltati, commenti degli utenti, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'Scopri cosa ascolta di più {userName}, trova le sue canzoni e i suoi artisti più ascoltati, leggi i commenti lasciati sul suo profilo e lascia anche il tuo.',
 			musicCommunityPagePublicUserImageAltText: 'Foto del profilo di',

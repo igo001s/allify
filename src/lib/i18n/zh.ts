@@ -240,6 +240,7 @@ export const zh = {
 			title: '{userName}的个人资料 | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'查看{userName}最常听的音乐，发现他最常听的歌曲和艺术家，浏览个人资料中的评论，也留下你的评论。',
+			musicCommunityPageMetaKeywords: '公开个人资料, 用户个人资料, 音乐社区, 最常听的艺术家, 最常听的歌曲, 用户评论, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'查看{userName}最常听的音乐，发现他最常听的歌曲和艺术家，浏览个人资料中的评论，也留下你的评论。',
 			musicCommunityPagePublicUserImageAltText: '的个人资料照片',

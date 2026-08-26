@@ -260,6 +260,7 @@ export const es = {
 			title: 'Perfil de {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'Descubre lo que más escucha {userName}, encuentra sus canciones y artistas más escuchados, consulta los comentarios de su perfil y deja el tuyo.',
+			musicCommunityPageMetaKeywords: 'perfil público, perfil de usuario, comunidad musical, artistas más escuchados, canciones más escuchadas, comentarios de usuarios, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'Descubre lo que más escucha {userName}, encuentra sus canciones y artistas más escuchados, consulta los comentarios de su perfil y deja el tuyo.',
 			musicCommunityPagePublicUserImageAltText: 'Foto de perfil de',

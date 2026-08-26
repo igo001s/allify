@@ -251,6 +251,7 @@ export const ja = {
 			title: '{userName}のプロフィール | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'{userName}がよく聴いている音楽を見たり、よく聴かれている曲やアーティストを発見したり、プロフィールに投稿されたコメントを確認したり、自分でもコメントを残したりできます。',
+			musicCommunityPageMetaKeywords: '公開プロフィール, ユーザープロフィール, 音楽コミュニティ, よく聴かれているアーティスト, よく聴かれている曲, ユーザーコメント, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'{userName}がよく聴いている音楽を見たり、よく聴かれている曲やアーティストを発見したり、プロフィールに投稿されたコメントを確認したり、自分でもコメントを残したりできます。',
 			musicCommunityPagePublicUserImageAltText: 'のプロフィール写真',
