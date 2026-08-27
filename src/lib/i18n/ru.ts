@@ -303,7 +303,25 @@ export const ru = {
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Артисты пользователя',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1:
 				'Самый прослушиваемый артист пользователя',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Артист момента пользователя'
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Артист момента пользователя',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v1: 'Музыка момента не выбрана',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2:
+				'Персонализированная музыка не выбрана',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: 'Значок пустой музыки',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: 'Музыка момента отсутствует',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
+				'Персонализированная музыка отсутствует',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
+				'Похоже, музыка ещё не добавлена. Как только {publicUserName} добавит её, она появится здесь.',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1: 'Артист момента не выбран',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
+				'Персонализированный артист не выбран',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText: 'Значок пустого артиста',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1: 'Артист момента отсутствует',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
+				'Персонализированный артист отсутствует',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
+				'Похоже, артисты ещё не добавлены. Как только {publicUserName} добавит их, они появятся здесь.'
 		},
 		noUserFound: {
 			title: 'Профиль не найден | Allify',

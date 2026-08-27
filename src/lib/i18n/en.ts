@@ -297,7 +297,24 @@ export const en = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Song of the moment by',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Artists by',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Most-listened-to artist by',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artist of the moment by'
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artist of the moment by',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v1:
+				'No Song of the Moment selected',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2: 'No custom song selected',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: 'Empty music icon',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: 'Song of the Moment is empty',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2: 'Custom song is empty',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
+				'It looks like no songs have been added yet. Once {publicUserName} adds some, they will appear here.',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
+				'No Artist of the Moment selected',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2: 'No custom artist selected',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText: 'Empty artist icon',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1:
+				'Artist of the Moment is empty',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2: 'Custom artist is empty',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
+				'It looks like no artists have been added yet. Once {publicUserName} adds some, they will appear here.'
 		},
 		noUserFound: {
 			title: 'Profile Not Found | Allify',

@@ -300,7 +300,28 @@ export const de = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Song des Moments von',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Künstler von',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Meistgehörter Künstler von',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Künstler des Moments von'
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Künstler des Moments von',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v1:
+				'Kein Song des Moments ausgewählt',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2:
+				'Kein benutzerdefinierter Song ausgewählt',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: 'Symbol für leere Musik',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: 'Song des Moments ist leer',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
+				'Benutzerdefinierter Song ist leer',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
+				'Es scheint, dass noch kein Song hinzugefügt wurde. Sobald {publicUserName} welche hinzufügt, werden sie hier angezeigt.',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
+				'Kein Künstler des Moments ausgewählt',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
+				'Kein benutzerdefinierter Künstler ausgewählt',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText: 'Symbol für leeren Künstler',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1:
+				'Künstler des Moments ist leer',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
+				'Benutzerdefinierter Künstler ist leer',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
+				'Es scheint, dass noch kein Künstler hinzugefügt wurde. Sobald {publicUserName} welche hinzufügt, werden sie hier angezeigt.'
 		},
 		noUserFound: {
 			title: 'Profil nicht gefunden | Allify',

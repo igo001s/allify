@@ -276,7 +276,21 @@ export const zh = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: '本月歌曲',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: '的艺人',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: '最常听的艺人',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: '本月艺人'
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: '本月艺人',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v1: '尚未选择当前音乐',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2: '尚未选择自定义音乐',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: '空音乐图标',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: '当前音乐为空',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2: '自定义音乐为空',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
+				'看起来还没有添加任何音乐。{publicUserName} 添加音乐后，它们会显示在这里。',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1: '尚未选择当前艺人',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2: '尚未选择自定义艺人',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText: '空艺人图标',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1: '当前艺人为空',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2: '自定义艺人为空',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
+				'看起来还没有添加任何艺人。{publicUserName} 添加艺人后，他们会显示在这里。'
 		},
 		noUserFound: {
 			title: '未找到个人资料 | Allify',

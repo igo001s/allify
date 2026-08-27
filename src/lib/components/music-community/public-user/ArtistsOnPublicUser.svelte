@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Components
 	import ArtistsOnPublicUserItem from './ArtistsOnPublicUserItem.svelte';
+	import EmptyArtistOnPublicUser from './EmptyArtistOnPublicUser.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -9,7 +10,7 @@
 	import type { PublicUserInfo } from '$lib/types/UserInfo.type';
 
 	// Props
-	export let publicUser: PublicUserInfo | null;
+	export let publicUser: PublicUserInfo;
 
 	$: artistItems = [
 		{
@@ -34,7 +35,7 @@
 			{#if artistItem}
 				<ArtistsOnPublicUserItem artistItem={{ artist: artistItem, type }} {publicUser} />
 			{:else}
-				<p>Sem artista disponível</p>
+				<EmptyArtistOnPublicUser publicUserName={publicUser.name} artistType={type} />
 			{/if}
 		{/each}
 	</div>

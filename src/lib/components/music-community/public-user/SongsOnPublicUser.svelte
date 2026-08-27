@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Components
 	import SongsOnPublicUserItem from '$lib/components/music-community/public-user/SongsOnPublicUserItem.svelte';
+	import EmptyMusicOnPublicUser from '$lib/components/music-community/public-user/EmptyMusicOnPublicUser.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -9,7 +10,7 @@
 	import type { PublicUserInfo } from '$lib/types/UserInfo.type';
 
 	// Props
-	export let publicUser: PublicUserInfo | null;
+	export let publicUser: PublicUserInfo;
 
 	$: songsItems = [
 		{
@@ -33,7 +34,7 @@
 			{#if trackItem}
 				<SongsOnPublicUserItem trackItem={{ track: trackItem, type }} {publicUser} />
 			{:else}
-				<p>Sem música disponível</p>
+				<EmptyMusicOnPublicUser publicUserName={publicUser?.name} musicType={type} />
 			{/if}
 		{/each}
 	</div>

@@ -303,7 +303,29 @@ export const es = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Canción del momento de',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Artistas de',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Artista más escuchado de',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artista del momento de'
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artista del momento de',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v1:
+				'No se ha seleccionado ninguna canción del momento',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2:
+				'No se ha seleccionado ninguna canción personalizada',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: 'Icono de música vacía',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1:
+				'La canción del momento está vacía',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
+				'La canción personalizada está vacía',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
+				'Parece que todavía no se ha añadido ninguna canción. Cuando {publicUserName} añada alguna, aparecerá aquí.',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
+				'No se ha seleccionado ningún artista del momento',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
+				'No se ha seleccionado ningún artista personalizado',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText: 'Icono de artista vacío',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1:
+				'El artista del momento está vacío',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
+				'El artista personalizado está vacío',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
+				'Parece que todavía no se ha añadido ningún artista. Cuando {publicUserName} añada alguno, aparecerá aquí.'
 		},
 		noUserFound: {
 			title: 'Perfil no encontrado | Allify',
