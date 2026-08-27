@@ -8,7 +8,7 @@
 
 	// Types
 	import type { ArtistSpotify } from '$lib/types/Spotify.type';
-	import type { PublicUserInfo } from "$lib/types/UserInfo.type";
+	import type { PublicUserInfo } from '$lib/types/UserInfo.type';
 
 	// Props
 	export let publicUser: PublicUserInfo | null;
@@ -23,9 +23,13 @@
 		class={`text-xs font-semibold tracking-[0.18em] text-t-secondary ${artistItem.type !== 'customArtist' ? 'uppercase' : ''}`}
 	>
 		{#if artistItem.type === 'mostListenedArtist'}
-			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1} {publicUser?.name}
+			{$translationsStore.musicCommunityPage.publicUser
+				.musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1}
+			{publicUser?.name}
 		{:else if artistItem.type === 'artistOfTheMoment'}
-			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2} {publicUser?.name}
+			{$translationsStore.musicCommunityPage.publicUser
+				.musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2}
+			{publicUser?.name}
 		{:else if artistItem.type === 'customArtist'}
 			{publicUser?.artists?.customArtist?.title}
 		{/if}

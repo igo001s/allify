@@ -201,7 +201,8 @@ export const de = {
 		title: 'Musikentdeckungen | Allify',
 		discoveriesPageMetaDescription:
 			'Finde neue Musik mit Alli. Erhalte personalisierte Empfehlungen für Künstler und Songs basierend auf deinem Musikgeschmack.',
-		discoveriesPageMetaKeywords: 'musikentdeckungen, musikempfehlungen, empfohlene künstler, empfohlene songs, neue musik entdecken, musikgeschmack erweitern, Allify',
+		discoveriesPageMetaKeywords:
+			'musikentdeckungen, musikempfehlungen, empfohlene künstler, empfohlene songs, neue musik entdecken, musikgeschmack erweitern, Allify',
 		discoveriesPageMetaOgAndTwitterContent:
 			'Entdecke mit Alli Künstler und Songs, die speziell für dich empfohlen wurden.',
 		discoveriesPageHeading1: 'Entdecke neue Musik mit Alli',
@@ -258,7 +259,8 @@ export const de = {
 			title: 'Profil von {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'Entdecke, was {userName} am meisten hört, finde die meistgehörten Songs und Künstler, sieh dir Kommentare im Profil an und hinterlasse selbst einen.',
-			musicCommunityPageMetaKeywords: 'öffentliches Profil, Benutzerprofil, Musik-Community, meistgehörte Künstler, meistgehörte Songs, Benutzerkommentare, Allify',
+			musicCommunityPageMetaKeywords:
+				'öffentliches Profil, Benutzerprofil, Musik-Community, meistgehörte Künstler, meistgehörte Songs, Benutzerkommentare, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'Entdecke, was {userName} am meisten hört, finde die meistgehörten Songs und Künstler, sieh dir Kommentare im Profil an und hinterlasse selbst einen.',
 			musicCommunityPagePublicUserImageAltText: 'Profilbild von',
@@ -298,7 +300,7 @@ export const de = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Song des Moments von',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Künstler von',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Meistgehörter Künstler von',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Künstler des Moments von',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Künstler des Moments von'
 		},
 		noUserFound: {
 			title: 'Profil nicht gefunden | Allify',

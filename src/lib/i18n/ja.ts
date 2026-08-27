@@ -199,7 +199,8 @@ export const ja = {
 		title: '音乐发现 | Allify',
 		discoveriesPageMetaDescription:
 			'使用Alli发现新音乐。根据你的音乐喜好，获取个性化的艺术家和歌曲推荐。',
-		discoveriesPageMetaKeywords: '音乐发现, 音乐推荐, 推荐艺术家, 推荐歌曲, 探索新音乐, 扩展音乐品味, Allify',
+		discoveriesPageMetaKeywords:
+			'音乐发现, 音乐推荐, 推荐艺术家, 推荐歌曲, 探索新音乐, 扩展音乐品味, Allify',
 		discoveriesPageMetaOgAndTwitterContent: '通过Alli发现专为你推荐的艺术家和歌曲。',
 		discoveriesPageHeading1: '用Alli发现新音乐',
 		discoveriesPageParagraph1:
@@ -252,7 +253,8 @@ export const ja = {
 			title: '{userName}のプロフィール | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'{userName}がよく聴いている音楽を見たり、よく聴かれている曲やアーティストを発見したり、プロフィールに投稿されたコメントを確認したり、自分でもコメントを残したりできます。',
-			musicCommunityPageMetaKeywords: '公開プロフィール, ユーザープロフィール, 音楽コミュニティ, よく聴かれているアーティスト, よく聴かれている曲, ユーザーコメント, Allify',
+			musicCommunityPageMetaKeywords:
+				'公開プロフィール, ユーザープロフィール, 音楽コミュニティ, よく聴かれているアーティスト, よく聴かれている曲, ユーザーコメント, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'{userName}がよく聴いている音楽を見たり、よく聴かれている曲やアーティストを発見したり、プロフィールに投稿されたコメントを確認したり、自分でもコメントを残したりできます。',
 			musicCommunityPagePublicUserImageAltText: 'のプロフィール写真',
@@ -292,7 +294,7 @@ export const ja = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'の今月の楽曲',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'のアーティスト',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'が最もよく聴いているアーティスト',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'の今月のアーティスト',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'の今月のアーティスト'
 		},
 		noUserFound: {
 			title: 'プロフィールが見つかりません | Allify',

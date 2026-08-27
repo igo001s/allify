@@ -8,10 +8,10 @@
 
 	// Types
 	import type { TrackSpotify } from '$lib/types/Spotify.type';
-    import type { PublicUserInfo } from "$lib/types/UserInfo.type";
+	import type { PublicUserInfo } from '$lib/types/UserInfo.type';
 
 	// Props
-    export let publicUser: PublicUserInfo | null;
+	export let publicUser: PublicUserInfo | null;
 	export let trackItem: {
 		track: TrackSpotify;
 		type: string;
@@ -23,9 +23,13 @@
 		class={`text-xs font-semibold tracking-[0.18em] text-t-secondary ${trackItem.type !== 'customTrack' ? 'uppercase' : ''}`}
 	>
 		{#if trackItem.type === 'mostListenedTrack'}
-			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserSongsOnPublicUserHeading3v1} {publicUser?.name}
+			{$translationsStore.musicCommunityPage.publicUser
+				.musicCommunityPagePublicUserSongsOnPublicUserHeading3v1}
+			{publicUser?.name}
 		{:else if trackItem.type === 'trackOfTheMoment'}
-			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserSongsOnPublicUserHeading3v2} {publicUser?.name}
+			{$translationsStore.musicCommunityPage.publicUser
+				.musicCommunityPagePublicUserSongsOnPublicUserHeading3v2}
+			{publicUser?.name}
 		{:else if trackItem.type === 'customTrack'}
 			{publicUser?.tracks?.customTrack?.title}
 		{/if}

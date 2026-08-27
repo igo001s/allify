@@ -143,10 +143,7 @@
 		name="description"
 		content={$translationsStore.discoveriesPage.discoveriesPageMetaDescription}
 	/>
-	<meta
-		name="keywords"
-		content={$translationsStore.discoveriesPage.discoveriesPageMetaKeywords}
-	/>
+	<meta name="keywords" content={$translationsStore.discoveriesPage.discoveriesPageMetaKeywords} />
 	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />

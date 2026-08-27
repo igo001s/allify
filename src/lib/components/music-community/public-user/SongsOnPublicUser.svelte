@@ -5,11 +5,11 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
-    // Types
-    import type { PublicUserInfo } from "$lib/types/UserInfo.type";
+	// Types
+	import type { PublicUserInfo } from '$lib/types/UserInfo.type';
 
 	// Props
-    export let publicUser: PublicUserInfo | null;
+	export let publicUser: PublicUserInfo | null;
 
 	$: songsItems = [
 		{
@@ -23,7 +23,9 @@
 
 <section class="space-y-7">
 	<h2 class="text-xl font-semibold text-t-primary sm:text-2xl">
-		{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserSongsOnPublicUserHeading2} {publicUser?.name}
+		{$translationsStore.musicCommunityPage.publicUser
+			.musicCommunityPagePublicUserSongsOnPublicUserHeading2}
+		{publicUser?.name}
 	</h2>
 
 	<div class="flex flex-col gap-8 xl:flex-row">

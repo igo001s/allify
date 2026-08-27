@@ -200,7 +200,8 @@ export const en = {
 		title: 'Music Discoveries | Allify',
 		discoveriesPageMetaDescription:
 			'Find new music with Alli. Get personalized recommendations for artists and tracks based on your musical taste.',
-		discoveriesPageMetaKeywords: 'music discoveries, music recommendations, recommended artists, recommended tracks, explore new music, expand musical taste, Allify',
+		discoveriesPageMetaKeywords:
+			'music discoveries, music recommendations, recommended artists, recommended tracks, explore new music, expand musical taste, Allify',
 		discoveriesPageMetaOgAndTwitterContent:
 			'Discover artists and songs recommended just for you with Alli.',
 		discoveriesPageHeading1: 'Discover new music with Alli',
@@ -255,7 +256,8 @@ export const en = {
 			title: '{userName}’s Profile | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'See what {userName} listens to most, discover their most-played songs and artists, read comments left on their profile, and leave your own.',
-			musicCommunityPageMetaKeywords: 'public profile, user profile, music community, most-listened-to artists, most-listened-to songs, user comments, Allify',
+			musicCommunityPageMetaKeywords:
+				'public profile, user profile, music community, most-listened-to artists, most-listened-to songs, user comments, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'See what {userName} listens to most, discover their most-played songs and artists, read comments left on their profile, and leave your own.',
 			musicCommunityPagePublicUserImageAltText: 'Profile picture of',
@@ -295,7 +297,7 @@ export const en = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Song of the moment by',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Artists by',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Most-listened-to artist by',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artist of the moment by',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artist of the moment by'
 		},
 		noUserFound: {
 			title: 'Profile Not Found | Allify',

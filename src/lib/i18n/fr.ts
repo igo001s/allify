@@ -204,7 +204,8 @@ export const fr = {
 		title: 'Découvertes Musicales | Allify',
 		discoveriesPageMetaDescription:
 			'Trouvez de nouvelles musiques avec Alli. Recevez des recommandations personnalisées d’artistes et de morceaux selon vos goûts musicaux.',
-		discoveriesPageMetaKeywords: 'découvertes musicales, recommandations musicales, artistes recommandés, morceaux recommandés, explorer de nouvelles musiques, élargir ses goûts musicaux, Allify',
+		discoveriesPageMetaKeywords:
+			'découvertes musicales, recommandations musicales, artistes recommandés, morceaux recommandés, explorer de nouvelles musiques, élargir ses goûts musicaux, Allify',
 		discoveriesPageMetaOgAndTwitterContent:
 			'Découvrez des artistes et des morceaux recommandés spécialement pour vous avec Alli.',
 		discoveriesPageHeading1: 'Découvrez de nouvelles musiques avec Alli',
@@ -261,7 +262,8 @@ export const fr = {
 			title: 'Profil de {userName} | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'Découvrez ce que {userName} écoute le plus, trouvez ses chansons et artistes les plus écoutés, consultez les commentaires laissés sur son profil et laissez le vôtre.',
-			musicCommunityPageMetaKeywords: 'profil public, profil d’utilisateur, communauté musicale, artistes les plus écoutés, chansons les plus écoutées, commentaires d’utilisateurs, Allify',
+			musicCommunityPageMetaKeywords:
+				'profil public, profil d’utilisateur, communauté musicale, artistes les plus écoutés, chansons les plus écoutées, commentaires d’utilisateurs, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'Découvrez ce que {userName} écoute le plus, trouvez ses chansons et artistes les plus écoutés, consultez les commentaires laissés sur son profil et laissez le vôtre.',
 			musicCommunityPagePublicUserImageAltText: 'Photo de profil de',
@@ -301,7 +303,7 @@ export const fr = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Musique du moment de',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Artistes de',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Artiste le plus écouté de',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artiste du moment de',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artiste du moment de'
 		},
 		noUserFound: {
 			title: 'Profil introuvable | Allify',

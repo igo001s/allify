@@ -191,7 +191,8 @@ export const zh = {
 		title: '音楽の発見 | Allify',
 		discoveriesPageMetaDescription:
 			'Alliと一緒に新しい音楽を見つけましょう。あなたの音楽の好みに基づいて、アーティストや楽曲のパーソナライズされたおすすめを受け取れます。',
-		discoveriesPageMetaKeywords: '音楽の発見, 音楽のおすすめ, おすすめアーティスト, おすすめ楽曲, 新しい音楽を探す, 音楽の好みを広げる, Allify',
+		discoveriesPageMetaKeywords:
+			'音楽の発見, 音楽のおすすめ, おすすめアーティスト, おすすめ楽曲, 新しい音楽を探す, 音楽の好みを広げる, Allify',
 		discoveriesPageMetaOgAndTwitterContent:
 			'Alliで、あなたのためにおすすめされたアーティストや楽曲を発見しましょう。',
 		discoveriesPageHeading1: 'Alliで新しい音楽を発見',
@@ -241,7 +242,8 @@ export const zh = {
 			title: '{userName}的个人资料 | Allify',
 			musicCommunityPagePublicUserMetaDescription:
 				'查看{userName}最常听的音乐，发现他最常听的歌曲和艺术家，浏览个人资料中的评论，也留下你的评论。',
-			musicCommunityPageMetaKeywords: '公开个人资料, 用户个人资料, 音乐社区, 最常听的艺术家, 最常听的歌曲, 用户评论, Allify',
+			musicCommunityPageMetaKeywords:
+				'公开个人资料, 用户个人资料, 音乐社区, 最常听的艺术家, 最常听的歌曲, 用户评论, Allify',
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'查看{userName}最常听的音乐，发现他最常听的歌曲和艺术家，浏览个人资料中的评论，也留下你的评论。',
 			musicCommunityPagePublicUserImageAltText: '的个人资料照片',
@@ -274,7 +276,7 @@ export const zh = {
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: '本月歌曲',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: '的艺人',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: '最常听的艺人',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: '本月艺人',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: '本月艺人'
 		},
 		noUserFound: {
 			title: '未找到个人资料 | Allify',
