@@ -268,7 +268,13 @@ export const zh = {
 			musicCommunityPagePublicUserCloseAddCommentModal: '关闭',
 			musicCommunityPagePublicUserPostComment: '发表评论',
 			musicCommunityPagePublicUserToastSuccessAddCommentMessage: '评论已成功添加到个人资料',
-			musicCommunityPagePublicUserToastErrorAddCommentMessage: '添加评论时出错。请稍后再试。'
+			musicCommunityPagePublicUserToastErrorAddCommentMessage: '添加评论时出错。请稍后再试。',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading2: '的歌曲',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: '最常听的歌曲',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: '本月歌曲',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: '的艺人',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: '最常听的艺人',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: '本月艺人',
 		},
 		noUserFound: {
 			title: '未找到个人资料 | Allify',

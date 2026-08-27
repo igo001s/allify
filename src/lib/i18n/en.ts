@@ -289,7 +289,13 @@ export const en = {
 			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
 				'Comment successfully added on the profile of ',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
-				'An error occurred while adding the comment. Please try again later.'
+				'An error occurred while adding the comment. Please try again later.',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Songs by',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Most-listened-to song by',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Song of the moment by',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Artists by',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Most-listened-to artist by',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artist of the moment by',
 		},
 		noUserFound: {
 			title: 'Profile Not Found | Allify',

@@ -293,7 +293,13 @@ export const ru = {
 			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
 				'Комментарий успешно добавлен в профиль ',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
-				'Произошла ошибка при добавлении комментария. Пожалуйста, попробуйте снова позже.'
+				'Произошла ошибка при добавлении комментария. Пожалуйста, попробуйте снова позже.',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Песни пользователя',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Самая прослушиваемая песня пользователя',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Песня момента пользователя',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Артисты пользователя',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Самый прослушиваемый артист пользователя',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Артист момента пользователя',
 		},
 		noUserFound: {
 			title: 'Профиль не найден | Allify',

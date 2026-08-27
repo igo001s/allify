@@ -14,6 +14,8 @@
 	import PublicUserKeyInformation from '$lib/components/music-community/public-user/PublicUserKeyInformation.svelte';
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
 	import AddCommentModal from '$lib/components/music-community/AddCommentModal.svelte';
+	import ArtistsOnPublicProfile from '$lib/components/music-community/public-user/ArtistsOnPublicUser.svelte';
+	import SongsOnPublicUser from '$lib/components/music-community/public-user/SongsOnPublicUser.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -189,6 +191,12 @@
 					createdAt={user.createdAt}
 					bind:showAddCommentModal
 				/>
+
+				<div class="mt-14 flex w-full flex-col gap-10 lg:gap-14">
+					<SongsOnPublicUser publicUser={user} />
+
+					<ArtistsOnPublicProfile publicUser={user} />
+				</div>
 			</div>
 		{:else}
 			<div

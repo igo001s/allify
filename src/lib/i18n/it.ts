@@ -294,7 +294,13 @@ export const it = {
 			musicCommunityPagePublicUserToastSuccessAddCommentMessage:
 				'Commento aggiunto con successo al profilo di ',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
-				'Si è verificato un errore durante l’aggiunta del commento. Riprova più tardi.'
+				'Si è verificato un errore durante l’aggiunta del commento. Riprova più tardi.',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Canzoni di',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Canzone più ascoltata di',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Canzone del momento di',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Artisti di',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Artista più ascoltato di',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artista del momento di',
 		},
 		noUserFound: {
 			title: 'Profilo non trovato | Allify',
