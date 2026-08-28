@@ -271,6 +271,7 @@ export const zh = {
 			musicCommunityPagePublicUserPostComment: '发表评论',
 			musicCommunityPagePublicUserToastSuccessAddCommentMessage: '评论已成功添加到个人资料',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage: '添加评论时出错。请稍后再试。',
+			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage: '你已经在此个人资料中发表评论。',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading2: '的歌曲',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: '最常听的歌曲',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: '本月歌曲',

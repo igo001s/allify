@@ -25,10 +25,16 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { authorComment, commentRecipientUserId, commentText } = await request.json();
+		const { authorComment, commentRecipientUserId, commentedUserIds, commentText } = await request.json();
 
 		if (!authorComment || !commentRecipientUserId || !commentText) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), {
+				status: 400
+			});
+		}
+
+		if (commentedUserIds.some((id: ObjectId) => id === commentRecipientUserId)) {
+			return new Response(JSON.stringify({ error: 'Already commented' }), {
 				status: 400
 			});
 		}

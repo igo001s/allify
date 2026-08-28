@@ -295,6 +295,8 @@ export const pt = {
 				'Comentário adicionado com sucesso no perfil de ',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
 				'Ocorreu um erro ao adicionar o comentário. Por favor, tente novamente mais tarde.',
+			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage:
+				'Você já comentou neste perfil.',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Músicas de',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Música mais ouvida de',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Música do momento de',

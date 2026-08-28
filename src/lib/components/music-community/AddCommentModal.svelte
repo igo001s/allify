@@ -23,8 +23,8 @@
 	import type { ObjectId } from 'mongodb';
 
 	// Props
-	export let profileUserName: string;
-	export let profileUserId: ObjectId;
+	export let publicProfileUserName: string;
+	export let publicProfileUserId: ObjectId;
 	export let showAddCommentModal: boolean;
 
 	let comment: string = '';
@@ -49,13 +49,12 @@
 				_id: $userInfo?._id,
 				name: $userInfo?.name
 			},
-			profileUserId,
+			publicProfileUserId,
+			$userInfo?.comments?.commentsMadeByMe.map(comment => comment.recipientId),
 			comment
 		);
 
-		console.log(data);
-
-		if (data) {
+		if (!data.error) {
 			userInfo.update((currentUser: UserInfo | undefined) => {
 				if (!currentUser) {
 					return currentUser;
@@ -70,7 +69,7 @@
 						commentsMadeByMe: [
 							...currentUser.comments.commentsMadeByMe,
 							{
-								recipient: data.recipient,
+								recipientId: data.recipient,
 								content: data.content,
 								createdAt: data.createdAt
 							}
@@ -87,17 +86,29 @@
 				toastMessage:
 					$translationsStore.musicCommunityPage.publicUser
 						.musicCommunityPagePublicUserToastSuccessAddCommentMessage +
-					profileUserName +
+					publicProfileUserName +
 					'.'
 			});
 		} else {
-			toastStore.set({
-				showToast: true,
-				toastType: 'error',
-				toastMessage:
-					$translationsStore.musicCommunityPage.publicUser
-						.musicCommunityPagePublicUserToastErrorAddCommentMessage
-			});
+			if (data.typeError === 'alreadyCommented') {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage
+				});
+			} else if (data.typeError === 'addCommentOnPublicProfile') {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserToastErrorAddCommentMessage
+				});
+			}
+
+			return;
 		}
 	}
 
@@ -132,7 +143,7 @@
 		<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
 			<p class="text-lg leading-tight font-bold text-t-primary sm:text-xl">
 				{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserParagraph1}
-				<span class="font-bold text-brand-primary">{profileUserName}</span>
+				<span class="font-bold text-brand-primary">{publicProfileUserName}</span>
 			</p>
 
 			<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">

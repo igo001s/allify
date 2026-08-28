@@ -292,6 +292,7 @@ export const en = {
 				'Comment successfully added on the profile of ',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
 				'An error occurred while adding the comment. Please try again later.',
+			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage: 'You have already commented on this profile.',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Songs by',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Most-listened-to song by',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Song of the moment by',

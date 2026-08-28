@@ -5,7 +5,7 @@ import type { AvatarImage } from './Image.type';
 import type { ObjectId } from 'mongodb';
 
 export type CommentPosted = {
-	recipient: RecipientComment;
+	recipientId: ObjectId;
 	content: string;
 	createdAt: Date;
 };
@@ -20,8 +20,4 @@ export type AuthorComment = {
 	_id: ObjectId;
 	name: string;
 	image?: AvatarImage;
-};
-
-export type RecipientComment = {
-	_id: ObjectId;
 };

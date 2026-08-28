@@ -227,8 +227,8 @@
 	{#if showAddCommentModal && user}
 		<AddCommentModal
 			bind:showAddCommentModal
-			profileUserName={user.name}
-			profileUserId={user._id}
+			publicProfileUserName={user.name}
+			publicProfileUserId={user._id}
 		/>
 	{/if}
 {:else}

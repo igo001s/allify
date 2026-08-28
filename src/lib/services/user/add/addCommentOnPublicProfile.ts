@@ -8,41 +8,53 @@ import type { AuthorComment } from '$lib/types/Comments.type';
 import type { ObjectId } from 'mongodb';
 
 export async function addCommentOnPublicProfile(
-	authorComment: AuthorComment,
-	commentRecipientUserId: ObjectId,
-	commentText: string
+    authorComment: AuthorComment,
+    commentRecipientUserId: ObjectId,
+    commentedUserIds: ObjectId[],
+    commentText: string
 ) {
-	try {
-		if (!authorComment || !commentRecipientUserId || !commentText) return;
+    try {
+        if (!authorComment || !commentRecipientUserId || !commentText) return;
 
-		const addCommentOnPublicProfileResponse = await fetch(
-			'/api/mongodb/add/add-comment-on-public-profile',
-			{
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({
-					authorComment,
-					commentRecipientUserId,
-					commentText
-				})
-			}
-		);
+        if (commentedUserIds.some((id) => id === commentRecipientUserId)) {
+            return {
+                error: true,
+                typeError: 'alreadyCommented'
+            };
+        }
 
-		if (!addCommentOnPublicProfileResponse.ok) {
-			const error = await addCommentOnPublicProfileResponse.json();
-			throw new Error(error.error);
-		}
+        const response = await fetch(
+            '/api/mongodb/add/add-comment-on-public-profile',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    authorComment,
+                    commentRecipientUserId,
+                    commentedUserIds,
+                    commentText
+                })
+            }
+        );
 
-		const parsedAddCommentOnPublicProfile = await addCommentOnPublicProfileResponse.json();
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.error);
+        }
 
-		return parsedAddCommentOnPublicProfile;
-	} catch (error) {
-		if (dev) {
-			console.error('User addCommentOnPublicProfile error:', error);
-		}
+        const parsedResponse = await response.json();
 
-		return null;
-	}
+        return parsedResponse;
+    } catch (error) {
+        if (dev) {
+            console.error('User addCommentOnPublicProfile error:', error);
+        }
+
+        return {
+            error: true,
+            typeError: 'addCommentOnPublicProfile'
+        };
+    }
 }

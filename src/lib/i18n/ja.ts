@@ -289,6 +289,7 @@ export const ja = {
 				'プロフィールにコメントを追加しました：',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
 				'コメントの追加中にエラーが発生しました。後でもう一度お試しください。',
+			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage: 'このプロフィールにはすでにコメントしています。',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'の楽曲',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'が最もよく聴いている楽曲',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'の今月の楽曲',
