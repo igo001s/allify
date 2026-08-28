@@ -298,7 +298,8 @@ export const fr = {
 				'Commentaire ajouté avec succès sur le profil de ',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
 				'Une erreur s’est produite lors de l’ajout du commentaire. Veuillez réessayer plus tard.',
-			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage: 'Vous avez déjà commenté ce profil.',
+			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage:
+				'Vous avez déjà commenté ce profil.',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Musiques de',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Musique la plus écoutée de',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Musique du moment de',

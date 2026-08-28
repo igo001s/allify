@@ -50,7 +50,7 @@
 				name: $userInfo?.name
 			},
 			publicProfileUserId,
-			$userInfo?.comments?.commentsMadeByMe.map(comment => comment.recipientId),
+			$userInfo?.comments?.commentsMadeByMe.map((comment) => comment.recipientId),
 			comment
 		);
 
@@ -63,9 +63,7 @@
 				return {
 					...currentUser,
 					comments: {
-						commentsMadeOnMyProfile: [
-							...currentUser.comments.commentsMadeOnMyProfile
-						],
+						commentsMadeOnMyProfile: [...currentUser.comments.commentsMadeOnMyProfile],
 						commentsMadeByMe: [
 							...currentUser.comments.commentsMadeByMe,
 							{
@@ -73,7 +71,7 @@
 								content: data.content,
 								createdAt: data.createdAt
 							}
-						],
+						]
 					}
 				};
 			});

@@ -296,7 +296,8 @@ export const ru = {
 				'Комментарий успешно добавлен в профиль ',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
 				'Произошла ошибка при добавлении комментария. Пожалуйста, попробуйте снова позже.',
-			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage: 'Вы уже оставили комментарий в этом профиле.',
+			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage:
+				'Вы уже оставили комментарий в этом профиле.',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Песни пользователя',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1:
 				'Самая прослушиваемая песня пользователя',

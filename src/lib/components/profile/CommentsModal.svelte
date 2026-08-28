@@ -22,7 +22,11 @@
 	// Props
 	export let showCommentsModal: boolean;
 
-	async function handleDeleteComment(userId: ObjectId, authorId: ObjectId, comments: CommentReceived[]) {
+	async function handleDeleteComment(
+		userId: ObjectId,
+		authorId: ObjectId,
+		comments: CommentReceived[]
+	) {
 		if (!userId || !authorId) {
 			return;
 		}

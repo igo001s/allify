@@ -295,7 +295,8 @@ export const de = {
 				'Kommentar erfolgreich im Profil von ',
 			musicCommunityPagePublicUserToastErrorAddCommentMessage:
 				'Beim Hinzufügen des Kommentars ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.',
-			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage: 'Du hast diesen Kommentar bereits im Profil hinterlassen.',
+			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage:
+				'Du hast diesen Kommentar bereits im Profil hinterlassen.',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Songs von',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Meistgehörter Song von',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Song des Moments von',
