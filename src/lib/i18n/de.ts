@@ -310,7 +310,7 @@ export const de = {
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
 				'Benutzerdefinierter Song ist leer',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
-				'Es scheint, dass noch kein Song hinzugefügt wurde. Sobald {publicUserName} welche hinzufügt, werden sie hier angezeigt.',
+				'Es scheint, dass noch keine Musik hinzugefügt wurde. Sobald {publicUserName} welche hinzufügt, wird sie hier angezeigt.',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
 				'Kein Künstler des Moments ausgewählt',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
@@ -321,7 +321,7 @@ export const de = {
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
 				'Benutzerdefinierter Künstler ist leer',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
-				'Es scheint, dass noch kein Künstler hinzugefügt wurde. Sobald {publicUserName} welche hinzufügt, werden sie hier angezeigt.'
+				'Es scheint, dass noch keine Künstler hinzugefügt wurden. Sobald {publicUserName} einen hinzufügt, wird er hier angezeigt.'
 		},
 		noUserFound: {
 			title: 'Profil nicht gefunden | Allify',

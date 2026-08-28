@@ -312,7 +312,7 @@ export const ru = {
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
 				'Персонализированная музыка отсутствует',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
-				'Похоже, музыка ещё не добавлена. Как только {publicUserName} добавит её, она появится здесь.',
+				'Похоже, пока не добавлено ни одной композиции. Как только {publicUserName} добавит музыку, она появится здесь.',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1: 'Артист момента не выбран',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
 				'Персонализированный артист не выбран',
@@ -321,7 +321,7 @@ export const ru = {
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
 				'Персонализированный артист отсутствует',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
-				'Похоже, артисты ещё не добавлены. Как только {publicUserName} добавит их, они появятся здесь.'
+				'Похоже, пока не добавлено ни одного исполнителя. Как только {publicUserName} добавит исполнителя, он появится здесь.'
 		},
 		noUserFound: {
 			title: 'Профиль не найден | Allify',

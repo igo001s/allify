@@ -313,7 +313,7 @@ export const it = {
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
 				'La canzone personalizzata è vuota',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
-				'Sembra che non sia stata ancora aggiunta alcuna canzone. Quando {publicUserName} ne aggiungerà alcune, appariranno qui.',
+				'Sembra che non sia stata ancora aggiunta alcuna musica. Non appena {publicUserName} ne aggiungerà, apparirà qui.',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
 				'Nessun artista del momento selezionato',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
@@ -324,7 +324,7 @@ export const it = {
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
 				'L’artista personalizzato è vuoto',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
-				'Sembra che non sia stato ancora aggiunto alcun artista. Quando {publicUserName} ne aggiungerà alcuni, appariranno qui.'
+				'Sembra che non sia stato ancora aggiunto alcun artista. Non appena {publicUserName} ne aggiungerà uno, apparirà qui.'
 		},
 		noUserFound: {
 			title: 'Profilo non trovato | Allify',

@@ -313,7 +313,7 @@ export const fr = {
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
 				'La musique personnalisée est vide',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
-				'Il semble qu’aucune musique n’ait encore été ajoutée. Dès que {publicUserName} en ajoutera, elles apparaîtront ici.',
+				'Il semble qu’aucune musique n’ait encore été ajoutée. Dès que {publicUserName} en ajoutera, elle apparaîtra ici.',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
 				'Aucun artiste du moment sélectionné',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
@@ -323,7 +323,7 @@ export const fr = {
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
 				'L’artiste personnalisé est vide',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
-				'Il semble qu’aucun artiste n’ait encore été ajouté. Dès que {publicUserName} en ajoutera, ils apparaîtront ici.'
+				'Il semble qu’aucun artiste n’ait encore été ajouté. Dès que {publicUserName} en ajoutera un, il apparaîtra ici.'
 		},
 		noUserFound: {
 			title: 'Profil introuvable | Allify',

@@ -303,7 +303,7 @@ export const ja = {
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: '今月の音楽は空です',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2: 'カスタム音楽は空です',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
-				'まだ音楽が追加されていないようです。{publicUserName} が音楽を追加すると、ここに表示されます。',
+				'まだ音楽が追加されていないようです。{publicUserName}が音楽を追加すると、ここに表示されます。',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
 				'今月のアーティストが選択されていません',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
@@ -312,7 +312,7 @@ export const ja = {
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1: '今月のアーティストは空です',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2: 'カスタムアーティストは空です',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
-				'まだアーティストが追加されていないようです。{publicUserName} がアーティストを追加すると、ここに表示されます。'
+				'まだアーティストが追加されていないようです。{publicUserName}がアーティストを追加すると、ここに表示されます。'
 		},
 		noUserFound: {
 			title: 'プロフィールが見つかりません | Allify',

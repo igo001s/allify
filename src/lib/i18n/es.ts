@@ -314,7 +314,7 @@ export const es = {
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
 				'La canción personalizada está vacía',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
-				'Parece que todavía no se ha añadido ninguna canción. Cuando {publicUserName} añada alguna, aparecerá aquí.',
+				'Parece que todavía no se ha añadido ninguna música. En cuanto {publicUserName} añada alguna, aparecerá aquí.',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
 				'No se ha seleccionado ningún artista del momento',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
@@ -325,7 +325,7 @@ export const es = {
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
 				'El artista personalizado está vacío',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
-				'Parece que todavía no se ha añadido ningún artista. Cuando {publicUserName} añada alguno, aparecerá aquí.'
+				'Parece que todavía no se ha añadido ningún artista. En cuanto {publicUserName} añada alguno, aparecerá aquí.'
 		},
 		noUserFound: {
 			title: 'Perfil no encontrado | Allify',

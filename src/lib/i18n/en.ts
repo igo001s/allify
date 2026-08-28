@@ -305,7 +305,7 @@ export const en = {
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: 'Song of the Moment is empty',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2: 'Custom song is empty',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
-				'It looks like no songs have been added yet. Once {publicUserName} adds some, they will appear here.',
+				'It looks like no music has been added yet. As soon as {publicUserName} adds some, it will appear here.',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
 				'No Artist of the Moment selected',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2: 'No custom artist selected',
@@ -314,7 +314,7 @@ export const en = {
 				'Artist of the Moment is empty',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2: 'Custom artist is empty',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
-				'It looks like no artists have been added yet. Once {publicUserName} adds some, they will appear here.'
+				'It looks like no artists have been added yet. As soon as {publicUserName} adds one, it will appear here.'
 		},
 		noUserFound: {
 			title: 'Profile Not Found | Allify',
