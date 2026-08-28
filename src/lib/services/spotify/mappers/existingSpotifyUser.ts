@@ -16,7 +16,7 @@ export async function existingSpotifyUser() {
 
 		const getUserInfoFromSpotify = await getUserFromDatabase(parsedGetProfile.email);
 
-		if (!getUserInfoFromSpotify.userInfoFromMongoDB) {
+		if (getUserInfoFromSpotify === undefined) {
 			return {
 				existingUser: false,
 				infoToCreateUser: parsedGetProfile

@@ -17,12 +17,12 @@
 	import type { ObjectId } from 'mongodb';
 
 	// Types
-	import type { Comment } from '$lib/types/Comments.type';
+	import type { CommentReceived } from '$lib/types/Comments.type';
 
 	// Props
 	export let showCommentsModal: boolean;
 
-	async function handleDeleteComment(userId: ObjectId, authorId: ObjectId, comments: Comment[]) {
+	async function handleDeleteComment(userId: ObjectId, authorId: ObjectId, comments: CommentReceived[]) {
 		if (!userId || !authorId) {
 			return;
 		}
@@ -76,9 +76,9 @@
 				{$translationsStore.profilePage.profilePageCommentsParagraph2}
 			</p>
 
-			{#if $userInfo && $userInfo.comments.length > 0}
+			{#if $userInfo && $userInfo.comments.commentsMadeOnMyProfile.length > 0}
 				<div class="mt-2 flex max-h-130 flex-col gap-3 overflow-y-auto pr-2 sm:gap-4">
-					{#each $userInfo.comments as comment}
+					{#each $userInfo.comments.commentsMadeOnMyProfile as comment}
 						<div
 							class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 transition-colors sm:gap-4 sm:p-4"
 						>
@@ -115,13 +115,13 @@
 											on:click={() =>
 												handleDeleteComment(
 													$userInfo?._id,
-													comment.author._id,
-													$userInfo?.comments
+													comment?.author?._id,
+													$userInfo?.comments.commentsMadeOnMyProfile
 												)}
-											aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAriaLabel} ${comment.author.name}`}
+											aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAriaLabel} ${comment?.author?.name}`}
 										>
 											<TrashIcon
-												iconAltText={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAltText} ${comment.author.name}`}
+												iconAltText={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAltText} ${comment?.author?.name}`}
 												iconSvgClass="h-4 w-4 text-t-secondary transition-all cursor-pointer hover:text-status-error"
 											/>
 										</button>

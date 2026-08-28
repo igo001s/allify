@@ -37,11 +37,11 @@ export const POST: RequestHandler = async ({ request }) => {
 		const db = client?.db(MONGO_DB);
 		const users = db?.collection<UserInfo>('users');
 
-		await users?.updateOne(
+		const updateCommentsMadeOnRecipientProfile = await users?.updateOne(
 			{ _id: new ObjectId(commentRecipientUserId) },
 			{
 				$push: {
-					comments: {
+					'comments.commentsMadeOnMyProfile': {
 						author: authorComment,
 						content: commentText,
 						createdAt: new Date()
@@ -50,9 +50,36 @@ export const POST: RequestHandler = async ({ request }) => {
 			}
 		);
 
+		const updateCommentsMadeByMe = await users?.updateOne(
+			{ _id: new ObjectId(authorComment._id) },
+			{
+				$push: {
+					'comments.commentsMadeByMe': {
+						recipient: commentRecipientUserId,
+						content: commentText,
+						createdAt: new Date()
+					}
+				}
+			}
+		);
+
+		if (updateCommentsMadeOnRecipientProfile?.matchedCount === 0) {
+			return new Response(JSON.stringify({ error: 'Recipient not found' }), {
+				status: 404
+			});
+		}
+
+		if (updateCommentsMadeByMe?.matchedCount === 0) {
+			return new Response(JSON.stringify({ error: 'Author not found' }), {
+				status: 404
+			});
+		}
+
 		return new Response(
 			JSON.stringify({
-				success: true
+				recipient: commentRecipientUserId,
+				content: commentText,
+				createdAt: new Date()
 			}),
 			{
 				status: 200

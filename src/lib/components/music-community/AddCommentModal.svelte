@@ -16,6 +16,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { toastStore } from '$lib/stores/toast.store';
 
+	// Types
+	import type { UserInfo } from '$lib/types/UserInfo.type';
+
 	// MongoDB
 	import type { ObjectId } from 'mongodb';
 
@@ -50,7 +53,32 @@
 			comment
 		);
 
+		console.log(data);
+
 		if (data) {
+			userInfo.update((currentUser: UserInfo | undefined) => {
+				if (!currentUser) {
+					return currentUser;
+				}
+
+				return {
+					...currentUser,
+					comments: {
+						commentsMadeOnMyProfile: [
+							...currentUser.comments.commentsMadeOnMyProfile
+						],
+						commentsMadeByMe: [
+							...currentUser.comments.commentsMadeByMe,
+							{
+								recipient: data.recipient,
+								content: data.content,
+								createdAt: data.createdAt
+							}
+						],
+					}
+				};
+			});
+
 			showAddCommentModal = false;
 
 			toastStore.set({

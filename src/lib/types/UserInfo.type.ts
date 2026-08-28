@@ -5,7 +5,7 @@ import type { ObjectId } from 'mongodb';
 import type { Tracks } from './Tracks.type';
 import type { Artists } from './Artists.type';
 import type { Discoveries } from './Discoveries.type';
-import type { Comment } from './Comments.type';
+import type { CommentPosted, CommentReceived } from './Comments.type';
 import type { AvatarImage } from './Image.type';
 import type { UserInfoSpotify } from './Spotify.type';
 import type { TrackSpotify } from './Spotify.type';
@@ -20,7 +20,10 @@ export type UserInfo = {
 	primaryStreaming: 'spotify' | 'deezer';
 	image?: AvatarImage;
 	profileVisibility: profileVisibility;
-	comments: Comment[];
+	comments: {
+		commentsMadeByMe: CommentPosted[];
+		commentsMadeOnMyProfile: CommentReceived[];
+	};
 	connectedStreamings: {
 		spotify?: UserInfoSpotify;
 		deezer?: undefined;

@@ -42,7 +42,10 @@ export const POST: RequestHandler = async ({ request }) => {
 			profileVisibility: {
 				visibility: undefined
 			},
-			comments: [],
+			comments: {
+				commentsMadeOnMyProfile: [],
+				commentsMadeByMe: []
+			},
 			primaryStreaming: streaming,
 			connectedStreamings: { [streaming]: streamingData }
 		};
