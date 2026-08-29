@@ -53,13 +53,7 @@
 </script>
 
 <a href="/" aria-label={logoAltText} title={logoAltText}>
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 380 142"
-		class={logoSvgClass}
-		preserveAspectRatio="xMidYMid meet"
-		role="img"
-	>
+	<svg viewBox="0 0 380 142" preserveAspectRatio="xMidYMid meet" class={logoSvgClass} role="img">
 		<title>{logoAltText}</title>
 
 		<g

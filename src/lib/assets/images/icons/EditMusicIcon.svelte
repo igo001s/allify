@@ -5,12 +5,12 @@
 </script>
 
 <svg
-	version="1.0"
-	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 709 709"
+	preserveAspectRatio="xMidYMid meet"
 	class={iconSvgClass}
-	fill="currentColor"
 	aria-label={iconAltText}
+	role="img"
+	fill="currentColor"
 	width="709"
 	height="709"
 >

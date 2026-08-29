@@ -6,10 +6,11 @@
 
 <svg
 	viewBox="0 0 24 24"
-	fill="currentColor"
-	xmlns="http://www.w3.org/2000/svg"
+	preserveAspectRatio="xMidYMid meet"
 	class={iconSvgClass}
 	aria-label={iconAltText}
+	role="img"
+	fill="currentColor"
 >
 	<title>{iconAltText}</title>
 

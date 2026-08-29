@@ -6,13 +6,11 @@
 
 <a href="/" aria-label={logoAltText} title={logoAltText}>
 	<svg
-		version="1.0"
-		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 311.000000 132.000000"
-		class={logoSvgClass}
 		preserveAspectRatio="xMidYMid meet"
-		role="img"
+		class={logoSvgClass}
 		aria-label={logoAltText}
+		role="img"
 	>
 		<title>{logoAltText}</title>
 

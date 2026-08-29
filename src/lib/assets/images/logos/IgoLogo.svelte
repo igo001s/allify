@@ -12,16 +12,14 @@
 	rel="noopener noreferrer"
 >
 	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		version="1.1"
 		viewBox="0 0 1257 1257"
+		preserveAspectRatio="xMidYMid meet"
+		class={logoSvgClass}
+		aria-label={logoAltText}
+		role="img"
+		fill="currentColor"
 		width="1257"
 		height="1257"
-		class={logoSvgClass}
-		preserveAspectRatio="xMidYMid meet"
-		role="img"
-		aria-label={logoAltText}
-		fill="currentColor"
 	>
 		<title>{logoAltText}</title>
 

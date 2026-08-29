@@ -5,16 +5,17 @@
 </script>
 
 <svg
-	version="1.0"
-	xmlns="http://www.w3.org/2000/svg"
-	class={iconSvgClass}
-	fill="currentColor"
-	aria-label={iconAltText}
+	viewBox="0 0 493.000000 506.000000"
 	preserveAspectRatio="xMidYMid meet"
+	class={iconSvgClass}
+	aria-label={iconAltText}
+	role="img"
+	fill="currentColor"
 	width="493.000000pt"
 	height="506.000000pt"
-	viewBox="0 0 493.000000 506.000000"
 >
+	<title>{iconAltText}</title>
+
 	<g
 		transform="translate(0.000000,506.000000) scale(0.100000,-0.100000)"
 		fill="#000000"
