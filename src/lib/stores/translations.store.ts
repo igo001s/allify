@@ -7,62 +7,72 @@ import { languageStore } from './language.store';
 
 // Translations
 import { en } from '../i18n/en';
-import { pt } from '../i18n/pt';
-import { de } from '../i18n/de';
-import { es } from '../i18n/es';
-import { fr } from '../i18n/fr';
-import { it } from '../i18n/it';
-import { ru } from '../i18n/ru';
-import { zh } from '../i18n/zh';
-import { ja } from '../i18n/ja';
 
-type Translations =
-	| typeof en
-	| typeof pt
-	| typeof de
-	| typeof es
-	| typeof fr
-	| typeof it
-	| typeof ru
-	| typeof zh
-	| typeof ja;
-
-export const translationsStore: Readable<Translations> = derived(
+export const translationsStore: Readable<typeof en> = derived(
 	languageStore,
-	($language) => {
+	($language, set) => {
 		if (browser && $language) {
 			localStorage.setItem('allify-language', $language);
 		}
 
-		switch ($language) {
-			case 'pt-BR':
-				return pt;
+		const loadTranslations = async () => {
+			switch ($language) {
+				case 'pt-BR': {
+					const { pt } = await import('../i18n/pt');
+					set(pt);
 
-			case 'de-DE':
-				return de;
+					break;
+				}
+				case 'de-DE': {
+					const { de } = await import('../i18n/de');
+					set(de);
 
-			case 'es-ES':
-				return es;
+					break;
+				}
+				case 'es-ES': {
+					const { es } = await import('../i18n/es');
+					set(es);
 
-			case 'fr-FR':
-				return fr;
+					break;
+				}
+				case 'fr-FR': {
+					const { fr } = await import('../i18n/fr');
+					set(fr);
 
-			case 'it-IT':
-				return it;
+					break;
+				}
+				case 'it-IT': {
+					const { it } = await import('../i18n/it');
+					set(it);
 
-			case 'ru-RU':
-				return ru;
+					break;
+				}
+				case 'ru-RU': {
+					const { ru } = await import('../i18n/ru');
+					set(ru);
 
-			case 'zh-CN':
-				return zh;
+					break;
+				}
+				case 'zh-CN': {
+					const { zh } = await import('../i18n/zh');
+					set(zh);
 
-			case 'ja-JP':
-				return ja;
+					break;
+				}
+				case 'ja-JP': {
+					const { ja } = await import('../i18n/ja');
+					set(ja);
 
-			case 'en-US':
-			default:
-				return en;
-		}
+					break;
+				}
+				case 'en-US':
+				default: {
+					set(en);
+				}
+			}
+		};
+
+		void loadTranslations();
 	},
 	en
 );
