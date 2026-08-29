@@ -5,17 +5,12 @@
 </script>
 
 <svg
-	preserveAspectRatio="xMidYMid meet"
 	viewBox="0 0 512.000000 512.000000"
 	class={iconSvgClass}
 	aria-label={iconAltText}
 	role="img"
 	fill="currentColor"
-	width="512.000000pt"
-	height="512.000000pt"
 >
-	<title>{iconAltText}</title>
-
 	<g
 		transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
 		fill="currentColor"

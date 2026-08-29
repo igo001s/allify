@@ -11,6 +11,9 @@ export default defineConfig(({ mode }) => ({
 		sveltekit(),
 		...(mode === 'analyze' ? [visualizer()] : [])
 	],
+	css: {
+		transformer: 'lightningcss'
+	},
 	build: {
 		sourcemap: false
 	},

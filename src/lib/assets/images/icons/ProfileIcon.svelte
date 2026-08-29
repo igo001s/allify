@@ -5,16 +5,7 @@
 	export let color: string = '';
 </script>
 
-<svg
-	viewBox="0 0 24 24"
-	preserveAspectRatio="xMidYMid meet"
-	class={iconSvgClass}
-	aria-label={iconAltText}
-	role="img"
-	fill="none"
->
-	<title>{iconAltText}</title>
-
+<svg viewBox="0 0 24 24" class={iconSvgClass} aria-label={iconAltText} role="img" fill="none">
 	<path
 		opacity="0.75"
 		d="M12.1207 12.78C12.0507 12.77 11.9607 12.77 11.8807 12.78C10.1207 12.72 8.7207 11.28 8.7207 9.50998C8.7207 7.69998 10.1807 6.22998 12.0007 6.22998C13.8107 6.22998 15.2807 7.69998 15.2807 9.50998C15.2707 11.28 13.8807 12.72 12.1207 12.78Z"

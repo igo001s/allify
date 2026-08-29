@@ -53,9 +53,7 @@
 </script>
 
 <a href="/" aria-label={logoAltText} title={logoAltText}>
-	<svg viewBox="0 0 380 142" preserveAspectRatio="xMidYMid meet" class={logoSvgClass} role="img">
-		<title>{logoAltText}</title>
-
+	<svg viewBox="0 0 380 142" class={logoSvgClass} role="img">
 		<g
 			transform="translate(0.000000,132.000000) scale(0.100000,-0.100000)"
 			fill="#09623A"

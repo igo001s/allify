@@ -9,14 +9,11 @@
 
 <svg
 	viewBox="0 0 1559 1544"
-	preserveAspectRatio="xMidYMid meet"
 	class={iconSvgClass}
 	aria-label={iconAltText}
 	role="img"
 	fill="currentColor"
 >
-	<title>{iconAltText}</title>
-
 	<g
 		transform="translate(0.000000,1544.000000) scale(0.100000,-0.100000)"
 		fill="currentColor"
