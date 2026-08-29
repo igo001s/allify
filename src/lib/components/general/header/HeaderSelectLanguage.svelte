@@ -25,20 +25,60 @@
 	export let showProfileOptions: boolean = false;
 
 	$: languageOptions = [
-		{ code: 'en-US', label: $translationsStore.generalTexts.headerLanguageEn, altText: $translationsStore.generalTexts.headerLanguageEnAltText, flag: englishFlag },
+		{
+			code: 'en-US',
+			label: $translationsStore.generalTexts.headerLanguageEn,
+			altText: $translationsStore.generalTexts.headerLanguageEnAltText,
+			flag: englishFlag
+		},
 		{
 			code: 'pt-BR',
 			label: $translationsStore.generalTexts.headerLanguagePt,
 			altText: $translationsStore.generalTexts.headerLanguagePtAltText,
 			flag: portugueseFlag
 		},
-		{ code: 'es-ES', label: $translationsStore.generalTexts.headerLanguageEs, altText: $translationsStore.generalTexts.headerLanguageEsAltText, flag: spanishFlag },
-		{ code: 'zh-CN', label: $translationsStore.generalTexts.headerLanguageZh, altText: $translationsStore.generalTexts.headerLanguageZhAltText, flag: chineseFlag },
-		{ code: 'ru-RU', label: $translationsStore.generalTexts.headerLanguageRu, altText: $translationsStore.generalTexts.headerLanguageRuAltText, flag: russianFlag },
-		{ code: 'ja-JP', label: $translationsStore.generalTexts.headerLanguageJa, altText: $translationsStore.generalTexts.headerLanguageJaAltText, flag: japaneseFlag },
-		{ code: 'de-DE', label: $translationsStore.generalTexts.headerLanguageDe, altText: $translationsStore.generalTexts.headerLanguageDeAltText, flag: germanyFlag },
-		{ code: 'fr-FR', label: $translationsStore.generalTexts.headerLanguageFr, altText: $translationsStore.generalTexts.headerLanguageFrAltText, flag: frenchFlag },
-		{ code: 'it-IT', label: $translationsStore.generalTexts.headerLanguageIt, altText: $translationsStore.generalTexts.headerLanguageItAltText, flag: italianFlag }
+		{
+			code: 'es-ES',
+			label: $translationsStore.generalTexts.headerLanguageEs,
+			altText: $translationsStore.generalTexts.headerLanguageEsAltText,
+			flag: spanishFlag
+		},
+		{
+			code: 'zh-CN',
+			label: $translationsStore.generalTexts.headerLanguageZh,
+			altText: $translationsStore.generalTexts.headerLanguageZhAltText,
+			flag: chineseFlag
+		},
+		{
+			code: 'ru-RU',
+			label: $translationsStore.generalTexts.headerLanguageRu,
+			altText: $translationsStore.generalTexts.headerLanguageRuAltText,
+			flag: russianFlag
+		},
+		{
+			code: 'ja-JP',
+			label: $translationsStore.generalTexts.headerLanguageJa,
+			altText: $translationsStore.generalTexts.headerLanguageJaAltText,
+			flag: japaneseFlag
+		},
+		{
+			code: 'de-DE',
+			label: $translationsStore.generalTexts.headerLanguageDe,
+			altText: $translationsStore.generalTexts.headerLanguageDeAltText,
+			flag: germanyFlag
+		},
+		{
+			code: 'fr-FR',
+			label: $translationsStore.generalTexts.headerLanguageFr,
+			altText: $translationsStore.generalTexts.headerLanguageFrAltText,
+			flag: frenchFlag
+		},
+		{
+			code: 'it-IT',
+			label: $translationsStore.generalTexts.headerLanguageIt,
+			altText: $translationsStore.generalTexts.headerLanguageItAltText,
+			flag: italianFlag
+		}
 	] as { code: string; label: string; altText: string; flag: Picture }[];
 
 	$: selectedLanguage =
