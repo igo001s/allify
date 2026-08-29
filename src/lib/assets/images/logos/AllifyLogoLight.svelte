@@ -4,8 +4,8 @@
 	export let logoAltText: string = '';
 </script>
 
-<a href="/" aria-label={logoAltText} title={logoAltText}>
-	<svg viewBox="0 0 311.000000 132.000000" class={logoSvgClass} role="img">
+<a href="/" title={logoAltText}>
+	<svg viewBox="0 0 311.000000 132.000000" class={logoSvgClass} aria-label={logoAltText} role="img">
 		<g
 			transform="translate(0.000000,132.000000) scale(0.100000,-0.100000)"
 			fill="#F2F2F2"
