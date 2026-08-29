@@ -123,7 +123,9 @@ export const ja = {
 		toastErrorTitle: 'エラー',
 		toastErrorAltText: 'エラーアイコン',
 		toastCloseButtonAriaLabel: '通知を閉じる',
-		toastCloseButtonAltText: '通知を閉じるアイコン'
+		toastCloseButtonAltText: '通知を閉じるアイコン',
+		connectPlatformSpotifyAltText: 'Spotifyのアイコン',
+		connectPlatformDeezerAltText: 'Deezerのアイコン'
 	},
 	homePage: {
 		title: 'あなたの音楽アイデンティティを発見 | Allify',
@@ -145,10 +147,8 @@ export const ja = {
 		connectPlatformsSectionHeading1: '音楽をAllifyに接続',
 		connectPlatformsSectionParagraph1:
 			'ストリーミングサービスを接続して、あなたの聴取習慣をパーソナライズされた音楽体験に変えましょう。お気に入りのアーティストや楽曲をひとつの場所にまとめられます。',
-		connectPlatformSpotifyAltText: 'Spotifyのアイコン',
 		connectPlatformSpotifyDescription:
 			'SpotifyをAllifyに接続して、よく聴くアーティストや楽曲を発見し、自分の音楽の好みをより深く知りましょう。',
-		connectPlatformDeezerAltText: 'Deezerのアイコン',
 		connectPlatformDeezerDescription:
 			'DeezerをAllifyに接続して、よく聴く音楽を確認し、あなたの音楽アイデンティティを表現するプロフィールを作りましょう。',
 		connectPlatformCardPlatformConnectIconAltText: '接続アイコン',

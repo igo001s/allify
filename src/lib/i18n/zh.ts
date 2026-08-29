@@ -115,7 +115,9 @@ export const zh = {
 		toastErrorTitle: '错误',
 		toastErrorAltText: '错误图标',
 		toastCloseButtonAriaLabel: '关闭通知',
-		toastCloseButtonAltText: '关闭通知图标'
+		toastCloseButtonAltText: '关闭通知图标',
+		connectPlatformSpotifyAltText: 'Spotify图标',
+		connectPlatformDeezerAltText: 'Deezer图标'
 	},
 	homePage: {
 		title: '发现你的音乐身份 | Allify',
@@ -137,10 +139,8 @@ export const zh = {
 		connectPlatformsSectionHeading1: '将你的音乐连接到 Allify',
 		connectPlatformsSectionParagraph1:
 			'连接你的流媒体平台，将你的聆听习惯转化为个性化的音乐体验，把你喜欢的艺人和歌曲汇聚到一个地方。',
-		connectPlatformSpotifyAltText: 'Spotify图标',
 		connectPlatformSpotifyDescription:
 			'将 Spotify 连接到 Allify，发现你最常听的艺人和歌曲，更好地了解自己的音乐品味。',
-		connectPlatformDeezerAltText: 'Deezer图标',
 		connectPlatformDeezerDescription:
 			'将 Deezer 连接到 Allify，探索你最常听的音乐，打造一个能够展现你音乐身份的个人主页。',
 		connectPlatformCardPlatformConnectIconAltText: '连接图标',

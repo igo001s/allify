@@ -125,7 +125,9 @@ export const fr = {
 		toastErrorTitle: 'Erreur',
 		toastErrorAltText: "Icône d'erreur",
 		toastCloseButtonAriaLabel: 'Fermer la notification',
-		toastCloseButtonAltText: 'Icône pour fermer la notification'
+		toastCloseButtonAltText: 'Icône pour fermer la notification',
+		connectPlatformSpotifyAltText: 'Icône Spotify',
+		connectPlatformDeezerAltText: 'Icône Deezer'
 	},
 	homePage: {
 		title: 'Découvrez votre identité musicale | Allify',
@@ -147,10 +149,8 @@ export const fr = {
 		connectPlatformsSectionHeading1: 'Connectez votre musique à Allify',
 		connectPlatformsSectionParagraph1:
 			'Connectez vos plateformes de streaming et transformez vos habitudes d’écoute en une expérience musicale personnalisée, avec vos artistes et chansons réunis au même endroit.',
-		connectPlatformSpotifyAltText: 'Icône Spotify',
 		connectPlatformSpotifyDescription:
 			'Connectez Spotify à Allify pour découvrir vos artistes et chansons les plus écoutés et mieux connaître vos goûts musicaux.',
-		connectPlatformDeezerAltText: 'Icône Deezer',
 		connectPlatformDeezerDescription:
 			'Connectez Deezer à Allify pour explorer ce que vous écoutez le plus et créer un profil qui représente votre identité musicale.',
 		connectPlatformCardPlatformConnectIconAltText: 'Icône de connexion',

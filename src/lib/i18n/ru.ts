@@ -125,7 +125,9 @@ export const ru = {
 		toastErrorTitle: 'Ошибка',
 		toastErrorAltText: 'Иконка ошибки',
 		toastCloseButtonAriaLabel: 'Закрыть уведомление',
-		toastCloseButtonAltText: 'Иконка для закрытия уведомления'
+		toastCloseButtonAltText: 'Иконка для закрытия уведомления',
+		connectPlatformSpotifyAltText: 'Значок Spotify',
+		connectPlatformDeezerAltText: 'Значок Deezer'
 	},
 	homePage: {
 		title: 'Откройте свою музыкальную идентичность | Allify',
@@ -147,10 +149,8 @@ export const ru = {
 		connectPlatformsSectionHeading1: 'Подключите свою музыку к Allify',
 		connectPlatformsSectionParagraph1:
 			'Подключите свои стриминговые платформы и превратите свои привычки прослушивания в персонализированный музыкальный опыт, собрав исполнителей и песни в одном месте.',
-		connectPlatformSpotifyAltText: 'Значок Spotify',
 		connectPlatformSpotifyDescription:
 			'Подключите Spotify к Allify, чтобы узнать своих самых прослушиваемых исполнителей и песни и лучше понять свои музыкальные вкусы.',
-		connectPlatformDeezerAltText: 'Значок Deezer',
 		connectPlatformDeezerDescription:
 			'Подключите Deezer к Allify, чтобы узнать, что вы слушаете чаще всего, и создать профиль, отражающий вашу музыкальную идентичность.',
 		connectPlatformCardPlatformConnectIconAltText: 'Значок подключения',

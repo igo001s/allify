@@ -4,7 +4,7 @@
 
 	// Props
 	export let iconSvgClass: string;
-	export let iconAltText: string = $translationsStore.homePage.connectPlatformDeezerAltText;
+	export let iconAltText: string = $translationsStore.generalTexts.connectPlatformDeezerAltText;
 </script>
 
 <svg

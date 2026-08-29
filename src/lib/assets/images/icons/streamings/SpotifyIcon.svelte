@@ -4,7 +4,7 @@
 
 	// Props
 	export let iconSvgClass: string;
-	export let iconAltText: string = $translationsStore.homePage.connectPlatformSpotifyAltText;
+	export let iconAltText: string = $translationsStore.generalTexts.connectPlatformSpotifyAltText;
 </script>
 
 <svg
