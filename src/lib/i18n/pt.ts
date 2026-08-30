@@ -258,7 +258,9 @@ export const pt = {
 			'Tente buscar com outro nome ou verifique se a pontuação está correta.',
 		musicCommunityStarIconAltText: 'Ícone de estrela para favoritar perfil',
 		musicCommunityStarIconRemoveAltText: 'Ícone de estrela para remover perfil dos favoritos',
-		musicCommunityToastErrorAddToFavoritesMessage: 'Não é possível favoritar a si mesmo',
+		musicCommunityToastErrorAddToFavoritesMessage: 'Ocorreu um erro ao adicionar aos favoritos',
+		musicCommunityToastErrorAddToFavoritesSameUserMessage: 'Não é possível favoritar a si mesmo',
+		musicCommunityToastErrorRemoveFromFavoritesMessage: 'Ocorreu um erro ao remover dos favoritos',
 		musicCommunityPageLoadingUserTitle: 'Carregando perfil do usuário... | Allify',
 		musicCommunityPageLoadingUserMetaDescription:
 			'Estamos carregando o perfil do usuário. Por favor, aguarde enquanto buscamos as informações.',

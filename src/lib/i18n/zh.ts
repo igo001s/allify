@@ -241,7 +241,9 @@ export const zh = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2: '尝试搜索其他名称或检查拼写。',
 		musicCommunityStarIconAltText: '用于收藏个人资料的星形图标',
 		musicCommunityStarIconRemoveAltText: '用于从收藏夹中删除个人资料的星形图标',
-		musicCommunityToastErrorAddToFavoritesMessage: '您不能将自己添加到收藏夹',
+		musicCommunityToastErrorAddToFavoritesMessage: '添加到收藏夹时出错',
+		musicCommunityToastErrorAddToFavoritesSameUserMessage: '您不能将自己添加到收藏夹',
+		musicCommunityToastErrorRemoveFromFavoritesMessage: '从收藏夹中删除时出错',
 		musicCommunityPageLoadingUserTitle: '正在加载用户个人资料... | Allify',
 		musicCommunityPageLoadingUserMetaDescription:
 			'正在加载用户个人资料。请稍候，我们正在获取信息。',

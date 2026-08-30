@@ -259,7 +259,10 @@ export const ru = {
 			'Попробуйте поискать другое имя или проверьте правильность написания.',
 		musicCommunityStarIconAltText: 'Иконка звезды для добавления профиля в избранное',
 		musicCommunityStarIconRemoveAltText: 'Иконка звезды для удаления профиля из избранного',
-		musicCommunityToastErrorAddToFavoritesMessage: 'Вы не можете добавить себя в избранное',
+		musicCommunityToastErrorAddToFavoritesMessage: 'Произошла ошибка при добавлении в избранное',
+		musicCommunityToastErrorAddToFavoritesSameUserMessage: 'Вы не можете добавить себя в избранное',
+		musicCommunityToastErrorRemoveFromFavoritesMessage:
+			'Произошла ошибка при удалении из избранного',
 		musicCommunityPageLoadingUserTitle: 'Загрузка профиля пользователя... | Allify',
 		musicCommunityPageLoadingUserMetaDescription:
 			'Загрузка профиля пользователя. Пожалуйста, подождите, пока мы получаем информацию.',

@@ -255,7 +255,10 @@ export const en = {
 			'Try searching for a different name or check the spelling.',
 		musicCommunityStarIconAltText: 'Star icon to favorite a profile',
 		musicCommunityStarIconRemoveAltText: 'Star icon to remove a profile from favorites',
-		musicCommunityToastErrorAddToFavoritesMessage: 'You cannot favorite yourself',
+		musicCommunityToastErrorAddToFavoritesMessage: 'An error occurred while adding to favorites',
+		musicCommunityToastErrorAddToFavoritesSameUserMessage: 'You cannot favorite yourself',
+		musicCommunityToastErrorRemoveFromFavoritesMessage:
+			'An error occurred while removing from favorites',
 		musicCommunityPageLoadingUserTitle: 'Loading user profile... | Allify',
 		musicCommunityPageLoadingUserMetaDescription:
 			'We are loading the user profile. Please wait while we fetch the information.',

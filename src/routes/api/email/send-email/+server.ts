@@ -12,31 +12,35 @@ const ALLOWED_ORIGINS = [ALLIFY_URL];
 const resend = new Resend(ALLIFY_RESEND_KEY);
 
 export const POST: RequestHandler = async ({ request }) => {
-	const origin = request.headers.get('origin');
+	try {
+		const origin = request.headers.get('origin');
 
-	if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
-		return new Response(JSON.stringify({ error: 'Forbidden' }), {
-			status: 403,
-			headers: { 'Content-Type': 'application/json' }
+		if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
+			return new Response(JSON.stringify({ error: 'Forbidden' }), {
+				status: 403,
+				headers: { 'Content-Type': 'application/json' }
+			});
+		}
+
+		const { email, subject, message } = await request.json();
+
+		if (!email || !subject || !message) {
+			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
+		}
+
+		const { error } = await resend.emails.send({
+			from: 'Allify <contact@allify.club>',
+			to: email,
+			subject: subject,
+			html: `${message}`
 		});
+
+		if (error) {
+			return new Response(JSON.stringify({ error }), { status: 500 });
+		}
+
+		return new Response(JSON.stringify({ message: 'Email sent successfully' }), { status: 200 });
+	} catch (error) {
+		return new Response(JSON.stringify({ error }), { status: 500 });
 	}
-
-	const { email, subject, message } = await request.json();
-
-	if (!email || !subject || !message) {
-		return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
-	}
-
-	const { error } = await resend.emails.send({
-		from: 'Allify <contact@allify.club>',
-		to: email,
-		subject: subject,
-		html: `${message}`
-	});
-
-	if (error) {
-		return new Response(JSON.stringify({ error: 'Error sending email' }), { status: 500 });
-	}
-
-	return new Response(JSON.stringify({ message: 'Email sent successfully' }), { status: 200 });
 };

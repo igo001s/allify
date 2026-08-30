@@ -40,7 +40,7 @@ export type PublicUserInfo = Omit<UserInfo, 'email'>;
 export type SearchUserInfo = {
 	_id: ObjectId;
 	name: string;
-	image: AvatarImage;
+	image?: AvatarImage;
 	spotifyConnected: boolean;
 	deezerConnected: boolean;
 };

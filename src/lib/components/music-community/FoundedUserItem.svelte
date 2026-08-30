@@ -32,75 +32,113 @@
 	async function handleSaveFavorites(
 		idToSave: ObjectId,
 		id: ObjectId,
-		name?: string,
+		name: string,
 		image?: AvatarImage,
 		spotifyConnected = false,
 		deezerConnected = false
 	) {
-		if (!idToSave || !id || !name || !image) return false;
+		const addToFavoritesResponse = await addToFavorites(
+			idToSave,
+			id,
+			name,
+			image,
+			spotifyConnected,
+			deezerConnected
+		);
 
-		if (idToSave === id) {
-			toastStore.set({
-				showToast: true,
-				toastType: 'error',
-				toastMessage:
-					$translationsStore.musicCommunityPage.musicCommunityToastErrorAddToFavoritesMessage
-			});
+		if (addToFavoritesResponse.error) {
+			if (addToFavoritesResponse.typeError === 'sameUser') {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.musicCommunityPage
+							.musicCommunityToastErrorAddToFavoritesSameUserMessage
+				});
+			} else {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.musicCommunityPage.musicCommunityToastErrorAddToFavoritesMessage
+				});
+			}
 
-			return false;
+			return;
 		}
-
-		const data = await addToFavorites(idToSave, id, name, image, spotifyConnected, deezerConnected);
-
-		if (!data) return false;
 
 		userInfo.update((currentUser) => {
 			if (currentUser) {
 				if (currentUser.favorites) {
-					currentUser.favorites?.push({
-						_id: id,
-						name,
-						image,
-						spotifyConnected,
-						deezerConnected
-					});
+					currentUser.favorites?.push(
+						image
+							? {
+									_id: id,
+									name,
+									image,
+									spotifyConnected,
+									deezerConnected
+								}
+							: {
+									_id: id,
+									name,
+									spotifyConnected,
+									deezerConnected
+								}
+					);
 				} else {
-					currentUser.favorites = [
-						{
-							_id: id,
-							name,
-							image,
-							spotifyConnected,
-							deezerConnected
-						}
-					];
+					currentUser.favorites = image
+						? [
+								{
+									_id: id,
+									name,
+									image,
+									spotifyConnected,
+									deezerConnected
+								}
+							]
+						: [
+								{
+									_id: id,
+									name,
+									spotifyConnected,
+									deezerConnected
+								}
+							];
 				}
 			}
 
 			return currentUser;
 		});
 
-		return true;
+		return;
 	}
 
 	async function handleRemoveFromFavorites(idToRemove: ObjectId, id: ObjectId) {
-		if (!idToRemove || !id) return false;
+		const removeFromFavoritesResponse = await removeFromFavorites(idToRemove, id);
 
-		const data = await removeFromFavorites(idToRemove, id);
+		if (removeFromFavoritesResponse.error) {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage:
+					$translationsStore.musicCommunityPage.musicCommunityToastErrorRemoveFromFavoritesMessage
+			});
 
-		if (!data) return false;
+			return;
+		}
 
 		userInfo.update((currentUser) => {
 			if (currentUser) {
 				currentUser.favorites = currentUser.favorites?.filter(
-					(favorite) => favorite._id !== data.removedFavorite._id
+					(favorite) => favorite._id !== removeFromFavoritesResponse.removedFavorite._id
 				);
 			}
 
 			return currentUser;
 		});
 
-		return true;
+		return;
 	}
 
 	async function handleToggleFavorites(

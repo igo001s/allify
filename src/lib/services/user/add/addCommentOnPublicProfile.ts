@@ -37,8 +37,8 @@ export async function addCommentOnPublicProfile(
 		});
 
 		if (!response.ok) {
-			const error = await response.json();
-			throw new Error(error.error);
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
 		const parsedResponse = await response.json();
@@ -46,7 +46,10 @@ export async function addCommentOnPublicProfile(
 		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User addCommentOnPublicProfile error:', error);
+			console.error(
+				'User addCommentOnPublicProfile error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
 		return {

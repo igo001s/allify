@@ -11,14 +11,21 @@ export async function addToFavorites(
 	idToSave: ObjectId,
 	id: ObjectId,
 	name: string,
-	image: AvatarImage,
+	image: AvatarImage | undefined,
 	spotifyConnected?: boolean,
 	deezerConnected?: boolean
 ) {
 	try {
 		if (!idToSave || !id || !name || !image) return;
 
-		const addToFavoritesResponse = await fetch('/api/mongodb/add/add-to-favorites', {
+		if (idToSave === id) {
+			return {
+				error: true,
+				typeError: 'sameUser'
+			};
+		}
+
+		const response = await fetch('/api/mongodb/add/add-to-favorites', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -33,19 +40,22 @@ export async function addToFavorites(
 			})
 		});
 
-		if (!addToFavoritesResponse.ok) {
-			const error = await addToFavoritesResponse.json();
-			throw new Error(error.error);
+		if (!response.ok) {
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedaddToFavorites = await addToFavoritesResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedaddToFavorites;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User addToFavorites error:', error);
+			console.error('User addToFavorites error:', error instanceof Error ? error.message : error);
 		}
 
-		return null;
+		return {
+			error: true,
+			typeError: 'addToFavorites'
+		};
 	}
 }

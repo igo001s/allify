@@ -252,7 +252,11 @@ export const ja = {
 			'別の名前で検索するか、スペルを確認してください。',
 		musicCommunityStarIconAltText: 'プロフィールをお気に入りに追加するための星アイコン',
 		musicCommunityStarIconRemoveAltText: 'プロフィールをお気に入りから削除するための星アイコン',
-		musicCommunityToastErrorAddToFavoritesMessage: '自分自身をお気に入りに追加することはできません',
+		musicCommunityToastErrorAddToFavoritesMessage: 'お気に入りに追加中にエラーが発生しました',
+		musicCommunityToastErrorAddToFavoritesSameUserMessage:
+			'自分自身をお気に入りに追加することはできません',
+		musicCommunityToastErrorRemoveFromFavoritesMessage:
+			'お気に入りから削除中にエラーが発生しました',
 		musicCommunityPageLoadingUserTitle: 'ユーザープロフィールを読み込み中... | Allify',
 		musicCommunityPageLoadingUserMetaDescription:
 			'ユーザープロフィールを読み込み中です。情報を取得するまでしばらくお待ちください。',

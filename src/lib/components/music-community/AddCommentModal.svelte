@@ -43,7 +43,7 @@
 			return;
 		}
 
-		const data = await addCommentOnPublicProfile(
+		const addCommentOnPublicProfileResponse = await addCommentOnPublicProfile(
 			{
 				image: $userInfo?.connectedStreamings?.spotify?.image,
 				_id: $userInfo?._id,
@@ -54,7 +54,7 @@
 			comment
 		);
 
-		if (!data.error) {
+		if (!addCommentOnPublicProfileResponse.error) {
 			userInfo.update((currentUser: UserInfo | undefined) => {
 				if (!currentUser) {
 					return currentUser;
@@ -67,9 +67,9 @@
 						commentsMadeByMe: [
 							...currentUser.comments.commentsMadeByMe,
 							{
-								recipientId: data.recipient,
-								content: data.content,
-								createdAt: data.createdAt
+								recipientId: addCommentOnPublicProfileResponse.recipient,
+								content: addCommentOnPublicProfileResponse.content,
+								createdAt: addCommentOnPublicProfileResponse.createdAt
 							}
 						]
 					}
@@ -87,8 +87,10 @@
 					publicProfileUserName +
 					'.'
 			});
+
+			return;
 		} else {
-			if (data.typeError === 'alreadyCommented') {
+			if (addCommentOnPublicProfileResponse.typeError === 'alreadyCommented') {
 				toastStore.set({
 					showToast: true,
 					toastType: 'error',
@@ -96,7 +98,7 @@
 						$translationsStore.musicCommunityPage.publicUser
 							.musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage
 				});
-			} else if (data.typeError === 'addCommentOnPublicProfile') {
+			} else if (addCommentOnPublicProfileResponse.typeError === 'addCommentOnPublicProfile') {
 				toastStore.set({
 					showToast: true,
 					toastType: 'error',

@@ -3,7 +3,7 @@ import { dev } from '$app/environment';
 
 export async function sendEmail(subject: string, email: string, message: string) {
 	try {
-		await fetch('/api/email/send-email', {
+		const response = await fetch('/api/email/send-email', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -15,10 +15,15 @@ export async function sendEmail(subject: string, email: string, message: string)
 			})
 		});
 
+		if (!response.ok) {
+			const { error } = await response.json();
+			throw new Error(error);
+		}
+
 		return;
 	} catch (error) {
 		if (dev) {
-			console.error('Email error:', error);
+			console.error('Email error:', error instanceof Error ? error.message : error);
 		}
 
 		return;

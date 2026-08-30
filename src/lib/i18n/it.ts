@@ -260,7 +260,11 @@ export const it = {
 			'Prova a cercare un altro nome o verifica l’ortografia.',
 		musicCommunityStarIconAltText: 'Icona di stella per aggiungere un profilo ai preferiti',
 		musicCommunityStarIconRemoveAltText: 'Icona di stella per rimuovere un profilo dai preferiti',
-		musicCommunityToastErrorAddToFavoritesMessage: 'Non puoi aggiungerti ai preferiti',
+		musicCommunityToastErrorAddToFavoritesMessage:
+			'Si è verificato un errore durante l’aggiunta ai preferiti',
+		musicCommunityToastErrorAddToFavoritesSameUserMessage: 'NNon puoi aggiungerti ai preferiti',
+		musicCommunityToastErrorRemoveFromFavoritesMessage:
+			'Si è verificato un errore durante la rimozione dai preferiti',
 		musicCommunityPageLoadingUserTitle: 'Caricamento del profilo utente... | Allify',
 		musicCommunityPageLoadingUserMetaDescription:
 			'Stiamo caricando il profilo dell’utente. Attendere prego mentre recuperiamo le informazioni.',
