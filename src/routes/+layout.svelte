@@ -23,9 +23,29 @@
 
 	const fetchMeInfo = async () => {
 		try {
-			const response = await fetchUserInfo($translationsStore.templateEmail.welcomeToAllifySubject);
+			const fetchUserInfoResponse = await fetchUserInfo(
+				$translationsStore.templateEmail.welcomeToAllifySubject
+			);
 
-			userInfo.set(response);
+			if (fetchUserInfoResponse?.error) {
+				if (fetchUserInfoResponse.errorType === 'userCreation') {
+					toastStore.set({
+						showToast: true,
+						toastType: 'error',
+						toastMessage: $translationsStore.generalTexts.fetchUserInfoUserCreationInfoErrorToast
+					});
+				} else {
+					toastStore.set({
+						showToast: true,
+						toastType: 'error',
+						toastMessage: $translationsStore.generalTexts.fetchUserInfoErrorToast
+					});
+				}
+
+				throw new Error('Failed to fetch user info');
+			}
+
+			userInfo.set(fetchUserInfoResponse);
 		} catch {
 			userInfo.set(undefined);
 		} finally {

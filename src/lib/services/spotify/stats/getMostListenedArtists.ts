@@ -9,7 +9,7 @@ export async function getMostListenedArtists(limit: number = 5) {
 	let mostListenedArtistsItems = [] as ArtistSpotify[];
 
 	try {
-		const mostListenedArtistsResponse = await fetch(`/api/spotify/stats/most-listened-artists`, {
+		const response = await fetch(`/api/spotify/stats/most-listened-artists`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
@@ -17,29 +17,29 @@ export async function getMostListenedArtists(limit: number = 5) {
 			})
 		});
 
-		if (!mostListenedArtistsResponse.ok) return undefined;
+		if (!response.ok) return undefined;
 
-		const parsedMostListenedArtists = await mostListenedArtistsResponse.json();
+		const parsedResponse = await response.json();
 
 		mostListenedArtistItem = {
-			id: parsedMostListenedArtists[0].id,
-			name: parsedMostListenedArtists[0].name,
-			popularity: parsedMostListenedArtists[0].popularity,
-			followers: parsedMostListenedArtists[0].followers.total,
-			genres: parsedMostListenedArtists[0].genres,
-			image: parsedMostListenedArtists[0].images[0],
-			artistLink: parsedMostListenedArtists[0].external_urls.spotify
+			id: parsedResponse[0].id,
+			name: parsedResponse[0].name,
+			popularity: parsedResponse[0].popularity,
+			followers: parsedResponse[0].followers.total,
+			genres: parsedResponse[0].genres,
+			image: parsedResponse[0].images[0],
+			artistLink: parsedResponse[0].external_urls.spotify
 		};
 
-		for (let i = 0; i < parsedMostListenedArtists.length; i++) {
+		for (let i = 0; i < parsedResponse.length; i++) {
 			mostListenedArtistsItems.push({
-				id: parsedMostListenedArtists[i].id,
-				name: parsedMostListenedArtists[i].name,
-				popularity: parsedMostListenedArtists[i].popularity,
-				followers: parsedMostListenedArtists[i].followers.total,
-				genres: parsedMostListenedArtists[i].genres,
-				image: parsedMostListenedArtists[i].images[0],
-				artistLink: parsedMostListenedArtists[i].external_urls.spotify
+				id: parsedResponse[i].id,
+				name: parsedResponse[i].name,
+				popularity: parsedResponse[i].popularity,
+				followers: parsedResponse[i].followers.total,
+				genres: parsedResponse[i].genres,
+				image: parsedResponse[i].images[0],
+				artistLink: parsedResponse[i].external_urls.spotify
 			});
 		}
 
@@ -50,7 +50,10 @@ export async function getMostListenedArtists(limit: number = 5) {
 		};
 	} catch (error) {
 		if (dev) {
-			console.error('Spotify getMostListenedArtists error:', error);
+			console.error(
+				'Spotify getMostListenedArtists error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
 		return undefined;

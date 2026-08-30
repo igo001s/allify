@@ -136,7 +136,9 @@ export const ru = {
 		toastCloseButtonAriaLabel: 'Закрыть уведомление',
 		toastCloseButtonAltText: 'Иконка для закрытия уведомления',
 		connectPlatformSpotifyAltText: 'Значок Spotify',
-		connectPlatformDeezerAltText: 'Значок Deezer'
+		connectPlatformDeezerAltText: 'Значок Deezer',
+		fetchUserInfoUserCreationInfoErrorToast: 'Произошла ошибка при создании пользователя.',
+		fetchUserInfoErrorToast: 'Произошла ошибка при получении информации о пользователе.'
 	},
 	homePage: {
 		title: 'Откройте свою музыкальную идентичность | Allify',

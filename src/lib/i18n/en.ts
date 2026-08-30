@@ -134,7 +134,9 @@ export const en = {
 		toastCloseButtonAriaLabel: 'Close notification',
 		toastCloseButtonAltText: 'Close notification icon',
 		connectPlatformSpotifyAltText: 'Spotify icon',
-		connectPlatformDeezerAltText: 'Deezer icon'
+		connectPlatformDeezerAltText: 'Deezer icon',
+		fetchUserInfoUserCreationInfoErrorToast: 'An error occurred while creating the user.',
+		fetchUserInfoErrorToast: 'An error occurred while fetching the user information.'
 	},
 	homePage: {
 		title: 'Discover Your Musical Identity | Allify',

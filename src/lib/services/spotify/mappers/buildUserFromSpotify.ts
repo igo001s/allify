@@ -16,7 +16,6 @@ export async function buildUserFromSpotify(infoFromSpotify: any) {
 		]);
 
 		const dataFromSpotify: UserInfoSpotify = {
-			connected: true,
 			name: infoFromSpotify.display_name,
 			email: infoFromSpotify.email,
 			image: infoFromSpotify.images?.[0],
@@ -33,7 +32,10 @@ export async function buildUserFromSpotify(infoFromSpotify: any) {
 		return dataFromSpotify;
 	} catch (error) {
 		if (dev) {
-			console.error('Spotify buildUserFromSpotify error:', error);
+			console.error(
+				'Spotify buildUserFromSpotify error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
 		return undefined;

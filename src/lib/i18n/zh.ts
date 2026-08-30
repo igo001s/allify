@@ -126,7 +126,9 @@ export const zh = {
 		toastCloseButtonAriaLabel: '关闭通知',
 		toastCloseButtonAltText: '关闭通知图标',
 		connectPlatformSpotifyAltText: 'Spotify图标',
-		connectPlatformDeezerAltText: 'Deezer图标'
+		connectPlatformDeezerAltText: 'Deezer图标',
+		fetchUserInfoUserCreationInfoErrorToast: '创建用户时发生错误。',
+		fetchUserInfoErrorToast: '获取用户信息时发生错误。'
 	},
 	homePage: {
 		title: '发现你的音乐身份 | Allify',

@@ -2,7 +2,6 @@
 import type { AvatarImage } from './Image.type';
 
 export type UserInfoSpotify = {
-	connected: boolean;
 	name: string;
 	email: string;
 	image: AvatarImage;

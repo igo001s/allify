@@ -49,10 +49,7 @@ export const POST: RequestHandler = async ({ request }) => {
 					_id: user._id,
 					name: user.name,
 					image: user.primaryStreaming === 'spotify' ? user.connectedStreamings.spotify.image : '',
-					spotifyConnected:
-						user.connectedStreamings.spotify && user.connectedStreamings.spotify.connected === true
-							? true
-							: false,
+					spotifyConnected: user.connectedStreamings.spotify ? true : false,
 					deezerConnected: false
 				}))
 			}),

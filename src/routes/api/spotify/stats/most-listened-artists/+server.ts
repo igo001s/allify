@@ -26,7 +26,7 @@ export const POST: RequestHandler = async ({ request, cookies }) => {
 			});
 		}
 
-		const response = await fetch(
+		const mostListenedArtistsResponse = await fetch(
 			`https://api.spotify.com/v1/me/top/artists?offset=0&limit=${limit}`,
 			{
 				method: 'GET',
@@ -36,18 +36,18 @@ export const POST: RequestHandler = async ({ request, cookies }) => {
 			}
 		);
 
-		if (!response.ok) {
+		if (!mostListenedArtistsResponse.ok) {
 			return new Response(
 				JSON.stringify({ error: 'Failed to fetch Spotify data - most listened artists' }),
-				{ status: response.status }
+				{ status: mostListenedArtistsResponse.status }
 			);
 		}
 
-		const data = await response.json();
+		const parsedMostListenedArtistsResponse = await mostListenedArtistsResponse.json();
 
-		return new Response(JSON.stringify(data.items), { status: 200 });
+		return new Response(JSON.stringify(parsedMostListenedArtistsResponse.items), { status: 200 });
 	} catch (error) {
-		return new Response(JSON.stringify({ error: (error as Error).message }), {
+		return new Response(JSON.stringify({ error }), {
 			status: 500
 		});
 	}

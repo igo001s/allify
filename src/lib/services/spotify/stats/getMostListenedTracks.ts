@@ -9,7 +9,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 	let mostListenedTracksItems = [] as TrackSpotify[];
 
 	try {
-		const reqMostListenedTracks = await fetch(`/api/spotify/stats/most-listened-tracks`, {
+		const response = await fetch(`/api/spotify/stats/most-listened-tracks`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
@@ -17,29 +17,29 @@ export async function getMostListenedTracks(limit: number = 5) {
 			})
 		});
 
-		if (!reqMostListenedTracks.ok) return undefined;
+		if (!response.ok) return undefined;
 
-		const resMostListenedTracks = await reqMostListenedTracks.json();
+		const parsedResponse = await response.json();
 
 		mostListenedTrackItem = {
-			id: resMostListenedTracks[0].id,
-			name: resMostListenedTracks[0].name,
-			artists: resMostListenedTracks[0].artists.map((artist: any) => artist.name),
-			popularity: resMostListenedTracks[0].popularity,
-			albumName: resMostListenedTracks[0].album.name,
-			image: resMostListenedTracks[0].album.images[0],
-			trackLink: resMostListenedTracks[0].external_urls.spotify
+			id: parsedResponse[0].id,
+			name: parsedResponse[0].name,
+			artists: parsedResponse[0].artists.map((artist: any) => artist.name),
+			popularity: parsedResponse[0].popularity,
+			albumName: parsedResponse[0].album.name,
+			image: parsedResponse[0].album.images[0],
+			trackLink: parsedResponse[0].external_urls.spotify
 		};
 
-		for (let i = 0; i < resMostListenedTracks.length; i++) {
+		for (let i = 0; i < parsedResponse.length; i++) {
 			mostListenedTracksItems.push({
-				id: resMostListenedTracks[i].id,
-				name: resMostListenedTracks[i].name,
-				artists: resMostListenedTracks[i].artists.map((artist: any) => artist.name),
-				popularity: resMostListenedTracks[i].popularity,
-				albumName: resMostListenedTracks[i].album.name,
-				image: resMostListenedTracks[i].album.images[0],
-				trackLink: resMostListenedTracks[i].external_urls.spotify
+				id: parsedResponse[i].id,
+				name: parsedResponse[i].name,
+				artists: parsedResponse[i].artists.map((artist: any) => artist.name),
+				popularity: parsedResponse[i].popularity,
+				albumName: parsedResponse[i].album.name,
+				image: parsedResponse[i].album.images[0],
+				trackLink: parsedResponse[i].external_urls.spotify
 			});
 		}
 
@@ -50,7 +50,10 @@ export async function getMostListenedTracks(limit: number = 5) {
 		};
 	} catch (error) {
 		if (dev) {
-			console.error('Spotify getMostListenedTracks error:', error);
+			console.error(
+				'Spotify getMostListenedTracks error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
 		return undefined;

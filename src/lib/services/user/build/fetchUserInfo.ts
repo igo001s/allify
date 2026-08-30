@@ -25,27 +25,40 @@ export async function fetchUserInfo(emailMessage: string) {
 					builtUser
 				);
 
-				sendEmail(
-					emailMessage,
-					builtUser.email,
-					welcomeToAllifyTemplate(
-						createUserResult.createdUser.connectedStreamings.spotify.name,
-						'Spotify'
-					)
-				);
+				if (createUserResult) {
+					sendEmail(
+						emailMessage,
+						builtUser.email,
+						welcomeToAllifyTemplate(
+							createUserResult.createdUser.connectedStreamings.spotify.name,
+							'Spotify'
+						)
+					);
 
-				return createUserResult.createdUser;
+					return createUserResult.createdUser;
+				} else {
+					return {
+						error: true,
+						errorType: 'userCreation'
+					};
+				}
 			} else {
-				return undefined;
+				return {
+					error: true,
+					errorType: 'fetchUserInfo'
+				};
 			}
 		} else {
 			return userFromSpotify;
 		}
 	} catch (error) {
 		if (dev) {
-			console.error('User fetchUserInfo error:', error);
+			console.error('User fetchUserInfo error:', error instanceof Error ? error.message : error);
 		}
 
-		return undefined;
+		return {
+			error: true,
+			errorType: 'fetchUserInfo'
+		};
 	}
 }

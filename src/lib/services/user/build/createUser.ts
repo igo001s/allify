@@ -11,7 +11,7 @@ export async function createUser(
 	streamingData: UserInfoSpotify
 ) {
 	try {
-		const createUserResponse = await fetch('/api/mongodb/user/create-user', {
+		const response = await fetch('/api/mongodb/user/create-user', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -19,18 +19,18 @@ export async function createUser(
 			body: JSON.stringify({ name, email, streaming, streamingData })
 		});
 
-		const parsedCreateUser = await createUserResponse.json();
+		const parsedResponse = await response.json();
 
-		if (!parsedCreateUser.createdUser) {
+		if (!parsedResponse.createdUser) {
 			throw new Error('Request failed');
 		}
 
-		return parsedCreateUser;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User createUser error:', error);
+			console.error('User createUser error:', error instanceof Error ? error.message : error);
 		}
 
-		return;
+		return null;
 	}
 }

@@ -134,7 +134,10 @@ export const de = {
 		toastCloseButtonAriaLabel: 'Benachrichtigung schließen',
 		toastCloseButtonAltText: 'Symbol zum Schließen der Benachrichtigung',
 		connectPlatformSpotifyAltText: 'Spotify-Symbol',
-		connectPlatformDeezerAltText: 'Deezer-Symbol'
+		connectPlatformDeezerAltText: 'Deezer-Symbol',
+		fetchUserInfoUserCreationInfoErrorToast:
+			'Beim Erstellen des Benutzers ist ein Fehler aufgetreten.',
+		fetchUserInfoErrorToast: 'Beim Abrufen der Benutzerinformationen ist ein Fehler aufgetreten.'
 	},
 	homePage: {
 		title: 'Entdecke deine musikalische Identität | Allify',

@@ -19,9 +19,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const body = await request.json();
-
-		const { email } = body;
+		const { email } = await request.json();
 
 		if (!email) {
 			return new Response(JSON.stringify({ error: 'Email is required' }), { status: 400 });

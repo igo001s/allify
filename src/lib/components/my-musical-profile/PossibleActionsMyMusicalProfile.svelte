@@ -57,7 +57,6 @@
 							...currentUser.connectedStreamings,
 							spotify: {
 								...currentUser.connectedStreamings.spotify,
-								connected: currentUser.connectedStreamings.spotify.connected,
 								mostListenedArtists: {
 									artistsLimit: response.limit,
 									mostListenedArtistItem: response.mostListenedArtist,
@@ -108,7 +107,6 @@
 							...currentUser.connectedStreamings,
 							spotify: {
 								...currentUser.connectedStreamings.spotify,
-								connected: currentUser.connectedStreamings.spotify.connected,
 								mostListenedTracks: {
 									tracksLimit: response.limit,
 									mostListenedTrackItem: response.mostListenedTrack,

@@ -10,8 +10,8 @@ export async function getUserFromDatabase(email: string) {
 		});
 
 		if (!getUserResponse.ok) {
-			const error = await getUserResponse.json();
-			throw new Error(error.error);
+			const { error } = await getUserResponse.json();
+			throw new Error(error);
 		}
 
 		const parsedGetUser = await getUserResponse.json();
@@ -19,7 +19,10 @@ export async function getUserFromDatabase(email: string) {
 		return parsedGetUser;
 	} catch (error) {
 		if (dev) {
-			console.error('User getUserFromDatabase error:', error);
+			console.error(
+				'User getUserFromDatabase error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
 		return;
