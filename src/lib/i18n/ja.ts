@@ -119,6 +119,7 @@ export const ja = {
 			'あなたのプロフィールは他のユーザーには表示されません。公開することを選択するまでは、あなたのみがすべての情報を閲覧できます。',
 		buildProfileThirdStepVisibilitySectionParagraph3:
 			'オプションが選択されていない場合、デフォルトではプロフィールは公開されます。この設定はいつでも変更できます。',
+		buildProfileSaveBuiltUserErrorToast: 'プロフィールの保存中にエラーが発生しました。',
 		buildProfileSaveBuiltUserSectionParagraph1: 'プロフィールを保存する',
 		buildProfileSaveBuiltUserSectionParagraph2:
 			'保存する前に情報を確認してください。完了後は、いつでもプロフィールを編集できます。',

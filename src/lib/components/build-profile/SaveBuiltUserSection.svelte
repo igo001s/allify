@@ -8,6 +8,7 @@
 
 	// Types
 	import type { buildProfileInfo } from '$lib/types/UserInfo.type';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Props
 	export let backToPreviousStep: () => void;
@@ -20,36 +21,52 @@
 				buildProfileData.profileVisibility = 'public';
 			}
 
-			const response = await saveBuiltProfile($userInfo._id, buildProfileData);
+			const saveBuiltProfileResponse = await saveBuiltProfile($userInfo._id, buildProfileData);
 
-			userInfo.update((currentUser) => {
-				if (currentUser) {
-					return {
-						...currentUser,
-						tracks: {
-							trackOfTheMoment: {
-								track: response.trackOfTheMoment.track,
-								nextFreeUpdate: response.trackOfTheMoment.nextFreeUpdate
+			if (!saveBuiltProfileResponse.error) {
+				userInfo.update((currentUser) => {
+					if (currentUser) {
+						return {
+							...currentUser,
+							tracks: {
+								trackOfTheMoment: {
+									track: saveBuiltProfileResponse.trackOfTheMoment.track,
+									nextFreeUpdate: saveBuiltProfileResponse.trackOfTheMoment.nextFreeUpdate
+								}
+							},
+							artists: {
+								artistOfTheMoment: {
+									artist: saveBuiltProfileResponse.artistOfTheMoment.artist,
+									nextFreeUpdate: saveBuiltProfileResponse.artistOfTheMoment.nextFreeUpdate
+								}
+							},
+							profileVisibility: {
+								visibility: saveBuiltProfileResponse.profileVisibility.visibility
 							}
-						},
-						artists: {
-							artistOfTheMoment: {
-								artist: response.artistOfTheMoment.artist,
-								nextFreeUpdate: response.artistOfTheMoment.nextFreeUpdate
-							}
-						},
-						profileVisibility: {
-							visibility: response.profileVisibility.visibility
-						}
-					};
-				}
-				return currentUser;
+						};
+					}
+					return currentUser;
+				});
+
+				closeModal();
+
+				return;
+			} else {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.generalTexts.buildProfileSaveBuiltUserErrorToast
+				});
+			}
+		} else {
+			toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.generalTexts.buildProfileSaveBuiltUserErrorToast
 			});
-
-			closeModal();
 		}
-
-		return;
 	}
 </script>
 

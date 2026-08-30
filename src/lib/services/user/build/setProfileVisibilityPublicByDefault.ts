@@ -6,6 +6,8 @@ import type { ObjectId } from 'mongodb';
 
 export async function setProfileVisibilityPublicByDefault(id: ObjectId) {
 	try {
+		if (!id) return null;
+
 		const setProfileVisibilityPublicByDefaultResponse = await fetch(
 			'/api/mongodb/user/set-profile-visibility-public-by-default',
 			{
@@ -25,9 +27,9 @@ export async function setProfileVisibilityPublicByDefault(id: ObjectId) {
 		return parsedSetProfileVisibilityPublicByDefault.profileVisibility;
 	} catch (error) {
 		if (dev) {
-			console.error('User setProfileVisibilityPublicByDefault error:', error);
+			console.error('User setProfileVisibilityPublicByDefault error:', error instanceof Error ? error.message : error);
 		}
 
-		return;
+		return null;
 	}
 }

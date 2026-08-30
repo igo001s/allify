@@ -121,6 +121,7 @@ export const it = {
 			'Il tuo profilo sarà nascosto agli altri utenti. Solo tu potrai visualizzare tutte le tue informazioni finché non deciderai di renderlo pubblico.',
 		buildProfileThirdStepVisibilitySectionParagraph3:
 			'Se non viene selezionata alcuna opzione, il tuo profilo sarà pubblico per impostazione predefinita. Puoi modificare questa impostazione in qualsiasi momento.',
+		buildProfileSaveBuiltUserErrorToast: 'Si è verificato un errore durante il salvataggio del profilo.',
 		buildProfileSaveBuiltUserSectionParagraph1: 'Salva il tuo profilo',
 		buildProfileSaveBuiltUserSectionParagraph2:
 			'Controlla le informazioni prima di salvare. Una volta completato, potrai modificare il tuo profilo ogni volta che vuoi.',

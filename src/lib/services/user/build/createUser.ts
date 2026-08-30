@@ -11,6 +11,10 @@ export async function createUser(
 	streamingData: UserInfoSpotify
 ) {
 	try {
+		if (!name || !email || !streaming || !streamingData) {
+			return null;
+		}
+
 		const response = await fetch('/api/mongodb/user/create-user', {
 			method: 'POST',
 			headers: {

@@ -119,6 +119,7 @@ export const de = {
 			'Dein Profil wird für andere Nutzer verborgen. Nur du kannst deine vollständigen Informationen sehen, bis du dich entscheidest, dein Profil öffentlich zu machen.',
 		buildProfileThirdStepVisibilitySectionParagraph3:
 			'Wenn keine Option ausgewählt ist, wird dein Profil standardmäßig öffentlich sein. Du kannst diese Einstellung jederzeit ändern.',
+		buildProfileSaveBuiltUserErrorToast: 'Beim Speichern des Profils ist ein Fehler aufgetreten.',
 		buildProfileSaveBuiltUserSectionParagraph1: 'Speichere dein Profil',
 		buildProfileSaveBuiltUserSectionParagraph2:
 			'Überprüfe die Informationen, bevor du sie speicherst. Nach Abschluss kannst du dein Profil jederzeit bearbeiten.',

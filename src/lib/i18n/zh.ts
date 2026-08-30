@@ -111,6 +111,7 @@ export const zh = {
 			'您的个人资料将对其他用户隐藏。在您决定公开之前，只有您自己可以查看完整的个人资料信息。',
 		buildProfileThirdStepVisibilitySectionParagraph3:
 			'如果未选择任何选项，您的个人资料将默认为公开。您可以随时更改此设置。',
+		buildProfileSaveBuiltUserErrorToast: '保存个人资料时发生错误。',
 		buildProfileSaveBuiltUserSectionParagraph1: '保存您的个人资料',
 		buildProfileSaveBuiltUserSectionParagraph2:
 			'在保存之前，请检查您的信息。完成后，您可以随时编辑您的个人资料。',
