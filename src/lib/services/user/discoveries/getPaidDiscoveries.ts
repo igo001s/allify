@@ -56,7 +56,7 @@ export async function getPaidDiscoveries(
 		};
 	} catch (error) {
 		if (dev) {
-			console.error('User getPaidDiscoveries error:', error);
+			console.error('User getPaidDiscoveries error:', error instanceof Error ? error.message : error);
 		}
 
 		return;
