@@ -162,7 +162,7 @@
 	/>
 </svelte:head>
 
-{#if $userInfo?.connectedStreamings.spotify?.connected === true}
+{#if $userInfo?.connectedStreamings.spotify}
 	<section class="base-section core-page">
 		<h1 class="mb-3 text-2xl font-semibold text-t-primary md:text-3xl lg:mb-5">
 			{$translationsStore.discoveriesPage.discoveriesPageHeading1}

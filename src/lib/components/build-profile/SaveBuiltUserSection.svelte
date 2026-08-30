@@ -55,16 +55,14 @@
 				toastStore.set({
 					showToast: true,
 					toastType: 'error',
-					toastMessage:
-						$translationsStore.generalTexts.buildProfileSaveBuiltUserErrorToast
+					toastMessage: $translationsStore.generalTexts.buildProfileSaveBuiltUserErrorToast
 				});
 			}
 		} else {
 			toastStore.set({
-					showToast: true,
-					toastType: 'error',
-					toastMessage:
-						$translationsStore.generalTexts.buildProfileSaveBuiltUserErrorToast
+				showToast: true,
+				toastType: 'error',
+				toastMessage: $translationsStore.generalTexts.buildProfileSaveBuiltUserErrorToast
 			});
 		}
 	}

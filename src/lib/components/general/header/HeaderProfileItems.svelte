@@ -41,7 +41,7 @@
 	] as { text: string; href: string }[];
 
 	function signInOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
-		signInWrapper(streaming, $userInfo?.connectedStreamings.spotify?.connected ?? false, false);
+		signInWrapper(streaming, $userInfo?.connectedStreamings.spotify ? true : false, false);
 
 		showProfileOptions = false;
 
@@ -55,7 +55,7 @@
 	}
 
 	function logoutOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
-		logoutWrapper(streaming, $userInfo?.connectedStreamings.spotify?.connected ?? false, false);
+		logoutWrapper(streaming, $userInfo?.connectedStreamings.spotify ? true : false, false);
 
 		showProfileOptions = false;
 	}

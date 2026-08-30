@@ -59,7 +59,7 @@
 					on:click={() =>
 						signInWrapper(
 							item.streaming,
-							$userInfo?.connectedStreamings.spotify?.connected ?? false,
+							$userInfo?.connectedStreamings.spotify ? true : false,
 							false
 						)}
 					class="flex w-full cursor-pointer items-center px-3 py-2 text-left text-xs text-t-primary transition-all hover:translate-x-0.5"

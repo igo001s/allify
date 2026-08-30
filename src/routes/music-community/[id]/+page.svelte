@@ -151,7 +151,7 @@
 			<DotsLoading />
 		</div>
 	</section>
-{:else if $userInfo?.connectedStreamings.spotify?.connected === true}
+{:else if $userInfo?.connectedStreamings.spotify}
 	<section class="base-section">
 		{#if user}
 			<div class="mx-auto flex w-full flex-col gap-12">

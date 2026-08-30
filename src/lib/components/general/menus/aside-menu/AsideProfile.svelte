@@ -18,9 +18,9 @@
 	// Props
 	export let isAsideMenuOpen: boolean;
 
-	$: loggedIn =
-		$userInfo?.connectedStreamings?.spotify?.connected === true ||
-		$userInfo?.connectedStreamings?.deezer !== undefined
+	$: loggedIn = $userInfo?.connectedStreamings?.spotify
+		? true
+		: false || $userInfo?.connectedStreamings?.deezer
 			? true
 			: false;
 
@@ -31,7 +31,7 @@
 	}
 
 	function logoutOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
-		logoutWrapper(streaming, $userInfo?.connectedStreamings.spotify?.connected ?? false, false);
+		logoutWrapper(streaming, $userInfo?.connectedStreamings.spotify ? true : false, false);
 
 		showProfileOptions = false;
 		isAsideMenuOpen = false;

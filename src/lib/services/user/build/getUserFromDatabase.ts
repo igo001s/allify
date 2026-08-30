@@ -6,7 +6,7 @@ export async function getUserFromDatabase(email: string) {
 		if (!email) {
 			return undefined;
 		}
-		
+
 		const response = await fetch('/api/mongodb/user/get-user', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },

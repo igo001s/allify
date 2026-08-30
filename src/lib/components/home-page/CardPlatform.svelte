@@ -8,7 +8,7 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Types
-	import type { CardPlatformType } from '$lib/types/CardPlatform.type';
+	import type { CardPlatformType } from '$lib/types/Components.type';
 
 	// Utils
 	import { setTitleByStreaming } from '$lib/utils/setTitleByStreaming';
@@ -39,7 +39,7 @@
 	})();
 
 	function isPlatformConnected() {
-		return $userInfo?.connectedStreamings?.[platformKey]?.connected === true;
+		return $userInfo?.connectedStreamings?.[platformKey] ? true : false;
 	}
 </script>
 
@@ -54,11 +54,7 @@
 
 			<button
 				on:click={() => {
-					signInWrapper(
-						platformKey,
-						$userInfo?.connectedStreamings.spotify?.connected ?? false,
-						false
-					);
+					signInWrapper(platformKey, isPlatformConnected(), false);
 				}}
 				disabled={isPlatformConnected()}
 				title={setTitleByStreaming(platformKey)}

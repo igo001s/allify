@@ -27,7 +27,10 @@ export async function setProfileVisibilityPublicByDefault(id: ObjectId) {
 		return parsedSetProfileVisibilityPublicByDefault.profileVisibility;
 	} catch (error) {
 		if (dev) {
-			console.error('User setProfileVisibilityPublicByDefault error:', error instanceof Error ? error.message : error);
+			console.error(
+				'User setProfileVisibilityPublicByDefault error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
 		return null;

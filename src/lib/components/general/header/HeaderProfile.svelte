@@ -13,8 +13,7 @@
 	export let openLanguageDropdown: boolean;
 
 	$: loggedIn =
-		$userInfo?.connectedStreamings?.spotify?.connected === true ||
-		$userInfo?.connectedStreamings?.deezer !== undefined
+		$userInfo?.connectedStreamings?.spotify || $userInfo?.connectedStreamings?.deezer !== undefined
 			? true
 			: false;
 

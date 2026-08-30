@@ -46,7 +46,7 @@
 	/>
 </svelte:head>
 
-{#if $userInfo?.connectedStreamings.spotify?.connected === true}
+{#if $userInfo?.connectedStreamings.spotify}
 	<section class="base-section settings-page">
 		<h1 class="mb-10">{$translationsStore.settingsPage.settingsPageHeading1}</h1>
 

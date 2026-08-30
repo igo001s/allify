@@ -42,12 +42,16 @@
 		document.body.style.overflow = '';
 
 		if ($userInfo?._id) {
-			const setProfileVisibilityPublicByDefaultResponse = await setProfileVisibilityPublicByDefault($userInfo?._id);
+			const setProfileVisibilityPublicByDefaultResponse = await setProfileVisibilityPublicByDefault(
+				$userInfo?._id
+			);
 
 			userInfo.update((currentUser) => {
 				if (currentUser) {
 					currentUser.profileVisibility = {
-						visibility: setProfileVisibilityPublicByDefaultResponse?.visibility ? setProfileVisibilityPublicByDefaultResponse.visibility : 'public'
+						visibility: setProfileVisibilityPublicByDefaultResponse?.visibility
+							? setProfileVisibilityPublicByDefaultResponse.visibility
+							: 'public'
 					};
 				}
 				return currentUser;

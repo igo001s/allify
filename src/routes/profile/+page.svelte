@@ -106,7 +106,7 @@
 	/>
 </svelte:head>
 
-{#if $userInfo?.connectedStreamings.spotify?.connected === true}
+{#if $userInfo?.connectedStreamings.spotify}
 	<section class="base-section">
 		<div class="mx-auto flex w-full flex-col gap-10 sm:gap-12 lg:gap-14">
 			<KeyInformation

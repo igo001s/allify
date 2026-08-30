@@ -34,14 +34,16 @@
 
 		<a
 			class="mt-6 w-full cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-sm font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark lg:w-90 lg:max-w-90"
-			href={`${$userInfo?.connectedStreamings.spotify?.connected === true ? '/my-musical-profile' : '#connect-platforms-section'}`}
+			href={`${$userInfo?.connectedStreamings.spotify ? true : false ? '/my-musical-profile' : '#connect-platforms-section'}`}
 			aria-label={$userInfo !== undefined
 				? $translationsStore.homePage.homePageHeroSectionButton1v2AriaLabel
 				: $translationsStore.homePage.homePageHeroSectionButton1AriaLabel}
 		>
-			{$userInfo?.connectedStreamings.spotify?.connected === true
-				? $translationsStore.homePage.homePageHeroSectionButton1v2
-				: $translationsStore.homePage.homePageHeroSectionButton1}
+			{$userInfo?.connectedStreamings.spotify
+				? true
+				: false
+					? $translationsStore.homePage.homePageHeroSectionButton1v2
+					: $translationsStore.homePage.homePageHeroSectionButton1}
 		</a>
 	</div>
 
