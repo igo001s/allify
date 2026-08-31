@@ -40,14 +40,14 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 
 	cookies.set('spotify_access_token', tokenData.access_token, {
 		httpOnly: true,
-		secure: process.env.NODE_ENV === 'production',
+		secure: true,
 		path: '/',
 		maxAge: tokenData.expires_in
 	});
 
 	cookies.set('spotify_refresh_token', tokenData.refresh_token, {
 		httpOnly: true,
-		secure: process.env.NODE_ENV === 'production',
+		secure: true,
 		path: '/',
 		maxAge: 60 * 60 * 24 * 30
 	});

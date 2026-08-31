@@ -11,7 +11,7 @@ export const GET: RequestHandler = async ({ cookies }) => {
 
 	cookies.set('spotify_state', state, {
 		httpOnly: true,
-		secure: process.env.NODE_ENV === 'production',
+		secure: true,
 		path: '/',
 		maxAge: 60 * 5
 	});

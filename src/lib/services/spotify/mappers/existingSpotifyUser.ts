@@ -12,7 +12,7 @@ export async function existingSpotifyUser() {
 
 		const parsedGetProfile = await getProfileResponse.json();
 
-		if (!parsedGetProfile.email) throw new Error('No email from Spotify');
+		if (!parsedGetProfile.email) throw new Error(parsedGetProfile.message);
 
 		const getUserInfoFromSpotify = await getUserFromDatabase(parsedGetProfile.email);
 

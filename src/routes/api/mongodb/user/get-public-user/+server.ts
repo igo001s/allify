@@ -22,9 +22,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const body = await request.json();
-
-		const { id } = body;
+		const { id } = await request.json();
 
 		if (!id) {
 			return new Response(JSON.stringify({ error: 'ID is required' }), { status: 400 });

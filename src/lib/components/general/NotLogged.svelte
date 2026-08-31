@@ -71,7 +71,7 @@
 					on:click={() =>
 						signInWrapper(
 							streaming.name,
-							$userInfo?.connectedStreamings[streaming.name]?.connected ?? false,
+							$userInfo?.connectedStreamings[streaming.name] ? true : false,
 							false
 						)}
 					disabled={streaming.name === 'deezer'}

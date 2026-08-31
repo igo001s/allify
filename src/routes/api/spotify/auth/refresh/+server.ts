@@ -29,7 +29,7 @@ export const POST: RequestHandler = async ({ cookies }) => {
 
 	cookies.set('spotify_access_token', data.access_token, {
 		httpOnly: true,
-		secure: process.env.NODE_ENV === 'production',
+		secure: true,
 		path: '/',
 		maxAge: data.expires_in
 	});

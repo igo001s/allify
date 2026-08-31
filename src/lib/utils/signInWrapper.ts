@@ -9,7 +9,7 @@ export function signInWrapper(
 	spotifyConnected: boolean,
 	deezerConnected: boolean
 ) {
-	if (!streaming || !spotifyConnected || !deezerConnected) return;
+	if (!streaming) return;
 
 	if (streaming === 'spotify') {
 		if (!spotifyConnected) {

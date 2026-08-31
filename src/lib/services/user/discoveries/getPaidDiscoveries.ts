@@ -31,7 +31,8 @@ export async function getPaidDiscoveries(
 		if (!discoveriesResponse.ok) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to fetch discoveries');
+			const { error } = await discoveriesResponse.json();
+			throw new Error(error);
 		}
 
 		const { tracks, artists } = await discoveriesResponse.json();
@@ -44,7 +45,8 @@ export async function getPaidDiscoveries(
 		if (!updateDiscoveries.ok) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update discoveries');
+			const { error } = await updateDiscoveries.json();
+			throw new Error(error);
 		}
 
 		const parsedUpdateDiscoveries = await updateDiscoveries.json();

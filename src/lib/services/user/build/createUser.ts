@@ -25,8 +25,9 @@ export async function createUser(
 
 		const parsedResponse = await response.json();
 
-		if (!parsedResponse.createdUser) {
-			throw new Error('Request failed');
+		if (!response.ok) {
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
 		return parsedResponse;

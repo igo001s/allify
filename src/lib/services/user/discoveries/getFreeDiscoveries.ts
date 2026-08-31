@@ -30,7 +30,8 @@ export async function getFreeDiscoveries(
 		});
 
 		if (!updateDiscoveries.ok) {
-			throw new Error('Failed to update discoveries');
+			const { error } = await updateDiscoveries.json();
+			throw new Error(error);
 		}
 
 		const parsedUpdateDiscoveries = await updateDiscoveries.json();

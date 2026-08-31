@@ -12,7 +12,7 @@ export function logoutWrapper(
 	spotifyConnected: boolean,
 	deezerConnected: boolean
 ) {
-	if (!streaming || !spotifyConnected || !deezerConnected) return;
+	if (!streaming) return;
 
 	const user = get(userInfo);
 
