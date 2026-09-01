@@ -463,6 +463,12 @@ export const fr = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Sélectionner l’artiste du moment pour le profil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'abonnés',
+		profilePageChangeYourArtistSuccessToastMessage: 'Artiste du moment mis à jour avec succès.',
+		profilePageChangeYourArtistErrorToastMessage:
+			'Erreur lors du changement de l’artiste du moment',
+		profilePageSelectYourArtistSuccessToastMessage: 'Artiste du moment sélectionné avec succès.',
+		profilePageSelectYourArtistErrorToastMessage:
+			'Erreur lors de la sélection de l’artiste du moment',
 		profilePageChangeYourArtistsWhoWereWithYou: 'Artistes qui ont déjà été avec vous',
 		profilePageChangeYourArtistTimeToNextFreeUpdate:
 			'Vous pourrez effectuer une mise à jour gratuitement dans',
@@ -502,6 +508,13 @@ export const fr = {
 			'Fermer la fenêtre de sélection de l’artiste personnalisé',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Icône de fermeture de la fenêtre de sélection de l’artiste personnalisé',
+		profilePageSelectCustomArtistSuccessToastMessage:
+			'Artiste personnalisé sélectionné avec succès !',
+		profilePageSelectCustomArtistErrorToastMessage:
+			'Erreur lors de la sélection de l’artiste personnalisé. Veuillez réessayer.',
+		profilePageChangeCustomArtistSuccessToastMessage: 'Artiste personnalisé modifié avec succès !',
+		profilePageChangeCustomArtistErrorToastMessage:
+			'Erreur lors de la modification de l’artiste personnalisé. Veuillez réessayer.',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Donnez un titre à votre artiste',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ex. : Ma plus grande inspiration',
 		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
@@ -534,6 +547,8 @@ export const fr = {
 		profilePageChangeYourCustomItemModalSaveChanges: 'Enregistrer les modifications',
 		profilePageSelectYourCustomItemModalCloseModal: 'Fermer',
 		profilePageSelectYourCustomItemModalSaveChanges: 'Enregistrer la sélection',
+		profilePageDeleteCommentSuccessToastMessage: 'Commentaire supprimé avec succès.',
+		profilePageDeleteCommentErrorToastMessage: 'Erreur lors de la suppression du commentaire.',
 		profilePageCommentsCloseModalAriaLabel: 'Fermer la fenêtre modale des commentaires du profil',
 		profilePageCommentsCloseModalAltText:
 			'Icône pour fermer la fenêtre modale des commentaires du profil',

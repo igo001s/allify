@@ -36,10 +36,10 @@
 		loadingFoundedUsers = true;
 
 		try {
-			const data = await searchUsers(searchUserInputValue);
+			const searchUsersResponse = await searchUsers(searchUserInputValue);
 
-			foundedUsers = data;
-		} catch (err) {
+			foundedUsers = searchUsersResponse;
+		} catch (error) {
 			foundedUsers = [];
 		} finally {
 			loadingFoundedUsers = false;

@@ -20,7 +20,7 @@ export async function getPublicUser(id: string) {
 
 		const parsedResponse = await response.json();
 
-		return parsedResponse.userFoundedById;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
 			console.error('User getPublicUser error:', error instanceof Error ? error.message : error);

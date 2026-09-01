@@ -49,9 +49,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				profileVisibility: {
-					visibility: 'public'
-				}
+				visibility: 'public'
 			}),
 			{ status: 200 }
 		);

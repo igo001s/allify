@@ -47,7 +47,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				userFoundedById
+				...userFoundedById
 			}),
 			{ status: 200 }
 		);

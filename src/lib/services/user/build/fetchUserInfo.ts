@@ -29,13 +29,10 @@ export async function fetchUserInfo(emailMessage: string) {
 					sendEmail(
 						emailMessage,
 						builtUser.email,
-						welcomeToAllifyTemplate(
-							createUserResult.createdUser.connectedStreamings.spotify.name,
-							'Spotify'
-						)
+						welcomeToAllifyTemplate(createUserResult.connectedStreamings.spotify.name, 'Spotify')
 					);
 
-					return createUserResult.createdUser;
+					return createUserResult;
 				} else {
 					return {
 						error: true,

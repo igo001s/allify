@@ -19,9 +19,7 @@ export async function updateCustomArtist(
 	nextFreeUpdate?: Date
 ) {
 	try {
-		if (!id || !customArtistTitle || !customArtist) {
-			return null;
-		}
+		if (!id || !customArtistTitle || !customArtist) return;
 
 		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
 
@@ -35,7 +33,7 @@ export async function updateCustomArtist(
 			}
 		}
 
-		const updateCustomArtistResponse = await fetch('/api/mongodb/updates/update-custom-artist', {
+		const response = await fetch('/api/mongodb/updates/update-custom-artist', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -49,20 +47,27 @@ export async function updateCustomArtist(
 			})
 		});
 
-		if (!updateCustomArtistResponse.ok && tickets !== undefined && tickets !== null) {
+		if (!response.ok && tickets !== undefined && tickets !== null) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update custom artist');
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedUpdateCustomArtist = await updateCustomArtistResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedUpdateCustomArtist.customArtist;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateCustomArtist error:', error);
+			console.error(
+				'User updateCustomArtist error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
-		return null;
+		return {
+			error: true,
+			errorType: 'updateCustomArtistError'
+		};
 	}
 }

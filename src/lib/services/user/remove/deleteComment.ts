@@ -5,9 +5,13 @@ import { dev } from '$app/environment';
 import type { ObjectId } from 'mongodb';
 
 // Types
-import type { Comment } from '$lib/types/Comments.type';
+import type { CommentReceived } from '$lib/types/Comments.type';
 
-export async function deleteComment(userId: ObjectId, authorId: ObjectId, comments: Comment[]) {
+export async function deleteComment(
+	userId: ObjectId,
+	authorId: ObjectId,
+	comments: CommentReceived[]
+) {
 	try {
 		if (!userId || !authorId) return;
 
@@ -15,7 +19,7 @@ export async function deleteComment(userId: ObjectId, authorId: ObjectId, commen
 			(comment) => comment.author._id.toString() !== authorId.toString()
 		);
 
-		const deleteCommentResponse = await fetch('/api/mongodb/remove/delete-comment', {
+		const response = await fetch('/api/mongodb/remove/delete-comment', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -26,19 +30,22 @@ export async function deleteComment(userId: ObjectId, authorId: ObjectId, commen
 			})
 		});
 
-		if (!deleteCommentResponse.ok) {
-			const error = await deleteCommentResponse.json();
-			throw new Error(error.error);
+		if (!response.ok) {
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedDeleteComment = await deleteCommentResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedDeleteComment;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User deleteComment error:', error);
+			console.error('User deleteComment error:', error instanceof Error ? error.message : error);
 		}
 
-		return null;
+		return {
+			error: true,
+			errorType: 'deleteCommentError'
+		};
 	}
 }

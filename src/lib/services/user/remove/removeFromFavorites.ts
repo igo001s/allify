@@ -8,7 +8,7 @@ export async function removeFromFavorites(idToRemove: ObjectId, id: ObjectId) {
 	try {
 		if (!idToRemove || !id) return;
 
-		const removeFromFavoritesResponse = await fetch('/api/mongodb/remove/remove-from-favorites', {
+		const response = await fetch('/api/mongodb/remove/remove-from-favorites', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -19,14 +19,14 @@ export async function removeFromFavorites(idToRemove: ObjectId, id: ObjectId) {
 			})
 		});
 
-		if (!removeFromFavoritesResponse.ok) {
-			const error = await removeFromFavoritesResponse.json();
-			throw new Error(error.error);
+		if (!response.ok) {
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedRemoveFromFavorites = await removeFromFavoritesResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedRemoveFromFavorites;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
 			console.error(

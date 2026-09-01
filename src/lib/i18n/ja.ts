@@ -432,6 +432,10 @@ export const ja = {
 			'今聴いている音楽を最もよく表すアーティストを選んでください。',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'プロフィールの今のアーティストを選択',
 		profilePageChangeYourArtistChooseArtistFollowers: 'フォロワー',
+		profilePageChangeYourArtistSuccessToastMessage: '今のアーティストが正常に更新されました',
+		profilePageChangeYourArtistErrorToastMessage: '今のアーティストの変更中にエラーが発生しました',
+		profilePageSelectYourArtistSuccessToastMessage: '今のアーティストが正常に選択されました',
+		profilePageSelectYourArtistErrorToastMessage: '今のアーティストの選択中にエラーが発生しました',
 		profilePageChangeYourArtistsWhoWereWithYou: 'あなたと一緒にいたことのあるアーティスト',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: '無料で更新できるまで',
 		profilePageChangeYourArtistUnlockMoreMusic:
@@ -468,6 +472,14 @@ export const ja = {
 			'カスタムアーティストを選択するモーダルを閉じる',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'カスタムアーティストを選択するモーダルを閉じるアイコン',
+		profilePageSelectCustomArtistSuccessToastMessage:
+			'カスタムアーティストが正常に選択されました！',
+		profilePageSelectCustomArtistErrorToastMessage:
+			'カスタムアーティストの選択中にエラーが発生しました。もう一度お試しください。',
+		profilePageChangeCustomArtistSuccessToastMessage:
+			'カスタムアーティストが正常に変更されました！',
+		profilePageChangeCustomArtistErrorToastMessage:
+			'カスタムアーティストの変更中にエラーが発生しました。もう一度お試しください。',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'アーティストにタイトルを付ける',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: '例：私の最大のインスピレーション',
 		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
@@ -500,6 +512,8 @@ export const ja = {
 		profilePageChangeYourCustomItemModalSaveChanges: '変更を保存',
 		profilePageSelectYourCustomItemModalCloseModal: '閉じる',
 		profilePageSelectYourCustomItemModalSaveChanges: '選択を保存',
+		profilePageDeleteCommentSuccessToastMessage: 'コメントが正常に削除されました。',
+		profilePageDeleteCommentErrorToastMessage: 'コメントの削除中にエラーが発生しました。',
 		profilePageCommentsCloseModalAriaLabel: 'プロフィールコメントモーダルを閉じる',
 		profilePageCommentsCloseModalAltText: 'プロフィールコメントモーダルを閉じるアイコン',
 		profilePageCommentsParagraph1: 'あなたについてみんなが言っていること',

@@ -26,7 +26,7 @@ export async function saveBuiltProfile(id: ObjectId, builtUser: buildProfileInfo
 
 		const parsedResponse = await response.json();
 
-		return parsedResponse.builtUser;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
 			console.error('User saveBuiltProfile error:', error instanceof Error ? error.message : error);

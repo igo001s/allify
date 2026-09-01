@@ -460,6 +460,10 @@ export const es = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Seleccionar el artista del momento para el perfil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
+		profilePageChangeYourArtistSuccessToastMessage: 'Artista del momento actualizado con éxito.',
+		profilePageChangeYourArtistErrorToastMessage: 'Error al cambiar el artista del momento',
+		profilePageSelectYourArtistSuccessToastMessage: 'Artista del momento seleccionado con éxito.',
+		profilePageSelectYourArtistErrorToastMessage: 'Error al seleccionar el artista del momento',
 		profilePageChangeYourArtistsWhoWereWithYou: 'Artistas que ya han estado contigo',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Podrás actualizar gratis en',
 		profilePageChangeYourArtistUnlockMoreMusic:
@@ -498,6 +502,13 @@ export const es = {
 			'Cerrar el modal de selección del artista personalizado',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Icono para cerrar el modal de selección del artista personalizado',
+		profilePageSelectCustomArtistSuccessToastMessage:
+			'¡Artista personalizado seleccionado con éxito!',
+		profilePageSelectCustomArtistErrorToastMessage:
+			'Error al seleccionar el artista personalizado. Por favor, inténtalo de nuevo.',
+		profilePageChangeCustomArtistSuccessToastMessage: '¡Artista personalizado cambiado con éxito!',
+		profilePageChangeCustomArtistErrorToastMessage:
+			'Error al cambiar el artista personalizado. Por favor, inténtalo de nuevo.',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Ponle un título a tu artista',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ej.: Mi mayor inspiración',
 		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
@@ -530,6 +541,7 @@ export const es = {
 		profilePageChangeYourCustomItemModalSaveChanges: 'Guardar cambios',
 		profilePageSelectYourCustomItemModalCloseModal: 'Cerrar',
 		profilePageSelectYourCustomItemModalSaveChanges: 'Guardar selección',
+		profilePageDeleteCommentErrorToastMessage: 'Error al eliminar el comentario.',
 		profilePageCommentsCloseModalAriaLabel: 'Cerrar modal de comentarios del perfil',
 		profilePageCommentsCloseModalAltText: 'Icono para cerrar el modal de comentarios del perfil',
 		profilePageCommentsParagraph1: 'Lo que otros dicen sobre ti',

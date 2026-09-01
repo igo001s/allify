@@ -35,12 +35,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			return new Response(JSON.stringify({ error: 'User not found' }), { status: 404 });
 		}
 
-		return new Response(
-			JSON.stringify({
-				userInfoFromMongoDB: user
-			}),
-			{ status: 200 }
-		);
+		return new Response(JSON.stringify(user), { status: 200 });
 	} catch (error) {
 		return new Response(JSON.stringify({ error }), {
 			status: 500

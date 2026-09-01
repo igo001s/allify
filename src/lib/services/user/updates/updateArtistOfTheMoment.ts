@@ -34,36 +34,40 @@ export async function updateArtistOfTheMoment(
 			}
 		}
 
-		const updateArtistOfTheMomentResponse = await fetch(
-			'/api/mongodb/updates/update-artist-of-the-moment',
-			{
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({
-					id,
-					artistOfTheMoment,
-					freeUpdateIsAvailable,
-					nextFreeUpdate
-				})
-			}
-		);
+		const response = await fetch('/api/mongodb/updates/update-artist-of-the-moment', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				id,
+				artistOfTheMoment,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
+			})
+		});
 
-		if (!updateArtistOfTheMomentResponse.ok && tickets !== undefined && tickets !== null) {
+		if (!response.ok && tickets !== undefined && tickets !== null) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update artist of the moment');
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedUpdateArtistOfTheMoment = await updateArtistOfTheMomentResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedUpdateArtistOfTheMoment.artistOfTheMoment;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateArtistOfTheMoment error:', error);
+			console.error(
+				'User updateArtistOfTheMoment error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
-		return null;
+		return {
+			error: true,
+			errorType: 'updateArtistOfTheMomentError'
+		};
 	}
 }

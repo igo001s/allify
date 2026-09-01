@@ -9,20 +9,21 @@ import type { ObjectId } from 'mongodb';
 
 export async function returnTicket(id: ObjectId, tickets: number) {
 	try {
-		const returnTicketResponse = await fetch('/api/mongodb/tickets/return-ticket', {
+		const response = await fetch('/api/mongodb/tickets/return-ticket', {
 			method: 'POST',
 			body: JSON.stringify({ id, tickets })
 		});
 
-		const parsedReturnTicket = await returnTicketResponse.json();
-
-		if (!returnTicketResponse.ok) {
-			throw new Error('Failed to return ticket');
+		if (!response.ok) {
+			const { error } = await response.json();
+			throw new Error(error);
 		}
+
+		const parsedResponse = await response.json();
 
 		userInfo.update((currentUser) => {
 			if (currentUser) {
-				currentUser.tickets = parsedReturnTicket.tickets;
+				currentUser.tickets = parsedResponse.tickets;
 			}
 
 			return currentUser;
@@ -31,7 +32,7 @@ export async function returnTicket(id: ObjectId, tickets: number) {
 		return true;
 	} catch (error) {
 		if (dev) {
-			console.error('User returnTicket error:', error);
+			console.error('User returnTicket error:', error instanceof Error ? error.message : error);
 		}
 
 		return false;

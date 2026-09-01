@@ -23,7 +23,7 @@ export async function existingSpotifyUser() {
 			};
 		}
 
-		return getUserInfoFromSpotify.userInfoFromMongoDB;
+		return getUserInfoFromSpotify;
 	} catch (error) {
 		if (dev) {
 			console.error(

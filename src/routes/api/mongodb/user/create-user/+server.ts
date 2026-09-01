@@ -57,10 +57,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				createdUser: {
-					...user,
-					_id: result?.insertedId
-				}
+				...user,
+				_id: result?.insertedId
 			}),
 			{ status: 201 }
 		);

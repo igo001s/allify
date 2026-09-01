@@ -431,6 +431,10 @@ export const en = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Select artist of the moment for your profile',
 		profilePageChangeYourArtistChooseArtistFollowers: 'followers',
+		profilePageChangeYourArtistSuccessToastMessage: 'Artist of the moment successfully updated.',
+		profilePageChangeYourArtistErrorToastMessage: 'Error changing the artist of the moment',
+		profilePageSelectYourArtistSuccessToastMessage: 'Artist of the moment successfully selected.',
+		profilePageSelectYourArtistErrorToastMessage: 'Error selecting the artist of the moment',
 		profilePageChangeYourArtistsWhoWereWithYou: 'Artists who have been with you',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'You will be able to update for free in',
 		profilePageChangeYourArtistUnlockMoreMusic:
@@ -463,6 +467,12 @@ export const en = {
 			'Keep unlocking more artists and personalizing your profile even further.',
 		profilePageSelectYourCustomArtistCloseModalAriaLabel: 'Close custom artist selection modal',
 		profilePageSelectYourCustomArtistCloseModalAltText: 'Close custom artist selection modal icon',
+		profilePageSelectCustomArtistSuccessToastMessage: 'Custom artist successfully selected!',
+		profilePageSelectCustomArtistErrorToastMessage:
+			'Error selecting custom artist. Please try again.',
+		profilePageChangeCustomArtistSuccessToastMessage: 'Custom artist successfully changed!',
+		profilePageChangeCustomArtistErrorToastMessage:
+			'Error changing custom artist. Please try again.',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Give your artist a title',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'E.g.: My greatest inspiration',
 		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
@@ -495,6 +505,8 @@ export const en = {
 		profilePageChangeYourCustomItemModalSaveChanges: 'Save changes',
 		profilePageSelectYourCustomItemModalCloseModal: 'Close',
 		profilePageSelectYourCustomItemModalSaveChanges: 'Save selection',
+		profilePageDeleteCommentSuccessToastMessage: 'Comment successfully deleted.',
+		profilePageDeleteCommentErrorToastMessage: 'Error deleting the comment.',
 		profilePageCommentsCloseModalAriaLabel: 'Close profile comments modal',
 		profilePageCommentsCloseModalAltText: 'Close icon for the profile comments modal',
 		profilePageCommentsParagraph1: 'What others are saying about you',

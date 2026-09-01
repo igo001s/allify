@@ -16,20 +16,20 @@ export async function useTicket(id: ObjectId, tickets: number) {
 			return false;
 		}
 
-		const useTicketResponse = await fetch('/api/mongodb/tickets/use-ticket', {
+		const response = await fetch('/api/mongodb/tickets/use-ticket', {
 			method: 'POST',
 			body: JSON.stringify({ id, tickets })
 		});
 
-		if (!useTicketResponse.ok) {
-			throw new Error('Failed to use ticket');
+		if (!response.ok) {
+			const { error } = await response.json();
+			throw new Error(error);
 		}
-
-		const parsedUseTicket = await useTicketResponse.json();
+		const parsedResponse = await response.json();
 
 		userInfo.update((currentUser) => {
 			if (currentUser) {
-				currentUser.tickets = parsedUseTicket.tickets;
+				currentUser.tickets = parsedResponse.tickets;
 			}
 
 			return currentUser;
@@ -38,7 +38,7 @@ export async function useTicket(id: ObjectId, tickets: number) {
 		return true;
 	} catch (error) {
 		if (dev) {
-			console.error('User useTicket error:', error);
+			console.error('User useTicket error:', error instanceof Error ? error.message : error);
 		}
 
 		return false;

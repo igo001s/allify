@@ -11,6 +11,7 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// MongoDB
 	import type { ObjectId } from 'mongodb';
@@ -26,17 +27,24 @@
 
 	$: userOnFavorites = $userInfo?.favorites?.some((fav) => fav._id === favorite._id) || false;
 
-	async function handlerRemoveFromFavorites(idToRemove?: ObjectId, id?: ObjectId) {
-		if (!idToRemove || !id) return;
+	async function handleRemoveFromFavorites(idToRemove: ObjectId, id: ObjectId) {
+		const removeFromFavoritesResponse = await removeFromFavorites(idToRemove, id);
 
-		const data = await removeFromFavorites(idToRemove, id);
+		if (removeFromFavoritesResponse.error) {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage:
+					$translationsStore.musicCommunityPage.musicCommunityToastErrorRemoveFromFavoritesMessage
+			});
 
-		if (!data) return;
+			return;
+		}
 
 		userInfo.update((currentUser) => {
 			if (currentUser) {
 				currentUser.favorites = currentUser.favorites?.filter(
-					(fav) => fav._id !== data.removedFavorite._id
+					(fav) => fav._id !== removeFromFavoritesResponse.removedFavorite._id
 				);
 			}
 
@@ -92,7 +100,7 @@
 	<button
 		class="mr-2 w-1/12 shrink-0 cursor-pointer text-brand-primary transition hover:text-brand-primary-dark"
 		aria-label={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
-		on:click={() => handlerRemoveFromFavorites($userInfo?._id, favorite._id)}
+		on:click={() => $userInfo && handleRemoveFromFavorites($userInfo._id, favorite._id)}
 	>
 		{#if userOnFavorites}
 			<FilledStar

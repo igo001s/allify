@@ -458,6 +458,11 @@ export const de = {
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Künstler des Moments für das Profil auswählen',
 		profilePageChangeYourArtistChooseArtistFollowers: 'Follower',
+		profilePageChangeYourArtistSuccessToastMessage:
+			'Künstler des Moments erfolgreich aktualisiert.',
+		profilePageChangeYourArtistErrorToastMessage: 'Fehler beim Ändern des Künstlers des Moments',
+		profilePageSelectYourArtistSuccessToastMessage: 'Künstler des Moments erfolgreich ausgewählt.',
+		profilePageSelectYourArtistErrorToastMessage: 'Fehler beim Auswählen des Künstlers des Moments',
 		profilePageChangeYourArtistsWhoWereWithYou: 'Künstler, die bereits bei dir waren',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Du kannst kostenlos aktualisieren in',
 		profilePageChangeYourArtistUnlockMoreMusic:
@@ -496,6 +501,10 @@ export const de = {
 			'Modal zur Auswahl des personalisierten Künstlers schließen',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Symbol zum Schließen des Modals zur Auswahl des personalisierten Künstlers',
+		profilePageSelectCustomArtistSuccessToastMessage:
+			'Personalisierter Künstler erfolgreich ausgewählt!',
+		profilePageSelectCustomArtistErrorToastMessage:
+			'Fehler beim Auswählen des personalisierten Künstlers. Bitte versuche es erneut.',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Gib deinem Künstler einen Titel',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'z. B.: Meine größte Inspiration',
 		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
@@ -528,6 +537,8 @@ export const de = {
 		profilePageChangeYourCustomItemModalSaveChanges: 'Änderungen speichern',
 		profilePageSelectYourCustomItemModalCloseModal: 'Schließen',
 		profilePageSelectYourCustomItemModalSaveChanges: 'Auswahl speichern',
+		profilePageDeleteCommentSuccessToastMessage: 'Kommentar erfolgreich gelöscht.',
+		profilePageDeleteCommentErrorToastMessage: 'Fehler beim Löschen des Kommentars.',
 		profilePageCommentsCloseModalAriaLabel: 'Modal für Profilkommentare schließen',
 		profilePageCommentsCloseModalAltText: 'Symbol zum Schließen des Modals für Profilkommentare',
 		profilePageCommentsParagraph1: 'Was andere über dich sagen',

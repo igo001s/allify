@@ -65,18 +65,16 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				builtUser: {
-					trackOfTheMoment: {
-						track: builtUser.track,
-						nextFreeUpdate: nextFreeUpdateTime()
-					},
-					artistOfTheMoment: {
-						artist: builtUser.artist,
-						nextFreeUpdate: nextFreeUpdateTime()
-					},
-					profileVisibility: {
-						visibility: builtUser.profileVisibility
-					}
+				trackOfTheMoment: {
+					track: builtUser.track,
+					nextFreeUpdate: nextFreeUpdateTime()
+				},
+				artistOfTheMoment: {
+					artist: builtUser.artist,
+					nextFreeUpdate: nextFreeUpdateTime()
+				},
+				profileVisibility: {
+					visibility: builtUser.profileVisibility
 				}
 			}),
 			{

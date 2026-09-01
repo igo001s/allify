@@ -18,6 +18,7 @@
 
 	// Types
 	import type { CommentReceived } from '$lib/types/Comments.type';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Props
 	export let showCommentsModal: boolean;
@@ -31,18 +32,41 @@
 			return;
 		}
 
-		const commentsAfterDelete = await deleteComment(userId, authorId, comments);
+		const commentsAfterDeleteReponse = await deleteComment(userId, authorId, comments);
 
-		userInfo.update((currentUser) => {
-			if (currentUser) {
-				return {
-					...currentUser,
-					comments: commentsAfterDelete
-				};
+		if (!commentsAfterDeleteReponse.error) {
+			userInfo.update((currentUser) => {
+				if (currentUser) {
+					return {
+						...currentUser,
+						comments: commentsAfterDeleteReponse
+					};
+				}
+
+				return currentUser;
+			});
+
+			toastStore.set({
+				showToast: true,
+				toastType: 'success',
+				toastMessage: $translationsStore.profilePage.profilePageDeleteCommentSuccessToastMessage
+			});
+
+			return;
+		} else {
+			if (
+				commentsAfterDeleteReponse.error &&
+				commentsAfterDeleteReponse.errorType === 'deleteCommentError'
+			) {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage: $translationsStore.profilePage.profilePageDeleteCommentErrorToastMessage
+				});
+
+				return;
 			}
-
-			return currentUser;
-		});
+		}
 	}
 
 	onMount(() => {

@@ -55,11 +55,9 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				customArtist: {
-					title: customArtistTitle,
-					artist: customArtist,
-					nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
-				}
+				title: customArtistTitle,
+				artist: customArtist,
+				nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 			}),
 			{ status: 200 }
 		);

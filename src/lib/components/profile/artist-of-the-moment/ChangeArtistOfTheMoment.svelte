@@ -8,6 +8,7 @@
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateArtistOfTheMoment } from '$lib/services/user/updates/updateArtistOfTheMoment';
@@ -32,14 +33,14 @@
 	async function handleChangeArtistOfTheMoment() {
 		if (!choosedArtist || !$userInfo?._id) return;
 
-		const updatedArtist = await updateArtistOfTheMoment(
+		const updateArtistOfTheMomentResponse = await updateArtistOfTheMoment(
 			$userInfo._id,
 			choosedArtist,
 			$userInfo.tickets,
 			$userInfo.artists?.artistOfTheMoment?.nextFreeUpdate
 		);
 
-		if (updatedArtist) {
+		if (!updateArtistOfTheMomentResponse?.error) {
 			userInfo.update((currentUser) => {
 				if (!currentUser) return currentUser;
 
@@ -48,15 +49,31 @@
 					artists: {
 						...currentUser.artists,
 						artistOfTheMoment: {
-							artist: updatedArtist.artist,
-							nextFreeUpdate: updatedArtist.nextFreeUpdate
+							artist: updateArtistOfTheMomentResponse.artist,
+							nextFreeUpdate: updateArtistOfTheMomentResponse.nextFreeUpdate
 						}
 					}
 				};
 			});
-		}
 
-		closeChangeItemOfTheMomentModal();
+			closeChangeItemOfTheMomentModal();
+
+			toastStore.set({
+				showToast: true,
+				toastType: 'success',
+				toastMessage: $translationsStore.profilePage.profilePageChangeYourArtistSuccessToastMessage
+			});
+
+			return;
+		} else {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage: $translationsStore.profilePage.profilePageChangeYourArtistErrorToastMessage
+			});
+
+			return;
+		}
 	}
 </script>
 

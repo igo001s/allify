@@ -447,6 +447,10 @@ export const ru = {
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'Выбрать исполнителя момента для профиля',
 		profilePageChangeYourArtistChooseArtistFollowers: 'подписчиков',
+		profilePageChangeYourArtistSuccessToastMessage: 'Исполнитель момента успешно обновлён',
+		profilePageChangeYourArtistErrorToastMessage: 'Ошибка при изменении исполнителя момента',
+		profilePageSelectYourArtistSuccessToastMessage: 'Исполнитель момента успешно выбран',
+		profilePageSelectYourArtistErrorToastMessage: 'Ошибка при выборе исполнителя момента',
 		profilePageChangeYourArtistsWhoWereWithYou: 'Артисты, которые уже были с вами',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Вы сможете бесплатно обновить через',
 		profilePageChangeYourArtistUnlockMoreMusic:
@@ -482,6 +486,12 @@ export const ru = {
 			'Закрыть окно выбора персонального исполнителя',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Значок закрытия окна выбора персонального исполнителя',
+		profilePageSelectCustomArtistSuccessToastMessage: 'Персональный исполнитель успешно выбран!',
+		profilePageSelectCustomArtistErrorToastMessage:
+			'Ошибка при выборе персонального исполнителя. Пожалуйста, попробуйте снова.',
+		profilePageChangeCustomArtistSuccessToastMessage: 'Персональный исполнитель успешно изменён!',
+		profilePageChangeCustomArtistErrorToastMessage:
+			'Ошибка при изменении персонального исполнителя. Пожалуйста, попробуйте снова.',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Дайте своему исполнителю название',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Например: Моё главное вдохновение',
 		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
@@ -514,6 +524,8 @@ export const ru = {
 		profilePageChangeYourCustomItemModalSaveChanges: 'Сохранить изменения',
 		profilePageSelectYourCustomItemModalCloseModal: 'Закрыть',
 		profilePageSelectYourCustomItemModalSaveChanges: 'Сохранить выбор',
+		profilePageDeleteCommentSuccessToastMessage: 'Комментарий успешно удален.',
+		profilePageDeleteCommentErrorToastMessage: 'Ошибка при удалении комментария.',
 		profilePageCommentsCloseModalAriaLabel: 'Закрыть окно комментариев профиля',
 		profilePageCommentsCloseModalAltText: 'Значок закрытия окна комментариев профиля',
 		profilePageCommentsParagraph1: 'Что другие говорят о вас',

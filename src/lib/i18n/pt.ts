@@ -443,6 +443,9 @@ export const pt = {
 			'Escolha o artista que melhor representa o que você está ouvindo no momento.',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'Selecionar artista do momento para o perfil',
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
+		profilePageChangeYourArtistSuccessToastMessage: 'Artista do momento atualizado com sucesso.',
+		profilePageChangeYourArtistErrorToastMessage: 'Erro ao tentar atualizar o artista do momento',
+		profilePageSelectYourArtistErrorToastMessage: 'Erro ao tentar selecionar o artista do momento',
 		profilePageChangeYourArtistsWhoWereWithYou: 'Artistas que já estiveram com você',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Você poderá atualizar gratuitamente em',
 		profilePageChangeYourArtistUnlockMoreMusic:
@@ -479,6 +482,13 @@ export const pt = {
 			'Fechar modal de seleção de artista personalizado',
 		profilePageSelectYourCustomArtistCloseModalAltText:
 			'Ícone de fechar modal de seleção de artista personalizado',
+		profilePageSelectCustomArtistSuccessToastMessage:
+			'Artista personalizado selecionado com sucesso!',
+		profilePageSelectCustomArtistErrorToastMessage:
+			'Erro ao selecionar artista personalizado. Tente novamente.',
+		profilePageChangeCustomArtistSuccessToastMessage: 'Artista personalizado alterado com sucesso!',
+		profilePageChangeCustomArtistErrorToastMessage:
+			'Erro ao alterar artista personalizado. Tente novamente.',
 		profilePageSelectYourCustomArtistTitleInputLabel: 'Dê um título para o seu artista',
 		profilePageSelectYourCustomArtistTitleInputPlaceholder: 'Ex.: Minha maior inspiração',
 		profilePageSelectYourCustomArtistTitleInputErrorEmptyOrTooLongMessage:
@@ -511,6 +521,8 @@ export const pt = {
 		profilePageChangeYourCustomItemModalSaveChanges: 'Salvar alterações',
 		profilePageSelectYourCustomItemModalCloseModal: 'Fechar',
 		profilePageSelectYourCustomItemModalSaveChanges: 'Salvar seleção',
+		profilePageDeleteCommentSuccessToastMessage: 'Comentário excluído com sucesso.',
+		profilePageDeleteCommentErrorToastMessage: 'Erro ao excluir o comentário.',
 		profilePageCommentsCloseModalAriaLabel: 'Fechar modal de comentários do perfil',
 		profilePageCommentsCloseModalAltText: 'Ícone de fechar modal de comentários do perfil',
 		profilePageCommentsParagraph1: 'O que estão dizendo sobre você',
