@@ -384,6 +384,10 @@ export const pt = {
 			'Fechar modal de troca de música personalizada',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Ícone de fechar modal de troca de música personalizada',
+		profilePageSelectCustomTrackSuccessToastMessage: 'Música personalizada alterada com sucesso',
+		profilePageSelectCustomTrackErrorToastMessage: 'Erro ao alterar a música personalizada',
+		profilePageChangeCustomTrackSuccessToastMessage: 'Música personalizada alterada com sucesso',
+		profilePageChangeCustomTrackErrorToastMessage: 'Erro ao alterar a música personalizada',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Dê um título à sua música',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ex.: A trilha sonora da minha vida',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

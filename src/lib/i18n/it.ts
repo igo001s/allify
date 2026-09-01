@@ -397,6 +397,12 @@ export const it = {
 			'Chiudi la finestra per modificare il brano personalizzato',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Icona per chiudere la finestra di modifica del brano personalizzato',
+		profilePageChangeCustomTrackSuccessToastMessage: 'Brano personalizzato modificato con successo',
+		profilePageChangeCustomTrackErrorToastMessage:
+			'Errore durante la modifica del brano personalizzato',
+		profilePageSelectCustomTrackSuccessToastMessage: 'Brano personalizzato modificato con successo',
+		profilePageSelectCustomTrackErrorToastMessage:
+			'Errore durante la modifica del brano personalizzato',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Dai un titolo al tuo brano',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Es.: La colonna sonora della mia vita',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

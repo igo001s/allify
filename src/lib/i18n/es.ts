@@ -395,6 +395,8 @@ export const es = {
 			'Cerrar el modal para cambiar la canción personalizada',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Icono para cerrar el modal para cambiar la canción personalizada',
+		profilePageChangeCustomTrackSuccessToastMessage: 'Canción personalizada cambiada con éxito',
+		profilePageChangeCustomTrackErrorToastMessage: 'Error al cambiar la canción personalizada',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Ponle un título a tu canción',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ej.: La banda sonora de mi vida',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

@@ -377,6 +377,10 @@ export const en = {
 			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'Close custom song change modal',
 		profilePageChangeYourCustomMusicCloseModalAltText: 'Close custom song change modal icon',
+		profilePageSelectCustomTrackSuccessToastMessage: 'CCustom song successfully changed',
+		profilePageSelectCustomTrackErrorToastMessage: 'Error changing custom song',
+		profilePageChangeCustomTrackSuccessToastMessage: 'Custom song successfully changed',
+		profilePageChangeCustomTrackErrorToastMessage: 'Error changing custom song',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Give your song a title',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'E.g.: The soundtrack of my life',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

@@ -397,6 +397,12 @@ export const fr = {
 			'Fermer la fenêtre de modification du titre personnalisé',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Icône de fermeture de la fenêtre de modification du titre personnalisé',
+		profilePageChangeCustomTrackSuccessToastMessage: 'Titre personnalisé modifié avec succès',
+		profilePageChangeCustomTrackErrorToastMessage:
+			'Erreur lors de la modification du titre personnalisé',
+		profilePageSelectCustomTrackSuccessToastMessage: 'Titre personnalisé modifié avec succès',
+		profilePageSelectCustomTrackErrorToastMessage:
+			'Erreur lors de la modification du titre personnalisé',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Donnez un titre à votre morceau',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Ex. : La bande originale de ma vie',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

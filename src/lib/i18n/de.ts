@@ -393,6 +393,10 @@ export const de = {
 			'Modal zum Ändern des personalisierten Songs schließen',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Symbol zum Schließen des Modals zum Ändern des personalisierten Songs',
+		profilePageSelectCustomTrackSuccessToastMessage: 'Personalisierter Song erfolgreich geändert',
+		profilePageSelectCustomTrackErrorToastMessage: 'Fehler beim Ändern des personalisierten Songs',
+		profilePageChangeCustomTrackSuccessToastMessage: 'Personalisierter Song erfolgreich geändert',
+		profilePageChangeCustomTrackErrorToastMessage: 'Fehler beim Ändern des personalisierten Songs',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Gib deinem Song einen Titel',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'z. B.: Der Soundtrack meines Lebens',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

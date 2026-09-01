@@ -350,6 +350,10 @@ export const zh = {
 		profilePageChangeYourMusicUnlockMoreMusic: '继续解锁更多歌曲，让你的个人资料更加个性化。',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel: '关闭更改自定义歌曲弹窗',
 		profilePageChangeYourCustomMusicCloseModalAltText: '关闭更改自定义歌曲弹窗图标',
+		profilePageSelectCustomTrackSuccessToastMessage: '自定义歌曲修改成功',
+		profilePageSelectCustomTrackErrorToastMessage: '更改自定义歌曲时出错',
+		profilePageChangeCustomTrackSuccessToastMessage: '自定义歌曲修改成功',
+		profilePageChangeCustomTrackErrorToastMessage: '更改自定义歌曲时出错',
 		profilePageChangeYourCustomMusicTitleInputLabel: '为你的歌曲添加标题',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: '例如：我人生的原声带',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

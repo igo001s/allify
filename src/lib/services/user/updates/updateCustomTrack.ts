@@ -35,7 +35,7 @@ export async function updateCustomTrack(
 			}
 		}
 
-		const updateCustomTrackResponse = await fetch('/api/mongodb/updates/update-custom-track', {
+		const response = await fetch('/api/mongodb/updates/update-custom-track', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -49,20 +49,27 @@ export async function updateCustomTrack(
 			})
 		});
 
-		if (!updateCustomTrackResponse.ok && tickets !== undefined && tickets !== null) {
+		if (!response.ok && tickets !== undefined && tickets !== null) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update custom track');
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedUpdateCustomTrack = await updateCustomTrackResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedUpdateCustomTrack.customTrack;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateCustomTrack error:', error);
+			console.error(
+				'User updateCustomTrack error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
-		return null;
+		return {
+			error: true,
+			errorType: 'updateCustomTrackError'
+		};
 	}
 }

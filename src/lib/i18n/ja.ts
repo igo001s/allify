@@ -376,6 +376,10 @@ export const ja = {
 		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'カスタム楽曲を変更するモーダルを閉じる',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'カスタム楽曲を変更するモーダルを閉じるアイコン',
+		profilePageChangeCustomTrackSuccessToastMessage: 'カスタム楽曲が正常に変更されました',
+		profilePageChangeCustomTrackErrorToastMessage: 'カスタム楽曲の変更中にエラーが発生しました',
+		profilePageSelectCustomTrackSuccessToastMessage: 'カスタム楽曲が正常に変更されました',
+		profilePageSelectCustomTrackErrorToastMessage: 'カスタム楽曲の変更中にエラーが発生しました',
 		profilePageChangeYourCustomMusicTitleInputLabel: '楽曲にタイトルを付ける',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: '例：私の人生のサウンドトラック',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

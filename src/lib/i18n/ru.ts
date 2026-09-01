@@ -388,6 +388,10 @@ export const ru = {
 			'Закрыть окно изменения персонального трека',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Значок закрытия окна изменения персонального трека',
+		profilePageChangeCustomTrackSuccessToastMessage: 'Персональный трек успешно изменён',
+		profilePageChangeCustomTrackErrorToastMessage: 'Ошибка при изменении персонального трека',
+		profilePageSelectCustomTrackSuccessToastMessage: 'Персональный трек успешно изменён',
+		profilePageSelectCustomTrackErrorToastMessage: 'Ошибка при изменении персонального трека',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Дайте своему треку название',
 		profilePageChangeYourCustomMusicTitleInputPlaceholder: 'Например: Саундтрек моей жизни',
 		profilePageChangeYourCustomMusicTitleInputErrorEmptyOrTooLongMessage:

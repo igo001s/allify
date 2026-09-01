@@ -8,6 +8,7 @@
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateCustomTrack } from '$lib/services/user/updates/updateCustomTrack';
@@ -42,7 +43,7 @@
 	async function handleChangeCustomTrack() {
 		if (!choosedTrackTitle || !choosedTrack || !$userInfo?._id) return;
 
-		const updatedTrack = await updateCustomTrack(
+		const updatedTrackResponse = await updateCustomTrack(
 			$userInfo?._id,
 			choosedTrackTitle,
 			choosedTrack,
@@ -50,7 +51,7 @@
 			$userInfo?.tracks?.customTrack?.nextFreeUpdate
 		);
 
-		if (updatedTrack) {
+		if (!updatedTrackResponse.error) {
 			userInfo.update((currentUser) => {
 				if (!currentUser) return currentUser;
 
@@ -59,16 +60,32 @@
 					tracks: {
 						...currentUser.tracks,
 						customTrack: {
-							title: updatedTrack.title,
-							track: updatedTrack.track,
-							nextFreeUpdate: updatedTrack.nextFreeUpdate
+							title: updatedTrackResponse.title,
+							track: updatedTrackResponse.track,
+							nextFreeUpdate: updatedTrackResponse.nextFreeUpdate
 						}
 					}
 				};
 			});
-		}
 
-		closeChangeCustomItemModal();
+			closeChangeCustomItemModal();
+
+			toastStore.set({
+				showToast: true,
+				toastType: 'success',
+				toastMessage: $translationsStore.profilePage.profilePageChangeCustomTrackSuccessToastMessage
+			});
+
+			return;
+		} else {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage: $translationsStore.profilePage.profilePageChangeCustomTrackErrorToastMessage
+			});
+
+			return;
+		}
 	}
 </script>
 
