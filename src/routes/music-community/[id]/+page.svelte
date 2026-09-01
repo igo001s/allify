@@ -154,7 +154,7 @@
 {:else if $userInfo?.connectedStreamings.spotify}
 	<section class="base-section">
 		{#if user}
-			<div class="flex flex-col gap-8 mb-8">
+			<div class="mb-8 flex flex-col gap-8">
 				<a
 					href="/music-community"
 					class="flex items-center text-sm font-medium text-brand-primary transition-all"
