@@ -138,9 +138,7 @@ export const fr = {
 		connectPlatformSpotifyAltText: 'Icône Spotify',
 		connectPlatformDeezerAltText: 'Icône Deezer',
 		fetchUserInfoUserCreationInfoErrorToast:
-			'Une erreur est survenue lors de la création de l’utilisateur.',
-		fetchUserInfoErrorToast:
-			'Une erreur est survenue lors de la récupération des informations de l’utilisateur.'
+			'Une erreur est survenue lors de la création de l’utilisateur.'
 	},
 	homePage: {
 		title: 'Découvrez votre identité musicale | Allify',

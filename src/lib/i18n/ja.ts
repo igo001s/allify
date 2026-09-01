@@ -136,8 +136,7 @@ export const ja = {
 		toastCloseButtonAltText: '通知を閉じるアイコン',
 		connectPlatformSpotifyAltText: 'Spotifyのアイコン',
 		connectPlatformDeezerAltText: 'Deezerのアイコン',
-		fetchUserInfoUserCreationInfoErrorToast: 'ユーザーの作成中にエラーが発生しました。',
-		fetchUserInfoErrorToast: 'ユーザー情報の取得中にエラーが発生しました。'
+		fetchUserInfoUserCreationInfoErrorToast: 'ユーザーの作成中にエラーが発生しました。'
 	},
 	homePage: {
 		title: 'あなたの音楽アイデンティティを発見 | Allify',

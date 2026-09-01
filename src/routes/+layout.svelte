@@ -27,18 +27,12 @@
 				$translationsStore.templateEmail.welcomeToAllifySubject
 			);
 
-			if (fetchUserInfoResponse?.error) {
+			if (fetchUserInfoResponse.error) {
 				if (fetchUserInfoResponse.errorType === 'userCreation') {
 					toastStore.set({
 						showToast: true,
 						toastType: 'error',
 						toastMessage: $translationsStore.generalTexts.fetchUserInfoUserCreationInfoErrorToast
-					});
-				} else {
-					toastStore.set({
-						showToast: true,
-						toastType: 'error',
-						toastMessage: $translationsStore.generalTexts.fetchUserInfoErrorToast
 					});
 				}
 

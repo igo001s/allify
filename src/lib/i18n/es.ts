@@ -138,8 +138,7 @@ export const es = {
 		toastCloseButtonAltText: 'Ícono para cerrar la notificación',
 		connectPlatformSpotifyAltText: 'Icono de Spotify',
 		connectPlatformDeezerAltText: 'Icono de Deezer',
-		fetchUserInfoUserCreationInfoErrorToast: 'Ocurrió un error al crear el usuario.',
-		fetchUserInfoErrorToast: 'Ocurrió un error al obtener la información del usuario.'
+		fetchUserInfoUserCreationInfoErrorToast: 'Ocurrió un error al crear el usuario.'
 	},
 	homePage: {
 		title: 'Descubre tu identidad musical | Allify',
