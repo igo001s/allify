@@ -108,15 +108,13 @@
 
 {#if $userInfo?.connectedStreamings.spotify}
 	<section class="base-section">
-		<div class="mx-auto flex w-full flex-col gap-10 sm:gap-12 lg:gap-14">
-			<KeyInformation
-				userInfo={selectedStreaming === 'spotify' ? $userInfo.connectedStreamings.spotify : null}
-				tickets={$userInfo.tickets}
-				bind:showCommentsModal
-			/>
-		</div>
+		<KeyInformation
+			userInfo={selectedStreaming === 'spotify' ? $userInfo.connectedStreamings.spotify : null}
+			tickets={$userInfo.tickets}
+			bind:showCommentsModal
+		/>
 
-		<div class="mt-14 flex w-full flex-col gap-10 lg:gap-14">
+		<div class="mt-12 flex w-full flex-col gap-10 lg:gap-14">
 			<YourSongsOnProfile
 				openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('music')}
 				openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('music')}

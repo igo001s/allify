@@ -154,49 +154,47 @@
 {:else if $userInfo?.connectedStreamings.spotify}
 	<section class="base-section">
 		{#if user}
-			<div class="mx-auto flex w-full flex-col gap-12">
-				<div class="flex flex-col gap-8">
-					<a
-						href="/music-community"
-						class="flex items-center text-sm font-medium text-brand-primary transition-all"
-					>
-						<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
+			<div class="flex flex-col gap-8 mb-8">
+				<a
+					href="/music-community"
+					class="flex items-center text-sm font-medium text-brand-primary transition-all"
+				>
+					<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
 
+					{$translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserBackToMusicCommunityButton}
+				</a>
+
+				{#if user._id === $userInfo?._id}
+					<p class="text-sm text-t-secondary">
+						<span class="font-medium text-t-primary"
+							>{$translationsStore.musicCommunityPage.publicUser
+								.musicCommunityPagePublicUserYourPublicProfile}</span
+						>
+						<span class="mx-1">·</span>
 						{$translationsStore.musicCommunityPage.publicUser
-							.musicCommunityPagePublicUserBackToMusicCommunityButton}
-					</a>
+							.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
+						<a href="/profile" class="font-medium text-brand-primary"
+							>{$translationsStore.musicCommunityPage.publicUser
+								.musicCommunityPagePublicUserProfilePageLink}</a
+						>.
+					</p>
+				{/if}
+			</div>
 
-					{#if user._id === $userInfo?._id}
-						<p class="text-sm text-t-secondary">
-							<span class="font-medium text-t-primary"
-								>{$translationsStore.musicCommunityPage.publicUser
-									.musicCommunityPagePublicUserYourPublicProfile}</span
-							>
-							<span class="mx-1">·</span>
-							{$translationsStore.musicCommunityPage.publicUser
-								.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
-							<a href="/profile" class="font-medium text-brand-primary"
-								>{$translationsStore.musicCommunityPage.publicUser
-									.musicCommunityPagePublicUserProfilePageLink}</a
-							>.
-						</p>
-					{/if}
-				</div>
+			<PublicUserKeyInformation
+				publicUserStreamingInfo={selectedStreaming === 'spotify'
+					? user.connectedStreamings.spotify
+					: null}
+				publicUserId={user._id}
+				createdAt={user.createdAt}
+				bind:showAddCommentModal
+			/>
 
-				<PublicUserKeyInformation
-					publicUserStreamingInfo={selectedStreaming === 'spotify'
-						? user.connectedStreamings.spotify
-						: null}
-					publicUserId={user._id}
-					createdAt={user.createdAt}
-					bind:showAddCommentModal
-				/>
+			<div class="mt-12 flex w-full flex-col gap-10 lg:gap-14">
+				<SongsOnPublicUser publicUser={user} />
 
-				<div class="mt-14 flex w-full flex-col gap-10 lg:gap-14">
-					<SongsOnPublicUser publicUser={user} />
-
-					<ArtistsOnPublicProfile publicUser={user} />
-				</div>
+				<ArtistsOnPublicProfile publicUser={user} />
 			</div>
 		{:else}
 			<div
