@@ -403,6 +403,10 @@ export const it = {
 			'Scegli il brano che rappresenta meglio ciò che stai ascoltando in questo momento.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Seleziona il brano del momento per il profilo',
 		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Potrai aggiornare gratuitamente tra',
+		profilePageSelectYourTrackSuccessToastMessage: 'Brano del momento selezionato con successo',
+		profilePageSelectYourTrackErrorToastMessage: 'Errore durante la selezione del brano del momento',
+		profilePageChangeYourTrackSuccessToastMessage: 'Brano del momento modificato con successo',
+		profilePageChangeYourTrackErrorToastMessage: 'Errore durante la modifica del brano del momento',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Continua a sbloccare altri brani e a personalizzare ancora di più il tuo profilo.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:

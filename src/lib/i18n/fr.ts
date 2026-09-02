@@ -403,6 +403,10 @@ export const fr = {
 			'Sélectionner le titre du moment pour le profil',
 		profilePageChangeYourMusicTimeToNextFreeUpdate:
 			'Vous pourrez effectuer une mise à jour gratuitement dans',
+		profilePageSelectYourTrackSuccessToastMessage: 'Musique du moment sélectionnée avec succès',
+		profilePageSelectYourTrackErrorToastMessage: 'Erreur lors de la sélection de la musique du moment',
+		profilePageChangeYourTrackSuccessToastMessage: 'Musique du moment modifiée avec succès',
+		profilePageChangeYourTrackErrorToastMessage: 'Erreur lors de la modification de la musique du moment',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Continuez à débloquer davantage de titres et à personnaliser encore plus votre profil.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:

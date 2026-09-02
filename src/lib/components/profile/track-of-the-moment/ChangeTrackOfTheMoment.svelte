@@ -8,6 +8,7 @@
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateTrackOfTheMoment } from '$lib/services/user/updates/updateTrackOfTheMoment';
@@ -32,14 +33,14 @@
 	async function handleChangeTrackOfTheMoment() {
 		if (!choosedTrack || !$userInfo?._id) return;
 
-		const updatedTrack = await updateTrackOfTheMoment(
+		const updateTrackOfTheMomentResponse = await updateTrackOfTheMoment(
 			$userInfo._id,
 			choosedTrack,
 			$userInfo.tickets,
 			$userInfo.tracks?.trackOfTheMoment?.nextFreeUpdate
 		);
 
-		if (updatedTrack) {
+		if (!updateTrackOfTheMomentResponse?.error) {
 			userInfo.update((currentUser) => {
 				if (!currentUser) return currentUser;
 
@@ -48,15 +49,29 @@
 					tracks: {
 						...currentUser.tracks,
 						trackOfTheMoment: {
-							track: updatedTrack.track,
-							nextFreeUpdate: updatedTrack.nextFreeUpdate
+							track: updateTrackOfTheMomentResponse.track,
+							nextFreeUpdate: updateTrackOfTheMomentResponse.nextFreeUpdate
 						}
 					}
 				};
 			});
+
+			closeChangeItemOfTheMomentModal();
+
+			toastStore.set({
+				showToast: true,
+				toastType: 'success',
+				toastMessage: $translationsStore.profilePage.profilePageChangeYourTrackSuccessToastMessage
+			});
+		} else {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage: $translationsStore.profilePage.profilePageChangeYourTrackErrorToastMessage
+			});
 		}
 
-		closeChangeItemOfTheMomentModal();
+		return;
 	}
 </script>
 

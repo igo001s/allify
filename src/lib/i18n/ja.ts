@@ -383,6 +383,10 @@ export const ja = {
 		profilePageChangeYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選んでください。',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'プロフィールの今の一曲を選択',
 		profilePageChangeYourMusicTimeToNextFreeUpdate: '無料で更新できるまで',
+		profilePageSelectYourTrackSuccessToastMessage: '今の一曲が正常に選択されました',
+		profilePageSelectYourTrackErrorToastMessage: '今の一曲の選択中にエラーが発生しました',
+		profilePageChangeYourTrackSuccessToastMessage: '今の一曲が正常に変更されました',
+		profilePageChangeYourTrackErrorToastMessage: '今の一曲の変更中にエラーが発生しました',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'カスタム楽曲を変更するモーダルを閉じる',

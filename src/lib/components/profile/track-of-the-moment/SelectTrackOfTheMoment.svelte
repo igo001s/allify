@@ -5,6 +5,7 @@
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateTrackOfTheMoment } from '$lib/services/user/updates/updateTrackOfTheMoment';
@@ -29,9 +30,14 @@
 	async function handleSelectTrackOfTheMoment() {
 		if (!choosedTrack || !$userInfo?._id) return;
 
-		const updatedTrack = await updateTrackOfTheMoment($userInfo?._id, choosedTrack);
+		const updateTrackOfTheMomentResponse = await updateTrackOfTheMoment(
+			$userInfo._id,
+			choosedTrack,
+			$userInfo.tickets,
+			$userInfo.tracks?.trackOfTheMoment?.nextFreeUpdate
+		);
 
-		if (updatedTrack) {
+		if (!updateTrackOfTheMomentResponse?.error) {
 			userInfo.update((currentUser) => {
 				if (!currentUser) return currentUser;
 
@@ -40,15 +46,29 @@
 					tracks: {
 						...currentUser.tracks,
 						trackOfTheMoment: {
-							track: updatedTrack.track,
-							nextFreeUpdate: updatedTrack.nextFreeUpdate
+							track: updateTrackOfTheMomentResponse.track,
+							nextFreeUpdate: updateTrackOfTheMomentResponse.nextFreeUpdate
 						}
 					}
 				};
 			});
+
+			closeSelectItemOfTheMomentModal();
+
+			toastStore.set({
+				showToast: true,
+				toastType: 'success',
+				toastMessage: $translationsStore.profilePage.profilePageSelectYourTrackSuccessToastMessage
+			});
+		} else {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage: $translationsStore.profilePage.profilePageSelectYourTrackErrorToastMessage
+			});
 		}
 
-		closeSelectItemOfTheMomentModal();
+		return;
 	}
 </script>
 

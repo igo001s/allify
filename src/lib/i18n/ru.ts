@@ -393,6 +393,10 @@ export const ru = {
 			'Выберите трек, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Выбрать трек момента для профиля',
 		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Вы сможете бесплатно обновить через',
+		profilePageSelectYourTrackSuccessToastMessage: 'Трек момента успешно выбран',
+		profilePageSelectYourTrackErrorToastMessage: 'Ошибка при выборе трека момента',
+		profilePageChangeYourTrackSuccessToastMessage: 'Трек момента успешно изменён',
+		profilePageChangeYourTrackErrorToastMessage: 'Ошибка при изменении трека момента',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Продолжайте открывать новые треки и делать свой профиль ещё более персональным.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:

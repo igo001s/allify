@@ -398,6 +398,10 @@ export const de = {
 			'Wähle den Song, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Song des Moments für das Profil auswählen',
 		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Du kannst kostenlos aktualisieren in',
+		profilePageSelectYourTrackSuccessToastMessage: 'Song des Moments erfolgreich ausgewählt',
+		profilePageSelectYourTrackErrorToastMessage: 'Fehler beim Auswählen des Songs des Moments',
+		profilePageChangeYourTrackSuccessToastMessage: 'Song des Moments erfolgreich geändert',
+		profilePageChangeYourTrackErrorToastMessage: 'Fehler beim Ändern des Songs des Moments',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:

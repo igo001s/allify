@@ -18,9 +18,7 @@ export async function updateTrackOfTheMoment(
 	nextFreeUpdate?: Date
 ) {
 	try {
-		if (!id || !trackOfTheMoment) {
-			return null;
-		}
+		if (!id || !trackOfTheMoment) return;
 
 		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
 
@@ -34,36 +32,40 @@ export async function updateTrackOfTheMoment(
 			}
 		}
 
-		const updateTrackOfTheMomentResponse = await fetch(
-			'/api/mongodb/updates/update-track-of-the-moment',
-			{
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({
-					id,
-					trackOfTheMoment,
-					freeUpdateIsAvailable,
-					nextFreeUpdate
-				})
-			}
-		);
+		const response = await fetch('/api/mongodb/updates/update-track-of-the-moment', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				id,
+				trackOfTheMoment,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
+			})
+		});
 
-		if (!updateTrackOfTheMomentResponse.ok && tickets !== undefined && tickets !== null) {
+		if (!response.ok && tickets !== undefined && tickets !== null) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update track of the moment');
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedUpdateTrackOfTheMoment = await updateTrackOfTheMomentResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedUpdateTrackOfTheMoment.trackOfTheMoment;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateTrackOfTheMoment error:', error);
+			console.error(
+				'User updateTrackOfTheMoment error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
-		return null;
+		return {
+			error: true,
+			errorType: 'updateTrackOfTheMomentError'
+		};
 	}
 }

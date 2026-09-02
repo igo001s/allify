@@ -53,10 +53,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				trackOfTheMoment: {
-					track: trackOfTheMoment,
-					nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
-				}
+				track: trackOfTheMoment,
+				nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 			}),
 			{ status: 200 }
 		);

@@ -399,6 +399,10 @@ export const es = {
 		profilePageChangeYourMusicChooseMusicAriaLabel:
 			'Seleccionar la canción del momento para el perfil',
 		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Podrás actualizar gratis en',
+		profilePageSelectYourTrackSuccessToastMessage: 'Música del momento seleccionada con éxito',
+		profilePageSelectYourTrackErrorToastMessage: 'Error al seleccionar la música del momento',
+		profilePageChangeYourTrackSuccessToastMessage: 'Música del momento cambiada con éxito',
+		profilePageChangeYourTrackErrorToastMessage: 'Error al cambiar la música del momento',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Sigue desbloqueando más canciones y personalizando aún más tu perfil.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:

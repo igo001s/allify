@@ -388,6 +388,10 @@ export const pt = {
 			'Escolha a música que melhor representa o que você está ouvindo no momento.',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Selecionar música do momento para o perfil',
 		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Você poderá atualizar gratuitamente em',
+		profilePageSelectYourTrackSuccessToastMessage: 'Música do momento selecionada com sucesso',
+		profilePageSelectYourTrackErrorToastMessage: 'Erro ao selecionar a música do momento',
+		profilePageChangeYourTrackSuccessToastMessage: 'Música do momento alterada com sucesso',
+		profilePageChangeYourTrackErrorToastMessage: 'Erro ao alterar a música do momento',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageChangeYourCustomMusicCloseModalAriaLabel:
@@ -526,6 +530,7 @@ export const pt = {
 			'Escolha outro artista e dê um título que represente o que você está sentindo, vivendo ou lembrando neste momento.',
 		profilePageChangeYourCustomMusicParagraph2:
 			'Escolha outra música e dê um título que represente o que você está sentindo, vivendo ou lembrando neste momento.',
+
 		profilePageChangeYourTracksWhoWereWithYou: 'Músicas que já estiveram com você',
 		profilePageChangeYourItemsModalCloseModal: 'Fechar',
 		profilePageChangeYourItemsModalSaveChanges: 'Salvar alterações',
