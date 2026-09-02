@@ -205,7 +205,9 @@ export const en = {
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Show +5 tracks',
 		myMusicalProfilePageCrownIconAltText: 'Crown icon',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Most-listened-to artists updated successfully!',
-		myMusicalProfilePageUpdateTracksSuccessToast: 'Most-listened-to tracks updated successfully!'
+		myMusicalProfilePageUpdateArtistsErrorToast: 'Error updating most-listened-to artists.',
+		myMusicalProfilePageUpdateTracksSuccessToast: 'Most-listened-to tracks updated successfully!',
+		myMusicalProfilePageUpdateTracksErrorToast: 'Error updating most-listened-to tracks.'
 	},
 	discoveriesPage: {
 		title: 'Music Discoveries | Allify',

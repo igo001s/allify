@@ -52,38 +52,40 @@ export async function updateMostListenedArtists(
 				(artist) => !mostListenedArtistsItems.some((oldArtist) => oldArtist.id === artist.id)
 			) ?? [];
 
-		const updateMostListenedArtistsResponse = await fetch(
-			'/api/mongodb/updates/update-most-listened-artists',
-			{
-				method: 'POST',
-				body: JSON.stringify({
-					id,
-					limit: artistsLimit,
-					mostListenedArtist: mostListenedArtistItem,
-					mostListenedArtists: mostListenedArtistsItems,
-					artistsWhoWereWithYou,
-					freeUpdateIsAvailable,
-					nextFreeUpdate
-				})
-			}
-		);
+		const response = await fetch('/api/mongodb/updates/update-most-listened-artists', {
+			method: 'POST',
+			body: JSON.stringify({
+				id,
+				limit: artistsLimit,
+				mostListenedArtist: mostListenedArtistItem,
+				mostListenedArtists: mostListenedArtistsItems,
+				artistsWhoWereWithYou,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
+			})
+		});
 
-		if (!updateMostListenedArtistsResponse.ok) {
-			if (tickets !== undefined && tickets !== null) {
-				await returnTicket(id, tickets);
-			}
+		if (!response.ok && tickets !== undefined && tickets !== null) {
+			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update most listened artists');
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedUpdateMostListenedArtists = await updateMostListenedArtistsResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedUpdateMostListenedArtists;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateMostListenedArtists error:', error);
+			console.error(
+				'User updateMostListenedArtists error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
-		return;
+		return {
+			error: true,
+			errorType: 'updateMostListenedArtistsError'
+		};
 	}
 }

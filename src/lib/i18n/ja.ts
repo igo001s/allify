@@ -204,7 +204,11 @@ export const ja = {
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5曲を表示',
 		myMusicalProfilePageCrownIconAltText: '王冠アイコン',
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最もよく聴いているアーティストを更新しました！',
-		myMusicalProfilePageUpdateTracksSuccessToast: '最もよく聴いている楽曲を更新しました！'
+		myMusicalProfilePageUpdateArtistsErrorToast:
+			'最もよく聴いているアーティストの更新中にエラーが発生しました。',
+		myMusicalProfilePageUpdateTracksSuccessToast: '最もよく聴いている楽曲を更新しました！',
+		myMusicalProfilePageUpdateTracksErrorToast:
+			'最もよく聴いている楽曲の更新中にエラーが発生しました。'
 	},
 	discoveriesPage: {
 		title: '音乐发现 | Allify',

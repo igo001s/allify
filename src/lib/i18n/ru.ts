@@ -208,7 +208,10 @@ export const ru = {
 		myMusicalProfilePageCrownIconAltText: 'Иконка короны',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Самые прослушиваемые исполнители успешно обновлены!',
-		myMusicalProfilePageUpdateTracksSuccessToast: 'Самые прослушиваемые треки успешно обновлены!'
+		myMusicalProfilePageUpdateArtistsErrorToast:
+			'Ошибка при обновлении самых прослушиваемых исполнителей.',
+		myMusicalProfilePageUpdateTracksSuccessToast: 'Самые прослушиваемые треки успешно обновлены!',
+		myMusicalProfilePageUpdateTracksErrorToast: 'Ошибка при обновлении самых прослушиваемых треков.'
 	},
 	discoveriesPage: {
 		title: 'Музыкальные открытия | Allify',

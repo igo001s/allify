@@ -209,8 +209,10 @@ export const es = {
 		myMusicalProfilePageCrownIconAltText: 'Icono de corona',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'¡Artistas más escuchados actualizados correctamente!',
+		myMusicalProfilePageUpdateArtistsErrorToast: 'Error al actualizar los artistas más escuchados.',
 		myMusicalProfilePageUpdateTracksSuccessToast:
-			'¡Canciones más escuchadas actualizadas correctamente!'
+			'¡Canciones más escuchadas actualizadas correctamente!',
+		myMusicalProfilePageUpdateTracksErrorToast: 'Error al actualizar las canciones más escuchadas.'
 	},
 	discoveriesPage: {
 		title: 'Descubrimientos Musicales | Allify',

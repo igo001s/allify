@@ -211,7 +211,11 @@ export const it = {
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostra +5 brani',
 		myMusicalProfilePageCrownIconAltText: 'Icona della corona',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Artisti più ascoltati aggiornati con successo!',
-		myMusicalProfilePageUpdateTracksSuccessToast: 'Brani più ascoltati aggiornati con successo!'
+		myMusicalProfilePageUpdateArtistsErrorToast:
+			"Errore durante l'aggiornamento degli artisti più ascoltati.",
+		myMusicalProfilePageUpdateTracksSuccessToast: 'Brani più ascoltati aggiornati con successo!',
+		myMusicalProfilePageUpdateTracksErrorToast:
+			"Errore durante l'aggiornamento dei brani più ascoltati."
 	},
 	discoveriesPage: {
 		title: 'Scoperte Musicali | Allify',

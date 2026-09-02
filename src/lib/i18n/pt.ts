@@ -207,7 +207,9 @@ export const pt = {
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostrar +5 músicas',
 		myMusicalProfilePageCrownIconAltText: 'Ícone de coroa',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Artistas mais ouvidos atualizados com sucesso!',
-		myMusicalProfilePageUpdateTracksSuccessToast: 'Músicas mais ouvidas atualizadas com sucesso!'
+		myMusicalProfilePageUpdateArtistsErrorToast: 'Erro ao atualizar os artistas mais ouvidos.',
+		myMusicalProfilePageUpdateTracksSuccessToast: 'Músicas mais ouvidas atualizadas com sucesso!',
+		myMusicalProfilePageUpdateTracksErrorToast: 'Erro ao atualizar as músicas mais ouvidas.'
 	},
 	discoveriesPage: {
 		title: 'Descobertas Musicais | Allify',
@@ -448,6 +450,7 @@ export const pt = {
 		profilePageChangeYourArtistChooseArtistFollowers: 'seguidores',
 		profilePageChangeYourArtistSuccessToastMessage: 'Artista do momento atualizado com sucesso.',
 		profilePageChangeYourArtistErrorToastMessage: 'Erro ao tentar atualizar o artista do momento',
+		profilePageSelectYourArtistSuccessToastMessage: 'Artista do momento selecionado com sucesso.',
 		profilePageSelectYourArtistErrorToastMessage: 'Erro ao tentar selecionar o artista do momento',
 		profilePageChangeYourArtistsWhoWereWithYou: 'Artistas que já estiveram com você',
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Você poderá atualizar gratuitamente em',

@@ -60,17 +60,15 @@
 				toastType: 'success',
 				toastMessage: $translationsStore.profilePage.profilePageSelectYourArtistSuccessToastMessage
 			});
-
-			return;
 		} else {
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',
 				toastMessage: $translationsStore.profilePage.profilePageSelectYourArtistErrorToastMessage
 			});
-
-			return;
 		}
+
+		return;
 	}
 </script>
 
