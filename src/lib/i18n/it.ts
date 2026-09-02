@@ -404,7 +404,8 @@ export const it = {
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'Seleziona il brano del momento per il profilo',
 		profilePageChangeYourMusicTimeToNextFreeUpdate: 'Potrai aggiornare gratuitamente tra',
 		profilePageSelectYourTrackSuccessToastMessage: 'Brano del momento selezionato con successo',
-		profilePageSelectYourTrackErrorToastMessage: 'Errore durante la selezione del brano del momento',
+		profilePageSelectYourTrackErrorToastMessage:
+			'Errore durante la selezione del brano del momento',
 		profilePageChangeYourTrackSuccessToastMessage: 'Brano del momento modificato con successo',
 		profilePageChangeYourTrackErrorToastMessage: 'Errore durante la modifica del brano del momento',
 		profilePageChangeYourMusicUnlockMoreMusic:

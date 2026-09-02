@@ -72,6 +72,8 @@
 			} else {
 				loadingMoreItems = false;
 
+				if (updateMostListenedArtistsNewLimitResponse.errorType === 'ticketUsageFailed') return;
+
 				toastStore.set({
 					showToast: true,
 					toastType: 'error',
@@ -120,6 +122,8 @@
 				});
 			} else {
 				loadingMoreItems = false;
+
+				if (updateMostListenedTracksNewLimitResponse.errorType === 'ticketUsageFailed') return;
 
 				toastStore.set({
 					showToast: true,

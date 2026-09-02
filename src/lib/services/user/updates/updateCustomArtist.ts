@@ -29,7 +29,10 @@ export async function updateCustomArtist(
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
-				throw new Error('Failed to use ticket');
+				return {
+					error: true,
+					errorType: 'ticketUsageFailed'
+				};
 			}
 		}
 

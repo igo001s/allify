@@ -64,6 +64,8 @@
 				toastMessage: $translationsStore.profilePage.profilePageChangeYourArtistSuccessToastMessage
 			});
 		} else {
+			if (updateArtistOfTheMomentResponse.errorType === 'ticketUsageFailed') return;
+
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',

@@ -66,6 +66,8 @@
 							$translationsStore.myMusicalProfilePage.myMusicalProfilePageUpdateArtistsSuccessToast
 					});
 				} else {
+					if (updateMostListenedArtistsResponse.errorType === 'ticketUsageFailed') return;
+
 					toastStore.set({
 						showToast: true,
 						toastType: 'error',
@@ -118,6 +120,8 @@
 							$translationsStore.myMusicalProfilePage.myMusicalProfilePageUpdateTracksSuccessToast
 					});
 				} else {
+					if (updateMostListenedTracksResponse.errorType === 'ticketUsageFailed') return;
+
 					toastStore.set({
 						showToast: true,
 						toastType: 'error',

@@ -64,6 +64,8 @@
 				toastMessage: $translationsStore.profilePage.profilePageChangeYourTrackSuccessToastMessage
 			});
 		} else {
+			if (updateTrackOfTheMomentResponse.errorType === 'ticketUsageFailed') return;
+
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',

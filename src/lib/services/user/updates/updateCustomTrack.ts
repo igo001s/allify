@@ -19,9 +19,7 @@ export async function updateCustomTrack(
 	nextFreeUpdate?: Date
 ) {
 	try {
-		if (!id || !customTrackTitle || !customTrack) {
-			return null;
-		}
+		if (!id || !customTrackTitle || !customTrack) return;
 
 		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
 
@@ -31,7 +29,10 @@ export async function updateCustomTrack(
 			const ticketWasUsed = await useTicket(id, tickets);
 
 			if (!ticketWasUsed) {
-				throw new Error('Failed to use ticket');
+				return {
+					error: true,
+					errorType: 'ticketUsageFailed'
+				};
 			}
 		}
 

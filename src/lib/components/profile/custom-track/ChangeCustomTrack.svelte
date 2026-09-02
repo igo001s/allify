@@ -78,6 +78,8 @@
 
 			return;
 		} else {
+			if (updatedTrackResponse.errorType === 'ticketUsageFailed') return;
+
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',

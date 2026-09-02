@@ -43,6 +43,8 @@
 					$translationsStore.settingsPage.settingsPageProfileVisibilityChangeSuccessMessage
 			});
 		} else {
+			if (updateProfileVisibilityResponse.errorType === 'ticketUsageFailed') return;
+
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',

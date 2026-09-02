@@ -80,6 +80,8 @@
 
 			return;
 		} else {
+			if (updateCustomArtistResponse.errorType === 'ticketUsageFailed') return;
+
 			toastStore.set({
 				showToast: true,
 				toastType: 'error',
