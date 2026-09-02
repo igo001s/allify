@@ -23,9 +23,7 @@
 
 	const fetchMeInfo = async () => {
 		try {
-			const fetchUserInfoResponse = await fetchUserInfo(
-				$translationsStore.templateEmail.welcomeToAllifySubject
-			);
+			const fetchUserInfoResponse = await fetchUserInfo();
 
 			if (fetchUserInfoResponse.error) {
 				if (fetchUserInfoResponse.errorType === 'userCreation') {

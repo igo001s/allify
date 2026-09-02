@@ -1,5 +1,9 @@
 // Svelte
 import { dev } from '$app/environment';
+import { get } from 'svelte/store';
+
+// Stores
+import { translationsStore } from '$lib/stores/translations.store';
 
 // Services
 import { createUser } from './createUser';
@@ -10,9 +14,10 @@ import { buildUserFromSpotify } from '../../spotify/mappers/buildUserFromSpotify
 // Email templates
 import { welcomeToAllifyTemplate } from '$lib/emails/templates/welcomeToAllifyTemaplate';
 
-export async function fetchUserInfo(emailMessage: string) {
+export async function fetchUserInfo() {
 	try {
 		const userFromSpotify = await existingSpotifyUser();
+		const $translationsStore = get(translationsStore);
 
 		if (userFromSpotify.existingUser === false) {
 			const builtUser = await buildUserFromSpotify(userFromSpotify.infoToCreateUser);
@@ -27,7 +32,7 @@ export async function fetchUserInfo(emailMessage: string) {
 
 				if (createUserResult) {
 					sendEmail(
-						emailMessage,
+						$translationsStore.templateEmail.welcomeToAllifySubject,
 						builtUser.email,
 						welcomeToAllifyTemplate(createUserResult.connectedStreamings.spotify.name, 'Spotify')
 					);
