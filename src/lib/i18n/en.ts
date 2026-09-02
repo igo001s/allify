@@ -197,6 +197,14 @@ export const en = {
 			'You can discover 5 more artists for free in',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'You can discover 5 more artists for free now',
+		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
+			'Your most-listened-to artists list has been successfully updated!',
+		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
+			'Error updating your most-listened-to artists list.',
+		myMusicalProfilePageUpdateMostListenedTracksSuccessToast:
+			'Your most-listened-to songs list has been successfully updated!',
+		myMusicalProfilePageUpdateMostListenedTracksErrorToast:
+			'Error updating your most-listened-to songs list.',
 		myMusicalProfilePageShowMoreFiveArtistsButton: 'Show +5 artists',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
 			'You can discover 5 more tracks for free in',

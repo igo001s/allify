@@ -199,6 +199,14 @@ export const fr = {
 			'Vous pourrez découvrir gratuitement 5 artistes supplémentaires dans',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'Vous pouvez découvrir gratuitement 5 artistes supplémentaires maintenant',
+		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
+			'Votre liste des artistes les plus écoutés a été mise à jour avec succès !',
+		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
+			'Erreur lors de la mise à jour de votre liste des artistes les plus écoutés.',
+		myMusicalProfilePageUpdateMostListenedTracksSuccessToast:
+			'Votre liste des morceaux les plus écoutés a été mise à jour avec succès !',
+		myMusicalProfilePageUpdateMostListenedTracksErrorToast:
+			'Erreur lors de la mise à jour de votre liste des morceaux les plus écoutés.',
 		myMusicalProfilePageShowMoreFiveArtistsButton: 'Afficher +5 artistes',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
 			'Vous pourrez découvrir gratuitement 5 morceaux supplémentaires dans',

@@ -199,6 +199,14 @@ export const pt = {
 			'Você poderá descobrir mais 5 artistas gratuitamente em',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'Você pode descobrir mais 5 artistas gratuitamente agora',
+		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
+			'Sua lista de artistas mais ouvidos foi atualizada com sucesso!',
+		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
+			'Erro ao atualizar sua lista de artistas mais ouvidos.',
+		myMusicalProfilePageUpdateMostListenedTracksSuccessToast:
+			'Sua lista de músicas mais ouvidas foi atualizada com sucesso!',
+		myMusicalProfilePageUpdateMostListenedTracksErrorToast:
+			'Erro ao atualizar sua lista de músicas mais ouvidas.',
 		myMusicalProfilePageShowMoreFiveArtistsButton: 'Mostrar +5 artistas',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
 			'Você poderá descobrir mais 5 músicas gratuitamente em',

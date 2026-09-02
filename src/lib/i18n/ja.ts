@@ -197,6 +197,14 @@ export const ja = {
 			'あと5人のアーティストを無料で発見できるまで',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'今すぐ無料でさらに5人のアーティストを発見できます',
+		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
+			'最もよく聴いているアーティストのリストが正常に更新されました！',
+		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
+			'最もよく聴いているアーティストのリストの更新中にエラーが発生しました。',
+		myMusicalProfilePageUpdateMostListenedTracksSuccessToast:
+			'最もよく聴いている楽曲のリストが正常に更新されました！',
+		myMusicalProfilePageUpdateMostListenedTracksErrorToast:
+			'最もよく聴いている楽曲のリストの更新中にエラーが発生しました。',
 		myMusicalProfilePageShowMoreFiveArtistsButton: '+5人のアーティストを表示',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks: 'あと5曲を無料で発見できるまで',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:

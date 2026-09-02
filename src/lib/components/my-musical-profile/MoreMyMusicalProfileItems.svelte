@@ -6,6 +6,7 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateMostListenedTracksNewLimit } from '$lib/services/user/updates/updateMostListenedTracksNewLimit';
@@ -30,7 +31,7 @@
 		const userTickets = $userInfo?.tickets as number;
 
 		if (additionalItemsType === 'artists') {
-			const response = await updateMostListenedArtistsNewLimit(
+			const updateMostListenedArtistsNewLimitResponse = await updateMostListenedArtistsNewLimit(
 				userId,
 				artistsLimit,
 				userTickets,
@@ -38,37 +39,49 @@
 				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate
 			);
 
-			if (!response) {
-				loadingMoreItems = false;
+			if (!updateMostListenedArtistsNewLimitResponse.error) {
+				userInfo.update((currentUser) => {
+					if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
 
-				return;
-			}
-
-			userInfo.update((currentUser) => {
-				if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
-
-				return {
-					...currentUser,
-					connectedStreamings: {
-						...currentUser.connectedStreamings,
-						spotify: {
-							...currentUser.connectedStreamings.spotify,
-							mostListenedArtists: {
-								artistsLimit: response.limit,
-								mostListenedArtistItem: response.mostListenedArtist,
-								mostListenedArtistsItems: response.mostListenedArtists,
-								nextFreeUpdate: response.nextFreeUpdate
+					return {
+						...currentUser,
+						connectedStreamings: {
+							...currentUser.connectedStreamings,
+							spotify: {
+								...currentUser.connectedStreamings.spotify,
+								mostListenedArtists: {
+									artistsLimit: updateMostListenedArtistsNewLimitResponse.limit,
+									mostListenedArtistItem:
+										updateMostListenedArtistsNewLimitResponse.mostListenedArtist,
+									mostListenedArtistsItems:
+										updateMostListenedArtistsNewLimitResponse.mostListenedArtists,
+									nextFreeUpdate: updateMostListenedArtistsNewLimitResponse.nextFreeUpdate
+								}
 							}
 						}
-					}
-				};
-			});
+					};
+				});
 
-			setTimeout(() => {
+				toastStore.set({
+					showToast: true,
+					toastType: 'success',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage
+							.myMusicalProfilePageUpdateMostListenedArtistsSuccessToast
+				});
+			} else {
 				loadingMoreItems = false;
-			}, 1000);
+
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage
+							.myMusicalProfilePageUpdateMostListenedArtistsErrorToast
+				});
+			}
 		} else if (additionalItemsType === 'tracks') {
-			const response = await updateMostListenedTracksNewLimit(
+			const updateMostListenedTracksNewLimitResponse = await updateMostListenedTracksNewLimit(
 				userId,
 				tracksLimit,
 				userTickets,
@@ -76,36 +89,51 @@
 				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate
 			);
 
-			if (!response) {
-				loadingMoreItems = false;
+			if (!updateMostListenedTracksNewLimitResponse.error) {
+				userInfo.update((currentUser) => {
+					if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
 
-				return;
-			}
-
-			userInfo.update((currentUser) => {
-				if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
-
-				return {
-					...currentUser,
-					connectedStreamings: {
-						...currentUser.connectedStreamings,
-						spotify: {
-							...currentUser.connectedStreamings.spotify,
-							mostListenedTracks: {
-								tracksLimit: response.limit,
-								mostListenedTrackItem: response.mostListenedTrack,
-								mostListenedTracksItems: response.mostListenedTracks,
-								nextFreeUpdate: response.nextFreeUpdate
+					return {
+						...currentUser,
+						connectedStreamings: {
+							...currentUser.connectedStreamings,
+							spotify: {
+								...currentUser.connectedStreamings.spotify,
+								mostListenedTracks: {
+									tracksLimit: updateMostListenedTracksNewLimitResponse.limit,
+									mostListenedTrackItem: updateMostListenedTracksNewLimitResponse.mostListenedTrack,
+									mostListenedTracksItems:
+										updateMostListenedTracksNewLimitResponse.mostListenedTracks,
+									nextFreeUpdate: updateMostListenedTracksNewLimitResponse.nextFreeUpdate
+								}
 							}
 						}
-					}
-				};
-			});
+					};
+				});
 
-			setTimeout(() => {
+				toastStore.set({
+					showToast: true,
+					toastType: 'success',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage
+							.myMusicalProfilePageUpdateMostListenedTracksSuccessToast
+				});
+			} else {
 				loadingMoreItems = false;
-			}, 1000);
+
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage
+							.myMusicalProfilePageUpdateMostListenedTracksErrorToast
+				});
+			}
 		}
+
+		setTimeout(() => {
+			loadingMoreItems = false;
+		}, 1000);
 	}
 </script>
 

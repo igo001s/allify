@@ -52,38 +52,42 @@ export async function updateMostListenedTracksNewLimit(
 				(track) => !mostListenedTracksItems.some((oldTrack) => oldTrack.id === track.id)
 			) ?? [];
 
-		const updateMostListenedTracksResponse = await fetch(
-			'/api/mongodb/updates/update-most-listened-tracks',
-			{
-				method: 'POST',
-				body: JSON.stringify({
-					id,
-					limit: tracksLimit,
-					mostListenedTrack: mostListenedTrackItem,
-					mostListenedTracks: mostListenedTracksItems,
-					tracksWhoWereWithYou,
-					freeUpdateIsAvailable,
-					nextFreeUpdate
-				})
-			}
-		);
+		const response = await fetch('/api/mongodb/updates/update-most-listened-tracks', {
+			method: 'POST',
+			body: JSON.stringify({
+				id,
+				limit: tracksLimit,
+				mostListenedTrack: mostListenedTrackItem,
+				mostListenedTracks: mostListenedTracksItems,
+				tracksWhoWereWithYou,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
+			})
+		});
 
-		if (!updateMostListenedTracksResponse.ok) {
+		if (!response.ok) {
 			if (tickets !== undefined && tickets !== null) {
 				await returnTicket(id, tickets);
 			}
 
-			throw new Error('Failed to update most listened tracks with new limit');
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedUpdateMostListenedTracks = await updateMostListenedTracksResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedUpdateMostListenedTracks;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateMostListenedTracksNewLimit error:', error);
+			console.error(
+				'User updateMostListenedTracksNewLimit error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
-		return;
+		return {
+			error: true,
+			errorType: 'updateMostListenedTracksNewLimitError'
+		};
 	}
 }

@@ -198,6 +198,14 @@ export const de = {
 			'Du kannst in kostenlos 5 weitere Künstler entdecken',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'Du kannst jetzt kostenlos 5 weitere Künstler entdecken',
+		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
+			'Deine Liste der meistgehörten Künstler wurde erfolgreich aktualisiert!',
+		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
+			'Fehler beim Aktualisieren deiner Liste der meistgehörten Künstler.',
+		myMusicalProfilePageUpdateMostListenedTracksSuccessToast:
+			'Deine Liste der meistgehörten Songs wurde erfolgreich aktualisiert!',
+		myMusicalProfilePageUpdateMostListenedTracksErrorToast:
+			'Fehler beim Aktualisieren deiner Liste der meistgehörten Songs.',
 		myMusicalProfilePageShowMoreFiveArtistsButton: '+5 Künstler anzeigen',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
 			'Du kannst in kostenlos 5 weitere Songs entdecken',

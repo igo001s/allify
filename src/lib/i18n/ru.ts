@@ -199,6 +199,14 @@ export const ru = {
 			'Вы сможете бесплатно открыть ещё 5 исполнителей через',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'Сейчас вы можете бесплатно открыть ещё 5 исполнителей',
+		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
+			'Список ваших самых прослушиваемых исполнителей успешно обновлён!',
+		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
+			'Ошибка при обновлении списка ваших самых прослушиваемых исполнителей.',
+		myMusicalProfilePageUpdateMostListenedTracksSuccessToast:
+			'Список ваших самых прослушиваемых треков успешно обновлён!',
+		myMusicalProfilePageUpdateMostListenedTracksErrorToast:
+			'Ошибка при обновлении списка ваших самых прослушиваемых треков.',
 		myMusicalProfilePageShowMoreFiveArtistsButton: 'Показать ещё +5 исполнителей',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks:
 			'Вы сможете бесплатно открыть ещё 5 треков через',
