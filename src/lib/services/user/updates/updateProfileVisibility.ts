@@ -9,15 +9,13 @@ import { returnTicket } from '../tickets/returnTicket';
 import type { ObjectId } from 'mongodb';
 
 export async function updateProfileVisibility(
-	id: ObjectId,
-	profileVisibility: string,
+	id?: ObjectId,
+	profileVisibility?: string,
 	tickets?: number,
 	nextFreeUpdate?: Date
 ) {
 	try {
-		if (!id || !profileVisibility) {
-			return null;
-		}
+		if (!id || !profileVisibility) return;
 
 		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
 
@@ -31,36 +29,40 @@ export async function updateProfileVisibility(
 			}
 		}
 
-		const updateProfileVisibilityResponse = await fetch(
-			'/api/mongodb/user/update-profile-visibility',
-			{
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({
-					id,
-					profileVisibility,
-					freeUpdateIsAvailable,
-					nextFreeUpdate
-				})
-			}
-		);
+		const response = await fetch('/api/mongodb/user/update-profile-visibility', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				id,
+				profileVisibility,
+				freeUpdateIsAvailable,
+				nextFreeUpdate
+			})
+		});
 
-		if (!updateProfileVisibilityResponse.ok && tickets !== undefined && tickets !== null) {
+		if (!response.ok && tickets !== undefined && tickets !== null) {
 			await returnTicket(id, tickets);
 
-			throw new Error('Failed to update profile visibility');
+			const { error } = await response.json();
+			throw new Error(error);
 		}
 
-		const parsedupdateProfileVisibility = await updateProfileVisibilityResponse.json();
+		const parsedResponse = await response.json();
 
-		return parsedupdateProfileVisibility.profileVisibilityUpdated;
+		return parsedResponse;
 	} catch (error) {
 		if (dev) {
-			console.error('User updateProfileVisibility error:', error);
+			console.error(
+				'User updateProfileVisibility error:',
+				error instanceof Error ? error.message : error
+			);
 		}
 
-		return null;
+		return {
+			error: true,
+			errorType: 'updateProfileVisibilityError'
+		};
 	}
 }

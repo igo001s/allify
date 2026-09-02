@@ -558,6 +558,9 @@ export const ja = {
 		settingsPageProfileVisibilityHeading2: 'プロフィールの公開設定',
 		settingsPageProfileVisibilityParagraph1:
 			'Allifyであなたのプロフィールを見つけたり閲覧したりできるユーザーを設定します。この設定はアカウント設定からいつでも変更できます。',
+		settingsPageProfileVisibilityChangeSuccessMessage:
+			'プロフィールの公開設定が正常に変更されました。',
+		settingsPageProfileVisibilityChangeErrorMessage: 'プロフィールの公開設定の変更に失敗しました。',
 		settingsPageProfileVisibilityPublicOption: '公開プロフィール',
 		settingsPageProfileVisibilityPrivateOption: '非公開プロフィール',
 		settingsPageProfileVisibilityPublicDescription:

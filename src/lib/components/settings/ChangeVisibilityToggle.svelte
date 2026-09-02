@@ -5,6 +5,7 @@
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { updateProfileVisibility } from '$lib/services/user/updates/updateProfileVisibility';
@@ -15,28 +16,42 @@
 	const visibilityOptions: Array<'public' | 'private'> = ['public', 'private'];
 
 	async function handleVisibilityChange(option: 'public' | 'private') {
-		if (!option || !$userInfo?._id) return;
-
-		const updatedVisibility = await updateProfileVisibility(
-			$userInfo._id,
+		const updateProfileVisibilityResponse = await updateProfileVisibility(
+			$userInfo?._id,
 			option,
 			$userInfo?.tickets,
 			$userInfo?.profileVisibility?.nextFreeUpdate
 		);
 
-		if (!updatedVisibility) return;
+		if (!updateProfileVisibilityResponse.error) {
+			userInfo.update((currentUser) => {
+				if (!currentUser) return currentUser;
 
-		userInfo.update((currentUser) => {
-			if (!currentUser) return currentUser;
+				return {
+					...currentUser,
+					profileVisibility: {
+						visibility: updateProfileVisibilityResponse.visibility,
+						nextFreeUpdate: updateProfileVisibilityResponse.nextFreeUpdate
+					}
+				};
+			});
 
-			return {
-				...currentUser,
-				profileVisibility: {
-					visibility: updatedVisibility.visibility,
-					nextFreeUpdate: updatedVisibility.nextFreeUpdate
-				}
-			};
-		});
+			toastStore.set({
+				showToast: true,
+				toastType: 'success',
+				toastMessage:
+					$translationsStore.settingsPage.settingsPageProfileVisibilityChangeSuccessMessage
+			});
+		} else {
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage:
+					$translationsStore.settingsPage.settingsPageProfileVisibilityChangeErrorMessage
+			});
+		}
+
+		return;
 	}
 </script>
 

@@ -505,6 +505,8 @@ export const zh = {
 		settingsPageProfileVisibilityHeading2: '个人资料可见性',
 		settingsPageProfileVisibilityParagraph1:
 			'管理您的个人资料可见性，在公开或私人之间进行选择，并随时更改此设置。',
+		settingsPageProfileVisibilityChangeSuccessMessage: '您的个人资料可见性已成功更改。',
+		settingsPageProfileVisibilityChangeErrorMessage: '更改您的个人资料可见性失败。',
 		settingsPageProfileVisibilityPublicOption: '公开资料',
 		settingsPageProfileVisibilityPrivateOption: '私密资料',
 		settingsPageProfileVisibilityPublicDescription:

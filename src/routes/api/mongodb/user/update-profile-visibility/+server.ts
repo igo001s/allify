@@ -47,10 +47,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				profileVisibilityUpdated: {
-					visibility: profileVisibility,
-					nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
-				}
+				visibility: profileVisibility,
+				nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 			}),
 			{ status: 200 }
 		);

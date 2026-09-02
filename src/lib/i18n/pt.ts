@@ -565,6 +565,10 @@ export const pt = {
 		settingsPageProfileVisibilityHeading2: 'Visibilidade do perfil',
 		settingsPageProfileVisibilityParagraph1:
 			'Gerencie a visibilidade do seu perfil, escolha entre público ou privado e altere essa configuração sempre que desejar.',
+		settingsPageProfileVisibilityChangeSuccessMessage:
+			'A visibilidade do seu perfil foi alterada com sucesso.',
+		settingsPageProfileVisibilityChangeErrorMessage:
+			'Falha ao alterar a visibilidade do seu perfil.',
 		settingsPageProfileVisibilityPublicOption: 'Perfil público',
 		settingsPageProfileVisibilityPrivateOption: 'Perfil privado',
 		settingsPageProfileVisibilityPublicDescription:

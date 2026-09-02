@@ -548,6 +548,9 @@ export const en = {
 		settingsPageProfileVisibilityHeading2: 'Profile visibility',
 		settingsPageProfileVisibilityParagraph1:
 			'Manage your profile visibility, choose between public or private, and change this setting anytime.',
+		settingsPageProfileVisibilityChangeSuccessMessage:
+			'Your profile visibility has been successfully changed.',
+		settingsPageProfileVisibilityChangeErrorMessage: 'Failed to change your profile visibility.',
 		settingsPageProfileVisibilityPublicOption: 'Public profile',
 		settingsPageProfileVisibilityPrivateOption: 'Private profile',
 		settingsPageProfileVisibilityPublicDescription:
