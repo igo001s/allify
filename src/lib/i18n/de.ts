@@ -566,7 +566,11 @@ export const de = {
 		profilePageAuthorEmptyComments:
 			'Dein Profil hat noch keine Kommentare. Teile dein Profil mit deinen Freunden, damit sie Kommentare hinterlassen können!',
 		profilePageDeleteCommentOfAuthorAriaLabel: 'Schaltfläche zum Löschen des Kommentars von ',
-		profilePageDeleteCommentOfAuthorAltText: 'Symbol zum Löschen des Kommentars von '
+		profilePageDeleteCommentOfAuthorAltText: 'Symbol zum Löschen des Kommentars von ',
+		profilePageChangeCustomArtistSuccessToastMessage:
+			'Personalisierter Künstler erfolgreich geändert.',
+		profilePageChangeCustomArtistErrorToastMessage:
+			'Fehler beim Ändern des personalisierten Künstlers. Bitte versuche es erneut.'
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',

@@ -409,6 +409,8 @@ export const es = {
 			'Cerrar el modal para cambiar la canción personalizada',
 		profilePageChangeYourCustomMusicCloseModalAltText:
 			'Icono para cerrar el modal para cambiar la canción personalizada',
+		profilePageSelectCustomTrackSuccessToastMessage: 'Canción personalizada seleccionada con éxito',
+		profilePageSelectCustomTrackErrorToastMessage: 'Error al seleccionar la canción personalizada',
 		profilePageChangeCustomTrackSuccessToastMessage: 'Canción personalizada cambiada con éxito',
 		profilePageChangeCustomTrackErrorToastMessage: 'Error al cambiar la canción personalizada',
 		profilePageChangeYourCustomMusicTitleInputLabel: 'Ponle un título a tu canción',
@@ -556,6 +558,7 @@ export const es = {
 		profilePageChangeYourCustomItemModalSaveChanges: 'Guardar cambios',
 		profilePageSelectYourCustomItemModalCloseModal: 'Cerrar',
 		profilePageSelectYourCustomItemModalSaveChanges: 'Guardar selección',
+		profilePageDeleteCommentSuccessToastMessage: 'Comentario eliminado con éxito.',
 		profilePageDeleteCommentErrorToastMessage: 'Error al eliminar el comentario.',
 		profilePageCommentsCloseModalAriaLabel: 'Cerrar modal de comentarios del perfil',
 		profilePageCommentsCloseModalAltText: 'Icono para cerrar el modal de comentarios del perfil',

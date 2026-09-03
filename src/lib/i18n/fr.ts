@@ -127,6 +127,8 @@ export const fr = {
 		buildProfileNextStepButton: 'Continuer',
 		buildProfileBackStepButton: 'Retour',
 		buildProfileSaveProfileButton: 'Enregistrer le profil',
+		buildProfileSaveBuiltUserErrorToast:
+			'Une erreur est survenue lors de l’enregistrement du profil.',
 		toastSuccessTitle: 'Succès',
 		toastSuccessAltText: 'Icône de succès',
 		toastWarningTitle: 'Attention',
