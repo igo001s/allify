@@ -26,7 +26,7 @@
 	let choosedArtist: ArtistSpotify | undefined =
 		$userInfo?.artists?.customArtist?.artist || undefined;
 
-	let isArtistTitleValid: { typeError: string; error: boolean } = { typeError: '', error: false };
+	let isArtistTitleValid: { typeError: string; error: boolean } | boolean;
 
 	function handleArtistSelection(artist: ArtistSpotify) {
 		if (choosedArtist?.id === artist.id) {
@@ -109,7 +109,7 @@
 		/>
 
 		<div class="flex items-start justify-between gap-3">
-			{#if isArtistTitleValid.error}
+			{#if typeof isArtistTitleValid === 'object' && isArtistTitleValid.error}
 				<span class="mt-1 text-[10px] text-status-error sm:text-[11px]">
 					{#if isArtistTitleValid.typeError === 'emptyOrTooLong'}
 						{$translationsStore.profilePage
@@ -194,7 +194,7 @@
 		<button
 			disabled={!choosedArtist ||
 				!choosedArtistTitle ||
-				isArtistTitleValid.error === true ||
+				(typeof isArtistTitleValid === 'object' && isArtistTitleValid.error === true) ||
 				($userInfo?.artists?.customArtist?.artist?.id === choosedArtist?.id &&
 					$userInfo?.artists?.customArtist?.title === choosedArtistTitle)}
 			class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 disabled:bg-s-inverse-muted sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"

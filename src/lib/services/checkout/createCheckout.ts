@@ -35,7 +35,7 @@ export async function createCheckout(quantity: number): Promise<void> {
 		return;
 	} catch (error) {
 		if (dev) {
-			console.error('Checkout error:', error);
+			console.error('Checkout error:', error instanceof Error ? error.message : error);
 		}
 
 		return;

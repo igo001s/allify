@@ -7,13 +7,11 @@ export async function logoutSpotify() {
 			method: 'POST',
 			credentials: 'include'
 		});
-
-		return;
 	} catch (error) {
 		if (dev) {
 			console.error('Spotify logout error:', error instanceof Error ? error.message : error);
 		}
-
-		return;
 	}
+
+	return;
 }

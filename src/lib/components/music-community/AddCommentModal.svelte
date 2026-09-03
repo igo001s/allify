@@ -29,17 +29,18 @@
 
 	let comment: string = '';
 
-	let isCommentValid: { typeError: string; error: boolean } = {
-		typeError: '',
-		error: false
-	};
+	let isCommentValid: { typeError: string; error: boolean } | boolean;
 
 	function handleCommentInput() {
 		isCommentValid = validateComment(comment);
 	}
 
 	async function handleAddComment() {
-		if (isCommentValid.error || !comment.trim() || !$userInfo) {
+		if (
+			(typeof isCommentValid === 'object' && isCommentValid.error) ||
+			!comment.trim() ||
+			!$userInfo
+		) {
 			return;
 		}
 
@@ -165,7 +166,7 @@
 				></textarea>
 
 				<div class="flex items-start justify-between gap-3">
-					{#if isCommentValid.error}
+					{#if typeof isCommentValid === 'object' && isCommentValid.error}
 						<span class="mt-1 text-[10px] text-status-error sm:text-[11px]">
 							{#if isCommentValid.typeError === 'emptyOrTooLong'}
 								{$translationsStore.musicCommunityPage.publicUser
@@ -199,7 +200,7 @@
 
 				<button
 					type="button"
-					disabled={isCommentValid.error || !comment.trim()}
+					disabled={(typeof isCommentValid === 'object' && isCommentValid.error) || !comment.trim()}
 					class="flex min-h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-4 py-2 text-xs font-semibold text-s-default transition hover:scale-102 disabled:cursor-not-allowed disabled:bg-s-inverse-muted disabled:opacity-60 sm:min-h-11 sm:w-auto sm:px-5 sm:text-sm"
 					on:click={handleAddComment}
 				>

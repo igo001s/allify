@@ -1,13 +1,10 @@
-export function validateComment(comment: string): { typeError: string; error: boolean } {
+export function validateComment(comment: string): { error: boolean; typeError: string } | boolean {
 	if (comment.trim().length < 1 || comment.trim().length > 200) {
 		return {
-			typeError: 'emptyOrTooLong',
-			error: true
+			error: true,
+			typeError: 'emptyOrTooLong'
 		};
 	}
 
-	return {
-		typeError: '',
-		error: false
-	};
+	return true;
 }
