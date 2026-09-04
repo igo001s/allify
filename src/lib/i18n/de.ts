@@ -4,7 +4,8 @@ export const de = {
 	configuration: {
 		langAttribute: 'de_DE',
 		allifyDescription:
-			'Entdecken Sie Ihre musikalische Identität mit Allify. Sehen Sie Ihre meistgehörten Künstler und Songs, personalisieren Sie Ihr Musikprofil und teilen Sie Ihren Geschmack mit einer leidenschaftlichen Musik-Community.'
+			'Entdecken Sie Ihre musikalische Identität mit Allify. Sehen Sie Ihre meistgehörten Künstler und Songs, personalisieren Sie Ihr Musikprofil und teilen Sie Ihren Geschmack mit einer leidenschaftlichen Musik-Community.',
+		stripeTicketId: 'prod_VCKvT633eF1pdx',
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Farbiges Allify-Logo',
@@ -736,7 +737,7 @@ export const de = {
 			privacyPolicyDiv6Paragraph1:
 				'Allify kann kostenpflichtige Funktionen durch den Kauf interner Credits anbieten, die als Tickets bezeichnet werden.',
 			privacyPolicyDiv6Paragraph2:
-				'Zahlungen werden über Drittanbieter für Zahlungsabwicklung wie AbacatePay verarbeitet. Allify erhebt oder speichert keine vollständigen Kartendaten oder andere sensible Finanzinformationen.',
+				'Zahlungen werden über Drittanbieter für Zahlungsabwicklung wie Stripe verarbeitet. Allify erhebt oder speichert keine vollständigen Kartendaten oder andere sensible Finanzinformationen.',
 			privacyPolicyDiv6Paragraph3:
 				'Bei einem Kauf können wir transaktionsbezogene Informationen wie Zahlungsstatus, Transaktionskennung und Anzahl der erworbenen Tickets erhalten, um den Kauf zu verarbeiten und das Kontoguthaben zu verwalten.',
 			privacyPolicyDiv7Heading2: '6. Datenspeicherung und Aufbewahrung',

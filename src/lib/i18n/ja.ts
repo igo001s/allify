@@ -4,7 +4,8 @@ export const ja = {
 	configuration: {
 		langAttribute: 'ja_JP',
 		allifyDescription:
-			'Allifyであなたの音楽的アイデンティティを発見しましょう。最も聴いたアーティストや曲を確認し、音楽プロフィールをカスタマイズし、音楽に情熱を持つコミュニティとあなたの好みを共有しましょう。'
+			'Allifyであなたの音楽的アイデンティティを発見しましょう。最も聴いたアーティストや曲を確認し、音楽プロフィールをカスタマイズし、音楽に情熱を持つコミュニティとあなたの好みを共有しましょう。',
+		stripeTicketId: 'prod_VCKwjqUh7AzZfd',
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Allifyのカラフルなロゴ',
@@ -702,7 +703,7 @@ export const ja = {
 			privacyPolicyDiv6Paragraph1:
 				'Allifyでは、チケットと呼ばれる内部クレジットを購入することで、有料機能を提供する場合があります。',
 			privacyPolicyDiv6Paragraph2:
-				'支払いはAbacatePayなどの第三者決済サービスによって処理されます。Allifyがカード番号などの完全な決済情報やその他の機密性の高い金融情報を収集・保存することはありません。',
+				'支払いはStripeなどの第三者決済サービスによって処理されます。Allifyがカード番号などの完全な決済情報やその他の機密性の高い金融情報を収集・保存することはありません。',
 			privacyPolicyDiv6Paragraph3:
 				'購入が行われた場合、購入処理およびアカウント残高の管理のため、支払い状況、取引ID、購入したチケット数などの取引関連情報を受け取る場合があります。',
 			privacyPolicyDiv7Heading2: '6. データの保存と保持',

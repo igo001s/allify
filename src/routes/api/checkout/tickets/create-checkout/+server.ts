@@ -1,8 +1,13 @@
-// Svelte
+// SvelteKit
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Environment variables
-import { ABACATEPAY_TOKEN, ALLIFY_URL } from '$env/static/private';
+import { STRIPE_SECRET_KEY, ALLIFY_URL } from '$env/static/private';
+
+// Stripe
+import Stripe from 'stripe';
+
+const stripe = new Stripe(STRIPE_SECRET_KEY);
 
 const ALLOWED_ORIGINS = [ALLIFY_URL];
 
@@ -12,37 +17,87 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
 			return new Response(JSON.stringify({ error: 'Forbidden' }), {
-				status: 403
+				status: 403,
+				headers: {
+					'Content-Type': 'application/json'
+				}
 			});
 		}
 
-		const body = await request.json();
+		const {
+			items,
+			externalId,
+			returnUrl,
+			completionUrl,
+			metadata,
+			locale
+		} = await request.json();
 
-		if (!body || !body.items || !Array.isArray(body.items) || body.items.length === 0) {
-			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
+		if (!items || !externalId || !returnUrl || !completionUrl || !metadata) {
+			return new Response(
+				JSON.stringify({ error: 'Missing required fields' }),
+				{
+					status: 400,
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				}
+			);
 		}
 
-		const response = await fetch('https://api.abacatepay.com/v2/checkouts/create', {
-			method: 'POST',
-			headers: {
-				Authorization: `Bearer ${ABACATEPAY_TOKEN}`,
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(body)
+		const product = await stripe.products.retrieve(items[0].id);
+
+		if (!product.default_price) {
+			throw new Error('Product does not have a default price');
+		}
+
+		const priceId =
+			typeof product.default_price === 'string'
+				? product.default_price
+				: product.default_price.id;
+
+		const session = await stripe.checkout.sessions.create({
+			line_items: [
+				{
+					price: priceId,
+					quantity: items[0].quantity ?? 1
+				}
+			],
+			locale: locale,
+			mode: 'payment',
+			success_url: ALLIFY_URL + completionUrl,
+			cancel_url: returnUrl,
+			metadata: {
+				externalId,
+				...metadata
+			}
 		});
 
-		const data = await response.json();
-
-		if (!response.ok) {
-			return new Response(JSON.stringify({ error: data?.error ?? 'AbacatePay error' }), {
-				status: response.status
-			});
-		}
-
-		return new Response(JSON.stringify(data), { status: 200 });
+		return new Response(
+			JSON.stringify({
+				id: session.id,
+				url: session.url
+			}),
+			{
+				status: 200,
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			}
+		);
 	} catch (error) {
-		return new Response(JSON.stringify({ error: (error as Error).message }), {
-			status: 500
-		});
+		console.error('Stripe Checkout error:', error);
+
+		return new Response(
+			JSON.stringify({
+				error: error instanceof Error ? error.message : 'Unknown error'
+			}),
+			{
+				status: 500,
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			}
+		);
 	}
 };

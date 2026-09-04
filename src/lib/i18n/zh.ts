@@ -4,7 +4,8 @@ export const zh = {
 	configuration: {
 		langAttribute: 'zh_CN',
 		allifyDescription:
-			'通过 Allify 发现您的音乐身份。查看您最常听的艺术家和歌曲，个性化您的音乐资料，并与充满热情的音乐社区分享您的品味。'
+			'通过 Allify 发现您的音乐身份。查看您最常听的艺术家和歌曲，个性化您的音乐资料，并与充满热情的音乐社区分享您的品味。',
+		stripeTicketId: 'prod_VCKw008sLdGvIU',
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Allify 彩色标志',
@@ -629,7 +630,7 @@ export const zh = {
 			privacyPolicyDiv6Heading2: '5. 付款和计费',
 			privacyPolicyDiv6Paragraph1: 'Allify 可能通过购买称为票券的内部积分来提供付费功能。',
 			privacyPolicyDiv6Paragraph2:
-				'付款由 AbacatePay 等第三方支付服务提供商处理。Allify 不会收集或存储完整的银行卡信息或其他敏感财务信息。',
+				'付款由 Stripe 等第三方支付服务提供商处理。Allify 不会收集或存储完整的银行卡信息或其他敏感财务信息。',
 			privacyPolicyDiv6Paragraph3:
 				'当您进行购买时，我们可能会收到与交易相关的信息，例如付款状态、交易 ID 和购买的票券数量，以便处理购买并管理账户余额。',
 			privacyPolicyDiv7Heading2: '6. 数据存储和保留',

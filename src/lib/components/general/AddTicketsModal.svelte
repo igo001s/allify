@@ -12,28 +12,21 @@
 	// Services
 	import { createCheckout } from '$lib/services/checkout/createCheckout';
 
-	let quantity = 1;
-	const options = [1, 5, 10, 25];
+	let quantity = 5;
+	const options = [5, 10, 25, 50];
 
 	function closeAddTicketsModal() {
 		showAddTickets.set(false);
 	}
 
 	function handleQuantityChange(newQuantity: number) {
-		if (newQuantity >= 1) quantity = newQuantity;
+		if (newQuantity >= 5) quantity = newQuantity;
 	}
 
-	function handleInputChange(e: Event) {
-		const target = e.target as HTMLInputElement;
-		const value = parseInt(target.value);
+	async function handleCreateCheckout(quantity: number, ticketId: string, locale: string) {
+		if (quantity < 5) return;
 
-		if (!isNaN(value)) {
-			handleQuantityChange(value);
-		}
-	}
-
-	async function handleCreateCheckout(quantity: number) {
-		await createCheckout(quantity);
+		await createCheckout(quantity, ticketId, locale);
 
 		showAddTickets.set(false);
 	}
@@ -101,14 +94,19 @@
 
 					<input
 						type="number"
-						min="1"
+						bind:value={quantity}
 						placeholder={$translationsStore.addTickets.addTicketsModalPlaceholder}
 						class="col-span-2 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted sm:col-span-4
 							{!options.includes(quantity)
 							? 'border-brand-primary'
 							: 'border-b-default focus:border-brand-primary'}"
-						on:input={handleInputChange}
 					/>
+
+					{#if quantity < 5}
+						<span class="text-xs text-red-500 w-100">							
+							Tickets must be at least 5.
+						</span>
+					{/if}
 				</div>
 			</div>
 
@@ -133,7 +131,7 @@
 
 			<button
 				class="min-h-11 w-full cursor-pointer rounded-lg bg-brand-primary px-5 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
-				on:click={() => handleCreateCheckout(quantity)}
+				on:click={() => handleCreateCheckout(quantity, $translationsStore.configuration.stripeTicketId, $translationsStore.language)}
 			>
 				{$translationsStore.addTickets.addTicketsModalButton}
 			</button>
