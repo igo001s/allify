@@ -588,6 +588,16 @@ export const ru = {
 		settingsPageProfileVisibilityChangeAgainAvailableMessage:
 			'Вы можете снова изменить видимость своего профиля в любое время.'
 	},
+	paymentSuccessPage: {
+		title: 'Оплата прошла успешно | Allify',
+		paymentSuccessPageMetaDescription: 'Спасибо за вашу покупку! Ваш платеж был успешно обработан.',
+		paymentSuccessPageMetaKeywords: 'Оплата, Успех, Allify, Билеты',
+		paymentSuccessPageMetaOgAndTwitterContent: 'Спасибо за вашу покупку! Ваш платеж был успешно обработан.',
+		paymentSuccessPageHeading1: 'Оплата успешно завершена!',
+		paymentSuccessPageParagraph1: 'Спасибо за вашу покупку! Ваш платеж был успешно обработан, и билеты были добавлены в ваш аккаунт.',
+		paymentSuccessPageTicketsAddedText: 'билеты добавлены',
+		paymentSuccessPageButtonText: 'Вернуться на главную страницу',
+	},
 	addTickets: {
 		addTicketsModalTitle: 'Билеты Allify',
 		addTicketsModalAriaLabel: 'Закрыть модальное окно билетов',

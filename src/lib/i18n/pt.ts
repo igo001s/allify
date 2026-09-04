@@ -584,7 +584,17 @@ export const pt = {
 		settingsPageProfileVisibilityChangeAgainMessage:
 			'Você pode alterar a visibilidade do seu perfil gratuitamente em',
 		settingsPageProfileVisibilityChangeAgainAvailableMessage:
-			'Você pode alterar a visibilidade do seu perfil novamente agora.'
+			'Você pode alterar a visibilidade do seu perfil novamente agora.',
+	},
+	paymentSuccessPage: {
+		title: 'Pagamento bem-sucedido | Allify',
+		paymentSuccessPageMetaDescription: 'Obrigado por sua compra! Seu pagamento foi processado com sucesso.',
+		paymentSuccessPageMetaKeywords: 'Pagamento, Sucesso, Allify, Tickets',
+		paymentSuccessPageMetaOgAndTwitterContent: 'Obrigado por sua compra! Seu pagamento foi processado com sucesso.',
+		paymentSuccessPageHeading1: 'Pagamento concluído com sucesso!',
+		paymentSuccessPageParagraph1: 'Obrigado pela sua compra! Seu pagamento foi processado com sucesso e seus tickets já foram adicionados à sua conta.',
+		paymentSuccessPageTicketsAddedText: 'tickets adicionados',
+		paymentSuccessPageButtonText: 'Voltar para a página inicial',
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify Tickets',

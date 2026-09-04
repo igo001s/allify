@@ -173,6 +173,26 @@ export function getJsonLdByPage(
 				]
 			});
 		}
+		case 'paymentSuccessPage': {
+			return JSON.stringify({
+				'@context': 'https://schema.org',
+				'@graph': [
+					allifyOrganizationLd,
+					allifyWebsiteLd,
+					{
+						'@type': 'WebPage',
+						'@id': `https://allify.club/payment-success#webpage`,
+						url: `https://allify.club/payment-success`,
+						name,
+						description,
+						inLanguage: locale,
+						isPartOf: {
+							'@id': 'https://allify.club/#website'
+						}
+					}
+				]
+			});
+		}
 		case 'privacyPolicyPage': {
 			return JSON.stringify({
 				'@context': 'https://schema.org',

@@ -576,6 +576,16 @@ export const ja = {
 		settingsPageProfileVisibilityChangeAgainAvailableMessage:
 			'プロフィールの公開設定を再度変更できます。'
 	},
+	paymentSuccessPage: {
+		title: '支払い成功 | Allify',
+		paymentSuccessPageMetaDescription: 'ご購入ありがとうございます！お支払いは正常に処理されました。',
+		paymentSuccessPageMetaKeywords: '支払い, 成功, Allify, チケット',
+		paymentSuccessPageMetaOgAndTwitterContent: 'ご購入ありがとうございます！お支払いは正常に処理されました。',
+		paymentSuccessPageHeading1: '支払いが正常に完了しました！',
+		paymentSuccessPageParagraph1: 'ご購入ありがとうございます！お支払いは正常に処理され、チケットがアカウントに追加されました。',
+		paymentSuccessPageTicketsAddedText: 'チケットが追加されました',
+		paymentSuccessPageButtonText: 'ホームページに戻る',
+	},
 	addTickets: {
 		addTicketsModalTitle: 'Allifyチケット',
 		addTicketsModalAriaLabel: 'チケットモーダルを閉じる',

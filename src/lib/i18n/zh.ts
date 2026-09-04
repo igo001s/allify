@@ -521,6 +521,16 @@ export const zh = {
 		settingsPageProfileVisibilityChangeAgainMessage: '您可以免费更改个人资料的可见性：',
 		settingsPageProfileVisibilityChangeAgainAvailableMessage: '您可以随时更改您的个人资料可见性。'
 	},
+	paymentSuccessPage: {
+		title: '支付成功 | Allify',
+		paymentSuccessPageMetaDescription: '感谢您的购买！您的付款已成功处理。',
+		paymentSuccessPageMetaKeywords: '支付, 成功, Allify, 门票',
+		paymentSuccessPageMetaOgAndTwitterContent: '感谢您的购买！您的付款已成功处理。',
+		paymentSuccessPageHeading1: '支付成功完成！',
+		paymentSuccessPageParagraph1: '感谢您的购买！您的付款已成功处理，门票已添加到您的账户中。',
+		paymentSuccessPageTicketsAddedText: '门票已添加',
+		paymentSuccessPageButtonText: '返回首页',
+	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify 门票',
 		addTicketsModalAriaLabel: '关闭门票弹窗',
