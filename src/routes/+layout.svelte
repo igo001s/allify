@@ -98,9 +98,9 @@
 {/if}
 
 <!-- Add Tickets Modal -->
-{#if $showAddTickets === true}
+{#if $showAddTickets.show === true}
 	{#await import('$lib/components/general/AddTicketsModal.svelte') then { default: AddTicketsModal }}
-		<AddTicketsModal />
+		<AddTicketsModal openFrom={$showAddTickets.openFrom} />
 	{/await}
 {/if}
 

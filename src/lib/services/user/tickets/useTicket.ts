@@ -11,7 +11,7 @@ import type { ObjectId } from 'mongodb';
 export async function useTicket(id: ObjectId, tickets: number) {
 	try {
 		if (id && tickets <= 0) {
-			showAddTickets.set(true);
+			showAddTickets.set({ show: true, openFrom: 'noTickets' });
 
 			return false;
 		}

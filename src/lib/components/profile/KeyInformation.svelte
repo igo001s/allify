@@ -20,7 +20,7 @@
 	let selectedStreaming: 'spotify' | 'deezer';
 
 	function openAddTickets() {
-		showAddTickets.set(true);
+		showAddTickets.set({ show: true, openFrom: 'profilePage' });
 	}
 </script>
 

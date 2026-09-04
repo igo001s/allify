@@ -590,8 +590,9 @@ export const ja = {
 		addTicketsModalTitle: 'Allifyチケット',
 		addTicketsModalAriaLabel: 'チケットモーダルを閉じる',
 		addTicketsModalParagraph1: 'チケットを購入する',
-		addTicketsModalParagraph2:
+		addTicketsModalParagraph2v1:
 			'チケットがなくなったようです。機能を引き続き利用するには、さらにチケットを購入してください。',
+		addTicketsModalParagraph2v2: 'さらにチケットを購入して、Allifyの機能を最大限に活用しましょう。',
 		addTicketsModalParagraph3: '数量',
 		addTicketsModalPlaceholder: '自分で選ぶ',
 		addTicketsModalTicket: 'チケット',

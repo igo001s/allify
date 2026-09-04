@@ -602,8 +602,9 @@ export const ru = {
 		addTicketsModalTitle: 'Билеты Allify',
 		addTicketsModalAriaLabel: 'Закрыть модальное окно билетов',
 		addTicketsModalParagraph1: 'Приобрести билеты',
-		addTicketsModalParagraph2:
+		addTicketsModalParagraph2v1:
 			'Похоже, ваши билеты закончились. Приобретите больше, чтобы продолжать пользоваться функциями.',
+		addTicketsModalParagraph2v2: 'Иметь больше билетов, чтобы максимально использовать возможности и функции Allify.',
 		addTicketsModalParagraph3: 'Количество',
 		addTicketsModalPlaceholder: 'Выберите самостоятельно',
 		addTicketsModalTicket: 'билет',

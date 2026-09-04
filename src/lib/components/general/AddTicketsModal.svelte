@@ -12,11 +12,13 @@
 	// Services
 	import { createCheckout } from '$lib/services/checkout/createCheckout';
 
+	export let openFrom: 'noTickets' | 'profilePage';
+
 	let quantity = 5;
 	const options = [5, 10, 25, 50];
 
 	function closeAddTicketsModal() {
-		showAddTickets.set(false);
+		showAddTickets.set({ show: false, openFrom });
 	}
 
 	function handleQuantityChange(newQuantity: number) {
@@ -28,7 +30,7 @@
 
 		await createCheckout(quantity, ticketId, locale);
 
-		showAddTickets.set(false);
+		showAddTickets.set({ show: false, openFrom });
 	}
 
 	onMount(() => {
@@ -68,7 +70,11 @@
 				</p>
 
 				<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
-					{$translationsStore.addTickets.addTicketsModalParagraph2}
+					{#if openFrom === 'noTickets'}
+						{$translationsStore.addTickets.addTicketsModalParagraph2v1}
+					{:else}
+						{$translationsStore.addTickets.addTicketsModalParagraph2v2}
+					{/if}
 				</p>
 			</div>
 		</div>

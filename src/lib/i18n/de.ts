@@ -620,8 +620,9 @@ export const de = {
 		addTicketsModalTitle: 'Allify Tickets',
 		addTicketsModalAriaLabel: 'Tickets Modal schließen',
 		addTicketsModalParagraph1: 'Tickets erwerben',
-		addTicketsModalParagraph2:
+		addTicketsModalParagraph2v1:
 			'Es sieht so aus, als wären deine Tickets aufgebraucht. Erwirb mehr, um weiterhin die Funktionen zu genießen.',
+		addTicketsModalParagraph2v2: 'Erwerben Sie mehr Tickets, um weiterhin die Funktionen von Allify optimal zu nutzen.',
 		addTicketsModalParagraph3: 'Anzahl',
 		addTicketsModalPlaceholder: 'Selbst auswählen',
 		addTicketsModalTicket: 'Ticket',

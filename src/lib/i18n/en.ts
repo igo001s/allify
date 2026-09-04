@@ -581,8 +581,9 @@ export const en = {
 		addTicketsModalTitle: 'Allify Tickets',
 		addTicketsModalAriaLabel: 'Close tickets modal',
 		addTicketsModalParagraph1: 'Acquire tickets',
-		addTicketsModalParagraph2:
+		addTicketsModalParagraph2v1:
 			'It looks like your tickets have run out. Acquire more to continue enjoying the features.',
+		addTicketsModalParagraph2v2: 'Acquire more tickets to continue making the most of Allify’s features.',
 		addTicketsModalParagraph3: 'Quantity',
 		addTicketsModalPlaceholder: 'Choose yourself',
 		addTicketsModalTicket: 'Ticket',
