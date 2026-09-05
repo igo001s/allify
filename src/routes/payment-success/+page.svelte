@@ -64,7 +64,7 @@
 		</div>
 
 		<div class="bg-surface-primary mt-8 flex items-center gap-3 rounded-xl px-6 py-4 shadow-sm">
-			<span class="text-xl font-semibold text-t-primary">+5</span>
+			<span class="text-xl font-semibold text-t-primary">+{$page.url.searchParams.get('quantity')}</span>
 
 			<enhanced:img
 				src={TicketIcon}

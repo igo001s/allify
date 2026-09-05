@@ -26,7 +26,7 @@ export async function createCheckout(
 				externalId: `allify_order_${crypto.randomUUID()}`,
 				returnUrl: window.location.href,
 				locale,
-				completionUrl: '/payment-success',
+				completionUrl: `/payment-success?quantity=${quantity}`,
 				methods: ['PIX', 'CARD'],
 				card: {
 					maxInstallments: 1

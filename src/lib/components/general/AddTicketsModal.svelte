@@ -4,6 +4,7 @@
 
 	// Assets
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
+	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
 
 	// Stores
 	import { showAddTickets } from '$lib/stores/showAddTickets.store';
@@ -19,6 +20,8 @@
 
 	// Props
 	export let openFrom: 'noTickets' | 'profilePage';
+
+	let loading = false;
 
 	let quantity = 5;
 	const options = [5, 10, 25, 50];
@@ -37,6 +40,8 @@
 		locale: string,
 		userId?: ObjectId
 	) {
+		loading = true;
+
 		const createCheckoutResponse = await createCheckout(quantity, ticketId, locale, userId);
 
 		if (!createCheckoutResponse?.error) {
@@ -48,6 +53,8 @@
 				toastMessage: $translationsStore.addTickets.addTicketsModalErrorMessageToast
 			});
 		}
+
+		loading = false;
 
 		return;
 	}
@@ -153,7 +160,7 @@
 			</div>
 
 			<button
-				class="min-h-11 w-full cursor-pointer rounded-lg bg-brand-primary px-5 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
+				class="min-h-11 flex items-center justify-center cursor-pointer rounded-lg bg-brand-primary px-5 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
 				on:click={() =>
 					handleCreateCheckout(
 						quantity,
@@ -162,7 +169,11 @@
 						$userInfo?._id
 					)}
 			>
-				{$translationsStore.addTickets.addTicketsModalButton}
+				{#if !loading}
+					{$translationsStore.addTickets.addTicketsModalButton}
+				{:else}
+					<DotsLoading dotsTheme="base-light" />
+				{/if}
 			</button>
 		</div>
 	</div>
