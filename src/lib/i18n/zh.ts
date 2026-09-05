@@ -189,6 +189,8 @@ export const zh = {
 			'你可以在以下时间后免费发现另外 5 位艺人',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'你现在可以免费发现另外 5 位艺人',
+		myMusicalProfilePageFiftyArtistsReached:
+			'你已达到 50 位艺人的上限。现在你可以更新并查看新艺人何时进入你的前 50 名。',
 		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast: '最常听的艺人列表已成功更新！',
 		myMusicalProfilePageUpdateMostListenedArtistsErrorToast: '更新最常听的艺人列表时出错。',
 		myMusicalProfilePageUpdateMostListenedTracksSuccessToast: '最常听的歌曲列表已成功更新！',
@@ -197,6 +199,8 @@ export const zh = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks: '你可以在以下时间后免费发现另外 5 首歌曲',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
 			'你现在可以免费发现另外 5 首歌曲',
+		myMusicalProfilePageFiftySongsReached:
+			'你已达到 50 首歌曲的上限。现在你可以更新并查看新歌曲何时进入你的前 50 名。',
 		myMusicalProfilePageShowMoreFiveTracksButton: '显示 +5 首歌曲',
 		myMusicalProfilePageCrownIconAltText: '皇冠图标',
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最常听的艺人已成功更新！',

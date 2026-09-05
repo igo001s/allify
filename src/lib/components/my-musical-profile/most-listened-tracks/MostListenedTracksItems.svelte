@@ -23,6 +23,7 @@
 		<PossibleActionsMyMusicalProfile
 			nextFreeUpdate={$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate}
 			sessionType="tracks"
+			itemLimit={$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.tracksLimit ?? 0}
 		/>
 	</div>
 
@@ -89,21 +90,25 @@
 		{/each}
 
 		<span class="mx-auto text-xs text-t-secondary">
-			{#if $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) > new Date()}
-				{$translationsStore.myMusicalProfilePage
-					.myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks}
+			{#if ($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.tracksLimit ?? 0) < 50}
+				{#if $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) > new Date()}
+					{$translationsStore.myMusicalProfilePage
+						.myMusicalProfilePageNextFreeUpdateShowMoreFiveTracks}
 
-				<strong class="font-medium text-t-primary">
-					{new Date(
-						$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate
-					).toLocaleString($translationsStore.locale, {
-						dateStyle: 'short',
-						timeStyle: 'short'
-					})}
-				</strong>
-			{:else if $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) < new Date()}
-				{$translationsStore.myMusicalProfilePage
-					.myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable}
+					<strong class="font-medium text-t-primary">
+						{new Date(
+							$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate
+						).toLocaleString($translationsStore.locale, {
+							dateStyle: 'short',
+							timeStyle: 'short'
+						})}
+					</strong>
+				{:else if $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) < new Date()}
+					{$translationsStore.myMusicalProfilePage
+						.myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable}
+				{/if}
+			{:else}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageFiftySongsReached}
 			{/if}
 		</span>
 

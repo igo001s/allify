@@ -202,6 +202,8 @@ export const it = {
 			'Potrai scoprire gratuitamente altri 5 artisti tra',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'Puoi scoprire gratuitamente altri 5 artisti ora',
+		myMusicalProfilePageFiftyArtistsReached:
+			'Hai raggiunto il limite di 50 artisti. Ora puoi aggiornare e verificare quando nuovi artisti entrano nella tua Top 50.',
 		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
 			'La tua lista degli artisti più ascoltati è stata aggiornata con successo!',
 		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
@@ -215,6 +217,8 @@ export const it = {
 			'Potrai scoprire gratuitamente altri 5 brani tra',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
 			'Puoi scoprire gratuitamente altri 5 brani ora',
+		myMusicalProfilePageFiftySongsReached:
+			'Hai raggiunto il limite di 50 elementi. Ora puoi aggiornare e verificare quando nuovi brani entrano nella tua Top 50.',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostra +5 brani',
 		myMusicalProfilePageCrownIconAltText: 'Icona della corona',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Artisti più ascoltati aggiornati con successo!',
