@@ -3,7 +3,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Props
-	export let iconSvgClass: string;
+	export let iconSvgClass: string = '';
 	export let iconAltText: string = $translationsStore.generalTexts.connectPlatformDeezerAltText;
 </script>
 

@@ -1,7 +1,9 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
+
+	// Components
+	import Ticket from '$lib/components/general/Ticket.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -141,16 +143,12 @@
 	}
 </script>
 
-<button
-	class="relative mx-auto flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg border border-white/10 bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-lg shadow-brand-primary/25 transition-all duration-300 hover:scale-102 hover:bg-brand-primary-dark sm:w-fit"
-	onclick={handleLoadMoreMusicalItems}
-	disabled={loadingMoreItems}
->
+<button class="button-cta mx-auto" onclick={handleLoadMoreMusicalItems} disabled={loadingMoreItems}>
 	<div
 		class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left"
 		class:invisible={loadingMoreItems}
 	>
-		<span class="text-sm leading-none font-semibold">
+		<span class="text-sm leading-none">
 			{#if additionalItemsType === 'artists'}
 				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveArtistsButton}
 			{:else}
@@ -159,31 +157,11 @@
 		</span>
 
 		{#if additionalItemsType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) > new Date()}
-			<div
-				class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
-			>
-				<enhanced:img
-					src={TicketIcon}
-					alt={$translationsStore.generalTexts.ticketAltText}
-					class="h-4 w-4"
-				/>
-
-				<span class="text-xs leading-none font-bold">-1</span>
-			</div>
+			<Ticket usingTicket={true} />
 		{/if}
 
 		{#if additionalItemsType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) > new Date()}
-			<div
-				class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
-			>
-				<enhanced:img
-					src={TicketIcon}
-					alt={$translationsStore.generalTexts.ticketAltText}
-					class="h-4 w-4"
-				/>
-
-				<span class="text-xs leading-none font-bold">-1</span>
-			</div>
+			<Ticket usingTicket={true} />
 		{/if}
 	</div>
 

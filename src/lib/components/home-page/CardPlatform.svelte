@@ -19,28 +19,21 @@
 
 	const platformKey = platform.title.toLowerCase() as 'spotify' | 'deezer';
 
-	$: setClassbyStreaming = (() => {
-		const hoverClass =
-			platformKey === 'spotify'
-				? 'hover:border-spotify hover:text-spotify'
-				: 'hover:border-deezer hover:text-deezer';
+	$: isConnected = Boolean($userInfo?.connectedStreamings?.[platformKey]);
 
-		let baseClass = `flex cursor-pointer items-center gap-1 rounded-lg border px-3 py-1.5 transition-all text-xs lg:text-base ${hoverClass}`;
-
-		if (isPlatformConnected()) {
-			baseClass += ` ${
-				platformKey === 'spotify' ? 'border-spotify text-spotify' : 'border-deezer text-deezer'
-			}`;
-		} else {
-			baseClass += ` border-s-inverse-muted text-s-inverse-muted`;
-		}
-
-		return baseClass;
-	})();
-
-	function isPlatformConnected() {
-		return $userInfo?.connectedStreamings?.[platformKey] ? true : false;
-	}
+	$: cardClass = [
+		'button-outline',
+		isConnected ? 'button-outline-active' : 'button-outline-disable',
+		isConnected
+			? platformKey === 'spotify'
+				? 'button-outline-active-spotify'
+				: 'button-outline-active-deezer'
+			: platformKey === 'spotify'
+				? 'button-outline-disable-spotify'
+				: 'button-outline-disable-deezer'
+	]
+		.filter(Boolean)
+		.join(' ');
 </script>
 
 <li
@@ -54,18 +47,17 @@
 
 			<button
 				on:click={() => {
-					signInWrapper(platformKey, isPlatformConnected(), false);
+					signInWrapper(platformKey, $userInfo?.connectedStreamings?.spotify ? true : false, false);
 				}}
-				disabled={isPlatformConnected()}
+				disabled={$userInfo?.connectedStreamings?.[platformKey] ? true : false}
 				title={setTitleByStreaming(platformKey)}
-				class={setClassbyStreaming}
+				class={cardClass}
 			>
 				<ConnectIcon
-					iconSvgClass="w-3.5 h-3.5 inline-block mr-2 lg:w-4.5 lg:h-4.5"
 					iconAltText={$translationsStore.homePage.connectPlatformCardPlatformConnectIconAltText}
 				/>
 
-				{#if isPlatformConnected()}
+				{#if $userInfo?.connectedStreamings?.[platformKey]}
 					{$translationsStore.homePage.connectPlatformCardPlatformConnectedButton}
 				{:else}
 					{platformKey === 'spotify'
@@ -99,6 +91,7 @@
 		>
 			{$translationsStore.homePage.connectPlatformCardPlatformExternalLink}
 			{platform.title}
+
 			<ExternalLinkIcon
 				iconSvgClass="w-5.5 h-5.5 inline-block mb-0.5"
 				iconAltText={$translationsStore.homePage.connectPlatformCardPlatformExternalLinkIconAltText}

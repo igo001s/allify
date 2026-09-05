@@ -2,6 +2,7 @@
 
 @import './fonts.css';
 @import './sections.css';
+@import './buttons.css';
 
 @theme {
 	/* TEXT */

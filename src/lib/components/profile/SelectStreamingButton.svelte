@@ -8,29 +8,25 @@
 	export let selected: boolean = false;
 	export let onClick: (() => void) | undefined = undefined;
 
-	const isSpotify = streaming === 'spotify';
+	$: cardClass = [
+		'button-outline !w-1/2',
+		selected ? 'button-outline-active' : 'button-outline-disable',
+		streaming === 'spotify'
+			? selected
+				? 'button-outline-active-spotify'
+				: 'button-outline-disable-spotify'
+			: selected
+				? 'button-outline-active-deezer'
+				: 'button-outline-disable-deezer'
+	].join(' ');
 </script>
 
-<button
-	type="button"
-	on:click={onClick}
-	class={[
-		'flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg',
-		'border px-4 py-2 text-xs font-medium capitalize transition-all duration-200 lg:text-sm',
-		selected
-			? isSpotify
-				? 'border-spotify text-spotify'
-				: 'border-deezer text-deezer'
-			: isSpotify
-				? 'border-t-disabled bg-transparent text-t-disabled hover:border-spotify hover:text-spotify'
-				: 'border-t-disabled bg-transparent text-t-disabled hover:border-deezer hover:text-deezer'
-	].join(' ')}
->
-	{#if isSpotify}
-		<SpotifyIcon iconSvgClass="w-4.5 h-4.5 lg:w-5 lg:h-5" />
+<button type="button" on:click={onClick} class={cardClass}>
+	{#if streaming === 'spotify'}
+		<SpotifyIcon />
 	{:else}
-		<DeezerIcon iconSvgClass="w-4.5 h-4.5 lg:w-5 lg:h-5" />
+		<DeezerIcon />
 	{/if}
 
-	<span>{streaming}</span>
+	<span class="capitalize">{streaming}</span>
 </button>

@@ -2,11 +2,11 @@
 	// Assets
 	import ProfileIcon from '$lib/assets/images/icons/ProfileIcon.svelte';
 	import ArrowIcon from '$lib/assets/images/icons/ArrowIcon.svelte';
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 
 	// Components
 	import AsideProfileItems from '$lib/components/general/menus/aside-menu/AsideProfileItems.svelte';
 	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';
+	import Ticket from '$lib/components/general/Ticket.svelte';
 
 	// Utils
 	import { logoutWrapper } from '$lib/utils/logoutWrapper';
@@ -101,11 +101,7 @@
 						<div
 							class="flex shrink-0 items-center gap-2 rounded-full bg-brand-primary px-2.5 py-1.5 text-t-inverse"
 						>
-							<enhanced:img
-								src={TicketIcon}
-								alt={$translationsStore.generalTexts.ticketAltText}
-								class="h-3.5 w-3.5 rounded-full bg-s-page p-0.5"
-							/>
+							<Ticket usingTicket={false} />
 
 							<span class="text-[11px] font-medium">
 								{$userInfo?.tickets ?? 0}

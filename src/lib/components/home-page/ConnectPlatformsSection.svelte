@@ -10,7 +10,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Types
-	import type { CardPlatformType } from '$lib/types/CardPlatform.type';
+	import type { CardPlatformType } from '$lib/types/Components.type';
 
 	$: platforms = [
 		{

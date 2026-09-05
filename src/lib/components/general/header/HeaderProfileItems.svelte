@@ -2,8 +2,8 @@
 	// Svelte
 	import { goto } from '$app/navigation';
 
-	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
+	// Components
+	import Ticket from '$lib/components/general/Ticket.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -88,11 +88,7 @@
 				<div
 					class="flex shrink-0 items-center gap-2 rounded-full bg-brand-primary px-2.5 py-1.5 text-t-inverse"
 				>
-					<enhanced:img
-						src={TicketIcon}
-						alt={$translationsStore.generalTexts.ticketAltText}
-						class="h-3.5 w-3.5 rounded-full bg-s-page p-0.5"
-					/>
+					<Ticket usingTicket={false} />
 
 					<span class="text-[11px] font-medium">
 						{$userInfo?.tickets ?? 0}

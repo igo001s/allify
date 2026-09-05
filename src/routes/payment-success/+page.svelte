@@ -5,6 +5,9 @@
 	// Assets
 	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 
+	// Components
+	import Ticket from '$lib/components/general/Ticket.svelte';
+
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
@@ -68,14 +71,7 @@
 				>+{$page.url.searchParams.get('quantity')}</span
 			>
 
-			<enhanced:img
-				src={TicketIcon}
-				alt={$translationsStore.generalTexts.ticketAltText}
-				class="h-10 w-10"
-				loading="eager"
-				fetchpriority="high"
-				decoding="sync"
-			/>
+			<Ticket usingTicket={true} />
 
 			<span class="text-sm font-medium text-t-secondary">
 				{$translationsStore.paymentSuccessPage.paymentSuccessPageTicketsAddedText}

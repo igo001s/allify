@@ -1,12 +1,12 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
 	import PlusIcon from '$lib/assets/images/icons/PlusIcon.svelte';
 	import CommentIcon from '$lib/assets/images/icons/CommentIcon.svelte';
 
 	// Components
 	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
 	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
+	import Ticket from '$lib/components/general/Ticket.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -68,11 +68,7 @@
 				<div
 					class="flex w-fit items-center gap-3 rounded-full bg-brand-primary px-3.5 py-2.5 text-t-inverse"
 				>
-					<enhanced:img
-						src={TicketIcon}
-						alt={$translationsStore.generalTexts.ticketAltText}
-						class="h-6.5 w-6.5 rounded-full bg-s-page p-0.5"
-					/>
+					<Ticket usingTicket={false} />
 
 					<span class="text-sm font-medium">
 						{tickets ?? 0}

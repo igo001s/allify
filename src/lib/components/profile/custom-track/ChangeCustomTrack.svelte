@@ -4,6 +4,7 @@
 
 	// Components
 	import ChangeTrackCardOnProfile from '../ChangeTrackCardOnProfile.svelte';
+	import Ticket from '$lib/components/general/Ticket.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -201,17 +202,7 @@
 			{$translationsStore.profilePage.profilePageChangeYourItemsModalSaveChanges}
 
 			{#if $userInfo?.tracks?.customTrack?.nextFreeUpdate && new Date($userInfo.tracks.customTrack.nextFreeUpdate) > new Date()}
-				<div
-					class="ml-2 flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-brand-primary shadow-sm"
-				>
-					<enhanced:img
-						src={TicketIcon}
-						alt={$translationsStore.generalTexts.ticketAltText}
-						class="h-3 w-3"
-					/>
-
-					<span class="text-[11px] leading-none font-bold">-1</span>
-				</div>
+				<Ticket usingTicket={true} />
 			{/if}
 		</button>
 	</div>

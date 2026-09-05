@@ -26,7 +26,7 @@
 		/>
 	</div>
 
-	<div class="flex flex-col gap-16">
+	<div class="flex flex-col gap-10">
 		{#each mostListenedTracks as track, i (track.id)}
 			{#if i === 0}
 				<TopTrackItem

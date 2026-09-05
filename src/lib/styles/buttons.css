@@ -1,0 +1,39 @@
+.button-cta {
+	@apply w-full cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-sm font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark lg:w-90 lg:max-w-90;
+}
+
+.button-outline {
+	@apply flex w-fit cursor-pointer items-center justify-center gap-2 rounded-lg border px-4 py-2.5 text-xs font-medium;
+
+	svg {
+		@apply mr-0.5 inline-block h-3.5 w-3.5 lg:h-4.5 lg:w-4.5;
+	}
+}
+
+.button-outline-active {
+	@apply border-brand-primary/20 bg-white text-brand-primary;
+}
+
+.button-outline-disable {
+	@apply border-t-disabled bg-transparent text-t-disabled;
+}
+
+.button-outline-active-hover {
+	@apply transition-all hover:border-brand-primary/40 hover:bg-brand-primary/5;
+}
+
+.button-outline-active-spotify {
+	@apply border-spotify text-spotify transition-all hover:bg-spotify/5;
+}
+
+.button-outline-active-deezer {
+	@apply border-deezer text-deezer transition-all hover:bg-deezer/5;
+}
+
+.button-outline-disable-spotify {
+	@apply transition-all hover:border-spotify hover:text-spotify;
+}
+
+.button-outline-disable-deezer {
+	@apply transition-all hover:border-deezer hover:text-deezer;
+}

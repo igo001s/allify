@@ -9,6 +9,7 @@
 
 	// Components
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
+	import Ticket from '$lib/components/general/Ticket.svelte';
 
 	// Services
 	import { getFreeDiscoveries } from '$lib/services/user/discoveries/getFreeDiscoveries';
@@ -241,17 +242,7 @@
 								{$translationsStore.discoveriesPage.discoveriesPageDiscoverAgainButton}
 							</span>
 
-							<div
-								class="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-brand-primary shadow-sm"
-							>
-								<enhanced:img
-									src={TicketIcon}
-									alt={$translationsStore.generalTexts.ticketAltText}
-									class="h-4 w-4"
-								/>
-
-								<span class="text-xs leading-none font-bold"> -1 </span>
-							</div>
+							<Ticket usingTicket={true} />
 						</div>
 					{/if}
 				</button>

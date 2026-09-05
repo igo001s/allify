@@ -21,7 +21,7 @@
 		</p>
 
 		<a
-			class="mt-6 w-full cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-sm font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark lg:w-90 lg:max-w-90"
+			class="button-cta mt-6"
 			href={`${$userInfo?.connectedStreamings.spotify ? '/my-musical-profile' : '#connect-platforms-section'}`}
 			aria-label={$userInfo !== undefined
 				? $translationsStore.homePage.homePageHeroSectionButton1v2AriaLabel
