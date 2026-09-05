@@ -19,12 +19,18 @@ export const POST: RequestHandler = async ({ request, cookies, fetch }) => {
 		let token = cookies.get('spotify_access_token');
 
 		if (!token) {
-			return new Response(JSON.stringify({ message: 'No Spotify access token found' }), {
-				status: 401,
-				headers: {
-					'Content-Type': 'application/json'
+			return new Response(
+				JSON.stringify({
+					authenticated: false,
+					message: 'No Spotify access token found'
+				}),
+				{
+					status: 200,
+					headers: {
+						'Content-Type': 'application/json'
+					}
 				}
-			});
+			);
 		}
 
 		let response = await fetch('https://api.spotify.com/v1/me', {
