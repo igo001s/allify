@@ -5,7 +5,7 @@ export const ja = {
 		langAttribute: 'ja_JP',
 		allifyDescription:
 			'Allifyであなたの音楽的アイデンティティを発見しましょう。最も聴いたアーティストや曲を確認し、音楽プロフィールをカスタマイズし、音楽に情熱を持つコミュニティとあなたの好みを共有しましょう。',
-		stripeTicketId: 'prod_VCKwjqUh7AzZfd',
+		stripeTicketId: 'prod_VCKwjqUh7AzZfd'
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Allifyのカラフルなロゴ',
@@ -578,13 +578,16 @@ export const ja = {
 	},
 	paymentSuccessPage: {
 		title: '支払い成功 | Allify',
-		paymentSuccessPageMetaDescription: 'ご購入ありがとうございます！お支払いは正常に処理されました。',
+		paymentSuccessPageMetaDescription:
+			'ご購入ありがとうございます！お支払いは正常に処理されました。',
 		paymentSuccessPageMetaKeywords: '支払い, 成功, Allify, チケット',
-		paymentSuccessPageMetaOgAndTwitterContent: 'ご購入ありがとうございます！お支払いは正常に処理されました。',
+		paymentSuccessPageMetaOgAndTwitterContent:
+			'ご購入ありがとうございます！お支払いは正常に処理されました。',
 		paymentSuccessPageHeading1: '支払いが正常に完了しました！',
-		paymentSuccessPageParagraph1: 'ご購入ありがとうございます！お支払いは正常に処理され、チケットがアカウントに追加されました。',
+		paymentSuccessPageParagraph1:
+			'ご購入ありがとうございます！お支払いは正常に処理され、チケットがアカウントに追加されました。',
 		paymentSuccessPageTicketsAddedText: 'チケットが追加されました',
-		paymentSuccessPageButtonText: 'ホームページに戻る',
+		paymentSuccessPageButtonText: 'ホームページに戻る'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allifyチケット',
@@ -595,11 +598,13 @@ export const ja = {
 		addTicketsModalParagraph2v2: 'さらにチケットを購入して、Allifyの機能を最大限に活用しましょう。',
 		addTicketsModalParagraph3: '数量',
 		addTicketsModalPlaceholder: '自分で選ぶ',
+		addTicketsModalInputError: 'チケットは5枚以上から追加できます。',
 		addTicketsModalTicket: 'チケット',
 		addTicketsModalTickets: 'チケット',
 		addTicketsModalSelected: '選択',
 		addTicketsModalSelectedPlural: '選択',
-		addTicketsModalButton: '支払いに進む'
+		addTicketsModalButton: '支払いに進む',
+		addTicketsModalErrorMessageToast: 'チケットの追加中にエラーが発生しました。'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Allifyへようこそ！',

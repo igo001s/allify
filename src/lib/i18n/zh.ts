@@ -5,7 +5,7 @@ export const zh = {
 		langAttribute: 'zh_CN',
 		allifyDescription:
 			'通过 Allify 发现您的音乐身份。查看您最常听的艺术家和歌曲，个性化您的音乐资料，并与充满热情的音乐社区分享您的品味。',
-		stripeTicketId: 'prod_VCKw008sLdGvIU',
+		stripeTicketId: 'prod_VCKw008sLdGvIU'
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Allify 彩色标志',
@@ -529,7 +529,7 @@ export const zh = {
 		paymentSuccessPageHeading1: '支付成功完成！',
 		paymentSuccessPageParagraph1: '感谢您的购买！您的付款已成功处理，门票已添加到您的账户中。',
 		paymentSuccessPageTicketsAddedText: '门票已添加',
-		paymentSuccessPageButtonText: '返回首页',
+		paymentSuccessPageButtonText: '返回首页'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allify 门票',
@@ -539,11 +539,13 @@ export const zh = {
 		addTicketsModalParagraph2v2: '拥有更多门票以充分利用 Allify 的功能和特性。',
 		addTicketsModalParagraph3: '数量',
 		addTicketsModalPlaceholder: '自己选择',
+		addTicketsModalInputError: '您只能从 5 张门票开始添加。',
 		addTicketsModalTicket: '门票',
 		addTicketsModalTickets: '门票',
 		addTicketsModalSelected: '已选择',
 		addTicketsModalSelectedPlural: '已选择',
-		addTicketsModalButton: '前往付款'
+		addTicketsModalButton: '前往付款',
+		addTicketsModalErrorMessageToast: '添加门票时发生错误。'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: '欢迎使用 Allify！',

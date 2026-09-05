@@ -8,10 +8,16 @@
 	// Stores
 	import { showAddTickets } from '$lib/stores/showAddTickets.store';
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '$lib/stores/userInfo.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { createCheckout } from '$lib/services/checkout/createCheckout';
 
+	// MongoDB
+	import type { ObjectId } from 'mongodb';
+
+	// Props
 	export let openFrom: 'noTickets' | 'profilePage';
 
 	let quantity = 5;
@@ -25,12 +31,25 @@
 		if (newQuantity >= 5) quantity = newQuantity;
 	}
 
-	async function handleCreateCheckout(quantity: number, ticketId: string, locale: string) {
-		if (quantity < 5) return;
+	async function handleCreateCheckout(
+		quantity: number,
+		ticketId: string,
+		locale: string,
+		userId?: ObjectId
+	) {
+		const createCheckoutResponse = await createCheckout(quantity, ticketId, locale, userId);
 
-		await createCheckout(quantity, ticketId, locale);
+		if (!createCheckoutResponse?.error) {
+			showAddTickets.set({ show: false, openFrom });
+		} else {
+			toastStore.set({
+				showToast: true,
+				toastType: 'success',
+				toastMessage: $translationsStore.addTickets.addTicketsModalErrorMessageToast
+			});
+		}
 
-		showAddTickets.set({ show: false, openFrom });
+		return;
 	}
 
 	onMount(() => {
@@ -109,9 +128,7 @@
 					/>
 
 					{#if quantity < 5}
-						<span class="text-xs text-red-500 w-100">							
-							Tickets must be at least 5.
-						</span>
+						<span class="w-100 text-xs text-status-error">{$translationsStore.addTickets.addTicketsModalInputError}</span>
 					{/if}
 				</div>
 			</div>
@@ -137,7 +154,13 @@
 
 			<button
 				class="min-h-11 w-full cursor-pointer rounded-lg bg-brand-primary px-5 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
-				on:click={() => handleCreateCheckout(quantity, $translationsStore.configuration.stripeTicketId, $translationsStore.language)}
+				on:click={() =>
+					handleCreateCheckout(
+						quantity,
+						$translationsStore.configuration.stripeTicketId,
+						$translationsStore.language,
+						$userInfo?._id
+					)}
 			>
 				{$translationsStore.addTickets.addTicketsModalButton}
 			</button>

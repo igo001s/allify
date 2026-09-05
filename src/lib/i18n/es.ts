@@ -5,7 +5,7 @@ export const es = {
 		langAttribute: 'es_ES',
 		allifyDescription:
 			'Descubre tu identidad musical con Allify. Mira tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
-		stripeTicketId: 'prod_VCKubAx3RydtKZ',
+		stripeTicketId: 'prod_VCKubAx3RydtKZ'
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Logotipo colorido de Allify',
@@ -608,11 +608,13 @@ export const es = {
 		title: 'Pago exitoso | Allify',
 		paymentSuccessPageMetaDescription: '¡Gracias por tu compra! Tu pago se ha procesado con éxito.',
 		paymentSuccessPageMetaKeywords: 'Pago, Éxito, Allify, Tickets',
-		paymentSuccessPageMetaOgAndTwitterContent: '¡Gracias por tu compra! Tu pago se ha procesado con éxito.',
+		paymentSuccessPageMetaOgAndTwitterContent:
+			'¡Gracias por tu compra! Tu pago se ha procesado con éxito.',
 		paymentSuccessPageHeading1: '¡Pago completado con éxito!',
-		paymentSuccessPageParagraph1: '¡Gracias por tu compra! Tu pago se ha procesado con éxito y tus tickets se han añadido a tu cuenta.',
+		paymentSuccessPageParagraph1:
+			'¡Gracias por tu compra! Tu pago se ha procesado con éxito y tus tickets se han añadido a tu cuenta.',
 		paymentSuccessPageTicketsAddedText: 'tickets añadidos',
-		paymentSuccessPageButtonText: 'Volver a la página principal',
+		paymentSuccessPageButtonText: 'Volver a la página principal'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Tickets de Allify',
@@ -620,14 +622,17 @@ export const es = {
 		addTicketsModalParagraph1: 'Adquirir tickets',
 		addTicketsModalParagraph2v1:
 			'Parece que tus tickets se han agotado. Adquiere más para seguir disfrutando de las funcionalidades.',
-		addTicketsModalParagraph2v2: 'Adquiere más tickets para seguir aprovechando al máximo las funcionalidades de Allify.',
+		addTicketsModalParagraph2v2:
+			'Adquiere más tickets para seguir aprovechando al máximo las funcionalidades de Allify.',
 		addTicketsModalParagraph3: 'Cantidad',
 		addTicketsModalPlaceholder: 'Elige tú mismo',
+		addTicketsModalInputError: 'Solo puedes añadir tickets a partir de 5.',
 		addTicketsModalTicket: 'Ticket',
 		addTicketsModalTickets: 'Tickets',
 		addTicketsModalSelected: 'seleccionado',
 		addTicketsModalSelectedPlural: 'seleccionados',
-		addTicketsModalButton: 'Ir al pago'
+		addTicketsModalButton: 'Ir al pago',
+		addTicketsModalErrorMessageToast: 'Ocurrió un error al intentar añadir los tickets.'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: '¡Bienvenido a Allify!',

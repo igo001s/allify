@@ -5,7 +5,7 @@ export const ru = {
 		langAttribute: 'ru_RU',
 		allifyDescription:
 			'Откройте для себя свою музыкальную идентичность с Allify. Смотрите своих самых прослушиваемых исполнителей и песни, персонализируйте свой музыкальный профиль и делитесь своими вкусами с увлечённым музыкальным сообществом.',
-		stripeTicketId: 'prod_VCKw6sFmdeChFN',
+		stripeTicketId: 'prod_VCKw6sFmdeChFN'
 	},
 	generalTexts: {
 		logoColorfulAltText: 'Цветной логотип Allify',
@@ -592,11 +592,13 @@ export const ru = {
 		title: 'Оплата прошла успешно | Allify',
 		paymentSuccessPageMetaDescription: 'Спасибо за вашу покупку! Ваш платеж был успешно обработан.',
 		paymentSuccessPageMetaKeywords: 'Оплата, Успех, Allify, Билеты',
-		paymentSuccessPageMetaOgAndTwitterContent: 'Спасибо за вашу покупку! Ваш платеж был успешно обработан.',
+		paymentSuccessPageMetaOgAndTwitterContent:
+			'Спасибо за вашу покупку! Ваш платеж был успешно обработан.',
 		paymentSuccessPageHeading1: 'Оплата успешно завершена!',
-		paymentSuccessPageParagraph1: 'Спасибо за вашу покупку! Ваш платеж был успешно обработан, и билеты были добавлены в ваш аккаунт.',
+		paymentSuccessPageParagraph1:
+			'Спасибо за вашу покупку! Ваш платеж был успешно обработан, и билеты были добавлены в ваш аккаунт.',
 		paymentSuccessPageTicketsAddedText: 'билеты добавлены',
-		paymentSuccessPageButtonText: 'Вернуться на главную страницу',
+		paymentSuccessPageButtonText: 'Вернуться на главную страницу'
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Билеты Allify',
@@ -604,14 +606,17 @@ export const ru = {
 		addTicketsModalParagraph1: 'Приобрести билеты',
 		addTicketsModalParagraph2v1:
 			'Похоже, ваши билеты закончились. Приобретите больше, чтобы продолжать пользоваться функциями.',
-		addTicketsModalParagraph2v2: 'Иметь больше билетов, чтобы максимально использовать возможности и функции Allify.',
+		addTicketsModalParagraph2v2:
+			'Иметь больше билетов, чтобы максимально использовать возможности и функции Allify.',
 		addTicketsModalParagraph3: 'Количество',
 		addTicketsModalPlaceholder: 'Выберите самостоятельно',
+		addTicketsModalInputError: 'Вы можете добавить билеты, начиная с 5.',
 		addTicketsModalTicket: 'билет',
 		addTicketsModalTickets: 'билетов',
 		addTicketsModalSelected: 'выбран',
 		addTicketsModalSelectedPlural: 'выбрано',
-		addTicketsModalButton: 'Перейти к оплате'
+		addTicketsModalButton: 'Перейти к оплате',
+		addTicketsModalErrorMessageToast: 'Произошла ошибка при попытке добавить билеты.'
 	},
 	templateEmail: {
 		welcomeToAllifySubject: 'Добро пожаловать в Allify!',

@@ -1,11 +1,22 @@
 // Svelte
 import { dev } from '$app/environment';
 
-export async function createCheckout(quantity: number, productId: string, locale: string): Promise<void> {
+// MongoDb
+import type { ObjectId } from 'mongodb';
+
+export async function createCheckout(
+	quantity: number,
+	productId: string,
+	locale: string,
+	userId?: ObjectId
+) {
 	try {
+		if (!userId || quantity < 5) return;
+
 		const response = await fetch('/api/checkout/tickets/create-checkout', {
 			method: 'POST',
 			body: JSON.stringify({
+				userId,
 				items: [
 					{
 						id: productId,
@@ -18,7 +29,7 @@ export async function createCheckout(quantity: number, productId: string, locale
 				completionUrl: '/payment-success',
 				methods: ['PIX', 'CARD'],
 				card: {
-					maxInstallments: 1 				
+					maxInstallments: 1
 				},
 				metadata: {
 					origem: 'app-mobile'
@@ -33,9 +44,11 @@ export async function createCheckout(quantity: number, productId: string, locale
 
 		const parsedResponse = await response.json();
 
-		const checkoutUrl = parsedResponse.url;
+		if (!parsedResponse.url) {
+			throw new Error('Checkout URL not found');
+		}
 
-		window.location.assign(checkoutUrl);
+		window.location.assign(parsedResponse.url);
 
 		return;
 	} catch (error) {
@@ -43,6 +56,9 @@ export async function createCheckout(quantity: number, productId: string, locale
 			console.error('Checkout error:', error instanceof Error ? error.message : error);
 		}
 
-		return;
+		return {
+			error: true,
+			errorType: 'checkoutError'
+		};
 	}
 }

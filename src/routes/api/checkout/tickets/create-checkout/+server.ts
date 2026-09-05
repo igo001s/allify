@@ -1,4 +1,4 @@
-// SvelteKit
+// Svelte
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Environment variables
@@ -24,25 +24,16 @@ export const POST: RequestHandler = async ({ request }) => {
 			});
 		}
 
-		const {
-			items,
-			externalId,
-			returnUrl,
-			completionUrl,
-			metadata,
-			locale
-		} = await request.json();
+		const { items, externalId, returnUrl, completionUrl, metadata, locale, userId } =
+			await request.json();
 
-		if (!items || !externalId || !returnUrl || !completionUrl || !metadata) {
-			return new Response(
-				JSON.stringify({ error: 'Missing required fields' }),
-				{
-					status: 400,
-					headers: {
-						'Content-Type': 'application/json'
-					}
+		if (!items || !externalId || !returnUrl || !completionUrl || !metadata || !userId) {
+			return new Response(JSON.stringify({ error: 'Missing required fields' }), {
+				status: 400,
+				headers: {
+					'Content-Type': 'application/json'
 				}
-			);
+			});
 		}
 
 		const product = await stripe.products.retrieve(items[0].id);
@@ -52,24 +43,31 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const priceId =
-			typeof product.default_price === 'string'
-				? product.default_price
-				: product.default_price.id;
+			typeof product.default_price === 'string' ? product.default_price : product.default_price.id;
 
 		const session = await stripe.checkout.sessions.create({
+			client_reference_id: userId,
 			line_items: [
 				{
 					price: priceId,
 					quantity: items[0].quantity ?? 1
 				}
 			],
-			locale: locale,
+			locale,
 			mode: 'payment',
 			success_url: ALLIFY_URL + completionUrl,
 			cancel_url: returnUrl,
 			metadata: {
 				externalId,
 				...metadata
+			},
+			payment_intent_data: {
+				metadata: {
+					userId,
+					externalId,
+					quantity: String(items[0].quantity),
+					...metadata
+				}
 			}
 		});
 
@@ -86,8 +84,6 @@ export const POST: RequestHandler = async ({ request }) => {
 			}
 		);
 	} catch (error) {
-		console.error('Stripe Checkout error:', error);
-
 		return new Response(
 			JSON.stringify({
 				error: error instanceof Error ? error.message : 'Unknown error'
