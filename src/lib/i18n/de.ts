@@ -152,7 +152,6 @@ export const de = {
 		homePageHeroSectionParagraph1:
 			'Entdecke deine meistgehörten Künstler und Songs, personalisiere dein Musikprofil und teile, was du liebst, mit einer musikbegeisterten Community.',
 		alliMascotPointingToLeftAltText: 'Alli zeigt nach links und weist auf die Schaltfläche hin',
-		alliMascotPointingDownwardsAltText: 'Alli zeigt nach unten und weist auf die Schaltfläche hin',
 		homePageHeroSectionButton1: 'Meine Musik entdecken',
 		homePageHeroSectionButton1v2: 'Zu meinem Musikprofil',
 		homePageHeroSectionButton1AriaLabel: 'Meine Musik entdecken',

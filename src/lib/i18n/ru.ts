@@ -153,7 +153,6 @@ export const ru = {
 		homePageHeroSectionParagraph1:
 			'Узнайте своих самых прослушиваемых исполнителей и песни, персонализируйте музыкальный профиль и делитесь тем, что вы любите, с сообществом любителей музыки.',
 		alliMascotPointingToLeftAltText: 'Alli указывает налево, обозначая кнопку действия',
-		alliMascotPointingDownwardsAltText: 'Alli указывает вниз, обозначая кнопку действия',
 		homePageHeroSectionButton1: 'Открыть мою музыку',
 		homePageHeroSectionButton1v2: 'Перейти в мой музыкальный профиль',
 		homePageHeroSectionButton1AriaLabel: 'Открыть мою музыку',

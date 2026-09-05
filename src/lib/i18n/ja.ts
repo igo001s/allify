@@ -151,7 +151,6 @@ export const ja = {
 		homePageHeroSectionParagraph1:
 			'よく聴くアーティストや楽曲を発見し、音楽プロフィールをカスタマイズして、音楽を愛するコミュニティとあなたの好きなものを共有しましょう。',
 		alliMascotPointingToLeftAltText: 'Alliが左を指してアクションボタンを示しています',
-		alliMascotPointingDownwardsAltText: 'Alliが下を指してアクションボタンを示しています',
 		homePageHeroSectionButton1: '自分の音楽を発見する',
 		homePageHeroSectionButton1v2: '音楽プロフィールへ',
 		homePageHeroSectionButton1AriaLabel: '自分の音楽を発見する',

@@ -156,8 +156,6 @@ export const it = {
 			'Scopri i tuoi artisti e brani più ascoltati, personalizza il tuo profilo musicale e condividi ciò che ami con una community appassionata di musica.',
 		alliMascotPointingToLeftAltText:
 			'Alli che indica verso sinistra, indicando il pulsante di azione',
-		alliMascotPointingDownwardsAltText:
-			'Alli che indica verso il basso, indicando il pulsante di azione',
 		homePageHeroSectionButton1: 'Scopri la mia musica',
 		homePageHeroSectionButton1v2: 'Vai al mio profilo musicale',
 		homePageHeroSectionButton1AriaLabel: 'Scopri la mia musica',

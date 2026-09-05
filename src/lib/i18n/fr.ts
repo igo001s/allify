@@ -155,7 +155,6 @@ export const fr = {
 		homePageHeroSectionParagraph1:
 			'Découvrez vos artistes et chansons les plus écoutés, personnalisez votre profil musical et partagez ce que vous aimez avec une communauté passionnée de musique.',
 		alliMascotPointingToLeftAltText: 'Alli pointant vers la gauche et indiquant le bouton d’action',
-		alliMascotPointingDownwardsAltText: 'Alli pointant vers le bas et indiquant le bouton d’action',
 		homePageHeroSectionButton1: 'Découvrir ma musique',
 		homePageHeroSectionButton1v2: 'Accéder à mon profil musical',
 		homePageHeroSectionButton1AriaLabel: 'Découvrir ma musique',

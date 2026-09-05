@@ -1,7 +1,6 @@
 <script lang="ts">
 	// Assets
 	import AlliFullBodyPointing from '$lib/assets/images/alli/alli-full-body-pointing.webp?enhanced';
-	import AlliFullBodyPointingDownwards from '$lib/assets/images/alli/alli-full-body-pointing-downwards.webp?enhanced';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -20,17 +19,6 @@
 		<p class="text-md text-center text-t-secondary lg:text-left lg:text-lg">
 			{$translationsStore.homePage.homePageHeroSectionParagraph1}
 		</p>
-
-		<enhanced:img
-			src={AlliFullBodyPointingDownwards}
-			alt={$translationsStore.homePage.alliMascotPointingDownwardsAltText}
-			class="block h-auto w-56 lg:hidden"
-			loading="eager"
-			fetchpriority="high"
-			decoding="sync"
-			width="280"
-			height="280"
-		/>
 
 		<a
 			class="mt-6 w-full cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-sm font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark lg:w-90 lg:max-w-90"

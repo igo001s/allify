@@ -154,7 +154,6 @@ export const es = {
 			'Descubre tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte lo que te encanta con una comunidad apasionada por la música.',
 		alliMascotPointingToLeftAltText:
 			'Alli señalando hacia la izquierda e indicando el botón de acción',
-		alliMascotPointingDownwardsAltText: 'Alli señalando hacia abajo e indicando el botón de acción',
 		homePageHeroSectionButton1: 'Descubrir mi música',
 		homePageHeroSectionButton1v2: 'Ir a mi perfil musical',
 		homePageHeroSectionButton1AriaLabel: 'Descubrir mi música',
