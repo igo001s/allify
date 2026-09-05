@@ -135,7 +135,9 @@
 					/>
 
 					{#if quantity < 5}
-						<span class="w-100 text-xs text-status-error">{$translationsStore.addTickets.addTicketsModalInputError}</span>
+						<span class="w-100 text-xs text-status-error"
+							>{$translationsStore.addTickets.addTicketsModalInputError}</span
+						>
 					{/if}
 				</div>
 			</div>
@@ -160,7 +162,7 @@
 			</div>
 
 			<button
-				class="min-h-11 flex items-center justify-center cursor-pointer rounded-lg bg-brand-primary px-5 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
+				class="flex min-h-11 cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-5 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
 				on:click={() =>
 					handleCreateCheckout(
 						quantity,

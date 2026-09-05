@@ -6,24 +6,6 @@
 	export let logoSvgClass = '';
 	export let logoAltText = '';
 
-	function resolveSeasonalDecoration(): string | null {
-		const today = new Date();
-		const month = today.getMonth() + 1;
-		const day = today.getDate();
-
-		if ((month === 12 && day >= 27) || (month === 1 && day <= 5)) return 'new-year';
-		if (month === 12 && day >= 1 && day <= 26) return 'christmas-hat';
-		if (month === 10 && day >= 25) return 'halloween';
-		if (month === 6) return 'junina-hat';
-		if ((month === 3 && day >= 20) || (month === 4 && day <= 10)) return 'easter';
-		if ((month === 2 && day >= 10) || (month === 3 && day <= 5)) return 'carnival';
-		return null;
-	}
-
-	const seasonalDecoration = resolveSeasonalDecoration();
-
-	let SeasonalComponent: any = null;
-
 	const decorationMap: Record<string, () => Promise<any>> = {
 		'christmas-hat': () => import('./seasonal-decorations/ChristmasHatGroup.svelte'),
 		'new-year': () => import('./seasonal-decorations/NewYearGroup.svelte'),
@@ -42,14 +24,32 @@
 		carnival: 'scale(0.30) translate(940, -29) rotate(25)'
 	};
 
+	const seasonalDecoration = resolveSeasonalDecoration();
+
+	let SeasonalComponent: any = null;
+
+	$: transformGroup = seasonalDecoration ? transformMap[seasonalDecoration] : '';
+
+	function resolveSeasonalDecoration(): string | null {
+		const today = new Date();
+		const month = today.getMonth() + 1;
+		const day = today.getDate();
+
+		if ((month === 12 && day >= 27) || (month === 1 && day <= 5)) return 'new-year';
+		if (month === 12 && day >= 1 && day <= 26) return 'christmas-hat';
+		if (month === 10 && day >= 25) return 'halloween';
+		if (month === 6) return 'junina-hat';
+		if ((month === 3 && day >= 20) || (month === 4 && day <= 10)) return 'easter';
+		if ((month === 2 && day >= 10) || (month === 3 && day <= 5)) return 'carnival';
+		return null;
+	}
+
 	onMount(async () => {
 		if (seasonalDecoration && decorationMap[seasonalDecoration]) {
 			const module = await decorationMap[seasonalDecoration]();
 			SeasonalComponent = module.default;
 		}
 	});
-
-	$: transformGroup = seasonalDecoration ? transformMap[seasonalDecoration] : '';
 </script>
 
 <a href="/" title={logoAltText}>
