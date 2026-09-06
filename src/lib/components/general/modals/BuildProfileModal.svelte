@@ -6,11 +6,12 @@
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
 
 	// Components
+	import Modal from '$lib/components/general/modals/Modal.svelte';
 	import FirstAccessSection from '$lib/components/build-profile/FirstAccessSection.svelte';
 	import FirstStepTrackSection from '$lib/components/build-profile/FirstStepTrackSection.svelte';
 	import SecondStepArtistSection from '$lib/components/build-profile/SecondStepArtistSection.svelte';
 	import ThirdStepVisibilitySection from '$lib/components/build-profile/ThirdStepVisibilitySection.svelte';
-	import SaveBuiltUserSection from '../build-profile/SaveBuiltUserSection.svelte';
+	import SaveBuiltUserSection from '$lib/components/build-profile/SaveBuiltUserSection.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -83,48 +84,36 @@
 </script>
 
 {#if showBuildProfile}
-	<div
-		class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-5 backdrop-blur-md transition-all"
+	<Modal
+		{closeModal}
+		closeModalAriaLabel={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
+		closeModalAltText={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
+		additionalClasses={`${currentStepIndex === 0 || currentStepIndex === 4 ? 'max-w-xl' : 'max-w-3xl'}`}
 	>
-		<div
-			class={`${currentStepIndex === 0 || currentStepIndex === 4 ? 'max-w-xl' : 'max-w-3xl'} relative flex max-h-[90vh] w-full flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl`}
-		>
-			<button
-				class="absolute top-2 right-2 z-10 cursor-pointer opacity-70 transition hover:scale-102 hover:opacity-100"
-				on:click={closeModal}
-				aria-label={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
-			>
-				<CloseIcon
-					iconAltText={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
-					iconSvgClass="h-5 w-5 text-brand-primary"
+		<div class="min-w-0 overflow-y-auto p-5 sm:p-6 lg:p-8">
+			{#if currentStepIndex === 0}
+				<FirstAccessSection {closeModal} {goToNextStep} />
+			{:else if currentStepIndex === 1}
+				<FirstStepTrackSection
+					{goToNextStep}
+					{backToPreviousStep}
+					bind:buildProfileTrack={buildProfileData.track}
 				/>
-			</button>
-
-			<div class="min-w-0 overflow-y-auto p-5 sm:p-6 lg:p-8">
-				{#if currentStepIndex === 0}
-					<FirstAccessSection {closeModal} {goToNextStep} />
-				{:else if currentStepIndex === 1}
-					<FirstStepTrackSection
-						{goToNextStep}
-						{backToPreviousStep}
-						bind:buildProfileTrack={buildProfileData.track}
-					/>
-				{:else if currentStepIndex === 2}
-					<SecondStepArtistSection
-						{goToNextStep}
-						{backToPreviousStep}
-						bind:buildProfileArtist={buildProfileData.artist}
-					/>
-				{:else if currentStepIndex === 3}
-					<ThirdStepVisibilitySection
-						{goToNextStep}
-						{backToPreviousStep}
-						bind:buildProfileVisibility={buildProfileData.profileVisibility}
-					/>
-				{:else if currentStepIndex === 4}
-					<SaveBuiltUserSection {backToPreviousStep} {closeModal} bind:buildProfileData />
-				{/if}
-			</div>
+			{:else if currentStepIndex === 2}
+				<SecondStepArtistSection
+					{goToNextStep}
+					{backToPreviousStep}
+					bind:buildProfileArtist={buildProfileData.artist}
+				/>
+			{:else if currentStepIndex === 3}
+				<ThirdStepVisibilitySection
+					{goToNextStep}
+					{backToPreviousStep}
+					bind:buildProfileVisibility={buildProfileData.profileVisibility}
+				/>
+			{:else if currentStepIndex === 4}
+				<SaveBuiltUserSection {backToPreviousStep} {closeModal} bind:buildProfileData />
+			{/if}
 		</div>
-	</div>
+	</Modal>
 {/if}

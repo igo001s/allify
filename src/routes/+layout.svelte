@@ -99,14 +99,14 @@
 
 <!-- Add Tickets Modal -->
 {#if $showAddTickets.show === true}
-	{#await import('$lib/components/general/AddTicketsModal.svelte') then { default: AddTicketsModal }}
+	{#await import('$lib/components/general/modals/AddTicketsModal.svelte') then { default: AddTicketsModal }}
 		<AddTicketsModal openFrom={$showAddTickets.openFrom} />
 	{/await}
 {/if}
 
 <!-- Build Profile -->
 {#if $userInfo && !$userInfo?.artists?.artistOfTheMoment?.artist && !$userInfo?.tracks?.trackOfTheMoment?.track && $userInfo?.profileVisibility.visibility === undefined}
-	{#await import('$lib/components/general/BuildProfileModal.svelte') then { default: BuildProfileModal }}
+	{#await import('$lib/components/general/modals/BuildProfileModal.svelte') then { default: BuildProfileModal }}
 		<BuildProfileModal />
 	{/await}
 {/if}

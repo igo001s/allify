@@ -13,7 +13,7 @@
 	// Components
 	import PublicUserKeyInformation from '$lib/components/music-community/public-user/PublicUserKeyInformation.svelte';
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
-	import AddCommentModal from '$lib/components/music-community/AddCommentModal.svelte';
+	import AddCommentModal from '$lib/components/general/modals/AddCommentModal.svelte';
 	import ArtistsOnPublicProfile from '$lib/components/music-community/public-user/ArtistsOnPublicUser.svelte';
 	import SongsOnPublicUser from '$lib/components/music-community/public-user/SongsOnPublicUser.svelte';
 

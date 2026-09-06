@@ -9,11 +9,11 @@
 	import KeyInformation from '$lib/components/profile/KeyInformation.svelte';
 	import YourSongsOnProfile from '$lib/components/profile/YourSongsOnProfile.svelte';
 	import YourArtistsOnProfile from '$lib/components/profile/YourArtistsOnProfile.svelte';
-	import ChangeItemOfTheMomentModal from '$lib/components/profile/ChangeItemOfTheMomentModal.svelte';
-	import SelectItemOfTheMomentModal from '$lib/components/profile/SelectItemOfTheMomentModal.svelte';
-	import SelectCustomItemModal from '$lib/components/profile/SelectCustomItemModal.svelte';
-	import ChangeCustomItemModal from '$lib/components/profile/ChangeCustomItemModal.svelte';
-	import CommentsModal from '$lib/components/profile/CommentsModal.svelte';
+	import ChangeItemOfTheMomentModal from '$lib/components/general/modals/ChangeItemOfTheMomentModal.svelte';
+	import SelectItemOfTheMomentModal from '$lib/components/general/modals/SelectItemOfTheMomentModal.svelte';
+	import SelectCustomItemModal from '$lib/components/general/modals/SelectCustomItemModal.svelte';
+	import ChangeCustomItemModal from '$lib/components/general/modals/ChangeCustomItemModal.svelte';
+	import CommentsModal from '$lib/components/general/modals/CommentsModal.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
