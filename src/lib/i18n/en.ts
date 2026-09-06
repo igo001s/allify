@@ -247,6 +247,8 @@ export const en = {
 		title: 'Music Community | Allify',
 		musicCommunityPageMetaDescription:
 			'Discover new users, find friends, explore music profiles, and follow the musical tastes of the Allify community.',
+		musicCommunityPageMetaWithoutLoginMetaDescription:
+			'Discover music profiles and new users in the Allify community. Log in to find friends and follow the musical tastes of the community.',
 		musicCommunityPageMetaKeywords:
 			'music community, music profiles, discover users, find friends, explore musical tastes, Allify',
 		musicCommunityPageMetaOgAndTwitterContent:

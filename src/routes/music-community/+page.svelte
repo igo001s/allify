@@ -54,17 +54,25 @@
 		$translationsStore.locale,
 		$translationsStore.musicCommunityPage.title,
 		$translationsStore.configuration.allifyDescription,
-		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
+		$userInfo?.connectedStreamings.spotify
+			? $translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
+			: $translationsStore.musicCommunityPage.musicCommunityPageMetaWithoutLoginMetaDescription
 	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.musicCommunityPage.title}</title>
 	<meta
-		name="description"
-		content={$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription}
-	/>
-	<meta
 		name="keywords"
 		content={$translationsStore.musicCommunityPage.musicCommunityPageMetaKeywords}
+	/>
+	<meta
+		name="description"
+		content={$userInfo?.connectedStreamings.spotify
+			? $translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
+			: $translationsStore.musicCommunityPage.musicCommunityPageMetaWithoutLoginMetaDescription}
+	/>
+	<meta
+		name="robots"
+		content={$userInfo?.connectedStreamings.spotify ? 'index, follow' : 'noindex, nofollow'}
 	/>
 	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->

@@ -234,6 +234,8 @@ export const zh = {
 		title: '音乐社区 | Allify',
 		musicCommunityPageMetaDescription:
 			'发现新用户，寻找朋友，探索音乐个人资料，并关注 Allify 社区的音乐喜好。',
+		musicCommunityPageMetaWithoutLoginMetaDescription:
+			'在 Allify 社区发现音乐个人资料和新用户。登录以寻找朋友并关注社区的音乐喜好。',
 		musicCommunityPageMetaKeywords:
 			'音乐社区, 音乐个人资料, 发现用户, 寻找朋友, 探索音乐喜好, Allify',
 		musicCommunityPageMetaOgAndTwitterContent:

@@ -253,6 +253,8 @@ export const es = {
 		title: 'Comunidad Musical | Allify',
 		musicCommunityPageMetaDescription:
 			'Descubre nuevos usuarios, encuentra amigos, explora perfiles musicales y sigue los gustos musicales de la comunidad de Allify.',
+		musicCommunityPageMetaWithoutLoginMetaDescription:
+			'Descubre perfiles musicales y nuevos usuarios en la comunidad de Allify. Inicia sesión para encontrar amigos y seguir los gustos musicales de la comunidad.',
 		musicCommunityPageMetaKeywords:
 			'comunidad musical, perfiles musicales, descubrir usuarios, encontrar amigos, explorar gustos musicales, Allify',
 		musicCommunityPageMetaOgAndTwitterContent:
