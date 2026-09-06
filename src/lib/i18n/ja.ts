@@ -178,6 +178,8 @@ export const ja = {
 		title: 'マイミュージックプロフィール | Allify',
 		myMusicalProfilePageMetaDescription:
 			'あなたの音楽プロフィールを探索し、最もよく聴いているアーティストや楽曲を見つけたり、再生統計を確認したり、ストリーミングサービスを連携してパーソナライズされたインサイトを取得しましょう。',
+		myMusicalProfilePageWithoutLoginMetaDescription:
+			'あなたの音楽プロフィールを発見し、Allifyで最もよく聴いているアーティストや楽曲を確認しましょう。ログインして再生統計を追跡し、音楽の好みを探求してください。',
 		myMusicalProfilePageMetaKeywords:
 			'マイミュージックプロフィール, 音楽プロフィール, 音楽統計, 再生統計, 最もよく聴いているアーティスト, 最もよく聴いている楽曲, 音楽履歴, 音楽の好み, 音楽分析, ストリーミングプロフィール',
 		myMusicalProfilePageMetaOgAndTwitterContent:

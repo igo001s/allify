@@ -25,13 +25,17 @@
 		$translationsStore.locale,
 		$translationsStore.myMusicalProfilePage.title,
 		$translationsStore.configuration.allifyDescription,
-		$translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription
+		$userInfo?.connectedStreamings.spotify
+			? $translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription
+			: $translationsStore.myMusicalProfilePage.myMusicalProfilePageWithoutLoginMetaDescription
 	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.myMusicalProfilePage.title}</title>
 	<meta
 		name="description"
-		content={$translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription}
+		content={$userInfo?.connectedStreamings.spotify
+			? $translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription
+			: $translationsStore.myMusicalProfilePage.myMusicalProfilePageWithoutLoginMetaDescription}
 	/>
 	<meta
 		name="keywords"

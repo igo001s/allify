@@ -181,6 +181,8 @@ export const es = {
 		title: 'Mi Perfil Musical | Allify',
 		myMusicalProfilePageMetaDescription:
 			'Explora tu perfil musical, descubre tus artistas y canciones más escuchados, consulta tus estadísticas de escucha y conecta tus plataformas de streaming para obtener información personalizada.',
+		myMusicalProfilePageWithoutLoginMetaDescription:
+			'Descubre tu perfil musical y ve tus artistas y canciones más escuchados en Allify. Inicia sesión para seguir tus estadísticas de escucha y explorar tus gustos musicales.',
 		myMusicalProfilePageMetaKeywords:
 			'perfil musical, mi perfil musical, perfil de música, estadísticas musicales, estadísticas de escucha, canciones más escuchadas, artistas más escuchados, historial musical, hábitos de escucha, gusto musical, descubre tu gusto musical, análisis musical, perfil de streaming',
 		myMusicalProfilePageMetaOgAndTwitterContent:

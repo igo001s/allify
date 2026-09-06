@@ -170,6 +170,8 @@ export const zh = {
 		title: '我的音乐档案 | Allify',
 		myMusicalProfilePageMetaDescription:
 			'探索你的音乐档案，发现你最常听的艺人和歌曲，查看你的收听统计，并连接你的流媒体平台，获取个性化的音乐洞察。',
+		myMusicalProfilePageWithoutLoginMetaDescription:
+			'发现你的音乐档案，并查看你在 Allify 上最常听的艺人和歌曲。登录以跟踪你的收听统计并探索你的音乐品味。',
 		myMusicalProfilePageMetaKeywords:
 			'音乐档案, 我的音乐档案, 音乐资料, 音乐统计, 收听统计, 最常听的歌曲, 最常听的艺人, 最常听的曲目, 最常听的艺术家, 音乐历史, 收听习惯, 音乐品味, 发现你的音乐品味, 音乐分析, 流媒体资料',
 		myMusicalProfilePageMetaOgAndTwitterContent:

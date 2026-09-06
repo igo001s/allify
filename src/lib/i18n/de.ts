@@ -179,6 +179,8 @@ export const de = {
 		title: 'Mein Musikprofil | Allify',
 		myMusicalProfilePageMetaDescription:
 			'Entdecke dein Musikprofil, finde deine meistgehörten Künstler und Titel, verfolge deine Hörstatistiken und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+		myMusicalProfilePageWithoutLoginMetaDescription:
+			'Entdecke dein Musikprofil und sieh dir deine meistgehörten Künstler und Titel auf Allify an. Melde dich an, um deine Hörstatistiken zu verfolgen und deinen Musikgeschmack zu erkunden.',
 		myMusicalProfilePageMetaKeywords:
 			'Musikprofil, mein Musikprofil, Musikprofil, Musikstatistiken, Hörstatistiken, meistgehörte Songs, meistgehörte Künstler, meistgehörte Lieder, meistgehörte Künstler, Musikhistorie, Hörgewohnheiten, Musikgeschmack, entdecke deinen Musikgeschmack, Musikanalyse, Streaming-Profil',
 		myMusicalProfilePageMetaOgAndTwitterContent:

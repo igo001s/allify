@@ -178,6 +178,8 @@ export const en = {
 		title: 'My Musical Profile | Allify',
 		myMusicalProfilePageMetaDescription:
 			'Explore your musical profile, discover your most-listened-to artists and tracks, track your listening statistics, and connect your streaming platforms for personalized insights.',
+		myMusicalProfilePageWithoutLoginMetaDescription:
+			'Discover your musical profile and see your most-listened-to artists and tracks on Allify. Log in to track your listening statistics and explore your music taste.',
 		myMusicalProfilePageMetaKeywords:
 			'musical profile, my musical profile, music profile, music statistics, listening statistics, most-listened-to tracks, most-listened-to artists, most-listened-to songs, most-listened-to artists, music history, listening habits, music taste, discover your music taste, music analysis, streaming profile',
 		myMusicalProfilePageMetaOgAndTwitterContent:
