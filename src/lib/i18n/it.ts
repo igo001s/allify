@@ -154,6 +154,8 @@ export const it = {
 		homePageHeroSectionHeading1: 'Scopri cosa dice di te la tua musica',
 		homePageHeroSectionParagraph1:
 			'Scopri i tuoi artisti e brani più ascoltati, personalizza il tuo profilo musicale e condividi ciò che ami con una community appassionata di musica.',
+		alliMascotPointingDownwardsAltText:
+			'Alli che indica verso il basso, indicando il pulsante di azione',
 		alliMascotPointingToLeftAltText:
 			'Alli che indica verso sinistra, indicando il pulsante di azione',
 		homePageHeroSectionButton1: 'Scopri la mia musica',

@@ -142,6 +142,7 @@ export const zh = {
 		homePageHeroSectionHeading1: '发现音乐诉说的你',
 		homePageHeroSectionParagraph1:
 			'发现你最常听的艺人和歌曲，个性化你的音乐主页，并与热爱音乐的社区分享你喜欢的一切。',
+		alliMascotPointingDownwardsAltText: 'Alli指向下方，提示操作按钮',
 		alliMascotPointingToLeftAltText: 'Alli指向左侧，提示操作按钮',
 		homePageHeroSectionButton1: '发现我的音乐',
 		homePageHeroSectionButton1v2: '前往我的音乐主页',
