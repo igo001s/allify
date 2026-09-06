@@ -366,11 +366,13 @@ export const en = {
 	profilePage: {
 		title: 'Profile | Allify',
 		profilePageMetaDescription:
-			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your profile on Allify, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms.',
+		profilePageWithoutLoginMetaDescription:
+			'Create your profile on Allify and share your music tastes with the community. Log in to personalize your profile and share your listening statistics, liked songs, playlists, and saved albums.',
 		profilePageMetaKeywords:
-			'most listened-to music, song of the moment, personalized music, most listened-to artist, artist of the moment, personalized artist, music profile, music statistics, music profile, music community',
+			'music profile, music statistics, most-listened-to songs, song of the moment, custom song, most-listened-to artists, artist of the moment, custom artist, liked songs, playlists, saved albums, music community, Allify',
 		profilePageMetaOgAndTwitterContent:
-			'View your public profile, share your listening statistics, liked songs, playlists and saved albums, and connect your streaming platforms for personalized insights.',
+			'View your profile on Allify, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms.',
 		profilePageImageAltText: 'Profile picture of',
 		profilePageFollowers: 'followers',
 		profilePageAddTicketsAltText: 'Add tickets',

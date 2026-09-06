@@ -382,11 +382,13 @@ export const fr = {
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			'Consultez votre profil public, partagez vos statistiques d’écoute, vos titres préférés, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
+			'Consultez votre profil sur Allify, partagez vos statistiques d’écoute, vos chansons aimées, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming.',
+		profilePageWithoutLoginMetaDescription:
+			'Créez votre profil sur Allify et partagez vos goûts musicaux avec la communauté. Connectez-vous pour personnaliser votre profil et partager vos statistiques, vos chansons aimées, vos playlists et vos albums enregistrés.',
 		profilePageMetaKeywords:
-			'musique la plus écoutée, chanson du moment, musique personnalisée, artiste le plus écouté, artiste du moment, artiste personnalisé, profil musical, statistiques musicales, profil de musique, communauté musicale',
+			'profil musical, statistiques musicales, chansons les plus écoutées, chanson du moment, chanson personnalisée, artistes les plus écoutés, artiste du moment, artiste personnalisé, chansons aimées, playlists, albums enregistrés, communauté musicale, Allify',
 		profilePageMetaOgAndTwitterContent:
-			'Consultez votre profil public, partagez vos statistiques d’écoute, vos titres préférés, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming pour obtenir des informations personnalisées.',
+			'Consultez votre profil sur Allify, partagez vos statistiques d’écoute, vos chansons aimées, vos playlists et vos albums enregistrés, et connectez vos plateformes de streaming.',
 		profilePageImageAltText: 'Photo de profil de',
 		profilePageFollowers: 'abonnés',
 		profilePageAddTicketsAltText: 'Ajouter des tickets',

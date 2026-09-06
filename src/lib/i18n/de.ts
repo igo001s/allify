@@ -375,11 +375,13 @@ export const de = {
 	profilePage: {
 		title: 'Profil | Allify',
 		profilePageMetaDescription:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein Profil auf Allify an, teile deine Hörstatistiken, deine favorisierten Songs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen.',
+		profilePageWithoutLoginMetaDescription:
+			'Erstelle dein Profil auf Allify und teile deinen Musikgeschmack mit der Community. Melde dich an, um dein Profil zu personalisieren und deine Statistiken, favorisierten Songs, Playlists und gespeicherten Alben zu teilen.',
 		profilePageMetaKeywords:
-			'meistgehörte Musik, Song des Moments, personalisierte Musik, meistgehörter Künstler, Künstler des Moments, personalisierter Künstler, Musikprofil, Musikstatistiken, Musikprofil, Musik-Community',
+			'Musikprofil, Musikstatistiken, meistgehörte Songs, Song des Moments, benutzerdefinierter Song, meistgehörte Künstler, Künstler des Moments, benutzerdefinierter Künstler, favorisierte Songs, Playlists, gespeicherte Alben, Musik-Community, Allify',
 		profilePageMetaOgAndTwitterContent:
-			'Sieh dir dein öffentliches Profil an, teile deine Hörstatistiken, Lieblingssongs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
+			'Sieh dir dein Profil auf Allify an, teile deine Hörstatistiken, deine favorisierten Songs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen.',
 		profilePageImageAltText: 'Profilbild von',
 		profilePageFollowers: 'Follower',
 		profilePageAddTicketsAltText: 'Tickets hinzufügen',
