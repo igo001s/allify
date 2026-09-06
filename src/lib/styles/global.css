@@ -9,15 +9,15 @@
 	--color-t-primary: #161616;
 	--color-t-secondary: #676767;
 	--color-t-muted: #6b7280;
-	--color-t-disabled: #9ca3af;
+	--color-t-disabled: #666666;
 	--color-t-inverse: #ffffff;
 	--color-t-inverse-muted: #d1d5db;
 
-	/* BACKGROUND*/
+	/* BACKGROUND */
 	--color-s-page: #f9fafb;
 	--color-s-default: #ffffff;
 	--color-s-muted: #f3f4f6;
-	--color-s-disabled: #f3f4f6;
+	--color-s-disabled: #666666;
 	--color-s-inverse: #161616;
 	--color-s-inverse-muted: #565656;
 
