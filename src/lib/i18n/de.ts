@@ -587,6 +587,8 @@ export const de = {
 		title: 'Einstellungen | Allify',
 		settingsPageMetaDescription:
 			'Verwalte deine Verbindungen mit Streaming-Plattformen, sieh welche Konten aktiv sind und trenne die Verbindung wann immer du möchtest.',
+		settingsPageWithoutLoginMetaDescription:
+			'Verwalte deine Verbindungen mit Streaming-Plattformen auf Allify. Melde dich an, um deine Streaming-Konten zu verbinden, anzuzeigen und zu trennen.',
 		settingsPageMetaKeywords:
 			'Einstellungen, Allify, Streaming-Verbindungen, Aktive Konten, Konten trennen, Kontoverwaltung, Benutzerpräferenzen, Profileinstellungen, Datenschutzeinstellungen, Kontoeinstellungen, Personalisierung der Erfahrung, Zugriffskontrolle, Kontosicherheit, Benachrichtigungseinstellungen, Sichtbarkeitseinstellungen',
 		settingsPageMetaOgAndTwitterContent:

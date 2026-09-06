@@ -22,11 +22,18 @@
 		$translationsStore.locale,
 		$translationsStore.settingsPage.title,
 		$translationsStore.configuration.allifyDescription,
-		$translationsStore.settingsPage.settingsPageMetaDescription
+		$userInfo?.connectedStreamings.spotify
+			? $translationsStore.settingsPage.settingsPageMetaDescription
+			: $translationsStore.settingsPage.settingsPageWithoutLoginMetaDescription
 	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.settingsPage.title}</title>
-	<meta name="description" content={$translationsStore.settingsPage.settingsPageMetaDescription} />
+	<meta
+		name="description"
+		content={$userInfo?.connectedStreamings.spotify
+			? $translationsStore.settingsPage.settingsPageMetaDescription
+			: $translationsStore.settingsPage.settingsPageWithoutLoginMetaDescription}
+	/>
 	<meta name="keywords" content={$translationsStore.settingsPage.settingsPageMetaKeywords} />
 	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->

@@ -559,6 +559,8 @@ export const ja = {
 		title: '設定 | Allify',
 		settingsPageMetaDescription:
 			'ストリーミングプラットフォームとの接続を管理し、アクティブなアカウントを確認し、いつでも切断できます。',
+		settingsPageWithoutLoginMetaDescription:
+			'Allifyでのストリーミングプラットフォームとの接続を管理します。接続、確認、切断するにはログインしてください。',
 		settingsPageMetaKeywords:
 			'設定, Allify, ストリーミング接続, アクティブなアカウント, アカウントの切断, アカウント管理, ユーザー設定, プロフィール設定, プライバシー設定, アカウント設定, エクスペリエンスのパーソナライズ, アクセス制御, アカウントのセキュリティ, 通知設定, 表示設定',
 		settingsPageMetaOgAndTwitterContent:

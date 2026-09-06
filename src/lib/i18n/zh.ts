@@ -506,6 +506,8 @@ export const zh = {
 		title: '设置 | Allify',
 		settingsPageMetaDescription:
 			'管理您与流媒体平台的连接，查看哪些账户处于活跃状态，随时断开连接。',
+		settingsPageWithoutLoginMetaDescription:
+			'在 Allify 中管理您与流媒体平台的连接。登录以连接、查看和断开您的流媒体账户。',
 		settingsPageMetaKeywords:
 			'设置, Allify, 流媒体连接, 活跃账户, 断开账户, 账户管理, 用户偏好, 个人资料设置, 隐私设置, 账户设置, 体验个性化, 访问控制, 账户安全, 通知设置, 可见性设置',
 		settingsPageMetaOgAndTwitterContent:
