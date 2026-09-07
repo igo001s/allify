@@ -105,7 +105,7 @@
 {/if}
 
 <!-- Build Profile -->
-{#if $userInfo}
+{#if $userInfo && !$userInfo?.artists?.artistOfTheMoment?.artist && !$userInfo?.tracks?.trackOfTheMoment?.track && $userInfo?.profileVisibility.visibility === undefined}
 	{#await import('$lib/components/general/modals/BuildProfileModal.svelte') then { default: BuildProfileModal }}
 		<BuildProfileModal />
 	{/await}
