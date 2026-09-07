@@ -177,7 +177,7 @@
 			<button
 				on:click={handleUpdateClick}
 				disabled={loadingUpdateItem}
-				class="button-outline button-outline-active button-outline-active-hover group"
+				class="button-outline button-outline-active button-outline-active-hover group gap-1.5 px-4 py-2.5"
 			>
 				{#if loadingUpdateItem}
 					<DotsLoading dotsTheme="base-primary" animationClass="h-1 w-1" />
@@ -193,7 +193,9 @@
 			</button>
 		{/if}
 
-		<button class="button-outline button-outline-active button-outline-active-hover group">
+		<button
+			class="button-outline button-outline-active button-outline-active-hover group gap-1.5 px-4 py-2.5"
+		>
 			<ShareIcon
 				iconSvgClass="h-4 w-4 text-brand-primary"
 				iconAltText={$translationsStore.myMusicalProfilePage.myMusicalProfilePageShareIconAltText}

@@ -10,12 +10,12 @@
 </script>
 
 <div
-	class={`flex items-center justify-center gap-1.5 rounded-full bg-white text-brand-primary ${usingTicket ? 'py-1.5 pr-3 pl-2.5' : 'p-0.5'}`}
+	class={`flex items-center justify-center gap-1.5 rounded-full bg-white text-brand-primary ${usingTicket ? 'py-1 pr-2.5 pl-2' : 'p-0.5'}`}
 >
 	<enhanced:img
 		src={TicketIcon}
 		alt={$translationsStore.generalTexts.ticketAltText}
-		class={`${usingTicket ? 'h-4.5 w-4.5' : 'h-3.5 w-3.5'}`}
+		class={`${usingTicket ? 'h-4 w-4' : 'h-3.5 w-3.5'}`}
 	/>
 
 	{#if usingTicket}

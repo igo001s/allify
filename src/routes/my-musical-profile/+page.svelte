@@ -66,7 +66,7 @@
 				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageHeading1}
 			</h1>
 
-			<div class="mx-auto w-fit lg:mx-0">
+			<div class="mx-auto w-xs lg:mx-0">
 				<StreamingSelector />
 			</div>
 		</div>

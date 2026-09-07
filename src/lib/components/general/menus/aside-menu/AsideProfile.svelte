@@ -94,7 +94,7 @@
 
 				<div class="min-w-0 flex-1 space-y-1.5 text-left">
 					<div class="flex items-center gap-4">
-						<p class="truncate text-sm leading-tight font-semibold text-t-primary">
+						<p class="truncate text-base leading-tight font-semibold text-t-primary">
 							{$userInfo?.connectedStreamings.spotify?.name}
 						</p>
 
@@ -169,20 +169,7 @@
 					<div class="my-3 h-px bg-b-muted/10"></div>
 
 					<button
-						class="
-							w-full
-							cursor-pointer
-							rounded-lg
-							bg-status-error
-							px-3
-							py-2
-							text-sm
-							font-semibold
-							text-t-inverse
-							transition-all
-							duration-200
-							hover:bg-status-error/80
-						"
+						class="button-logout w-full py-2.5"
 						on:click={() => logoutOnHeaderProfileItems($userInfo?.primaryStreaming ?? 'spotify')}
 					>
 						{$translationsStore.generalTexts.profileLoggedItem3}

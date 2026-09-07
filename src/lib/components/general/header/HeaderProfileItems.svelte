@@ -81,7 +81,7 @@
 	{#if loggedIn}
 		<div class="mb-2 space-y-1.5 px-2">
 			<div class="flex items-center gap-4">
-				<p class="truncate text-sm leading-tight font-semibold text-t-primary">
+				<p class="truncate text-base leading-tight font-semibold text-t-primary">
 					{$userInfo?.connectedStreamings.spotify?.name}
 				</p>
 
@@ -122,18 +122,7 @@
 		<div class="my-4 h-px bg-b-muted/10"></div>
 
 		<button
-			class="
-					w-full
-					cursor-pointer
-					rounded-lg
-					bg-status-error
-					px-3
-					py-2
-					font-semibold
-					text-t-inverse
-					transition-all
-					hover:bg-status-error/80
-				"
+			class="button-logout w-full py-2"
 			on:click={async () => logoutOnHeaderProfileItems($userInfo?.primaryStreaming ?? 'spotify')}
 		>
 			{$translationsStore.generalTexts.profileLoggedItem3}

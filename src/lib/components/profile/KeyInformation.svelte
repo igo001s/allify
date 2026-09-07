@@ -106,7 +106,7 @@
 
 	<div class="flex flex-col items-center gap-8 sm:gap-14 md:flex-row">
 		<button
-			class="cursor-pointer rounded-lg border border-brand-primary/20 bg-white p-1.5 text-xs font-medium text-brand-primary transition-all hover:border-brand-primary/40 hover:bg-brand-primary/5"
+			class="button-outline button-outline-active button-outline-active-hover p-2"
 			aria-label={$translationsStore.profilePage.profilePageOpenCommentsButtonAriaLabel}
 			on:click={() => (showCommentsModal = true)}
 		>
@@ -116,7 +116,7 @@
 			/>
 		</button>
 
-		<div class="flex flex-col gap-6">
+		<div class="flex w-xs flex-col gap-6">
 			<StreamingSelector bind:selectedStreaming />
 
 			<ExternalLink
@@ -125,7 +125,7 @@
 				externalLinkText={selectedStreaming === 'spotify'
 					? $translationsStore.profilePage.profilePageExternalLinkSpotify
 					: $translationsStore.profilePage.profilePageExternalLinkDeezer}
-				additionalClass="w-full sm:w-70"
+				additionalClass="w-full"
 			/>
 		</div>
 	</div>

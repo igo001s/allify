@@ -85,10 +85,10 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col items-center gap-8 sm:gap-14 md:flex-row">
+	<div class="flex max-w-sm flex-col items-center gap-8 sm:gap-14 md:flex-row">
 		{#if $userInfo?._id !== publicUserId}
 			<button
-				class="cursor-pointer rounded-lg border border-brand-primary/20 bg-white p-1.5 text-xs font-medium text-brand-primary transition-all hover:border-brand-primary/40 hover:bg-brand-primary/5"
+				class="button-outline button-outline-active button-outline-active-hover p-2"
 				aria-label={$translationsStore.musicCommunityPage.publicUser
 					.musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel}
 				on:click={() => (showAddCommentModal = true)}

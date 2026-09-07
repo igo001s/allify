@@ -34,7 +34,7 @@
 		<div class="min-w-0 flex-1">
 			<p class="truncate font-medium text-t-primary capitalize">{streaming.name}</p>
 
-			{#if $userInfo?.connectedStreamings[streaming.name]?.connected === true}
+			{#if $userInfo?.connectedStreamings[streaming.name]}
 				<p class="mt-0.5 truncate text-xs text-t-secondary">
 					{$userInfo?.connectedStreamings[streaming.name]?.email}
 				</p>
@@ -46,13 +46,13 @@
 		</div>
 	</div>
 
-	{#if $userInfo?.connectedStreamings[streaming.name]?.connected === true}
+	{#if $userInfo?.connectedStreamings[streaming.name]}
 		<button
-			class="shrink-0 cursor-pointer rounded-lg border border-status-error/40 px-2.5 py-1.5 text-xs font-medium text-status-error transition-all hover:bg-status-error/10 sm:px-3.5"
+			class="button-logout px-5 py-2"
 			on:click={() =>
 				logoutWrapper(
 					streaming.name.toLocaleLowerCase() as 'spotify' | 'deezer',
-					$userInfo?.connectedStreamings[streaming.name]?.connected ?? false,
+					$userInfo?.connectedStreamings[streaming.name] ? true : false,
 					false
 				)}
 		>
@@ -60,11 +60,11 @@
 		</button>
 	{:else}
 		<button
-			class="shrink-0 cursor-pointer rounded-lg bg-brand-primary px-2.5 py-1.5 text-xs font-medium text-t-inverse transition-all hover:bg-brand-primary-dark sm:px-3.5"
+			class="button-primary px-5 py-2"
 			on:click={() =>
 				signInWrapper(
 					streaming.name.toLocaleLowerCase() as 'spotify' | 'deezer',
-					$userInfo?.connectedStreamings[streaming.name]?.connected ?? false,
+					$userInfo?.connectedStreamings[streaming.name] ? true : false,
 					false
 				)}
 		>

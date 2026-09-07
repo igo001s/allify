@@ -22,7 +22,7 @@
 	$: isConnected = Boolean($userInfo?.connectedStreamings?.[platformKey]);
 
 	$: cardClass = [
-		'button-outline',
+		'button-outline px-4 py-2.5 gap-1.5',
 		isConnected ? 'button-outline-active' : 'button-outline-disable',
 		isConnected
 			? platformKey === 'spotify'
@@ -54,6 +54,7 @@
 				class={cardClass}
 			>
 				<ConnectIcon
+					iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 lg:h-4.5 lg:w-4.5"
 					iconAltText={$translationsStore.homePage.connectPlatformCardPlatformConnectIconAltText}
 				/>
 

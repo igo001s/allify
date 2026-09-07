@@ -72,8 +72,6 @@
 							.myMusicalProfilePageUpdateMostListenedArtistsSuccessToast
 				});
 			} else {
-				loadingMoreItems = false;
-
 				if (updateMostListenedArtistsNewLimitResponse.errorType === 'ticketUsageFailed') return;
 
 				toastStore.set({
@@ -123,8 +121,6 @@
 							.myMusicalProfilePageUpdateMostListenedTracksSuccessToast
 				});
 			} else {
-				loadingMoreItems = false;
-
 				if (updateMostListenedTracksNewLimitResponse.errorType === 'ticketUsageFailed') return;
 
 				toastStore.set({
@@ -137,17 +133,12 @@
 			}
 		}
 
-		setTimeout(() => {
-			loadingMoreItems = false;
-		}, 1000);
+		loadingMoreItems = false;
 	}
 </script>
 
 <button class="button-cta mx-auto" onclick={handleLoadMoreMusicalItems} disabled={loadingMoreItems}>
-	<div
-		class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left"
-		class:invisible={loadingMoreItems}
-	>
+	<div class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left">
 		<span class="text-sm leading-none">
 			{#if additionalItemsType === 'artists'}
 				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveArtistsButton}

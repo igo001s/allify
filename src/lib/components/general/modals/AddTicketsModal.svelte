@@ -102,7 +102,7 @@
 			<div class="mt-1 grid grid-cols-2 gap-3 sm:grid-cols-4">
 				{#each options as opt}
 					<button
-						class="cursor-pointer rounded-lg border py-3 text-sm font-semibold transition
+						class="cursor-pointer rounded-lg border py-3 text-xs font-semibold transition
 								{quantity === opt
 							? 'border-brand-primary bg-brand-primary text-t-inverse'
 							: 'border-b-default bg-s-muted text-t-primary hover:border-brand-primary hover:text-brand-primary'}"
@@ -116,7 +116,7 @@
 					type="number"
 					bind:value={quantity}
 					placeholder={$translationsStore.addTickets.addTicketsModalPlaceholder}
-					class="col-span-2 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted sm:col-span-4
+					class="col-span-2 rounded-lg border bg-s-muted px-4 py-3 text-xs font-semibold text-t-primary transition outline-none placeholder:text-t-muted sm:col-span-4
 							{!options.includes(quantity)
 						? 'border-brand-primary'
 						: 'border-b-default focus:border-brand-primary'}"
@@ -149,7 +149,7 @@
 		</div>
 
 		<button
-			class="flex min-h-11 cursor-pointer items-center justify-center rounded-lg bg-brand-primary px-5 py-3 text-sm font-semibold text-t-inverse transition hover:opacity-90"
+			class="button-primary py-2.5"
 			on:click={() =>
 				handleCreateCheckout(
 					quantity,
