@@ -4,8 +4,8 @@
 
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
-	import ChangeTrackOfTheMoment from '../../profile/track-of-the-moment/ChangeTrackOfTheMoment.svelte';
-	import ChangeArtistOfTheMoment from '../../profile/artist-of-the-moment/ChangeArtistOfTheMoment.svelte';
+	import ChangeTrackOfTheMoment from '$lib/components/profile/track/track-of-the-moment/ChangeTrackOfTheMoment.svelte';
+	import ChangeArtistOfTheMoment from '$lib/components/profile/artist/artist-of-the-moment/ChangeArtistOfTheMoment.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

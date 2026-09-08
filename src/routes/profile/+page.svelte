@@ -7,8 +7,8 @@
 
 	//Components
 	import KeyInformation from '$lib/components/profile/KeyInformation.svelte';
-	import YourSongsOnProfile from '$lib/components/profile/YourSongsOnProfile.svelte';
-	import YourArtistsOnProfile from '$lib/components/profile/YourArtistsOnProfile.svelte';
+	import YourSongsOnProfile from '$lib/components/profile/track/YourSongsOnProfile.svelte';
+	import YourArtistsOnProfile from '$lib/components/profile/artist/YourArtistsOnProfile.svelte';
 	import ChangeItemOfTheMomentModal from '$lib/components/general/modals/ChangeItemOfTheMomentModal.svelte';
 	import SelectItemOfTheMomentModal from '$lib/components/general/modals/SelectItemOfTheMomentModal.svelte';
 	import SelectCustomItemModal from '$lib/components/general/modals/SelectCustomItemModal.svelte';

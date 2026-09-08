@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Components
-	import ChangeTrackCardOnProfile from '$lib/components/profile/ChangeTrackCardOnProfile.svelte';
-	import Ticket from '../../general/Ticket.svelte';
+	import ChangeTrackCardOnProfile from '$lib/components/profile/track/ChangeTrackCardOnProfile.svelte';
+	import Ticket from '$lib/components/general/Ticket.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';

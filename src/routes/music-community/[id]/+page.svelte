@@ -14,8 +14,8 @@
 	import PublicUserKeyInformation from '$lib/components/music-community/public-user/PublicUserKeyInformation.svelte';
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
 	import AddCommentModal from '$lib/components/general/modals/AddCommentModal.svelte';
-	import ArtistsOnPublicProfile from '$lib/components/music-community/public-user/ArtistsOnPublicUser.svelte';
-	import SongsOnPublicUser from '$lib/components/music-community/public-user/SongsOnPublicUser.svelte';
+	import ArtistsOnPublicProfile from '$lib/components/music-community/public-user/artist/ArtistsOnPublicUser.svelte';
+	import SongsOnPublicUser from '$lib/components/music-community/public-user/track/SongsOnPublicUser.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

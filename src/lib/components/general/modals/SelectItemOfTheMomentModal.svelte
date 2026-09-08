@@ -4,8 +4,8 @@
 
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
-	import SelectArtistOfTheMoment from '../../profile/artist-of-the-moment/SelectArtistOfTheMoment.svelte';
-	import SelectTrackOfTheMoment from '../../profile/track-of-the-moment/SelectTrackOfTheMoment.svelte';
+	import SelectArtistOfTheMoment from '$lib/components/profile/artist/artist-of-the-moment/SelectArtistOfTheMoment.svelte';
+	import SelectTrackOfTheMoment from '$lib/components/profile/track/track-of-the-moment/SelectTrackOfTheMoment.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

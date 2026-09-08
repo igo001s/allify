@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import SelectArtistCardOnProfile from '$lib/components/profile/SelectArtistCardOnProfile.svelte';
+	import SelectArtistCardOnProfile from '$lib/components/profile/artist/SelectArtistCardOnProfile.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';

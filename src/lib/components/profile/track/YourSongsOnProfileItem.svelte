@@ -4,7 +4,7 @@
 
 	// Components
 	import Popularity from '$lib/components/general/Popularity.svelte';
-	import ExternalLink from '../general/ExternalLink.svelte';
+	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

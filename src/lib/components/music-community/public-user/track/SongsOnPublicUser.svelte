@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Components
-	import SongsOnPublicUserItem from '$lib/components/music-community/public-user/SongsOnPublicUserItem.svelte';
-	import EmptyMusicOnPublicUser from '$lib/components/music-community/public-user/EmptyMusicOnPublicUser.svelte';
+	import SongsOnPublicUserItem from '$lib/components/music-community/public-user/track/SongsOnPublicUserItem.svelte';
+	import EmptyMusicOnPublicUser from '$lib/components/music-community/public-user/track/EmptyMusicOnPublicUser.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

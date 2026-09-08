@@ -4,8 +4,8 @@
 
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
-	import SelectCustomArtist from '$lib/components/profile/custom-artist/SelectCustomArtist.svelte';
-	import SelectCustomTrack from '$lib/components/profile/custom-track/SelectCustomTrack.svelte';
+	import SelectCustomArtist from '$lib/components/profile/artist/custom-artist/SelectCustomArtist.svelte';
+	import SelectCustomTrack from '$lib/components/profile/track/custom-track/SelectCustomTrack.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
