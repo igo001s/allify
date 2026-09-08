@@ -11,7 +11,7 @@ export const ja = {
 		logoColorfulAltText: 'Allifyのカラフルなロゴ',
 		logoLightAltText: 'Allifyのライトロゴ',
 		headerNavigationItem1: '私の音楽プロフィール',
-		headerNavigationItem2: '発見',
+		headerNavigationItem2: '音楽アーカイブ',
 		headerNavigationItem3: '音楽コミュニティ',
 		headerNavigationAriaLabel: 'メインナビゲーション',
 		headerLanguagePt: 'ポルトガル語',
@@ -44,7 +44,7 @@ export const ja = {
 		burgerMenuAltText: 'ナビゲーションメニューを開く',
 		closeMenuAltText: 'ナビゲーションメニューを閉じる',
 		cardProfileAsideMenuParagraph1: 'ログインまたはアカウント作成',
-		footerFirstSectionText1: '音楽データを発見、接続、そして新しい音楽の聴き方に変える。',
+		footerFirstSectionText1: '音楽データをつなげ、体験を生み出し、音楽を探求する新しい方法に変える。',
 		footerFirstSectionText2: '製品提供元',
 		footerFirstSectionIgoLogoAltText: 'Igoのロゴ、Allifyの開発者',
 		footerCopyrightText: '全著作権所有',
@@ -53,7 +53,7 @@ export const ja = {
 		footerColumn1Item2AltText: 'GitHubアイコン',
 		footerColumn2Title: 'ナビゲーション',
 		footerColumn2Item1: '私の音楽プロフィール',
-		footerColumn2Item2: '発見',
+		footerColumn2Item2: '音楽アーカイブ',
 		footerColumn2Item3: '音楽コミュニティ',
 		footerColumn3Title: '法的情報',
 		footerColumn3Item1: 'プライバシーポリシー',
@@ -69,8 +69,8 @@ export const ja = {
 		notLoggedHeading1: 'ログインしていません',
 		notLoggedMyMusicProfileParagraph1:
 			'音楽プロフィールにアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
-		notLoggedDiscoveriesParagraph1:
-			'音楽発見にアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
+		notLoggedMusicArchiveParagraph1:
+			'音楽アーカイブにアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
 		notLoggedMusicCommunityParagraph1:
 			'音楽コミュニティにアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
 		notLoggedProfileParagraph1:
@@ -225,24 +225,15 @@ export const ja = {
 		myMusicalProfilePageUpdateTracksErrorToast:
 			'最もよく聴いている楽曲の更新中にエラーが発生しました。'
 	},
-	discoveriesPage: {
-		title: '音乐发现 | Allify',
-		discoveriesPageMetaDescription:
-			'使用Alli发现新音乐。根据你的音乐喜好，获取个性化的艺术家和歌曲推荐。',
-		discoveriesPageMetaKeywords:
-			'音乐发现, 音乐推荐, 推荐艺术家, 推荐歌曲, 探索新音乐, 扩展音乐品味, Allify',
-		discoveriesPageMetaOgAndTwitterContent: '通过Alli发现专为你推荐的艺术家和歌曲。',
-		discoveriesPageHeading1: '用Alli发现新音乐',
-		discoveriesPageParagraph1:
-			'Alli会根据你最常听的音乐，为你推荐5首歌曲和5位艺术家，帮助你拓展音乐品味。',
-		discoveriesPageHeading2Artists: '推荐艺术家',
-		discoveriesPageHeading2Tracks: '推荐歌曲',
-		discoveriesPageDiscoverNow: '点击“立即发现”获取你的推荐',
-		discoveriesPageDiscoverAgain: '点击“再次发现”刷新你的推荐',
-		discoveriesPageDiscoverNowButton: '立即发现',
-		discoveriesPageDiscoverAgainButton: '再次发现',
-		alliMascotWavingAltText: 'Alli吉祥物在发现页面挥手',
-		discoveriesPageDiscoveriesErrorToast: '加载你的发现时出错。请稍后再试。'
+	musicArchivePage: {
+		title: 'Music Archive | Allify',
+		musicArchivePageMetaDescription:
+			'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。',
+		musicArchivePageMetaWithoutLoginMetaDescription: 'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。ログインして、あなたの完全な音楽アーカイブにアクセスしてください。',
+		musicArchivePageMetaKeywords:
+			'音楽アーカイブ, 音楽履歴, 聴いたアーティスト, 聴いた楽曲, 音楽の旅, 音楽の思い出, Music Archive, Allify',
+		musicArchivePageMetaOgAndTwitterContent:
+			'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。'
 	},
 	musicCommunityPage: {
 		title: '音楽コミュニティ | Allify',

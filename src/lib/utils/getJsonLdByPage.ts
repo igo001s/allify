@@ -69,7 +69,7 @@ export function getJsonLdByPage(
 				]
 			});
 		}
-		case 'discoveriesPage': {
+		case 'musicArchivePage': {
 			return JSON.stringify({
 				'@context': 'https://schema.org',
 				'@graph': [
@@ -77,8 +77,8 @@ export function getJsonLdByPage(
 					allifyWebsiteLd,
 					{
 						'@type': 'WebPage',
-						'@id': 'https://allify.club/discoveries#webpage',
-						url: 'https://allify.club/discoveries',
+						'@id': 'https://allify.club/music-archive#webpage',
+						url: 'https://allify.club/music-archive',
 						name,
 						description,
 						inLanguage: locale,

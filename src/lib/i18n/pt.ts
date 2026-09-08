@@ -11,7 +11,7 @@ export const pt = {
 		logoColorfulAltText: 'Logotipo colorido do Allify',
 		logoLightAltText: 'Logotipo claro do Allify',
 		headerNavigationItem1: 'Meu Perfil Musical',
-		headerNavigationItem2: 'Descobertas',
+		headerNavigationItem2: 'Arquivo Musical',
 		headerNavigationItem3: 'Comunidade Musical',
 		headerNavigationAriaLabel: 'Navegação principal',
 		headerLanguagePt: 'Português',
@@ -45,7 +45,7 @@ export const pt = {
 		closeMenuAltText: 'Fechar menu de navegação',
 		cardProfileAsideMenuParagraph1: 'Entrar ou criar conta',
 		footerFirstSectionText1:
-			'Transformando dados musicais em descobertas, conexões e novas formas de ouvir música.',
+			'Transformando dados musicais em conexões, experiências e novas formas de explorar sua música.',
 		footerFirstSectionText2: 'Um produto de',
 		footerFirstSectionIgoLogoAltText: 'Logotipo do Igo, desenvolvedor do Allify',
 		footerCopyrightText: 'Todos os direitos reservados.',
@@ -54,7 +54,7 @@ export const pt = {
 		footerColumn1Item2AltText: 'Ícone do GitHub',
 		footerColumn2Title: 'NAVEGAÇÃO',
 		footerColumn2Item1: 'Meu Perfil Musical',
-		footerColumn2Item2: 'Descobertas',
+		footerColumn2Item2: 'Arquivo Musical',
 		footerColumn2Item3: 'Comunidade Musical',
 		footerColumn3Title: 'LEGAL',
 		footerColumn3Item1: 'Política de Privacidade',
@@ -70,8 +70,8 @@ export const pt = {
 		notLoggedHeading1: 'Você não está logado',
 		notLoggedMyMusicProfileParagraph1:
 			'Para acessar seu perfil musical, conecte-se com uma de suas plataformas de streaming favoritas.',
-		notLoggedDiscoveriesParagraph1:
-			'Para acessar as descobertas musicais, conecte-se com uma de suas plataformas de streaming favoritas.',
+		notLoggedMusicArchiveParagraph1:
+			'Para acessar seu arquivo musical, conecte-se com uma de suas plataformas de streaming favoritas.',
 		notLoggedMusicCommunityParagraph1:
 			'Para acessar a Comunidade Musical, conecte-se com uma de suas plataformas de streaming favoritas.',
 		notLoggedProfileParagraph1:
@@ -226,27 +226,15 @@ export const pt = {
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Músicas mais ouvidas atualizadas com sucesso!',
 		myMusicalProfilePageUpdateTracksErrorToast: 'Erro ao atualizar as músicas mais ouvidas.'
 	},
-	discoveriesPage: {
-		title: 'Descobertas Musicais | Allify',
-		discoveriesPageMetaDescription:
-			'Encontre novas músicas com o Alli. Receba recomendações personalizadas de artistas e faixas com base no seu gosto musical.',
-		discoveriesPageMetaKeywords:
-			'descobertas musicais, recomendações de música, artistas recomendados, músicas recomendadas, explorar novas músicas, expandir gosto musical, Allify',
-		discoveriesPageMetaOgAndTwitterContent:
-			'Descubra artistas e músicas recomendados especialmente para você com o Alli.',
-		discoveriesPageHeading1: 'Descubra novas músicas com o Alli',
-		discoveriesPageParagraph1:
-			'O Alli recomenda 5 músicas e 5 artistas para você explorar e expandir seu gosto musical, com base no que você mais ouve.',
-		discoveriesPageHeading2Artists: 'Artistas recomendados',
-		discoveriesPageHeading2Tracks: 'Músicas recomendadas',
-		discoveriesPageDiscoverNow: 'Clique em "Descobrir agora" para receber suas recomendações',
-		discoveriesPageDiscoverAgain:
-			'Clique em "Descobrir novamente" para atualizar suas recomendações',
-		discoveriesPageDiscoverNowButton: 'Descobrir agora',
-		discoveriesPageDiscoverAgainButton: 'Descobrir novamente',
-		alliMascotWavingAltText: 'Mascote Alli acenando na página de descobertas',
-		discoveriesPageDiscoveriesErrorToast:
-			'Algo deu errado ao carregar suas descobertas. Por favor, tente novamente mais tarde.'
+	musicArchivePage: {
+		title: 'Music Archive | Allify',
+		musicArchivePageMetaDescription:
+			'Explore os artistas e músicas que já fizeram parte da sua jornada musical no Allify.',
+		musicArchivePageMetaWithoutLoginMetaDescription: 'Explore os artistas e músicas que já fizeram parte da sua jornada musical no Allify. Faça login para acessar seu arquivo musical completo.',
+		musicArchivePageMetaKeywords:
+			'arquivo musical, histórico musical, artistas ouvidos, músicas ouvidas, jornada musical, memória musical, Music Archive, Allify',
+		musicArchivePageMetaOgAndTwitterContent:
+			'Explore os artistas e músicas que já fizeram parte da sua jornada musical com o Allify.'
 	},
 	musicCommunityPage: {
 		title: 'Comunidade Musical | Allify',

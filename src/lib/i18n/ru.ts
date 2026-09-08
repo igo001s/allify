@@ -11,7 +11,7 @@ export const ru = {
 		logoColorfulAltText: 'Цветной логотип Allify',
 		logoLightAltText: 'Светлый логотип Allify',
 		headerNavigationItem1: 'Мой музыкальный профиль',
-		headerNavigationItem2: 'Открытия',
+		headerNavigationItem2: 'Музыкальный архив',
 		headerNavigationItem3: 'Музыкальное сообщество',
 		headerNavigationAriaLabel: 'Основная навигация',
 		headerLanguagePt: 'Португальский',
@@ -44,8 +44,7 @@ export const ru = {
 		burgerMenuAltText: 'Открыть меню навигации',
 		closeMenuAltText: 'Закрыть меню навигации',
 		cardProfileAsideMenuParagraph1: 'Войти или создать аккаунт',
-		footerFirstSectionText1:
-			'Преобразуем музыкальные данные в открытия, связи и новые способы прослушивания музыки.',
+		footerFirstSectionText1: 'Преобразуем музыкальные данные в связи, впечатления и новые способы исследовать вашу музыку.',
 		footerFirstSectionText2: 'Продукт компании',
 		footerFirstSectionIgoLogoAltText: 'Логотип Igo, разработчика Allify',
 		footerCopyrightText: 'Все права защищены.',
@@ -54,7 +53,7 @@ export const ru = {
 		footerColumn1Item2AltText: 'Иконка GitHub',
 		footerColumn2Title: 'НАВИГАЦИЯ',
 		footerColumn2Item1: 'Мой музыкальный профиль',
-		footerColumn2Item2: 'Открытия',
+		footerColumn2Item2: 'Музыкальный архив',
 		footerColumn2Item3: 'Музыкальное сообщество',
 		footerColumn3Title: 'ПРАВОВАЯ ИНФОРМАЦИЯ',
 		footerColumn3Item1: 'Политика конфиденциальности',
@@ -70,8 +69,8 @@ export const ru = {
 		notLoggedHeading1: 'Вы не вошли в систему',
 		notLoggedMyMusicProfileParagraph1:
 			'Чтобы получить доступ к своему музыкальному профилю, подключитесь к одной из ваших любимых стриминговых платформ.',
-		notLoggedDiscoveriesParagraph1:
-			'Чтобы получить доступ к музыкальным открытиям, подключитесь к одной из ваших любимых стриминговых платформ.',
+		notLoggedMusicArchiveParagraph1:
+			'Чтобы получить доступ к музыкальному архиву, подключитесь к одной из ваших любимых стриминговых платформ.',
 		notLoggedMusicCommunityParagraph1:
 			'Чтобы получить доступ к музыкальному сообществу, подключитесь к одной из ваших любимых стриминговых платформ.',
 		notLoggedProfileParagraph1:
@@ -228,26 +227,15 @@ export const ru = {
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Самые прослушиваемые треки успешно обновлены!',
 		myMusicalProfilePageUpdateTracksErrorToast: 'Ошибка при обновлении самых прослушиваемых треков.'
 	},
-	discoveriesPage: {
-		title: 'Музыкальные открытия | Allify',
-		discoveriesPageMetaDescription:
-			'Находите новую музыку с Alli. Получайте персональные рекомендации артистов и треков на основе ваших музыкальных предпочтений.',
-		discoveriesPageMetaKeywords:
-			'музыкальные открытия, музыкальные рекомендации, рекомендуемые артисты, рекомендуемые треки, исследовать новую музыку, расширять музыкальные предпочтения, Allify',
-		discoveriesPageMetaOgAndTwitterContent:
-			'Откройте для себя артистов и треки, подобранные специально для вас с Alli.',
-		discoveriesPageHeading1: 'Откройте новую музыку с Alli',
-		discoveriesPageParagraph1:
-			'Alli рекомендует 5 треков и 5 артистов, чтобы вы могли расширить свои музыкальные предпочтения на основе того, что вы слушаете чаще всего.',
-		discoveriesPageHeading2Artists: 'Рекомендуемые артисты',
-		discoveriesPageHeading2Tracks: 'Рекомендуемые треки',
-		discoveriesPageDiscoverNow: 'Нажмите «Открыть сейчас», чтобы получить рекомендации',
-		discoveriesPageDiscoverAgain: 'Нажмите «Открыть снова», чтобы обновить рекомендации',
-		discoveriesPageDiscoverNowButton: 'Открыть сейчас',
-		discoveriesPageDiscoverAgainButton: 'Открыть снова',
-		alliMascotWavingAltText: 'Маскот Alli машет на странице открытий',
-		discoveriesPageDiscoveriesErrorToast:
-			'Что-то пошло не так при загрузке ваших открытий. Пожалуйста, попробуйте позже.'
+	musicArchivePage: {
+		title: 'Music Archive | Allify',
+		musicArchivePageMetaDescription:
+			'Исследуйте артистов и песни, которые уже были частью вашего музыкального пути в Allify.',
+		musicArchivePageMetaWithoutLoginMetaDescription: 'Исследуйте артистов и песни, которые уже были частью вашего музыкального пути в Allify. Войдите, чтобы получить доступ к вашему полному музыкальному архиву.',
+		musicArchivePageMetaKeywords:
+			'музыкальный архив, история музыки, прослушанные артисты, прослушанные песни, музыкальный путь, музыкальные воспоминания, Music Archive, Allify',
+		musicArchivePageMetaOgAndTwitterContent:
+			'Исследуйте артистов и песни, которые уже были частью вашего музыкального пути с Allify.'
 	},
 	musicCommunityPage: {
 		title: 'Музыкальное сообщество | Allify',

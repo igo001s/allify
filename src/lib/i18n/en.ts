@@ -11,7 +11,7 @@ export const en = {
 		logoColorfulAltText: 'Colorful Allify logo',
 		logoLightAltText: 'Light Allify logo',
 		headerNavigationItem1: 'My Music Profile',
-		headerNavigationItem2: 'Discoveries',
+		headerNavigationItem2: 'Music Archive',
 		headerNavigationItem3: 'Music Community',
 		headerNavigationAriaLabel: 'Main navigation',
 		headerLanguagePt: 'Portuguese',
@@ -44,8 +44,7 @@ export const en = {
 		burgerMenuAltText: 'Open navigation menu',
 		closeMenuAltText: 'Close navigation menu',
 		cardProfileAsideMenuParagraph1: 'Log in or create account',
-		footerFirstSectionText1:
-			'Transforming music data into discoveries, connections, and new ways to listen to music.',
+		footerFirstSectionText1: 'Transforming music data into connections, experiences, and new ways to explore your music.',
 		footerFirstSectionText2: 'A product by',
 		footerFirstSectionIgoLogoAltText: 'Igo logo, developer of Allify',
 		footerCopyrightText: 'All rights reserved.',
@@ -54,7 +53,7 @@ export const en = {
 		footerColumn1Item2AltText: 'GitHub icon',
 		footerColumn2Title: 'NAVIGATION',
 		footerColumn2Item1: 'My Music Profile',
-		footerColumn2Item2: 'Discoveries',
+		footerColumn2Item2: 'Music Archive',
 		footerColumn2Item3: 'Music Community',
 		footerColumn3Title: 'LEGAL',
 		footerColumn3Item1: 'Privacy Policy',
@@ -70,8 +69,8 @@ export const en = {
 		notLoggedHeading1: 'You are not logged in',
 		notLoggedMyMusicProfileParagraph1:
 			'To access your music profile, connect with one of your favorite streaming platforms.',
-		notLoggedDiscoveriesParagraph1:
-			'To access music discoveries, connect with one of your favorite streaming platforms.',
+		notLoggedMusicArchiveParagraph1:
+			'To access your music archive, connect with one of your favorite streaming platforms.',
 		notLoggedMusicCommunityParagraph1:
 			'To access Music Community, connect with one of your favorite streaming platforms.',
 		notLoggedProfileParagraph1:
@@ -224,26 +223,15 @@ export const en = {
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Most-listened-to tracks updated successfully!',
 		myMusicalProfilePageUpdateTracksErrorToast: 'Error updating most-listened-to tracks.'
 	},
-	discoveriesPage: {
-		title: 'Music Discoveries | Allify',
-		discoveriesPageMetaDescription:
-			'Find new music with Alli. Get personalized recommendations for artists and tracks based on your musical taste.',
-		discoveriesPageMetaKeywords:
-			'music discoveries, music recommendations, recommended artists, recommended tracks, explore new music, expand musical taste, Allify',
-		discoveriesPageMetaOgAndTwitterContent:
-			'Discover artists and songs recommended just for you with Alli.',
-		discoveriesPageHeading1: 'Discover new music with Alli',
-		discoveriesPageParagraph1:
-			'Alli recommends 5 tracks and 5 artists to help you explore and expand your musical taste based on what you listen to most.',
-		discoveriesPageHeading2Artists: 'Recommended artists',
-		discoveriesPageHeading2Tracks: 'Recommended tracks',
-		discoveriesPageDiscoverNow: 'Click "Discover now" to get your recommendations',
-		discoveriesPageDiscoverAgain: 'Click "Discover again" to refresh your recommendations',
-		discoveriesPageDiscoverNowButton: 'Discover now',
-		discoveriesPageDiscoverAgainButton: 'Discover again',
-		alliMascotWavingAltText: 'Alli mascot waving on the discoveries page',
-		discoveriesPageDiscoveriesErrorToast:
-			'Something went wrong while loading your discoveries. Please try again later.'
+	musicArchivePage: {
+		title: 'Music Archive | Allify',
+		musicArchivePageMetaDescription:
+			'Explore the artists and songs that have been part of your musical journey on Allify.',
+		musicArchivePageMetaWithoutLoginMetaDescription: 'Explore the artists and songs that have been part of your musical journey on Allify. Log in to access your full music archive.',
+		musicArchivePageMetaKeywords:
+			'music archive, music history, listened artists, listened songs, musical journey, music memories, Music Archive, Allify',
+		musicArchivePageMetaOgAndTwitterContent:
+			'Explore the artists and songs that have been part of your musical journey with Allify.'
 	},
 	musicCommunityPage: {
 		title: 'Music Community | Allify',
