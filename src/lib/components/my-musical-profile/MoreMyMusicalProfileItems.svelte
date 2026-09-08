@@ -138,25 +138,25 @@
 </script>
 
 <button class="button-cta mx-auto" onclick={handleLoadMoreMusicalItems} disabled={loadingMoreItems}>
-	<div class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left">
-		<span class="text-sm leading-none">
-			{#if additionalItemsType === 'artists'}
-				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveArtistsButton}
-			{:else}
-				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveTracksButton}
+	{#if !loadingMoreItems}
+		<div class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left">
+			<span class="text-sm leading-none">
+				{#if additionalItemsType === 'artists'}
+					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveArtistsButton}
+				{:else}
+					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveTracksButton}
+				{/if}
+			</span>
+
+			{#if additionalItemsType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) > new Date()}
+				<Ticket usingTicket={true} />
 			{/if}
-		</span>
 
-		{#if additionalItemsType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) > new Date()}
-			<Ticket usingTicket={true} />
-		{/if}
-
-		{#if additionalItemsType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) > new Date()}
-			<Ticket usingTicket={true} />
-		{/if}
-	</div>
-
-	{#if loadingMoreItems}
+			{#if additionalItemsType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) > new Date()}
+				<Ticket usingTicket={true} />
+			{/if}
+		</div>
+	{:else}
 		<div class="absolute inset-0 flex items-center justify-center">
 			<DotsLoading dotsTheme="base-light" />
 		</div>
