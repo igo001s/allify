@@ -32,12 +32,12 @@
 			{/if}
 		</div>
 
-		<div class="max-w-[16rem] text-center sm:max-w-xs">
-			<h4 class="font-semibold">
+		<div class="max-w-[16rem] space-y-1 text-center sm:max-w-xs">
+			<h4 class="heading-4">
 				{emptyArtistHeading4}
 			</h4>
 
-			<p class="mt-1 text-xs leading-relaxed text-t-secondary">
+			<p class="text-xs leading-relaxed text-t-secondary">
 				{emptyArtistParagraph1}
 			</p>
 		</div>

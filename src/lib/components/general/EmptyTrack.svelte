@@ -33,7 +33,7 @@
 		</div>
 
 		<div class="max-w-[16rem] text-center sm:max-w-xs">
-			<h4 class="font-semibold">
+			<h4 class="heading-4">
 				{emptyTrackHeading4}
 			</h4>
 

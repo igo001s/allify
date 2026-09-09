@@ -49,7 +49,7 @@
 		<div class="flex min-w-0 flex-1 flex-col justify-between">
 			<div class="space-y-1.5">
 				{#if trackItem.track.name}
-					<h4 class="truncate text-base leading-tight font-bold text-t-primary sm:text-[1.2rem]">
+					<h4 class="heading-4">
 						{trackItem.track.name}
 					</h4>
 				{/if}
