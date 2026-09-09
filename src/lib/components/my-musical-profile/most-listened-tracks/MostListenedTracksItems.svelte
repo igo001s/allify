@@ -16,7 +16,7 @@
 
 <div class="flex flex-col gap-10 lg:gap-14">
 	<div class="mb-3 flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-		<h2 class="text-xl font-semibold">
+		<h2 class="heading-2">
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedTracksHeading2}
 		</h2>
 

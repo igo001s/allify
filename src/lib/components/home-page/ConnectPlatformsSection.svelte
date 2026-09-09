@@ -30,7 +30,7 @@
 
 <section class="bg-brand-primary" id="connect-platforms-section">
 	<div class="flex flex-col items-center gap-4 text-t-inverse sm:px-12 lg:justify-between lg:gap-8">
-		<h2 class="text-center text-4xl lg:text-left lg:text-5xl">
+		<h2 class="heading-2-connected-platforms">
 			{$translationsStore.homePage.connectPlatformsSectionHeading1}
 		</h2>
 

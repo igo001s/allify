@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex flex-col items-start gap-5">
-	<h2>
+	<h2 class="heading-2">
 		{$translationsStore.settingsPage.settingsPageProfileVisibilityHeading2}
 	</h2>
 

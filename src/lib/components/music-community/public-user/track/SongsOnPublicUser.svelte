@@ -23,7 +23,7 @@
 </script>
 
 <section class="space-y-7">
-	<h2 class="text-xl font-semibold text-t-primary sm:text-2xl">
+	<h2 class="heading-2">
 		{$translationsStore.musicCommunityPage.publicUser
 			.musicCommunityPagePublicUserSongsOnPublicUserHeading2}
 		{publicUser?.name}

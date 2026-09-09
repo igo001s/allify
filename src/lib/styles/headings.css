@@ -6,6 +6,18 @@
 	@apply text-center text-4xl text-t-primary lg:text-left lg:text-5xl;
 }
 
+.heading-2 {
+	@apply text-xl font-medium text-t-primary sm:text-2xl;
+}
+
+.heading-2-connected-platforms {
+	@apply text-center text-4xl lg:text-left lg:text-5xl;
+}
+
+.heading-2-devices {
+	@apply text-center text-4xl text-t-primary lg:w-120 lg:min-w-120 lg:text-left lg:text-5xl;
+}
+
 .heading-2-legal-pages {
 	@apply text-xl font-medium text-t-primary sm:text-2xl;
 }

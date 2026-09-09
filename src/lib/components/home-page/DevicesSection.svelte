@@ -21,7 +21,7 @@
 	/>
 
 	<div class="w-full space-y-6 lg:w-3/5 2xl:w-2/5">
-		<h2 class="text-center text-4xl text-t-primary lg:w-120 lg:min-w-120 lg:text-left lg:text-5xl">
+		<h2 class="heading-2-devices">
 			{$translationsStore.homePage.devicesSectionHeading1}
 		</h2>
 

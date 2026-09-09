@@ -10,7 +10,7 @@
 <div class="w-full rounded-lg border border-b-default bg-s-default p-5 xl:w-2/5">
 	<div class="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 		<div>
-			<h2 class="text-xl font-semibold text-t-primary">
+			<h2 class="heading-2">
 				{$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionHeading2}
 			</h2>
 
