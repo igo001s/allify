@@ -19,9 +19,7 @@
 </script>
 
 <div class="flex w-full flex-col gap-4 xl:w-1/3">
-	<h3
-		class={`text-xs font-semibold tracking-[0.18em] text-t-secondary ${artistItem.type !== 'customArtist' ? 'uppercase' : ''}`}
-	>
+	<h3 class={`heading-3 ${artistItem.type !== 'customArtist' ? 'uppercase' : ''}`}>
 		{#if artistItem.type === 'mostListenedArtist'}
 			{$translationsStore.musicCommunityPage.publicUser
 				.musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1}

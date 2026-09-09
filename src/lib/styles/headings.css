@@ -21,3 +21,11 @@
 .heading-2-legal-pages {
 	@apply text-xl font-medium text-t-primary sm:text-2xl;
 }
+
+.heading-3 {
+	@apply text-sm font-medium text-t-secondary;
+}
+
+.heading-3-legal-pages {
+	@apply text-lg font-medium text-t-primary sm:text-xl;
+}

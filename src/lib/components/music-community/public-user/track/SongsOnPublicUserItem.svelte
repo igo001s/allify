@@ -19,9 +19,7 @@
 </script>
 
 <div class="flex w-full flex-col gap-4 xl:w-1/3">
-	<h3
-		class={`text-xs font-semibold tracking-[0.18em] text-t-secondary ${trackItem.type !== 'customTrack' ? 'uppercase' : ''}`}
-	>
+	<h3 class={`heading-3 ${trackItem.type !== 'customTrack' ? 'uppercase' : ''}`}>
 		{#if trackItem.type === 'mostListenedTrack'}
 			{$translationsStore.musicCommunityPage.publicUser
 				.musicCommunityPagePublicUserSongsOnPublicUserHeading3v1}

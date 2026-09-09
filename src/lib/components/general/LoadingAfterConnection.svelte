@@ -41,9 +41,9 @@
 		</div>
 
 		<div class="relative flex flex-col items-center gap-2">
-			<h3 class="text-xl font-bold text-t-primary">
+			<p class="text-xl font-bold text-t-primary">
 				{$translationsStore.generalTexts.loadingComponentHeading1}
-			</h3>
+			</p>
 			<p class="text-center leading-relaxed text-t-secondary">
 				{#if streamingPlatform === 'spotify'}
 					{@html $translationsStore.generalTexts.loadingComponentSpotifyParagraph1}
