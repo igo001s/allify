@@ -52,14 +52,14 @@
 </script>
 
 <div
-	class="bg-surface-secondary flex flex-col items-center justify-center gap-6 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
+	class="flex flex-col items-center justify-center gap-6 px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
 >
-	<div class="max-w-lg">
-		<h2 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
+	<div class="max-w-lg space-y-10">
+		<h1 class="heading-1">
 			{$translationsStore.generalTexts.notLoggedHeading1}
-		</h2>
+		</h1>
 
-		<p class="mt-7 text-base text-t-secondary sm:text-lg">
+		<p class="text-base text-t-secondary sm:text-lg">
 			{notLoggedParagraph}
 		</p>
 	</div>

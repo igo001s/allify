@@ -5,3 +5,7 @@
 .heading-1-hero {
 	@apply text-center text-4xl text-t-primary lg:text-left lg:text-5xl;
 }
+
+.heading-2-legal-pages {
+	@apply text-xl font-medium text-t-primary sm:text-2xl;
+}
