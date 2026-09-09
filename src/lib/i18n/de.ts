@@ -228,7 +228,7 @@ export const de = {
 		myMusicalProfilePageUpdateTracksErrorToast: 'Fehler beim Aktualisieren der meistgehörten Songs.'
 	},
 	musicArchivePage: {
-		title: 'Music Archive | Allify',
+		title: 'Musikalisches Archiv | Allify',
 		musicArchivePageMetaDescription:
 			'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise auf Allify waren.',
 		musicArchivePageMetaWithoutLoginMetaDescription: 'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise auf Allify waren. Melde dich an, um auf dein vollständiges Musikarchiv zuzugreifen.',

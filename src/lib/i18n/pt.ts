@@ -227,7 +227,7 @@ export const pt = {
 		myMusicalProfilePageUpdateTracksErrorToast: 'Erro ao atualizar as músicas mais ouvidas.'
 	},
 	musicArchivePage: {
-		title: 'Music Archive | Allify',
+		title: 'Arquivo Musical | Allify',
 		musicArchivePageMetaDescription:
 			'Explore os artistas e músicas que já fizeram parte da sua jornada musical no Allify.',
 		musicArchivePageMetaWithoutLoginMetaDescription: 'Explore os artistas e músicas que já fizeram parte da sua jornada musical no Allify. Faça login para acessar seu arquivo musical completo.',

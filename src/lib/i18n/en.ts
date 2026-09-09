@@ -224,7 +224,7 @@ export const en = {
 		myMusicalProfilePageUpdateTracksErrorToast: 'Error updating most-listened-to tracks.'
 	},
 	musicArchivePage: {
-		title: 'Music Archive | Allify',
+		title: 'Musical Archive | Allify',
 		musicArchivePageMetaDescription:
 			'Explore the artists and songs that have been part of your musical journey on Allify.',
 		musicArchivePageMetaWithoutLoginMetaDescription: 'Explore the artists and songs that have been part of your musical journey on Allify. Log in to access your full music archive.',

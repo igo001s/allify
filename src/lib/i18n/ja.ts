@@ -226,7 +226,7 @@ export const ja = {
 			'最もよく聴いている楽曲の更新中にエラーが発生しました。'
 	},
 	musicArchivePage: {
-		title: 'Music Archive | Allify',
+		title: '音楽アーカイブ | Allify',
 		musicArchivePageMetaDescription:
 			'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。',
 		musicArchivePageMetaWithoutLoginMetaDescription: 'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。ログインして、あなたの完全な音楽アーカイブにアクセスしてください。',

@@ -229,7 +229,7 @@ export const es = {
 		myMusicalProfilePageUpdateTracksErrorToast: 'Error al actualizar las canciones más escuchadas.'
 	},
 	musicArchivePage: {
-		title: 'Music Archive | Allify',
+		title: 'Archivo Musical | Allify',
 		musicArchivePageMetaDescription:
 			'Explora los artistas y canciones que ya han formado parte de tu viaje musical en Allify.',
 		musicArchivePageMetaWithoutLoginMetaDescription: 'Explora los artistas y canciones que ya han formado parte de tu viaje musical en Allify. Inicia sesión para acceder a tu archivo musical completo.',

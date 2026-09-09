@@ -232,7 +232,7 @@ export const fr = {
 			'Erreur lors de la mise à jour des morceaux les plus écoutés.'
 	},
 	musicArchivePage: {
-		title: 'Music Archive | Allify',
+		title: 'Archive Musicale | Allify',
 		musicArchivePageMetaDescription:
 			'Explorez les artistes et les chansons qui ont déjà fait partie de votre parcours musical sur Allify.',
 		musicArchivePageMetaWithoutLoginMetaDescription: 'Explorez les artistes et les chansons qui ont déjà fait partie de votre parcours musical sur Allify. Connectez-vous pour accéder à votre archive musicale complète.',

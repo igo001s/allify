@@ -213,7 +213,7 @@ export const zh = {
 		myMusicalProfilePageUpdateTracksErrorToast: '最常听的歌曲更新时出错。'
 	},
 	musicArchivePage: {
-		title: 'Music Archive | Allify',
+		title: '音乐档案 | Allify',
 		musicArchivePageMetaDescription: '探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。',
 		musicArchivePageMetaWithoutLoginMetaDescription: '探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。登录以访问你的完整音乐档案。',
 		musicArchivePageMetaKeywords:

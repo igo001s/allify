@@ -228,7 +228,7 @@ export const ru = {
 		myMusicalProfilePageUpdateTracksErrorToast: 'Ошибка при обновлении самых прослушиваемых треков.'
 	},
 	musicArchivePage: {
-		title: 'Music Archive | Allify',
+		title: 'Музыкальный архив | Allify',
 		musicArchivePageMetaDescription:
 			'Исследуйте артистов и песни, которые уже были частью вашего музыкального пути в Allify.',
 		musicArchivePageMetaWithoutLoginMetaDescription: 'Исследуйте артистов и песни, которые уже были частью вашего музыкального пути в Allify. Войдите, чтобы получить доступ к вашему полному музыкальному архиву.',
