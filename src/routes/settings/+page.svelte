@@ -54,7 +54,7 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	<h1 class="mb-10">{$translationsStore.settingsPage.settingsPageHeading1}</h1>
+	<h1 class="heading-1">{$translationsStore.settingsPage.settingsPageHeading1}</h1>
 
 	<div class="flex flex-col items-start gap-14">
 		<ConnectedPlatforms />

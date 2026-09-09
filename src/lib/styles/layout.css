@@ -9,3 +9,7 @@
 .footer-spacing {
 	@apply p-7 md:p-10 xl:px-24 xl:pt-16 xl:pb-10;
 }
+
+.feedback-spacing {
+	@apply flex flex-col items-center justify-center p-7 text-center md:p-10 xl:py-24;
+}

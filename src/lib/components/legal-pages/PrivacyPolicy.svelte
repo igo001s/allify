@@ -4,7 +4,9 @@
 </script>
 
 <div>
-	<h1>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv1Heading1}</h1>
+	<h1 class="heading-1 mb-10">
+		{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv1Heading1}
+	</h1>
 	<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv1LastUpdated}</p>
 	<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv1Paragraph1}</p>
 </div>

@@ -93,7 +93,7 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	<h1 class="mb-3 text-2xl font-semibold text-t-primary md:text-3xl lg:mb-5">
+	<h1 class="heading-1">
 		{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
 	</h1>
 

@@ -61,7 +61,7 @@
 
 {#if $userInfo?.connectedStreamings.spotify}
 	<div class="mb-12 flex flex-col justify-between gap-5 lg:flex-row lg:items-center">
-		<h1 class="mb-2 text-2xl font-semibold text-t-primary md:text-3xl lg:mb-4">
+		<h1 class="heading-1">
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageHeading1}
 		</h1>
 

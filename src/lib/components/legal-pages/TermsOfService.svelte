@@ -4,7 +4,9 @@
 </script>
 
 <div>
-	<h1>{$translationsStore.legalPages.termsOfService.termsOfServiceDiv1Heading1}</h1>
+	<h1 class="heading-1 mb-10">
+		{$translationsStore.legalPages.termsOfService.termsOfServiceDiv1Heading1}
+	</h1>
 	<time datetime="2026-08-25">
 		{$translationsStore.legalPages.termsOfService.termsOfServiceDiv1LastUpdated}
 	</time>

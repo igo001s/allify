@@ -10,7 +10,7 @@
 
 <section class="flex items-center bg-s-default lg:justify-between">
 	<div class="flex max-w-full flex-col items-center gap-8 lg:mb-14 lg:max-w-190 lg:items-start">
-		<h1 class="text-center text-4xl text-t-primary lg:text-left lg:text-5xl">
+		<h1 class="heading-1-hero">
 			{$translationsStore.homePage.homePageHeroSectionHeading1}
 		</h1>
 
@@ -30,7 +30,7 @@
 		/>
 
 		<a
-			class="mt-6 w-full cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-sm font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark lg:w-90 lg:max-w-90"
+			class="button-cta"
 			href={`${$userInfo?.connectedStreamings.spotify ? '/my-musical-profile' : '#connect-platforms-section'}`}
 			aria-label={$userInfo !== undefined
 				? $translationsStore.homePage.homePageHeroSectionButton1v2AriaLabel

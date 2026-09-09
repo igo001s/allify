@@ -52,30 +52,30 @@
 	/>
 </svelte:head>
 
-<div class="flex max-w-xl flex-col items-center">
-	<h1 class="text-2xl leading-tight font-medium text-t-primary sm:text-3xl lg:text-4xl">
-		{$translationsStore.paymentSuccessPage.paymentSuccessPageHeading1}
-	</h1>
+<div class="feedback-spacing gap-6">
+	<div class="max-w-xl space-y-5">
+		<h1 class="heading-1">
+			{$translationsStore.paymentSuccessPage.paymentSuccessPageHeading1}
+		</h1>
 
-	<p class="mt-5 max-w-lg text-base leading-relaxed text-t-secondary sm:text-lg">
-		{$translationsStore.paymentSuccessPage.paymentSuccessPageParagraph1}
-	</p>
+		<p class="mt-5 max-w-lg text-base leading-relaxed text-t-secondary sm:text-lg">
+			{$translationsStore.paymentSuccessPage.paymentSuccessPageParagraph1}
+		</p>
+	</div>
+
+	<div class="bg-surface-primary flex items-center gap-3 rounded-xl px-6 py-4 shadow-sm">
+		<span class="text-xl font-semibold text-t-primary"
+			>+{$page.url.searchParams.get('quantity')}</span
+		>
+
+		<Ticket usingTicket={false} />
+
+		<span class="text-sm font-medium text-t-secondary">
+			{$translationsStore.paymentSuccessPage.paymentSuccessPageTicketsAddedText}
+		</span>
+	</div>
+
+	<a href="/" class="button-cta mt-6">
+		{$translationsStore.paymentSuccessPage.paymentSuccessPageButtonText}
+	</a>
 </div>
-
-<div class="bg-surface-primary mt-8 flex items-center gap-3 rounded-xl px-6 py-4 shadow-sm">
-	<span class="text-xl font-semibold text-t-primary">+{$page.url.searchParams.get('quantity')}</span
-	>
-
-	<Ticket usingTicket={true} />
-
-	<span class="text-sm font-medium text-t-secondary">
-		{$translationsStore.paymentSuccessPage.paymentSuccessPageTicketsAddedText}
-	</span>
-</div>
-
-<a
-	href="/"
-	class="mt-14 inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-md transition-all duration-200 hover:scale-102 hover:shadow-lg"
->
-	{$translationsStore.paymentSuccessPage.paymentSuccessPageButtonText}
-</a>

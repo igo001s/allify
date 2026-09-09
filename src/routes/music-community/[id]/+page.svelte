@@ -197,12 +197,12 @@
 		<div
 			class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
 		>
-			<div class="max-w-xl">
-				<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
+			<div class="max-w-xl space-y-7">
+				<h1 class="heading-1">
 					{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundHeading1}
 				</h1>
 
-				<p class="mt-7 text-base text-t-secondary sm:text-lg">
+				<p class="text-base text-t-secondary sm:text-lg">
 					{$translationsStore.musicCommunityPage.noUserFound
 						.musicCommunityPageNoUserFoundParagraph1}
 				</p>
