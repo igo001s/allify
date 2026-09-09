@@ -214,7 +214,7 @@
 
 				<button
 					on:click={() => goto('/music-community')}
-					class="mt-4 w-60 cursor-pointer rounded-lg bg-brand-primary py-5 text-center text-xs font-medium text-t-inverse shadow-md transition-all hover:scale-102 hover:bg-brand-primary-dark sm:w-90"
+					class="button-cta"
 				>
 					{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundButton}
 				</button>
