@@ -231,7 +231,8 @@ export const de = {
 		title: 'Musikalisches Archiv | Allify',
 		musicArchivePageMetaDescription:
 			'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise auf Allify waren.',
-		musicArchivePageMetaWithoutLoginMetaDescription: 'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise auf Allify waren. Melde dich an, um auf dein vollständiges Musikarchiv zuzugreifen.',
+		musicArchivePageMetaWithoutLoginMetaDescription:
+			'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise auf Allify waren. Melde dich an, um auf dein vollständiges Musikarchiv zuzugreifen.',
 		musicArchivePageMetaKeywords:
 			'Musikarchiv, Musikverlauf, gehörte Künstler, gehörte Songs, musikalische Reise, musikalische Erinnerungen, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:

@@ -54,15 +54,13 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	<section class="base-section settings-page">
-		<h1 class="mb-10">{$translationsStore.settingsPage.settingsPageHeading1}</h1>
+	<h1 class="mb-10">{$translationsStore.settingsPage.settingsPageHeading1}</h1>
 
-		<div class="flex flex-col items-start gap-14">
-			<ConnectedPlatforms />
+	<div class="flex flex-col items-start gap-14">
+		<ConnectedPlatforms />
 
-			<ChangeVisibility />
-		</div>
-	</section>
+		<ChangeVisibility />
+	</div>
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedSettingsParagraph1} />
 {/if}

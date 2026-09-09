@@ -20,15 +20,22 @@
 		'$translationsStore.locale',
 		$translationsStore.musicArchivePage.title,
 		$translationsStore.configuration.allifyDescription,
-		$userInfo?.connectedStreamings.spotify ? $translationsStore.musicArchivePage.musicArchivePageMetaDescription : $translationsStore.musicArchivePage.musicArchivePageMetaWithoutLoginMetaDescription
+		$userInfo?.connectedStreamings.spotify
+			? $translationsStore.musicArchivePage.musicArchivePageMetaDescription
+			: $translationsStore.musicArchivePage.musicArchivePageMetaWithoutLoginMetaDescription
 	)}</script>`}
 	<!-- General -->
 	<title>{$translationsStore.musicArchivePage.title}</title>
 	<meta
 		name="description"
-		content={$userInfo?.connectedStreamings.spotify ? $translationsStore.musicArchivePage.musicArchivePageMetaDescription : $translationsStore.musicArchivePage.musicArchivePageMetaWithoutLoginMetaDescription}
+		content={$userInfo?.connectedStreamings.spotify
+			? $translationsStore.musicArchivePage.musicArchivePageMetaDescription
+			: $translationsStore.musicArchivePage.musicArchivePageMetaWithoutLoginMetaDescription}
 	/>
-	<meta name="keywords" content={$translationsStore.musicArchivePage.musicArchivePageMetaKeywords} />
+	<meta
+		name="keywords"
+		content={$translationsStore.musicArchivePage.musicArchivePageMetaKeywords}
+	/>
 	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
@@ -48,7 +55,7 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	<section>{$translationsStore.musicArchivePage.title}</section>
+	{$translationsStore.musicArchivePage.title}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedMusicArchiveParagraph1} />
 {/if}

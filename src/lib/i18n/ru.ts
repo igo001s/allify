@@ -44,7 +44,8 @@ export const ru = {
 		burgerMenuAltText: 'Открыть меню навигации',
 		closeMenuAltText: 'Закрыть меню навигации',
 		cardProfileAsideMenuParagraph1: 'Войти или создать аккаунт',
-		footerFirstSectionText1: 'Преобразуем музыкальные данные в связи, впечатления и новые способы исследовать вашу музыку.',
+		footerFirstSectionText1:
+			'Преобразуем музыкальные данные в связи, впечатления и новые способы исследовать вашу музыку.',
 		footerFirstSectionText2: 'Продукт компании',
 		footerFirstSectionIgoLogoAltText: 'Логотип Igo, разработчика Allify',
 		footerCopyrightText: 'Все права защищены.',
@@ -231,7 +232,8 @@ export const ru = {
 		title: 'Музыкальный архив | Allify',
 		musicArchivePageMetaDescription:
 			'Исследуйте артистов и песни, которые уже были частью вашего музыкального пути в Allify.',
-		musicArchivePageMetaWithoutLoginMetaDescription: 'Исследуйте артистов и песни, которые уже были частью вашего музыкального пути в Allify. Войдите, чтобы получить доступ к вашему полному музыкальному архиву.',
+		musicArchivePageMetaWithoutLoginMetaDescription:
+			'Исследуйте артистов и песни, которые уже были частью вашего музыкального пути в Allify. Войдите, чтобы получить доступ к вашему полному музыкальному архиву.',
 		musicArchivePageMetaKeywords:
 			'музыкальный архив, история музыки, прослушанные артисты, прослушанные песни, музыкальный путь, музыкальные воспоминания, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:

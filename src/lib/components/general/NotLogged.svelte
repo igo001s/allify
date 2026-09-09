@@ -51,38 +51,36 @@
 	}
 </script>
 
-<section class="px-8 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-16 2xl:px-24">
-	<div
-		class="bg-surface-secondary flex flex-col items-center justify-center gap-6 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
-	>
-		<div class="max-w-lg">
-			<h2 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
-				{$translationsStore.generalTexts.notLoggedHeading1}
-			</h2>
+<div
+	class="bg-surface-secondary flex flex-col items-center justify-center gap-6 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
+>
+	<div class="max-w-lg">
+		<h2 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
+			{$translationsStore.generalTexts.notLoggedHeading1}
+		</h2>
 
-			<p class="mt-7 text-base text-t-secondary sm:text-lg">
-				{notLoggedParagraph}
-			</p>
-		</div>
-
-		<div class="mt-8 flex flex-col gap-4 sm:flex-row sm:gap-6">
-			{#each streamings as streaming}
-				<button
-					on:click={() =>
-						signInWrapper(
-							streaming.name,
-							$userInfo?.connectedStreamings[streaming.name] ? true : false,
-							false
-						)}
-					disabled={streaming.name === 'deezer'}
-					title={setTitleByStreaming(streaming.name)}
-					class={setCLassByStreaming(streaming.name)}
-				>
-					<streaming.icon iconSvgClass="w-6.5 h-6.5 text-t-inverse" />
-
-					{streaming.buttonText}
-				</button>
-			{/each}
-		</div>
+		<p class="mt-7 text-base text-t-secondary sm:text-lg">
+			{notLoggedParagraph}
+		</p>
 	</div>
-</section>
+
+	<div class="mt-8 flex flex-col gap-4 sm:flex-row sm:gap-6">
+		{#each streamings as streaming}
+			<button
+				on:click={() =>
+					signInWrapper(
+						streaming.name,
+						$userInfo?.connectedStreamings[streaming.name] ? true : false,
+						false
+					)}
+				disabled={streaming.name === 'deezer'}
+				title={setTitleByStreaming(streaming.name)}
+				class={setCLassByStreaming(streaming.name)}
+			>
+				<streaming.icon iconSvgClass="w-6.5 h-6.5 text-t-inverse" />
+
+				{streaming.buttonText}
+			</button>
+		{/each}
+	</div>
+</div>

@@ -52,37 +52,30 @@
 	/>
 </svelte:head>
 
-<section class="px-8 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-16 2xl:px-24">
-	<div
-		class="bg-surface-secondary flex flex-col items-center justify-center rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
+<div class="flex max-w-xl flex-col items-center">
+	<h1 class="text-2xl leading-tight font-medium text-t-primary sm:text-3xl lg:text-4xl">
+		{$translationsStore.paymentSuccessPage.paymentSuccessPageHeading1}
+	</h1>
+
+	<p class="mt-5 max-w-lg text-base leading-relaxed text-t-secondary sm:text-lg">
+		{$translationsStore.paymentSuccessPage.paymentSuccessPageParagraph1}
+	</p>
+</div>
+
+<div class="bg-surface-primary mt-8 flex items-center gap-3 rounded-xl px-6 py-4 shadow-sm">
+	<span class="text-xl font-semibold text-t-primary">+{$page.url.searchParams.get('quantity')}</span
 	>
-		<div class="flex max-w-xl flex-col items-center">
-			<h1 class="text-2xl leading-tight font-medium text-t-primary sm:text-3xl lg:text-4xl">
-				{$translationsStore.paymentSuccessPage.paymentSuccessPageHeading1}
-			</h1>
 
-			<p class="mt-5 max-w-lg text-base leading-relaxed text-t-secondary sm:text-lg">
-				{$translationsStore.paymentSuccessPage.paymentSuccessPageParagraph1}
-			</p>
-		</div>
+	<Ticket usingTicket={true} />
 
-		<div class="bg-surface-primary mt-8 flex items-center gap-3 rounded-xl px-6 py-4 shadow-sm">
-			<span class="text-xl font-semibold text-t-primary"
-				>+{$page.url.searchParams.get('quantity')}</span
-			>
+	<span class="text-sm font-medium text-t-secondary">
+		{$translationsStore.paymentSuccessPage.paymentSuccessPageTicketsAddedText}
+	</span>
+</div>
 
-			<Ticket usingTicket={true} />
-
-			<span class="text-sm font-medium text-t-secondary">
-				{$translationsStore.paymentSuccessPage.paymentSuccessPageTicketsAddedText}
-			</span>
-		</div>
-
-		<a
-			href="/"
-			class="mt-14 inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-md transition-all duration-200 hover:scale-102 hover:shadow-lg"
-		>
-			{$translationsStore.paymentSuccessPage.paymentSuccessPageButtonText}
-		</a>
-	</div>
-</section>
+<a
+	href="/"
+	class="mt-14 inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-brand-primary px-6 py-3.5 text-sm font-semibold text-t-inverse shadow-md transition-all duration-200 hover:scale-102 hover:shadow-lg"
+>
+	{$translationsStore.paymentSuccessPage.paymentSuccessPageButtonText}
+</a>

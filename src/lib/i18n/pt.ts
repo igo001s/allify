@@ -230,7 +230,8 @@ export const pt = {
 		title: 'Arquivo Musical | Allify',
 		musicArchivePageMetaDescription:
 			'Explore os artistas e músicas que já fizeram parte da sua jornada musical no Allify.',
-		musicArchivePageMetaWithoutLoginMetaDescription: 'Explore os artistas e músicas que já fizeram parte da sua jornada musical no Allify. Faça login para acessar seu arquivo musical completo.',
+		musicArchivePageMetaWithoutLoginMetaDescription:
+			'Explore os artistas e músicas que já fizeram parte da sua jornada musical no Allify. Faça login para acessar seu arquivo musical completo.',
 		musicArchivePageMetaKeywords:
 			'arquivo musical, histórico musical, artistas ouvidos, músicas ouvidas, jornada musical, memória musical, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:

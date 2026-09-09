@@ -68,8 +68,7 @@ export const zh = {
 		loadingComponentAriaLabel: '加载动画',
 		notLoggedHeading1: '您尚未登录',
 		notLoggedMyMusicProfileParagraph1: '要访问您的音乐档案，请连接您喜爱的流媒体平台之一。',
-		notLoggedMusicArchiveParagraph1:
-			'要访问音乐档案，请连接您喜爱的流媒体平台之一。',
+		notLoggedMusicArchiveParagraph1: '要访问音乐档案，请连接您喜爱的流媒体平台之一。',
 		notLoggedMusicCommunityParagraph1: '要访问音乐社区，请连接您喜爱的流媒体平台之一。',
 		notLoggedProfileParagraph1: '要访问您的资料，请连接您喜爱的流媒体平台之一。',
 		notLoggedSettingsParagraph1: '要访问设置，请连接您喜爱的流媒体平台之一。',
@@ -215,7 +214,8 @@ export const zh = {
 	musicArchivePage: {
 		title: '音乐档案 | Allify',
 		musicArchivePageMetaDescription: '探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。',
-		musicArchivePageMetaWithoutLoginMetaDescription: '探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。登录以访问你的完整音乐档案。',
+		musicArchivePageMetaWithoutLoginMetaDescription:
+			'探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。登录以访问你的完整音乐档案。',
 		musicArchivePageMetaKeywords:
 			'音乐档案, 音乐历史, 听过的艺人, 听过的歌曲, 音乐旅程, 音乐回忆, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent: '探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。'

@@ -114,29 +114,27 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	<section class="base-section">
-		<KeyInformation
-			userInfo={selectedStreaming === 'spotify' ? $userInfo.connectedStreamings.spotify : null}
-			tickets={$userInfo.tickets}
-			bind:showCommentsModal
+	<KeyInformation
+		userInfo={selectedStreaming === 'spotify' ? $userInfo.connectedStreamings.spotify : null}
+		tickets={$userInfo.tickets}
+		bind:showCommentsModal
+	/>
+
+	<div class="mt-12 flex w-full flex-col gap-10 lg:gap-14">
+		<YourSongsOnProfile
+			openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('music')}
+			openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('music')}
+			openChangeCustomItemModal={() => openChangeCustomItemModal('music')}
+			openSelectCustomItemModal={() => openSelectCustomItemModal('music')}
 		/>
 
-		<div class="mt-12 flex w-full flex-col gap-10 lg:gap-14">
-			<YourSongsOnProfile
-				openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('music')}
-				openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('music')}
-				openChangeCustomItemModal={() => openChangeCustomItemModal('music')}
-				openSelectCustomItemModal={() => openSelectCustomItemModal('music')}
-			/>
-
-			<YourArtistsOnProfile
-				openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('artist')}
-				openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('artist')}
-				openChangeCustomItemModal={() => openChangeCustomItemModal('artist')}
-				openSelectCustomItemModal={() => openSelectCustomItemModal('artist')}
-			/>
-		</div>
-	</section>
+		<YourArtistsOnProfile
+			openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('artist')}
+			openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('artist')}
+			openChangeCustomItemModal={() => openChangeCustomItemModal('artist')}
+			openSelectCustomItemModal={() => openSelectCustomItemModal('artist')}
+		/>
+	</div>
 
 	{#if showSelectItemOfTheMomentModal}
 		<SelectItemOfTheMomentModal {closeSelectItemOfTheMomentModal} itemType={selectedItemType} />

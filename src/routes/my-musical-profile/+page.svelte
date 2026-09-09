@@ -60,27 +60,25 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	<section class="base-section core-page">
-		<div class="mb-12 flex flex-col justify-between gap-5 lg:flex-row lg:items-center">
-			<h1 class="mb-2 text-2xl font-semibold text-t-primary md:text-3xl lg:mb-4">
-				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageHeading1}
-			</h1>
+	<div class="mb-12 flex flex-col justify-between gap-5 lg:flex-row lg:items-center">
+		<h1 class="mb-2 text-2xl font-semibold text-t-primary md:text-3xl lg:mb-4">
+			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageHeading1}
+		</h1>
 
-			<div class="mx-auto w-xs lg:mx-0">
-				<StreamingSelector />
-			</div>
+		<div class="mx-auto w-xs lg:mx-0">
+			<StreamingSelector />
 		</div>
+	</div>
 
-		<div class="space-y-20 lg:space-y-30">
-			{#each itemsType as type}
-				{#if type === 'artists'}
-					<MostListenedArtistsItems />
-				{:else if type === 'tracks'}
-					<MostListenedTracksItems />
-				{/if}
-			{/each}
-		</div>
-	</section>
+	<div class="space-y-20 lg:space-y-30">
+		{#each itemsType as type}
+			{#if type === 'artists'}
+				<MostListenedArtistsItems />
+			{:else if type === 'tracks'}
+				<MostListenedTracksItems />
+			{/if}
+		{/each}
+	</div>
 {:else}
 	<NotLogged
 		notLoggedParagraph={$translationsStore.generalTexts.notLoggedMyMusicProfileParagraph1}

@@ -29,9 +29,7 @@
 </script>
 
 <section class="bg-brand-primary" id="connect-platforms-section">
-	<div
-		class="flex flex-col items-center gap-4 px-8 py-12 text-t-inverse sm:px-12 lg:justify-between lg:gap-8 lg:py-32 2xl:px-24"
-	>
+	<div class="flex flex-col items-center gap-4 text-t-inverse sm:px-12 lg:justify-between lg:gap-8">
 		<h2 class="text-center text-4xl lg:text-left lg:text-5xl">
 			{$translationsStore.homePage.connectPlatformsSectionHeading1}
 		</h2>

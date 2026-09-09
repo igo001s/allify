@@ -146,81 +146,73 @@
 </svelte:head>
 
 {#if loadingUser}
-	<section class="base-section">
-		<div class="flex h-64 items-center justify-center">
-			<DotsLoading />
-		</div>
-	</section>
+	<div class="flex h-64 items-center justify-center">
+		<DotsLoading />
+	</div>
 {:else if $userInfo?.connectedStreamings.spotify}
-	<section class="base-section">
-		{#if user}
-			<div class="mb-8 flex flex-col gap-8">
-				<a
-					href="/music-community"
-					class="flex items-center text-sm font-medium text-brand-primary transition-all"
-				>
-					<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
-
-					{$translationsStore.musicCommunityPage.publicUser
-						.musicCommunityPagePublicUserBackToMusicCommunityButton}
-				</a>
-
-				{#if user._id === $userInfo?._id}
-					<p class="text-sm text-t-secondary">
-						<span class="font-medium text-t-primary"
-							>{$translationsStore.musicCommunityPage.publicUser
-								.musicCommunityPagePublicUserYourPublicProfile}</span
-						>
-						<span class="mx-1">·</span>
-						{$translationsStore.musicCommunityPage.publicUser
-							.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
-						<a href="/profile" class="font-medium text-brand-primary"
-							>{$translationsStore.musicCommunityPage.publicUser
-								.musicCommunityPagePublicUserProfilePageLink}</a
-						>.
-					</p>
-				{/if}
-			</div>
-
-			<PublicUserKeyInformation
-				publicUserStreamingInfo={selectedStreaming === 'spotify'
-					? user.connectedStreamings.spotify
-					: null}
-				publicUserId={user._id}
-				createdAt={user.createdAt}
-				bind:showAddCommentModal
-			/>
-
-			<div class="mt-12 flex w-full flex-col gap-10 lg:gap-14">
-				<SongsOnPublicUser publicUser={user} />
-
-				<ArtistsOnPublicProfile publicUser={user} />
-			</div>
-		{:else}
-			<div
-				class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
+	{#if user}
+		<div class="mb-8 flex flex-col gap-8">
+			<a
+				href="/music-community"
+				class="flex items-center text-sm font-medium text-brand-primary transition-all"
 			>
-				<div class="max-w-xl">
-					<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
-						{$translationsStore.musicCommunityPage.noUserFound
-							.musicCommunityPageNoUserFoundHeading1}
-					</h1>
+				<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
 
-					<p class="mt-7 text-base text-t-secondary sm:text-lg">
-						{$translationsStore.musicCommunityPage.noUserFound
-							.musicCommunityPageNoUserFoundParagraph1}
-					</p>
-				</div>
+				{$translationsStore.musicCommunityPage.publicUser
+					.musicCommunityPagePublicUserBackToMusicCommunityButton}
+			</a>
 
-				<button
-					on:click={() => goto('/music-community')}
-					class="button-cta"
-				>
-					{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundButton}
-				</button>
+			{#if user._id === $userInfo?._id}
+				<p class="text-sm text-t-secondary">
+					<span class="font-medium text-t-primary"
+						>{$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserYourPublicProfile}</span
+					>
+					<span class="mx-1">·</span>
+					{$translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserYourCanEditItOnProfilePage}
+					<a href="/profile" class="font-medium text-brand-primary"
+						>{$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserProfilePageLink}</a
+					>.
+				</p>
+			{/if}
+		</div>
+
+		<PublicUserKeyInformation
+			publicUserStreamingInfo={selectedStreaming === 'spotify'
+				? user.connectedStreamings.spotify
+				: null}
+			publicUserId={user._id}
+			createdAt={user.createdAt}
+			bind:showAddCommentModal
+		/>
+
+		<div class="mt-12 flex w-full flex-col gap-10 lg:gap-14">
+			<SongsOnPublicUser publicUser={user} />
+
+			<ArtistsOnPublicProfile publicUser={user} />
+		</div>
+	{:else}
+		<div
+			class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
+		>
+			<div class="max-w-xl">
+				<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
+					{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundHeading1}
+				</h1>
+
+				<p class="mt-7 text-base text-t-secondary sm:text-lg">
+					{$translationsStore.musicCommunityPage.noUserFound
+						.musicCommunityPageNoUserFoundParagraph1}
+				</p>
 			</div>
-		{/if}
-	</section>
+
+			<button on:click={() => goto('/music-community')} class="button-cta">
+				{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundButton}
+			</button>
+		</div>
+	{/if}
 
 	{#if showAddCommentModal && user}
 		<AddCommentModal

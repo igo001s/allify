@@ -21,13 +21,13 @@
 		</p>
 	</div>
 
-	<div class="flex flex-col items-center lg:items-start">
+	<div class="flex flex-col items-center gap-5 lg:items-start">
 		<p class="text-sm font-medium text-t-inverse-muted">
 			{$translationsStore.generalTexts.footerFirstSectionText2}
 		</p>
 
 		<IgoLogo
-			logoSvgClass="w-14 mt-2 h-fit text-t-inverse cursor-pointer transition-all hover:scale-102"
+			logoSvgClass="w-14 h-14 h-fit text-t-inverse cursor-pointer transition-all hover:scale-102"
 			logoAltText={$translationsStore.generalTexts.footerFirstSectionIgoLogoAltText}
 		/>
 	</div>

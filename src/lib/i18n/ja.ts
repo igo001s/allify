@@ -44,7 +44,8 @@ export const ja = {
 		burgerMenuAltText: 'ナビゲーションメニューを開く',
 		closeMenuAltText: 'ナビゲーションメニューを閉じる',
 		cardProfileAsideMenuParagraph1: 'ログインまたはアカウント作成',
-		footerFirstSectionText1: '音楽データをつなげ、体験を生み出し、音楽を探求する新しい方法に変える。',
+		footerFirstSectionText1:
+			'音楽データをつなげ、体験を生み出し、音楽を探求する新しい方法に変える。',
 		footerFirstSectionText2: '製品提供元',
 		footerFirstSectionIgoLogoAltText: 'Igoのロゴ、Allifyの開発者',
 		footerCopyrightText: '全著作権所有',
@@ -229,7 +230,8 @@ export const ja = {
 		title: '音楽アーカイブ | Allify',
 		musicArchivePageMetaDescription:
 			'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。',
-		musicArchivePageMetaWithoutLoginMetaDescription: 'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。ログインして、あなたの完全な音楽アーカイブにアクセスしてください。',
+		musicArchivePageMetaWithoutLoginMetaDescription:
+			'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。ログインして、あなたの完全な音楽アーカイブにアクセスしてください。',
 		musicArchivePageMetaKeywords:
 			'音楽アーカイブ, 音楽履歴, 聴いたアーティスト, 聴いた楽曲, 音楽の旅, 音楽の思い出, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:

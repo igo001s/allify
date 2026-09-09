@@ -64,25 +64,20 @@
 	/>
 </svelte:head>
 
-<section class="px-8 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-16 2xl:px-24">
-	<div
-		class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
-	>
-		<div class="max-w-lg">
-			<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
-				{title}
-			</h1>
+<div
+	class="bg-surface-secondary flex flex-col items-center justify-center gap-12 rounded-lg px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
+>
+	<div class="max-w-lg">
+		<h1 class="mb-3 text-2xl font-medium text-t-primary sm:text-3xl lg:text-4xl">
+			{title}
+		</h1>
 
-			<p class="mt-7 text-base text-t-secondary sm:text-lg">
-				{description}
-			</p>
-		</div>
-
-		<button
-			on:click={() => goto('/')}
-			class="button-cta"
-		>
-			{$translationsStore.errorPage.errorPageButtonGoHome}
-		</button>
+		<p class="mt-7 text-base text-t-secondary sm:text-lg">
+			{description}
+		</p>
 	</div>
-</section>
+
+	<button on:click={() => goto('/')} class="button-cta">
+		{$translationsStore.errorPage.errorPageButtonGoHome}
+	</button>
+</div>

@@ -22,9 +22,7 @@
 	}
 </script>
 
-<header
-	class="relative flex items-center justify-between bg-s-default px-8 py-8 shadow-sm sm:px-12 lg:py-12 2xl:px-20"
->
+<header class="header-spacing relative flex items-center justify-between bg-s-default">
 	<div class="flex items-center gap-4 md:gap-10 2xl:gap-20">
 		<AllifyLogoColorful
 			logoSvgClass="w-26 h-fit transition-all cursor-pointer lg:w-32 hover:scale-102"
@@ -34,13 +32,13 @@
 		<HeaderNavigation />
 	</div>
 
-	<div class="hidden gap-6 lg:flex lg:items-center">
+	<div class="hidden gap-7.5 lg:flex lg:items-center">
 		<HeaderSelectLanguage bind:openLanguageDropdown bind:showProfileOptions />
 
 		<HeaderProfile bind:showProfileOptions bind:openLanguageDropdown />
 	</div>
 
-	<div class="flex items-center gap-2 lg:hidden">
+	<div class="flex items-center gap-2.5 lg:hidden">
 		<HeaderSelectLanguage bind:openLanguageDropdown />
 
 		<button

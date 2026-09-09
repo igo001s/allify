@@ -44,7 +44,8 @@ export const es = {
 		burgerMenuAltText: 'Abrir menú de navegación',
 		closeMenuAltText: 'Cerrar menú de navegación',
 		cardProfileAsideMenuParagraph1: 'Iniciar sesión o crear cuenta',
-		footerFirstSectionText1: 'Transformando datos musicales en conexiones, experiencias y nuevas formas de explorar tu música.',
+		footerFirstSectionText1:
+			'Transformando datos musicales en conexiones, experiencias y nuevas formas de explorar tu música.',
 		footerFirstSectionText2: 'Un producto de',
 		footerFirstSectionIgoLogoAltText: 'Logotipo de Igo, desarrollador de Allify',
 		footerCopyrightText: 'Todos los derechos reservados.',
@@ -232,7 +233,8 @@ export const es = {
 		title: 'Archivo Musical | Allify',
 		musicArchivePageMetaDescription:
 			'Explora los artistas y canciones que ya han formado parte de tu viaje musical en Allify.',
-		musicArchivePageMetaWithoutLoginMetaDescription: 'Explora los artistas y canciones que ya han formado parte de tu viaje musical en Allify. Inicia sesión para acceder a tu archivo musical completo.',
+		musicArchivePageMetaWithoutLoginMetaDescription:
+			'Explora los artistas y canciones que ya han formado parte de tu viaje musical en Allify. Inicia sesión para acceder a tu archivo musical completo.',
 		musicArchivePageMetaKeywords:
 			'archivo musical, historial musical, artistas escuchados, canciones escuchadas, viaje musical, recuerdos musicales, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:

@@ -7,8 +7,8 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 </script>
 
-<footer class="bg-s-inverse">
-	<div class="px-8 py-12 sm:px-12 2xl:px-20">
+<footer class="footer-spacing bg-s-inverse">
+	<div class="pb-8 lg:pb-12">
 		<div
 			class="
 				grid
@@ -27,10 +27,11 @@
 		class="
 			border-t
 			border-b-muted
-			py-4
+			pt-8
 			text-center
 			text-xs
 			text-t-inverse-muted
+			lg:pt-12
 		"
 	>
 		<p>

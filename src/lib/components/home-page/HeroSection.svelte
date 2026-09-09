@@ -8,10 +8,7 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 </script>
 
-<section
-	class="flex items-center bg-s-default px-8 py-12 sm:px-12 lg:justify-between lg:py-32 2xl:px-24"
-	id="hero-section"
->
+<section class="flex items-center bg-s-default lg:justify-between">
 	<div class="flex max-w-full flex-col items-center gap-8 lg:mb-14 lg:max-w-190 lg:items-start">
 		<h1 class="text-center text-4xl text-t-primary lg:text-left lg:text-5xl">
 			{$translationsStore.homePage.homePageHeroSectionHeading1}
