@@ -12,7 +12,7 @@
 		},
 		{
 			name: $translationsStore.generalTexts.headerNavigationItem2,
-			link: '/discoveries'
+			link: '/music-archive'
 		},
 		{
 			name: $translationsStore.generalTexts.headerNavigationItem3,

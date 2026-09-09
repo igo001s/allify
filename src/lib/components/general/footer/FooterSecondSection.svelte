@@ -34,7 +34,7 @@
 				},
 				{
 					text: $translationsStore.generalTexts.footerColumn2Item2,
-					href: '/discoveries'
+					href: '/music-archive'
 				},
 				{
 					text: $translationsStore.generalTexts.footerColumn2Item3,

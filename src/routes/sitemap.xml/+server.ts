@@ -8,7 +8,7 @@ export const GET: RequestHandler = async () => {
 	const pages = [
 		{ name: '', lastMod: '2026-08-16' },
 		{ name: '/my-musical-profile', lastMod: '2026-08-16' },
-		{ name: '/discoveries', lastMod: '2026-08-16' },
+		{ name: '/music-archive', lastMod: '2026-09-09' },
 		{ name: '/music-community', lastMod: '2026-08-16' },
 		{ name: '/profile', lastMod: '2026-08-16' },
 		{ name: '/settings', lastMod: '2026-08-16' },
