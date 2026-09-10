@@ -38,11 +38,11 @@
 			{track.name}
 		</p>
 
-		<p class="line-clamp-1 text-[10px] text-t-secondary sm:text-[11px]">
+		<p class=" text-[10px] text-t-secondary sm:text-[11px]">
 			{track.artists.join(', ')}
 		</p>
 
-		<p class="line-clamp-1 text-[9px] text-t-secondary/70 sm:text-[10px]">
+		<p class=" text-[9px] text-t-secondary/70 sm:text-[10px]">
 			{track.albumName}
 		</p>
 	</div>

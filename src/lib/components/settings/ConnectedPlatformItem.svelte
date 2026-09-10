@@ -39,7 +39,7 @@
 					{$userInfo?.connectedStreamings[streaming.name]?.email}
 				</p>
 			{:else}
-				<p class="mt-0.5 line-clamp-2 text-xs text-t-secondary sm:line-clamp-1">
+				<p class="mt-0.5 line-clamp-2 text-xs text-t-secondary">
 					{$translationsStore.settingsPage.settingsPageConnectedStreamingNotConnected}
 				</p>
 			{/if}

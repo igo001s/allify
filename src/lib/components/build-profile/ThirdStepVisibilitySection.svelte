@@ -1,4 +1,7 @@
 <script lang="ts">
+	// Components
+	import SelectVisibilityCard from '$lib/components/build-profile/SelectVisibilityCard.svelte';
+
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
@@ -27,33 +30,25 @@
 	</p>
 
 	<div class="mt-1 flex flex-col gap-3 sm:mt-2">
-		<button
-			on:click={() => handleVisibilitySelection('public')}
-			class={`${buildProfileVisibility === 'public' ? 'border-brand-primary bg-brand-primary/5' : 'border-s-muted'}
-				flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3`}
-		>
-			<p class="text-xs font-semibold text-t-primary sm:text-sm">
-				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption}
-			</p>
-
-			<p class="text-[10px] text-t-secondary sm:text-xs">
-				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription}
-			</p>
-		</button>
-
-		<button
-			on:click={() => handleVisibilitySelection('private')}
-			class={`${buildProfileVisibility === 'private' ? 'border-brand-primary bg-brand-primary/5' : 'border-s-muted'}
-				flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3`}
-		>
-			<p class="text-xs font-semibold text-t-primary sm:text-sm">
-				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption}
-			</p>
-
-			<p class="text-[10px] text-t-secondary sm:text-xs">
-				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription}
-			</p>
-		</button>
+		{#each [
+			{
+				visibility: 'public',
+				paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption,
+				paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription
+			},
+			{
+				visibility: 'private',
+				paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption,
+				paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription
+			}
+		] as option}
+			<SelectVisibilityCard
+				handleVisibilitySelection={handleVisibilitySelection}
+				buildProfileVisibility={buildProfileVisibility}
+				paragraph1={option.paragraph1}
+				paragraph2={option.paragraph2}
+			/>
+		{/each}
 	</div>
 
 	<p class="text-center text-[10px] text-t-secondary sm:text-[11px]">
