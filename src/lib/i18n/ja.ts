@@ -109,7 +109,6 @@ export const ja = {
 		buildProfileSecondStepArtistSectionParagraph3: '最近よく聴いたアーティスト',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'音楽プロフィール用のアーティスト選択',
-		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'フォロワー',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくしましょう。',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'プロフィールの公開設定を選択してください',
@@ -191,7 +190,6 @@ export const ja = {
 		myMusicalProfilePageMostListenedArtistsHeading2: '最もよく聴いているアーティスト',
 		myMusicalProfilePageMostListenedArtists: '最もよく聴いた',
 		myMusicalProfilePageMostListenedTracks: '最もよく聴いた',
-		myMusicalProfilePageMostListenedArtistsFollowers: 'フォロワー',
 		myMusicalProfilePageMostListenedTracksHeading2: '最もよく聴いている楽曲',
 		myMusicalProfilePageButtonUpdate: '更新',
 		myMusicalProfilePageNextFreeUpdate: '次回の無料更新まで',
@@ -289,7 +287,6 @@ export const ja = {
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'{userName}がよく聴いている音楽を見たり、よく聴かれている曲やアーティストを発見したり、プロフィールに投稿されたコメントを確認したり、自分でもコメントを残したりできます。',
 			musicCommunityPagePublicUserImageAltText: 'のプロフィール写真',
-			musicCommunityPagePublicUserFollowers: 'フォロワー',
 			musicCommunityPagePublicUserProfileCreatedAt: 'プロフィール作成日',
 			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
 				'プロフィールにコメントを追加するモーダルを開く',
@@ -370,7 +367,6 @@ export const ja = {
 		profilePageMetaOgAndTwitterContent:
 			'Allifyで自分のプロフィールを確認し、再生統計、お気に入りの曲、プレイリスト、保存したアルバムを共有して、ストリーミングサービスを連携しましょう。',
 		profilePageImageAltText: 'プロフィール写真：',
-		profilePageFollowers: 'フォロワー',
 		profilePageAddTicketsAltText: 'チケットを追加',
 		profilePageOpenCommentsButtonAriaLabel: 'プロフィールのコメントセクションを開く',
 		profilePageOpenCommentIconAltText: 'プロフィールのコメントセクションを開くアイコン',
@@ -420,7 +416,6 @@ export const ja = {
 		profilePageSelectYourMusicParagraph1: '今の一曲を選ぶ',
 		profilePageSelectYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選んでください。',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'プロフィールの今の一曲を選択',
-		profilePageSelectYourMusicChooseMusicFollowers: 'フォロワー',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageSelectYourCustomMusicTitleInputLabel: '楽曲にタイトルを付ける',
@@ -442,7 +437,6 @@ export const ja = {
 		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
 		profilePageYourArtistsOnProfileHeading3v1: '最も聴いたアーティスト',
 		profilePageYourArtistsOnProfileHeading3v2: '今のアーティスト',
-		profilePageYourArtistsOnProfileFollowers: 'フォロワー',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '今のアーティストを編集するボタン',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
 			'カスタムアーティストを編集するボタン',
@@ -456,7 +450,6 @@ export const ja = {
 		profilePageChangeYourArtistParagraph2:
 			'今聴いている音楽を最もよく表すアーティストを選んでください。',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'プロフィールの今のアーティストを選択',
-		profilePageChangeYourArtistChooseArtistFollowers: 'フォロワー',
 		profilePageChangeYourArtistSuccessToastMessage: '今のアーティストが正常に更新されました',
 		profilePageChangeYourArtistErrorToastMessage: '今のアーティストの変更中にエラーが発生しました',
 		profilePageSelectYourArtistSuccessToastMessage: '今のアーティストが正常に選択されました',
@@ -489,7 +482,6 @@ export const ja = {
 		profilePageSelectYourArtistParagraph2:
 			'今聴いている音楽を最もよく表すアーティストを選んでください。',
 		profilePageSelectYourArtistChooseArtistAriaLabel: 'プロフィールの今のアーティストを選択',
-		profilePageSelectYourArtistChooseArtistFollowers: 'フォロワー',
 		profilePageSelectYourArtistsWhoWereWithYou: 'あなたと一緒にいたことのあるアーティスト',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',

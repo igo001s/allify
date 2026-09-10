@@ -110,7 +110,6 @@ export const ru = {
 		buildProfileSecondStepArtistSectionParagraph3: 'Ваши недавно прослушанные артисты',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel:
 			'Выбор артиста для музыкального профиля',
-		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'Подписчики',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Продолжайте открывать новых артистов и персонализировать свой профиль ещё больше.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Выберите видимость своего профиля',
@@ -192,7 +191,6 @@ export const ru = {
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Ваши самые прослушиваемые исполнители',
 		myMusicalProfilePageMostListenedArtists: 'Самый прослушиваемый',
 		myMusicalProfilePageMostListenedTracks: 'Самый прослушиваемый',
-		myMusicalProfilePageMostListenedArtistsFollowers: 'подписчиков',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Ваши самые прослушиваемые треки',
 		myMusicalProfilePageButtonUpdate: 'Обновить',
 		myMusicalProfilePageNextFreeUpdate: 'Следующее бесплатное обновление через',
@@ -291,7 +289,6 @@ export const ru = {
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'Узнайте, что {userName} слушает чаще всего, откройте для себя самые прослушиваемые песни и исполнителей, прочитайте комментарии в профиле и оставьте свой.',
 			musicCommunityPagePublicUserImageAltText: 'Фото профиля',
-			musicCommunityPagePublicUserFollowers: 'подписчиков',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Профиль создан',
 			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
 				'Открыть окно для добавления комментария в профиль',
@@ -374,7 +371,6 @@ export const ru = {
 		profilePageMetaOgAndTwitterContent:
 			'Просматривайте свой профиль в Allify, делитесь статистикой прослушивания, понравившимися песнями, плейлистами и сохранёнными альбомами и подключайте свои стриминговые платформы.',
 		profilePageImageAltText: 'Фото профиля',
-		profilePageFollowers: 'подписчиков',
 		profilePageAddTicketsAltText: 'Добавить билеты',
 		profilePageOpenCommentsButtonAriaLabel: 'Открыть секцию комментариев профиля',
 		profilePageOpenCommentIconAltText: 'Иконка для открытия секции комментариев профиля',
@@ -429,7 +425,6 @@ export const ru = {
 		profilePageSelectYourMusicParagraph2:
 			'Выберите трек, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'Выбрать трек момента для профиля',
-		profilePageSelectYourMusicChooseMusicFollowers: 'подписчиков',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Продолжайте открывать новые треки и делать свой профиль ещё более персональным.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Дайте своему треку название',
@@ -451,7 +446,6 @@ export const ru = {
 		profilePageYourArtistsOnProfileHeading2: 'Ваши исполнители',
 		profilePageYourArtistsOnProfileHeading3v1: 'Самый прослушиваемый исполнитель',
 		profilePageYourArtistsOnProfileHeading3v2: 'Исполнитель момента',
-		profilePageYourArtistsOnProfileFollowers: 'подписчиков',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
 			'Кнопка редактирования исполнителя момента',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
@@ -467,7 +461,6 @@ export const ru = {
 		profilePageChangeYourArtistParagraph2:
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageChangeYourArtistChooseArtistAriaLabel: 'Выбрать исполнителя момента для профиля',
-		profilePageChangeYourArtistChooseArtistFollowers: 'подписчиков',
 		profilePageChangeYourArtistSuccessToastMessage: 'Исполнитель момента успешно обновлён',
 		profilePageChangeYourArtistErrorToastMessage: 'Ошибка при изменении исполнителя момента',
 		profilePageSelectYourArtistSuccessToastMessage: 'Исполнитель момента успешно выбран',
@@ -499,7 +492,6 @@ export const ru = {
 		profilePageSelectYourArtistParagraph2:
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
 		profilePageSelectYourArtistChooseArtistAriaLabel: 'Выбрать исполнителя момента для профиля',
-		profilePageSelectYourArtistChooseArtistFollowers: 'подписчиков',
 		profilePageSelectYourArtistsWhoWereWithYou: 'Артисты, которые уже были с вами',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персональным.',

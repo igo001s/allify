@@ -5,6 +5,7 @@
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import MoreMyMusicalProfileItems from '../MoreMyMusicalProfileItems.svelte';
 	import PossibleActionsMyMusicalProfile from '../PossibleActionsMyMusicalProfile.svelte';
+	import Followers from '$lib/components/general/Followers.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -58,11 +59,10 @@
 							{/if}
 
 							{#if artist.followers}
-								<p class="text-xs text-t-secondary">
-									{artist.followers.toLocaleString()}
-									{$translationsStore.myMusicalProfilePage
-										.myMusicalProfilePageMostListenedArtistsFollowers}
-								</p>
+								<Followers
+									quantityFollowers={artist.followers}
+									classFollowers="text-xs text-t-secondary"
+								/>
 							{/if}
 						</div>
 

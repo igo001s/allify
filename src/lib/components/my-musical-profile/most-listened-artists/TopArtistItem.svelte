@@ -5,6 +5,7 @@
 	// Components
 	import ExternalLink from '../../general/ExternalLink.svelte';
 	import Popularity from '$lib/components/general/Popularity.svelte';
+	import Followers from '$lib/components/general/Followers.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -43,10 +44,10 @@
 			{/if}
 
 			{#if mostListenedArtistItem.followers}
-				<p class="text-sm text-t-secondary lg:text-base">
-					{mostListenedArtistItem.followers.toLocaleString()}
-					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedArtistsFollowers}
-				</p>
+				<Followers
+					quantityFollowers={mostListenedArtistItem.followers}
+					classFollowers="text-sm text-t-secondary lg:text-base"
+				/>
 			{/if}
 		</div>
 

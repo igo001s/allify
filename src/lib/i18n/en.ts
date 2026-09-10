@@ -108,7 +108,6 @@ export const en = {
 			'Choose an artist that represents your current moment. It will be displayed on your profile and help personalize your experience on Allify.',
 		buildProfileSecondStepArtistSectionParagraph3: 'Your recently played artists',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel: 'Artist selection for music profile',
-		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'Followers',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Keep unlocking more artists and personalize your profile even further.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Choose your profile visibility',
@@ -190,7 +189,6 @@ export const en = {
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Your most-listened-to artists',
 		myMusicalProfilePageMostListenedArtists: 'Most listened to',
 		myMusicalProfilePageMostListenedTracks: 'Most listened to',
-		myMusicalProfilePageMostListenedArtistsFollowers: 'followers',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Your most-listened-to tracks',
 		myMusicalProfilePageButtonUpdate: 'Update',
 		myMusicalProfilePageNextFreeUpdate: 'Next free update in',
@@ -286,7 +284,6 @@ export const en = {
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'See what {userName} listens to most, discover their most-played songs and artists, read comments left on their profile, and leave your own.',
 			musicCommunityPagePublicUserImageAltText: 'Profile picture of',
-			musicCommunityPagePublicUserFollowers: 'followers',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Profile created on',
 			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
 				'Open modal to add a comment to the profile',
@@ -366,7 +363,6 @@ export const en = {
 		profilePageMetaOgAndTwitterContent:
 			'View your profile on Allify, share your listening statistics, liked songs, playlists, and saved albums, and connect your streaming platforms.',
 		profilePageImageAltText: 'Profile picture of',
-		profilePageFollowers: 'followers',
 		profilePageAddTicketsAltText: 'Add tickets',
 		profilePageOpenCommentsButtonAriaLabel: 'Open profile comments section',
 		profilePageOpenCommentIconAltText: 'Icon to open profile comments section',
@@ -417,7 +413,6 @@ export const en = {
 		profilePageSelectYourMusicParagraph2:
 			'Choose the song that best represents what you are listening to right now.',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'Select song of the moment for your profile',
-		profilePageSelectYourMusicChooseMusicFollowers: 'followers',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Keep unlocking more songs and personalizing your profile even further.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Give your song a title',
@@ -438,7 +433,6 @@ export const en = {
 		profilePageYourArtistsOnProfileHeading2: 'Your artists',
 		profilePageYourArtistsOnProfileHeading3v1: 'Most listened-to artist',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artist of the moment',
-		profilePageYourArtistsOnProfileFollowers: 'followers',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Button to edit artist of the moment',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel: 'Button to edit custom artist',
 		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Edit artist of the moment icon',
@@ -450,7 +444,6 @@ export const en = {
 			'Choose the artist that best represents what you are listening to right now.',
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Select artist of the moment for your profile',
-		profilePageChangeYourArtistChooseArtistFollowers: 'followers',
 		profilePageChangeYourArtistSuccessToastMessage: 'Artist of the moment successfully updated.',
 		profilePageChangeYourArtistErrorToastMessage: 'Error changing the artist of the moment',
 		profilePageSelectYourArtistSuccessToastMessage: 'Artist of the moment successfully selected.',
@@ -481,7 +474,6 @@ export const en = {
 			'Choose the artist that best represents what you are listening to right now.',
 		profilePageSelectYourArtistChooseArtistAriaLabel:
 			'Select artist of the moment for your profile',
-		profilePageSelectYourArtistChooseArtistFollowers: 'followers',
 		profilePageSelectYourArtistsWhoWereWithYou: 'Artists who have been with you',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Keep unlocking more artists and personalizing your profile even further.',

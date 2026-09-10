@@ -108,7 +108,6 @@ export const de = {
 			'Wähle einen Künstler, der deine aktuelle Stimmung widerspiegelt. Er wird auf deinem Profil angezeigt und hilft dabei, dein Allify-Erlebnis zu personalisieren.',
 		buildProfileSecondStepArtistSectionParagraph3: 'Deine zuletzt gehörten Künstler',
 		buildProfileSecondStepArtistSectionSelectArtistAriaLabel: 'Künstlerauswahl für das Musikprofil',
-		buildProfileSecondStepArtistSectionSelectArtistFollowers: 'Follower',
 		buildProfileSecondStepArtistSectionParagraph4:
 			'Schalte weitere Künstler frei und personalisiere dein Profil noch mehr.',
 		buildProfileThirdStepVisibilitySectionParagraph1: 'Wähle die Sichtbarkeit deines Profils',
@@ -191,7 +190,6 @@ export const de = {
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Deine meistgehörten Künstler',
 		myMusicalProfilePageMostListenedArtists: 'Am häufigsten gehört',
 		myMusicalProfilePageMostListenedTracks: 'Am häufigsten gehört',
-		myMusicalProfilePageMostListenedArtistsFollowers: 'Follower',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Deine meistgehörten Songs',
 		myMusicalProfilePageButtonUpdate: 'Aktualisieren',
 		myMusicalProfilePageNextFreeUpdate: 'Nächste kostenlose Aktualisierung in',
@@ -290,7 +288,6 @@ export const de = {
 			musicCommunityPagePublicUserMetaOgAndTwitterContent:
 				'Entdecke, was {userName} am meisten hört, finde die meistgehörten Songs und Künstler, sieh dir Kommentare im Profil an und hinterlasse selbst einen.',
 			musicCommunityPagePublicUserImageAltText: 'Profilbild von',
-			musicCommunityPagePublicUserFollowers: 'Follower',
 			musicCommunityPagePublicUserProfileCreatedAt: 'Profil erstellt am',
 			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
 				'Modal zum Hinzufügen eines Kommentars zum Profil öffnen',
@@ -374,7 +371,6 @@ export const de = {
 		profilePageMetaOgAndTwitterContent:
 			'Sieh dir dein Profil auf Allify an, teile deine Hörstatistiken, deine favorisierten Songs, Playlists und gespeicherten Alben und verbinde deine Streaming-Plattformen.',
 		profilePageImageAltText: 'Profilbild von',
-		profilePageFollowers: 'Follower',
 		profilePageAddTicketsAltText: 'Tickets hinzufügen',
 		profilePageOpenCommentsButtonAriaLabel: 'Öffne den Kommentarbereich des Profils',
 		profilePageOpenCommentIconAltText: 'Symbol zum Öffnen des Kommentarbereichs des Profils',
@@ -435,7 +431,6 @@ export const de = {
 		profilePageSelectYourMusicParagraph2:
 			'Wähle den Song, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'Song des Moments für das Profil auswählen',
-		profilePageSelectYourMusicChooseMusicFollowers: 'Follower',
 		profilePageSelectYourMusicUnlockMoreMusic:
 			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
 		profilePageSelectYourCustomMusicTitleInputLabel: 'Gib deinem Song einen Titel',
@@ -458,7 +453,6 @@ export const de = {
 		profilePageYourArtistsOnProfileHeading2: 'Deine Künstler',
 		profilePageYourArtistsOnProfileHeading3v1: 'Meistgehörter Künstler',
 		profilePageYourArtistsOnProfileHeading3v2: 'Künstler des Moments',
-		profilePageYourArtistsOnProfileFollowers: 'Follower',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
 			'Schaltfläche zum Bearbeiten des Künstlers des Moments',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
@@ -477,7 +471,6 @@ export const de = {
 			'Wähle den Künstler, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageChangeYourArtistChooseArtistAriaLabel:
 			'Künstler des Moments für das Profil auswählen',
-		profilePageChangeYourArtistChooseArtistFollowers: 'Follower',
 		profilePageChangeYourArtistSuccessToastMessage:
 			'Künstler des Moments erfolgreich aktualisiert.',
 		profilePageChangeYourArtistErrorToastMessage: 'Fehler beim Ändern des Künstlers des Moments',
@@ -513,7 +506,6 @@ export const de = {
 			'Wähle den Künstler, der am besten widerspiegelt, was du gerade hörst.',
 		profilePageSelectYourArtistChooseArtistAriaLabel:
 			'Künstler des Moments für das Profil auswählen',
-		profilePageSelectYourArtistChooseArtistFollowers: 'Follower',
 		profilePageSelectYourArtistsWhoWereWithYou: 'Künstler, die bereits bei dir waren',
 		profilePageSelectYourArtistUnlockMoreMusic:
 			'Schalte weiterhin mehr Künstler frei und personalisiere dein Profil noch stärker.',

@@ -8,6 +8,7 @@
 	// Components
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
+	import Followers from '$lib/components/general/Followers.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -59,12 +60,10 @@
 				{/if}
 
 				{#if 'followers' in profileItem.item && 'genres' in profileItem.item}
-					<p class="truncate text-xs text-t-secondary">
-						{profileItem.item.followers.toLocaleString()}
-						{profileItem.item.followers === 1
-							? $translationsStore.generalTexts.follower
-							: $translationsStore.generalTexts.follower}
-					</p>
+					<Followers
+						quantityFollowers={profileItem.item.followers}
+						classFollowers="text-xs text-t-secondary"
+					/>
 
 					<div class="flex flex-wrap gap-1.5 pt-1 sm:gap-2">
 						{#each profileItem.item.genres.slice(0, 3) as genre}

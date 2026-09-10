@@ -2,8 +2,8 @@
 	// Assets
 	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
 
-	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	// Components
+	import Followers from '$lib/components/general/Followers.svelte';
 
 	// Types
 	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
@@ -46,10 +46,10 @@
 				{item.albumName}
 			</p>
 		{:else if 'followers' in item}
-			<p class="text-[9px] text-t-secondary/70 sm:text-[10px]">
-				{item.followers.toLocaleString()}
-				{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionSelectArtistFollowers}
-			</p>
+			<Followers
+				quantityFollowers={item.followers}
+				classFollowers="text-[9px] text-t-secondary/70 sm:text-[10px]"
+			/>
 		{/if}
 	</div>
 

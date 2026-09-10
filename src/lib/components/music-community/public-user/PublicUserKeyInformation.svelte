@@ -5,6 +5,7 @@
 	// Components
 	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
 	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
+	import Followers from '$lib/components/general/Followers.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -65,10 +66,10 @@
 			</div>
 
 			{#if publicUserStreamingInfo.followers}
-				<p class="text-xs font-medium sm:text-sm">
-					{publicUserStreamingInfo.followers}
-					{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserFollowers}
-				</p>
+				<Followers
+					quantityFollowers={publicUserStreamingInfo.followers}
+					classFollowers="text-xs font-medium sm:text-sm"
+				/>
 			{/if}
 
 			{#if createdAt}
