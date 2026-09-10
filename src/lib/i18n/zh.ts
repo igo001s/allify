@@ -82,6 +82,8 @@ export const zh = {
 		ticketAltText: '票券图标',
 		ticket: '票券',
 		tickets: '票券',
+		follower: '关注者',
+		followers: '关注者',
 		buildProfileCloseModalAriaLabel: '关闭建立个人资料的弹窗',
 		buildProfileFirstAccessSectionParagraph1: '你好，{name}！欢迎来到 Allify。',
 		buildProfileFirstAccessSectionParagraph2:

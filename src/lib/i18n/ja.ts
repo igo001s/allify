@@ -88,6 +88,8 @@ export const ja = {
 		ticketAltText: 'チケットアイコン',
 		ticket: 'チケット',
 		tickets: 'チケット',
+		follower: 'フォロワー',
+		followers: 'フォロワー',
 		buildProfileCloseModalAriaLabel: 'プロフィール作成モーダルを閉じる',
 		buildProfileFirstAccessSectionParagraph1: 'こんにちは、{name}さん！Allifyへようこそ。',
 		buildProfileFirstAccessSectionParagraph2:

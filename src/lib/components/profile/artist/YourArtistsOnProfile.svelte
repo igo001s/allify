@@ -34,7 +34,7 @@
 		{#each artistItems as { artistItem, type }}
 			{#if artistItem}
 				<YourArtistOnProfileItem
-					artistItem={{ artist: artistItem, type }}
+					artistItem={{ item: artistItem, type }}
 					{openChangeYourItemsModal}
 					{openChangeCustomItemModal}
 				/>

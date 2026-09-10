@@ -28,7 +28,7 @@ export async function getMostListenedArtists(limit: number = 5) {
 			followers: parsedResponse[0].followers.total,
 			genres: parsedResponse[0].genres,
 			image: parsedResponse[0].images[0],
-			artistLink: parsedResponse[0].external_urls.spotify
+			externalLink: parsedResponse[0].external_urls.spotify
 		};
 
 		for (let i = 0; i < parsedResponse.length; i++) {
@@ -39,7 +39,7 @@ export async function getMostListenedArtists(limit: number = 5) {
 				followers: parsedResponse[i].followers.total,
 				genres: parsedResponse[i].genres,
 				image: parsedResponse[i].images[0],
-				artistLink: parsedResponse[i].external_urls.spotify
+				externalLink: parsedResponse[i].external_urls.spotify
 			});
 		}
 

@@ -88,6 +88,8 @@ export const it = {
 		ticketAltText: 'Icona di ticket',
 		ticket: 'Ticket',
 		tickets: 'Tickets',
+		follower: 'Follower',
+		followers: 'Follower',
 		buildProfileCloseModalAriaLabel: 'Chiudi il modal di creazione del profilo',
 		buildProfileFirstAccessSectionParagraph1: 'Ciao, {name}! Benvenuto su Allify.',
 		buildProfileFirstAccessSectionParagraph2:

@@ -88,6 +88,8 @@ export const ru = {
 		ticketAltText: 'Иконка билета',
 		ticket: 'Билет',
 		tickets: 'Билеты',
+		follower: 'Подписчик',
+		followers: 'Подписчики',
 		buildProfileCloseModalAriaLabel: 'Закрыть модальное окно создания профиля',
 		buildProfileFirstAccessSectionParagraph1: 'Здравствуйте, {name}! Добро пожаловать в Allify.',
 		buildProfileFirstAccessSectionParagraph2:

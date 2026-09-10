@@ -33,7 +33,7 @@
 		{#each songsItems as { trackItem, type }}
 			{#if trackItem}
 				<YourSongsOnProfileItem
-					trackItem={{ track: trackItem, type }}
+					trackItem={{ item: trackItem, type }}
 					{openChangeYourItemsModal}
 					{openChangeCustomItemModal}
 				/>

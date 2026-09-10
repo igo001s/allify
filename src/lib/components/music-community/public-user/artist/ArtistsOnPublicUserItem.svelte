@@ -85,9 +85,9 @@
 			<div class="mt-4 flex flex-col gap-3 sm:mt-6 sm:gap-4">
 				<Popularity item={artistItem.artist} />
 
-				{#if artistItem.artist.artistLink}
+				{#if artistItem.artist.externalLink}
 					<ExternalLink
-						externalLink={artistItem.artist.artistLink}
+						externalLink={artistItem.artist.externalLink}
 						externalLinkText={$translationsStore.generalTexts.seeArtistOnSpotify}
 					/>
 				{/if}

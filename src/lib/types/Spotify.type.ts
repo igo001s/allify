@@ -32,7 +32,7 @@ export type ArtistSpotify = {
 	followers: number;
 	genres: string[];
 	image: AvatarImage;
-	artistLink: string;
+	externalLink: string;
 };
 
 export type TrackSpotify = {
@@ -42,5 +42,5 @@ export type TrackSpotify = {
 	popularity: number;
 	albumName: string;
 	image: AvatarImage;
-	trackLink: string;
+	externalLink: string;
 };
