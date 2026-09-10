@@ -39,14 +39,14 @@
 <ul class="space-y-1">
 	{#if loggedIn}
 		{#each loggedItems as item}
-			<li class="rounded-lg transition-all hover:bg-s-muted">
+			<li class="rounded-lg hover:bg-s-muted">
 				<button
 					on:click={() => {
 						goto(item.href);
 
 						isAsideMenuOpen = false;
 					}}
-					class="flex w-full cursor-pointer items-center px-3 py-2 text-xs text-t-primary transition-all hover:translate-x-0.5"
+					class="flex w-full cursor-pointer items-center px-3 py-2 text-xs text-t-primary hover:translate-x-0.5"
 				>
 					{item.text}
 				</button>
@@ -54,7 +54,7 @@
 		{/each}
 	{:else}
 		{#each notLoggedItems as item}
-			<li class="rounded-lg transition-all hover:bg-s-muted">
+			<li class="rounded-lg hover:bg-s-muted">
 				<button
 					on:click={() =>
 						signInWrapper(
@@ -62,7 +62,7 @@
 							$userInfo?.connectedStreamings.spotify ? true : false,
 							false
 						)}
-					class="flex w-full cursor-pointer items-center px-3 py-2 text-left text-xs text-t-primary transition-all hover:translate-x-0.5"
+					class="flex w-full cursor-pointer items-center px-3 py-2 text-left text-xs text-t-primary hover:translate-x-0.5"
 				>
 					{item.text}
 					{#if item.streaming === 'spotify'}

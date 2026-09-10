@@ -76,15 +76,15 @@
 	additionalClasses="max-h-[90vh] w-full max-w-lg"
 >
 	<div class="flex flex-col gap-3 border-b border-b-default p-5 sm:p-6 lg:p-8">
-		<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
+		<p class="text-xs font-medium text-t-secondary uppercase">
 			{$translationsStore.addTickets.addTicketsModalTitle}
 		</p>
 
-		<p class="text-base leading-tight font-bold text-t-primary sm:text-xl">
+		<p class="text-base font-bold text-t-primary sm:text-xl">
 			{$translationsStore.addTickets.addTicketsModalParagraph1}
 		</p>
 
-		<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+		<p class="text-xs text-t-secondary sm:text-sm">
 			{#if openFrom === 'noTickets'}
 				{$translationsStore.addTickets.addTicketsModalParagraph2v1}
 			{:else}
@@ -95,14 +95,14 @@
 
 	<div class="flex flex-col gap-6 overflow-y-auto p-5 sm:p-6 lg:p-8">
 		<div class="flex flex-col gap-3">
-			<p class="text-xs font-medium tracking-widest text-t-secondary uppercase">
+			<p class="text-xs font-medium text-t-secondary uppercase">
 				{$translationsStore.addTickets.addTicketsModalParagraph3}
 			</p>
 
 			<div class="mt-1 grid grid-cols-2 gap-3 sm:grid-cols-4">
 				{#each options as opt}
 					<button
-						class="cursor-pointer rounded-lg border py-3 text-xs font-semibold transition
+						class="cursor-pointer rounded-lg border py-3 text-xs font-semibold
 								{quantity === opt
 							? 'border-brand-primary bg-brand-primary text-t-inverse'
 							: 'border-b-default bg-s-muted text-t-primary hover:border-brand-primary hover:text-brand-primary'}"
@@ -116,7 +116,7 @@
 					type="number"
 					bind:value={quantity}
 					placeholder={$translationsStore.addTickets.addTicketsModalPlaceholder}
-					class="col-span-2 rounded-lg border bg-s-muted px-4 py-3 text-xs font-semibold text-t-primary transition outline-none placeholder:text-t-muted sm:col-span-4
+					class="col-span-2 rounded-lg border bg-s-muted px-4 py-3 text-xs font-semibold text-t-primary outline-none placeholder:text-t-muted sm:col-span-4
 							{!options.includes(quantity)
 						? 'border-brand-primary'
 						: 'border-b-default focus:border-brand-primary'}"

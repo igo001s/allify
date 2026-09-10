@@ -102,7 +102,7 @@
 			type="text"
 			minlength="1"
 			maxlength="56"
-			class="mt-1 w-full rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary transition-all outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
+			class="mt-1 w-full rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
 			placeholder={$translationsStore.profilePage
 				.profilePageChangeYourCustomArtistTitleInputPlaceholder}
 			on:input={handleArtistTitleInput}
@@ -166,7 +166,7 @@
 		{/if}
 	</div>
 
-	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
+	<p class="text-center text-[10px] text-t-secondary sm:text-[11px]">
 		{#if $userInfo?.artists?.customArtist?.nextFreeUpdate && new Date($userInfo.artists.customArtist.nextFreeUpdate) > new Date()}
 			{$translationsStore.profilePage.profilePageChangeYourArtistTimeToNextFreeUpdate}
 

@@ -37,7 +37,7 @@
 				{emptyArtistHeading4}
 			</h4>
 
-			<p class="text-xs leading-relaxed text-t-secondary">
+			<p class="text-xs text-t-secondary">
 				{emptyArtistParagraph1}
 			</p>
 		</div>

@@ -42,11 +42,11 @@
 	additionalClasses="max-h-[90vh] w-full max-w-3xl"
 >
 	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
-		<p class="text-lg leading-tight font-bold text-t-primary sm:text-xl">
+		<p class="text-lg font-bold text-t-primary sm:text-xl">
 			{$translationsStore.profilePage.profilePageSelectYourCustomItemParagraph1}
 		</p>
 
-		<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+		<p class="text-xs text-t-secondary sm:text-sm">
 			{itemType === 'artist'
 				? $translationsStore.profilePage.profilePageSelectYourCustomArtistParagraph2
 				: $translationsStore.profilePage.profilePageSelectYourCustomMusicParagraph2}

@@ -47,8 +47,6 @@
 			bg-s-default/95
 			shadow-sm
 			backdrop-blur-md
-			transition-all
-			duration-200
 			hover:shadow-md
 		"
 	>
@@ -62,9 +60,6 @@
 				gap-3
 				px-3
 				py-3
-				transition-all
-				duration-200
-				ease-out
 			"
 			on:click={toggleProfileOptions}
 			aria-label="Toggle profile items"
@@ -94,7 +89,7 @@
 
 				<div class="min-w-0 flex-1 space-y-1.5 text-left">
 					<div class="flex items-center gap-4">
-						<p class="truncate text-base leading-tight font-semibold text-t-primary">
+						<p class="truncate text-base font-semibold text-t-primary">
 							{$userInfo?.connectedStreamings.spotify?.name}
 						</p>
 
@@ -126,15 +121,13 @@
 						justify-center
 						rounded-full
 						bg-s-muted
-						transition-colors
-						duration-200
 						group-hover:bg-s-muted/80
 						sm:h-11
 						sm:w-11
 					"
 				>
 					<ProfileIcon
-						iconSvgClass="h-7 w-7 text-brand-primary transition-colors duration-200 group-hover:text-brand-primary-dark"
+						iconSvgClass="h-7 w-7 text-brand-primary group-hover:text-brand-primary-dark"
 						iconAltText={$translationsStore.generalTexts.profileNotLoggedAltText}
 						color="currentColor"
 					/>
@@ -151,8 +144,6 @@
 					h-5
 					w-5
 					text-t-muted
-					transition-transform
-					duration-200
 					{showProfileOptions ? 'rotate-180' : ''}
 				"
 				iconAltText={$translationsStore.generalTexts.dropdownAriaLabel}

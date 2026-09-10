@@ -14,7 +14,7 @@
 			{$translationsStore.homePage.homePageHeroSectionHeading1}
 		</h1>
 
-		<p class="text-md text-center text-t-secondary lg:text-left lg:text-lg">
+		<p class="paragraph-home-page text-t-secondary">
 			{$translationsStore.homePage.homePageHeroSectionParagraph1}
 		</p>
 

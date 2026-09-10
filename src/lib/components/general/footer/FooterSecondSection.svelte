@@ -64,7 +64,7 @@
 
 {#each Object.values(footerColumnItems) as column}
 	<div class="flex flex-col items-center text-t-inverse lg:items-start">
-		<p class="mb-4 text-sm font-semibold tracking-wide">
+		<p class="mb-4 text-sm font-semibold">
 			{column.title}
 		</p>
 
@@ -86,7 +86,6 @@
 								items-center
 								justify-center
 								rounded-lg
-								transition
 							"
 						>
 							<svelte:component
@@ -95,7 +94,6 @@
 									h-6.5
 									w-6.5
 									text-t-inverse-muted
-									transition-all
 									hover:text-t-inverse
 								"
 								iconAltText={item.altText}
@@ -108,7 +106,6 @@
 								text-sm
 								font-light
 								text-t-inverse-muted
-								transition
 								hover:text-t-inverse
 							"
 						>

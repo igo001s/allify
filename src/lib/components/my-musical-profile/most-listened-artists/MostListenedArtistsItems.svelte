@@ -52,7 +52,7 @@
 							</p>
 
 							{#if artist.name}
-								<p class="text-2xl leading-tight font-semibold text-t-primary">
+								<p class="text-2xl font-semibold text-t-primary">
 									{artist.name}
 								</p>
 							{/if}

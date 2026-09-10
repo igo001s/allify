@@ -37,7 +37,7 @@
 				{emptyTrackHeading4}
 			</h4>
 
-			<p class="mt-1 text-xs leading-relaxed text-t-secondary">
+			<p class="mt-1 text-xs text-t-secondary">
 				{emptyTrackParagraph1}
 			</p>
 		</div>

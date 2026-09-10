@@ -8,7 +8,7 @@
 	<svg viewBox="0 0 311.000000 132.000000" class={logoSvgClass} aria-label={logoAltText} role="img">
 		<g
 			transform="translate(0.000000,132.000000) scale(0.100000,-0.100000)"
-			fill="#F2F2F2"
+			fill="currentColor"
 			stroke="none"
 		>
 			<path
@@ -19,7 +19,7 @@
 0 -114 0 -69 -151 c-57 -124 -70 -147 -79 -132 -6 10 -42 77 -82 148 l-71 130
 -164 5 -164 5 2 93 c2 51 7 102 13 112 14 25 48 34 83 21 26 -10 28 -9 62 59
 l35 70 -40 20 c-46 23 -150 34 -193 20z"
-				fill="#FFF"
+				fill="currentColor"
 			/>
 			<path d="M1000 805 l0 -485 100 0 100 0 0 485 0 485 -100 0 -100 0 0 -485z" />
 			<path d="M1340 805 l0 -485 95 0 95 0 0 485 0 485 -95 0 -95 0 0 -485z" />

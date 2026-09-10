@@ -81,7 +81,7 @@
 	{#if loggedIn}
 		<div class="mb-2 space-y-1.5 px-2">
 			<div class="flex items-center gap-4">
-				<p class="truncate text-base leading-tight font-semibold text-t-primary">
+				<p class="truncate text-base font-semibold text-t-primary">
 					{$userInfo?.connectedStreamings.spotify?.name}
 				</p>
 
@@ -108,10 +108,10 @@
 
 		<ul class="space-y-1">
 			{#each loggedItems as item}
-				<li class="rounded-lg transition-all hover:bg-s-muted">
+				<li class="rounded-lg hover:bg-s-muted">
 					<button
 						on:click={() => loggedItemClick(item.href)}
-						class="flex w-full cursor-pointer items-center px-3 py-2 transition-all hover:translate-x-0.5"
+						class="flex w-full cursor-pointer items-center px-3 py-2 hover:translate-x-0.5"
 					>
 						{item.text}
 					</button>
@@ -130,12 +130,12 @@
 	{:else}
 		<ul class="space-y-1">
 			{#each notLoggedItems as item}
-				<li class="rounded-lg transition-all hover:bg-s-muted">
+				<li class="rounded-lg hover:bg-s-muted">
 					<button
 						disabled={item.streaming === 'deezer'}
 						title={setTitleByStreaming(item.streaming)}
 						on:click={() => signInOnHeaderProfileItems(item.streaming)}
-						class="flex w-full cursor-pointer items-center px-3 py-2 transition-all hover:translate-x-0.5"
+						class="flex w-full cursor-pointer items-center px-3 py-2 hover:translate-x-0.5"
 					>
 						{item.text}
 						{#if item.streaming === 'spotify'}

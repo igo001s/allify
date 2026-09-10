@@ -32,9 +32,6 @@
 						relative
 						text-sm
 						font-medium
-						transition-colors
-						duration-200
-						ease-out
 						after:absolute
 						after:-bottom-1
 						after:left-0
@@ -42,9 +39,6 @@
 						after:w-0
 						after:rounded-full
 						after:bg-brand-primary-dark
-						after:transition-all
-						after:duration-300
-						after:ease-out
 						hover:text-brand-primary-dark
 						hover:after:w-full
 						{$page.url.pathname === item.link

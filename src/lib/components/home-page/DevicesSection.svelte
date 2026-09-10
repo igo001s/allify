@@ -25,7 +25,7 @@
 			{$translationsStore.homePage.devicesSectionHeading1}
 		</h2>
 
-		<p class="text-md text-center text-t-secondary lg:text-left lg:text-lg">
+		<p class="paragraph-home-page text-t-secondary">
 			{$translationsStore.homePage.devicesSectionParagraph1}
 		</p>
 	</div>

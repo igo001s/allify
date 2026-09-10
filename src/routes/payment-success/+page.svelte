@@ -58,7 +58,7 @@
 			{$translationsStore.paymentSuccessPage.paymentSuccessPageHeading1}
 		</h1>
 
-		<p class="mt-5 max-w-lg text-base leading-relaxed text-t-secondary sm:text-lg">
+		<p class="mt-5 max-w-lg text-base text-t-secondary sm:text-lg">
 			{$translationsStore.paymentSuccessPage.paymentSuccessPageParagraph1}
 		</p>
 	</div>

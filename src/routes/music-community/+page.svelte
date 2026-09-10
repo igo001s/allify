@@ -97,7 +97,7 @@
 		{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
 	</h1>
 
-	<p class="text-sm leading-relaxed text-t-secondary md:text-base">
+	<p class="text-sm text-t-secondary md:text-base">
 		{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
 	</p>
 
@@ -110,7 +110,7 @@
 					maxlength="30"
 					placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
 					bind:value={searchUserInputValue}
-					class="flex-1 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary transition outline-none placeholder:text-t-muted focus:border-brand-primary"
+					class="flex-1 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary outline-none placeholder:text-t-muted focus:border-brand-primary"
 					on:keydown={(e) => {
 						if (e.key === 'Enter') {
 							handleSearchUser();
@@ -119,7 +119,7 @@
 				/>
 
 				<button
-					class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-brand-primary transition-colors hover:bg-brand-primary-dark"
+					class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-brand-primary hover:bg-brand-primary-dark"
 					disabled={!searchUserInputValue || searchUserInputValue.length < 2}
 					on:click={handleSearchUser}
 				>

@@ -111,7 +111,7 @@
 		{/if}
 	</div>
 
-	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
+	<p class="text-center text-[10px] text-t-secondary sm:text-[11px]">
 		{#if $userInfo?.artists?.artistOfTheMoment?.nextFreeUpdate && new Date($userInfo.artists.artistOfTheMoment.nextFreeUpdate) > new Date()}
 			{$translationsStore.profilePage.profilePageChangeYourArtistTimeToNextFreeUpdate}
 

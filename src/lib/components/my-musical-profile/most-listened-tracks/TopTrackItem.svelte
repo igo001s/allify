@@ -37,7 +37,7 @@
 			</p>
 
 			{#if mostListenedTrackItem.name}
-				<p class="text-3xl leading-tight font-semibold text-t-primary lg:text-4xl 2xl:text-5xl">
+				<p class="text-3xl font-semibold text-t-primary lg:text-4xl 2xl:text-5xl">
 					{mostListenedTrackItem.name}
 				</p>
 			{/if}

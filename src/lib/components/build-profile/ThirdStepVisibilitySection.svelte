@@ -18,11 +18,11 @@
 </script>
 
 <div class="flex w-full flex-col gap-3 sm:gap-4">
-	<p class="text-lg leading-tight font-bold text-t-primary sm:text-xl">
+	<p class="text-lg font-bold text-t-primary sm:text-xl">
 		{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionParagraph1}
 	</p>
 
-	<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+	<p class="text-xs text-t-secondary sm:text-sm">
 		{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionParagraph2}
 	</p>
 
@@ -30,13 +30,13 @@
 		<button
 			on:click={() => handleVisibilitySelection('public')}
 			class={`${buildProfileVisibility === 'public' ? 'border-brand-primary bg-brand-primary/5' : 'border-s-muted'}
-				flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3`}
+				flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3`}
 		>
 			<p class="text-xs font-semibold text-t-primary sm:text-sm">
 				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption}
 			</p>
 
-			<p class="text-[10px] leading-relaxed text-t-secondary sm:text-xs">
+			<p class="text-[10px] text-t-secondary sm:text-xs">
 				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription}
 			</p>
 		</button>
@@ -44,19 +44,19 @@
 		<button
 			on:click={() => handleVisibilitySelection('private')}
 			class={`${buildProfileVisibility === 'private' ? 'border-brand-primary bg-brand-primary/5' : 'border-s-muted'}
-				flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left transition-all duration-200 hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3`}
+				flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3`}
 		>
 			<p class="text-xs font-semibold text-t-primary sm:text-sm">
 				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption}
 			</p>
 
-			<p class="text-[10px] leading-relaxed text-t-secondary sm:text-xs">
+			<p class="text-[10px] text-t-secondary sm:text-xs">
 				{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription}
 			</p>
 		</button>
 	</div>
 
-	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
+	<p class="text-center text-[10px] text-t-secondary sm:text-[11px]">
 		{$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionParagraph3}
 	</p>
 

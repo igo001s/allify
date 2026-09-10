@@ -30,11 +30,11 @@
 	>
 		<div class="relative">
 			{#if streamingPlatform === 'spotify'}
-				<div class="relative transform transition-transform hover:scale-110">
+				<div class="relative hover:scale-110">
 					<SpotifyIcon iconSvgClass="w-20 h-20 text-spotify" />
 				</div>
 			{:else if streamingPlatform === 'deezer'}
-				<div class="relative transform transition-transform hover:scale-110">
+				<div class="relative hover:scale-110">
 					<DeezerIcon iconSvgClass="w-20 h-20 text-deezer" />
 				</div>
 			{/if}
@@ -44,7 +44,7 @@
 			<p class="text-xl font-bold text-t-primary">
 				{$translationsStore.generalTexts.loadingComponentHeading1}
 			</p>
-			<p class="text-center leading-relaxed text-t-secondary">
+			<p class="text-center text-t-secondary">
 				{#if streamingPlatform === 'spotify'}
 					{@html $translationsStore.generalTexts.loadingComponentSpotifyParagraph1}
 				{:else if streamingPlatform === 'deezer'}

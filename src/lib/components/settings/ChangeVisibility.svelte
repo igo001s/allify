@@ -12,7 +12,7 @@
 		{$translationsStore.settingsPage.settingsPageProfileVisibilityHeading2}
 	</h2>
 
-	<p class="text-sm leading-relaxed text-t-secondary md:text-base">
+	<p class="text-sm text-t-secondary md:text-base">
 		{$translationsStore.settingsPage.settingsPageProfileVisibilityParagraph1}
 	</p>
 

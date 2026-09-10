@@ -31,8 +31,7 @@
 <div
 	class={`animate-in fade-in slide-in-from-top-2 fixed top-4 right-2 z-50 flex w-10/12 
 	max-w-sm items-start gap-4 rounded-lg 
-	border bg-s-default p-4 shadow-lg transition-all 
-	duration-300 sm:top-6 sm:right-6 sm:left-auto sm:max-w-md md:max-w-lg
+	border bg-s-default p-4 shadow-lg sm:top-6 sm:right-6 sm:left-auto sm:max-w-md md:max-w-lg
 	${
 		$toastStore.toastType === 'success'
 			? 'border-status-success/30'
@@ -73,7 +72,7 @@
 			{/if}
 		</p>
 
-		<p class="text-s-muted-foreground mt-1 text-[11px] leading-relaxed sm:text-xs">
+		<p class="text-s-muted-foreground mt-1 text-[11px] sm:text-xs">
 			{$toastStore.toastMessage}
 		</p>
 	</div>

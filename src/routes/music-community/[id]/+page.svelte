@@ -152,10 +152,7 @@
 {:else if $userInfo?.connectedStreamings.spotify}
 	{#if user}
 		<div class="mb-8 flex flex-col gap-8">
-			<a
-				href="/music-community"
-				class="flex items-center text-sm font-medium text-brand-primary transition-all"
-			>
+			<a href="/music-community" class="flex items-center text-sm font-medium text-brand-primary">
 				<ArrowIcon iconSvgClass="rotate-90 mr-1 inline h-8 w-8" iconAltText="Arrow icon" />
 
 				{$translationsStore.musicCommunityPage.publicUser

@@ -9,14 +9,14 @@
 </script>
 
 <div class="flex w-full flex-col gap-3 sm:gap-4">
-	<p class="text-lg leading-tight font-bold text-t-primary sm:text-xl">
+	<p class="text-lg font-bold text-t-primary sm:text-xl">
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionParagraph1.replace(
 			'{name}',
 			$userInfo?.name || ''
 		)}
 	</p>
 
-	<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+	<p class="text-xs text-t-secondary sm:text-sm">
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionParagraph2}
 	</p>
 

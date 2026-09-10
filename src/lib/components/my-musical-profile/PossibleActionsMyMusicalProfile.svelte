@@ -183,7 +183,7 @@
 					<DotsLoading dotsTheme="base-primary" animationClass="h-1 w-1" />
 				{:else}
 					<ReloadIcon
-						iconSvgClass="h-4 w-4 text-brand-primary transition-transform duration-200 group-hover:rotate-90"
+						iconSvgClass="h-4 w-4 text-brand-primary group-hover:rotate-90"
 						iconAltText={$translationsStore.myMusicalProfilePage
 							.myMusicalProfilePageReloadIconAltText}
 					/>

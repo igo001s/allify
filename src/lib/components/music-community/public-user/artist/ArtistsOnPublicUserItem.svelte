@@ -34,7 +34,7 @@
 	</h3>
 
 	<div
-		class="relative flex flex-col gap-4 rounded-xl border border-b-default p-4 shadow-xl transition-all duration-300 sm:gap-6 sm:p-5 md:max-h-56 md:min-h-56 md:flex-row lg:p-6"
+		class="relative flex flex-col gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:max-h-56 md:min-h-56 md:flex-row lg:p-6"
 	>
 		{#if artistItem.artist.image?.url}
 			<enhanced:img

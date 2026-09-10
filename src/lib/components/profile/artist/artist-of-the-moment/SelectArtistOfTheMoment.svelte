@@ -97,7 +97,7 @@
 		{/if}
 	</div>
 
-	<p class="text-center text-[10px] leading-relaxed text-t-secondary sm:text-[11px]">
+	<p class="text-center text-[10px] text-t-secondary sm:text-[11px]">
 		{$translationsStore.profilePage.profilePageSelectYourArtistUnlockMoreMusic}
 	</p>
 

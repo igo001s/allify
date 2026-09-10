@@ -88,11 +88,11 @@
 	additionalClasses="max-h-[90vh] w-full max-w-xl"
 >
 	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
-		<p class="text-lg leading-tight font-bold text-t-primary sm:text-xl">
+		<p class="text-lg font-bold text-t-primary sm:text-xl">
 			{$translationsStore.profilePage.profilePageCommentsParagraph1}
 		</p>
 
-		<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+		<p class="text-xs text-t-secondary sm:text-sm">
 			{$translationsStore.profilePage.profilePageCommentsParagraph2}
 		</p>
 
@@ -100,7 +100,7 @@
 			<div class="mt-2 flex max-h-130 flex-col gap-3 overflow-y-auto pr-2 sm:gap-4">
 				{#each $userInfo.comments.commentsMadeOnMyProfile as comment}
 					<div
-						class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 transition-colors sm:gap-4 sm:p-4"
+						class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 sm:gap-4 sm:p-4"
 					>
 						<enhanced:img
 							src={comment.author.image?.url ?? ''}
@@ -113,7 +113,7 @@
 								<div class="flex flex-col items-start">
 									<a
 										href={`/music-community/${comment.author._id}`}
-										class="text-sm font-semibold text-t-secondary transition-colors hover:text-brand-primary"
+										class="text-sm font-semibold text-t-secondary hover:text-brand-primary"
 									>
 										{comment.author.name}
 									</a>
@@ -142,13 +142,13 @@
 									>
 										<TrashIcon
 											iconAltText={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAltText} ${comment?.author?.name}`}
-											iconSvgClass="h-4 w-4 text-t-secondary transition-all cursor-pointer hover:text-status-error"
+											iconSvgClass="h-4 w-4 text-t-secondary cursor-pointer hover:text-status-error"
 										/>
 									</button>
 								</div>
 							</div>
 
-							<p class="text-xs leading-relaxed text-t-secondary">
+							<p class="text-xs text-t-secondary">
 								{comment.content}
 							</p>
 						</div>
@@ -159,7 +159,7 @@
 			<div
 				class="flex w-full flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
 			>
-				<p class="max-w-lg text-xs leading-relaxed text-t-secondary">
+				<p class="max-w-lg text-xs text-t-secondary">
 					{$translationsStore.profilePage.profilePageAuthorEmptyComments}
 				</p>
 			</div>

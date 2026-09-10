@@ -79,14 +79,12 @@
 		</div>
 	</div>
 
-	<div
-		class="flex h-16 justify-end border-t border-b-muted/20 px-10 py-6 text-sm font-medium transition-all"
-	>
+	<div class="flex h-16 justify-end border-t border-b-muted/20 px-10 py-6 text-sm font-medium">
 		<a
 			href={platform.link}
 			target="_blank"
 			rel="noopener noreferrer"
-			class={`flex w-fit cursor-pointer items-center gap-2.5 text-sm transition-all ${
+			class={`flex w-fit cursor-pointer items-center gap-2.5 text-sm ${
 				platformKey === 'spotify' ? 'hover:text-spotify' : 'hover:text-deezer'
 			}`}
 		>

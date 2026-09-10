@@ -78,7 +78,7 @@
 					</span>
 
 					<button
-						class="flex cursor-pointer items-center justify-center rounded-full bg-s-default p-1.5 transition-all hover:scale-102"
+						class="flex cursor-pointer items-center justify-center rounded-full bg-s-default p-1.5 hover:scale-102"
 						on:click={openAddTickets}
 					>
 						<PlusIcon
@@ -111,7 +111,7 @@
 			on:click={() => (showCommentsModal = true)}
 		>
 			<CommentIcon
-				iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 transition-transform duration-200 md:h-8 md:w-8"
+				iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 md:h-8 md:w-8"
 				iconAltText={$translationsStore.profilePage.profilePageOpenCommentIconAltText}
 			/>
 		</button>

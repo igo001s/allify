@@ -42,11 +42,11 @@
 	</h3>
 
 	<div
-		class="relative flex flex-col gap-4 rounded-xl border border-b-default p-4 shadow-xl transition-all duration-300 sm:gap-6 sm:p-5 md:max-h-56 md:min-h-56 md:flex-row lg:p-6"
+		class="relative flex flex-col gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:max-h-56 md:min-h-56 md:flex-row lg:p-6"
 	>
 		{#if artistItem.type === 'artistOfTheMoment' || artistItem.type === 'customArtist'}
 			<button
-				class="absolute top-3 right-3 cursor-pointer text-t-primary transition-all hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
+				class="absolute top-3 right-3 cursor-pointer text-t-primary hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
 				aria-label={artistItem.type === 'artistOfTheMoment'
 					? $translationsStore.profilePage.profilePageYourArtistsOnProfileEditArtistIconAriaLabel
 					: $translationsStore.profilePage

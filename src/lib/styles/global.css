@@ -3,6 +3,7 @@
 @import './fonts.css';
 @import './headings.css';
 @import './layout.css';
+@import './paragraphs.css';
 @import './buttons.css';
 
 @theme {
@@ -65,6 +66,7 @@ body {
 	scroll-behavior: smooth;
 	scrollbar-width: thin;
 	scrollbar-color: var(--color-s-inverse-muted) var(--color-s-muted);
+	transition: all 0.15s ease-in;
 }
 
 input[type='number']::-webkit-outer-spin-button,

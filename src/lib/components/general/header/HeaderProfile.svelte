@@ -40,9 +40,6 @@
 		shadow-sm
 		ring-1
 		ring-b-default
-		transition
-		duration-200
-		ease-out
 		hover:bg-s-muted
 		hover:shadow-md
 		hover:ring-brand-primary
@@ -76,8 +73,6 @@
 				h-9
 				w-9
 				text-brand-primary
-				transition-colors
-				duration-200
 				group-hover:text-brand-primary-dark
 			"
 			iconAltText={$translationsStore.generalTexts.profileNotLoggedAltText}

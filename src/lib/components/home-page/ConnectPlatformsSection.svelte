@@ -34,7 +34,7 @@
 			{$translationsStore.homePage.connectPlatformsSectionHeading1}
 		</h2>
 
-		<p class="text-md text-center lg:text-left lg:text-lg">
+		<p class="paragraph-home-page">
 			{$translationsStore.homePage.connectPlatformsSectionParagraph1}
 		</p>
 

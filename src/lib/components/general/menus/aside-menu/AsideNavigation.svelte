@@ -43,7 +43,6 @@
 						cursor-pointer
 						text-sm
 						font-medium
-						transition-all
 						hover:text-brand-primary-dark
 						{$page.url.pathname === item.link ? 'font-semibold text-brand-primary-dark' : 'text-brand-primary'}
 					"

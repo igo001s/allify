@@ -134,12 +134,12 @@
 	additionalClasses="max-h-[90vh] w-full max-w-3xl"
 >
 	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
-		<p class="text-lg leading-tight font-bold text-t-primary sm:text-xl">
+		<p class="text-lg font-bold text-t-primary sm:text-xl">
 			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserParagraph1}
 			<span class="font-bold text-brand-primary">{publicProfileUserName}</span>
 		</p>
 
-		<p class="text-xs leading-relaxed text-t-secondary sm:text-sm">
+		<p class="text-xs text-t-secondary sm:text-sm">
 			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserParagraph2}
 		</p>
 
@@ -150,7 +150,7 @@
 				minlength="1"
 				maxlength="200"
 				rows="4"
-				class="mt-1 w-full resize-none rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary transition-all outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
+				class="mt-1 w-full resize-none rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
 				placeholder={$translationsStore.musicCommunityPage.publicUser
 					.musicCommunityPagePublicUserInputPlaceholder}
 				bind:value={comment}

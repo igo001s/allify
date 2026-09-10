@@ -105,7 +105,6 @@
 			bg-s-default
 			px-2.5 py-1.5
 			text-sm
-			transition-all duration-200
 			hover:border-brand-primary hover:bg-s-muted
 			hover:shadow-sm
 			focus:outline-none
@@ -131,7 +130,7 @@
 		</div>
 
 		<ArrowIcon
-			iconSvgClass={`w-5 h-5 pointer-events-none transition-transform duration-200
+			iconSvgClass={`w-5 h-5 pointer-events-none
 				text-t-muted
 				${openLanguageDropdown ? 'rotate-180' : ''}`}
 			iconAltText={$translationsStore.generalTexts.dropdownAriaLabel}
@@ -153,7 +152,6 @@
 				<button
 					class="
 						w-full cursor-pointer text-left
-						transition-colors duration-150
 						{$languageStore === language.code
 						? 'bg-brand-primary-light/15 hover:bg-brand-primary-light/20'
 						: 'hover:bg-s-muted'}
