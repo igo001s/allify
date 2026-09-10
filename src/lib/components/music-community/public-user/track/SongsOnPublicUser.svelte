@@ -32,7 +32,7 @@
 	<div class="flex flex-col gap-8 xl:flex-row">
 		{#each songsItems as { trackItem, type }}
 			{#if trackItem}
-				<SongsOnPublicUserItem trackItem={{ track: trackItem, type }} {publicUser} />
+				<SongsOnPublicUserItem trackItem={{ item: trackItem, type }} {publicUser} />
 			{:else}
 				<EmptyMusicOnPublicUser publicUserName={publicUser?.name} musicType={type} />
 			{/if}

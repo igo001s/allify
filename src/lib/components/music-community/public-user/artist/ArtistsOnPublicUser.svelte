@@ -33,7 +33,7 @@
 	<div class="flex flex-col gap-8 xl:flex-row">
 		{#each artistItems as { artistItem, type }}
 			{#if artistItem}
-				<ArtistsOnPublicUserItem artistItem={{ artist: artistItem, type }} {publicUser} />
+				<ArtistsOnPublicUserItem artistItem={{ item: artistItem, type }} {publicUser} />
 			{:else}
 				<EmptyArtistOnPublicUser publicUserName={publicUser.name} artistType={type} />
 			{/if}

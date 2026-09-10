@@ -13,13 +13,13 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Props
-	export let handleEditButtonClick: () => void;
+	export let handleEditButtonClick: (() => void) | undefined = undefined;
 	export let profileItem: { item: ArtistSpotify | TrackSpotify; type: string };
 	export let heading3: string;
 	export let isUppercase: boolean;
 	export let showEditIcon: boolean = false;
-	export let showEditIconAriaLabel: string;
-	export let showEditIconAltText: string;
+	export let showEditIconAriaLabel: string | undefined = undefined;
+	export let showEditIconAltText: string | undefined = undefined;
 </script>
 
 <div class="flex w-full flex-col gap-4 xl:w-1/3">
