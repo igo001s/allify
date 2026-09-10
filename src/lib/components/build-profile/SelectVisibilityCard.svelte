@@ -1,7 +1,6 @@
 <script lang="ts">
 	export let handleVisibilitySelection: (visibility: 'public' | 'private') => void;
 	export let buildProfileVisibility: string | undefined;
-
 	export let paragraph1: string;
 	export let paragraph2: string;
 </script>

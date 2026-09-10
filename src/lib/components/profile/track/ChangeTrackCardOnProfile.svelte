@@ -53,7 +53,7 @@
 			{track.artists.join(', ')}
 		</p>
 
-		<p class=" text-[9px] text-t-secondary/70 sm:text-[10px]">
+		<p class="text-[9px] text-t-secondary/70 sm:text-[10px]">
 			{track.albumName}
 		</p>
 	</div>

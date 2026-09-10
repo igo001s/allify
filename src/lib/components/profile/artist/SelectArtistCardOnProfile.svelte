@@ -38,7 +38,7 @@
 			{artist.name}
 		</p>
 
-		<p class=" text-[9px] text-t-secondary/70 sm:text-[10px]">
+		<p class="text-[9px] text-t-secondary/70 sm:text-[10px]">
 			{artist.followers.toLocaleString()}
 			{$translationsStore.profilePage.profilePageSelectYourArtistChooseArtistFollowers}
 		</p>
