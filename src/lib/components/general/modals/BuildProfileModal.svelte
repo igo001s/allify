@@ -2,9 +2,6 @@
 	// Svelte
 	import { onMount, onDestroy } from 'svelte';
 
-	// Assets
-	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
-
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
 	import FirstAccessSection from '$lib/components/build-profile/FirstAccessSection.svelte';

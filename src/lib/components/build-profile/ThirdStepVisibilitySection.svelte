@@ -9,15 +9,6 @@
 	export let goToNextStep: () => void;
 	export let backToPreviousStep: () => void;
 	export let buildProfileVisibility: 'public' | 'private' | undefined = undefined;
-
-	function handleVisibilitySelection(visibility: 'public' | 'private') {
-		if (buildProfileVisibility === visibility) {
-			buildProfileVisibility = undefined;
-			return;
-		}
-
-		buildProfileVisibility = visibility;
-	}
 </script>
 
 <div class="flex w-full flex-col gap-3 sm:gap-4">
@@ -30,10 +21,10 @@
 	</p>
 
 	<div class="mt-1 flex flex-col gap-3 sm:mt-2">
-		{#each [{ visibility: 'public', paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription }, { visibility: 'private', paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription }] as option}
+		{#each [{ visibility: 'public' as 'public', paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription }, { visibility: 'private' as 'private', paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription }] as option}
 			<SelectVisibilityCard
-				{handleVisibilitySelection}
-				{buildProfileVisibility}
+				visibility={option.visibility}
+				bind:buildProfileVisibility
 				paragraph1={option.paragraph1}
 				paragraph2={option.paragraph2}
 			/>
