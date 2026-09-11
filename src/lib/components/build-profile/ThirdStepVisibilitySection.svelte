@@ -8,7 +8,7 @@
 	// Props
 	export let goToNextStep: () => void;
 	export let backToPreviousStep: () => void;
-	export let buildProfileVisibility: string | undefined = undefined;
+	export let buildProfileVisibility: 'public' | 'private' | undefined = undefined;
 
 	function handleVisibilitySelection(visibility: 'public' | 'private') {
 		if (buildProfileVisibility === visibility) {
