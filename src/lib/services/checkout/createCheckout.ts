@@ -48,7 +48,17 @@ export async function createCheckout(
 			throw new Error('Checkout URL not found');
 		}
 
-		window.location.assign(parsedResponse.url);
+		const checkoutUrl = new URL(parsedResponse.url);
+
+		if (checkoutUrl.protocol !== 'https:') {
+			throw new Error('Invalid checkout URL');
+		}
+
+		if (checkoutUrl.hostname !== 'checkout.stripe.com') {
+			throw new Error('Invalid checkout domain');
+		}
+
+		window.location.assign(checkoutUrl.href);
 
 		return;
 	} catch (error) {
