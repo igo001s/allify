@@ -139,52 +139,53 @@ export const ja = {
 		toastCloseButtonAltText: '通知を閉じるアイコン',
 		connectPlatformSpotifyAltText: 'Spotifyのアイコン',
 		connectPlatformDeezerAltText: 'Deezerのアイコン',
-		fetchUserInfoUserCreationInfoErrorToast: 'ユーザーの作成中にエラーが発生しました。'
+		fetchUserInfoUserCreationInfoErrorToast: 'ユーザーの作成中にエラーが発生しました。',
+		musicalWavesDivisorAltText: '音楽の波の区切り線'
 	},
 	homePage: {
-    title: 'あなたの音楽的アイデンティティを発見 | Allify',
-    homePageMetaDescription:
-        'Allifyであなたの音楽的アイデンティティを発見しましょう。ストリーミングプラットフォームを接続して、よく聴くアーティストや楽曲を確認し、音楽プロフィールをカスタマイズして、音楽を愛するコミュニティとあなたの音楽の好みを共有できます。',
-    homePageMetaOgAndTwitterContent:
-        'Allifyであなたの音楽的アイデンティティを発見しましょう。ストリーミングプラットフォームを接続して、よく聴くアーティストや楽曲を確認し、音楽プロフィールをカスタマイズして、音楽を愛するコミュニティとあなたの音楽の好みを共有できます。',
-    homePageMetaKeywords:
-        'Allify, 音楽的アイデンティティ, 音楽の好み, 音楽プロフィール, 音楽プロフィールページ, よく聴くアーティスト, よく聴く楽曲, 音楽統計, 音楽データ, 音楽履歴, ストリーミングプラットフォーム, 音楽コミュニティ, Spotify, Deezer',
-    homePageHeroSectionHeading1: 'あなたの音楽が語るあなた自身を発見しよう',
-    homePageHeroSectionParagraph1:
-        'ストリーミングプラットフォームをAllifyに接続して、音楽データをあなたらしさを表現するプロフィールに変えましょう。よく聴くアーティストや楽曲を確認し、自分の音楽の好みを追いながら、音楽を愛するコミュニティと音楽的アイデンティティを共有できます。',
-    alliMascotPointingDownwardsAltText: 'アクションボタンを示すために下を指しているAlli',
-    alliMascotPointingToLeftAltText: 'アクションボタンを示すために左を指しているAlli',
-    homePageHeroSectionButton1: '自分の音楽を発見する',
-    homePageHeroSectionButton1v2: '音楽プロフィールへ',
-    homePageHeroSectionButton1AriaLabel: '自分の音楽を発見する',
-    homePageHeroSectionButton1v2AriaLabel: '音楽プロフィールへ',
-    connectPlatformsSectionHeading1: 'プラットフォームを接続して、音楽をひとつの場所にまとめよう',
-    connectPlatformsSectionParagraph1:
-        'ストリーミングプラットフォームをAllifyに接続して、普段の音楽の聴き方をパーソナライズされた音楽体験に変えましょう。音楽データをまとめ、日常的に聴いているアーティストや楽曲を確認し、音楽を通してあなたらしさを表現するプロフィールを作成できます。',
-    connectPlatformSpotifyDescription:
-        'SpotifyをAllifyに接続して、音楽アクティビティを分析し、よく聴くアーティストや楽曲を確認して、音楽の好みをパーソナライズされたプロフィールに変えましょう。',
-    connectPlatformDeezerDescription:
-        'DeezerをAllifyに接続して、音楽の聴き方を確認し、よく聴くアーティストや楽曲を見つけ、あなたの音楽的アイデンティティを表現するプロフィールを作りましょう。',
-    connectPlatformCardPlatformConnectIconAltText: '接続アイコン',
-    connectPlatformCardPlatformConnectSpotifyButton: 'Spotifyを接続',
-    connectPlatformCardPlatformConnectDeezerButton: 'Deezerを接続',
-    connectPlatformCardPlatformConnectedButton: '接続済み',
-    connectPlatformCardPlatformExternalLinkIconAltText: '外部リンクアイコン',
-    connectPlatformCardPlatformExternalLink: '移動',
-    musicalItemsSectionHeading1: 'Allifyで楽しめること',
-    musicalItemCardTitleArtists: 'アーティスト',
-    musicalItemCardTitleArtistsItem1: 'よく聴くアーティストを追いかけながら、あなたの音楽的アイデンティティを知ることができます。',
-    musicalItemCardTitleArtistsItem2: 'あなたの音楽の好みや聴き方を最もよく表すアーティストを確認できます。',
-    musicalItemCardTitleArtistsItem3: 'あなたにとって特別な意味を持つアーティストをプロフィールで目立たせることができます。',
-    musicalItemCardTitleArtistsItem4: 'お気に入りのアーティストを共有して、音楽が好きな人たちとつながりましょう。',
-    musicalItemCardArtistsButtonContent: 'アーティストを見る',
-    musicalItemCardTitleSongs: '楽曲',
-    musicalItemCardTitleSongsItem1: 'あなたの音楽体験を彩る、よく聴く楽曲を追いかけることができます。',
-    musicalItemCardTitleSongsItem2: '今聴いている音楽や、そのときの気持ちを表す「今の一曲」を選べます。',
-    musicalItemCardTitleSongsItem3: 'あなたの大切な瞬間に寄り添う楽曲を共有して、新しいつながりを生み出せます。',
-    musicalItemCardTitleSongsItem4: '特別な楽曲をプロフィールで目立たせ、今もあなたの音楽の物語の一部である楽曲を表示し続けられます。',
-    musicalItemCardSongsButtonContent: '楽曲を見る'
-},
+		title: 'あなたの音楽的アイデンティティを発見 | Allify',
+		homePageMetaDescription:
+			'Allifyであなたの音楽的アイデンティティを発見しましょう。ストリーミングプラットフォームを接続して、よく聴くアーティストや楽曲を確認し、音楽プロフィールをカスタマイズして、音楽を愛するコミュニティとあなたの音楽の好みを共有できます。',
+		homePageMetaOgAndTwitterContent:
+			'Allifyであなたの音楽的アイデンティティを発見しましょう。ストリーミングプラットフォームを接続して、よく聴くアーティストや楽曲を確認し、音楽プロフィールをカスタマイズして、音楽を愛するコミュニティとあなたの音楽の好みを共有できます。',
+		homePageMetaKeywords:
+			'Allify, 音楽的アイデンティティ, 音楽の好み, 音楽プロフィール, 音楽プロフィールページ, よく聴くアーティスト, よく聴く楽曲, 音楽統計, 音楽データ, 音楽履歴, ストリーミングプラットフォーム, 音楽コミュニティ, Spotify, Deezer',
+		homePageHeroSectionHeading1: 'あなたの音楽が語るあなた自身を発見しよう',
+		homePageHeroSectionParagraph1:
+			'ストリーミングプラットフォームをAllifyに接続して、音楽データをあなたらしさを表現するプロフィールに変えましょう。よく聴くアーティストや楽曲を確認し、自分の音楽の好みを追いながら、音楽を愛するコミュニティと音楽的アイデンティティを共有できます。',
+		alliMascotPointingDownwardsAltText: 'アクションボタンを示すために下を指しているAlli',
+		alliMascotPointingToLeftAltText: 'アクションボタンを示すために左を指しているAlli',
+		homePageHeroSectionButton1: '自分の音楽を発見する',
+		homePageHeroSectionButton1v2: '音楽プロフィールへ',
+		homePageHeroSectionButton1AriaLabel: '自分の音楽を発見する',
+		homePageHeroSectionButton1v2AriaLabel: '音楽プロフィールへ',
+		connectPlatformsSectionHeading1: 'プラットフォームを接続して、音楽をひとつの場所にまとめよう',
+		connectPlatformsSectionParagraph1:
+			'ストリーミングプラットフォームをAllifyに接続して、普段の音楽の聴き方をパーソナライズされた音楽体験に変えましょう。音楽データをまとめ、日常的に聴いているアーティストや楽曲を確認し、音楽を通してあなたらしさを表現するプロフィールを作成できます。',
+		connectPlatformSpotifyDescription:
+			'SpotifyをAllifyに接続して、音楽アクティビティを分析し、よく聴くアーティストや楽曲を確認して、音楽の好みをパーソナライズされたプロフィールに変えましょう。',
+		connectPlatformDeezerDescription:
+			'DeezerをAllifyに接続して、音楽の聴き方を確認し、よく聴くアーティストや楽曲を見つけ、あなたの音楽的アイデンティティを表現するプロフィールを作りましょう。',
+		connectPlatformCardPlatformConnectIconAltText: '接続アイコン',
+		connectPlatformCardPlatformConnectSpotifyButton: 'Spotifyを接続',
+		connectPlatformCardPlatformConnectDeezerButton: 'Deezerを接続',
+		connectPlatformCardPlatformConnectedButton: '接続済み',
+		connectPlatformCardPlatformExternalLinkIconAltText: '外部リンクアイコン',
+		connectPlatformCardPlatformExternalLink: '移動',
+		musicalItemsSectionHeading1: 'Allifyで楽しめること',
+		musicalItemCardTitleArtists: 'アーティスト',
+		musicalItemCardTitleArtistsItem1: 'よく聴くアーティストを追いかけながら、あなたの音楽的アイデンティティを知ることができます。',
+		musicalItemCardTitleArtistsItem2: 'あなたの音楽の好みや聴き方を最もよく表すアーティストを確認できます。',
+		musicalItemCardTitleArtistsItem3: 'あなたにとって特別な意味を持つアーティストをプロフィールで目立たせることができます。',
+		musicalItemCardTitleArtistsItem4: 'お気に入りのアーティストを共有して、音楽が好きな人たちとつながりましょう。',
+		musicalItemCardArtistsButtonContent: 'アーティストを見る',
+		musicalItemCardTitleSongs: '楽曲',
+		musicalItemCardTitleSongsItem1: 'あなたの音楽体験を彩る、よく聴く楽曲を追いかけることができます。',
+		musicalItemCardTitleSongsItem2: '今聴いている音楽や、そのときの気持ちを表す「今の一曲」を選べます。',
+		musicalItemCardTitleSongsItem3: 'あなたの大切な瞬間に寄り添う楽曲を共有して、新しいつながりを生み出せます。',
+		musicalItemCardTitleSongsItem4: '特別な楽曲をプロフィールで目立たせ、今もあなたの音楽の物語の一部である楽曲を表示し続けられます。',
+		musicalItemCardSongsButtonContent: '楽曲を見る'
+	},
 	myMusicalProfilePage: {
 		title: 'マイミュージックプロフィール | Allify',
 		myMusicalProfilePageMetaDescription:
