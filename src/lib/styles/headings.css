@@ -11,11 +11,11 @@
 }
 
 .heading-2-connected-platforms {
-	@apply text-center text-4xl lg:text-left lg:text-5xl;
+	@apply text-center text-4xl lg:text-5xl;
 }
 
-.heading-2-devices {
-	@apply text-center text-4xl text-t-primary lg:w-120 lg:min-w-120 lg:text-left lg:text-5xl;
+.heading-2-musical-items {
+	@apply text-center text-4xl text-t-primary lg:text-5xl;
 }
 
 .heading-2-legal-pages {
@@ -24,6 +24,10 @@
 
 .heading-3 {
 	@apply text-sm font-medium text-t-secondary;
+}
+
+.heading-3-musical-items {
+	@apply flex items-center gap-4 text-2xl font-semibold text-t-primary lg:text-3xl;
 }
 
 .heading-3-legal-pages {

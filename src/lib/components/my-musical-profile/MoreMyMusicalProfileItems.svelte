@@ -137,7 +137,11 @@
 	}
 </script>
 
-<button class="button-cta mx-auto" onclick={handleLoadMoreMusicalItems} disabled={loadingMoreItems}>
+<button
+	class="button-cta mx-auto w-full lg:w-90 lg:max-w-90"
+	onclick={handleLoadMoreMusicalItems}
+	disabled={loadingMoreItems}
+>
 	{#if !loadingMoreItems}
 		<div class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left">
 			<span class="text-sm leading-none">

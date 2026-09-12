@@ -1,7 +1,3 @@
 p {
 	@apply leading-relaxed;
 }
-
-.paragraph-home-page {
-	@apply text-center text-base lg:text-left lg:text-lg;
-}

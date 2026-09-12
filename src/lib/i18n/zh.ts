@@ -133,40 +133,49 @@ export const zh = {
 		fetchUserInfoUserCreationInfoErrorToast: '创建用户时发生错误。'
 	},
 	homePage: {
-		title: '发现你的音乐身份 | Allify',
-		homePageMetaDescription:
-			'通过 Allify 发现你的音乐身份。查看你最常听的艺人和歌曲，个性化你的音乐主页，并与热爱音乐的社区分享你的音乐品味。',
-		homePageMetaOgAndTwitterContent:
-			'通过 Allify 发现你的音乐身份。查看你最常听的艺人和歌曲，个性化你的音乐主页，并与热爱音乐的社区分享你的音乐品味。',
-		homePageMetaKeywords:
-			'音乐身份, 音乐品味, 音乐主页, 最常听的艺人, 最常听的歌曲, 音乐社区, 音乐统计, Allify',
-		homePageHeroSectionHeading1: '发现音乐诉说的你',
-		homePageHeroSectionParagraph1:
-			'发现你最常听的艺人和歌曲，个性化你的音乐主页，并与热爱音乐的社区分享你喜欢的一切。',
-		alliMascotPointingDownwardsAltText: 'Alli指向下方，提示操作按钮',
-		alliMascotPointingToLeftAltText: 'Alli指向左侧，提示操作按钮',
-		homePageHeroSectionButton1: '发现我的音乐',
-		homePageHeroSectionButton1v2: '前往我的音乐主页',
-		homePageHeroSectionButton1AriaLabel: '发现我的音乐',
-		homePageHeroSectionButton1v2AriaLabel: '前往我的音乐主页',
-		connectPlatformsSectionHeading1: '将你的音乐连接到 Allify',
-		connectPlatformsSectionParagraph1:
-			'连接你的流媒体平台，将你的聆听习惯转化为个性化的音乐体验，把你喜欢的艺人和歌曲汇聚到一个地方。',
-		connectPlatformSpotifyDescription:
-			'将 Spotify 连接到 Allify，发现你最常听的艺人和歌曲，更好地了解自己的音乐品味。',
-		connectPlatformDeezerDescription:
-			'将 Deezer 连接到 Allify，探索你最常听的音乐，打造一个能够展现你音乐身份的个人主页。',
-		connectPlatformCardPlatformConnectIconAltText: '连接图标',
-		connectPlatformCardPlatformConnectSpotifyButton: '连接 Spotify',
-		connectPlatformCardPlatformConnectDeezerButton: '连接 Deezer',
-		connectPlatformCardPlatformConnectedButton: '已连接',
-		connectPlatformCardPlatformExternalLinkIconAltText: '外部链接图标',
-		connectPlatformCardPlatformExternalLink: '前往',
-		devicesSectionHeading1: '随时随地，以你的方式享受音乐',
-		devicesSectionParagraph1:
-			'在任何设备上访问你的音乐主页，探索你喜爱的艺人和歌曲，并继续发现更多表达音乐品味的方式。',
-		devicesSectionAltText: '设备插图'
-	},
+    title: '发现你的音乐身份 | Allify',
+    homePageMetaDescription:
+        '通过 Allify 发现你的音乐身份。连接你的流媒体平台，查看最常听的艺人和歌曲，个性化你的音乐资料，并与热爱音乐的社区分享你的音乐品味。',
+    homePageMetaOgAndTwitterContent:
+        '通过 Allify 发现你的音乐身份。连接你的流媒体平台，查看最常听的艺人和歌曲，个性化你的音乐资料，并与热爱音乐的社区分享你的音乐品味。',
+    homePageMetaKeywords:
+        'Allify, 音乐身份, 音乐品味, 音乐资料, 音乐个人资料, 最常听的艺人, 最常听的歌曲, 音乐统计, 音乐数据, 音乐历史, 流媒体平台, 音乐社区, Spotify, Deezer',
+    homePageHeroSectionHeading1: '发现你的音乐诉说着怎样的你',
+    homePageHeroSectionParagraph1:
+        '将你的流媒体平台连接到 Allify，把音乐数据转化为能够代表你的个人资料。查看最常听的艺人和歌曲，了解自己的音乐品味，并与热爱音乐的社区分享你的音乐身份。',
+    alliMascotPointingDownwardsAltText: 'Alli 指向下方，提示操作按钮',
+    alliMascotPointingToLeftAltText: 'Alli 指向左侧，提示操作按钮',
+    homePageHeroSectionButton1: '发现我的音乐',
+    homePageHeroSectionButton1v2: '前往我的音乐资料',
+    homePageHeroSectionButton1AriaLabel: '发现我的音乐',
+    homePageHeroSectionButton1v2AriaLabel: '前往我的音乐资料',
+    connectPlatformsSectionHeading1: '连接你的平台，将音乐汇聚到一个地方',
+    connectPlatformsSectionParagraph1:
+        '将你的流媒体平台连接到 Allify，把你的聆听习惯转化为个性化的音乐体验。汇总你的音乐数据，了解日常聆听的艺人和歌曲，并创建一个通过音乐展现你的个人资料。',
+    connectPlatformSpotifyDescription:
+        '将 Spotify 连接到 Allify，分析你的音乐活动，查看最常听的艺人和歌曲，并将你的音乐品味转化为个性化的资料。',
+    connectPlatformDeezerDescription:
+        '将 Deezer 连接到 Allify，了解你的聆听习惯，探索最常听的艺人和歌曲，并创建一个展现你音乐身份的个人资料。',
+    connectPlatformCardPlatformConnectIconAltText: '连接图标',
+    connectPlatformCardPlatformConnectSpotifyButton: '连接 Spotify',
+    connectPlatformCardPlatformConnectDeezerButton: '连接 Deezer',
+    connectPlatformCardPlatformConnectedButton: '已连接',
+    connectPlatformCardPlatformExternalLinkIconAltText: '外部链接图标',
+    connectPlatformCardPlatformExternalLink: '前往',
+    musicalItemsSectionHeading1: '在 Allify 上探索更多音乐内容',
+    musicalItemCardTitleArtists: '艺人',
+    musicalItemCardTitleArtistsItem1: '关注你最常听的艺人，了解他们如何成为你音乐身份的一部分。',
+    musicalItemCardTitleArtistsItem2: '看看哪些艺人最能代表你的音乐品味和聆听体验。',
+    musicalItemCardTitleArtistsItem3: '在个人资料中突出展示对你有特殊意义的艺人，让你的音乐品味更加个性化。',
+    musicalItemCardTitleArtistsItem4: '分享你喜欢的艺人，与其他热爱音乐的人建立联系。',
+    musicalItemCardArtistsButtonContent: '查看艺人',
+    musicalItemCardTitleSongs: '歌曲',
+    musicalItemCardTitleSongsItem1: '关注那些在你的聆听体验中占据重要位置的歌曲。',
+    musicalItemCardTitleSongsItem2: '选择一首当下的歌曲，代表你正在聆听和感受的音乐。',
+    musicalItemCardTitleSongsItem3: '分享那些陪伴你度过特别时刻的歌曲，并通过音乐建立新的联系。',
+    musicalItemCardTitleSongsItem4: '在个人资料中突出展示特别的歌曲，让那些依然属于你音乐故事的歌曲持续可见。',
+    musicalItemCardSongsButtonContent: '查看歌曲'
+},
 	myMusicalProfilePage: {
 		title: '我的音乐档案 | Allify',
 		myMusicalProfilePageMetaDescription:

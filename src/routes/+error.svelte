@@ -75,7 +75,7 @@
 		</p>
 	</div>
 
-	<button on:click={() => goto('/')} class="button-cta">
+	<button on:click={() => goto('/')} class="button-cta w-full lg:w-90 lg:max-w-90">
 		{$translationsStore.errorPage.errorPageButtonGoHome}
 	</button>
 </div>

@@ -143,40 +143,49 @@ export const ru = {
 		fetchUserInfoUserCreationInfoErrorToast: 'Произошла ошибка при создании пользователя.'
 	},
 	homePage: {
-		title: 'Откройте свою музыкальную идентичность | Allify',
-		homePageMetaDescription:
-			'Откройте свою музыкальную идентичность с Allify. Узнайте своих самых прослушиваемых исполнителей и песни, персонализируйте музыкальный профиль и делитесь своими вкусами с сообществом любителей музыки.',
-		homePageMetaOgAndTwitterContent:
-			'Откройте свою музыкальную идентичность с Allify. Узнайте своих самых прослушиваемых исполнителей и песни, персонализируйте музыкальный профиль и делитесь своими вкусами с сообществом любителей музыки.',
-		homePageMetaKeywords:
-			'музыкальная идентичность, музыкальные вкусы, музыкальный профиль, самые прослушиваемые исполнители, самые прослушиваемые песни, музыкальное сообщество, музыкальная статистика, Allify',
-		homePageHeroSectionHeading1: 'Узнайте, что ваша музыка говорит о вас',
-		homePageHeroSectionParagraph1:
-			'Узнайте своих самых прослушиваемых исполнителей и песни, персонализируйте музыкальный профиль и делитесь тем, что вы любите, с сообществом любителей музыки.',
-		alliMascotPointingDownwardsAltText: 'Alli указывает вниз, обозначая кнопку действия',
-		alliMascotPointingToLeftAltText: 'Alli указывает налево, обозначая кнопку действия',
-		homePageHeroSectionButton1: 'Открыть мою музыку',
-		homePageHeroSectionButton1v2: 'Перейти в мой музыкальный профиль',
-		homePageHeroSectionButton1AriaLabel: 'Открыть мою музыку',
-		homePageHeroSectionButton1v2AriaLabel: 'Перейти в мой музыкальный профиль',
-		connectPlatformsSectionHeading1: 'Подключите свою музыку к Allify',
-		connectPlatformsSectionParagraph1:
-			'Подключите свои стриминговые платформы и превратите свои привычки прослушивания в персонализированный музыкальный опыт, собрав исполнителей и песни в одном месте.',
-		connectPlatformSpotifyDescription:
-			'Подключите Spotify к Allify, чтобы узнать своих самых прослушиваемых исполнителей и песни и лучше понять свои музыкальные вкусы.',
-		connectPlatformDeezerDescription:
-			'Подключите Deezer к Allify, чтобы узнать, что вы слушаете чаще всего, и создать профиль, отражающий вашу музыкальную идентичность.',
-		connectPlatformCardPlatformConnectIconAltText: 'Значок подключения',
-		connectPlatformCardPlatformConnectSpotifyButton: 'Подключить Spotify',
-		connectPlatformCardPlatformConnectDeezerButton: 'Подключить Deezer',
-		connectPlatformCardPlatformConnectedButton: 'Подключено',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'Значок внешней ссылки',
-		connectPlatformCardPlatformExternalLink: 'Перейти',
-		devicesSectionHeading1: 'Ваша музыка, по-вашему, где бы вы ни были',
-		devicesSectionParagraph1:
-			'Получайте доступ к своему музыкальному профилю с любого устройства, изучайте любимых исполнителей и песни и открывайте новые способы выражать свои музыкальные вкусы.',
-		devicesSectionAltText: 'Иллюстрация устройств'
-	},
+    title: 'Откройте свою музыкальную идентичность | Allify',
+    homePageMetaDescription:
+        'Откройте свою музыкальную идентичность с Allify. Подключите свои стриминговые платформы, отслеживайте наиболее прослушиваемых артистов и песни, персонализируйте свой музыкальный профиль и делитесь своими музыкальными предпочтениями с сообществом, увлечённым музыкой.',
+    homePageMetaOgAndTwitterContent:
+        'Откройте свою музыкальную идентичность с Allify. Подключите свои стриминговые платформы, отслеживайте наиболее прослушиваемых артистов и песни, персонализируйте свой музыкальный профиль и делитесь своими музыкальными предпочтениями с сообществом, увлечённым музыкой.',
+    homePageMetaKeywords:
+        'Allify, музыкальная идентичность, музыкальные предпочтения, музыкальный профиль, профиль музыки, самые прослушиваемые артисты, самые прослушиваемые песни, музыкальная статистика, музыкальные данные, история музыки, стриминговые платформы, музыкальное сообщество, Spotify, Deezer',
+    homePageHeroSectionHeading1: 'Узнайте, что ваша музыка говорит о вас',
+    homePageHeroSectionParagraph1:
+        'Подключите свои стриминговые платформы к Allify и превратите музыкальные данные в профиль, который отражает вашу индивидуальность. Смотрите наиболее прослушиваемых артистов и песни, отслеживайте свои музыкальные предпочтения и делитесь своей музыкальной идентичностью с сообществом, увлечённым музыкой.',
+    alliMascotPointingDownwardsAltText: 'Alli указывает вниз, обозначая кнопку действия',
+    alliMascotPointingToLeftAltText: 'Alli указывает влево, обозначая кнопку действия',
+    homePageHeroSectionButton1: 'Открыть мою музыку',
+    homePageHeroSectionButton1v2: 'Перейти к моему музыкальному профилю',
+    homePageHeroSectionButton1AriaLabel: 'Открыть мою музыку',
+    homePageHeroSectionButton1v2AriaLabel: 'Перейти к моему музыкальному профилю',
+    connectPlatformsSectionHeading1: 'Подключите свои платформы и соберите всю музыку в одном месте',
+    connectPlatformsSectionParagraph1:
+        'Подключите свои стриминговые платформы к Allify, чтобы превратить привычки прослушивания в персонализированный музыкальный опыт. Соберите свои музыкальные данные, отслеживайте артистов и песни, которые являются частью вашей повседневной жизни, и создайте профиль, который показывает, кто вы через музыку.',
+    connectPlatformSpotifyDescription:
+        'Подключите Spotify к Allify, чтобы анализировать свою музыкальную активность, отслеживать наиболее прослушиваемых артистов и песни и превращать свои музыкальные предпочтения в персонализированный профиль.',
+    connectPlatformDeezerDescription:
+        'Подключите Deezer к Allify, чтобы отслеживать свои привычки прослушивания, изучать наиболее прослушиваемых артистов и песни и создавать профиль, отражающий вашу музыкальную идентичность.',
+    connectPlatformCardPlatformConnectIconAltText: 'Значок подключения',
+    connectPlatformCardPlatformConnectSpotifyButton: 'Подключить Spotify',
+    connectPlatformCardPlatformConnectDeezerButton: 'Подключить Deezer',
+    connectPlatformCardPlatformConnectedButton: 'Подключено',
+    connectPlatformCardPlatformExternalLinkIconAltText: 'Значок внешней ссылки',
+    connectPlatformCardPlatformExternalLink: 'Перейти',
+    musicalItemsSectionHeading1: 'Всё, что можно исследовать с Allify',
+    musicalItemCardTitleArtists: 'Артисты',
+    musicalItemCardTitleArtistsItem1: 'Следите за артистами, которых вы слушаете чаще всего и которые являются частью вашей музыкальной идентичности.',
+    musicalItemCardTitleArtistsItem2: 'Узнайте, какие артисты лучше всего отражают ваши музыкальные предпочтения и опыт прослушивания.',
+    musicalItemCardTitleArtistsItem3: 'Персонализируйте свой профиль, выделив артистов, которые имеют для вас особое значение.',
+    musicalItemCardTitleArtistsItem4: 'Делитесь любимыми артистами и общайтесь с другими людьми, увлечёнными музыкой.',
+    musicalItemCardArtistsButtonContent: 'Смотреть артистов',
+    musicalItemCardTitleSongs: 'Песни',
+    musicalItemCardTitleSongsItem1: 'Следите за песнями, которые занимают важное место в вашем опыте прослушивания.',
+    musicalItemCardTitleSongsItem2: 'Выберите песню момента, которая отражает то, что вы сейчас слушаете и чувствуете.',
+    musicalItemCardTitleSongsItem3: 'Делитесь песнями, которые сопровождают ваши моменты, и создавайте новые связи благодаря им.',
+    musicalItemCardTitleSongsItem4: 'Выделяйте особенные песни в своём профиле и сохраняйте видимыми те, которые продолжают быть частью вашей музыкальной истории.',
+    musicalItemCardSongsButtonContent: 'Смотреть песни'
+},
 	myMusicalProfilePage: {
 		title: 'Мой музыкальный профиль | Allify',
 		myMusicalProfilePageMetaDescription:

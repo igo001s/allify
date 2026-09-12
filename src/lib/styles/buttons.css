@@ -1,5 +1,5 @@
 .button-cta {
-	@apply flex h-16 w-full cursor-pointer items-center justify-center rounded-lg bg-brand-primary py-5 text-center text-sm font-semibold text-t-inverse shadow-md hover:scale-102 hover:bg-brand-primary-dark lg:w-90 lg:max-w-90;
+	@apply flex h-16 cursor-pointer items-center justify-center rounded-lg bg-brand-primary py-5 text-center text-sm font-semibold text-t-inverse shadow-md hover:scale-102 hover:bg-brand-primary-dark;
 }
 
 .button-primary {

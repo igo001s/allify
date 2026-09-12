@@ -143,41 +143,49 @@ export const es = {
 		fetchUserInfoUserCreationInfoErrorToast: 'Ocurrió un error al crear el usuario.'
 	},
 	homePage: {
-		title: 'Descubre tu identidad musical | Allify',
-		homePageMetaDescription:
-			'Descubre tu identidad musical con Allify. Mira tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
-		homePageMetaOgAndTwitterContent:
-			'Descubre tu identidad musical con Allify. Mira tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
-		homePageMetaKeywords:
-			'identidad musical, gustos musicales, perfil musical, artistas más escuchados, canciones más escuchadas, comunidad musical, estadísticas musicales, Allify',
-		homePageHeroSectionHeading1: 'Descubre lo que tu música dice sobre ti',
-		homePageHeroSectionParagraph1:
-			'Descubre tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte lo que te encanta con una comunidad apasionada por la música.',
-		alliMascotPointingDownwardsAltText: 'Alli señalando hacia abajo e indicando el botón de acción',
-		alliMascotPointingToLeftAltText:
-			'Alli señalando hacia la izquierda e indicando el botón de acción',
-		homePageHeroSectionButton1: 'Descubrir mi música',
-		homePageHeroSectionButton1v2: 'Ir a mi perfil musical',
-		homePageHeroSectionButton1AriaLabel: 'Descubrir mi música',
-		homePageHeroSectionButton1v2AriaLabel: 'Ir a mi perfil musical',
-		connectPlatformsSectionHeading1: 'Conecta tu música a Allify',
-		connectPlatformsSectionParagraph1:
-			'Conecta tus plataformas de streaming y convierte tus hábitos de escucha en una experiencia musical personalizada, con tus artistas y canciones reunidos en un solo lugar.',
-		connectPlatformSpotifyDescription:
-			'Conecta Spotify a Allify para descubrir tus artistas y canciones más escuchados y conocer mejor tus gustos musicales.',
-		connectPlatformDeezerDescription:
-			'Conecta Deezer a Allify para explorar lo que más escuchas y crear un perfil que represente tu identidad musical.',
-		connectPlatformCardPlatformConnectIconAltText: 'Icono de conexión',
-		connectPlatformCardPlatformConnectSpotifyButton: 'Conectar Spotify',
-		connectPlatformCardPlatformConnectDeezerButton: 'Conectar Deezer',
-		connectPlatformCardPlatformConnectedButton: 'Conectado',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'Icono de enlace externo',
-		connectPlatformCardPlatformExternalLink: 'Ir a',
-		devicesSectionHeading1: 'Tu música, a tu manera, estés donde estés',
-		devicesSectionParagraph1:
-			'Accede a tu perfil musical desde cualquier dispositivo, explora tus artistas y canciones favoritos y sigue descubriendo nuevas formas de expresar tus gustos musicales.',
-		devicesSectionAltText: 'Ilustración de dispositivos'
-	},
+    title: 'Descubre tu identidad musical | Allify',
+    homePageMetaDescription:
+        'Descubre tu identidad musical con Allify. Conecta tus plataformas de streaming, sigue a tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
+    homePageMetaOgAndTwitterContent:
+        'Descubre tu identidad musical con Allify. Conecta tus plataformas de streaming, sigue a tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
+    homePageMetaKeywords:
+        'Allify, identidad musical, gusto musical, perfil musical, perfil de música, artistas más escuchados, canciones más escuchadas, estadísticas musicales, datos musicales, historial musical, plataformas de streaming, comunidad musical, Spotify, Deezer',
+    homePageHeroSectionHeading1: 'Descubre lo que tu música dice sobre ti',
+    homePageHeroSectionParagraph1:
+        'Conecta tus plataformas de streaming a Allify y transforma tus datos musicales en un perfil que te representa. Mira tus artistas y canciones más escuchados, sigue tu gusto musical y comparte tu identidad musical con una comunidad apasionada por la música.',
+    alliMascotPointingDownwardsAltText: 'Alli señalando hacia abajo, indicando el botón de acción',
+    alliMascotPointingToLeftAltText: 'Alli señalando hacia la izquierda, indicando el botón de acción',
+    homePageHeroSectionButton1: 'Descubrir mi música',
+    homePageHeroSectionButton1v2: 'Ir a mi perfil musical',
+    homePageHeroSectionButton1AriaLabel: 'Descubrir mi música',
+    homePageHeroSectionButton1v2AriaLabel: 'Ir a mi perfil musical',
+    connectPlatformsSectionHeading1: 'Conecta tus plataformas y reúne tu música en un solo lugar',
+    connectPlatformsSectionParagraph1:
+        'Conecta tus plataformas de streaming a Allify para transformar tus hábitos de escucha en una experiencia musical personalizada. Reúne tus datos musicales, sigue a los artistas y canciones que forman parte de tu rutina y crea un perfil que muestra quién eres a través de la música.',
+    connectPlatformSpotifyDescription:
+        'Conecta Spotify a Allify para analizar tu actividad musical, seguir a tus artistas y canciones más escuchados y transformar tu gusto musical en un perfil personalizado.',
+    connectPlatformDeezerDescription:
+        'Conecta Deezer a Allify para seguir tus hábitos de escucha, explorar tus artistas y canciones más escuchados y crear un perfil que represente tu identidad musical.',
+    connectPlatformCardPlatformConnectIconAltText: 'Icono de conexión',
+    connectPlatformCardPlatformConnectSpotifyButton: 'Conectar Spotify',
+    connectPlatformCardPlatformConnectDeezerButton: 'Conectar Deezer',
+    connectPlatformCardPlatformConnectedButton: 'Conectado',
+    connectPlatformCardPlatformExternalLinkIconAltText: 'Icono de enlace externo',
+    connectPlatformCardPlatformExternalLink: 'Ir a',
+    musicalItemsSectionHeading1: 'Todo lo que puedes explorar con Allify',
+    musicalItemCardTitleArtists: 'Artistas',
+    musicalItemCardTitleArtistsItem1: 'Sigue a los artistas que más escuchas y que forman parte de tu identidad musical.',
+    musicalItemCardTitleArtistsItem2: 'Mira qué artistas representan mejor tus gustos y tu experiencia de escucha.',
+    musicalItemCardTitleArtistsItem3: 'Personaliza tu perfil destacando artistas que tienen un significado especial para ti.',
+    musicalItemCardTitleArtistsItem4: 'Comparte tus artistas favoritos y conecta con otras personas apasionadas por la música.',
+    musicalItemCardArtistsButtonContent: 'Ver artistas',
+    musicalItemCardTitleSongs: 'Canciones',
+    musicalItemCardTitleSongsItem1: 'Sigue las canciones que más forman parte de tu experiencia de escucha.',
+    musicalItemCardTitleSongsItem2: 'Elige una canción del momento para representar lo que estás escuchando y sintiendo.',
+    musicalItemCardTitleSongsItem3: 'Comparte canciones que forman parte de tus momentos y crea nuevas conexiones a través de ellas.',
+    musicalItemCardTitleSongsItem4: 'Destaca canciones especiales en tu perfil y mantén visibles aquellas que siguen formando parte de tu historia musical.',
+    musicalItemCardSongsButtonContent: 'Ver canciones'
+},
 	myMusicalProfilePage: {
 		title: 'Mi Perfil Musical | Allify',
 		myMusicalProfilePageMetaDescription:

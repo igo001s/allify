@@ -5,7 +5,7 @@
 </script>
 
 <svg
-	viewBox="0 0 355.000000 408.000000"
+	viewBox="-40 -20 485 485"
 	class={iconSvgClass}
 	aria-label={iconAltText}
 	role="img"

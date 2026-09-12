@@ -5,7 +5,7 @@
 	// Components
 	import HeroSection from '$lib/components/home-page/HeroSection.svelte';
 	import ConnectPlatformsSection from '$lib/components/home-page/ConnectPlatformsSection.svelte';
-	import DevicesSection from '$lib/components/home-page/DevicesSection.svelte';
+	import MusicalItemsSection from '$lib/components/home-page/MusicalItemsSection.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -49,4 +49,4 @@
 
 <ConnectPlatformsSection />
 
-<DevicesSection />
+<MusicalItemsSection />

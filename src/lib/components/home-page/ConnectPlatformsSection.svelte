@@ -4,7 +4,7 @@
 	import DeezerIcon from '$lib/assets/images/icons/streamings/DeezerIcon.svelte';
 
 	// Components
-	import CardPlatform from '$lib/components/home-page/CardPlatform.svelte';
+	import PlatformCard from '$lib/components/general/cards/PlatformCard.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -28,20 +28,23 @@
 	] as CardPlatformType[];
 </script>
 
-<section class="bg-brand-primary" id="connect-platforms-section">
-	<div class="flex flex-col items-center gap-4 text-t-inverse sm:px-12 lg:justify-between lg:gap-8">
-		<h2 class="heading-2-connected-platforms">
-			{$translationsStore.homePage.connectPlatformsSectionHeading1}
-		</h2>
+<section
+	id="connect-platforms-section"
+	class="flex flex-col items-center gap-6 rounded-lg bg-brand-primary px-8 py-12 text-t-inverse sm:px-10 sm:py-16 lg:gap-8 lg:px-16 lg:py-20"
+>
+	<h2 class="heading-2-connected-platforms max-w-4xl text-center">
+		{$translationsStore.homePage.connectPlatformsSectionHeading1}
+	</h2>
 
-		<p class="paragraph-home-page">
-			{$translationsStore.homePage.connectPlatformsSectionParagraph1}
-		</p>
+	<p class="max-w-4xl text-center">
+		{$translationsStore.homePage.connectPlatformsSectionParagraph1}
+	</p>
 
-		<ul class="mt-10 flex flex-col items-center gap-8 lg:gap-20 xl:flex-row xl:justify-center">
-			{#each platforms as platform}
-				<CardPlatform {platform} />
-			{/each}
-		</ul>
-	</div>
+	<ul
+		class="mt-4 flex w-full flex-col items-center gap-8 lg:mt-10 lg:gap-16 xl:flex-row xl:justify-center"
+	>
+		{#each platforms as platform}
+			<PlatformCard {platform} />
+		{/each}
+	</ul>
 </section>

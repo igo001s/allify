@@ -8,13 +8,13 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 </script>
 
-<section class="flex items-center bg-s-default lg:justify-between">
+<section class="flex items-center justify-between bg-s-default pt-10 pb-20 lg:pt-14 lg:pb-24">
 	<div class="flex max-w-full flex-col items-center gap-8 lg:mb-14 lg:max-w-190 lg:items-start">
-		<h1 class="heading-1-hero">
+		<h1 class="heading-1-hero max-w-2xl">
 			{$translationsStore.homePage.homePageHeroSectionHeading1}
 		</h1>
 
-		<p class="paragraph-home-page text-t-secondary">
+		<p class="max-w-2xl text-center leading-relaxed text-t-secondary lg:text-left">
 			{$translationsStore.homePage.homePageHeroSectionParagraph1}
 		</p>
 
@@ -30,8 +30,10 @@
 		/>
 
 		<a
-			class="button-cta"
-			href={`${$userInfo?.connectedStreamings.spotify ? '/my-musical-profile' : '#connect-platforms-section'}`}
+			class="button-cta w-full lg:w-90 lg:max-w-90"
+			href={$userInfo?.connectedStreamings.spotify
+				? '/my-musical-profile'
+				: '#connect-platforms-section'}
 			aria-label={$userInfo !== undefined
 				? $translationsStore.homePage.homePageHeroSectionButton1v2AriaLabel
 				: $translationsStore.homePage.homePageHeroSectionButton1AriaLabel}
@@ -45,7 +47,7 @@
 	<enhanced:img
 		src={AlliFullBodyPointing}
 		alt={$translationsStore.homePage.alliMascotPointingToLeftAltText}
-		class="mr-2 hidden h-auto w-80 md:mr-5 lg:block 2xl:mr-10 2xl:w-105"
+		class="hidden h-auto w-80 md:mr-5 lg:block 2xl:mr-14 2xl:w-105"
 		width="420"
 		height="420"
 		loading="eager"

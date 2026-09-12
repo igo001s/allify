@@ -205,7 +205,10 @@
 				</p>
 			</div>
 
-			<button on:click={() => goto('/music-community')} class="button-cta">
+			<button
+				on:click={() => goto('/music-community')}
+				class="button-cta w-full lg:w-90 lg:max-w-90"
+			>
 				{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundButton}
 			</button>
 		</div>

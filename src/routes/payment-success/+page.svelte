@@ -75,7 +75,7 @@
 		</span>
 	</div>
 
-	<a href="/" class="button-cta mt-6">
+	<a href="/" class="button-cta mt-10 w-full lg:w-90 lg:max-w-90">
 		{$translationsStore.paymentSuccessPage.paymentSuccessPageButtonText}
 	</a>
 </div>

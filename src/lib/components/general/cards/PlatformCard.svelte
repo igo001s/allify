@@ -37,12 +37,12 @@
 </script>
 
 <li
-	class="flex h-96 w-full flex-col justify-between rounded-lg bg-s-default text-t-primary shadow-md sm:w-10/12 lg:w-1/2 2xl:w-2/5"
+	class="flex w-full flex-col justify-between rounded-lg bg-s-default text-t-primary shadow-md md:w-10/12 lg:w-1/2 2xl:w-2/5"
 >
-	<div class="flex flex-col gap-4 p-6 lg:gap-6 lg:p-10">
+	<div class="flex flex-col gap-5 p-6 lg:gap-6 lg:px-10 lg:py-8">
 		<div class="flex items-center justify-between font-medium">
 			<platform.icon
-				iconSvgClass={`w-10 h-10 ${platformKey === 'spotify' ? 'text-spotify' : 'text-deezer'}`}
+				iconSvgClass={`h-10 w-10 ${platformKey === 'spotify' ? 'text-spotify' : 'text-deezer'}`}
 			/>
 
 			<button
@@ -54,7 +54,7 @@
 				class={cardClass}
 			>
 				<ConnectIcon
-					iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 lg:h-4.5 lg:w-4.5"
+					iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 lg:h-4 lg:w-4"
 					iconAltText={$translationsStore.homePage.connectPlatformCardPlatformConnectIconAltText}
 				/>
 
@@ -68,23 +68,25 @@
 			</button>
 		</div>
 
-		<div class="h-36 space-y-3 lg:space-y-4">
-			<p class="text-lg font-semibold lg:text-xl">
+		<div class="space-y-3 lg:space-y-4">
+			<h3 class="text-lg font-semibold lg:text-xl">
 				{platform.title}
-			</p>
+			</h3>
 
-			<p class="h-fit text-sm sm:text-base">
+			<p class="text-sm leading-relaxed sm:text-base">
 				{platform.description}
 			</p>
 		</div>
 	</div>
 
-	<div class="flex h-16 justify-end border-t border-b-muted/20 px-10 py-6 text-sm font-medium">
+	<div
+		class="flex min-h-16 justify-end border-t border-b-muted/20 px-6 py-4 text-sm font-medium lg:px-10 lg:py-6"
+	>
 		<a
 			href={platform.link}
 			target="_blank"
 			rel="noopener noreferrer"
-			class={`flex w-fit cursor-pointer items-center gap-2.5 text-sm ${
+			class={`flex w-fit items-center gap-2.5 text-xs lg:text-sm ${
 				platformKey === 'spotify' ? 'hover:text-spotify' : 'hover:text-deezer'
 			}`}
 		>
@@ -92,7 +94,7 @@
 			{platform.title}
 
 			<ExternalLinkIcon
-				iconSvgClass="w-5.5 h-5.5 inline-block mb-0.5"
+				iconSvgClass="mb-0.5 inline-block h-5 w-5"
 				iconAltText={$translationsStore.homePage.connectPlatformCardPlatformExternalLinkIconAltText}
 			/>
 		</a>
