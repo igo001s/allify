@@ -174,16 +174,24 @@ export const ja = {
 		connectPlatformCardPlatformExternalLink: '移動',
 		musicalItemsSectionHeading1: 'Allifyで楽しめること',
 		musicalItemCardTitleArtists: 'アーティスト',
-		musicalItemCardTitleArtistsItem1: 'よく聴くアーティストを追いかけながら、あなたの音楽的アイデンティティを知ることができます。',
-		musicalItemCardTitleArtistsItem2: 'あなたの音楽の好みや聴き方を最もよく表すアーティストを確認できます。',
-		musicalItemCardTitleArtistsItem3: 'あなたにとって特別な意味を持つアーティストをプロフィールで目立たせることができます。',
-		musicalItemCardTitleArtistsItem4: 'お気に入りのアーティストを共有して、音楽が好きな人たちとつながりましょう。',
+		musicalItemCardTitleArtistsItem1:
+			'よく聴くアーティストを追いかけながら、あなたの音楽的アイデンティティを知ることができます。',
+		musicalItemCardTitleArtistsItem2:
+			'あなたの音楽の好みや聴き方を最もよく表すアーティストを確認できます。',
+		musicalItemCardTitleArtistsItem3:
+			'あなたにとって特別な意味を持つアーティストをプロフィールで目立たせることができます。',
+		musicalItemCardTitleArtistsItem4:
+			'お気に入りのアーティストを共有して、音楽が好きな人たちとつながりましょう。',
 		musicalItemCardArtistsButtonContent: 'アーティストを見る',
 		musicalItemCardTitleSongs: '楽曲',
-		musicalItemCardTitleSongsItem1: 'あなたの音楽体験を彩る、よく聴く楽曲を追いかけることができます。',
-		musicalItemCardTitleSongsItem2: '今聴いている音楽や、そのときの気持ちを表す「今の一曲」を選べます。',
-		musicalItemCardTitleSongsItem3: 'あなたの大切な瞬間に寄り添う楽曲を共有して、新しいつながりを生み出せます。',
-		musicalItemCardTitleSongsItem4: '特別な楽曲をプロフィールで目立たせ、今もあなたの音楽の物語の一部である楽曲を表示し続けられます。',
+		musicalItemCardTitleSongsItem1:
+			'あなたの音楽体験を彩る、よく聴く楽曲を追いかけることができます。',
+		musicalItemCardTitleSongsItem2:
+			'今聴いている音楽や、そのときの気持ちを表す「今の一曲」を選べます。',
+		musicalItemCardTitleSongsItem3:
+			'あなたの大切な瞬間に寄り添う楽曲を共有して、新しいつながりを生み出せます。',
+		musicalItemCardTitleSongsItem4:
+			'特別な楽曲をプロフィールで目立たせ、今もあなたの音楽の物語の一部である楽曲を表示し続けられます。',
 		musicalItemCardSongsButtonContent: '楽曲を見る'
 	},
 	myMusicalProfilePage: {

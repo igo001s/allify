@@ -167,14 +167,16 @@ export const zh = {
 		musicalItemCardTitleArtists: '艺人',
 		musicalItemCardTitleArtistsItem1: '关注你最常听的艺人，了解他们如何成为你音乐身份的一部分。',
 		musicalItemCardTitleArtistsItem2: '看看哪些艺人最能代表你的音乐品味和聆听体验。',
-		musicalItemCardTitleArtistsItem3: '在个人资料中突出展示对你有特殊意义的艺人，让你的音乐品味更加个性化。',
+		musicalItemCardTitleArtistsItem3:
+			'在个人资料中突出展示对你有特殊意义的艺人，让你的音乐品味更加个性化。',
 		musicalItemCardTitleArtistsItem4: '分享你喜欢的艺人，与其他热爱音乐的人建立联系。',
 		musicalItemCardArtistsButtonContent: '查看艺人',
 		musicalItemCardTitleSongs: '歌曲',
 		musicalItemCardTitleSongsItem1: '关注那些在你的聆听体验中占据重要位置的歌曲。',
 		musicalItemCardTitleSongsItem2: '选择一首当下的歌曲，代表你正在聆听和感受的音乐。',
 		musicalItemCardTitleSongsItem3: '分享那些陪伴你度过特别时刻的歌曲，并通过音乐建立新的联系。',
-		musicalItemCardTitleSongsItem4: '在个人资料中突出展示特别的歌曲，让那些依然属于你音乐故事的歌曲持续可见。',
+		musicalItemCardTitleSongsItem4:
+			'在个人资料中突出展示特别的歌曲，让那些依然属于你音乐故事的歌曲持续可见。',
 		musicalItemCardSongsButtonContent: '查看歌曲'
 	},
 	myMusicalProfilePage: {

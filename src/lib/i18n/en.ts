@@ -158,7 +158,8 @@ export const en = {
 		homePageHeroSectionButton1v2: 'Go to my music profile',
 		homePageHeroSectionButton1AriaLabel: 'Discover my music',
 		homePageHeroSectionButton1v2AriaLabel: 'Go to my music profile',
-		connectPlatformsSectionHeading1: 'Connect your platforms and bring your music together in one place',
+		connectPlatformsSectionHeading1:
+			'Connect your platforms and bring your music together in one place',
 		connectPlatformsSectionParagraph1:
 			'Connect your streaming platforms to Allify to turn your listening habits into a personalized music experience. Bring your music data together, keep track of the artists and songs that are part of your routine, and build a profile that shows who you are through music.',
 		connectPlatformSpotifyDescription:
@@ -173,16 +174,24 @@ export const en = {
 		connectPlatformCardPlatformExternalLink: 'Go to',
 		musicalItemsSectionHeading1: 'Everything you can explore with Allify',
 		musicalItemCardTitleArtists: 'Artists',
-		musicalItemCardTitleArtistsItem1: 'Keep track of the artists you listen to most and that are part of your musical identity.',
-		musicalItemCardTitleArtistsItem2: 'See which artists best represent your music taste and listening experience.',
-		musicalItemCardTitleArtistsItem3: 'Personalize your profile by highlighting artists that have a special meaning to you.',
-		musicalItemCardTitleArtistsItem4: 'Share your favorite artists and connect with other people who are passionate about music.',
+		musicalItemCardTitleArtistsItem1:
+			'Keep track of the artists you listen to most and that are part of your musical identity.',
+		musicalItemCardTitleArtistsItem2:
+			'See which artists best represent your music taste and listening experience.',
+		musicalItemCardTitleArtistsItem3:
+			'Personalize your profile by highlighting artists that have a special meaning to you.',
+		musicalItemCardTitleArtistsItem4:
+			'Share your favorite artists and connect with other people who are passionate about music.',
 		musicalItemCardArtistsButtonContent: 'View artists',
 		musicalItemCardTitleSongs: 'Songs',
-		musicalItemCardTitleSongsItem1: 'Keep track of the songs that are most present in your listening experience.',
-		musicalItemCardTitleSongsItem2: 'Choose a song of the moment to represent what you are listening to and feeling.',
-		musicalItemCardTitleSongsItem3: 'Share songs that are part of your moments and create new connections through them.',
-		musicalItemCardTitleSongsItem4: 'Highlight special songs on your profile and keep visible the ones that continue to be part of your musical story.',
+		musicalItemCardTitleSongsItem1:
+			'Keep track of the songs that are most present in your listening experience.',
+		musicalItemCardTitleSongsItem2:
+			'Choose a song of the moment to represent what you are listening to and feeling.',
+		musicalItemCardTitleSongsItem3:
+			'Share songs that are part of your moments and create new connections through them.',
+		musicalItemCardTitleSongsItem4:
+			'Highlight special songs on your profile and keep visible the ones that continue to be part of your musical story.',
 		musicalItemCardSongsButtonContent: 'View songs'
 	},
 	myMusicalProfilePage: {

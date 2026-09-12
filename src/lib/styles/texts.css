@@ -1,0 +1,11 @@
+p {
+	@apply leading-relaxed;
+}
+
+.paragraph-home-page {
+	@apply text-sm lg:text-base;
+}
+
+.text-additional-info {
+	@apply text-xs lg:text-sm;
+}

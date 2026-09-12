@@ -37,9 +37,9 @@
 </script>
 
 <li
-	class="flex w-full flex-col justify-between rounded-lg bg-s-default text-t-primary shadow-md md:w-10/12 lg:w-1/2 2xl:w-2/5"
+	class="flex w-full flex-col justify-between rounded-lg bg-s-default text-t-primary shadow-md lg:w-1/2 2xl:w-2/5"
 >
-	<div class="flex flex-col gap-5 p-6 lg:gap-6 lg:px-10 lg:py-8">
+	<div class="flex flex-col gap-5 p-6 xl:gap-6 xl:px-10 xl:py-8">
 		<div class="flex items-center justify-between font-medium">
 			<platform.icon
 				iconSvgClass={`h-10 w-10 ${platformKey === 'spotify' ? 'text-spotify' : 'text-deezer'}`}
@@ -54,7 +54,7 @@
 				class={cardClass}
 			>
 				<ConnectIcon
-					iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 lg:h-4 lg:w-4"
+					iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 xl:h-4 xl:w-4"
 					iconAltText={$translationsStore.homePage.connectPlatformCardPlatformConnectIconAltText}
 				/>
 
@@ -68,19 +68,19 @@
 			</button>
 		</div>
 
-		<div class="space-y-3 lg:space-y-4">
-			<h3 class="text-lg font-semibold lg:text-xl">
+		<div class="space-y-3 xl:space-y-4">
+			<h3 class="heading-3-platform-card">
 				{platform.title}
 			</h3>
 
-			<p class="text-sm leading-relaxed sm:text-base">
+			<p class="text-additional-info">
 				{platform.description}
 			</p>
 		</div>
 	</div>
 
 	<div
-		class="flex min-h-16 justify-end border-t border-b-muted/20 px-6 py-4 text-sm font-medium lg:px-10 lg:py-6"
+		class="flex min-h-16 justify-end border-t border-b-muted/20 px-6 py-4 text-sm font-medium xl:px-10 xl:py-6"
 	>
 		<a
 			href={platform.link}

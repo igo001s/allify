@@ -155,7 +155,8 @@ export const es = {
 		homePageHeroSectionParagraph1:
 			'Conecta tus plataformas de streaming a Allify y transforma tus datos musicales en un perfil que te representa. Mira tus artistas y canciones más escuchados, sigue tu gusto musical y comparte tu identidad musical con una comunidad apasionada por la música.',
 		alliMascotPointingDownwardsAltText: 'Alli señalando hacia abajo, indicando el botón de acción',
-		alliMascotPointingToLeftAltText: 'Alli señalando hacia la izquierda, indicando el botón de acción',
+		alliMascotPointingToLeftAltText:
+			'Alli señalando hacia la izquierda, indicando el botón de acción',
 		homePageHeroSectionButton1: 'Descubrir mi música',
 		homePageHeroSectionButton1v2: 'Ir a mi perfil musical',
 		homePageHeroSectionButton1AriaLabel: 'Descubrir mi música',
@@ -175,16 +176,24 @@ export const es = {
 		connectPlatformCardPlatformExternalLink: 'Ir a',
 		musicalItemsSectionHeading1: 'Todo lo que puedes explorar con Allify',
 		musicalItemCardTitleArtists: 'Artistas',
-		musicalItemCardTitleArtistsItem1: 'Sigue a los artistas que más escuchas y que forman parte de tu identidad musical.',
-		musicalItemCardTitleArtistsItem2: 'Mira qué artistas representan mejor tus gustos y tu experiencia de escucha.',
-		musicalItemCardTitleArtistsItem3: 'Personaliza tu perfil destacando artistas que tienen un significado especial para ti.',
-		musicalItemCardTitleArtistsItem4: 'Comparte tus artistas favoritos y conecta con otras personas apasionadas por la música.',
+		musicalItemCardTitleArtistsItem1:
+			'Sigue a los artistas que más escuchas y que forman parte de tu identidad musical.',
+		musicalItemCardTitleArtistsItem2:
+			'Mira qué artistas representan mejor tus gustos y tu experiencia de escucha.',
+		musicalItemCardTitleArtistsItem3:
+			'Personaliza tu perfil destacando artistas que tienen un significado especial para ti.',
+		musicalItemCardTitleArtistsItem4:
+			'Comparte tus artistas favoritos y conecta con otras personas apasionadas por la música.',
 		musicalItemCardArtistsButtonContent: 'Ver artistas',
 		musicalItemCardTitleSongs: 'Canciones',
-		musicalItemCardTitleSongsItem1: 'Sigue las canciones que más forman parte de tu experiencia de escucha.',
-		musicalItemCardTitleSongsItem2: 'Elige una canción del momento para representar lo que estás escuchando y sintiendo.',
-		musicalItemCardTitleSongsItem3: 'Comparte canciones que forman parte de tus momentos y crea nuevas conexiones a través de ellas.',
-		musicalItemCardTitleSongsItem4: 'Destaca canciones especiales en tu perfil y mantén visibles aquellas que siguen formando parte de tu historia musical.',
+		musicalItemCardTitleSongsItem1:
+			'Sigue las canciones que más forman parte de tu experiencia de escucha.',
+		musicalItemCardTitleSongsItem2:
+			'Elige una canción del momento para representar lo que estás escuchando y sintiendo.',
+		musicalItemCardTitleSongsItem3:
+			'Comparte canciones que forman parte de tus momentos y crea nuevas conexiones a través de ellas.',
+		musicalItemCardTitleSongsItem4:
+			'Destaca canciones especiales en tu perfil y mantén visibles aquellas que siguen formando parte de tu historia musical.',
 		musicalItemCardSongsButtonContent: 'Ver canciones'
 	},
 	myMusicalProfilePage: {

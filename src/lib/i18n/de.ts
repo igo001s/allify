@@ -153,13 +153,16 @@ export const de = {
 		homePageHeroSectionHeading1: 'Entdecke, was deine Musik über dich aussagt',
 		homePageHeroSectionParagraph1:
 			'Verbinde deine Streaming-Plattformen mit Allify und verwandle deine Musikdaten in ein Profil, das dich repräsentiert. Sieh deine meistgehörten Künstler und Songs, verfolge deinen Musikgeschmack und teile deine musikalische Identität mit einer musikbegeisterten Community.',
-		alliMascotPointingDownwardsAltText: 'Alli zeigt nach unten und weist auf die Aktionsschaltfläche hin',
-		alliMascotPointingToLeftAltText: 'Alli zeigt nach links und weist auf die Aktionsschaltfläche hin',
+		alliMascotPointingDownwardsAltText:
+			'Alli zeigt nach unten und weist auf die Aktionsschaltfläche hin',
+		alliMascotPointingToLeftAltText:
+			'Alli zeigt nach links und weist auf die Aktionsschaltfläche hin',
 		homePageHeroSectionButton1: 'Meine Musik entdecken',
 		homePageHeroSectionButton1v2: 'Zu meinem Musikprofil',
 		homePageHeroSectionButton1AriaLabel: 'Meine Musik entdecken',
 		homePageHeroSectionButton1v2AriaLabel: 'Zu meinem Musikprofil',
-		connectPlatformsSectionHeading1: 'Verbinde deine Plattformen und vereine deine Musik an einem Ort',
+		connectPlatformsSectionHeading1:
+			'Verbinde deine Plattformen und vereine deine Musik an einem Ort',
 		connectPlatformsSectionParagraph1:
 			'Verbinde deine Streaming-Plattformen mit Allify, um deine Hörgewohnheiten in ein personalisiertes Musikerlebnis zu verwandeln. Führe deine Musikdaten zusammen, verfolge die Künstler und Songs, die Teil deines Alltags sind, und erstelle ein Profil, das zeigt, wer du durch Musik bist.',
 		connectPlatformSpotifyDescription:
@@ -174,16 +177,24 @@ export const de = {
 		connectPlatformCardPlatformExternalLink: 'Öffnen',
 		musicalItemsSectionHeading1: 'Alles, was du mit Allify entdecken kannst',
 		musicalItemCardTitleArtists: 'Künstler',
-		musicalItemCardTitleArtistsItem1: 'Verfolge die Künstler, die du am häufigsten hörst und die Teil deiner musikalischen Identität sind.',
-		musicalItemCardTitleArtistsItem2: 'Sieh, welche Künstler deinen Musikgeschmack und dein Hörerlebnis am besten repräsentieren.',
-		musicalItemCardTitleArtistsItem3: 'Personalisiere dein Profil, indem du Künstler hervorhebst, die für dich eine besondere Bedeutung haben.',
-		musicalItemCardTitleArtistsItem4: 'Teile deine Lieblingskünstler und verbinde dich mit anderen Menschen, die Musik lieben.',
+		musicalItemCardTitleArtistsItem1:
+			'Verfolge die Künstler, die du am häufigsten hörst und die Teil deiner musikalischen Identität sind.',
+		musicalItemCardTitleArtistsItem2:
+			'Sieh, welche Künstler deinen Musikgeschmack und dein Hörerlebnis am besten repräsentieren.',
+		musicalItemCardTitleArtistsItem3:
+			'Personalisiere dein Profil, indem du Künstler hervorhebst, die für dich eine besondere Bedeutung haben.',
+		musicalItemCardTitleArtistsItem4:
+			'Teile deine Lieblingskünstler und verbinde dich mit anderen Menschen, die Musik lieben.',
 		musicalItemCardArtistsButtonContent: 'Künstler ansehen',
 		musicalItemCardTitleSongs: 'Songs',
-		musicalItemCardTitleSongsItem1: 'Verfolge die Songs, die am stärksten Teil deines Hörerlebnisses sind.',
-		musicalItemCardTitleSongsItem2: 'Wähle einen Song des Moments, der widerspiegelt, was du gerade hörst und fühlst.',
-		musicalItemCardTitleSongsItem3: 'Teile Songs, die Teil deiner besonderen Momente sind, und knüpfe durch sie neue Verbindungen.',
-		musicalItemCardTitleSongsItem4: 'Hebe besondere Songs in deinem Profil hervor und halte diejenigen sichtbar, die weiterhin Teil deiner musikalischen Geschichte sind.',
+		musicalItemCardTitleSongsItem1:
+			'Verfolge die Songs, die am stärksten Teil deines Hörerlebnisses sind.',
+		musicalItemCardTitleSongsItem2:
+			'Wähle einen Song des Moments, der widerspiegelt, was du gerade hörst und fühlst.',
+		musicalItemCardTitleSongsItem3:
+			'Teile Songs, die Teil deiner besonderen Momente sind, und knüpfe durch sie neue Verbindungen.',
+		musicalItemCardTitleSongsItem4:
+			'Hebe besondere Songs in deinem Profil hervor und halte diejenigen sichtbar, die weiterhin Teil deiner musikalischen Geschichte sind.',
 		musicalItemCardSongsButtonContent: 'Songs ansehen'
 	},
 	myMusicalProfilePage: {

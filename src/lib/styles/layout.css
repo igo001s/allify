@@ -1,13 +1,13 @@
 .header-spacing {
-	@apply p-7 md:p-10 xl:px-24 xl:py-12;
+	@apply p-5 md:p-10 xl:px-24 xl:py-12;
 }
 
 .base-spacing {
-	@apply p-7 md:p-10 xl:px-24 xl:pt-10 xl:pb-20;
+	@apply p-5 md:p-10 xl:px-24 xl:pt-10 xl:pb-20;
 }
 
 .footer-spacing {
-	@apply p-7 md:p-10 xl:px-24 xl:pt-16 xl:pb-10;
+	@apply p-5 md:p-10 xl:px-24 xl:pt-16 xl:pb-10;
 }
 
 .feedback-spacing {

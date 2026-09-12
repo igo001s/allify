@@ -175,16 +175,24 @@ export const pt = {
 		connectPlatformCardPlatformExternalLink: 'Ir para',
 		musicalItemsSectionHeading1: 'Tudo o que você pode explorar com o Allify',
 		musicalItemCardTitleArtists: 'Artistas',
-		musicalItemCardTitleArtistsItem1: 'Acompanhe os artistas que você mais ouve e que fazem parte da sua identidade musical.',
-		musicalItemCardTitleArtistsItem2: 'Veja quais artistas mais representam seu gosto e sua experiência de escuta.',
-		musicalItemCardTitleArtistsItem3: 'Personalize seu perfil destacando artistas que têm um significado especial para você.',
-		musicalItemCardTitleArtistsItem4: 'Compartilhe seus artistas favoritos e conecte-se com outras pessoas apaixonadas por música.',
+		musicalItemCardTitleArtistsItem1:
+			'Acompanhe os artistas que você mais ouve e que fazem parte da sua identidade musical.',
+		musicalItemCardTitleArtistsItem2:
+			'Veja quais artistas mais representam seu gosto e sua experiência de escuta.',
+		musicalItemCardTitleArtistsItem3:
+			'Personalize seu perfil destacando artistas que têm um significado especial para você.',
+		musicalItemCardTitleArtistsItem4:
+			'Compartilhe seus artistas favoritos e conecte-se com outras pessoas apaixonadas por música.',
 		musicalItemCardArtistsButtonContent: 'Ver artistas',
 		musicalItemCardTitleSongs: 'Músicas',
-		musicalItemCardTitleSongsItem1: 'Acompanhe as músicas que mais fazem parte da sua experiência de escuta.',
-		musicalItemCardTitleSongsItem2: 'Escolha uma música do momento para representar o que você está ouvindo e sentindo.',
-		musicalItemCardTitleSongsItem3: 'Compartilhe músicas que fazem parte dos seus momentos e crie novas conexões através delas.',
-		musicalItemCardTitleSongsItem4: 'Destaque músicas especiais no seu perfil e mantenha visíveis aquelas que continuam fazendo parte da sua história musical.',
+		musicalItemCardTitleSongsItem1:
+			'Acompanhe as músicas que mais fazem parte da sua experiência de escuta.',
+		musicalItemCardTitleSongsItem2:
+			'Escolha uma música do momento para representar o que você está ouvindo e sentindo.',
+		musicalItemCardTitleSongsItem3:
+			'Compartilhe músicas que fazem parte dos seus momentos e crie novas conexões através delas.',
+		musicalItemCardTitleSongsItem4:
+			'Destaque músicas especiais no seu perfil e mantenha visíveis aquelas que continuam fazendo parte da sua história musical.',
 		musicalItemCardSongsButtonContent: 'Ver músicas'
 	},
 	myMusicalProfilePage: {

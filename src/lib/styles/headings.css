@@ -3,7 +3,7 @@
 }
 
 .heading-1-hero {
-	@apply text-center text-4xl text-t-primary lg:text-left lg:text-5xl;
+	@apply text-center text-3xl text-t-primary xl:text-left xl:text-5xl;
 }
 
 .heading-2 {
@@ -11,11 +11,11 @@
 }
 
 .heading-2-connected-platforms {
-	@apply text-center text-4xl lg:text-5xl;
+	@apply text-center text-3xl lg:text-5xl;
 }
 
 .heading-2-musical-items {
-	@apply text-center text-4xl text-t-primary lg:text-5xl;
+	@apply text-center text-3xl text-t-primary lg:text-5xl;
 }
 
 .heading-2-legal-pages {
@@ -24,6 +24,10 @@
 
 .heading-3 {
 	@apply text-sm font-medium text-t-secondary;
+}
+
+.heading-3-platform-card {
+	@apply text-lg font-semibold lg:text-xl;
 }
 
 .heading-3-musical-items {

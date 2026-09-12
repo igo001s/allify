@@ -160,7 +160,8 @@ export const ru = {
 		homePageHeroSectionButton1v2: 'Перейти к моему музыкальному профилю',
 		homePageHeroSectionButton1AriaLabel: 'Открыть мою музыку',
 		homePageHeroSectionButton1v2AriaLabel: 'Перейти к моему музыкальному профилю',
-		connectPlatformsSectionHeading1: 'Подключите свои платформы и соберите всю музыку в одном месте',
+		connectPlatformsSectionHeading1:
+			'Подключите свои платформы и соберите всю музыку в одном месте',
 		connectPlatformsSectionParagraph1:
 			'Подключите свои стриминговые платформы к Allify, чтобы превратить привычки прослушивания в персонализированный музыкальный опыт. Соберите свои музыкальные данные, отслеживайте артистов и песни, которые являются частью вашей повседневной жизни, и создайте профиль, который показывает, кто вы через музыку.',
 		connectPlatformSpotifyDescription:
@@ -175,16 +176,24 @@ export const ru = {
 		connectPlatformCardPlatformExternalLink: 'Перейти',
 		musicalItemsSectionHeading1: 'Всё, что можно исследовать с Allify',
 		musicalItemCardTitleArtists: 'Артисты',
-		musicalItemCardTitleArtistsItem1: 'Следите за артистами, которых вы слушаете чаще всего и которые являются частью вашей музыкальной идентичности.',
-		musicalItemCardTitleArtistsItem2: 'Узнайте, какие артисты лучше всего отражают ваши музыкальные предпочтения и опыт прослушивания.',
-		musicalItemCardTitleArtistsItem3: 'Персонализируйте свой профиль, выделив артистов, которые имеют для вас особое значение.',
-		musicalItemCardTitleArtistsItem4: 'Делитесь любимыми артистами и общайтесь с другими людьми, увлечёнными музыкой.',
+		musicalItemCardTitleArtistsItem1:
+			'Следите за артистами, которых вы слушаете чаще всего и которые являются частью вашей музыкальной идентичности.',
+		musicalItemCardTitleArtistsItem2:
+			'Узнайте, какие артисты лучше всего отражают ваши музыкальные предпочтения и опыт прослушивания.',
+		musicalItemCardTitleArtistsItem3:
+			'Персонализируйте свой профиль, выделив артистов, которые имеют для вас особое значение.',
+		musicalItemCardTitleArtistsItem4:
+			'Делитесь любимыми артистами и общайтесь с другими людьми, увлечёнными музыкой.',
 		musicalItemCardArtistsButtonContent: 'Смотреть артистов',
 		musicalItemCardTitleSongs: 'Песни',
-		musicalItemCardTitleSongsItem1: 'Следите за песнями, которые занимают важное место в вашем опыте прослушивания.',
-		musicalItemCardTitleSongsItem2: 'Выберите песню момента, которая отражает то, что вы сейчас слушаете и чувствуете.',
-		musicalItemCardTitleSongsItem3: 'Делитесь песнями, которые сопровождают ваши моменты, и создавайте новые связи благодаря им.',
-		musicalItemCardTitleSongsItem4: 'Выделяйте особенные песни в своём профиле и сохраняйте видимыми те, которые продолжают быть частью вашей музыкальной истории.',
+		musicalItemCardTitleSongsItem1:
+			'Следите за песнями, которые занимают важное место в вашем опыте прослушивания.',
+		musicalItemCardTitleSongsItem2:
+			'Выберите песню момента, которая отражает то, что вы сейчас слушаете и чувствуете.',
+		musicalItemCardTitleSongsItem3:
+			'Делитесь песнями, которые сопровождают ваши моменты, и создавайте новые связи благодаря им.',
+		musicalItemCardTitleSongsItem4:
+			'Выделяйте особенные песни в своём профиле и сохраняйте видимыми те, которые продолжают быть частью вашей музыкальной истории.',
 		musicalItemCardSongsButtonContent: 'Смотреть песни'
 	},
 	myMusicalProfilePage: {
