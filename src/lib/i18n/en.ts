@@ -560,8 +560,8 @@ export const en = {
 		profilePageAuthorCommentImageAltText: 'Profile photo of',
 		profilePageAuthorEmptyComments:
 			'Your profile has no comments yet. Share your profile with your friends so they can leave comments!',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Button to delete comment of ',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Icon to delete comment of '
+		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Button to delete comment of ',
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icon to delete comment of '
 	},
 	settingsPage: {
 		title: 'Settings | Allify',

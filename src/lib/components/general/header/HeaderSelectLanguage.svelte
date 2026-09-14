@@ -169,9 +169,7 @@
 						</p>
 
 						{#if $languageStore === language.code}
-							<SelectedIcon
-								iconSvgClass="ml-auto h-4 w-4 text-brand-primary"
-							/>
+							<SelectedIcon iconSvgClass="ml-auto h-4 w-4 text-brand-primary" />
 						{/if}
 					</div>
 				</button>

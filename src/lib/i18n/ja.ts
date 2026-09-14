@@ -570,8 +570,8 @@ export const ja = {
 		profilePageAuthorCommentImageAltText: 'プロフィール写真：',
 		profilePageAuthorEmptyComments:
 			'あなたのプロフィールにはまだコメントがありません。友達とプロフィールを共有して、コメントを残してもらいましょう。',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'コメントを削除するボタン：',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'コメントを削除するアイコン：'
+		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'コメントを削除するボタン：',
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'コメントを削除するアイコン：'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

@@ -405,7 +405,8 @@ export const pt = {
 		profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel:
 			'Botão para editar música personalizada',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Ícone de editar música do momento',
-		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel: 'Ícone de editar música personalizada',
+		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
+			'Ícone de editar música personalizada',
 		profilePageChangeYourMusicCloseModalButtonAriaLabel:
 			'Fechar modal de troca de música do momento',
 		profilePageChangeYourMusicCloseModalIconAriaLabel:
@@ -472,7 +473,8 @@ export const pt = {
 		profilePageYourArtistsOnProfileHeading2: 'Seus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista mais ouvido',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista do momento',
-		profilePageYourArtistsOnProfileEditArtistButtonAriaLabel: 'Botão para editar artista do momento',
+		profilePageYourArtistsOnProfileEditArtistButtonAriaLabel:
+			'Botão para editar artista do momento',
 		profilePageYourArtistsOnProfileEditCustomArtistButtonAriaLabel:
 			'Botão para editar artista personalizado',
 		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Ícone de editar artista do momento',
@@ -575,8 +577,8 @@ export const pt = {
 		profilePageAuthorCommentImageAltText: 'Foto do perfil de',
 		profilePageAuthorEmptyComments:
 			'Seu perfil ainda não tem comentários. Compartilhe seu perfil com seus amigos para que eles possam deixar comentários!',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Botão para excluir comentário de ',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Ícone de excluir comentário de '
+		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Botão para excluir comentário de ',
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Ícone de excluir comentário de '
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

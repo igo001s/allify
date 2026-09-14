@@ -182,9 +182,7 @@
 				{#if loadingUpdateItem}
 					<DotsLoading dotsTheme="base-primary" animationClass="h-1 w-1" />
 				{:else}
-					<ReloadIcon
-						iconSvgClass="h-4 w-4 text-brand-primary group-hover:rotate-90"
-					/>
+					<ReloadIcon iconSvgClass="h-4 w-4 text-brand-primary group-hover:rotate-90" />
 
 					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageButtonUpdate}
 				{/if}
@@ -194,9 +192,7 @@
 		<button
 			class="button-outline button-outline-active button-outline-active-hover group gap-1.5 px-4 py-2.5"
 		>
-			<ShareIcon
-				iconSvgClass="h-4 w-4 text-brand-primary"
-			/>
+			<ShareIcon iconSvgClass="h-4 w-4 text-brand-primary" />
 
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShareButton}
 		</button>

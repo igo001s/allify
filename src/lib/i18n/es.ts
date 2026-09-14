@@ -407,7 +407,8 @@ export const es = {
 		profilePageYourSongsOnProfileHeading2: 'Tus canciones',
 		profilePageYourSongsOnProfileHeading3v1: 'Canción más escuchada',
 		profilePageYourSongsOnProfileHeading3v2: 'Canción del momento',
-		profilePageYourSongsOnProfileEditMusicButtonAriaLabel: 'Botón para editar la canción del momento',
+		profilePageYourSongsOnProfileEditMusicButtonAriaLabel:
+			'Botón para editar la canción del momento',
 		profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel:
 			'Botón para editar la canción personalizada',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Icono para editar la canción del momento',
@@ -588,8 +589,8 @@ export const es = {
 		profilePageAuthorCommentImageAltText: 'Foto de perfil de',
 		profilePageAuthorEmptyComments:
 			'Tu perfil aún no tiene comentarios. ¡Comparte tu perfil con tus amigos para que puedan dejar comentarios!',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Botón para eliminar comentario de ',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Icono para eliminar comentario de '
+		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Botón para eliminar comentario de ',
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icono para eliminar comentario de '
 	},
 	settingsPage: {
 		title: 'Configuración | Allify',

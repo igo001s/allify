@@ -82,9 +82,7 @@
 						class="flex cursor-pointer items-center justify-center rounded-full bg-s-default p-1.5 hover:scale-102"
 						on:click={openAddTickets}
 					>
-						<PlusIcon
-							iconSvgClass="w-2.5 h-2.5 text-brand-primary"
-						/>
+						<PlusIcon iconSvgClass="w-2.5 h-2.5 text-brand-primary" />
 					</button>
 				</div>
 			</div>
@@ -110,9 +108,7 @@
 			aria-label={$translationsStore.profilePage.profilePageOpenCommentsButtonAriaLabel}
 			on:click={() => (showCommentsModal = true)}
 		>
-			<CommentIcon
-				iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 md:h-8 md:w-8"
-			/>
+			<CommentIcon iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 md:h-8 md:w-8" />
 		</button>
 
 		<div class="flex w-xs flex-col gap-6">

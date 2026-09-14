@@ -28,7 +28,10 @@
 					iconAriaLabel={emptyTrackAriaLabel}
 				/>
 			{:else}
-				<MusicIcon iconSvgClass="mr-1 h-8 w-8 sm:h-10 sm:w-10" iconAriaLabel={emptyTrackAriaLabel} />
+				<MusicIcon
+					iconSvgClass="mr-1 h-8 w-8 sm:h-10 sm:w-10"
+					iconAriaLabel={emptyTrackAriaLabel}
+				/>
 			{/if}
 		</div>
 

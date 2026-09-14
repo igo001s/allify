@@ -139,10 +139,10 @@
 												comment?.author?._id,
 												$userInfo?.comments.commentsMadeOnMyProfile
 											)}
-										aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAriaLabel} ${comment?.author?.name}`}
+										aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorButtonAriaLabel} ${comment?.author?.name}`}
 									>
 										<TrashIcon
-											iconAriaLabel={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAriaLabel} ${comment?.author?.name}`}
+											iconAriaLabel={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorIconAriaLabel} ${comment?.author?.name}`}
 											iconSvgClass="h-4 w-4 text-t-secondary cursor-pointer hover:text-status-error"
 										/>
 									</button>

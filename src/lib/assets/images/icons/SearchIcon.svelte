@@ -4,7 +4,8 @@
 
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAriaLabel: string = $translationsStore.musicCommunityPage.musicCommunitySearchIconAriaLabel;
+	export let iconAriaLabel: string =
+		$translationsStore.musicCommunityPage.musicCommunitySearchIconAriaLabel;
 </script>
 
 <svg

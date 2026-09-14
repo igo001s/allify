@@ -504,8 +504,8 @@ export const zh = {
 		profilePageAuthorCommentImageAltText: '个人资料照片',
 		profilePageAuthorEmptyComments:
 			'你的个人资料尚无评论。与朋友分享你的个人资料，让他们可以发表评论！',
-		profilePageDeleteCommentOfAuthorAriaLabel: '删除来自的评论按钮 ',
-		profilePageDeleteCommentOfAuthorAriaLabel: '删除来自的评论图标 '
+		profilePageDeleteCommentOfAuthorButtonAriaLabel: '删除来自的评论按钮 ',
+		profilePageDeleteCommentOfAuthorIconAriaLabel: '删除来自的评论图标 '
 	},
 	settingsPage: {
 		title: '设置 | Allify',

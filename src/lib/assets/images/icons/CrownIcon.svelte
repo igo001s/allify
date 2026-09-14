@@ -1,10 +1,11 @@
 <script lang="ts">
 	// Stores
-	import { translationsStore } from "$lib/stores/translations.store";
+	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAriaLabel: string = $translationsStore.myMusicalProfilePage.myMusicalProfilePageCrownIconAriaLabel;
+	export let iconAriaLabel: string =
+		$translationsStore.myMusicalProfilePage.myMusicalProfilePageCrownIconAriaLabel;
 </script>
 
 <svg

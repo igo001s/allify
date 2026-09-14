@@ -99,7 +99,9 @@
 
 	<button
 		class="mr-2 w-1/12 shrink-0 cursor-pointer text-brand-primary hover:text-brand-primary-dark"
-		aria-label={userOnFavorites ? $translationsStore.musicCommunityPage.musicCommunityStarButtonRemoveAriaLabel : $translationsStore.musicCommunityPage.musicCommunityStarButtonAriaLabel}
+		aria-label={userOnFavorites
+			? $translationsStore.musicCommunityPage.musicCommunityStarButtonRemoveAriaLabel
+			: $translationsStore.musicCommunityPage.musicCommunityStarButtonAriaLabel}
 		on:click={() => $userInfo && handleRemoveFromFavorites($userInfo._id, favorite._id)}
 	>
 		{#if userOnFavorites}

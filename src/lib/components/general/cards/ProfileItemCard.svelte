@@ -39,7 +39,10 @@
 					aria-label={showEditButtonAriaLabel}
 					on:click={handleEditButtonClick}
 				>
-					<EditArtistIcon iconSvgClass="h-5 w-5 sm:h-6 sm:w-6" iconAriaLabel={showEditIconAriaLabel} />
+					<EditArtistIcon
+						iconSvgClass="h-5 w-5 sm:h-6 sm:w-6"
+						iconAriaLabel={showEditIconAriaLabel}
+					/>
 				</button>
 			{:else if 'albumName' in profileItem.item && 'artists' in profileItem.item}
 				<button
@@ -47,7 +50,10 @@
 					aria-label={showEditButtonAriaLabel}
 					on:click={handleEditButtonClick}
 				>
-					<EditMusicIcon iconSvgClass="h-5 w-5 sm:h-6 sm:w-6" iconAriaLabel={showEditIconAriaLabel} />
+					<EditMusicIcon
+						iconSvgClass="h-5 w-5 sm:h-6 sm:w-6"
+						iconAriaLabel={showEditIconAriaLabel}
+					/>
 				</button>
 			{/if}
 		{/if}

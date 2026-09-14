@@ -124,9 +124,7 @@
 					aria-label={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAriaLabel}
 					on:click={handleSearchUser}
 				>
-					<SearchIcon
-						iconSvgClass="h-4.5 w-4.5 text-t-inverse"
-					/>
+					<SearchIcon iconSvgClass="h-4.5 w-4.5 text-t-inverse" />
 				</button>
 			</div>
 

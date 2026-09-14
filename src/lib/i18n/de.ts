@@ -298,8 +298,10 @@ export const de = {
 			'Versuche, nach einem anderen Namen zu suchen oder überprüfe die Rechtschreibung.',
 		musicCommunityStarButtonAriaLabel: 'Schaltfläche zum Favorisieren eines Profils',
 		musicCommunityStarIconAriaLabel: 'Sternsymbol zum Favorisieren eines Profils',
-		musicCommunityStarButtonRemoveAriaLabel: 'Schaltfläche zum Entfernen eines Profils aus den Favoriten',
-		musicCommunityStarIconRemoveAriaLabel: 'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
+		musicCommunityStarButtonRemoveAriaLabel:
+			'Schaltfläche zum Entfernen eines Profils aus den Favoriten',
+		musicCommunityStarIconRemoveAriaLabel:
+			'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Fehler beim Hinzufügen zu den Favoriten',
 		musicCommunityToastErrorAddToFavoritesSameUserMessage:
 			'Du kannst dich nicht selbst favorisieren',
@@ -590,8 +592,8 @@ export const de = {
 		profilePageAuthorCommentImageAltText: 'Profilfoto von',
 		profilePageAuthorEmptyComments:
 			'Dein Profil hat noch keine Kommentare. Teile dein Profil mit deinen Freunden, damit sie Kommentare hinterlassen können!',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Schaltfläche zum Löschen des Kommentars von ',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Symbol zum Löschen des Kommentars von ',
+		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Schaltfläche zum Löschen des Kommentars von ',
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Symbol zum Löschen des Kommentars von ',
 		profilePageChangeCustomArtistSuccessToastMessage:
 			'Personalisierter Künstler erfolgreich geändert.',
 		profilePageChangeCustomArtistErrorToastMessage:

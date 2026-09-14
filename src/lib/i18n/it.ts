@@ -419,7 +419,8 @@ export const it = {
 			'Pulsante per modificare il brano del momento',
 		profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel:
 			'Pulsante per modificare il brano personalizzato',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Icona per modificare il brano del momento',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
+			'Icona per modificare il brano del momento',
 		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
 			'Icona per modificare il brano personalizzato',
 		profilePageChangeYourMusicCloseModalButtonAriaLabel:
@@ -602,8 +603,8 @@ export const it = {
 		profilePageAuthorCommentImageAltText: 'Foto del profilo di',
 		profilePageAuthorEmptyComments:
 			'Il tuo profilo non ha ancora commenti. Condividi il tuo profilo con i tuoi amici in modo che possano lasciare commenti!',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Pulsante per eliminare il commento di ',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Icona per eliminare il commento di '
+		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Pulsante per eliminare il commento di ',
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icona per eliminare il commento di '
 	},
 	settingsPage: {
 		title: 'Impostazioni | Allify',

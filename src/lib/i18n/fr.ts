@@ -414,7 +414,8 @@ export const fr = {
 		profilePageYourSongsOnProfileHeading2: 'Vos titres',
 		profilePageYourSongsOnProfileHeading3v1: 'Titre le plus écouté',
 		profilePageYourSongsOnProfileHeading3v2: 'Titre du moment',
-		profilePageYourSongsOnProfileEditMusicButtonAriaLabel: 'Bouton pour modifier le titre du moment',
+		profilePageYourSongsOnProfileEditMusicButtonAriaLabel:
+			'Bouton pour modifier le titre du moment',
 		profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel:
 			'Bouton pour modifier le titre personnalisé',
 		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Icône de modification du titre du moment',
@@ -605,8 +606,8 @@ export const fr = {
 		profilePageAuthorCommentImageAltText: 'Photo de profil de',
 		profilePageAuthorEmptyComments:
 			'Votre profil n’a pas encore de commentaires. Partagez votre profil avec vos amis afin qu’ils puissent laisser des commentaires !',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Bouton pour supprimer le commentaire de ',
-		profilePageDeleteCommentOfAuthorAriaLabel: 'Icône pour supprimer le commentaire de '
+		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Bouton pour supprimer le commentaire de ',
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icône pour supprimer le commentaire de '
 	},
 	settingsPage: {
 		title: 'Paramètres | Allify',

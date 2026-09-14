@@ -4,8 +4,8 @@
 
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAriaLabel: string = $translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageReloadIconAltText;
+	export let iconAriaLabel: string =
+		$translationsStore.myMusicalProfilePage.myMusicalProfilePageReloadIconAltText;
 </script>
 
 <svg

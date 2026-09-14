@@ -1,10 +1,11 @@
 <script lang="ts">
 	// Props
-	import { translationsStore } from "$lib/stores/translations.store";
+	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAriaLabel: string = $translationsStore.homePage.connectPlatformCardPlatformConnectIconAriaLabel;
+	export let iconAriaLabel: string =
+		$translationsStore.homePage.connectPlatformCardPlatformConnectIconAriaLabel;
 </script>
 
 <svg

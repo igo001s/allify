@@ -53,9 +53,7 @@
 				title={setTitleByStreaming(platformKey)}
 				class={cardClass}
 			>
-				<ConnectIcon
-					iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 xl:h-4 xl:w-4"
-				/>
+				<ConnectIcon iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 xl:h-4 xl:w-4" />
 
 				{#if $userInfo?.connectedStreamings?.[platformKey]}
 					{$translationsStore.homePage.connectPlatformCardPlatformConnectedButton}
@@ -92,9 +90,7 @@
 			{$translationsStore.homePage.connectPlatformCardPlatformExternalLink}
 			{platform.title}
 
-			<ExternalLinkIcon
-				iconSvgClass="mb-0.5 inline-block h-5 w-5"
-			/>
+			<ExternalLinkIcon iconSvgClass="mb-0.5 inline-block h-5 w-5" />
 		</a>
 	</div>
 </li>
