@@ -1,11 +1,17 @@
 <script lang="ts">
 	// Props
-	export let logoSvgClass: string = '';
-	export let logoAltText: string = '';
+	export let logoSvgClass = '';
+	export let logoAriaLabel = '';
+	export let logoTitle = '';
 </script>
 
-<a href="/" title={logoAltText}>
-	<svg viewBox="0 0 311.000000 132.000000" class={logoSvgClass} aria-label={logoAltText} role="img">
+<a href="/" title={logoTitle}>
+	<svg
+		viewBox="0 0 311.000000 132.000000"
+		class={logoSvgClass}
+		aria-label={logoAriaLabel}
+		role="img"
+	>
 		<g
 			transform="translate(0.000000,132.000000) scale(0.100000,-0.100000)"
 			fill="currentColor"

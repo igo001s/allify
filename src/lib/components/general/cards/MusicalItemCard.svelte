@@ -8,7 +8,7 @@
 		buttonContent: string;
 	};
 
-	console.log(item.iconAriaLabel)
+	console.log(item.iconAriaLabel);
 </script>
 
 <article

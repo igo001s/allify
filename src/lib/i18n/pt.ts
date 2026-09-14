@@ -8,8 +8,10 @@ export const pt = {
 		stripeTicketId: 'prod_VCKtmYOB28DXpI'
 	},
 	generalTexts: {
-		logoColorfulAltText: 'Logotipo colorido do Allify',
-		logoLightAltText: 'Logotipo claro do Allify',
+		logoColorfulTitle: 'Logo colorido do Allify',
+		logoColorfulAriaLabel: 'Logo colorido do Allify',
+		logoLightTitle: 'Logo claro do Allify',
+		logoLightAriaLabel: 'Logo claro do Allify',
 		headerNavigationItem1: 'Meu Perfil Musical',
 		headerNavigationItem2: 'Arquivo Musical',
 		headerNavigationItem3: 'Comunidade Musical',

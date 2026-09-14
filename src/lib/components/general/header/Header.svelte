@@ -26,7 +26,8 @@
 	<div class="flex items-center gap-4 md:gap-10 2xl:gap-20">
 		<AllifyLogoColorful
 			logoSvgClass="w-26 h-fit cursor-pointer lg:w-32 hover:scale-102"
-			logoAltText={$translationsStore.generalTexts.logoColorfulAltText}
+			logoTitle={$translationsStore.generalTexts.logoColorfulTitle}
+			logoAriaLabel={$translationsStore.generalTexts.logoColorfulAriaLabel}
 		/>
 
 		<HeaderNavigation />

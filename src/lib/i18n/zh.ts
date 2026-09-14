@@ -8,8 +8,10 @@ export const zh = {
 		stripeTicketId: 'prod_VCKw008sLdGvIU'
 	},
 	generalTexts: {
-		logoColorfulAltText: 'Allify 彩色标志',
-		logoLightAltText: 'Allify 浅色标志',
+		logoColorfulTitle: 'Allify彩色徽标',
+		logoColorfulAriaLabel: 'Allify彩色徽标',
+		logoLightTitle: 'Allify浅色徽标',
+		logoLightAriaLabel: 'Allify浅色徽标',
 		headerNavigationItem1: '我的音乐档案',
 		headerNavigationItem2: '音乐档案',
 		headerNavigationItem3: '音乐社区',

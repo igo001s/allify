@@ -57,7 +57,8 @@
 			<button on:click={closeMenu}>
 				<AllifyLogoColorful
 					logoSvgClass="w-26"
-					logoAltText={$translationsStore.generalTexts.logoColorfulAltText}
+					logoTitle={$translationsStore.generalTexts.logoColorfulTitle}
+					logoAriaLabel={$translationsStore.generalTexts.logoColorfulAriaLabel}
 				/>
 			</button>
 
