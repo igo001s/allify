@@ -52,8 +52,6 @@
 		src={AlliFullBodyPointing}
 		alt={$translationsStore.homePage.alliMascotPointingToLeftAltText}
 		class="hidden h-auto w-80 md:mr-5 xl:block 2xl:mr-14 2xl:w-105"
-		width="420"
-		height="420"
 		loading="eager"
 		fetchpriority="high"
 		decoding="sync"

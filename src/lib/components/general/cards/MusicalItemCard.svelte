@@ -7,8 +7,6 @@
 		description: string[];
 		buttonContent: string;
 	};
-
-	console.log(item.iconAriaLabel);
 </script>
 
 <article
