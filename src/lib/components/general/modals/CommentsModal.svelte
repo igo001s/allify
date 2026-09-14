@@ -3,7 +3,6 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	// Assets
-	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
 	import TrashIcon from '$lib/assets/images/icons/TrashIcon.svelte';
 
 	// Components
@@ -83,8 +82,10 @@
 
 <Modal
 	closeModal={() => (showCommentsModal = false)}
-	closeModalAriaLabel={$translationsStore.profilePage.profilePageCommentsCloseModalAriaLabel}
-	closeModalAltText={$translationsStore.profilePage.profilePageCommentsCloseModalAltText}
+	closeModalButtonAriaLabel={$translationsStore.profilePage
+		.profilePageCommentsCloseModalButtonAriaLabel}
+	closeModalIconAriaLabel={$translationsStore.profilePage
+		.profilePageCommentsCloseModalIconAriaLabel}
 	additionalClasses="max-h-[90vh] w-full max-w-xl"
 >
 	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">

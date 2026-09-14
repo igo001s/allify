@@ -11,23 +11,23 @@
 	export let closeChangeCustomItemModal: () => void;
 	export let itemType: 'artist' | 'music';
 
-	function getCloseModalAriaLabel() {
+	function getCloseModalButtonAriaLabel() {
 		return itemType === 'artist'
-			? $translationsStore.profilePage.profilePageChangeYourCustomArtistCloseModalAriaLabel
-			: $translationsStore.profilePage.profilePageChangeYourCustomMusicCloseModalAriaLabel;
+			? $translationsStore.profilePage.profilePageChangeYourCustomArtistCloseModalButtonAriaLabel
+			: $translationsStore.profilePage.profilePageChangeYourCustomMusicCloseModalButtonAriaLabel;
 	}
 
-	function getCloseModalAltText() {
+	function getCloseModalIconAriaLabel() {
 		return itemType === 'artist'
-			? $translationsStore.profilePage.profilePageChangeYourCustomArtistCloseModalAltText
-			: $translationsStore.profilePage.profilePageChangeYourCustomMusicCloseModalAltText;
+			? $translationsStore.profilePage.profilePageChangeYourCustomArtistCloseModalIconAriaLabel
+			: $translationsStore.profilePage.profilePageChangeYourCustomMusicCloseModalIconAriaLabel;
 	}
 </script>
 
 <Modal
 	closeModal={closeChangeCustomItemModal}
-	closeModalAriaLabel={getCloseModalAriaLabel()}
-	closeModalAltText={getCloseModalAltText()}
+	closeModalButtonAriaLabel={getCloseModalButtonAriaLabel()}
+	closeModalIconAriaLabel={getCloseModalIconAriaLabel()}
 >
 	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
 		<p class="text-lg font-bold text-t-primary sm:text-xl">

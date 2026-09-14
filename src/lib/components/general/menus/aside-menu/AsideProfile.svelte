@@ -146,7 +146,6 @@
 					text-t-muted
 					{showProfileOptions ? 'rotate-180' : ''}
 				"
-				iconAltText={$translationsStore.generalTexts.dropdownAriaLabel}
 			/>
 		</button>
 

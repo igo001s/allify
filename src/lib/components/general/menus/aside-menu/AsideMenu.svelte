@@ -33,7 +33,7 @@
 
 <div
 	class="fixed inset-0 z-40 bg-s-inverse/40 lg:hidden"
-	aria-label={$translationsStore.generalTexts.closeMenuAltText}
+	aria-label={$translationsStore.generalTexts.closeMenuButtonAriaLabel}
 >
 	<aside
 		class="
@@ -62,13 +62,13 @@
 			</button>
 
 			<button
-				aria-label={$translationsStore.generalTexts.closeMenuAltText}
+				aria-label={$translationsStore.generalTexts.closeMenuButtonAriaLabel}
 				on:click={closeMenu}
 				class="cursor-pointer rounded-md p-0.5 opacity-70 hover:scale-102 hover:opacity-100 lg:hidden"
 			>
 				<CloseIcon
 					iconSvgClass="w-6.5 h-6.5 text-brand-primary"
-					iconAltText={$translationsStore.generalTexts.closeMenuAltText}
+					iconAriaLabel={$translationsStore.generalTexts.closeMenuIconAriaLabel}
 				/>
 			</button>
 		</div>

@@ -16,12 +16,12 @@
 				{
 					image: LinkedinIcon,
 					href: 'https://www.linkedin.com/in/igorgabriel-dev/',
-					altText: $translationsStore.generalTexts.footerColumn1Item1AltText
+					ariaLabel: $translationsStore.generalTexts.linkedinButtonAriaLabel
 				},
 				{
 					image: GithubIcon,
 					href: 'https://github.com/stwsz',
-					altText: $translationsStore.generalTexts.footerColumn1Item2AltText
+					ariaLabel: $translationsStore.generalTexts.githubButtonAriaLabel
 				}
 			]
 		},
@@ -80,7 +80,7 @@
 							href={item.href}
 							target="_blank"
 							rel="noopener noreferrer"
-							aria-label={item.altText}
+							aria-label={item.ariaLabel}
 							class="
 								inline-flex
 								items-center
@@ -96,7 +96,6 @@
 									text-t-inverse-muted
 									hover:text-t-inverse
 								"
-								iconAltText={item.altText}
 							/>
 						</a>
 					{:else}

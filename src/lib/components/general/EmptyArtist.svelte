@@ -6,7 +6,7 @@
 	// Props
 	export let openModal: ((itemType: 'music' | 'artist') => void) | undefined;
 	export let emptyArtistHeading3: string;
-	export let emptyArtistAltText: string;
+	export let emptyArtistAriaLabel: string;
 	export let sessionType: 'profile' | 'public-user';
 	export let emptyArtistHeading4: string;
 	export let emptyArtistParagraph1: string;
@@ -25,10 +25,10 @@
 			{#if sessionType === 'profile'}
 				<SelectArtistIcon
 					iconSvgClass="ml-1.5 h-8 w-8 sm:h-10 sm:w-10"
-					iconAltText={emptyArtistAltText}
+					iconAriaLabel={emptyArtistAriaLabel}
 				/>
 			{:else}
-				<ArtistIcon iconSvgClass="h-8 w-8 sm:h-10 sm:w-10" iconAltText={emptyArtistAltText} />
+				<ArtistIcon iconSvgClass="h-8 w-8 sm:h-10 sm:w-10" iconAriaLabel={emptyArtistAriaLabel} />
 			{/if}
 		</div>
 

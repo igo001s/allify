@@ -14,13 +14,13 @@
 	export let closeSelectCustomItemModal: () => void;
 	export let itemType: 'artist' | 'music';
 
-	function getCloseModalAriaLabel() {
+	function getCloseModalButtonAriaLabel() {
 		return itemType === 'artist'
 			? $translationsStore.profilePage.profilePageSelectYourCustomArtistCloseModalAriaLabel
 			: $translationsStore.profilePage.profilePageSelectYourCustomMusicCloseModalAriaLabel;
 	}
 
-	function getCloseModalAltText() {
+	function getCloseModalIconAriaLabel() {
 		return itemType === 'artist'
 			? $translationsStore.profilePage.profilePageSelectYourCustomArtistCloseModalAltText
 			: $translationsStore.profilePage.profilePageSelectYourCustomMusicCloseModalAltText;
@@ -37,8 +37,8 @@
 
 <Modal
 	closeModal={closeSelectCustomItemModal}
-	closeModalAriaLabel={getCloseModalAriaLabel()}
-	closeModalAltText={getCloseModalAltText()}
+	closeModalButtonAriaLabel={getCloseModalButtonAriaLabel()}
+	closeModalIconAriaLabel={getCloseModalIconAriaLabel()}
 	additionalClasses="max-h-[90vh] w-full max-w-3xl"
 >
 	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">

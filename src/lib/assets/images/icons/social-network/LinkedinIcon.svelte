@@ -1,13 +1,16 @@
 <script lang="ts">
+	// Stores
+	import { translationsStore } from '$lib/stores/translations.store';
+
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAltText: string = '';
+	export let iconAltAriaLabel: string = $translationsStore.generalTexts.linkedinIconAriaLabel;
 </script>
 
 <svg
 	viewBox="0 0 24 24"
 	class={iconSvgClass}
-	aria-label={iconAltText}
+	aria-label={iconAltAriaLabel}
 	role="img"
 	fill="currentColor"
 >

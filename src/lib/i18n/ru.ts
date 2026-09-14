@@ -41,8 +41,9 @@ export const ru = {
 		profileLoggedItem3: 'Выйти',
 		profileNotLoggedItem1: 'Войти через',
 		profileNotLoggedItem2: 'Войти через',
-		burgerMenuAltText: 'Открыть меню навигации',
-		closeMenuAltText: 'Закрыть меню навигации',
+		burgerMenuAriaLabel: 'Открыть меню навигации',
+		closeMenuButtonAriaLabel: 'Закрыть меню навигации',
+		closeMenuIconAriaLabel: 'Иконка для закрытия меню навигации',
 		cardProfileAsideMenuParagraph1: 'Войти или создать аккаунт',
 		footerFirstSectionText1:
 			'Преобразуем музыкальные данные в связи, впечатления и новые способы исследовать вашу музыку.',
@@ -50,8 +51,10 @@ export const ru = {
 		footerFirstSectionIgoLogoAltText: 'Логотип Igo, разработчика Allify',
 		footerCopyrightText: 'Все права защищены.',
 		footerColumn1Title: 'МЫ В СЕТИ',
-		footerColumn1Item1AltText: 'Иконка LinkedIn',
-		footerColumn1Item2AltText: 'Иконка GitHub',
+		linkedinIconAriaLabel: 'Иконка LinkedIn',
+		linkedinButtonAriaLabel: 'Кнопка LinkedIn',
+		githubIconAriaLabel: 'Иконка GitHub',
+		githubButtonAriaLabel: 'Кнопка GitHub',
 		footerColumn2Title: 'НАВИГАЦИЯ',
 		footerColumn2Item1: 'Мой музыкальный профиль',
 		footerColumn2Item2: 'Музыкальный архив',
@@ -90,7 +93,8 @@ export const ru = {
 		tickets: 'Билеты',
 		follower: 'Подписчик',
 		followers: 'Подписчики',
-		buildProfileCloseModalAriaLabel: 'Закрыть модальное окно создания профиля',
+		buildProfileCloseModalButtonAriaLabel: 'Закрыть модальное окно создания профиля',
+		buildProfileCloseModalIconAriaLabel: 'Иконка для закрытия модального окна создания профиля',
 		buildProfileFirstAccessSectionParagraph1: 'Здравствуйте, {name}! Добро пожаловать в Allify.',
 		buildProfileFirstAccessSectionParagraph2:
 			'Заполните свой профиль, чтобы сделать использование Allify более персонализированным. Если хотите, вы можете сделать это позже в своем профиле, а также в любое время изменить видимость профиля в настройках.',
@@ -137,9 +141,9 @@ export const ru = {
 		toastErrorTitle: 'Ошибка',
 		toastErrorAltText: 'Иконка ошибки',
 		toastCloseButtonAriaLabel: 'Закрыть уведомление',
-		toastCloseButtonAltText: 'Иконка для закрытия уведомления',
-		connectPlatformSpotifyAltText: 'Значок Spotify',
-		connectPlatformDeezerAltText: 'Значок Deezer',
+		toastCloseIconAriaLabel: 'Иконка для закрытия уведомления',
+		connectPlatformSpotifyAriaLabel: 'Значок Spotify',
+		connectPlatformDeezerAriaLabel: 'Значок Deezer',
 		fetchUserInfoUserCreationInfoErrorToast: 'Произошла ошибка при создании пользователя.',
 		musicalWavesDivisorAltText: 'Музыкальная волновая разделительная линия'
 	},
@@ -321,7 +325,7 @@ export const ru = {
 			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Вернуться в музыкальное сообщество',
 			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
 				'Закрыть окно добавления комментария в профиль',
-			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+			musicCommunityPagePublicUserCloseAddCommentModalIconAriaLabel:
 				'Значок закрытия окна добавления комментария в профиль',
 			musicCommunityPagePublicUserParagraph1: 'Оставьте комментарий в профиле',
 			musicCommunityPagePublicUserParagraph2:
@@ -360,7 +364,7 @@ export const ru = {
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1: 'Артист момента не выбран',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
 				'Персонализированный артист не выбран',
-			musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText: 'Значок пустого артиста',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserAriaLabel: 'Значок пустого артиста',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1: 'Артист момента отсутствует',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
 				'Персонализированный артист отсутствует',
@@ -404,8 +408,9 @@ export const ru = {
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Значок редактирования трека момента',
 		profilePageYourSongsOnProfileEditCustomMusicIconAltText:
 			'Значок редактирования персонального трека',
-		profilePageChangeYourMusicCloseModalAriaLabel: 'Закрыть окно изменения трека момента',
-		profilePageChangeYourMusicCloseModalAltText: 'Значок закрытия окна изменения трека момента',
+		profilePageChangeYourMusicCloseModalButtonAriaLabel: 'Закрыть окно изменения трека момента',
+		profilePageChangeYourMusicCloseModalIconAriaLabel:
+			'Значок закрытия окна изменения трека момента',
 		profilePageChangeYourMusicParagraph1: 'Обновите трек момента в своём профиле',
 		profilePageChangeYourMusicParagraph2:
 			'Выберите трек, который лучше всего отражает то, что вы слушаете сейчас.',
@@ -417,9 +422,9 @@ export const ru = {
 		profilePageChangeYourTrackErrorToastMessage: 'Ошибка при изменении трека момента',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Продолжайте открывать новые треки и делать свой профиль ещё более персональным.',
-		profilePageChangeYourCustomMusicCloseModalAriaLabel:
+		profilePageChangeYourCustomMusicCloseModalButtonAriaLabel:
 			'Закрыть окно изменения персонального трека',
-		profilePageChangeYourCustomMusicCloseModalAltText:
+		profilePageChangeYourCustomMusicCloseModalIconAriaLabel:
 			'Значок закрытия окна изменения персонального трека',
 		profilePageChangeCustomTrackSuccessToastMessage: 'Персональный трек успешно изменён',
 		profilePageChangeCustomTrackErrorToastMessage: 'Ошибка при изменении персонального трека',
@@ -438,8 +443,8 @@ export const ru = {
 		profilePageEmptyMusicOfTheMomentHeading2: 'Выбрать трек момента',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Выберите трек, который лучше всего представляет вас сейчас, чтобы выделить его в своём профиле.',
-		profilePageSelectYourMusicCloseModalAriaLabel: 'Закрыть окно выбора трека момента',
-		profilePageSelectYourMusicCloseModalAltText: 'Значок закрытия окна выбора трека момента',
+		profilePageSelectYourMusicCloseModalButtonAriaLabel: 'Закрыть окно выбора трека момента',
+		profilePageSelectYourMusicCloseModalIconAriaLabel: 'Значок закрытия окна выбора трека момента',
 		profilePageSelectYourMusicParagraph1: 'Выберите свой трек момента',
 		profilePageSelectYourMusicParagraph2:
 			'Выберите трек, который лучше всего отражает то, что вы слушаете сейчас.',
@@ -471,11 +476,12 @@ export const ru = {
 			'Кнопка редактирования персонального исполнителя',
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
 			'Значок редактирования исполнителя момента',
-		profilePageChangeYourArtistCloseModalAltText:
+		profilePageChangeYourArtistCloseModalIconAriaLabel:
 			'Значок закрытия окна изменения исполнителя момента',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
 			'Значок редактирования персонального исполнителя',
-		profilePageChangeYourArtistCloseModalAriaLabel: 'Закрыть окно изменения исполнителя момента',
+		profilePageChangeYourArtistCloseModalButtonAriaLabel:
+			'Закрыть окно изменения исполнителя момента',
 		profilePageChangeYourArtistParagraph1: 'Обновите исполнителя момента в своём профиле',
 		profilePageChangeYourArtistParagraph2:
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
@@ -488,9 +494,9 @@ export const ru = {
 		profilePageChangeYourArtistTimeToNextFreeUpdate: 'Вы сможете бесплатно обновить через',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персональным.',
-		profilePageChangeYourCustomArtistCloseModalAriaLabel:
+		profilePageChangeYourCustomArtistCloseModalButtonAriaLabel:
 			'Закрыть окно изменения персонального исполнителя',
-		profilePageChangeYourCustomArtistCloseModalAltText:
+		profilePageChangeYourCustomArtistCloseModalIconAriaLabel:
 			'Значок закрытия окна изменения персонального исполнителя',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'Дайте своему исполнителю название',
 		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Например: Моё главное вдохновение',
@@ -501,12 +507,13 @@ export const ru = {
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персональным.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Исполнитель момента',
-		profilePageEmptyArtistOfTheMomentAltText: 'Значок выбора исполнителя момента',
+		profilePageEmptyArtistOfTheMomentAriaLabel: 'Значок выбора исполнителя момента',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Выбрать исполнителя момента',
 		profilePageEmptyArtistOfTheMomentParagraph1:
 			'Выберите исполнителя, который лучше всего представляет вас сейчас, чтобы выделить его в своём профиле.',
-		profilePageSelectYourArtistCloseModalAriaLabel: 'Закрыть окно выбора исполнителя момента',
-		profilePageSelectYourArtistCloseModalAltText: 'Значок закрытия окна выбора исполнителя момента',
+		profilePageSelectYourArtistCloseModalButtonAriaLabel: 'Закрыть окно выбора исполнителя момента',
+		profilePageSelectYourArtistCloseModalIconAriaLabel:
+			'Значок закрытия окна выбора исполнителя момента',
 		profilePageSelectYourArtistParagraph1: 'Выберите своего исполнителя момента',
 		profilePageSelectYourArtistParagraph2:
 			'Выберите исполнителя, который лучше всего отражает то, что вы слушаете сейчас.',
@@ -533,7 +540,7 @@ export const ru = {
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'Продолжайте открывать новых исполнителей и делать свой профиль ещё более персональным.',
 		profilePageEmptyCustomArtistHeading1: 'Ваш исполнитель — по-вашему',
-		profilePageEmptyCustomArtistAltText: 'Значок выбора персонального исполнителя',
+		profilePageEmptyCustomArtistAriaLabel: 'Значок выбора персонального исполнителя',
 		profilePageEmptyCustomArtistHeading2: 'Придайте своему исполнителю особый смысл',
 		profilePageEmptyCustomArtistParagraph1:
 			'Выберите одного из самых прослушиваемых вами исполнителей и настройте его название так, как вам нравится.',
@@ -558,8 +565,8 @@ export const ru = {
 		profilePageSelectYourCustomItemModalSaveChanges: 'Сохранить выбор',
 		profilePageDeleteCommentSuccessToastMessage: 'Комментарий успешно удален.',
 		profilePageDeleteCommentErrorToastMessage: 'Ошибка при удалении комментария.',
-		profilePageCommentsCloseModalAriaLabel: 'Закрыть окно комментариев профиля',
-		profilePageCommentsCloseModalAltText: 'Значок закрытия окна комментариев профиля',
+		profilePageCommentsCloseModalButtonAriaLabel: 'Закрыть окно комментариев профиля',
+		profilePageCommentsCloseModalIconAriaLabel: 'Значок закрытия окна комментариев профиля',
 		profilePageCommentsParagraph1: 'Что другие говорят о вас',
 		profilePageCommentsParagraph2:
 			'Посмотрите комментарии, которые сообщество оставило в вашем профиле.',
@@ -617,7 +624,8 @@ export const ru = {
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Билеты Allify',
-		addTicketsModalAriaLabel: 'Закрыть модальное окно билетов',
+		addTicketsModalButtonAriaLabel: 'Закрыть модальное окно билетов',
+		addTicketsModalIconAriaLabel: 'Иконка для закрытия модального окна билетов',
 		addTicketsModalParagraph1: 'Приобрести билеты',
 		addTicketsModalParagraph2v1:
 			'Похоже, ваши билеты закончились. Приобретите больше, чтобы продолжать пользоваться функциями.',

@@ -2,9 +2,6 @@
 	// Svelte
 	import { onMount, onDestroy } from 'svelte';
 
-	// Assets
-	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
-
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
 
@@ -127,10 +124,10 @@
 
 <Modal
 	closeModal={() => (showAddCommentModal = false)}
-	closeModalAriaLabel={$translationsStore.musicCommunityPage.publicUser
+	closeModalButtonAriaLabel={$translationsStore.musicCommunityPage.publicUser
 		.musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel}
-	closeModalAltText={$translationsStore.musicCommunityPage.publicUser
-		.musicCommunityPagePublicUserCloseAddCommentModalAltText}
+	closeModalIconAriaLabel={$translationsStore.musicCommunityPage.publicUser
+		.musicCommunityPagePublicUserCloseAddCommentModalIconAriaLabel}
 	additionalClasses="max-h-[90vh] w-full max-w-3xl"
 >
 	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">

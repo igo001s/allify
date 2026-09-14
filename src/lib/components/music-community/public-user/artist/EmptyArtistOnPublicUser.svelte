@@ -37,8 +37,8 @@
 <EmptyArtist
 	openModal={undefined}
 	emptyArtistHeading3={getEmptyArtistHeading3()}
-	emptyArtistAltText={$translationsStore.musicCommunityPage.publicUser
-		.musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText}
+	emptyArtistAriaLabel={$translationsStore.musicCommunityPage.publicUser
+		.musicCommunityPagePublicUserEmptyArtistOnPublicUserAriaLabel}
 	sessionType="public-user"
 	emptyArtistHeading4={getEmptyArtistHeading4()}
 	emptyArtistParagraph1={$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1.replace(

@@ -42,15 +42,12 @@
 		<HeaderSelectLanguage bind:openLanguageDropdown />
 
 		<button
-			aria-label={$translationsStore.generalTexts.burgerMenuAltText}
+			aria-label={$translationsStore.generalTexts.burgerMenuAriaLabel}
 			class="cursor-pointer rounded-lg p-0.5 hover:bg-s-muted lg:hidden"
 			aria-expanded={isAsideMenuOpen}
 			on:click={OpenAsideMenu}
 		>
-			<BurguerMenuIcon
-				iconSvgClass="w-6 h-6 text-brand-primary"
-				iconAltText={$translationsStore.generalTexts.burgerMenuAltText}
-			/>
+			<BurguerMenuIcon iconSvgClass="w-6 h-6 text-brand-primary" />
 		</button>
 	</div>
 

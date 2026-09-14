@@ -44,20 +44,11 @@
 >
 	<div class="mt-0.5 shrink-0">
 		{#if $toastStore.toastType === 'warning'}
-			<WarningIcon
-				iconSvgClass="text-status-warning w-5.5 h-5.5"
-				iconAltText={$translationsStore.generalTexts.toastWarningAltText}
-			/>
+			<WarningIcon iconSvgClass="text-status-warning w-5.5 h-5.5" />
 		{:else if $toastStore.toastType === 'success'}
-			<SuccessIcon
-				iconSvgClass="text-status-success w-5.5 h-5.5"
-				iconAltText={$translationsStore.generalTexts.toastSuccessAltText}
-			/>
+			<SuccessIcon iconSvgClass="text-status-success w-5.5 h-5.5" />
 		{:else if $toastStore.toastType === 'error'}
-			<ErrorIcon
-				iconSvgClass="text-status-error w-5.5 h-5.5"
-				iconAltText={$translationsStore.generalTexts.toastErrorAltText}
-			/>
+			<ErrorIcon iconSvgClass="text-status-error w-5.5 h-5.5" />
 		{/if}
 	</div>
 
@@ -83,8 +74,8 @@
 		aria-label={$translationsStore.generalTexts.toastCloseButtonAriaLabel}
 	>
 		<CloseIcon
-			iconAltText={$translationsStore.generalTexts.toastCloseButtonAltText}
 			iconSvgClass="w-4.5 h-4.5 text-t-primary"
+			iconAriaLabel={$translationsStore.generalTexts.toastCloseIconAriaLabel}
 		/>
 	</button>
 </div>

@@ -71,8 +71,8 @@
 
 <Modal
 	closeModal={closeAddTicketsModal}
-	closeModalAriaLabel={$translationsStore.addTickets.addTicketsModalAriaLabel}
-	closeModalAltText={$translationsStore.addTickets.addTicketsModalAriaLabel}
+	closeModalButtonAriaLabel={$translationsStore.addTickets.addTicketsModalButtonAriaLabel}
+	closeModalIconAriaLabel={$translationsStore.addTickets.addTicketsModalIconAriaLabel}
 	additionalClasses="max-h-[90vh] w-full max-w-lg"
 >
 	<div class="flex flex-col gap-3 border-b border-b-default p-5 sm:p-6 lg:p-8">

@@ -4,13 +4,14 @@
 
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAltText: string = $translationsStore.generalTexts.connectPlatformSpotifyAltText;
+	export let iconAriaLabel: string =
+		$translationsStore.generalTexts.connectPlatformSpotifyAriaLabel;
 </script>
 
 <svg
 	viewBox="0 0 65 65"
 	class={iconSvgClass}
-	aria-label={iconAltText}
+	aria-label={iconAriaLabel}
 	role="img"
 	fill="currentColor"
 >

@@ -94,11 +94,7 @@
 					.musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel}
 				on:click={() => (showAddCommentModal = true)}
 			>
-				<AddCommentIcon
-					iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 md:h-8 md:w-8"
-					iconAltText={$translationsStore.musicCommunityPage.publicUser
-						.musicCommunityPagePublicUserOpenAddCommentModalAltText}
-				/>
+				<AddCommentIcon iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 md:h-8 md:w-8" />
 			</button>
 		{/if}
 

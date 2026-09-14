@@ -83,8 +83,9 @@
 {#if showBuildProfile}
 	<Modal
 		{closeModal}
-		closeModalAriaLabel={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
-		closeModalAltText={$translationsStore.generalTexts.buildProfileCloseModalAriaLabel}
+		closeModalButtonAriaLabel={$translationsStore.generalTexts
+			.buildProfileCloseModalButtonAriaLabel}
+		closeModalIconAriaLabel={$translationsStore.generalTexts.buildProfileCloseModalIconAriaLabel}
 		additionalClasses={`${currentStepIndex === 0 || currentStepIndex === 4 ? 'max-w-xl' : 'max-w-3xl'}`}
 	>
 		<div class="min-w-0 overflow-y-auto p-5 sm:p-6 lg:p-8">

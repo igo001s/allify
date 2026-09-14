@@ -41,8 +41,9 @@ export const ja = {
 		profileLoggedItem3: 'ログアウト',
 		profileNotLoggedItem1: 'でログイン',
 		profileNotLoggedItem2: 'でログイン',
-		burgerMenuAltText: 'ナビゲーションメニューを開く',
-		closeMenuAltText: 'ナビゲーションメニューを閉じる',
+		burgerMenuAriaLabel: 'ナビゲーションメニューを開く',
+		closeMenuButtonAriaLabel: 'ナビゲーションメニューを閉じる',
+		closeMenuIconAriaLabel: 'ナビゲーションメニューを閉じるアイコン',
 		cardProfileAsideMenuParagraph1: 'ログインまたはアカウント作成',
 		footerFirstSectionText1:
 			'音楽データをつなげ、体験を生み出し、音楽を探求する新しい方法に変える。',
@@ -50,8 +51,10 @@ export const ja = {
 		footerFirstSectionIgoLogoAltText: 'Igoのロゴ、Allifyの開発者',
 		footerCopyrightText: '全著作権所有',
 		footerColumn1Title: 'フォロー',
-		footerColumn1Item1AltText: 'LinkedInアイコン',
-		footerColumn1Item2AltText: 'GitHubアイコン',
+		linkedinIconAriaLabel: 'LinkedInアイコン',
+		linkedinButtonAriaLabel: 'LinkedInボタン',
+		githubIconAriaLabel: 'GitHubアイコン',
+		githubButtonAriaLabel: 'GitHubボタン',
 		footerColumn2Title: 'ナビゲーション',
 		footerColumn2Item1: '私の音楽プロフィール',
 		footerColumn2Item2: '音楽アーカイブ',
@@ -90,7 +93,8 @@ export const ja = {
 		tickets: 'チケット',
 		follower: 'フォロワー',
 		followers: 'フォロワー',
-		buildProfileCloseModalAriaLabel: 'プロフィール作成モーダルを閉じる',
+		buildProfileCloseModalButtonAriaLabel: 'プロフィール作成モーダルを閉じる',
+		buildProfileCloseModalIconAriaLabel: 'プロフィール作成モーダルを閉じるアイコン',
 		buildProfileFirstAccessSectionParagraph1: 'こんにちは、{name}さん！Allifyへようこそ。',
 		buildProfileFirstAccessSectionParagraph2:
 			'プロフィールを完成させて、あなたに合わせた体験を楽しみましょう。後でプロフィールから設定することもでき、プロフィールの公開範囲は設定画面でいつでも変更できます。',
@@ -136,9 +140,9 @@ export const ja = {
 		toastErrorTitle: 'エラー',
 		toastErrorAltText: 'エラーアイコン',
 		toastCloseButtonAriaLabel: '通知を閉じる',
-		toastCloseButtonAltText: '通知を閉じるアイコン',
-		connectPlatformSpotifyAltText: 'Spotifyのアイコン',
-		connectPlatformDeezerAltText: 'Deezerのアイコン',
+		toastCloseIconAriaLabel: '通知を閉じるアイコン',
+		connectPlatformSpotifyAriaLabel: 'Spotifyのアイコン',
+		connectPlatformDeezerAriaLabel: 'Deezerのアイコン',
 		fetchUserInfoUserCreationInfoErrorToast: 'ユーザーの作成中にエラーが発生しました。',
 		musicalWavesDivisorAltText: '音楽の波の区切り線'
 	},
@@ -318,7 +322,7 @@ export const ja = {
 			musicCommunityPagePublicUserBackToMusicCommunityButton: '音楽コミュニティに戻る',
 			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
 				'プロフィールへのコメント追加モーダルを閉じる',
-			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+			musicCommunityPagePublicUserCloseAddCommentModalIconAriaLabel:
 				'プロフィールへのコメント追加モーダルを閉じるアイコン',
 			musicCommunityPagePublicUserParagraph1: 'プロフィールにコメントを残す：',
 			musicCommunityPagePublicUserParagraph2:
@@ -356,7 +360,7 @@ export const ja = {
 				'今月のアーティストが選択されていません',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
 				'カスタムアーティストが選択されていません',
-			musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText: '空のアーティストアイコン',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserAriaLabel: '空のアーティストアイコン',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1: '今月のアーティストは空です',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2: 'カスタムアーティストは空です',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1:
@@ -397,8 +401,8 @@ export const ja = {
 		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel: 'カスタム楽曲を編集するボタン',
 		profilePageYourSongsOnProfileEditMusicIconAltText: '今の一曲を編集するアイコン',
 		profilePageYourSongsOnProfileEditCustomMusicIconAltText: 'カスタム楽曲を編集するアイコン',
-		profilePageChangeYourMusicCloseModalAriaLabel: '今の一曲を変更するモーダルを閉じる',
-		profilePageChangeYourMusicCloseModalAltText: '今の一曲を変更するモーダルを閉じるアイコン',
+		profilePageChangeYourMusicCloseModalButtonAriaLabel: '今の一曲を変更するモーダルを閉じる',
+		profilePageChangeYourMusicCloseModalIconAriaLabel: '今の一曲を変更するモーダルを閉じるアイコン',
 		profilePageChangeYourMusicParagraph1: 'プロフィールの今の一曲を更新',
 		profilePageChangeYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選んでください。',
 		profilePageChangeYourMusicChooseMusicAriaLabel: 'プロフィールの今の一曲を選択',
@@ -409,8 +413,9 @@ export const ja = {
 		profilePageChangeYourTrackErrorToastMessage: '今の一曲の変更中にエラーが発生しました',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
-		profilePageChangeYourCustomMusicCloseModalAriaLabel: 'カスタム楽曲を変更するモーダルを閉じる',
-		profilePageChangeYourCustomMusicCloseModalAltText:
+		profilePageChangeYourCustomMusicCloseModalButtonAriaLabel:
+			'カスタム楽曲を変更するモーダルを閉じる',
+		profilePageChangeYourCustomMusicCloseModalIconAriaLabel:
 			'カスタム楽曲を変更するモーダルを閉じるアイコン',
 		profilePageChangeCustomTrackSuccessToastMessage: 'カスタム楽曲が正常に変更されました',
 		profilePageChangeCustomTrackErrorToastMessage: 'カスタム楽曲の変更中にエラーが発生しました',
@@ -429,8 +434,8 @@ export const ja = {
 		profilePageEmptyMusicOfTheMomentHeading2: '今の一曲を選択',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'今のあなたを最もよく表す楽曲を選び、プロフィールで紹介しましょう。',
-		profilePageSelectYourMusicCloseModalAriaLabel: '今の一曲を選択するモーダルを閉じる',
-		profilePageSelectYourMusicCloseModalAltText: '今の一曲を選択するモーダルを閉じるアイコン',
+		profilePageSelectYourMusicCloseModalButtonAriaLabel: '今の一曲を選択するモーダルを閉じる',
+		profilePageSelectYourMusicCloseModalIconAriaLabel: '今の一曲を選択するモーダルを閉じるアイコン',
 		profilePageSelectYourMusicParagraph1: '今の一曲を選ぶ',
 		profilePageSelectYourMusicParagraph2: '今聴いている音楽を最もよく表す楽曲を選んでください。',
 		profilePageSelectYourMusicChooseMusicAriaLabel: 'プロフィールの今の一曲を選択',
@@ -459,11 +464,12 @@ export const ja = {
 		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
 			'カスタムアーティストを編集するボタン',
 		profilePageYourArtistsOnProfileEditArtistIconAltText: '今のアーティストを編集するアイコン',
-		profilePageChangeYourArtistCloseModalAltText:
+		profilePageChangeYourArtistCloseModalIconAriaLabel:
 			'今のアーティストを変更するモーダルを閉じるアイコン',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
 			'カスタムアーティストを編集するアイコン',
-		profilePageChangeYourArtistCloseModalAriaLabel: '今のアーティストを変更するモーダルを閉じる',
+		profilePageChangeYourArtistCloseModalButtonAriaLabel:
+			'今のアーティストを変更するモーダルを閉じる',
 		profilePageChangeYourArtistParagraph1: 'プロフィールの今のアーティストを更新',
 		profilePageChangeYourArtistParagraph2:
 			'今聴いている音楽を最もよく表すアーティストを選んでください。',
@@ -476,9 +482,9 @@ export const ja = {
 		profilePageChangeYourArtistTimeToNextFreeUpdate: '無料で更新できるまで',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
-		profilePageChangeYourCustomArtistCloseModalAriaLabel:
+		profilePageChangeYourCustomArtistCloseModalButtonAriaLabel:
 			'カスタムアーティストを変更するモーダルを閉じる',
-		profilePageChangeYourCustomArtistCloseModalAltText:
+		profilePageChangeYourCustomArtistCloseModalIconAriaLabel:
 			'カスタムアーティストを変更するモーダルを閉じるアイコン',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'アーティストにタイトルを付ける',
 		profilePageChangeYourCustomArtistTitleInputPlaceholder: '例：私の最大のインスピレーション',
@@ -489,12 +495,13 @@ export const ja = {
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageEmptyArtistOfTheMomentHeading1: '今のアーティスト',
-		profilePageEmptyArtistOfTheMomentAltText: '今のアーティストの選択アイコン',
+		profilePageEmptyArtistOfTheMomentAriaLabel: '今のアーティストの選択アイコン',
 		profilePageEmptyArtistOfTheMomentHeading2: '今のアーティストを選択',
 		profilePageEmptyArtistOfTheMomentParagraph1:
 			'今のあなたを最もよく表すアーティストを選び、プロフィールで紹介しましょう。',
-		profilePageSelectYourArtistCloseModalAriaLabel: '今のアーティストを選択するモーダルを閉じる',
-		profilePageSelectYourArtistCloseModalAltText:
+		profilePageSelectYourArtistCloseModalButtonAriaLabel:
+			'今のアーティストを選択するモーダルを閉じる',
+		profilePageSelectYourArtistCloseModalIconAriaLabel:
 			'今のアーティストを選択するモーダルを閉じるアイコン',
 		profilePageSelectYourArtistParagraph1: '今のアーティストを選ぶ',
 		profilePageSelectYourArtistParagraph2:
@@ -524,7 +531,7 @@ export const ja = {
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'さらに多くのアーティストをアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageEmptyCustomArtistHeading1: 'あなたのアーティスト、あなたらしく',
-		profilePageEmptyCustomArtistAltText: 'カスタムアーティストの選択アイコン',
+		profilePageEmptyCustomArtistAriaLabel: 'カスタムアーティストの選択アイコン',
 		profilePageEmptyCustomArtistHeading2: 'アーティストに意味を与えよう',
 		profilePageEmptyCustomArtistParagraph1:
 			'最もよく聴くアーティストの中から1人を選び、好きなようにタイトルをカスタマイズしましょう。',
@@ -549,8 +556,8 @@ export const ja = {
 		profilePageSelectYourCustomItemModalSaveChanges: '選択を保存',
 		profilePageDeleteCommentSuccessToastMessage: 'コメントが正常に削除されました。',
 		profilePageDeleteCommentErrorToastMessage: 'コメントの削除中にエラーが発生しました。',
-		profilePageCommentsCloseModalAriaLabel: 'プロフィールコメントモーダルを閉じる',
-		profilePageCommentsCloseModalAltText: 'プロフィールコメントモーダルを閉じるアイコン',
+		profilePageCommentsCloseModalButtonAriaLabel: 'プロフィールコメントモーダルを閉じる',
+		profilePageCommentsCloseModalIconAriaLabel: 'プロフィールコメントモーダルを閉じるアイコン',
 		profilePageCommentsParagraph1: 'あなたについてみんなが言っていること',
 		profilePageCommentsParagraph2:
 			'コミュニティがあなたのプロフィールに残したコメントをチェックしましょう。',
@@ -608,7 +615,8 @@ export const ja = {
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Allifyチケット',
-		addTicketsModalAriaLabel: 'チケットモーダルを閉じる',
+		addTicketsModalButtonAriaLabel: 'チケットモーダルを閉じる',
+		addTicketsModalIconAriaLabel: 'チケットモーダルを閉じるアイコン',
 		addTicketsModalParagraph1: 'チケットを購入する',
 		addTicketsModalParagraph2v1:
 			'チケットがなくなったようです。機能を引き続き利用するには、さらにチケットを購入してください。',

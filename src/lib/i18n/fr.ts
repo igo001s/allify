@@ -40,9 +40,10 @@ export const fr = {
 		profileLoggedItem3: 'Se déconnecter',
 		profileNotLoggedItem1: 'Se connecter avec ',
 		profileNotLoggedItem2: 'Se connecter avec ',
-		burgerMenuAltText: 'Ouvrir le menu de navigation',
+		burgerMenuAriaLabel: 'Ouvrir le menu de navigation',
 		profileLoggedAltText: 'Photo de profil utilisateur',
-		closeMenuAltText: 'Fermer le menu de navigation',
+		closeMenuButtonAriaLabel: 'Fermer le menu de navigation',
+		closeMenuIconAriaLabel: 'Icône pour fermer le menu de navigation',
 		cardProfileAsideMenuParagraph1: 'Se connecter ou créer un compte',
 		footerFirstSectionText1:
 			'Transformer les données musicales en connexions, expériences et nouvelles façons d’explorer votre musique.',
@@ -50,8 +51,10 @@ export const fr = {
 		footerFirstSectionIgoLogoAltText: 'Logo d’Igo, développeur d’Allify',
 		footerCopyrightText: 'Tous droits réservés.',
 		footerColumn1Title: 'SUIVRE',
-		footerColumn1Item1AltText: 'Icône LinkedIn',
-		footerColumn1Item2AltText: 'Icône GitHub',
+		linkedinIconAriaLabel: 'Icône LinkedIn',
+		linkedinButtonAriaLabel: 'Bouton LinkedIn',
+		githubIconAriaLabel: 'Icône GitHub',
+		githubButtonAriaLabel: 'Bouton GitHub',
 		footerColumn2Title: 'NAVIGATION',
 		footerColumn2Item1: 'Mon profil musical',
 		footerColumn2Item2: 'Archive Musical',
@@ -90,7 +93,8 @@ export const fr = {
 		tickets: 'Tickets',
 		follower: 'Abonné',
 		followers: 'Abonnés',
-		buildProfileCloseModalAriaLabel: 'Fermer le modal de création de profil',
+		buildProfileCloseModalButtonAriaLabel: 'Fermer le modal de création de profil',
+		buildProfileCloseModalIconAriaLabel: 'Icône pour fermer le modal de création de profil',
 		buildProfileFirstAccessSectionParagraph1: 'Bonjour, {name} ! Bienvenue sur Allify.',
 		buildProfileFirstAccessSectionParagraph2:
 			'Complétez votre profil pour personnaliser votre expérience. Si vous préférez, vous pourrez le faire plus tard depuis votre profil et modifier la visibilité de votre profil à tout moment dans les paramètres.',
@@ -138,9 +142,9 @@ export const fr = {
 		toastErrorTitle: 'Erreur',
 		toastErrorAltText: "Icône d'erreur",
 		toastCloseButtonAriaLabel: 'Fermer la notification',
-		toastCloseButtonAltText: 'Icône pour fermer la notification',
-		connectPlatformSpotifyAltText: 'Icône Spotify',
-		connectPlatformDeezerAltText: 'Icône Deezer',
+		toastCloseIconAriaLabel: 'Icône pour fermer la notification',
+		connectPlatformSpotifyAriaLabel: 'Icône Spotify',
+		connectPlatformDeezerAriaLabel: 'Icône Deezer',
 		fetchUserInfoUserCreationInfoErrorToast:
 			'Une erreur est survenue lors de la création de l’utilisateur.',
 		musicalWavesDivisorAltText: 'Ligne de séparation des vagues musicales'
@@ -326,7 +330,7 @@ export const fr = {
 			musicCommunityPagePublicUserBackToMusicCommunityButton: 'Retour à la Communauté Musicale',
 			musicCommunityPagePublicUserCloseAddCommentModalButtonAriaLabel:
 				'Fermer la fenêtre permettant d’ajouter un commentaire au profil',
-			musicCommunityPagePublicUserCloseAddCommentModalAltText:
+			musicCommunityPagePublicUserCloseAddCommentModalIconAriaLabel:
 				'Icône pour fermer la fenêtre permettant d’ajouter un commentaire au profil',
 			musicCommunityPagePublicUserParagraph1: 'Laissez un commentaire sur le profil de',
 			musicCommunityPagePublicUserParagraph2:
@@ -365,7 +369,7 @@ export const fr = {
 				'Aucun artiste du moment sélectionné',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
 				'Aucun artiste personnalisé sélectionné',
-			musicCommunityPagePublicUserEmptyArtistOnPublicUserAltText: 'Icône d’artiste vide',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserAriaLabel: 'Icône d’artiste vide',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1: 'L’artiste du moment est vide',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2:
 				'L’artiste personnalisé est vide',
@@ -410,9 +414,9 @@ export const fr = {
 		profilePageYourSongsOnProfileEditMusicIconAltText: 'Icône de modification du titre du moment',
 		profilePageYourSongsOnProfileEditCustomMusicIconAltText:
 			'Icône de modification du titre personnalisé',
-		profilePageChangeYourMusicCloseModalAriaLabel:
+		profilePageChangeYourMusicCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de modification du titre du moment',
-		profilePageChangeYourMusicCloseModalAltText:
+		profilePageChangeYourMusicCloseModalIconAriaLabel:
 			'Icône de fermeture de la fenêtre de modification du titre du moment',
 		profilePageChangeYourMusicParagraph1: 'Mettez à jour votre titre du moment sur votre profil',
 		profilePageChangeYourMusicParagraph2:
@@ -429,9 +433,9 @@ export const fr = {
 			'Erreur lors de la modification de la musique du moment',
 		profilePageChangeYourMusicUnlockMoreMusic:
 			'Continuez à débloquer davantage de titres et à personnaliser encore plus votre profil.',
-		profilePageChangeYourCustomMusicCloseModalAriaLabel:
+		profilePageChangeYourCustomMusicCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de modification du titre personnalisé',
-		profilePageChangeYourCustomMusicCloseModalAltText:
+		profilePageChangeYourCustomMusicCloseModalIconAriaLabel:
 			'Icône de fermeture de la fenêtre de modification du titre personnalisé',
 		profilePageChangeCustomTrackSuccessToastMessage: 'Titre personnalisé modifié avec succès',
 		profilePageChangeCustomTrackErrorToastMessage:
@@ -452,9 +456,9 @@ export const fr = {
 		profilePageEmptyMusicOfTheMomentHeading2: 'Sélectionner le titre du moment',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Choisissez le titre qui vous représente le mieux en ce moment pour le mettre en avant sur votre profil.',
-		profilePageSelectYourMusicCloseModalAriaLabel:
+		profilePageSelectYourMusicCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de sélection du titre du moment',
-		profilePageSelectYourMusicCloseModalAltText:
+		profilePageSelectYourMusicCloseModalIconAriaLabel:
 			'Icône de fermeture de la fenêtre de sélection du titre du moment',
 		profilePageSelectYourMusicParagraph1: 'Choisissez votre titre du moment',
 		profilePageSelectYourMusicParagraph2:
@@ -489,11 +493,11 @@ export const fr = {
 			'Bouton pour modifier l’artiste personnalisé',
 		profilePageYourArtistsOnProfileEditArtistIconAltText:
 			'Icône de modification de l’artiste du moment',
-		profilePageChangeYourArtistCloseModalAltText:
+		profilePageChangeYourArtistCloseModalIconAriaLabel:
 			'Icône de fermeture de la fenêtre de modification de l’artiste du moment',
 		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
 			'Icône de modification de l’artiste personnalisé',
-		profilePageChangeYourArtistCloseModalAriaLabel:
+		profilePageChangeYourArtistCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de modification de l’artiste du moment',
 		profilePageChangeYourArtistParagraph1: 'Mettez à jour votre artiste du moment sur votre profil',
 		profilePageChangeYourArtistParagraph2:
@@ -511,9 +515,9 @@ export const fr = {
 			'Vous pourrez effectuer une mise à jour gratuitement dans',
 		profilePageChangeYourArtistUnlockMoreMusic:
 			'Continuez à débloquer davantage d’artistes et à personnaliser encore plus votre profil.',
-		profilePageChangeYourCustomArtistCloseModalAriaLabel:
+		profilePageChangeYourCustomArtistCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de modification de l’artiste personnalisé',
-		profilePageChangeYourCustomArtistCloseModalAltText:
+		profilePageChangeYourCustomArtistCloseModalIconAriaLabel:
 			'Icône de fermeture de la fenêtre de modification de l’artiste personnalisé',
 		profilePageChangeYourCustomArtistTitleInputLabel: 'Donnez un titre à votre artiste',
 		profilePageChangeYourCustomArtistTitleInputPlaceholder: 'Ex. : Ma plus grande inspiration',
@@ -524,13 +528,13 @@ export const fr = {
 		profilePageChangeYourCustomArtistUnlockMoreMusic:
 			'Continuez à débloquer davantage d’artistes et à personnaliser encore plus votre profil.',
 		profilePageEmptyArtistOfTheMomentHeading1: 'Artiste du moment',
-		profilePageEmptyArtistOfTheMomentAltText: 'Icône de sélection de l’artiste du moment',
+		profilePageEmptyArtistOfTheMomentAriaLabel: 'Icône de sélection de l’artiste du moment',
 		profilePageEmptyArtistOfTheMomentHeading2: 'Sélectionner l’artiste du moment',
 		profilePageEmptyArtistOfTheMomentParagraph1:
 			'Choisissez l’artiste qui vous représente le mieux en ce moment pour le mettre en avant sur votre profil.',
-		profilePageSelectYourArtistCloseModalAriaLabel:
+		profilePageSelectYourArtistCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de sélection de l’artiste du moment',
-		profilePageSelectYourArtistCloseModalAltText:
+		profilePageSelectYourArtistCloseModalIconAriaLabel:
 			'Icône de fermeture de la fenêtre de sélection de l’artiste du moment',
 		profilePageSelectYourArtistParagraph1: 'Choisissez votre artiste du moment',
 		profilePageSelectYourArtistParagraph2:
@@ -560,7 +564,7 @@ export const fr = {
 		profilePageSelectYourCustomArtistUnlockMoreMusic:
 			'Continuez à débloquer davantage d’artistes et à personnaliser encore plus votre profil.',
 		profilePageEmptyCustomArtistHeading1: 'Votre artiste, à votre façon',
-		profilePageEmptyCustomArtistAltText: 'Icône de sélection d’un artiste personnalisé',
+		profilePageEmptyCustomArtistAriaLabel: 'Icône de sélection d’un artiste personnalisé',
 		profilePageEmptyCustomArtistHeading2: 'Donnez du sens à votre artiste',
 		profilePageEmptyCustomArtistParagraph1:
 			'Choisissez l’un de vos artistes les plus écoutés et personnalisez son titre comme vous le souhaitez.',
@@ -585,8 +589,9 @@ export const fr = {
 		profilePageSelectYourCustomItemModalSaveChanges: 'Enregistrer la sélection',
 		profilePageDeleteCommentSuccessToastMessage: 'Commentaire supprimé avec succès.',
 		profilePageDeleteCommentErrorToastMessage: 'Erreur lors de la suppression du commentaire.',
-		profilePageCommentsCloseModalAriaLabel: 'Fermer la fenêtre modale des commentaires du profil',
-		profilePageCommentsCloseModalAltText:
+		profilePageCommentsCloseModalButtonAriaLabel:
+			'Fermer la fenêtre modale des commentaires du profil',
+		profilePageCommentsCloseModalIconAriaLabel:
 			'Icône pour fermer la fenêtre modale des commentaires du profil',
 		profilePageCommentsParagraph1: 'Ce que les autres disent de vous',
 		profilePageCommentsParagraph2:
@@ -647,7 +652,8 @@ export const fr = {
 	},
 	addTickets: {
 		addTicketsModalTitle: 'Tickets Allify',
-		addTicketsModalAriaLabel: 'Fermer le modal des tickets',
+		addTicketsModalButtonAriaLabel: 'Fermer le modal des tickets',
+		addTicketsModalIconAriaLabel: 'Icône pour fermer le modal des tickets',
 		addTicketsModalParagraph1: 'Acheter des tickets',
 		addTicketsModalParagraph2v1:
 			'On dirait que vos tickets sont épuisés. Achetez-en plus pour continuer à profiter des fonctionnalités.',

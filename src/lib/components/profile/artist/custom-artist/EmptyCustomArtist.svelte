@@ -12,7 +12,7 @@
 <EmptyArtist
 	openModal={() => openSelectCustomItemModal('artist')}
 	emptyArtistHeading3={$translationsStore.profilePage.profilePageEmptyCustomArtistHeading1}
-	emptyArtistAltText={$translationsStore.profilePage.profilePageEmptyCustomArtistAltText}
+	emptyArtistAriaLabel={$translationsStore.profilePage.profilePageEmptyCustomArtistAriaLabel}
 	sessionType="profile"
 	emptyArtistHeading4={$translationsStore.profilePage.profilePageEmptyCustomArtistHeading2}
 	emptyArtistParagraph1={$translationsStore.profilePage.profilePageEmptyCustomArtistParagraph1}

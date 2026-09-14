@@ -4,13 +4,13 @@
 
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAltText: string = $translationsStore.generalTexts.connectPlatformDeezerAltText;
+	export let iconAriaLabel: string = $translationsStore.generalTexts.connectPlatformDeezerAriaLabel;
 </script>
 
 <svg
 	viewBox="0 0 1559 1544"
 	class={iconSvgClass}
-	aria-label={iconAltText}
+	aria-label={iconAriaLabel}
 	role="img"
 	fill="currentColor"
 >

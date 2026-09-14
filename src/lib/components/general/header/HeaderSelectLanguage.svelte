@@ -133,7 +133,6 @@
 			iconSvgClass={`w-5 h-5 pointer-events-none
 				text-t-muted
 				${openLanguageDropdown ? 'rotate-180' : ''}`}
-			iconAltText={$translationsStore.generalTexts.dropdownAriaLabel}
 		/>
 	</button>
 

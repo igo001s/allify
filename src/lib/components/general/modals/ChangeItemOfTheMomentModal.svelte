@@ -14,16 +14,16 @@
 	export let closeChangeItemOfTheMomentModal: () => void;
 	export let itemType: 'artist' | 'music';
 
-	function getCloseModalAriaLabel() {
+	function getCloseModalButtonAriaLabel() {
 		return itemType === 'artist'
-			? $translationsStore.profilePage.profilePageChangeYourArtistCloseModalAriaLabel
-			: $translationsStore.profilePage.profilePageChangeYourMusicCloseModalAriaLabel;
+			? $translationsStore.profilePage.profilePageChangeYourArtistCloseModalButtonAriaLabel
+			: $translationsStore.profilePage.profilePageChangeYourMusicCloseModalButtonAriaLabel;
 	}
 
-	function getCloseModalAltText() {
+	function getCloseModalIconAriaLabel() {
 		return itemType === 'artist'
-			? $translationsStore.profilePage.profilePageChangeYourArtistCloseModalAltText
-			: $translationsStore.profilePage.profilePageChangeYourMusicCloseModalAltText;
+			? $translationsStore.profilePage.profilePageChangeYourArtistCloseModalIconAriaLabel
+			: $translationsStore.profilePage.profilePageChangeYourMusicCloseModalIconAriaLabel;
 	}
 
 	onMount(() => {
@@ -37,8 +37,8 @@
 
 <Modal
 	closeModal={closeChangeItemOfTheMomentModal}
-	closeModalAriaLabel={getCloseModalAriaLabel()}
-	closeModalAltText={getCloseModalAltText()}
+	closeModalButtonAriaLabel={getCloseModalButtonAriaLabel()}
+	closeModalIconAriaLabel={getCloseModalIconAriaLabel()}
 	additionalClasses="max-h-[90vh] w-full max-w-3xl"
 >
 	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
