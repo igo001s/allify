@@ -8,11 +8,7 @@
 </script>
 
 <picture>
-	<source
-		srcset={DivisorDesktop}
-		media="(min-width: 1024px)"
-		type="image/webp"
-	/>
+	<source srcset={DivisorDesktop} media="(min-width: 1024px)" type="image/webp" />
 
 	<img
 		src={DivisorMobile}
