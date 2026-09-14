@@ -50,6 +50,10 @@
 	/* STREAMINGS */
 	--color-spotify: #0d7a36;
 	--color-deezer: #a339ff;
+
+	/* PLATFORMS */
+	--color-linkedin: #0077b5;
+	--color-github: #333333;
 }
 
 body {

@@ -22,6 +22,10 @@
 	@apply text-xl font-medium text-t-primary sm:text-2xl;
 }
 
+.heading-2-faq {
+	@apply text-center text-3xl text-t-primary lg:text-5xl;
+}
+
 .heading-3 {
 	@apply text-sm font-medium text-t-secondary;
 }

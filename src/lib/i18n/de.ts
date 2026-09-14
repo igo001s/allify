@@ -204,7 +204,12 @@ export const de = {
 			'Teile Songs, die Teil deiner besonderen Momente sind, und knüpfe durch sie neue Verbindungen.',
 		musicalItemCardTitleSongsItem4:
 			'Hebe besondere Songs in deinem Profil hervor und halte diejenigen sichtbar, die weiterhin Teil deiner musikalischen Geschichte sind.',
-		musicalItemCardSongsButtonContent: 'Songs ansehen'
+		musicalItemCardSongsButtonContent: 'Songs ansehen',
+		faqSectionHeading1: 'Häufig gestellte Fragen',
+		faqSectionParagraph1:
+			'Hier findest du Antworten auf die häufigsten Fragen zu Allify. Wenn du die gesuchte Antwort nicht findest, kannst du dich gerne an mich wenden.',
+		faqSectionButtonGithubAriaLabel: 'Gehe zu Github von Igor Araújo',
+		faqSectionButtonLinkedinAriaLabel: 'Gehe zu LinkedIn von Igor Araújo'
 	},
 	myMusicalProfilePage: {
 		title: 'Mein Musikprofil | Allify',

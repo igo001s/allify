@@ -201,7 +201,12 @@ export const ja = {
 			'あなたの大切な瞬間に寄り添う楽曲を共有して、新しいつながりを生み出せます。',
 		musicalItemCardTitleSongsItem4:
 			'特別な楽曲をプロフィールで目立たせ、今もあなたの音楽の物語の一部である楽曲を表示し続けられます。',
-		musicalItemCardSongsButtonContent: '楽曲を見る'
+		musicalItemCardSongsButtonContent: '楽曲を見る',
+		faqSectionHeading1: 'よくある質問',
+		faqSectionParagraph1:
+			'ここでは、Allifyに関するよくある質問への回答を見つけることができます。探している答えが見つからない場合は、お気軽にお問い合わせください。',
+		faqSectionButtonGithubAriaLabel: 'Igor AraújoのGithubに移動',
+		faqSectionButtonLinkedinAriaLabel: 'Igor AraújoのLinkedInに移動'
 	},
 	myMusicalProfilePage: {
 		title: 'マイミュージックプロフィール | Allify',

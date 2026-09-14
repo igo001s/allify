@@ -203,7 +203,12 @@ export const ru = {
 			'Делитесь песнями, которые сопровождают ваши моменты, и создавайте новые связи благодаря им.',
 		musicalItemCardTitleSongsItem4:
 			'Выделяйте особенные песни в своём профиле и сохраняйте видимыми те, которые продолжают быть частью вашей музыкальной истории.',
-		musicalItemCardSongsButtonContent: 'Смотреть песни'
+		musicalItemCardSongsButtonContent: 'Смотреть песни',
+		faqSectionHeading1: 'Часто задаваемые вопросы',
+		faqSectionParagraph1:
+			'Здесь вы найдете ответы на наиболее часто задаваемые вопросы о Allify. Если вы не нашли нужный ответ, не стесняйтесь связаться со мной.',
+		faqSectionButtonGithubAriaLabel: 'Перейти на Github Игоря Араужо',
+		faqSectionButtonLinkedinAriaLabel: 'Перейти на LinkedIn Игоря Араужо'
 	},
 	myMusicalProfilePage: {
 		title: 'Мой музыкальный профиль | Allify',

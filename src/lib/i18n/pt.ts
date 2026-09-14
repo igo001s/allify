@@ -202,7 +202,12 @@ export const pt = {
 			'Compartilhe músicas que fazem parte dos seus momentos e crie novas conexões através delas.',
 		musicalItemCardTitleSongsItem4:
 			'Destaque músicas especiais no seu perfil e mantenha visíveis aquelas que continuam fazendo parte da sua história musical.',
-		musicalItemCardSongsButtonContent: 'Ver músicas'
+		musicalItemCardSongsButtonContent: 'Ver músicas',
+		faqSectionHeading1: 'Perguntas Frequentes',
+		faqSectionParagraph1:
+			'Aqui você encontrará respostas para as perguntas mais frequentes sobre o Allify. Caso não encontre a resposta que procura, sinta-se à vontade para entrar em contato comigo.',
+		faqSectionButtonGithubAriaLabel: 'Ir para Github de Igor Araújo',
+		faqSectionButtonLinkedinAriaLabel: 'Ir para LinkedIn de Igor Araújo'
 	},
 	myMusicalProfilePage: {
 		title: 'Meu Perfil Musical | Allify',

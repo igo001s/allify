@@ -7,6 +7,7 @@
 	import ConnectPlatformsSection from '$lib/components/home-page/ConnectPlatformsSection.svelte';
 	import MusicalItemsSection from '$lib/components/home-page/MusicalItemsSection.svelte';
 	import MusicalWavesDivisor from '$lib/components/general/divisor/MusicalWavesDivisor.svelte';
+	import FaqSection from '$lib/components/home-page/FaqSection.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -53,3 +54,5 @@
 <MusicalItemsSection />
 
 <MusicalWavesDivisor />
+
+<FaqSection />

@@ -49,3 +49,11 @@
 .button-outline-disable-deezer {
 	@apply hover:border-deezer hover:text-deezer;
 }
+
+.button-outline-linkedin {
+	@apply border-linkedin text-linkedin hover:bg-linkedin/5;
+}
+
+.button-outline-github {
+	@apply border-github text-github hover:bg-github/5;
+}

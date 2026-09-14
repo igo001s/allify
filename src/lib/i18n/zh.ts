@@ -186,7 +186,12 @@ export const zh = {
 		musicalItemCardTitleSongsItem3: '分享那些陪伴你度过特别时刻的歌曲，并通过音乐建立新的联系。',
 		musicalItemCardTitleSongsItem4:
 			'在个人资料中突出展示特别的歌曲，让那些依然属于你音乐故事的歌曲持续可见。',
-		musicalItemCardSongsButtonContent: '查看歌曲'
+		musicalItemCardSongsButtonContent: '查看歌曲',
+		faqSectionHeading1: '常见问题',
+		faqSectionParagraph1:
+			'在这里，你会找到关于 Allify 的最常见问题的答案。如果你没有找到你想要的答案，请随时与我联系。',
+		faqSectionButtonGithubAriaLabel: '前往 Igor Araújo 的 Github',
+		faqSectionButtonLinkedinAriaLabel: '前往 Igor Araújo 的 LinkedIn'
 	},
 	myMusicalProfilePage: {
 		title: '我的音乐档案 | Allify',
