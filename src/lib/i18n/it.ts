@@ -185,6 +185,7 @@ export const it = {
 		connectPlatformCardPlatformExternalLink: 'Vai a',
 		musicalItemsSectionHeading1: 'Tutto ciò che puoi esplorare con Allify',
 		musicalItemCardTitleArtists: 'Artisti',
+		musicalItemCardTitleArtistsIconAriaLabel: 'Icona degli artisti',
 		musicalItemCardTitleArtistsItem1:
 			'Segui gli artisti che ascolti di più e che fanno parte della tua identità musicale.',
 		musicalItemCardTitleArtistsItem2:
@@ -195,6 +196,7 @@ export const it = {
 			'Condividi i tuoi artisti preferiti e connettiti con altre persone appassionate di musica.',
 		musicalItemCardArtistsButtonContent: 'Vedi artisti',
 		musicalItemCardTitleSongs: 'Brani',
+		musicalItemCardTitleSongsIconAriaLabel: 'Icona dei brani',
 		musicalItemCardTitleSongsItem1:
 			'Segui i brani che fanno maggiormente parte della tua esperienza di ascolto.',
 		musicalItemCardTitleSongsItem2:

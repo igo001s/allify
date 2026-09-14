@@ -170,6 +170,7 @@ export const zh = {
 		connectPlatformCardPlatformExternalLink: '前往',
 		musicalItemsSectionHeading1: '在 Allify 上探索更多音乐内容',
 		musicalItemCardTitleArtists: '艺人',
+		musicalItemCardTitleArtistsIconAriaLabel: '艺人图标',
 		musicalItemCardTitleArtistsItem1: '关注你最常听的艺人，了解他们如何成为你音乐身份的一部分。',
 		musicalItemCardTitleArtistsItem2: '看看哪些艺人最能代表你的音乐品味和聆听体验。',
 		musicalItemCardTitleArtistsItem3:
@@ -177,6 +178,7 @@ export const zh = {
 		musicalItemCardTitleArtistsItem4: '分享你喜欢的艺人，与其他热爱音乐的人建立联系。',
 		musicalItemCardArtistsButtonContent: '查看艺人',
 		musicalItemCardTitleSongs: '歌曲',
+		musicalItemCardTitleSongsIconAriaLabel: '歌曲图标',
 		musicalItemCardTitleSongsItem1: '关注那些在你的聆听体验中占据重要位置的歌曲。',
 		musicalItemCardTitleSongsItem2: '选择一首当下的歌曲，代表你正在聆听和感受的音乐。',
 		musicalItemCardTitleSongsItem3: '分享那些陪伴你度过特别时刻的歌曲，并通过音乐建立新的联系。',

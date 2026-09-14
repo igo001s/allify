@@ -13,6 +13,7 @@
 	$: musicalItemContent = [
 		{
 			icon: ArtistIcon as typeof SvelteComponent,
+			iconAriaLabel: $translationsStore.homePage.musicalItemCardTitleArtistsIconAriaLabel,
 			title: $translationsStore.homePage.musicalItemCardTitleArtists,
 			description: [
 				$translationsStore.homePage.musicalItemCardTitleArtistsItem1,
@@ -24,6 +25,7 @@
 		},
 		{
 			icon: MusicIcon as typeof SvelteComponent,
+			iconAriaLabel: $translationsStore.homePage.musicalItemCardTitleSongsIconAriaLabel,
 			title: $translationsStore.homePage.musicalItemCardTitleSongs,
 			description: [
 				$translationsStore.homePage.musicalItemCardTitleSongsItem1,

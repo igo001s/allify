@@ -179,6 +179,7 @@ export const ja = {
 		connectPlatformCardPlatformExternalLink: '移動',
 		musicalItemsSectionHeading1: 'Allifyで楽しめること',
 		musicalItemCardTitleArtists: 'アーティスト',
+		musicalItemCardTitleArtistsIconAriaLabel: 'アーティストのアイコン',
 		musicalItemCardTitleArtistsItem1:
 			'よく聴くアーティストを追いかけながら、あなたの音楽的アイデンティティを知ることができます。',
 		musicalItemCardTitleArtistsItem2:
@@ -189,6 +190,7 @@ export const ja = {
 			'お気に入りのアーティストを共有して、音楽が好きな人たちとつながりましょう。',
 		musicalItemCardArtistsButtonContent: 'アーティストを見る',
 		musicalItemCardTitleSongs: '楽曲',
+		musicalItemCardTitleSongsIconAriaLabel: '楽曲のアイコン',
 		musicalItemCardTitleSongsItem1:
 			'あなたの音楽体験を彩る、よく聴く楽曲を追いかけることができます。',
 		musicalItemCardTitleSongsItem2:

@@ -181,6 +181,7 @@ export const ru = {
 		connectPlatformCardPlatformExternalLink: 'Перейти',
 		musicalItemsSectionHeading1: 'Всё, что можно исследовать с Allify',
 		musicalItemCardTitleArtists: 'Артисты',
+		musicalItemCardTitleArtistsIconAriaLabel: 'Значок артистов',
 		musicalItemCardTitleArtistsItem1:
 			'Следите за артистами, которых вы слушаете чаще всего и которые являются частью вашей музыкальной идентичности.',
 		musicalItemCardTitleArtistsItem2:
@@ -191,6 +192,7 @@ export const ru = {
 			'Делитесь любимыми артистами и общайтесь с другими людьми, увлечёнными музыкой.',
 		musicalItemCardArtistsButtonContent: 'Смотреть артистов',
 		musicalItemCardTitleSongs: 'Песни',
+		musicalItemCardTitleSongsIconAriaLabel: 'Значок песен',
 		musicalItemCardTitleSongsItem1:
 			'Следите за песнями, которые занимают важное место в вашем опыте прослушивания.',
 		musicalItemCardTitleSongsItem2:
