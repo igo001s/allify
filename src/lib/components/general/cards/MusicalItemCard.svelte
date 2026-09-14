@@ -2,6 +2,7 @@
 	// Props
 	export let item: {
 		icon: typeof import('svelte').SvelteComponent;
+		iconAriaLabel: string;
 		title: string;
 		description: string[];
 		buttonContent: string;
@@ -15,6 +16,7 @@
 		<svelte:component
 			this={item.icon}
 			iconSvgClass="h-12 w-12 shrink-0 rounded-full bg-brand-primary p-2 text-t-inverse sm:h-14 sm:w-14"
+			aria-label={item.iconAriaLabel}
 		/>
 
 		<span>{item.title}</span>
