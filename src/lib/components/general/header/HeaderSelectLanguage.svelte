@@ -171,7 +171,6 @@
 						{#if $languageStore === language.code}
 							<SelectedIcon
 								iconSvgClass="ml-auto h-4 w-4 text-brand-primary"
-								iconAltText="Selected Icon"
 							/>
 						{/if}
 					</div>

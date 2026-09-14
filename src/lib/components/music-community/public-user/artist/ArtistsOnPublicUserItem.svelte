@@ -34,5 +34,5 @@
 <ProfileItemCard
 	profileItem={artistItem}
 	heading3={getArtistsOnPublicUserTitle()}
-	isUppercase={artistItem.type !== 'customTrack'}
+	isUppercase={artistItem.type !== 'customArtist'}
 />

@@ -6,7 +6,7 @@
 	export let iconSvgClass: string = '';
 	export let iconAriaLabel: string =
 		$translationsStore.musicCommunityPage.publicUser
-			.musicCommunityPagePublicUserOpenAddCommentModalAltText;
+			.musicCommunityPagePublicUserOpenAddCommentModalAriaLabel;
 </script>
 
 <svg

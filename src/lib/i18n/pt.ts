@@ -32,6 +32,7 @@ export const pt = {
 		headerLanguageZhAltText: 'Bandeira do idioma Chinês',
 		headerLanguageJa: 'Japonês',
 		headerLanguageJaAltText: 'Bandeira do idioma Japonês',
+		headerLanguageSelectedIconAriaLabel: 'Ícone do idioma selecionado',
 		dropdownAriaLabel: 'Seleção de idioma',
 		profileButtonAriaLabel: 'Botão de perfil do usuário',
 		profileNotLoggedAltText: 'Avatar do perfil do usuário',
@@ -171,11 +172,11 @@ export const pt = {
 			'Conecte o Spotify ao Allify para analisar sua atividade musical, acompanhar seus artistas e músicas mais ouvidos e transformar seu gosto musical em um perfil personalizado.',
 		connectPlatformDeezerDescription:
 			'Conecte o Deezer ao Allify para acompanhar seus hábitos de escuta, explorar seus artistas e músicas mais ouvidos e construir um perfil que representa sua identidade musical.',
-		connectPlatformCardPlatformConnectIconAltText: 'Ícone de conexão',
+		connectPlatformCardPlatformConnectIconAriaLabel: 'Ícone de conexão',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Conectar Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: 'Conectar Deezer',
 		connectPlatformCardPlatformConnectedButton: 'Conectado',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'Ícone de link externo',
+		connectPlatformCardPlatformExternalLinkIconAriaLabel: 'Ícone de link externo',
 		connectPlatformCardPlatformExternalLink: 'Ir para',
 		musicalItemsSectionHeading1: 'Tudo o que você pode explorar com o Allify',
 		musicalItemCardTitleArtists: 'Artistas',
@@ -219,7 +220,7 @@ export const pt = {
 		myMusicalProfilePageNextFreeUpdateAvailable: 'Atualização gratuita disponível',
 		myMusicalProfilePageReloadIconAltText: 'Ícone de atualizar',
 		myMusicalProfilePageShareButton: 'Compartilhar',
-		myMusicalProfilePageShareIconAltText: 'Ícone de compartilhar',
+		myMusicalProfilePageShareIconAriaLabel: 'Ícone de compartilhar',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
 			'Você poderá descobrir mais 5 artistas gratuitamente em',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
@@ -242,7 +243,7 @@ export const pt = {
 		myMusicalProfilePageFiftySongsReached:
 			'Você atingiu o limite de 50 itens. Agora, você pode atualizar e verificar quando novas músicas entrarem no seu Top 50.',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostrar +5 músicas',
-		myMusicalProfilePageCrownIconAltText: 'Ícone de coroa',
+		myMusicalProfilePageCrownIconAriaLabel: 'Ícone de coroa',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Artistas mais ouvidos atualizados com sucesso!',
 		myMusicalProfilePageUpdateArtistsErrorToast: 'Erro ao atualizar os artistas mais ouvidos.',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Músicas mais ouvidas atualizadas com sucesso!',
@@ -273,7 +274,8 @@ export const pt = {
 		musicCommunityParagraph1:
 			'Pesquise seus amigos e veja o que eles estão ouvindo, quais são seus artistas e músicas mais ouvidos.',
 		musicCommunitySearchPlaceholder: 'Pesquisar por nome de usuário',
-		musicCommunitySearchButtonAltText: 'Ícone de lupa para pesquisar por nome de usuário',
+		musicCommunitySearchButtonAriaLabel: 'Botão para pesquisar por nome de usuário',
+		musicCommunitySearchIconAriaLabel: 'Ícone de lupa para pesquisar por nome de usuário',
 		musicCommunityFavoritesSectionHeading2: 'Seus Perfis Favoritos',
 		musicCommunityFavoritesSectionParagraph1:
 			'Aqui você pode ver os perfis que você salvou como favoritos.',
@@ -288,8 +290,10 @@ export const pt = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: 'Nenhum perfil encontrado',
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Tente buscar com outro nome ou verifique se a pontuação está correta.',
-		musicCommunityStarIconAltText: 'Ícone de estrela para favoritar perfil',
-		musicCommunityStarIconRemoveAltText: 'Ícone de estrela para remover perfil dos favoritos',
+		musicCommunityStarButtonAriaLabel: 'Botão para favoritar perfil',
+		musicCommunityStarIconAriaLabel: 'Ícone de estrela para favoritar perfil',
+		musicCommunityStarButtonRemoveAriaLabel: 'Botão para remover perfil dos favoritos',
+		musicCommunityStarIconRemoveAriaLabel: 'Ícone de estrela para remover perfil dos favoritos',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Ocorreu um erro ao adicionar aos favoritos',
 		musicCommunityToastErrorAddToFavoritesSameUserMessage: 'Não é possível favoritar a si mesmo',
 		musicCommunityToastErrorRemoveFromFavoritesMessage: 'Ocorreu um erro ao remover dos favoritos',
@@ -310,7 +314,7 @@ export const pt = {
 			musicCommunityPagePublicUserProfileCreatedAt: 'Perfil criado em',
 			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
 				'Abrir modal para adicionar comentário no perfil',
-			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+			musicCommunityPagePublicUserOpenAddCommentModalAriaLabel:
 				'Ícone de abrir modal para adicionar comentário no perfil',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Ver perfil no Spotify',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Ver perfil no Deezer',
@@ -349,7 +353,7 @@ export const pt = {
 				'Nenhuma música do momento selecionada',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2:
 				'Nenhuma música customizada selecionada',
-			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: 'Ícone de música vazia',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAriaLabel: 'Ícone de música vazia',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: 'Música do momento vazia',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2: 'Música customizada vazia',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
@@ -389,17 +393,17 @@ export const pt = {
 		profilePageImageAltText: 'Foto do perfil de',
 		profilePageAddTicketsAltText: 'Adicionar tickets',
 		profilePageOpenCommentsButtonAriaLabel: 'Abrir seção de comentários do perfil',
-		profilePageOpenCommentIconAltText: 'Ícone de abrir seção de comentários do perfil',
+		profilePageOpenCommentIconAriaLabel: 'Ícone de abrir seção de comentários do perfil',
 		profilePageExternalLinkSpotify: 'Ver perfil no Spotify',
 		profilePageExternalLinkDeezer: 'Ver perfil no Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Suas músicas',
 		profilePageYourSongsOnProfileHeading3v1: 'Música mais ouvida',
 		profilePageYourSongsOnProfileHeading3v2: 'Música do momento',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Botão para editar música do momento',
-		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
+		profilePageYourSongsOnProfileEditMusicButtonAriaLabel: 'Botão para editar música do momento',
+		profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel:
 			'Botão para editar música personalizada',
-		profilePageYourSongsOnProfileEditMusicIconAltText: 'Ícone de editar música do momento',
-		profilePageYourSongsOnProfileEditCustomMusicIconAltText: 'Ícone de editar música personalizada',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Ícone de editar música do momento',
+		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel: 'Ícone de editar música personalizada',
 		profilePageChangeYourMusicCloseModalButtonAriaLabel:
 			'Fechar modal de troca de música do momento',
 		profilePageChangeYourMusicCloseModalIconAriaLabel:
@@ -432,7 +436,7 @@ export const pt = {
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Música do momento',
-		profilePageEmptyMusicOfTheMomentAltText: 'Ícone de seleção de música do momento',
+		profilePageEmptyMusicOfTheMomentAriaLabel: 'Ícone de seleção de música do momento',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Selecionar música do momento',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Escolha a música que mais representa você no momento para destacar no seu perfil.',
@@ -459,20 +463,20 @@ export const pt = {
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
 			'Continue desbloqueando mais músicas e personalizando ainda mais o seu perfil.',
 		profilePageEmptyCustomMusicHeading1: 'Sua música, do seu jeito',
-		profilePageEmptyCustomMusicAltText: 'Ícone de seleção de música personalizada',
+		profilePageEmptyCustomMusicAriaLabel: 'Ícone de seleção de música personalizada',
 		profilePageEmptyCustomMusicHeading2: 'Dê um significado à sua música',
 		profilePageEmptyCustomMusicParagraph1:
 			'Escolha uma das suas músicas mais ouvidas e personalize o título como quiser.',
 		profilePageYourArtistsOnProfileHeading2: 'Seus artistas',
 		profilePageYourArtistsOnProfileHeading3v1: 'Artista mais ouvido',
 		profilePageYourArtistsOnProfileHeading3v2: 'Artista do momento',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Botão para editar artista do momento',
-		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
+		profilePageYourArtistsOnProfileEditArtistButtonAriaLabel: 'Botão para editar artista do momento',
+		profilePageYourArtistsOnProfileEditCustomArtistButtonAriaLabel:
 			'Botão para editar artista personalizado',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: 'Ícone de editar artista do momento',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: 'Ícone de editar artista do momento',
 		profilePageChangeYourArtistCloseModalIconAriaLabel:
 			'Ícone de fechar modal de troca de artista do momento',
-		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
+		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
 			'Ícone de editar artista personalizado',
 		profilePageChangeYourArtistCloseModalButtonAriaLabel:
 			'Fechar modal de troca de artista do momento',
@@ -570,7 +574,7 @@ export const pt = {
 		profilePageAuthorEmptyComments:
 			'Seu perfil ainda não tem comentários. Compartilhe seu perfil com seus amigos para que eles possam deixar comentários!',
 		profilePageDeleteCommentOfAuthorAriaLabel: 'Botão para excluir comentário de ',
-		profilePageDeleteCommentOfAuthorAltText: 'Ícone de excluir comentário de '
+		profilePageDeleteCommentOfAuthorAriaLabel: 'Ícone de excluir comentário de '
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

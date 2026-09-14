@@ -44,10 +44,10 @@
 	heading3={getSongsOnProfileTitle()}
 	isUppercase={trackItem.type !== 'customTrack'}
 	showEditIcon={trackItem.type === 'trackOfTheMoment' || trackItem.type === 'customTrack'}
+	showEditButtonAriaLabel={trackItem.type === 'trackOfTheMoment'
+		? $translationsStore.profilePage.profilePageYourSongsOnProfileEditMusicButtonAriaLabel
+		: $translationsStore.profilePage.profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel}
 	showEditIconAriaLabel={trackItem.type === 'trackOfTheMoment'
 		? $translationsStore.profilePage.profilePageYourSongsOnProfileEditMusicIconAriaLabel
 		: $translationsStore.profilePage.profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel}
-	showEditIconAltText={trackItem.type === 'trackOfTheMoment'
-		? $translationsStore.profilePage.profilePageYourSongsOnProfileEditMusicIconAltText
-		: $translationsStore.profilePage.profilePageYourSongsOnProfileEditCustomMusicIconAltText}
 />

@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAltText: string = '';
+	export let iconAriaLabel: string = '';
 </script>
 
 <svg
 	viewBox="0 0 533.000000 469.000000"
 	class={iconSvgClass}
-	aria-label={iconAltText}
+	aria-label={iconAriaLabel}
 	role="img"
 	fill="currentColor"
 >

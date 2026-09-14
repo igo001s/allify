@@ -75,8 +75,6 @@
 				text-brand-primary
 				group-hover:text-brand-primary-dark
 			"
-			iconAltText={$translationsStore.generalTexts.profileNotLoggedAltText}
-			color="currentColor"
 		/>
 	{/if}
 </button>

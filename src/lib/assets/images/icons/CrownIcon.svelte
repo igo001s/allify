@@ -1,13 +1,16 @@
 <script lang="ts">
+	// Stores
+	import { translationsStore } from "$lib/stores/translations.store";
+
 	// Props
 	export let iconSvgClass: string = '';
-	export let iconAltText: string = '';
+	export let iconAriaLabel: string = $translationsStore.myMusicalProfilePage.myMusicalProfilePageCrownIconAriaLabel;
 </script>
 
 <svg
 	viewBox="0 0 512.000000 512.000000"
 	class={iconSvgClass}
-	aria-label={iconAltText}
+	aria-label={iconAriaLabel}
 	role="img"
 	fill="currentColor"
 >

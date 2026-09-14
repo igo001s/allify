@@ -32,6 +32,7 @@ export const ru = {
 		headerLanguageZhAltText: 'Флаг китайского языка',
 		headerLanguageJa: 'Японский',
 		headerLanguageJaAltText: 'Флаг японского языка',
+		headerLanguageSelectedIconAriaLabel: 'Иконка выбранного языка',
 		dropdownAriaLabel: 'Выбор языка',
 		profileButtonAriaLabel: 'Кнопка профиля пользователя',
 		profileNotLoggedAltText: 'Аватар профиля пользователя',
@@ -172,11 +173,11 @@ export const ru = {
 			'Подключите Spotify к Allify, чтобы анализировать свою музыкальную активность, отслеживать наиболее прослушиваемых артистов и песни и превращать свои музыкальные предпочтения в персонализированный профиль.',
 		connectPlatformDeezerDescription:
 			'Подключите Deezer к Allify, чтобы отслеживать свои привычки прослушивания, изучать наиболее прослушиваемых артистов и песни и создавать профиль, отражающий вашу музыкальную идентичность.',
-		connectPlatformCardPlatformConnectIconAltText: 'Значок подключения',
+		connectPlatformCardPlatformConnectIconAriaLabel: 'Значок подключения',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Подключить Spotify',
 		connectPlatformCardPlatformConnectDeezerButton: 'Подключить Deezer',
 		connectPlatformCardPlatformConnectedButton: 'Подключено',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'Значок внешней ссылки',
+		connectPlatformCardPlatformExternalLinkIconAriaLabel: 'Значок внешней ссылки',
 		connectPlatformCardPlatformExternalLink: 'Перейти',
 		musicalItemsSectionHeading1: 'Всё, что можно исследовать с Allify',
 		musicalItemCardTitleArtists: 'Артисты',
@@ -220,7 +221,7 @@ export const ru = {
 		myMusicalProfilePageNextFreeUpdateAvailable: 'Бесплатное обновление доступно',
 		myMusicalProfilePageReloadIconAltText: 'Иконка обновления',
 		myMusicalProfilePageShareButton: 'Поделиться',
-		myMusicalProfilePageShareIconAltText: 'Иконка «Поделиться»',
+		myMusicalProfilePageShareIconAriaLabel: 'Иконка «Поделиться»',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
 			'Вы сможете бесплатно открыть ещё 5 исполнителей через',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
@@ -243,7 +244,7 @@ export const ru = {
 		myMusicalProfilePageFiftySongsReached:
 			'Вы достигли лимита в 50 треков. Теперь вы можете обновить и проверить, когда новые треки попадут в ваш Топ-50.',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Показать ещё +5 треков',
-		myMusicalProfilePageCrownIconAltText: 'Иконка короны',
+		myMusicalProfilePageCrownIconAriaLabel: 'Иконка короны',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Самые прослушиваемые исполнители успешно обновлены!',
 		myMusicalProfilePageUpdateArtistsErrorToast:
@@ -276,7 +277,8 @@ export const ru = {
 		musicCommunityParagraph1:
 			'Ищите своих друзей, смотрите, что они слушают, а также их самых популярных исполнителей и треки.',
 		musicCommunitySearchPlaceholder: 'Поиск по имени пользователя',
-		musicCommunitySearchButtonAltText: 'Значок лупы для поиска по имени пользователя',
+		musicCommunitySearchButtonAriaLabel: 'Кнопка для поиска по имени пользователя',
+		musicCommunitySearchIconAriaLabel: 'Значок лупы для поиска по имени пользователя',
 		musicCommunityFavoritesSectionHeading2: 'Ваши избранные профили',
 		musicCommunityFavoritesSectionParagraph1:
 			'Здесь вы можете увидеть профили, которые вы сохранили в избранное.',
@@ -292,8 +294,10 @@ export const ru = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: 'Профиль не найден',
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Попробуйте поискать другое имя или проверьте правильность написания.',
-		musicCommunityStarIconAltText: 'Иконка звезды для добавления профиля в избранное',
-		musicCommunityStarIconRemoveAltText: 'Иконка звезды для удаления профиля из избранного',
+		musicCommunityStarButtonAriaLabel: 'Кнопка для добавления профиля в избранное',
+		musicCommunityStarIconAriaLabel: 'Иконка звезды для добавления профиля в избранное',
+		musicCommunityStarButtonRemoveAriaLabel: 'Кнопка для удаления профиля из избранного',
+		musicCommunityStarIconRemoveAriaLabel: 'Иконка звезды для удаления профиля из избранного',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Произошла ошибка при добавлении в избранное',
 		musicCommunityToastErrorAddToFavoritesSameUserMessage: 'Вы не можете добавить себя в избранное',
 		musicCommunityToastErrorRemoveFromFavoritesMessage:
@@ -315,7 +319,7 @@ export const ru = {
 			musicCommunityPagePublicUserProfileCreatedAt: 'Профиль создан',
 			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
 				'Открыть окно для добавления комментария в профиль',
-			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+			musicCommunityPagePublicUserOpenAddCommentModalAriaLabel:
 				'Значок открытия окна для добавления комментария в профиль',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Посмотреть профиль в Spotify',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Посмотреть профиль в Deezer',
@@ -355,7 +359,7 @@ export const ru = {
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v1: 'Музыка момента не выбрана',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2:
 				'Персонализированная музыка не выбрана',
-			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: 'Значок пустой музыки',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAriaLabel: 'Значок пустой музыки',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: 'Музыка момента отсутствует',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
 				'Персонализированная музыка отсутствует',
@@ -396,17 +400,17 @@ export const ru = {
 		profilePageImageAltText: 'Фото профиля',
 		profilePageAddTicketsAltText: 'Добавить билеты',
 		profilePageOpenCommentsButtonAriaLabel: 'Открыть секцию комментариев профиля',
-		profilePageOpenCommentIconAltText: 'Иконка для открытия секции комментариев профиля',
+		profilePageOpenCommentIconAriaLabel: 'Иконка для открытия секции комментариев профиля',
 		profilePageExternalLinkSpotify: 'Открыть профиль в Spotify',
 		profilePageExternalLinkDeezer: 'Открыть профиль в Deezer',
 		profilePageYourSongsOnProfileHeading2: 'Ваши треки',
 		profilePageYourSongsOnProfileHeading3v1: 'Самый прослушиваемый трек',
 		profilePageYourSongsOnProfileHeading3v2: 'Трек момента',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Кнопка редактирования трека момента',
-		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
+		profilePageYourSongsOnProfileEditMusicButtonAriaLabel: 'Кнопка редактирования трека момента',
+		profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel:
 			'Кнопка редактирования персонального трека',
-		profilePageYourSongsOnProfileEditMusicIconAltText: 'Значок редактирования трека момента',
-		profilePageYourSongsOnProfileEditCustomMusicIconAltText:
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: 'Значок редактирования трека момента',
+		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
 			'Значок редактирования персонального трека',
 		profilePageChangeYourMusicCloseModalButtonAriaLabel: 'Закрыть окно изменения трека момента',
 		profilePageChangeYourMusicCloseModalIconAriaLabel:
@@ -439,7 +443,7 @@ export const ru = {
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'Продолжайте открывать новые треки и делать свой профиль ещё более персональным.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Трек момента',
-		profilePageEmptyMusicOfTheMomentAltText: 'Значок выбора трека момента',
+		profilePageEmptyMusicOfTheMomentAriaLabel: 'Значок выбора трека момента',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Выбрать трек момента',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Выберите трек, который лучше всего представляет вас сейчас, чтобы выделить его в своём профиле.',
@@ -463,22 +467,22 @@ export const ru = {
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
 			'Продолжайте открывать новые треки и делать свой профиль ещё более персональным.',
 		profilePageEmptyCustomMusicHeading1: 'Ваш трек — по-вашему',
-		profilePageEmptyCustomMusicAltText: 'Значок выбора персонального трека',
+		profilePageEmptyCustomMusicAriaLabel: 'Значок выбора персонального трека',
 		profilePageEmptyCustomMusicHeading2: 'Придайте своему треку особый смысл',
 		profilePageEmptyCustomMusicParagraph1:
 			'Выберите один из самых прослушиваемых вами треков и настройте его название так, как вам нравится.',
 		profilePageYourArtistsOnProfileHeading2: 'Ваши исполнители',
 		profilePageYourArtistsOnProfileHeading3v1: 'Самый прослушиваемый исполнитель',
 		profilePageYourArtistsOnProfileHeading3v2: 'Исполнитель момента',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+		profilePageYourArtistsOnProfileEditArtistButtonAriaLabel:
 			'Кнопка редактирования исполнителя момента',
-		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
+		profilePageYourArtistsOnProfileEditCustomArtistButtonAriaLabel:
 			'Кнопка редактирования персонального исполнителя',
-		profilePageYourArtistsOnProfileEditArtistIconAltText:
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
 			'Значок редактирования исполнителя момента',
 		profilePageChangeYourArtistCloseModalIconAriaLabel:
 			'Значок закрытия окна изменения исполнителя момента',
-		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
+		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
 			'Значок редактирования персонального исполнителя',
 		profilePageChangeYourArtistCloseModalButtonAriaLabel:
 			'Закрыть окно изменения исполнителя момента',
@@ -574,7 +578,7 @@ export const ru = {
 		profilePageAuthorEmptyComments:
 			'В вашем профиле пока нет комментариев. Поделитесь своим профилем с друзьями, чтобы они могли оставить комментарии!',
 		profilePageDeleteCommentOfAuthorAriaLabel: 'Кнопка для удаления комментария от ',
-		profilePageDeleteCommentOfAuthorAltText: 'Иконка для удаления комментария от '
+		profilePageDeleteCommentOfAuthorAriaLabel: 'Иконка для удаления комментария от '
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

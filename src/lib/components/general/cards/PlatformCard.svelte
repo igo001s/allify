@@ -55,7 +55,6 @@
 			>
 				<ConnectIcon
 					iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 xl:h-4 xl:w-4"
-					iconAltText={$translationsStore.homePage.connectPlatformCardPlatformConnectIconAltText}
 				/>
 
 				{#if $userInfo?.connectedStreamings?.[platformKey]}
@@ -95,7 +94,6 @@
 
 			<ExternalLinkIcon
 				iconSvgClass="mb-0.5 inline-block h-5 w-5"
-				iconAltText={$translationsStore.homePage.connectPlatformCardPlatformExternalLinkIconAltText}
 			/>
 		</a>
 	</div>

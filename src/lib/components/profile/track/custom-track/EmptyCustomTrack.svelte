@@ -12,7 +12,7 @@
 <EmptyTrack
 	openModal={() => openSelectCustomItemModal('music')}
 	emptyTrackHeading3={$translationsStore.profilePage.profilePageEmptyCustomMusicHeading1}
-	emptyTrackAltText={$translationsStore.profilePage.profilePageEmptyCustomMusicAltText}
+	emptyTrackAriaLabel={$translationsStore.profilePage.profilePageEmptyCustomMusicAriaLabel}
 	sessionType="profile"
 	emptyTrackHeading4={$translationsStore.profilePage.profilePageEmptyCustomMusicHeading2}
 	emptyTrackParagraph1={$translationsStore.profilePage.profilePageEmptyCustomMusicParagraph1}

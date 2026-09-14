@@ -184,8 +184,6 @@
 				{:else}
 					<ReloadIcon
 						iconSvgClass="h-4 w-4 text-brand-primary group-hover:rotate-90"
-						iconAltText={$translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageReloadIconAltText}
 					/>
 
 					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageButtonUpdate}
@@ -198,7 +196,6 @@
 		>
 			<ShareIcon
 				iconSvgClass="h-4 w-4 text-brand-primary"
-				iconAltText={$translationsStore.myMusicalProfilePage.myMusicalProfilePageShareIconAltText}
 			/>
 
 			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShareButton}

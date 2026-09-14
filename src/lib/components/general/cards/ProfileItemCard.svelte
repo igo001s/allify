@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Assets
 	import EditArtistIcon from '$lib/assets/images/icons/EditArtistIcon.svelte';
+	import EditMusicIcon from '$lib/assets/images/icons/EditMusicIcon.svelte';
 
 	// Types
 	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
@@ -19,8 +20,8 @@
 	export let heading3: string;
 	export let isUppercase: boolean;
 	export let showEditIcon: boolean = false;
+	export let showEditButtonAriaLabel: string | undefined = undefined;
 	export let showEditIconAriaLabel: string | undefined = undefined;
-	export let showEditIconAltText: string | undefined = undefined;
 </script>
 
 <div class="flex w-full flex-col gap-4 xl:w-1/3">
@@ -32,13 +33,23 @@
 		class="relative flex flex-col gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:max-h-56 md:min-h-56 md:flex-row lg:p-6"
 	>
 		{#if showEditIcon}
-			<button
-				class="absolute top-3 right-3 cursor-pointer text-t-primary hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
-				aria-label={showEditIconAriaLabel}
-				on:click={handleEditButtonClick}
-			>
-				<EditArtistIcon iconSvgClass="h-5 w-5 sm:h-6 sm:w-6" iconAltText={showEditIconAltText} />
-			</button>
+			{#if 'followers' in profileItem.item && 'genres' in profileItem.item}
+				<button
+					class="absolute top-3 right-3 cursor-pointer text-t-primary hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
+					aria-label={showEditButtonAriaLabel}
+					on:click={handleEditButtonClick}
+				>
+					<EditArtistIcon iconSvgClass="h-5 w-5 sm:h-6 sm:w-6" iconAriaLabel={showEditIconAriaLabel} />
+				</button>
+			{:else if 'albumName' in profileItem.item && 'artists' in profileItem.item}
+				<button
+					class="absolute top-3 right-3 cursor-pointer text-t-primary hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
+					aria-label={showEditButtonAriaLabel}
+					on:click={handleEditButtonClick}
+				>
+					<EditMusicIcon iconSvgClass="h-5 w-5 sm:h-6 sm:w-6" iconAriaLabel={showEditIconAriaLabel} />
+				</button>
+			{/if}
 		{/if}
 
 		{#if profileItem.item.image?.url}

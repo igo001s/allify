@@ -142,7 +142,7 @@
 										aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAriaLabel} ${comment?.author?.name}`}
 									>
 										<TrashIcon
-											iconAltText={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAltText} ${comment?.author?.name}`}
+											iconAriaLabel={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorAriaLabel} ${comment?.author?.name}`}
 											iconSvgClass="h-4 w-4 text-t-secondary cursor-pointer hover:text-status-error"
 										/>
 									</button>

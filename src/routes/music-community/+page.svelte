@@ -121,11 +121,11 @@
 				<button
 					class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-brand-primary hover:bg-brand-primary-dark"
 					disabled={!searchUserInputValue || searchUserInputValue.length < 2}
+					aria-label={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAriaLabel}
 					on:click={handleSearchUser}
 				>
 					<SearchIcon
 						iconSvgClass="h-4.5 w-4.5 text-t-inverse"
-						iconAltText={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAltText}
 					/>
 				</button>
 			</div>

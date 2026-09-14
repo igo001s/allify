@@ -37,8 +37,8 @@
 <EmptyTrack
 	openModal={undefined}
 	emptyTrackHeading3={getEmptyMusicHeading3()}
-	emptyTrackAltText={$translationsStore.musicCommunityPage.publicUser
-		.musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText}
+	emptyTrackAriaLabel={$translationsStore.musicCommunityPage.publicUser
+		.musicCommunityPagePublicUserEmptyMusicOnPublicUserAriaLabel}
 	sessionType="public-user"
 	emptyTrackHeading4={getEmptyMusicHeading4()}
 	emptyTrackParagraph1={$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1.replace(

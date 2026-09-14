@@ -32,6 +32,7 @@ export const de = {
 		headerLanguageZhAltText: 'Flagge der chinesischen Sprache',
 		headerLanguageJa: 'Japanisch',
 		headerLanguageJaAltText: 'Flagge der japanischen Sprache',
+		headerLanguageSelectedIconAriaLabel: 'Symbol der ausgewählten Sprache',
 		dropdownAriaLabel: 'Sprachauswahl',
 		profileButtonAriaLabel: 'Benutzerprofil-Schaltfläche',
 		profileNotLoggedAltText: 'Benutzerprofil-Avatar',
@@ -173,11 +174,11 @@ export const de = {
 			'Verbinde Spotify mit Allify, um deine Musikaktivität zu analysieren, deine meistgehörten Künstler und Songs zu verfolgen und deinen Musikgeschmack in ein personalisiertes Profil zu verwandeln.',
 		connectPlatformDeezerDescription:
 			'Verbinde Deezer mit Allify, um deine Hörgewohnheiten zu verfolgen, deine meistgehörten Künstler und Songs zu entdecken und ein Profil zu erstellen, das deine musikalische Identität repräsentiert.',
-		connectPlatformCardPlatformConnectIconAltText: 'Verbindungssymbol',
+		connectPlatformCardPlatformConnectIconAriaLabel: 'Verbindungssymbol',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Spotify verbinden',
 		connectPlatformCardPlatformConnectDeezerButton: 'Deezer verbinden',
 		connectPlatformCardPlatformConnectedButton: 'Verbunden',
-		connectPlatformCardPlatformExternalLinkIconAltText: 'Symbol für externen Link',
+		connectPlatformCardPlatformExternalLinkIconAriaLabel: 'Symbol für externen Link',
 		connectPlatformCardPlatformExternalLink: 'Öffnen',
 		musicalItemsSectionHeading1: 'Alles, was du mit Allify entdecken kannst',
 		musicalItemCardTitleArtists: 'Künstler',
@@ -221,7 +222,7 @@ export const de = {
 		myMusicalProfilePageNextFreeUpdateAvailable: 'Kostenlose Aktualisierung verfügbar',
 		myMusicalProfilePageReloadIconAltText: 'Aktualisierungssymbol',
 		myMusicalProfilePageShareButton: 'Teilen',
-		myMusicalProfilePageShareIconAltText: 'Teilen-Symbol',
+		myMusicalProfilePageShareIconAriaLabel: 'Teilen-Symbol',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
 			'Du kannst in kostenlos 5 weitere Künstler entdecken',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
@@ -244,7 +245,7 @@ export const de = {
 		myMusicalProfilePageFiftySongsReached:
 			'Du hast das Limit von 50 Elementen erreicht. Jetzt kannst du aktualisieren und prüfen, wann neue Songs in deine Top 50 gelangen.',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5 Songs anzeigen',
-		myMusicalProfilePageCrownIconAltText: 'Kronensymbol',
+		myMusicalProfilePageCrownIconAriaLabel: 'Kronensymbol',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Meistgehörte Künstler erfolgreich aktualisiert!',
 		myMusicalProfilePageUpdateArtistsErrorToast:
@@ -277,7 +278,8 @@ export const de = {
 		musicCommunityParagraph1:
 			'Durchsuche deine Freunde und sieh, was sie hören sowie welche Künstler und Songs sie am häufigsten hören.',
 		musicCommunitySearchPlaceholder: 'Nach Benutzernamen suchen',
-		musicCommunitySearchButtonAltText: 'Lupensymbol zum Suchen nach einem Benutzernamen',
+		musicCommunitySearchButtonAriaLabel: 'Schaltfläche zum Suchen nach einem Benutzernamen',
+		musicCommunitySearchIconAriaLabel: 'Lupensymbol zum Suchen nach einem Benutzernamen',
 		musicCommunityFavoritesSectionHeading2: 'Deine Lieblingsprofile',
 		musicCommunityFavoritesSectionParagraph1:
 			'Hier kannst du die Profile sehen, die du als Favoriten gespeichert hast.',
@@ -292,9 +294,10 @@ export const de = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: 'Kein Profil gefunden',
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'Versuche, nach einem anderen Namen zu suchen oder überprüfe die Rechtschreibung.',
-		musicCommunityStarIconAltText: 'Sternsymbol zum Favorisieren eines Profils',
-		musicCommunityStarIconRemoveAltText:
-			'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
+		musicCommunityStarButtonAriaLabel: 'Schaltfläche zum Favorisieren eines Profils',
+		musicCommunityStarIconAriaLabel: 'Sternsymbol zum Favorisieren eines Profils',
+		musicCommunityStarButtonRemoveAriaLabel: 'Schaltfläche zum Entfernen eines Profils aus den Favoriten',
+		musicCommunityStarIconRemoveAriaLabel: 'Sternsymbol zum Entfernen eines Profils aus den Favoriten',
 		musicCommunityToastErrorAddToFavoritesMessage: 'Fehler beim Hinzufügen zu den Favoriten',
 		musicCommunityToastErrorAddToFavoritesSameUserMessage:
 			'Du kannst dich nicht selbst favorisieren',
@@ -316,7 +319,7 @@ export const de = {
 			musicCommunityPagePublicUserProfileCreatedAt: 'Profil erstellt am',
 			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
 				'Modal zum Hinzufügen eines Kommentars zum Profil öffnen',
-			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+			musicCommunityPagePublicUserOpenAddCommentModalAriaLabel:
 				'Symbol zum Öffnen des Modals zum Hinzufügen eines Kommentars zum Profil',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Profil auf Spotify ansehen',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Profil auf Deezer ansehen',
@@ -355,7 +358,7 @@ export const de = {
 				'Kein Song des Moments ausgewählt',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2:
 				'Kein benutzerdefinierter Song ausgewählt',
-			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: 'Symbol für leere Musik',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAriaLabel: 'Symbol für leere Musik',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: 'Song des Moments ist leer',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2:
 				'Benutzerdefinierter Song ist leer',
@@ -398,19 +401,19 @@ export const de = {
 		profilePageImageAltText: 'Profilbild von',
 		profilePageAddTicketsAltText: 'Tickets hinzufügen',
 		profilePageOpenCommentsButtonAriaLabel: 'Öffne den Kommentarbereich des Profils',
-		profilePageOpenCommentIconAltText: 'Symbol zum Öffnen des Kommentarbereichs des Profils',
+		profilePageOpenCommentIconAriaLabel: 'Symbol zum Öffnen des Kommentarbereichs des Profils',
 		profilePageExternalLinkSpotify: 'Profil auf Spotify ansehen',
 		profilePageExternalLinkDeezer: 'Profil auf Deezer ansehen',
 		profilePageYourSongsOnProfileHeading2: 'Deine Songs',
 		profilePageYourSongsOnProfileHeading3v1: 'Meistgehörter Song',
 		profilePageYourSongsOnProfileHeading3v2: 'Song des Moments',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
+		profilePageYourSongsOnProfileEditMusicButtonAriaLabel:
 			'Schaltfläche zum Bearbeiten des Songs des Moments',
-		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
+		profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel:
 			'Schaltfläche zum Bearbeiten des personalisierten Songs',
-		profilePageYourSongsOnProfileEditMusicIconAltText:
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel:
 			'Symbol zum Bearbeiten des Songs des Moments',
-		profilePageYourSongsOnProfileEditCustomMusicIconAltText:
+		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel:
 			'Symbol zum Bearbeiten des personalisierten Songs',
 		profilePageChangeYourMusicCloseModalButtonAriaLabel:
 			'Modal zum Ändern des Songs des Moments schließen',
@@ -444,7 +447,7 @@ export const de = {
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
 		profilePageEmptyMusicOfTheMomentHeading1: 'Song des Moments',
-		profilePageEmptyMusicOfTheMomentAltText: 'Symbol zur Auswahl des Songs des Moments',
+		profilePageEmptyMusicOfTheMomentAriaLabel: 'Symbol zur Auswahl des Songs des Moments',
 		profilePageEmptyMusicOfTheMomentHeading2: 'Song des Moments auswählen',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'Wähle den Song, der dich gerade am besten repräsentiert, um ihn in deinem Profil hervorzuheben.',
@@ -471,22 +474,22 @@ export const de = {
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
 			'Schalte weiterhin mehr Songs frei und personalisiere dein Profil noch stärker.',
 		profilePageEmptyCustomMusicHeading1: 'Dein Song, auf deine Art',
-		profilePageEmptyCustomMusicAltText: 'Symbol zur Auswahl eines personalisierten Songs',
+		profilePageEmptyCustomMusicAriaLabel: 'Symbol zur Auswahl eines personalisierten Songs',
 		profilePageEmptyCustomMusicHeading2: 'Gib deinem Song eine Bedeutung',
 		profilePageEmptyCustomMusicParagraph1:
 			'Wähle einen deiner meistgehörten Songs und personalisiere den Titel nach deinen Wünschen.',
 		profilePageYourArtistsOnProfileHeading2: 'Deine Künstler',
 		profilePageYourArtistsOnProfileHeading3v1: 'Meistgehörter Künstler',
 		profilePageYourArtistsOnProfileHeading3v2: 'Künstler des Moments',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
+		profilePageYourArtistsOnProfileEditArtistButtonAriaLabel:
 			'Schaltfläche zum Bearbeiten des Künstlers des Moments',
-		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
+		profilePageYourArtistsOnProfileEditCustomArtistButtonAriaLabel:
 			'Schaltfläche zum Bearbeiten des personalisierten Künstlers',
-		profilePageYourArtistsOnProfileEditArtistIconAltText:
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel:
 			'Symbol zum Bearbeiten des Künstlers des Moments',
 		profilePageChangeYourArtistCloseModalIconAriaLabel:
 			'Symbol zum Schließen des Modals zum Ändern des Künstlers des Moments',
-		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
+		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
 			'Symbol zum Bearbeiten des personalisierten Künstlers',
 		profilePageChangeYourArtistCloseModalButtonAriaLabel:
 			'Modal zum Ändern des Künstlers des Moments schließen',
@@ -586,7 +589,7 @@ export const de = {
 		profilePageAuthorEmptyComments:
 			'Dein Profil hat noch keine Kommentare. Teile dein Profil mit deinen Freunden, damit sie Kommentare hinterlassen können!',
 		profilePageDeleteCommentOfAuthorAriaLabel: 'Schaltfläche zum Löschen des Kommentars von ',
-		profilePageDeleteCommentOfAuthorAltText: 'Symbol zum Löschen des Kommentars von ',
+		profilePageDeleteCommentOfAuthorAriaLabel: 'Symbol zum Löschen des Kommentars von ',
 		profilePageChangeCustomArtistSuccessToastMessage:
 			'Personalisierter Künstler erfolgreich geändert.',
 		profilePageChangeCustomArtistErrorToastMessage:

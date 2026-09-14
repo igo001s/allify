@@ -99,18 +99,18 @@
 
 	<button
 		class="mr-2 w-1/12 shrink-0 cursor-pointer text-brand-primary hover:text-brand-primary-dark"
-		aria-label={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
+		aria-label={userOnFavorites ? $translationsStore.musicCommunityPage.musicCommunityStarButtonRemoveAriaLabel : $translationsStore.musicCommunityPage.musicCommunityStarButtonAriaLabel}
 		on:click={() => $userInfo && handleRemoveFromFavorites($userInfo._id, favorite._id)}
 	>
 		{#if userOnFavorites}
 			<FilledStar
 				iconSvgClass="h-3.5 w-3.5 2xl:h-4 2xl:w-4"
-				iconAltText={$translationsStore.musicCommunityPage.musicCommunityStarIconRemoveAltText}
+				iconAriaLabel={$translationsStore.musicCommunityPage.musicCommunityStarIconRemoveAriaLabel}
 			/>
 		{:else}
 			<OutlinedStar
 				iconSvgClass="h-3.5 w-3.5 2xl:h-4 2xl:w-4"
-				iconAltText={$translationsStore.musicCommunityPage.musicCommunityStarIconAltText}
+				iconAriaLabel={$translationsStore.musicCommunityPage.musicCommunityStarIconAriaLabel}
 			/>
 		{/if}
 	</button>

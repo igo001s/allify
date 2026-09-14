@@ -32,6 +32,7 @@ export const ja = {
 		headerLanguageZhAltText: '中国語の国旗',
 		headerLanguageJa: '日本語',
 		headerLanguageJaAltText: '日本語の国旗',
+		headerLanguageSelectedIconAriaLabel: '選択された言語のアイコン',
 		dropdownAriaLabel: '言語選択',
 		profileButtonAriaLabel: 'ユーザープロフィールボタン',
 		profileNotLoggedAltText: 'ユーザープロフィールアバター',
@@ -170,11 +171,11 @@ export const ja = {
 			'SpotifyをAllifyに接続して、音楽アクティビティを分析し、よく聴くアーティストや楽曲を確認して、音楽の好みをパーソナライズされたプロフィールに変えましょう。',
 		connectPlatformDeezerDescription:
 			'DeezerをAllifyに接続して、音楽の聴き方を確認し、よく聴くアーティストや楽曲を見つけ、あなたの音楽的アイデンティティを表現するプロフィールを作りましょう。',
-		connectPlatformCardPlatformConnectIconAltText: '接続アイコン',
+		connectPlatformCardPlatformConnectIconAriaLabel: '接続アイコン',
 		connectPlatformCardPlatformConnectSpotifyButton: 'Spotifyを接続',
 		connectPlatformCardPlatformConnectDeezerButton: 'Deezerを接続',
 		connectPlatformCardPlatformConnectedButton: '接続済み',
-		connectPlatformCardPlatformExternalLinkIconAltText: '外部リンクアイコン',
+		connectPlatformCardPlatformExternalLinkIconAriaLabel: '外部リンクアイコン',
 		connectPlatformCardPlatformExternalLink: '移動',
 		musicalItemsSectionHeading1: 'Allifyで楽しめること',
 		musicalItemCardTitleArtists: 'アーティスト',
@@ -218,7 +219,7 @@ export const ja = {
 		myMusicalProfilePageNextFreeUpdateAvailable: '無料更新が利用できます',
 		myMusicalProfilePageReloadIconAltText: '更新アイコン',
 		myMusicalProfilePageShareButton: '共有',
-		myMusicalProfilePageShareIconAltText: '共有アイコン',
+		myMusicalProfilePageShareIconAriaLabel: '共有アイコン',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists:
 			'あと5人のアーティストを無料で発見できるまで',
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
@@ -240,7 +241,7 @@ export const ja = {
 		myMusicalProfilePageFiftySongsReached:
 			'50曲の上限に達しました。新しい曲がトップ50に入ったときに、更新して確認できます。',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5曲を表示',
-		myMusicalProfilePageCrownIconAltText: '王冠アイコン',
+		myMusicalProfilePageCrownIconAriaLabel: '王冠アイコン',
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最もよく聴いているアーティストを更新しました！',
 		myMusicalProfilePageUpdateArtistsErrorToast:
 			'最もよく聴いているアーティストの更新中にエラーが発生しました。',
@@ -273,7 +274,8 @@ export const ja = {
 		musicCommunityParagraph1:
 			'友達を検索して、彼らが何を聴いているのかや、最もよく聴いているアーティストや楽曲を確認しましょう。',
 		musicCommunitySearchPlaceholder: 'ユーザー名で検索',
-		musicCommunitySearchButtonAltText: 'ユーザー名を検索するための虫眼鏡アイコン',
+		musicCommunitySearchButtonAriaLabel: 'ユーザー名で検索するためのボタン',
+		musicCommunitySearchIconAriaLabel: 'ユーザー名を検索するための虫眼鏡アイコン',
 		musicCommunityFavoritesSectionHeading2: 'お気に入りのプロフィール',
 		musicCommunityFavoritesSectionParagraph1:
 			'ここでは、お気に入りとして保存したプロフィールを確認できます。',
@@ -288,8 +290,10 @@ export const ja = {
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph1: 'プロフィールが見つかりません',
 		musicCommunityFavoritesAfterSearchByNoResultsParagraph2:
 			'別の名前で検索するか、スペルを確認してください。',
-		musicCommunityStarIconAltText: 'プロフィールをお気に入りに追加するための星アイコン',
-		musicCommunityStarIconRemoveAltText: 'プロフィールをお気に入りから削除するための星アイコン',
+		musicCommunityStarButtonAriaLabel: 'プロフィールをお気に入りに追加するためのボタン',
+		musicCommunityStarIconAriaLabel: 'プロフィールをお気に入りに追加するための星アイコン',
+		musicCommunityStarButtonRemoveAriaLabel: 'プロフィールをお気に入りから削除するためのボタン',
+		musicCommunityStarIconRemoveAriaLabel: 'プロフィールをお気に入りから削除するための星アイコン',
 		musicCommunityToastErrorAddToFavoritesMessage: 'お気に入りに追加中にエラーが発生しました',
 		musicCommunityToastErrorAddToFavoritesSameUserMessage:
 			'自分自身をお気に入りに追加することはできません',
@@ -312,7 +316,7 @@ export const ja = {
 			musicCommunityPagePublicUserProfileCreatedAt: 'プロフィール作成日',
 			musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel:
 				'プロフィールにコメントを追加するモーダルを開く',
-			musicCommunityPagePublicUserOpenAddCommentModalAltText:
+			musicCommunityPagePublicUserOpenAddCommentModalAriaLabel:
 				'プロフィールにコメントを追加するモーダルを開くアイコン',
 			musicCommunityPagePublicUserExternalLinkSpotify: 'Spotifyでプロフィールを見る',
 			musicCommunityPagePublicUserExternalLinkDeezer: 'Deezerでプロフィールを見る',
@@ -351,7 +355,7 @@ export const ja = {
 				'今月の音楽が選択されていません',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2:
 				'カスタム音楽が選択されていません',
-			musicCommunityPagePublicUserEmptyMusicOnPublicUserAltText: '空の音楽アイコン',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserAriaLabel: '空の音楽アイコン',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1: '今月の音楽は空です',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v2: 'カスタム音楽は空です',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
@@ -391,16 +395,16 @@ export const ja = {
 		profilePageImageAltText: 'プロフィール写真：',
 		profilePageAddTicketsAltText: 'チケットを追加',
 		profilePageOpenCommentsButtonAriaLabel: 'プロフィールのコメントセクションを開く',
-		profilePageOpenCommentIconAltText: 'プロフィールのコメントセクションを開くアイコン',
+		profilePageOpenCommentIconAriaLabel: 'プロフィールのコメントセクションを開くアイコン',
 		profilePageExternalLinkSpotify: 'Spotifyでプロフィールを見る',
 		profilePageExternalLinkDeezer: 'Deezerでプロフィールを見る',
 		profilePageYourSongsOnProfileHeading2: 'あなたの楽曲',
 		profilePageYourSongsOnProfileHeading3v1: '最も聴いた楽曲',
 		profilePageYourSongsOnProfileHeading3v2: '今の一曲',
-		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '今の一曲を編集するボタン',
-		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel: 'カスタム楽曲を編集するボタン',
-		profilePageYourSongsOnProfileEditMusicIconAltText: '今の一曲を編集するアイコン',
-		profilePageYourSongsOnProfileEditCustomMusicIconAltText: 'カスタム楽曲を編集するアイコン',
+		profilePageYourSongsOnProfileEditMusicButtonAriaLabel: '今の一曲を編集するボタン',
+		profilePageYourSongsOnProfileEditCustomMusicButtonAriaLabel: 'カスタム楽曲を編集するボタン',
+		profilePageYourSongsOnProfileEditMusicIconAriaLabel: '今の一曲を編集するアイコン',
+		profilePageYourSongsOnProfileEditCustomMusicIconAriaLabel: 'カスタム楽曲を編集するアイコン',
 		profilePageChangeYourMusicCloseModalButtonAriaLabel: '今の一曲を変更するモーダルを閉じる',
 		profilePageChangeYourMusicCloseModalIconAriaLabel: '今の一曲を変更するモーダルを閉じるアイコン',
 		profilePageChangeYourMusicParagraph1: 'プロフィールの今の一曲を更新',
@@ -430,7 +434,7 @@ export const ja = {
 		profilePageChangeYourCustomMusicUnlockMoreMusic:
 			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageEmptyMusicOfTheMomentHeading1: '今の一曲',
-		profilePageEmptyMusicOfTheMomentAltText: '今の一曲の選択アイコン',
+		profilePageEmptyMusicOfTheMomentAriaLabel: '今の一曲の選択アイコン',
 		profilePageEmptyMusicOfTheMomentHeading2: '今の一曲を選択',
 		profilePageEmptyMusicOfTheMomentParagraph1:
 			'今のあなたを最もよく表す楽曲を選び、プロフィールで紹介しましょう。',
@@ -453,20 +457,20 @@ export const ja = {
 		profilePageSelectYourCustomMusicUnlockMoreMusic:
 			'さらに多くの楽曲をアンロックして、プロフィールをもっと自分らしくカスタマイズしましょう。',
 		profilePageEmptyCustomMusicHeading1: 'あなたの楽曲、あなたらしく',
-		profilePageEmptyCustomMusicAltText: 'カスタム楽曲の選択アイコン',
+		profilePageEmptyCustomMusicAriaLabel: 'カスタム楽曲の選択アイコン',
 		profilePageEmptyCustomMusicHeading2: '楽曲に意味を与えよう',
 		profilePageEmptyCustomMusicParagraph1:
 			'最もよく聴く楽曲の中から1曲を選び、好きなようにタイトルをカスタマイズしましょう。',
 		profilePageYourArtistsOnProfileHeading2: 'あなたのアーティスト',
 		profilePageYourArtistsOnProfileHeading3v1: '最も聴いたアーティスト',
 		profilePageYourArtistsOnProfileHeading3v2: '今のアーティスト',
-		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '今のアーティストを編集するボタン',
-		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
+		profilePageYourArtistsOnProfileEditArtistButtonAriaLabel: '今のアーティストを編集するボタン',
+		profilePageYourArtistsOnProfileEditCustomArtistButtonAriaLabel:
 			'カスタムアーティストを編集するボタン',
-		profilePageYourArtistsOnProfileEditArtistIconAltText: '今のアーティストを編集するアイコン',
+		profilePageYourArtistsOnProfileEditArtistIconAriaLabel: '今のアーティストを編集するアイコン',
 		profilePageChangeYourArtistCloseModalIconAriaLabel:
 			'今のアーティストを変更するモーダルを閉じるアイコン',
-		profilePageYourArtistsOnProfileEditCustomArtistIconAltText:
+		profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel:
 			'カスタムアーティストを編集するアイコン',
 		profilePageChangeYourArtistCloseModalButtonAriaLabel:
 			'今のアーティストを変更するモーダルを閉じる',
@@ -565,7 +569,7 @@ export const ja = {
 		profilePageAuthorEmptyComments:
 			'あなたのプロフィールにはまだコメントがありません。友達とプロフィールを共有して、コメントを残してもらいましょう。',
 		profilePageDeleteCommentOfAuthorAriaLabel: 'コメントを削除するボタン：',
-		profilePageDeleteCommentOfAuthorAltText: 'コメントを削除するアイコン：'
+		profilePageDeleteCommentOfAuthorAriaLabel: 'コメントを削除するアイコン：'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

@@ -44,10 +44,10 @@
 	heading3={getSongsOnProfileTitle()}
 	isUppercase={artistItem.type !== 'customArtist'}
 	showEditIcon={artistItem.type === 'artistOfTheMoment' || artistItem.type === 'customArtist'}
+	showEditButtonAriaLabel={artistItem.type === 'artistOfTheMoment'
+		? $translationsStore.profilePage.profilePageYourArtistsOnProfileEditArtistButtonAriaLabel
+		: $translationsStore.profilePage.profilePageYourArtistsOnProfileEditCustomArtistButtonAriaLabel}
 	showEditIconAriaLabel={artistItem.type === 'artistOfTheMoment'
 		? $translationsStore.profilePage.profilePageYourArtistsOnProfileEditArtistIconAriaLabel
 		: $translationsStore.profilePage.profilePageYourArtistsOnProfileEditCustomArtistIconAriaLabel}
-	showEditIconAltText={artistItem.type === 'artistOfTheMoment'
-		? $translationsStore.profilePage.profilePageYourArtistsOnProfileEditArtistIconAltText
-		: $translationsStore.profilePage.profilePageYourArtistsOnProfileEditCustomArtistIconAltText}
 />

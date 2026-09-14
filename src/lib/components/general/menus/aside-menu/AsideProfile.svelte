@@ -128,8 +128,6 @@
 				>
 					<ProfileIcon
 						iconSvgClass="h-7 w-7 text-brand-primary group-hover:text-brand-primary-dark"
-						iconAltText={$translationsStore.generalTexts.profileNotLoggedAltText}
-						color="currentColor"
 					/>
 				</div>
 

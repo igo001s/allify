@@ -84,7 +84,6 @@
 					>
 						<PlusIcon
 							iconSvgClass="w-2.5 h-2.5 text-brand-primary"
-							iconAltText={$translationsStore.profilePage.profilePageAddTicketsAltText}
 						/>
 					</button>
 				</div>
@@ -113,7 +112,6 @@
 		>
 			<CommentIcon
 				iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 md:h-8 md:w-8"
-				iconAltText={$translationsStore.profilePage.profilePageOpenCommentIconAltText}
 			/>
 		</button>
 
