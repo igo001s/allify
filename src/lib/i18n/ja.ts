@@ -206,7 +206,31 @@ export const ja = {
 		faqSectionParagraph1:
 			'ここでは、Allifyに関するよくある質問への回答を見つけることができます。探している答えが見つからない場合は、お気軽にお問い合わせください。',
 		faqSectionButtonGithubAriaLabel: 'Igor AraújoのGithubに移動',
-		faqSectionButtonLinkedinAriaLabel: 'Igor AraújoのLinkedInに移動'
+		faqSectionButtonLinkedinAriaLabel: 'Igor AraújoのLinkedInに移動',
+		faqSectionQuestion1: 'Allifyとは何ですか？',
+		faqSectionAnswer1:
+			'Allifyは、自分の音楽的アイデンティティを発見し、楽しむためのプラットフォームです。ストリーミングサービスを接続して、よく聴くアーティストや楽曲を確認したり、音楽プロフィールをカスタマイズしたり、音楽が好きなコミュニティと自分の音楽の好みを共有したりできます。',
+		faqSectionQuestion2: 'Allifyに接続できるストリーミングサービスは何ですか？',
+		faqSectionAnswer2:
+			'現在は、SpotifyのアカウントをAllifyに接続できます。接続すると、音楽データを利用して音楽プロフィールを作成・更新できます。',
+		faqSectionQuestion3: '音楽プロフィールでは何を見ることができますか？',
+		faqSectionAnswer3:
+			'音楽プロフィールでは、よく聴くアーティストや楽曲を確認したり、今の自分を表す楽曲やアーティストを選んだりできます。また、今の気持ちや思い出などを表すタイトルを付けて、自分らしくカスタマイズすることもできます。',
+		faqSectionQuestion4: '音楽アーカイブとは何ですか？',
+		faqSectionAnswer4:
+			'音楽アーカイブでは、これまでAllifyであなたの音楽の旅の一部となったアーティストや楽曲を保存できます。現在よく聴いているアーティストや楽曲から外れた後でも、自分の音楽の歴史として振り返ることができます。',
+		faqSectionQuestion5: '音楽プロフィールを共有できますか？',
+		faqSectionAnswer5:
+			'はい。音楽プロフィールを他の人と共有でき、公開範囲も選択できます。公開プロフィールは他のユーザーから見つけることができ、コミュニティであなたの音楽的なアイデンティティを知ってもらえます。',
+		faqSectionQuestion6: '音楽コミュニティでは何ができますか？',
+		faqSectionAnswer6:
+			'音楽コミュニティでは、他のユーザーを検索したり、音楽プロフィールを見たり、友達を見つけたり、プロフィールをお気に入りに追加したりできます。また、他のユーザーがよく聴いているアーティストや楽曲を知ることもできます。',
+		faqSectionQuestion7: 'Allifyのプロフィールをカスタマイズできますか？',
+		faqSectionAnswer7:
+			'はい。Spotifyから取得した音楽データに加えて、今の自分を表す楽曲やアーティストを選び、音楽の旅のさまざまな瞬間を表すオリジナルのタイトルを付けることができます。',
+		faqSectionQuestion8: 'Allifyを利用するにはSpotifyの接続が必要ですか？',
+		faqSectionAnswer8:
+			'音楽データを利用する機能にアクセスするには、SpotifyのアカウントをAllifyに接続する必要があります。'
 	},
 	myMusicalProfilePage: {
 		title: 'マイミュージックプロフィール | Allify',

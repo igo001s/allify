@@ -207,7 +207,31 @@ export const pt = {
 		faqSectionParagraph1:
 			'Aqui você encontrará respostas para as perguntas mais frequentes sobre o Allify. Caso não encontre a resposta que procura, sinta-se à vontade para entrar em contato comigo.',
 		faqSectionButtonGithubAriaLabel: 'Ir para Github de Igor Araújo',
-		faqSectionButtonLinkedinAriaLabel: 'Ir para LinkedIn de Igor Araújo'
+		faqSectionButtonLinkedinAriaLabel: 'Ir para LinkedIn de Igor Araújo',
+		faqSectionQuestion1: 'O que é o Allify?',
+		faqSectionAnswer1:
+			'O Allify é uma plataforma para descobrir e explorar sua identidade musical. Conecte sua plataforma de streaming, acompanhe seus artistas e músicas mais ouvidos, personalize seu perfil musical e compartilhe seu gosto com uma comunidade apaixonada por música.',
+		faqSectionQuestion2: 'Qual plataforma de streaming posso conectar ao Allify?',
+		faqSectionAnswer2:
+			'Atualmente, você pode conectar sua conta do Spotify ao Allify. A conexão permite que seus dados musicais sejam utilizados para construir e atualizar seu perfil musical.',
+		faqSectionQuestion3: 'O que posso encontrar no meu Perfil Musical?',
+		faqSectionAnswer3:
+			'No seu Perfil Musical, você pode acompanhar seus artistas e músicas mais ouvidos, escolher uma música e um artista do momento e personalizar esses itens com títulos que representem o que você está vivendo, sentindo ou lembrando.',
+		faqSectionQuestion4: 'O que é o Arquivo Musical?',
+		faqSectionAnswer4:
+			'O Arquivo Musical reúne artistas e músicas que já fizeram parte da sua jornada musical no Allify. Assim, mesmo quando eles deixam de aparecer entre os seus itens mais ouvidos, você pode continuar guardando e revisitando esses momentos da sua história musical.',
+		faqSectionQuestion5: 'Posso compartilhar meu perfil musical?',
+		faqSectionAnswer5:
+			'Sim. Você pode compartilhar seu perfil musical com outras pessoas e escolher sua visibilidade. Um perfil público pode ser encontrado por outros usuários e permite que a comunidade conheça sua identidade musical.',
+		faqSectionQuestion6: 'O que posso fazer na Comunidade Musical?',
+		faqSectionAnswer6:
+			'Na Comunidade Musical, você pode pesquisar outros usuários, explorar perfis musicais, encontrar amigos, favoritar perfis e acompanhar os artistas e músicas que fazem parte do gosto musical de outras pessoas.',
+		faqSectionQuestion7: 'Posso personalizar meu perfil no Allify?',
+		faqSectionAnswer7:
+			'Sim. Além dos dados obtidos do Spotify, você pode escolher sua música e seu artista do momento e criar títulos personalizados para representar diferentes momentos da sua jornada musical.',
+		faqSectionQuestion8: 'Preciso conectar o Spotify para usar o Allify?',
+		faqSectionAnswer8:
+			'Para acessar os recursos que utilizam seus dados musicais, é necessário conectar sua conta do Spotify ao Allify.'
 	},
 	myMusicalProfilePage: {
 		title: 'Meu Perfil Musical | Allify',

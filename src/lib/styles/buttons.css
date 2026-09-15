@@ -57,3 +57,7 @@
 .button-outline-github {
 	@apply border-github text-github hover:bg-github/5;
 }
+
+.button-faq-question {
+	@apply flex w-full cursor-pointer items-center justify-between border-brand-primary hover:bg-brand-primary/5;
+}

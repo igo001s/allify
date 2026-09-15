@@ -191,7 +191,31 @@ export const zh = {
 		faqSectionParagraph1:
 			'在这里，你会找到关于 Allify 的最常见问题的答案。如果你没有找到你想要的答案，请随时与我联系。',
 		faqSectionButtonGithubAriaLabel: '前往 Igor Araújo 的 Github',
-		faqSectionButtonLinkedinAriaLabel: '前往 Igor Araújo 的 LinkedIn'
+		faqSectionButtonLinkedinAriaLabel: '前往 Igor Araújo 的 LinkedIn',
+		faqSectionQuestion1: '什么是 Allify？',
+		faqSectionAnswer1:
+			'Allify 是一个帮助你发现和探索音乐身份的平台。连接你的音乐流媒体平台，了解你最常听的艺人和歌曲，自定义你的音乐资料，并与热爱音乐的社区分享你的音乐品味。',
+		faqSectionQuestion2: '可以将哪些音乐流媒体平台连接到 Allify？',
+		faqSectionAnswer2:
+			'目前，你可以将 Spotify 账号连接到 Allify。连接后，你的音乐数据将用于创建和更新你的音乐资料。',
+		faqSectionQuestion3: '我的音乐资料中可以看到什么？',
+		faqSectionAnswer3:
+			'在你的音乐资料中，你可以查看最常听的艺人和歌曲，选择当前的代表歌曲和艺人，并通过自定义标题来表达你正在经历、感受或回忆的不同音乐时刻。',
+		faqSectionQuestion4: '什么是音乐档案？',
+		faqSectionAnswer4:
+			'音乐档案会保存那些曾经出现在你 Allify 音乐旅程中的艺人和歌曲。即使它们后来不再出现在你最常听的列表中，你仍然可以保存并回顾这些属于你音乐历程的时刻。',
+		faqSectionQuestion5: '可以分享我的音乐资料吗？',
+		faqSectionAnswer5:
+			'可以。你可以与其他人分享你的音乐资料，并选择资料的可见性。公开的音乐资料可以被其他用户找到，让社区了解你的音乐身份。',
+		faqSectionQuestion6: '音乐社区中可以做什么？',
+		faqSectionAnswer6:
+			'在音乐社区中，你可以搜索其他用户、探索音乐资料、寻找朋友、收藏用户资料，并了解其他人的音乐品味以及他们喜欢的艺人和歌曲。',
+		faqSectionQuestion7: '可以自定义我的 Allify 个人资料吗？',
+		faqSectionAnswer7:
+			'可以。除了来自 Spotify 的音乐数据外，你还可以选择当前的代表歌曲和艺人，并创建自定义标题来表达你音乐旅程中的不同阶段。',
+		faqSectionQuestion8: '使用 Allify 必须连接 Spotify 吗？',
+		faqSectionAnswer8:
+			'如果要使用需要访问你的音乐数据的功能，则需要将你的 Spotify 账号连接到 Allify。'
 	},
 	myMusicalProfilePage: {
 		title: '我的音乐档案 | Allify',

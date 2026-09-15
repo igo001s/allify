@@ -42,6 +42,10 @@
 	@apply text-lg font-medium text-t-primary sm:text-xl;
 }
 
+.heading-3-faq {
+	@apply text-sm font-medium text-t-primary sm:text-xl;
+}
+
 .heading-4 {
 	@apply text-sm font-medium text-t-primary;
 }
