@@ -869,8 +869,7 @@ export const fr = {
 			privacyPolicyDiv13Heading2: '12. Informations de contact',
 			privacyPolicyDiv13Paragraph1:
 				'Si vous avez des questions concernant cette Politique de confidentialité, le traitement de vos données ou si vous souhaitez exercer vos droits, vous pouvez nous contacter :',
-			privacyPolicyDiv13Paragraph2: 'Allify',
-			privacyPolicyDiv13Paragraph3: 'E-mail : contact@allify.club'
+			privacyPolicyDiv13Paragraph2: 'E-mail : contact@allify.club'
 		},
 		dataUsage: {
 			title: 'Utilisation des données | Allify',

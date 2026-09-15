@@ -13,3 +13,23 @@
 .feedback-spacing {
 	@apply flex flex-col items-center justify-center p-7 text-center md:p-10 xl:py-24;
 }
+
+.legal-pages-spacing {
+	@apply mb-7 space-y-10 lg:space-y-14;
+
+	div {
+		@apply space-y-4.5 lg:space-y-6.5;
+	}
+
+	p {
+		@apply text-sm lg:text-base;
+	}
+
+	time {
+		@apply block font-medium;
+	}
+
+	ul {
+		@apply mb-6.5 list-disc space-y-4 pl-4 text-xs font-medium lg:mb-8.5 lg:text-sm;
+	}
+}

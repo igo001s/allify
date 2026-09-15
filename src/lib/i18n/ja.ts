@@ -824,8 +824,7 @@ export const ja = {
 			privacyPolicyDiv13Heading2: '12. お問い合わせ',
 			privacyPolicyDiv13Paragraph1:
 				'本プライバシーポリシー、データの取り扱いについてご質問がある場合、または権利を行使したい場合は、以下までお問い合わせください。',
-			privacyPolicyDiv13Paragraph2: 'Allify',
-			privacyPolicyDiv13Paragraph3: 'メール：contact@allify.club'
+			privacyPolicyDiv13Paragraph2: 'メール：contact@allify.club'
 		},
 		dataUsage: {
 			title: 'データ利用について | Allify',

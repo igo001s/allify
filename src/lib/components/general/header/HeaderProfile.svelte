@@ -5,7 +5,6 @@
 	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Props
