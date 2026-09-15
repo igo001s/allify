@@ -27,7 +27,7 @@
 		class="
 			border-t
 			border-b-muted
-			pt-8
+			pt-5
 			text-center
 			text-xs
 			text-t-inverse-muted

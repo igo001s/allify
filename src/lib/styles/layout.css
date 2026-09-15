@@ -7,7 +7,7 @@
 }
 
 .footer-spacing {
-	@apply p-5 md:p-10 xl:px-24 xl:pt-16 xl:pb-10;
+	@apply pt-8 px-5 pb-5 md:p-10 xl:px-24 xl:pt-16 xl:pb-10;
 }
 
 .feedback-spacing {
