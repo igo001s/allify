@@ -295,7 +295,9 @@ export const de = {
 		musicArchivePageMetaKeywords:
 			'Musikarchiv, Musikverlauf, gehörte Künstler, gehörte Songs, musikalische Reise, musikalische Erinnerungen, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:
-			'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise mit Allify waren.'
+			'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise mit Allify waren.',
+		musicArchivePageHeading1: 'Musikalisches Archiv',
+		musicArchivePageParagraph1: 'Hier kannst du die Künstler und Songs erkunden, die bereits Teil deiner musikalischen Reise auf Allify waren. Wir wissen, dass jedes Lied eine Geschichte hat und möchten dir helfen, diese Erinnerungen wieder aufleben zu lassen.'
 	},
 	musicCommunityPage: {
 		title: 'Musik-Community | Allify',

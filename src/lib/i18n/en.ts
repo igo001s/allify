@@ -290,7 +290,9 @@ export const en = {
 		musicArchivePageMetaKeywords:
 			'music archive, music history, listened artists, listened songs, musical journey, music memories, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:
-			'Explore the artists and songs that have been part of your musical journey with Allify.'
+			'Explore the artists and songs that have been part of your musical journey with Allify.',
+		musicArchivePageHeading1: 'Music Archive',
+		musicArchivePageParagraph1: 'Here you can explore the artists and songs that have been part of your musical journey on Allify. We know that every song has its story and we want to help you relive these memories.'
 	},
 	musicCommunityPage: {
 		title: 'Music Community | Allify',

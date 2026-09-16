@@ -291,7 +291,9 @@ export const ja = {
 		musicArchivePageMetaKeywords:
 			'音楽アーカイブ, 音楽履歴, 聴いたアーティスト, 聴いた楽曲, 音楽の旅, 音楽の思い出, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:
-			'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。'
+			'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。',
+		musicArchivePageHeading1: '音楽アーカイブ',
+		musicArchivePageParagraph1: 'ここでは、Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を探索できます。私たちは、すべての楽曲には物語があることを知っており、これらの思い出を再び体験できるようお手伝いしたいと考えています。',
 	},
 	musicCommunityPage: {
 		title: '音楽コミュニティ | Allify',

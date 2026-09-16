@@ -55,7 +55,13 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	{$translationsStore.musicArchivePage.title}
+	<h1 class="heading-1">
+		{$translationsStore.musicArchivePage.musicArchivePageHeading1}
+	</h1>
+
+	<p class="text-sm text-t-secondary md:text-base">
+		{$translationsStore.musicArchivePage.musicArchivePageParagraph1}
+	</p>
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedMusicArchiveParagraph1} />
 {/if}

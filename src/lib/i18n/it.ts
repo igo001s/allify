@@ -298,7 +298,9 @@ export const it = {
 		musicArchivePageMetaKeywords:
 			'archivio musicale, cronologia musicale, artisti ascoltati, canzoni ascoltate, percorso musicale, ricordi musicali, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent:
-			'Esplora gli artisti e le canzoni che hanno già fatto parte del tuo percorso musicale con Allify.'
+			'Esplora gli artisti e le canzoni che hanno già fatto parte del tuo percorso musicale con Allify.',
+		musicArchivePageHeading1: 'Archivio Musicale',
+		musicArchivePageParagraph1: 'Qui puoi esplorare gli artisti e le canzoni che hanno già fatto parte del tuo percorso musicale su Allify. Sappiamo che ogni canzone ha una storia e vogliamo aiutarti a rivivere questi ricordi.'
 	},
 	musicCommunityPage: {
 		title: 'Community musicale | Allify',
