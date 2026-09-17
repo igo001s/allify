@@ -297,7 +297,8 @@ export const de = {
 		musicArchivePageMetaOgAndTwitterContent:
 			'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise mit Allify waren.',
 		musicArchivePageHeading1: 'Musikalisches Archiv',
-		musicArchivePageParagraph1: 'Hier kannst du die Künstler und Songs erkunden, die bereits Teil deiner musikalischen Reise auf Allify waren. Wir wissen, dass jedes Lied eine Geschichte hat und möchten dir helfen, diese Erinnerungen wieder aufleben zu lassen.'
+		musicArchivePageParagraph1:
+			'Hier kannst du die Künstler und Songs erkunden, die bereits Teil deiner musikalischen Reise auf Allify waren. Wir wissen, dass jedes Lied eine Geschichte hat und möchten dir helfen, diese Erinnerungen wieder aufleben zu lassen.'
 	},
 	musicCommunityPage: {
 		title: 'Musik-Community | Allify',

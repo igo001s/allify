@@ -95,9 +95,9 @@
 				</p>
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-					{#each $userInfo?.tracks?.tracksWhoWereWithYou ?? [] as track}
+					{#each $userInfo?.tracks?.tracksWhoWereWithYou ?? [] as trackWhoWereWithYou}
 						<ChangeTrackCardOnProfile
-							{track}
+							track={trackWhoWereWithYou.track}
 							{choosedTrack}
 							{handleTrackSelection}
 							userInfoType="tracksWhoWereWithYou"

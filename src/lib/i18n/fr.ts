@@ -300,7 +300,8 @@ export const fr = {
 		musicArchivePageMetaOgAndTwitterContent:
 			'Explorez les artistes et les chansons qui ont déjà fait partie de votre parcours musical avec Allify.',
 		musicArchivePageHeading1: 'Archive Musicale',
-		musicArchivePageParagraph1: 'Ici, vous pouvez explorer les artistes et les chansons qui ont déjà fait partie de votre parcours musical sur Allify. Nous savons que chaque chanson a une histoire et nous voulons vous aider à revivre ces souvenirs.'
+		musicArchivePageParagraph1:
+			'Ici, vous pouvez explorer les artistes et les chansons qui ont déjà fait partie de votre parcours musical sur Allify. Nous savons que chaque chanson a une histoire et nous voulons vous aider à revivre ces souvenirs.'
 	},
 	musicCommunityPage: {
 		title: 'Communauté musicale | Allify',

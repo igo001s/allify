@@ -270,7 +270,8 @@ export const zh = {
 			'音乐档案, 音乐历史, 听过的艺人, 听过的歌曲, 音乐旅程, 音乐回忆, Music Archive, Allify',
 		musicArchivePageMetaOgAndTwitterContent: '探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。',
 		musicArchivePageHeading1: '音乐档案',
-		musicArchivePageParagraph1: '在这里，你可以探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。我们知道每首歌曲都有它的故事，并希望帮助你重温这些回忆。'
+		musicArchivePageParagraph1:
+			'在这里，你可以探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。我们知道每首歌曲都有它的故事，并希望帮助你重温这些回忆。'
 	},
 	musicCommunityPage: {
 		title: '音乐社区 | Allify',

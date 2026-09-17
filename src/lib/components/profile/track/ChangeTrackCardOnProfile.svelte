@@ -19,8 +19,8 @@
 	$: currentTrack =
 		userInfoType === 'tracksWhoWereWithYou'
 			? $userInfo?.tracks?.tracksWhoWereWithYou?.find(
-					(currentTrack) => currentTrack.id === track.id
-				)
+					(currentTrack) => currentTrack.track.id === track.id
+				)?.track
 			: $userInfo?.tracks?.[userInfoType]?.track;
 </script>
 

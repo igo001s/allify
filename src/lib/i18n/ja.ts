@@ -293,7 +293,8 @@ export const ja = {
 		musicArchivePageMetaOgAndTwitterContent:
 			'Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を振り返りましょう。',
 		musicArchivePageHeading1: '音楽アーカイブ',
-		musicArchivePageParagraph1: 'ここでは、Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を探索できます。私たちは、すべての楽曲には物語があることを知っており、これらの思い出を再び体験できるようお手伝いしたいと考えています。',
+		musicArchivePageParagraph1:
+			'ここでは、Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を探索できます。私たちは、すべての楽曲には物語があることを知っており、これらの思い出を再び体験できるようお手伝いしたいと考えています。'
 	},
 	musicCommunityPage: {
 		title: '音楽コミュニティ | Allify',

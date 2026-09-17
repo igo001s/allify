@@ -51,9 +51,12 @@ export async function updateMostListenedTracks(
 			getMostListenedTracksResponse;
 
 		const tracksWhoWereWithYou =
-			currentMostListenedTracks?.filter(
-				(track) => !mostListenedTracksItems.some((oldTrack) => oldTrack.id === track.id)
-			) ?? [];
+			currentMostListenedTracks
+				?.filter((track) => !mostListenedTracksItems?.some((oldTrack) => oldTrack.id === track.id))
+				.map((track) => ({
+					track,
+					lastSeen: new Date()
+				})) ?? [];
 
 		const response = await fetch('/api/mongodb/updates/update-most-listened-tracks', {
 			method: 'POST',

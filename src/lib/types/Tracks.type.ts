@@ -11,5 +11,5 @@ export type Tracks = {
 		track: TrackSpotify | undefined; // When a connection to Deezer exists, type it as TrackDeezer
 		nextFreeUpdate?: Date;
 	};
-	tracksWhoWereWithYou?: TrackSpotify[] | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
+	tracksWhoWereWithYou?: { track: TrackSpotify; lastSeen: Date }[] | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
 };

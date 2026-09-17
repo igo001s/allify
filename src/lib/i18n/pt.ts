@@ -293,7 +293,8 @@ export const pt = {
 		musicArchivePageMetaOgAndTwitterContent:
 			'Explore os artistas e músicas que já fizeram parte da sua jornada musical com o Allify.',
 		musicArchivePageHeading1: 'Arquivo Musical',
-		musicArchivePageParagraph1: 'Aqui você pode explorar os artistas e músicas que já fizeram parte da sua jornada musical no Allify. Sabemos que cada música tem uma história e queremos ajudá-lo a reviver essas memórias.'
+		musicArchivePageParagraph1:
+			'Aqui você pode explorar os artistas e músicas que já fizeram parte da sua jornada musical no Allify. Sabemos que cada música tem uma história e queremos ajudá-lo a reviver essas memórias.'
 	},
 	musicCommunityPage: {
 		title: 'Comunidade Musical | Allify',

@@ -292,7 +292,8 @@ export const en = {
 		musicArchivePageMetaOgAndTwitterContent:
 			'Explore the artists and songs that have been part of your musical journey with Allify.',
 		musicArchivePageHeading1: 'Music Archive',
-		musicArchivePageParagraph1: 'Here you can explore the artists and songs that have been part of your musical journey on Allify. We know that every song has its story and we want to help you relive these memories.'
+		musicArchivePageParagraph1:
+			'Here you can explore the artists and songs that have been part of your musical journey on Allify. We know that every song has its story and we want to help you relive these memories.'
 	},
 	musicCommunityPage: {
 		title: 'Music Community | Allify',
