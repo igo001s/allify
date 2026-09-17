@@ -19,8 +19,8 @@
 	$: currentArtist =
 		userInfoType === 'artistsWhoWereWithYou'
 			? $userInfo?.artists?.artistsWhoWereWithYou?.find(
-					(currentArtist) => currentArtist.id === artist.id
-				)
+					(currentArtist) => currentArtist.artist.id === artist.id
+				)?.artist
 			: $userInfo?.artists?.[userInfoType]?.artist;
 </script>
 

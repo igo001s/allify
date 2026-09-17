@@ -51,9 +51,14 @@ export async function updateMostListenedArtistsNewLimit(
 			getMostListenedArtistsResponse;
 
 		const artistsWhoWereWithYou =
-			currentMostListenedArtists?.filter(
-				(artist) => !mostListenedArtistsItems.some((oldArtist) => oldArtist.id === artist.id)
-			) ?? [];
+			currentMostListenedArtists
+				?.filter(
+					(artist) => !mostListenedArtistsItems?.some((oldArtist) => oldArtist.id === artist.id)
+				)
+				.map((artist) => ({
+					artist,
+					lastSeen: new Date()
+				})) ?? [];
 
 		const response = await fetch('/api/mongodb/updates/update-most-listened-artists', {
 			method: 'POST',

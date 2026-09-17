@@ -131,8 +131,12 @@
 				</p>
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-					{#each $userInfo.artists.artistsWhoWereWithYou as artist}
-						<SelectArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
+					{#each $userInfo.artists.artistsWhoWereWithYou as artistWhoWereWithYou}
+						<SelectArtistCardOnProfile
+							artist={artistWhoWereWithYou.artist}
+							{choosedArtist}
+							{handleArtistSelection}
+						/>
 					{/each}
 				</div>
 			</div>

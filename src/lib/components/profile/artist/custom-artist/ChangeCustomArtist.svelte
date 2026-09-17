@@ -153,9 +153,9 @@
 				</p>
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-					{#each $userInfo.artists.artistsWhoWereWithYou as artist}
+					{#each $userInfo.artists.artistsWhoWereWithYou as artistWhoWereWithYou}
 						<ChangeArtistCardOnProfile
-							{artist}
+							artist={artistWhoWereWithYou.artist}
 							{choosedArtist}
 							{handleArtistSelection}
 							userInfoType="artistsWhoWereWithYou"
