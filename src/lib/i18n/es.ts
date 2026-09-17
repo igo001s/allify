@@ -153,9 +153,9 @@ export const es = {
 	homePage: {
 		title: 'Descubre tu identidad musical | Allify',
 		homePageMetaDescription:
-			'Descubre tu identidad musical con Allify. Conecta tus plataformas de streaming, sigue a tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
+			'Descubre tu identidad musical con Allify. Conecta tus plataformas de streaming, sigue a tus artistas y canciones más escuchados y personaliza tu perfil musical.',
 		homePageMetaOgAndTwitterContent:
-			'Descubre tu identidad musical con Allify. Conecta tus plataformas de streaming, sigue a tus artistas y canciones más escuchados, personaliza tu perfil musical y comparte tus gustos con una comunidad apasionada por la música.',
+			'Descubre tu identidad musical con Allify. Conecta tus plataformas de streaming, sigue a tus artistas y canciones más escuchados y personaliza tu perfil musical.',
 		homePageMetaKeywords:
 			'Allify, identidad musical, gusto musical, perfil musical, perfil de música, artistas más escuchados, canciones más escuchadas, estadísticas musicales, datos musicales, historial musical, plataformas de streaming, comunidad musical, Spotify, Deezer',
 		homePageHeroSectionHeading1: 'Descubre lo que tu música dice sobre ti',

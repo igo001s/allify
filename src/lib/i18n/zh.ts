@@ -143,9 +143,9 @@ export const zh = {
 	homePage: {
 		title: '发现你的音乐身份 | Allify',
 		homePageMetaDescription:
-			'通过 Allify 发现你的音乐身份。连接你的流媒体平台，查看最常听的艺人和歌曲，个性化你的音乐资料，并与热爱音乐的社区分享你的音乐品味。',
+			'使用 Allify 探索你的音乐身份。连接你的流媒体平台，了解最常听的艺人和歌曲，并个性化你的音乐档案。',
 		homePageMetaOgAndTwitterContent:
-			'通过 Allify 发现你的音乐身份。连接你的流媒体平台，查看最常听的艺人和歌曲，个性化你的音乐资料，并与热爱音乐的社区分享你的音乐品味。',
+			'使用 Allify 探索你的音乐身份。连接你的流媒体平台，了解最常听的艺人和歌曲，并个性化你的音乐档案。',
 		homePageMetaKeywords:
 			'Allify, 音乐身份, 音乐品味, 音乐资料, 音乐个人资料, 最常听的艺人, 最常听的歌曲, 音乐统计, 音乐数据, 音乐历史, 流媒体平台, 音乐社区, Spotify, Deezer',
 		homePageHeroSectionHeading1: '发现你的音乐诉说着怎样的你',

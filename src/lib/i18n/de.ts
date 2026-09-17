@@ -152,9 +152,9 @@ export const de = {
 	homePage: {
 		title: 'Entdecke deine musikalische Identität | Allify',
 		homePageMetaDescription:
-			'Entdecke deine musikalische Identität mit Allify. Verbinde deine Streaming-Plattformen, verfolge deine meistgehörten Künstler und Songs, personalisiere dein Musikprofil und teile deinen Musikgeschmack mit einer musikbegeisterten Community.',
+			'Entdecke deine musikalische Identität mit Allify. Verbinde deine Streaming-Plattformen, verfolge deine meistgehörten Künstler und Songs und personalisiere dein Musikprofil.',
 		homePageMetaOgAndTwitterContent:
-			'Entdecke deine musikalische Identität mit Allify. Verbinde deine Streaming-Plattformen, verfolge deine meistgehörten Künstler und Songs, personalisiere dein Musikprofil und teile deinen Musikgeschmack mit einer musikbegeisterten Community.',
+			'Entdecke deine musikalische Identität mit Allify. Verbinde deine Streaming-Plattformen, verfolge deine meistgehörten Künstler und Songs und personalisiere dein Musikprofil.',
 		homePageMetaKeywords:
 			'Allify, musikalische Identität, Musikgeschmack, Musikprofil, Musikprofilseite, meistgehörte Künstler, meistgehörte Songs, Musikstatistiken, Musikdaten, Musikverlauf, Streaming-Plattformen, Musik-Community, Spotify, Deezer',
 		homePageHeroSectionHeading1: 'Entdecke, was deine Musik über dich aussagt',
