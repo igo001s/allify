@@ -28,7 +28,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 			popularity: parsedResponse[0].popularity,
 			albumName: parsedResponse[0].album.name,
 			image: parsedResponse[0].album.images[0],
-			trackLink: parsedResponse[0].external_urls.spotify
+			externalLink: parsedResponse[0].external_urls.spotify
 		};
 
 		for (let i = 0; i < parsedResponse.length; i++) {
@@ -39,7 +39,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 				popularity: parsedResponse[i].popularity,
 				albumName: parsedResponse[i].album.name,
 				image: parsedResponse[i].album.images[0],
-				trackLink: parsedResponse[i].external_urls.spotify
+				externalLink: parsedResponse[i].external_urls.spotify
 			});
 		}
 

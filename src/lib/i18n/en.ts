@@ -293,7 +293,11 @@ export const en = {
 			'Explore the artists and songs that have been part of your musical journey with Allify.',
 		musicArchivePageHeading1: 'Music Archive',
 		musicArchivePageParagraph1:
-			'Here you can explore the artists and songs that have been part of your musical journey on Allify. We know that every song has its story and we want to help you relive these memories.'
+			'Here you can explore the artists and songs that have been part of your musical journey on Allify. We know that every song has its story and we want to help you relive these memories.',
+		musicArchivePageHeading2v1:
+			'Here are the artists who have already been among your most-listened-to artists',
+		musicArchivePageHeading2v2:
+			'Here are the songs that have already been among your most-listened-to songs'
 	},
 	musicCommunityPage: {
 		title: 'Music Community | Allify',

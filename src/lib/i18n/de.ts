@@ -298,7 +298,11 @@ export const de = {
 			'Entdecke die Künstler und Songs, die bereits Teil deiner musikalischen Reise mit Allify waren.',
 		musicArchivePageHeading1: 'Musikalisches Archiv',
 		musicArchivePageParagraph1:
-			'Hier kannst du die Künstler und Songs erkunden, die bereits Teil deiner musikalischen Reise auf Allify waren. Wir wissen, dass jedes Lied eine Geschichte hat und möchten dir helfen, diese Erinnerungen wieder aufleben zu lassen.'
+			'Hier kannst du die Künstler und Songs erkunden, die bereits Teil deiner musikalischen Reise auf Allify waren. Wir wissen, dass jedes Lied eine Geschichte hat und möchten dir helfen, diese Erinnerungen wieder aufleben zu lassen.',
+		musicArchivePageHeading2v1:
+			'Hier sind die Künstler, die bereits zu deinen meistgehörten Künstlern gehört haben',
+		musicArchivePageHeading2v2:
+			'Hier sind die Songs, die bereits zu deinen meistgehörten Songs gehört haben'
 	},
 	musicCommunityPage: {
 		title: 'Musik-Community | Allify',

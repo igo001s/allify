@@ -4,6 +4,7 @@
 
 	// Components
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
+	import MusicArchiveItems from '$lib/components/music-archive/MusicArchiveItems.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -62,6 +63,10 @@
 	<p class="text-sm text-t-secondary md:text-base">
 		{$translationsStore.musicArchivePage.musicArchivePageParagraph1}
 	</p>
+
+	{#each [{ itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1, itemType: 'artist' as 'artist', items: $userInfo.artists?.artistsWhoWereWithYou }, { itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2, itemType: 'track' as 'track', items: $userInfo.tracks?.tracksWhoWereWithYou }] as item}
+		<MusicArchiveItems itemTitle={item.itemTitle} itemType={item.itemType} items={item.items} />
+	{/each}
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedMusicArchiveParagraph1} />
 {/if}

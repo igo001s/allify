@@ -301,7 +301,11 @@ export const fr = {
 			'Explorez les artistes et les chansons qui ont déjà fait partie de votre parcours musical avec Allify.',
 		musicArchivePageHeading1: 'Archive Musicale',
 		musicArchivePageParagraph1:
-			'Ici, vous pouvez explorer les artistes et les chansons qui ont déjà fait partie de votre parcours musical sur Allify. Nous savons que chaque chanson a une histoire et nous voulons vous aider à revivre ces souvenirs.'
+			'Ici, vous pouvez explorer les artistes et les chansons qui ont déjà fait partie de votre parcours musical sur Allify. Nous savons que chaque chanson a une histoire et nous voulons vous aider à revivre ces souvenirs.',
+		musicArchivePageHeading2v1:
+			'Voici les artistes qui ont déjà fait partie de vos artistes les plus écoutés',
+		musicArchivePageHeading2v2:
+			'Voici les chansons qui ont déjà fait partie de vos chansons les plus écoutées'
 	},
 	musicCommunityPage: {
 		title: 'Communauté musicale | Allify',

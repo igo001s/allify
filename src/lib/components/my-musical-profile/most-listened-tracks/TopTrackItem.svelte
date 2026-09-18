@@ -65,7 +65,7 @@
 		<ExternalLink
 			additionalClass="w-full mt-2"
 			streamingPlatform="spotify"
-			externalLink={mostListenedTrackItem.trackLink}
+			externalLink={mostListenedTrackItem.externalLink}
 			externalLinkText={$translationsStore.generalTexts.seeMusicOnSpotify}
 		/>
 	</div>
