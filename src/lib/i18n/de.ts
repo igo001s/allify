@@ -302,7 +302,11 @@ export const de = {
 		musicArchivePageHeading2v1:
 			'Hier sind die Künstler, die bereits zu deinen meistgehörten Künstlern gehört haben',
 		musicArchivePageHeading2v2:
-			'Hier sind die Songs, die bereits zu deinen meistgehörten Songs gehört haben'
+			'Hier sind die Songs, die bereits zu deinen meistgehörten Songs gehört haben',
+		musicArchivePageArtistsEmpty:
+			'Künstler, die nicht mehr zu deinen meistgehörten Künstlern gehören, erscheinen hier.',
+		musicArchivePageTracksEmpty:
+			'Songs, die nicht mehr zu deinen meistgehörten Songs gehören, erscheinen hier.'
 	},
 	musicCommunityPage: {
 		title: 'Musik-Community | Allify',

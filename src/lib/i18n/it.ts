@@ -305,7 +305,11 @@ export const it = {
 		musicArchivePageHeading2v1:
 			'Ecco gli artisti che sono già stati tra i tuoi artisti più ascoltati',
 		musicArchivePageHeading2v2:
-			'Ecco le canzoni che sono già state tra le tue canzoni più ascoltate'
+			'Ecco le canzoni che sono già state tra le tue canzoni più ascoltate',
+		musicArchivePageArtistsEmpty:
+			'Gli artisti che non fanno più parte dei tuoi artisti più ascoltati appariranno qui.',
+		musicArchivePageTracksEmpty:
+			'Le canzoni che non fanno più parte delle tue canzoni più ascoltate appariranno qui.'
 	},
 	musicCommunityPage: {
 		title: 'Community musicale | Allify',

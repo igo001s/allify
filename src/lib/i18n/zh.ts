@@ -273,7 +273,9 @@ export const zh = {
 		musicArchivePageParagraph1:
 			'在这里，你可以探索曾经成为你在 Allify 音乐旅程一部分的艺人和歌曲。我们知道每首歌曲都有它的故事，并希望帮助你重温这些回忆。',
 		musicArchivePageHeading2v1: '这里是曾经进入你最常听艺人榜单的艺人',
-		musicArchivePageHeading2v2: '这里是曾经进入你最常听歌曲榜单的歌曲'
+		musicArchivePageHeading2v2: '这里是曾经进入你最常听歌曲榜单的歌曲',
+		musicArchivePageArtistsEmpty: '那些不再出现在你最常听艺人榜单中的艺人将显示在这里。',
+		musicArchivePageTracksEmpty: '那些不再出现在你最常听歌曲榜单中的歌曲将显示在这里。'
 	},
 	musicCommunityPage: {
 		title: '音乐社区 | Allify',

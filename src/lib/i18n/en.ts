@@ -297,7 +297,11 @@ export const en = {
 		musicArchivePageHeading2v1:
 			'Here are the artists who have already been among your most-listened-to artists',
 		musicArchivePageHeading2v2:
-			'Here are the songs that have already been among your most-listened-to songs'
+			'Here are the songs that have already been among your most-listened-to songs',
+		musicArchivePageArtistsEmpty:
+			'The artists who are no longer among your most-listened-to artists will be displayed here.',
+		musicArchivePageTracksEmpty:
+			'The songs that are no longer among your most-listened-to songs will be displayed here.'
 	},
 	musicCommunityPage: {
 		title: 'Music Community | Allify',
