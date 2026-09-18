@@ -6,6 +6,14 @@
 	@apply p-5 md:p-10 xl:px-20 xl:pt-10 xl:pb-20;
 }
 
+.base-section-spacing {
+	@apply space-y-4;
+
+	> div {
+        @apply mt-8 lg:mt-10;
+    }
+}
+
 .footer-spacing {
 	@apply px-5 pt-8 pb-5 md:p-10 xl:px-20 xl:pt-16 xl:pb-10;
 }

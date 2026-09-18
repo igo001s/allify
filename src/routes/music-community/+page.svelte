@@ -93,46 +93,48 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	<h1 class="heading-1">
-		{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
-	</h1>
+	<section class="base-section-spacing">
+		<h1 class="heading-1">
+			{$translationsStore.musicCommunityPage.musicCommunityPageHeading1}
+		</h1>
 
-	<p class="text-sm text-t-secondary md:text-base">
-		{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
-	</p>
+		<p class="text-sm text-t-secondary md:text-base">
+			{$translationsStore.musicCommunityPage.musicCommunityParagraph1}
+		</p>
 
-	<div class="mt-10 flex flex-col gap-8 xl:flex-row xl:gap-12">
-		<div class="flex w-full flex-col gap-6 xl:w-3/5">
-			<div class="flex items-center gap-3">
-				<input
-					type="text"
-					minlength="2"
-					maxlength="30"
-					placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
-					bind:value={searchUserInputValue}
-					class="flex-1 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary outline-none placeholder:text-t-muted focus:border-brand-primary"
-					on:keydown={(e) => {
-						if (e.key === 'Enter') {
-							handleSearchUser();
-						}
-					}}
-				/>
+		<div class="flex flex-col gap-8 xl:flex-row xl:gap-12">
+			<div class="flex w-full flex-col gap-6 xl:w-3/5">
+				<div class="flex items-center gap-3">
+					<input
+						type="text"
+						minlength="2"
+						maxlength="30"
+						placeholder={$translationsStore.musicCommunityPage.musicCommunitySearchPlaceholder}
+						bind:value={searchUserInputValue}
+						class="flex-1 rounded-lg border bg-s-muted px-4 py-3 text-sm font-semibold text-t-primary outline-none placeholder:text-t-muted focus:border-brand-primary"
+						on:keydown={(e) => {
+							if (e.key === 'Enter') {
+								handleSearchUser();
+							}
+						}}
+					/>
 
-				<button
-					class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-brand-primary hover:bg-brand-primary-dark"
-					disabled={!searchUserInputValue || searchUserInputValue.length < 2}
-					aria-label={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAriaLabel}
-					on:click={handleSearchUser}
-				>
-					<SearchIcon iconSvgClass="h-4.5 w-4.5 text-t-inverse" />
-				</button>
+					<button
+						class="flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-brand-primary hover:bg-brand-primary-dark"
+						disabled={!searchUserInputValue || searchUserInputValue.length < 2}
+						aria-label={$translationsStore.musicCommunityPage.musicCommunitySearchButtonAriaLabel}
+						on:click={handleSearchUser}
+					>
+						<SearchIcon iconSvgClass="h-4.5 w-4.5 text-t-inverse" />
+					</button>
+				</div>
+
+				<FoundedUsers {searchUserInputValue} {foundedUsers} {loadingFoundedUsers} {hasSearched} />
 			</div>
 
-			<FoundedUsers {searchUserInputValue} {foundedUsers} {loadingFoundedUsers} {hasSearched} />
+			<FavoritesSection />
 		</div>
-
-		<FavoritesSection />
-	</div>
+	</section>
 {:else}
 	<NotLogged
 		notLoggedParagraph={$translationsStore.generalTexts.notLoggedMusicCommunityParagraph1}

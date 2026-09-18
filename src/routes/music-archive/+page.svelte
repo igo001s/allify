@@ -56,19 +56,21 @@
 </svelte:head>
 
 {#if $userInfo?.connectedStreamings.spotify}
-	<h1 class="heading-1">
-		{$translationsStore.musicArchivePage.musicArchivePageHeading1}
-	</h1>
+	<section class="base-section-spacing">
+		<h1 class="heading-1">
+			{$translationsStore.musicArchivePage.musicArchivePageHeading1}
+		</h1>
 
-	<p class="text-sm text-t-secondary md:text-base">
-		{$translationsStore.musicArchivePage.musicArchivePageParagraph1}
-	</p>
+		<p class="text-sm text-t-secondary md:text-base">
+			{$translationsStore.musicArchivePage.musicArchivePageParagraph1}
+		</p>
 
-	<div class="mb-12 space-y-14 lg:mb-4 lg:space-y-20">
-		{#each [{ itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1, itemType: 'artist' as 'artist', items: $userInfo.artists?.artistsWhoWereWithYou }, { itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2, itemType: 'track' as 'track', items: $userInfo.tracks?.tracksWhoWereWithYou }] as item}
-			<MusicArchiveItems itemTitle={item.itemTitle} itemType={item.itemType} items={item.items} />
-		{/each}
-	</div>
+		<div class="mb-12 space-y-14 lg:mb-4 lg:space-y-20">
+			{#each [{ itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1, itemType: 'artist' as 'artist', items: $userInfo.artists?.artistsWhoWereWithYou }, { itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2, itemType: 'track' as 'track', items: $userInfo.tracks?.tracksWhoWereWithYou }] as item}
+				<MusicArchiveItems itemTitle={item.itemTitle} itemType={item.itemType} items={item.items} />
+			{/each}
+		</div>
+	</section>
 {:else}
 	<NotLogged notLoggedParagraph={$translationsStore.generalTexts.notLoggedMusicArchiveParagraph1} />
 {/if}
