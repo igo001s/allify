@@ -19,7 +19,7 @@
 <div class="space-y-5">
 	<h2>{itemTitle}</h2>
 
-	<div class="grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+	<div class="grid w-full grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-16 2xl:grid-cols-3">
 		{#each items as item}
 			{#if itemType === 'track' && 'track' in item}
 				<MusicArchiveTrackItem track={item.track} />

@@ -14,18 +14,18 @@
 	export let artist: ArtistSpotify;
 </script>
 
-<div class="flex w-full flex-col gap-4 sm:flex-row sm:gap-6">
+<div class="flex w-full flex-col items-center gap-4 sm:flex-row sm:items-start sm:gap-6">
 	<enhanced:img
 		src={artist.image?.url}
 		alt={artist.name}
-		class="h-20 w-20 shrink-0 rounded-lg object-cover shadow-md sm:h-28 sm:w-28 lg:h-48 lg:w-48"
+		class="h-32 w-32 shrink-0 rounded-lg object-cover shadow-md sm:h-44 sm:w-44 lg:h-48 lg:w-48"
 		loading="lazy"
 	/>
 
-	<div class="flex flex-1 flex-col gap-4 sm:gap-5">
+	<div class="flex h-full w-full flex-col justify-between gap-4 sm:gap-5">
 		<div class="space-y-2">
 			{#if artist.name}
-				<p class="truncate text-lg font-semibold text-t-primary sm:text-xl lg:text-2xl">
+				<p class="truncate text-lg font-semibold text-t-primary sm:text-xl lg:text-xl">
 					{artist.name}
 				</p>
 			{/if}
