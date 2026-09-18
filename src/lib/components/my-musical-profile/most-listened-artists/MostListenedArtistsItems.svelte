@@ -93,7 +93,7 @@
 			{/if}
 		{/each}
 
-		<span class="mx-auto text-xs text-t-secondary">
+		<span class="text-center text-xs text-t-secondary">
 			{#if ($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit ?? 0) < 50}
 				{#if $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) > new Date()}
 					{$translationsStore.myMusicalProfilePage
