@@ -1,6 +1,9 @@
 // Svelte
 import { dev } from '$app/environment';
 
+// Utils
+import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+
 // Types
 import type { TrackSpotify } from '$lib/types/Spotify.type';
 
@@ -45,6 +48,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 
 		return {
 			tracksLimit: limit,
+			nextFreeUpdate: nextFreeUpdateTime(),
 			mostListenedTrackItem,
 			mostListenedTracksItems
 		};

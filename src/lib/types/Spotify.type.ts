@@ -10,7 +10,7 @@ export type UserInfoSpotify = {
 	mostListenedArtists:
 		| {
 				artistsLimit: number;
-				nextFreeUpdate?: Date;
+				nextFreeUpdate: Date;
 				mostListenedArtistItem: ArtistSpotify;
 				mostListenedArtistsItems: ArtistSpotify[];
 		  }
@@ -18,7 +18,7 @@ export type UserInfoSpotify = {
 	mostListenedTracks:
 		| {
 				tracksLimit: number;
-				nextFreeUpdate?: Date;
+				nextFreeUpdate: Date;
 				mostListenedTrackItem: TrackSpotify;
 				mostListenedTracksItems: TrackSpotify[];
 		  }
