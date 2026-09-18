@@ -28,7 +28,7 @@
 		/>
 	</div>
 
-	<div class="flex flex-col gap-10">
+	<div class="flex flex-col gap-12">
 		{#each mostListenedArtists as artist, i (artist.id)}
 			{#if i === 0}
 				<TopArtistItem

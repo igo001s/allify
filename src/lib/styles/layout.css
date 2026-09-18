@@ -1,9 +1,9 @@
 .header-spacing {
-	@apply p-5 md:p-10 xl:px-20 xl:py-12;
+	@apply p-5 md:p-10 xl:px-16 xl:py-12;
 }
 
 .base-spacing {
-	@apply px-5 pt-5 pb-14 md:px-10 md:pt-10 md:pb-16 xl:px-20 xl:pt-10 xl:pb-24;
+	@apply px-5 pt-5 pb-14 md:px-10 md:pt-10 md:pb-16 xl:px-16 xl:pt-10 xl:pb-24;
 }
 
 .base-section-spacing {
@@ -15,7 +15,7 @@
 }
 
 .footer-spacing {
-	@apply px-5 pt-8 pb-5 md:p-10 xl:px-20 xl:pt-16 xl:pb-10;
+	@apply px-5 pt-8 pb-5 md:p-10 xl:px-16 xl:pt-16 xl:pb-10;
 }
 
 .feedback-spacing {
