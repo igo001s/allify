@@ -42,6 +42,16 @@
 			);
 
 			if (!updateMostListenedArtistsNewLimitResponse.error) {
+				toastStore.set({
+					showToast: true,
+					toastType: 'success',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage
+							.myMusicalProfilePageUpdateMostListenedArtistsSuccessToast
+				});
+
+				loadingMoreItems = false;
+
 				userInfo.update((currentUser) => {
 					if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
 
@@ -63,24 +73,20 @@
 						}
 					};
 				});
-
-				toastStore.set({
-					showToast: true,
-					toastType: 'success',
-					toastMessage:
-						$translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageUpdateMostListenedArtistsSuccessToast
-				});
 			} else {
-				if (updateMostListenedArtistsNewLimitResponse.errorType === 'ticketUsageFailed') return;
+				if (updateMostListenedArtistsNewLimitResponse.errorType === 'ticketUsageFailed') {
+					toastStore.set({
+						showToast: true,
+						toastType: 'error',
+						toastMessage:
+							$translationsStore.myMusicalProfilePage
+								.myMusicalProfilePageUpdateMostListenedArtistsErrorToast
+					});
 
-				toastStore.set({
-					showToast: true,
-					toastType: 'error',
-					toastMessage:
-						$translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageUpdateMostListenedArtistsErrorToast
-				});
+					loadingMoreItems = false;
+
+					return;
+				}
 			}
 		} else if (additionalItemsType === 'tracks') {
 			const updateMostListenedTracksNewLimitResponse = await updateMostListenedTracksNewLimit(
@@ -92,6 +98,16 @@
 			);
 
 			if (!updateMostListenedTracksNewLimitResponse.error) {
+				toastStore.set({
+					showToast: true,
+					toastType: 'success',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage
+							.myMusicalProfilePageUpdateMostListenedTracksSuccessToast
+				});
+
+				loadingMoreItems = false;
+
 				userInfo.update((currentUser) => {
 					if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
 
@@ -112,28 +128,22 @@
 						}
 					};
 				});
-
-				toastStore.set({
-					showToast: true,
-					toastType: 'success',
-					toastMessage:
-						$translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageUpdateMostListenedTracksSuccessToast
-				});
 			} else {
-				if (updateMostListenedTracksNewLimitResponse.errorType === 'ticketUsageFailed') return;
+				if (updateMostListenedTracksNewLimitResponse.errorType === 'ticketUsageFailed') {
+					toastStore.set({
+						showToast: true,
+						toastType: 'error',
+						toastMessage:
+							$translationsStore.myMusicalProfilePage
+								.myMusicalProfilePageUpdateMostListenedTracksErrorToast
+					});
 
-				toastStore.set({
-					showToast: true,
-					toastType: 'error',
-					toastMessage:
-						$translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageUpdateMostListenedTracksErrorToast
-				});
+					loadingMoreItems = false;
+
+					return;
+				}
 			}
 		}
-
-		loadingMoreItems = false;
 	}
 </script>
 
@@ -161,7 +171,7 @@
 			{/if}
 		</div>
 	{:else}
-		<div class="absolute inset-0 flex items-center justify-center">
+		<div class="flex items-center justify-center">
 			<DotsLoading dotsTheme="base-light" />
 		</div>
 	{/if}

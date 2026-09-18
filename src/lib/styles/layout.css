@@ -10,8 +10,8 @@
 	@apply space-y-4;
 
 	> div {
-        @apply mt-8 lg:mt-10;
-    }
+		@apply mt-8 lg:mt-14;
+	}
 }
 
 .footer-spacing {
