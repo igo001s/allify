@@ -53,7 +53,7 @@ export async function updateMostListenedArtistsNewLimit(
 		const artistsWhoWereWithYou =
 			currentMostListenedArtists
 				?.filter(
-					(artist) => !mostListenedArtistsItems?.some((oldArtist) => oldArtist.id === artist.id)
+					(artist) => !mostListenedArtistsItems?.some((currentArtist) => currentArtist.id === artist.id)
 				)
 				.map((artist) => ({
 					artist,

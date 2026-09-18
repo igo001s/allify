@@ -52,7 +52,7 @@ export async function updateMostListenedTracks(
 
 		const tracksWhoWereWithYou =
 			currentMostListenedTracks
-				?.filter((track) => !mostListenedTracksItems?.some((oldTrack) => oldTrack.id === track.id))
+				?.filter((track) => !mostListenedTracksItems?.some((currentTrack) => currentTrack.id === track.id))
 				.map((track) => ({
 					track,
 					lastSeen: new Date()
