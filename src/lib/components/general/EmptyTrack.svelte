@@ -18,7 +18,7 @@
 	</h3>
 
 	<button
-		class="flex h-full cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-5 text-t-primary shadow-xl sm:p-6 md:max-h-56 md:min-h-56"
+		class={`${sessionType === 'profile' ? 'cursor-pointer' : ''} flex h-full flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-5 text-t-primary shadow-xl sm:p-6 md:max-h-56 md:min-h-56`}
 		on:click={() => openModal?.('music')}
 	>
 		<div class="flex h-16 w-16 items-center justify-center rounded-full bg-s-muted sm:h-20 sm:w-20">

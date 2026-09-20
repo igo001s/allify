@@ -2,9 +2,6 @@
 	// App
 	import { page } from '$app/stores';
 
-	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
-
 	// Components
 	import Ticket from '$lib/components/general/Ticket.svelte';
 

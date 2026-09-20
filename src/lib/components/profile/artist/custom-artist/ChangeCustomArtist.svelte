@@ -1,7 +1,4 @@
 <script lang="ts">
-	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
-
 	// Components
 	import ChangeArtistCardOnProfile from '$lib/components/profile/artist/ChangeArtistCardOnProfile.svelte';
 	import Ticket from '../../../general/Ticket.svelte';

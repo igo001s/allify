@@ -1,7 +1,4 @@
 <script lang="ts">
-	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
-
 	// Components
 	import Ticket from '$lib/components/general/Ticket.svelte';
 
@@ -19,6 +16,8 @@
 	const visibilityOptions: Array<'public' | 'private'> = ['public', 'private'];
 
 	async function handleVisibilityChange(option: 'public' | 'private') {
+		if (option === visibility) return;
+
 		const updateProfileVisibilityResponse = await updateProfileVisibility(
 			$userInfo?._id,
 			option,
@@ -67,6 +66,7 @@
 		{#each visibilityOptions as option}
 			<button
 				on:click={() => handleVisibilityChange(option)}
+				disabled={visibility === option}
 				class={`flex w-full items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium sm:min-w-32 ${
 					visibility === option
 						? 'bg-brand-primary text-t-inverse shadow-sm'
