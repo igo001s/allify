@@ -24,12 +24,12 @@
 		<div class="flex h-16 w-16 items-center justify-center rounded-full bg-s-muted sm:h-20 sm:w-20">
 			{#if sessionType === 'profile'}
 				<SelectMusicIcon
-					iconSvgClass="ml-1.5 h-8 w-8 sm:h-10 sm:w-10"
+					iconSvgClass="ml-1.5 h-10 w-10 sm:h-12 sm:w-12"
 					iconAriaLabel={emptyTrackAriaLabel}
 				/>
 			{:else}
 				<MusicIcon
-					iconSvgClass="mr-1 h-8 w-8 sm:h-10 sm:w-10"
+					iconSvgClass="ml-0.5 mt-0.5 h-10 w-10 sm:h-12 sm:w-12"
 					iconAriaLabel={emptyTrackAriaLabel}
 				/>
 			{/if}

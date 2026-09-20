@@ -41,7 +41,7 @@
 	</p>
 
 	<ul
-		class="mt-2 flex w-full flex-col items-center gap-8 lg:mt-10 xl:mt-4 xl:flex-row xl:justify-center xl:gap-16"
+		class="mt-2 flex w-full flex-col items-center gap-8 xl:mt-10 xl:flex-row xl:justify-center xl:gap-16"
 	>
 		{#each platforms as platform}
 			<PlatformCard {platform} />

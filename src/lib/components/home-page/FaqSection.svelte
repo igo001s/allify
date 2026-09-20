@@ -116,7 +116,7 @@
 
 				{#if openFaqIndex === index}
 					<div
-						class="rounded-b-lg border-x border-b border-brand-primary bg-brand-primary/5 pr-2 pb-3 pl-4 text-xs lg:pr-6 lg:pb-5 lg:pl-8 lg:text-sm"
+						class="rounded-b-lg border-x border-b border-brand-primary bg-brand-primary/5 pr-2 pb-3 pl-4 text-xs text-t-secondary lg:pr-6 lg:pb-5 lg:pl-8 lg:text-sm"
 					>
 						{item.answer}
 					</div>
