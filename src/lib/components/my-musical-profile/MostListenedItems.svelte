@@ -66,7 +66,7 @@
 	<div class="flex flex-col gap-12 lg:gap-16">
 		<div class="grid grid-cols-1 gap-6 md:gap-10 lg:grid-cols-2 2xl:grid-cols-3">
 			{#each mostListenedItems as item, i (item.id)}
-				<MostListenedItemCard {item} index={i} />
+				<MostListenedItemCard {item} index={i} itemType={sessionType} />
 			{/each}
 		</div>
 

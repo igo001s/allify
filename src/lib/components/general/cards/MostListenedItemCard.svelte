@@ -13,6 +13,7 @@
 	// Props
 	export let item: ArtistSpotify | TrackSpotify;
 	export let index: number;
+	export let itemType: 'artists' | 'tracks';
 </script>
 
 <div
@@ -31,9 +32,9 @@
 			src={item.image?.url}
 			alt={item.name}
 			class="h-full w-full rounded-lg object-cover shadow-md"
-			loading={index < 3 ? 'eager' : 'lazy'}
-			fetchpriority={index < 3 ? 'high' : 'low'}
-			decoding={index < 3 ? 'sync' : 'async'}
+			loading={index < 6 && itemType === 'artists' ? 'eager' : 'lazy'}
+			fetchpriority={index < 6 && itemType === 'artists' ? 'high' : 'low'}
+			decoding={index < 6 && itemType === 'artists' ? 'sync' : 'async'}
 		/>
 
 		<span
