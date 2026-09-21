@@ -229,8 +229,6 @@ export const zh = {
 			'探索你的音乐档案，发现你最常听的艺人和歌曲，查看你的收听统计，并连接你的流媒体平台，获取个性化的音乐洞察。',
 		myMusicalProfilePageHeading1: '这里是你最常听的所有音乐',
 		myMusicalProfilePageMostListenedArtistsHeading2: '你最常听的艺人',
-		myMusicalProfilePageMostListenedArtists: '最常听',
-		myMusicalProfilePageMostListenedTracks: '最常听',
 		myMusicalProfilePageMostListenedTracksHeading2: '你最常听的歌曲',
 		myMusicalProfilePageButtonUpdate: '更新',
 		myMusicalProfilePageNextFreeUpdate: '距离下一次免费更新还有',
@@ -255,7 +253,6 @@ export const zh = {
 		myMusicalProfilePageFiftySongsReached:
 			'你已达到 50 首歌曲的上限。现在你可以更新并查看新歌曲何时进入你的前 50 名。',
 		myMusicalProfilePageShowMoreFiveTracksButton: '显示 +5 首歌曲',
-		myMusicalProfilePageCrownIconAriaLabel: '皇冠图标',
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最常听的艺人已成功更新！',
 		myMusicalProfilePageUpdateArtistsErrorToast: '最常听的艺人更新时出错。',
 		myMusicalProfilePageUpdateTracksSuccessToast: '最常听的歌曲已成功更新！',

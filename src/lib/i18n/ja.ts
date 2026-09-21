@@ -244,8 +244,6 @@ export const ja = {
 			'あなたの音楽プロフィールを探索し、最もよく聴いているアーティストや楽曲を見つけたり、再生統計を確認したり、ストリーミングサービスを連携してパーソナライズされたインサイトを取得しましょう。',
 		myMusicalProfilePageHeading1: 'あなたが最も聴いているすべての音楽',
 		myMusicalProfilePageMostListenedArtistsHeading2: '最もよく聴いているアーティスト',
-		myMusicalProfilePageMostListenedArtists: '最もよく聴いた',
-		myMusicalProfilePageMostListenedTracks: '最もよく聴いた',
 		myMusicalProfilePageMostListenedTracksHeading2: '最もよく聴いている楽曲',
 		myMusicalProfilePageButtonUpdate: '更新',
 		myMusicalProfilePageNextFreeUpdate: '次回の無料更新まで',
@@ -274,7 +272,6 @@ export const ja = {
 		myMusicalProfilePageFiftySongsReached:
 			'50曲の上限に達しました。新しい曲がトップ50に入ったときに、更新して確認できます。',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5曲を表示',
-		myMusicalProfilePageCrownIconAriaLabel: '王冠アイコン',
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最もよく聴いているアーティストを更新しました！',
 		myMusicalProfilePageUpdateArtistsErrorToast:
 			'最もよく聴いているアーティストの更新中にエラーが発生しました。',

@@ -246,8 +246,6 @@ export const ru = {
 			'Исследуйте свой музыкальный профиль, узнавайте своих самых прослушиваемых исполнителей и треки, отслеживайте статистику прослушиваний и подключайте стриминговые платформы для получения персонализированной информации.',
 		myMusicalProfilePageHeading1: 'Вот всё, что вы слушали чаще всего',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Ваши самые прослушиваемые исполнители',
-		myMusicalProfilePageMostListenedArtists: 'Самый прослушиваемый',
-		myMusicalProfilePageMostListenedTracks: 'Самый прослушиваемый',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Ваши самые прослушиваемые треки',
 		myMusicalProfilePageButtonUpdate: 'Обновить',
 		myMusicalProfilePageNextFreeUpdate: 'Следующее бесплатное обновление через',
@@ -277,7 +275,6 @@ export const ru = {
 		myMusicalProfilePageFiftySongsReached:
 			'Вы достигли лимита в 50 треков. Теперь вы можете обновить и проверить, когда новые треки попадут в ваш Топ-50.',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Показать ещё +5 треков',
-		myMusicalProfilePageCrownIconAriaLabel: 'Иконка короны',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Самые прослушиваемые исполнители успешно обновлены!',
 		myMusicalProfilePageUpdateArtistsErrorToast:

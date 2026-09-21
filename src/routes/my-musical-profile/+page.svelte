@@ -3,8 +3,7 @@
 	import { page } from '$app/stores';
 
 	// Components
-	import MostListenedArtistsItems from '$lib/components/my-musical-profile/most-listened-artists/MostListenedArtistsItems.svelte';
-	import MostListenedTracksItems from '$lib/components/my-musical-profile/most-listened-tracks/MostListenedTracksItems.svelte';
+	import MostListenedItems from '$lib/components/my-musical-profile/MostListenedItems.svelte';
 	import NotLogged from '$lib/components/general/NotLogged.svelte';
 	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
 
@@ -74,9 +73,17 @@
 		<div class="space-y-20 lg:space-y-32">
 			{#each itemsType as type}
 				{#if type === 'artists'}
-					<MostListenedArtistsItems />
+					<MostListenedItems
+						items={$userInfo?.connectedStreamings.spotify?.mostListenedArtists
+							?.mostListenedArtistsItems ?? []}
+						sessionType="artists"
+					/>
 				{:else if type === 'tracks'}
-					<MostListenedTracksItems />
+					<MostListenedItems
+						items={$userInfo?.connectedStreamings.spotify?.mostListenedTracks
+							?.mostListenedTracksItems ?? []}
+						sessionType="tracks"
+					/>
 				{/if}
 			{/each}
 		</div>

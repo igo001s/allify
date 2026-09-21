@@ -14,9 +14,21 @@
 	import { updateMostListenedTracks } from '$lib/services/user/updates/updateMostListenedTracks';
 
 	// Props
-	export let nextFreeUpdate: Date | undefined;
 	export let sessionType: 'artists' | 'tracks';
-	export let itemLimit: number;
+
+	// Reactive values
+	$: artists = $userInfo?.connectedStreamings.spotify?.mostListenedArtists;
+	$: tracks = $userInfo?.connectedStreamings.spotify?.mostListenedTracks;
+	$: shouldShowArtistsNextFreeUpdateInfo = (artists?.artistsLimit ?? 0) >= 50;
+	$: shouldShowTracksNextFreeUpdateInfo = (tracks?.tracksLimit ?? 0) >= 50;
+	$: shouldShowArtistsNextFreeUpdateDate =
+		shouldShowArtistsNextFreeUpdateInfo &&
+		artists?.nextFreeUpdate !== undefined &&
+		new Date(artists.nextFreeUpdate) > new Date();
+	$: shouldShowTracksNextFreeUpdateDate =
+		shouldShowTracksNextFreeUpdateInfo &&
+		tracks?.nextFreeUpdate !== undefined &&
+		new Date(tracks.nextFreeUpdate) > new Date();
 
 	let loadingUpdateItem = false;
 
@@ -24,18 +36,20 @@
 		loadingUpdateItem = true;
 
 		if (sessionType === 'artists') {
-			if ($userInfo?._id && itemLimit) {
+			if ($userInfo?._id && artists?.artistsLimit) {
 				const updateMostListenedArtistsResponse = await updateMostListenedArtists(
-					$userInfo?._id,
-					itemLimit,
-					$userInfo?.tickets,
-					$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems,
-					nextFreeUpdate
+					$userInfo._id,
+					artists.artistsLimit,
+					$userInfo.tickets,
+					artists.mostListenedArtistsItems,
+					artists.nextFreeUpdate
 				);
 
 				if (!updateMostListenedArtistsResponse.error) {
 					userInfo.update((currentUser) => {
-						if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
+						if (!currentUser || !currentUser.connectedStreamings.spotify) {
+							return currentUser;
+						}
 
 						return {
 							...currentUser,
@@ -64,7 +78,10 @@
 							$translationsStore.myMusicalProfilePage.myMusicalProfilePageUpdateArtistsSuccessToast
 					});
 				} else {
-					if (updateMostListenedArtistsResponse.errorType === 'ticketUsageFailed') return;
+					if (updateMostListenedArtistsResponse.errorType === 'ticketUsageFailed') {
+						loadingUpdateItem = false;
+						return;
+					}
 
 					toastStore.set({
 						showToast: true,
@@ -74,19 +91,21 @@
 					});
 				}
 			}
-		} else if (sessionType === 'tracks') {
-			if ($userInfo?._id && itemLimit) {
+		} else {
+			if ($userInfo?._id && tracks?.tracksLimit) {
 				const updateMostListenedTracksResponse = await updateMostListenedTracks(
-					$userInfo?._id,
-					itemLimit,
-					$userInfo?.tickets,
-					$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems,
-					nextFreeUpdate
+					$userInfo._id,
+					tracks.tracksLimit,
+					$userInfo.tickets,
+					tracks.mostListenedTracksItems,
+					tracks.nextFreeUpdate
 				);
 
 				if (!updateMostListenedTracksResponse.error) {
 					userInfo.update((currentUser) => {
-						if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
+						if (!currentUser || !currentUser.connectedStreamings.spotify) {
+							return currentUser;
+						}
 
 						return {
 							...currentUser,
@@ -115,7 +134,10 @@
 							$translationsStore.myMusicalProfilePage.myMusicalProfilePageUpdateTracksSuccessToast
 					});
 				} else {
-					if (updateMostListenedTracksResponse.errorType === 'ticketUsageFailed') return;
+					if (updateMostListenedTracksResponse.errorType === 'ticketUsageFailed') {
+						loadingUpdateItem = false;
+						return;
+					}
 
 					toastStore.set({
 						showToast: true,
@@ -128,52 +150,44 @@
 		}
 
 		loadingUpdateItem = false;
-
-		return;
 	}
 </script>
 
 <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
 	<span class="flex flex-col gap-1 text-xs text-t-secondary sm:gap-2 md:flex-row">
-		{#if itemLimit >= 50}
-			{#if sessionType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate}
-				{#if new Date($userInfo.connectedStreamings.spotify.mostListenedTracks.nextFreeUpdate) > new Date() && itemLimit >= 50}
-					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdate}
+		{#if sessionType === 'tracks' && shouldShowTracksNextFreeUpdateInfo}
+			{#if shouldShowTracksNextFreeUpdateDate && tracks?.nextFreeUpdate}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdate}
 
-					<strong class="font-medium text-t-primary">
-						{new Date(
-							$userInfo.connectedStreamings.spotify.mostListenedTracks.nextFreeUpdate
-						).toLocaleString($translationsStore.locale, {
-							dateStyle: 'short',
-							timeStyle: 'short'
-						})}
-					</strong>
-				{:else}
-					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdateAvailable}
-				{/if}
+				<strong class="font-medium text-t-primary">
+					{new Date(tracks.nextFreeUpdate).toLocaleString($translationsStore.locale, {
+						dateStyle: 'short',
+						timeStyle: 'short'
+					})}
+				</strong>
+			{:else}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdateAvailable}
 			{/if}
+		{/if}
 
-			{#if sessionType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate}
-				{#if new Date($userInfo.connectedStreamings.spotify.mostListenedArtists.nextFreeUpdate) > new Date()}
-					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdate}
+		{#if sessionType === 'artists' && shouldShowArtistsNextFreeUpdateInfo}
+			{#if shouldShowArtistsNextFreeUpdateDate && artists?.nextFreeUpdate}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdate}
 
-					<strong class="font-medium text-t-primary">
-						{new Date(
-							$userInfo.connectedStreamings.spotify.mostListenedArtists.nextFreeUpdate
-						).toLocaleString($translationsStore.locale, {
-							dateStyle: 'short',
-							timeStyle: 'short'
-						})}
-					</strong>
-				{:else}
-					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdateAvailable}
-				{/if}
+				<strong class="font-medium text-t-primary">
+					{new Date(artists.nextFreeUpdate).toLocaleString($translationsStore.locale, {
+						dateStyle: 'short',
+						timeStyle: 'short'
+					})}
+				</strong>
+			{:else}
+				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageNextFreeUpdateAvailable}
 			{/if}
 		{/if}
 	</span>
 
 	<div class="flex gap-3">
-		{#if itemLimit >= 50}
+		{#if (sessionType === 'tracks' && shouldShowTracksNextFreeUpdateInfo) || (sessionType === 'artists' && shouldShowArtistsNextFreeUpdateInfo)}
 			<button
 				on:click={handleUpdateClick}
 				disabled={loadingUpdateItem}

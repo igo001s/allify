@@ -1,7 +1,6 @@
 <script lang="ts">
 	// Components
-	import MusicArchiveArtistItem from './MusicArchiveArtistItem.svelte';
-	import MusicArchiveTrackItem from './MusicArchiveTrackItem.svelte';
+	import MusicArchiveCard from '$lib/components/general/cards/MusicArchiveCard.svelte';
 
 	// Types
 	import type { ArtistSpotify } from '$lib/types/Spotify.type';
@@ -26,9 +25,9 @@
 		{#if items?.length}
 			{#each items as item}
 				{#if itemType === 'track' && 'track' in item}
-					<MusicArchiveTrackItem track={item.track} />
+					<MusicArchiveCard item={item.track} />
 				{:else if itemType === 'artist' && 'artist' in item}
-					<MusicArchiveArtistItem artist={item.artist} />
+					<MusicArchiveCard item={item.artist} />
 				{/if}
 			{/each}
 		{:else}

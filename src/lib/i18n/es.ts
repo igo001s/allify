@@ -246,8 +246,6 @@ export const es = {
 			'Explora tu perfil musical, descubre tus artistas y canciones más escuchados, consulta tus estadísticas de escucha y conecta tus plataformas de streaming para obtener información personalizada.',
 		myMusicalProfilePageHeading1: 'Aquí tienes todo lo que más has escuchado',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Tus artistas más escuchados',
-		myMusicalProfilePageMostListenedArtists: 'Más escuchado',
-		myMusicalProfilePageMostListenedTracks: 'Más escuchada',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Tus canciones más escuchadas',
 		myMusicalProfilePageButtonUpdate: 'Actualizar',
 		myMusicalProfilePageNextFreeUpdate: 'Próxima actualización gratuita en',
@@ -277,7 +275,6 @@ export const es = {
 		myMusicalProfilePageFiftySongsReached:
 			'Has alcanzado el límite de 50 elementos. Ahora puedes actualizar y comprobar cuándo nuevas canciones entran en tu Top 50.',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Mostrar +5 canciones',
-		myMusicalProfilePageCrownIconAriaLabel: 'Icono de corona',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'¡Artistas más escuchados actualizados correctamente!',
 		myMusicalProfilePageUpdateArtistsErrorToast: 'Error al actualizar los artistas más escuchados.',

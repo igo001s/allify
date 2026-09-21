@@ -14,11 +14,23 @@
 	import { updateMostListenedTracksNewLimit } from '$lib/services/user/updates/updateMostListenedTracksNewLimit';
 	import { updateMostListenedArtistsNewLimit } from '$lib/services/user/updates/updateMostListenedArtistsNewLimit';
 
-	// MongoDb
+	// MongoDB
 	import type { ObjectId } from 'mongodb';
 
 	// Props
 	export let additionalItemsType: 'artists' | 'tracks';
+
+	// Reactive values
+	$: artists = $userInfo?.connectedStreamings.spotify?.mostListenedArtists;
+	$: tracks = $userInfo?.connectedStreamings.spotify?.mostListenedTracks;
+	$: shouldUseArtistsTicket =
+		additionalItemsType === 'artists' &&
+		artists?.nextFreeUpdate !== undefined &&
+		new Date(artists.nextFreeUpdate) > new Date();
+	$: shouldUseTracksTicket =
+		additionalItemsType === 'tracks' &&
+		tracks?.nextFreeUpdate !== undefined &&
+		new Date(tracks.nextFreeUpdate) > new Date();
 
 	let loadingMoreItems = false;
 
@@ -26,34 +38,22 @@
 		loadingMoreItems = true;
 
 		const userId = $userInfo?._id as ObjectId;
-		const artistsLimit = $userInfo?.connectedStreamings.spotify?.mostListenedArtists
-			?.artistsLimit as number;
-		const tracksLimit = $userInfo?.connectedStreamings.spotify?.mostListenedTracks
-			?.tracksLimit as number;
 		const userTickets = $userInfo?.tickets as number;
 
 		if (additionalItemsType === 'artists') {
 			const updateMostListenedArtistsNewLimitResponse = await updateMostListenedArtistsNewLimit(
 				userId,
-				artistsLimit,
+				artists?.artistsLimit as number,
 				userTickets,
-				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems,
-				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate
+				artists?.mostListenedArtistsItems,
+				artists?.nextFreeUpdate
 			);
 
 			if (!updateMostListenedArtistsNewLimitResponse.error) {
-				toastStore.set({
-					showToast: true,
-					toastType: 'success',
-					toastMessage:
-						$translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageUpdateMostListenedArtistsSuccessToast
-				});
-
-				loadingMoreItems = false;
-
 				userInfo.update((currentUser) => {
-					if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
+					if (!currentUser || !currentUser.connectedStreamings.spotify) {
+						return currentUser;
+					}
 
 					return {
 						...currentUser,
@@ -73,43 +73,50 @@
 						}
 					};
 				});
-			} else {
-				if (updateMostListenedArtistsNewLimitResponse.errorType === 'ticketUsageFailed') {
-					toastStore.set({
-						showToast: true,
-						toastType: 'error',
-						toastMessage:
-							$translationsStore.myMusicalProfilePage
-								.myMusicalProfilePageUpdateMostListenedArtistsErrorToast
-					});
 
-					loadingMoreItems = false;
-
-					return;
-				}
-			}
-		} else if (additionalItemsType === 'tracks') {
-			const updateMostListenedTracksNewLimitResponse = await updateMostListenedTracksNewLimit(
-				userId,
-				tracksLimit,
-				userTickets,
-				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems,
-				$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate
-			);
-
-			if (!updateMostListenedTracksNewLimitResponse.error) {
 				toastStore.set({
 					showToast: true,
 					toastType: 'success',
 					toastMessage:
 						$translationsStore.myMusicalProfilePage
-							.myMusicalProfilePageUpdateMostListenedTracksSuccessToast
+							.myMusicalProfilePageUpdateMostListenedArtistsSuccessToast
 				});
 
 				loadingMoreItems = false;
+				return;
+			}
 
+			if (updateMostListenedArtistsNewLimitResponse.errorType === 'ticketUsageFailed') {
+				loadingMoreItems = false;
+				return;
+			}
+
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage:
+					$translationsStore.myMusicalProfilePage
+						.myMusicalProfilePageUpdateMostListenedArtistsErrorToast
+			});
+
+			loadingMoreItems = false;
+			return;
+		}
+
+		if (additionalItemsType === 'tracks') {
+			const updateMostListenedTracksNewLimitResponse = await updateMostListenedTracksNewLimit(
+				userId,
+				tracks?.tracksLimit as number,
+				userTickets,
+				tracks?.mostListenedTracksItems,
+				tracks?.nextFreeUpdate
+			);
+
+			if (!updateMostListenedTracksNewLimitResponse.error) {
 				userInfo.update((currentUser) => {
-					if (!currentUser || !currentUser.connectedStreamings.spotify) return currentUser;
+					if (!currentUser || !currentUser.connectedStreamings.spotify) {
+						return currentUser;
+					}
 
 					return {
 						...currentUser,
@@ -128,22 +135,37 @@
 						}
 					};
 				});
-			} else {
-				if (updateMostListenedTracksNewLimitResponse.errorType === 'ticketUsageFailed') {
-					toastStore.set({
-						showToast: true,
-						toastType: 'error',
-						toastMessage:
-							$translationsStore.myMusicalProfilePage
-								.myMusicalProfilePageUpdateMostListenedTracksErrorToast
-					});
 
-					loadingMoreItems = false;
+				toastStore.set({
+					showToast: true,
+					toastType: 'success',
+					toastMessage:
+						$translationsStore.myMusicalProfilePage
+							.myMusicalProfilePageUpdateMostListenedTracksSuccessToast
+				});
 
-					return;
-				}
+				loadingMoreItems = false;
+				return;
 			}
+
+			if (updateMostListenedTracksNewLimitResponse.errorType === 'ticketUsageFailed') {
+				loadingMoreItems = false;
+				return;
+			}
+
+			toastStore.set({
+				showToast: true,
+				toastType: 'error',
+				toastMessage:
+					$translationsStore.myMusicalProfilePage
+						.myMusicalProfilePageUpdateMostListenedTracksErrorToast
+			});
+
+			loadingMoreItems = false;
+			return;
 		}
+
+		loadingMoreItems = false;
 	}
 </script>
 
@@ -162,11 +184,7 @@
 				{/if}
 			</span>
 
-			{#if additionalItemsType === 'artists' && $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate) > new Date()}
-				<Ticket usingTicket={true} />
-			{/if}
-
-			{#if additionalItemsType === 'tracks' && $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate && new Date($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate) > new Date()}
+			{#if shouldUseArtistsTicket || shouldUseTracksTicket}
 				<Ticket usingTicket={true} />
 			{/if}
 		</div>

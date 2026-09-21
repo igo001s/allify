@@ -244,8 +244,6 @@ export const en = {
 			'Explore your musical profile, discover your most-listened-to artists and tracks, track your listening statistics, and connect your streaming platforms for personalized insights.',
 		myMusicalProfilePageHeading1: 'Here’s everything you’ve listened to the most',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Your most-listened-to artists',
-		myMusicalProfilePageMostListenedArtists: 'Most listened to',
-		myMusicalProfilePageMostListenedTracks: 'Most listened to',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Your most-listened-to tracks',
 		myMusicalProfilePageButtonUpdate: 'Update',
 		myMusicalProfilePageNextFreeUpdate: 'Next free update in',
@@ -275,7 +273,6 @@ export const en = {
 		myMusicalProfilePageFiftySongsReached:
 			'You have reached the limit of 50 items. Now you can update and check when new songs enter your Top 50.',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Show +5 tracks',
-		myMusicalProfilePageCrownIconAriaLabel: 'Crown icon',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Most-listened-to artists updated successfully!',
 		myMusicalProfilePageUpdateArtistsErrorToast: 'Error updating most-listened-to artists.',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Most-listened-to tracks updated successfully!',
