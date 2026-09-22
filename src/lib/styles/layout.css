@@ -1,43 +1,144 @@
 .header-spacing {
-	@apply p-5 md:p-10 xl:px-16 xl:py-12;
+	padding: 1.25rem;
 }
 
 .base-spacing {
-	@apply px-5 pt-5 pb-14 md:px-10 md:pt-10 md:pb-16 xl:px-16 xl:pt-10 xl:pb-24;
+	padding-right: 1.25rem;
+	padding-top: 1.25rem;
+	padding-bottom: 3.5rem;
+	padding-left: 1.25rem;
 }
 
 .base-section-spacing {
-	@apply space-y-4;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
 
-	> div {
-		@apply mt-8 lg:mt-14;
-	}
+.base-section-spacing > div {
+	margin-top: 2rem;
 }
 
 .footer-spacing {
-	@apply px-5 pt-8 pb-5 md:p-10 xl:px-16 xl:pt-16 xl:pb-10;
+	padding-right: 1.25rem;
+	padding-top: 2rem;
+	padding-bottom: 1.25rem;
+	padding-left: 1.25rem;
 }
 
 .feedback-spacing {
-	@apply flex flex-col items-center justify-center p-7 text-center md:p-10 xl:py-24;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1.75rem;
+	text-align: center;
 }
 
 .legal-pages-spacing {
-	@apply space-y-10 lg:space-y-14;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
 
-	div {
-		@apply space-y-4.5 lg:space-y-6.5;
+.legal-pages-spacing div {
+	display: flex;
+	flex-direction: column;
+	gap: 1.125rem;
+}
+
+.legal-pages-spacing p {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+.legal-pages-spacing time {
+	display: block;
+	font-weight: 500;
+}
+
+.legal-pages-spacing ul {
+	margin-bottom: 1.625rem;
+	padding-left: 1rem;
+	list-style-type: disc;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	font-weight: 500;
+}
+
+@media (min-width: 768px) {
+	.header-spacing {
+		padding: 2.5rem;
 	}
 
-	p {
-		@apply text-sm lg:text-base;
+	.base-spacing {
+		padding-right: 2.5rem;
+		padding-top: 2.5rem;
+		padding-bottom: 4rem;
+		padding-left: 2.5rem;
 	}
 
-	time {
-		@apply block font-medium;
+	.footer-spacing {
+		padding: 2.5rem;
 	}
 
-	ul {
-		@apply mb-6.5 list-disc space-y-4 pl-4 text-xs font-medium lg:mb-8.5 lg:text-sm;
+	.feedback-spacing {
+		padding: 2.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.base-section-spacing > div {
+		margin-top: 3.5rem;
+	}
+
+	.legal-pages-spacing {
+		gap: 3.5rem;
+	}
+
+	.legal-pages-spacing div {
+		gap: 1.625rem;
+	}
+
+	.legal-pages-spacing p {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	.legal-pages-spacing ul {
+		margin-bottom: 2.125rem;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.header-spacing {
+		padding-top: 3rem;
+		padding-right: 4rem;
+		padding-bottom: 3rem;
+		padding-left: 4rem;
+	}
+
+	.base-spacing {
+		padding-right: 4rem;
+		padding-top: 2.5rem;
+		padding-bottom: 6rem;
+		padding-left: 4rem;
+	}
+
+	.footer-spacing {
+		padding-right: 4rem;
+		padding-top: 4rem;
+		padding-bottom: 2.5rem;
+		padding-left: 4rem;
+	}
+
+	.feedback-spacing {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
 	}
 }

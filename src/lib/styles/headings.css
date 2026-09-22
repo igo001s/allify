@@ -1,55 +1,153 @@
 .heading-1 {
-	@apply text-2xl font-medium text-t-primary sm:text-3xl;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 500;
+	color: var(--color-t-primary);
 }
 
 .heading-1-hero {
-	@apply text-center text-3xl text-t-primary xl:text-left xl:text-5xl;
+	text-align: center;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	color: var(--color-t-primary);
 }
 
 .heading-2 {
-	@apply text-xl font-medium text-t-primary sm:text-2xl;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 500;
+	color: var(--color-t-primary);
 }
 
 .heading-2-connected-platforms {
-	@apply text-center text-3xl lg:text-5xl;
+	text-align: center;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
 }
 
 .heading-2-musical-items {
-	@apply text-center text-3xl text-t-primary lg:text-5xl;
+	text-align: center;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	color: var(--color-t-primary);
 }
 
 .heading-2-legal-pages {
-	@apply text-xl font-medium text-t-primary sm:text-2xl;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 500;
+	color: var(--color-t-primary);
 }
 
 .heading-2-faq {
-	@apply text-center text-3xl text-t-primary lg:text-5xl;
+	text-align: center;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	color: var(--color-t-primary);
 }
 
 .heading-2-music-archive {
-	@apply text-xl font-medium text-t-primary sm:text-2xl;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 500;
+	color: var(--color-t-primary);
 }
 
 .heading-3 {
-	@apply text-sm font-medium text-t-secondary;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	color: var(--color-t-secondary);
 }
 
 .heading-3-platform-card {
-	@apply text-lg font-semibold lg:text-xl;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 600;
 }
 
 .heading-3-musical-items {
-	@apply flex items-center gap-4 text-2xl font-semibold text-t-primary lg:text-3xl;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 600;
+	color: var(--color-t-primary);
 }
 
 .heading-3-legal-pages {
-	@apply text-lg font-medium text-t-primary sm:text-xl;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 500;
+	color: var(--color-t-primary);
 }
 
 .heading-3-faq {
-	@apply text-sm font-medium text-t-primary sm:text-xl;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	color: var(--color-t-primary);
 }
 
 .heading-4 {
-	@apply text-sm font-medium text-t-primary;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	color: var(--color-t-primary);
+}
+
+@media (min-width: 640px) {
+	.heading-1 {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+
+	.heading-2 {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.heading-2-legal-pages,
+	.heading-2-music-archive {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.heading-3-legal-pages {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+
+	.heading-3-faq {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.heading-2-connected-platforms,
+	.heading-2-musical-items,
+	.heading-2-faq {
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	.heading-3-platform-card {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+
+	.heading-3-musical-items {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.heading-1-hero {
+		text-align: left;
+		font-size: 3rem;
+		line-height: 1;
+	}
 }
