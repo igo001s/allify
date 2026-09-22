@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class={`flex flex-col gap-3 rounded-lg p-7.5 ring-2 sm:flex-row sm:items-center sm:gap-4 sm:p-5 ${
+	class={`flex flex-col gap-3 rounded-lg p-6.5 ring-2 sm:flex-row sm:items-center sm:gap-4 sm:p-5 ${
 		index === 0
 			? 'ring-top-1'
 			: index === 1
@@ -27,7 +27,7 @@
 					: 'ring-black/10'
 	}`}
 >
-	<div class="relative mx-auto h-32 w-32 shrink-0 sm:h-48 sm:w-48 2xl:h-52 2xl:w-52">
+	<div class="relative mx-auto h-32 w-32 shrink-0 sm:h-48 sm:w-48">
 		<enhanced:img
 			src={item.image?.url}
 			alt={item.name}
