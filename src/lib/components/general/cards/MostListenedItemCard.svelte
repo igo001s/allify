@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class={`flex flex-col gap-3 rounded-lg p-4 ring-2 sm:flex-row sm:items-center sm:gap-4 sm:p-5 ${
+	class={`flex flex-col gap-3 rounded-lg p-7.5 ring-2 sm:flex-row sm:items-center sm:gap-4 sm:p-5 ${
 		index === 0
 			? 'ring-top-1'
 			: index === 1
@@ -96,7 +96,7 @@
 			{/if}
 		</div>
 
-		<div class="flex w-full flex-col gap-2">
+		<div class="mx-auto mt-3 flex w-11/12 flex-col gap-2 sm:mx-0 sm:mt-0 sm:w-full">
 			<Popularity {item} />
 
 			<ExternalLink
