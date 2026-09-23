@@ -4,6 +4,9 @@
 	import ShareIcon from '$lib/assets/images/icons/ShareIcon.svelte';
 	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
 
+	// Components
+	import TicketLabel from '$lib/components/general/TicketLabel.svelte';
+
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -191,20 +194,25 @@
 			<button
 				on:click={handleUpdateClick}
 				disabled={loadingUpdateItem}
-				class="button-outline button-outline-active button-outline-active-hover group gap-1.5 px-4 py-2.5"
+				class="button-outline button-outline-active button-outline-active-hover group relative h-11 w-40 gap-1.5"
 			>
 				{#if loadingUpdateItem}
 					<DotsLoading dotsTheme="base-primary" animationClass="h-1 w-1" />
 				{:else}
 					<ReloadIcon iconSvgClass="h-4 w-4 text-brand-primary group-hover:rotate-90" />
-
 					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageButtonUpdate}
+
+					{#if sessionType === 'artists' && shouldShowArtistsNextFreeUpdateDate}
+						<TicketLabel />
+					{:else if sessionType === 'tracks' && shouldShowTracksNextFreeUpdateDate}
+						<TicketLabel />
+					{/if}
 				{/if}
 			</button>
 		{/if}
 
 		<button
-			class="button-outline button-outline-active button-outline-active-hover group gap-1.5 px-4 py-2.5"
+			class="button-outline button-outline-active button-outline-active-hover group relative h-11 w-40 gap-1.5"
 		>
 			<ShareIcon iconSvgClass="h-4 w-4 text-brand-primary" />
 

@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex w-full items-center justify-between gap-2">
-	<span class="w-fit text-t-secondary text-[11px]">
+	<span class="w-fit text-[11px] text-t-secondary">
 		{$translationsStore.generalTexts.popularity}
 	</span>
 
@@ -15,7 +15,7 @@
 		<div class="h-full bg-brand-primary" style="width: {item?.popularity || 0}%"></div>
 	</div>
 
-	<span class="w-fit font-medium text-t-primary text-[11px]">
+	<span class="w-fit text-[11px] font-medium text-t-primary">
 		{item?.popularity}%
 	</span>
 </div>
