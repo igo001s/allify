@@ -11,16 +11,18 @@ export type UserInfoSpotify = {
 		| {
 				artistsLimit: number;
 				nextFreeUpdate: Date;
-				mostListenedArtistItem: ArtistSpotify;
-				mostListenedArtistsItems: ArtistSpotify[];
+				fourWeeks: ArtistSpotify[];
+				sixMonths: ArtistSpotify[];
+				oneYear: ArtistSpotify[];
 		  }
 		| undefined;
 	mostListenedTracks:
 		| {
 				tracksLimit: number;
 				nextFreeUpdate: Date;
-				mostListenedTrackItem: TrackSpotify;
-				mostListenedTracksItems: TrackSpotify[];
+				fourWeeks: TrackSpotify[];
+				sixMonths: TrackSpotify[];
+				oneYear: TrackSpotify[];
 		  }
 		| undefined;
 };

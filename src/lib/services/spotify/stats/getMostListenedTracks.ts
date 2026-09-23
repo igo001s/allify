@@ -8,8 +8,13 @@ import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
 import type { TrackSpotify } from '$lib/types/Spotify.type';
 
 export async function getMostListenedTracks(limit: number = 5) {
-	let mostListenedTrackItem: TrackSpotify;
-	let mostListenedTracksItems = [] as TrackSpotify[];
+	let mostListenedTracksItems = {
+		tracksLimit: limit,
+		nextFreeUpdate: nextFreeUpdateTime(),
+		fourWeeks: [] as TrackSpotify[],
+		sixMonths: [] as TrackSpotify[],
+		oneYear: [] as TrackSpotify[]
+	};
 
 	try {
 		const response = await fetch(`/api/spotify/stats/most-listened-tracks`, {
@@ -24,34 +29,43 @@ export async function getMostListenedTracks(limit: number = 5) {
 
 		const parsedResponse = await response.json();
 
-		mostListenedTrackItem = {
-			id: parsedResponse[0].id,
-			name: parsedResponse[0].name,
-			artists: parsedResponse[0].artists.map((artist: any) => artist.name),
-			popularity: parsedResponse[0].popularity,
-			albumName: parsedResponse[0].album.name,
-			image: parsedResponse[0].album.images[0],
-			externalLink: parsedResponse[0].external_urls.spotify
-		};
-
-		for (let i = 0; i < parsedResponse.length; i++) {
-			mostListenedTracksItems.push({
-				id: parsedResponse[i].id,
-				name: parsedResponse[i].name,
-				artists: parsedResponse[i].artists.map((artist: any) => artist.name),
-				popularity: parsedResponse[i].popularity,
-				albumName: parsedResponse[i].album.name,
-				image: parsedResponse[i].album.images[0],
-				externalLink: parsedResponse[i].external_urls.spotify
+		for (let i = 0; i < parsedResponse['long_term'].length; i++) {
+			mostListenedTracksItems.oneYear.push({
+				id: parsedResponse['long_term'][i].id,
+				name: parsedResponse['long_term'][i].name,
+				artists: parsedResponse['long_term'][i].artists.map((artist: any) => artist.name),
+				popularity: parsedResponse['long_term'][i].popularity,
+				albumName: parsedResponse['long_term'][i].album.name,
+				image: parsedResponse['long_term'][i].album.images[0],
+				externalLink: parsedResponse['long_term'][i].external_urls.spotify
 			});
 		}
 
-		return {
-			tracksLimit: limit,
-			nextFreeUpdate: nextFreeUpdateTime(),
-			mostListenedTrackItem,
-			mostListenedTracksItems
-		};
+		for (let i = 0; i < parsedResponse['medium_term'].length; i++) {
+			mostListenedTracksItems.sixMonths.push({
+				id: parsedResponse['medium_term'][i].id,
+				name: parsedResponse['medium_term'][i].name,
+				artists: parsedResponse['medium_term'][i].artists.map((artist: any) => artist.name),
+				popularity: parsedResponse['medium_term'][i].popularity,
+				albumName: parsedResponse['medium_term'][i].album.name,
+				image: parsedResponse['medium_term'][i].album.images[0],
+				externalLink: parsedResponse['medium_term'][i].external_urls.spotify
+			});
+		}
+
+		for (let i = 0; i < parsedResponse['short_term'].length; i++) {
+			mostListenedTracksItems.fourWeeks.push({
+				id: parsedResponse['short_term'][i].id,
+				name: parsedResponse['short_term'][i].name,
+				artists: parsedResponse['short_term'][i].artists.map((artist: any) => artist.name),
+				popularity: parsedResponse['short_term'][i].popularity,
+				albumName: parsedResponse['short_term'][i].album.name,
+				image: parsedResponse['short_term'][i].album.images[0],
+				externalLink: parsedResponse['short_term'][i].external_urls.spotify
+			});
+		}
+
+		return mostListenedTracksItems;
 	} catch (error) {
 		if (dev) {
 			console.error(

@@ -8,8 +8,13 @@ import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
 import type { ArtistSpotify } from '$lib/types/Spotify.type';
 
 export async function getMostListenedArtists(limit: number = 5) {
-	let mostListenedArtistItem: ArtistSpotify;
-	let mostListenedArtistsItems = [] as ArtistSpotify[];
+	let mostListenedArtistsItems = {
+		artistsLimit: limit,
+		nextFreeUpdate: nextFreeUpdateTime(),
+		fourWeeks: [] as ArtistSpotify[],
+		sixMonths: [] as ArtistSpotify[],
+		oneYear: [] as ArtistSpotify[]
+	};
 
 	try {
 		const response = await fetch(`/api/spotify/stats/most-listened-artists`, {
@@ -24,34 +29,43 @@ export async function getMostListenedArtists(limit: number = 5) {
 
 		const parsedResponse = await response.json();
 
-		mostListenedArtistItem = {
-			id: parsedResponse[0].id,
-			name: parsedResponse[0].name,
-			popularity: parsedResponse[0].popularity,
-			followers: parsedResponse[0].followers.total,
-			genres: parsedResponse[0].genres,
-			image: parsedResponse[0].images[0],
-			externalLink: parsedResponse[0].external_urls.spotify
-		};
-
-		for (let i = 0; i < parsedResponse.length; i++) {
-			mostListenedArtistsItems.push({
-				id: parsedResponse[i].id,
-				name: parsedResponse[i].name,
-				popularity: parsedResponse[i].popularity,
-				followers: parsedResponse[i].followers.total,
-				genres: parsedResponse[i].genres,
-				image: parsedResponse[i].images[0],
-				externalLink: parsedResponse[i].external_urls.spotify
+		for (let i = 0; i < parsedResponse['long_term'].length; i++) {
+			mostListenedArtistsItems.oneYear.push({
+				id: parsedResponse['long_term'][i].id,
+				name: parsedResponse['long_term'][i].name,
+				popularity: parsedResponse['long_term'][i].popularity,
+				followers: parsedResponse['long_term'][i].followers.total,
+				genres: parsedResponse['long_term'][i].genres,
+				image: parsedResponse['long_term'][i].images[0],
+				externalLink: parsedResponse['long_term'][i].external_urls.spotify
 			});
 		}
 
-		return {
-			artistsLimit: limit,
-			nextFreeUpdate: nextFreeUpdateTime(),
-			mostListenedArtistItem,
-			mostListenedArtistsItems
-		};
+		for (let i = 0; i < parsedResponse['medium_term'].length; i++) {
+			mostListenedArtistsItems.sixMonths.push({
+				id: parsedResponse['long_term'][i].id,
+				name: parsedResponse['long_term'][i].name,
+				popularity: parsedResponse['long_term'][i].popularity,
+				followers: parsedResponse['long_term'][i].followers.total,
+				genres: parsedResponse['long_term'][i].genres,
+				image: parsedResponse['long_term'][i].images[0],
+				externalLink: parsedResponse['long_term'][i].external_urls.spotify
+			});
+		}
+
+		for (let i = 0; i < parsedResponse['short_term'].length; i++) {
+			mostListenedArtistsItems.fourWeeks.push({
+				id: parsedResponse['long_term'][i].id,
+				name: parsedResponse['long_term'][i].name,
+				popularity: parsedResponse['long_term'][i].popularity,
+				followers: parsedResponse['long_term'][i].followers.total,
+				genres: parsedResponse['long_term'][i].genres,
+				image: parsedResponse['long_term'][i].images[0],
+				externalLink: parsedResponse['long_term'][i].external_urls.spotify
+			});
+		}
+
+		return mostListenedArtistsItems;
 	} catch (error) {
 		if (dev) {
 			console.error(

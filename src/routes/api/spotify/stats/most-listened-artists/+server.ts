@@ -26,26 +26,32 @@ export const POST: RequestHandler = async ({ request, cookies }) => {
 			});
 		}
 
-		const mostListenedArtistsResponse = await fetch(
-			`https://api.spotify.com/v1/me/top/artists?offset=0&limit=${limit}`,
-			{
-				method: 'GET',
-				headers: {
-					Authorization: `Bearer ${token}`
-				}
-			}
-		);
+		let parsedMostListenedArtistsResponses: Record<string, any[]> = {};
 
-		if (!mostListenedArtistsResponse.ok) {
-			return new Response(
-				JSON.stringify({ error: 'Failed to fetch Spotify data - most listened artists' }),
-				{ status: mostListenedArtistsResponse.status }
+		for (const timeRange of ['short_term', 'medium_term', 'long_term']) {
+			const response = await fetch(
+				`https://api.spotify.com/v1/me/top/artists?offset=0&limit=${limit}&time_range=${timeRange}`,
+				{
+					method: 'GET',
+					headers: {
+						Authorization: `Bearer ${token}`
+					}
+				}
 			);
+
+			if (!response.ok) {
+				return new Response(
+					JSON.stringify({ error: 'Failed to fetch Spotify data - most listened artists' }),
+					{ status: response.status }
+				);
+			}
+
+			const parsedMostListenedArtistsResponse = await response.json();
+
+			parsedMostListenedArtistsResponses[timeRange] = parsedMostListenedArtistsResponse.items;
 		}
 
-		const parsedMostListenedArtistsResponse = await mostListenedArtistsResponse.json();
-
-		return new Response(JSON.stringify(parsedMostListenedArtistsResponse.items), { status: 200 });
+		return new Response(JSON.stringify(parsedMostListenedArtistsResponses), { status: 200 });
 	} catch (error) {
 		return new Response(JSON.stringify({ error }), {
 			status: 500
