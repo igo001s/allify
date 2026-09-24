@@ -7,26 +7,26 @@ export type UserInfoSpotify = {
 	image: AvatarImage;
 	followers: number;
 	profileLink: string;
-	mostListenedArtists:
-		| {
-				artistsLimit: number;
-				nextFreeUpdate: Date;
-				fourWeeks: ArtistSpotify[];
-				sixMonths: ArtistSpotify[];
-				oneYear: ArtistSpotify[];
-				uniqueArtists: ArtistSpotify[];
-		  }
-		| undefined;
-	mostListenedTracks:
-		| {
-				tracksLimit: number;
-				nextFreeUpdate: Date;
-				fourWeeks: TrackSpotify[];
-				sixMonths: TrackSpotify[];
-				oneYear: TrackSpotify[];
-				uniqueTracks: TrackSpotify[];
-		  }
-		| undefined;
+	mostListenedArtists: ArtistsSpotify | undefined;
+	mostListenedTracks: TracksSpotify | undefined;
+};
+
+export type ArtistsSpotify = {
+	artistsLimit: number;
+	nextFreeUpdate: Date;
+	fourWeeks: ArtistSpotify[];
+	sixMonths: ArtistSpotify[];
+	oneYear: ArtistSpotify[];
+	uniqueArtists: ArtistSpotify[];
+};
+
+export type TracksSpotify = {
+	tracksLimit: number;
+	nextFreeUpdate: Date;
+	fourWeeks: TrackSpotify[];
+	sixMonths: TrackSpotify[];
+	oneYear: TrackSpotify[];
+	uniqueTracks: TrackSpotify[];
 };
 
 export type ArtistSpotify = {

@@ -27,14 +27,16 @@ export const POST: RequestHandler = async ({ request }) => {
 	const {
 		id,
 		limit,
-		mostListenedTrack,
-		mostListenedTracks,
+		fourWeeks,
+		sixMonths,
+		oneYear,
+		uniqueTracks,
 		tracksWhoWereWithYou,
 		freeUpdateIsAvailable,
 		nextFreeUpdate
 	} = await request.json();
 
-	if (!id || !limit || !mostListenedTrack || !mostListenedTracks) {
+	if (!id || !limit || !fourWeeks || !sixMonths || !oneYear || !uniqueTracks) {
 		return new Response(JSON.stringify({ error: 'Missing required fields' }), {
 			status: 400
 		});
@@ -50,9 +52,10 @@ export const POST: RequestHandler = async ({ request }) => {
 			{
 				$set: {
 					'connectedStreamings.spotify.mostListenedTracks.tracksLimit': limit,
-					'connectedStreamings.spotify.mostListenedTracks.mostListenedTrackItem': mostListenedTrack,
-					'connectedStreamings.spotify.mostListenedTracks.mostListenedTracksItems':
-						mostListenedTracks,
+					'connectedStreamings.spotify.mostListenedTracks.fourWeeks': fourWeeks,
+					'connectedStreamings.spotify.mostListenedTracks.sixMonths': sixMonths,
+					'connectedStreamings.spotify.mostListenedTracks.oneYear': oneYear,
+					'connectedStreamings.spotify.mostListenedTracks.uniqueTracks': uniqueTracks,
 					'connectedStreamings.spotify.mostListenedTracks.nextFreeUpdate': freeUpdateIsAvailable
 						? nextFreeUpdateTime()
 						: nextFreeUpdate,
@@ -64,8 +67,10 @@ export const POST: RequestHandler = async ({ request }) => {
 		return new Response(
 			JSON.stringify({
 				limit,
-				mostListenedTrack,
-				mostListenedTracks,
+				fourWeeks,
+				sixMonths,
+				oneYear,
+				uniqueTracks,
 				tracksWhoWereWithYou,
 				nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
 			}),

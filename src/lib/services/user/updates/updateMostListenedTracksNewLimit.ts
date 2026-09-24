@@ -7,7 +7,7 @@ import { returnTicket } from '$lib/services/user/tickets/returnTicket';
 import { getMostListenedTracks } from '$lib/services/spotify/stats/getMostListenedTracks';
 
 // Types
-import type { TrackSpotify } from '$lib/types/Spotify.type';
+import type { TracksSpotify } from '$lib/types/Spotify.type';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
@@ -16,7 +16,7 @@ export async function updateMostListenedTracksNewLimit(
 	id: ObjectId,
 	limit: number,
 	tickets?: number,
-	currentMostListenedTracks?: TrackSpotify[],
+	currentMostListenedTracks?: TracksSpotify,
 	nextFreeUpdate?: Date
 ) {
 	try {
@@ -47,14 +47,12 @@ export async function updateMostListenedTracksNewLimit(
 			throw new Error('Failed to get most listened tracks');
 		}
 
-		const { tracksLimit, mostListenedTrackItem, mostListenedTracksItems } =
+		const { tracksLimit, fourWeeks, sixMonths, oneYear, uniqueTracks } =
 			getMostListenedTrackResponse;
 
 		const tracksWhoWereWithYou =
-			currentMostListenedTracks
-				?.filter(
-					(track) => !mostListenedTracksItems?.some((currentTrack) => currentTrack.id === track.id)
-				)
+			currentMostListenedTracks?.uniqueTracks
+				?.filter((track) => !uniqueTracks?.some((currentTrack) => currentTrack.id === track.id))
 				.map((track) => ({
 					track,
 					lastSeen: new Date()
@@ -65,8 +63,10 @@ export async function updateMostListenedTracksNewLimit(
 			body: JSON.stringify({
 				id,
 				limit: tracksLimit,
-				mostListenedTrack: mostListenedTrackItem,
-				mostListenedTracks: mostListenedTracksItems,
+				fourWeeks,
+				sixMonths,
+				oneYear,
+				uniqueTracks,
 				tracksWhoWereWithYou,
 				freeUpdateIsAvailable,
 				nextFreeUpdate

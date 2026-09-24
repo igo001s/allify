@@ -17,6 +17,9 @@
 	// MongoDB
 	import type { ObjectId } from 'mongodb';
 
+	// Types
+	import type { UserInfo } from '$lib/types/UserInfo.type';
+
 	// Props
 	export let additionalItemsType: 'artists' | 'tracks';
 
@@ -45,12 +48,12 @@
 				userId,
 				artists?.artistsLimit as number,
 				userTickets,
-				artists?.mostListenedArtistsItems,
+				artists,
 				artists?.nextFreeUpdate
 			);
 
 			if (!updateMostListenedArtistsNewLimitResponse.error) {
-				userInfo.update((currentUser) => {
+				userInfo.update((currentUser: UserInfo | undefined) => {
 					if (!currentUser || !currentUser.connectedStreamings.spotify) {
 						return currentUser;
 					}
@@ -63,11 +66,11 @@
 								...currentUser.connectedStreamings.spotify,
 								mostListenedArtists: {
 									artistsLimit: updateMostListenedArtistsNewLimitResponse.limit,
-									mostListenedArtistItem:
-										updateMostListenedArtistsNewLimitResponse.mostListenedArtist,
-									mostListenedArtistsItems:
-										updateMostListenedArtistsNewLimitResponse.mostListenedArtists,
-									nextFreeUpdate: updateMostListenedArtistsNewLimitResponse.nextFreeUpdate
+									nextFreeUpdate: updateMostListenedArtistsNewLimitResponse.nextFreeUpdate,
+									fourWeeks: updateMostListenedArtistsNewLimitResponse.fourWeeks,
+									sixMonths: updateMostListenedArtistsNewLimitResponse.sixMonths,
+									oneYear: updateMostListenedArtistsNewLimitResponse.oneYear,
+									uniqueArtists: updateMostListenedArtistsNewLimitResponse.uniqueArtists
 								}
 							}
 						}
@@ -108,12 +111,12 @@
 				userId,
 				tracks?.tracksLimit as number,
 				userTickets,
-				tracks?.mostListenedTracksItems,
+				tracks,
 				tracks?.nextFreeUpdate
 			);
 
 			if (!updateMostListenedTracksNewLimitResponse.error) {
-				userInfo.update((currentUser) => {
+				userInfo.update((currentUser: UserInfo | undefined) => {
 					if (!currentUser || !currentUser.connectedStreamings.spotify) {
 						return currentUser;
 					}
@@ -126,10 +129,11 @@
 								...currentUser.connectedStreamings.spotify,
 								mostListenedTracks: {
 									tracksLimit: updateMostListenedTracksNewLimitResponse.limit,
-									mostListenedTrackItem: updateMostListenedTracksNewLimitResponse.mostListenedTrack,
-									mostListenedTracksItems:
-										updateMostListenedTracksNewLimitResponse.mostListenedTracks,
-									nextFreeUpdate: updateMostListenedTracksNewLimitResponse.nextFreeUpdate
+									nextFreeUpdate: updateMostListenedTracksNewLimitResponse.nextFreeUpdate,
+									fourWeeks: updateMostListenedTracksNewLimitResponse.fourWeeks,
+									sixMonths: updateMostListenedTracksNewLimitResponse.sixMonths,
+									oneYear: updateMostListenedTracksNewLimitResponse.oneYear,
+									uniqueTracks: updateMostListenedTracksNewLimitResponse.uniqueTracks
 								}
 							}
 						}
