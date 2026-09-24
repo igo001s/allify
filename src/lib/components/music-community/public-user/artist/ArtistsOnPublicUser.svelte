@@ -14,8 +14,7 @@
 
 	$: artistItems = [
 		{
-			artistItem:
-				publicUser?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistItem,
+			artistItem: publicUser?.connectedStreamings.spotify?.mostListenedArtists?.oneYear[0],
 			type: 'mostListenedArtist'
 		},
 		{ artistItem: publicUser?.artists?.artistOfTheMoment?.artist, type: 'artistOfTheMoment' },

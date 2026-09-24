@@ -41,7 +41,7 @@
 		<div
 			class="grid max-h-60 grid-cols-2 gap-4 overflow-y-auto pr-2 sm:max-h-96 sm:grid-cols-3 sm:gap-6 md:grid-cols-4"
 		>
-			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.mostListenedArtistsItems as artist}
+			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.uniqueArtists as artist}
 				<SelectItemCard
 					handleItemSelection={handleArtistSelection}
 					item={artist}

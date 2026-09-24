@@ -13,7 +13,8 @@ export async function getMostListenedTracks(limit: number = 5) {
 		nextFreeUpdate: nextFreeUpdateTime(),
 		fourWeeks: [] as TrackSpotify[],
 		sixMonths: [] as TrackSpotify[],
-		oneYear: [] as TrackSpotify[]
+		oneYear: [] as TrackSpotify[],
+		uniqueTracks: [] as TrackSpotify[]
 	};
 
 	try {
@@ -64,6 +65,22 @@ export async function getMostListenedTracks(limit: number = 5) {
 				externalLink: parsedResponse['short_term'][i].external_urls.spotify
 			});
 		}
+
+		const uniqueTracks: TrackSpotify[] = [];
+
+		for (const tracks of [
+			mostListenedTracksItems.oneYear,
+			mostListenedTracksItems.sixMonths,
+			mostListenedTracksItems.fourWeeks
+		]) {
+			for (const track of tracks) {
+				if (!uniqueTracks.some((uniqueTrack) => uniqueTrack.id === track.id)) {
+					uniqueTracks.push(track);
+				}
+			}
+		}
+
+		mostListenedTracksItems.uniqueTracks = uniqueTracks;
 
 		return mostListenedTracksItems;
 	} catch (error) {

@@ -14,7 +14,7 @@
 
 	$: songsItems = [
 		{
-			trackItem: publicUser?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTrackItem,
+			trackItem: publicUser?.connectedStreamings.spotify?.mostListenedTracks?.oneYear[0],
 			type: 'mostListenedTrack'
 		},
 		{ trackItem: publicUser?.tracks?.trackOfTheMoment?.track, type: 'trackOfTheMoment' },

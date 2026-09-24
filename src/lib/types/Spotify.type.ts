@@ -14,6 +14,7 @@ export type UserInfoSpotify = {
 				fourWeeks: ArtistSpotify[];
 				sixMonths: ArtistSpotify[];
 				oneYear: ArtistSpotify[];
+				uniqueArtists: ArtistSpotify[];
 		  }
 		| undefined;
 	mostListenedTracks:
@@ -23,6 +24,7 @@ export type UserInfoSpotify = {
 				fourWeeks: TrackSpotify[];
 				sixMonths: TrackSpotify[];
 				oneYear: TrackSpotify[];
+				uniqueTracks: TrackSpotify[];
 		  }
 		| undefined;
 };

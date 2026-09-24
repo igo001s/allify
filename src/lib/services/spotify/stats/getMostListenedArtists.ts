@@ -13,7 +13,8 @@ export async function getMostListenedArtists(limit: number = 5) {
 		nextFreeUpdate: nextFreeUpdateTime(),
 		fourWeeks: [] as ArtistSpotify[],
 		sixMonths: [] as ArtistSpotify[],
-		oneYear: [] as ArtistSpotify[]
+		oneYear: [] as ArtistSpotify[],
+		uniqueArtists: [] as ArtistSpotify[]
 	};
 
 	try {
@@ -43,27 +44,43 @@ export async function getMostListenedArtists(limit: number = 5) {
 
 		for (let i = 0; i < parsedResponse['medium_term'].length; i++) {
 			mostListenedArtistsItems.sixMonths.push({
-				id: parsedResponse['long_term'][i].id,
-				name: parsedResponse['long_term'][i].name,
-				popularity: parsedResponse['long_term'][i].popularity,
-				followers: parsedResponse['long_term'][i].followers.total,
-				genres: parsedResponse['long_term'][i].genres,
-				image: parsedResponse['long_term'][i].images[0],
-				externalLink: parsedResponse['long_term'][i].external_urls.spotify
+				id: parsedResponse['medium_term'][i].id,
+				name: parsedResponse['medium_term'][i].name,
+				popularity: parsedResponse['medium_term'][i].popularity,
+				followers: parsedResponse['medium_term'][i].followers.total,
+				genres: parsedResponse['medium_term'][i].genres,
+				image: parsedResponse['medium_term'][i].images[0],
+				externalLink: parsedResponse['medium_term'][i].external_urls.spotify
 			});
 		}
 
 		for (let i = 0; i < parsedResponse['short_term'].length; i++) {
 			mostListenedArtistsItems.fourWeeks.push({
-				id: parsedResponse['long_term'][i].id,
-				name: parsedResponse['long_term'][i].name,
-				popularity: parsedResponse['long_term'][i].popularity,
-				followers: parsedResponse['long_term'][i].followers.total,
-				genres: parsedResponse['long_term'][i].genres,
-				image: parsedResponse['long_term'][i].images[0],
-				externalLink: parsedResponse['long_term'][i].external_urls.spotify
+				id: parsedResponse['short_term'][i].id,
+				name: parsedResponse['short_term'][i].name,
+				popularity: parsedResponse['short_term'][i].popularity,
+				followers: parsedResponse['short_term'][i].followers.total,
+				genres: parsedResponse['short_term'][i].genres,
+				image: parsedResponse['short_term'][i].images[0],
+				externalLink: parsedResponse['short_term'][i].external_urls.spotify
 			});
 		}
+
+		const uniqueArtists: ArtistSpotify[] = [];
+
+		for (const artists of [
+			mostListenedArtistsItems.oneYear,
+			mostListenedArtistsItems.sixMonths,
+			mostListenedArtistsItems.fourWeeks
+		]) {
+			for (const artist of artists) {
+				if (!uniqueArtists.some((uniqueTrack) => uniqueTrack.id === artist.id)) {
+					uniqueArtists.push(artist);
+				}
+			}
+		}
+
+		mostListenedArtistsItems.uniqueArtists = uniqueArtists;
 
 		return mostListenedArtistsItems;
 	} catch (error) {

@@ -131,7 +131,7 @@
 
 	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">
 		<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-			{#each $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.mostListenedTracksItems ?? [] as track}
+			{#each $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.uniqueTracks ?? [] as track}
 				<ChangeTrackCardOnProfile
 					{track}
 					{choosedTrack}

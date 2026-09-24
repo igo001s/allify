@@ -74,14 +74,12 @@
 			{#each itemsType as type}
 				{#if type === 'artists'}
 					<MostListenedItems
-						items={$userInfo?.connectedStreamings.spotify?.mostListenedArtists
-							?.mostListenedArtistsItems ?? []}
+						items={$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.oneYear ?? []}
 						sessionType="artists"
 					/>
 				{:else if type === 'tracks'}
 					<MostListenedItems
-						items={$userInfo?.connectedStreamings.spotify?.mostListenedTracks
-							?.mostListenedTracksItems ?? []}
+						items={$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.oneYear ?? []}
 						sessionType="tracks"
 					/>
 				{/if}
