@@ -16,6 +16,8 @@
 	import { updateMostListenedArtists } from '$lib/services/user/updates/updateMostListenedArtists';
 	import { updateMostListenedTracks } from '$lib/services/user/updates/updateMostListenedTracks';
 
+	import type { UserInfo } from '$lib/types/UserInfo.type';
+
 	// Props
 	export let sessionType: 'artists' | 'tracks';
 
@@ -44,12 +46,12 @@
 					$userInfo._id,
 					artists.artistsLimit,
 					$userInfo.tickets,
-					artists.mostListenedArtistsItems,
+					artists,
 					artists.nextFreeUpdate
 				);
 
 				if (!updateMostListenedArtistsResponse.error) {
-					userInfo.update((currentUser) => {
+					userInfo.update((currentUser: UserInfo | undefined) => {
 						if (!currentUser || !currentUser.connectedStreamings.spotify) {
 							return currentUser;
 						}
@@ -62,8 +64,10 @@
 									...currentUser.connectedStreamings.spotify,
 									mostListenedArtists: {
 										artistsLimit: updateMostListenedArtistsResponse.limit,
-										mostListenedArtistItem: updateMostListenedArtistsResponse.mostListenedArtist,
-										mostListenedArtistsItems: updateMostListenedArtistsResponse.mostListenedArtists,
+										fourWeeks: updateMostListenedArtistsResponse.fourWeeks,
+										sixMonths: updateMostListenedArtistsResponse.sixMonths,
+										oneYear: updateMostListenedArtistsResponse.oneYear,
+										uniqueArtists: updateMostListenedArtistsResponse.uniqueArtists,
 										nextFreeUpdate: updateMostListenedArtistsResponse.nextFreeUpdate
 									}
 								}
@@ -100,7 +104,7 @@
 					$userInfo._id,
 					tracks.tracksLimit,
 					$userInfo.tickets,
-					tracks.mostListenedTracksItems,
+					tracks,
 					tracks.nextFreeUpdate
 				);
 
@@ -118,8 +122,10 @@
 									...currentUser.connectedStreamings.spotify,
 									mostListenedTracks: {
 										tracksLimit: updateMostListenedTracksResponse.limit,
-										mostListenedTrackItem: updateMostListenedTracksResponse.mostListenedTrack,
-										mostListenedTracksItems: updateMostListenedTracksResponse.mostListenedTracks,
+										fourWeeks: updateMostListenedTracksResponse.fourWeeks,
+										sixMonths: updateMostListenedTracksResponse.sixMonths,
+										oneYear: updateMostListenedTracksResponse.oneYear,
+										uniqueTracks: updateMostListenedTracksResponse.uniqueTracks,
 										nextFreeUpdate: updateMostListenedTracksResponse.nextFreeUpdate
 									}
 								}
