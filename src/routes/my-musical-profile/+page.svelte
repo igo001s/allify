@@ -73,15 +73,9 @@
 		<div class="space-y-20 lg:space-y-32">
 			{#each itemsType as type}
 				{#if type === 'artists'}
-					<MostListenedItems
-						items={$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.oneYear ?? []}
-						sessionType="artists"
-					/>
+					<MostListenedItems sessionType="artists" />
 				{:else if type === 'tracks'}
-					<MostListenedItems
-						items={$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.oneYear ?? []}
-						sessionType="tracks"
-					/>
+					<MostListenedItems sessionType="tracks" />
 				{/if}
 			{/each}
 		</div>
