@@ -34,7 +34,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 			mostListenedTracksItems.oneYear.push({
 				id: parsedResponse['long_term'][i].id,
 				name: parsedResponse['long_term'][i].name,
-				artists: parsedResponse['long_term'][i].artists.map((artist: any) => artist.name),
+				artists: parsedResponse['long_term'][i].artists.map((artist: TrackSpotify) => artist.name),
 				popularity: parsedResponse['long_term'][i].popularity,
 				albumName: parsedResponse['long_term'][i].album.name,
 				image: parsedResponse['long_term'][i].album.images[0],
@@ -46,7 +46,9 @@ export async function getMostListenedTracks(limit: number = 5) {
 			mostListenedTracksItems.sixMonths.push({
 				id: parsedResponse['medium_term'][i].id,
 				name: parsedResponse['medium_term'][i].name,
-				artists: parsedResponse['medium_term'][i].artists.map((artist: any) => artist.name),
+				artists: parsedResponse['medium_term'][i].artists.map(
+					(artist: TrackSpotify) => artist.name
+				),
 				popularity: parsedResponse['medium_term'][i].popularity,
 				albumName: parsedResponse['medium_term'][i].album.name,
 				image: parsedResponse['medium_term'][i].album.images[0],
@@ -58,7 +60,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 			mostListenedTracksItems.fourWeeks.push({
 				id: parsedResponse['short_term'][i].id,
 				name: parsedResponse['short_term'][i].name,
-				artists: parsedResponse['short_term'][i].artists.map((artist: any) => artist.name),
+				artists: parsedResponse['short_term'][i].artists.map((artist: TrackSpotify) => artist.name),
 				popularity: parsedResponse['short_term'][i].popularity,
 				albumName: parsedResponse['short_term'][i].album.name,
 				image: parsedResponse['short_term'][i].album.images[0],
