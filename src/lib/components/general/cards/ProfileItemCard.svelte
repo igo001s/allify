@@ -83,7 +83,7 @@
 					/>
 
 					<div class="flex flex-wrap gap-1.5 pt-1 sm:gap-2">
-						{#each profileItem.item.genres.slice(0, 3) as genre}
+						{#each profileItem.item.genres.slice(0, 3) as genre, i (i)}
 							<span
 								class="rounded-full border border-brand-primary/15 bg-brand-primary/8 px-2.5 py-1 text-[9px] font-medium text-brand-primary sm:px-3"
 							>

@@ -73,7 +73,7 @@
 	<div class="flex flex-col gap-12 lg:gap-16">
 		<div class="flex flex-col gap-8">
 			<div class="flex flex-col gap-4 sm:flex-row sm:self-end">
-				{#each ['oneYear', 'sixMonths', 'fourWeeks'] as period}
+				{#each ['oneYear', 'sixMonths', 'fourWeeks'] as period, i (i)}
 					<button
 						class={`button-primary px-4.5 py-2.5 text-center text-xs sm:w-fit sm:text-base ${periodTime === period ? 'bg-brand-primary-dark!' : ''}`}
 						aria-pressed={periodTime === period}

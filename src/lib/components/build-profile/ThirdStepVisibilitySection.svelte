@@ -21,7 +21,7 @@
 	</p>
 
 	<div class="mt-1 flex flex-col gap-3 sm:mt-2">
-		{#each [{ visibility: 'public' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription }, { visibility: 'private' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription }] as option}
+		{#each [{ visibility: 'public' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription }, { visibility: 'private' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription }] as option, i (i)}
 			<SelectVisibilityCard
 				visibility={option.visibility}
 				bind:buildProfileVisibility

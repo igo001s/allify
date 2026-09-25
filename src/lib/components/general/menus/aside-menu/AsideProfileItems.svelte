@@ -38,7 +38,7 @@
 
 <ul class="space-y-1">
 	{#if loggedIn}
-		{#each loggedItems as item}
+		{#each loggedItems as item, i (i)}
 			<li class="rounded-lg hover:bg-s-muted">
 				<button
 					on:click={() => {
@@ -53,7 +53,7 @@
 			</li>
 		{/each}
 	{:else}
-		{#each notLoggedItems as item}
+		{#each notLoggedItems as item, i (i)}
 			<li class="rounded-lg hover:bg-s-muted">
 				<button
 					on:click={() =>

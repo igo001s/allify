@@ -100,15 +100,15 @@
 			</p>
 
 			<div class="mt-1 grid grid-cols-2 gap-3 sm:grid-cols-4">
-				{#each options as opt}
+				{#each options as option, i (i)}
 					<button
 						class="cursor-pointer rounded-lg border py-3 text-xs font-semibold
-								{quantity === opt
+								{quantity === option
 							? 'border-brand-primary bg-brand-primary text-t-inverse'
 							: 'border-b-default bg-s-muted text-t-primary hover:border-brand-primary hover:text-brand-primary'}"
-						on:click={() => handleQuantityChange(opt)}
+						on:click={() => handleQuantityChange(option)}
 					>
-						{opt}
+						{option}
 					</button>
 				{/each}
 

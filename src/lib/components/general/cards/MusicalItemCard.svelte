@@ -23,7 +23,7 @@
 	</h3>
 
 	<ul class="space-y-4 text-t-secondary sm:space-y-5">
-		{#each item.description as description}
+		{#each item.description as description, i (i)}
 			<li class="text-additional-info flex gap-3">
 				<span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-primary"></span>
 

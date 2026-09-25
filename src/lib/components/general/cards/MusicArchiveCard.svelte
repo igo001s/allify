@@ -36,7 +36,7 @@
 
 			{#if 'genres' in item && item.genres}
 				<div class="flex flex-wrap gap-2">
-					{#each item.genres.slice(0, 2) as genre}
+					{#each item.genres.slice(0, 2) as genre, i (i)}
 						<span
 							class="max-w-full truncate rounded-lg bg-brand-primary px-3 py-1 text-[10px] font-medium text-t-inverse"
 						>

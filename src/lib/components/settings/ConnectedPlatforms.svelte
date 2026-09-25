@@ -28,7 +28,7 @@
 	</p>
 
 	<div class="flex w-full flex-col items-center gap-5 md:flex-row">
-		{#each streamings as streaming}
+		 {#each streamings as streaming, i (i)}
 			<ConnectedPlatform {streaming} />
 		{/each}
 	</div>

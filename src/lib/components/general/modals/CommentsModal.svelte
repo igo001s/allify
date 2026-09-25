@@ -99,7 +99,7 @@
 
 		{#if $userInfo && $userInfo.comments.commentsMadeOnMyProfile.length > 0}
 			<div class="mt-2 flex max-h-130 flex-col gap-3 overflow-y-auto pr-2 sm:gap-4">
-				{#each $userInfo.comments.commentsMadeOnMyProfile as comment}
+				{#each $userInfo.comments.commentsMadeOnMyProfile as comment, i (i)}
 					<div
 						class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 sm:gap-4 sm:p-4"
 					>

@@ -107,7 +107,7 @@
 		<div class="my-4 h-px bg-b-muted/10"></div>
 
 		<ul class="space-y-1">
-			{#each loggedItems as item}
+			{#each loggedItems as item, i (i)}
 				<li class="rounded-lg hover:bg-s-muted">
 					<button
 						on:click={() => loggedItemClick(item.href)}
@@ -129,7 +129,7 @@
 		</button>
 	{:else}
 		<ul class="space-y-1">
-			{#each notLoggedItems as item}
+			{#each notLoggedItems as item, i (i)}
 				<li class="rounded-lg hover:bg-s-muted">
 					<button
 						disabled={item.streaming === 'deezer'}

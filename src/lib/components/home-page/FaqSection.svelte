@@ -76,7 +76,7 @@
 		</p>
 
 		<div class="mt-3.5 flex justify-center gap-8 lg:gap-12">
-			{#each contactItems as item}
+			{#each contactItems as item, i (i)}
 				<a
 					href={item.href}
 					target="_blank"
@@ -92,16 +92,16 @@
 	</div>
 
 	<div class="w-full max-w-4xl space-y-6.5 lg:space-y-9">
-		{#each faqQuestionsAndAnswers as item, index}
+		{#each faqQuestionsAndAnswers as item, i (i)}
 			<div class="w-full">
 				<button
 					type="button"
 					class={`button-faq-question flex w-full items-center justify-between py-3 pr-2 pl-4 text-left transition-none! lg:py-5 lg:pr-6 lg:pl-8 ${
-						openFaqIndex === index
+						openFaqIndex === i
 							? 'rounded-t-lg border-x border-t bg-brand-primary/5'
 							: 'rounded-lg border hover:bg-brand-primary/5'
 					}`}
-					on:click={() => (openFaqIndex = openFaqIndex === index ? null : index)}
+					on:click={() => (openFaqIndex = openFaqIndex === i ? null : i)}
 				>
 					<h3 class="heading-3-faq">
 						{item.question}
@@ -109,12 +109,12 @@
 
 					<ArrowIcon
 						iconSvgClass={`h-8 w-8 shrink-0 text-brand-primary ${
-							openFaqIndex === index ? 'rotate-180' : ''
+							openFaqIndex === i ? 'rotate-180' : ''
 						}`}
 					/>
 				</button>
 
-				{#if openFaqIndex === index}
+				{#if openFaqIndex === i}
 					<div
 						class="rounded-b-lg border-x border-b border-brand-primary bg-brand-primary/5 pr-2 pb-3 pl-4 text-xs text-t-secondary lg:pr-6 lg:pb-5 lg:pl-8 lg:text-sm"
 					>
