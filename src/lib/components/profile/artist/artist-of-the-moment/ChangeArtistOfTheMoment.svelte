@@ -95,7 +95,7 @@
 				</p>
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-					{#each $userInfo.artists.artistsWhoWereWithYou as artistWhoWereWithYou, i}
+					{#each $userInfo.artists.artistsWhoWereWithYou as artistWhoWereWithYou, i (i)}
 						<ChangeArtistCardOnProfile
 							artist={artistWhoWereWithYou.artist}
 							{choosedArtist}
