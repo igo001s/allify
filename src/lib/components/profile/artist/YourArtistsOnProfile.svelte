@@ -30,7 +30,7 @@
 	</h2>
 
 	<div class="flex flex-col gap-8 xl:flex-row">
-		{#each artistItems as { artistItem, type }}
+		{#each artistItems as { artistItem, type }, i (i)}
 			{#if artistItem}
 				<YourArtistOnProfileItem
 					artistItem={{ item: artistItem, type }}
