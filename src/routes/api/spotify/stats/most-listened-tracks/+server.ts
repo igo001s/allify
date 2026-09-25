@@ -1,5 +1,8 @@
-// Types
+// Svelte
 import type { RequestHandler } from '@sveltejs/kit';
+
+// Types
+import type { TrackSpotify } from '$lib/types/Spotify.type';
 
 // Environment variables
 import { ALLIFY_URL } from '$env/static/private';
@@ -26,7 +29,7 @@ export const POST: RequestHandler = async ({ request, cookies }) => {
 			});
 		}
 
-		let parsedMostListenedTracksResponses: Record<string, any[]> = {};
+		const parsedMostListenedTracksResponses: Record<string, TrackSpotify[]> = {};
 
 		for (const timeRange of ['short_term', 'medium_term', 'long_term']) {
 			const response = await fetch(

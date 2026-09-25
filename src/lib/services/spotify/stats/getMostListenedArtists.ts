@@ -8,7 +8,7 @@ import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
 import type { ArtistSpotify } from '$lib/types/Spotify.type';
 
 export async function getMostListenedArtists(limit: number = 5) {
-	let mostListenedArtistsItems = {
+	const mostListenedArtistsItems = {
 		artistsLimit: limit,
 		nextFreeUpdate: nextFreeUpdateTime(),
 		fourWeeks: [] as ArtistSpotify[],
