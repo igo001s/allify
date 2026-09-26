@@ -14,45 +14,27 @@
 	// Props
 	export let sessionType: 'artists' | 'tracks';
 
-	let periodTime: 'oneYear' | 'sixMonths' | 'fourWeeks' = 'oneYear';
+	// Reactive values
 	$: mostListenedItems =
 		sessionType === 'artists'
 			? ($userInfo?.connectedStreamings?.spotify?.mostListenedArtists?.[periodTime] as
 					ArtistSpotify[] | undefined)
 			: ($userInfo?.connectedStreamings?.spotify?.mostListenedTracks?.[periodTime] as
 					TrackSpotify[] | undefined);
+	$: artists = $userInfo?.connectedStreamings.spotify?.mostListenedArtists;
+	$: tracks = $userInfo?.connectedStreamings.spotify?.mostListenedTracks;
+	$: shouldShowMusicalItems =
+		sessionType === 'artists' ? (artists?.artistsLimit ?? 0) < 50 : (tracks?.tracksLimit ?? 0) < 50;
+	$: hasNextFreeUpdate =
+		sessionType === 'artists'
+			? artists?.nextFreeUpdate !== undefined
+			: tracks?.nextFreeUpdate !== undefined;
+	$: shouldShowNextFreeUpdateDate =
+		sessionType === 'artists'
+			? artists?.nextFreeUpdate !== undefined && new Date(artists.nextFreeUpdate) > new Date()
+			: tracks?.nextFreeUpdate !== undefined && new Date(tracks.nextFreeUpdate) > new Date();
 
-	function shouldShowMusicalItems(type: 'artists' | 'tracks'): boolean {
-		if (type === 'artists') {
-			return ($userInfo?.connectedStreamings.spotify?.mostListenedArtists?.artistsLimit ?? 0) < 50;
-		}
-
-		return ($userInfo?.connectedStreamings.spotify?.mostListenedTracks?.tracksLimit ?? 0) < 50;
-	}
-
-	function hasNextFreeUpdate(type: 'artists' | 'tracks'): boolean {
-		if (type === 'artists') {
-			return (
-				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate !== undefined
-			);
-		}
-
-		return $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate !== undefined;
-	}
-
-	function shouldShowNextFreeUpdateDate(type: 'artists' | 'tracks'): boolean {
-		if (type === 'artists') {
-			const nextFreeUpdate =
-				$userInfo?.connectedStreamings.spotify?.mostListenedArtists?.nextFreeUpdate;
-
-			return nextFreeUpdate !== undefined && new Date(nextFreeUpdate) > new Date();
-		}
-
-		const nextFreeUpdate =
-			$userInfo?.connectedStreamings.spotify?.mostListenedTracks?.nextFreeUpdate;
-
-		return nextFreeUpdate !== undefined && new Date(nextFreeUpdate) > new Date();
-	}
+	let periodTime: 'oneYear' | 'sixMonths' | 'fourWeeks' = 'oneYear';
 </script>
 
 <div class="flex flex-col gap-10">
@@ -97,8 +79,8 @@
 		</div>
 
 		<span class="text-center text-xs text-t-secondary">
-			{#if shouldShowMusicalItems(sessionType)}
-				{#if shouldShowNextFreeUpdateDate(sessionType)}
+			{#if shouldShowMusicalItems}
+				{#if shouldShowNextFreeUpdateDate}
 					{$translationsStore.myMusicalProfilePage
 						.myMusicalProfilePageNextFreeUpdateShowMoreFiveArtists}
 
@@ -119,7 +101,7 @@
 							})}
 						{/if}
 					</strong>
-				{:else if hasNextFreeUpdate(sessionType)}
+				{:else if hasNextFreeUpdate}
 					{$translationsStore.myMusicalProfilePage
 						.myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable}
 				{/if}
@@ -128,7 +110,7 @@
 			{/if}
 		</span>
 
-		{#if shouldShowMusicalItems(sessionType)}
+		{#if shouldShowMusicalItems}
 			<MoreMyMusicalProfileItems additionalItemsType={sessionType} />
 		{/if}
 	</div>
