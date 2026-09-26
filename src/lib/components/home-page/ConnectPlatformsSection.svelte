@@ -17,13 +17,13 @@
 			icon: SpotifyIcon,
 			title: 'Spotify',
 			description: $translationsStore.homePage.connectPlatformSpotifyDescription,
-			link: 'https://open.spotify.com/'
+			href: 'https://open.spotify.com/'
 		},
 		{
 			icon: DeezerIcon,
 			title: 'Deezer',
 			description: $translationsStore.homePage.connectPlatformDeezerDescription,
-			link: `https://www.deezer.com/${$translationsStore.language}/`
+			href: `https://www.deezer.com/${$translationsStore.language}/`
 		}
 	] as CardPlatformType[];
 </script>
