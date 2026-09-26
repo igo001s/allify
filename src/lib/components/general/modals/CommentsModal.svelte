@@ -1,4 +1,7 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+
 	// Svelte
 	import { onMount, onDestroy } from 'svelte';
 
@@ -113,7 +116,7 @@
 							<div class="flex items-center justify-between gap-2">
 								<div class="flex flex-col items-start">
 									<a
-										href={`/music-community/${comment.author._id}`}
+										href={resolve(`/music-community/${comment.author._id}`)}
 										class="text-sm font-semibold text-t-secondary hover:text-brand-primary"
 									>
 										{comment.author.name}

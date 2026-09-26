@@ -18,11 +18,9 @@
 	$: mostListenedItems =
 		sessionType === 'artists'
 			? ($userInfo?.connectedStreamings?.spotify?.mostListenedArtists?.[periodTime] as
-					| ArtistSpotify[]
-					| undefined)
+					ArtistSpotify[] | undefined)
 			: ($userInfo?.connectedStreamings?.spotify?.mostListenedTracks?.[periodTime] as
-					| TrackSpotify[]
-					| undefined);
+					TrackSpotify[] | undefined);
 
 	function shouldShowMusicalItems(type: 'artists' | 'tracks'): boolean {
 		if (type === 'artists') {

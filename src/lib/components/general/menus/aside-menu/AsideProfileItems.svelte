@@ -1,6 +1,7 @@
 <script lang="ts">
-	// Svelte
+	// App
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -33,7 +34,7 @@
 			text: $translationsStore.generalTexts.profileLoggedItem2,
 			href: '/settings'
 		}
-	] as { text: string; href: string }[];
+	] as { text: string; href: '/profile' | '/settings' }[];
 </script>
 
 <ul class="space-y-1">
@@ -42,9 +43,9 @@
 			<li class="rounded-lg hover:bg-s-muted">
 				<button
 					on:click={() => {
-						goto(item.href);
-
 						isAsideMenuOpen = false;
+
+						goto(resolve(item.href));
 					}}
 					class="flex w-full cursor-pointer items-center px-3 py-2 text-xs text-t-primary hover:translate-x-0.5"
 				>

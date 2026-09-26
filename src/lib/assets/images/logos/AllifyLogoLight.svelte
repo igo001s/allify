@@ -1,11 +1,14 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+
 	// Props
 	export let logoSvgClass = '';
 	export let logoAriaLabel = '';
 	export let logoTitle = '';
 </script>
 
-<a href="/" title={logoTitle}>
+<a href={resolve('/')} title={logoTitle}>
 	<svg
 		viewBox="0 0 311.000000 132.000000"
 		class={logoSvgClass}

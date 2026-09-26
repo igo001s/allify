@@ -1,4 +1,7 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+
 	// Components
 	import LinkedinIcon from '$lib/assets/images/icons/social-network/LinkedinIcon.svelte';
 	import GithubIcon from '$lib/assets/images/icons/social-network/GithubIcon.svelte';
@@ -100,7 +103,7 @@
 						</a>
 					{:else}
 						<a
-							href={item.href}
+							href={resolve(item.href)}
 							class="
 								text-sm
 								font-light

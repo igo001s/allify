@@ -158,10 +158,14 @@
 		} else {
 			await handleSaveFavorites(idToToggle, id, name, image, spotifyConnected, deezerConnected);
 		}
+
+		return;
 	}
 
 	function handleGoToUserProfile() {
 		window.location.href = `/music-community/${user._id}`;
+		
+		return;
 	}
 </script>
 

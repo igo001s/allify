@@ -2,6 +2,7 @@
 	// App
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 
 	// Svelte
 	import { onMount } from 'svelte';
@@ -206,7 +207,7 @@
 			</div>
 
 			<button
-				on:click={() => goto('/music-community')}
+				on:click={() => goto(resolve('/music-community'))}
 				class="button-cta w-full lg:w-90 lg:max-w-90"
 			>
 				{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundButton}

@@ -1,4 +1,7 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+
 	// Props
 	export let item: {
 		icon: typeof import('svelte').SvelteComponent;
@@ -32,7 +35,7 @@
 		{/each}
 	</ul>
 
-	<a class="button-cta mt-2.5 w-full" href="/my-musical-profile">
+	<a class="button-cta mt-2.5 w-full" href={resolve('/my-musical-profile')}>
 		{item.buttonContent}
 	</a>
 </article>

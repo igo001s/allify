@@ -2,6 +2,7 @@
 	// App
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -75,7 +76,7 @@
 		</p>
 	</div>
 
-	<button on:click={() => goto('/')} class="button-cta w-full lg:w-90 lg:max-w-90">
+	<button on:click={() => goto(resolve('/'))} class="button-cta w-full lg:w-90 lg:max-w-90">
 		{$translationsStore.errorPage.errorPageButtonGoHome}
 	</button>
 </div>

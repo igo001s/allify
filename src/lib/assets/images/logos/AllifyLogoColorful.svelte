@@ -1,4 +1,7 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+
 	// Svelte
 	import { onMount } from 'svelte';
 
@@ -53,7 +56,7 @@
 	});
 </script>
 
-<a href="/" title={logoTitle}>
+<a href={resolve('/')} title={logoTitle}>
 	<svg viewBox="0 0 380 142" class={logoSvgClass} aria-label={logoAriaLabel} role="img">
 		<g
 			transform="translate(0.000000,132.000000) scale(0.100000,-0.100000)"

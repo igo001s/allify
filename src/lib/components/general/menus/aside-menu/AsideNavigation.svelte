@@ -2,6 +2,7 @@
 	// App
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -22,12 +23,14 @@
 			name: $translationsStore.generalTexts.headerNavigationItem3,
 			link: '/music-community'
 		}
-	] as { name: string; link: string }[];
+	] as { name: string; link: '/my-musical-profile' | '/music-archive' | '/music-community' }[];
 
-	function handleNavigation(link: string) {
-		goto(link);
-
+	function handleNavigation(link: '/my-musical-profile' | '/music-archive' | '/music-community') {
 		isAsideMenuOpen = false;
+
+		goto(resolve(link));
+
+		return;
 	}
 </script>
 

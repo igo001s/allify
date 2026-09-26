@@ -151,8 +151,7 @@
 				placeholder={$translationsStore.musicCommunityPage.publicUser
 					.musicCommunityPagePublicUserInputPlaceholder}
 				bind:value={comment}
-				on:input={handleCommentInput}
-			></textarea>
+				on:input={handleCommentInput}></textarea>
 
 			<div class="flex items-start justify-between gap-3">
 				{#if typeof isCommentValid === 'object' && isCommentValid.error}

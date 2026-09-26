@@ -1,6 +1,7 @@
 <script lang="ts">
-	// Svelte
+	// App
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 
 	// Components
 	import Ticket from '$lib/components/general/Ticket.svelte';
@@ -38,26 +39,30 @@
 			text: $translationsStore.generalTexts.profileLoggedItem2,
 			href: '/settings'
 		}
-	] as { text: string; href: string }[];
+	] as { text: string; href: '/profile' | '/settings' }[];
 
 	function signInOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
-		signInWrapper(streaming, $userInfo?.connectedStreamings.spotify ? true : false, false);
-
 		showProfileOptions = false;
+
+		signInWrapper(streaming, $userInfo?.connectedStreamings.spotify ? true : false, false);
 
 		return;
 	}
 
-	function loggedItemClick(href: string) {
-		goto(href);
-
+	function loggedItemClick(href: '/profile' | '/settings') {
 		showProfileOptions = false;
+
+		goto(resolve(href));
+
+		return;
 	}
 
 	function logoutOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
+		showProfileOptions = false;
+
 		logoutWrapper(streaming, $userInfo?.connectedStreamings.spotify ? true : false, false);
 
-		showProfileOptions = false;
+		return;
 	}
 </script>
 

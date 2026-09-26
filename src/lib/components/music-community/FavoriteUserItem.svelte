@@ -56,6 +56,8 @@
 
 	function handleGoToFavoriteProfile() {
 		window.location.href = `/music-community/${favorite._id}`;
+
+		return;
 	}
 </script>
 

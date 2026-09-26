@@ -1,4 +1,7 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+
 	// Assets
 	import AlliFullBodyPointing from '$lib/assets/images/alli/alli-full-body-pointing.webp?enhanced';
 	import AlliFullBodyPointingDownwards from '$lib/assets/images/alli/alli-full-body-pointing-downwards.webp?enhanced';
@@ -36,7 +39,7 @@
 		<a
 			class="button-cta mt-4 w-full xl:mt-0 xl:w-90 xl:max-w-90"
 			href={$userInfo?.connectedStreamings.spotify
-				? '/my-musical-profile'
+				? resolve('/my-musical-profile')
 				: '#connect-platforms-section'}
 			aria-label={$userInfo !== undefined
 				? $translationsStore.homePage.homePageHeroSectionButton1v2AriaLabel

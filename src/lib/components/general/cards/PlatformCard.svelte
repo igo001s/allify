@@ -80,7 +80,7 @@
 		class="flex min-h-16 justify-end border-t border-b-muted/20 px-6 py-4 text-sm font-medium xl:px-10 xl:py-6"
 	>
 		<a
-			href={platform.link}
+			href={platform.href}
 			target="_blank"
 			rel="noopener noreferrer"
 			class={`flex w-fit items-center gap-2.5 text-xs lg:text-sm ${

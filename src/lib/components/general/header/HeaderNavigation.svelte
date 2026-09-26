@@ -1,6 +1,7 @@
 <script lang="ts">
 	// App
 	import { page } from '$app/stores';
+	import { resolve } from '$app/paths';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -18,7 +19,7 @@
 			name: $translationsStore.generalTexts.headerNavigationItem3,
 			link: '/music-community'
 		}
-	] as { name: string; link: string }[];
+	] as { name: string; link: '/my-musical-profile' | '/music-archive' | '/music-community' }[];
 </script>
 
 <nav aria-label={$translationsStore.generalTexts.headerNavigationAriaLabel} class="hidden lg:block">
@@ -26,7 +27,7 @@
 		{#each navItems as item, i (i)}
 			<li class="overflow-y-hidden">
 				<a
-					href={item.link}
+					href={resolve(item.link)}
 					aria-current={$page.url.pathname === item.link ? 'page' : undefined}
 					class="
 						relative
