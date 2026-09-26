@@ -78,4 +78,4 @@
 	{/if}
 </button>
 
-<HeaderProfileItems bind:loggedIn bind:showProfileOptions />
+<HeaderProfileItems {loggedIn} bind:showProfileOptions />

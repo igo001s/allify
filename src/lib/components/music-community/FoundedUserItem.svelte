@@ -164,7 +164,7 @@
 
 	function handleGoToUserProfile() {
 		window.location.href = `/music-community/${user._id}`;
-		
+
 		return;
 	}
 </script>

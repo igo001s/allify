@@ -14,7 +14,7 @@
 	// Props
 	export let sessionType: 'artists' | 'tracks';
 
-	$: periodTime = 'oneYear' as 'oneYear' | 'sixMonths' | 'fourWeeks';
+	let periodTime: 'oneYear' | 'sixMonths' | 'fourWeeks' = 'oneYear';
 	$: mostListenedItems =
 		sessionType === 'artists'
 			? ($userInfo?.connectedStreamings?.spotify?.mostListenedArtists?.[periodTime] as

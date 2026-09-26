@@ -31,8 +31,7 @@
 	const seasonalDecoration = resolveSeasonalDecoration();
 
 	let SeasonalComponent: any = null;
-
-	$: transformGroup = seasonalDecoration ? transformMap[seasonalDecoration] : '';
+	let transformGroup = seasonalDecoration ? transformMap[seasonalDecoration] : '';
 
 	function resolveSeasonalDecoration(): string | null {
 		const today = new Date();

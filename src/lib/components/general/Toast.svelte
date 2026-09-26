@@ -9,8 +9,6 @@
 	import ErrorIcon from '$lib/assets/images/icons/signals/ErrorIcon.svelte';
 	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
 
-	let timeout: ReturnType<typeof setTimeout>;
-
 	const closeToast = () => {
 		toastStore.set({
 			showToast: false,
@@ -19,13 +17,9 @@
 		});
 	};
 
-	$: if ($toastStore.showToast) {
-		clearTimeout(timeout);
-
-		timeout = setTimeout(() => {
-			closeToast();
-		}, 4500);
-	}
+	setTimeout(() => {
+		closeToast();
+	}, 4000);
 </script>
 
 <div

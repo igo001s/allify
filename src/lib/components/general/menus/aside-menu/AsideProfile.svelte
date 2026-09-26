@@ -20,7 +20,7 @@
 
 	$: loggedIn = $userInfo?.connectedStreamings?.spotify
 		? true
-		: false || $userInfo?.connectedStreamings?.deezer
+		: $userInfo?.connectedStreamings?.deezer
 			? true
 			: false;
 
