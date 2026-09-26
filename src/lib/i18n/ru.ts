@@ -68,10 +68,8 @@ export const ru = {
 		footerColumn3Item3: 'Использование данных',
 		stillInDevelopmentText: 'В разработке',
 		loadingComponentHeading1: 'Подключение...',
-		loadingComponentSpotifyParagraph1:
-			'Загружаем ваши данные из <span class="font-semibold text-spotify">Spotify</span>',
-		loadingComponentDeezerParagraph1:
-			'Загружаем ваши данные из <span class="font-semibold text-deezer">Deezer</span>',
+		loadingComponentSpotifyParagraph1: 'Загружаем ваши данные из {streaming}',
+		loadingComponentDeezerParagraph1: 'Загружаем ваши данные из {streaming}',
 		loadingComponentAriaLabel: 'Анимация загрузки',
 		notLoggedHeading1: 'Вы не вошли в систему',
 		notLoggedMyMusicProfileParagraph1:

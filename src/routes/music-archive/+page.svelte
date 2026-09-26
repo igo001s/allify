@@ -12,19 +12,22 @@
 
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
-</script>
 
-<svelte:head>
-	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${getJsonLdByPage(
+	$: jsonLd = getJsonLdByPage(
 		'musicArchivePage',
-		'$translationsStore.locale',
+		$translationsStore.locale,
 		$translationsStore.musicArchivePage.title,
 		$translationsStore.configuration.allifyDescription,
 		$userInfo?.connectedStreamings.spotify
 			? $translationsStore.musicArchivePage.musicArchivePageMetaDescription
 			: $translationsStore.musicArchivePage.musicArchivePageMetaWithoutLoginMetaDescription
-	)}</script>`}
+	);
+</script>
+
+<svelte:head>
+	<!-- Schema.org -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html `<${'script'} type="application/ld+json">${jsonLd}</${'script'}>`}
 	<!-- General -->
 	<title>{$translationsStore.musicArchivePage.title}</title>
 	<meta
@@ -66,7 +69,7 @@
 		</p>
 
 		<div class="space-y-12 lg:space-y-16">
-			{#each [{ itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1, itemType: 'artist' as 'artist', items: $userInfo.artists?.artistsWhoWereWithYou }, { itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2, itemType: 'track' as 'track', items: $userInfo.tracks?.tracksWhoWereWithYou }] as item}
+			{#each [{ itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1, itemType: 'artist' as const, items: $userInfo.artists?.artistsWhoWereWithYou }, { itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2, itemType: 'track' as const, items: $userInfo.tracks?.tracksWhoWereWithYou }] as item, i (i)}
 				<MusicArchiveItems itemTitle={item.itemTitle} itemType={item.itemType} items={item.items} />
 			{/each}
 		</div>

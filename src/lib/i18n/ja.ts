@@ -68,10 +68,8 @@ export const ja = {
 		footerColumn3Item3: 'データ利用',
 		stillInDevelopmentText: '開発中',
 		loadingComponentHeading1: '接続中...',
-		loadingComponentSpotifyParagraph1:
-			'<span class="font-semibold text-spotify">Spotify</span>から情報を取得しています',
-		loadingComponentDeezerParagraph1:
-			'<span class="font-semibold text-deezer">Deezer</span>から情報を取得しています',
+		loadingComponentSpotifyParagraph1: '{streaming}から情報を取得しています',
+		loadingComponentDeezerParagraph1: '{streaming}から情報を取得しています',
 		loadingComponentAriaLabel: 'ローディングアニメーション',
 		notLoggedHeading1: 'ログインしていません',
 		notLoggedMyMusicProfileParagraph1:

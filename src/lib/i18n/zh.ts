@@ -67,10 +67,8 @@ export const zh = {
 		footerColumn3Item3: '数据使用',
 		stillInDevelopmentText: '开发中',
 		loadingComponentHeading1: '连接中...',
-		loadingComponentSpotifyParagraph1:
-			'正在获取您的 <span class="font-semibold text-spotify">Spotify</span> 信息',
-		loadingComponentDeezerParagraph1:
-			'正在获取您的 <span class="font-semibold text-deezer">Deezer</span> 信息',
+		loadingComponentSpotifyParagraph1: '正在获取您的 {streaming} 信息',
+		loadingComponentDeezerParagraph1: '正在获取您的 {streaming} 信息',
 		loadingComponentAriaLabel: '加载动画',
 		notLoggedHeading1: '您尚未登录',
 		notLoggedMyMusicProfileParagraph1: '要访问您的音乐档案，请连接您喜爱的流媒体平台之一。',

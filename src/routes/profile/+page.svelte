@@ -22,6 +22,16 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
+	$: jsonLd = getJsonLdByPage(
+		'profilePage',
+		$translationsStore.locale,
+		$translationsStore.profilePage.title,
+		$translationsStore.configuration.allifyDescription,
+		$userInfo?.connectedStreamings.spotify
+			? $translationsStore.profilePage.profilePageMetaDescription
+			: $translationsStore.profilePage.profilePageWithoutLoginMetaDescription
+	);
+
 	let showChangeItemOfTheMomentModal = false;
 	let showSelectItemOfTheMomentModal = false;
 
@@ -77,15 +87,8 @@
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${getJsonLdByPage(
-		'profilePage',
-		$translationsStore.locale,
-		$translationsStore.profilePage.title,
-		$translationsStore.configuration.allifyDescription,
-		$userInfo?.connectedStreamings.spotify
-			? $translationsStore.profilePage.profilePageMetaDescription
-			: $translationsStore.profilePage.profilePageWithoutLoginMetaDescription
-	)}</script>`}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html `<${'script'} type="application/ld+json">${jsonLd}</${'script'}>`}
 	<!-- General -->
 	<title>{$translationsStore.profilePage.title}</title>
 	<meta

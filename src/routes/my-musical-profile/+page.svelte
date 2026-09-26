@@ -14,12 +14,7 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
-	const itemsType: Array<'artists' | 'tracks'> = ['artists', 'tracks'];
-</script>
-
-<svelte:head>
-	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${getJsonLdByPage(
+	$: jsonLd = getJsonLdByPage(
 		'myMusicalProfilePage',
 		$translationsStore.locale,
 		$translationsStore.myMusicalProfilePage.title,
@@ -27,7 +22,15 @@
 		$userInfo?.connectedStreamings.spotify
 			? $translationsStore.myMusicalProfilePage.myMusicalProfilePageMetaDescription
 			: $translationsStore.myMusicalProfilePage.myMusicalProfilePageWithoutLoginMetaDescription
-	)}</script>`}
+	);
+
+	const itemsType: Array<'artists' | 'tracks'> = ['artists', 'tracks'];
+</script>
+
+<svelte:head>
+	<!-- Schema.org -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html `<${'script'} type="application/ld+json">${jsonLd}</${'script'}>`}
 	<!-- General -->
 	<title>{$translationsStore.myMusicalProfilePage.title}</title>
 	<meta
@@ -71,7 +74,7 @@
 		</div>
 
 		<div class="space-y-20 lg:space-y-32">
-			{#each itemsType as type}
+			{#each itemsType as type, i (i)}
 				{#if type === 'artists'}
 					<MostListenedItems sessionType="artists" />
 				{:else if type === 'tracks'}

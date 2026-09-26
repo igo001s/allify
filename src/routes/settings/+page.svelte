@@ -13,11 +13,8 @@
 
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
-</script>
 
-<svelte:head>
-	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${getJsonLdByPage(
+	$: jsonLd = getJsonLdByPage(
 		'settingsPage',
 		$translationsStore.locale,
 		$translationsStore.settingsPage.title,
@@ -25,7 +22,13 @@
 		$userInfo?.connectedStreamings.spotify
 			? $translationsStore.settingsPage.settingsPageMetaDescription
 			: $translationsStore.settingsPage.settingsPageWithoutLoginMetaDescription
-	)}</script>`}
+	);
+</script>
+
+<svelte:head>
+	<!-- Schema.org -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html `<${'script'} type="application/ld+json">${jsonLd}</${'script'}>`}
 	<!-- General -->
 	<title>{$translationsStore.settingsPage.title}</title>
 	<meta

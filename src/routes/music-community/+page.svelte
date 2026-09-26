@@ -23,6 +23,16 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
+	$: jsonLd = getJsonLdByPage(
+		'musicCommunityPage',
+		$translationsStore.locale,
+		$translationsStore.musicCommunityPage.title,
+		$translationsStore.configuration.allifyDescription,
+		$userInfo?.connectedStreamings.spotify
+			? $translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
+			: $translationsStore.musicCommunityPage.musicCommunityPageMetaWithoutLoginMetaDescription
+	);
+
 	let searchUserInputValue: string = '';
 	let loadingFoundedUsers = false;
 
@@ -39,7 +49,7 @@
 			const searchUsersResponse = await searchUsers(searchUserInputValue);
 
 			foundedUsers = searchUsersResponse;
-		} catch (error) {
+		} catch {
 			foundedUsers = [];
 		} finally {
 			loadingFoundedUsers = false;
@@ -49,15 +59,8 @@
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${getJsonLdByPage(
-		'musicCommunityPage',
-		$translationsStore.locale,
-		$translationsStore.musicCommunityPage.title,
-		$translationsStore.configuration.allifyDescription,
-		$userInfo?.connectedStreamings.spotify
-			? $translationsStore.musicCommunityPage.musicCommunityPageMetaDescription
-			: $translationsStore.musicCommunityPage.musicCommunityPageMetaWithoutLoginMetaDescription
-	)}</script>`}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html `<${'script'} type="application/ld+json">${jsonLd}</${'script'}>`}
 	<!-- General -->
 	<title>{$translationsStore.musicCommunityPage.title}</title>
 	<meta

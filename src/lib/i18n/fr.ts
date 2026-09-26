@@ -68,10 +68,8 @@ export const fr = {
 		footerColumn3Item3: 'Utilisation des données',
 		stillInDevelopmentText: 'En cours de développement',
 		loadingComponentHeading1: 'Connexion...',
-		loadingComponentSpotifyParagraph1:
-			'Récupération de vos informations depuis <span class="font-semibold text-spotify">Spotify</span>',
-		loadingComponentDeezerParagraph1:
-			'Récupération de vos informations depuis <span class="font-semibold text-deezer">Deezer</span>',
+		loadingComponentSpotifyParagraph1: 'Récupération de vos informations depuis {streaming}',
+		loadingComponentDeezerParagraph1: 'Récupération de vos informations depuis {streaming}',
 		loadingComponentAriaLabel: 'Animation de chargement',
 		notLoggedHeading1: "Vous n'êtes pas connecté",
 		notLoggedMyMusicProfileParagraph1:

@@ -10,17 +10,20 @@
 
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
-</script>
 
-<svelte:head>
-	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${getJsonLdByPage(
+	$: jsonLd = getJsonLdByPage(
 		'paymentSuccessPage',
 		$translationsStore.locale,
 		$translationsStore.paymentSuccessPage.title,
 		$translationsStore.configuration.allifyDescription,
 		$translationsStore.paymentSuccessPage.paymentSuccessPageMetaDescription
-	)}</script>`}
+	);
+</script>
+
+<svelte:head>
+	<!-- Schema.org -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html `<${'script'} type="application/ld+json">${jsonLd}</${'script'}>`}
 	<!-- General -->
 	<title>{$translationsStore.paymentSuccessPage.title}</title>
 	<meta

@@ -46,9 +46,15 @@
 			</p>
 			<p class="text-center text-t-secondary">
 				{#if streamingPlatform === 'spotify'}
-					{@html $translationsStore.generalTexts.loadingComponentSpotifyParagraph1}
+					{$translationsStore.generalTexts.loadingComponentSpotifyParagraph1.replace(
+						'{streaming}',
+						'Spotify'
+					)}
 				{:else if streamingPlatform === 'deezer'}
-					{@html $translationsStore.generalTexts.loadingComponentDeezerParagraph1}
+					{$translationsStore.generalTexts.loadingComponentDeezerParagraph1.replace(
+						'{streaming}',
+						'Deezer'
+					)}
 				{/if}
 			</p>
 		</div>

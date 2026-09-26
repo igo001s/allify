@@ -68,10 +68,8 @@ export const es = {
 		footerColumn3Item3: 'Uso de Datos',
 		stillInDevelopmentText: 'Aún en desarrollo',
 		loadingComponentHeading1: 'Conectando...',
-		loadingComponentSpotifyParagraph1:
-			'Obteniendo tu información de <span class="font-semibold text-spotify">Spotify</span>',
-		loadingComponentDeezerParagraph1:
-			'Obteniendo tu información de <span class="font-semibold text-deezer">Deezer</span>',
+		loadingComponentSpotifyParagraph1: 'Obteniendo tu información de {streaming}',
+		loadingComponentDeezerParagraph1: 'Obteniendo tu información de {streaming}',
 		loadingComponentAriaLabel: 'Animación de carga',
 		notLoggedHeading1: 'No has iniciado sesión',
 		notLoggedMyMusicProfileParagraph1:

@@ -31,11 +31,20 @@
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
 
+	$: jsonLd = getJsonLdByPage(
+		'musicCommunityPageUser',
+		$translationsStore.locale,
+		$translationsStore.musicCommunityPage.title,
+		$translationsStore.configuration.allifyDescription,
+		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription,
+		$page.params.id
+	);
+
 	let loadingUser: boolean = true;
 
 	let showAddCommentModal: boolean = false;
 
-	$: user = null as PublicUserInfo | null;
+	let user: PublicUserInfo | null = null;
 
 	$: selectedStreaming = user?.primaryStreaming === 'spotify' ? 'spotify' : null;
 
@@ -66,14 +75,8 @@
 
 <svelte:head>
 	<!-- Schema.org -->
-	{@html `<script type="application/ld+json">${getJsonLdByPage(
-		'musicCommunityPageUser',
-		$translationsStore.locale,
-		$translationsStore.musicCommunityPage.title,
-		$translationsStore.configuration.allifyDescription,
-		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription,
-		$page.params.id
-	)}</script>`}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html `<${'script'} type="application/ld+json">${jsonLd}</${'script'}>`}
 	<!-- General -->
 	<title
 		>{loadingUser
