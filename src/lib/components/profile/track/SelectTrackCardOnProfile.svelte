@@ -15,7 +15,7 @@
 </script>
 
 <SelectItemCard
-	handleItemSelection={handleTrackSelection}
+	{handleTrackSelection}
 	itemAriaLabel={$translationsStore.profilePage.profilePageSelectYourMusicChooseMusicAriaLabel}
 	item={track}
 	itemType="track"

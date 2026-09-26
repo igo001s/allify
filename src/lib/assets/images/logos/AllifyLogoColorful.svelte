@@ -10,7 +10,10 @@
 	export let logoAriaLabel = '';
 	export let logoTitle = '';
 
-	const decorationMap: Record<string, () => Promise<any>> = {
+	type SeasonalDecoration =
+		'christmas-hat' | 'new-year' | 'junina-hat' | 'easter' | 'halloween' | 'carnival';
+
+	const decorationMap = {
 		'christmas-hat': () => import('./seasonal-decorations/ChristmasHatGroup.svelte'),
 		'new-year': () => import('./seasonal-decorations/NewYearGroup.svelte'),
 		'junina-hat': () => import('./seasonal-decorations/JuninaHatGroup.svelte'),
@@ -19,7 +22,7 @@
 		carnival: () => import('./seasonal-decorations/CarnivalMaskGroup.svelte')
 	};
 
-	const transformMap: Record<string, string> = {
+	const transformMap: Record<SeasonalDecoration, string> = {
 		'christmas-hat': 'scale(0.30) translate(910, 10)',
 		'new-year': 'scale(0.20) translate(1300, -50)',
 		'junina-hat': 'scale(0.30) translate(940, -29) rotate(25)',
@@ -30,27 +33,30 @@
 
 	const seasonalDecoration = resolveSeasonalDecoration();
 
-	let SeasonalComponent: any = null;
+	let seasonalComponent:
+		Awaited<ReturnType<(typeof decorationMap)[SeasonalDecoration]>>['default'] | null = null;
+
 	let transformGroup = seasonalDecoration ? transformMap[seasonalDecoration] : '';
 
-	function resolveSeasonalDecoration(): string | null {
+	function resolveSeasonalDecoration(): SeasonalDecoration | null {
 		const today = new Date();
 		const month = today.getMonth() + 1;
 		const day = today.getDate();
 
 		if ((month === 12 && day >= 27) || (month === 1 && day <= 5)) return 'new-year';
 		if (month === 12 && day >= 1 && day <= 26) return 'christmas-hat';
-		if (month === 10 && day >= 25) return 'halloween';
+		if ((month === 10 && day >= 20) || (month === 11 && day <= 5)) return 'halloween';
 		if (month === 6) return 'junina-hat';
 		if ((month === 3 && day >= 20) || (month === 4 && day <= 10)) return 'easter';
 		if ((month === 2 && day >= 10) || (month === 3 && day <= 5)) return 'carnival';
+
 		return null;
 	}
 
 	onMount(async () => {
-		if (seasonalDecoration && decorationMap[seasonalDecoration]) {
+		if (seasonalDecoration) {
 			const module = await decorationMap[seasonalDecoration]();
-			SeasonalComponent = module.default;
+			seasonalComponent = module.default;
 		}
 	});
 </script>
@@ -93,8 +99,8 @@ l35 70 -40 20 c-46 23 -150 34 -193 20z"
 			<path d="M1670 610 l0 -290 100 0 100 0 0 290 0 290 -100 0 -100 0 0 -290z" />
 		</g>
 
-		{#if SeasonalComponent}
-			<svelte:component this={SeasonalComponent} {transformGroup} />
+		{#if seasonalComponent}
+			<svelte:component this={seasonalComponent} {transformGroup} />
 		{/if}
 	</svg>
 </a>

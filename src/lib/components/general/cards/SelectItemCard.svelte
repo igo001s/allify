@@ -9,7 +9,8 @@
 	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
 
 	// Props
-	export let handleItemSelection: (Item: any) => void;
+	export let handleArtistSelection: ((item: ArtistSpotify) => void) | undefined = undefined;
+	export let handleTrackSelection: ((item: TrackSpotify) => void) | undefined = undefined;
 	export let item: TrackSpotify | ArtistSpotify;
 	export let itemAriaLabel: string;
 	export let itemType: 'track' | 'artist';
@@ -21,7 +22,10 @@
 	class={`${selected ? 'border-brand-primary bg-brand-primary/5' : 'border-s-muted bg-s-muted'}
 						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-3.5 hover:border-brand-primary hover:bg-brand-primary/5`}
 	aria-label={itemAriaLabel}
-	on:click={() => handleItemSelection(item)}
+	on:click={() =>
+		itemType === 'track'
+			? handleTrackSelection?.(item as TrackSpotify)
+			: handleArtistSelection?.(item as ArtistSpotify)}
 	{disabled}
 >
 	{#if item.image}

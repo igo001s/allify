@@ -43,7 +43,7 @@
 		>
 			{#each $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.uniqueTracks as track, i (i)}
 				<SelectItemCard
-					handleItemSelection={handleTrackSelection}
+					{handleTrackSelection}
 					item={track}
 					itemAriaLabel={$translationsStore.generalTexts
 						.buildProfileFirstStepTrackSectionSelectTrackAriaLabel}

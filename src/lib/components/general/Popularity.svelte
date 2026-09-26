@@ -2,8 +2,11 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Types
+	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
+
 	// Props
-	export let item: any;
+	export let item: ArtistSpotify | TrackSpotify;
 </script>
 
 <div class="flex w-full items-center justify-between gap-2">

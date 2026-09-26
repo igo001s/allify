@@ -10,10 +10,9 @@
 	import type { TrackSpotify } from '$lib/types/Spotify.type';
 
 	// Props
+	export let handleTrackSelection: (track: TrackSpotify) => void;
 	export let track: TrackSpotify;
 	export let choosedTrack: TrackSpotify | undefined;
-	export let handleTrackSelection: (track: TrackSpotify) => void;
-
 	export let userInfoType: 'trackOfTheMoment' | 'customTrack' | 'tracksWhoWereWithYou';
 
 	$: currentTrack =
@@ -25,7 +24,7 @@
 </script>
 
 <SelectItemCard
-	handleItemSelection={handleTrackSelection}
+	{handleTrackSelection}
 	itemAriaLabel={$translationsStore.profilePage.profilePageChangeYourMusicChooseMusicAriaLabel}
 	item={track}
 	itemType="track"

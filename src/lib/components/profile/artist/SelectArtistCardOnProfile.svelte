@@ -15,7 +15,7 @@
 </script>
 
 <SelectItemCard
-	handleItemSelection={handleArtistSelection}
+	{handleArtistSelection}
 	itemAriaLabel={$translationsStore.profilePage.profilePageSelectYourArtistChooseArtistAriaLabel}
 	item={artist}
 	itemType="artist"
