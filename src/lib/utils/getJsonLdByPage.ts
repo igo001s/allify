@@ -56,7 +56,7 @@ export function getJsonLdByPage(
 					allifyOrganizationLd,
 					allifyWebsiteLd,
 					{
-						'@type': 'ProfilePage',
+						'@type': 'WebPage',
 						'@id': 'https://allify.club/my-musical-profile#webpage',
 						url: 'https://allify.club/my-musical-profile',
 						name,
@@ -120,7 +120,7 @@ export function getJsonLdByPage(
 					allifyOrganizationLd,
 					allifyWebsiteLd,
 					{
-						'@type': 'ProfilePage',
+						'@type': 'WebPage',
 						'@id': `https://allify.club/music-community/${id}#webpage`,
 						url: `https://allify.club/music-community/${id}`,
 						name,
@@ -140,7 +140,7 @@ export function getJsonLdByPage(
 					allifyOrganizationLd,
 					allifyWebsiteLd,
 					{
-						'@type': 'ProfilePage',
+						'@type': 'WebPage',
 						'@id': `https://allify.club/profile#webpage`,
 						url: `https://allify.club/profile`,
 						name,
