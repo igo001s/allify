@@ -55,7 +55,11 @@ export const POST: RequestHandler = async ({ request, cookies, fetch }) => {
 
 		const data = await response.json();
 
-		return new Response(JSON.stringify(data), { status: 200 });
+		const { display_name, email, images, followers, external_urls } = data;
+
+		return new Response(JSON.stringify({ display_name, email, images, followers, external_urls }), {
+			status: 200
+		});
 	} catch (error) {
 		return new Response(JSON.stringify({ error }), { status: 500 });
 	}

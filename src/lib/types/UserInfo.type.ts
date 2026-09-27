@@ -35,6 +35,14 @@ export type UserInfo = {
 	createdAt: Date;
 };
 
+export type InitialUserInfo = {
+	display_name: string;
+	email: string;
+	images: AvatarImage[];
+	followers: { href: string; total: number };
+	external_urls: { spotify: string };
+};
+
 export type PublicUserInfo = Omit<UserInfo, 'email'>;
 
 export type SearchUserInfo = {

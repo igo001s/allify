@@ -3,12 +3,13 @@ import { dev } from '$app/environment';
 
 // Types
 import type { UserInfoSpotify } from '$lib/types/Spotify.type';
+import type { InitialUserInfo } from '$lib/types/UserInfo.type';
 
 // Services
 import { getMostListenedArtists } from '../stats/getMostListenedArtists';
 import { getMostListenedTracks } from '../stats/getMostListenedTracks';
 
-export async function buildUserFromSpotify(infoFromSpotify: any) {
+export async function buildUserFromSpotify(infoFromSpotify: InitialUserInfo) {
 	try {
 		const [mostListenedArtistsResult, mostListenedTracksResult] = await Promise.allSettled([
 			getMostListenedArtists(),

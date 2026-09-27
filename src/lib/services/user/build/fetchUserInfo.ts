@@ -17,7 +17,6 @@ import { welcomeToAllifyTemplate } from '$lib/emails/templates/welcomeToAllifyTe
 export async function fetchUserInfo() {
 	try {
 		const userFromSpotify = await existingSpotifyUser();
-		const $translationsStore = get(translationsStore);
 
 		if (userFromSpotify.existingUser === false) {
 			const builtUser = await buildUserFromSpotify(userFromSpotify.infoToCreateUser);
@@ -32,7 +31,7 @@ export async function fetchUserInfo() {
 
 				if (createUserResult) {
 					sendEmail(
-						$translationsStore.templateEmail.welcomeToAllifySubject,
+						get(translationsStore).templateEmail.welcomeToAllifySubject,
 						builtUser.email,
 						welcomeToAllifyTemplate(createUserResult.connectedStreamings.spotify.name, 'Spotify')
 					);
