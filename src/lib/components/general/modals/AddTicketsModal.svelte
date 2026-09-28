@@ -2,7 +2,8 @@
 	// Svelte
 	import { onMount, onDestroy } from 'svelte';
 
-	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
+	// Assets
+	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
 
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';

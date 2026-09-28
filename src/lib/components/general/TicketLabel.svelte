@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/images/icons/TicketIcon.webp?enhanced';
+	import TicketIcon from '$lib/assets/icons/TicketIcon.webp?enhanced';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
