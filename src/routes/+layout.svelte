@@ -75,7 +75,10 @@
 
 <Header />
 
-<main id="main-content" class="base-spacing">
+<main
+	id="main-content"
+	class="px-5 pt-5 pb-14 md:px-10 md:pt-10 md:pb-16 xl:px-16 xl:pt-10 xl:pb-24"
+>
 	{@render children()}
 </main>
 

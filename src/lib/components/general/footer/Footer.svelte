@@ -7,7 +7,7 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 </script>
 
-<footer class="footer-spacing bg-s-inverse">
+<footer class="bg-s-inverse px-5 pt-8 pb-5 md:p-10 xl:px-16 xl:pt-16 xl:pb-10">
 	<div class="pb-8 lg:pb-12">
 		<div
 			class="

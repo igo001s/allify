@@ -26,13 +26,6 @@
 	color: var(--color-t-secondary);
 }
 
-.heading-3-faq {
-	font-size: 0.875rem;
-	line-height: 1.25rem;
-	font-weight: 500;
-	color: var(--color-t-primary);
-}
-
 .heading-4 {
 	font-size: 0.875rem;
 	line-height: 1.25rem;
@@ -54,10 +47,5 @@
 	.heading-2-legal-pages {
 		font-size: 1.5rem;
 		line-height: 2rem;
-	}
-
-	.heading-3-faq {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
 	}
 }

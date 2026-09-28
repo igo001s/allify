@@ -22,7 +22,9 @@
 	}
 </script>
 
-<header class="header-spacing relative flex items-center justify-between bg-s-default">
+<header
+	class="relative flex items-center justify-between bg-s-default p-5 md:p-10 xl:px-16 xl:py-12"
+>
 	<div class="flex items-center gap-4 md:gap-10 2xl:gap-20">
 		<AllifyLogoColorful
 			logoSvgClass="w-26 h-fit cursor-pointer lg:w-32 hover:scale-102"

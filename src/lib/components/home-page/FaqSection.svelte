@@ -97,14 +97,14 @@
 			<div class="w-full">
 				<button
 					type="button"
-					class={`button-faq-question flex w-full items-center justify-between py-3 pr-2 pl-4 text-left transition-none! lg:py-5 lg:pr-6 lg:pl-8 ${
+					class={`flex w-full cursor-pointer items-center justify-between border-brand-primary py-3 pr-2 pl-4 text-left transition-none! lg:py-5 lg:pr-6 lg:pl-8 ${
 						openFaqIndex === i
 							? 'rounded-t-lg border-x border-t bg-brand-primary/5'
 							: 'rounded-lg border hover:bg-brand-primary/5'
 					}`}
 					on:click={() => (openFaqIndex = openFaqIndex === i ? null : i)}
 				>
-					<h3 class="heading-3-faq">
+					<h3 class="text-sm leading-5 font-medium text-t-primary sm:text-xl sm:leading-7">
 						{item.question}
 					</h3>
 

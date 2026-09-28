@@ -16,36 +16,24 @@
 	--color-t-inverse-muted: #d1d5db;
 
 	/* BACKGROUND */
-	--color-s-page: #f9fafb;
 	--color-s-default: #ffffff;
 	--color-s-muted: #f3f4f6;
-	--color-s-disabled: #666666;
 	--color-s-inverse: #161616;
 	--color-s-inverse-muted: #565656;
 
 	/* BORDERS */
 	--color-b-default: #d1d5db;
 	--color-b-muted: #2b2b2b;
-	--color-b-focus: #22c55e;
 
 	/* BRAND */
 	--color-brand-primary: #09623a;
 	--color-brand-primary-dark: #064228;
 	--color-brand-primary-light: #109354;
-	--color-brand-secondary: #f0d77a;
-	--color-brand-secondary-dark: #c4a94f;
-	--color-brand-secondary-light: #f7e48b;
-
-	/* INPUT */
-	--color-input-bg: #ffffff;
-	--color-input-border: #d1d5db;
-	--color-input-placeholder: #9ca3af;
 
 	/* STATUS */
 	--color-status-success: #22c55e;
 	--color-status-error: #ef4444;
 	--color-status-warning: #f59e0b;
-	--color-status-info: #3b82f6;
 	--color-top-1: #f59e0b;
 	--color-top-2: #94a3b8;
 	--color-top-3: #b45309;
