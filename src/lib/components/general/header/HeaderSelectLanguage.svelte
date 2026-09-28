@@ -8,15 +8,15 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Assets
-	import englishFlag from '$lib/assets/images/icons/flags/united-states-icon.webp?enhanced';
-	import germanyFlag from '$lib/assets/images/icons/flags/germany-icon.webp?enhanced';
-	import portugueseFlag from '$lib/assets/images/icons/flags/brazil-icon.webp?enhanced';
-	import spanishFlag from '$lib/assets/images/icons/flags/spain-icon.webp?enhanced';
-	import frenchFlag from '$lib/assets/images/icons/flags/france-icon.webp?enhanced';
-	import italianFlag from '$lib/assets/images/icons/flags/italy-icon.webp?enhanced';
-	import russianFlag from '$lib/assets/images/icons/flags/russia-icon.webp?enhanced';
-	import chineseFlag from '$lib/assets/images/icons/flags/china-icon.webp?enhanced';
-	import japaneseFlag from '$lib/assets/images/icons/flags/japan-icon.webp?enhanced';
+	import englishFlag from '$lib/assets/icons/flags/united-states-icon.webp?enhanced';
+	import germanyFlag from '$lib/assets/icons/flags/germany-icon.webp?enhanced';
+	import portugueseFlag from '$lib/assets/icons/flags/brazil-icon.webp?enhanced';
+	import spanishFlag from '$lib/assets/icons/flags/spain-icon.webp?enhanced';
+	import frenchFlag from '$lib/assets/icons/flags/france-icon.webp?enhanced';
+	import italianFlag from '$lib/assets/icons/flags/italy-icon.webp?enhanced';
+	import russianFlag from '$lib/assets/icons/flags/russia-icon.webp?enhanced';
+	import chineseFlag from '$lib/assets/icons/flags/china-icon.webp?enhanced';
+	import japaneseFlag from '$lib/assets/icons/flags/japan-icon.webp?enhanced';
 	import ArrowIcon from '$lib/assets/icons/ArrowIcon.svelte';
 	import SelectedIcon from '$lib/assets/icons/SelectedIcon.svelte';
 

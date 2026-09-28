@@ -1,17 +1,17 @@
 <script lang="ts">
 	// Assets
-	import DivisorDesktop from '$lib/assets/images/dividers/musical-waves-desktop.webp';
-	import DivisorMobile from '$lib/assets/images/dividers/musical-waves-mobile.webp';
+	import DivisorDesktop from '$lib/assets/dividers/musical-waves-desktop.webp?enhanced';
+	import DivisorMobile from '$lib/assets/dividers/musical-waves-desktop.webp?enhanced';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 </script>
 
 <picture>
-	<source srcset={DivisorDesktop} media="(min-width: 1024px)" type="image/webp" />
+	<source srcset={DivisorDesktop.img.src} media="(min-width: 1024px)" type="image/webp" />
 
 	<img
-		src={DivisorMobile}
+		src={DivisorMobile.img.src}
 		class="my-10 h-8 w-full object-cover"
 		loading="lazy"
 		decoding="async"
