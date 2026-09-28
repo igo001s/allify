@@ -6,7 +6,7 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter(),
-		inlineStyleThreshold: 20000
+		inlineStyleThreshold: Infinity
 	}
 };
 
