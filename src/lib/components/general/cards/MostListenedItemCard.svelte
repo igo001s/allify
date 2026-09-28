@@ -14,18 +14,23 @@
 	export let item: ArtistSpotify | TrackSpotify;
 	export let index: number;
 	export let itemType: 'artists' | 'tracks';
+	export let currentBatch: number;
+
+	const topStyles = [
+		{ ring: 'ring-top-1', badge: 'bg-top-1 text-t-primary' },
+		{ ring: 'ring-top-2', badge: 'bg-top-2 text-t-primary' },
+		{ ring: 'ring-top-3', badge: 'bg-top-3 text-t-inverse' }
+	];
+	const defaultStyle = {
+		ring: 'ring-s-inverse-muted/20',
+		badge: 'bg-s-inverse-muted/80 text-t-inverse'
+	};
+
+	$: style = (currentBatch === 0 && topStyles[index]) || defaultStyle;
 </script>
 
 <div
-	class={`flex flex-col gap-3 rounded-lg p-6.5 ring-2 sm:flex-row sm:items-center sm:gap-4 sm:p-5 ${
-		index === 0
-			? 'ring-top-1'
-			: index === 1
-				? 'ring-top-2'
-				: index === 2
-					? 'ring-top-3'
-					: 'ring-black/10'
-	}`}
+	class={`flex flex-col gap-3 rounded-lg p-6.5 ring-2 sm:flex-row sm:items-center sm:gap-4 sm:p-5 ${style.ring}`}
 >
 	<div class="relative mx-auto h-32 w-32 shrink-0 sm:h-48 sm:w-48">
 		<enhanced:img
@@ -38,17 +43,9 @@
 		/>
 
 		<span
-			class={`absolute top-2 left-2 rounded-md px-2 py-0.5 text-xs font-semibold text-white shadow-sm ${
-				index === 0
-					? 'bg-top-1'
-					: index === 1
-						? 'bg-top-2'
-						: index === 2
-							? 'bg-top-3'
-							: 'bg-black/50'
-			}`}
+			class={`absolute top-2 left-2 rounded-md px-2 py-0.5 text-xs font-semibold text-white shadow-sm ${style.badge}`}
 		>
-			{index + 1}
+			{index + currentBatch * 6 + 1}
 		</span>
 	</div>
 

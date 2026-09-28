@@ -35,6 +35,18 @@
 			: tracks?.nextFreeUpdate !== undefined && new Date(tracks.nextFreeUpdate) > new Date();
 
 	let periodTime: 'oneYear' | 'sixMonths' | 'fourWeeks' = 'oneYear';
+	let currentBatch = 0;
+	let batchs: (ArtistSpotify | TrackSpotify)[][];
+
+	$: {
+		batchs = [];
+
+		if (mostListenedItems) {
+			for (let i = 0; i < mostListenedItems.length; i += 6) {
+				batchs.push(mostListenedItems.slice(i, i + 6));
+			}
+		}
+	}
 </script>
 
 <div class="flex flex-col gap-10">
@@ -71,11 +83,24 @@
 				{/each}
 			</div>
 
-			<div class="grid grid-cols-1 gap-6 md:gap-10 lg:grid-cols-2 2xl:grid-cols-3">
-				{#each mostListenedItems as item, i (item.id)}
-					<MostListenedItemCard {item} index={i} itemType={sessionType} />
+			<div class="grid grid-cols-1 gap-6 md:gap-10 lg:grid-cols-2 lg:grid-rows-2 2xl:grid-cols-3">
+				{#each batchs[currentBatch] as item, i (item.id)}
+					<MostListenedItemCard {item} index={i} itemType={sessionType} {currentBatch} />
 				{/each}
 			</div>
+
+			{#if mostListenedItems?.length && mostListenedItems?.length > 6}
+				<div class="itesm-center mx-auto flex gap-4">
+					{#each batchs, i (i)}
+						<button
+							class={`${currentBatch === i ? 'border-brand-primary bg-brand-primary/20 font-medium' : 'cursor-pointer border-transparent hover:bg-brand-primary/10'} rounded-lg border px-3 py-1.5 text-xs lg:px-4 lg:py-2 lg:text-sm`}
+							onclick={() => (currentBatch = i)}
+						>
+							{i + 1}
+						</button>
+					{/each}
+				</div>
+			{/if}
 		</div>
 
 		<span class="text-center text-xs text-t-secondary">
