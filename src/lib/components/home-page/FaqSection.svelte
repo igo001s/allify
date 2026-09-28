@@ -126,3 +126,23 @@
 		{/each}
 	</div>
 </section>
+
+<style>
+	.button-outline-linkedin {
+		border-color: var(--color-linkedin);
+		color: var(--color-linkedin);
+	}
+
+	.button-outline-linkedin:hover {
+		background-color: color-mix(in srgb, var(--color-linkedin) 5%, transparent);
+	}
+
+	.button-outline-github {
+		border-color: var(--color-github);
+		color: var(--color-github);
+	}
+
+	.button-outline-github:hover {
+		background-color: color-mix(in srgb, var(--color-github) 5%, transparent);
+	}
+</style>

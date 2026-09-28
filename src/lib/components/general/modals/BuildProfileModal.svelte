@@ -14,6 +14,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Utils
+	import { nextUpdateTime } from '$lib/utils/nextUpdateTime';
+
 	// Services
 	import { setProfileVisibilityPublicByDefault } from '$lib/services/user/build/setProfileVisibilityPublicByDefault';
 
@@ -47,9 +50,12 @@
 			userInfo.update((currentUser) => {
 				if (currentUser) {
 					currentUser.profileVisibility = {
-						visibility: setProfileVisibilityPublicByDefaultResponse?.visibility
+						visibility: setProfileVisibilityPublicByDefaultResponse.visibility
 							? setProfileVisibilityPublicByDefaultResponse.visibility
-							: 'public'
+							: 'public',
+						nextUpdate: setProfileVisibilityPublicByDefaultResponse.nextUpdate
+							? setProfileVisibilityPublicByDefaultResponse.nextUpdate
+							: nextUpdateTime()
 					};
 				}
 				return currentUser;

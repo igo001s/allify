@@ -4,6 +4,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 // Server
 import { connectToMongoDB } from '$lib/server/mongodb';
 
+// Utils
+import { nextUpdateTime } from '$lib/utils/nextUpdateTime';
+
 // MongoDB
 import { ObjectId } from 'mongodb';
 
@@ -41,7 +44,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			{
 				$set: {
 					profileVisibility: {
-						visibility: 'public'
+						visibility: 'public',
+						nextUpdate: nextUpdateTime()
 					}
 				}
 			}
@@ -49,7 +53,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		return new Response(
 			JSON.stringify({
-				visibility: 'public'
+				visibility: 'public',
+				nextUpdate: nextUpdateTime()
 			}),
 			{ status: 200 }
 		);

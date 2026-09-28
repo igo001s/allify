@@ -1,7 +1,4 @@
 <script lang="ts">
-	// Components
-	import Ticket from '$lib/components/general/Ticket.svelte';
-
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -21,8 +18,7 @@
 		const updateProfileVisibilityResponse = await updateProfileVisibility(
 			$userInfo?._id,
 			option,
-			$userInfo?.tickets,
-			$userInfo?.profileVisibility?.nextFreeUpdate
+			$userInfo?.profileVisibility?.nextUpdate
 		);
 
 		if (!updateProfileVisibilityResponse.error) {
@@ -33,7 +29,7 @@
 					...currentUser,
 					profileVisibility: {
 						visibility: updateProfileVisibilityResponse.visibility,
-						nextFreeUpdate: updateProfileVisibilityResponse.nextFreeUpdate
+						nextUpdate: updateProfileVisibilityResponse.nextUpdate
 					}
 				};
 			});
@@ -44,24 +40,34 @@
 				toastMessage:
 					$translationsStore.settingsPage.settingsPageProfileVisibilityChangeSuccessMessage
 			});
+
+			return;
 		} else {
-			if (updateProfileVisibilityResponse.errorType === 'ticketUsageFailed') return;
+			if (updateProfileVisibilityResponse.errorType === 'updateNotAvailable') {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.settingsPage
+							.settingsPageProfileVisibilityChangeUpdateNotAvailableErrorMessage
+				});
+			} else {
+				toastStore.set({
+					showToast: true,
+					toastType: 'error',
+					toastMessage:
+						$translationsStore.settingsPage.settingsPageProfileVisibilityChangeErrorMessage
+				});
+			}
 
-			toastStore.set({
-				showToast: true,
-				toastType: 'error',
-				toastMessage:
-					$translationsStore.settingsPage.settingsPageProfileVisibilityChangeErrorMessage
-			});
+			return;
 		}
-
-		return;
 	}
 </script>
 
 <div class="flex w-full flex-col gap-3">
 	<div
-		class="bg-background-secondary flex w-full max-w-xl flex-col gap-3 rounded-xl border border-brand-primary/20 p-3 sm:flex-row sm:gap-4"
+		class="flex w-full max-w-xl flex-col gap-3 rounded-xl border border-brand-primary/20 p-3 sm:flex-row sm:gap-4"
 	>
 		{#each visibilityOptions as option, i (i)}
 			<button
@@ -73,10 +79,6 @@
 						: 'cursor-pointer bg-brand-primary/10 pr-10 text-t-primary'
 				}`}
 			>
-				{#if visibility !== option && $userInfo?.profileVisibility?.nextFreeUpdate && new Date($userInfo.profileVisibility.nextFreeUpdate) > new Date()}
-					<Ticket usingTicket={true} />
-				{/if}
-
 				{option === 'public'
 					? $translationsStore.settingsPage.settingsPageProfileVisibilityPublicOption
 					: $translationsStore.settingsPage.settingsPageProfileVisibilityPrivateOption}
@@ -94,11 +96,11 @@
 		</p>
 
 		<span class="text-xs text-t-secondary/70">
-			{#if $userInfo?.profileVisibility.nextFreeUpdate && new Date($userInfo.profileVisibility.nextFreeUpdate) > new Date()}
+			{#if $userInfo?.profileVisibility.nextUpdate && new Date($userInfo.profileVisibility.nextUpdate) > new Date()}
 				{$translationsStore.settingsPage.settingsPageProfileVisibilityChangeAgainMessage}
 
 				<strong class="font-medium text-t-primary">
-					{new Date($userInfo.profileVisibility.nextFreeUpdate).toLocaleString(
+					{new Date($userInfo.profileVisibility.nextUpdate).toLocaleString(
 						$translationsStore.locale,
 						{
 							dateStyle: 'short',

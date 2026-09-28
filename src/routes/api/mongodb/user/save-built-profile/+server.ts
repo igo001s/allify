@@ -8,7 +8,7 @@ import { connectToMongoDB } from '$lib/server/mongodb';
 import type { UserInfo } from '$lib/types/UserInfo.type';
 
 // Utils
-import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+import { nextUpdateTime } from '$lib/utils/nextUpdateTime';
 
 // MongoDB
 import { ObjectId } from 'mongodb';
@@ -47,17 +47,18 @@ export const POST: RequestHandler = async ({ request }) => {
 					tracks: {
 						trackOfTheMoment: {
 							track: builtUser.track,
-							nextFreeUpdate: nextFreeUpdateTime()
+							nextFreeUpdate: nextUpdateTime()
 						}
 					},
 					artists: {
 						artistOfTheMoment: {
 							artist: builtUser.artist,
-							nextFreeUpdate: nextFreeUpdateTime()
+							nextFreeUpdate: nextUpdateTime()
 						}
 					},
 					profileVisibility: {
-						visibility: builtUser.profileVisibility
+						visibility: builtUser.profileVisibility,
+						nextUpdate: nextUpdateTime()
 					}
 				}
 			}
@@ -67,14 +68,15 @@ export const POST: RequestHandler = async ({ request }) => {
 			JSON.stringify({
 				trackOfTheMoment: {
 					track: builtUser.track,
-					nextFreeUpdate: nextFreeUpdateTime()
+					nextFreeUpdate: nextUpdateTime()
 				},
 				artistOfTheMoment: {
 					artist: builtUser.artist,
-					nextFreeUpdate: nextFreeUpdateTime()
+					nextFreeUpdate: nextUpdateTime()
 				},
 				profileVisibility: {
-					visibility: builtUser.profileVisibility
+					visibility: builtUser.profileVisibility,
+					nextUpdate: nextUpdateTime()
 				}
 			}),
 			{

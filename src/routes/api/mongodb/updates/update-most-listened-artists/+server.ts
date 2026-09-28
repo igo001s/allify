@@ -3,7 +3,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
 import { connectToMongoDB } from '$lib/server/mongodb';
-import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+
+// Utils
+import { nextUpdateTime } from '$lib/utils/nextUpdateTime';
 
 // MongoDB
 import { ObjectId } from 'mongodb';
@@ -55,7 +57,7 @@ export const POST: RequestHandler = async ({ request }) => {
 					'connectedStreamings.spotify.mostListenedArtists.oneYear': oneYear,
 					'connectedStreamings.spotify.mostListenedArtists.uniqueArtists': uniqueArtists,
 					'connectedStreamings.spotify.mostListenedArtists.nextFreeUpdate': freeUpdateIsAvailable
-						? nextFreeUpdateTime()
+						? nextUpdateTime()
 						: nextFreeUpdate,
 					'artists.artistsWhoWereWithYou': artistWhoWereWithYou ? artistWhoWereWithYou : []
 				}
@@ -70,7 +72,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				oneYear,
 				uniqueArtists,
 				artistWhoWereWithYou,
-				nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
+				nextFreeUpdate: freeUpdateIsAvailable ? nextUpdateTime() : nextFreeUpdate
 			}),
 			{ status: 200 }
 		);

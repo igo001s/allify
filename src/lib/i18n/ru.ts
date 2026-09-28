@@ -643,6 +643,8 @@ export const ru = {
 		settingsPageProfileVisibilityParagraph1:
 			'Управляйте видимостью своего профиля, выбирайте между публичным или приватным и изменяйте эту настройку в любое время.',
 		settingsPageProfileVisibilityChangeSuccessMessage: 'Видимость вашего профиля успешно изменена.',
+		settingsPageProfileVisibilityChangeUpdateNotAvailableErrorMessage:
+			'В данный момент невозможно изменить видимость вашего профиля.',
 		settingsPageProfileVisibilityChangeErrorMessage:
 			'Не удалось изменить видимость вашего профиля.',
 		settingsPageProfileVisibilityPublicOption: 'Публичный профиль',

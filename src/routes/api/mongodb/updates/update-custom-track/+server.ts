@@ -5,7 +5,7 @@ import type { RequestHandler } from '@sveltejs/kit';
 import { connectToMongoDB } from '$lib/server/mongodb';
 
 // Utils
-import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+import { nextUpdateTime } from '$lib/utils/nextUpdateTime';
 
 // MongoDB
 import { ObjectId } from 'mongodb';
@@ -47,7 +47,7 @@ export const POST: RequestHandler = async ({ request }) => {
 					'tracks.customTrack': {
 						title: customTrackTitle,
 						track: customTrack,
-						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
+						nextFreeUpdate: freeUpdateIsAvailable ? nextUpdateTime() : nextFreeUpdate
 					}
 				}
 			}
@@ -57,7 +57,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			JSON.stringify({
 				title: customTrackTitle,
 				track: customTrack,
-				nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
+				nextFreeUpdate: freeUpdateIsAvailable ? nextUpdateTime() : nextFreeUpdate
 			}),
 			{ status: 200 }
 		);

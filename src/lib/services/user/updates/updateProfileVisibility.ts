@@ -1,35 +1,26 @@
 // Svelte
 import { dev } from '$app/environment';
 
-// Services
-import { useTicket } from '../tickets/useTicket';
-import { returnTicket } from '../tickets/returnTicket';
-
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
 export async function updateProfileVisibility(
 	id?: ObjectId,
 	profileVisibility?: string,
-	tickets?: number,
-	nextFreeUpdate?: Date
+	nextUpdate?: Date
 ) {
 	try {
 		if (!id || !profileVisibility) return;
 
-		const nextFreeUpdateDate = nextFreeUpdate ? new Date(nextFreeUpdate) : null;
+		const nextUpdateDate = nextUpdate ? new Date(nextUpdate) : null;
 
-		const freeUpdateIsAvailable = !nextFreeUpdateDate || nextFreeUpdateDate <= new Date();
+		const updateIsAvailable = !nextUpdateDate || nextUpdateDate <= new Date();
 
-		if (!freeUpdateIsAvailable && tickets !== undefined && tickets !== null) {
-			const ticketWasUsed = await useTicket(id, tickets);
-
-			if (!ticketWasUsed) {
-				return {
-					error: true,
-					errorType: 'ticketUsageFailed'
-				};
-			}
+		if (!updateIsAvailable) {
+			return {
+				error: true,
+				errorType: 'updateNotAvailable'
+			};
 		}
 
 		const response = await fetch('/api/mongodb/user/update-profile-visibility', {
@@ -40,14 +31,12 @@ export async function updateProfileVisibility(
 			body: JSON.stringify({
 				id,
 				profileVisibility,
-				freeUpdateIsAvailable,
-				nextFreeUpdate
+				updateIsAvailable,
+				nextUpdate
 			})
 		});
 
-		if (!response.ok && tickets !== undefined && tickets !== null) {
-			await returnTicket(id, tickets);
-
+		if (!response.ok) {
 			const { error } = await response.json();
 			throw new Error(error);
 		}

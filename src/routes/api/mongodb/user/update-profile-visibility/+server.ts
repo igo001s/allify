@@ -5,11 +5,13 @@ import type { RequestHandler } from '@sveltejs/kit';
 import { connectToMongoDB } from '$lib/server/mongodb';
 
 // Utils
-import { nextFreeUpdateTime } from '$lib/utils/nextFreeUpdateTime';
+import { nextUpdateTime } from '$lib/utils/nextUpdateTime';
+
+// MongoDB
+import { ObjectId } from 'mongodb';
 
 // Environment variables
 import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
-import { ObjectId } from 'mongodb';
 
 const ALLOWED_ORIGINS = [ALLIFY_URL];
 
@@ -23,7 +25,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { id, profileVisibility, freeUpdateIsAvailable, nextFreeUpdate } = await request.json();
+		const { id, profileVisibility, updateIsAvailable, nextUpdate } = await request.json();
 
 		if (!id || !profileVisibility) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
@@ -39,7 +41,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				$set: {
 					profileVisibility: {
 						visibility: profileVisibility,
-						nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
+						nextUpdate: updateIsAvailable ? nextUpdateTime() : nextUpdate
 					}
 				}
 			}
@@ -48,7 +50,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		return new Response(
 			JSON.stringify({
 				visibility: profileVisibility,
-				nextFreeUpdate: freeUpdateIsAvailable ? nextFreeUpdateTime() : nextFreeUpdate
+				nextUpdate: updateIsAvailable ? nextUpdateTime() : nextUpdate
 			}),
 			{ status: 200 }
 		);

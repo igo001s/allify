@@ -656,6 +656,8 @@ export const es = {
 			'Gestiona la visibilidad de tu perfil, elige entre público o privado y cambia esta configuración en cualquier momento.',
 		settingsPageProfileVisibilityChangeSuccessMessage:
 			'La visibilidad de tu perfil se ha cambiado con éxito.',
+		settingsPageProfileVisibilityChangeUpdateNotAvailableErrorMessage:
+			'No se puede cambiar la visibilidad de tu perfil en este momento.',
 		settingsPageProfileVisibilityChangeErrorMessage:
 			'Error al cambiar la visibilidad de tu perfil.',
 		settingsPageProfileVisibilityPublicOption: 'Perfil público',
