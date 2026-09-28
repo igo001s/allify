@@ -17,8 +17,8 @@
 	import russianFlag from '$lib/assets/images/icons/flags/russia-icon.webp?enhanced';
 	import chineseFlag from '$lib/assets/images/icons/flags/china-icon.webp?enhanced';
 	import japaneseFlag from '$lib/assets/images/icons/flags/japan-icon.webp?enhanced';
-	import ArrowIcon from '$lib/assets/images/icons/ArrowIcon.svelte';
-	import SelectedIcon from '$lib/assets/images/icons/SelectedIcon.svelte';
+	import ArrowIcon from '$lib/assets/icons/ArrowIcon.svelte';
+	import SelectedIcon from '$lib/assets/icons/SelectedIcon.svelte';
 
 	// Props
 	export let openLanguageDropdown: boolean = false;

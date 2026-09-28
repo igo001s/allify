@@ -3,11 +3,11 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	// Assets
-	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
-	import DeezerIcon from '$lib/assets/images/icons/streamings/DeezerIcon.svelte';
+	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
+	import DeezerIcon from '$lib/assets/icons/streamings/DeezerIcon.svelte';
 
 	// Components
-	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
+	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

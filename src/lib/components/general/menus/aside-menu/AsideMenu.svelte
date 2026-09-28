@@ -3,8 +3,8 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	// Assets
-	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
-	import AllifyLogoColorful from '$lib/assets/images/logos/AllifyLogoColorful.svelte';
+	import CloseIcon from '$lib/assets/icons/CloseIcon.svelte';
+	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.svelte';
 
 	// Components
 	import AsideProfile from '$lib/components/general/menus/aside-menu/AsideProfile.svelte';

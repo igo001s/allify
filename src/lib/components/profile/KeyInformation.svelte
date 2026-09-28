@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import PlusIcon from '$lib/assets/images/icons/PlusIcon.svelte';
-	import CommentIcon from '$lib/assets/images/icons/CommentIcon.svelte';
+	import PlusIcon from '$lib/assets/icons/PlusIcon.svelte';
+	import CommentIcon from '$lib/assets/icons/CommentIcon.svelte';
 
 	// Components
 	import ExternalLink from '$lib/components/general/ExternalLink.svelte';

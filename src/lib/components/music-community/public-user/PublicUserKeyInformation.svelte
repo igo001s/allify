@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import AddCommentIcon from '$lib/assets/images/icons/AddCommentIcon.svelte';
+	import AddCommentIcon from '$lib/assets/icons/AddCommentIcon.svelte';
 
 	// Components
 	import ExternalLink from '$lib/components/general/ExternalLink.svelte';

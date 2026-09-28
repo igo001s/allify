@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
-	import DeezerIcon from '$lib/assets/images/icons/streamings/DeezerIcon.svelte';
+	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
+	import DeezerIcon from '$lib/assets/icons/streamings/DeezerIcon.svelte';
 
 	// Props
 	export let streamingPlatform: 'spotify' | 'deezer' | null = 'spotify';

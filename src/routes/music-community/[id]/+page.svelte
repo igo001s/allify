@@ -8,8 +8,8 @@
 	import { onMount } from 'svelte';
 
 	// Assets
-	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
-	import ArrowIcon from '$lib/assets/images/icons/ArrowIcon.svelte';
+	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
+	import ArrowIcon from '$lib/assets/icons/ArrowIcon.svelte';
 
 	// Components
 	import PublicUserKeyInformation from '$lib/components/music-community/public-user/PublicUserKeyInformation.svelte';

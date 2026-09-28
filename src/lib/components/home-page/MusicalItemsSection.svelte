@@ -3,8 +3,8 @@
 	import type { SvelteComponent } from 'svelte';
 
 	// Components
-	import MusicIcon from '$lib/assets/images/icons/MusicIcon.svelte';
-	import ArtistIcon from '$lib/assets/images/icons/ArtistIcon.svelte';
+	import MusicIcon from '$lib/assets/icons/MusicIcon.svelte';
+	import ArtistIcon from '$lib/assets/icons/ArtistIcon.svelte';
 	import MusicalItemCard from '../general/cards/MusicalItemCard.svelte';
 
 	// Stores

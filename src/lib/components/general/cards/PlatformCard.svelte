@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import ConnectIcon from '$lib/assets/images/icons/ConnectIcon.svelte';
-	import ExternalLinkIcon from '$lib/assets/images/icons/ExternalLinkIcon.svelte';
+	import ConnectIcon from '$lib/assets/icons/ConnectIcon.svelte';
+	import ExternalLinkIcon from '$lib/assets/icons/ExternalLinkIcon.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

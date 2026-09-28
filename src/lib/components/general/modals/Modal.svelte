@@ -3,7 +3,7 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	// Assets
-	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
+	import CloseIcon from '$lib/assets/icons/CloseIcon.svelte';
 
 	export let closeModal: () => void;
 	export let closeModalButtonAriaLabel: string;

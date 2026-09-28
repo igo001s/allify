@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import SelectMusicIcon from '$lib/assets/images/icons/SelectMusicIcon.svelte';
-	import MusicIcon from '$lib/assets/images/icons/MusicIcon.svelte';
+	import SelectMusicIcon from '$lib/assets/icons/SelectMusicIcon.svelte';
+	import MusicIcon from '$lib/assets/icons/MusicIcon.svelte';
 
 	// Props
 	export let openModal: ((itemType: 'music' | 'artist') => void) | undefined;

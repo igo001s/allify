@@ -3,9 +3,9 @@
 	import type { SvelteComponent } from 'svelte';
 
 	// Assets
-	import LinkedinIcon from '$lib/assets/images/icons/social-network/LinkedinIcon.svelte';
-	import GithubIcon from '$lib/assets/images/icons/social-network/GithubIcon.svelte';
-	import ArrowIcon from '$lib/assets/images/icons/ArrowIcon.svelte';
+	import LinkedinIcon from '$lib/assets/icons/social-network/LinkedinIcon.svelte';
+	import GithubIcon from '$lib/assets/icons/social-network/GithubIcon.svelte';
+	import ArrowIcon from '$lib/assets/icons/ArrowIcon.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

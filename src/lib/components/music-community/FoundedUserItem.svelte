@@ -1,9 +1,9 @@
 <script lang="ts">
 	// Assets
-	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
-	import DeezerIcon from '$lib/assets/images/icons/streamings/DeezerIcon.svelte';
-	import OutlinedStar from '$lib/assets/images/icons/OutlinedStar.svelte';
-	import FilledStar from '$lib/assets/images/icons/FilledStar.svelte';
+	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
+	import DeezerIcon from '$lib/assets/icons/streamings/DeezerIcon.svelte';
+	import OutlinedStar from '$lib/assets/icons/OutlinedStar.svelte';
+	import FilledStar from '$lib/assets/icons/FilledStar.svelte';
 
 	// Components
 	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';

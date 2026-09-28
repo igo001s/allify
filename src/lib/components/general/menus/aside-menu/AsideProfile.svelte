@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import ProfileIcon from '$lib/assets/images/icons/ProfileIcon.svelte';
-	import ArrowIcon from '$lib/assets/images/icons/ArrowIcon.svelte';
+	import ProfileIcon from '$lib/assets/icons/ProfileIcon.svelte';
+	import ArrowIcon from '$lib/assets/icons/ArrowIcon.svelte';
 
 	// Components
 	import AsideProfileItems from '$lib/components/general/menus/aside-menu/AsideProfileItems.svelte';

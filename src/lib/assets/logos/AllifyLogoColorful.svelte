@@ -14,12 +14,13 @@
 		'christmas-hat' | 'new-year' | 'junina-hat' | 'easter' | 'halloween' | 'carnival';
 
 	const decorationMap = {
-		'christmas-hat': () => import('./seasonal-decorations/ChristmasHatGroup.svelte'),
-		'new-year': () => import('./seasonal-decorations/NewYearGroup.svelte'),
-		'junina-hat': () => import('./seasonal-decorations/JuninaHatGroup.svelte'),
-		easter: () => import('./seasonal-decorations/BunnyEasterGroup.svelte'),
-		halloween: () => import('./seasonal-decorations/HalloweenHatGroup.svelte'),
-		carnival: () => import('./seasonal-decorations/CarnivalMaskGroup.svelte')
+		'christmas-hat': () =>
+			import('$lib/assets/logos/seasonal-decorations/ChristmasHatGroup.svelte'),
+		'new-year': () => import('$lib/assets/logos/seasonal-decorations/NewYearGroup.svelte'),
+		'junina-hat': () => import('$lib/assets/logos/seasonal-decorations/JuninaHatGroup.svelte'),
+		easter: () => import('$lib/assets/logos/seasonal-decorations/BunnyEasterGroup.svelte'),
+		halloween: () => import('$lib/assets/logos/seasonal-decorations/HalloweenHatGroup.svelte'),
+		carnival: () => import('$lib/assets/logos/seasonal-decorations/CarnivalMaskGroup.svelte')
 	};
 
 	const transformMap: Record<SeasonalDecoration, string> = {

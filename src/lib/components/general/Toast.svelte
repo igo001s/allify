@@ -4,10 +4,10 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Assets
-	import WarningIcon from '$lib/assets/images/icons/signals/WarningIcon.svelte';
-	import SuccessIcon from '$lib/assets/images/icons/signals/SuccessIcon.svelte';
-	import ErrorIcon from '$lib/assets/images/icons/signals/ErrorIcon.svelte';
-	import CloseIcon from '$lib/assets/images/icons/CloseIcon.svelte';
+	import WarningIcon from '$lib/assets/icons/signals/WarningIcon.svelte';
+	import SuccessIcon from '$lib/assets/icons/signals/SuccessIcon.svelte';
+	import ErrorIcon from '$lib/assets/icons/signals/ErrorIcon.svelte';
+	import CloseIcon from '$lib/assets/icons/CloseIcon.svelte';
 
 	const closeToast = () => {
 		toastStore.set({

@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import BurguerMenuIcon from '$lib/assets/images/icons/BurgerMenuIcon.svelte';
-	import AllifyLogoColorful from '$lib/assets/images/logos/AllifyLogoColorful.svelte';
+	import BurguerMenuIcon from '$lib/assets/icons/BurgerMenuIcon.svelte';
+	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.svelte';
 
 	// Components
 	import HeaderNavigation from '$lib/components/general/header/HeaderNavigation.svelte';

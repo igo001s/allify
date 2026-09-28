@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import EditArtistIcon from '$lib/assets/images/icons/EditArtistIcon.svelte';
-	import EditMusicIcon from '$lib/assets/images/icons/EditMusicIcon.svelte';
+	import EditArtistIcon from '$lib/assets/icons/EditArtistIcon.svelte';
+	import EditMusicIcon from '$lib/assets/icons/EditMusicIcon.svelte';
 
 	// Types
 	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';

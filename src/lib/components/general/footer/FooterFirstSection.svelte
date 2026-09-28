@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import IgoLogo from '$lib/assets/images/logos/IgoLogo.svelte';
-	import AllifyLogoLight from '$lib/assets/images/logos/AllifyLogoLight.svelte';
+	import IgoLogo from '$lib/assets/logos/IgoLogo.svelte';
+	import AllifyLogoLight from '$lib/assets/logos/AllifyLogoLight.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

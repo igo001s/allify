@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import ProfileIcon from '$lib/assets/images/icons/ProfileIcon.svelte';
+	import ProfileIcon from '$lib/assets/icons/ProfileIcon.svelte';
 	import HeaderProfileItems from '$lib/components/general/header/HeaderProfileItems.svelte';
 	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';
 

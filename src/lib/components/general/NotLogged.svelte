@@ -3,8 +3,8 @@
 	import type { SvelteComponent } from 'svelte';
 
 	// Assets
-	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
-	import DeezerIcon from '$lib/assets/images/icons/streamings/DeezerIcon.svelte';
+	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
+	import DeezerIcon from '$lib/assets/icons/streamings/DeezerIcon.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

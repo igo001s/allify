@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Assets
-	import SpotifyIcon from '$lib/assets/images/icons/streamings/SpotifyIcon.svelte';
+	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
 
 	// Components
 	import Followers from '$lib/components/general/Followers.svelte';

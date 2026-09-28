@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 
 	// Assets
-	import SearchIcon from '$lib/assets/images/icons/SearchIcon.svelte';
+	import SearchIcon from '$lib/assets/icons/SearchIcon.svelte';
 
 	// Components
 	import NotLogged from '$lib/components/general/NotLogged.svelte';

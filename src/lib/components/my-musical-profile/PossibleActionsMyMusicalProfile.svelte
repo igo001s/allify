@@ -1,8 +1,8 @@
 <script lang="ts">
 	// Assets
-	import ReloadIcon from '$lib/assets/images/icons/ReloadIcon.svelte';
-	import ShareIcon from '$lib/assets/images/icons/ShareIcon.svelte';
-	import DotsLoading from '$lib/assets/images/animations/DotsLoading.svelte';
+	import ReloadIcon from '$lib/assets/icons/ReloadIcon.svelte';
+	import ShareIcon from '$lib/assets/icons/ShareIcon.svelte';
+	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
 
 	// Components
 	import TicketLabel from '$lib/components/general/TicketLabel.svelte';

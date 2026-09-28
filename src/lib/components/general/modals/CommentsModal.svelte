@@ -6,7 +6,7 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	// Assets
-	import TrashIcon from '$lib/assets/images/icons/TrashIcon.svelte';
+	import TrashIcon from '$lib/assets/icons/TrashIcon.svelte';
 
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
