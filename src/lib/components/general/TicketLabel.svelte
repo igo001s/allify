@@ -13,5 +13,5 @@
 		class="h-3 w-3"
 	/>
 
-	<span class="text-[10px] leading-none font-semibold">-1</span>
+	<span class="text-[10px] font-semibold">-1</span>
 </span>

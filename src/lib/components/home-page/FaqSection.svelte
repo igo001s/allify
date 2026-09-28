@@ -10,6 +10,7 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Reactive values
 	$: contactItems = [
 		{
 			icon: LinkedinIcon,
@@ -67,7 +68,7 @@
 	class="flex flex-col items-center gap-13 bg-s-default pt-2 pb-16 lg:gap-16 xl:pt-20 xl:pb-24"
 >
 	<div class="max-w-4xl space-y-9">
-		<h2 class="heading-2-faq max-w-4xl text-center">
+		<h2 class="max-w-4xl text-center text-3xl text-t-primary xl:text-5xl">
 			{$translationsStore.homePage.faqSectionHeading1}
 		</h2>
 

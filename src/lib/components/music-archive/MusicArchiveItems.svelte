@@ -19,7 +19,9 @@
 </script>
 
 <div class={`${items?.length ? 'space-y-10 lg:space-y-12' : 'space-y-6 lg:space-y-8'}`}>
-	<h2 class="heading-2-music-archive">{itemTitle}</h2>
+	<h2 class="text-xl font-medium text-t-primary sm:text-2xl">
+		{itemTitle}
+	</h2>
 
 	<div class="grid w-full grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20 2xl:grid-cols-3">
 		{#if items?.length}

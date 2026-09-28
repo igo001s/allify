@@ -10,6 +10,7 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Reactive values
 	$: musicalItemContent = [
 		{
 			icon: ArtistIcon as typeof SvelteComponent,
@@ -41,7 +42,7 @@
 <section
 	class="flex flex-col items-center gap-8 bg-s-default pt-14 pb-4 sm:gap-12 xl:pt-28 xl:pb-24"
 >
-	<h2 class="heading-2-musical-items max-w-3xl text-center">
+	<h2 class="max-w-3xl text-center text-3xl text-t-primary xl:text-5xl">
 		{$translationsStore.homePage.musicalItemsSectionHeading1}
 	</h2>
 

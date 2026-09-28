@@ -15,13 +15,11 @@
 	<div
 		class="flex w-full flex-col items-center gap-5 xl:mb-14 xl:max-w-190 xl:items-start xl:gap-8"
 	>
-		<h1 class="heading-1-hero max-w-2xl">
+		<h1 class="max-w-2xl text-center text-3xl text-t-primary xl:text-left xl:text-5xl">
 			{$translationsStore.homePage.homePageHeroSectionHeading1}
 		</h1>
 
-		<p
-			class="paragraph-home-page max-w-3xl text-center leading-relaxed text-t-secondary xl:text-left"
-		>
+		<p class="paragraph-home-page max-w-3xl text-center text-t-secondary xl:text-left">
 			{$translationsStore.homePage.homePageHeroSectionParagraph1}
 		</p>
 

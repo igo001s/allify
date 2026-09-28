@@ -12,6 +12,7 @@
 	// Types
 	import type { CardPlatformType } from '$lib/types/Components.type';
 
+	// Reactive values
 	$: platforms = [
 		{
 			icon: SpotifyIcon,
@@ -32,7 +33,7 @@
 	id="connect-platforms-section"
 	class="flex flex-col items-center gap-5 rounded-lg bg-brand-primary px-5 py-6.5 text-t-inverse sm:px-10 sm:py-16 xl:gap-8 xl:px-16 xl:py-20"
 >
-	<h2 class="heading-2-connected-platforms max-w-4xl text-center">
+	<h2 class="max-w-4xl text-center text-3xl lg:text-5xl">
 		{$translationsStore.homePage.connectPlatformsSectionHeading1}
 	</h2>
 

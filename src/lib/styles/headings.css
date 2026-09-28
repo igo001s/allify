@@ -5,13 +5,6 @@
 	color: var(--color-t-primary);
 }
 
-.heading-1-hero {
-	text-align: center;
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-	color: var(--color-t-primary);
-}
-
 .heading-2 {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
@@ -19,34 +12,7 @@
 	color: var(--color-t-primary);
 }
 
-.heading-2-connected-platforms {
-	text-align: center;
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-}
-
-.heading-2-musical-items {
-	text-align: center;
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-	color: var(--color-t-primary);
-}
-
 .heading-2-legal-pages {
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	font-weight: 500;
-	color: var(--color-t-primary);
-}
-
-.heading-2-faq {
-	text-align: center;
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-	color: var(--color-t-primary);
-}
-
-.heading-2-music-archive {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 	font-weight: 500;
@@ -58,29 +24,6 @@
 	line-height: 1.25rem;
 	font-weight: 500;
 	color: var(--color-t-secondary);
-}
-
-.heading-3-platform-card {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-	font-weight: 600;
-}
-
-.heading-3-musical-items {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	font-size: 1.5rem;
-	line-height: 2rem;
-	font-weight: 600;
-	color: var(--color-t-primary);
-}
-
-.heading-3-legal-pages {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-	font-weight: 500;
-	color: var(--color-t-primary);
 }
 
 .heading-3-faq {
@@ -108,46 +51,13 @@
 		line-height: 2rem;
 	}
 
-	.heading-2-legal-pages,
-	.heading-2-music-archive {
+	.heading-2-legal-pages {
 		font-size: 1.5rem;
 		line-height: 2rem;
-	}
-
-	.heading-3-legal-pages {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
 	}
 
 	.heading-3-faq {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
-	}
-}
-
-@media (min-width: 1024px) {
-	.heading-2-connected-platforms,
-	.heading-2-musical-items,
-	.heading-2-faq {
-		font-size: 3rem;
-		line-height: 1;
-	}
-
-	.heading-3-platform-card {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
-	}
-
-	.heading-3-musical-items {
-		font-size: 1.875rem;
-		line-height: 2.25rem;
-	}
-}
-
-@media (min-width: 1280px) {
-	.heading-1-hero {
-		text-align: left;
-		font-size: 3rem;
-		line-height: 1;
 	}
 }

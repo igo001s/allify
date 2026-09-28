@@ -66,7 +66,7 @@
 		</div>
 
 		<div class="space-y-3 xl:space-y-4">
-			<h3 class="heading-3-platform-card">
+			<h3 class="text-lg font-semibold sm:text-xl">
 				{platform.title}
 			</h3>
 

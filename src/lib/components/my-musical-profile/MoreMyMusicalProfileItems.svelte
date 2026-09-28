@@ -180,7 +180,7 @@
 >
 	{#if !loadingMoreItems}
 		<div class="flex w-full items-center justify-center gap-3 text-center sm:flex-row sm:text-left">
-			<span class="text-sm leading-none">
+			<span class="text-sm">
 				{#if additionalItemsType === 'artists'}
 					{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShowMoreFiveArtistsButton}
 				{:else}

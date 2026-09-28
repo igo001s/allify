@@ -19,6 +19,6 @@
 	/>
 
 	{#if usingTicket}
-		<span class="text-xs leading-none font-semibold">-1</span>
+		<span class="text-xs font-semibold">-1</span>
 	{/if}
 </div>

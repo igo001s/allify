@@ -27,7 +27,7 @@
 			{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Heading2}
 		</h2>
 
-		<h3 class="heading-3-legal-pages">
+		<h3 class="heading-3-privacy-policy">
 			{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Heading3_1}
 		</h3>
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Paragraph1}</p>
@@ -43,7 +43,7 @@
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Paragraph2}</p>
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Paragraph3}</p>
 
-		<h3 class="heading-3-legal-pages">
+		<h3 class="heading-3-privacy-policy">
 			{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Heading3_2}
 		</h3>
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Paragraph4}</p>
@@ -58,7 +58,7 @@
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Paragraph5}</p>
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Paragraph6}</p>
 
-		<h3 class="heading-3-legal-pages">
+		<h3 class="heading-3-privacy-policy">
 			{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Heading3_3}
 		</h3>
 		<p>{$translationsStore.legalPages.privacyPolicy.privacyPolicyDiv3Paragraph7}</p>
@@ -180,3 +180,19 @@
 		</p>
 	</div>
 </section>
+
+<style>
+	.heading-3-privacy-policy {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		font-weight: 500;
+		color: var(--color-t-primary);
+	}
+
+	@media (min-width: 640px) {
+		.heading-3-privacy-policy {
+			font-size: 1.25rem;
+			line-height: 1.75rem;
+		}
+	}
+</style>

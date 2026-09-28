@@ -15,13 +15,12 @@
 <article
 	class="border-s-border bg-s-secondary mx-auto flex w-full max-w-2xl flex-col space-y-6 rounded-lg border px-5 py-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:px-7 sm:py-6 xl:space-y-7 xl:px-8 xl:py-6.5"
 >
-	<h3 class="heading-3-musical-items flex flex-wrap items-center gap-3">
+	<h3 class="flex flex-wrap items-center gap-3 text-2xl font-semibold text-t-primary lg:text-3xl">
 		<svelte:component
 			this={item.icon}
 			iconSvgClass="h-12 w-12 shrink-0 rounded-full bg-brand-primary p-2 text-t-inverse sm:h-14 sm:w-14"
 			iconAriaLabel={item.iconAriaLabel}
 		/>
-
 		<span>{item.title}</span>
 	</h3>
 
