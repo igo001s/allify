@@ -606,10 +606,14 @@ export const en = {
 		profilePageShareSongsCloseModalIconAriaLabel: 'Close icon for the profile songs share modal',
 		profilePageShareSongsParagraph1: 'Share your songs with your friends',
 		profilePageShareSongsParagraph2: 'Let your friends discover what you are listening to.',
+		profilePageShareSongsCancelButtonText: 'Cancel',
+		profilePageShareSongsShareButtonText: 'Share',
 		profilePageShareArtistCloseModalButtonAriaLabel: 'Close profile artist share modal',
 		profilePageShareArtistCloseModalIconAriaLabel: 'Close icon for the profile artist share modal',
 		profilePageShareArtistParagraph1: 'Share your artists with your friends',
 		profilePageShareArtistParagraph2: 'Let your friends discover the artists you follow.',
+		profilePageShareArtistCancelButtonText: 'Cancel',
+		profilePageShareArtistShareButtonText: 'Share'
 	},
 	settingsPage: {
 		title: 'Settings | Allify',

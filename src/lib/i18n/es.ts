@@ -633,14 +633,22 @@ export const es = {
 			'Tu perfil aún no tiene comentarios. ¡Comparte tu perfil con tus amigos para que puedan dejar comentarios!',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Botón para eliminar comentario de ',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icono para eliminar comentario de ',
-		profilePageShareSongsCloseModalButtonAriaLabel: 'Cerrar modal para compartir canciones en el perfil',
-		profilePageShareSongsCloseModalIconAriaLabel: 'Icono para cerrar el modal para compartir canciones en el perfil',
+		profilePageShareSongsCloseModalButtonAriaLabel:
+			'Cerrar modal para compartir canciones en el perfil',
+		profilePageShareSongsCloseModalIconAriaLabel:
+			'Icono para cerrar el modal para compartir canciones en el perfil',
 		profilePageShareSongsParagraph1: 'Comparte tus canciones con tus amigos',
 		profilePageShareSongsParagraph2: 'Deja que tus amigos descubran lo que estás escuchando.',
-		profilePageShareArtistCloseModalButtonAriaLabel: 'Cerrar modal para compartir artistas en el perfil',
-		profilePageShareArtistCloseModalIconAriaLabel: 'Icono para cerrar el modal para compartir artistas en el perfil',
+		profilePageShareSongsCancelButtonText: 'Cancelar',
+		profilePageShareSongsShareButtonText: 'Compartir',
+		profilePageShareArtistCloseModalButtonAriaLabel:
+			'Cerrar modal para compartir artistas en el perfil',
+		profilePageShareArtistCloseModalIconAriaLabel:
+			'Icono para cerrar el modal para compartir artistas en el perfil',
 		profilePageShareArtistParagraph1: 'Comparte tus artistas con tus amigos',
-		profilePageShareArtistParagraph2: 'Deja que tus amigos descubran los artistas que sigues.'
+		profilePageShareArtistParagraph2: 'Deja que tus amigos descubran los artistas que sigues.',
+		profilePageShareArtistCancelButtonText: 'Cancelar',
+		profilePageShareArtistShareButtonText: 'Compartir'
 	},
 	settingsPage: {
 		title: 'Configuración | Allify',

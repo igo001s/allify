@@ -146,7 +146,7 @@ export const pt = {
 		connectPlatformSpotifyAriaLabel: 'Ícone do Spotify',
 		connectPlatformDeezerAriaLabel: 'Ícone do Deezer',
 		fetchUserInfoUserCreationInfoErrorToast: 'Ocorreu um erro ao criar o usuário.',
-		musicalWavesDivisorAltText: 'Divisor de sessões de ondas musicais',
+		musicalWavesDivisorAltText: 'Divisor de sessões de ondas musicais'
 	},
 	homePage: {
 		title: 'Descubra sua identidade musical | Allify',
@@ -619,14 +619,23 @@ export const pt = {
 			'Seu perfil ainda não tem comentários. Compartilhe seu perfil com seus amigos para que eles possam deixar comentários!',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Botão para excluir comentário de ',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Ícone de excluir comentário de ',
-		profilePageShareSongsCloseModalButtonAriaLabel: 'Fechar modal de compartilhamento de músicas do perfil',
-		profilePageShareSongsCloseModalIconAriaLabel: 'Ícone de fechar o modal de compartilhamento de músicas do perfil',
+		profilePageShareSongsCloseModalButtonAriaLabel:
+			'Fechar modal de compartilhamento de músicas do perfil',
+		profilePageShareSongsCloseModalIconAriaLabel:
+			'Ícone de fechar o modal de compartilhamento de músicas do perfil',
 		profilePageShareSongsParagraph1: 'Compartilhe suas músicas com seus amigos',
 		profilePageShareSongsParagraph2: 'Deixe seus amigos descobrirem o que você está ouvindo.',
-		profilePageShareArtistCloseModalButtonAriaLabel: 'Fechar modal de compartilhamento de artistas do perfil',
-		profilePageShareArtistCloseModalIconAriaLabel: 'Ícone de fechar o modal de compartilhamento de artistas do perfil',
+		profilePageShareSongsCancelButtonText: 'Cancelar',
+		profilePageShareSongsShareButtonText: 'Compartilhar',
+		profilePageShareArtistCloseModalButtonAriaLabel:
+			'Fechar modal de compartilhamento de artistas do perfil',
+		profilePageShareArtistCloseModalIconAriaLabel:
+			'Ícone de fechar o modal de compartilhamento de artistas do perfil',
 		profilePageShareArtistParagraph1: 'Compartilhe seus artistas favoritos',
-		profilePageShareArtistParagraph2: 'Deixe seus amigos descobrirem quais artistas você está acompanhando.',
+		profilePageShareArtistParagraph2:
+			'Deixe seus amigos descobrirem quais artistas você está acompanhando.',
+		profilePageShareArtistCancelButtonText: 'Cancelar',
+		profilePageShareArtistShareButtonText: 'Compartilhar'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

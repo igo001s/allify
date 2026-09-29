@@ -546,10 +546,14 @@ export const zh = {
 		profilePageShareSongsCloseModalIconAriaLabel: '关闭个人资料歌曲分享弹窗的图标',
 		profilePageShareSongsParagraph1: '与朋友分享你的歌曲',
 		profilePageShareSongsParagraph2: '让你的朋友了解你正在听的歌曲。',
+		profilePageShareSongsCancelButtonText: '取消',
+		profilePageShareSongsShareButtonText: '分享',
 		profilePageShareArtistCloseModalButtonAriaLabel: '关闭个人资料艺人分享弹窗',
 		profilePageShareArtistCloseModalIconAriaLabel: '关闭个人资料艺人分享弹窗的图标',
 		profilePageShareArtistParagraph1: '与朋友分享你的艺人',
-		profilePageShareArtistParagraph2: '让你的朋友了解你关注的艺人。'
+		profilePageShareArtistParagraph2: '让你的朋友了解你关注的艺人。',
+		profilePageShareArtistCancelButtonText: '取消',
+		profilePageShareArtistShareButtonText: '分享'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

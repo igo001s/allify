@@ -6,7 +6,7 @@
 	import YourSongsOnProfileItem from '$lib/components/profile/track/YourSongsOnProfileItem.svelte';
 	import EmptyTrackOfTheMoment from '$lib/components/profile/track/track-of-the-moment/EmptyTrackOfTheMoment.svelte';
 	import EmptyCustomTrack from '$lib/components/profile/track/custom-track/EmptyCustomTrack.svelte';
-	import ShareData from '$lib/components/general/modals/ShareData.svelte';
+	import ShareDataModal from '$lib/components/general/modals/ShareDataModal.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -64,11 +64,15 @@
 </section>
 
 {#if showShareDataModal}
-	<ShareData 
+	<ShareDataModal
 		bind:showShareDataModal
-		shareDataCloseModalButtonAriaLabel={$translationsStore.profilePage.profilePageShareSongsCloseModalButtonAriaLabel}
-		shareDataCloseModalIconAriaLabel={$translationsStore.profilePage.profilePageShareSongsCloseModalIconAriaLabel}
+		shareDataCloseModalButtonAriaLabel={$translationsStore.profilePage
+			.profilePageShareSongsCloseModalButtonAriaLabel}
+		shareDataCloseModalIconAriaLabel={$translationsStore.profilePage
+			.profilePageShareSongsCloseModalIconAriaLabel}
 		paragraph1={$translationsStore.profilePage.profilePageShareSongsParagraph1}
 		paragraph2={$translationsStore.profilePage.profilePageShareSongsParagraph2}
+		cancelButtonText={$translationsStore.profilePage.profilePageShareSongsCancelButtonText}
+		shareButtonText={$translationsStore.profilePage.profilePageShareSongsShareButtonText}
 	/>
 {/if}

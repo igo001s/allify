@@ -29,21 +29,19 @@
 	closeModalButtonAriaLabel={getCloseModalButtonAriaLabel()}
 	closeModalIconAriaLabel={getCloseModalIconAriaLabel()}
 >
-	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
-		<p class="text-lg font-bold text-t-primary sm:text-xl">
-			{$translationsStore.profilePage.profilePageChangeYourCustomItemParagraph1}
-		</p>
+	<p class="text-lg font-bold text-t-primary sm:text-xl">
+		{$translationsStore.profilePage.profilePageChangeYourCustomItemParagraph1}
+	</p>
 
-		<p class="text-xs text-t-secondary sm:text-sm">
-			{itemType === 'artist'
-				? $translationsStore.profilePage.profilePageChangeYourCustomArtistParagraph2
-				: $translationsStore.profilePage.profilePageChangeYourCustomMusicParagraph2}
-		</p>
+	<p class="text-xs text-t-secondary sm:text-sm">
+		{itemType === 'artist'
+			? $translationsStore.profilePage.profilePageChangeYourCustomArtistParagraph2
+			: $translationsStore.profilePage.profilePageChangeYourCustomMusicParagraph2}
+	</p>
 
-		{#if itemType === 'artist'}
-			<ChangeCustomArtist {closeChangeCustomItemModal} />
-		{:else if itemType === 'music'}
-			<ChangeCustomTrack {closeChangeCustomItemModal} />
-		{/if}
-	</div>
+	{#if itemType === 'artist'}
+		<ChangeCustomArtist {closeChangeCustomItemModal} />
+	{:else if itemType === 'music'}
+		<ChangeCustomTrack {closeChangeCustomItemModal} />
+	{/if}
 </Modal>
