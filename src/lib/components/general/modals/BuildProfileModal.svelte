@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Svelte
-	import { onMount, onDestroy } from 'svelte';
+	import { onDestroy } from 'svelte';
 
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
@@ -71,13 +71,7 @@
 		currentStepIndex -= 1;
 	}
 
-	onMount(() => {
-		document.body.style.overflow = 'hidden';
-	});
-
 	onDestroy(() => {
-		document.body.style.overflow = '';
-
 		buildProfileData = {
 			track: undefined,
 			artist: undefined,

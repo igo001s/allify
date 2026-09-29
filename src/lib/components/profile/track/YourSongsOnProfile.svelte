@@ -1,8 +1,12 @@
 <script lang="ts">
+	// Assets
+	import ShareIcon from '$lib/assets/icons/ShareIcon.svelte';
+
 	// Components
 	import YourSongsOnProfileItem from '$lib/components/profile/track/YourSongsOnProfileItem.svelte';
 	import EmptyTrackOfTheMoment from '$lib/components/profile/track/track-of-the-moment/EmptyTrackOfTheMoment.svelte';
 	import EmptyCustomTrack from '$lib/components/profile/track/custom-track/EmptyCustomTrack.svelte';
+	import ShareData from '$lib/components/general/modals/ShareData.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -22,12 +26,25 @@
 		{ trackItem: $userInfo?.tracks?.trackOfTheMoment?.track, type: 'trackOfTheMoment' },
 		{ trackItem: $userInfo?.tracks?.customTrack?.track, type: 'customTrack' }
 	];
+
+	let showShareDataModal = false;
 </script>
 
 <section class="space-y-7">
-	<h2 class="heading-2">
-		{$translationsStore.profilePage.profilePageYourSongsOnProfileHeading2}
-	</h2>
+	<div class="flex items-center justify-between">
+		<h2 class="heading-2">
+			{$translationsStore.profilePage.profilePageYourSongsOnProfileHeading2}
+		</h2>
+
+		<button
+			class="button-outline button-outline-active button-outline-active-hover group relative h-11 w-40 gap-1.5"
+			on:click={() => (showShareDataModal = true)}
+		>
+			<ShareIcon iconSvgClass="h-4 w-4 text-brand-primary" />
+
+			{$translationsStore.myMusicalProfilePage.myMusicalProfilePageShareButton}
+		</button>
+	</div>
 
 	<div class="flex flex-col gap-8 xl:flex-row">
 		{#each songsItems as { trackItem, type }, i (i)}
@@ -45,3 +62,13 @@
 		{/each}
 	</div>
 </section>
+
+{#if showShareDataModal}
+	<ShareData 
+		bind:showShareDataModal
+		shareDataCloseModalButtonAriaLabel={$translationsStore.profilePage.profilePageShareSongsCloseModalButtonAriaLabel}
+		shareDataCloseModalIconAriaLabel={$translationsStore.profilePage.profilePageShareSongsCloseModalIconAriaLabel}
+		paragraph1={$translationsStore.profilePage.profilePageShareSongsParagraph1}
+		paragraph2={$translationsStore.profilePage.profilePageShareSongsParagraph2}
+	/>
+{/if}

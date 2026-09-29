@@ -1,7 +1,4 @@
 <script lang="ts">
-	// Svelte
-	import { onMount, onDestroy } from 'svelte';
-
 	// Assets
 	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
 
@@ -60,14 +57,6 @@
 
 		return;
 	}
-
-	onMount(() => {
-		document.body.style.overflow = 'hidden';
-	});
-
-	onDestroy(() => {
-		document.body.style.overflow = '';
-	});
 </script>
 
 <Modal
@@ -76,7 +65,7 @@
 	closeModalIconAriaLabel={$translationsStore.addTickets.addTicketsModalIconAriaLabel}
 	additionalClasses="max-h-[90vh] w-full max-w-lg"
 >
-	<div class="flex flex-col gap-3 border-b border-b-default p-5 sm:p-6 lg:p-8">
+	<div class="flex flex-col gap-3 border-b border-b-default pb-5">
 		<p class="text-xs font-medium text-t-secondary uppercase">
 			{$translationsStore.addTickets.addTicketsModalTitle}
 		</p>
@@ -94,7 +83,7 @@
 		</p>
 	</div>
 
-	<div class="flex flex-col gap-6 overflow-y-auto p-5 sm:p-6 lg:p-8">
+	<div class="flex flex-col gap-5 overflow-y-auto pt-1">
 		<div class="flex flex-col gap-3">
 			<p class="text-xs font-medium text-t-secondary uppercase">
 				{$translationsStore.addTickets.addTicketsModalParagraph3}

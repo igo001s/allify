@@ -620,7 +620,15 @@ export const ru = {
 		profilePageAuthorEmptyComments:
 			'В вашем профиле пока нет комментариев. Поделитесь своим профилем с друзьями, чтобы они могли оставить комментарии!',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Кнопка для удаления комментария от ',
-		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Иконка для удаления комментария от '
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Иконка для удаления комментария от ',
+		profilePageShareSongsCloseModalButtonAriaLabel: 'Закрыть окно для совместного использования песен в профиле',
+		profilePageShareSongsCloseModalIconAriaLabel: 'Иконка для закрытия окна для совместного использования песен в профиле',
+		profilePageShareSongsParagraph1: 'Поделитесь своими песнями с друзьями',
+		profilePageShareSongsParagraph2: 'Позвольте вашим друзьям узнать, что вы слушаете.',
+		profilePageShareArtistCloseModalButtonAriaLabel: 'Закрыть окно для совместного использования артистов в профиле',
+		profilePageShareArtistCloseModalIconAriaLabel: 'Иконка для закрытия окна для совместного использования артистов в профиле',
+		profilePageShareArtistParagraph1: 'Поделитесь своими артистами с друзьями',
+		profilePageShareArtistParagraph2: 'Позвольте вашим друзьям узнать, каких артистов вы следите.'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

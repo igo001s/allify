@@ -601,7 +601,15 @@ export const en = {
 		profilePageAuthorEmptyComments:
 			'Your profile has no comments yet. Share your profile with your friends so they can leave comments!',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Button to delete comment of ',
-		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icon to delete comment of '
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icon to delete comment of ',
+		profilePageShareSongsCloseModalButtonAriaLabel: 'Close profile songs share modal',
+		profilePageShareSongsCloseModalIconAriaLabel: 'Close icon for the profile songs share modal',
+		profilePageShareSongsParagraph1: 'Share your songs with your friends',
+		profilePageShareSongsParagraph2: 'Let your friends discover what you are listening to.',
+		profilePageShareArtistCloseModalButtonAriaLabel: 'Close profile artist share modal',
+		profilePageShareArtistCloseModalIconAriaLabel: 'Close icon for the profile artist share modal',
+		profilePageShareArtistParagraph1: 'Share your artists with your friends',
+		profilePageShareArtistParagraph2: 'Let your friends discover the artists you follow.',
 	},
 	settingsPage: {
 		title: 'Settings | Allify',

@@ -609,7 +609,15 @@ export const ja = {
 		profilePageAuthorEmptyComments:
 			'あなたのプロフィールにはまだコメントがありません。友達とプロフィールを共有して、コメントを残してもらいましょう。',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'コメントを削除するボタン：',
-		profilePageDeleteCommentOfAuthorIconAriaLabel: 'コメントを削除するアイコン：'
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'コメントを削除するアイコン：',
+		profilePageShareSongsCloseModalButtonAriaLabel: 'プロフィールの曲共有モーダルを閉じる',
+		profilePageShareSongsCloseModalIconAriaLabel: 'プロフィールの曲共有モーダルを閉じるアイコン',
+		profilePageShareSongsParagraph1: '友達と曲を共有する',
+		profilePageShareSongsParagraph2: '友達にあなたが聴いている曲を発見させましょう。',
+		profilePageShareArtistCloseModalButtonAriaLabel: 'プロフィールのアーティスト共有モーダルを閉じる',
+		profilePageShareArtistCloseModalIconAriaLabel: 'プロフィールのアーティスト共有モーダルを閉じるアイコン',
+		profilePageShareArtistParagraph1: '友達とアーティストを共有する',
+		profilePageShareArtistParagraph2: '友達にあなたがフォローしているアーティストを発見させましょう。'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

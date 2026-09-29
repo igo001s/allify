@@ -1,7 +1,4 @@
 <script lang="ts">
-	// Svelte
-	import { onMount, onDestroy } from 'svelte';
-
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
 
@@ -112,14 +109,6 @@
 			return;
 		}
 	}
-
-	onMount(() => {
-		document.body.style.overflow = 'hidden';
-	});
-
-	onDestroy(() => {
-		document.body.style.overflow = '';
-	});
 </script>
 
 <Modal
@@ -130,70 +119,68 @@
 		.musicCommunityPagePublicUserCloseAddCommentModalIconAriaLabel}
 	additionalClasses="max-h-[90vh] w-full max-w-3xl"
 >
-	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
-		<p class="text-lg font-bold text-t-primary sm:text-xl">
-			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserParagraph1}
-			<span class="font-bold text-brand-primary">{publicProfileUserName}</span>
-		</p>
+	<p class="text-lg font-bold text-t-primary sm:text-xl">
+		{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserParagraph1}
+		<span class="font-bold text-brand-primary">{publicProfileUserName}</span>
+	</p>
 
-		<p class="text-xs text-t-secondary sm:text-sm">
-			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserParagraph2}
-		</p>
+	<p class="text-xs text-t-secondary sm:text-sm">
+		{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserParagraph2}
+	</p>
 
-		<label class="my-2 flex flex-col gap-1.5 text-sm font-medium text-t-primary">
-			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserInputLabel}
+	<label class="my-2 flex flex-col gap-1.5 text-sm font-medium text-t-primary">
+		{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserInputLabel}
 
-			<textarea
-				minlength="1"
-				maxlength="200"
-				rows="4"
-				class="mt-1 w-full resize-none rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
-				placeholder={$translationsStore.musicCommunityPage.publicUser
-					.musicCommunityPagePublicUserInputPlaceholder}
-				bind:value={comment}
-				on:input={handleCommentInput}></textarea>
+		<textarea
+			minlength="1"
+			maxlength="200"
+			rows="4"
+			class="mt-1 w-full resize-none rounded-lg border border-b-default bg-s-muted px-3.5 py-2.5 text-xs text-t-primary outline-none placeholder:text-t-secondary/70 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
+			placeholder={$translationsStore.musicCommunityPage.publicUser
+				.musicCommunityPagePublicUserInputPlaceholder}
+			bind:value={comment}
+			on:input={handleCommentInput}></textarea>
 
-			<div class="flex items-start justify-between gap-3">
-				{#if typeof isCommentValid === 'object' && isCommentValid.error}
-					<span class="mt-1 text-[10px] text-status-error sm:text-[11px]">
-						{#if isCommentValid.typeError === 'emptyOrTooLong'}
-							{$translationsStore.musicCommunityPage.publicUser
-								.musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage}
-						{:else if isCommentValid.typeError === 'invalidCharacters'}
-							{$translationsStore.musicCommunityPage.publicUser
-								.musicCommunityPagePublicUserInputErrorInvalidInsultsMessage}
-						{/if}
-					</span>
-				{:else}
-					<span></span>
-				{/if}
-
-				<span
-					class={`mt-1 shrink-0 text-[10px] sm:text-[11px] ${comment.length >= 200 ? 'text-status-error' : 'text-t-secondary'}`}
-				>
-					{comment.length}/200
+		<div class="flex items-start justify-between gap-3">
+			{#if typeof isCommentValid === 'object' && isCommentValid.error}
+				<span class="mt-1 text-[10px] text-status-error sm:text-[11px]">
+					{#if isCommentValid.typeError === 'emptyOrTooLong'}
+						{$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserInputErrorEmptyOrTooLongMessage}
+					{:else if isCommentValid.typeError === 'invalidCharacters'}
+						{$translationsStore.musicCommunityPage.publicUser
+							.musicCommunityPagePublicUserInputErrorInvalidInsultsMessage}
+					{/if}
 				</span>
-			</div>
-		</label>
+			{:else}
+				<span></span>
+			{/if}
 
-		<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
-			<button
-				type="button"
-				class="button-secondary px-6 py-2.5"
-				on:click={() => (showAddCommentModal = false)}
+			<span
+				class={`mt-1 shrink-0 text-[10px] sm:text-[11px] ${comment.length >= 200 ? 'text-status-error' : 'text-t-secondary'}`}
 			>
-				{$translationsStore.musicCommunityPage.publicUser
-					.musicCommunityPagePublicUserCloseAddCommentModal}
-			</button>
-
-			<button
-				type="button"
-				disabled={(typeof isCommentValid === 'object' && isCommentValid.error) || !comment.trim()}
-				class="button-primary px-6 py-2.5"
-				on:click={handleAddComment}
-			>
-				{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserPostComment}
-			</button>
+				{comment.length}/200
+			</span>
 		</div>
+	</label>
+
+	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
+		<button
+			type="button"
+			class="button-secondary px-6 py-2.5"
+			on:click={() => (showAddCommentModal = false)}
+		>
+			{$translationsStore.musicCommunityPage.publicUser
+				.musicCommunityPagePublicUserCloseAddCommentModal}
+		</button>
+
+		<button
+			type="button"
+			disabled={(typeof isCommentValid === 'object' && isCommentValid.error) || !comment.trim()}
+			class="button-primary px-6 py-2.5"
+			on:click={handleAddComment}
+		>
+			{$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserPostComment}
+		</button>
 	</div>
 </Modal>

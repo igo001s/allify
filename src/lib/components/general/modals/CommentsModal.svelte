@@ -2,9 +2,6 @@
 	// App
 	import { resolve } from '$app/paths';
 
-	// Svelte
-	import { onMount, onDestroy } from 'svelte';
-
 	// Assets
 	import TrashIcon from '$lib/assets/icons/TrashIcon.svelte';
 
@@ -73,14 +70,6 @@
 			}
 		}
 	}
-
-	onMount(() => {
-		document.body.style.overflow = 'hidden';
-	});
-
-	onDestroy(() => {
-		document.body.style.overflow = '';
-	});
 </script>
 
 <Modal
@@ -91,82 +80,80 @@
 		.profilePageCommentsCloseModalIconAriaLabel}
 	additionalClasses="max-h-[90vh] w-full max-w-xl"
 >
-	<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
-		<p class="text-lg font-bold text-t-primary sm:text-xl">
-			{$translationsStore.profilePage.profilePageCommentsParagraph1}
-		</p>
+	<p class="text-lg font-bold text-t-primary sm:text-xl">
+		{$translationsStore.profilePage.profilePageCommentsParagraph1}
+	</p>
 
-		<p class="text-xs text-t-secondary sm:text-sm">
-			{$translationsStore.profilePage.profilePageCommentsParagraph2}
-		</p>
+	<p class="text-xs text-t-secondary sm:text-sm">
+		{$translationsStore.profilePage.profilePageCommentsParagraph2}
+	</p>
 
-		{#if $userInfo && $userInfo.comments.commentsMadeOnMyProfile.length > 0}
-			<div class="mt-2 flex max-h-130 flex-col gap-3 overflow-y-auto pr-2 sm:gap-4">
-				{#each $userInfo.comments.commentsMadeOnMyProfile as comment, i (i)}
-					<div
-						class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 sm:gap-4 sm:p-4"
-					>
-						<enhanced:img
-							src={comment.author.image?.url ?? ''}
-							alt={`${$translationsStore.profilePage.profilePageAuthorCommentImageAltText} ${comment.author.name}`}
-							class="h-11 w-11 shrink-0 rounded-full object-cover sm:h-12 sm:w-12"
-						/>
+	{#if $userInfo && $userInfo.comments.commentsMadeOnMyProfile.length > 0}
+		<div class="mt-2 flex max-h-130 flex-col gap-3 overflow-y-auto pr-2 sm:gap-4">
+			{#each $userInfo.comments.commentsMadeOnMyProfile as comment, i (i)}
+				<div
+					class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 sm:gap-4 sm:p-4"
+				>
+					<enhanced:img
+						src={comment.author.image?.url ?? ''}
+						alt={`${$translationsStore.profilePage.profilePageAuthorCommentImageAltText} ${comment.author.name}`}
+						class="h-11 w-11 shrink-0 rounded-full object-cover sm:h-12 sm:w-12"
+					/>
 
-						<div class="flex min-w-0 flex-1 flex-col gap-1">
-							<div class="flex items-center justify-between gap-2">
-								<div class="flex flex-col items-start">
-									<a
-										href={resolve(`/music-community/${comment.author._id}`)}
-										class="text-sm font-semibold text-t-secondary hover:text-brand-primary"
-									>
-										{comment.author.name}
-									</a>
+					<div class="flex min-w-0 flex-1 flex-col gap-1">
+						<div class="flex items-center justify-between gap-2">
+							<div class="flex flex-col items-start">
+								<a
+									href={resolve(`/music-community/${comment.author._id}`)}
+									class="text-sm font-semibold text-t-secondary hover:text-brand-primary"
+								>
+									{comment.author.name}
+								</a>
 
-									<time
-										datetime={new Date(comment.createdAt).toISOString()}
-										class="text-t-tertiary text-error shrink-0 text-[11px]"
-									>
-										{new Date(comment.createdAt).toLocaleDateString($translationsStore.locale, {
-											year: 'numeric',
-											month: 'short',
-											day: 'numeric'
-										})}
-									</time>
-								</div>
-
-								<div>
-									<button
-										on:click={() =>
-											handleDeleteComment(
-												$userInfo?._id,
-												comment?.author?._id,
-												$userInfo?.comments.commentsMadeOnMyProfile
-											)}
-										aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorButtonAriaLabel} ${comment?.author?.name}`}
-									>
-										<TrashIcon
-											iconAriaLabel={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorIconAriaLabel} ${comment?.author?.name}`}
-											iconSvgClass="h-4 w-4 text-t-secondary cursor-pointer hover:text-status-error"
-										/>
-									</button>
-								</div>
+								<time
+									datetime={new Date(comment.createdAt).toISOString()}
+									class="text-t-tertiary text-error shrink-0 text-[11px]"
+								>
+									{new Date(comment.createdAt).toLocaleDateString($translationsStore.locale, {
+										year: 'numeric',
+										month: 'short',
+										day: 'numeric'
+									})}
+								</time>
 							</div>
 
-							<p class="text-xs text-t-secondary">
-								{comment.content}
-							</p>
+							<div>
+								<button
+									on:click={() =>
+										handleDeleteComment(
+											$userInfo?._id,
+											comment?.author?._id,
+											$userInfo?.comments.commentsMadeOnMyProfile
+										)}
+									aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorButtonAriaLabel} ${comment?.author?.name}`}
+								>
+									<TrashIcon
+										iconAriaLabel={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorIconAriaLabel} ${comment?.author?.name}`}
+										iconSvgClass="h-4 w-4 text-t-secondary cursor-pointer hover:text-status-error"
+									/>
+								</button>
+							</div>
 						</div>
+
+						<p class="text-xs text-t-secondary">
+							{comment.content}
+						</p>
 					</div>
-				{/each}
-			</div>
-		{:else}
-			<div
-				class="flex w-full flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
-			>
-				<p class="max-w-lg text-xs text-t-secondary">
-					{$translationsStore.profilePage.profilePageAuthorEmptyComments}
-				</p>
-			</div>
-		{/if}
-	</div>
+				</div>
+			{/each}
+		</div>
+	{:else}
+		<div
+			class="flex w-full flex-col items-center justify-center rounded-lg border border-dashed border-b-default bg-s-muted px-6 py-12 text-center"
+		>
+			<p class="max-w-lg text-xs text-t-secondary">
+				{$translationsStore.profilePage.profilePageAuthorEmptyComments}
+			</p>
+		</div>
+	{/if}
 </Modal>

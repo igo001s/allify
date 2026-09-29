@@ -1,7 +1,4 @@
 <script lang="ts">
-	// Svelte
-	import { onMount, onDestroy } from 'svelte';
-
 	// Components
 	import Modal from '$lib/components/general/modals/Modal.svelte';
 	import SelectCustomArtist from '$lib/components/profile/artist/custom-artist/SelectCustomArtist.svelte';
@@ -25,14 +22,6 @@
 			? $translationsStore.profilePage.profilePageSelectYourCustomArtistCloseModalAltText
 			: $translationsStore.profilePage.profilePageSelectYourCustomMusicCloseModalAltText;
 	}
-
-	onMount(() => {
-		document.body.style.overflow = 'hidden';
-	});
-
-	onDestroy(() => {
-		document.body.style.overflow = '';
-	});
 </script>
 
 <Modal

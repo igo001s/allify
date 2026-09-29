@@ -36,6 +36,8 @@
 			/>
 		</button>
 
-		<slot></slot>
+		<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
+			<slot></slot>
+		</div>
 	</div>
 </div>

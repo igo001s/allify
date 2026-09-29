@@ -647,7 +647,15 @@ export const fr = {
 		profilePageAuthorEmptyComments:
 			'Votre profil n’a pas encore de commentaires. Partagez votre profil avec vos amis afin qu’ils puissent laisser des commentaires !',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Bouton pour supprimer le commentaire de ',
-		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icône pour supprimer le commentaire de '
+		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icône pour supprimer le commentaire de ',
+		profilePageShareSongsCloseModalButtonAriaLabel: 'Fermer la fenêtre modale de partage des chansons du profil',
+		profilePageShareSongsCloseModalIconAriaLabel: 'Icône pour fermer la fenêtre modale de partage des chansons du profil',
+		profilePageShareSongsParagraph1: 'Partagez vos chansons avec vos amis',
+		profilePageShareSongsParagraph2: 'Laissez vos amis découvrir ce que vous écoutez.',
+		profilePageShareArtistCloseModalButtonAriaLabel: 'Fermer la fenêtre modale de partage des artistes du profil',
+		profilePageShareArtistCloseModalIconAriaLabel: 'Icône pour fermer la fenêtre modale de partage des artistes du profil',
+		profilePageShareArtistParagraph1: 'Partagez vos artistes avec vos amis',
+		profilePageShareArtistParagraph2: 'Laissez vos amis découvrir les artistes que vous suivez.'
 	},
 	settingsPage: {
 		title: 'Paramètres | Allify',

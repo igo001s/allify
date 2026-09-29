@@ -541,7 +541,15 @@ export const zh = {
 		profilePageAuthorEmptyComments:
 			'你的个人资料尚无评论。与朋友分享你的个人资料，让他们可以发表评论！',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: '删除来自的评论按钮 ',
-		profilePageDeleteCommentOfAuthorIconAriaLabel: '删除来自的评论图标 '
+		profilePageDeleteCommentOfAuthorIconAriaLabel: '删除来自的评论图标 ',
+		profilePageShareSongsCloseModalButtonAriaLabel: '关闭个人资料歌曲分享弹窗',
+		profilePageShareSongsCloseModalIconAriaLabel: '关闭个人资料歌曲分享弹窗的图标',
+		profilePageShareSongsParagraph1: '与朋友分享你的歌曲',
+		profilePageShareSongsParagraph2: '让你的朋友了解你正在听的歌曲。',
+		profilePageShareArtistCloseModalButtonAriaLabel: '关闭个人资料艺人分享弹窗',
+		profilePageShareArtistCloseModalIconAriaLabel: '关闭个人资料艺人分享弹窗的图标',
+		profilePageShareArtistParagraph1: '与朋友分享你的艺人',
+		profilePageShareArtistParagraph2: '让你的朋友了解你关注的艺人。'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

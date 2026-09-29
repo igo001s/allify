@@ -637,7 +637,15 @@ export const de = {
 		profilePageChangeCustomArtistSuccessToastMessage:
 			'Personalisierter Künstler erfolgreich geändert.',
 		profilePageChangeCustomArtistErrorToastMessage:
-			'Fehler beim Ändern des personalisierten Künstlers. Bitte versuche es erneut.'
+			'Fehler beim Ändern des personalisierten Künstlers. Bitte versuche es erneut.',
+		profilePageShareSongsCloseModalButtonAriaLabel: 'Modal zum Teilen von Songs im Profil schließen',
+		profilePageShareSongsCloseModalIconAriaLabel: 'Symbol zum Schließen des Modals zum Teilen von Songs im Profil',
+		profilePageShareSongsParagraph1: 'Teile deine Songs mit deinen Freunden',
+		profilePageShareSongsParagraph2: 'Lass deine Freunde entdecken, was du gerade hörst.',
+		profilePageShareArtistCloseModalButtonAriaLabel: 'Modal zum Teilen von Künstlern im Profil schließen',
+		profilePageShareArtistCloseModalIconAriaLabel: 'Symbol zum Schließen des Modals zum Teilen von Künstlern im Profil',
+		profilePageShareArtistParagraph1: 'Teile deine Künstler mit deinen Freunden',
+		profilePageShareArtistParagraph2: 'Lass deine Freunde entdecken, welche Künstler du verfolgst.',
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',
