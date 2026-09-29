@@ -20,7 +20,7 @@
 		<SelectStreamingButton
 			{streaming}
 			selected={selectedStreaming === streaming}
-			onClick={() => handleSelectStreaming(streaming)}
+			on:click={() => handleSelectStreaming(streaming)}
 		/>
 	{/each}
 </div>

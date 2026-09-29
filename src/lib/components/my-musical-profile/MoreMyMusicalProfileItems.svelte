@@ -175,7 +175,7 @@
 
 <button
 	class="button-cta mx-auto w-full lg:w-90 lg:max-w-90"
-	onclick={handleLoadMoreMusicalItems}
+	on:click={handleLoadMoreMusicalItems}
 	disabled={loadingMoreItems}
 >
 	{#if !loadingMoreItems}

@@ -70,7 +70,7 @@
 						class={`button-primary px-4.5 py-2.5 text-center text-xs sm:w-fit sm:text-base ${periodTime === period ? 'bg-brand-primary-dark!' : ''}`}
 						aria-pressed={periodTime === period}
 						disabled={periodTime === period}
-						onclick={() => (periodTime = period as typeof periodTime)}
+						on:click={() => (periodTime = period as typeof periodTime)}
 					>
 						{#if period === 'oneYear'}
 							{$translationsStore.myMusicalProfilePage.myMusicalProfilePagePeriodButtonOneYear}
@@ -94,7 +94,7 @@
 					{#each batchs, i (i)}
 						<button
 							class={`${currentBatch === i ? 'border-brand-primary bg-brand-primary/20 font-medium' : 'cursor-pointer border-transparent hover:bg-brand-primary/10'} rounded-lg border px-3 py-1.5 text-xs lg:px-4 lg:py-2 lg:text-sm`}
-							onclick={() => (currentBatch = i)}
+							on:click={() => (currentBatch = i)}
 						>
 							{i + 1}
 						</button>
