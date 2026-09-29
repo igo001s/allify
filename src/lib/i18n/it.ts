@@ -649,18 +649,27 @@ export const it = {
 			'Chiudi la finestra di condivisione delle canzoni del profilo',
 		profilePageShareSongsCloseModalIconAriaLabel:
 			'Icona per chiudere la finestra di condivisione delle canzoni del profilo',
-		profilePageShareSongsParagraph1: 'Condividi le tue canzoni con i tuoi amici',
-		profilePageShareSongsParagraph2: 'Lascia che i tuoi amici scoprano cosa stai ascoltando.',
-		profilePageShareSongsCancelButtonText: 'Annulla',
-		profilePageShareSongsShareButtonText: 'Condividi',
+		profilePageShareSongsModalParagraph1: 'Condividi la tua musica con i tuoi amici',
+		profilePageShareSongsModalParagraph2: 'Lascia che i tuoi amici scoprano cosa stai ascoltando.',
+		profilePageShareSongsModalPreviewParagraph1: 'LA MIA MUSICA',
+		profilePageShareSongsModalPreviewParagraph2: 'Chi definisce il mio sound',
+		profilePageShareSongsModalPreviewParagraph3:
+			'Le canzoni che raccontano meglio la mia identità musicale.',
 		profilePageShareArtistCloseModalButtonAriaLabel:
 			'Chiudi la finestra di condivisione degli artisti del profilo',
 		profilePageShareArtistCloseModalIconAriaLabel:
 			'Icona per chiudere la finestra di condivisione degli artisti del profilo',
-		profilePageShareArtistParagraph1: 'Condividi i tuoi artisti con i tuoi amici',
-		profilePageShareArtistParagraph2: 'Lascia che i tuoi amici scoprano gli artisti che segui.',
-		profilePageShareArtistCancelButtonText: 'Annulla',
-		profilePageShareArtistShareButtonText: 'Condividi'
+		profilePageShareArtistModalParagraph1: 'Condividi i tuoi artisti preferiti',
+		profilePageShareArtistModalParagraph2:
+			'Lascia che i tuoi amici scoprano quali artisti stai seguendo.',
+		profilePageShareArtistModalPreviewParagraph1: 'I MIEI ARTISTI',
+		profilePageShareArtistModalPreviewParagraph2: 'Chi definisce il mio sound',
+		profilePageShareArtistModalPreviewParagraph3:
+			'Gli artisti che raccontano meglio la mia identità musicale.',
+		profilePageShareModalPreviewProfile: 'PROFILO',
+		profilePageShareModalYourMusicYourIdentity: 'La tua musica, la tua identità.',
+		profilePageShareModalCancelButtonText: 'Annulla',
+		profilePageShareModalShareButtonText: 'Condividi'
 	},
 	settingsPage: {
 		title: 'Impostazioni | Allify',

@@ -2,8 +2,8 @@
 import { dev } from '$app/environment';
 
 // Services
-import { useTicket } from '../tickets/useTicket';
-import { returnTicket } from '../tickets/returnTicket';
+import { useTicket } from '$lib/services/user/tickets/useTicket';
+import { returnTicket } from '$lib/services/user/tickets/returnTicket';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';

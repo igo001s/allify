@@ -124,18 +124,18 @@
 	/>
 
 	<div class="mt-12 flex w-full flex-col gap-10 lg:gap-14">
-		<YourSongsOnProfile
-			openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('music')}
-			openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('music')}
-			openChangeCustomItemModal={() => openChangeCustomItemModal('music')}
-			openSelectCustomItemModal={() => openSelectCustomItemModal('music')}
-		/>
-
 		<YourArtistsOnProfile
 			openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('artist')}
 			openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('artist')}
 			openChangeCustomItemModal={() => openChangeCustomItemModal('artist')}
 			openSelectCustomItemModal={() => openSelectCustomItemModal('artist')}
+		/>
+
+		<YourSongsOnProfile
+			openChangeYourItemsModal={() => openChangeItemOfTheMomentModal('music')}
+			openSelectYourItemsModal={() => openSelectItemOfTheMomentModal('music')}
+			openChangeCustomItemModal={() => openChangeCustomItemModal('music')}
+			openSelectCustomItemModal={() => openSelectCustomItemModal('music')}
 		/>
 	</div>
 

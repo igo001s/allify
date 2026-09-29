@@ -6,13 +6,13 @@ import { get } from 'svelte/store';
 import { translationsStore } from '$lib/stores/translations.store';
 
 // Services
-import { createUser } from './createUser';
-import { sendEmail } from '../../email/sendEmail';
-import { existingSpotifyUser } from '../../spotify/mappers/existingSpotifyUser';
-import { buildUserFromSpotify } from '../../spotify/mappers/buildUserFromSpotify';
+import { createUser } from '$lib/services/user/build/createUser';
+import { sendEmail } from '$lib/services/email/sendEmail';
+import { existingSpotifyUser } from '$lib/services/spotify/mappers/existingSpotifyUser';
+import { buildUserFromSpotify } from '$lib/services/spotify/mappers/buildUserFromSpotify';
 
 // Email templates
-import { welcomeToAllifyTemplate } from '$lib/emails/templates/welcomeToAllifyTemaplate';
+import { welcomeToAllifyTemplate } from '$lib/templates/email/welcomeToAllifyTemplate';
 
 export async function fetchUserInfo() {
 	try {

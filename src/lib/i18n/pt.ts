@@ -623,19 +623,26 @@ export const pt = {
 			'Fechar modal de compartilhamento de músicas do perfil',
 		profilePageShareSongsCloseModalIconAriaLabel:
 			'Ícone de fechar o modal de compartilhamento de músicas do perfil',
-		profilePageShareSongsParagraph1: 'Compartilhe suas músicas com seus amigos',
-		profilePageShareSongsParagraph2: 'Deixe seus amigos descobrirem o que você está ouvindo.',
-		profilePageShareSongsCancelButtonText: 'Cancelar',
-		profilePageShareSongsShareButtonText: 'Compartilhar',
+		profilePageShareSongsModalParagraph1: 'Compartilhe suas músicas com seus amigos',
+		profilePageShareSongsModalParagraph2: 'Deixe seus amigos descobrirem o que você está ouvindo.',
+		profilePageShareSongsModalPreviewParagraph1: 'MINHAS MÚSICAS',
+		profilePageShareSongsModalPreviewParagraph2: 'Quem define o meu som',
+		profilePageShareSongsModalPreviewParagraph3: 'As músicas que mais dizem quem eu sou na música.',
 		profilePageShareArtistCloseModalButtonAriaLabel:
 			'Fechar modal de compartilhamento de artistas do perfil',
 		profilePageShareArtistCloseModalIconAriaLabel:
 			'Ícone de fechar o modal de compartilhamento de artistas do perfil',
-		profilePageShareArtistParagraph1: 'Compartilhe seus artistas favoritos',
-		profilePageShareArtistParagraph2:
+		profilePageShareArtistModalParagraph1: 'Compartilhe seus artistas favoritos',
+		profilePageShareArtistModalParagraph2:
 			'Deixe seus amigos descobrirem quais artistas você está acompanhando.',
-		profilePageShareArtistCancelButtonText: 'Cancelar',
-		profilePageShareArtistShareButtonText: 'Compartilhar'
+		profilePageShareArtistModalPreviewParagraph1: 'MEUS ARTISTAS',
+		profilePageShareArtistModalPreviewParagraph2: 'Quem define o meu som',
+		profilePageShareArtistModalPreviewParagraph3:
+			'Os artistas que mais dizem quem eu sou na música.',
+		profilePageShareModalPreviewProfile: 'PERFIL',
+		profilePageShareModalYourMusicYourIdentity: 'Sua música, sua identidade.',
+		profilePageShareModalCancelButtonText: 'Cancelar',
+		profilePageShareModalShareButtonText: 'Compartilhar'
 	},
 	settingsPage: {
 		title: 'Configurações | Allify',

@@ -12,6 +12,9 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
 
+	// Types
+	import type { ArtistSpotify } from '$lib/types/Spotify.type';
+
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'artist') => void;
 	export let openSelectYourItemsModal: (itemType: 'artist') => void;
@@ -20,12 +23,12 @@
 
 	$: artistItems = [
 		{
-			artistItem: $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.oneYear[0],
+			item: $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.oneYear[0],
 			type: 'mostListenedArtist'
 		},
-		{ artistItem: $userInfo?.artists?.artistOfTheMoment?.artist, type: 'artistOfTheMoment' },
-		{ artistItem: $userInfo?.artists?.customArtist?.artist, type: 'customArtist' }
-	];
+		{ item: $userInfo?.artists?.artistOfTheMoment?.artist, type: 'artistOfTheMoment' },
+		{ item: $userInfo?.artists?.customArtist?.artist, type: 'customArtist' }
+	] as { item: ArtistSpotify; type: string }[];
 
 	let showShareDataModal = false;
 </script>
@@ -47,10 +50,10 @@
 	</div>
 
 	<div class="flex flex-col gap-8 xl:flex-row">
-		{#each artistItems as { artistItem, type }, i (i)}
-			{#if artistItem}
+		{#each artistItems as { item, type }, i (i)}
+			{#if item}
 				<YourArtistOnProfileItem
-					artistItem={{ item: artistItem, type }}
+					artistItem={{ item, type }}
 					{openChangeYourItemsModal}
 					{openChangeCustomItemModal}
 				/>
@@ -66,13 +69,13 @@
 {#if showShareDataModal}
 	<ShareDataModal
 		bind:showShareDataModal
+		itemType="artist"
 		shareDataCloseModalButtonAriaLabel={$translationsStore.profilePage
 			.profilePageShareArtistCloseModalButtonAriaLabel}
 		shareDataCloseModalIconAriaLabel={$translationsStore.profilePage
 			.profilePageShareArtistCloseModalIconAriaLabel}
-		paragraph1={$translationsStore.profilePage.profilePageShareArtistParagraph1}
-		paragraph2={$translationsStore.profilePage.profilePageShareArtistParagraph2}
-		cancelButtonText={$translationsStore.profilePage.profilePageShareArtistCancelButtonText}
-		shareButtonText={$translationsStore.profilePage.profilePageShareArtistShareButtonText}
+		paragraph1={$translationsStore.profilePage.profilePageShareArtistModalParagraph1}
+		paragraph2={$translationsStore.profilePage.profilePageShareArtistModalParagraph2}
+		musicalItems={artistItems}
 	/>
 {/if}

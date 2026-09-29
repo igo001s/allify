@@ -621,22 +621,30 @@ export const ru = {
 			'В вашем профиле пока нет комментариев. Поделитесь своим профилем с друзьями, чтобы они могли оставить комментарии!',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Кнопка для удаления комментария от ',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Иконка для удаления комментария от ',
-		profilePageShareSongsCloseModalButtonAriaLabel:
-			'Закрыть окно для совместного использования песен в профиле',
+		profilePageShareSongsCloseModalButtonAriaLabel: 'Закрыть окно публикации песен из профиля',
 		profilePageShareSongsCloseModalIconAriaLabel:
-			'Иконка для закрытия окна для совместного использования песен в профиле',
-		profilePageShareSongsParagraph1: 'Поделитесь своими песнями с друзьями',
-		profilePageShareSongsParagraph2: 'Позвольте вашим друзьям узнать, что вы слушаете.',
-		profilePageShareSongsCancelButtonText: 'Отмена',
-		profilePageShareSongsShareButtonText: 'Поделиться',
+			'Значок закрытия окна публикации песен из профиля',
+		profilePageShareSongsModalParagraph1: 'Поделитесь своей музыкой с друзьями',
+		profilePageShareSongsModalParagraph2: 'Позвольте друзьям узнать, что вы слушаете.',
+		profilePageShareSongsModalPreviewParagraph1: 'МОЯ МУЗЫКА',
+		profilePageShareSongsModalPreviewParagraph2: 'Что формирует мой музыкальный стиль',
+		profilePageShareSongsModalPreviewParagraph3:
+			'Песни, которые лучше всего отражают меня и мой музыкальный вкус.',
 		profilePageShareArtistCloseModalButtonAriaLabel:
-			'Закрыть окно для совместного использования артистов в профиле',
+			'Закрыть окно публикации исполнителей из профиля',
 		profilePageShareArtistCloseModalIconAriaLabel:
-			'Иконка для закрытия окна для совместного использования артистов в профиле',
-		profilePageShareArtistParagraph1: 'Поделитесь своими артистами с друзьями',
-		profilePageShareArtistParagraph2: 'Позвольте вашим друзьям узнать, каких артистов вы следите.',
-		profilePageShareArtistCancelButtonText: 'Отмена',
-		profilePageShareArtistShareButtonText: 'Поделиться'
+			'Значок закрытия окна публикации исполнителей из профиля',
+		profilePageShareArtistModalParagraph1: 'Поделитесь любимыми исполнителями',
+		profilePageShareArtistModalParagraph2:
+			'Позвольте друзьям узнать, за какими исполнителями вы следите.',
+		profilePageShareArtistModalPreviewParagraph1: 'МОИ ИСПОЛНИТЕЛИ',
+		profilePageShareArtistModalPreviewParagraph2: 'Что формирует мой музыкальный стиль',
+		profilePageShareArtistModalPreviewParagraph3:
+			'Исполнители, которые лучше всего отражают меня и мой музыкальный вкус.',
+		profilePageShareModalPreviewProfile: 'ПРОФИЛЬ',
+		profilePageShareModalYourMusicYourIdentity: 'Ваша музыка, ваша идентичность.',
+		profilePageShareModalCancelButtonText: 'Отмена',
+		profilePageShareModalShareButtonText: 'Поделиться'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

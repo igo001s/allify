@@ -28,6 +28,7 @@
 	closeModal={closeChangeCustomItemModal}
 	closeModalButtonAriaLabel={getCloseModalButtonAriaLabel()}
 	closeModalIconAriaLabel={getCloseModalIconAriaLabel()}
+	additionalClasses="max-h-[90vh] w-full max-w-3xl"
 >
 	<p class="text-lg font-bold text-t-primary sm:text-xl">
 		{$translationsStore.profilePage.profilePageChangeYourCustomItemParagraph1}

@@ -634,21 +634,30 @@ export const es = {
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Botón para eliminar comentario de ',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icono para eliminar comentario de ',
 		profilePageShareSongsCloseModalButtonAriaLabel:
-			'Cerrar modal para compartir canciones en el perfil',
+			'Cerrar la ventana para compartir las canciones del perfil',
 		profilePageShareSongsCloseModalIconAriaLabel:
-			'Icono para cerrar el modal para compartir canciones en el perfil',
-		profilePageShareSongsParagraph1: 'Comparte tus canciones con tus amigos',
-		profilePageShareSongsParagraph2: 'Deja que tus amigos descubran lo que estás escuchando.',
-		profilePageShareSongsCancelButtonText: 'Cancelar',
-		profilePageShareSongsShareButtonText: 'Compartir',
+			'Icono para cerrar la ventana para compartir las canciones del perfil',
+		profilePageShareSongsModalParagraph1: 'Comparte tu música con tus amigos',
+		profilePageShareSongsModalParagraph2: 'Deja que tus amigos descubran lo que estás escuchando.',
+		profilePageShareSongsModalPreviewParagraph1: 'MI MÚSICA',
+		profilePageShareSongsModalPreviewParagraph2: 'Quién define mi sonido',
+		profilePageShareSongsModalPreviewParagraph3:
+			'Las canciones que mejor representan quién soy musicalmente.',
 		profilePageShareArtistCloseModalButtonAriaLabel:
-			'Cerrar modal para compartir artistas en el perfil',
+			'Cerrar la ventana para compartir los artistas del perfil',
 		profilePageShareArtistCloseModalIconAriaLabel:
-			'Icono para cerrar el modal para compartir artistas en el perfil',
-		profilePageShareArtistParagraph1: 'Comparte tus artistas con tus amigos',
-		profilePageShareArtistParagraph2: 'Deja que tus amigos descubran los artistas que sigues.',
-		profilePageShareArtistCancelButtonText: 'Cancelar',
-		profilePageShareArtistShareButtonText: 'Compartir'
+			'Icono para cerrar la ventana para compartir los artistas del perfil',
+		profilePageShareArtistModalParagraph1: 'Comparte tus artistas favoritos',
+		profilePageShareArtistModalParagraph2:
+			'Deja que tus amigos descubran qué artistas estás siguiendo.',
+		profilePageShareArtistModalPreviewParagraph1: 'MIS ARTISTAS',
+		profilePageShareArtistModalPreviewParagraph2: 'Quién define mi sonido',
+		profilePageShareArtistModalPreviewParagraph3:
+			'Los artistas que mejor representan quién soy musicalmente.',
+		profilePageShareModalPreviewProfile: 'PERFIL',
+		profilePageShareModalYourMusicYourIdentity: 'Tu música, tu identidad.',
+		profilePageShareModalCancelButtonText: 'Cancelar',
+		profilePageShareModalShareButtonText: 'Compartir'
 	},
 	settingsPage: {
 		title: 'Configuración | Allify',

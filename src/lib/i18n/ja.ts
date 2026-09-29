@@ -610,21 +610,28 @@ export const ja = {
 			'あなたのプロフィールにはまだコメントがありません。友達とプロフィールを共有して、コメントを残してもらいましょう。',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'コメントを削除するボタン：',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'コメントを削除するアイコン：',
-		profilePageShareSongsCloseModalButtonAriaLabel: 'プロフィールの曲共有モーダルを閉じる',
-		profilePageShareSongsCloseModalIconAriaLabel: 'プロフィールの曲共有モーダルを閉じるアイコン',
-		profilePageShareSongsParagraph1: '友達と曲を共有する',
-		profilePageShareSongsParagraph2: '友達にあなたが聴いている曲を発見させましょう。',
-		profilePageShareSongsCancelButtonText: 'キャンセル',
-		profilePageShareSongsShareButtonText: '共有',
+		profilePageShareSongsCloseModalButtonAriaLabel: 'プロフィールの楽曲共有モーダルを閉じる',
+		profilePageShareSongsCloseModalIconAriaLabel: 'プロフィールの楽曲共有モーダルを閉じるアイコン',
+		profilePageShareSongsModalParagraph1: 'お気に入りの音楽を友達と共有しましょう',
+		profilePageShareSongsModalParagraph2: '今聴いている音楽を友達に知ってもらいましょう。',
+		profilePageShareSongsModalPreviewParagraph1: 'MY MUSIC',
+		profilePageShareSongsModalPreviewParagraph2: '私のサウンドを形作るもの',
+		profilePageShareSongsModalPreviewParagraph3: '音楽を通して自分らしさを最も表現する楽曲。',
 		profilePageShareArtistCloseModalButtonAriaLabel:
 			'プロフィールのアーティスト共有モーダルを閉じる',
 		profilePageShareArtistCloseModalIconAriaLabel:
 			'プロフィールのアーティスト共有モーダルを閉じるアイコン',
-		profilePageShareArtistParagraph1: '友達とアーティストを共有する',
-		profilePageShareArtistParagraph2:
-			'友達にあなたがフォローしているアーティストを発見させましょう。',
-		profilePageShareArtistCancelButtonText: 'キャンセル',
-		profilePageShareArtistShareButtonText: '共有'
+		profilePageShareArtistModalParagraph1: 'お気に入りのアーティストを共有しましょう',
+		profilePageShareArtistModalParagraph2:
+			'フォローしているアーティストを友達に知ってもらいましょう。',
+		profilePageShareArtistModalPreviewParagraph1: 'MY ARTISTS',
+		profilePageShareArtistModalPreviewParagraph2: '私のサウンドを形作るもの',
+		profilePageShareArtistModalPreviewParagraph3:
+			'音楽を通して自分らしさを最も表現するアーティスト。',
+		profilePageShareModalPreviewProfile: 'プロフィール',
+		profilePageShareModalYourMusicYourIdentity: 'あなたの音楽、あなたのアイデンティティ。',
+		profilePageShareModalCancelButtonText: 'キャンセル',
+		profilePageShareModalShareButtonText: '共有'
 	},
 	settingsPage: {
 		title: '設定 | Allify',

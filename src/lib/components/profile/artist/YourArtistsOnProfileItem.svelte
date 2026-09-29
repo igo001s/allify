@@ -25,7 +25,7 @@
 		}
 	}
 
-	function getSongsOnProfileTitle(): string {
+	function getArtistsOnProfileTitle(): string {
 		if (artistItem.type === 'mostListenedArtist') {
 			return $translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v1;
 		} else if (artistItem.type === 'artistOfTheMoment') {
@@ -41,7 +41,7 @@
 <ProfileItemCard
 	{handleEditButtonClick}
 	profileItem={artistItem}
-	heading3={getSongsOnProfileTitle()}
+	heading3={getArtistsOnProfileTitle()}
 	isUppercase={artistItem.type !== 'customArtist'}
 	showEditIcon={artistItem.type === 'artistOfTheMoment' || artistItem.type === 'customArtist'}
 	showEditButtonAriaLabel={artistItem.type === 'artistOfTheMoment'
