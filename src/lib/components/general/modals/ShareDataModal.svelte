@@ -2,6 +2,9 @@
 	// App
 	import { dev } from '$app/environment';
 
+    // Assets
+    import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
+
 	// Components
 	import Modal from './Modal.svelte';
 
@@ -27,7 +30,11 @@
 	export let paragraph2: string;
 	export let musicalItems: { item: ArtistSpotify | TrackSpotify; type: string }[];
 
+    let loadingShare = false;
+
 	async function handleShareData() {
+        loadingShare = true;
+
 		try {
 			const element = document.getElementById('share-data-modal');
 
@@ -88,7 +95,11 @@
 					toastMessage: $translationsStore.profilePage.profilePageShareSongsModalToastError
 				});
 			}
-		}
+		} finally {
+            setInterval(() => {
+                loadingShare = false;
+            }, 2000);
+        }
 	}
 </script>
 
@@ -115,8 +126,12 @@
 			{$translationsStore.profilePage.profilePageShareModalCancelButtonText}
 		</button>
 
-		<button class="button-primary px-6 py-2.5" on:click={handleShareData}>
-			{$translationsStore.profilePage.profilePageShareModalShareButtonText}
+		<button class="button-primary px-6 py-2.5 w-30" on:click={handleShareData}>
+			{#if loadingShare}
+				<DotsLoading dotsTheme="base-light" />
+			{:else}
+				{$translationsStore.profilePage.profilePageShareModalShareButtonText}
+			{/if}
 		</button>
 	</div>
 </Modal>
