@@ -96,7 +96,7 @@
 	closeModal={() => (showShareDataModal = false)}
 	closeModalButtonAriaLabel={shareDataCloseModalButtonAriaLabel}
 	closeModalIconAriaLabel={shareDataCloseModalIconAriaLabel}
-	additionalClasses="max-h-[95vh] w-full max-w-2xl overflow-y-auto"
+	additionalClasses="h-fit w-full max-w-2xl overflow-y-auto"
 >
 	<div class="space-y-3">
 		<p class="text-lg font-bold text-t-primary sm:text-xl">
@@ -110,7 +110,7 @@
 
 	<ShareMusicalItemsOnProfileTemplate {musicalItems} {itemsType} />
 
-	<div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end sm:gap-3">
+	<div class="flex flex-col-reverse mt-2 gap-2 sm:flex-row sm:justify-end sm:gap-3">
 		<button class="button-secondary px-6 py-2.5" on:click={() => (showShareDataModal = false)}>
 			{$translationsStore.profilePage.profilePageShareModalCancelButtonText}
 		</button>
