@@ -26,17 +26,17 @@
 		class={`relative flex flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl ${additionalClasses}`}
 	>
 		<button
-			class="absolute top-2 right-2 z-10 cursor-pointer opacity-70 hover:scale-102 hover:opacity-100"
+			class="absolute top-3.5 right-3.5 z-10 cursor-pointer opacity-70 hover:scale-102 hover:opacity-100"
 			on:click={closeModal}
 			aria-label={closeModalButtonAriaLabel}
 		>
 			<CloseIcon
 				iconAriaLabel={closeModalIconAriaLabel}
-				iconSvgClass="h-5 w-5 text-brand-primary"
+				iconSvgClass="h-5 w-5 text-brand-primary lg:h-6 lg:w-6"
 			/>
 		</button>
 
-		<div class="flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 lg:p-8">
+		<div class="flex flex-col gap-6 p-5 sm:p-6 lg:p-8">
 			<slot></slot>
 		</div>
 	</div>

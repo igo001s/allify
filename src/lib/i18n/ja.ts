@@ -8,9 +8,7 @@ export const ja = {
 		stripeTicketId: 'prod_VCKwjqUh7AzZfd'
 	},
 	generalTexts: {
-		logoColorfulTitle: 'Allifyのカラーロゴ',
 		logoColorfulAriaLabel: 'Allifyのカラーロゴ',
-		logoLightTitle: 'Allifyのライトロゴ',
 		logoLightAriaLabel: 'Allifyのライトロゴ',
 		headerNavigationItem1: '私の音楽プロフィール',
 		headerNavigationItem2: '音楽アーカイブ',
@@ -617,17 +615,23 @@ export const ja = {
 		profilePageShareSongsModalPreviewParagraph1: 'MY MUSIC',
 		profilePageShareSongsModalPreviewParagraph2: '私のサウンドを形作るもの',
 		profilePageShareSongsModalPreviewParagraph3: '音楽を通して自分らしさを最も表現する楽曲。',
-		profilePageShareArtistCloseModalButtonAriaLabel:
+		profilePageShareSongsModalFileName: 'allify-ongaku-purofiiru.png',
+		profilePageShareSongsModalFileTitle: 'Allifyのプロフィールにある私の音楽',
+		profilePageShareSongsModalFileText: '私の音楽をチェック！',
+		profilePageShareSongsModalToastError: 'プロフィールの音楽を共有できませんでした。',
+		profilePageShareArtistsCloseModalButtonAriaLabel:
 			'プロフィールのアーティスト共有モーダルを閉じる',
-		profilePageShareArtistCloseModalIconAriaLabel:
+		profilePageShareArtistsCloseModalIconAriaLabel:
 			'プロフィールのアーティスト共有モーダルを閉じるアイコン',
-		profilePageShareArtistModalParagraph1: 'お気に入りのアーティストを共有しましょう',
-		profilePageShareArtistModalParagraph2:
-			'フォローしているアーティストを友達に知ってもらいましょう。',
-		profilePageShareArtistModalPreviewParagraph1: 'MY ARTISTS',
-		profilePageShareArtistModalPreviewParagraph2: '私のサウンドを形作るもの',
-		profilePageShareArtistModalPreviewParagraph3:
-			'音楽を通して自分らしさを最も表現するアーティスト。',
+		profilePageShareArtistsModalParagraph1: 'お気に入りのアーティストを共有',
+		profilePageShareArtistsModalParagraph2: 'あなたが聴いているアーティストを友達に見てもらおう。',
+		profilePageShareArtistsModalPreviewParagraph1: '私のアーティスト',
+		profilePageShareArtistsModalPreviewParagraph2: '私のサウンドをつくる人たち',
+		profilePageShareArtistsModalPreviewParagraph3: '音楽を通して私らしさを表すアーティストたち。',
+		profilePageShareArtistsModalFileName: 'allify-atiisuto-purofiiru.png',
+		profilePageShareArtistsModalFileTitle: 'Allifyのプロフィールにある私のアーティスト',
+		profilePageShareArtistsModalFileText: '私のアーティストをチェック！',
+		profilePageShareArtistsModalToastError: 'プロフィールのアーティストを共有できませんでした。',
 		profilePageShareModalPreviewProfile: 'プロフィール',
 		profilePageShareModalYourMusicYourIdentity: 'あなたの音楽、あなたのアイデンティティ。',
 		profilePageShareModalCancelButtonText: 'キャンセル',

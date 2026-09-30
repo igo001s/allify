@@ -10,11 +10,11 @@
 	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Props
-	export let itemType: string;
+	export let itemsType: string;
 	export let musicalItems: { item: ArtistSpotify | TrackSpotify; type: string }[];
 
 	function getMusicalItemsOnProfileTitle(itemType: string, musicalType: string): string {
-		if (itemType === 'music') {
+		if (itemType === 'songs') {
 			if (musicalType === 'mostListenedTrack') {
 				return $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v1;
 			} else if (musicalType === 'trackOfTheMoment') {
@@ -22,7 +22,7 @@
 			} else if (musicalType === 'customTrack' && $userInfo?.tracks?.customTrack?.title) {
 				return $userInfo?.tracks?.customTrack?.title;
 			}
-		} else if (itemType === 'artist') {
+		} else if (itemType === 'artists') {
 			if (musicalType === 'mostListenedArtist') {
 				return $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v1;
 			} else if (musicalType === 'artistOfTheMoment') {
@@ -36,181 +36,79 @@
 	}
 </script>
 
-<div class="share-card">
-	<header class="share-header">
-		<AllifyLogoColorful logoSvgClass="w-26 h-fit lg:w-32" logoTitle="" logoAriaLabel="" />
+<div
+	class="mx-auto h-104 w-71.5 min-[400px]:h-128 min-[400px]:w-88 min-[480px]:h-160 min-[480px]:w-110"
+>
+	<div
+		id="share-data-modal"
+		class="flex h-160 w-110 origin-top-left scale-[0.65] flex-col justify-between overflow-hidden bg-s-default px-8 py-10 text-t-primary shadow-lg min-[400px]:scale-[0.8] min-[480px]:scale-100"
+	>
+		<header class="flex items-center justify-between gap-2">
+			<AllifyLogoColorful
+				logoSvgClass="w-[26%] h-auto"
+				logoAriaLabel={$translationsStore.generalTexts.logoColorfulAriaLabel}
+			/>
 
-		<span class="share-label"
-			>{$translationsStore.profilePage.profilePageShareModalPreviewProfile}</span
-		>
-	</header>
+			<span class="text-right text-xs font-semibold text-t-secondary">
+				{$translationsStore.profilePage.profilePageShareModalPreviewProfile}
+			</span>
+		</header>
 
-	<section class="share-intro">
-		<p class="share-eyebrow">
-			{itemType === 'artist'
-				? $translationsStore.profilePage.profilePageShareArtistModalPreviewParagraph1
-				: $translationsStore.profilePage.profilePageShareSongsModalPreviewParagraph1}
-		</p>
+		<section class="space-y-1">
+			<p class="text-[13px] font-bold text-brand-primary">
+				{itemsType === 'artists'
+					? $translationsStore.profilePage.profilePageShareArtistsModalPreviewParagraph1
+					: $translationsStore.profilePage.profilePageShareSongsModalPreviewParagraph1}
+			</p>
 
-		<p class="share-title">
-			{itemType === 'artist'
-				? $translationsStore.profilePage.profilePageShareArtistModalPreviewParagraph2
-				: $translationsStore.profilePage.profilePageShareSongsModalPreviewParagraph2}
-		</p>
+			<p class="text-2xl leading-tight font-bold text-t-primary">
+				{itemsType === 'artists'
+					? $translationsStore.profilePage.profilePageShareArtistsModalPreviewParagraph2
+					: $translationsStore.profilePage.profilePageShareSongsModalPreviewParagraph2}
+			</p>
 
-		<p class="share-description">
-			{itemType === 'artist'
-				? $translationsStore.profilePage.profilePageShareArtistModalPreviewParagraph3
-				: $translationsStore.profilePage.profilePageShareSongsModalPreviewParagraph3}
-		</p>
-	</section>
+			<p class="text-[13px] leading-relaxed text-t-secondary">
+				{itemsType === 'artists'
+					? $translationsStore.profilePage.profilePageShareArtistsModalPreviewParagraph3
+					: $translationsStore.profilePage.profilePageShareSongsModalPreviewParagraph3}
+			</p>
+		</section>
 
-	<ul class="share-list">
-		{#each musicalItems as musicalItem, i (i)}
-			<li class="share-item">
-				{#if musicalItem.item?.image?.url}
-					<enhanced:img
-						src={musicalItem.item.image.url}
-						alt={musicalItem.item.name}
-						class="share-cover"
-						loading="eager"
-						fetchpriority="high"
-						decoding="sync"
-					/>
-				{/if}
+		<ul class="flex h-fit flex-col gap-3">
+			{#each musicalItems as musicalItem, i (i)}
+				<li
+					class="flex max-h-22 min-h-0 flex-1 items-center gap-4 rounded-lg border border-b-default p-3"
+				>
+					{#if musicalItem.item?.image?.url}
+						<enhanced:img
+							src={musicalItem.item.image.url}
+							alt={musicalItem.item.name}
+							class="aspect-square h-full w-auto shrink-0 rounded-lg object-cover"
+							loading="eager"
+							fetchpriority="high"
+							decoding="sync"
+						/>
+					{/if}
 
-				<div class="share-info">
-					<p class="share-type">
-						{getMusicalItemsOnProfileTitle(itemType, musicalItem.type)}
-					</p>
-					<p class="share-name">{musicalItem.item.name}</p>
-				</div>
-			</li>
-		{/each}
-	</ul>
+					<div class="min-w-0 flex-1 space-y-1">
+						<p class="truncate text-xs font-semibold text-brand-primary uppercase">
+							{getMusicalItemsOnProfileTitle(itemsType, musicalItem.type)}
+						</p>
 
-	<footer class="share-footer">
-		<span>{$translationsStore.profilePage.profilePageShareModalYourMusicYourIdentity}</span>
-		<strong>allify.club</strong>
-	</footer>
+						<p class="truncate text-sm font-semibold text-t-primary">
+							{musicalItem.item.name}
+						</p>
+					</div>
+				</li>
+			{/each}
+		</ul>
+
+		<footer class="flex shrink-0 items-center justify-between gap-2 border-t border-b-default pt-6">
+			<span class="text-xs text-t-secondary">
+				{$translationsStore.profilePage.profilePageShareModalYourMusicYourIdentity}
+			</span>
+
+			<strong class="text-xs font-semibold text-brand-primary">allify.club</strong>
+		</footer>
+	</div>
 </div>
-
-<style>
-	.share-card {
-		width: 100%;
-		padding: 12px;
-		background: var(--color-s-default);
-		color: var(--color-t-primary);
-	}
-
-	.share-header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 12px;
-	}
-
-	.share-label {
-		color: var(--color-t-secondary);
-		font-size: 11px;
-		font-weight: 600;
-		letter-spacing: 0.1em;
-	}
-
-	.share-intro {
-		margin-top: 20px;
-	}
-
-	.share-eyebrow {
-		color: var(--color-brand-primary);
-		font-size: 11px;
-		font-weight: 700;
-		letter-spacing: 0.1em;
-	}
-
-	.share-title {
-		margin-top: 8px;
-		color: var(--color-t-primary);
-		font-size: 28px;
-		font-weight: 700;
-		line-height: 1.2;
-		letter-spacing: -0.01em;
-	}
-
-	.share-description {
-		margin-top: 10px;
-		color: var(--color-t-secondary);
-		font-size: 14px;
-		line-height: 1.5;
-	}
-
-	.share-list {
-		display: flex;
-		flex-direction: column;
-		gap: 18px;
-		margin: 28px 0 0;
-		padding: 0;
-		list-style: none;
-	}
-
-	.share-item {
-		display: flex;
-		align-items: center;
-		gap: 14px;
-		padding: 12px;
-		border: 1px solid var(--color-b-default);
-		border-radius: 14px;
-	}
-
-	.share-cover {
-		flex-shrink: 0;
-		width: 56px;
-		height: 56px;
-		border-radius: 10px;
-		object-fit: cover;
-	}
-
-	.share-info {
-		flex: 1;
-		min-width: 0;
-	}
-
-	.share-type {
-		color: var(--color-brand-primary);
-		font-size: 10px;
-		font-weight: 600;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
-	}
-
-	.share-name {
-		margin-top: 2px;
-		overflow: hidden;
-		color: var(--color-t-primary);
-		font-size: 15px;
-		font-weight: 600;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
-
-	.share-footer {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 12px;
-		margin-top: 32px;
-		padding-top: 20px;
-		border-top: 1px solid var(--color-b-default);
-	}
-
-	.share-footer span {
-		color: var(--color-t-secondary);
-		font-size: 12px;
-	}
-
-	.share-footer strong {
-		color: var(--color-brand-primary);
-		font-size: 13px;
-		font-weight: 700;
-	}
-</style>

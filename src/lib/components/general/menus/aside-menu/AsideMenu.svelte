@@ -1,4 +1,7 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+
 	// Svelte
 	import { onMount, onDestroy } from 'svelte';
 
@@ -54,13 +57,12 @@
 		<div
 			class="flex items-center justify-between border-b border-b-default/60 pt-8 pr-3 pb-5.5 pl-8"
 		>
-			<button on:click={closeMenu}>
+			<a href={resolve('/')} on:click={closeMenu} class="cursor-pointer hover:scale-105">
 				<AllifyLogoColorful
-					logoSvgClass="w-26"
-					logoTitle={$translationsStore.generalTexts.logoColorfulTitle}
+					logoSvgClass="w-24"
 					logoAriaLabel={$translationsStore.generalTexts.logoColorfulAriaLabel}
 				/>
-			</button>
+			</a>
 
 			<button
 				aria-label={$translationsStore.generalTexts.closeMenuButtonAriaLabel}

@@ -69,13 +69,13 @@
 {#if showShareDataModal}
 	<ShareDataModal
 		bind:showShareDataModal
-		itemType="artist"
+		itemsType="artists"
 		shareDataCloseModalButtonAriaLabel={$translationsStore.profilePage
-			.profilePageShareArtistCloseModalButtonAriaLabel}
+			.profilePageShareArtistsCloseModalButtonAriaLabel}
 		shareDataCloseModalIconAriaLabel={$translationsStore.profilePage
-			.profilePageShareArtistCloseModalIconAriaLabel}
-		paragraph1={$translationsStore.profilePage.profilePageShareArtistModalParagraph1}
-		paragraph2={$translationsStore.profilePage.profilePageShareArtistModalParagraph2}
+			.profilePageShareArtistsCloseModalIconAriaLabel}
+		paragraph1={$translationsStore.profilePage.profilePageShareArtistsModalParagraph1}
+		paragraph2={$translationsStore.profilePage.profilePageShareArtistsModalParagraph2}
 		musicalItems={artistItems}
 	/>
 {/if}

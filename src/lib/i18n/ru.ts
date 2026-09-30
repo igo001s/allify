@@ -8,9 +8,7 @@ export const ru = {
 		stripeTicketId: 'prod_VCKw6sFmdeChFN'
 	},
 	generalTexts: {
-		logoColorfulTitle: 'Цветной логотип Allify',
 		logoColorfulAriaLabel: 'Цветной логотип Allify',
-		logoLightTitle: 'Светлый логотип Allify',
 		logoLightAriaLabel: 'Светлый логотип Allify',
 		headerNavigationItem1: 'Мой музыкальный профиль',
 		headerNavigationItem2: 'Музыкальный архив',
@@ -630,19 +628,25 @@ export const ru = {
 		profilePageShareSongsModalPreviewParagraph2: 'Что формирует мой музыкальный стиль',
 		profilePageShareSongsModalPreviewParagraph3:
 			'Песни, которые лучше всего отражают меня и мой музыкальный вкус.',
-		profilePageShareArtistCloseModalButtonAriaLabel:
-			'Закрыть окно публикации исполнителей из профиля',
-		profilePageShareArtistCloseModalIconAriaLabel:
-			'Значок закрытия окна публикации исполнителей из профиля',
-		profilePageShareArtistModalParagraph1: 'Поделитесь любимыми исполнителями',
-		profilePageShareArtistModalParagraph2:
-			'Позвольте друзьям узнать, за какими исполнителями вы следите.',
-		profilePageShareArtistModalPreviewParagraph1: 'МОИ ИСПОЛНИТЕЛИ',
-		profilePageShareArtistModalPreviewParagraph2: 'Что формирует мой музыкальный стиль',
-		profilePageShareArtistModalPreviewParagraph3:
-			'Исполнители, которые лучше всего отражают меня и мой музыкальный вкус.',
+		profilePageShareSongsModalFileName: 'allify-muzyka-profil.png',
+		profilePageShareSongsModalFileTitle: 'Мои песни в моём профиле Allify',
+		profilePageShareSongsModalFileText: 'Посмотрите мои песни!',
+		profilePageShareSongsModalToastError: 'Не удалось поделиться песнями из вашего профиля.',
+		profilePageShareArtistsCloseModalButtonAriaLabel: 'Закрыть окно отправки артистов из профиля',
+		profilePageShareArtistsCloseModalIconAriaLabel:
+			'Значок закрытия окна отправки артистов из профиля',
+		profilePageShareArtistsModalParagraph1: 'Поделитесь своими любимыми артистами',
+		profilePageShareArtistsModalParagraph2: 'Пусть ваши друзья узнают, каких артистов вы слушаете.',
+		profilePageShareArtistsModalPreviewParagraph1: 'МОИ АРТИСТЫ',
+		profilePageShareArtistsModalPreviewParagraph2: 'Кто определяет мой звук',
+		profilePageShareArtistsModalPreviewParagraph3:
+			'Артисты, которые больше всего отражают меня в музыке.',
+		profilePageShareArtistsModalFileName: 'allify-artisty-profil.png',
+		profilePageShareArtistsModalFileTitle: 'Мои артисты в моём профиле Allify',
+		profilePageShareArtistsModalFileText: 'Посмотрите моих артистов!',
+		profilePageShareArtistsModalToastError: 'Не удалось поделиться артистами из вашего профиля.',
 		profilePageShareModalPreviewProfile: 'ПРОФИЛЬ',
-		profilePageShareModalYourMusicYourIdentity: 'Ваша музыка, ваша идентичность.',
+		profilePageShareModalYourMusicYourIdentity: 'Твоя музыка, твоя идентичность.',
 		profilePageShareModalCancelButtonText: 'Отмена',
 		profilePageShareModalShareButtonText: 'Поделиться'
 	},

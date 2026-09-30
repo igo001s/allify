@@ -1,4 +1,7 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+
 	// Assets
 	import IgoLogo from '$lib/assets/logos/IgoLogo.svelte';
 	import AllifyLogoLight from '$lib/assets/logos/AllifyLogoLight.svelte';
@@ -9,11 +12,12 @@
 
 <div class="flex flex-col items-center justify-between gap-6 lg:items-start">
 	<div class="flex max-w-xs flex-col items-center lg:items-start">
-		<AllifyLogoLight
-			logoSvgClass="w-24 h-fit cursor-pointer text-t-inverse-muted hover:text-t-inverse"
-			logoTitle={$translationsStore.generalTexts.logoLightTitle}
-			logoAriaLabel={$translationsStore.generalTexts.logoLightAriaLabel}
-		/>
+		<a href={resolve('/')}>
+			<AllifyLogoLight
+				logoSvgClass="w-24 h-fit cursor-pointer text-t-inverse-muted hover:text-t-inverse"
+				logoAriaLabel={$translationsStore.generalTexts.logoLightAriaLabel}
+			/>
+		</a>
 
 		<p class="mt-4 text-center text-sm font-light text-t-inverse-muted lg:text-left">
 			{$translationsStore.generalTexts.footerFirstSectionText1}

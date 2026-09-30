@@ -8,9 +8,7 @@ export const fr = {
 		stripeTicketId: 'prod_VCKvhEaBqhFJj1'
 	},
 	generalTexts: {
-		logoColorfulTitle: 'Logo coloré d’Allify',
 		logoColorfulAriaLabel: 'Logo coloré d’Allify',
-		logoLightTitle: 'Logo clair d’Allify',
 		logoLightAriaLabel: 'Logo clair d’Allify',
 		headerNavigationItem1: 'Mon profil musical',
 		headerNavigationItem2: 'Archive Musical',
@@ -658,18 +656,27 @@ export const fr = {
 		profilePageShareSongsModalPreviewParagraph2: 'Ce qui définit mon univers musical',
 		profilePageShareSongsModalPreviewParagraph3:
 			'Les chansons qui représentent le mieux mon identité musicale.',
-		profilePageShareArtistCloseModalButtonAriaLabel:
+		profilePageShareSongsModalFileName: 'allify-musiques-profil.png',
+		profilePageShareSongsModalFileTitle: 'Mes chansons sur mon profil Allify',
+		profilePageShareSongsModalFileText: 'Découvrez mes chansons !',
+		profilePageShareSongsModalToastError: 'Impossible de partager les chansons de votre profil.',
+		profilePageShareArtistsCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de partage des artistes du profil',
-		profilePageShareArtistCloseModalIconAriaLabel:
+		profilePageShareArtistsCloseModalIconAriaLabel:
 			'Icône pour fermer la fenêtre de partage des artistes du profil',
-		profilePageShareArtistModalParagraph1: 'Partage tes artistes préférés',
-		profilePageShareArtistModalParagraph2: 'Laisse tes amis découvrir les artistes que tu suis.',
-		profilePageShareArtistModalPreviewParagraph1: 'MES ARTISTES',
-		profilePageShareArtistModalPreviewParagraph2: 'Ce qui définit mon univers musical',
-		profilePageShareArtistModalPreviewParagraph3:
-			'Les artistes qui représentent le mieux mon identité musicale.',
+		profilePageShareArtistsModalParagraph1: 'Partagez vos artistes préférés',
+		profilePageShareArtistsModalParagraph2:
+			'Laissez vos amis découvrir quels artistes vous écoutez.',
+		profilePageShareArtistsModalPreviewParagraph1: 'MES ARTISTES',
+		profilePageShareArtistsModalPreviewParagraph2: 'Ce qui définit mon univers musical',
+		profilePageShareArtistsModalPreviewParagraph3:
+			'Les artistes qui reflètent le plus qui je suis dans la musique.',
+		profilePageShareArtistsModalFileName: 'allify-artistes-profil.png',
+		profilePageShareArtistsModalFileTitle: 'Mes artistes sur mon profil Allify',
+		profilePageShareArtistsModalFileText: 'Découvrez mes artistes !',
+		profilePageShareArtistsModalToastError: 'Impossible de partager les artistes de votre profil.',
 		profilePageShareModalPreviewProfile: 'PROFIL',
-		profilePageShareModalYourMusicYourIdentity: 'Ta musique, ton identité.',
+		profilePageShareModalYourMusicYourIdentity: 'Votre musique, votre identité.',
 		profilePageShareModalCancelButtonText: 'Annuler',
 		profilePageShareModalShareButtonText: 'Partager'
 	},

@@ -69,7 +69,7 @@
 {#if showShareDataModal}
 	<ShareDataModal
 		bind:showShareDataModal
-		itemType="music"
+		itemsType="songs"
 		shareDataCloseModalButtonAriaLabel={$translationsStore.profilePage
 			.profilePageShareSongsCloseModalButtonAriaLabel}
 		shareDataCloseModalIconAriaLabel={$translationsStore.profilePage
