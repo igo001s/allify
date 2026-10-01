@@ -36,14 +36,14 @@
 	}
 </script>
 
-<div class="mx-auto h-104 w-71.5 min-[400px]:h-128 min-[400px]:w-88 min-[480px]:h-160 min-[480px]:w-110">
-    <div
-        class="origin-top-left scale-[0.65] min-[400px]:scale-[0.8] min-[480px]:scale-100"
-    >
-        <div
-            id="share-data-modal"
-            class="flex h-160 w-110 flex-col justify-between overflow-hidden bg-s-default px-8 py-10 text-t-primary shadow-lg"
-        >
+<div
+	class="mx-auto h-104 w-71.5 min-[400px]:h-128 min-[400px]:w-88 min-[480px]:h-160 min-[480px]:w-110"
+>
+	<div class="origin-top-left scale-[0.65] min-[400px]:scale-[0.8] min-[480px]:scale-100">
+		<div
+			id="share-data-modal"
+			class="flex h-160 w-110 flex-col justify-between overflow-hidden bg-s-default px-8 py-10 text-t-primary shadow-lg"
+		>
 			<header class="flex items-center justify-between gap-2">
 				<AllifyLogoColorful
 					logoSvgClass="w-[26%] h-auto"

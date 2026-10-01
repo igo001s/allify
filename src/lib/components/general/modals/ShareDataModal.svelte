@@ -2,8 +2,8 @@
 	// App
 	import { dev } from '$app/environment';
 
-    // Assets
-    import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
+	// Assets
+	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
 
 	// Components
 	import Modal from './Modal.svelte';
@@ -30,10 +30,10 @@
 	export let paragraph2: string;
 	export let musicalItems: { item: ArtistSpotify | TrackSpotify; type: string }[];
 
-    let loadingShare = false;
+	let loadingShare = false;
 
 	async function handleShareData() {
-        loadingShare = true;
+		loadingShare = true;
 
 		try {
 			const element = document.getElementById('share-data-modal');
@@ -96,10 +96,10 @@
 				});
 			}
 		} finally {
-            setInterval(() => {
-                loadingShare = false;
-            }, 2000);
-        }
+			setInterval(() => {
+				loadingShare = false;
+			}, 2000);
+		}
 	}
 </script>
 
@@ -121,12 +121,12 @@
 
 	<ShareMusicalItemsOnProfileTemplate {musicalItems} {itemsType} />
 
-	<div class="flex flex-col-reverse mt-2 gap-2 sm:flex-row sm:justify-end sm:gap-3">
+	<div class="mt-2 flex flex-col-reverse gap-2 sm:flex-row sm:justify-end sm:gap-3">
 		<button class="button-secondary px-6 py-2.5" on:click={() => (showShareDataModal = false)}>
 			{$translationsStore.profilePage.profilePageShareModalCancelButtonText}
 		</button>
 
-		<button class="button-primary px-6 py-2.5 w-30" on:click={handleShareData}>
+		<button class="button-primary w-30 px-6 py-2.5" on:click={handleShareData}>
 			{#if loadingShare}
 				<DotsLoading dotsTheme="base-light" />
 			{:else}

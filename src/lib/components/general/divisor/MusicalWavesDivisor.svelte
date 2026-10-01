@@ -8,18 +8,14 @@
 </script>
 
 <picture>
-    <source
-        srcset={DivisorDesktop}
-        media="(min-width: 1024px)"
-        type="image/webp"
-    />
+	<source srcset={DivisorDesktop} media="(min-width: 1024px)" type="image/webp" />
 
-    <img
-        src={DivisorMobile}
-        class="my-10 h-8 w-full object-cover"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        alt={$translationsStore.generalTexts.musicalWavesDivisorAltText}
-    />
+	<img
+		src={DivisorMobile}
+		class="my-10 h-6 w-full lg:my-12 lg:h-9"
+		loading="lazy"
+		decoding="async"
+		fetchpriority="low"
+		alt={$translationsStore.generalTexts.musicalWavesDivisorAltText}
+	/>
 </picture>
