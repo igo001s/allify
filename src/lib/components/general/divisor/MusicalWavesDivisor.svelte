@@ -12,7 +12,7 @@
 
 	<img
 		src={DivisorMobile}
-		class="my-10 h-6 w-full lg:my-12 lg:h-9"
+		class="my-10 w-full lg:my-12"
 		loading="lazy"
 		decoding="async"
 		fetchpriority="low"
