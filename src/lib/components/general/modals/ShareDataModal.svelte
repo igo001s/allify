@@ -173,12 +173,12 @@
 		</div>
 	</div>
 
-	<div class="mt-2 flex flex-col-reverse gap-2 sm:flex-row sm:justify-end sm:gap-3">
-		<button class="button-secondary px-6 py-2.5" on:click={() => (showShareDataModal = false)}>
+	<div class="mt-2 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+		<button class="button-secondary px-6 py-2.5 h-9" on:click={() => (showShareDataModal = false)}>
 			{$translationsStore.generalTexts.shareModalCancelButtonText}
 		</button>
 
-		<button class="button-primary w-30 px-6 py-2.5" on:click={handleShareData}>
+		<button class="button-primary w-full h-9 px-6 py-2.5 sm:w-30" on:click={handleShareData}>
 			{#if loadingShare}
 				<DotsLoading dotsTheme="base-light" />
 			{:else}
