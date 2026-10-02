@@ -13,3 +13,9 @@ export type Artists = {
 	};
 	artistsWhoWereWithYou?: { artist: ArtistSpotify; lastSeen: Date }[] | undefined;
 };
+
+export type ArtistItems = {
+	type: string;
+	title: string;
+	item: ArtistSpotify;
+};

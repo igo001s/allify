@@ -13,3 +13,9 @@ export type Tracks = {
 	};
 	tracksWhoWereWithYou?: { track: TrackSpotify; lastSeen: Date }[] | undefined; // When a connection to Deezer exists, type it as ArtistDeezer
 };
+
+export type TrackItems = {
+	type: string;
+	title: string;
+	item: TrackSpotify;
+};

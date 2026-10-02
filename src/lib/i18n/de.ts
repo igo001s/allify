@@ -143,7 +143,10 @@ export const de = {
 		connectPlatformDeezerAriaLabel: 'Deezer-Symbol',
 		fetchUserInfoUserCreationInfoErrorToast:
 			'Beim Erstellen des Benutzers ist ein Fehler aufgetreten.',
-		musicalWavesDivisorAltText: 'Musikalische Wellenabschnitts-Trennlinie'
+		musicalWavesDivisorAltText: 'Musikalische Wellenabschnitts-Trennlinie',
+		shareModalYourMusicYourIdentity: 'Deine Musik, deine Identität.',
+		shareModalCancelButtonText: 'Abbrechen',
+		shareModalShareButtonText: 'Teilen'
 	},
 	homePage: {
 		title: 'Entdecke deine musikalische Identität | Allify',
@@ -280,7 +283,44 @@ export const de = {
 		myMusicalProfilePageUpdateArtistsErrorToast:
 			'Fehler beim Aktualisieren der meistgehörten Künstler.',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Meistgehörte Songs erfolgreich aktualisiert!',
-		myMusicalProfilePageUpdateTracksErrorToast: 'Fehler beim Aktualisieren der meistgehörten Songs.'
+		myMusicalProfilePageUpdateTracksErrorToast:
+			'Fehler beim Aktualisieren der meistgehörten Songs.',
+		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
+			'Schließe das Modal zum Teilen der meistgehörten Künstler auf Spotify',
+		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
+			'Symbol zum Schließen des Modals zum Teilen der meistgehörten Künstler auf Spotify',
+		myMusicalProfilePageShareArtistsModalPreview: 'Meistgehörte Künstler auf Spotify',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Teile deine Musik mit deinen Freunden',
+		myMusicalProfilePageShareArtistsModalParagraph2:
+			'Lass deine Freunde herausfinden, welche Künstler du auf Spotify am meisten hörst.',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MINHA MÚSICA',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'Meus artistas mais ouvidos',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
+			'Os artistas que mais ouço no Spotify e que representam meu gosto musical.',
+		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
+		myMusicalProfilePageShareArtistsModalFileTitle:
+			'Meus artistas mais ouvidos do Spotify no Allify',
+		myMusicalProfilePageShareArtistsModalFileText: 'Confira meus artistas mais ouvidos do Spotify!',
+		myMusicalProfilePageShareArtistsModalToastError:
+			'Die meistgehörten Künstler auf Spotify konnten nicht von deinem Musikprofil geteilt werden.',
+		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
+			'Schließe das Modal zum Teilen der meistgehörten Songs auf Spotify',
+		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
+			'Symbol zum Schließen des Modals zum Teilen der meistgehörten Songs auf Spotify',
+		myMusicalProfilePageShareSongsModalPreview: 'Meistgehörte Songs auf Spotify',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Teile deine Musik mit deinen Freunden',
+		myMusicalProfilePageShareSongsModalParagraph2:
+			'Lass deine Freunde herausfinden, welche Songs du auf Spotify am meisten hörst.',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MINHA MÚSICA',
+		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Minhas músicas mais ouvidas',
+		myMusicalProfilePageShareSongsModalPreviewParagraph3:
+			'As músicas que mais ouço no Spotify e que representam meu gosto musical.',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-musicas-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle:
+			'Minhas músicas mais ouvidas do Spotify no Allify',
+		myMusicalProfilePageShareSongsModalFileText: 'Confira minhas músicas mais ouvidas do Spotify!',
+		myMusicalProfilePageShareSongsModalToastError:
+			'Die meistgehörten Songs auf Spotify konnten nicht von deinem Musikprofil geteilt werden.'
 	},
 	musicArchivePage: {
 		title: 'Musikalisches Archiv | Allify',
@@ -666,10 +706,7 @@ export const de = {
 		profilePageShareArtistsModalFileText: 'Entdecke meine Künstler!',
 		profilePageShareArtistsModalToastError:
 			'Die Künstler aus deinem Profil konnten nicht geteilt werden.',
-		profilePageShareModalPreviewProfile: 'PROFIL',
-		profilePageShareModalYourMusicYourIdentity: 'Deine Musik, deine Identität.',
-		profilePageShareModalCancelButtonText: 'Abbrechen',
-		profilePageShareModalShareButtonText: 'Teilen'
+		profilePageShareModalPreviewProfile: 'PROFIL'
 	},
 	settingsPage: {
 		title: 'Einstellungen | Allify',

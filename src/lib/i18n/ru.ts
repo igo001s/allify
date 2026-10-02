@@ -144,7 +144,10 @@ export const ru = {
 		connectPlatformSpotifyAriaLabel: 'Значок Spotify',
 		connectPlatformDeezerAriaLabel: 'Значок Deezer',
 		fetchUserInfoUserCreationInfoErrorToast: 'Произошла ошибка при создании пользователя.',
-		musicalWavesDivisorAltText: 'Музыкальная волновая разделительная линия'
+		musicalWavesDivisorAltText: 'Музыкальная волновая разделительная линия',
+		shareModalYourMusicYourIdentity: 'Ваша музыка, ваша идентичность.',
+		shareModalCancelButtonText: 'Отмена',
+		shareModalShareButtonText: 'Поделиться'
 	},
 	homePage: {
 		title: 'Откройте свою музыкальную идентичность | Allify',
@@ -279,7 +282,46 @@ export const ru = {
 		myMusicalProfilePageUpdateArtistsErrorToast:
 			'Ошибка при обновлении самых прослушиваемых исполнителей.',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Самые прослушиваемые треки успешно обновлены!',
-		myMusicalProfilePageUpdateTracksErrorToast: 'Ошибка при обновлении самых прослушиваемых треков.'
+		myMusicalProfilePageUpdateTracksErrorToast:
+			'Ошибка при обновлении самых прослушиваемых треков.',
+		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
+			'Закрыть модальное окно для совместного использования самых прослушиваемых исполнителей в Spotify',
+		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
+			'Закрыть модальное окно для совместного использования самых прослушиваемых исполнителей в Spotify',
+		myMusicalProfilePageShareArtistsModalPreview: 'Самые прослушиваемые исполнители в Spotify',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Поделитесь своей музыкой с друзьями',
+		myMusicalProfilePageShareArtistsModalParagraph2:
+			'Позвольте вашим друзьям узнать, каких исполнителей вы чаще всего слушаете в Spotify.',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'МОЯ МУЗЫКА',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'Мои самые прослушиваемые исполнители',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
+			'Исполнители, которых я чаще всего слушаю в Spotify и которые отражают мои музыкальные предпочтения.',
+		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
+		myMusicalProfilePageShareArtistsModalFileTitle:
+			'Мои самые прослушиваемые исполнители в Spotify на Allify',
+		myMusicalProfilePageShareArtistsModalFileText:
+			'Посмотрите моих самых прослушиваемых исполнителей в Spotify!',
+		myMusicalProfilePageShareArtistsModalToastError:
+			'Не удалось поделиться самыми прослушиваемыми исполнителями в Spotify из вашего музыкального профиля.',
+		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
+			'Закрыть модальное окно для совместного использования самых прослушиваемых треков в Spotify',
+		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
+			'Закрыть модальное окно для совместного использования самых прослушиваемых треков в Spotify',
+		myMusicalProfilePageShareSongsModalPreview: 'Самые прослушиваемые треки в Spotify',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Поделитесь своей музыкой с друзьями',
+		myMusicalProfilePageShareSongsModalParagraph2:
+			'Позвольте вашим друзьям узнать, какие треки вы чаще всего слушаете в Spotify.',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'МОЯ МУЗЫКА',
+		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Мои самые прослушиваемые треки',
+		myMusicalProfilePageShareSongsModalPreviewParagraph3:
+			'Треки, которые я чаще всего слушаю в Spotify и которые отражают мои музыкальные предпочтения.',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-musicas-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle:
+			'Мои самые прослушиваемые треки в Spotify на Allify',
+		myMusicalProfilePageShareSongsModalFileText:
+			'Посмотрите мои самые прослушиваемые треки в Spotify!',
+		myMusicalProfilePageShareSongsModalToastError:
+			'Не удалось поделиться самыми прослушиваемыми треками в Spotify из вашего музыкального профиля.'
 	},
 	musicArchivePage: {
 		title: 'Музыкальный архив | Allify',
@@ -645,10 +687,7 @@ export const ru = {
 		profilePageShareArtistsModalFileTitle: 'Мои артисты в моём профиле Allify',
 		profilePageShareArtistsModalFileText: 'Посмотрите моих артистов!',
 		profilePageShareArtistsModalToastError: 'Не удалось поделиться артистами из вашего профиля.',
-		profilePageShareModalPreviewProfile: 'ПРОФИЛЬ',
-		profilePageShareModalYourMusicYourIdentity: 'Твоя музыка, твоя идентичность.',
-		profilePageShareModalCancelButtonText: 'Отмена',
-		profilePageShareModalShareButtonText: 'Поделиться'
+		profilePageShareModalPreviewProfile: 'ПРОФИЛЬ'
 	},
 	settingsPage: {
 		title: 'Настройки | Allify',

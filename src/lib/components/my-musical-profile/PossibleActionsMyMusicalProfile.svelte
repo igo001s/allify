@@ -20,6 +20,7 @@
 
 	// Props
 	export let sessionType: 'artists' | 'tracks';
+	export let showShareDataModal: boolean;
 
 	// Reactive values
 	$: artists = $userInfo?.connectedStreamings.spotify?.mostListenedArtists;
@@ -219,6 +220,7 @@
 
 		<button
 			class="button-outline button-outline-active button-outline-active-hover group relative h-11 w-40 gap-1.5"
+			on:click={() => (showShareDataModal = true)}
 		>
 			<ShareIcon iconSvgClass="h-4 w-4 text-brand-primary" />
 

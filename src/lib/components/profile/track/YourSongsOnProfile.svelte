@@ -13,7 +13,8 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/Spotify.type';
+	import type { TrackItems } from '$lib/types/Tracks.type';
+	import type { ShareDataContent } from '$lib/types/Share.type';
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'music') => void;
@@ -21,16 +22,50 @@
 	export let openChangeCustomItemModal: (itemType: 'music') => void;
 	export let openSelectCustomItemModal: (itemType: 'music') => void;
 
+	let showShareDataModal = false;
+
 	$: songsItems = [
 		{
-			item: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.oneYear[0],
-			type: 'mostListenedTrack'
+			type: 'mostListenedTrack',
+			title: $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v1,
+			item: $userInfo?.connectedStreamings.spotify?.mostListenedTracks?.oneYear[0]
 		},
-		{ item: $userInfo?.tracks?.trackOfTheMoment?.track, type: 'trackOfTheMoment' },
-		{ item: $userInfo?.tracks?.customTrack?.track, type: 'customTrack' }
-	] as { item: TrackSpotify; type: string }[];
+		{
+			type: 'trackOfTheMoment',
+			title: $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v2,
+			item: $userInfo?.tracks?.trackOfTheMoment?.track
+		},
+		{
+			type: 'customTrack',
+			title: $userInfo?.tracks?.customTrack?.title,
+			item: $userInfo?.tracks?.customTrack?.track
+		}
+	] as TrackItems[];
 
-	let showShareDataModal = false;
+	function buildShareDataContent(dataType: 'Songs'): ShareDataContent {
+		return {
+			shareDataCloseModalButtonAriaLabel:
+				$translationsStore.profilePage[`profilePageShare${dataType}CloseModalButtonAriaLabel`],
+			shareDataCloseModalIconAriaLabel:
+				$translationsStore.profilePage[`profilePageShare${dataType}CloseModalIconAriaLabel`],
+			shareDataType: $translationsStore.profilePage.profilePageShareModalPreviewProfile,
+			shareDataModalParagraph1:
+				$translationsStore.profilePage[`profilePageShare${dataType}ModalParagraph1`],
+			shareDataModalParagraph2:
+				$translationsStore.profilePage[`profilePageShare${dataType}ModalParagraph2`],
+			shareDataModalPreviewParagraph1:
+				$translationsStore.profilePage[`profilePageShare${dataType}ModalPreviewParagraph1`],
+			shareDataModalPreviewParagraph2:
+				$translationsStore.profilePage[`profilePageShare${dataType}ModalPreviewParagraph2`],
+			shareDataModalPreviewParagraph3:
+				$translationsStore.profilePage[`profilePageShare${dataType}ModalPreviewParagraph3`],
+			fileName: $translationsStore.profilePage[`profilePageShare${dataType}ModalFileName`],
+			fileTitle: $translationsStore.profilePage[`profilePageShare${dataType}ModalFileTitle`],
+			fileText: $translationsStore.profilePage[`profilePageShare${dataType}ModalFileText`],
+			toastErrorMessage:
+				$translationsStore.profilePage[`profilePageShare${dataType}ModalToastError`]
+		};
+	}
 </script>
 
 <section class="space-y-7">
@@ -50,10 +85,10 @@
 	</div>
 
 	<div class="flex flex-col gap-8 xl:flex-row">
-		{#each songsItems as { item, type }, i (i)}
+		{#each songsItems as { type, title, item }, i (i)}
 			{#if item}
 				<YourSongsOnProfileItem
-					trackItem={{ item, type }}
+					trackItem={{ type, title, item }}
 					{openChangeYourItemsModal}
 					{openChangeCustomItemModal}
 				/>
@@ -69,13 +104,8 @@
 {#if showShareDataModal}
 	<ShareDataModal
 		bind:showShareDataModal
-		itemsType="songs"
-		shareDataCloseModalButtonAriaLabel={$translationsStore.profilePage
-			.profilePageShareSongsCloseModalButtonAriaLabel}
-		shareDataCloseModalIconAriaLabel={$translationsStore.profilePage
-			.profilePageShareSongsCloseModalIconAriaLabel}
-		paragraph1={$translationsStore.profilePage.profilePageShareSongsModalParagraph1}
-		paragraph2={$translationsStore.profilePage.profilePageShareSongsModalParagraph2}
-		musicalItems={songsItems}
+		shareDataFrom="profile"
+		dataToShare={songsItems}
+		buildShareDataContent={buildShareDataContent('Songs')}
 	/>
 {/if}

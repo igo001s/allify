@@ -4,18 +4,14 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Types
-	import type { ArtistSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistItems } from '$lib/types/Artists.type';
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'artist') => void;
 	export let openChangeCustomItemModal: (itemType: 'artist') => void;
-	export let artistItem: {
-		item: ArtistSpotify;
-		type: string;
-	};
+	export let artistItem: ArtistItems;
 
 	function handleEditButtonClick() {
 		if (artistItem.type === 'artistOfTheMoment') {
@@ -24,24 +20,12 @@
 			openChangeCustomItemModal('artist');
 		}
 	}
-
-	function getArtistsOnProfileTitle(): string {
-		if (artistItem.type === 'mostListenedArtist') {
-			return $translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v1;
-		} else if (artistItem.type === 'artistOfTheMoment') {
-			return $translationsStore.profilePage.profilePageYourArtistsOnProfileHeading3v2;
-		} else if (artistItem.type === 'customArtist' && $userInfo?.artists?.customArtist?.title) {
-			return $userInfo?.artists?.customArtist?.title;
-		}
-
-		return '';
-	}
 </script>
 
 <ProfileItemCard
 	{handleEditButtonClick}
 	profileItem={artistItem}
-	heading3={getArtistsOnProfileTitle()}
+	heading3={artistItem.title}
 	isUppercase={artistItem.type !== 'customArtist'}
 	showEditIcon={artistItem.type === 'artistOfTheMoment' || artistItem.type === 'customArtist'}
 	showEditButtonAriaLabel={artistItem.type === 'artistOfTheMoment'

@@ -20,7 +20,7 @@
 </script>
 
 <div
-	class="fixed inset-0 z-50 flex items-center justify-center bg-s-inverse/60 p-5 backdrop-blur-md"
+	class="fixed inset-0 z-50 flex h-screen items-center justify-center bg-s-inverse/60 p-5 backdrop-blur-md"
 >
 	<div
 		class={`relative flex flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl ${additionalClasses}`}

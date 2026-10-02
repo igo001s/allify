@@ -134,7 +134,10 @@ export const zh = {
 		connectPlatformSpotifyAriaLabel: 'Spotify图标',
 		connectPlatformDeezerAriaLabel: 'Deezer图标',
 		fetchUserInfoUserCreationInfoErrorToast: '创建用户时发生错误。',
-		musicalWavesDivisorAltText: '音乐波形分隔线'
+		musicalWavesDivisorAltText: '音乐波形分隔线',
+		shareModalYourMusicYourIdentity: '你的音乐，你的身份。',
+		shareModalCancelButtonText: '取消',
+		shareModalShareButtonText: '分享'
 	},
 	homePage: {
 		title: '发现你的音乐身份 | Allify',
@@ -255,7 +258,38 @@ export const zh = {
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最常听的艺人已成功更新！',
 		myMusicalProfilePageUpdateArtistsErrorToast: '最常听的艺人更新时出错。',
 		myMusicalProfilePageUpdateTracksSuccessToast: '最常听的歌曲已成功更新！',
-		myMusicalProfilePageUpdateTracksErrorToast: '最常听的歌曲更新时出错。'
+		myMusicalProfilePageUpdateTracksErrorToast: '最常听的歌曲更新时出错。',
+		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
+			'关闭 Spotify 最常听的艺人分享模态框的按钮',
+		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
+			'关闭 Spotify 最常听的艺人分享模态框的图标',
+		myMusicalProfilePageShareArtistsModalPreview: 'Spotify 最常听的艺人',
+		myMusicalProfilePageShareArtistsModalParagraph1: '与朋友分享你的音乐',
+		myMusicalProfilePageShareArtistsModalParagraph2: '让你的朋友发现你在 Spotify 上最常听的艺人。',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: '我的音乐',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph2: '我最常听的艺人',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
+			'我在 Spotify 上最常听的艺人，反映了我的音乐品味。',
+		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
+		myMusicalProfilePageShareArtistsModalFileTitle: '我在 Allify 上最常听的 Spotify 艺人',
+		myMusicalProfilePageShareArtistsModalFileText: '看看我在 Spotify 上最常听的艺人！',
+		myMusicalProfilePageShareArtistsModalToastError:
+			'无法从你的音乐资料分享 Spotify 上最常听的艺人。',
+		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
+			'关闭 Spotify 最常听的歌曲分享模态框的按钮',
+		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
+			'关闭 Spotify 最常听的歌曲分享模态框的图标',
+		myMusicalProfilePageShareSongsModalPreview: 'Spotify 最常听的歌曲',
+		myMusicalProfilePageShareSongsModalParagraph1: '与朋友分享你的音乐',
+		myMusicalProfilePageShareSongsModalParagraph2: '让你的朋友发现你在 Spotify 上最常听的歌曲。',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: '我的音乐',
+		myMusicalProfilePageShareSongsModalPreviewParagraph2: '我最常听的歌曲',
+		myMusicalProfilePageShareSongsModalPreviewParagraph3:
+			'我在 Spotify 上最常听的歌曲，反映了我的音乐品味。',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-musicas-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle: '我在 Allify 上最常听的 Spotify 歌曲',
+		myMusicalProfilePageShareSongsModalFileText: '看看我在 Spotify 上最常听的歌曲！',
+		myMusicalProfilePageShareSongsModalToastError: '无法从你的音乐资料分享 Spotify 上最常听的歌曲。'
 	},
 	musicArchivePage: {
 		title: '音乐档案 | Allify',
@@ -562,10 +596,7 @@ export const zh = {
 		profilePageShareArtistsModalFileTitle: '我在 Allify 个人资料中的艺术家',
 		profilePageShareArtistsModalFileText: '看看我的艺术家！',
 		profilePageShareArtistsModalToastError: '无法分享你个人资料中的艺术家。',
-		profilePageShareModalPreviewProfile: '个人资料',
-		profilePageShareModalYourMusicYourIdentity: '你的音乐，你的身份。',
-		profilePageShareModalCancelButtonText: '取消',
-		profilePageShareModalShareButtonText: '分享'
+		profilePageShareModalPreviewProfile: '个人资料'
 	},
 	settingsPage: {
 		title: '设置 | Allify',

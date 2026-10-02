@@ -4,18 +4,14 @@
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/Spotify.type';
+	import type { TrackItems } from '$lib/types/Tracks.type';
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'music') => void;
 	export let openChangeCustomItemModal: (itemType: 'music') => void;
-	export let trackItem: {
-		item: TrackSpotify;
-		type: string;
-	};
+	export let trackItem: TrackItems;
 
 	function handleEditButtonClick() {
 		if (trackItem.type === 'trackOfTheMoment') {
@@ -24,24 +20,12 @@
 			openChangeCustomItemModal('music');
 		}
 	}
-
-	function getSongsOnProfileTitle(): string {
-		if (trackItem.type === 'mostListenedTrack') {
-			return $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v1;
-		} else if (trackItem.type === 'trackOfTheMoment') {
-			return $translationsStore.profilePage.profilePageYourSongsOnProfileHeading3v2;
-		} else if (trackItem.type === 'customTrack' && $userInfo?.tracks?.customTrack?.title) {
-			return $userInfo?.tracks?.customTrack?.title;
-		}
-
-		return '';
-	}
 </script>
 
 <ProfileItemCard
 	{handleEditButtonClick}
 	profileItem={trackItem}
-	heading3={getSongsOnProfileTitle()}
+	heading3={trackItem.title}
 	isUppercase={trackItem.type !== 'customTrack'}
 	showEditIcon={trackItem.type === 'trackOfTheMoment' || trackItem.type === 'customTrack'}
 	showEditButtonAriaLabel={trackItem.type === 'trackOfTheMoment'
