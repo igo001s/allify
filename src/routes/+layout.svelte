@@ -21,38 +21,38 @@
 
 	let { children } = $props();
 
-	// const fetchMeInfo = async () => {
-	// 	try {
-	// 		const fetchUserInfoResponse = await fetchUserInfo();
+	const fetchMeInfo = async () => {
+		try {
+			const fetchUserInfoResponse = await fetchUserInfo();
 
-	// 		if (fetchUserInfoResponse.error) {
-	// 			if (fetchUserInfoResponse.errorType === 'userCreation') {
-	// 				toastStore.set({
-	// 					showToast: true,
-	// 					toastType: 'error',
-	// 					toastMessage: $translationsStore.generalTexts.fetchUserInfoUserCreationInfoErrorToast
-	// 				});
-	// 			}
+			if (fetchUserInfoResponse.error) {
+				if (fetchUserInfoResponse.errorType === 'userCreation') {
+					toastStore.set({
+						showToast: true,
+						toastType: 'error',
+						toastMessage: $translationsStore.generalTexts.fetchUserInfoUserCreationInfoErrorToast
+					});
+				}
 
-	// 			throw new Error('Failed to fetch user info');
-	// 		}
+				throw new Error('Failed to fetch user info');
+			}
 
-	// 		userInfo.set(fetchUserInfoResponse);
-	// 	} catch {
-	// 		userInfo.set(undefined);
-	// 	} finally {
-	// 		loadingAfterConnectionStore.set({
-	// 			loading: false,
-	// 			streamingPlatform: null
-	// 		});
-	// 		sessionStorage.removeItem('allify-loading-spotify');
-	// 		sessionStorage.removeItem('allify-loading-deezer');
-	// 	}
-	// };
+			userInfo.set(fetchUserInfoResponse);
+		} catch {
+			userInfo.set(undefined);
+		} finally {
+			loadingAfterConnectionStore.set({
+				loading: false,
+				streamingPlatform: null
+			});
+			sessionStorage.removeItem('allify-loading-spotify');
+			sessionStorage.removeItem('allify-loading-deezer');
+		}
+	};
 
-	// onMount(() => {
-	// 	if (!$userInfo) fetchMeInfo();
-	// });
+	onMount(() => {
+		if (!$userInfo) fetchMeInfo();
+	});
 </script>
 
 <svelte:head>
