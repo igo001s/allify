@@ -287,42 +287,40 @@ export const it = {
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Brani più ascoltati aggiornati con successo!',
 		myMusicalProfilePageUpdateTracksErrorToast:
 			"Errore durante l'aggiornamento dei brani più ascoltati.",
+		myMusicalProfilePageShareModalPreview: 'ANTEPRIMA',
 		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
-			'Chiudi la finestra modale per condividere gli artisti più ascoltati su Spotify',
+			'Chiudi la finestra di condivisione degli artisti',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
-			'Icona per chiudere la finestra modale di condivisione degli artisti più ascoltati su Spotify',
-		myMusicalProfilePageShareArtistsModalPreview: 'Artisti più ascoltati su Spotify',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Condividi la tua musica con i tuoi amici',
+			'Icona per chiudere la finestra di condivisione degli artisti',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Mostra la tua musica ai tuoi amici',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Lascia che i tuoi amici scoprano quali sono gli artisti che ascolti di più su Spotify.',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'LA MIA MUSICA',
+			'Condividi gli artisti che ascolti più spesso e scopri quali piacciono anche ai tuoi amici.',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'I MIEI ARTISTI',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'I miei artisti più ascoltati',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
-			'Gli artisti che ascolto di più su Spotify e che rappresentano i miei gusti musicali.',
+			'Gli artisti che ascolto più spesso su Spotify.',
 		myMusicalProfilePageShareArtistsModalFileName: 'allify-artisti-spotify.png',
-		myMusicalProfilePageShareArtistsModalFileTitle:
-			'I miei artisti più ascoltati su Spotify su Allify',
-		myMusicalProfilePageShareArtistsModalFileText:
-			'Scopri i miei artisti più ascoltati su Spotify!',
+		myMusicalProfilePageShareArtistsModalFileTitle: 'I miei artisti più ascoltati su Allify',
+		myMusicalProfilePageShareArtistsModalFileText: 'Guarda chi ascolto più spesso!',
 		myMusicalProfilePageShareArtistsModalToastError:
-			'Impossibile condividere gli artisti più ascoltati su Spotify dal tuo profilo musicale.',
+			'Non è possibile condividere al momento. Riprova.',
 		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
-			'Chiudi la finestra modale per condividere i brani più ascoltati su Spotify',
+			'Chiudi la finestra di condivisione delle canzoni',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
-			'Icona per chiudere la finestra modale di condivisione dei brani più ascoltati su Spotify',
-		myMusicalProfilePageShareSongsModalPreview: 'Brani più ascoltati su Spotify',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Condividi la tua musica con i tuoi amici',
+			'Icona per chiudere la finestra di condivisione delle canzoni',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Mostra la tua musica ai tuoi amici',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Lascia che i tuoi amici scoprano quali sono i brani che ascolti di più su Spotify.',
-		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'LA MIA MUSICA',
-		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'I miei brani più ascoltati',
+			'Condividi le canzoni che ascolti più spesso e scopri quali piacciono anche ai tuoi amici.',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'LE MIE CANZONI',
+		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Le mie canzoni più ascoltate',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3:
-			'I brani che ascolto di più su Spotify e che rappresentano i miei gusti musicali.',
-		myMusicalProfilePageShareSongsModalFileName: 'allify-brani-spotify.png',
-		myMusicalProfilePageShareSongsModalFileTitle: 'I miei brani più ascoltati su Spotify su Allify',
-		myMusicalProfilePageShareSongsModalFileText: 'Scopri i miei brani più ascoltati su Spotify!',
+			'Le canzoni che ascolto più spesso su Spotify.',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-canzoni-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle: 'Le mie canzoni più ascoltate su Allify',
+		myMusicalProfilePageShareSongsModalFileText:
+			'Queste sono le canzoni che ascolto in continuazione!',
 		myMusicalProfilePageShareSongsModalToastError:
-			'Impossibile condividere i brani più ascoltati su Spotify dal tuo profilo musicale.'
+			'Non è possibile condividere al momento. Riprova.'
 	},
 	musicArchivePage: {
 		title: 'Archivio Musicale | Allify',

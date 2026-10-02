@@ -287,44 +287,39 @@ export const fr = {
 			'Morceaux les plus écoutés mis à jour avec succès !',
 		myMusicalProfilePageUpdateTracksErrorToast:
 			'Erreur lors de la mise à jour des morceaux les plus écoutés.',
+		myMusicalProfilePageShareModalPreview: 'APERÇU',
 		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
-			'Fermer la fenêtre modale pour partager les artistes les plus écoutés sur Spotify',
+			'Fermer la fenêtre de partage des artistes',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
-			'Icône pour fermer la fenêtre modale de partage des artistes les plus écoutés sur Spotify',
-		myMusicalProfilePageShareArtistsModalPreview: 'Artistes les plus écoutés sur Spotify',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Partagez votre musique avec vos amis',
+			'Icône pour fermer la fenêtre de partage des artistes',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Montre ton univers musical à tes amis',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Laissez vos amis découvrir quels sont les artistes que vous écoutez le plus sur Spotify.',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MA MUSIQUE',
+			'Partage les artistes que tu écoutes le plus et découvre ceux que tes amis aiment aussi.',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MES ARTISTES',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'Mes artistes les plus écoutés',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
-			'Les artistes que j’écoute le plus sur Spotify et qui représentent mes goûts musicaux.',
-		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
-		myMusicalProfilePageShareArtistsModalFileTitle:
-			'Mes artistes les plus écoutés sur Spotify sur Allify',
-		myMusicalProfilePageShareArtistsModalFileText:
-			'Découvrez mes artistes les plus écoutés sur Spotify !',
+			'Les artistes que j’écoute le plus sur Spotify.',
+		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistes-spotify.png',
+		myMusicalProfilePageShareArtistsModalFileTitle: 'Mes artistes les plus écoutés sur Allify',
+		myMusicalProfilePageShareArtistsModalFileText: 'Regarde qui j’écoute le plus !',
 		myMusicalProfilePageShareArtistsModalToastError:
-			'Impossible de partager les artistes les plus écoutés sur Spotify depuis votre profil musical.',
+			'Impossible de partager pour le moment. Réessaie.',
 		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
-			'Fermer la fenêtre modale pour partager les morceaux les plus écoutés sur Spotify',
+			'Fermer la fenêtre de partage des chansons',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
-			'Icône pour fermer la fenêtre modale de partage des morceaux les plus écoutés sur Spotify',
-		myMusicalProfilePageShareSongsModalPreview: 'Morceaux les plus écoutés sur Spotify',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Partagez votre musique avec vos amis',
+			'Icône pour fermer la fenêtre de partage des chansons',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Montre ton univers musical à tes amis',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Laissez vos amis découvrir quels sont les morceaux que vous écoutez le plus sur Spotify.',
-		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MA MUSIQUE',
-		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Mes morceaux les plus écoutés',
+			'Partage les chansons que tu écoutes le plus et découvre celles que tes amis aiment aussi.',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MES CHANSONS',
+		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Mes chansons les plus écoutées',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3:
-			'Les morceaux que j’écoute le plus sur Spotify et qui représentent mes goûts musicaux.',
-		myMusicalProfilePageShareSongsModalFileName: 'allify-morceaux-spotify.png',
-		myMusicalProfilePageShareSongsModalFileTitle:
-			'Mes morceaux les plus écoutés sur Spotify sur Allify',
-		myMusicalProfilePageShareSongsModalFileText:
-			'Découvrez mes morceaux les plus écoutés sur Spotify !',
+			'Les chansons que j’écoute le plus sur Spotify.',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-chansons-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle: 'Mes chansons les plus écoutées sur Allify',
+		myMusicalProfilePageShareSongsModalFileText: 'Voici les chansons que j’écoute en boucle !',
 		myMusicalProfilePageShareSongsModalToastError:
-			'Impossible de partager les morceaux les plus écoutés sur Spotify depuis votre profil musical.'
+			'Impossible de partager pour le moment. Réessaie.'
 	},
 	musicArchivePage: {
 		title: 'Archive Musicale | Allify',

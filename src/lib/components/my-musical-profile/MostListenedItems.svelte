@@ -69,7 +69,7 @@
 					`myMusicalProfilePageShare${dataType}CloseModalIconAriaLabel`
 				],
 			shareDataType:
-				$translationsStore.myMusicalProfilePage[`myMusicalProfilePageShare${dataType}ModalPreview`],
+				$translationsStore.myMusicalProfilePage[`myMusicalProfilePageShareModalPreview`],
 			shareDataModalParagraph1:
 				$translationsStore.myMusicalProfilePage[
 					`myMusicalProfilePageShare${dataType}ModalParagraph1`

@@ -279,40 +279,32 @@ export const en = {
 		myMusicalProfilePageUpdateArtistsErrorToast: 'Error updating most-listened-to artists.',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Most-listened-to tracks updated successfully!',
 		myMusicalProfilePageUpdateTracksErrorToast: 'Error updating most-listened-to tracks.',
-		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
-			'Button to close the Spotify most-listened-to artists share modal',
-		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
-			'Icon to close the Spotify most-listened-to artists share modal',
-		myMusicalProfilePageShareArtistsModalPreview: 'Spotify most-listened-to artists',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Share your music with your friends',
+		myMusicalProfilePageShareModalPreview: 'MY MUSIC PROFILE',
+		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel: 'Close artist sharing',
+		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel: 'Icon to close artist sharing',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Show your music to your friends',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Let your friends discover which artists you listen to the most on Spotify.',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MY MUSIC',
+			'Share the artists you listen to most and discover which ones they like too.',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MY ARTISTS',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'My most-listened-to artists',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
-			'The artists I listen to the most on Spotify, reflecting my musical taste.',
-		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
-		myMusicalProfilePageShareArtistsModalFileTitle: 'My most-listened-to Spotify artists on Allify',
-		myMusicalProfilePageShareArtistsModalFileText: 'Check out my most-listened-to Spotify artists!',
-		myMusicalProfilePageShareArtistsModalToastError:
-			'Unable to share the Spotify most-listened-to artists from your musical profile.',
-		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
-			'Button to close the Spotify most-listened-to tracks share modal',
-		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
-			'Icon to close the Spotify most-listened-to tracks share modal',
-		myMusicalProfilePageShareSongsModalPreview: 'Spotify most-listened-to tracks',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Share your music with your friends',
+			'The artists I listen to most on Spotify.',
+		myMusicalProfilePageShareArtistsModalFileName: 'allify-artists-spotify.png',
+		myMusicalProfilePageShareArtistsModalFileTitle: 'My most-listened artists on Allify',
+		myMusicalProfilePageShareArtistsModalFileText: 'Check out who I listen to most!',
+		myMusicalProfilePageShareArtistsModalToastError: 'Could not share right now. Please try again.',
+		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel: 'Close song sharing',
+		myMusicalProfilePageShareSongsCloseModalIconAriaLabel: 'Icon to close song sharing',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Show your music to your friends',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Let your friends discover which tracks you listen to the most on Spotify.',
-		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MY MUSIC',
-		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'My most-listened-to tracks',
-		myMusicalProfilePageShareSongsModalPreviewParagraph3:
-			'The tracks I listen to the most on Spotify, reflecting my musical taste.',
-		myMusicalProfilePageShareSongsModalFileName: 'allify-musicas-spotify.png',
-		myMusicalProfilePageShareSongsModalFileTitle: 'My most-listened-to Spotify tracks on Allify',
-		myMusicalProfilePageShareSongsModalFileText: 'Check out my most-listened-to Spotify tracks!',
-		myMusicalProfilePageShareSongsModalToastError:
-			'Unable to share the Spotify most-listened-to tracks from your musical profile.'
+			'Share the songs you listen to most and discover which ones they like too.',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MY SONGS',
+		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'My most-listened-to songs',
+		myMusicalProfilePageShareSongsModalPreviewParagraph3: 'The songs I listen to most on Spotify.',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-songs-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle: 'My most-listened songs on Allify',
+		myMusicalProfilePageShareSongsModalFileText: 'These are the songs I can’t stop playing!',
+		myMusicalProfilePageShareSongsModalToastError: 'Could not share right now. Please try again.'
 	},
 	musicArchivePage: {
 		title: 'Musical Archive | Allify',

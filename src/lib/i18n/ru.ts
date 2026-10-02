@@ -284,44 +284,36 @@ export const ru = {
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Самые прослушиваемые треки успешно обновлены!',
 		myMusicalProfilePageUpdateTracksErrorToast:
 			'Ошибка при обновлении самых прослушиваемых треков.',
-		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
-			'Закрыть модальное окно для совместного использования самых прослушиваемых исполнителей в Spotify',
+		myMusicalProfilePageShareModalPreview: 'МОЙ МУЗЫКАЛЬНЫЙ ПРОФИЛЬ',
+		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel: 'Закрыть окно публикации артистов',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
-			'Закрыть модальное окно для совместного использования самых прослушиваемых исполнителей в Spotify',
-		myMusicalProfilePageShareArtistsModalPreview: 'Самые прослушиваемые исполнители в Spotify',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Поделитесь своей музыкой с друзьями',
+			'Значок закрытия окна публикации артистов',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Покажи свою музыку друзьям',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Позвольте вашим друзьям узнать, каких исполнителей вы чаще всего слушаете в Spotify.',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'МОЯ МУЗЫКА',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'Мои самые прослушиваемые исполнители',
+			'Поделись артистами, которых ты слушаешь чаще всего, и узнай, какие артисты нравятся твоим друзьям.',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'МОИ АРТИСТЫ',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph2:
+			'Мои самые часто прослушиваемые артисты',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
-			'Исполнители, которых я чаще всего слушаю в Spotify и которые отражают мои музыкальные предпочтения.',
-		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
-		myMusicalProfilePageShareArtistsModalFileTitle:
-			'Мои самые прослушиваемые исполнители в Spotify на Allify',
-		myMusicalProfilePageShareArtistsModalFileText:
-			'Посмотрите моих самых прослушиваемых исполнителей в Spotify!',
+			'Артисты, которых я чаще всего слушаю в Spotify.',
+		myMusicalProfilePageShareArtistsModalFileName: 'allify-artists-spotify.png',
+		myMusicalProfilePageShareArtistsModalFileTitle: 'Мои самые прослушиваемые артисты в Allify',
+		myMusicalProfilePageShareArtistsModalFileText: 'Смотри, кого я слушаю чаще всего!',
 		myMusicalProfilePageShareArtistsModalToastError:
-			'Не удалось поделиться самыми прослушиваемыми исполнителями в Spotify из вашего музыкального профиля.',
-		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
-			'Закрыть модальное окно для совместного использования самых прослушиваемых треков в Spotify',
-		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
-			'Закрыть модальное окно для совместного использования самых прослушиваемых треков в Spotify',
-		myMusicalProfilePageShareSongsModalPreview: 'Самые прослушиваемые треки в Spotify',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Поделитесь своей музыкой с друзьями',
+			'Сейчас не удалось поделиться. Попробуй ещё раз.',
+		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel: 'Закрыть окно публикации песен',
+		myMusicalProfilePageShareSongsCloseModalIconAriaLabel: 'Значок закрытия окна публикации песен',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Покажи свою музыку друзьям',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Позвольте вашим друзьям узнать, какие треки вы чаще всего слушаете в Spotify.',
-		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'МОЯ МУЗЫКА',
-		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Мои самые прослушиваемые треки',
+			'Поделись песнями, которые ты слушаешь чаще всего, и узнай, какие песни нравятся твоим друзьям.',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'МОИ ПЕСНИ',
+		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Мои самые часто прослушиваемые песни',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3:
-			'Треки, которые я чаще всего слушаю в Spotify и которые отражают мои музыкальные предпочтения.',
-		myMusicalProfilePageShareSongsModalFileName: 'allify-musicas-spotify.png',
-		myMusicalProfilePageShareSongsModalFileTitle:
-			'Мои самые прослушиваемые треки в Spotify на Allify',
-		myMusicalProfilePageShareSongsModalFileText:
-			'Посмотрите мои самые прослушиваемые треки в Spotify!',
-		myMusicalProfilePageShareSongsModalToastError:
-			'Не удалось поделиться самыми прослушиваемыми треками в Spotify из вашего музыкального профиля.'
+			'Песни, которые я чаще всего слушаю в Spotify.',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-songs-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle: 'Мои самые прослушиваемые песни в Allify',
+		myMusicalProfilePageShareSongsModalFileText: 'Вот песни, которые я слушаю снова и снова!',
+		myMusicalProfilePageShareSongsModalToastError: 'Сейчас не удалось поделиться. Попробуй ещё раз.'
 	},
 	musicArchivePage: {
 		title: 'Музыкальный архив | Allify',

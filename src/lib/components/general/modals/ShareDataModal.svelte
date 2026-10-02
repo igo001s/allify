@@ -131,9 +131,7 @@
 
 				<ul class="flex h-fit flex-col gap-3">
 					{#each dataToShare as data, i (i)}
-						<li
-							class="flex max-h-22 min-h-0 flex-1 items-center gap-4 rounded-lg border border-b-default p-3"
-						>
+						<li class="flex max-h-22 flex-1 gap-4 rounded-lg border border-b-default p-3">
 							{#if data.item.image?.url}
 								<enhanced:img
 									src={data.item.image?.url}
@@ -145,7 +143,7 @@
 								/>
 							{/if}
 
-							<div class="min-w-0 flex-1 space-y-1">
+							<div class="mt-0.5 min-w-0 flex-1 space-y-1">
 								<p
 									class={`${shareDataFrom === 'myMusicalProfile' ? (i === 0 ? 'text-top-1' : i === 1 ? 'text-top-2' : 'text-top-3') : 'text-brand-primary'} text-xs font-semibold uppercase`}
 								>
@@ -174,11 +172,11 @@
 	</div>
 
 	<div class="mt-2 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
-		<button class="button-secondary px-6 py-2.5 h-9" on:click={() => (showShareDataModal = false)}>
+		<button class="button-secondary h-9 px-6 py-2.5" on:click={() => (showShareDataModal = false)}>
 			{$translationsStore.generalTexts.shareModalCancelButtonText}
 		</button>
 
-		<button class="button-primary w-full h-9 px-6 py-2.5 sm:w-30" on:click={handleShareData}>
+		<button class="button-primary h-9 w-full px-6 py-2.5 sm:w-30" on:click={handleShareData}>
 			{#if loadingShare}
 				<DotsLoading dotsTheme="base-light" />
 			{:else}

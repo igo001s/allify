@@ -280,43 +280,34 @@ export const ja = {
 		myMusicalProfilePageUpdateTracksSuccessToast: '最もよく聴いている楽曲を更新しました！',
 		myMusicalProfilePageUpdateTracksErrorToast:
 			'最もよく聴いている楽曲の更新中にエラーが発生しました。',
-		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
-			'Spotifyで最もよく聴いているアーティストを共有するモーダルを閉じる',
+		myMusicalProfilePageShareModalPreview: '私の音楽プロフィール',
+		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel: 'アーティストの共有画面を閉じる',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
-			'Spotifyで最もよく聴いているアーティストを共有するモーダルを閉じるアイコン',
-		myMusicalProfilePageShareArtistsModalPreview: 'Spotifyで最もよく聴いているアーティスト',
-		myMusicalProfilePageShareArtistsModalParagraph1: '友達と音楽を共有しましょう',
+			'アーティストの共有画面を閉じるアイコン',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'あなたの音楽を友達に見せよう',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'友達に、あなたがSpotifyで最もよく聴いているアーティストを発見してもらいましょう。',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph1: '私の音楽',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph2: '私の最もよく聴いているアーティスト',
+			'よく聴くアーティストをシェアして、友達が好きなアーティストも見つけよう。',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'よく聴くアーティスト',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'よく聴くアーティスト',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
-			'私がSpotifyで最もよく聴いているアーティストで、私の音楽の趣味を表しています。',
-		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
-		myMusicalProfilePageShareArtistsModalFileTitle:
-			'Allifyでの私のSpotifyで最もよく聴いているアーティスト',
-		myMusicalProfilePageShareArtistsModalFileText:
-			'私のSpotifyで最もよく聴いているアーティストをチェックしてください！',
+			'Spotifyで最もよく聴いているアーティスト。',
+		myMusicalProfilePageShareArtistsModalFileName: 'allify-artists-spotify.png',
+		myMusicalProfilePageShareArtistsModalFileTitle: 'Allifyでよく聴くアーティスト',
+		myMusicalProfilePageShareArtistsModalFileText: '一番よく聴いているアーティストを見てみて！',
 		myMusicalProfilePageShareArtistsModalToastError:
-			'音楽プロフィールからSpotifyで最もよく聴いているアーティストを共有できませんでした。',
-		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
-			'Spotifyで最もよく聴いている楽曲を共有するモーダルを閉じる',
-		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
-			'Spotifyで最もよく聴いている楽曲を共有するモーダルを閉じるアイコン',
-		myMusicalProfilePageShareSongsModalPreview: 'Spotifyで最もよく聴いている楽曲',
-		myMusicalProfilePageShareSongsModalParagraph1: '友達と音楽を共有しましょう',
+			'現在シェアできません。もう一度お試しください。',
+		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel: '曲の共有画面を閉じる',
+		myMusicalProfilePageShareSongsCloseModalIconAriaLabel: '曲の共有画面を閉じるアイコン',
+		myMusicalProfilePageShareSongsModalParagraph1: 'あなたの音楽を友達に見せよう',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'友達に、あなたがSpotifyで最もよく聴いている楽曲を発見してもらいましょう。',
-		myMusicalProfilePageShareSongsModalPreviewParagraph1: '私の音楽',
-		myMusicalProfilePageShareSongsModalPreviewParagraph2: '私の最もよく聴いている楽曲',
-		myMusicalProfilePageShareSongsModalPreviewParagraph3:
-			'私がSpotifyで最もよく聴いている楽曲で、私の音楽の趣味を表しています。',
-		myMusicalProfilePageShareSongsModalFileName: 'allify-musicas-spotify.png',
-		myMusicalProfilePageShareSongsModalFileTitle: 'Allifyでの私のSpotifyで最もよく聴いている楽曲',
-		myMusicalProfilePageShareSongsModalFileText:
-			'私のSpotifyで最もよく聴いている楽曲をチェックしてください！',
-		myMusicalProfilePageShareSongsModalToastError:
-			'音楽プロフィールからSpotifyで最もよく聴いている楽曲を共有できませんでした。'
+			'よく聴く曲をシェアして、友達が好きな曲も見つけよう。',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'よく聴く曲',
+		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'よく聴く曲',
+		myMusicalProfilePageShareSongsModalPreviewParagraph3: 'Spotifyで最もよく聴いている曲。',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-songs-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle: 'Allifyでよく聴く曲',
+		myMusicalProfilePageShareSongsModalFileText: '何度も繰り返し聴いている曲です！',
+		myMusicalProfilePageShareSongsModalToastError: '現在シェアできません。もう一度お試しください。'
 	},
 	musicArchivePage: {
 		title: '音楽アーカイブ | Allify',

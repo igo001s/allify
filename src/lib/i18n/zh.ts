@@ -259,37 +259,31 @@ export const zh = {
 		myMusicalProfilePageUpdateArtistsErrorToast: '最常听的艺人更新时出错。',
 		myMusicalProfilePageUpdateTracksSuccessToast: '最常听的歌曲已成功更新！',
 		myMusicalProfilePageUpdateTracksErrorToast: '最常听的歌曲更新时出错。',
-		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
-			'关闭 Spotify 最常听的艺人分享模态框的按钮',
-		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
-			'关闭 Spotify 最常听的艺人分享模态框的图标',
-		myMusicalProfilePageShareArtistsModalPreview: 'Spotify 最常听的艺人',
-		myMusicalProfilePageShareArtistsModalParagraph1: '与朋友分享你的音乐',
-		myMusicalProfilePageShareArtistsModalParagraph2: '让你的朋友发现你在 Spotify 上最常听的艺人。',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph1: '我的音乐',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph2: '我最常听的艺人',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
-			'我在 Spotify 上最常听的艺人，反映了我的音乐品味。',
-		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
-		myMusicalProfilePageShareArtistsModalFileTitle: '我在 Allify 上最常听的 Spotify 艺人',
-		myMusicalProfilePageShareArtistsModalFileText: '看看我在 Spotify 上最常听的艺人！',
-		myMusicalProfilePageShareArtistsModalToastError:
-			'无法从你的音乐资料分享 Spotify 上最常听的艺人。',
-		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
-			'关闭 Spotify 最常听的歌曲分享模态框的按钮',
-		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
-			'关闭 Spotify 最常听的歌曲分享模态框的图标',
-		myMusicalProfilePageShareSongsModalPreview: 'Spotify 最常听的歌曲',
-		myMusicalProfilePageShareSongsModalParagraph1: '与朋友分享你的音乐',
-		myMusicalProfilePageShareSongsModalParagraph2: '让你的朋友发现你在 Spotify 上最常听的歌曲。',
-		myMusicalProfilePageShareSongsModalPreviewParagraph1: '我的音乐',
+		myMusicalProfilePageShareModalPreview: '我的音乐个人资料',
+		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel: '关闭艺术家分享窗口',
+		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel: '关闭艺术家分享窗口的图标',
+		myMusicalProfilePageShareArtistsModalParagraph1: '向朋友展示你的音乐',
+		myMusicalProfilePageShareArtistsModalParagraph2:
+			'分享你最常听的艺术家，也看看你的朋友喜欢哪些艺术家。',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: '我最常听的艺术家',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph2: '我最常听的艺术家',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph3: '我在 Spotify 上听得最多的艺术家。',
+		myMusicalProfilePageShareArtistsModalFileName: 'allify-artists-spotify.png',
+		myMusicalProfilePageShareArtistsModalFileTitle: '我在 Allify 上最常听的艺术家',
+		myMusicalProfilePageShareArtistsModalFileText: '看看我最常听的是谁！',
+		myMusicalProfilePageShareArtistsModalToastError: '暂时无法分享，请稍后再试。',
+		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel: '关闭歌曲分享窗口',
+		myMusicalProfilePageShareSongsCloseModalIconAriaLabel: '关闭歌曲分享窗口的图标',
+		myMusicalProfilePageShareSongsModalParagraph1: '向朋友展示你的音乐',
+		myMusicalProfilePageShareSongsModalParagraph2:
+			'分享你最常听的歌曲，也看看你的朋友喜欢哪些歌曲。',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: '我最常听的歌曲',
 		myMusicalProfilePageShareSongsModalPreviewParagraph2: '我最常听的歌曲',
-		myMusicalProfilePageShareSongsModalPreviewParagraph3:
-			'我在 Spotify 上最常听的歌曲，反映了我的音乐品味。',
-		myMusicalProfilePageShareSongsModalFileName: 'allify-musicas-spotify.png',
-		myMusicalProfilePageShareSongsModalFileTitle: '我在 Allify 上最常听的 Spotify 歌曲',
-		myMusicalProfilePageShareSongsModalFileText: '看看我在 Spotify 上最常听的歌曲！',
-		myMusicalProfilePageShareSongsModalToastError: '无法从你的音乐资料分享 Spotify 上最常听的歌曲。'
+		myMusicalProfilePageShareSongsModalPreviewParagraph3: '我在 Spotify 上听得最多的歌曲。',
+		myMusicalProfilePageShareSongsModalFileName: 'allify-songs-spotify.png',
+		myMusicalProfilePageShareSongsModalFileTitle: '我在 Allify 上最常听的歌曲',
+		myMusicalProfilePageShareSongsModalFileText: '这些就是我一直循环播放的歌曲！',
+		myMusicalProfilePageShareSongsModalToastError: '暂时无法分享，请稍后再试。'
 	},
 	musicArchivePage: {
 		title: '音乐档案 | Allify',

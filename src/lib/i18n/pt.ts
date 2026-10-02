@@ -280,42 +280,38 @@ export const pt = {
 		myMusicalProfilePageUpdateArtistsErrorToast: 'Erro ao atualizar os artistas mais ouvidos.',
 		myMusicalProfilePageUpdateTracksSuccessToast: 'Músicas mais ouvidas atualizadas com sucesso!',
 		myMusicalProfilePageUpdateTracksErrorToast: 'Erro ao atualizar as músicas mais ouvidas.',
+		myMusicalProfilePageShareModalPreview: 'MEU PERFIL MUSICAL',
 		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel:
-			'Fechar modal de compartilhamento dos artistas mais ouvidos do Spotify',
+			'Fechar janela de compartilhamento de artistas',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
-			'Ícone para fechar o modal de compartilhamento dos artistas mais ouvidos do Spotify',
-		myMusicalProfilePageShareArtistsModalPreview: 'Artistas mais ouvidos do Spotify',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Compartilhe sua música com seus amigos',
+			'Ícone para fechar a janela de compartilhamento de artistas',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Mostre sua música para seus amigos',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Deixe seus amigos descobrirem quais são os artistas que você mais ouve no Spotify.',
-		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MINHA MÚSICA',
+			'Compartilhe os artistas que você mais ouve e descubra quais deles seus amigos também gostam.',
+		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MEUS ARTISTAS',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'Meus artistas mais ouvidos',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
-			'Os artistas que mais ouço no Spotify e que representam meu gosto musical.',
+			'Os artistas que eu mais ouço no Spotify.',
 		myMusicalProfilePageShareArtistsModalFileName: 'allify-artistas-spotify.png',
-		myMusicalProfilePageShareArtistsModalFileTitle:
-			'Meus artistas mais ouvidos do Spotify no Allify',
-		myMusicalProfilePageShareArtistsModalFileText: 'Confira meus artistas mais ouvidos do Spotify!',
+		myMusicalProfilePageShareArtistsModalFileTitle: 'Meus artistas mais ouvidos no Allify',
+		myMusicalProfilePageShareArtistsModalFileText: 'Veja quem eu mais ouço!',
 		myMusicalProfilePageShareArtistsModalToastError:
-			'Não foi possível compartilhar os artistas mais ouvidos do Spotify do seu perfil musical.',
+			'Não foi possível compartilhar agora. Tente novamente.',
 		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel:
-			'Fechar modal de compartilhamento das músicas mais ouvidas do Spotify',
+			'Fechar janela de compartilhamento de músicas',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
-			'Ícone para fechar o modal de compartilhamento das músicas mais ouvidas do Spotify',
-		myMusicalProfilePageShareSongsModalPreview: 'Músicas mais ouvidas do Spotify',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Compartilhe sua música com seus amigos',
+			'Ícone para fechar a janela de compartilhamento de músicas',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Mostre sua música para seus amigos',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Deixe seus amigos descobrirem quais são as músicas que você mais ouve no Spotify.',
-		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MINHA MÚSICA',
+			'Compartilhe as músicas que você mais ouve e descubra quais delas seus amigos também gostam.',
+		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MINHAS MÚSICAS',
 		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Minhas músicas mais ouvidas',
-		myMusicalProfilePageShareSongsModalPreviewParagraph3:
-			'As músicas que mais ouço no Spotify e que representam meu gosto musical.',
+		myMusicalProfilePageShareSongsModalPreviewParagraph3: 'As músicas que eu mais ouço no Spotify.',
 		myMusicalProfilePageShareSongsModalFileName: 'allify-musicas-spotify.png',
-		myMusicalProfilePageShareSongsModalFileTitle:
-			'Minhas músicas mais ouvidas do Spotify no Allify',
-		myMusicalProfilePageShareSongsModalFileText: 'Confira minhas músicas mais ouvidas do Spotify!',
+		myMusicalProfilePageShareSongsModalFileTitle: 'Minhas músicas mais ouvidas no Allify',
+		myMusicalProfilePageShareSongsModalFileText: 'Essas são as músicas que eu não paro de ouvir!',
 		myMusicalProfilePageShareSongsModalToastError:
-			'Não foi possível compartilhar as músicas mais ouvidas do Spotify do seu perfil musical.'
+			'Não foi possível compartilhar agora. Tente novamente.'
 	},
 	musicArchivePage: {
 		title: 'Arquivo Musical | Allify',
