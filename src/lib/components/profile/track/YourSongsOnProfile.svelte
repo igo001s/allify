@@ -45,7 +45,7 @@
 
 	function buildShareDataContent(dataType: 'Songs'): ShareDataContent {
 		return {
-			shareDataModalUserImage: $userInfo?.image?.url ? $userInfo.image?.url : '',
+			shareDataModalUserImage: $userInfo?.image ? $userInfo.image : '',
 			shareDataModalUserName: $userInfo?.name ? $userInfo?.name : '',
 			shareDataCloseModalButtonAriaLabel:
 				$translationsStore.profilePage[`profilePageShare${dataType}CloseModalButtonAriaLabel`],

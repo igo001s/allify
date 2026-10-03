@@ -37,7 +37,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 				artists: parsedResponse['long_term'][i].artists.map((artist: TrackSpotify) => artist.name),
 				popularity: parsedResponse['long_term'][i].popularity,
 				albumName: parsedResponse['long_term'][i].album.name,
-				image: parsedResponse['long_term'][i].album.images[0],
+				image: parsedResponse['long_term'][i].album.images[0].url,
 				externalLink: parsedResponse['long_term'][i].external_urls.spotify
 			});
 		}
@@ -51,7 +51,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 				),
 				popularity: parsedResponse['medium_term'][i].popularity,
 				albumName: parsedResponse['medium_term'][i].album.name,
-				image: parsedResponse['medium_term'][i].album.images[0],
+				image: parsedResponse['medium_term'][i].album.images[0].url,
 				externalLink: parsedResponse['medium_term'][i].external_urls.spotify
 			});
 		}
@@ -63,7 +63,7 @@ export async function getMostListenedTracks(limit: number = 5) {
 				artists: parsedResponse['short_term'][i].artists.map((artist: TrackSpotify) => artist.name),
 				popularity: parsedResponse['short_term'][i].popularity,
 				albumName: parsedResponse['short_term'][i].album.name,
-				image: parsedResponse['short_term'][i].album.images[0],
+				image: parsedResponse['short_term'][i].album.images[0].url,
 				externalLink: parsedResponse['short_term'][i].external_urls.spotify
 			});
 		}

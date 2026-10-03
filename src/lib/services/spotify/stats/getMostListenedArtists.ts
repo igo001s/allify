@@ -37,7 +37,7 @@ export async function getMostListenedArtists(limit: number = 5) {
 				popularity: parsedResponse['long_term'][i].popularity,
 				followers: parsedResponse['long_term'][i].followers.total,
 				genres: parsedResponse['long_term'][i].genres,
-				image: parsedResponse['long_term'][i].images[0],
+				image: parsedResponse['long_term'][i].images[0].url,
 				externalLink: parsedResponse['long_term'][i].external_urls.spotify
 			});
 		}
@@ -49,7 +49,7 @@ export async function getMostListenedArtists(limit: number = 5) {
 				popularity: parsedResponse['medium_term'][i].popularity,
 				followers: parsedResponse['medium_term'][i].followers.total,
 				genres: parsedResponse['medium_term'][i].genres,
-				image: parsedResponse['medium_term'][i].images[0],
+				image: parsedResponse['medium_term'][i].images[0].url,
 				externalLink: parsedResponse['medium_term'][i].external_urls.spotify
 			});
 		}
@@ -61,7 +61,7 @@ export async function getMostListenedArtists(limit: number = 5) {
 				popularity: parsedResponse['short_term'][i].popularity,
 				followers: parsedResponse['short_term'][i].followers.total,
 				genres: parsedResponse['short_term'][i].genres,
-				image: parsedResponse['short_term'][i].images[0],
+				image: parsedResponse['short_term'][i].images[0].url,
 				externalLink: parsedResponse['short_term'][i].external_urls.spotify
 			});
 		}

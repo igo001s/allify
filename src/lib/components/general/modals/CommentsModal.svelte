@@ -95,7 +95,7 @@
 					class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 sm:gap-4 sm:p-4"
 				>
 					<enhanced:img
-						src={comment.author.image?.url ?? ''}
+						src={comment.author.image}
 						alt={`${$translationsStore.profilePage.profilePageAuthorCommentImageAltText} ${comment.author.name}`}
 						class="h-11 w-11 shrink-0 rounded-full object-cover sm:h-12 sm:w-12"
 					/>

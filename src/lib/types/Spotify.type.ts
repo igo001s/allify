@@ -1,10 +1,7 @@
-// Types
-import type { AvatarImage } from './Image.type';
-
 export type UserInfoSpotify = {
 	name: string;
 	email: string;
-	image: AvatarImage;
+	image: string;
 	followers: number;
 	profileLink: string;
 	mostListenedArtists: ArtistsSpotify | undefined;
@@ -35,7 +32,7 @@ export type ArtistSpotify = {
 	popularity: number;
 	followers: number;
 	genres: string[];
-	image: AvatarImage;
+	image: string;
 	externalLink: string;
 };
 
@@ -45,6 +42,6 @@ export type TrackSpotify = {
 	artists: string[];
 	popularity: number;
 	albumName: string;
-	image: AvatarImage;
+	image: string;
 	externalLink: string;
 };

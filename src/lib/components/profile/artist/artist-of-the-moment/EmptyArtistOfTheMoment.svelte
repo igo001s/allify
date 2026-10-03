@@ -13,7 +13,7 @@
 	openModal={() => openSelectYourItemsModal('artist')}
 	emptyArtistHeading3={$translationsStore.profilePage.profilePageEmptyArtistOfTheMomentHeading1}
 	emptyArtistAriaLabel={$translationsStore.profilePage.profilePageEmptyArtistOfTheMomentAriaLabel}
-	sessionType="public-user"
+	sessionType="profile"
 	emptyArtistHeading4={$translationsStore.profilePage.profilePageEmptyArtistOfTheMomentHeading2}
 	emptyArtistParagraph1={$translationsStore.profilePage.profilePageEmptyArtistOfTheMomentParagraph1}
 />

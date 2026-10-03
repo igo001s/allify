@@ -58,9 +58,9 @@
 			{/if}
 		{/if}
 
-		{#if profileItem.item.image?.url}
+		{#if profileItem.item.image}
 			<enhanced:img
-				src={profileItem.item.image?.url}
+				src={profileItem.item.image}
 				alt={profileItem.item.name}
 				class="h-24 w-24 shrink-0 self-center rounded-lg object-cover sm:h-32 sm:w-32 md:h-36 md:w-36 md:self-start lg:h-44 lg:w-44"
 				loading="lazy"

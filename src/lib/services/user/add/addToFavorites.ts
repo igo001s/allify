@@ -1,9 +1,6 @@
 // Svelte
 import { dev } from '$app/environment';
 
-// Types
-import type { AvatarImage } from '$lib/types/Image.type';
-
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
@@ -11,7 +8,7 @@ export async function addToFavorites(
 	idToSave: ObjectId,
 	id: ObjectId,
 	name: string,
-	image: AvatarImage | undefined,
+	image: string | undefined,
 	spotifyConnected?: boolean,
 	deezerConnected?: boolean
 ) {

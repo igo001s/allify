@@ -34,7 +34,7 @@
 >
 	<div class="relative mx-auto h-32 w-32 shrink-0 sm:h-48 sm:w-48">
 		<enhanced:img
-			src={item.image?.url}
+			src={item.image}
 			alt={item.name}
 			class="h-full w-full rounded-lg object-cover shadow-md"
 			loading={index < 6 && itemType === 'artists' ? 'eager' : 'lazy'}

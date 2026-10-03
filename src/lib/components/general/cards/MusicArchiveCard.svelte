@@ -16,7 +16,7 @@
 
 <div class="flex w-full flex-col items-center gap-4 sm:flex-row sm:items-start sm:gap-6">
 	<enhanced:img
-		src={item.image?.url}
+		src={item.image}
 		alt={item.name}
 		class="h-32 w-32 shrink-0 rounded-lg object-cover shadow-md sm:h-44 sm:w-44 lg:h-48 lg:w-48"
 		loading="lazy"

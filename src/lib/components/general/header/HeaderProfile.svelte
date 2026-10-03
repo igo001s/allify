@@ -41,7 +41,8 @@
 		ring-b-default
 		hover:bg-s-muted
 		hover:shadow-md
-		hover:ring-brand-primary
+		lg:h-11.5
+		lg:w-11.5
 	"
 	aria-haspopup="menu"
 	aria-expanded={showProfileOptions}
@@ -51,15 +52,15 @@
 		{#if $userInfo?.connectedStreamings[primaryStreaming]?.image}
 			<enhanced:img
 				class={`
-					h-${$userInfo?.connectedStreamings[primaryStreaming]?.image?.height}
-					w-${$userInfo?.connectedStreamings[primaryStreaming]?.image?.width}
+					h-10
+					w-10
 					rounded-full
 					border
 					object-cover
 					p-1
 					text-brand-primary
 				`}
-				src={$userInfo?.connectedStreamings[primaryStreaming]?.image?.url}
+				src={$userInfo?.connectedStreamings[primaryStreaming]?.image}
 				alt={$userInfo?.connectedStreamings[primaryStreaming]?.name}
 			/>
 		{:else}

@@ -65,8 +65,10 @@
 			aria-label="Toggle profile items"
 		>
 			{#if loggedIn}
-				{#if $userInfo?.connectedStreamings.spotify?.image}
+				{#if $userInfo?.image}
 					<enhanced:img
+						src={$userInfo?.image}
+						alt={$userInfo?.name}
 						class="
 							h-10
 							w-10
@@ -77,12 +79,10 @@
 							sm:h-11
 							sm:w-11
 						"
-						src={$userInfo?.connectedStreamings.spotify?.image?.url}
-						alt={$userInfo?.connectedStreamings.spotify?.name}
 					/>
 				{:else}
 					<ProfileWithoutPhoto
-						userName={$userInfo?.connectedStreamings.spotify?.name}
+						userName={$userInfo?.name}
 						additionalClassesToSize="h-10 w-10 sm:h-11 sm:w-11"
 					/>
 				{/if}
@@ -90,7 +90,7 @@
 				<div class="min-w-0 flex-1 space-y-1.5 text-left">
 					<div class="flex items-center gap-4">
 						<p class="truncate text-base font-semibold text-t-primary">
-							{$userInfo?.connectedStreamings.spotify?.name}
+							{$userInfo?.name}
 						</p>
 
 						<div
@@ -108,7 +108,7 @@
 					</div>
 
 					<p class="mt-0.5 truncate text-xs text-t-muted">
-						{$userInfo?.connectedStreamings.spotify?.email}
+						{$userInfo?.email}
 					</p>
 				</div>
 			{:else}

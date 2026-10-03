@@ -30,7 +30,7 @@
 >
 	{#if item.image}
 		<enhanced:img
-			src={item.image.url}
+			src={item.image}
 			alt={item.name}
 			class="h-14 w-14 rounded-lg object-cover sm:h-20 sm:w-20"
 			loading="lazy"

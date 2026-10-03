@@ -34,9 +34,9 @@
 			md:flex-row md:text-left lg:gap-12"
 	>
 		<div class="w-fit">
-			{#if userInfo.image?.url}
+			{#if userInfo.image}
 				<enhanced:img
-					src={userInfo.image?.url}
+					src={userInfo.image}
 					class="h-24 w-24 rounded-full border-4 border-brand-primary object-cover
 						sm:h-32 sm:w-32 lg:h-36 lg:w-36"
 					alt={`${$translationsStore.profilePage.profilePageImageAltText} ${userInfo.name}`}

@@ -1,6 +1,3 @@
-// Types
-import type { AvatarImage } from './Image.type';
-
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
@@ -19,5 +16,5 @@ export type CommentReceived = {
 export type AuthorComment = {
 	_id: ObjectId;
 	name: string;
-	image?: AvatarImage;
+	image?: string;
 };

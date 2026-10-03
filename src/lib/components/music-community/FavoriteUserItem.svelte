@@ -70,7 +70,7 @@
 	>
 		{#if favorite.image}
 			<enhanced:img
-				src={favorite.image.url}
+				src={favorite.image}
 				alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${favorite.name}`}
 				class="h-13 w-13 shrink-0 rounded-full object-cover"
 			/>

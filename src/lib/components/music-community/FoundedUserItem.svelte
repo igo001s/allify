@@ -22,7 +22,6 @@
 
 	// Types
 	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
-	import type { AvatarImage } from '$lib/types/Image.type';
 
 	// Props
 	export let user: SearchUserInfo;
@@ -33,7 +32,7 @@
 		idToSave: ObjectId,
 		id: ObjectId,
 		name: string,
-		image?: AvatarImage,
+		image?: string,
 		spotifyConnected = false,
 		deezerConnected = false
 	) {
@@ -145,7 +144,7 @@
 		idToToggle?: ObjectId,
 		id?: ObjectId,
 		name?: string,
-		image?: AvatarImage,
+		image?: string,
 		spotifyConnected = false,
 		deezerConnected = false
 	) {
@@ -178,7 +177,7 @@
 	>
 		{#if user.image}
 			<enhanced:img
-				src={user.image.url}
+				src={user.image}
 				alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${user.name}`}
 				class="h-13 w-13 shrink-0 rounded-full object-cover"
 			/>

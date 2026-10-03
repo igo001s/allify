@@ -32,9 +32,9 @@
 			md:flex-row md:text-left lg:gap-12"
 	>
 		<div class="w-fit">
-			{#if publicUserStreamingInfo.image.url}
+			{#if publicUserStreamingInfo.image}
 				<enhanced:img
-					src={publicUserStreamingInfo.image.url}
+					src={publicUserStreamingInfo.image}
 					class="h-24 w-24 rounded-full border-4 border-brand-primary object-cover
 						sm:h-32 sm:w-32 lg:h-36 lg:w-36"
 					alt={`${$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserImageAltText} ${publicUserStreamingInfo.name}`}

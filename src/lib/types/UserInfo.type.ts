@@ -6,7 +6,6 @@ import type { Tracks } from './Tracks.type';
 import type { Artists } from './Artists.type';
 import type { Discoveries } from './Discoveries.type';
 import type { CommentPosted, CommentReceived } from './Comments.type';
-import type { AvatarImage } from './Image.type';
 import type { UserInfoSpotify } from './Spotify.type';
 import type { TrackSpotify } from './Spotify.type';
 import type { ArtistSpotify } from './Spotify.type';
@@ -18,7 +17,7 @@ export type UserInfo = {
 	email: string;
 	tickets: number;
 	primaryStreaming: 'spotify' | 'deezer';
-	image?: AvatarImage;
+	image?: string;
 	profileVisibility: profileVisibility;
 	comments: {
 		commentsMadeByMe: CommentPosted[];
@@ -38,7 +37,7 @@ export type UserInfo = {
 export type InitialUserInfo = {
 	display_name: string;
 	email: string;
-	images: AvatarImage[];
+	image: string;
 	followers: { href: string; total: number };
 	external_urls: { spotify: string };
 };
@@ -48,7 +47,7 @@ export type PublicUserInfo = Omit<UserInfo, 'email'>;
 export type SearchUserInfo = {
 	_id: ObjectId;
 	name: string;
-	image?: AvatarImage;
+	image?: string;
 	spotifyConnected: boolean;
 	deezerConnected: boolean;
 };

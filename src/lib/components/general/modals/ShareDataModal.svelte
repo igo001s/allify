@@ -144,9 +144,9 @@
 				<ul class="flex h-fit flex-col gap-4">
 					{#each dataToShare as data, i (i)}
 						<li class="flex max-h-22 flex-1 gap-4 rounded-lg border border-b-default p-3">
-							{#if data.item.image?.url}
+							{#if data.item.image}
 								<enhanced:img
-									src={data.item.image?.url}
+									src={data.item.image}
 									alt={data.item.name}
 									class="aspect-square h-full w-auto shrink-0 rounded-lg object-cover"
 									loading="eager"

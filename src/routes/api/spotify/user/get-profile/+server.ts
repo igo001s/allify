@@ -56,8 +56,9 @@ export const POST: RequestHandler = async ({ request, cookies, fetch }) => {
 		const data = await response.json();
 
 		const { display_name, email, images, followers, external_urls } = data;
+		const image = images?.[0]?.url; 
 
-		return new Response(JSON.stringify({ display_name, email, images, followers, external_urls }), {
+		return new Response(JSON.stringify({ display_name, email, image, followers, external_urls }), {
 			status: 200
 		});
 	} catch (error) {
