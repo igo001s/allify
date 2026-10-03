@@ -4,10 +4,7 @@ import { dev } from '$app/environment';
 // Types
 import type { UserInfoSpotify } from '$lib/types/Spotify.type';
 
-export async function createUser(
-	streaming: string,
-	streamingData: UserInfoSpotify
-) {
+export async function createUser(streaming: string, streamingData: UserInfoSpotify) {
 	try {
 		if (!streaming || !streamingData) {
 			return null;

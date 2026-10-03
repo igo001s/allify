@@ -1,4 +1,6 @@
 export type ShareDataContent = {
+	shareDataModalUserImage: string;
+	shareDataModalUserName: string;
 	shareDataCloseModalButtonAriaLabel: string;
 	shareDataCloseModalIconAriaLabel: string;
 	shareDataType: string;

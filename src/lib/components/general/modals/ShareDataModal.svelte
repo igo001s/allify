@@ -106,16 +106,28 @@
 			>
 				<header class="flex items-center justify-between gap-2">
 					<AllifyLogoColorful
-						logoSvgClass="w-[26%] h-auto"
+						logoSvgClass="w-[30%] h-auto"
 						logoAriaLabel={$translationsStore.generalTexts.logoColorfulAriaLabel}
 					/>
 
-					<span class="text-right text-xs font-semibold text-t-secondary">
-						{buildShareDataContent.shareDataType}
-					</span>
+					<div class="space-y-1.5">
+						<div class="flex items-center gap-2">
+							<enhanced:img
+								src={buildShareDataContent.shareDataModalUserImage}
+								alt={buildShareDataContent.shareDataModalUserName}
+								class="h-6 w-6 rounded-full"
+							/>
+
+							<span class="font-semibold">{buildShareDataContent.shareDataModalUserName}</span>
+						</div>
+
+						<span class="text-right text-xs font-semibold text-t-secondary">
+							{buildShareDataContent.shareDataType}
+						</span>
+					</div>
 				</header>
 
-				<section class="space-y-1">
+				<section class="space-y-1.5">
 					<p class="text-[13px] font-bold text-brand-primary">
 						{buildShareDataContent.shareDataModalPreviewParagraph1}
 					</p>
@@ -129,7 +141,7 @@
 					</p>
 				</section>
 
-				<ul class="flex h-fit flex-col gap-3">
+				<ul class="flex h-fit flex-col gap-4">
 					{#each dataToShare as data, i (i)}
 						<li class="flex max-h-22 flex-1 gap-4 rounded-lg border border-b-default p-3">
 							{#if data.item.image?.url}
@@ -145,7 +157,7 @@
 
 							<div class="mt-0.5 min-w-0 flex-1 space-y-1">
 								<p
-									class={`${shareDataFrom === 'myMusicalProfile' ? (i === 0 ? 'text-top-1' : i === 1 ? 'text-top-2' : 'text-top-3') : 'text-brand-primary'} text-xs font-semibold uppercase`}
+									class={`${shareDataFrom === 'myMusicalProfile' ? (i === 0 ? 'text-top-1' : i === 1 ? 'text-top-2' : 'text-top-3') : data.type !== 'customArtist' && data.type !== 'customTrack' ? 'uppercase' : ''} text-xs font-semibold text-brand-primary`}
 								>
 									{data.title}
 								</p>

@@ -22,10 +22,7 @@ export async function fetchUserInfo() {
 			const builtUser = await buildUserFromSpotify(userFromSpotify.infoToCreateUser);
 
 			if (builtUser !== undefined) {
-				const createUserResult = await createUser(
-					'spotify',
-					builtUser
-				);
+				const createUserResult = await createUser('spotify', builtUser);
 
 				if (createUserResult) {
 					sendEmail(
