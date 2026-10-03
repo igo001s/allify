@@ -19,9 +19,9 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const { name, email, streaming, streamingData } = await request.json();
+		const { streaming, streamingData } = await request.json();
 
-		if (!name || !email || !streaming || !streamingData) {
+		if (!streaming || !streamingData) {
 			return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
 		}
 
@@ -29,15 +29,16 @@ export const POST: RequestHandler = async ({ request }) => {
 		const db = client?.db(MONGO_DB);
 		const users = db?.collection('users');
 
-		const existingUser = await users?.findOne({ email: email });
+		const existingUser = await users?.findOne({ email: streamingData.email });
 
 		if (existingUser) {
 			return new Response(JSON.stringify({ error: 'User already exists' }), { status: 409 });
 		}
 
 		const user = {
-			name: name,
-			email: email,
+			name: streamingData.name,
+			email: streamingData.email,
+			image: streamingData.image,
 			tickets: 5,
 			profileVisibility: {
 				visibility: undefined

@@ -88,7 +88,7 @@
 		closeModalIconAriaLabel={$translationsStore.generalTexts.buildProfileCloseModalIconAriaLabel}
 		additionalClasses={`${currentStepIndex === 0 || currentStepIndex === 4 ? 'max-w-xl' : 'max-w-3xl'}`}
 	>
-		<div class="min-w-0 overflow-y-auto p-5 sm:p-6 lg:p-8">
+		<div class="min-w-0 overflow-y-auto">
 			{#if currentStepIndex === 0}
 				<FirstAccessSection {closeModal} {goToNextStep} />
 			{:else if currentStepIndex === 1}

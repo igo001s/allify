@@ -5,13 +5,11 @@ import { dev } from '$app/environment';
 import type { UserInfoSpotify } from '$lib/types/Spotify.type';
 
 export async function createUser(
-	name: string,
-	email: string,
 	streaming: string,
 	streamingData: UserInfoSpotify
 ) {
 	try {
-		if (!name || !email || !streaming || !streamingData) {
+		if (!streaming || !streamingData) {
 			return null;
 		}
 
@@ -20,7 +18,7 @@ export async function createUser(
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			body: JSON.stringify({ name, email, streaming, streamingData })
+			body: JSON.stringify({ streaming, streamingData })
 		});
 
 		const parsedResponse = await response.json();
