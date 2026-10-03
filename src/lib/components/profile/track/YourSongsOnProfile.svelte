@@ -11,6 +11,7 @@
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
 	import { translationsStore } from '$lib/stores/translations.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Types
 	import type { TrackItems } from '$lib/types/Tracks.type';
@@ -68,6 +69,18 @@
 				$translationsStore.profilePage[`profilePageShare${dataType}ModalToastError`]
 		};
 	}
+
+	function handleOpenShareDataModal() {
+		if (!songsItems.some((music) => music.item === undefined)) {
+			showShareDataModal = true;
+		} else {
+			toastStore.set({
+				showToast: true,
+				toastType: 'warning',
+				toastMessage: $translationsStore.profilePage.profilePageShareSongsToastWarning
+			});
+		}
+	}
 </script>
 
 <section class="space-y-7">
@@ -78,7 +91,7 @@
 
 		<button
 			class="button-outline button-outline-active button-outline-active-hover group relative h-11 w-40 gap-1.5"
-			on:click={() => (showShareDataModal = true)}
+			on:click={handleOpenShareDataModal}
 		>
 			<ShareIcon iconSvgClass="h-4 w-4 text-brand-primary" />
 

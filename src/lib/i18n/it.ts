@@ -680,6 +680,8 @@ export const it = {
 			'Il tuo profilo non ha ancora commenti. Condividi il tuo profilo con i tuoi amici in modo che possano lasciare commenti!',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Pulsante per eliminare il commento di ',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icona per eliminare il commento di ',
+		profilePageShareSongsToastWarning:
+			'Devi selezionare le canzoni nel tuo profilo prima di poterle condividere.',
 		profilePageShareSongsCloseModalButtonAriaLabel:
 			'Chiudi la finestra di condivisione delle canzoni del profilo',
 		profilePageShareSongsCloseModalIconAriaLabel:
@@ -695,6 +697,8 @@ export const it = {
 		profilePageShareSongsModalFileText: 'Scopri le mie canzoni!',
 		profilePageShareSongsModalToastError:
 			'Non è stato possibile condividere le canzoni del tuo profilo.',
+		profilePageShareArtistsToastWarning:
+			'Devi selezionare gli artisti nel tuo profilo prima di poterli condividere.',
 		profilePageShareArtistsCloseModalButtonAriaLabel:
 			'Chiudi la finestra per condividere gli artisti del profilo',
 		profilePageShareArtistsCloseModalIconAriaLabel:

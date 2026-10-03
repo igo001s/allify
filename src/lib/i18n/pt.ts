@@ -631,7 +631,6 @@ export const pt = {
 			'Escolha outro artista e dê um título que represente o que você está sentindo, vivendo ou lembrando neste momento.',
 		profilePageChangeYourCustomMusicParagraph2:
 			'Escolha outra música e dê um título que represente o que você está sentindo, vivendo ou lembrando neste momento.',
-
 		profilePageChangeYourTracksWhoWereWithYou: 'Músicas que já estiveram com você',
 		profilePageChangeYourItemsModalCloseModal: 'Fechar',
 		profilePageChangeYourItemsModalSaveChanges: 'Salvar alterações',
@@ -652,6 +651,8 @@ export const pt = {
 			'Seu perfil ainda não tem comentários. Compartilhe seu perfil com seus amigos para que eles possam deixar comentários!',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Botão para excluir comentário de ',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Ícone de excluir comentário de ',
+		profilePageShareSongsToastWarning:
+			'Você precisa selecionar as músicas do seu perfil antes de compartilhá-las.',
 		profilePageShareSongsCloseModalButtonAriaLabel:
 			'Fechar modal de compartilhamento de músicas do perfil',
 		profilePageShareSongsCloseModalIconAriaLabel:
@@ -665,6 +666,8 @@ export const pt = {
 		profilePageShareSongsModalFileTitle: 'Minhas músicas no meu perfil do Allify',
 		profilePageShareSongsModalFileText: 'Confira minhas músicas!',
 		profilePageShareSongsModalToastError: 'Não foi possível compartilhar as músicas do seu perfil.',
+		profilePageShareArtistsToastWarning:
+			'Você precisa selecionar os artistas do seu perfil antes de compartilhá-los.',
 		profilePageShareArtistsCloseModalButtonAriaLabel:
 			'Fechar modal de compartilhamento de artistas do perfil',
 		profilePageShareArtistsCloseModalIconAriaLabel:

@@ -653,6 +653,8 @@ export const ru = {
 			'В вашем профиле пока нет комментариев. Поделитесь своим профилем с друзьями, чтобы они могли оставить комментарии!',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Кнопка для удаления комментария от ',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Иконка для удаления комментария от ',
+		profilePageShareSongsToastWarning:
+			'Вы должны выбрать песни в своём профиле, прежде чем делиться ими.',
 		profilePageShareSongsCloseModalButtonAriaLabel: 'Закрыть окно публикации песен из профиля',
 		profilePageShareSongsCloseModalIconAriaLabel:
 			'Значок закрытия окна публикации песен из профиля',
@@ -666,6 +668,8 @@ export const ru = {
 		profilePageShareSongsModalFileTitle: 'Мои песни в моём профиле Allify',
 		profilePageShareSongsModalFileText: 'Посмотрите мои песни!',
 		profilePageShareSongsModalToastError: 'Не удалось поделиться песнями из вашего профиля.',
+		profilePageShareArtistsToastWarning:
+			'Вы должны выбрать артистов в своём профиле, прежде чем делиться ими.',
 		profilePageShareArtistsCloseModalButtonAriaLabel: 'Закрыть окно отправки артистов из профиля',
 		profilePageShareArtistsCloseModalIconAriaLabel:
 			'Значок закрытия окна отправки артистов из профиля',

@@ -639,6 +639,8 @@ export const ja = {
 			'あなたのプロフィールにはまだコメントがありません。友達とプロフィールを共有して、コメントを残してもらいましょう。',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'コメントを削除するボタン：',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'コメントを削除するアイコン：',
+		profilePageShareSongsToastWarning:
+			'プロフィールの楽曲を共有する前に、楽曲を選択する必要があります。',
 		profilePageShareSongsCloseModalButtonAriaLabel: 'プロフィールの楽曲共有モーダルを閉じる',
 		profilePageShareSongsCloseModalIconAriaLabel: 'プロフィールの楽曲共有モーダルを閉じるアイコン',
 		profilePageShareSongsModalParagraph1: 'お気に入りの音楽を友達と共有しましょう',
@@ -650,6 +652,8 @@ export const ja = {
 		profilePageShareSongsModalFileTitle: 'Allifyのプロフィールにある私の音楽',
 		profilePageShareSongsModalFileText: '私の音楽をチェック！',
 		profilePageShareSongsModalToastError: 'プロフィールの音楽を共有できませんでした。',
+		profilePageShareArtistsToastWarning:
+			'プロフィールのアーティストを共有する前に、アーティストを選択する必要があります。',
 		profilePageShareArtistsCloseModalButtonAriaLabel:
 			'プロフィールのアーティスト共有モーダルを閉じる',
 		profilePageShareArtistsCloseModalIconAriaLabel:

@@ -670,6 +670,8 @@ export const de = {
 			'Personalisierter Künstler erfolgreich geändert.',
 		profilePageChangeCustomArtistErrorToastMessage:
 			'Fehler beim Ändern des personalisierten Künstlers. Bitte versuche es erneut.',
+		profilePageShareSongsToastWarning:
+			'Du musst die Songs in deinem Profil auswählen, bevor du sie teilen kannst.',
 		profilePageShareSongsCloseModalButtonAriaLabel: 'Musikfreigabefenster des Profils schließen',
 		profilePageShareSongsCloseModalIconAriaLabel:
 			'Symbol zum Schließen des Musikfreigabefensters des Profils',
@@ -684,6 +686,8 @@ export const de = {
 		profilePageShareSongsModalFileText: 'Entdecke meine Musik!',
 		profilePageShareSongsModalToastError:
 			'Die Musik aus deinem Profil konnte nicht geteilt werden.',
+		profilePageShareArtistsToastWarning:
+			'Du musst die Künstler in deinem Profil auswählen, bevor du sie teilen kannst.',
 		profilePageShareArtistsCloseModalButtonAriaLabel:
 			'Modal zum Teilen von Künstlern aus dem Profil schließen',
 		profilePageShareArtistsCloseModalIconAriaLabel:

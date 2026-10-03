@@ -682,6 +682,8 @@ export const fr = {
 			'Votre profil n’a pas encore de commentaires. Partagez votre profil avec vos amis afin qu’ils puissent laisser des commentaires !',
 		profilePageDeleteCommentOfAuthorButtonAriaLabel: 'Bouton pour supprimer le commentaire de ',
 		profilePageDeleteCommentOfAuthorIconAriaLabel: 'Icône pour supprimer le commentaire de ',
+		profilePageShareSongsToastWarning:
+			'Vous devez sélectionner les chansons dans votre profil avant de pouvoir les partager.',
 		profilePageShareSongsCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de partage des chansons du profil',
 		profilePageShareSongsCloseModalIconAriaLabel:
@@ -696,6 +698,8 @@ export const fr = {
 		profilePageShareSongsModalFileTitle: 'Mes chansons sur mon profil Allify',
 		profilePageShareSongsModalFileText: 'Découvrez mes chansons !',
 		profilePageShareSongsModalToastError: 'Impossible de partager les chansons de votre profil.',
+		profilePageShareArtistsToastWarning:
+			'Vous devez sélectionner les artistes dans votre profil avant de pouvoir les partager.',
 		profilePageShareArtistsCloseModalButtonAriaLabel:
 			'Fermer la fenêtre de partage des artistes du profil',
 		profilePageShareArtistsCloseModalIconAriaLabel:
