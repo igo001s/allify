@@ -5,9 +5,6 @@
 	import OutlinedStar from '$lib/assets/icons/OutlinedStar.svelte';
 	import FilledStar from '$lib/assets/icons/FilledStar.svelte';
 
-	// Components
-	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';
-
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -74,8 +71,6 @@
 				alt={`${$translationsStore.musicCommunityPage.musicCommunityFavoritesSectionUserImageAltText} ${favorite.name}`}
 				class="h-13 w-13 shrink-0 rounded-full object-cover"
 			/>
-		{:else}
-			<ProfileWithoutPhoto userName={favorite.name} additionalClassesToSize="h-13 w-13" />
 		{/if}
 
 		<div class="mb-1 flex min-w-0 flex-col gap-1">

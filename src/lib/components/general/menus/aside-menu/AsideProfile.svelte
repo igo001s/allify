@@ -5,7 +5,6 @@
 
 	// Components
 	import AsideProfileItems from '$lib/components/general/menus/aside-menu/AsideProfileItems.svelte';
-	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';
 	import Ticket from '$lib/components/general/Ticket.svelte';
 
 	// Utils
@@ -79,11 +78,6 @@
 							sm:h-11
 							sm:w-11
 						"
-					/>
-				{:else}
-					<ProfileWithoutPhoto
-						userName={$userInfo?.name}
-						additionalClassesToSize="h-10 w-10 sm:h-11 sm:w-11"
 					/>
 				{/if}
 

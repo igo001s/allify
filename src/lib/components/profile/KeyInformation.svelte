@@ -33,30 +33,17 @@
 		class="flex flex-col items-center gap-6 text-center
 			md:flex-row md:text-left lg:gap-12"
 	>
-		<div class="w-fit">
-			{#if userInfo.image}
-				<enhanced:img
-					src={userInfo.image}
-					class="h-24 w-24 rounded-full border-4 border-brand-primary object-cover
+		{#if userInfo.image}
+			<enhanced:img
+				src={userInfo.image}
+				class="h-24 w-24 rounded-full border-4 border-brand-primary object-cover
 						sm:h-32 sm:w-32 lg:h-36 lg:w-36"
-					alt={`${$translationsStore.profilePage.profilePageImageAltText} ${userInfo.name}`}
-					decoding="async"
-					fetchpriority="high"
-					loading="eager"
-				/>
-			{:else if userInfo.name}
-				<div
-					class="flex h-24 w-24 items-center justify-center rounded-full border-4 border-brand-primary sm:h-32 sm:w-32 lg:h-36 lg:w-36"
-					aria-label={userInfo.name}
-				>
-					<p
-						class="flex h-18 w-18 items-center justify-center rounded-full border-2 border-brand-primary text-xl font-medium text-brand-primary lg:h-24 lg:w-24 lg:text-3xl"
-					>
-						{userInfo.name.slice(0, 1)}
-					</p>
-				</div>
-			{/if}
-		</div>
+				alt={`${$translationsStore.profilePage.profilePageImageAltText} ${userInfo.name}`}
+				decoding="async"
+				fetchpriority="high"
+				loading="eager"
+			/>
+		{/if}
 
 		<div class="flex flex-col justify-center gap-2 text-t-primary">
 			<div class="flex flex-col items-center gap-1 md:flex-row md:gap-8">

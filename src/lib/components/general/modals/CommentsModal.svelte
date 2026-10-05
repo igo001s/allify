@@ -94,11 +94,13 @@
 				<div
 					class="bg-s-secondary/40 hover:bg-s-secondary/60 flex items-start gap-3 rounded-xl border border-b-default p-3 sm:gap-4 sm:p-4"
 				>
-					<enhanced:img
-						src={comment.author.image}
-						alt={`${$translationsStore.profilePage.profilePageAuthorCommentImageAltText} ${comment.author.name}`}
-						class="h-11 w-11 shrink-0 rounded-full object-cover sm:h-12 sm:w-12"
-					/>
+					{#if comment.author.image}
+						<enhanced:img
+							src={comment.author.image}
+							alt={`${$translationsStore.profilePage.profilePageAuthorCommentImageAltText} ${comment.author.name}`}
+							class="h-11 w-11 shrink-0 rounded-full object-cover sm:h-12 sm:w-12"
+						/>
+					{/if}
 
 					<div class="flex min-w-0 flex-1 flex-col gap-1">
 						<div class="flex items-center justify-between gap-2">

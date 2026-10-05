@@ -43,7 +43,7 @@
 
 		const addCommentOnPublicProfileResponse = await addCommentOnPublicProfile(
 			{
-				image: $userInfo?.connectedStreamings?.spotify?.image,
+				image: $userInfo.image,
 				_id: $userInfo?._id,
 				name: $userInfo?.name
 			},

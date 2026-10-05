@@ -2,7 +2,6 @@
 	// Components
 	import ProfileIcon from '$lib/assets/icons/ProfileIcon.svelte';
 	import HeaderProfileItems from '$lib/components/general/header/HeaderProfileItems.svelte';
-	import ProfileWithoutPhoto from '$lib/components/general/ProfileWithoutPhoto.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -16,12 +15,12 @@
 			? true
 			: false;
 
-	$: primaryStreaming = $userInfo?.primaryStreaming ?? 'spotify';
-
 	function closeProfileOptions() {
 		openLanguageDropdown = false;
 		showProfileOptions = !showProfileOptions;
 	}
+
+	console.log($userInfo);
 </script>
 
 <button
@@ -49,7 +48,7 @@
 	on:click={closeProfileOptions}
 >
 	{#if loggedIn}
-		{#if $userInfo?.connectedStreamings[primaryStreaming]?.image}
+		{#if $userInfo?.image}
 			<enhanced:img
 				class={`
 					h-10
@@ -60,11 +59,9 @@
 					p-1
 					text-brand-primary
 				`}
-				src={$userInfo?.connectedStreamings[primaryStreaming]?.image}
-				alt={$userInfo?.connectedStreamings[primaryStreaming]?.name}
+				src={$userInfo?.image}
+				alt={$userInfo?.name}
 			/>
-		{:else}
-			<ProfileWithoutPhoto userName={$userInfo?.name} additionalClassesToSize="h-9/12 w-9/12" />
 		{/if}
 	{:else}
 		<ProfileIcon

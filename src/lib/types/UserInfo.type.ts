@@ -17,7 +17,7 @@ export type UserInfo = {
 	email: string;
 	tickets: number;
 	primaryStreaming: 'spotify' | 'deezer';
-	image?: string;
+	image: string;
 	profileVisibility: profileVisibility;
 	comments: {
 		commentsMadeByMe: CommentPosted[];
@@ -47,7 +47,7 @@ export type PublicUserInfo = Omit<UserInfo, 'email'>;
 export type SearchUserInfo = {
 	_id: ObjectId;
 	name: string;
-	image?: string;
+	image: string;
 	spotifyConnected: boolean;
 	deezerConnected: boolean;
 };
