@@ -19,8 +19,6 @@
 		openLanguageDropdown = false;
 		showProfileOptions = !showProfileOptions;
 	}
-
-	console.log($userInfo);
 </script>
 
 <button
