@@ -9,6 +9,7 @@ export const pt = {
 	},
 	generalTexts: {
 		logoColorfulAriaLabel: 'Logo colorido do Allify',
+		logoColorfulAltText: 'Logo colorido do Allify',
 		logoLightAriaLabel: 'Logo claro do Allify',
 		headerNavigationItem1: 'Meu Perfil Musical',
 		headerNavigationItem2: 'Arquivo Musical',
@@ -49,6 +50,8 @@ export const pt = {
 		footerFirstSectionText1:
 			'Transformando dados musicais em conexões, experiências e novas formas de explorar sua música.',
 		footerFirstSectionText2: 'Um produto de',
+		footerFirstSectionIgoLogoAriaLabel:
+			'Ir para o perfil do Igo no LinkedIn, desenvolvedor do Allify',
 		footerFirstSectionIgoLogoAltText: 'Logotipo do Igo, desenvolvedor do Allify',
 		footerCopyrightText: 'Todos os direitos reservados.',
 		footerColumn1Title: 'ACOMPANHE',

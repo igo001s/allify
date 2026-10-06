@@ -7,7 +7,7 @@
 
 	// Assets
 	import CloseIcon from '$lib/assets/icons/CloseIcon.svelte';
-	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.svelte';
+	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.webp?enhanced';
 
 	// Components
 	import AsideProfile from '$lib/components/general/menus/aside-menu/AsideProfile.svelte';
@@ -57,10 +57,16 @@
 		<div
 			class="flex items-center justify-between border-b border-b-default/60 pt-8 pr-3 pb-5.5 pl-8"
 		>
-			<a href={resolve('/')} on:click={closeMenu} class="cursor-pointer hover:scale-105">
-				<AllifyLogoColorful
-					logoSvgClass="w-24"
-					logoAriaLabel={$translationsStore.generalTexts.logoColorfulAriaLabel}
+			<a
+				href={resolve('/')}
+				on:click={closeMenu}
+				class="cursor-pointer hover:scale-105"
+				aria-label={$translationsStore.generalTexts.logoColorfulAriaLabel}
+			>
+				<enhanced:img
+					src={AllifyLogoColorful}
+					alt={$translationsStore.generalTexts.logoColorfulAltText}
+					class="w-24"
 				/>
 			</a>
 

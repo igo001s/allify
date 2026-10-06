@@ -29,9 +29,16 @@
 			{$translationsStore.generalTexts.footerFirstSectionText2}
 		</p>
 
-		<IgoLogo
-			logoSvgClass="w-14 h-14 h-fit cursor-pointer text-t-inverse-muted hover:text-t-inverse"
-			logoAltText={$translationsStore.generalTexts.footerFirstSectionIgoLogoAltText}
-		/>
+		<a
+			href="https://www.linkedin.com/in/igor-araujo001/"
+			aria-label={$translationsStore.generalTexts.footerFirstSectionIgoLogoAltText}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<IgoLogo
+				logoSvgClass="w-14 h-14 h-fit cursor-pointer text-t-inverse-muted hover:text-t-inverse"
+				logoAltText={$translationsStore.generalTexts.footerFirstSectionIgoLogoAltText}
+			/>
+		</a>
 	</div>
 </div>

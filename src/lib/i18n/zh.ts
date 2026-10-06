@@ -9,6 +9,7 @@ export const zh = {
 	},
 	generalTexts: {
 		logoColorfulAriaLabel: 'Allify彩色徽标',
+		logoColorfulAltText: 'Allify彩色徽标',
 		logoLightAriaLabel: 'Allify浅色徽标',
 		headerNavigationItem1: '我的音乐档案',
 		headerNavigationItem2: '音乐档案',
@@ -48,6 +49,7 @@ export const zh = {
 		cardProfileAsideMenuParagraph1: '登录或创建账户',
 		footerFirstSectionText1: '将音乐数据转化为联系、体验和探索音乐的新方式。',
 		footerFirstSectionText2: '出品方',
+		footerFirstSectionIgoLogoAriaLabel: '前往 Igo 的 LinkedIn 个人资料，Allify 的开发者',
 		footerFirstSectionIgoLogoAltText: 'Igo 标志，Allify 开发者',
 		footerCopyrightText: '版权所有。',
 		footerColumn1Title: '关注我们',

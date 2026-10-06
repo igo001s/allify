@@ -4,7 +4,7 @@
 
 	// Assets
 	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
-	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.svelte';
+	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.webp?enhanced';
 
 	// Components
 	import Modal from './Modal.svelte';
@@ -105,9 +105,10 @@
 				class="flex h-160 w-110 flex-col justify-between overflow-hidden bg-s-default px-8 py-10 text-t-primary shadow-lg"
 			>
 				<header class="flex items-center justify-between gap-2">
-					<AllifyLogoColorful
-						logoSvgClass="w-[30%] h-auto"
-						logoAriaLabel={$translationsStore.generalTexts.logoColorfulAriaLabel}
+					<enhanced:img
+						src={AllifyLogoColorful}
+						alt={$translationsStore.generalTexts.logoColorfulAltText}
+						class="h-auto w-[30%]"
 					/>
 
 					<div class="space-y-1.5">

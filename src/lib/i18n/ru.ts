@@ -9,6 +9,7 @@ export const ru = {
 	},
 	generalTexts: {
 		logoColorfulAriaLabel: 'Цветной логотип Allify',
+		logoColorfulAltText: 'Цветной логотип Allify',
 		logoLightAriaLabel: 'Светлый логотип Allify',
 		headerNavigationItem1: 'Мой музыкальный профиль',
 		headerNavigationItem2: 'Музыкальный архив',
@@ -49,6 +50,7 @@ export const ru = {
 		footerFirstSectionText1:
 			'Преобразуем музыкальные данные в связи, впечатления и новые способы исследовать вашу музыку.',
 		footerFirstSectionText2: 'Продукт компании',
+		footerFirstSectionIgoLogoAriaLabel: 'Перейти к профилю Igo в LinkedIn, разработчика Allify',
 		footerFirstSectionIgoLogoAltText: 'Логотип Igo, разработчика Allify',
 		footerCopyrightText: 'Все права защищены.',
 		footerColumn1Title: 'МЫ В СЕТИ',

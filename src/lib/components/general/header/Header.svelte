@@ -4,7 +4,7 @@
 
 	// Assets
 	import BurguerMenuIcon from '$lib/assets/icons/BurgerMenuIcon.svelte';
-	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.svelte';
+	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.webp?enhanced';
 
 	// Components
 	import HeaderNavigation from '$lib/components/general/header/HeaderNavigation.svelte';
@@ -29,10 +29,15 @@
 	class="relative flex items-center justify-between bg-s-default p-5 md:p-10 xl:px-16 xl:py-12"
 >
 	<div class="flex items-center gap-4 md:gap-10 2xl:gap-20">
-		<a href={resolve('/')} class="cursor-pointer hover:scale-105">
-			<AllifyLogoColorful
-				logoSvgClass="w-26 lg:w-32"
-				logoAriaLabel={$translationsStore.generalTexts.logoColorfulAriaLabel}
+		<a
+			href={resolve('/')}
+			class="cursor-pointer hover:scale-105"
+			aria-label={$translationsStore.generalTexts.logoColorfulAriaLabel}
+		>
+			<enhanced:img
+				src={AllifyLogoColorful}
+				alt={$translationsStore.generalTexts.logoColorfulAltText}
+				class="w-26 lg:w-32"
 			/>
 		</a>
 
