@@ -24,51 +24,47 @@
 	}
 </script>
 
-<div class="flex w-full flex-col gap-3 sm:gap-4">
-	<p class="text-lg font-bold text-t-primary sm:text-xl">
-		{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph1}
+<p class="build-profile-modal-title">
+	{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph1}
+</p>
+
+<p class="build-profile-modal-description">
+	{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph2}
+</p>
+
+<div class="build-profile-modal-selection">
+	<p class="label">
+		{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph3}
 	</p>
 
-	<p class="text-xs text-t-secondary sm:text-sm">
-		{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph2}
+	<div class="grid">
+		{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.uniqueArtists as artist, i (i)}
+			<SelectItemCard
+				{handleArtistSelection}
+				item={artist}
+				itemAriaLabel={$translationsStore.generalTexts
+					.buildProfileSecondStepArtistSectionSelectArtistAriaLabel}
+				itemType="artist"
+				selected={buildProfileArtist?.id === artist.id}
+			/>
+		{/each}
+	</div>
+
+	<p class="build-profile-modal-hint">
+		{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph4}
 	</p>
+</div>
 
-	<div class="mt-1 flex flex-col gap-4 sm:mt-2">
-		<p class="text-xs font-semibold text-t-primary sm:text-sm">
-			{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph3}
-		</p>
+<div class="build-profile-modal-footer">
+	<button on:click={backToPreviousStep} class="button-secondary">
+		{$translationsStore.generalTexts.buildProfileBackStepButton}
+	</button>
 
-		<div
-			class="grid max-h-60 grid-cols-2 gap-4 overflow-y-auto pr-2 sm:max-h-96 sm:grid-cols-3 sm:gap-6 md:grid-cols-4"
-		>
-			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.uniqueArtists as artist, i (i)}
-				<SelectItemCard
-					{handleArtistSelection}
-					item={artist}
-					itemAriaLabel={$translationsStore.generalTexts
-						.buildProfileSecondStepArtistSectionSelectArtistAriaLabel}
-					itemType="artist"
-					selected={buildProfileArtist?.id === artist.id}
-				/>
-			{/each}
-		</div>
-
-		<p class="text-center text-[10px] text-t-secondary sm:text-[11px]">
-			{$translationsStore.generalTexts.buildProfileSecondStepArtistSectionParagraph4}
-		</p>
-	</div>
-
-	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
-		<button on:click={backToPreviousStep} class="button-secondary px-6 py-2.5">
-			{$translationsStore.generalTexts.buildProfileBackStepButton}
-		</button>
-
-		<button
-			on:click={goToNextStep}
-			disabled={!buildProfileArtist}
-			class={`${buildProfileArtist ? 'button-primary' : 'button-disable'} px-6 py-2.5`}
-		>
-			{$translationsStore.generalTexts.buildProfileNextStepButton}
-		</button>
-	</div>
+	<button
+		on:click={goToNextStep}
+		disabled={!buildProfileArtist}
+		class={buildProfileArtist ? 'button-primary' : 'button-disable'}
+	>
+		{$translationsStore.generalTexts.buildProfileNextStepButton}
+	</button>
 </div>

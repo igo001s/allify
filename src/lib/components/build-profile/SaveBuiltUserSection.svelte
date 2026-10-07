@@ -2,13 +2,13 @@
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
+	import { toastStore } from '$lib/stores/toast.store';
 
 	// Services
 	import { saveBuiltProfile } from '$lib/services/user/build/saveBuiltProfile';
 
 	// Types
 	import type { buildProfileInfo } from '$lib/types/UserInfo.type';
-	import { toastStore } from '$lib/stores/toast.store';
 
 	// Props
 	export let backToPreviousStep: () => void;
@@ -68,22 +68,20 @@
 	}
 </script>
 
-<div class="flex w-full flex-col gap-3 sm:gap-4">
-	<p class="text-lg font-bold text-t-primary sm:text-xl">
-		{$translationsStore.generalTexts.buildProfileSaveBuiltUserSectionParagraph1}
-	</p>
+<p class="build-profile-modal-title">
+	{$translationsStore.generalTexts.buildProfileSaveBuiltUserSectionParagraph1}
+</p>
 
-	<p class="text-xs text-t-secondary sm:text-sm">
-		{$translationsStore.generalTexts.buildProfileSaveBuiltUserSectionParagraph2}
-	</p>
+<p class="build-profile-modal-description">
+	{$translationsStore.generalTexts.buildProfileSaveBuiltUserSectionParagraph2}
+</p>
 
-	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
-		<button on:click={backToPreviousStep} class="button-secondary px-6 py-2.5">
-			{$translationsStore.generalTexts.buildProfileBackStepButton}
-		</button>
+<div class="build-profile-modal-footer">
+	<button on:click={backToPreviousStep} class="button-secondary">
+		{$translationsStore.generalTexts.buildProfileBackStepButton}
+	</button>
 
-		<button on:click={handleSaveBuiltProfile} class="button-primary px-6 py-2.5">
-			{$translationsStore.generalTexts.buildProfileSaveProfileButton}
-		</button>
-	</div>
+	<button on:click={handleSaveBuiltProfile} class="button-primary">
+		{$translationsStore.generalTexts.buildProfileSaveProfileButton}
+	</button>
 </div>
