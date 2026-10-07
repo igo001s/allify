@@ -9,6 +9,11 @@
 	export let goToNextStep: () => void;
 	export let backToPreviousStep: () => void;
 	export let buildProfileVisibility: 'public' | 'private' | undefined = undefined;
+
+	$: visibilityOptions = [
+		{ visibility: 'public' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription },
+		{ visibility: 'private' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription }
+	] as { visibility: 'public' | 'private'; paragraph1: string; paragraph2: string }[];
 </script>
 
 <p class="build-profile-modal-title">
@@ -20,7 +25,7 @@
 </p>
 
 <div class="build-profile-modal-selection">
-	{#each [{ visibility: 'public' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription }, { visibility: 'private' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription }] as option, i (i)}
+	{#each visibilityOptions as option, i (i)}
 		<SelectVisibilityCard
 			visibility={option.visibility}
 			bind:buildProfileVisibility
