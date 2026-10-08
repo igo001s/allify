@@ -21,12 +21,23 @@
 		{ ring: 'ring-top-2', badge: 'bg-top-2 text-t-primary' },
 		{ ring: 'ring-top-3', badge: 'bg-top-3 text-t-inverse' }
 	];
+
 	const defaultStyle = {
 		ring: 'ring-s-inverse-muted/20',
 		badge: 'bg-s-inverse-muted/80 text-t-inverse'
 	};
 
 	$: style = (currentBatch === 0 && topStyles[index]) || defaultStyle;
+
+	$: imageConfig = {
+		loading: index < 6 && itemType === 'artists' ? 'eager' : 'lazy',
+		fetchpriority: index < 6 && itemType === 'artists' ? 'high' : 'low',
+		decoding: index < 6 && itemType === 'artists' ? 'sync' : 'async'
+	} as {
+		loading: 'eager' | 'lazy';
+		fetchpriority: 'high' | 'low';
+		decoding: 'sync' | 'async';
+	};
 </script>
 
 <div
@@ -37,9 +48,9 @@
 			src={item.image}
 			alt={item.name}
 			class="h-full w-full rounded-lg object-cover shadow-md"
-			loading={index < 6 && itemType === 'artists' ? 'eager' : 'lazy'}
-			fetchpriority={index < 6 && itemType === 'artists' ? 'high' : 'low'}
-			decoding={index < 6 && itemType === 'artists' ? 'sync' : 'async'}
+			loading={imageConfig.loading}
+			fetchpriority={imageConfig.fetchpriority}
+			decoding={imageConfig.decoding}
 		/>
 
 		<span

@@ -11,8 +11,20 @@
 	export let buildProfileVisibility: 'public' | 'private' | undefined = undefined;
 
 	$: visibilityOptions = [
-		{ visibility: 'public' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription },
-		{ visibility: 'private' as const, paragraph1: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption, paragraph2: $translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription }
+		{
+			visibility: 'public' as const,
+			paragraph1:
+				$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicOption,
+			paragraph2:
+				$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPublicDescription
+		},
+		{
+			visibility: 'private' as const,
+			paragraph1:
+				$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateOption,
+			paragraph2:
+				$translationsStore.generalTexts.buildProfileThirdStepVisibilitySectionPrivateDescription
+		}
 	] as { visibility: 'public' | 'private'; paragraph1: string; paragraph2: string }[];
 </script>
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Svelte
-	import type { SvelteComponent } from 'svelte';
+	import type { Component } from 'svelte';
 
 	// Components
 	import MusicIcon from '$lib/assets/icons/MusicIcon.svelte';
@@ -13,7 +13,7 @@
 	// Reactive values
 	$: musicalItemContent = [
 		{
-			icon: ArtistIcon as typeof SvelteComponent,
+			icon: ArtistIcon as Component,
 			iconAriaLabel: $translationsStore.homePage.musicalItemCardTitleArtistsIconAriaLabel,
 			title: $translationsStore.homePage.musicalItemCardTitleArtists,
 			description: [
@@ -25,7 +25,7 @@
 			buttonContent: $translationsStore.homePage.musicalItemCardArtistsButtonContent
 		},
 		{
-			icon: MusicIcon as typeof SvelteComponent,
+			icon: MusicIcon as Component,
 			iconAriaLabel: $translationsStore.homePage.musicalItemCardTitleSongsIconAriaLabel,
 			title: $translationsStore.homePage.musicalItemCardTitleSongs,
 			description: [

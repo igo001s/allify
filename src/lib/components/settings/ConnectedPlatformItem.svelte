@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Svelte
-	import type { SvelteComponent } from 'svelte';
+	import type { Component } from 'svelte';
 
 	// Utils
 	import { signInWrapper } from '$lib/utils/signInWrapper';
@@ -13,7 +13,7 @@
 	// Props
 	export let streaming: {
 		name: 'spotify' | 'deezer';
-		icon: typeof SvelteComponent;
+		icon: Component;
 		iconClass: string;
 	};
 </script>

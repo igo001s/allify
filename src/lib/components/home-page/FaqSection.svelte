@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Svelte
-	import type { SvelteComponent } from 'svelte';
+	import type { Component } from 'svelte';
 
 	// Assets
 	import LinkedinIcon from '$lib/assets/icons/social-network/LinkedinIcon.svelte';
@@ -24,7 +24,7 @@
 			ariaLabel: $translationsStore.homePage.faqSectionButtonGithubAriaLabel,
 			label: 'Github'
 		}
-	] as { icon: typeof SvelteComponent; href: string; label: string; ariaLabel: string }[];
+	] as { icon: Component; href: string; label: string; ariaLabel: string }[];
 
 	$: faqQuestionsAndAnswers = [
 		{

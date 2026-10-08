@@ -1,8 +1,8 @@
 // Svelte
-import type { SvelteComponent } from 'svelte';
+import type { Component } from 'svelte';
 
 export type CardPlatformType = {
-	icon: typeof SvelteComponent;
+	icon: Component;
 	title: string;
 	description: string;
 	href: string;

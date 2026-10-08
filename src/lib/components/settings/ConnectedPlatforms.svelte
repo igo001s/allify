@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Svelte
-	import type { SvelteComponent } from 'svelte';
+	import type { Component } from 'svelte';
 
 	// Assets
 	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
@@ -15,7 +15,7 @@
 	const streamings = [
 		{ name: 'spotify', icon: SpotifyIcon, iconClass: 'text-spotify' },
 		{ name: 'deezer', icon: DeezerIcon, iconClass: 'text-deezer' }
-	] as { name: 'spotify' | 'deezer'; icon: typeof SvelteComponent; iconClass: string }[];
+	] as { name: 'spotify' | 'deezer'; icon: Component; iconClass: string }[];
 </script>
 
 <div class="flex flex-col items-start gap-4">

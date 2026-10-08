@@ -2,9 +2,12 @@
 	// App
 	import { resolve } from '$app/paths';
 
+	// Svelte
+	import type { Component } from 'svelte';
+
 	// Props
 	export let item: {
-		icon: typeof import('svelte').SvelteComponent;
+		icon: Component;
 		iconAriaLabel: string;
 		title: string;
 		description: string[];

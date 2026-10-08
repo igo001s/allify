@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Svelte
-	import type { SvelteComponent } from 'svelte';
+	import type { Component } from 'svelte';
 
 	// Assets
 	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
@@ -31,7 +31,7 @@
 			buttonText: $translationsStore.generalTexts.notLoggedLoginLinkDeezer
 		}
 	] as {
-		icon: typeof SvelteComponent;
+		icon: Component;
 		name: 'spotify' | 'deezer';
 		href: string;
 		buttonText: string;
