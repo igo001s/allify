@@ -14,8 +14,8 @@
 		src={DivisorMobile}
 		class="my-10 h-auto w-full lg:my-12"
 		loading="lazy"
-		decoding="async"
 		fetchpriority="low"
 		alt={$translationsStore.generalTexts.musicalWavesDivisorAltText}
 	/>
 </picture>
+''

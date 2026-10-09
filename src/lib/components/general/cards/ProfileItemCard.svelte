@@ -1,8 +1,4 @@
 <script lang="ts">
-	// Assets
-	import EditArtistIcon from '$lib/assets/icons/EditArtistIcon.svelte';
-	import EditMusicIcon from '$lib/assets/icons/EditMusicIcon.svelte';
-
 	// Types
 	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
 
@@ -10,6 +6,7 @@
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
 	import Followers from '$lib/components/general/Followers.svelte';
+	import EditProfileItemButton from '$lib/components/profile/EditProfileItemButton.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';
@@ -22,6 +19,14 @@
 	export let showEditIcon: boolean = false;
 	export let showEditButtonAriaLabel: string | undefined = undefined;
 	export let showEditIconAriaLabel: string | undefined = undefined;
+
+	function isArtist(item: ArtistSpotify | TrackSpotify): item is ArtistSpotify {
+		return 'followers' in item && 'genres' in item;
+	}
+
+	function isTrack(item: ArtistSpotify | TrackSpotify): item is TrackSpotify {
+		return 'albumName' in item && 'artists' in item;
+	}
 </script>
 
 <div class="flex w-full flex-col gap-4 xl:w-1/3">
@@ -33,29 +38,12 @@
 		class="relative flex flex-col gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:max-h-56 md:min-h-56 md:flex-row lg:p-6"
 	>
 		{#if showEditIcon}
-			{#if 'followers' in profileItem.item && 'genres' in profileItem.item}
-				<button
-					class="absolute top-3 right-3 cursor-pointer text-t-primary hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
-					aria-label={showEditButtonAriaLabel}
-					on:click={handleEditButtonClick}
-				>
-					<EditArtistIcon
-						iconSvgClass="h-5 w-5 sm:h-6 sm:w-6"
-						iconAriaLabel={showEditIconAriaLabel}
-					/>
-				</button>
-			{:else if 'albumName' in profileItem.item && 'artists' in profileItem.item}
-				<button
-					class="absolute top-3 right-3 cursor-pointer text-t-primary hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
-					aria-label={showEditButtonAriaLabel}
-					on:click={handleEditButtonClick}
-				>
-					<EditMusicIcon
-						iconSvgClass="h-5 w-5 sm:h-6 sm:w-6"
-						iconAriaLabel={showEditIconAriaLabel}
-					/>
-				</button>
-			{/if}
+			<EditProfileItemButton
+				{handleEditButtonClick}
+				{showEditButtonAriaLabel}
+				{showEditIconAriaLabel}
+				itemType={isArtist(profileItem.item) ? 'artist' : 'music'}
+			/>
 		{/if}
 
 		{#if profileItem.item.image}
@@ -76,7 +64,7 @@
 					</h4>
 				{/if}
 
-				{#if 'followers' in profileItem.item && 'genres' in profileItem.item}
+				{#if isArtist(profileItem.item)}
 					<Followers
 						quantityFollowers={profileItem.item.followers}
 						classFollowers="text-xs text-t-secondary"
@@ -99,7 +87,7 @@
 							</span>
 						{/if}
 					</div>
-				{:else if 'albumName' in profileItem.item && 'artists' in profileItem.item}
+				{:else if isTrack(profileItem.item)}
 					<p class="truncate text-xs text-t-secondary">
 						{profileItem.item.albumName}
 					</p>

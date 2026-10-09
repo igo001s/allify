@@ -16,11 +16,24 @@
 	export let itemType: 'track' | 'artist';
 	export let selected: boolean;
 	export let disabled: boolean = false;
+
+	function isSelected(selected: boolean): { buttonClass: string; iconClass: string } {
+		if (selected) {
+			return {
+				buttonClass: 'border-brand-primary bg-brand-primary/5',
+				iconClass: 'text-brand-primary'
+			};
+		}
+
+		return {
+			buttonClass: 'border-s-muted bg-s-muted',
+			iconClass: 'text-t-secondary/70 '
+		};
+	}
 </script>
 
 <button
-	class={`${selected ? 'border-brand-primary bg-brand-primary/5' : 'border-s-muted bg-s-muted'}
-						relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-3.5 hover:border-brand-primary hover:bg-brand-primary/5`}
+	class={`${isSelected(selected).buttonClass} relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-3.5 hover:border-brand-primary hover:bg-brand-primary/5`}
 	aria-label={itemAriaLabel}
 	on:click={() =>
 		itemType === 'track'
@@ -33,7 +46,9 @@
 			src={item.image}
 			alt={item.name}
 			class="h-14 w-14 rounded-lg object-cover sm:h-20 sm:w-20"
-			loading="lazy"
+			loading="eager"
+			fetchpriority="high"
+			decoding="async"
 		/>
 	{/if}
 
@@ -58,6 +73,6 @@
 	</div>
 
 	<SpotifyIcon
-		iconSvgClass={`${selected ? 'text-brand-primary' : 'text-t-secondary/70'} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
+		iconSvgClass={`${isSelected(selected).iconClass} absolute top-1.5 right-1.5 h-3.5 w-3.5 sm:top-2 sm:right-2 sm:h-4 sm:w-4`}
 	/>
 </button>
