@@ -77,7 +77,7 @@
 		</p>
 
 		<div class="mt-3.5 flex justify-center gap-8 lg:gap-12">
-			{#each contactItems as item, i (i)}
+			{#each contactItems as item (item.label)}
 				<a
 					href={item.href}
 					target="_blank"

@@ -47,7 +47,7 @@
 	</h2>
 
 	<div class="grid w-full max-w-7xl gap-6 sm:gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-20">
-		{#each musicalItemContent as item, i (i)}
+		{#each musicalItemContent as item (item.title)}
 			<MusicalItemCard {item} />
 		{/each}
 	</div>

@@ -74,7 +74,7 @@
 		</div>
 
 		<div class="space-y-20 lg:space-y-32">
-			{#each itemsType as type, i (i)}
+			{#each itemsType as type (type)}
 				{#if type === 'artists'}
 					<MostListenedItems sessionType="artists" />
 				{:else if type === 'tracks'}

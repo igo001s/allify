@@ -100,7 +100,7 @@
 	</div>
 
 	<div class="flex flex-col gap-8 xl:flex-row">
-		{#each songsItems as { type, title, item }, i (i)}
+		{#each songsItems as { type, title, item } (type)}
 			{#if item}
 				<YourSongsOnProfileItem
 					trackItem={{ type, title, item }}

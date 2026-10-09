@@ -65,7 +65,7 @@
 	} satisfies Record<string, FooterColumnItems>;
 </script>
 
-{#each Object.values(footerColumnItems) as column, i (i)}
+{#each Object.values(footerColumnItems) as column (column.title)}
 	<div class="flex flex-col items-center text-t-inverse lg:items-start">
 		<p class="mb-4 text-sm font-semibold">
 			{column.title}
@@ -76,7 +76,7 @@
 				? 'flex items-center gap-4'
 				: 'flex flex-col gap-3'}
 		>
-			{#each column.items as item, i (i)}
+			{#each column.items as item (item.href)}
 				<li class="text-center lg:text-left">
 					{#if 'image' in item}
 						<a

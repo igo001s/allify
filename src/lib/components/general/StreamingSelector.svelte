@@ -16,7 +16,7 @@
 </script>
 
 <div class="flex w-full items-center gap-4">
-	{#each streamings as streaming, i (i)}
+	{#each streamings as streaming (streaming)}
 		<SelectStreamingButton
 			{streaming}
 			selected={selectedStreaming === streaming}

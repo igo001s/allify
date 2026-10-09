@@ -147,7 +147,7 @@
 			"
 			role="listbox"
 		>
-			{#each languageOptions as language, i (i)}
+			{#each languageOptions as language (language.code)}
 				<button
 					class="
 						w-full cursor-pointer text-left

@@ -100,7 +100,7 @@
 	</div>
 
 	<div class="flex flex-col gap-8 xl:flex-row">
-		{#each artistItems as { type, title, item }, i (i)}
+		{#each artistItems as { type, title, item } (type)}
 			{#if item}
 				<YourArtistOnProfileItem
 					artistItem={{ type, title, item }}

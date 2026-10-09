@@ -38,7 +38,7 @@
 	</p>
 
 	<div class="grid">
-		{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.uniqueArtists as artist, i (i)}
+		{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.uniqueArtists as artist (artist.id)}
 			<SelectItemCard
 				{handleArtistSelection}
 				item={artist}

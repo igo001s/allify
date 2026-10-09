@@ -24,7 +24,7 @@
 
 <nav aria-label={$translationsStore.generalTexts.headerNavigationAriaLabel} class="hidden lg:block">
 	<ul class="flex items-center gap-6 lg:gap-12">
-		{#each navItems as item, i (i)}
+		{#each navItems as item (item.name)}
 			<li class="overflow-y-hidden">
 				<a
 					href={resolve(item.link)}

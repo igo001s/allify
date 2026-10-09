@@ -37,7 +37,7 @@
 </p>
 
 <div class="build-profile-modal-selection">
-	{#each visibilityOptions as option, i (i)}
+	{#each visibilityOptions as option (option.visibility)}
 		<SelectVisibilityCard
 			visibility={option.visibility}
 			bind:buildProfileVisibility

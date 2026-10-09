@@ -25,7 +25,7 @@
 
 	<div class="grid w-full grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20 2xl:grid-cols-3">
 		{#if items?.length}
-			{#each items as item, i (i)}
+			{#each items as item (item)}
 				{#if itemType === 'track' && 'track' in item}
 					<MusicArchiveCard item={item.track} />
 				{:else if itemType === 'artist' && 'artist' in item}

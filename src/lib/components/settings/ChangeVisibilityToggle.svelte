@@ -69,7 +69,7 @@
 	<div
 		class="flex w-full max-w-xl flex-col gap-3 rounded-xl border border-brand-primary/20 p-3 sm:flex-row sm:gap-4"
 	>
-		{#each visibilityOptions as option, i (i)}
+		{#each visibilityOptions as option (option)}
 			<button
 				on:click={() => handleVisibilityChange(option)}
 				disabled={visibility === option}

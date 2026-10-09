@@ -44,7 +44,7 @@
 	<ul
 		class="mt-2 flex w-full flex-col items-center gap-8 xl:mt-10 xl:flex-row xl:justify-center xl:gap-16"
 	>
-		{#each platforms as platform, i (i)}
+		{#each platforms as platform (platform.title)}
 			<PlatformCard {platform} />
 		{/each}
 	</ul>

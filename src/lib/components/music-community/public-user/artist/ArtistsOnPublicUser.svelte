@@ -30,7 +30,7 @@
 	</h2>
 
 	<div class="flex flex-col gap-8 xl:flex-row">
-		{#each artistItems as { artistItem, type }, i (i)}
+		{#each artistItems as { artistItem, type } (type)}
 			{#if artistItem}
 				<ArtistsOnPublicUserItem artistItem={{ item: artistItem, type }} {publicUser} />
 			{:else}

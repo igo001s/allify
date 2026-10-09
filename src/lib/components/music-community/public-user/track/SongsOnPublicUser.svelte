@@ -30,7 +30,7 @@
 	</h2>
 
 	<div class="flex flex-col gap-8 xl:flex-row">
-		{#each songsItems as { trackItem, type }, i (i)}
+		{#each songsItems as { trackItem, type } (type)}
 			{#if trackItem}
 				<SongsOnPublicUserItem trackItem={{ item: trackItem, type }} {publicUser} />
 			{:else}

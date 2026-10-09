@@ -69,7 +69,7 @@
 		</p>
 
 		<div class="space-y-12 lg:space-y-16">
-			{#each [{ itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1, itemType: 'artist' as const, items: $userInfo.artists?.artistsWhoWereWithYou }, { itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2, itemType: 'track' as const, items: $userInfo.tracks?.tracksWhoWereWithYou }] as item, i (i)}
+			{#each [{ itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1, itemType: 'artist' as const, items: $userInfo.artists?.artistsWhoWereWithYou }, { itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2, itemType: 'track' as const, items: $userInfo.tracks?.tracksWhoWereWithYou }] as item (item.itemType)}
 				<MusicArchiveItems itemTitle={item.itemTitle} itemType={item.itemType} items={item.items} />
 			{/each}
 		</div>

@@ -36,7 +36,7 @@
 
 <nav aria-label={$translationsStore.generalTexts.headerNavigationAriaLabel}>
 	<ul class="flex flex-col gap-8 px-8 py-12">
-		{#each navItems as item, i (i)}
+		{#each navItems as item (item.name)}
 			<li class="overflow-y-hidden">
 				<button
 					on:click={() => handleNavigation(item.link)}

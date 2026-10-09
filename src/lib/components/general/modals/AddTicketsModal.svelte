@@ -90,7 +90,7 @@
 			</p>
 
 			<div class="mt-1 grid grid-cols-2 gap-3 sm:grid-cols-4">
-				{#each options as option, i (i)}
+				{#each options as option (option)}
 					<button
 						class="cursor-pointer rounded-lg border py-3 text-xs font-semibold
 								{quantity === option

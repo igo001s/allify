@@ -119,7 +119,7 @@
 
 	<div class="max-h-60 overflow-y-auto pr-2 sm:max-h-96">
 		<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.uniqueArtists as artist, i (i)}
+			{#each $userInfo?.connectedStreamings.spotify?.mostListenedArtists?.uniqueArtists as artist (artist.id)}
 				<SelectArtistCardOnProfile {artist} {choosedArtist} {handleArtistSelection} />
 			{/each}
 		</div>
@@ -131,7 +131,7 @@
 				</p>
 
 				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-					{#each $userInfo.artists.artistsWhoWereWithYou as artistWhoWereWithYou, i (i)}
+					{#each $userInfo.artists.artistsWhoWereWithYou as artistWhoWereWithYou (artistWhoWereWithYou.artist.id)}
 						<SelectArtistCardOnProfile
 							artist={artistWhoWereWithYou.artist}
 							{choosedArtist}
