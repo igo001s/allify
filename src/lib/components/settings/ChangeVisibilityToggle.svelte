@@ -71,13 +71,14 @@
 	>
 		{#each visibilityOptions as option (option)}
 			<button
-				on:click={() => handleVisibilityChange(option)}
+				type="button"
 				disabled={visibility === option}
 				class={`flex w-full items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium sm:min-w-32 ${
 					visibility === option
 						? 'bg-brand-primary text-t-inverse shadow-sm'
 						: 'cursor-pointer bg-brand-primary/10 pr-10 text-t-primary'
 				}`}
+				on:click={() => handleVisibilityChange(option)}
 			>
 				{option === 'public'
 					? $translationsStore.settingsPage.settingsPageProfileVisibilityPublicOption

@@ -66,6 +66,7 @@
 					</span>
 
 					<button
+						type="button"
 						class="flex cursor-pointer items-center justify-center rounded-full bg-s-default p-1.5 hover:scale-102"
 						on:click={openAddTickets}
 					>
@@ -91,8 +92,9 @@
 
 	<div class="flex flex-col items-center gap-8 sm:gap-14 md:flex-row">
 		<button
-			class="button-outline button-outline-active button-outline-active-hover p-2"
+			type="button"
 			aria-label={$translationsStore.profilePage.profilePageOpenCommentsButtonAriaLabel}
+			class="button-outline button-outline-active button-outline-active-hover p-2"
 			on:click={() => (showCommentsModal = true)}
 		>
 			<CommentIcon iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 md:h-8 md:w-8" />

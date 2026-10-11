@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Components
-	import FooterFirstSection from './FooterFirstSection.svelte';
-	import FooterSecondSection from './FooterSecondSection.svelte';
+	import FooterFirstSection from '$lib/components/general/footer/FooterFirstSection.svelte';
+	import FooterSecondSection from '$lib/components/general/footer/FooterSecondSection.svelte';
 
 	// Stores
 	import { translationsStore } from '$lib/stores/translations.store';

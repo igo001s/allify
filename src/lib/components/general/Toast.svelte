@@ -63,9 +63,10 @@
 	</div>
 
 	<button
+		type="button"
+		aria-label={$translationsStore.generalTexts.toastCloseButtonAriaLabel}
 		class="shrink-0 cursor-pointer"
 		on:click={closeToast}
-		aria-label={$translationsStore.generalTexts.toastCloseButtonAriaLabel}
 	>
 		<CloseIcon
 			iconSvgClass="w-4.5 h-4.5 text-t-primary"

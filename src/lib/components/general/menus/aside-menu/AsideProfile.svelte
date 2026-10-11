@@ -50,6 +50,8 @@
 		"
 	>
 		<button
+			type="button"
+			aria-label="Toggle profile items"
 			class="
 				group
 				flex
@@ -61,7 +63,6 @@
 				py-3
 			"
 			on:click={toggleProfileOptions}
-			aria-label="Toggle profile items"
 		>
 			{#if loggedIn}
 				{#if $userInfo?.image}
@@ -83,7 +84,7 @@
 
 				<div class="min-w-0 flex-1 space-y-1.5 text-left">
 					<div class="flex items-center gap-4">
-						<p class="truncate text-base font-semibold text-t-primary">
+						<p class="text-base font-semibold text-t-primary">
 							{$userInfo?.name}
 						</p>
 
@@ -151,6 +152,7 @@
 					<div class="my-3 h-px bg-b-muted/10"></div>
 
 					<button
+						type="button"
 						class="button-logout w-full py-2.5"
 						on:click={() => logoutOnHeaderProfileItems($userInfo?.primaryStreaming ?? 'spotify')}
 					>

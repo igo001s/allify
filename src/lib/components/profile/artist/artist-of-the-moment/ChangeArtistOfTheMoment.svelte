@@ -127,11 +127,16 @@
 	</p>
 
 	<div class="mt-1 flex flex-col-reverse gap-2 sm:mt-4 sm:flex-row sm:justify-end sm:gap-3">
-		<button class="button-secondary px-6 py-2.5" on:click={closeChangeItemOfTheMomentModal}>
+		<button
+			type="button"
+			class="button-secondary px-6 py-2.5"
+			on:click={closeChangeItemOfTheMomentModal}
+		>
 			{$translationsStore.profilePage.profilePageChangeYourItemsModalCloseModal}
 		</button>
 
 		<button
+			type="button"
 			disabled={!choosedArtist}
 			class="button-primary gap-3 px-6 py-2.5"
 			on:click={handleChangeArtistOfTheMoment}

@@ -90,6 +90,7 @@
 		</h2>
 
 		<button
+			type="button"
 			class="button-outline button-outline-active button-outline-active-hover group relative h-11 w-40 gap-1.5"
 			on:click={handleOpenShareDataModal}
 		>

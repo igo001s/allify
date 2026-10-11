@@ -66,14 +66,14 @@
 				<enhanced:img
 					src={AllifyLogoColorful}
 					alt={$translationsStore.generalTexts.logoColorfulAltText}
-					class="w-24"
+					class="w-18"
 				/>
 			</a>
 
 			<button
 				aria-label={$translationsStore.generalTexts.closeMenuButtonAriaLabel}
-				on:click={closeMenu}
 				class="cursor-pointer rounded-md p-0.5 opacity-70 hover:scale-102 hover:opacity-100 lg:hidden"
+				on:click={closeMenu}
 			>
 				<CloseIcon
 					iconSvgClass="w-6.5 h-6.5 text-brand-primary"

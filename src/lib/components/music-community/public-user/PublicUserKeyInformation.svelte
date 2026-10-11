@@ -76,9 +76,10 @@
 	<div class="flex max-w-sm flex-col items-center gap-8 sm:gap-14 md:flex-row">
 		{#if $userInfo?._id !== publicUserId}
 			<button
-				class="button-outline button-outline-active button-outline-active-hover p-2"
+				type="button"
 				aria-label={$translationsStore.musicCommunityPage.publicUser
 					.musicCommunityPagePublicUserOpenAddCommentModalButtonAriaLabel}
+				class="button-outline button-outline-active button-outline-active-hover p-2"
 				on:click={() => (showAddCommentModal = true)}
 			>
 				<AddCommentIcon iconSvgClass="text-brand-primary h-6 w-6 ml-1.5 md:h-8 md:w-8" />

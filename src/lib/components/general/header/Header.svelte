@@ -37,7 +37,7 @@
 			<enhanced:img
 				src={AllifyLogoColorful}
 				alt={$translationsStore.generalTexts.logoColorfulAltText}
-				class="w-26 lg:w-32"
+				class="w-20 md:w-24 lg:w-28"
 			/>
 		</a>
 
@@ -54,9 +54,10 @@
 		<HeaderSelectLanguage bind:openLanguageDropdown />
 
 		<button
+			type="button"
 			aria-label={$translationsStore.generalTexts.burgerMenuAriaLabel}
-			class="cursor-pointer rounded-lg p-0.5 hover:bg-s-muted lg:hidden"
 			aria-expanded={isAsideMenuOpen}
+			class="cursor-pointer rounded-lg p-0.5 hover:bg-s-muted lg:hidden"
 			on:click={OpenAsideMenu}
 		>
 			<BurguerMenuIcon iconSvgClass="w-6 h-6 text-brand-primary" />

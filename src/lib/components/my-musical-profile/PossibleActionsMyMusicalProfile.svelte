@@ -199,9 +199,10 @@
 	<div class="flex gap-3">
 		{#if (sessionType === 'tracks' && shouldShowTracksNextFreeUpdateInfo) || (sessionType === 'artists' && shouldShowArtistsNextFreeUpdateInfo)}
 			<button
-				on:click={handleUpdateClick}
+				type="button"
 				disabled={loadingUpdateItem}
 				class="button-outline button-outline-active button-outline-active-hover group relative h-11 w-40 gap-1.5"
+				on:click={handleUpdateClick}
 			>
 				{#if loadingUpdateItem}
 					<DotsLoading dotsTheme="base-primary" animationClass="h-1 w-1" />
@@ -219,6 +220,7 @@
 		{/if}
 
 		<button
+			type="button"
 			class="button-outline button-outline-active button-outline-active-hover group relative h-11 w-40 gap-1.5"
 			on:click={() => (showShareDataModal = true)}
 		>

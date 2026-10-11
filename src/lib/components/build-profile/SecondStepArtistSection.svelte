@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import SelectItemCard from '../general/cards/SelectItemCard.svelte';
+	import SelectItemCard from '$lib/components/general/cards/SelectItemCard.svelte';
 
 	// Stores
 	import { userInfo } from '$lib/stores/userInfo.store';
@@ -56,14 +56,15 @@
 </div>
 
 <div class="build-profile-modal-footer">
-	<button on:click={backToPreviousStep} class="button-secondary">
+	<button type="button" class="button-secondary" on:click={backToPreviousStep}>
 		{$translationsStore.generalTexts.buildProfileBackStepButton}
 	</button>
 
 	<button
-		on:click={goToNextStep}
+		type="button"
 		disabled={!buildProfileArtist}
 		class={buildProfileArtist ? 'button-primary' : 'button-disable'}
+		on:click={goToNextStep}
 	>
 		{$translationsStore.generalTexts.buildProfileNextStepButton}
 	</button>

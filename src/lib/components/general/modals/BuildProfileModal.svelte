@@ -25,12 +25,7 @@
 
 	// Props
 	export let showBuildProfile: boolean = true;
-	export let currentStepIndex: number =
-		!$userInfo?.tracks?.trackOfTheMoment &&
-		!$userInfo?.artists?.artistOfTheMoment &&
-		$userInfo?.profileVisibility?.visibility === undefined
-			? 0
-			: 1;
+	export let currentStepIndex: number = 0;
 
 	let buildProfileData: buildProfileInfo = {
 		track: undefined,

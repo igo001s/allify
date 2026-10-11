@@ -21,5 +21,5 @@ export type FooterColumnItems = {
 					| '/terms-of-service'
 					| '/data-usage';
 		  }[]
-		| { image: unknown; href: string; ariaLabel: string }[];
-};
+		| { image: Component; href: string; ariaLabel: string }[];
+}[];

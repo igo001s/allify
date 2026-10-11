@@ -77,11 +77,11 @@
 </p>
 
 <div class="build-profile-modal-footer">
-	<button on:click={backToPreviousStep} class="button-secondary">
+	<button type="button" class="button-secondary" on:click={backToPreviousStep}>
 		{$translationsStore.generalTexts.buildProfileBackStepButton}
 	</button>
 
-	<button on:click={handleSaveBuiltProfile} class="button-primary">
+	<button type="button" class="button-primary" on:click={handleSaveBuiltProfile}>
 		{$translationsStore.generalTexts.buildProfileSaveProfileButton}
 	</button>
 </div>

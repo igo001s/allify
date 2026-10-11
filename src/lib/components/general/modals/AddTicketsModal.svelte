@@ -92,6 +92,7 @@
 			<div class="mt-1 grid grid-cols-2 gap-3 sm:grid-cols-4">
 				{#each options as option (option)}
 					<button
+						type="button"
 						class="cursor-pointer rounded-lg border py-3 text-xs font-semibold
 								{quantity === option
 							? 'border-brand-primary bg-brand-primary text-t-inverse'
@@ -139,6 +140,7 @@
 		</div>
 
 		<button
+			type="button"
 			class="button-primary py-2.5"
 			on:click={() =>
 				handleCreateCheckout(

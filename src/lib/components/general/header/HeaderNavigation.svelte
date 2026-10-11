@@ -25,27 +25,14 @@
 <nav aria-label={$translationsStore.generalTexts.headerNavigationAriaLabel} class="hidden lg:block">
 	<ul class="flex items-center gap-6 lg:gap-12">
 		{#each navItems as item (item.name)}
-			<li class="overflow-y-hidden">
+			<li>
 				<a
 					href={resolve(item.link)}
-					aria-current={$page.url.pathname === item.link ? 'page' : undefined}
-					class="
-						relative
-						text-sm
-						font-medium
-						after:absolute
-						after:-bottom-1
-						after:left-0
-						after:h-0.5
-						after:w-0
-						after:rounded-full
-						after:bg-brand-primary-dark
-						hover:text-brand-primary-dark
-						hover:after:w-full
-						{$page.url.pathname === item.link
-						? 'font-semibold text-brand-primary-dark after:w-full'
-						: 'text-brand-primary'}
-					"
+					class={`${
+						$page.url.pathname === item.link
+							? 'font-semibold text-brand-primary-dark'
+							: 'text-brand-primary hover:text-brand-primary-dark'
+					} text-sm font-medium`}
 				>
 					{item.name}
 				</a>

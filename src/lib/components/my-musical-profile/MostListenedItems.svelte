@@ -130,9 +130,10 @@
 			<div class="flex flex-col gap-4 sm:flex-row sm:self-end">
 				{#each ['oneYear', 'sixMonths', 'fourWeeks'] as period (period)}
 					<button
-						class={`button-primary px-4.5 py-2.5 text-center text-xs sm:w-fit sm:text-base ${periodTime === period ? 'bg-brand-primary-dark!' : ''}`}
+						type="button"
 						aria-pressed={periodTime === period}
 						disabled={periodTime === period}
+						class={`button-primary px-4.5 py-2.5 text-center text-xs sm:w-fit sm:text-base ${periodTime === period ? 'bg-brand-primary-dark!' : ''}`}
 						on:click={() => (periodTime = period as typeof periodTime)}
 					>
 						{#if period === 'oneYear'}
@@ -156,6 +157,7 @@
 				<div class="itesm-center mx-auto flex gap-4">
 					{#each batchs, i (i)}
 						<button
+							type="button"
 							class={`${currentBatch === i ? 'border-brand-primary bg-brand-primary/20 font-medium' : 'cursor-pointer border-transparent hover:bg-brand-primary/10'} rounded-lg border px-3 py-1.5 text-xs lg:px-4 lg:py-2 lg:text-sm`}
 							on:click={() => (currentBatch = i)}
 						>

@@ -52,11 +52,11 @@
 </p>
 
 <div class="build-profile-modal-footer">
-	<button on:click={backToPreviousStep} class="button-secondary">
+	<button type="button" class="button-secondary" on:click={backToPreviousStep}>
 		{$translationsStore.generalTexts.buildProfileBackStepButton}
 	</button>
 
-	<button on:click={goToNextStep} class="button-primary">
+	<button type="button" class="button-primary" on:click={goToNextStep}>
 		{$translationsStore.generalTexts.buildProfileNextStepButton}
 	</button>
 </div>

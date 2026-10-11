@@ -22,13 +22,22 @@
 	$: notLoggedItems = [
 		{
 			streaming: 'spotify',
-			text: $translationsStore.generalTexts.profileNotLoggedItem1
+			text: $translationsStore.generalTexts.profileNotLoggedItem1,
+			streamingName: 'Spotify',
+			streamingClass: 'text-spotify'
 		},
 		{
 			streaming: 'deezer',
-			text: $translationsStore.generalTexts.profileNotLoggedItem2
+			text: $translationsStore.generalTexts.profileNotLoggedItem2,
+			streamingName: 'Deezer',
+			streamingClass: 'text-deezer'
 		}
-	] as { streaming: 'spotify' | 'deezer'; text: string }[];
+	] as {
+		streaming: 'spotify' | 'deezer';
+		text: string;
+		streamingName: string;
+		streamingClass: string;
+	}[];
 
 	$: loggedItems = [
 		{
@@ -44,31 +53,24 @@
 	function signInOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
 		showProfileOptions = false;
 
-		signInWrapper(streaming, $userInfo?.connectedStreamings.spotify ? true : false, false);
-
-		return;
+		signInWrapper(streaming, Boolean($userInfo?.connectedStreamings?.spotify), false);
 	}
 
 	function loggedItemClick(href: '/profile' | '/settings') {
 		showProfileOptions = false;
-
 		goto(resolve(href));
-
-		return;
 	}
 
 	function logoutOnHeaderProfileItems(streaming: 'spotify' | 'deezer') {
 		showProfileOptions = false;
 
-		logoutWrapper(streaming, $userInfo?.connectedStreamings.spotify ? true : false, false);
-
-		return;
+		logoutWrapper(streaming, Boolean($userInfo?.connectedStreamings?.spotify), false);
 	}
 </script>
 
 <div
 	class={`${showProfileOptions ? 'block' : 'hidden'}
-		${loggedIn ? 'right-10 -bottom-52 w-56' : 'right-10 -bottom-16 w-54'}
+		${loggedIn ? 'right-14 -bottom-55 w-56' : 'right-14 -bottom-18 w-54'}
 		animate-fadeIn
 		absolute
 		z-50
@@ -87,7 +89,7 @@
 		<div class="mb-2 space-y-1.5 px-2">
 			<div class="flex items-center gap-4">
 				<p class="truncate text-base font-semibold text-t-primary">
-					{$userInfo?.connectedStreamings.spotify?.name}
+					{$userInfo?.name}
 				</p>
 
 				<div
@@ -105,7 +107,7 @@
 			</div>
 
 			<p class="mt-0.5 truncate text-[11px] text-t-muted">
-				{$userInfo?.connectedStreamings.spotify?.email}
+				{$userInfo?.email}
 			</p>
 		</div>
 
@@ -115,8 +117,9 @@
 			{#each loggedItems as item (item.href)}
 				<li class="rounded-lg hover:bg-s-muted">
 					<button
-						on:click={() => loggedItemClick(item.href)}
+						type="button"
 						class="flex w-full cursor-pointer items-center px-3 py-2 hover:translate-x-0.5"
+						on:click={() => loggedItemClick(item.href)}
 					>
 						{item.text}
 					</button>
@@ -127,6 +130,7 @@
 		<div class="my-4 h-px bg-b-muted/10"></div>
 
 		<button
+			type="button"
 			class="button-logout w-full py-2"
 			on:click={async () => logoutOnHeaderProfileItems($userInfo?.primaryStreaming ?? 'spotify')}
 		>
@@ -137,17 +141,16 @@
 			{#each notLoggedItems as item (item.streaming)}
 				<li class="rounded-lg hover:bg-s-muted">
 					<button
+						type="button"
 						disabled={item.streaming === 'deezer'}
 						title={setTitleByStreaming(item.streaming)}
-						on:click={() => signInOnHeaderProfileItems(item.streaming)}
 						class="flex w-full cursor-pointer items-center px-3 py-2 hover:translate-x-0.5"
+						on:click={() => signInOnHeaderProfileItems(item.streaming)}
 					>
 						{item.text}
-						{#if item.streaming === 'spotify'}
-							<span class="ml-1 font-semibold text-spotify">Spotify</span>
-						{:else}
-							<span class="ml-1 font-semibold text-deezer">Deezer</span>
-						{/if}
+						<span class={`${item.streamingClass} ml-1 font-semibold`}>
+							{item.streamingName}
+						</span>
 					</button>
 				</li>
 			{/each}

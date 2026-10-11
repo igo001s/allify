@@ -210,8 +210,9 @@
 			</div>
 
 			<button
-				on:click={() => goto(resolve('/music-community'))}
+				type="button"
 				class="button-cta w-full lg:w-90 lg:max-w-90"
+				on:click={() => goto(resolve('/music-community'))}
 			>
 				{$translationsStore.musicCommunityPage.noUserFound.musicCommunityPageNoUserFoundButton}
 			</button>

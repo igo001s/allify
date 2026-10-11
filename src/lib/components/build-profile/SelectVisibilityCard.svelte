@@ -21,8 +21,9 @@
 </script>
 
 <button
-	on:click={() => handleVisibilitySelection(visibility)}
+	type="button"
 	class={`flex w-full cursor-pointer flex-col items-start gap-2 rounded-xl border-2 p-4 text-left hover:border-brand-primary hover:bg-brand-primary/5 sm:gap-1.5 lg:px-6 lg:py-3 ${classByVisibilitySelected}`}
+	on:click={() => handleVisibilitySelection(visibility)}
 >
 	<p class="text-xs font-semibold text-t-primary sm:text-sm">
 		{paragraph1}

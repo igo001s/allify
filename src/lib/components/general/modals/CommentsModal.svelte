@@ -126,13 +126,14 @@
 
 							<div>
 								<button
+									type="button"
+									aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorButtonAriaLabel} ${comment?.author?.name}`}
 									on:click={() =>
 										handleDeleteComment(
 											$userInfo?._id,
 											comment?.author?._id,
 											$userInfo?.comments.commentsMadeOnMyProfile
 										)}
-									aria-label={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorButtonAriaLabel} ${comment?.author?.name}`}
 								>
 									<TrashIcon
 										iconAriaLabel={`${$translationsStore.profilePage.profilePageDeleteCommentOfAuthorIconAriaLabel} ${comment?.author?.name}`}

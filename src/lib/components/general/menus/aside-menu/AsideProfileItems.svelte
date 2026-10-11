@@ -42,12 +42,13 @@
 		{#each loggedItems as item (item.href)}
 			<li class="rounded-lg hover:bg-s-muted">
 				<button
+					type="button"
+					class="flex w-full cursor-pointer items-center px-3 py-2 text-xs text-t-primary hover:translate-x-0.5"
 					on:click={() => {
 						isAsideMenuOpen = false;
 
 						goto(resolve(item.href));
 					}}
-					class="flex w-full cursor-pointer items-center px-3 py-2 text-xs text-t-primary hover:translate-x-0.5"
 				>
 					{item.text}
 				</button>
@@ -57,13 +58,14 @@
 		{#each notLoggedItems as item (item.streaming)}
 			<li class="rounded-lg hover:bg-s-muted">
 				<button
+					type="button"
+					class="flex w-full cursor-pointer items-center px-3 py-2 text-left text-xs text-t-primary hover:translate-x-0.5"
 					on:click={() =>
 						signInWrapper(
 							item.streaming,
 							$userInfo?.connectedStreamings.spotify ? true : false,
 							false
 						)}
-					class="flex w-full cursor-pointer items-center px-3 py-2 text-left text-xs text-t-primary hover:translate-x-0.5"
 				>
 					{item.text}
 					{#if item.streaming === 'spotify'}

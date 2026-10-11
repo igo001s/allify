@@ -11,8 +11,9 @@
 </script>
 
 <button
-	class="absolute top-3 right-3 cursor-pointer text-t-primary hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
+	type="button"
 	aria-label={showEditButtonAriaLabel}
+	class="absolute top-3 right-3 cursor-pointer text-t-primary hover:scale-105 hover:text-brand-primary sm:top-5 sm:right-5"
 	on:click={handleEditButtonClick}
 >
 	{#if itemType === 'artist'}

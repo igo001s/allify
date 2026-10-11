@@ -21,7 +21,7 @@
 	].join(' ');
 </script>
 
-<button type="button" on:click={onClick} class={cardClass}>
+<button type="button" class={cardClass} on:click={onClick}>
 	{#if streaming === 'spotify'}
 		<SpotifyIcon iconSvgClass="mr-0.5 h-3.5 w-3.5 lg:h-4.5 lg:w-4.5" />
 	{:else}

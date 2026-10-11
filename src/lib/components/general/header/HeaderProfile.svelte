@@ -10,52 +10,51 @@
 	export let showProfileOptions: boolean;
 	export let openLanguageDropdown: boolean;
 
-	$: loggedIn =
-		$userInfo?.connectedStreamings?.spotify || $userInfo?.connectedStreamings?.deezer !== undefined
-			? true
-			: false;
+	$: loggedIn = Boolean(
+		$userInfo?.connectedStreamings?.spotify || $userInfo?.connectedStreamings?.deezer
+	);
 
-	function closeProfileOptions() {
+	function toggleProfileOptions() {
 		openLanguageDropdown = false;
 		showProfileOptions = !showProfileOptions;
 	}
 </script>
 
 <button
+	type="button"
 	class="
 		group
 		flex
-		h-10.5
-		w-10.5
+		h-10
+		w-10
 		cursor-pointer
 		items-center
 		justify-center
 		rounded-full
+		border
 		border-b-default
 		bg-s-default
 		shadow-sm
-		ring-1
-		ring-b-default
 		hover:bg-s-muted
 		hover:shadow-md
-		lg:h-11.5
-		lg:w-11.5
+		lg:h-11
+		lg:w-11
 	"
-	aria-haspopup="menu"
-	aria-expanded={showProfileOptions}
-	on:click={closeProfileOptions}
+	on:click={toggleProfileOptions}
 >
 	{#if loggedIn}
 		{#if $userInfo?.image}
 			<enhanced:img
 				class={`
-					h-10
-					w-10
+					h-9
+					w-9
 					rounded-full
-					border
+					border-b-default
 					object-cover
-					p-1
+					p-0.5
 					text-brand-primary
+					lg:h-10
+					lg:w-10
 				`}
 				src={$userInfo?.image}
 				alt={$userInfo?.name}
@@ -69,6 +68,8 @@
 				w-9
 				text-brand-primary
 				group-hover:text-brand-primary-dark
+				lg:w-10
+				lg:h-10
 			"
 		/>
 	{/if}

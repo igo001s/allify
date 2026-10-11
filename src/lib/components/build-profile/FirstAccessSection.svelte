@@ -20,11 +20,11 @@
 </p>
 
 <div class="build-profile-modal-footer">
-	<button on:click={closeModal} class="button-secondary px-6 py-2.5">
+	<button type="button" class="button-secondary px-6 py-2.5" on:click={closeModal}>
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionButtonCompleteLater}
 	</button>
 
-	<button on:click={goToNextStep} class="button-primary px-6 py-2.5">
+	<button type="button" class="button-primary px-6 py-2.5" on:click={goToNextStep}>
 		{$translationsStore.generalTexts.buildProfileFirstAccessSectionButtonCompleteProfile}
 	</button>
 </div>

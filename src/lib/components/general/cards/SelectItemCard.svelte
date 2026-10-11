@@ -18,28 +18,27 @@
 	export let disabled: boolean = false;
 
 	function isSelected(selected: boolean): { buttonClass: string; iconClass: string } {
-		if (selected) {
-			return {
-				buttonClass: 'border-brand-primary bg-brand-primary/5',
-				iconClass: 'text-brand-primary'
-			};
-		}
-
-		return {
-			buttonClass: 'border-s-muted bg-s-muted',
-			iconClass: 'text-t-secondary/70 '
-		};
+		return selected
+			? {
+					buttonClass: 'border-brand-primary bg-brand-primary/5',
+					iconClass: 'text-brand-primary'
+				}
+			: {
+					buttonClass: 'border-s-muted bg-s-muted',
+					iconClass: 'text-t-secondary/70 '
+				};
 	}
 </script>
 
 <button
-	class={`${isSelected(selected).buttonClass} relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-3.5 hover:border-brand-primary hover:bg-brand-primary/5`}
+	type="button"
+	{disabled}
 	aria-label={itemAriaLabel}
+	class={`${isSelected(selected).buttonClass} relative flex w-full cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border-2 px-2 py-3.5 hover:border-brand-primary hover:bg-brand-primary/5`}
 	on:click={() =>
 		itemType === 'track'
 			? handleTrackSelection?.(item as TrackSpotify)
 			: handleArtistSelection?.(item as ArtistSpotify)}
-	{disabled}
 >
 	{#if item.image}
 		<enhanced:img

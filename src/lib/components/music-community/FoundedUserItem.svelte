@@ -151,6 +151,7 @@
 	class="flex h-fit w-full items-center justify-between rounded-lg border border-b-default bg-s-muted hover:border-brand-primary"
 >
 	<button
+		type="button"
 		class="flex w-11/12 min-w-0 cursor-pointer items-center gap-4 py-2.5 pl-2.5"
 		on:click={handleGoToUserProfile}
 	>
@@ -182,10 +183,11 @@
 	</button>
 
 	<button
-		class="mr-2 w-1/12 shrink-0 cursor-pointer text-brand-primary hover:text-brand-primary-dark"
+		type="button"
 		aria-label={userOnFavorites
 			? $translationsStore.musicCommunityPage.musicCommunityStarButtonRemoveAriaLabel
 			: $translationsStore.musicCommunityPage.musicCommunityStarButtonAriaLabel}
+		class="mr-2 w-1/12 shrink-0 cursor-pointer text-brand-primary hover:text-brand-primary-dark"
 		on:click={() =>
 			handleToggleFavorites(
 				$userInfo?._id,

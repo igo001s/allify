@@ -185,11 +185,19 @@
 	</div>
 
 	<div class="mt-2 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
-		<button class="button-secondary h-9 px-6 py-2.5" on:click={() => (showShareDataModal = false)}>
+		<button
+			type="button"
+			class="button-secondary h-9 px-6 py-2.5"
+			on:click={() => (showShareDataModal = false)}
+		>
 			{$translationsStore.generalTexts.shareModalCancelButtonText}
 		</button>
 
-		<button class="button-primary h-9 w-full px-6 py-2.5 sm:w-30" on:click={handleShareData}>
+		<button
+			type="button"
+			class="button-primary h-9 w-full px-6 py-2.5 sm:w-30"
+			on:click={handleShareData}
+		>
 			{#if loadingShare}
 				<DotsLoading dotsTheme="base-light" />
 			{:else}

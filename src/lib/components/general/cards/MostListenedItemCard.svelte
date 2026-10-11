@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import ExternalLink from '../../general/ExternalLink.svelte';
+	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
 	import Popularity from '$lib/components/general/Popularity.svelte';
 	import Followers from '$lib/components/general/Followers.svelte';
 

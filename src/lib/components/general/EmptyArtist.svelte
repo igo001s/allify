@@ -10,6 +10,14 @@
 	export let sessionType: 'profile' | 'public-user';
 	export let emptyArtistHeading4: string;
 	export let emptyArtistParagraph1: string;
+
+	function isProfilePage(sessionType: string): string {
+		if (sessionType === 'profile') {
+			return 'cursor-pointer';
+		}
+
+		return '';
+	}
 </script>
 
 <div class="flex w-full flex-col gap-4 xl:w-1/3">
@@ -18,7 +26,8 @@
 	</h3>
 
 	<button
-		class={`${sessionType === 'profile' ? 'cursor-pointer' : ''} flex h-full flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-5 text-t-primary shadow-xl sm:p-6 md:max-h-56 md:min-h-56`}
+		type="button"
+		class={`${isProfilePage(sessionType)} flex h-full flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-5 text-t-primary shadow-xl sm:p-6 md:max-h-56 md:min-h-56`}
 		on:click={() => openModal?.('artist')}
 	>
 		<div class="flex h-16 w-16 items-center justify-center rounded-full bg-s-muted sm:h-20 sm:w-20">

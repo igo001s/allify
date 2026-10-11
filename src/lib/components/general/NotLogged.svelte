@@ -67,15 +67,16 @@
 	<div class="mt-8 flex flex-col gap-4 sm:flex-row sm:gap-6">
 		{#each streamings as streaming (streaming.name)}
 			<button
+				type="button"
+				disabled={streaming.name === 'deezer'}
+				title={setTitleByStreaming(streaming.name)}
+				class={setCLassByStreaming(streaming.name)}
 				on:click={() =>
 					signInWrapper(
 						streaming.name,
 						$userInfo?.connectedStreamings[streaming.name] ? true : false,
 						false
 					)}
-				disabled={streaming.name === 'deezer'}
-				title={setTitleByStreaming(streaming.name)}
-				class={setCLassByStreaming(streaming.name)}
 			>
 				<streaming.icon iconSvgClass="w-6.5 h-6.5 text-t-inverse" />
 

@@ -46,12 +46,13 @@
 			/>
 
 			<button
-				on:click={() => {
-					signInWrapper(platformKey, $userInfo?.connectedStreamings?.spotify ? true : false, false);
-				}}
+				type="button"
 				disabled={$userInfo?.connectedStreamings?.[platformKey] ? true : false}
 				title={setTitleByStreaming(platformKey)}
 				class={cardClass}
+				on:click={() => {
+					signInWrapper(platformKey, $userInfo?.connectedStreamings?.spotify ? true : false, false);
+				}}
 			>
 				<ConnectIcon iconSvgClass="mr-0.5 inline-block h-3.5 w-3.5 xl:h-4 xl:w-4" />
 

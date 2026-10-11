@@ -48,6 +48,7 @@
 
 	{#if $userInfo?.connectedStreamings[streaming.name]}
 		<button
+			type="button"
 			class="button-logout px-5 py-2"
 			on:click={() =>
 				logoutWrapper(
@@ -60,6 +61,7 @@
 		</button>
 	{:else}
 		<button
+			type="button"
 			class="button-primary px-5 py-2"
 			on:click={() =>
 				signInWrapper(

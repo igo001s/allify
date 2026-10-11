@@ -26,9 +26,10 @@
 		class={`relative flex flex-col overflow-hidden rounded-lg border border-b-default bg-s-default shadow-xl ${additionalClasses}`}
 	>
 		<button
+			type="button"
+			aria-label={closeModalButtonAriaLabel}
 			class="absolute top-3.5 right-3.5 z-10 cursor-pointer opacity-70 hover:scale-102 hover:opacity-100"
 			on:click={closeModal}
-			aria-label={closeModalButtonAriaLabel}
 		>
 			<CloseIcon
 				iconAriaLabel={closeModalIconAriaLabel}

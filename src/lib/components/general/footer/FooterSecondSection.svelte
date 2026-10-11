@@ -12,8 +12,8 @@
 	// Types
 	import type { FooterColumnItems } from '$lib/types/Components.type';
 
-	$: footerColumnItems = {
-		follow: {
+	$: footerColumnItems = [
+		{
 			title: $translationsStore.generalTexts.footerColumn1Title,
 			items: [
 				{
@@ -28,7 +28,7 @@
 				}
 			]
 		},
-		navigation: {
+		{
 			title: $translationsStore.generalTexts.footerColumn2Title,
 			items: [
 				{
@@ -45,7 +45,7 @@
 				}
 			]
 		},
-		legal: {
+		{
 			title: $translationsStore.generalTexts.footerColumn3Title,
 			items: [
 				{
@@ -62,20 +62,22 @@
 				}
 			]
 		}
-	} satisfies Record<string, FooterColumnItems>;
+	] as FooterColumnItems;
+
+	function isDigitalPlatforms(columnTitle: string): string {
+		return columnTitle === $translationsStore.generalTexts.footerColumn1Title
+			? 'flex items-center gap-4'
+			: 'flex flex-col gap-3';
+	}
 </script>
 
-{#each Object.values(footerColumnItems) as column (column.title)}
+{#each footerColumnItems as column (column.title)}
 	<div class="flex flex-col items-center text-t-inverse lg:items-start">
 		<p class="mb-4 text-sm font-semibold">
 			{column.title}
 		</p>
 
-		<ul
-			class={column.title === $translationsStore.generalTexts.footerColumn1Title
-				? 'flex items-center gap-4'
-				: 'flex flex-col gap-3'}
-		>
+		<ul class={isDigitalPlatforms(column.title)}>
 			{#each column.items as item (item.href)}
 				<li class="text-center lg:text-left">
 					{#if 'image' in item}

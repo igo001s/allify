@@ -1,7 +1,9 @@
 <script lang="ts">
+	// Vite
+	import type { Picture } from 'vite-imagetools';
+
 	// Svelte
 	import { browser } from '$app/environment';
-	import type { Picture } from 'vite-imagetools';
 
 	// Stores
 	import { languageStore } from '$lib/stores/language.store';
@@ -97,9 +99,11 @@
 
 <div class="relative inline-block">
 	<button
+		type="button"
 		class="
-			flex min-w-36 cursor-pointer items-center justify-between
-			gap-3 rounded-lg
+			flex min-w-36 cursor-pointer items-center
+			justify-between gap-3
+			rounded-lg
 			border
 			border-b-default
 			bg-s-default
@@ -108,14 +112,13 @@
 			hover:border-brand-primary hover:bg-s-muted
 			hover:shadow-sm
 			focus:outline-none
+			md:min-w-40
 			md:px-3
 			md:py-2
 		"
-		aria-haspopup="listbox"
-		aria-expanded={openLanguageDropdown}
 		on:click={toggleLanguageDropdown}
 	>
-		<div class="flex min-w-0 items-center gap-2">
+		<div class="flex items-center gap-2">
 			{#if browser}
 				<enhanced:img
 					src={selectedLanguage.flag}
@@ -139,16 +142,18 @@
 	{#if openLanguageDropdown}
 		<div
 			class="
-				animate-fadeIn absolute z-50 mt-2 min-w-36 overflow-hidden
+				animate-fadeIn verflow-hidden absolute z-50 mt-3 min-w-36
 				rounded-lg border
 				border-b-default
 				bg-s-default
 				shadow-xl
+				md:min-w-40
 			"
 			role="listbox"
 		>
 			{#each languageOptions as language (language.code)}
 				<button
+					type="button"
 					class="
 						w-full cursor-pointer text-left
 						{$languageStore === language.code

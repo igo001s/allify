@@ -18,4 +18,3 @@
 		alt={$translationsStore.generalTexts.musicalWavesDivisorAltText}
 	/>
 </picture>
-''
