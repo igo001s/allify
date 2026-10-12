@@ -112,8 +112,8 @@
 	}
 </script>
 
-<div class="flex flex-col gap-10">
-	<div class="mb-3 flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+<div class="flex flex-col gap-8">
+	<div class="mb-3 flex flex-col gap-4 sm:flex-row sm:justify-between">
 		<h2 class="heading-2">
 			{#if sessionType === 'artists'}
 				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedArtistsHeading2}
@@ -122,17 +122,15 @@
 			{/if}
 		</h2>
 
-		<PossibleActionsMyMusicalProfile bind:showShareDataModal {sessionType} />
-	</div>
+		<div class="space-y-8">
+			<PossibleActionsMyMusicalProfile bind:showShareDataModal {sessionType} />
 
-	<div class="flex flex-col gap-12 lg:gap-16">
-		<div class="flex flex-col gap-8">
-			<div class="flex w-fit flex-row gap-1 rounded-lg bg-s-muted p-1 lg:self-end">
+			<div class="flex w-full flex-row gap-1 rounded-lg bg-s-muted p-1 sm:w-fit sm:self-end">
 				{#each ['oneYear', 'sixMonths', 'fourWeeks'] as period (period)}
 					<button
 						type="button"
 						aria-pressed={periodTime === period}
-						class={`rounded-md px-4 py-2.5 text-xs transition-colors ${
+						class={`w-1/3 rounded-md px-5 py-2.5 text-xs transition-colors sm:w-fit ${
 							periodTime === period
 								? 'bg-brand-primary font-medium text-t-inverse'
 								: 'cursor-pointer text-t-secondary hover:bg-brand-primary/10 hover:text-t-primary'
@@ -149,7 +147,11 @@
 					</button>
 				{/each}
 			</div>
+		</div>
+	</div>
 
+	<div class="flex flex-col gap-12 lg:gap-16">
+		<div class="flex flex-col gap-8">
 			<div class="grid grid-cols-1 gap-6 md:gap-10 lg:grid-cols-2 lg:grid-rows-2 2xl:grid-cols-3">
 				{#each batchs[currentBatch] as item, i (item.id)}
 					<MostListenedItemCard {item} index={i} itemType={sessionType} {currentBatch} />
