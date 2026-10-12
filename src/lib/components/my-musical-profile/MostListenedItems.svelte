@@ -113,7 +113,7 @@
 </script>
 
 <div class="flex flex-col gap-8">
-	<div class="mb-3 flex flex-col gap-4 sm:flex-row sm:justify-between">
+	<div class="mb-3 flex flex-col gap-4 md:flex-row md:justify-between">
 		<h2 class="heading-2">
 			{#if sessionType === 'artists'}
 				{$translationsStore.myMusicalProfilePage.myMusicalProfilePageMostListenedArtistsHeading2}
@@ -125,12 +125,12 @@
 		<div class="space-y-8">
 			<PossibleActionsMyMusicalProfile bind:showShareDataModal {sessionType} />
 
-			<div class="flex w-full flex-row gap-1 rounded-lg bg-s-muted p-1 sm:w-fit sm:self-end">
+			<div class="flex w-full flex-row gap-1 rounded-lg bg-s-muted p-1 sm:self-end md:w-fit">
 				{#each ['oneYear', 'sixMonths', 'fourWeeks'] as period (period)}
 					<button
 						type="button"
 						aria-pressed={periodTime === period}
-						class={`w-1/3 rounded-md px-5 py-2.5 text-xs transition-colors sm:w-fit ${
+						class={`w-1/3 rounded-md px-4 py-2 text-xs md:w-fit md:px-6.5 md:py-2.5 ${
 							periodTime === period
 								? 'bg-brand-primary font-medium text-t-inverse'
 								: 'cursor-pointer text-t-secondary hover:bg-brand-primary/10 hover:text-t-primary'
