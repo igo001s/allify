@@ -250,7 +250,7 @@ export const pt = {
 		myMusicalProfilePageMostListenedTracksHeading2: 'Suas músicas mais ouvidas',
 		myMusicalProfilePagePeriodButtonOneYear: '1 ano',
 		myMusicalProfilePagePeriodButtonSixMonths: '6 meses',
-		myMusicalProfilePagePeriodButtonFourWeeks: '1 semanas',
+		myMusicalProfilePagePeriodButtonFourWeeks: '4 semanas',
 		myMusicalProfilePageButtonUpdate: 'Atualizar',
 		myMusicalProfilePageNextFreeUpdate: 'Próxima atualização gratuita em',
 		myMusicalProfilePageNextFreeUpdateAvailable: 'Atualização gratuita disponível',
