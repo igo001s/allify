@@ -54,7 +54,7 @@
 <div
 	class="flex flex-col items-center justify-center gap-6 px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12 lg:py-20"
 >
-	<div class="max-w-lg space-y-10">
+	<div class="max-w-lg space-y-6">
 		<h1 class="heading-1">
 			{$translationsStore.generalTexts.notLoggedHeading1}
 		</h1>
