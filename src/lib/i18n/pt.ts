@@ -288,9 +288,9 @@ export const pt = {
 			'Fechar janela de compartilhamento de artistas',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
 			'Ícone para fechar a janela de compartilhamento de artistas',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Mostre sua música para seus amigos',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Compartilhe seus artistas',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Compartilhe os artistas que você mais ouve e descubra quais deles seus amigos também gostam.',
+			'Mostre seus favoritos e descubra quais seus amigos também curtem.',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MEUS ARTISTAS',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'Meus artistas mais ouvidos',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
@@ -304,9 +304,9 @@ export const pt = {
 			'Fechar janela de compartilhamento de músicas',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
 			'Ícone para fechar a janela de compartilhamento de músicas',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Mostre sua música para seus amigos',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Compartilhe suas músicas',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Compartilhe as músicas que você mais ouve e descubra quais delas seus amigos também gostam.',
+			'Mostre suas favoritas e descubra quais seus amigos também curtem.',
 		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MINHAS MÚSICAS',
 		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Minhas músicas mais ouvidas',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3: 'As músicas que eu mais ouço no Spotify.',
@@ -660,7 +660,7 @@ export const pt = {
 			'Fechar modal de compartilhamento de músicas do perfil',
 		profilePageShareSongsCloseModalIconAriaLabel:
 			'Ícone de fechar o modal de compartilhamento de músicas do perfil',
-		profilePageShareSongsModalParagraph1: 'Compartilhe suas músicas com seus amigos',
+		profilePageShareSongsModalParagraph1: 'Compartilhe suas músicas',
 		profilePageShareSongsModalParagraph2: 'Deixe seus amigos descobrirem o que você está ouvindo.',
 		profilePageShareSongsModalPreviewParagraph1: 'MINHAS MÚSICAS',
 		profilePageShareSongsModalPreviewParagraph2: 'Quem define o meu som',
@@ -675,7 +675,7 @@ export const pt = {
 			'Fechar modal de compartilhamento de artistas do perfil',
 		profilePageShareArtistsCloseModalIconAriaLabel:
 			'Ícone de fechar o modal de compartilhamento de artistas do perfil',
-		profilePageShareArtistsModalParagraph1: 'Compartilhe seus artistas favoritos',
+		profilePageShareArtistsModalParagraph1: 'Compartilhe seus artistas',
 		profilePageShareArtistsModalParagraph2:
 			'Deixe seus amigos descobrirem quais artistas você está acompanhando.',
 		profilePageShareArtistsModalPreviewParagraph1: 'MEUS ARTISTAS',

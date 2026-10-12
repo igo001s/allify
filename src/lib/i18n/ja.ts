@@ -286,9 +286,9 @@ export const ja = {
 		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel: 'アーティストの共有画面を閉じる',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
 			'アーティストの共有画面を閉じるアイコン',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'あなたの音楽を友達に見せよう',
+		myMusicalProfilePageShareArtistsModalParagraph1: '好きなアーティストをシェアしよう',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'よく聴くアーティストをシェアして、友達が好きなアーティストも見つけよう。',
+			'お気に入りのアーティストを見せ合って、友達と同じアーティストが好きかチェックしよう。',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'よく聴くアーティスト',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'よく聴くアーティスト',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
@@ -300,9 +300,9 @@ export const ja = {
 			'現在シェアできません。もう一度お試しください。',
 		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel: '曲の共有画面を閉じる',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel: '曲の共有画面を閉じるアイコン',
-		myMusicalProfilePageShareSongsModalParagraph1: 'あなたの音楽を友達に見せよう',
+		myMusicalProfilePageShareSongsModalParagraph1: '好きな曲をシェアしよう',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'よく聴く曲をシェアして、友達が好きな曲も見つけよう。',
+			'お気に入りの曲を見せ合って、友達と同じ曲を好きかチェックしよう。',
 		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'よく聴く曲',
 		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'よく聴く曲',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3: 'Spotifyで最もよく聴いている曲。',
@@ -645,8 +645,8 @@ export const ja = {
 			'プロフィールの楽曲を共有する前に、楽曲を選択する必要があります。',
 		profilePageShareSongsCloseModalButtonAriaLabel: 'プロフィールの楽曲共有モーダルを閉じる',
 		profilePageShareSongsCloseModalIconAriaLabel: 'プロフィールの楽曲共有モーダルを閉じるアイコン',
-		profilePageShareSongsModalParagraph1: 'お気に入りの音楽を友達と共有しましょう',
-		profilePageShareSongsModalParagraph2: '今聴いている音楽を友達に知ってもらいましょう。',
+		profilePageShareSongsModalParagraph1: '好きな曲をシェア',
+		profilePageShareSongsModalParagraph2: '今聴いている音楽を友達にシェアしよう。',
 		profilePageShareSongsModalPreviewParagraph1: 'MY MUSIC',
 		profilePageShareSongsModalPreviewParagraph2: '私のサウンドを形作るもの',
 		profilePageShareSongsModalPreviewParagraph3: '音楽を通して自分らしさを最も表現する楽曲。',
@@ -660,8 +660,8 @@ export const ja = {
 			'プロフィールのアーティスト共有モーダルを閉じる',
 		profilePageShareArtistsCloseModalIconAriaLabel:
 			'プロフィールのアーティスト共有モーダルを閉じるアイコン',
-		profilePageShareArtistsModalParagraph1: 'お気に入りのアーティストを共有',
-		profilePageShareArtistsModalParagraph2: 'あなたが聴いているアーティストを友達に見てもらおう。',
+		profilePageShareArtistsModalParagraph1: '好きなアーティストをシェア',
+		profilePageShareArtistsModalParagraph2: 'フォローしているアーティストを友達に紹介しよう。',
 		profilePageShareArtistsModalPreviewParagraph1: '私のアーティスト',
 		profilePageShareArtistsModalPreviewParagraph2: '私のサウンドをつくる人たち',
 		profilePageShareArtistsModalPreviewParagraph3: '音楽を通して私らしさを表すアーティストたち。',

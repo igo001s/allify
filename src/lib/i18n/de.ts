@@ -291,9 +291,9 @@ export const de = {
 		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel: 'Künstlerfreigabe schließen',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
 			'Symbol zum Schließen der Künstlerfreigabe',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Zeig deinen Freunden deinen Musikgeschmack',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Teile deine Künstler',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Teile die Künstler, die du am häufigsten hörst, und entdecke, welche Künstler deine Freunde mögen.',
+			'Zeige deine Favoriten und entdecke, welche deine Freunde auch mögen.',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MEINE KÜNSTLER',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'Meine meistgehörten Künstler',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
@@ -305,9 +305,9 @@ export const de = {
 			'Das Teilen ist momentan nicht möglich. Bitte versuche es erneut.',
 		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel: 'Songfreigabe schließen',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel: 'Symbol zum Schließen der Songfreigabe',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Zeig deinen Freunden deinen Musikgeschmack',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Teile deine Songs',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Teile die Songs, die du am häufigsten hörst, und entdecke, welche Songs deine Freunde mögen.',
+			'Zeige deine Favoriten und entdecke, welche deine Freunde auch mögen.',
 		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MEINE SONGS',
 		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Meine meistgehörten Songs',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3:
@@ -677,7 +677,7 @@ export const de = {
 		profilePageShareSongsCloseModalButtonAriaLabel: 'Musikfreigabefenster des Profils schließen',
 		profilePageShareSongsCloseModalIconAriaLabel:
 			'Symbol zum Schließen des Musikfreigabefensters des Profils',
-		profilePageShareSongsModalParagraph1: 'Teile deine Musik mit deinen Freunden',
+		profilePageShareSongsModalParagraph1: 'Teile deine Songs',
 		profilePageShareSongsModalParagraph2: 'Lass deine Freunde entdecken, was du gerade hörst.',
 		profilePageShareSongsModalPreviewParagraph1: 'MEINE MUSIK',
 		profilePageShareSongsModalPreviewParagraph2: 'Wer meinen Sound prägt',
@@ -694,9 +694,9 @@ export const de = {
 			'Modal zum Teilen von Künstlern aus dem Profil schließen',
 		profilePageShareArtistsCloseModalIconAriaLabel:
 			'Symbol zum Schließen des Modals zum Teilen von Künstlern aus dem Profil',
-		profilePageShareArtistsModalParagraph1: 'Teile deine Lieblingskünstler',
+		profilePageShareArtistsModalParagraph1: 'Teile deine Künstler',
 		profilePageShareArtistsModalParagraph2:
-			'Lass deine Freunde entdecken, welche Künstler du gerade hörst.',
+			'Lass deine Freunde entdecken, welche Künstler du gerade verfolgst.',
 		profilePageShareArtistsModalPreviewParagraph1: 'MEINE KÜNSTLER',
 		profilePageShareArtistsModalPreviewParagraph2: 'Wer meinen Sound prägt',
 		profilePageShareArtistsModalPreviewParagraph3:

@@ -290,9 +290,9 @@ export const es = {
 			'Cerrar la ventana para compartir artistas',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
 			'Icono para cerrar la ventana para compartir artistas',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Muestra tu música a tus amigos',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Comparte tus artistas',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Comparte los artistas que más escuchas y descubre qué artistas les gustan también a tus amigos.',
+			'Muestra tus favoritos y descubre cuáles también les gustan a tus amigos.',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MIS ARTISTAS',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'Mis artistas más escuchados',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
@@ -306,9 +306,9 @@ export const es = {
 			'Cerrar la ventana para compartir canciones',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel:
 			'Icono para cerrar la ventana para compartir canciones',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Muestra tu música a tus amigos',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Comparte tus canciones',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Comparte las canciones que más escuchas y descubre cuáles les gustan también a tus amigos.',
+			'Muestra tus favoritas y descubre cuáles también les gustan a tus amigos.',
 		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MIS CANCIONES',
 		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Mis canciones más escuchadas',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3:
@@ -676,8 +676,8 @@ export const es = {
 			'Cerrar la ventana para compartir las canciones del perfil',
 		profilePageShareSongsCloseModalIconAriaLabel:
 			'Icono para cerrar la ventana para compartir las canciones del perfil',
-		profilePageShareSongsModalParagraph1: 'Comparte tu música con tus amigos',
-		profilePageShareSongsModalParagraph2: 'Deja que tus amigos descubran lo que estás escuchando.',
+		profilePageShareSongsModalParagraph1: 'Comparte tus canciones',
+		profilePageShareSongsModalParagraph2: 'Deja que tus amigos descubran qué estás escuchando.',
 		profilePageShareSongsModalPreviewParagraph1: 'MI MÚSICA',
 		profilePageShareSongsModalPreviewParagraph2: 'Quién define mi sonido',
 		profilePageShareSongsModalPreviewParagraph3:
@@ -692,9 +692,9 @@ export const es = {
 			'Cerrar el modal para compartir artistas del perfil',
 		profilePageShareArtistsCloseModalIconAriaLabel:
 			'Icono para cerrar el modal para compartir artistas del perfil',
-		profilePageShareArtistsModalParagraph1: 'Comparte tus artistas favoritos',
+		profilePageShareArtistsModalParagraph1: 'Comparte tus artistas',
 		profilePageShareArtistsModalParagraph2:
-			'Deja que tus amigos descubran qué artistas estás escuchando.',
+			'Deja que tus amigos descubran qué artistas estás siguiendo.',
 		profilePageShareArtistsModalPreviewParagraph1: 'MIS ARTISTAS',
 		profilePageShareArtistsModalPreviewParagraph2: 'Quién define mi sonido',
 		profilePageShareArtistsModalPreviewParagraph3:

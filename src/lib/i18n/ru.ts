@@ -290,9 +290,9 @@ export const ru = {
 		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel: 'Закрыть окно публикации артистов',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel:
 			'Значок закрытия окна публикации артистов',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Покажи свою музыку друзьям',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Делись любимыми исполнителями',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Поделись артистами, которых ты слушаешь чаще всего, и узнай, какие артисты нравятся твоим друзьям.',
+			'Покажи любимых исполнителей и узнай, какие нравятся твоим друзьям.',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'МОИ АРТИСТЫ',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2:
 			'Мои самые часто прослушиваемые артисты',
@@ -305,9 +305,9 @@ export const ru = {
 			'Сейчас не удалось поделиться. Попробуй ещё раз.',
 		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel: 'Закрыть окно публикации песен',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel: 'Значок закрытия окна публикации песен',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Покажи свою музыку друзьям',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Делись любимыми песнями',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Поделись песнями, которые ты слушаешь чаще всего, и узнай, какие песни нравятся твоим друзьям.',
+			'Покажи свои любимые песни и узнай, какие нравятся твоим друзьям.',
 		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'МОИ ПЕСНИ',
 		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'Мои самые часто прослушиваемые песни',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3:
@@ -660,8 +660,8 @@ export const ru = {
 		profilePageShareSongsCloseModalButtonAriaLabel: 'Закрыть окно публикации песен из профиля',
 		profilePageShareSongsCloseModalIconAriaLabel:
 			'Значок закрытия окна публикации песен из профиля',
-		profilePageShareSongsModalParagraph1: 'Поделитесь своей музыкой с друзьями',
-		profilePageShareSongsModalParagraph2: 'Позвольте друзьям узнать, что вы слушаете.',
+		profilePageShareSongsModalParagraph1: 'Делись своими песнями',
+		profilePageShareSongsModalParagraph2: 'Пусть друзья узнают, что ты сейчас слушаешь.',
 		profilePageShareSongsModalPreviewParagraph1: 'МОЯ МУЗЫКА',
 		profilePageShareSongsModalPreviewParagraph2: 'Что формирует мой музыкальный стиль',
 		profilePageShareSongsModalPreviewParagraph3:
@@ -675,8 +675,9 @@ export const ru = {
 		profilePageShareArtistsCloseModalButtonAriaLabel: 'Закрыть окно отправки артистов из профиля',
 		profilePageShareArtistsCloseModalIconAriaLabel:
 			'Значок закрытия окна отправки артистов из профиля',
-		profilePageShareArtistsModalParagraph1: 'Поделитесь своими любимыми артистами',
-		profilePageShareArtistsModalParagraph2: 'Пусть ваши друзья узнают, каких артистов вы слушаете.',
+		profilePageShareArtistsModalParagraph1: 'Делись любимыми исполнителями',
+		profilePageShareArtistsModalParagraph2:
+			'Пусть друзья узнают, за какими исполнителями ты следишь.',
 		profilePageShareArtistsModalPreviewParagraph1: 'МОИ АРТИСТЫ',
 		profilePageShareArtistsModalPreviewParagraph2: 'Кто определяет мой звук',
 		profilePageShareArtistsModalPreviewParagraph3:

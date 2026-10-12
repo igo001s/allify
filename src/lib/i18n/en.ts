@@ -284,9 +284,9 @@ export const en = {
 		myMusicalProfilePageShareModalPreview: 'MY MUSIC PROFILE',
 		myMusicalProfilePageShareArtistsCloseModalButtonAriaLabel: 'Close artist sharing',
 		myMusicalProfilePageShareArtistsCloseModalIconAriaLabel: 'Icon to close artist sharing',
-		myMusicalProfilePageShareArtistsModalParagraph1: 'Show your music to your friends',
+		myMusicalProfilePageShareArtistsModalParagraph1: 'Share your artists',
 		myMusicalProfilePageShareArtistsModalParagraph2:
-			'Share the artists you listen to most and discover which ones they like too.',
+			'Show your favorites and discover which ones your friends enjoy too.',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph1: 'MY ARTISTS',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph2: 'My most-listened-to artists',
 		myMusicalProfilePageShareArtistsModalPreviewParagraph3:
@@ -297,9 +297,9 @@ export const en = {
 		myMusicalProfilePageShareArtistsModalToastError: 'Could not share right now. Please try again.',
 		myMusicalProfilePageShareSongsCloseModalButtonAriaLabel: 'Close song sharing',
 		myMusicalProfilePageShareSongsCloseModalIconAriaLabel: 'Icon to close song sharing',
-		myMusicalProfilePageShareSongsModalParagraph1: 'Show your music to your friends',
+		myMusicalProfilePageShareSongsModalParagraph1: 'Share your songs',
 		myMusicalProfilePageShareSongsModalParagraph2:
-			'Share the songs you listen to most and discover which ones they like too.',
+			'Show your favorites and discover which ones your friends enjoy too.',
 		myMusicalProfilePageShareSongsModalPreviewParagraph1: 'MY SONGS',
 		myMusicalProfilePageShareSongsModalPreviewParagraph2: 'My most-listened-to songs',
 		myMusicalProfilePageShareSongsModalPreviewParagraph3: 'The songs I listen to most on Spotify.',
@@ -635,8 +635,8 @@ export const en = {
 			'You must select the songs in your profile before you can share them.',
 		profilePageShareSongsCloseModalButtonAriaLabel: 'Close profile song sharing modal',
 		profilePageShareSongsCloseModalIconAriaLabel: 'Icon to close the profile song sharing modal',
-		profilePageShareSongsModalParagraph1: 'Share your music with your friends',
-		profilePageShareSongsModalParagraph2: 'Let your friends discover what you are listening to.',
+		profilePageShareSongsModalParagraph1: 'Share your songs',
+		profilePageShareSongsModalParagraph2: 'Let your friends discover what you’re listening to.',
 		profilePageShareSongsModalPreviewParagraph1: 'MY MUSIC',
 		profilePageShareSongsModalPreviewParagraph2: 'What defines my sound',
 		profilePageShareSongsModalPreviewParagraph3:
@@ -650,9 +650,9 @@ export const en = {
 		profilePageShareArtistsCloseModalButtonAriaLabel: 'Close the profile artists sharing modal',
 		profilePageShareArtistsCloseModalIconAriaLabel:
 			'Icon to close the profile artists sharing modal',
-		profilePageShareArtistsModalParagraph1: 'Share your favorite artists',
+		profilePageShareArtistsModalParagraph1: 'Share your artists',
 		profilePageShareArtistsModalParagraph2:
-			'Let your friends discover which artists you are following.',
+			'Let your friends discover which artists you’re following.',
 		profilePageShareArtistsModalPreviewParagraph1: 'MY ARTISTS',
 		profilePageShareArtistsModalPreviewParagraph2: 'Who defines my sound',
 		profilePageShareArtistsModalPreviewParagraph3:
