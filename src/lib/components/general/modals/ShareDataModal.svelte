@@ -4,7 +4,7 @@
 
 	// Assets
 	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
-	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.webp?enhanced';
+	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.webp';
 
 	// Components
 	import Modal from './Modal.svelte';
@@ -29,6 +29,27 @@
 
 	let loadingShare = false;
 
+	function getTopStyle(dataFrom: string, dataType: string, top: number): string {
+		if (dataFrom === 'myMusicalProfile') {
+			switch (top) {
+				case 0:
+					return 'text-top-1';
+				case 1:
+					return 'text-top-2';
+				case 2:
+					return 'text-top-3';
+				default:
+					return '';
+			}
+		}
+
+		if (dataType !== 'customArtist' && dataType !== 'customTrack') {
+			return 'uppercase';
+		}
+
+		return '';
+	}
+
 	async function handleShareData() {
 		loadingShare = true;
 
@@ -41,8 +62,6 @@
 
 			const blob = await toBlob(element, {
 				cacheBust: true,
-				width: 440,
-				height: 560,
 				pixelRatio: 3,
 				backgroundColor: '#ffffff'
 			});
@@ -73,7 +92,7 @@
 				toastMessage: buildShareDataContent.toastErrorMessage
 			});
 		} finally {
-			setInterval(() => {
+			setTimeout(() => {
 				loadingShare = false;
 			}, 2000);
 		}
@@ -97,18 +116,20 @@
 	</div>
 
 	<div
-		class="mx-auto h-104 w-71.5 min-[400px]:h-128 min-[400px]:w-88 min-[480px]:h-160 min-[480px]:w-110"
+		class="flex h-80 w-full justify-center overflow-y-auto border border-s-muted bg-s-muted px-6 py-4 sm:h-128 md:h-160"
 	>
-		<div class="origin-top-left scale-[0.65] min-[400px]:scale-[0.8] min-[480px]:scale-100">
+		<div class="h-fit w-110 origin-top zoom-70 sm:zoom-80 md:zoom-100">
 			<div
 				id="share-data-modal"
-				class="flex h-160 w-110 flex-col justify-between overflow-hidden bg-s-default px-8 py-10 text-t-primary shadow-lg"
+				class="flex min-h-160 w-110 flex-col items-center justify-between bg-s-default px-10 py-12 text-t-primary shadow-lg"
 			>
-				<header class="flex items-center justify-between gap-2">
-					<enhanced:img
+				<header class="flex w-full items-center justify-between gap-2">
+					<img
 						src={AllifyLogoColorful}
 						alt={$translationsStore.generalTexts.logoColorfulAltText}
-						class="h-auto w-[30%]"
+						class="h-auto w-[28%]"
+						loading="eager"
+						decoding="sync"
 					/>
 
 					<div class="space-y-1.5">
@@ -128,7 +149,7 @@
 					</div>
 				</header>
 
-				<section class="space-y-1.5">
+				<section class="w-full space-y-2">
 					<p class="text-[13px] font-bold text-brand-primary">
 						{buildShareDataContent.shareDataModalPreviewParagraph1}
 					</p>
@@ -140,39 +161,40 @@
 					<p class="text-[13px] leading-relaxed text-t-secondary">
 						{buildShareDataContent.shareDataModalPreviewParagraph3}
 					</p>
+
+					<ul class="mt-7 flex h-fit flex-col gap-4">
+						{#each dataToShare as data, i (i)}
+							<li
+								class="flex max-h-22 min-h-16 items-center gap-3 rounded-lg border border-b-default p-2.5"
+							>
+								{#if data.item.image}
+									<img
+										src={data.item.image}
+										alt={data.item.name}
+										class="size-12 shrink-0 rounded-lg object-cover"
+										loading="eager"
+										decoding="sync"
+									/>
+								{/if}
+
+								<div class="min-w-0 flex-1 space-y-1">
+									<p
+										class={`${getTopStyle(shareDataFrom, data.type, i)} truncate text-xs font-semibold text-brand-primary`}
+									>
+										{data.title}
+									</p>
+
+									<p class="text-sm leading-snug font-semibold text-t-primary">
+										{data.item.name}
+									</p>
+								</div>
+							</li>
+						{/each}
+					</ul>
 				</section>
 
-				<ul class="flex h-fit flex-col gap-4">
-					{#each dataToShare as data, i (i)}
-						<li class="flex max-h-22 flex-1 gap-4 rounded-lg border border-b-default p-3">
-							{#if data.item.image}
-								<enhanced:img
-									src={data.item.image}
-									alt={data.item.name}
-									class="aspect-square h-full w-auto shrink-0 rounded-lg object-cover"
-									loading="eager"
-									fetchpriority="high"
-									decoding="sync"
-								/>
-							{/if}
-
-							<div class="mt-0.5 min-w-0 flex-1 space-y-1">
-								<p
-									class={`${shareDataFrom === 'myMusicalProfile' ? (i === 0 ? 'text-top-1' : i === 1 ? 'text-top-2' : 'text-top-3') : data.type !== 'customArtist' && data.type !== 'customTrack' ? 'uppercase' : ''} text-xs font-semibold text-brand-primary`}
-								>
-									{data.title}
-								</p>
-
-								<p class="text-sm font-semibold text-t-primary">
-									{data.item.name}
-								</p>
-							</div>
-						</li>
-					{/each}
-				</ul>
-
 				<footer
-					class="flex shrink-0 items-center justify-between gap-2 border-t border-b-default pt-6"
+					class="flex w-full items-center justify-between gap-2 border-t border-b-default pt-8"
 				>
 					<span class="text-xs text-t-secondary">
 						{$translationsStore.generalTexts.shareModalYourMusicYourIdentity}
