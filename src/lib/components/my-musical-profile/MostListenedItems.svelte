@@ -127,20 +127,23 @@
 
 	<div class="flex flex-col gap-12 lg:gap-16">
 		<div class="flex flex-col gap-8">
-			<div class="flex flex-col gap-4 sm:flex-row sm:self-end">
+			<div class="flex w-fit flex-row gap-1 rounded-lg bg-s-muted p-1 lg:self-end">
 				{#each ['oneYear', 'sixMonths', 'fourWeeks'] as period (period)}
 					<button
 						type="button"
 						aria-pressed={periodTime === period}
-						disabled={periodTime === period}
-						class={`button-primary px-4.5 py-2.5 text-center text-xs sm:w-fit sm:text-base ${periodTime === period ? 'bg-brand-primary-dark!' : ''}`}
+						class={`rounded-md px-4 py-2.5 text-xs transition-colors ${
+							periodTime === period
+								? 'bg-brand-primary font-medium text-t-inverse'
+								: 'cursor-pointer text-t-secondary hover:bg-brand-primary/10 hover:text-t-primary'
+						}`}
 						on:click={() => (periodTime = period as typeof periodTime)}
 					>
 						{#if period === 'oneYear'}
 							{$translationsStore.myMusicalProfilePage.myMusicalProfilePagePeriodButtonOneYear}
 						{:else if period === 'sixMonths'}
 							{$translationsStore.myMusicalProfilePage.myMusicalProfilePagePeriodButtonSixMonths}
-						{:else if period === 'fourWeeks'}
+						{:else}
 							{$translationsStore.myMusicalProfilePage.myMusicalProfilePagePeriodButtonFourWeeks}
 						{/if}
 					</button>
