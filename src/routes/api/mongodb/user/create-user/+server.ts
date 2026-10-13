@@ -39,7 +39,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			name: streamingData.name,
 			email: streamingData.email,
 			image: streamingData.image,
-			tickets: 5,
+			tickets: 3,
 			profileVisibility: {
 				visibility: undefined
 			},
