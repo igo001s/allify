@@ -23,6 +23,12 @@
 	let currentBatch = 0;
 	let batchs: (ArtistSpotify | TrackSpotify)[][];
 
+	const periodTimeArr = ['oneYear', 'sixMonths', 'fourWeeks'] as [
+		'oneYear',
+		'sixMonths',
+		'fourWeeks'
+	];
+
 	$: mostListenedItems =
 		sessionType === 'artists'
 			? ($userInfo?.connectedStreamings?.spotify?.mostListenedArtists?.[periodTime] as
@@ -56,6 +62,12 @@
 				batchs.push(mostListenedItems.slice(i, i + 6));
 			}
 		}
+	}
+
+	function handleSelectPeriod(period: 'oneYear' | 'sixMonths' | 'fourWeeks') {
+		periodTime = period;
+
+		currentBatch = 0;
 	}
 
 	function buildShareDataContent(dataType: 'Artists' | 'Songs'): ShareDataContent {
@@ -126,7 +138,7 @@
 			<PossibleActionsMyMusicalProfile bind:showShareDataModal {sessionType} />
 
 			<div class="flex w-full flex-row gap-1 rounded-lg bg-s-muted p-1 sm:self-end md:w-fit">
-				{#each ['oneYear', 'sixMonths', 'fourWeeks'] as period (period)}
+				{#each periodTimeArr as period (period)}
 					<button
 						type="button"
 						aria-pressed={periodTime === period}
@@ -135,7 +147,7 @@
 								? 'bg-brand-primary font-medium text-t-inverse'
 								: 'cursor-pointer text-t-secondary hover:bg-brand-primary/10 hover:text-t-primary'
 						}`}
-						on:click={() => (periodTime = period as typeof periodTime)}
+						on:click={() => handleSelectPeriod(period)}
 					>
 						{#if period === 'oneYear'}
 							{$translationsStore.myMusicalProfilePage.myMusicalProfilePagePeriodButtonOneYear}
