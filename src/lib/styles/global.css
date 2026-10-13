@@ -48,6 +48,10 @@
 	--color-github: #333333;
 }
 
+:root {
+    color-scheme: only light;
+}
+
 body {
 	font-family:
 		'Montserrat',
