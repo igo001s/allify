@@ -329,10 +329,8 @@ export const pt = {
 		musicArchivePageHeading1: 'Arquivo Musical',
 		musicArchivePageParagraph1:
 			'Aqui você pode explorar os artistas e músicas que já fizeram parte da sua jornada musical no Allify. Sabemos que cada música tem uma história e queremos ajudá-lo a reviver essas memórias.',
-		musicArchivePageHeading2v1:
-			'Aqui estão os artistas que já estiveram entre os seus artistas mais ouvidos',
-		musicArchivePageHeading2v2:
-			'Aqui estão as músicas que já estiveram entre as suas músicas mais ouvidas',
+		musicArchivePageHeading2v1: 'Artistas',
+		musicArchivePageHeading2v2: 'Músicas',
 		musicArchivePageArtistsEmpty:
 			'Artistas que deixarem de estar entre os seus mais ouvidos aparecerão aqui.',
 		musicArchivePageTracksEmpty:

@@ -10,8 +10,31 @@
 	import { translationsStore } from '$lib/stores/translations.store';
 	import { userInfo } from '$lib/stores/userInfo.store';
 
+	// Types
+	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
+
 	// Schema
 	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+
+	$: musicArchiveItems = [
+		{
+			itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1,
+			itemType: 'artist',
+			items: $userInfo?.artists?.artistsWhoWereWithYou
+		},
+		{
+			itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2,
+			itemType: 'track',
+			items: $userInfo?.tracks?.tracksWhoWereWithYou
+		}
+	] as {
+		itemTitle: string;
+		itemType: 'artist' | 'track';
+		items:
+			| { artist: ArtistSpotify; lastSeen: Date }[]
+			| { track: TrackSpotify; lastSeen: Date }[]
+			| undefined;
+	}[];
 
 	$: jsonLd = getJsonLdByPage(
 		'musicArchivePage',
@@ -68,8 +91,8 @@
 			{$translationsStore.musicArchivePage.musicArchivePageParagraph1}
 		</p>
 
-		<div class="space-y-12 lg:space-y-16">
-			{#each [{ itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v1, itemType: 'artist' as const, items: $userInfo.artists?.artistsWhoWereWithYou }, { itemTitle: $translationsStore.musicArchivePage.musicArchivePageHeading2v2, itemType: 'track' as const, items: $userInfo.tracks?.tracksWhoWereWithYou }] as item (item.itemType)}
+		<div class="space-y-14">
+			{#each musicArchiveItems as item (item.itemType)}
 				<MusicArchiveItems itemTitle={item.itemTitle} itemType={item.itemType} items={item.items} />
 			{/each}
 		</div>

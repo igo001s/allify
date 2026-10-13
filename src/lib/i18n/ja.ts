@@ -324,9 +324,8 @@ export const ja = {
 		musicArchivePageHeading1: '音楽アーカイブ',
 		musicArchivePageParagraph1:
 			'ここでは、Allifyでこれまであなたの音楽の旅の一部となったアーティストや楽曲を探索できます。私たちは、すべての楽曲には物語があることを知っており、これらの思い出を再び体験できるようお手伝いしたいと考えています。',
-		musicArchivePageHeading2v1:
-			'これまでに最もよく聴いたアーティストに入っていたアーティストをご紹介します',
-		musicArchivePageHeading2v2: 'これまでに最もよく聴いた曲に入っていた曲をご紹介します',
+		musicArchivePageHeading2v1: 'アーティスト',
+		musicArchivePageHeading2v2: '楽曲',
 		musicArchivePageArtistsEmpty:
 			'これまでに最もよく聴いたアーティストに入っていたアーティストはここに表示されます。',
 		musicArchivePageTracksEmpty: 'これまでに最もよく聴いた曲に入っていた曲はここに表示されます。'
