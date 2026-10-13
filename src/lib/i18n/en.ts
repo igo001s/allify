@@ -260,7 +260,7 @@ export const en = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'You can discover 5 more artists for free now',
 		myMusicalProfilePageFiftyArtistsReached:
-			'You have reached the limit of 50 artists. Now you can update and check when new artists enter your Top 50.',
+			'You have reached the limit of 30 artists. Now you can update and check when new artists enter your Top 30.',
 		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
 			'Your most-listened-to artists list has been successfully updated!',
 		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
@@ -275,7 +275,7 @@ export const en = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
 			'You can discover 5 more tracks for free now',
 		myMusicalProfilePageFiftySongsReached:
-			'You have reached the limit of 50 items. Now you can update and check when new songs enter your Top 50.',
+			'You have reached the limit of 30 songs. Now you can update and check when new songs enter your Top 30.',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Show +5 tracks',
 		myMusicalProfilePageUpdateArtistsSuccessToast: 'Most-listened-to artists updated successfully!',
 		myMusicalProfilePageUpdateArtistsErrorToast: 'Error updating most-listened-to artists.',

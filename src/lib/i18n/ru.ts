@@ -262,7 +262,7 @@ export const ru = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'Сейчас вы можете бесплатно открыть ещё 5 исполнителей',
 		myMusicalProfilePageFiftyArtistsReached:
-			'Вы достигли лимита в 50 исполнителей. Теперь вы можете обновить и проверить, когда новые исполнители попадут в ваш Топ-50.',
+			'Вы достигли лимита в 30 исполнителей. Теперь вы можете обновить и проверить, когда новые исполнители попадут в ваш Топ-30.',
 		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
 			'Список ваших самых прослушиваемых исполнителей успешно обновлён!',
 		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
@@ -277,7 +277,7 @@ export const ru = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
 			'Сейчас вы можете бесплатно открыть ещё 5 треков',
 		myMusicalProfilePageFiftySongsReached:
-			'Вы достигли лимита в 50 треков. Теперь вы можете обновить и проверить, когда новые треки попадут в ваш Топ-50.',
+			'Вы достигли лимита в 30 треков. Теперь вы можете обновить и проверить, когда новые треки попадут в ваш Топ-30.',
 		myMusicalProfilePageShowMoreFiveTracksButton: 'Показать ещё +5 треков',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Самые прослушиваемые исполнители успешно обновлены!',

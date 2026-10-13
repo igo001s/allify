@@ -263,7 +263,7 @@ export const de = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'Du kannst jetzt kostenlos 5 weitere Künstler entdecken',
 		myMusicalProfilePageFiftyArtistsReached:
-			'Du hast das Limit von 50 Künstlern erreicht. Jetzt kannst du aktualisieren und prüfen, wann neue Künstler in deine Top 50 gelangen.',
+			'Du hast das Limit von 30 Künstlern erreicht. Jetzt kannst du aktualisieren und prüfen, wann neue Künstler in deine Top 30 gelangen.',
 		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
 			'Deine Liste der meistgehörten Künstler wurde erfolgreich aktualisiert!',
 		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
@@ -278,7 +278,7 @@ export const de = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
 			'Du kannst jetzt kostenlos 5 weitere Songs entdecken',
 		myMusicalProfilePageFiftySongsReached:
-			'Du hast das Limit von 50 Elementen erreicht. Jetzt kannst du aktualisieren und prüfen, wann neue Songs in deine Top 50 gelangen.',
+			'Du hast das Limit von 30 Songs erreicht. Jetzt kannst du aktualisieren und prüfen, wann neue Songs in deine Top 30 gelangen.',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5 Songs anzeigen',
 		myMusicalProfilePageUpdateArtistsSuccessToast:
 			'Meistgehörte Künstler erfolgreich aktualisiert!',

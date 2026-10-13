@@ -38,7 +38,7 @@
 	$: artists = $userInfo?.connectedStreamings.spotify?.mostListenedArtists;
 	$: tracks = $userInfo?.connectedStreamings.spotify?.mostListenedTracks;
 	$: shouldShowMusicalItems =
-		sessionType === 'artists' ? (artists?.artistsLimit ?? 0) < 50 : (tracks?.tracksLimit ?? 0) < 50;
+		sessionType === 'artists' ? (artists?.artistsLimit ?? 0) < 30 : (tracks?.tracksLimit ?? 0) < 30;
 	$: hasNextFreeUpdate =
 		sessionType === 'artists'
 			? artists?.nextFreeUpdate !== undefined

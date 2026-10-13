@@ -260,7 +260,7 @@ export const ja = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveArtistsAvailable:
 			'今すぐ無料でさらに5人のアーティストを発見できます',
 		myMusicalProfilePageFiftyArtistsReached:
-			'アーティストの上限である50人に達しました。新しいアーティストがトップ50に入ったときに、更新して確認できます。',
+			'アーティストの上限である30人に達しました。新しいアーティストがトップ30に入ったときに、更新して確認できます。',
 		myMusicalProfilePageUpdateMostListenedArtistsSuccessToast:
 			'最もよく聴いているアーティストのリストが正常に更新されました！',
 		myMusicalProfilePageUpdateMostListenedArtistsErrorToast:
@@ -274,7 +274,7 @@ export const ja = {
 		myMusicalProfilePageNextFreeUpdateShowMoreFiveTracksAvailable:
 			'今すぐ無料でさらに5曲を発見できます',
 		myMusicalProfilePageFiftySongsReached:
-			'50曲の上限に達しました。新しい曲がトップ50に入ったときに、更新して確認できます。',
+			'30曲の上限に達しました。新しい曲がトップ30に入ったときに、更新して確認できます。',
 		myMusicalProfilePageShowMoreFiveTracksButton: '+5曲を表示',
 		myMusicalProfilePageUpdateArtistsSuccessToast: '最もよく聴いているアーティストを更新しました！',
 		myMusicalProfilePageUpdateArtistsErrorToast:
