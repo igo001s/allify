@@ -350,7 +350,7 @@ export const es = {
 			'comunidad musical, perfiles musicales, descubrir usuarios, encontrar amigos, explorar gustos musicales, Allify',
 		musicCommunityPageMetaOgAndTwitterContent:
 			'Descubre nuevos usuarios, encuentra amigos, explora perfiles musicales y sigue los gustos musicales de la comunidad de Allify.',
-		musicCommunityPageHeading1: 'Explora la Comunidad Musical',
+		musicCommunityPageHeading1: 'Comunidad Musical',
 		musicCommunityParagraph1:
 			'Busca a tus amigos y descubre qué están escuchando, así como sus artistas y canciones más escuchados.',
 		musicCommunitySearchPlaceholder: 'Buscar por nombre de usuario',

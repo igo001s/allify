@@ -340,7 +340,7 @@ export const ja = {
 			'音楽コミュニティ, 音楽プロフィール, ユーザーを見つける, 友達を探す, 音楽の好みを探索する, Allify',
 		musicCommunityPageMetaOgAndTwitterContent:
 			'新しいユーザーを見つけたり、友達を探したり、音楽プロフィールを探索したり、Allifyコミュニティの音楽の好みをチェックしたりできます。',
-		musicCommunityPageHeading1: '音楽コミュニティを探索する',
+		musicCommunityPageHeading1: '音楽コミュニティ',
 		musicCommunityParagraph1:
 			'友達を検索して、彼らが何を聴いているのかや、最もよく聴いているアーティストや楽曲を確認しましょう。',
 		musicCommunitySearchPlaceholder: 'ユーザー名で検索',

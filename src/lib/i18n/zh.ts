@@ -311,7 +311,7 @@ export const zh = {
 			'音乐社区, 音乐个人资料, 发现用户, 寻找朋友, 探索音乐喜好, Allify',
 		musicCommunityPageMetaOgAndTwitterContent:
 			'发现新用户，寻找朋友，探索音乐个人资料，并关注 Allify 社区的音乐喜好。',
-		musicCommunityPageHeading1: '探索音乐社区',
+		musicCommunityPageHeading1: '音乐社区',
 		musicCommunityParagraph1: '搜索朋友，查看他们在听什么，以及他们最常听的艺术家和曲目。',
 		musicCommunitySearchPlaceholder: '按用户名搜索',
 		musicCommunitySearchButtonAriaLabel: '用于按用户名搜索的按钮',

@@ -23,7 +23,9 @@
 		{itemTitle}
 	</h2>
 
-	<div class={`${items?.length ? 'grid w-full grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20 2xl:grid-cols-3' : 'w-full'}`}>
+	<div
+		class={`${items?.length ? 'grid w-full grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20 2xl:grid-cols-3' : 'w-full'}`}
+	>
 		{#if items?.length}
 			{#each items as item (item)}
 				{#if itemType === 'track' && 'track' in item}
