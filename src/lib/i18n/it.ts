@@ -71,7 +71,7 @@ export const it = {
 		loadingComponentSpotifyParagraph1: 'Recupero delle tue informazioni da {streaming}',
 		loadingComponentDeezerParagraph1: 'Recupero delle tue informazioni da {streaming}',
 		loadingComponentAriaLabel: 'Animazione di caricamento',
-		notLoggedHeading1: 'Non sei connesso',
+		notLoggedHeading1: 'Accedi per continuare',
 		notLoggedMyMusicProfileParagraph1:
 			'Per accedere al tuo profilo musicale, connettiti a una delle tue piattaforme di streaming preferite.',
 		notLoggedMusicArchiveParagraph1:

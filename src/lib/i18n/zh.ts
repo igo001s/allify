@@ -70,7 +70,7 @@ export const zh = {
 		loadingComponentSpotifyParagraph1: '正在获取您的 {streaming} 信息',
 		loadingComponentDeezerParagraph1: '正在获取您的 {streaming} 信息',
 		loadingComponentAriaLabel: '加载动画',
-		notLoggedHeading1: '您尚未登录',
+		notLoggedHeading1: '连接后继续',
 		notLoggedMyMusicProfileParagraph1: '要访问您的音乐档案，请连接您喜爱的流媒体平台之一。',
 		notLoggedMusicArchiveParagraph1: '要访问音乐档案，请连接您喜爱的流媒体平台之一。',
 		notLoggedMusicCommunityParagraph1: '要访问音乐社区，请连接您喜爱的流媒体平台之一。',

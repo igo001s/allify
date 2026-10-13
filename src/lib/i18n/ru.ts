@@ -71,7 +71,7 @@ export const ru = {
 		loadingComponentSpotifyParagraph1: 'Загружаем ваши данные из {streaming}',
 		loadingComponentDeezerParagraph1: 'Загружаем ваши данные из {streaming}',
 		loadingComponentAriaLabel: 'Анимация загрузки',
-		notLoggedHeading1: 'Вы не вошли в систему',
+		notLoggedHeading1: 'Подключитесь, чтобы продолжить',
 		notLoggedMyMusicProfileParagraph1:
 			'Чтобы получить доступ к своему музыкальному профилю, подключитесь к одной из ваших любимых стриминговых платформ.',
 		notLoggedMusicArchiveParagraph1:

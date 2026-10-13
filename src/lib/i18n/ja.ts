@@ -71,7 +71,7 @@ export const ja = {
 		loadingComponentSpotifyParagraph1: '{streaming}から情報を取得しています',
 		loadingComponentDeezerParagraph1: '{streaming}から情報を取得しています',
 		loadingComponentAriaLabel: 'ローディングアニメーション',
-		notLoggedHeading1: 'ログインしていません',
+		notLoggedHeading1: '接続して続行',
 		notLoggedMyMusicProfileParagraph1:
 			'音楽プロフィールにアクセスするには、お気に入りのストリーミングプラットフォームに接続してください。',
 		notLoggedMusicArchiveParagraph1:
