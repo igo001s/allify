@@ -246,7 +246,7 @@ export const de = {
 			'Musikprofil, mein Musikprofil, Musikprofil, Musikstatistiken, Hörstatistiken, meistgehörte Songs, meistgehörte Künstler, meistgehörte Lieder, meistgehörte Künstler, Musikhistorie, Hörgewohnheiten, Musikgeschmack, entdecke deinen Musikgeschmack, Musikanalyse, Streaming-Profil',
 		myMusicalProfilePageMetaOgAndTwitterContent:
 			'Entdecke dein Musikprofil, finde deine meistgehörten Künstler und Titel, verfolge deine Hörstatistiken und verbinde deine Streaming-Plattformen für personalisierte Einblicke.',
-		myMusicalProfilePageHeading1: 'Hier ist alles, was du am meisten gehört hast',
+		myMusicalProfilePageHeading1: 'Dein Musikprofil',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Deine meistgehörten Künstler',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Deine meistgehörten Songs',
 		myMusicalProfilePagePeriodButtonOneYear: '1 Jahr',

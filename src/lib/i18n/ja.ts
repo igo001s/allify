@@ -243,7 +243,7 @@ export const ja = {
 			'マイミュージックプロフィール, 音楽プロフィール, 音楽統計, 再生統計, 最もよく聴いているアーティスト, 最もよく聴いている楽曲, 音楽履歴, 音楽の好み, 音楽分析, ストリーミングプロフィール',
 		myMusicalProfilePageMetaOgAndTwitterContent:
 			'あなたの音楽プロフィールを探索し、最もよく聴いているアーティストや楽曲を見つけたり、再生統計を確認したり、ストリーミングサービスを連携してパーソナライズされたインサイトを取得しましょう。',
-		myMusicalProfilePageHeading1: 'あなたが最も聴いているすべての音楽',
+		myMusicalProfilePageHeading1: 'あなたの音楽プロフィール',
 		myMusicalProfilePageMostListenedArtistsHeading2: '最もよく聴いているアーティスト',
 		myMusicalProfilePageMostListenedTracksHeading2: '最もよく聴いている楽曲',
 		myMusicalProfilePagePeriodButtonOneYear: '1年',

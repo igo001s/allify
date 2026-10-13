@@ -245,7 +245,7 @@ export const es = {
 			'perfil musical, mi perfil musical, perfil de música, estadísticas musicales, estadísticas de escucha, canciones más escuchadas, artistas más escuchados, historial musical, hábitos de escucha, gusto musical, descubre tu gusto musical, análisis musical, perfil de streaming',
 		myMusicalProfilePageMetaOgAndTwitterContent:
 			'Explora tu perfil musical, descubre tus artistas y canciones más escuchados, consulta tus estadísticas de escucha y conecta tus plataformas de streaming para obtener información personalizada.',
-		myMusicalProfilePageHeading1: 'Aquí tienes todo lo que más has escuchado',
+		myMusicalProfilePageHeading1: 'Tu perfil musical',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Tus artistas más escuchados',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Tus canciones más escuchadas',
 		myMusicalProfilePagePeriodButtonOneYear: '1 año',

@@ -243,7 +243,7 @@ export const en = {
 			'musical profile, my musical profile, music profile, music statistics, listening statistics, most-listened-to tracks, most-listened-to artists, most-listened-to songs, most-listened-to artists, music history, listening habits, music taste, discover your music taste, music analysis, streaming profile',
 		myMusicalProfilePageMetaOgAndTwitterContent:
 			'Explore your musical profile, discover your most-listened-to artists and tracks, track your listening statistics, and connect your streaming platforms for personalized insights.',
-		myMusicalProfilePageHeading1: 'Here’s everything you’ve listened to the most',
+		myMusicalProfilePageHeading1: 'Your Music Profile',
 		myMusicalProfilePageMostListenedArtistsHeading2: 'Your most-listened-to artists',
 		myMusicalProfilePageMostListenedTracksHeading2: 'Your most-listened-to tracks',
 		myMusicalProfilePagePeriodButtonOneYear: '1 year',
