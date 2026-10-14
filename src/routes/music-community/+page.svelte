@@ -3,25 +3,25 @@
 	import { page } from '$app/stores';
 
 	// Assets
-	import SearchIcon from '$lib/assets/icons/SearchIcon.svelte';
+	import SearchIcon from '#lib/assets/icons/SearchIcon.svelte';
 
 	// Components
-	import NotLogged from '$lib/components/general/NotLogged.svelte';
-	import FavoritesSection from '$lib/components/music-community/FavoritesSection.svelte';
-	import FoundedUsers from '$lib/components/music-community/FoundedUsers.svelte';
+	import NotLogged from '#lib/components/general/NotLogged.svelte';
+	import FavoritesSection from '#lib/components/music-community/FavoritesSection.svelte';
+	import FoundedUsers from '#lib/components/music-community/FoundedUsers.svelte';
 
 	// Services
-	import { searchUsers } from '$lib/services/user/search/searchUsers';
+	import { searchUsers } from '#lib/services/user/search/searchUsers';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Types
-	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
+	import type { SearchUserInfo } from '#lib/types/UserInfo.type';
 
 	// Schema
-	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+	import { getJsonLdByPage } from '#lib/utils/getJsonLdByPage';
 
 	$: jsonLd = getJsonLdByPage(
 		'musicCommunityPage',

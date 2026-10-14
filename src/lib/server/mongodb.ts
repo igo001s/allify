@@ -5,7 +5,7 @@ import { dev } from '$app/environment';
 import { MongoClient } from 'mongodb';
 
 // Environment variables
-import { MONGO_URI } from '$env/static/private';
+import { MONGO_URI } from '$app/env/private';
 
 const client = new MongoClient(MONGO_URI);
 

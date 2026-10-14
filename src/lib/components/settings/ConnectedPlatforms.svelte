@@ -3,14 +3,14 @@
 	import type { Component } from 'svelte';
 
 	// Assets
-	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
-	import DeezerIcon from '$lib/assets/icons/streamings/DeezerIcon.svelte';
+	import SpotifyIcon from '#lib/assets/icons/streamings/SpotifyIcon.svelte';
+	import DeezerIcon from '#lib/assets/icons/streamings/DeezerIcon.svelte';
 
 	// Components
-	import ConnectedPlatform from '$lib/components/settings/ConnectedPlatformItem.svelte';
+	import ConnectedPlatform from '#lib/components/settings/ConnectedPlatformItem.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	const streamings = [
 		{ name: 'spotify', icon: SpotifyIcon, iconClass: 'text-spotify' },

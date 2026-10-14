@@ -1,10 +1,10 @@
 <script lang="ts">
 	// Components
-	import ProfileIcon from '$lib/assets/icons/ProfileIcon.svelte';
-	import HeaderProfileItems from '$lib/components/general/header/HeaderProfileItems.svelte';
+	import ProfileIcon from '#lib/assets/icons/ProfileIcon.svelte';
+	import HeaderProfileItems from '#lib/components/general/header/HeaderProfileItems.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Props
 	export let showProfileOptions: boolean;

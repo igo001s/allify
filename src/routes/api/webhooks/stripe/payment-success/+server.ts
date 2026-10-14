@@ -2,10 +2,10 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectToMongoDB } from '$lib/server/mongodb';
+import { connectToMongoDB } from '#lib/server/mongodb';
 
 // Environment variables
-import { MONGO_DB, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET } from '$env/static/private';
+import { MONGO_DB, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET } from '$app/env/private';
 
 // MongoDB
 import { ObjectId } from 'mongodb';

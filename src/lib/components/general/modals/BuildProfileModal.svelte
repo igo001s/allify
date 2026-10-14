@@ -3,25 +3,25 @@
 	import { onDestroy } from 'svelte';
 
 	// Components
-	import Modal from '$lib/components/general/modals/Modal.svelte';
-	import FirstAccessSection from '$lib/components/build-profile/FirstAccessSection.svelte';
-	import FirstStepTrackSection from '$lib/components/build-profile/FirstStepTrackSection.svelte';
-	import SecondStepArtistSection from '$lib/components/build-profile/SecondStepArtistSection.svelte';
-	import ThirdStepVisibilitySection from '$lib/components/build-profile/ThirdStepVisibilitySection.svelte';
-	import SaveBuiltUserSection from '$lib/components/build-profile/SaveBuiltUserSection.svelte';
+	import Modal from '#lib/components/general/modals/Modal.svelte';
+	import FirstAccessSection from '#lib/components/build-profile/FirstAccessSection.svelte';
+	import FirstStepTrackSection from '#lib/components/build-profile/FirstStepTrackSection.svelte';
+	import SecondStepArtistSection from '#lib/components/build-profile/SecondStepArtistSection.svelte';
+	import ThirdStepVisibilitySection from '#lib/components/build-profile/ThirdStepVisibilitySection.svelte';
+	import SaveBuiltUserSection from '#lib/components/build-profile/SaveBuiltUserSection.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Utils
-	import { nextUpdateTime } from '$lib/utils/nextUpdateTime';
+	import { nextUpdateTime } from '#lib/utils/nextUpdateTime';
 
 	// Services
-	import { setProfileVisibilityPublicByDefault } from '$lib/services/user/build/setProfileVisibilityPublicByDefault';
+	import { setProfileVisibilityPublicByDefault } from '#lib/services/user/build/setProfileVisibilityPublicByDefault';
 
 	// Types
-	import type { buildProfileInfo } from '$lib/types/UserInfo.type';
+	import type { buildProfileInfo } from '#lib/types/UserInfo.type';
 
 	// Props
 	export let showBuildProfile: boolean = true;

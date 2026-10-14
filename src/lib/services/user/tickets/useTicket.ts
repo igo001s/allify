@@ -2,8 +2,8 @@
 import { dev } from '$app/environment';
 
 // Stores
-import { showAddTickets } from '$lib/stores/showAddTickets.store';
-import { userInfo } from '$lib/stores/userInfo.store';
+import { showAddTickets } from '#lib/stores/showAddTickets.store';
+import { userInfo } from '#lib/stores/userInfo.store';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';

@@ -4,16 +4,16 @@
 	import { resolve } from '$app/paths';
 
 	// Components
-	import Ticket from '$lib/components/general/Ticket.svelte';
+	import Ticket from '#lib/components/general/Ticket.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Utils
-	import { setTitleByStreaming } from '$lib/utils/setTitleByStreaming';
-	import { logoutWrapper } from '$lib/utils/logoutWrapper';
-	import { signInWrapper } from '$lib/utils/signInWrapper';
+	import { setTitleByStreaming } from '#lib/utils/setTitleByStreaming';
+	import { logoutWrapper } from '#lib/utils/logoutWrapper';
+	import { signInWrapper } from '#lib/utils/signInWrapper';
 
 	// Props
 	export let loggedIn: boolean;

@@ -3,12 +3,12 @@
 	import type { Component } from 'svelte';
 
 	// Utils
-	import { signInWrapper } from '$lib/utils/signInWrapper';
-	import { logoutWrapper } from '$lib/utils/logoutWrapper';
+	import { signInWrapper } from '#lib/utils/signInWrapper';
+	import { logoutWrapper } from '#lib/utils/logoutWrapper';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let streaming: {

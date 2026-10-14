@@ -1,15 +1,15 @@
 <script lang="ts">
 	// Types
-	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify, TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Components
-	import Popularity from '$lib/components/general/Popularity.svelte';
-	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
-	import Followers from '$lib/components/general/Followers.svelte';
-	import EditProfileItemButton from '$lib/components/profile/EditProfileItemButton.svelte';
+	import Popularity from '#lib/components/general/Popularity.svelte';
+	import ExternalLink from '#lib/components/general/ExternalLink.svelte';
+	import Followers from '#lib/components/general/Followers.svelte';
+	import EditProfileItemButton from '#lib/components/profile/EditProfileItemButton.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let handleEditButtonClick: (() => void) | undefined = undefined;

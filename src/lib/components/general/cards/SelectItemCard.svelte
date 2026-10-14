@@ -1,12 +1,12 @@
 <script lang="ts">
 	// Assets
-	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
+	import SpotifyIcon from '#lib/assets/icons/streamings/SpotifyIcon.svelte';
 
 	// Components
-	import Followers from '$lib/components/general/Followers.svelte';
+	import Followers from '#lib/components/general/Followers.svelte';
 
 	// Types
-	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify, TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let handleArtistSelection: ((item: ArtistSpotify) => void) | undefined = undefined;

@@ -5,7 +5,7 @@ import { dev } from '$app/environment';
 import type { ObjectId } from 'mongodb';
 
 // Types
-import type { CommentReceived } from '$lib/types/Comments.type';
+import type { CommentReceived } from '#lib/types/Comments.type';
 
 export async function deleteComment(
 	userId: ObjectId,

@@ -4,11 +4,11 @@
 	import { resolve } from '$app/paths';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Utils
-	import { signInWrapper } from '$lib/utils/signInWrapper';
+	import { signInWrapper } from '#lib/utils/signInWrapper';
 
 	// Props
 	export let loggedIn: boolean;

@@ -3,14 +3,14 @@
 	import { resolve } from '$app/paths';
 
 	// Components
-	import LinkedinIcon from '$lib/assets/icons/social-network/LinkedinIcon.svelte';
-	import GithubIcon from '$lib/assets/icons/social-network/GithubIcon.svelte';
+	import LinkedinIcon from '#lib/assets/icons/social-network/LinkedinIcon.svelte';
+	import GithubIcon from '#lib/assets/icons/social-network/GithubIcon.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { FooterColumnItems } from '$lib/types/Components.type';
+	import type { FooterColumnItems } from '#lib/types/Components.type';
 
 	$: footerColumnItems = [
 		{

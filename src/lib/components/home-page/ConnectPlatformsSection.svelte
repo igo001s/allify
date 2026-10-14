@@ -1,16 +1,16 @@
 <script lang="ts">
 	// Assets
-	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
-	import DeezerIcon from '$lib/assets/icons/streamings/DeezerIcon.svelte';
+	import SpotifyIcon from '#lib/assets/icons/streamings/SpotifyIcon.svelte';
+	import DeezerIcon from '#lib/assets/icons/streamings/DeezerIcon.svelte';
 
 	// Components
-	import PlatformCard from '$lib/components/general/cards/PlatformCard.svelte';
+	import PlatformCard from '#lib/components/general/cards/PlatformCard.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { CardPlatformType } from '$lib/types/Components.type';
+	import type { CardPlatformType } from '#lib/types/Components.type';
 
 	// Reactive values
 	$: platforms = [

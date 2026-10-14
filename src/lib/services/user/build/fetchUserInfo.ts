@@ -3,16 +3,16 @@ import { dev } from '$app/environment';
 import { get } from 'svelte/store';
 
 // Stores
-import { translationsStore } from '$lib/stores/translations.store';
+import { translationsStore } from '#lib/stores/translations.store';
 
 // Services
-import { createUser } from '$lib/services/user/build/createUser';
-import { sendEmail } from '$lib/services/email/sendEmail';
-import { existingSpotifyUser } from '$lib/services/spotify/mappers/existingSpotifyUser';
-import { buildUserFromSpotify } from '$lib/services/spotify/mappers/buildUserFromSpotify';
+import { createUser } from '#lib/services/user/build/createUser';
+import { sendEmail } from '#lib/services/email/sendEmail';
+import { existingSpotifyUser } from '#lib/services/spotify/mappers/existingSpotifyUser';
+import { buildUserFromSpotify } from '#lib/services/spotify/mappers/buildUserFromSpotify';
 
 // Email templates
-import { welcomeToAllifyTemplate } from '$lib/templates/email/welcomeToAllifyTemplate';
+import { welcomeToAllifyTemplate } from '#lib/templates/email/welcomeToAllifyTemplate';
 
 export async function fetchUserInfo() {
 	try {

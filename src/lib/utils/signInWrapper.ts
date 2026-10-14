@@ -1,8 +1,8 @@
 // Services
-import { signInSpotify } from '$lib/services/spotify/auth/signInSpotify';
+import { signInSpotify } from '#lib/services/spotify/auth/signInSpotify';
 
 // Stores
-import { loadingAfterConnectionStore } from '$lib/stores/loadingAfterConnection.store';
+import { loadingAfterConnectionStore } from '#lib/stores/loadingAfterConnection.store';
 
 export function signInWrapper(
 	streaming: 'spotify' | 'deezer',

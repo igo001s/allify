@@ -4,10 +4,10 @@
 	import EmptyArtistOnPublicUser from './EmptyArtistOnPublicUser.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { PublicUserInfo } from '$lib/types/UserInfo.type';
+	import type { PublicUserInfo } from '#lib/types/UserInfo.type';
 
 	// Props
 	export let publicUser: PublicUserInfo;

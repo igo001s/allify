@@ -1,9 +1,9 @@
 <script lang="ts">
 	// Assets
-	import TicketIcon from '$lib/assets/icons/TicketIcon.webp?enhanced';
+	import TicketIcon from '#lib/assets/icons/TicketIcon.webp?enhanced';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 </script>
 
 <span class="inline-flex items-center gap-1 rounded-md bg-brand-primary/10 px-2 py-1.5">

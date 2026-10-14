@@ -1,9 +1,9 @@
 <script lang="ts">
 	// Components
-	import EmptyTrack from '$lib/components/general/EmptyTrack.svelte';
+	import EmptyTrack from '#lib/components/general/EmptyTrack.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let publicUserName: string;

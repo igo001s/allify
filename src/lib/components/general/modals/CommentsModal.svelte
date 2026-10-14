@@ -3,24 +3,24 @@
 	import { resolve } from '$app/paths';
 
 	// Assets
-	import TrashIcon from '$lib/assets/icons/TrashIcon.svelte';
+	import TrashIcon from '#lib/assets/icons/TrashIcon.svelte';
 
 	// Components
-	import Modal from '$lib/components/general/modals/Modal.svelte';
+	import Modal from '#lib/components/general/modals/Modal.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Services
-	import { deleteComment } from '$lib/services/user/remove/deleteComment';
+	import { deleteComment } from '#lib/services/user/remove/deleteComment';
 
 	// MongoDB
 	import type { ObjectId } from 'mongodb';
 
 	// Types
-	import type { CommentReceived } from '$lib/types/Comments.type';
-	import { toastStore } from '$lib/stores/toast.store';
+	import type { CommentReceived } from '#lib/types/Comments.type';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Props
 	export let showCommentsModal: boolean;

@@ -1,0 +1,22 @@
+import { defineEnvVars } from '@sveltejs/kit/env';
+
+export const variables = defineEnvVars({
+	// Allify
+	ALLIFY_URL: {},
+
+	// MongoDB
+	MONGO_URI: {},
+	MONGO_DB: {},
+
+	// Resend
+	ALLIFY_RESEND_KEY: {},
+
+	// Spotify
+	SPOTIFY_CLIENT_ID: {},
+	SPOTIFY_CLIENT_SECRET: {},
+	SPOTIFY_REDIRECT_URI: {},
+
+	// Stripe
+	STRIPE_SECRET_KEY: {},
+	STRIPE_WEBHOOK_SECRET: {}
+});

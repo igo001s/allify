@@ -3,12 +3,12 @@
 	import { resolve } from '$app/paths';
 
 	// Assets
-	import AlliFullBodyPointing from '$lib/assets/images/alli/alli-full-body-pointing.webp?enhanced';
-	import AlliFullBodyPointingDownwards from '$lib/assets/images/alli/alli-full-body-pointing-downwards.webp?enhanced';
+	import AlliFullBodyPointing from '#lib/assets/images/alli/alli-full-body-pointing.webp?enhanced';
+	import AlliFullBodyPointingDownwards from '#lib/assets/images/alli/alli-full-body-pointing-downwards.webp?enhanced';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 </script>
 
 <section class="flex items-center justify-between bg-s-default pt-2 pb-16 xl:pt-14 xl:pb-24">

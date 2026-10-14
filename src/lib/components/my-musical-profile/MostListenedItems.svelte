@@ -1,19 +1,19 @@
 <script lang="ts">
 	// Components
-	import MostListenedItemCard from '$lib/components/general/cards/MostListenedItemCard.svelte';
+	import MostListenedItemCard from '#lib/components/general/cards/MostListenedItemCard.svelte';
 	import MoreMyMusicalProfileItems from './MoreMyMusicalProfileItems.svelte';
 	import PossibleActionsMyMusicalProfile from './PossibleActionsMyMusicalProfile.svelte';
 	import ShareDataModal from '../general/modals/ShareDataModal.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Types
-	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
-	import type { TrackItems } from '$lib/types/Tracks.type';
-	import type { ArtistItems } from '$lib/types/Artists.type';
-	import type { ShareDataContent } from '$lib/types/Share.type';
+	import type { ArtistSpotify, TrackSpotify } from '#lib/types/Spotify.type';
+	import type { TrackItems } from '#lib/types/Tracks.type';
+	import type { ArtistItems } from '#lib/types/Artists.type';
+	import type { ShareDataContent } from '#lib/types/Share.type';
 
 	// Props
 	export let sessionType: 'artists' | 'tracks';

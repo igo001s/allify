@@ -6,15 +6,15 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	// Assets
-	import CloseIcon from '$lib/assets/icons/CloseIcon.svelte';
-	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.webp?enhanced';
+	import CloseIcon from '#lib/assets/icons/CloseIcon.svelte';
+	import AllifyLogoColorful from '#lib/assets/logos/AllifyLogoColorful.webp?enhanced';
 
 	// Components
-	import AsideProfile from '$lib/components/general/menus/aside-menu/AsideProfile.svelte';
-	import AsideNavigation from '$lib/components/general/menus/aside-menu/AsideNavigation.svelte';
+	import AsideProfile from '#lib/components/general/menus/aside-menu/AsideProfile.svelte';
+	import AsideNavigation from '#lib/components/general/menus/aside-menu/AsideNavigation.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let isAsideMenuOpen: boolean;

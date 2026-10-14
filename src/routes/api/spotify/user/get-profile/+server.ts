@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Environment variables
-import { ALLIFY_URL } from '$env/static/private';
+import { ALLIFY_URL } from '$app/env/private';
 
 const ALLOWED_ORIGINS = [ALLIFY_URL];
 

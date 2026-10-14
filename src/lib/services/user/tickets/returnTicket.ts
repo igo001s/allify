@@ -2,7 +2,7 @@
 import { dev } from '$app/environment';
 
 // Stores
-import { userInfo } from '$lib/stores/userInfo.store';
+import { userInfo } from '#lib/stores/userInfo.store';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';

@@ -1,17 +1,17 @@
 <script lang="ts">
 	// Components
-	import SelectArtistCardOnProfile from '$lib/components/profile/artist/SelectArtistCardOnProfile.svelte';
+	import SelectArtistCardOnProfile from '#lib/components/profile/artist/SelectArtistCardOnProfile.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { updateArtistOfTheMoment } from '$lib/services/user/updates/updateArtistOfTheMoment';
+	import { updateArtistOfTheMoment } from '#lib/services/user/updates/updateArtistOfTheMoment';
 
 	// Types
-	import type { ArtistSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let closeSelectItemOfTheMomentModal: () => void;

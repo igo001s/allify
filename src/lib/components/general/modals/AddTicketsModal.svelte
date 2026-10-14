@@ -1,18 +1,18 @@
 <script lang="ts">
 	// Assets
-	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
+	import DotsLoading from '#lib/assets/animations/DotsLoading.svelte';
 
 	// Components
-	import Modal from '$lib/components/general/modals/Modal.svelte';
+	import Modal from '#lib/components/general/modals/Modal.svelte';
 
 	// Stores
-	import { showAddTickets } from '$lib/stores/showAddTickets.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { showAddTickets } from '#lib/stores/showAddTickets.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { createCheckout } from '$lib/services/checkout/createCheckout';
+	import { createCheckout } from '#lib/services/checkout/createCheckout';
 
 	// MongoDB
 	import type { ObjectId } from 'mongodb';

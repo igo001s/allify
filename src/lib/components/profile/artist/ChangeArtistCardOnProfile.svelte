@@ -3,11 +3,11 @@
 	import SelectItemCard from '../../general/cards/SelectItemCard.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { ArtistSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let artist: ArtistSpotify;

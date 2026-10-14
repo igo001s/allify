@@ -3,11 +3,11 @@
 	import { resolve } from '$app/paths';
 
 	// Assets
-	import IgoLogo from '$lib/assets/logos/IgoLogo.svelte';
-	import AllifyLogoLight from '$lib/assets/logos/AllifyLogoLight.svelte';
+	import IgoLogo from '#lib/assets/logos/IgoLogo.svelte';
+	import AllifyLogoLight from '#lib/assets/logos/AllifyLogoLight.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 </script>
 
 <div class="flex flex-col items-center justify-between gap-6 lg:items-start">

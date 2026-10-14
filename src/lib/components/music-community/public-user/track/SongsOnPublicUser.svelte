@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Components
-	import SongsOnPublicUserItem from '$lib/components/music-community/public-user/track/SongsOnPublicUserItem.svelte';
-	import EmptyMusicOnPublicUser from '$lib/components/music-community/public-user/track/EmptyMusicOnPublicUser.svelte';
+	import SongsOnPublicUserItem from '#lib/components/music-community/public-user/track/SongsOnPublicUserItem.svelte';
+	import EmptyMusicOnPublicUser from '#lib/components/music-community/public-user/track/EmptyMusicOnPublicUser.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { PublicUserInfo } from '$lib/types/UserInfo.type';
+	import type { PublicUserInfo } from '#lib/types/UserInfo.type';
 
 	// Props
 	export let publicUser: PublicUserInfo;

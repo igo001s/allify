@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Environment variables
-import { ALLIFY_URL, ALLIFY_RESEND_KEY } from '$env/static/private';
+import { ALLIFY_URL, ALLIFY_RESEND_KEY } from '$app/env/private';
 
 // Libraries
 import { Resend } from 'resend';

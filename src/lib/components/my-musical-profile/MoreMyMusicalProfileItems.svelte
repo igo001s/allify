@@ -1,24 +1,24 @@
 <script lang="ts">
 	// Assets
-	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
+	import DotsLoading from '#lib/assets/animations/DotsLoading.svelte';
 
 	// Components
-	import Ticket from '$lib/components/general/Ticket.svelte';
+	import Ticket from '#lib/components/general/Ticket.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { updateMostListenedTracksNewLimit } from '$lib/services/user/updates/updateMostListenedTracksNewLimit';
-	import { updateMostListenedArtistsNewLimit } from '$lib/services/user/updates/updateMostListenedArtistsNewLimit';
+	import { updateMostListenedTracksNewLimit } from '#lib/services/user/updates/updateMostListenedTracksNewLimit';
+	import { updateMostListenedArtistsNewLimit } from '#lib/services/user/updates/updateMostListenedArtistsNewLimit';
 
 	// MongoDB
 	import type { ObjectId } from 'mongodb';
 
 	// Types
-	import type { UserInfo } from '$lib/types/UserInfo.type';
+	import type { UserInfo } from '#lib/types/UserInfo.type';
 
 	// Props
 	export let additionalItemsType: 'artists' | 'tracks';

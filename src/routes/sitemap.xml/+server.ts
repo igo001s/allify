@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Environment variable
-import { ALLIFY_URL } from '$env/static/private';
+import { ALLIFY_URL } from '$app/env/private';
 
 export const GET: RequestHandler = async () => {
 	const pages = [

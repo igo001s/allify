@@ -2,7 +2,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Environment variables
-import { STRIPE_SECRET_KEY, ALLIFY_URL } from '$env/static/private';
+import { STRIPE_SECRET_KEY, ALLIFY_URL } from '$app/env/private';
 
 // Stripe
 import Stripe from 'stripe';

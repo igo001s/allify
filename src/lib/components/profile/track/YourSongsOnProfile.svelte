@@ -1,21 +1,21 @@
 <script lang="ts">
 	// Assets
-	import ShareIcon from '$lib/assets/icons/ShareIcon.svelte';
+	import ShareIcon from '#lib/assets/icons/ShareIcon.svelte';
 
 	// Components
-	import YourSongsOnProfileItem from '$lib/components/profile/track/YourSongsOnProfileItem.svelte';
-	import EmptyTrackOfTheMoment from '$lib/components/profile/track/track-of-the-moment/EmptyTrackOfTheMoment.svelte';
-	import EmptyCustomTrack from '$lib/components/profile/track/custom-track/EmptyCustomTrack.svelte';
-	import ShareDataModal from '$lib/components/general/modals/ShareDataModal.svelte';
+	import YourSongsOnProfileItem from '#lib/components/profile/track/YourSongsOnProfileItem.svelte';
+	import EmptyTrackOfTheMoment from '#lib/components/profile/track/track-of-the-moment/EmptyTrackOfTheMoment.svelte';
+	import EmptyCustomTrack from '#lib/components/profile/track/custom-track/EmptyCustomTrack.svelte';
+	import ShareDataModal from '#lib/components/general/modals/ShareDataModal.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Types
-	import type { TrackItems } from '$lib/types/Tracks.type';
-	import type { ShareDataContent } from '$lib/types/Share.type';
+	import type { TrackItems } from '#lib/types/Tracks.type';
+	import type { ShareDataContent } from '#lib/types/Share.type';
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'music') => void;

@@ -8,28 +8,28 @@
 	import { onMount } from 'svelte';
 
 	// Assets
-	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
-	import ArrowIcon from '$lib/assets/icons/ArrowIcon.svelte';
+	import DotsLoading from '#lib/assets/animations/DotsLoading.svelte';
+	import ArrowIcon from '#lib/assets/icons/ArrowIcon.svelte';
 
 	// Components
-	import PublicUserKeyInformation from '$lib/components/music-community/public-user/PublicUserKeyInformation.svelte';
-	import NotLogged from '$lib/components/general/NotLogged.svelte';
-	import AddCommentModal from '$lib/components/general/modals/AddCommentModal.svelte';
-	import ArtistsOnPublicProfile from '$lib/components/music-community/public-user/artist/ArtistsOnPublicUser.svelte';
-	import SongsOnPublicUser from '$lib/components/music-community/public-user/track/SongsOnPublicUser.svelte';
+	import PublicUserKeyInformation from '#lib/components/music-community/public-user/PublicUserKeyInformation.svelte';
+	import NotLogged from '#lib/components/general/NotLogged.svelte';
+	import AddCommentModal from '#lib/components/general/modals/AddCommentModal.svelte';
+	import ArtistsOnPublicProfile from '#lib/components/music-community/public-user/artist/ArtistsOnPublicUser.svelte';
+	import SongsOnPublicUser from '#lib/components/music-community/public-user/track/SongsOnPublicUser.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Services
-	import { getPublicUser } from '$lib/services/user/getters/getPublicUser';
+	import { getPublicUser } from '#lib/services/user/getters/getPublicUser';
 
 	// Types
-	import type { PublicUserInfo } from '$lib/types/UserInfo.type';
+	import type { PublicUserInfo } from '#lib/types/UserInfo.type';
 
 	// Schema
-	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+	import { getJsonLdByPage } from '#lib/utils/getJsonLdByPage';
 
 	$: jsonLd = getJsonLdByPage(
 		'musicCommunityPageUser',

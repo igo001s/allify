@@ -1,9 +1,9 @@
 <script lang="ts">
 	// Components
-	import SelectVisibilityCard from '$lib/components/build-profile/SelectVisibilityCard.svelte';
+	import SelectVisibilityCard from '#lib/components/build-profile/SelectVisibilityCard.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let goToNextStep: () => void;

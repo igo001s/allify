@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Stores
-	import { toastStore } from '$lib/stores/toast.store';
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Assets
-	import WarningIcon from '$lib/assets/icons/signals/WarningIcon.svelte';
-	import SuccessIcon from '$lib/assets/icons/signals/SuccessIcon.svelte';
-	import ErrorIcon from '$lib/assets/icons/signals/ErrorIcon.svelte';
-	import CloseIcon from '$lib/assets/icons/CloseIcon.svelte';
+	import WarningIcon from '#lib/assets/icons/signals/WarningIcon.svelte';
+	import SuccessIcon from '#lib/assets/icons/signals/SuccessIcon.svelte';
+	import ErrorIcon from '#lib/assets/icons/signals/ErrorIcon.svelte';
+	import CloseIcon from '#lib/assets/icons/CloseIcon.svelte';
 
 	const closeToast = () => {
 		toastStore.set({

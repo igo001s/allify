@@ -1,15 +1,15 @@
 <script lang="ts">
 	// Assets
-	import AddCommentIcon from '$lib/assets/icons/AddCommentIcon.svelte';
+	import AddCommentIcon from '#lib/assets/icons/AddCommentIcon.svelte';
 
 	// Components
-	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
-	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
-	import Followers from '$lib/components/general/Followers.svelte';
+	import ExternalLink from '#lib/components/general/ExternalLink.svelte';
+	import StreamingSelector from '#lib/components/general/StreamingSelector.svelte';
+	import Followers from '#lib/components/general/Followers.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// MongoDB
 	import type { ObjectId } from 'mongodb';

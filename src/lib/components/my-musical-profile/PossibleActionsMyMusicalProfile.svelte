@@ -1,22 +1,22 @@
 <script lang="ts">
 	// Assets
-	import ReloadIcon from '$lib/assets/icons/ReloadIcon.svelte';
-	import ShareIcon from '$lib/assets/icons/ShareIcon.svelte';
-	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
+	import ReloadIcon from '#lib/assets/icons/ReloadIcon.svelte';
+	import ShareIcon from '#lib/assets/icons/ShareIcon.svelte';
+	import DotsLoading from '#lib/assets/animations/DotsLoading.svelte';
 
 	// Components
-	import TicketLabel from '$lib/components/general/TicketLabel.svelte';
+	import TicketLabel from '#lib/components/general/TicketLabel.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { updateMostListenedArtists } from '$lib/services/user/updates/updateMostListenedArtists';
-	import { updateMostListenedTracks } from '$lib/services/user/updates/updateMostListenedTracks';
+	import { updateMostListenedArtists } from '#lib/services/user/updates/updateMostListenedArtists';
+	import { updateMostListenedTracks } from '#lib/services/user/updates/updateMostListenedTracks';
 
-	import type { UserInfo } from '$lib/types/UserInfo.type';
+	import type { UserInfo } from '#lib/types/UserInfo.type';
 
 	// Props
 	export let sessionType: 'artists' | 'tracks';

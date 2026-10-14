@@ -1,10 +1,10 @@
 <script lang="ts">
 	// Components
-	import FooterFirstSection from '$lib/components/general/footer/FooterFirstSection.svelte';
-	import FooterSecondSection from '$lib/components/general/footer/FooterSecondSection.svelte';
+	import FooterFirstSection from '#lib/components/general/footer/FooterFirstSection.svelte';
+	import FooterSecondSection from '#lib/components/general/footer/FooterSecondSection.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 </script>
 
 <footer class="bg-s-inverse px-5 pt-8 pb-5 md:p-10 xl:px-16 xl:pt-16 xl:pb-10">

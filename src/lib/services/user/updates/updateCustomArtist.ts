@@ -2,14 +2,14 @@
 import { dev } from '$app/environment';
 
 // Services
-import { useTicket } from '$lib/services/user/tickets/useTicket';
-import { returnTicket } from '$lib/services/user/tickets/returnTicket';
+import { useTicket } from '#lib/services/user/tickets/useTicket';
+import { returnTicket } from '#lib/services/user/tickets/returnTicket';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
 // Types
-import type { ArtistSpotify } from '$lib/types/Spotify.type';
+import type { ArtistSpotify } from '#lib/types/Spotify.type';
 
 export async function updateCustomArtist(
 	id: ObjectId,

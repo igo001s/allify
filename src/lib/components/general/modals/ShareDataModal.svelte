@@ -3,20 +3,20 @@
 	import { dev } from '$app/environment';
 
 	// Assets
-	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
-	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.webp';
+	import DotsLoading from '#lib/assets/animations/DotsLoading.svelte';
+	import AllifyLogoColorful from '#lib/assets/logos/AllifyLogoColorful.webp';
 
 	// Components
 	import Modal from './Modal.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Types
-	import type { ArtistItems } from '$lib/types/Artists.type';
-	import type { TrackItems } from '$lib/types/Tracks.type';
-	import type { ShareDataContent } from '$lib/types/Share.type';
+	import type { ArtistItems } from '#lib/types/Artists.type';
+	import type { TrackItems } from '#lib/types/Tracks.type';
+	import type { ShareDataContent } from '#lib/types/Share.type';
 
 	// Librarys
 	import { toBlob } from 'html-to-image';

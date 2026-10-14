@@ -1,12 +1,12 @@
 <script lang="ts">
 	// Components
-	import ProfileItemCard from '$lib/components/general/cards/ProfileItemCard.svelte';
+	import ProfileItemCard from '#lib/components/general/cards/ProfileItemCard.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { TrackItems } from '$lib/types/Tracks.type';
+	import type { TrackItems } from '#lib/types/Tracks.type';
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'music') => void;

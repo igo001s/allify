@@ -3,12 +3,12 @@
 	import type { Component } from 'svelte';
 
 	// Components
-	import MusicIcon from '$lib/assets/icons/MusicIcon.svelte';
-	import ArtistIcon from '$lib/assets/icons/ArtistIcon.svelte';
+	import MusicIcon from '#lib/assets/icons/MusicIcon.svelte';
+	import ArtistIcon from '#lib/assets/icons/ArtistIcon.svelte';
 	import MusicalItemCard from '../general/cards/MusicalItemCard.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Reactive values
 	$: musicalItemContent = [

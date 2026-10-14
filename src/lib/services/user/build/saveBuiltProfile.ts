@@ -2,7 +2,7 @@
 import { dev } from '$app/environment';
 
 // Types
-import type { buildProfileInfo } from '$lib/types/UserInfo.type';
+import type { buildProfileInfo } from '#lib/types/UserInfo.type';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';

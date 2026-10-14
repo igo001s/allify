@@ -3,18 +3,18 @@
 	import { page } from '$app/stores';
 
 	// Components
-	import NotLogged from '$lib/components/general/NotLogged.svelte';
-	import MusicArchiveItems from '$lib/components/music-archive/MusicArchiveItems.svelte';
+	import NotLogged from '#lib/components/general/NotLogged.svelte';
+	import MusicArchiveItems from '#lib/components/music-archive/MusicArchiveItems.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Types
-	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify, TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Schema
-	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+	import { getJsonLdByPage } from '#lib/utils/getJsonLdByPage';
 
 	$: musicArchiveItems = [
 		{

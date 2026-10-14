@@ -1,9 +1,9 @@
 <script lang="ts">
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify, TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let item: ArtistSpotify | TrackSpotify;

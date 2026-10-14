@@ -1,5 +1,5 @@
 // Environment variables
-import { ALLIFY_URL } from '$env/static/private';
+import { ALLIFY_URL } from '$app/env/private';
 
 export const GET = () => {
 	return new Response(

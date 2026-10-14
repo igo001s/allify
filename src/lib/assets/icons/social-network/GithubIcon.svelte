@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let iconSvgClass: string = '';

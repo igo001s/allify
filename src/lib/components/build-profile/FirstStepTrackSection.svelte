@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Components
-	import SelectItemCard from '$lib/components/general/cards/SelectItemCard.svelte';
+	import SelectItemCard from '#lib/components/general/cards/SelectItemCard.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/Spotify.type';
+	import type { TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let goToNextStep: () => void;

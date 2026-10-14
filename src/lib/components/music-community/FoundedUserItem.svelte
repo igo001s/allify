@@ -1,24 +1,24 @@
 <script lang="ts">
 	// Assets
-	import SpotifyIcon from '$lib/assets/icons/streamings/SpotifyIcon.svelte';
-	import DeezerIcon from '$lib/assets/icons/streamings/DeezerIcon.svelte';
-	import OutlinedStar from '$lib/assets/icons/OutlinedStar.svelte';
-	import FilledStar from '$lib/assets/icons/FilledStar.svelte';
+	import SpotifyIcon from '#lib/assets/icons/streamings/SpotifyIcon.svelte';
+	import DeezerIcon from '#lib/assets/icons/streamings/DeezerIcon.svelte';
+	import OutlinedStar from '#lib/assets/icons/OutlinedStar.svelte';
+	import FilledStar from '#lib/assets/icons/FilledStar.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// MongoDB
 	import type { ObjectId } from 'mongodb';
 
 	// Services
-	import { addToFavorites } from '$lib/services/user/add/addToFavorites';
-	import { removeFromFavorites } from '$lib/services/user/remove/removeFromFavorites';
+	import { addToFavorites } from '#lib/services/user/add/addToFavorites';
+	import { removeFromFavorites } from '#lib/services/user/remove/removeFromFavorites';
 
 	// Types
-	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
+	import type { SearchUserInfo } from '#lib/types/UserInfo.type';
 
 	// Props
 	export let user: SearchUserInfo;

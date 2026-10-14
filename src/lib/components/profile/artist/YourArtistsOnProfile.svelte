@@ -1,21 +1,21 @@
 <script lang="ts">
 	// Assets
-	import ShareIcon from '$lib/assets/icons/ShareIcon.svelte';
+	import ShareIcon from '#lib/assets/icons/ShareIcon.svelte';
 
 	// Components
-	import YourArtistOnProfileItem from '$lib/components/profile/artist/YourArtistsOnProfileItem.svelte';
-	import EmptyArtistOfTheMoment from '$lib/components/profile/artist/artist-of-the-moment/EmptyArtistOfTheMoment.svelte';
-	import EmptyCustomArtist from '$lib/components/profile/artist/custom-artist/EmptyCustomArtist.svelte';
-	import ShareDataModal from '$lib/components/general/modals/ShareDataModal.svelte';
+	import YourArtistOnProfileItem from '#lib/components/profile/artist/YourArtistsOnProfileItem.svelte';
+	import EmptyArtistOfTheMoment from '#lib/components/profile/artist/artist-of-the-moment/EmptyArtistOfTheMoment.svelte';
+	import EmptyCustomArtist from '#lib/components/profile/artist/custom-artist/EmptyCustomArtist.svelte';
+	import ShareDataModal from '#lib/components/general/modals/ShareDataModal.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Types
-	import type { ArtistItems } from '$lib/types/Artists.type';
-	import type { ShareDataContent } from '$lib/types/Share.type';
+	import type { ArtistItems } from '#lib/types/Artists.type';
+	import type { ShareDataContent } from '#lib/types/Share.type';
 
 	// Props
 	export let openChangeYourItemsModal: (itemType: 'artist') => void;

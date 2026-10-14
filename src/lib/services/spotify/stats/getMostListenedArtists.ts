@@ -2,10 +2,10 @@
 import { dev } from '$app/environment';
 
 // Utils
-import { nextUpdateTime } from '$lib/utils/nextUpdateTime';
+import { nextUpdateTime } from '#lib/utils/nextUpdateTime';
 
 // Types
-import type { ArtistSpotify } from '$lib/types/Spotify.type';
+import type { ArtistSpotify } from '#lib/types/Spotify.type';
 
 export async function getMostListenedArtists(limit: number = 5) {
 	const mostListenedArtistsItems = {

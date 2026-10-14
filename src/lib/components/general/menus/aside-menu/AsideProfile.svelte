@@ -1,18 +1,18 @@
 <script lang="ts">
 	// Assets
-	import ProfileIcon from '$lib/assets/icons/ProfileIcon.svelte';
-	import ArrowIcon from '$lib/assets/icons/ArrowIcon.svelte';
+	import ProfileIcon from '#lib/assets/icons/ProfileIcon.svelte';
+	import ArrowIcon from '#lib/assets/icons/ArrowIcon.svelte';
 
 	// Components
-	import AsideProfileItems from '$lib/components/general/menus/aside-menu/AsideProfileItems.svelte';
-	import Ticket from '$lib/components/general/Ticket.svelte';
+	import AsideProfileItems from '#lib/components/general/menus/aside-menu/AsideProfileItems.svelte';
+	import Ticket from '#lib/components/general/Ticket.svelte';
 
 	// Utils
-	import { logoutWrapper } from '$lib/utils/logoutWrapper';
+	import { logoutWrapper } from '#lib/utils/logoutWrapper';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Props
 	export let isAsideMenuOpen: boolean;

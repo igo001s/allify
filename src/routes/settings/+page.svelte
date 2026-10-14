@@ -3,16 +3,16 @@
 	import { page } from '$app/stores';
 
 	// Components
-	import ConnectedPlatforms from '$lib/components/settings/ConnectedPlatforms.svelte';
-	import NotLogged from '$lib/components/general/NotLogged.svelte';
-	import ChangeVisibility from '$lib/components/settings/ChangeVisibility.svelte';
+	import ConnectedPlatforms from '#lib/components/settings/ConnectedPlatforms.svelte';
+	import NotLogged from '#lib/components/general/NotLogged.svelte';
+	import ChangeVisibility from '#lib/components/settings/ChangeVisibility.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Schema
-	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+	import { getJsonLdByPage } from '#lib/utils/getJsonLdByPage';
 
 	$: jsonLd = getJsonLdByPage(
 		'settingsPage',

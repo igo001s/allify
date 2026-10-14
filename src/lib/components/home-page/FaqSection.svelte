@@ -3,12 +3,12 @@
 	import type { Component } from 'svelte';
 
 	// Assets
-	import LinkedinIcon from '$lib/assets/icons/social-network/LinkedinIcon.svelte';
-	import GithubIcon from '$lib/assets/icons/social-network/GithubIcon.svelte';
-	import ArrowIcon from '$lib/assets/icons/ArrowIcon.svelte';
+	import LinkedinIcon from '#lib/assets/icons/social-network/LinkedinIcon.svelte';
+	import GithubIcon from '#lib/assets/icons/social-network/GithubIcon.svelte';
+	import ArrowIcon from '#lib/assets/icons/ArrowIcon.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Reactive values
 	$: contactItems = [

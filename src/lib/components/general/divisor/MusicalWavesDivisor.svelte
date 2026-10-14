@@ -1,10 +1,10 @@
 <script lang="ts">
 	// Assets
-	import DivisorDesktop from '$lib/assets/dividers/musical-waves-desktop.webp';
-	import DivisorMobile from '$lib/assets/dividers/musical-waves-mobile.webp';
+	import DivisorDesktop from '#lib/assets/dividers/musical-waves-desktop.webp';
+	import DivisorMobile from '#lib/assets/dividers/musical-waves-mobile.webp';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 </script>
 
 <picture>

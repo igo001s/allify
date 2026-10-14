@@ -1,14 +1,14 @@
 <script lang="ts">
 	// Components
-	import Followers from '$lib/components/general/Followers.svelte';
-	import Popularity from '$lib/components/general/Popularity.svelte';
-	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
+	import Followers from '#lib/components/general/Followers.svelte';
+	import Popularity from '#lib/components/general/Popularity.svelte';
+	import ExternalLink from '#lib/components/general/ExternalLink.svelte';
 
 	// Types
-	import type { ArtistSpotify, TrackSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify, TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let item: ArtistSpotify | TrackSpotify;

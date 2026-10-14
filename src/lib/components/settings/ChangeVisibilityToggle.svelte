@@ -1,11 +1,11 @@
 <script lang="ts">
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { updateProfileVisibility } from '$lib/services/user/updates/updateProfileVisibility';
+	import { updateProfileVisibility } from '#lib/services/user/updates/updateProfileVisibility';
 
 	// Props
 	export let visibility: 'public' | 'private';

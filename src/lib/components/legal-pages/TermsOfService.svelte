@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 </script>
 
 <section class="legal-pages-spacing">

@@ -2,14 +2,14 @@
 import { dev } from '$app/environment';
 
 // Services
-import { useTicket } from '$lib/services/user/tickets/useTicket';
-import { returnTicket } from '$lib/services/user/tickets/returnTicket';
+import { useTicket } from '#lib/services/user/tickets/useTicket';
+import { returnTicket } from '#lib/services/user/tickets/returnTicket';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
 // Types
-import type { TrackSpotify } from '$lib/types/Spotify.type';
+import type { TrackSpotify } from '#lib/types/Spotify.type';
 
 export async function updateTrackOfTheMoment(
 	id: ObjectId,

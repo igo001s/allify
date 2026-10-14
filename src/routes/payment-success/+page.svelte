@@ -3,13 +3,13 @@
 	import { page } from '$app/stores';
 
 	// Components
-	import Ticket from '$lib/components/general/Ticket.svelte';
+	import Ticket from '#lib/components/general/Ticket.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Schema
-	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+	import { getJsonLdByPage } from '#lib/utils/getJsonLdByPage';
 
 	$: jsonLd = getJsonLdByPage(
 		'paymentSuccessPage',

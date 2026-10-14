@@ -2,13 +2,13 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Server
-import { connectToMongoDB } from '$lib/server/mongodb';
+import { connectToMongoDB } from '#lib/server/mongodb';
 
 // MongoDB
 import { ObjectId } from 'mongodb';
 
 // Environment variables
-import { MONGO_DB, ALLIFY_URL } from '$env/static/private';
+import { MONGO_DB, ALLIFY_URL } from '$app/env/private';
 
 const ALLOWED_ORIGINS = [ALLIFY_URL];
 

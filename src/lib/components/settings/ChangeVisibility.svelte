@@ -1,10 +1,10 @@
 <script lang="ts">
 	// Components
-	import ChangeVisibilityToggle from '$lib/components/settings/ChangeVisibilityToggle.svelte';
+	import ChangeVisibilityToggle from '#lib/components/settings/ChangeVisibilityToggle.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 </script>
 
 <div class="flex flex-col items-start gap-4">

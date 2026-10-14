@@ -3,10 +3,10 @@
 	import SelectItemCard from '../../general/cards/SelectItemCard.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/Spotify.type';
+	import type { TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let handleTrackSelection: (track: TrackSpotify) => void;

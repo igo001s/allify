@@ -2,7 +2,7 @@
 import { get } from 'svelte/store';
 
 // Stores
-import { translationsStore } from '$lib/stores/translations.store';
+import { translationsStore } from '#lib/stores/translations.store';
 
 export const welcomeToAllifyTemplate = (name: string, streaming: string) => {
 	const $translationsStore = get(translationsStore);

@@ -2,8 +2,8 @@
 import { dev } from '$app/environment';
 
 // Types
-import type { UserInfoSpotify } from '$lib/types/Spotify.type';
-import type { InitialUserInfo } from '$lib/types/UserInfo.type';
+import type { UserInfoSpotify } from '#lib/types/Spotify.type';
+import type { InitialUserInfo } from '#lib/types/UserInfo.type';
 
 // Services
 import { getMostListenedArtists } from '../stats/getMostListenedArtists';

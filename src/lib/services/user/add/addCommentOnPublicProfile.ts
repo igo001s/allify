@@ -2,7 +2,7 @@
 import { dev } from '$app/environment';
 
 // Types
-import type { AuthorComment } from '$lib/types/Comments.type';
+import type { AuthorComment } from '#lib/types/Comments.type';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';

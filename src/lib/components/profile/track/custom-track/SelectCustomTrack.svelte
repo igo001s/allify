@@ -3,18 +3,18 @@
 	import SelectTrackCardOnProfile from '../SelectTrackCardOnProfile.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { updateCustomTrack } from '$lib/services/user/updates/updateCustomTrack';
+	import { updateCustomTrack } from '#lib/services/user/updates/updateCustomTrack';
 
 	// Utils
-	import { validateCustomItemTitle } from '$lib/utils/validateCustomItemTitle';
+	import { validateCustomItemTitle } from '#lib/utils/validateCustomItemTitle';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/Spotify.type';
+	import type { TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let closeSelectCustomItemModal: () => void;

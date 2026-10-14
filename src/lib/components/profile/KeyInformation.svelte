@@ -1,17 +1,17 @@
 <script lang="ts">
 	// Assets
-	import PlusIcon from '$lib/assets/icons/PlusIcon.svelte';
-	import CommentIcon from '$lib/assets/icons/CommentIcon.svelte';
+	import PlusIcon from '#lib/assets/icons/PlusIcon.svelte';
+	import CommentIcon from '#lib/assets/icons/CommentIcon.svelte';
 
 	// Components
-	import ExternalLink from '$lib/components/general/ExternalLink.svelte';
-	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
-	import Ticket from '$lib/components/general/Ticket.svelte';
-	import Followers from '$lib/components/general/Followers.svelte';
+	import ExternalLink from '#lib/components/general/ExternalLink.svelte';
+	import StreamingSelector from '#lib/components/general/StreamingSelector.svelte';
+	import Ticket from '#lib/components/general/Ticket.svelte';
+	import Followers from '#lib/components/general/Followers.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { showAddTickets } from '$lib/stores/showAddTickets.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { showAddTickets } from '#lib/stores/showAddTickets.store';
 
 	// Props
 	export let userInfo;

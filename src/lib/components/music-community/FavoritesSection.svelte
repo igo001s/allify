@@ -3,8 +3,8 @@
 	import FavoriteUserItem from './FavoriteUserItem.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 </script>
 
 <div class="w-full rounded-lg border border-b-default bg-s-default p-5 xl:w-2/5">

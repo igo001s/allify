@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Assets
-	import EditArtistIcon from '$lib/assets/icons/EditArtistIcon.svelte';
-	import EditMusicIcon from '$lib/assets/icons/EditMusicIcon.svelte';
+	import EditArtistIcon from '#lib/assets/icons/EditArtistIcon.svelte';
+	import EditMusicIcon from '#lib/assets/icons/EditMusicIcon.svelte';
 
 	// Props
 	export let handleEditButtonClick: (() => void) | undefined = undefined;

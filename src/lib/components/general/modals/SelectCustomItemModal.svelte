@@ -1,11 +1,11 @@
 <script lang="ts">
 	// Components
-	import Modal from '$lib/components/general/modals/Modal.svelte';
-	import SelectCustomArtist from '$lib/components/profile/artist/custom-artist/SelectCustomArtist.svelte';
-	import SelectCustomTrack from '$lib/components/profile/track/custom-track/SelectCustomTrack.svelte';
+	import Modal from '#lib/components/general/modals/Modal.svelte';
+	import SelectCustomArtist from '#lib/components/profile/artist/custom-artist/SelectCustomArtist.svelte';
+	import SelectCustomTrack from '#lib/components/profile/track/custom-track/SelectCustomTrack.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let closeSelectCustomItemModal: () => void;

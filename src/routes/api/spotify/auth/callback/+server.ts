@@ -3,11 +3,7 @@ import type { RequestHandler } from '@sveltejs/kit';
 import { json, redirect, error } from '@sveltejs/kit';
 
 // Environment variables
-import {
-	SPOTIFY_CLIENT_ID,
-	SPOTIFY_CLIENT_SECRET,
-	SPOTIFY_REDIRECT_URI
-} from '$env/static/private';
+import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI } from '$app/env/private';
 
 export const GET: RequestHandler = async ({ url, cookies }) => {
 	const code = url.searchParams.get('code');

@@ -3,17 +3,17 @@
 	import { resolve } from '$app/paths';
 
 	// Assets
-	import BurguerMenuIcon from '$lib/assets/icons/BurgerMenuIcon.svelte';
-	import AllifyLogoColorful from '$lib/assets/logos/AllifyLogoColorful.webp?enhanced';
+	import BurguerMenuIcon from '#lib/assets/icons/BurgerMenuIcon.svelte';
+	import AllifyLogoColorful from '#lib/assets/logos/AllifyLogoColorful.webp?enhanced';
 
 	// Components
-	import HeaderNavigation from '$lib/components/general/header/HeaderNavigation.svelte';
-	import AsideMenu from '$lib/components/general/menus/aside-menu/AsideMenu.svelte';
-	import HeaderSelectLanguage from '$lib/components/general/header/HeaderSelectLanguage.svelte';
-	import HeaderProfile from '$lib/components/general/header/HeaderProfile.svelte';
+	import HeaderNavigation from '#lib/components/general/header/HeaderNavigation.svelte';
+	import AsideMenu from '#lib/components/general/menus/aside-menu/AsideMenu.svelte';
+	import HeaderSelectLanguage from '#lib/components/general/header/HeaderSelectLanguage.svelte';
+	import HeaderProfile from '#lib/components/general/header/HeaderProfile.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	let isAsideMenuOpen = false;
 	let openLanguageDropdown = false;

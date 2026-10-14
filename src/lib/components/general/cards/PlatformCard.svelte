@@ -1,18 +1,18 @@
 <script lang="ts">
 	// Assets
-	import ConnectIcon from '$lib/assets/icons/ConnectIcon.svelte';
-	import ExternalLinkIcon from '$lib/assets/icons/ExternalLinkIcon.svelte';
+	import ConnectIcon from '#lib/assets/icons/ConnectIcon.svelte';
+	import ExternalLinkIcon from '#lib/assets/icons/ExternalLinkIcon.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Types
-	import type { CardPlatformType } from '$lib/types/Components.type';
+	import type { CardPlatformType } from '#lib/types/Components.type';
 
 	// Utils
-	import { setTitleByStreaming } from '$lib/utils/setTitleByStreaming';
-	import { signInWrapper } from '$lib/utils/signInWrapper';
+	import { setTitleByStreaming } from '#lib/utils/setTitleByStreaming';
+	import { signInWrapper } from '#lib/utils/signInWrapper';
 
 	// Props
 	export let platform: CardPlatformType;

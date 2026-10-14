@@ -1,15 +1,15 @@
 <script lang="ts">
 	// Assets
-	import DotsLoading from '$lib/assets/animations/DotsLoading.svelte';
+	import DotsLoading from '#lib/assets/animations/DotsLoading.svelte';
 
 	// Components
-	import FoundedUserItem from '$lib/components/music-community/FoundedUserItem.svelte';
+	import FoundedUserItem from '#lib/components/music-community/FoundedUserItem.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Types
-	import type { SearchUserInfo } from '$lib/types/UserInfo.type';
+	import type { SearchUserInfo } from '#lib/types/UserInfo.type';
 
 	// Props
 	export let searchUserInputValue: string = '';

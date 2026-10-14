@@ -1,11 +1,11 @@
 <script lang="ts">
 	// Components
-	import Modal from '$lib/components/general/modals/Modal.svelte';
-	import ChangeCustomArtist from '$lib/components/profile/artist/custom-artist/ChangeCustomArtist.svelte';
-	import ChangeCustomTrack from '$lib/components/profile/track/custom-track/ChangeCustomTrack.svelte';
+	import Modal from '#lib/components/general/modals/Modal.svelte';
+	import ChangeCustomArtist from '#lib/components/profile/artist/custom-artist/ChangeCustomArtist.svelte';
+	import ChangeCustomTrack from '#lib/components/profile/track/custom-track/ChangeCustomTrack.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let closeChangeCustomItemModal: () => void;

@@ -3,13 +3,13 @@
 	import { page } from '$app/stores';
 
 	// Components
-	import PrivacyPolicy from '$lib/components/legal-pages/PrivacyPolicy.svelte';
+	import PrivacyPolicy from '#lib/components/legal-pages/PrivacyPolicy.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Schema
-	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+	import { getJsonLdByPage } from '#lib/utils/getJsonLdByPage';
 
 	$: jsonLd = getJsonLdByPage(
 		'privacyPolicyPage',

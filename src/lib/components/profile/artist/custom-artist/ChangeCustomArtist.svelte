@@ -1,21 +1,21 @@
 <script lang="ts">
 	// Components
-	import ChangeArtistCardOnProfile from '$lib/components/profile/artist/ChangeArtistCardOnProfile.svelte';
+	import ChangeArtistCardOnProfile from '#lib/components/profile/artist/ChangeArtistCardOnProfile.svelte';
 	import Ticket from '../../../general/Ticket.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { updateCustomArtist } from '$lib/services/user/updates/updateCustomArtist';
+	import { updateCustomArtist } from '#lib/services/user/updates/updateCustomArtist';
 
 	// Utils
-	import { validateCustomItemTitle } from '$lib/utils/validateCustomItemTitle';
+	import { validateCustomItemTitle } from '#lib/utils/validateCustomItemTitle';
 
 	// Types
-	import type { ArtistSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let closeChangeCustomItemModal: () => void;

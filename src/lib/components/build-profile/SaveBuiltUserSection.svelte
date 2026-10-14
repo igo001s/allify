@@ -1,14 +1,14 @@
 <script lang="ts">
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { saveBuiltProfile } from '$lib/services/user/build/saveBuiltProfile';
+	import { saveBuiltProfile } from '#lib/services/user/build/saveBuiltProfile';
 
 	// Types
-	import type { buildProfileInfo } from '$lib/types/UserInfo.type';
+	import type { buildProfileInfo } from '#lib/types/UserInfo.type';
 
 	// Props
 	export let backToPreviousStep: () => void;

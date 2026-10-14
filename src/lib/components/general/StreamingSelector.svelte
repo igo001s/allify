@@ -3,7 +3,7 @@
 	import SelectStreamingButton from '../profile/SelectStreamingButton.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Props
 	export let selectedStreaming: 'spotify' | 'deezer' = $userInfo?.primaryStreaming ?? 'spotify';

@@ -3,24 +3,24 @@
 	import { page } from '$app/stores';
 
 	// Assets
-	import NotLogged from '$lib/components/general/NotLogged.svelte';
+	import NotLogged from '#lib/components/general/NotLogged.svelte';
 
 	//Components
-	import KeyInformation from '$lib/components/profile/KeyInformation.svelte';
-	import YourSongsOnProfile from '$lib/components/profile/track/YourSongsOnProfile.svelte';
-	import YourArtistsOnProfile from '$lib/components/profile/artist/YourArtistsOnProfile.svelte';
-	import ChangeItemOfTheMomentModal from '$lib/components/general/modals/ChangeItemOfTheMomentModal.svelte';
-	import SelectItemOfTheMomentModal from '$lib/components/general/modals/SelectItemOfTheMomentModal.svelte';
-	import SelectCustomItemModal from '$lib/components/general/modals/SelectCustomItemModal.svelte';
-	import ChangeCustomItemModal from '$lib/components/general/modals/ChangeCustomItemModal.svelte';
-	import CommentsModal from '$lib/components/general/modals/CommentsModal.svelte';
+	import KeyInformation from '#lib/components/profile/KeyInformation.svelte';
+	import YourSongsOnProfile from '#lib/components/profile/track/YourSongsOnProfile.svelte';
+	import YourArtistsOnProfile from '#lib/components/profile/artist/YourArtistsOnProfile.svelte';
+	import ChangeItemOfTheMomentModal from '#lib/components/general/modals/ChangeItemOfTheMomentModal.svelte';
+	import SelectItemOfTheMomentModal from '#lib/components/general/modals/SelectItemOfTheMomentModal.svelte';
+	import SelectCustomItemModal from '#lib/components/general/modals/SelectCustomItemModal.svelte';
+	import ChangeCustomItemModal from '#lib/components/general/modals/ChangeCustomItemModal.svelte';
+	import CommentsModal from '#lib/components/general/modals/CommentsModal.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Schema
-	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+	import { getJsonLdByPage } from '#lib/utils/getJsonLdByPage';
 
 	$: jsonLd = getJsonLdByPage(
 		'profilePage',

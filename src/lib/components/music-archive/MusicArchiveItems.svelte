@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Components
-	import MusicArchiveCard from '$lib/components/general/cards/MusicArchiveCard.svelte';
+	import MusicArchiveCard from '#lib/components/general/cards/MusicArchiveCard.svelte';
 
 	// Types
-	import type { ArtistSpotify } from '$lib/types/Spotify.type';
-	import type { TrackSpotify } from '$lib/types/Spotify.type';
+	import type { ArtistSpotify } from '#lib/types/Spotify.type';
+	import type { TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let itemTitle: string;

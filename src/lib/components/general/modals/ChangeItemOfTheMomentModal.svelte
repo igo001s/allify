@@ -1,11 +1,11 @@
 <script lang="ts">
 	// Components
-	import Modal from '$lib/components/general/modals/Modal.svelte';
-	import ChangeTrackOfTheMoment from '$lib/components/profile/track/track-of-the-moment/ChangeTrackOfTheMoment.svelte';
-	import ChangeArtistOfTheMoment from '$lib/components/profile/artist/artist-of-the-moment/ChangeArtistOfTheMoment.svelte';
+	import Modal from '#lib/components/general/modals/Modal.svelte';
+	import ChangeTrackOfTheMoment from '#lib/components/profile/track/track-of-the-moment/ChangeTrackOfTheMoment.svelte';
+	import ChangeArtistOfTheMoment from '#lib/components/profile/artist/artist-of-the-moment/ChangeArtistOfTheMoment.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let closeChangeItemOfTheMomentModal: () => void;

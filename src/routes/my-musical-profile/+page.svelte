@@ -3,16 +3,16 @@
 	import { page } from '$app/stores';
 
 	// Components
-	import MostListenedItems from '$lib/components/my-musical-profile/MostListenedItems.svelte';
-	import NotLogged from '$lib/components/general/NotLogged.svelte';
-	import StreamingSelector from '$lib/components/general/StreamingSelector.svelte';
+	import MostListenedItems from '#lib/components/my-musical-profile/MostListenedItems.svelte';
+	import NotLogged from '#lib/components/general/NotLogged.svelte';
+	import StreamingSelector from '#lib/components/general/StreamingSelector.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
 
 	// Schema
-	import { getJsonLdByPage } from '$lib/utils/getJsonLdByPage';
+	import { getJsonLdByPage } from '#lib/utils/getJsonLdByPage';
 
 	$: jsonLd = getJsonLdByPage(
 		'myMusicalProfilePage',

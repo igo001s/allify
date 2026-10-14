@@ -2,10 +2,10 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 // Types
-import type { TrackSpotify } from '$lib/types/Spotify.type';
+import type { TrackSpotify } from '#lib/types/Spotify.type';
 
 // Environment variables
-import { ALLIFY_URL } from '$env/static/private';
+import { ALLIFY_URL } from '$app/env/private';
 
 const ALLOWED_ORIGINS = [ALLIFY_URL];
 

@@ -1,11 +1,11 @@
 <script lang="ts">
 	// Components
-	import Modal from '$lib/components/general/modals/Modal.svelte';
-	import SelectArtistOfTheMoment from '$lib/components/profile/artist/artist-of-the-moment/SelectArtistOfTheMoment.svelte';
-	import SelectTrackOfTheMoment from '$lib/components/profile/track/track-of-the-moment/SelectTrackOfTheMoment.svelte';
+	import Modal from '#lib/components/general/modals/Modal.svelte';
+	import SelectArtistOfTheMoment from '#lib/components/profile/artist/artist-of-the-moment/SelectArtistOfTheMoment.svelte';
+	import SelectTrackOfTheMoment from '#lib/components/profile/track/track-of-the-moment/SelectTrackOfTheMoment.svelte';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	// Props
 	export let closeSelectItemOfTheMomentModal: () => void;

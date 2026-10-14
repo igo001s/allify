@@ -2,10 +2,10 @@
 import { get } from 'svelte/store';
 
 // Services
-import { logoutSpotify } from '$lib/services/spotify/auth/logoutSpotify';
+import { logoutSpotify } from '#lib/services/spotify/auth/logoutSpotify';
 
 // Stores
-import { userInfo } from '$lib/stores/userInfo.store';
+import { userInfo } from '#lib/stores/userInfo.store';
 
 export function logoutWrapper(
 	streaming: 'spotify' | 'deezer',

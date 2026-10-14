@@ -5,7 +5,7 @@
 	import { resolve } from '$app/paths';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
+	import { translationsStore } from '#lib/stores/translations.store';
 
 	const status = $page.status || 500;
 

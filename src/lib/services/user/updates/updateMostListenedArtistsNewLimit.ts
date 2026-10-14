@@ -2,12 +2,12 @@
 import { dev } from '$app/environment';
 
 // Services
-import { useTicket } from '$lib/services/user/tickets/useTicket';
-import { returnTicket } from '$lib/services/user/tickets/returnTicket';
-import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
+import { useTicket } from '#lib/services/user/tickets/useTicket';
+import { returnTicket } from '#lib/services/user/tickets/returnTicket';
+import { getMostListenedArtists } from '#lib/services/spotify/stats/getMostListenedArtists';
 
 // Types
-import type { ArtistsSpotify } from '$lib/types/Spotify.type';
+import type { ArtistsSpotify } from '#lib/types/Spotify.type';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';

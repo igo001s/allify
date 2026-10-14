@@ -3,21 +3,21 @@
 	import { onMount } from 'svelte';
 
 	// Global styles
-	import '$lib/styles/global.css';
+	import '#lib/styles/global.css';
 
 	// Components
-	import Header from '$lib/components/general/header/Header.svelte';
-	import Footer from '$lib/components/general/footer/Footer.svelte';
+	import Header from '#lib/components/general/header/Header.svelte';
+	import Footer from '#lib/components/general/footer/Footer.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { loadingAfterConnectionStore } from '$lib/stores/loadingAfterConnection.store';
-	import { showAddTickets } from '$lib/stores/showAddTickets.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { loadingAfterConnectionStore } from '#lib/stores/loadingAfterConnection.store';
+	import { showAddTickets } from '#lib/stores/showAddTickets.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { fetchUserInfo } from '$lib/services/user/build/fetchUserInfo';
+	import { fetchUserInfo } from '#lib/services/user/build/fetchUserInfo';
 
 	let { children } = $props();
 
@@ -86,14 +86,14 @@
 
 <!-- Toast notifications -->
 {#if $toastStore.showToast === true}
-	{#await import('$lib/components/general/Toast.svelte') then { default: Toast }}
+	{#await import('#lib/components/general/Toast.svelte') then { default: Toast }}
 		<Toast />
 	{/await}
 {/if}
 
 <!-- Loading after streaming connection -->
 {#if $loadingAfterConnectionStore.loading === true}
-	{#await import('$lib/components/general/LoadingAfterConnection.svelte') then { default: LoadingAfterConnection }}
+	{#await import('#lib/components/general/LoadingAfterConnection.svelte') then { default: LoadingAfterConnection }}
 		<LoadingAfterConnection
 			streamingPlatform={$loadingAfterConnectionStore.streamingPlatform ?? undefined}
 		/>
@@ -102,14 +102,14 @@
 
 <!-- Add Tickets Modal -->
 {#if $showAddTickets.show === true}
-	{#await import('$lib/components/general/modals/AddTicketsModal.svelte') then { default: AddTicketsModal }}
+	{#await import('#lib/components/general/modals/AddTicketsModal.svelte') then { default: AddTicketsModal }}
 		<AddTicketsModal openFrom={$showAddTickets.openFrom} />
 	{/await}
 {/if}
 
 <!-- Build Profile -->
 {#if $userInfo && !$userInfo?.artists?.artistOfTheMoment?.artist && !$userInfo?.tracks?.trackOfTheMoment?.track && $userInfo?.profileVisibility.visibility === undefined}
-	{#await import('$lib/components/general/modals/BuildProfileModal.svelte') then { default: BuildProfileModal }}
+	{#await import('#lib/components/general/modals/BuildProfileModal.svelte') then { default: BuildProfileModal }}
 		<BuildProfileModal />
 	{/await}
 {/if}

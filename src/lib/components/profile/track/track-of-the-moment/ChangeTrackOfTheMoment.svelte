@@ -1,18 +1,18 @@
 <script lang="ts">
 	// Components
-	import ChangeTrackCardOnProfile from '$lib/components/profile/track/ChangeTrackCardOnProfile.svelte';
-	import Ticket from '$lib/components/general/Ticket.svelte';
+	import ChangeTrackCardOnProfile from '#lib/components/profile/track/ChangeTrackCardOnProfile.svelte';
+	import Ticket from '#lib/components/general/Ticket.svelte';
 
 	// Stores
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Services
-	import { updateTrackOfTheMoment } from '$lib/services/user/updates/updateTrackOfTheMoment';
+	import { updateTrackOfTheMoment } from '#lib/services/user/updates/updateTrackOfTheMoment';
 
 	// Types
-	import type { TrackSpotify } from '$lib/types/Spotify.type';
+	import type { TrackSpotify } from '#lib/types/Spotify.type';
 
 	// Props
 	export let closeChangeItemOfTheMomentModal: () => void;

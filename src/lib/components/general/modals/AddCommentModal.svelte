@@ -1,20 +1,20 @@
 <script lang="ts">
 	// Components
-	import Modal from '$lib/components/general/modals/Modal.svelte';
+	import Modal from '#lib/components/general/modals/Modal.svelte';
 
 	// Utils
-	import { validateComment } from '$lib/utils/validateComment';
+	import { validateComment } from '#lib/utils/validateComment';
 
 	// Services
-	import { addCommentOnPublicProfile } from '$lib/services/user/add/addCommentOnPublicProfile';
+	import { addCommentOnPublicProfile } from '#lib/services/user/add/addCommentOnPublicProfile';
 
 	// Stores
-	import { translationsStore } from '$lib/stores/translations.store';
-	import { userInfo } from '$lib/stores/userInfo.store';
-	import { toastStore } from '$lib/stores/toast.store';
+	import { translationsStore } from '#lib/stores/translations.store';
+	import { userInfo } from '#lib/stores/userInfo.store';
+	import { toastStore } from '#lib/stores/toast.store';
 
 	// Types
-	import type { UserInfo } from '$lib/types/UserInfo.type';
+	import type { UserInfo } from '#lib/types/UserInfo.type';
 
 	// MongoDB
 	import type { ObjectId } from 'mongodb';

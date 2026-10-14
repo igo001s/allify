@@ -2,15 +2,15 @@
 import { dev } from '$app/environment';
 
 // Services
-import { useTicket } from '$lib/services/user/tickets/useTicket';
-import { returnTicket } from '$lib/services/user/tickets/returnTicket';
-import { getMostListenedArtists } from '$lib/services/spotify/stats/getMostListenedArtists';
+import { useTicket } from '#lib/services/user/tickets/useTicket';
+import { returnTicket } from '#lib/services/user/tickets/returnTicket';
+import { getMostListenedArtists } from '#lib/services/spotify/stats/getMostListenedArtists';
 
 // MongoDB
 import type { ObjectId } from 'mongodb';
 
 // Types
-import type { ArtistsSpotify } from '$lib/types/Spotify.type';
+import type { ArtistsSpotify } from '#lib/types/Spotify.type';
 
 export async function updateMostListenedArtists(
 	id: ObjectId,
