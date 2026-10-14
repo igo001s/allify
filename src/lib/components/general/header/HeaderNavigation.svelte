@@ -1,6 +1,6 @@
 <script lang="ts">
 	// App
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { resolve } from '$app/paths';
 
 	// Stores
@@ -29,7 +29,7 @@
 				<a
 					href={resolve(item.link)}
 					class={`${
-						$page.url.pathname === item.link
+						page.url.pathname === item.link
 							? 'font-semibold text-brand-primary-dark'
 							: 'text-brand-primary hover:text-brand-primary-dark'
 					} text-sm font-medium`}

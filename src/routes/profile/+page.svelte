@@ -1,6 +1,6 @@
 <script lang="ts">
 	// App
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	// Assets
 	import NotLogged from '#lib/components/general/NotLogged.svelte';
@@ -98,17 +98,17 @@
 			: $translationsStore.profilePage.profilePageWithoutLoginMetaDescription}
 	/>
 	<meta name="keywords" content={$translationsStore.profilePage.profilePageMetaKeywords} />
-	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify.club${page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify.club${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify.club${page.url.pathname}`} />
 	<meta property="og:title" content={$translationsStore.profilePage.title} />
 	<meta
 		property="og:description"
 		content={$translationsStore.profilePage.profilePageMetaOgAndTwitterContent}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify.club${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify.club${page.url.pathname}`} />
 	<meta name="twitter:title" content={$translationsStore.profilePage.title} />
 	<meta
 		name="twitter:description"

@@ -1,6 +1,6 @@
 <script lang="ts">
 	// App
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	// Components
 	import PrivacyPolicy from '#lib/components/legal-pages/PrivacyPolicy.svelte';
@@ -34,17 +34,17 @@
 		name="description"
 		content={$translationsStore.legalPages.privacyPolicy.privacyPolicyMetaDescription}
 	/>
-	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify.club${page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify.club${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify.club${page.url.pathname}`} />
 	<meta property="og:title" content={$translationsStore.legalPages.privacyPolicy.title} />
 	<meta
 		property="og:description"
 		content={$translationsStore.legalPages.privacyPolicy.privacyPolicyMetaOgAndTwitterContent}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify.club${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify.club${page.url.pathname}`} />
 	<meta name="twitter:title" content={$translationsStore.legalPages.privacyPolicy.title} />
 	<meta
 		name="twitter:description"

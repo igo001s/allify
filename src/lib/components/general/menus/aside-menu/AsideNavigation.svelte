@@ -1,6 +1,6 @@
 <script lang="ts">
 	// App
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { resolve } from '$app/paths';
 
@@ -40,13 +40,13 @@
 			<li>
 				<button
 					type="button"
-					aria-current={$page.url.pathname === item.link ? 'page' : undefined}
+					aria-current={page.url.pathname === item.link ? 'page' : undefined}
 					class="
 						cursor-pointer
 						text-sm
 						font-medium
 						hover:text-brand-primary-dark
-						{$page.url.pathname === item.link ? 'font-semibold text-brand-primary-dark' : 'text-brand-primary'}
+						{page.url.pathname === item.link ? 'font-semibold text-brand-primary-dark' : 'text-brand-primary'}
 					"
 					on:click={() => handleNavigation(item.link)}
 				>

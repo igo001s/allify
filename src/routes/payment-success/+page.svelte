@@ -1,6 +1,6 @@
 <script lang="ts">
 	// App
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	// Components
 	import Ticket from '#lib/components/general/Ticket.svelte';
@@ -34,17 +34,17 @@
 		name="keywords"
 		content={$translationsStore.paymentSuccessPage.paymentSuccessPageMetaKeywords}
 	/>
-	<link rel="canonical" href={`https://allify.club${$page.url.pathname}`} />
+	<link rel="canonical" href={`https://allify.club${page.url.pathname}`} />
 	<!-- Open Graph -->
 	<meta property="og:locale" content={$translationsStore.configuration.langAttribute} />
-	<meta property="og:url" content={`https://allify.club${$page.url.pathname}`} />
+	<meta property="og:url" content={`https://allify.club${page.url.pathname}`} />
 	<meta property="og:title" content={$translationsStore.paymentSuccessPage.title} />
 	<meta
 		property="og:description"
 		content={$translationsStore.paymentSuccessPage.paymentSuccessPageMetaOgAndTwitterContent}
 	/>
 	<!-- Twitter Card -->
-	<meta name="twitter:url" content={`https://allify.club${$page.url.pathname}`} />
+	<meta name="twitter:url" content={`https://allify.club${page.url.pathname}`} />
 	<meta name="twitter:title" content={$translationsStore.paymentSuccessPage.title} />
 	<meta
 		name="twitter:description"
@@ -65,7 +65,7 @@
 
 	<div class="bg-surface-primary flex items-center gap-3 rounded-xl px-6 py-4 shadow-sm">
 		<span class="text-xl font-semibold text-t-primary"
-			>+{$page.url.searchParams.get('quantity')}</span
+			>+{page.url.searchParams.get('quantity')}</span
 		>
 
 		<Ticket usingTicket={false} />
