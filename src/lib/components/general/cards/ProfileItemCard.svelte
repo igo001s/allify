@@ -29,13 +29,13 @@
 	}
 </script>
 
-<div class="flex w-full flex-col gap-5 xl:w-1/3">
+<div class="flex w-full flex-col gap-4 xl:w-1/3">
 	<h3 class={`heading-3 ${isUppercase ? 'uppercase' : ''}`}>
 		{heading3}
 	</h3>
 
 	<div
-		class="relative flex h-80 flex-col gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:h-56 md:flex-row lg:p-6"
+		class="relative flex h-80 shrink-0 flex-col gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:h-56 md:flex-row lg:p-6"
 	>
 		{#if showEditIcon}
 			<EditProfileItemButton
@@ -50,7 +50,7 @@
 			<enhanced:img
 				src={profileItem.item.image}
 				alt={profileItem.item.name}
-				class="h-24 w-24 shrink-0 self-center rounded-lg object-cover md:h-44 md:w-44 md:self-start"
+				class="h-24 w-24 shrink-0 self-center rounded-lg object-cover md:h-full md:w-fit"
 				loading="lazy"
 				fetchpriority="low"
 			/>

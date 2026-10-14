@@ -83,7 +83,7 @@
 	}
 </script>
 
-<section class="space-y-12">
+<section class="space-y-12 md:space-y-8">
 	<div class="flex items-center justify-between">
 		<h2 class="heading-2">
 			{$translationsStore.profilePage.profilePageYourArtistsOnProfileHeading2}

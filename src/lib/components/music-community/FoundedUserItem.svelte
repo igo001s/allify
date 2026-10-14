@@ -1,4 +1,8 @@
 <script lang="ts">
+	// App
+	import { resolve } from '$app/paths';
+	import { goto } from '$app/navigation';
+
 	// Assets
 	import SpotifyIcon from '#lib/assets/icons/streamings/SpotifyIcon.svelte';
 	import DeezerIcon from '#lib/assets/icons/streamings/DeezerIcon.svelte';
@@ -141,7 +145,7 @@
 	}
 
 	function handleGoToUserProfile() {
-		window.location.href = `/music-community/${user._id}`;
+		goto(resolve(`/music-community/${user._id}`));
 
 		return;
 	}

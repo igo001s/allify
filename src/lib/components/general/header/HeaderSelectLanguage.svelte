@@ -11,14 +11,8 @@
 
 	// Assets
 	import englishFlag from '#lib/assets/icons/flags/united-states-icon.webp?enhanced';
-	import germanyFlag from '#lib/assets/icons/flags/germany-icon.webp?enhanced';
 	import portugueseFlag from '#lib/assets/icons/flags/brazil-icon.webp?enhanced';
 	import spanishFlag from '#lib/assets/icons/flags/spain-icon.webp?enhanced';
-	import frenchFlag from '#lib/assets/icons/flags/france-icon.webp?enhanced';
-	import italianFlag from '#lib/assets/icons/flags/italy-icon.webp?enhanced';
-	import russianFlag from '#lib/assets/icons/flags/russia-icon.webp?enhanced';
-	import chineseFlag from '#lib/assets/icons/flags/china-icon.webp?enhanced';
-	import japaneseFlag from '#lib/assets/icons/flags/japan-icon.webp?enhanced';
 	import ArrowIcon from '#lib/assets/icons/ArrowIcon.svelte';
 	import SelectedIcon from '#lib/assets/icons/SelectedIcon.svelte';
 
@@ -44,42 +38,6 @@
 			label: $translationsStore.generalTexts.headerLanguageEs,
 			altText: $translationsStore.generalTexts.headerLanguageEsAltText,
 			flag: spanishFlag
-		},
-		{
-			code: 'zh-CN',
-			label: $translationsStore.generalTexts.headerLanguageZh,
-			altText: $translationsStore.generalTexts.headerLanguageZhAltText,
-			flag: chineseFlag
-		},
-		{
-			code: 'ru-RU',
-			label: $translationsStore.generalTexts.headerLanguageRu,
-			altText: $translationsStore.generalTexts.headerLanguageRuAltText,
-			flag: russianFlag
-		},
-		{
-			code: 'ja-JP',
-			label: $translationsStore.generalTexts.headerLanguageJa,
-			altText: $translationsStore.generalTexts.headerLanguageJaAltText,
-			flag: japaneseFlag
-		},
-		{
-			code: 'de-DE',
-			label: $translationsStore.generalTexts.headerLanguageDe,
-			altText: $translationsStore.generalTexts.headerLanguageDeAltText,
-			flag: germanyFlag
-		},
-		{
-			code: 'fr-FR',
-			label: $translationsStore.generalTexts.headerLanguageFr,
-			altText: $translationsStore.generalTexts.headerLanguageFrAltText,
-			flag: frenchFlag
-		},
-		{
-			code: 'it-IT',
-			label: $translationsStore.generalTexts.headerLanguageIt,
-			altText: $translationsStore.generalTexts.headerLanguageItAltText,
-			flag: italianFlag
 		}
 	] as { code: string; label: string; altText: string; flag: Picture }[];
 

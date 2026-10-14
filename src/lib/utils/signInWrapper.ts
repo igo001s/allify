@@ -33,6 +33,4 @@ export function signInWrapper(
 		loading: true,
 		streamingPlatform: streaming
 	});
-
-	return;
 }

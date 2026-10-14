@@ -9,38 +9,32 @@
 	export let publicUserName: string;
 	export let artistType: string;
 
-	function getEmptyArtistHeading3(): string {
-		if (artistType === 'artistOfTheMoment') {
-			return $translationsStore.musicCommunityPage.publicUser
-				.musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1;
-		} else if (artistType === 'customArtist') {
-			return $translationsStore.musicCommunityPage.publicUser
-				.musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2;
-		}
+	$: emptyArtistHeading3 =
+		artistType === 'artistOfTheMoment'
+			? $translationsStore.musicCommunityPage.publicUser
+					.musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1
+			: artistType === 'customArtist'
+				? $translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2
+				: '';
 
-		return '';
-	}
-
-	function getEmptyArtistHeading4(): string {
-		if (artistType === 'artistOfTheMoment') {
-			return $translationsStore.musicCommunityPage.publicUser
-				.musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1;
-		} else if (artistType === 'customArtist') {
-			return $translationsStore.musicCommunityPage.publicUser
-				.musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2;
-		}
-
-		return '';
-	}
+	$: emptyArtistHeading4 =
+		artistType === 'artistOfTheMoment'
+			? $translationsStore.musicCommunityPage.publicUser
+					.musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1
+			: artistType === 'customArtist'
+				? $translationsStore.musicCommunityPage.publicUser
+						.musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v2
+				: '';
 </script>
 
 <EmptyArtistCard
 	openModal={undefined}
-	emptyArtistHeading3={getEmptyArtistHeading3()}
+	{emptyArtistHeading3}
 	emptyArtistAriaLabel={$translationsStore.musicCommunityPage.publicUser
 		.musicCommunityPagePublicUserEmptyArtistOnPublicUserAriaLabel}
 	sessionType="public-user"
-	emptyArtistHeading4={getEmptyArtistHeading4()}
+	{emptyArtistHeading4}
 	emptyArtistParagraph1={$translationsStore.musicCommunityPage.publicUser.musicCommunityPagePublicUserEmptyArtistOnPublicUserParagraph1.replace(
 		'{publicUserName}',
 		publicUserName

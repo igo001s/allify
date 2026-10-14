@@ -23,45 +23,9 @@ export const translationsStore: Readable<typeof en> = derived(
 
 					break;
 				}
-				case 'de-DE': {
-					const { de } = await import('../i18n/de');
-					set(de);
-
-					break;
-				}
 				case 'es-ES': {
 					const { es } = await import('../i18n/es');
 					set(es);
-
-					break;
-				}
-				case 'fr-FR': {
-					const { fr } = await import('../i18n/fr');
-					set(fr);
-
-					break;
-				}
-				case 'it-IT': {
-					const { it } = await import('../i18n/it');
-					set(it);
-
-					break;
-				}
-				case 'ru-RU': {
-					const { ru } = await import('../i18n/ru');
-					set(ru);
-
-					break;
-				}
-				case 'zh-CN': {
-					const { zh } = await import('../i18n/zh');
-					set(zh);
-
-					break;
-				}
-				case 'ja-JP': {
-					const { ja } = await import('../i18n/ja');
-					set(ja);
 
 					break;
 				}

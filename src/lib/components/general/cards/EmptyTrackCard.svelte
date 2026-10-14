@@ -27,7 +27,7 @@
 
 	<button
 		type="button"
-		class={`flex h-80 flex-col items-center justify-center gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:h-56 md:gap-3 lg:p-6 ${isProfilePage(sessionType)}`}
+		class={`flex h-80 shrink-0 flex-col items-center justify-center gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:h-56 md:gap-3 lg:p-6 ${isProfilePage(sessionType)}`}
 		on:click={() => openModal?.('music')}
 	>
 		<div class="flex h-20 w-20 items-center justify-center rounded-full bg-s-muted">

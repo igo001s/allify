@@ -21,18 +21,6 @@ export const es = {
 		headerLanguageEnAltText: 'Bandera del idioma inglés',
 		headerLanguageEs: 'Español',
 		headerLanguageEsAltText: 'Bandera del idioma español',
-		headerLanguageDe: 'Alemán',
-		headerLanguageDeAltText: 'Bandera del idioma alemán',
-		headerLanguageFr: 'Francés',
-		headerLanguageFrAltText: 'Bandera del idioma francés',
-		headerLanguageIt: 'Italiano',
-		headerLanguageItAltText: 'Bandera del idioma italiano',
-		headerLanguageRu: 'Ruso',
-		headerLanguageRuAltText: 'Bandera del idioma ruso',
-		headerLanguageZh: 'Chino',
-		headerLanguageZhAltText: 'Bandera del idioma chino',
-		headerLanguageJa: 'Japonés',
-		headerLanguageJaAltText: 'Bandera del idioma japonés',
 		headerLanguageSelectedIconAriaLabel: 'Icono del idioma seleccionado',
 		dropdownAriaLabel: 'Selección de idioma',
 		profileButtonAriaLabel: 'Botón de perfil del usuario',
@@ -425,15 +413,13 @@ export const es = {
 			musicCommunityPagePublicUserToastErrorAlreadyCommentedMessage:
 				'Ya has comentado en este perfil.',
 			musicCommunityPagePublicUserSongsOnPublicUserHeading2: 'Canciones de',
-			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Canción más escuchada de',
-			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Canción del momento de',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v1: 'Canción más escuchada',
+			musicCommunityPagePublicUserSongsOnPublicUserHeading3v2: 'Canción del momento',
 			musicCommunityPagePublicUserArtistsOnPublicUserHeading2: 'Artistas de',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Artista más escuchado de',
-			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artista del momento de',
-			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v1:
-				'No se ha seleccionado ninguna canción del momento',
-			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2:
-				'No se ha seleccionado ninguna canción personalizada',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v1: 'Artista más escuchado',
+			musicCommunityPagePublicUserArtistsOnPublicUserHeading3v2: 'Artista del momento',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v1: 'Sin canción del momento',
+			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading3v2: 'Sin canción personalizada',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserAriaLabel: 'Icono de música vacía',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserHeading4v1:
 				'La canción del momento está vacía',
@@ -441,10 +427,8 @@ export const es = {
 				'La canción personalizada está vacía',
 			musicCommunityPagePublicUserEmptyMusicOnPublicUserParagraph1:
 				'Parece que todavía no se ha añadido ninguna música. En cuanto {publicUserName} añada alguna, aparecerá aquí.',
-			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1:
-				'No se ha seleccionado ningún artista del momento',
-			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2:
-				'No se ha seleccionado ningún artista personalizado',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v1: 'Sin artista del momento',
+			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading3v2: 'Sin artista personalizado',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserAriaLabel: 'Icono de artista vacío',
 			musicCommunityPagePublicUserEmptyArtistOnPublicUserHeading4v1:
 				'El artista del momento está vacío',

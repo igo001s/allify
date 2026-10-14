@@ -27,14 +27,14 @@
 
 	<button
 		type="button"
-		class={`flex h-80 flex-col items-center justify-center gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:h-56 md:gap-3 lg:p-6 ${isProfilePage(sessionType)}`}
-		on:click={() => openModal?.('music')}
+		class={`flex h-80 shrink-0 flex-col items-center justify-center gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:h-56 md:gap-3 lg:p-6 ${isProfilePage(sessionType)}`}
+		on:click={() => openModal?.('artist')}
 	>
 		<div class="flex h-20 w-20 items-center justify-center rounded-full bg-s-muted">
 			{#if sessionType === 'profile'}
 				<SelectArtistIcon iconSvgClass="ml-1.5 h-12 w-12" iconAriaLabel={emptyArtistAriaLabel} />
 			{:else}
-				<ArtistIcon iconSvgClass="ml-0.5 mt-0.5 h-12 w-12" iconAriaLabel={emptyTrackAriaLabel} />
+				<ArtistIcon iconSvgClass="mt-0.5 h-12 w-12" iconAriaLabel={emptyArtistAriaLabel} />
 			{/if}
 		</div>
 

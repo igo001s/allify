@@ -37,7 +37,7 @@
 		$translationsStore.musicCommunityPage.title,
 		$translationsStore.configuration.allifyDescription,
 		$translationsStore.musicCommunityPage.musicCommunityPageMetaDescription,
-		$page.params.id
+		page.params.id
 	);
 
 	let loadingUser: boolean = true;
@@ -50,7 +50,7 @@
 
 	onMount(async () => {
 		try {
-			const userId = $page.params.id;
+			const userId = page.params.id;
 
 			if (!userId) {
 				return;
