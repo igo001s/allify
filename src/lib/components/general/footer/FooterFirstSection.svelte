@@ -19,7 +19,7 @@
 			/>
 		</a>
 
-		<p class="mt-4 text-center text-sm font-light text-t-inverse-muted lg:text-left">
+		<p class="mt-4 text-center text-sm text-t-inverse-muted lg:text-left">
 			{$translationsStore.generalTexts.footerFirstSectionText1}
 		</p>
 	</div>

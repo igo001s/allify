@@ -108,7 +108,6 @@
 							href={resolve(item.href)}
 							class="
 								text-sm
-								font-light
 								text-t-inverse-muted
 								hover:text-t-inverse
 							"
