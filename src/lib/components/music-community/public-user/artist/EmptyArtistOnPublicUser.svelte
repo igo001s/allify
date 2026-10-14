@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import EmptyArtist from '#lib/components/general/EmptyArtist.svelte';
+	import EmptyArtistCard from '#lib/components/general/cards/EmptyArtistCard.svelte';
 
 	// Stores
 	import { translationsStore } from '#lib/stores/translations.store';
@@ -34,7 +34,7 @@
 	}
 </script>
 
-<EmptyArtist
+<EmptyArtistCard
 	openModal={undefined}
 	emptyArtistHeading3={getEmptyArtistHeading3()}
 	emptyArtistAriaLabel={$translationsStore.musicCommunityPage.publicUser

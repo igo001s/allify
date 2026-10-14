@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import EmptyArtist from '#lib/components/general/EmptyArtist.svelte';
+	import EmptyArtistCard from '#lib/components/general/cards/EmptyArtistCard.svelte';
 
 	// Stores
 	import { translationsStore } from '#lib/stores/translations.store';
@@ -9,7 +9,7 @@
 	export let openSelectYourItemsModal: (itemType: 'artist') => void;
 </script>
 
-<EmptyArtist
+<EmptyArtistCard
 	openModal={() => openSelectYourItemsModal('artist')}
 	emptyArtistHeading3={$translationsStore.profilePage.profilePageEmptyArtistOfTheMomentHeading1}
 	emptyArtistAriaLabel={$translationsStore.profilePage.profilePageEmptyArtistOfTheMomentAriaLabel}

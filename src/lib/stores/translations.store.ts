@@ -1,5 +1,5 @@
 // Svelte
-import { browser } from '$app/environment';
+import { browser } from '$app/env';
 import { derived, type Readable } from 'svelte/store';
 
 // Stores

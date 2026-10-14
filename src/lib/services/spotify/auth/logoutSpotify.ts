@@ -1,5 +1,5 @@
 // Svelte
-import { dev } from '$app/environment';
+import { dev } from '$app/env';
 
 export async function logoutSpotify() {
 	try {

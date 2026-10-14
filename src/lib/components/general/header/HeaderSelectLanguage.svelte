@@ -3,7 +3,7 @@
 	import type { Picture } from 'vite-imagetools';
 
 	// Svelte
-	import { browser } from '$app/environment';
+	import { browser } from '$app/env';
 
 	// Stores
 	import { languageStore } from '#lib/stores/language.store';

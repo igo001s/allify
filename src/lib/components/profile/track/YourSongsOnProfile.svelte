@@ -83,7 +83,7 @@
 	}
 </script>
 
-<section class="space-y-7">
+<section class="space-y-12">
 	<div class="flex items-center justify-between">
 		<h2 class="heading-2">
 			{$translationsStore.profilePage.profilePageYourSongsOnProfileHeading2}
@@ -100,7 +100,7 @@
 		</button>
 	</div>
 
-	<div class="flex flex-col gap-8 xl:flex-row">
+	<div class="flex flex-col gap-12 xl:flex-row">
 		{#each songsItems as { type, title, item } (type)}
 			{#if item}
 				<YourSongsOnProfileItem

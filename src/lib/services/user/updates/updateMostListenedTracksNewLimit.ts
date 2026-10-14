@@ -1,5 +1,5 @@
 // Svelte
-import { dev } from '$app/environment';
+import { dev } from '$app/env';
 
 // Services
 import { useTicket } from '#lib/services/user/tickets/useTicket';

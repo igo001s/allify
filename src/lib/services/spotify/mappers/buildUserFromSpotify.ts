@@ -1,5 +1,5 @@
 // Svelte
-import { dev } from '$app/environment';
+import { dev } from '$app/env';
 
 // Types
 import type { UserInfoSpotify } from '#lib/types/Spotify.type';

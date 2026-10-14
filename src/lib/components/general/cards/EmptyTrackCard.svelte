@@ -10,6 +10,14 @@
 	export let sessionType: 'profile' | 'public-user';
 	export let emptyTrackHeading4: string;
 	export let emptyTrackParagraph1: string;
+
+	function isProfilePage(sessionType: string): string {
+		if (sessionType === 'profile') {
+			return 'cursor-pointer';
+		}
+
+		return '';
+	}
 </script>
 
 <div class="flex w-full flex-col gap-4 xl:w-1/3">
@@ -19,29 +27,23 @@
 
 	<button
 		type="button"
-		class={`${sessionType === 'profile' ? 'cursor-pointer' : ''} flex h-full flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-5 text-t-primary shadow-xl sm:p-6 md:max-h-56 md:min-h-56`}
+		class={`flex h-80 flex-col items-center justify-center gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:h-56 md:gap-3 lg:p-6 ${isProfilePage(sessionType)}`}
 		on:click={() => openModal?.('music')}
 	>
-		<div class="flex h-16 w-16 items-center justify-center rounded-full bg-s-muted sm:h-20 sm:w-20">
+		<div class="flex h-20 w-20 items-center justify-center rounded-full bg-s-muted">
 			{#if sessionType === 'profile'}
-				<SelectMusicIcon
-					iconSvgClass="ml-1.5 h-10 w-10 sm:h-12 sm:w-12"
-					iconAriaLabel={emptyTrackAriaLabel}
-				/>
+				<SelectMusicIcon iconSvgClass="ml-1.5 h-12 w-12" iconAriaLabel={emptyTrackAriaLabel} />
 			{:else}
-				<MusicIcon
-					iconSvgClass="ml-0.5 mt-0.5 h-10 w-10 sm:h-12 sm:w-12"
-					iconAriaLabel={emptyTrackAriaLabel}
-				/>
+				<MusicIcon iconSvgClass="ml-0.5 mt-0.5 h-12 w-12" iconAriaLabel={emptyTrackAriaLabel} />
 			{/if}
 		</div>
 
-		<div class="max-w-[16rem] text-center sm:max-w-xs">
+		<div class="space-y-2 text-center sm:max-w-xs md:space-y-1.5">
 			<h4 class="heading-4">
 				{emptyTrackHeading4}
 			</h4>
 
-			<p class="mt-1 text-xs text-t-secondary">
+			<p class="text-xs text-t-secondary">
 				{emptyTrackParagraph1}
 			</p>
 		</div>

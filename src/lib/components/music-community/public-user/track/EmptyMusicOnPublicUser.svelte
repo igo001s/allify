@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import EmptyTrack from '#lib/components/general/EmptyTrack.svelte';
+	import EmptyTrackCard from '#lib/components/general/cards/EmptyTrackCard.svelte';
 
 	// Stores
 	import { translationsStore } from '#lib/stores/translations.store';
@@ -34,7 +34,7 @@
 	}
 </script>
 
-<EmptyTrack
+<EmptyTrackCard
 	openModal={undefined}
 	emptyTrackHeading3={getEmptyMusicHeading3()}
 	emptyTrackAriaLabel={$translationsStore.musicCommunityPage.publicUser

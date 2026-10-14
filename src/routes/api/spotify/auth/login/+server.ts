@@ -26,5 +26,5 @@ export const GET: RequestHandler = async ({ cookies }) => {
 			state
 		});
 
-	throw redirect(302, url);
+	throw redirect(302, url, { external: true });
 };

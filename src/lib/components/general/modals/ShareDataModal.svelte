@@ -1,6 +1,6 @@
 <script lang="ts">
 	// App
-	import { dev } from '$app/environment';
+	import { dev } from '$app/env';
 
 	// Assets
 	import DotsLoading from '#lib/assets/animations/DotsLoading.svelte';

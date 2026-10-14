@@ -1,5 +1,5 @@
 // Svelte
-import { dev } from '$app/environment';
+import { dev } from '$app/env';
 
 // mongoDB
 import { MongoClient } from 'mongodb';

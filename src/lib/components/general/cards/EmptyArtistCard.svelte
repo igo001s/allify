@@ -27,21 +27,18 @@
 
 	<button
 		type="button"
-		class={`${isProfilePage(sessionType)} flex h-full flex-col items-center justify-center gap-2 rounded-xl border border-b-default p-5 text-t-primary shadow-xl sm:p-6 md:max-h-56 md:min-h-56`}
-		on:click={() => openModal?.('artist')}
+		class={`flex h-80 flex-col items-center justify-center gap-4 rounded-xl border border-b-default p-4 shadow-xl sm:gap-6 sm:p-5 md:h-56 md:gap-3 lg:p-6 ${isProfilePage(sessionType)}`}
+		on:click={() => openModal?.('music')}
 	>
-		<div class="flex h-16 w-16 items-center justify-center rounded-full bg-s-muted sm:h-20 sm:w-20">
+		<div class="flex h-20 w-20 items-center justify-center rounded-full bg-s-muted">
 			{#if sessionType === 'profile'}
-				<SelectArtistIcon
-					iconSvgClass="ml-1.5 h-8 w-8 sm:h-10 sm:w-10"
-					iconAriaLabel={emptyArtistAriaLabel}
-				/>
+				<SelectArtistIcon iconSvgClass="ml-1.5 h-12 w-12" iconAriaLabel={emptyArtistAriaLabel} />
 			{:else}
-				<ArtistIcon iconSvgClass="h-8 w-8 sm:h-10 sm:w-10" iconAriaLabel={emptyArtistAriaLabel} />
+				<ArtistIcon iconSvgClass="ml-0.5 mt-0.5 h-12 w-12" iconAriaLabel={emptyTrackAriaLabel} />
 			{/if}
 		</div>
 
-		<div class="max-w-[16rem] space-y-1 text-center sm:max-w-xs">
+		<div class="space-y-2 text-center sm:max-w-xs md:space-y-1.5">
 			<h4 class="heading-4">
 				{emptyArtistHeading4}
 			</h4>

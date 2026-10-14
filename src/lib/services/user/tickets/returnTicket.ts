@@ -1,5 +1,5 @@
 // Svelte
-import { dev } from '$app/environment';
+import { dev } from '$app/env';
 
 // Stores
 import { userInfo } from '#lib/stores/userInfo.store';

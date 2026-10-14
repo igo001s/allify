@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Components
-	import EmptyTrack from '#lib/components/general/EmptyTrack.svelte';
+	import EmptyTrackCard from '#lib/components/general/cards/EmptyTrackCard.svelte';
 
 	// Stores
 	import { translationsStore } from '#lib/stores/translations.store';
@@ -9,7 +9,7 @@
 	export let openSelectYourItemsModal: (itemType: 'music') => void;
 </script>
 
-<EmptyTrack
+<EmptyTrackCard
 	openModal={() => openSelectYourItemsModal('music')}
 	emptyTrackHeading3={$translationsStore.profilePage.profilePageEmptyMusicOfTheMomentHeading1}
 	emptyTrackAriaLabel={$translationsStore.profilePage.profilePageEmptyMusicOfTheMomentAriaLabel}
